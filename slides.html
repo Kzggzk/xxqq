@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>太阳系课件 / Solar System Courseware</title>
+<style>
+  :root {
+    --bg: #050818;
+    --panel: rgba(12, 18, 40, 0.85);
+    --accent: #ffd76b;
+    --accent-2: #6aa6ff;
+    --text: #e8ecff;
+    --muted: #9aa9d6;
+    --border: rgba(120, 150, 255, 0.25);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; height: 100%; overflow: hidden;
+    background: radial-gradient(ellipse at center, #0a1230 0%, #02030a 100%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.55;
+  }
+
+  #deck {
+    position: relative;
+    width: 100vw; height: 100vh;
+    overflow: hidden;
+  }
+
+  .slide {
+    position: absolute; inset: 0;
+    padding: 48px 80px 96px;
+    display: none;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .slide.active { display: flex; animation: fade .35s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+  h1.title {
+    font-size: 56px;
+    margin: 0 0 12px;
+    color: var(--accent);
+    letter-spacing: 1px;
+  }
+  h1.title small { display: block; font-size: 18px; color: var(--muted); margin-top: 10px; letter-spacing: 0; }
+
+  h2 {
+    font-size: 32px;
+    margin: 0 0 20px;
+    color: var(--accent);
+    border-left: 5px solid var(--accent);
+    padding-left: 14px;
+  }
+
+  p, li { font-size: 18px; }
+  li { margin: 6px 0; }
+  ul { padding-left: 22px; }
+  code { background: #1a2348; padding: 1px 6px; border-radius: 4px; color: #ffd76b; font-size: 0.95em; }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    backdrop-filter: blur(6px);
+  }
+  .card h3 { margin: 0 0 8px; color: var(--accent-2); font-size: 18px; }
+  .card .meta { font-size: 13px; color: var(--muted); }
+  .card table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .card td { padding: 2px 0; }
+  .card td:first-child { color: var(--muted); }
+  .card td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+
+  .planet-dot { display: inline-block; width: 14px; height: 14px; border-radius: 50%; vertical-align: middle; margin-right: 8px; box-shadow: 0 0 8px currentColor; }
+
+  .tip {
+    margin-top: 14px;
+    padding: 12px 16px;
+    border-left: 4px solid var(--accent);
+    background: rgba(255, 215, 107, 0.08);
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  .tip strong { color: var(--accent); }
+
+  .formula {
+    background: #0f1738;
+    border: 1px solid var(--border);
+    padding: 16px 22px;
+    border-radius: 10px;
+    font-family: "Cambria Math", Georgia, serif;
+    font-size: 22px;
+    color: #ffe9a3;
+    text-align: center;
+    margin: 14px 0;
+  }
+
+  .center { text-align: center; }
+  .muted { color: var(--muted); }
+
+  /* navigation */
+  #nav {
+    position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%);
+    display: flex; gap: 10px; align-items: center;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 8px 14px;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+  }
+  #nav button {
+    background: #1a2348; color: var(--text);
+    border: 1px solid #3b4a78;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  #nav button:hover { background: #243156; }
+  #nav .counter { color: var(--accent); font-variant-numeric: tabular-nums; min-width: 60px; text-align: center; }
+  #nav a {
+    background: var(--accent); color: #1a1200; text-decoration: none;
+    border-radius: 8px; padding: 6px 12px; font-size: 14px; font-weight: 600;
+  }
+
+  /* progress */
+  #progress {
+    position: fixed; top: 0; left: 0;
+    height: 3px; background: linear-gradient(90deg, #ffd76b, #ff7a00);
+    width: 0%;
+    transition: width .25s ease;
+    z-index: 100;
+  }
+
+  /* table of contents */
+  .toc { columns: 2; column-gap: 32px; font-size: 18px; }
+  .toc a {
+    display: block; padding: 6px 10px; margin: 4px 0;
+    color: var(--text); text-decoration: none;
+    border-radius: 6px; border: 1px solid transparent;
+  }
+  .toc a:hover { background: rgba(255, 215, 107, 0.1); border-color: var(--border); color: var(--accent); }
+  .toc a .num { color: var(--accent-2); margin-right: 8px; font-variant-numeric: tabular-nums; }
+
+  .quiz li { margin: 10px 0; }
+  .quiz .q { color: var(--accent-2); font-weight: 600; }
+  .quiz .a { color: var(--muted); display: block; margin-top: 4px; padding-left: 14px; border-left: 2px solid var(--border); }
+
+  .footer-note {
+    position: absolute; bottom: 28px; left: 80px; right: 80px;
+    color: var(--muted); font-size: 13px;
+    border-top: 1px solid var(--border); padding-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<div id="deck">
+
+  <!-- 1: cover -->
+  <section class="slide">
+    <div style="margin: auto; text-align: center;">
+      <h1 class="title">三维太阳系模拟与天体力学
+        <small>3D Solar System Simulator · Teaching Companion</small>
+      </h1>
+      <p style="color: var(--muted); margin-top: 28px; font-size: 16px;">
+        基于真实轨道参数的可交互教学模型 ·
+        八大行星 / 卫星 / 自转倾角 / 开普勒运动
+      </p>
+      <div style="margin-top: 36px;">
+        <a href="index.html" target="_blank" style="background: var(--accent); color: #1a1200; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600;">▶ 打开模拟器</a>
+      </div>
+      <p class="muted" style="margin-top: 60px; font-size: 13px;">← / → 翻页 · Home/End 跳转 · 数字键 1–9 直达</p>
+    </div>
+  </section>
+
+  <!-- 2: outline -->
+  <section class="slide">
+    <h2>课程目录</h2>
+    <div class="toc">
+      <a href="#3"><span class="num">01</span>认识太阳系结构</a>
+      <a href="#4"><span class="num">02</span>开普勒三大定律</a>
+      <a href="#5"><span class="num">03</span>轨道六要素</a>
+      <a href="#6"><span class="num">04</span>距离与尺度问题</a>
+      <a href="#7"><span class="num">05</span>类地行星总览</a>
+      <a href="#8"><span class="num">06</span>气态巨行星</a>
+      <a href="#9"><span class="num">07</span>水星 · Mercury</a>
+      <a href="#10"><span class="num">08</span>金星 · Venus</a>
+      <a href="#11"><span class="num">09</span>地球 · Earth</a>
+      <a href="#12"><span class="num">10</span>火星 · Mars</a>
+      <a href="#13"><span class="num">11</span>木星 · Jupiter</a>
+      <a href="#14"><span class="num">12</span>土星 · Saturn</a>
+      <a href="#15"><span class="num">13</span>天王星 · Uranus</a>
+      <a href="#16"><span class="num">14</span>海王星 · Neptune</a>
+      <a href="#17"><span class="num">15</span>自转与轴倾角</a>
+      <a href="#18"><span class="num">16</span>主要卫星系统</a>
+      <a href="#19"><span class="num">17</span>课堂实验</a>
+      <a href="#20"><span class="num">18</span>思考题</a>
+    </div>
+  </section>
+
+  <!-- 3: structure -->
+  <section class="slide">
+    <h2>1 · 认识太阳系结构</h2>
+    <div class="grid-2">
+      <div>
+        <p>太阳系由 <strong>1 颗恒星</strong>(太阳)、<strong>8 颗行星</strong>、若干矮行星、卫星、小行星和彗星组成。</p>
+        <ul>
+          <li><strong>类地行星</strong>(内):水星、金星、地球、火星 —— 岩石质,密度高</li>
+          <li><strong>小行星带</strong>:火星与木星之间</li>
+          <li><strong>气态巨行星</strong>:木星、土星 —— 主要由 H、He 构成</li>
+          <li><strong>冰巨星</strong>:天王星、海王星 —— 含大量冰、氨、甲烷</li>
+          <li><strong>柯伊伯带</strong> & 奥尔特云:海王星之外</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>太阳的关键数字</h3>
+        <table>
+          <tr><td>直径</td><td>约 1,392,000 km</td></tr>
+          <tr><td>质量</td><td>占系统 99.86%</td></tr>
+          <tr><td>表面温度</td><td>约 5,500 °C</td></tr>
+          <tr><td>核心温度</td><td>约 1.5 × 10⁷ °C</td></tr>
+          <tr><td>自转周期(赤道)</td><td>约 25 天</td></tr>
+          <tr><td>本课件中半径</td><td><code>5</code> 单位</td></tr>
+        </table>
+        <div class="tip"><strong>模拟器:</strong>选择"太阳特写"视角 → 观察日冕辉光与自转动画。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4: Kepler -->
+  <section class="slide">
+    <h2>2 · 开普勒三大定律</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>第一定律(轨道)</h3>
+        <p>每颗行星绕太阳运行的轨道是<strong>椭圆</strong>,太阳位于椭圆的<strong>一个焦点</strong>上。</p>
+        <p class="meta">→ 偏心率 e 决定椭圆的"扁度"</p>
+      </div>
+      <div class="card">
+        <h3>第二定律(面积)</h3>
+        <p>行星与太阳的连线在<strong>相等时间内扫过相等面积</strong>。</p>
+        <p class="meta">→ 近日点跑得快,远日点跑得慢</p>
+      </div>
+      <div class="card">
+        <h3>第三定律(周期)</h3>
+        <div class="formula">T² ∝ a³</div>
+        <p class="meta">用 AU 与年:T(年) = a(AU)<sup>3/2</sup></p>
+      </div>
+    </div>
+    <div class="tip"><strong>模拟器实验:</strong>在水星跟随视角观察其椭圆轨道(e = 0.206 是八大行星中最大的之一),减速观察"近日点加速"现象 —— 这就是第二定律的直接表现。</div>
+    <div class="formula">T(地球) = 1<sup>3/2</sup> = 1 年 &nbsp; · &nbsp; T(木星) = 5.20<sup>3/2</sup> ≈ 11.86 年 ✓</div>
+  </section>
+
+  <!-- 5: orbital elements -->
+  <section class="slide">
+    <h2>3 · 轨道六要素 (Orbital Elements)</h2>
+    <div class="grid-2">
+      <div>
+        <ul>
+          <li><strong>a</strong> · 半长轴(轨道大小,本课件用 AU)</li>
+          <li><strong>e</strong> · 偏心率 (0 = 圆形,1 = 抛物线)</li>
+          <li><strong>i</strong> · 轨道倾角(相对黄道面的倾斜)</li>
+          <li><strong>Ω</strong> · 升交点黄经</li>
+          <li><strong>ω</strong> · 近日点幅角</li>
+          <li><strong>M / T</strong> · 平近点角 / 过近日点时刻</li>
+        </ul>
+        <div class="tip"><strong>本模拟器</strong>实现了 a, e, i;Ω 与 ω 简化为 0(让八大行星共用一个对称参考系,便于对比)。</div>
+      </div>
+      <div class="card">
+        <h3>开普勒方程(数值求解)</h3>
+        <div class="formula">M = E − e · sin E</div>
+        <p>给定平近点角 M 和偏心率 e,通过<strong>牛顿迭代</strong>求出偏近点角 E,再得到行星在椭圆上的位置:</p>
+        <div class="formula">x = a(cos E − e)<br/>z = a√(1−e²) · sin E</div>
+        <p class="meta">模拟器中 <code>solveKepler()</code> 每帧迭代 6 次,精度足以保证视觉平滑。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6: scaling -->
+  <section class="slide">
+    <h2>4 · 距离与尺度问题</h2>
+    <p>真实距离差异巨大:海王星 (30 AU) 是水星 (0.39 AU) 的 <strong>77 倍</strong>。如果按比例显示:</p>
+    <ul>
+      <li>设地球轨道 = 100 像素 → 海王星 = 3007 像素,水星仅 39 像素</li>
+      <li>外行星挤到屏幕边缘,内行星全部叠在一起</li>
+    </ul>
+    <h3 style="color: var(--accent-2); margin-top: 14px;">解决方案:幂次缩放</h3>
+    <div class="formula">r<sub>display</sub> = k · r<sub>actual</sub><sup>0.6</sup></div>
+    <p>k 为缩放系数(模拟器中可滑动调整,默认 11.0);指数 0.6 是<strong>对数与线性之间的平衡</strong>:</p>
+    <div class="grid-4">
+      <div class="card center"><div>水星 0.39 AU</div><strong>≈ 6.0</strong></div>
+      <div class="card center"><div>地球 1.0 AU</div><strong>≈ 11.0</strong></div>
+      <div class="card center"><div>木星 5.2 AU</div><strong>≈ 30.6</strong></div>
+      <div class="card center"><div>海王星 30 AU</div><strong>≈ 87.6</strong></div>
+    </div>
+    <div class="tip"><strong>课堂讨论:</strong>为什么不直接用对数 log(a)?提示 —— 对数会让 1 AU 处压缩到 0,失去近内行星的层次感。</div>
+  </section>
+
+  <!-- 7: terrestrial overview -->
+  <section class="slide">
+    <h2>5 · 类地行星总览</h2>
+    <div class="grid-4">
+      <div class="card"><h3><span class="planet-dot" style="color:#8c8074;background:#8c8074"></span>水星</h3>
+        <table><tr><td>a</td><td>0.39 AU</td></tr><tr><td>T</td><td>88 天</td></tr><tr><td>R</td><td>0.38 R⊕</td></tr><tr><td>e</td><td>0.206</td></tr></table></div>
+      <div class="card"><h3><span class="planet-dot" style="color:#e6c89c;background:#e6c89c"></span>金星</h3>
+        <table><tr><td>a</td><td>0.72 AU</td></tr><tr><td>T</td><td>225 天</td></tr><tr><td>R</td><td>0.95 R⊕</td></tr><tr><td>e</td><td>0.007</td></tr></table></div>
+      <div class="card"><h3><span class="planet-dot" style="color:#2a6fb0;background:#2a6fb0"></span>地球</h3>
+        <table><tr><td>a</td><td>1.00 AU</td></tr><tr><td>T</td><td>365.25 天</td></tr><tr><td>R</td><td>1.00 R⊕</td></tr><tr><td>e</td><td>0.017</td></tr></table></div>
+      <div class="card"><h3><span class="planet-dot" style="color:#c1440e;background:#c1440e"></span>火星</h3>
+        <table><tr><td>a</td><td>1.52 AU</td></tr><tr><td>T</td><td>687 天</td></tr><tr><td>R</td><td>0.53 R⊕</td></tr><tr><td>e</td><td>0.093</td></tr></table></div>
+    </div>
+    <p style="margin-top: 18px;">共同特征:岩石/金属质地、密度大(≈ 4–5.5 g/cm³)、卫星少(0–2 颗)、几乎没有环。</p>
+    <div class="tip"><strong>视觉对比:</strong>四颗类地行星合在一起,质量也只有木星的 <strong>1/740</strong>。</div>
+  </section>
+
+  <!-- 8: gas giants -->
+  <section class="slide">
+    <h2>6 · 气态巨行星 + 冰巨星</h2>
+    <div class="grid-4">
+      <div class="card"><h3><span class="planet-dot" style="color:#d8b48a;background:#d8b48a"></span>木星</h3>
+        <table><tr><td>a</td><td>5.20 AU</td></tr><tr><td>T</td><td>11.86 年</td></tr><tr><td>R</td><td>11.2 R⊕</td></tr><tr><td>自转</td><td>10 h 最快</td></tr></table></div>
+      <div class="card"><h3><span class="planet-dot" style="color:#e6d39a;background:#e6d39a"></span>土星</h3>
+        <table><tr><td>a</td><td>9.54 AU</td></tr><tr><td>T</td><td>29.46 年</td></tr><tr><td>R</td><td>9.45 R⊕</td></tr><tr><td>环</td><td>1.2–2.3 R</td></tr></table></div>
+      <div class="card"><h3><span class="planet-dot" style="color:#9ad9e0;background:#9ad9e0"></span>天王星</h3>
+        <table><tr><td>a</td><td>19.19 AU</td></tr><tr><td>T</td><td>84 年</td></tr><tr><td>R</td><td>4.0 R⊕</td></tr><tr><td>轴倾</td><td>97.8°</td></tr></table></div>
+      <div class="card"><h3><span class="planet-dot" style="color:#3b5dcf;background:#3b5dcf"></span>海王星</h3>
+        <table><tr><td>a</td><td>30.07 AU</td></tr><tr><td>T</td><td>164.8 年</td></tr><tr><td>R</td><td>3.88 R⊕</td></tr><tr><td>暗斑</td><td>有</td></tr></table></div>
+    </div>
+    <p style="margin-top: 18px;">共同特征:厚大气层、自转快(普遍 < 17 h)、卫星众多、都有环系统(土星最显著)。</p>
+    <div class="tip"><strong>模拟器:</strong>切换到"俯视"视角,关闭"真实尺寸",观察四颗巨行星的圆形外观与各自的大小差异。</div>
+  </section>
+
+  <!-- 9: Mercury -->
+  <section class="slide">
+    <h2>7 · 水星 · Mercury <span class="muted" style="font-size: 16px;">最快、最热又最冷</span></h2>
+    <div class="grid-2">
+      <div>
+        <ul>
+          <li>最靠近太阳(0.39 AU),公转周期仅 88 天</li>
+          <li>没有大气保温,昼夜温差 <strong>−180 °C ~ 430 °C</strong></li>
+          <li>偏心率 0.206 —— 八大行星中最大,轨道呈明显椭圆</li>
+          <li>表面布满陨石坑,与月球相似</li>
+          <li>3:2 自旋轨道共振(自转 58.6 天,公转 88 天)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>课堂演示</h3>
+        <ol>
+          <li>切换到"水星跟随"</li>
+          <li>速度调到 <code>5 d/s</code></li>
+          <li>观察行星到太阳距离的明显变化</li>
+          <li>验证:近日点(0.31 AU)跑得快,远日点(0.47 AU)跑得慢</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10: Venus -->
+  <section class="slide">
+    <h2>8 · 金星 · Venus <span class="muted" style="font-size: 16px;">姐妹星 · 反向自转</span></h2>
+    <div class="grid-2">
+      <div>
+        <ul>
+          <li>大小、质量与地球极为接近(R = 0.95 R⊕)</li>
+          <li>厚厚的 CO₂ 大气 → 温室效应失控,表面 ≈ 462 °C</li>
+          <li>大气压强为地球的 <strong>92 倍</strong></li>
+          <li><strong>反向自转</strong>(自西向东),周期 243 天</li>
+          <li>"一天"比"一年"还长(243 d > 225 d)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>有趣事实</h3>
+        <p>站在金星上,太阳从<strong>西边</strong>升起、东边落下 ——
+        因为它的自转方向与公转相反。</p>
+        <div class="tip"><strong>模拟器:</strong>打开"自转轴"开关,你会看到金星的轴几乎倒置(177.4°)—— 这就是反向自转的可视化表现。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11: Earth -->
+  <section class="slide">
+    <h2>9 · 地球 · Earth <span class="muted" style="font-size: 16px;">已知唯一拥有生命的世界</span></h2>
+    <div class="grid-2">
+      <div>
+        <ul>
+          <li>液态水稳定存在于表面 —— "宜居带"中央</li>
+          <li>磁场屏蔽太阳风,大气含 21% O₂</li>
+          <li>自转轴倾角 23.5° → <strong>四季</strong>来源</li>
+          <li>月球对潮汐、地轴稳定起关键作用</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>为什么倾角带来四季?</h3>
+        <p>因为地轴在公转过程中保持<strong>方向不变</strong>(指向北极星)。</p>
+        <ul style="font-size: 15px;">
+          <li>北半球倾向太阳 → 夏</li>
+          <li>背向太阳 → 冬</li>
+          <li>侧向 → 春/秋</li>
+        </ul>
+        <div class="tip">在模拟器中点击地球,观察其自转轴随公转保持指向相同方向。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12: Mars -->
+  <section class="slide">
+    <h2>10 · 火星 · Mars <span class="muted" style="font-size: 16px;">红色星球</span></h2>
+    <div class="grid-2">
+      <div>
+        <ul>
+          <li>表面氧化铁 (Fe₂O₃) → 红色</li>
+          <li>稀薄 CO₂ 大气(气压仅地球 0.6%)</li>
+          <li>极冠由水冰 + 干冰组成,随季节扩缩</li>
+          <li>奥林匹斯山:太阳系最高山(21.9 km)</li>
+          <li>自转周期 24h 37min,与地球相近</li>
+          <li>两颗小卫星:火卫一 Phobos、火卫二 Deimos(俘获的小行星)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>火星探测里程碑</h3>
+        <ul style="font-size: 15px;">
+          <li>1976 维京号 - 首次成功着陆</li>
+          <li>1997 火星探路者 - 首辆漫游车</li>
+          <li>2012 好奇号</li>
+          <li>2021 毅力号 / 祝融号</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13: Jupiter -->
+  <section class="slide">
+    <h2>11 · 木星 · Jupiter <span class="muted" style="font-size: 16px;">行星之王</span></h2>
+    <div class="grid-2">
+      <div>
+        <ul>
+          <li>质量是其他七颗行星总和的 <strong>2.5 倍</strong></li>
+          <li>主要由 H、He 组成,内部可能有岩石/冰核</li>
+          <li>大红斑:已观测 350+ 年的反气旋风暴(可装下 2 个地球)</li>
+          <li>自转最快(10 h)→ 明显赤道隆起</li>
+          <li>已知 95+ 颗卫星,4 颗伽利略卫星最大</li>
+          <li>巨大引力像"清道夫",保护内行星免受彗星撞击</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>伽利略卫星</h3>
+        <table>
+          <tr><td>木卫一 Io</td><td>火山活跃</td></tr>
+          <tr><td>木卫二 Europa</td><td>冰下海洋</td></tr>
+          <tr><td>木卫三 Ganymede</td><td>太阳系最大卫星</td></tr>
+          <tr><td>木卫四 Callisto</td><td>陨石坑最密</td></tr>
+        </table>
+        <div class="tip">模拟器中切换"木星跟随",可以看到四颗大卫星按周期 1.77 / 3.55 / 7.15 / 16.7 天围绕木星转动。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14: Saturn -->
+  <section class="slide">
+    <h2>12 · 土星 · Saturn <span class="muted" style="font-size: 16px;">环之王者</span></h2>
+    <div class="grid-2">
+      <div>
+        <ul>
+          <li>密度仅 0.687 g/cm³ —— <strong>能浮在水上</strong>(假想的水池里)</li>
+          <li>环系统由数十亿块冰石组成,主要 A、B、C 环</li>
+          <li>环厚仅 ~10 m,直径却约 28 万 km</li>
+          <li>83 颗已知卫星,土卫六 Titan 拥有浓厚大气</li>
+          <li>土卫六上有甲烷湖,被视为生命研究热点</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>本课件中的环实现</h3>
+        <p>使用 Three.js <code>RingGeometry</code>:</p>
+        <table>
+          <tr><td>内半径</td><td>1.2 × R<sub>土星</sub></td></tr>
+          <tr><td>外半径</td><td>2.3 × R<sub>土星</sub></td></tr>
+          <tr><td>纹理</td><td>径向半透明带</td></tr>
+        </table>
+        <p class="meta" style="margin-top: 8px;">通过自定义 UV,把径向距离映射成纹理坐标,自然产生 Cassini 缝等明暗带。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15: Uranus -->
+  <section class="slide">
+    <h2>13 · 天王星 · Uranus <span class="muted" style="font-size: 16px;">侧躺的行星</span></h2>
+    <div class="grid-2">
+      <div>
+        <ul>
+          <li>大气主要 H₂、He,含甲烷 → 吸收红光,呈青绿色</li>
+          <li><strong>自转轴倾角 97.8°</strong> —— 几乎"躺着滚"</li>
+          <li>极昼极夜各持续 42 年</li>
+          <li>1781 年由 William Herschel 发现 —— 首颗望远镜时代发现的行星</li>
+          <li>13 条暗弱环系</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>为什么会"躺倒"?</h3>
+        <p>主流假说:<strong>太阳系早期遭遇一颗地球大小天体的猛烈撞击</strong>,把整个自转轴撞翻。</p>
+        <div class="tip">模拟器中点击天王星 → 信息面板显示倾角 97.8°,打开"自转轴"开关可直观看到几乎横躺的旋转轴。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16: Neptune -->
+  <section class="slide">
+    <h2>14 · 海王星 · Neptune <span class="muted" style="font-size: 16px;">最远的行星</span></h2>
+    <div class="grid-2">
+      <div>
+        <ul>
+          <li>1846 年根据 <strong>数学预测</strong>(由天王星轨道扰动推算)发现</li>
+          <li>大气含甲烷 → 深蓝色</li>
+          <li>大暗斑(类似木星大红斑,但寿命较短)</li>
+          <li>风速可达 <strong>2,100 km/h</strong>,太阳系最强</li>
+          <li>14 颗卫星,最大的海卫一 Triton 是<strong>逆行轨道</strong></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>逆行的海卫一</h3>
+        <p>Triton 公转方向与海王星自转<strong>相反</strong>。这强烈暗示它原本是<strong>柯伊伯带天体</strong>,被海王星引力俘获。</p>
+        <p class="meta">模拟器中 Triton 周期设为 −5.88 d,使其反向运动。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 17: rotation -->
+  <section class="slide">
+    <h2>15 · 自转周期与轴倾角对比</h2>
+    <table style="width:100%; border-collapse: collapse; font-size: 16px;">
+      <thead style="color: var(--accent-2); border-bottom: 1px solid var(--border);">
+        <tr><th align="left">行星</th><th>自转周期</th><th>轴倾角</th><th>方向</th><th>影响</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>水星</td><td>58.6 天</td><td>0.03°</td><td>正向</td><td>3:2 共振,几乎无季节</td></tr>
+        <tr><td>金星</td><td>243 天</td><td>177.4°</td><td><span style="color:#ff6b6b">逆向</span></td><td>"日"长于"年"</td></tr>
+        <tr><td>地球</td><td>23h 56m</td><td>23.5°</td><td>正向</td><td>四季分明</td></tr>
+        <tr><td>火星</td><td>24h 37m</td><td>25.2°</td><td>正向</td><td>季节明显但更长</td></tr>
+        <tr><td>木星</td><td><strong>9h 56m</strong></td><td>3.13°</td><td>正向</td><td>最快,赤道隆起</td></tr>
+        <tr><td>土星</td><td>10h 33m</td><td>26.7°</td><td>正向</td><td>环倾斜带来视觉变化</td></tr>
+        <tr><td>天王星</td><td>17h 14m</td><td><strong>97.8°</strong></td><td><span style="color:#ff6b6b">侧躺</span></td><td>极端季节,42 年极昼/夜</td></tr>
+        <tr><td>海王星</td><td>16h 6m</td><td>28.3°</td><td>正向</td><td>类似地球的季节倾斜</td></tr>
+      </tbody>
+    </table>
+    <div class="tip"><strong>规律:</strong>大行星自转都很快(都 < 17 h),这是<strong>角动量守恒</strong>在引力坍缩过程中的结果。</div>
+  </section>
+
+  <!-- 18: moons -->
+  <section class="slide">
+    <h2>16 · 主要卫星系统</h2>
+    <div class="grid-3">
+      <div class="card"><h3>地球 — 月球</h3>
+        <p>R = 0.27 R⊕,T = 27.3 d,潮汐锁定</p>
+        <p class="meta">维持地轴稳定,引发潮汐</p></div>
+      <div class="card"><h3>火星 — 火卫</h3>
+        <p>Phobos 7h,Deimos 30h(都是俘获小行星)</p>
+        <p class="meta">Phobos 正缓慢坠落 (~5 cm/年)</p></div>
+      <div class="card"><h3>木星 — 伽利略卫星</h3>
+        <p>Io / Europa / Ganymede / Callisto</p>
+        <p class="meta">1610 年由伽利略发现,推翻地心说</p></div>
+      <div class="card"><h3>土星 — Titan</h3>
+        <p>R = 0.4 R⊕,有浓厚 N₂ 大气和甲烷海洋</p>
+        <p class="meta">惠更斯号曾着陆</p></div>
+      <div class="card"><h3>天王星 — Titania / Oberon</h3>
+        <p>冰岩混合,赤道有大裂谷</p></div>
+      <div class="card"><h3>海王星 — Triton</h3>
+        <p>逆行,推测为俘获的柯伊伯带天体</p>
+        <p class="meta">表面有冰火山,温度 −235 °C</p></div>
+    </div>
+    <div class="tip"><strong>模拟器:</strong>所有列出的卫星都已实现并按真实周期运动,跟随对应行星即可观察。</div>
+  </section>
+
+  <!-- 19: experiments -->
+  <section class="slide">
+    <h2>17 · 课堂实验清单</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>实验 A · 验证开普勒第三定律</h3>
+        <ol>
+          <li>暂停模拟,记录每颗行星 a 与 T</li>
+          <li>计算 T² / a³ 比值</li>
+          <li>验证八颗行星的比值是否相同</li>
+        </ol>
+        <p class="meta">理论值:T²/a³ = 1(以年与 AU 为单位)</p>
+      </div>
+      <div class="card">
+        <h3>实验 B · 内 vs 外行星速度</h3>
+        <ol>
+          <li>设置速度 = 50 d/s</li>
+          <li>俯视视角观察一年</li>
+          <li>统计水星转了多少圈,海王星几乎不动</li>
+        </ol>
+        <p class="meta">解释:外行星轨道长且重力弱 → 速度慢</p>
+      </div>
+      <div class="card">
+        <h3>实验 C · 偏心率影响</h3>
+        <ol>
+          <li>跟随水星 (e = 0.206)</li>
+          <li>跟随金星 (e = 0.007) 对比</li>
+          <li>观察轨道形状的明显差异</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>实验 D · 缩放系数 k 探究</h3>
+        <ol>
+          <li>把 k 从 6 调到 22</li>
+          <li>观察"内行星拥挤" vs "外行星消失"的取舍</li>
+          <li>讨论:为什么真实比例无法使用</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 20: quiz -->
+  <section class="slide">
+    <h2>18 · 思考与拓展</h2>
+    <ul class="quiz">
+      <li><span class="q">Q1.</span> 如果地球轨道半径变成 2 AU,公转周期会变成多少年?
+        <span class="a">A: T = 2<sup>1.5</sup> ≈ 2.83 年</span></li>
+      <li><span class="q">Q2.</span> 为什么木星可以"保护"内行星?
+        <span class="a">A: 巨大引力会偏转或吸收来自外太阳系的彗星与小行星。</span></li>
+      <li><span class="q">Q3.</span> 海王星距离太阳约 30 AU,光从太阳到海王星需要多久?
+        <span class="a">A: 30 × 8.3 min ≈ 4 小时 9 分钟。</span></li>
+      <li><span class="q">Q4.</span> 金星与天王星都"反向自转",成因有什么不同?
+        <span class="a">A: 金星可能是早期被大碰撞翻转(或大气潮汐锁住);天王星更可能是大型撞击使整个轴侧倒。</span></li>
+      <li><span class="q">Q5.</span> 土星环未来会消失吗?
+        <span class="a">A: 卡西尼号数据显示环系正以"环雨"方式消失,估计 1 亿年左右量级。</span></li>
+    </ul>
+  </section>
+
+  <!-- 21: end -->
+  <section class="slide">
+    <div style="margin: auto; text-align: center;">
+      <h1 class="title" style="font-size: 64px;">谢谢 · Thank You
+        <small>用代码,看见宇宙</small>
+      </h1>
+      <p style="margin-top: 24px; color: var(--muted);">
+        本课件配套交互式三维太阳系模拟器,基于 Three.js + 真实天文数据
+      </p>
+      <div style="margin-top: 36px;">
+        <a href="index.html" target="_blank" style="background: var(--accent); color: #1a1200; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-right: 10px;">▶ 打开模拟器</a>
+        <button onclick="goto(0)" style="background:#1a2348;color:#fff;border:1px solid #3b4a78;border-radius:8px;padding:11px 22px;cursor:pointer;font-size:14px;">回到首页</button>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div id="nav">
+  <button onclick="prev()">◀ 上一页</button>
+  <span class="counter" id="counter">1 / 21</span>
+  <button onclick="next()">下一页 ▶</button>
+  <a href="index.html" target="_blank">打开模拟器</a>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let idx = 0;
+  const counter = document.getElementById('counter');
+  const progress = document.getElementById('progress');
+
+  function show(i) {
+    idx = Math.max(0, Math.min(slides.length - 1, i));
+    slides.forEach((s, n) => s.classList.toggle('active', n === idx));
+    counter.textContent = `${idx + 1} / ${slides.length}`;
+    progress.style.width = `${((idx + 1) / slides.length) * 100}%`;
+    location.hash = String(idx + 1);
+  }
+  function next() { show(idx + 1); }
+  function prev() { show(idx - 1); }
+  function goto(i) { show(i); }
+  window.next = next; window.prev = prev; window.goto = goto;
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); next(); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); prev(); }
+    else if (e.key === 'Home') show(0);
+    else if (e.key === 'End') show(slides.length - 1);
+    else if (/^[1-9]$/.test(e.key)) show(parseInt(e.key) - 1);
+  });
+
+  // hash navigation (toc clicks)
+  window.addEventListener('hashchange', () => {
+    const n = parseInt(location.hash.slice(1));
+    if (!isNaN(n)) show(n - 1);
+  });
+
+  const initial = parseInt(location.hash.slice(1));
+  show(isNaN(initial) ? 0 : initial - 1);
+</script>
+</body>
+</html>
