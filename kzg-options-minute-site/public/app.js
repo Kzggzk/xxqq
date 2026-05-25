@@ -532,6 +532,9 @@ function renderTrend() {
   const selectedRank = percentileRank(latest.totalVol, rows.map((row) => row.totalVol));
   const rangeHigh = rows.reduce((best, row) => Number(row.totalVol) > Number(best.totalVol) ? row : best, rows[0]);
   const rangeLow = rows.reduce((best, row) => Number(row.totalVol) < Number(best.totalVol) ? row : best, rows[0]);
+  const highPoint = pointsVol.find((point) => point.row.date === rangeHigh.date) || pointsVol[0];
+  const lowPoint = pointsVol.find((point) => point.row.date === rangeLow.date) || pointsVol[0];
+  const latestPoint = pointsVol[pointsVol.length - 1];
 
   $("trendChart").innerHTML = `
     <div class="trend-summary ${tone}">
@@ -557,6 +560,9 @@ function renderTrend() {
       <polyline points="${lineVol}" fill="none" stroke="${change >= 0 ? "#c45335" : "#2f6190"}" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"></polyline>
       <polyline points="${linePremium}" fill="none" stroke="#a47419" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" opacity=".85"></polyline>
       <polyline points="${lineCp}" fill="none" stroke="#148355" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" opacity=".72"></polyline>
+      ${trendMarker(highPoint, "high", state.lang === "zh" ? "高" : "H")}
+      ${trendMarker(lowPoint, "low", state.lang === "zh" ? "低" : "L")}
+      ${trendMarker(latestPoint, "latest", state.lang === "zh" ? "今" : "N")}
       ${pointsVol.map((point, index) => index % Math.max(1, Math.ceil(rows.length / 7)) === 0 || index === pointsVol.length - 1 ? `<text x="${point.x.toFixed(1)}" y="${height - 6}" text-anchor="middle">${shortDate(point.row.date)}</text>` : "").join("")}
       <text x="${padX}" y="16" text-anchor="start">${state.lang === "zh" ? "成交量" : "Volume"}</text>
       <text x="${width - padX}" y="16" text-anchor="end">${state.lang === "zh" ? "权利金 / CP" : "Premium / CP"}</text>
@@ -667,23 +673,65 @@ function renderRegimeMap() {
   const maxVol = Math.max(...rows.map((row) => Number(row.totalVol) || 0), 1);
   const minVol = Math.min(...rows.map((row) => Number(row.totalVol) || 0), maxVol);
   const selected = rows[rows.length - 1];
-  const cells = rows.map((row, index) => {
+  const annotated = rows.map((row, index) => {
     const prev = rows[index - 1];
     const move = prev && prev.totalVol ? ((row.totalVol - prev.totalVol) / prev.totalVol) * 100 : 0;
     const heat = (Number(row.totalVol) - minVol) / Math.max(1, maxVol - minVol);
     const tone = move >= 8 ? "hot" : move <= -8 ? "cool" : "flat";
+    return { ...row, move, heat, tone };
+  });
+  const cells = annotated.map((row) => {
     const selectedClass = row.date === state.day.tradeDate ? " selected" : "";
-    return `<button type="button" class="${tone}${selectedClass}" data-date="${row.date}" aria-label="${row.date} ${wan(row.totalVol)}" title="${row.date} · ${wan(row.totalVol)} · ${move >= 0 ? "+" : ""}${fmt1.format(move)}%" style="--heat:${heat.toFixed(2)}"></button>`;
+    return `<button type="button" class="${row.tone}${selectedClass}" data-date="${row.date}" aria-label="${row.date} ${wan(row.totalVol)}" title="${row.date} · ${wan(row.totalVol)} · ${row.move >= 0 ? "+" : ""}${fmt1.format(row.move)}%" style="--heat:${row.heat.toFixed(2)}"></button>`;
   }).join("");
   const avgVol = average(rows.map((row) => row.totalVol));
   const selectedMove = avgVol ? ((selected.totalVol - avgVol) / avgVol) * 100 : 0;
+  const hotCount = annotated.filter((row) => row.tone === "hot").length;
+  const coolCount = annotated.filter((row) => row.tone === "cool").length;
+  const biggest = annotated.reduce((best, row) => Math.abs(row.move) > Math.abs(best.move) ? row : best, annotated[0]);
+  const latestTone = annotated[annotated.length - 1]?.tone || "flat";
+  let streak = 0;
+  for (let i = annotated.length - 1; i >= 0; i -= 1) {
+    if (annotated[i].tone !== latestTone) break;
+    streak += 1;
+  }
   $("regimeMap").innerHTML = `
     <div class="regime-tape">${cells}</div>
+    <div class="regime-stats">
+      <span>${state.lang === "zh" ? "热日" : "Hot"} <b>${hotCount}</b></span>
+      <span>${state.lang === "zh" ? "冷日" : "Cool"} <b>${coolCount}</b></span>
+      <button type="button" data-date="${biggest.date}">${state.lang === "zh" ? "最大波动" : "Largest move"} <b>${shortDate(biggest.date)} · ${biggest.move >= 0 ? "+" : ""}${fmt1.format(biggest.move)}%</b></button>
+      <span>${state.lang === "zh" ? "当前连贯" : "Current run"} <b>${streak}D · ${regimeToneLabel(latestTone)}</b></span>
+    </div>
     <div class="regime-foot">
       <span>${shortDate(rows[0].date)} - ${shortDate(selected.date)}</span>
       <b>${selectedMove >= 0 ? "+" : ""}${fmt1.format(selectedMove)}% ${state.lang === "zh" ? "相对区间均量" : "vs window avg"}</b>
     </div>
   `;
+}
+
+function trendMarker(point, cls, label) {
+  if (!point) return "";
+  const x = point.x.toFixed(1);
+  const y = point.y.toFixed(1);
+  const labelY = Math.max(26, point.y - 12).toFixed(1);
+  return `
+    <g class="trend-marker ${cls}" data-jump-date="${point.row.date}">
+      <circle cx="${x}" cy="${y}" r="7"></circle>
+      <text x="${x}" y="${labelY}" text-anchor="middle">${label}</text>
+    </g>
+  `;
+}
+
+function regimeToneLabel(tone) {
+  if (state.lang === "zh") {
+    if (tone === "hot") return "热";
+    if (tone === "cool") return "冷";
+    return "平";
+  }
+  if (tone === "hot") return "hot";
+  if (tone === "cool") return "cool";
+  return "flat";
 }
 
 function selectedTrendRows() {
