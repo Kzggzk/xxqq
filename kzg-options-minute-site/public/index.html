@@ -20,15 +20,23 @@
         <b id="headerDate">--</b>
         <span id="generatedAt">loading</span>
       </div>
-      <div class="toolbar">
+      <div class="toolbar" aria-label="工具">
+        <button id="goToday" class="button" type="button" title="回到最新交易日">
+          <span aria-hidden="true">⌁</span>
+          <span data-i18n="today">回到今天</span>
+        </button>
+        <button id="themeToggle" class="button icon-toggle" type="button" title="切换暗色/亮色">
+          <span aria-hidden="true">◐</span>
+          <span data-i18n="theme">暗色</span>
+        </button>
+        <button id="langToggle" class="button icon-toggle" type="button" title="切换中英文导出">
+          <span aria-hidden="true">文</span>
+          <span data-i18n="language">EN</span>
+        </button>
         <button id="downloadReport" class="button primary" type="button" title="导出当前日报 PNG">
           <span aria-hidden="true">↓</span>
-          导出 PNG
+          <span data-i18n="export">导出 PNG</span>
         </button>
-        <a id="openReport" class="button" href="/reports/latest.html" target="_blank" rel="noreferrer" title="打开当前日报">
-          <span aria-hidden="true">↗</span>
-          打开报告
-        </a>
       </div>
     </header>
 
@@ -67,9 +75,9 @@
           <small id="volDelta">contracts</small>
         </div>
         <div class="metric">
-          <span>总成交笔数</span>
-          <strong id="totalTxn">--</strong>
-          <small>transactions</small>
+          <span id="totalPremiumLabel">权利金成交额</span>
+          <strong id="totalPremium">--</strong>
+          <small>premium notional</small>
         </div>
         <div class="metric">
           <span>Put/Call 成交量</span>
@@ -92,9 +100,9 @@
           <small id="stockCp">--</small>
         </div>
         <div class="metric">
-          <span>源文件</span>
+          <span>数据版本</span>
           <strong id="rowCount">--</strong>
-          <small id="sourcePath">--</small>
+          <small id="sourcePath">KZG packed</small>
         </div>
       </section>
 
@@ -132,6 +140,16 @@
       </section>
 
       <section class="analysis-grid">
+        <section class="panel trend-panel">
+          <div class="section-head">
+            <div>
+              <h2 id="trendTitle">成交额走势</h2>
+              <p id="trendSub">最近交易日节奏，热/冷由成交变化决定。</p>
+            </div>
+          </div>
+          <div id="trendChart" class="trend-chart"></div>
+        </section>
+
         <section class="panel">
           <div class="section-head">
             <div>
@@ -154,6 +172,7 @@
       </section>
     </main>
   </div>
+  <script src="/assets/kzg-pack.js"></script>
   <script src="/vendor/html2canvas.min.js"></script>
   <script src="/app.js"></script>
 </body>

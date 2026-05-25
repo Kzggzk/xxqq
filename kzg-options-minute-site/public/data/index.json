@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-25T13:52:19.445735+00:00",
+  "generatedAt": "2026-05-25T14:17:19.299573+00:00",
   "latestDate": "2026-05-22",
-  "totalDates": 97,
+  "totalDates": 98,
   "dates": [
     {
       "date": "2026-05-22",
@@ -11,6 +11,7 @@
       "sourceSize": 28744662,
       "validRows": 3533007,
       "totalVol": 73252493,
+      "totalPremium": 35237979831.0,
       "marketCp": 1.5643905479046158,
       "topSymbols": [
         "SPY",
@@ -29,6 +30,7 @@
       "sourceSize": 25581324,
       "validRows": 3093681,
       "totalVol": 64563068,
+      "totalPremium": 35653584286.0,
       "marketCp": 1.5178350065779993,
       "topSymbols": [
         "SPY",
@@ -37,7 +39,7 @@
         "SPXW",
         "IWM"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-05-20",
@@ -47,6 +49,7 @@
       "sourceSize": 24147839,
       "validRows": 2922043,
       "totalVol": 56518934,
+      "totalPremium": 32531840188.0,
       "marketCp": 1.5937596874873654,
       "topSymbols": [
         "SPY",
@@ -54,6 +57,25 @@
         "SPXW",
         "TSLA",
         "NVDA"
+      ],
+      "rebuilt": true
+    },
+    {
+      "date": "2026-05-19",
+      "url": "/data/days/2026-05-19.json",
+      "reportUrl": "/reports/2026-05-19.html",
+      "sourceFile": "options_minute_aggregates_2026-05-19.csv.gz",
+      "sourceSize": 24789473,
+      "validRows": 2965652,
+      "totalVol": 60472311,
+      "totalPremium": 35582267918.5,
+      "marketCp": 1.2711288881925078,
+      "topSymbols": [
+        "SPY",
+        "QQQ",
+        "SPXW",
+        "TSLA",
+        "IWM"
       ],
       "rebuilt": false
     },
@@ -65,6 +87,7 @@
       "sourceSize": 27745629,
       "validRows": 3355143,
       "totalVol": 68453267,
+      "totalPremium": 39063655502.0,
       "marketCp": 1.4155587944180918,
       "topSymbols": [
         "SPY",
@@ -73,7 +96,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-05-15",
@@ -83,6 +106,7 @@
       "sourceSize": 30155423,
       "validRows": 3665680,
       "totalVol": 81467866,
+      "totalPremium": 44766031619.5,
       "marketCp": 1.3735586852337212,
       "topSymbols": [
         "SPY",
@@ -91,7 +115,7 @@
         "SPXW",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-05-14",
@@ -101,6 +125,7 @@
       "sourceSize": 28241836,
       "validRows": 3406524,
       "totalVol": 74917874,
+      "totalPremium": 49911310271.5,
       "marketCp": 1.7588582318700547,
       "topSymbols": [
         "SPY",
@@ -109,7 +134,7 @@
         "SPXW",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-05-13",
@@ -119,6 +144,7 @@
       "sourceSize": 27097345,
       "validRows": 3266356,
       "totalVol": 69429724,
+      "totalPremium": 42810582747.0,
       "marketCp": 1.680042769684477,
       "topSymbols": [
         "SPY",
@@ -127,7 +153,7 @@
         "TSLA",
         "SPXW"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-05-12",
@@ -137,6 +163,7 @@
       "sourceSize": 27479071,
       "validRows": 3277991,
       "totalVol": 66522489,
+      "totalPremium": 40577472799.0,
       "marketCp": 1.3771308061266503,
       "topSymbols": [
         "SPY",
@@ -145,7 +172,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-05-11",
@@ -155,6 +182,7 @@
       "sourceSize": 30738477,
       "validRows": 3727055,
       "totalVol": 72239661,
+      "totalPremium": 46531268230.0,
       "marketCp": 1.5489100341680453,
       "topSymbols": [
         "SPY",
@@ -163,7 +191,7 @@
         "NVDA",
         "SPXW"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-05-08",
@@ -173,6 +201,7 @@
       "sourceSize": 30721759,
       "validRows": 3725914,
       "totalVol": 78164457,
+      "totalPremium": 49137894631.0,
       "marketCp": 1.4908054654511744,
       "topSymbols": [
         "SPY",
@@ -181,7 +210,7 @@
         "NVDA",
         "SPXW"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-05-07",
@@ -191,6 +220,7 @@
       "sourceSize": 28118057,
       "validRows": 3388031,
       "totalVol": 74315271,
+      "totalPremium": 41203487553.0,
       "marketCp": 1.4264554214437146,
       "topSymbols": [
         "SPY",
@@ -199,7 +229,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-05-06",
@@ -209,6 +239,7 @@
       "sourceSize": 30045000,
       "validRows": 3635625,
       "totalVol": 75748373,
+      "totalPremium": 49554696989.0,
       "marketCp": 1.5792239001365707,
       "topSymbols": [
         "SPY",
@@ -217,7 +248,7 @@
         "SPXW",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-05-05",
@@ -227,6 +258,7 @@
       "sourceSize": 25312406,
       "validRows": 3068350,
       "totalVol": 59741496,
+      "totalPremium": 37738035934.0,
       "marketCp": 1.3455142593802123,
       "topSymbols": [
         "SPY",
@@ -235,7 +267,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-05-04",
@@ -245,6 +277,7 @@
       "sourceSize": 25977117,
       "validRows": 3152745,
       "totalVol": 63842864,
+      "totalPremium": 35505071501.0,
       "marketCp": 1.3512883812009964,
       "topSymbols": [
         "SPY",
@@ -253,7 +286,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-05-01",
@@ -263,6 +296,7 @@
       "sourceSize": 28208662,
       "validRows": 3442595,
       "totalVol": 75745786,
+      "totalPremium": 38785095344.0,
       "marketCp": 1.4895030304113903,
       "topSymbols": [
         "SPY",
@@ -271,7 +305,7 @@
         "SPXW",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-30",
@@ -281,6 +315,7 @@
       "sourceSize": 27137709,
       "validRows": 3274855,
       "totalVol": 68258138,
+      "totalPremium": 41526032468.0,
       "marketCp": 1.426997438534062,
       "topSymbols": [
         "SPY",
@@ -289,7 +324,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-29",
@@ -299,6 +334,7 @@
       "sourceSize": 23560938,
       "validRows": 2863832,
       "totalVol": 56691721,
+      "totalPremium": 29999336413.0,
       "marketCp": 1.3650217436476857,
       "topSymbols": [
         "SPY",
@@ -307,7 +343,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-28",
@@ -317,6 +353,7 @@
       "sourceSize": 21976704,
       "validRows": 2665461,
       "totalVol": 53589320,
+      "totalPremium": 27450822423.0,
       "marketCp": 1.3339245088004312,
       "topSymbols": [
         "SPY",
@@ -325,7 +362,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-27",
@@ -335,6 +372,7 @@
       "sourceSize": 23795899,
       "validRows": 2907893,
       "totalVol": 58225262,
+      "totalPremium": 30794154674.0,
       "marketCp": 1.384969105521618,
       "topSymbols": [
         "SPY",
@@ -343,7 +381,7 @@
         "TSLA",
         "SPXW"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-24",
@@ -353,6 +391,7 @@
       "sourceSize": 27253956,
       "validRows": 3310175,
       "totalVol": 74658815,
+      "totalPremium": 38285902510.5,
       "marketCp": 1.3751155644404116,
       "topSymbols": [
         "SPY",
@@ -361,7 +400,7 @@
         "SPXW",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-23",
@@ -371,6 +410,7 @@
       "sourceSize": 26140825,
       "validRows": 3133524,
       "totalVol": 69459182,
+      "totalPremium": 33621623798.0,
       "marketCp": 1.2491735420376813,
       "topSymbols": [
         "SPY",
@@ -379,7 +419,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-22",
@@ -389,6 +429,7 @@
       "sourceSize": 24555312,
       "validRows": 2998735,
       "totalVol": 60200573,
+      "totalPremium": 31214331068.0,
       "marketCp": 1.4130594577001117,
       "topSymbols": [
         "SPY",
@@ -397,7 +438,7 @@
         "NVDA",
         "AAPL"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-21",
@@ -407,6 +448,7 @@
       "sourceSize": 24618876,
       "validRows": 2965647,
       "totalVol": 65334638,
+      "totalPremium": 33311007275.0,
       "marketCp": 1.226274877826803,
       "topSymbols": [
         "SPY",
@@ -415,7 +457,7 @@
         "IWM",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-20",
@@ -425,6 +467,7 @@
       "sourceSize": 24171829,
       "validRows": 2969927,
       "totalVol": 60215410,
+      "totalPremium": 29795961746.0,
       "marketCp": 1.338721282210991,
       "topSymbols": [
         "SPY",
@@ -433,7 +476,7 @@
         "SPXW",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-17",
@@ -443,6 +486,7 @@
       "sourceSize": 32481640,
       "validRows": 3946650,
       "totalVol": 94611282,
+      "totalPremium": 53233282422.0,
       "marketCp": 1.6424015325665362,
       "topSymbols": [
         "SPY",
@@ -451,7 +495,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-16",
@@ -461,6 +505,7 @@
       "sourceSize": 25448319,
       "validRows": 3084736,
       "totalVol": 72114446,
+      "totalPremium": 37041605152.5,
       "marketCp": 1.5467613556622728,
       "topSymbols": [
         "SPY",
@@ -469,7 +514,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-15",
@@ -479,6 +524,7 @@
       "sourceSize": 26695266,
       "validRows": 3237191,
       "totalVol": 76272814,
+      "totalPremium": 40604437159.5,
       "marketCp": 1.6424741098539237,
       "topSymbols": [
         "SPY",
@@ -487,7 +533,7 @@
         "SPXW",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-14",
@@ -497,6 +543,7 @@
       "sourceSize": 27340724,
       "validRows": 3333649,
       "totalVol": 76281540,
+      "totalPremium": 42574661448.0,
       "marketCp": 1.5195586369357263,
       "topSymbols": [
         "SPY",
@@ -505,7 +552,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-13",
@@ -515,6 +562,7 @@
       "sourceSize": 23871677,
       "validRows": 2916313,
       "totalVol": 61338054,
+      "totalPremium": 28269154344.0,
       "marketCp": 1.2449074046963753,
       "topSymbols": [
         "SPY",
@@ -523,7 +571,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-10",
@@ -533,6 +581,7 @@
       "sourceSize": 24613822,
       "validRows": 3017910,
       "totalVol": 68175267,
+      "totalPremium": 30209207066.0,
       "marketCp": 1.2732252690564554,
       "topSymbols": [
         "SPY",
@@ -541,7 +590,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-09",
@@ -551,6 +600,7 @@
       "sourceSize": 23577467,
       "validRows": 2862029,
       "totalVol": 64134086,
+      "totalPremium": 33655514778.0,
       "marketCp": 1.153377528538073,
       "topSymbols": [
         "SPY",
@@ -559,7 +609,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-08",
@@ -569,6 +619,7 @@
       "sourceSize": 27218997,
       "validRows": 3290605,
       "totalVol": 73938792,
+      "totalPremium": 35603313881.0,
       "marketCp": 1.0759282750289965,
       "topSymbols": [
         "SPY",
@@ -577,7 +628,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-07",
@@ -587,6 +638,7 @@
       "sourceSize": 19903294,
       "validRows": 2393735,
       "totalVol": 52054052,
+      "totalPremium": 24686519172.0,
       "marketCp": 1.0412792573819833,
       "topSymbols": [
         "SPY",
@@ -595,7 +647,7 @@
         "TSLA",
         "IWM"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-06",
@@ -605,6 +657,7 @@
       "sourceSize": 20024541,
       "validRows": 2471747,
       "totalVol": 49758461,
+      "totalPremium": 20925399126.0,
       "marketCp": 1.072710008445638,
       "topSymbols": [
         "SPY",
@@ -613,7 +666,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-02",
@@ -623,6 +676,7 @@
       "sourceSize": 22679553,
       "validRows": 2741512,
       "totalVol": 63923816,
+      "totalPremium": 29236427423.0,
       "marketCp": 1.0248571217880118,
       "topSymbols": [
         "SPY",
@@ -631,7 +685,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-04-01",
@@ -641,6 +695,7 @@
       "sourceSize": 23739605,
       "validRows": 2889889,
       "totalVol": 67628268,
+      "totalPremium": 39952361767.0,
       "marketCp": 0.9429174449811761,
       "topSymbols": [
         "SPY",
@@ -649,7 +704,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-31",
@@ -659,6 +714,7 @@
       "sourceSize": 25257417,
       "validRows": 3028438,
       "totalVol": 66314762,
+      "totalPremium": 38608344739.0,
       "marketCp": 1.0843181456300384,
       "topSymbols": [
         "SPY",
@@ -667,7 +723,7 @@
         "NVDA",
         "IWM"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-30",
@@ -677,6 +733,7 @@
       "sourceSize": 24624531,
       "validRows": 2987595,
       "totalVol": 63829791,
+      "totalPremium": 40355087558.0,
       "marketCp": 1.0600011592587173,
       "topSymbols": [
         "SPY",
@@ -685,7 +742,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-27",
@@ -695,6 +752,7 @@
       "sourceSize": 26898244,
       "validRows": 3277920,
       "totalVol": 75554590,
+      "totalPremium": 47216627955.5,
       "marketCp": 1.0246601758745324,
       "topSymbols": [
         "SPY",
@@ -703,7 +761,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-26",
@@ -713,6 +771,7 @@
       "sourceSize": 22919128,
       "validRows": 2771964,
       "totalVol": 65276315,
+      "totalPremium": 41391783831.0,
       "marketCp": 1.1069967052754939,
       "topSymbols": [
         "SPY",
@@ -721,7 +780,7 @@
         "NVDA",
         "IWM"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-25",
@@ -731,6 +790,7 @@
       "sourceSize": 21214061,
       "validRows": 2580488,
       "totalVol": 56652488,
+      "totalPremium": 25876211150.0,
       "marketCp": 1.1612824231058831,
       "topSymbols": [
         "SPY",
@@ -739,7 +799,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-24",
@@ -749,6 +809,7 @@
       "sourceSize": 21152043,
       "validRows": 2557708,
       "totalVol": 54047137,
+      "totalPremium": 27497183102.0,
       "marketCp": 1.0961621600929854,
       "topSymbols": [
         "SPY",
@@ -757,7 +818,7 @@
         "IWM",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-23",
@@ -767,6 +828,7 @@
       "sourceSize": 25170089,
       "validRows": 3059659,
       "totalVol": 63416844,
+      "totalPremium": 31992455739.0,
       "marketCp": 1.2162105945170696,
       "topSymbols": [
         "SPY",
@@ -775,7 +837,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-20",
@@ -785,6 +847,7 @@
       "sourceSize": 27254391,
       "validRows": 3306092,
       "totalVol": 78058210,
+      "totalPremium": 44322846828.0,
       "marketCp": 1.0869429237163428,
       "topSymbols": [
         "SPY",
@@ -793,7 +856,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-19",
@@ -803,6 +866,7 @@
       "sourceSize": 23979180,
       "validRows": 2882305,
       "totalVol": 76849242,
+      "totalPremium": 97429609925.0,
       "marketCp": 0.9765404326873579,
       "topSymbols": [
         "SPY",
@@ -811,7 +875,7 @@
         "IWM",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-18",
@@ -821,6 +885,7 @@
       "sourceSize": 21123226,
       "validRows": 2582782,
       "totalVol": 55729064,
+      "totalPremium": 37726815246.0,
       "marketCp": 1.0767744188967958,
       "topSymbols": [
         "SPY",
@@ -829,7 +894,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-17",
@@ -839,6 +904,7 @@
       "sourceSize": 20351839,
       "validRows": 2508670,
       "totalVol": 53852294,
+      "totalPremium": 32570570386.0,
       "marketCp": 1.0829994874144226,
       "topSymbols": [
         "SPY",
@@ -847,7 +913,7 @@
         "NVDA",
         "IWM"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-16",
@@ -857,6 +923,7 @@
       "sourceSize": 22786895,
       "validRows": 2800158,
       "totalVol": 62475387,
+      "totalPremium": 44770226859.0,
       "marketCp": 1.1636458697979142,
       "topSymbols": [
         "SPY",
@@ -865,7 +932,7 @@
         "NVDA",
         "IWM"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-13",
@@ -875,6 +942,7 @@
       "sourceSize": 24972650,
       "validRows": 3046276,
       "totalVol": 72348156,
+      "totalPremium": 41107854251.0,
       "marketCp": 1.1811968681495746,
       "topSymbols": [
         "SPY",
@@ -883,7 +951,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-12",
@@ -893,6 +961,7 @@
       "sourceSize": 22100493,
       "validRows": 2676451,
       "totalVol": 67139246,
+      "totalPremium": 53991050119.0,
       "marketCp": 1.170357242098602,
       "topSymbols": [
         "SPY",
@@ -901,7 +970,7 @@
         "IWM",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-11",
@@ -911,6 +980,7 @@
       "sourceSize": 20791933,
       "validRows": 2522543,
       "totalVol": 57789727,
+      "totalPremium": 29428045230.0,
       "marketCp": 1.2355052677750684,
       "topSymbols": [
         "SPY",
@@ -919,7 +989,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-10",
@@ -929,6 +999,7 @@
       "sourceSize": 22911734,
       "validRows": 2763118,
       "totalVol": 60765947,
+      "totalPremium": 33125842312.0,
       "marketCp": 1.103008066233149,
       "topSymbols": [
         "SPY",
@@ -937,7 +1008,7 @@
         "IWM",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-09",
@@ -947,6 +1018,7 @@
       "sourceSize": 26145711,
       "validRows": 3125184,
       "totalVol": 69551888,
+      "totalPremium": 41062019629.0,
       "marketCp": 1.1361942755601684,
       "topSymbols": [
         "SPY",
@@ -955,7 +1027,7 @@
         "IWM",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-06",
@@ -965,6 +1037,7 @@
       "sourceSize": 26726557,
       "validRows": 3226728,
       "totalVol": 76333210,
+      "totalPremium": 41608123875.0,
       "marketCp": 1.090733068164043,
       "topSymbols": [
         "SPY",
@@ -973,7 +1046,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-05",
@@ -983,6 +1056,7 @@
       "sourceSize": 24723488,
       "validRows": 2967916,
       "totalVol": 73709151,
+      "totalPremium": 47624787350.0,
       "marketCp": 1.1767961898451569,
       "topSymbols": [
         "SPY",
@@ -991,7 +1065,7 @@
         "IWM",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-04",
@@ -1001,6 +1075,7 @@
       "sourceSize": 23187307,
       "validRows": 2825606,
       "totalVol": 60420495,
+      "totalPremium": 28571220721.0,
       "marketCp": 1.2508477769931043,
       "topSymbols": [
         "SPY",
@@ -1009,7 +1084,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-03",
@@ -1019,6 +1094,7 @@
       "sourceSize": 25679407,
       "validRows": 3053316,
       "totalVol": 66968821,
+      "totalPremium": 39126504936.0,
       "marketCp": 1.1268437721110136,
       "topSymbols": [
         "SPY",
@@ -1027,7 +1103,7 @@
         "IWM",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-03-02",
@@ -1037,6 +1113,7 @@
       "sourceSize": 24829039,
       "validRows": 3008184,
       "totalVol": 65469990,
+      "totalPremium": 35262502845.0,
       "marketCp": 1.151040664235676,
       "topSymbols": [
         "SPY",
@@ -1045,7 +1122,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-27",
@@ -1055,6 +1132,7 @@
       "sourceSize": 25812701,
       "validRows": 3170171,
       "totalVol": 75144469,
+      "totalPremium": 48287715412.0,
       "marketCp": 1.2649256550871668,
       "topSymbols": [
         "SPY",
@@ -1063,7 +1141,7 @@
         "SPXW",
         "NFLX"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-26",
@@ -1073,6 +1151,7 @@
       "sourceSize": 23569792,
       "validRows": 2845538,
       "totalVol": 69286135,
+      "totalPremium": 50618427495.0,
       "marketCp": 1.1987589346026783,
       "topSymbols": [
         "SPY",
@@ -1081,7 +1160,7 @@
         "SPXW",
         "IWM"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-25",
@@ -1091,6 +1170,7 @@
       "sourceSize": 22452396,
       "validRows": 2770858,
       "totalVol": 57518029,
+      "totalPremium": 27381911504.0,
       "marketCp": 1.3547429185189273,
       "topSymbols": [
         "SPY",
@@ -1099,7 +1179,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-24",
@@ -1109,6 +1189,7 @@
       "sourceSize": 21323246,
       "validRows": 2593086,
       "totalVol": 53495911,
+      "totalPremium": 27550774184.0,
       "marketCp": 1.2243897658274518,
       "topSymbols": [
         "SPY",
@@ -1117,7 +1198,7 @@
         "TSLA",
         "IWM"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-23",
@@ -1127,6 +1208,7 @@
       "sourceSize": 24233871,
       "validRows": 2958837,
       "totalVol": 61703941,
+      "totalPremium": 35657151170.5,
       "marketCp": 1.2585347211246478,
       "topSymbols": [
         "SPY",
@@ -1135,7 +1217,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-20",
@@ -1145,6 +1227,7 @@
       "sourceSize": 25579599,
       "validRows": 3100275,
       "totalVol": 72509087,
+      "totalPremium": 33279653539.0,
       "marketCp": 1.2034091310351183,
       "topSymbols": [
         "SPY",
@@ -1153,7 +1236,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-19",
@@ -1163,6 +1246,7 @@
       "sourceSize": 19903957,
       "validRows": 2425028,
       "totalVol": 61641706,
+      "totalPremium": 57888366858.0,
       "marketCp": 1.0034818797327252,
       "topSymbols": [
         "SPY",
@@ -1171,7 +1255,7 @@
         "TSLA",
         "IWM"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-18",
@@ -1181,6 +1265,7 @@
       "sourceSize": 21415334,
       "validRows": 2613420,
       "totalVol": 58296998,
+      "totalPremium": 31067086033.0,
       "marketCp": 1.1976590370922877,
       "topSymbols": [
         "SPY",
@@ -1189,7 +1274,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-17",
@@ -1199,6 +1284,7 @@
       "sourceSize": 22786438,
       "validRows": 2751220,
       "totalVol": 59266948,
+      "totalPremium": 34640753724.5,
       "marketCp": 1.1011394633207137,
       "topSymbols": [
         "SPY",
@@ -1207,7 +1293,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-13",
@@ -1217,6 +1303,7 @@
       "sourceSize": 25250882,
       "validRows": 3053109,
       "totalVol": 70275110,
+      "totalPremium": 45351034829.0,
       "marketCp": 1.3138366954400713,
       "topSymbols": [
         "SPY",
@@ -1225,7 +1312,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-12",
@@ -1235,6 +1322,7 @@
       "sourceSize": 25976302,
       "validRows": 3101452,
       "totalVol": 81447493,
+      "totalPremium": 77098813050.0,
       "marketCp": 0.9546533581354361,
       "topSymbols": [
         "SPY",
@@ -1243,7 +1331,7 @@
         "NVDA",
         "SLV"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-11",
@@ -1253,6 +1341,7 @@
       "sourceSize": 22804147,
       "validRows": 2750057,
       "totalVol": 64759307,
+      "totalPremium": 35153853949.0,
       "marketCp": 1.3108196689255087,
       "topSymbols": [
         "SPY",
@@ -1261,7 +1350,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-10",
@@ -1271,6 +1360,7 @@
       "sourceSize": 20622426,
       "validRows": 2515997,
       "totalVol": 53425240,
+      "totalPremium": 24907459301.0,
       "marketCp": 1.2880577455642395,
       "topSymbols": [
         "SPY",
@@ -1279,7 +1369,7 @@
         "TSLA",
         "IWM"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-09",
@@ -1289,6 +1379,7 @@
       "sourceSize": 24104518,
       "validRows": 2941336,
       "totalVol": 59245081,
+      "totalPremium": 30270829343.0,
       "marketCp": 1.3737415621005122,
       "topSymbols": [
         "SPY",
@@ -1297,7 +1388,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-06",
@@ -1307,6 +1398,7 @@
       "sourceSize": 29037667,
       "validRows": 3529535,
       "totalVol": 75633658,
+      "totalPremium": 35646244299.0,
       "marketCp": 1.322954124013153,
       "topSymbols": [
         "SPY",
@@ -1315,7 +1407,7 @@
         "NVDA",
         "AMZN"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-05",
@@ -1325,6 +1417,7 @@
       "sourceSize": 27983991,
       "validRows": 3334348,
       "totalVol": 79837790,
+      "totalPremium": 63754623226.0,
       "marketCp": 1.044869374462163,
       "topSymbols": [
         "SPY",
@@ -1333,7 +1426,7 @@
         "IBIT",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-04",
@@ -1343,6 +1436,7 @@
       "sourceSize": 29250284,
       "validRows": 3478379,
       "totalVol": 74845771,
+      "totalPremium": 40079643900.0,
       "marketCp": 1.273829261895799,
       "topSymbols": [
         "SPY",
@@ -1351,7 +1445,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-03",
@@ -1361,6 +1455,7 @@
       "sourceSize": 27713738,
       "validRows": 3326608,
       "totalVol": 71528883,
+      "totalPremium": 37995286523.5,
       "marketCp": 1.2624821743321453,
       "topSymbols": [
         "SPY",
@@ -1369,7 +1464,7 @@
         "NVDA",
         "IWM"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-02-02",
@@ -1379,6 +1474,7 @@
       "sourceSize": 25246246,
       "validRows": 3097047,
       "totalVol": 62447319,
+      "totalPremium": 31829118007.0,
       "marketCp": 1.2178284840003175,
       "topSymbols": [
         "SPY",
@@ -1387,7 +1483,7 @@
         "SLV",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-30",
@@ -1397,6 +1493,7 @@
       "sourceSize": 30103967,
       "validRows": 3619540,
       "totalVol": 82405239,
+      "totalPremium": 39969589921.0,
       "marketCp": 1.2767026567265076,
       "topSymbols": [
         "SPY",
@@ -1405,7 +1502,7 @@
         "SPXW",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-29",
@@ -1415,6 +1512,7 @@
       "sourceSize": 28659901,
       "validRows": 3428804,
       "totalVol": 77704871,
+      "totalPremium": 54531506795.0,
       "marketCp": 1.3045060173938667,
       "topSymbols": [
         "SPY",
@@ -1423,7 +1521,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-28",
@@ -1433,6 +1531,7 @@
       "sourceSize": 23217774,
       "validRows": 2830671,
       "totalVol": 55488088,
+      "totalPremium": 29988025013.0,
       "marketCp": 1.4318990244588925,
       "topSymbols": [
         "SPY",
@@ -1441,7 +1540,7 @@
         "SPXW",
         "GLD"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-27",
@@ -1451,6 +1550,7 @@
       "sourceSize": 22210855,
       "validRows": 2741800,
       "totalVol": 56416605,
+      "totalPremium": 28883768163.0,
       "marketCp": 1.390691835050304,
       "topSymbols": [
         "SPY",
@@ -1459,7 +1559,7 @@
         "SLV",
         "IWM"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-26",
@@ -1469,6 +1569,7 @@
       "sourceSize": 23667046,
       "validRows": 2931537,
       "totalVol": 59343284,
+      "totalPremium": 28505132194.0,
       "marketCp": 1.2763694890232242,
       "topSymbols": [
         "SPY",
@@ -1477,7 +1578,7 @@
         "SPXW",
         "GLD"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-23",
@@ -1487,6 +1588,7 @@
       "sourceSize": 24659505,
       "validRows": 3043456,
       "totalVol": 70558166,
+      "totalPremium": 25781214901.0,
       "marketCp": 1.3136516339671251,
       "topSymbols": [
         "SPY",
@@ -1495,7 +1597,7 @@
         "SLV",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-22",
@@ -1505,6 +1607,7 @@
       "sourceSize": 23299287,
       "validRows": 2868156,
       "totalVol": 64797960,
+      "totalPremium": 30510633463.0,
       "marketCp": 1.4124656022022037,
       "topSymbols": [
         "SPY",
@@ -1513,7 +1616,7 @@
         "TSLA",
         "IWM"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-21",
@@ -1523,6 +1626,7 @@
       "sourceSize": 25804178,
       "validRows": 3104065,
       "totalVol": 72497698,
+      "totalPremium": 31470655117.0,
       "marketCp": 1.4252064493271477,
       "topSymbols": [
         "SPY",
@@ -1531,7 +1635,7 @@
         "GLD",
         "SLV"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-20",
@@ -1541,6 +1645,7 @@
       "sourceSize": 26612766,
       "validRows": 3261806,
       "totalVol": 66239925,
+      "totalPremium": 33740670301.0,
       "marketCp": 1.3486726580579773,
       "topSymbols": [
         "SPY",
@@ -1549,7 +1654,7 @@
         "VIX",
         "IWM"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-16",
@@ -1559,6 +1664,7 @@
       "sourceSize": 25873473,
       "validRows": 3208626,
       "totalVol": 76175593,
+      "totalPremium": 33282831753.0,
       "marketCp": 1.3748332485663974,
       "topSymbols": [
         "SPY",
@@ -1567,7 +1673,7 @@
         "WOLF1",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-15",
@@ -1577,6 +1683,7 @@
       "sourceSize": 23527257,
       "validRows": 2878614,
       "totalVol": 72696693,
+      "totalPremium": 62360870878.0,
       "marketCp": 1.1385352308818535,
       "topSymbols": [
         "SPY",
@@ -1585,7 +1692,7 @@
         "NVDA",
         "SLV"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-14",
@@ -1595,6 +1702,7 @@
       "sourceSize": 23670466,
       "validRows": 2886904,
       "totalVol": 69125170,
+      "totalPremium": 37812538681.0,
       "marketCp": 1.4355432638095051,
       "topSymbols": [
         "SPY",
@@ -1603,7 +1711,7 @@
         "SLV",
         "IWM"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-13",
@@ -1613,6 +1721,7 @@
       "sourceSize": 22499721,
       "validRows": 2752874,
       "totalVol": 61026375,
+      "totalPremium": 34105351440.0,
       "marketCp": 1.421870684186765,
       "topSymbols": [
         "SPY",
@@ -1621,7 +1730,7 @@
         "SLV",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-12",
@@ -1631,6 +1740,7 @@
       "sourceSize": 23002994,
       "validRows": 2862480,
       "totalVol": 57861650,
+      "totalPremium": 31770458582.0,
       "marketCp": 1.386955647000201,
       "topSymbols": [
         "SPY",
@@ -1639,7 +1749,7 @@
         "SLV",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-09",
@@ -1649,6 +1759,7 @@
       "sourceSize": 24566767,
       "validRows": 3041919,
       "totalVol": 69921153,
+      "totalPremium": 32169178704.0,
       "marketCp": 1.4427670378619153,
       "topSymbols": [
         "SPY",
@@ -1657,7 +1768,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-08",
@@ -1667,6 +1778,7 @@
       "sourceSize": 21335710,
       "validRows": 2613903,
       "totalVol": 60587715,
+      "totalPremium": 42114013584.0,
       "marketCp": 1.3020130474615939,
       "topSymbols": [
         "SPY",
@@ -1675,7 +1787,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-07",
@@ -1685,6 +1797,7 @@
       "sourceSize": 21120821,
       "validRows": 2593329,
       "totalVol": 56821167,
+      "totalPremium": 25708037090.0,
       "marketCp": 1.3691551095938972,
       "topSymbols": [
         "SPY",
@@ -1693,7 +1806,7 @@
         "NVDA",
         "TSLA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-06",
@@ -1703,6 +1816,7 @@
       "sourceSize": 22872882,
       "validRows": 2814928,
       "totalVol": 62486433,
+      "totalPremium": 31338129109.5,
       "marketCp": 1.2991137438960454,
       "topSymbols": [
         "SPY",
@@ -1711,7 +1825,7 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-05",
@@ -1721,6 +1835,7 @@
       "sourceSize": 24219307,
       "validRows": 3013609,
       "totalVol": 60821042,
+      "totalPremium": 38446033664.0,
       "marketCp": 1.4896228060933068,
       "topSymbols": [
         "SPY",
@@ -1729,7 +1844,7 @@
         "IWM",
         "SLV"
       ],
-      "rebuilt": false
+      "rebuilt": true
     },
     {
       "date": "2026-01-02",
@@ -1739,6 +1854,7 @@
       "sourceSize": 24246171,
       "validRows": 2983181,
       "totalVol": 63126675,
+      "totalPremium": 27145340269.0,
       "marketCp": 1.485336901362204,
       "topSymbols": [
         "SPY",
@@ -1747,11 +1863,9 @@
         "TSLA",
         "NVDA"
       ],
-      "rebuilt": false
+      "rebuilt": true
     }
   ],
   "sourceRoot": "/Users/fangbao/Library/Mobile Documents/com~apple~CloudDocs/KZG/23_DATA_Massive_期权分钟_Minute",
-  "missingLocalMarketDays": [
-    "2026-05-19"
-  ]
+  "missingLocalMarketDays": []
 }

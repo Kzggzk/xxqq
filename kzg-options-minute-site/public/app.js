@@ -6,20 +6,98 @@ const state = {
   selectedIndex: 0,
   query: "",
   requestToken: 0,
+  lang: localStorage.getItem("kzg-option-house-lang") || "zh",
+  theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
 const $ = (id) => document.getElementById(id);
-const fmt = new Intl.NumberFormat("en-US");
 const fmt0 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
 const fmt1 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 1, minimumFractionDigits: 1 });
 const fmt2 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2, minimumFractionDigits: 2 });
 
-function wan(value) {
-  return `${fmt1.format((Number(value) || 0) / 10000)}万`;
+const copy = {
+  zh: {
+    today: "回到今天",
+    themeLight: "亮色",
+    themeDark: "暗色",
+    language: "EN",
+    export: "导出 PNG",
+    exporting: "生成中",
+    timeline: "交易日时间轴",
+    selected: "已选交易日",
+    available: "有数据",
+    missing: "无交易/未落地",
+    reportCanvas: "日报画布",
+    reportCanvasSub: "网页可以操作，PNG 输出使用 KZG 老日报表格格式。",
+    digest: "盘口摘要",
+    digestSub: "按当前交易日同步刷新。",
+    filter: "筛选标的",
+    stockTop: "个股 Top25",
+    volumeRank: "成交量排序",
+    heatmap: "分钟聚合成交热力图",
+    heatmapSub: "Top15 标的，单位万张。",
+    buckets: "日内成交分布",
+    bucketsSub: "全市场 30 分钟桶。",
+    trend: "成交额走势",
+    trendSub: "最近 30 个交易日，热/冷由成交变化决定。",
+    totalVolume: "总期权成交量",
+    premium: "权利金成交额",
+    marketCp: "Put/Call 成交量",
+    index: "指数",
+    etf: "ETF",
+    stock: "个股",
+    version: "数据版本",
+    validRows: "有效行",
+    currentDay: "当前交易日",
+    kzgByline: "口罩哥独家数据整理",
+    kzgPlanet: "口罩哥星球",
+  },
+  en: {
+    today: "Today",
+    themeLight: "Light",
+    themeDark: "Dark",
+    language: "中文",
+    export: "Export PNG",
+    exporting: "Rendering",
+    timeline: "Trading Timeline",
+    selected: "Selected",
+    available: "Data landed",
+    missing: "No local data",
+    reportCanvas: "Daily Sheet",
+    reportCanvasSub: "The page stays interactive; PNG uses the original KZG table sheet.",
+    digest: "Market Digest",
+    digestSub: "Refreshes with the selected trading day.",
+    filter: "Symbol filter",
+    stockTop: "Stock Top 25",
+    volumeRank: "Sorted by volume",
+    heatmap: "Minute Heatmap",
+    heatmapSub: "Top 15 underlyings, unit: x10k contracts.",
+    buckets: "Intraday Distribution",
+    bucketsSub: "Market-wide 30-minute buckets.",
+    trend: "Turnover Trend",
+    trendSub: "Last 30 trading days; hot/cold follows volume change.",
+    totalVolume: "Total Option Volume",
+    premium: "Premium Notional",
+    marketCp: "Call / Put Volume",
+    index: "Index",
+    etf: "ETF",
+    stock: "Single Stock",
+    version: "Data Version",
+    validRows: "valid rows",
+    currentDay: "Current Day",
+    kzgByline: "Curated by 口罩哥",
+    kzgPlanet: "KZG Inner Circle",
+  },
+};
+
+function t(key) {
+  return copy[state.lang]?.[key] || copy.zh[key] || key;
 }
 
-function million(value) {
-  return `${fmt1.format((Number(value) || 0) / 1000000)}M`;
+function wan(value, suffix = true) {
+  const text = fmt1.format((Number(value) || 0) / 10000);
+  if (!suffix) return text;
+  return state.lang === "zh" ? `${text}万` : `${text} x10k`;
 }
 
 function ratio(value) {
@@ -29,6 +107,14 @@ function ratio(value) {
 function pct(part, total) {
   if (!total) return "--";
   return `${fmt1.format((Number(part) / Number(total)) * 100)}%`;
+}
+
+function moneyCompact(value) {
+  const n = Number(value) || 0;
+  if (n >= 1e9) return `$${fmt1.format(n / 1e9)}B`;
+  if (n >= 1e6) return `$${fmt1.format(n / 1e6)}M`;
+  if (n >= 1e3) return `$${fmt1.format(n / 1e3)}K`;
+  return `$${fmt0.format(n)}`;
 }
 
 function toneClass(value, high = 0, low = 0) {
@@ -51,15 +137,77 @@ function weekdayCN(value) {
   });
 }
 
-function compactDate(value) {
+function displayDate(value) {
+  if (state.lang === "zh") return `${dateCN(value)} ${weekdayCN(value)}`;
+  return new Date(`${value}T12:00:00Z`).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    weekday: "short",
+    timeZone: "UTC",
+  });
+}
+
+function shortDate(value) {
   const [, month, day] = value.split("-");
   return `${month}/${day}`;
 }
 
+function installGuards() {
+  const allowText = (target) => target?.closest?.("input, textarea, [contenteditable='true']");
+  document.addEventListener("contextmenu", (event) => {
+    if (!allowText(event.target)) event.preventDefault();
+  }, { capture: true });
+  document.addEventListener("dragstart", (event) => event.preventDefault(), { capture: true });
+  document.addEventListener("selectstart", (event) => {
+    if (!allowText(event.target)) event.preventDefault();
+  }, { capture: true });
+  document.addEventListener("copy", (event) => {
+    if (!allowText(event.target)) event.preventDefault();
+  }, { capture: true });
+  document.addEventListener("keydown", (event) => {
+    if (allowText(event.target)) return;
+    const key = event.key.toLowerCase();
+    const blocked =
+      ((event.metaKey || event.ctrlKey) && ["u", "s", "c", "p", "x"].includes(key)) ||
+      ((event.metaKey || event.ctrlKey) && event.shiftKey && ["i", "j", "c"].includes(key));
+    if (blocked) event.preventDefault();
+  }, { capture: true });
+}
+
+async function decodePack(encoded) {
+  const bytes = Uint8Array.from(atob(encoded), (char) => char.charCodeAt(0));
+  if (!("DecompressionStream" in window)) {
+    throw new Error("Current browser cannot read the KZG packed payload.");
+  }
+  const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"));
+  return JSON.parse(await new Response(stream).text());
+}
+
+async function loadPackedData() {
+  if (window.__KZG_PACK__) {
+    return decodePack(window.__KZG_PACK__);
+  }
+  if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+    const indexResponse = await fetch(`/data/index.json?ts=${Date.now()}`);
+    if (!indexResponse.ok) throw new Error(`index ${indexResponse.status}`);
+    const index = await indexResponse.json();
+    const days = {};
+    for (const item of index.dates) {
+      const response = await fetch(`/data/days/${item.date}.json?ts=${Date.now()}`);
+      if (response.ok) days[item.date] = await response.json();
+    }
+    return { index, days };
+  }
+  throw new Error("KZG packed payload is missing.");
+}
+
 async function loadIndex() {
-  const response = await fetch(`/data/index.json?ts=${Date.now()}`);
-  if (!response.ok) throw new Error(`index ${response.status}`);
-  state.index = await response.json();
+  installGuards();
+  applyUiState();
+  const payload = await loadPackedData();
+  state.index = payload.index;
+  state.dayCache = new Map(Object.entries(payload.days || {}));
   state.datesAsc = [...state.index.dates].reverse();
   if (!state.datesAsc.length) throw new Error("No trading days found.");
 
@@ -70,12 +218,37 @@ async function loadIndex() {
   });
   $("prevDay").addEventListener("click", () => loadDayByIndex(state.selectedIndex - 1));
   $("nextDay").addEventListener("click", () => loadDayByIndex(state.selectedIndex + 1));
-  $("timelineRange").addEventListener("input", (event) => {
-    loadDayByIndex(Number(event.target.value));
-  });
+  $("timelineRange").addEventListener("input", (event) => loadDayByIndex(Number(event.target.value)));
+  $("goToday").addEventListener("click", () => loadDayByIndex(state.datesAsc.length - 1));
+  $("themeToggle").addEventListener("click", toggleTheme);
+  $("langToggle").addEventListener("click", toggleLang);
 
   renderTimelineShell();
   await loadDayByIndex(state.datesAsc.length - 1);
+}
+
+function applyUiState() {
+  document.body.dataset.lang = state.lang;
+  document.body.dataset.theme = state.theme;
+  document.documentElement.lang = state.lang === "zh" ? "zh-CN" : "en";
+  document.querySelectorAll("[data-i18n]").forEach((node) => {
+    const key = node.dataset.i18n;
+    if (key === "theme") node.textContent = state.theme === "dark" ? t("themeLight") : t("themeDark");
+    else node.textContent = t(key);
+  });
+}
+
+function toggleTheme() {
+  state.theme = state.theme === "dark" ? "light" : "dark";
+  localStorage.setItem("kzg-option-house-theme", state.theme);
+  applyUiState();
+}
+
+function toggleLang() {
+  state.lang = state.lang === "zh" ? "en" : "zh";
+  localStorage.setItem("kzg-option-house-lang", state.lang);
+  applyUiState();
+  if (state.day) renderDay();
 }
 
 function renderTimelineShell() {
@@ -87,17 +260,14 @@ function renderTimelineShell() {
   for (const item of state.datesAsc) {
     const month = item.date.slice(0, 7);
     const last = monthGroups[monthGroups.length - 1];
-    if (last && last.month === month) {
-      last.count += 1;
-    } else {
-      monthGroups.push({ month, count: 1 });
-    }
+    if (last && last.month === month) last.count += 1;
+    else monthGroups.push({ month, count: 1 });
   }
   const monthTicks = $("monthTicks");
   monthTicks.style.gridTemplateColumns = monthGroups.map((group) => `${group.count}fr`).join(" ");
   monthTicks.innerHTML = monthGroups.map((group) => {
     const [, month] = group.month.split("-");
-    return `<span>2026年${Number(month)}月</span>`;
+    return `<span>${state.lang === "zh" ? `2026年${Number(month)}月` : `2026/${month}`}</span>`;
   }).join("");
 
   const maxVol = Math.max(...state.datesAsc.map((item) => Number(item.totalVol) || 0), 1);
@@ -109,8 +279,7 @@ function renderTimelineShell() {
   }).join("");
   dayBars.addEventListener("click", (event) => {
     const button = event.target.closest("button[data-index]");
-    if (!button) return;
-    loadDayByIndex(Number(button.dataset.index));
+    if (button) loadDayByIndex(Number(button.dataset.index));
   });
 }
 
@@ -121,13 +290,8 @@ async function loadDayByIndex(index) {
   updateTimelineSelection();
 
   const token = ++state.requestToken;
-  let day = state.dayCache.get(date);
-  if (!day) {
-    const response = await fetch(`/data/days/${date}.json?ts=${Date.now()}`);
-    if (!response.ok) throw new Error(`day ${date} ${response.status}`);
-    day = await response.json();
-    state.dayCache.set(date, day);
-  }
+  const day = state.dayCache.get(date);
+  if (!day) throw new Error(`Missing packed day ${date}`);
   if (token !== state.requestToken) return;
   state.day = day;
   renderDay();
@@ -152,36 +316,58 @@ function renderDay() {
   const ov = day.overview;
   const item = state.datesAsc[state.selectedIndex];
   const prev = state.datesAsc[state.selectedIndex - 1];
-  const delta = prev ? ((Number(item.totalVol) - Number(prev.totalVol)) / Number(prev.totalVol)) * 100 : null;
+  const delta = prev && Number(prev.totalVol) ? ((Number(item.totalVol) - Number(prev.totalVol)) / Number(prev.totalVol)) * 100 : null;
 
-  $("headerDate").textContent = `${dateCN(day.tradeDate)} ${weekdayCN(day.tradeDate)}`;
-  $("generatedAt").textContent = `generated ${new Date(day.generatedAt).toLocaleString("zh-CN", { hour12: false })}`;
+  applyUiState();
+  $("headerDate").textContent = displayDate(day.tradeDate);
+  $("generatedAt").textContent = `${state.lang === "zh" ? "生成" : "generated"} ${new Date(day.generatedAt).toLocaleString(state.lang === "zh" ? "zh-CN" : "en-US", { hour12: false })}`;
   $("tradeDate").textContent = day.tradeDate;
   $("totalVol").textContent = wan(ov.totalVol);
-  $("totalTxn").textContent = wan(ov.totalTxn);
+  $("totalPremium").textContent = moneyCompact(ov.totalPremium);
   $("marketCp").textContent = ratio(ov.marketCp);
   $("rowCount").textContent = fmt0.format(day.validRows);
-  $("sourceStatus").textContent = `${fmt0.format(day.validRows)} valid rows`;
-  $("sourcePath").textContent = day.source.fileName;
-  $("openReport").href = `/reports/${day.tradeDate}.html`;
+  $("sourceStatus").textContent = `${fmt0.format(day.validRows)} ${t("validRows")}`;
+  $("sourcePath").textContent = "KZG packed";
+  $("totalPremiumLabel").textContent = t("premium");
 
-  const deltaText = delta === null ? "first local day" : `较前日 ${delta >= 0 ? "+" : ""}${fmt1.format(delta)}%`;
+  const deltaText = delta === null ? (state.lang === "zh" ? "首个本地交易日" : "first local day") : `${state.lang === "zh" ? "较前日" : "vs prev"} ${delta >= 0 ? "+" : ""}${fmt1.format(delta)}%`;
   $("volDelta").textContent = deltaText;
   $("volDelta").className = delta === null ? "" : delta >= 0 ? "tone-high" : "tone-low";
 
   $("indexShare").textContent = pct(ov.category.INDEX.volume, ov.totalVol);
-  $("indexCp").textContent = `CP ${ratio(ov.category.INDEX.cpRatio)}`;
+  $("indexCp").textContent = `CP ${ratio(ov.category.INDEX.cpRatio)} · ${moneyCompact(ov.category.INDEX.premium)}`;
   $("etfShare").textContent = pct(ov.category.ETF.volume, ov.totalVol);
-  $("etfCp").textContent = `CP ${ratio(ov.category.ETF.cpRatio)}`;
+  $("etfCp").textContent = `CP ${ratio(ov.category.ETF.cpRatio)} · ${moneyCompact(ov.category.ETF.premium)}`;
   $("stockShare").textContent = pct(ov.category.STOCK.volume, ov.totalVol);
-  $("stockCp").textContent = `CP ${ratio(ov.category.STOCK.cpRatio)}`;
+  $("stockCp").textContent = `CP ${ratio(ov.category.STOCK.cpRatio)} · ${moneyCompact(ov.category.STOCK.premium)}`;
 
   $("downloadReport").onclick = () => exportReportPng(day.tradeDate);
   renderDigest();
   renderReportCanvas();
   renderBuckets();
   renderHeatmap();
+  renderTrend();
   renderStockTable();
+  renderStaticCopy();
+}
+
+function renderStaticCopy() {
+  document.querySelector(".timeboard-copy h2").textContent = t("timeline");
+  document.querySelector(".section-head h2").textContent = t("reportCanvas");
+  document.querySelector(".section-head p").textContent = t("reportCanvasSub");
+  $("trendTitle").textContent = t("trend");
+  $("trendSub").textContent = t("trendSub");
+  document.querySelector(".side-rail .section-head h2").textContent = t("digest");
+  document.querySelector(".side-rail .section-head p").textContent = t("digestSub");
+  document.querySelector(".search-wrap span").textContent = t("filter");
+  document.querySelector(".mini-head b").textContent = t("stockTop");
+  document.querySelector(".mini-head span").textContent = t("volumeRank");
+  const heads = document.querySelectorAll(".analysis-grid .panel .section-head h2");
+  const subs = document.querySelectorAll(".analysis-grid .panel .section-head p");
+  if (heads[1]) heads[1].textContent = t("heatmap");
+  if (subs[1]) subs[1].textContent = t("heatmapSub");
+  if (heads[2]) heads[2].textContent = t("buckets");
+  if (subs[2]) subs[2].textContent = t("bucketsSub");
 }
 
 function renderDigest() {
@@ -208,20 +394,64 @@ function renderHeatmap() {
   const labels = state.day.buckets.labels;
   const values = heat.flatMap((row) => row.values);
   const max = Math.max(...values, 1);
-  let html = `<div class="heat-table"><div class="heat-cell head">标的</div>`;
+  let html = `<div class="heat-table"><div class="heat-cell head">${state.lang === "zh" ? "标的" : "Symbol"}</div>`;
   html += labels.map((label) => `<div class="heat-cell head">${label}</div>`).join("");
   for (const row of heat) {
     html += `<div class="heat-cell symbol">${row.symbol}</div>`;
     html += row.values.map((value) => {
       if (!value) return `<div class="heat-cell" style="background:#f4f1e9;color:#817b70">-</div>`;
       const level = value / max;
-      const bg = blend([247, 244, 236], [166, 106, 18], level);
-      const fg = level > 0.54 ? "#fff" : "#191713";
+      const bg = blueHeat(level);
+      const fg = level > 0.56 ? "#fff" : "#28323b";
       return `<div class="heat-cell" style="background:${bg};color:${fg}">${fmt1.format(value / 10000)}</div>`;
     }).join("");
   }
   html += "</div>";
   $("heatmap").innerHTML = html;
+}
+
+function renderTrend() {
+  const end = state.selectedIndex;
+  const rows = state.datesAsc.slice(Math.max(0, end - 29), end + 1);
+  if (!rows.length) {
+    $("trendChart").innerHTML = "";
+    return;
+  }
+  const width = 760;
+  const height = 214;
+  const pad = 28;
+  const maxVol = Math.max(...rows.map((row) => Number(row.totalVol) || 0), 1);
+  const minVol = Math.min(...rows.map((row) => Number(row.totalVol) || 0), maxVol);
+  const span = Math.max(1, maxVol - minVol);
+  const points = rows.map((row, index) => {
+    const x = pad + (index / Math.max(1, rows.length - 1)) * (width - pad * 2);
+    const y = height - pad - (((Number(row.totalVol) || 0) - minVol) / span) * (height - pad * 2);
+    return { x, y, row };
+  });
+  const line = points.map((point) => `${point.x.toFixed(1)},${point.y.toFixed(1)}`).join(" ");
+  const area = `${pad},${height - pad} ${line} ${width - pad},${height - pad}`;
+  const prev = rows[rows.length - 2];
+  const latest = rows[rows.length - 1];
+  const change = prev ? ((latest.totalVol - prev.totalVol) / prev.totalVol) * 100 : 0;
+  const tone = change >= 0 ? "trend-hot" : "trend-cool";
+
+  $("trendChart").innerHTML = `
+    <div class="trend-summary ${tone}">
+      <strong>${wan(latest.totalVol)}</strong>
+      <span>${shortDate(rows[0].date)} - ${shortDate(latest.date)} · ${change >= 0 ? "+" : ""}${fmt1.format(change)}%</span>
+    </div>
+    <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${t("trend")}">
+      <defs>
+        <linearGradient id="trendFill" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0" stop-color="${change >= 0 ? "#d96a4a" : "#2f6190"}" stop-opacity=".28"/>
+          <stop offset="1" stop-color="${change >= 0 ? "#d96a4a" : "#2f6190"}" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <polygon points="${area}" fill="url(#trendFill)"></polygon>
+      <polyline points="${line}" fill="none" stroke="${change >= 0 ? "#c45335" : "#2f6190"}" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"></polyline>
+      ${points.map((point, index) => index % 5 === 0 || index === points.length - 1 ? `<text x="${point.x.toFixed(1)}" y="${height - 6}" text-anchor="middle">${shortDate(point.row.date)}</text>` : "").join("")}
+    </svg>
+  `;
 }
 
 function renderStockTable() {
@@ -230,7 +460,7 @@ function renderStockTable() {
     if (!state.query) return true;
     return row.symbol.includes(state.query) || row.hottest.includes(state.query);
   });
-  renderTable($("stockTable"), rows.slice(0, 25), true);
+  renderTable($("stockTable"), rows.slice(0, 25));
 }
 
 function renderTable(target, rows) {
@@ -239,14 +469,15 @@ function renderTable(target, rows) {
       <tr>
         <th>Rank</th>
         <th>Symbol</th>
-        <th class="right">成交量</th>
+        <th class="right">${state.lang === "zh" ? "成交量" : "Vol"}</th>
         <th class="right">CP</th>
-        <th class="right">最热合约</th>
+        <th class="right">${state.lang === "zh" ? "权利金" : "Premium"}</th>
+        <th class="right">${state.lang === "zh" ? "最热合约" : "Top"}</th>
       </tr>
     </thead>
   `;
   if (!rows.length) {
-    target.innerHTML = `${head}<tbody><tr><td colspan="5" class="empty">No rows</td></tr></tbody>`;
+    target.innerHTML = `${head}<tbody><tr><td colspan="6" class="empty">No rows</td></tr></tbody>`;
     return;
   }
   const body = rows.map((row, index) => `
@@ -255,6 +486,7 @@ function renderTable(target, rows) {
       <td class="symbol">${escapeHtml(row.symbol)}</td>
       <td class="right">${wan(row.totalVol)}</td>
       <td class="right ${toneClass(row.cpRatio, 2, 0.6)}">${ratio(row.cpRatio)}</td>
+      <td class="right">${moneyCompact(row.premiumNotional)}</td>
       <td class="right">${escapeHtml(row.hottestShort)}</td>
     </tr>
   `).join("");
@@ -263,139 +495,111 @@ function renderTable(target, rows) {
 
 function renderReportCanvas() {
   const day = state.day;
-  const ov = day.overview;
-  const stockRows = day.stockRows.slice(0, 10);
-  const etfRows = day.etfRows.slice(0, 8);
-  const leapRows = [...day.topUnderlyings]
-    .filter((row) => Number.isFinite(Number(row.leapRatio)) && row.totalVol > 50000)
-    .sort((a, b) => (Number(b.leapRatio) || 0) - (Number(a.leapRatio) || 0))
-    .slice(0, 8);
-
+  const indexRows = orderRows(day.indexRows, ["SPY", "QQQ", "IWM"]);
+  const stockRows = day.stockRows.slice(0, 25);
+  const etfRows = day.etfRows.slice(0, 10);
+  const heatRows = day.buckets.heatmap.slice(0, 15);
+  const labels = day.buckets.labels;
   $("reportCanvas").innerHTML = `
-    <header class="report-top">
-      <div class="report-mark">KZG</div>
-      <div class="report-title">
-        <h3>KZG Option House</h3>
-        <p>Minute Aggregate Option Report</p>
-      </div>
-      <div class="report-meta">
-        <b>${dateCN(day.tradeDate)}</b>
-        <p>${weekdayCN(day.tradeDate)}</p>
-      </div>
-    </header>
-    <div class="report-body">
-      <section class="report-block wide">
-        <div class="report-summary">
-          <div><span>总期权成交量</span><strong>${fmt0.format(ov.totalVol)}</strong></div>
-          <div><span>总成交笔数</span><strong>${fmt0.format(ov.totalTxn)}</strong></div>
-          <div><span>Put/Call 成交量</span><strong>${ratio(ov.marketCp)}</strong></div>
-          <div><span>标的数量</span><strong>${fmt0.format(day.topUnderlyings.length)}</strong></div>
+    <article class="kzg-sheet">
+      <header class="sheet-head">
+        <div>
+          <b>${state.lang === "zh" ? `${dateCN(day.tradeDate)} 美股期权分钟数据` : `${day.tradeDate} US Options Minute Sheet`}</b>
+          <span>${t("kzgByline")} | KZG Option House</span>
         </div>
-        <p class="report-copy">
-          全市场期权成交 <b>${wan(ov.totalVol)}</b> 张，共 <b>${wan(ov.totalTxn)}</b> 笔。指数占 <b>${pct(ov.category.INDEX.volume, ov.totalVol)}</b>，ETF 占 <b>${pct(ov.category.ETF.volume, ov.totalVol)}</b>，个股占 <b>${pct(ov.category.STOCK.volume, ov.totalVol)}</b>。本报告由 Massive options minute aggregates 生成。
-        </p>
-      </section>
-      <div class="report-grid">
-        <section class="report-block">
-          <div class="report-block-title"><b>Top 标的成交量排行</b><span>按成交量</span></div>
-          ${reportTable(stockRows, [
-            ["排名", (_, i) => i + 1],
-            ["标的", (row) => row.symbol],
-            ["成交量", (row) => wan(row.totalVol), "right"],
-            ["CP", (row) => ratio(row.cpRatio), "right"],
-          ])}
-        </section>
-        <section class="report-block">
-          <div class="report-block-title"><b>分钟聚合成交热力图</b><span>Top15</span></div>
-          ${reportHeatmap(day)}
-        </section>
-        <section class="report-block">
-          <div class="report-block-title"><b>LEAPS 异动信号</b><span>远期偏离</span></div>
-          ${reportTable(leapRows, [
-            ["标的", (row) => row.symbol],
-            ["LEAP", (row) => ratio(row.leapRatio), "right"],
-            ["成交量", (row) => wan(row.totalVol), "right"],
-            ["热合约", (row) => row.hottestShort, "right"],
-          ])}
-        </section>
-        <section class="report-block wide">
-          <div class="report-block-title"><b>总成交量走势</b><span>30 min bucket</span></div>
-          ${reportBars(day)}
-        </section>
-        <section class="report-block">
-          <div class="report-block-title"><b>三大指数</b><span>SPY / QQQ / IWM</span></div>
-          ${reportTable(day.indexRows, [
-            ["标的", (row) => row.symbol],
-            ["成交量", (row) => wan(row.totalVol), "right"],
-            ["CP", (row) => ratio(row.cpRatio), "right"],
-          ])}
-        </section>
-        <section class="report-block wide">
-          <div class="report-block-title"><b>ETF 期权成交量</b><span>Top8</span></div>
-          ${reportTable(etfRows, [
-            ["排名", (_, i) => i + 1],
-            ["标的", (row) => row.symbol],
-            ["成交量", (row) => wan(row.totalVol), "right"],
-            ["CP", (row) => ratio(row.cpRatio), "right"],
-            ["LEAP", (row) => ratio(row.leapRatio), "right"],
-            ["最热合约", (row) => row.hottestShort, "right"],
-          ])}
-        </section>
-      </div>
-    </div>
-    <footer class="report-foot">
-      <div>
-        <b>KZG Option House</b>
-        <span>source: ${escapeHtml(day.source.fileName)} · rows: ${fmt0.format(day.validRows)} · generated: ${new Date(day.generatedAt).toLocaleString("zh-CN", { hour12: false })}</span>
-      </div>
-      <strong>KZG</strong>
-    </footer>
+        <strong>KZG</strong>
+      </header>
+      ${sheetSection(state.lang === "zh" ? "三大指数期权数据" : "Index Options", sheetTable(indexRows, [
+        ["Rank", (_, i) => i + 1],
+        ["Symbol", (row) => row.symbol],
+        [state.lang === "zh" ? "成交量(万张)" : "Vol (x10k)", (row) => wan(row.totalVol, false), "num"],
+        ["CP比", (row) => ratio(row.cpRatio), "num heat"],
+      ]))}
+      ${sheetBars(day)}
+      ${sheetHeatmap(heatRows, labels)}
+      ${sheetSection(state.lang === "zh" ? "ETF 期权成交量 Top10" : "ETF Options Top 10", sheetTable(etfRows, detailColumns()))}
+      ${sheetSection(state.lang === "zh" ? "个股期权成交量 Top25" : "Single-Stock Options Top 25", sheetTable(stockRows, detailColumns()))}
+      <footer class="sheet-foot">
+        <span>*LEAP比: 到期日超 12 周的远期期权 C/P 成交量比 · ★ 极端值可能源于小样本</span>
+        <b>${t("kzgByline")} | ${t("kzgPlanet")} | KZG Option House</b>
+      </footer>
+    </article>
   `;
 }
 
-function reportTable(rows, columns) {
-  const head = `<thead><tr>${columns.map(([label,, align]) => `<th class="${align || ""}">${escapeHtml(label)}</th>`).join("")}</tr></thead>`;
-  if (!rows.length) {
-    return `<table class="report-table">${head}<tbody><tr><td colspan="${columns.length}" class="empty">无数据</td></tr></tbody></table>`;
-  }
+function orderRows(rows, symbols) {
+  return symbols.map((symbol) => rows.find((row) => row.symbol === symbol)).filter(Boolean);
+}
+
+function detailColumns() {
+  return [
+    ["Rank", (_, i) => i + 1],
+    ["Symbol", (row) => row.symbol],
+    [state.lang === "zh" ? "成交量" : "Vol", (row) => wan(row.totalVol, false), "num"],
+    ["CP比", (row) => ratio(row.cpRatio), "num heat"],
+    ["LEAP*", (row) => ratio(row.leapRatio), "num heat"],
+    [state.lang === "zh" ? "均笔" : "Avg", (row) => row.avgSize, "num"],
+    [state.lang === "zh" ? "最热合约" : "Top Contract", (row) => row.hottestShort, "num muted"],
+  ];
+}
+
+function sheetSection(title, body) {
+  return `
+    <section class="sheet-section">
+      <div class="sheet-title"><b>${escapeHtml(title)}</b><span>${t("kzgByline")} | KZG Option House</span></div>
+      ${body}
+    </section>
+  `;
+}
+
+function sheetTable(rows, columns) {
+  const head = `<thead><tr>${columns.map(([label,, cls]) => `<th class="${cls?.includes("num") ? "num" : ""}">${escapeHtml(label)}</th>`).join("")}</tr></thead>`;
   const body = rows.map((row, index) => `
     <tr>
-      ${columns.map(([, getter, align]) => `<td class="${align || ""}">${escapeHtml(getter(row, index))}</td>`).join("")}
+      ${columns.map(([, getter, cls]) => {
+        const value = getter(row, index);
+        const heat = cls?.includes("heat") ? ` style="--heat:${heatLevel(Number(value))}"` : "";
+        return `<td class="${cls || ""}"${heat}>${escapeHtml(value)}</td>`;
+      }).join("")}
     </tr>
   `).join("");
-  return `<table class="report-table">${head}<tbody>${body}</tbody></table>`;
+  return `<table class="sheet-table">${head}<tbody>${body}</tbody></table>`;
 }
 
-function reportBars(day) {
+function sheetBars(day) {
   const rows = day.buckets.market;
   const max = Math.max(...rows.map((row) => row.total), 1);
-  return `<div class="report-bars">${rows.map((row) => `
-    <div title="${row.time} ${wan(row.total)}">
-      <i style="height:${Math.max(2, (row.total / max) * 100).toFixed(2)}%"></i>
-      <span>${row.time}</span>
+  const bars = rows.map((row) => `
+    <div class="sheet-bar">
+      <span>${wan(row.total, false)}</span>
+      <i style="height:${Math.max(4, (row.total / max) * 100).toFixed(1)}%"></i>
+      <em>${row.time}</em>
     </div>
-  `).join("")}</div>`;
+  `).join("");
+  return `
+    <section class="sheet-section">
+      <div class="sheet-title"><b>${state.lang === "zh" ? "全市场日内成交分布" : "Intraday Volume Distribution"}</b><span>${t("kzgByline")} | KZG Option House</span></div>
+      <div class="sheet-bars">${bars}</div>
+      <div class="sheet-legend"><i></i>${state.lang === "zh" ? "成交量(万张)" : "Volume (x10k)"}</div>
+    </section>
+  `;
 }
 
-function reportHeatmap(day) {
-  const heat = day.buckets.heatmap.slice(0, 10);
-  const labels = day.buckets.labels;
+function sheetHeatmap(heat, labels) {
   const values = heat.flatMap((row) => row.values);
   const max = Math.max(...values, 1);
-  let html = `<div class="report-heat"><span class="head">标的</span>`;
-  html += labels.map((label) => `<span class="head">${label.slice(0, 2)}</span>`).join("");
+  let body = `<div class="sheet-heat"><span class="head">${state.lang === "zh" ? "标的" : "Symbol"}</span>`;
+  body += labels.map((label) => `<span class="head">${label}</span>`).join("");
   for (const row of heat) {
-    html += `<span class="sym">${escapeHtml(row.symbol)}</span>`;
-    html += row.values.map((value) => {
-      if (!value) return `<span style="background:#f4f1e9;color:#817b70">-</span>`;
+    body += `<span class="sym">${row.symbol}</span>`;
+    body += row.values.map((value) => {
+      if (!value) return `<span class="empty-cell">-</span>`;
       const level = value / max;
-      const bg = blend([247, 244, 236], [166, 106, 18], level);
-      const fg = level > 0.54 ? "#fff" : "#191713";
-      return `<span style="background:${bg};color:${fg}">${fmt1.format(value / 10000)}</span>`;
+      return `<span style="background:${blueHeat(level)};color:${level > 0.58 ? "#fff" : "#2b333a"}">${fmt1.format(value / 10000)}</span>`;
     }).join("");
   }
-  html += "</div>";
-  return html;
+  body += "</div>";
+  return sheetSection(state.lang === "zh" ? "日内成交分布 Top15 (万张)" : "Intraday Heatmap Top 15 (x10k)", body);
 }
 
 async function exportReportPng(date) {
@@ -405,26 +609,40 @@ async function exportReportPng(date) {
     alert("PNG renderer not loaded.");
     return;
   }
+  const original = button.innerHTML;
+  const clone = report.cloneNode(true);
+  clone.classList.add("export-clone");
+  document.body.appendChild(clone);
   try {
     button.disabled = true;
-    button.innerHTML = `<span aria-hidden="true">↓</span>生成中`;
+    button.innerHTML = `<span aria-hidden="true">↓</span>${t("exporting")}`;
     if (document.fonts?.ready) await document.fonts.ready;
-    const canvas = await window.html2canvas(report, {
+    const canvas = await window.html2canvas(clone, {
       backgroundColor: "#ffffff",
-      scale: Math.min(3, Math.max(2, window.devicePixelRatio || 2)),
+      scale: 2.5,
       useCORS: true,
       logging: false,
     });
     const link = document.createElement("a");
     link.href = canvas.toDataURL("image/png");
-    link.download = `kzg-option-house-${date}.png`;
+    link.download = `kzg-option-house-${date}-${state.lang}.png`;
     document.body.appendChild(link);
     link.click();
     link.remove();
   } finally {
+    clone.remove();
     button.disabled = false;
-    button.innerHTML = `<span aria-hidden="true">↓</span>导出 PNG`;
+    button.innerHTML = original;
   }
+}
+
+function heatLevel(value) {
+  if (!Number.isFinite(value)) return 0;
+  return Math.max(0.08, Math.min(1, value / 6));
+}
+
+function blueHeat(level) {
+  return blend([236, 242, 247], [45, 88, 134], Math.max(0.05, Math.min(1, level)));
 }
 
 function blend(a, b, t) {
