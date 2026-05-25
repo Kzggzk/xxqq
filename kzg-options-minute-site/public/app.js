@@ -1872,8 +1872,8 @@ function rotationMap(rows) {
         <span class="quad q3">${state.lang === "zh" ? "同步降温" : "Cooling"}</span>
         <span class="quad q4">${state.lang === "zh" ? "量能先行" : "Volume leads"}</span>
         ${selected.map((row) => {
-          const x = Math.max(3, Math.min(97, ((Number(row.delta) - xMin) / xSpan) * 100));
-          const y = Math.max(5, Math.min(95, 100 - ((Number(row.premiumDelta) - yMin) / ySpan) * 100));
+          const x = Math.max(8, Math.min(92, ((Number(row.delta) - xMin) / xSpan) * 100));
+          const y = Math.max(9, Math.min(91, 100 - ((Number(row.premiumDelta) - yMin) / ySpan) * 100));
           const size = Math.max(28, Math.min(58, 24 + ((Number(row.totalVol) || 0) / maxVol) * 34));
           const toneClassName = row.delta >= 0 && row.premiumDelta >= 0 ? "hot" : row.delta < 0 && row.premiumDelta < 0 ? "cool" : "flat";
           const title = `${row.symbol} · Vol ${row.delta >= 0 ? "+" : ""}${fmt1.format(row.delta)}% · Premium ${row.premiumDelta >= 0 ? "+" : ""}${fmt1.format(row.premiumDelta)}% · CP ${ratio(row.cpRatio)}`;
