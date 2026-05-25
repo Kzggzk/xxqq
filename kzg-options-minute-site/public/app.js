@@ -490,6 +490,7 @@ function renderBuckets() {
   const avgMax = Math.max(...avg, 1);
   const scale = Math.max(max, avgMax);
   const total = rows.reduce((sum, row) => sum + (Number(row.total) || 0), 0) || 1;
+  const avgTotal = avg.reduce((sum, value) => sum + (Number(value) || 0), 0) || 1;
   const openShare = rows.slice(0, 2).reduce((sum, row) => sum + (Number(row.total) || 0), 0) / total * 100;
   const midShare = rows.slice(5, 8).reduce((sum, row) => sum + (Number(row.total) || 0), 0) / total * 100;
   const closeShare = rows.slice(-2).reduce((sum, row) => sum + (Number(row.total) || 0), 0) / total * 100;
@@ -520,6 +521,7 @@ function renderBuckets() {
       </span>
     `;
   }).join("");
+  $("bucketSignature").innerHTML = bucketSignature(rows, avg, total, avgTotal);
   $("bucketBars").innerHTML = rows.map((row, index) => {
     const currentHeight = Math.max(2, (row.total / scale) * 100);
     const avgHeight = Math.max(2, ((avg[index] || 0) / scale) * 100);
@@ -536,6 +538,47 @@ function renderBuckets() {
       </div>
     `;
   }).join("");
+}
+
+function bucketSignature(rows, avg, total, avgTotal) {
+  const segments = [
+    { key: "open", label: state.lang === "zh" ? "开盘" : "Open", indexes: [0, 1] },
+    { key: "mid", label: state.lang === "zh" ? "午盘" : "Midday", indexes: [5, 6, 7] },
+    { key: "close", label: state.lang === "zh" ? "尾盘" : "Close", indexes: [rows.length - 2, rows.length - 1] },
+  ].map((segment) => {
+    const segmentRows = segment.indexes.map((index) => rows[index]).filter(Boolean);
+    const current = segmentRows.reduce((sum, row) => sum + (Number(row.total) || 0), 0);
+    const call = segmentRows.reduce((sum, row) => sum + (Number(row.call) || 0), 0);
+    const put = segmentRows.reduce((sum, row) => sum + (Number(row.put) || 0), 0);
+    const avgSegment = segment.indexes.reduce((sum, index) => sum + (Number(avg[index]) || 0), 0);
+    const share = total ? (current / total) * 100 : 0;
+    const avgShare = avgTotal ? (avgSegment / avgTotal) * 100 : 0;
+    const drift = share - avgShare;
+    const cp = put ? call / put : call ? call : 0;
+    const tone = drift >= 4 || cp >= 1.55 ? "hot" : drift <= -4 || cp <= 0.95 ? "cool" : "flat";
+    return { ...segment, current, share, avgShare, drift, cp, tone };
+  });
+  const lead = segments.reduce((best, segment) => Math.abs(segment.drift) > Math.abs(best.drift) ? segment : best, segments[0]);
+  const callTilt = segments.reduce((best, segment) => segment.cp > best.cp ? segment : best, segments[0]);
+  const coolTilt = segments.reduce((best, segment) => segment.cp < best.cp ? segment : best, segments[0]);
+  const leadTone = lead.tone === "flat" ? (callTilt.cp >= 1.55 ? "hot" : coolTilt.cp <= 0.95 ? "cool" : "flat") : lead.tone;
+  return `
+    <div class="signature-lead ${leadTone}">
+      <span>${state.lang === "zh" ? "日内指纹" : "Session fingerprint"}</span>
+      <strong>${lead.label} ${lead.drift >= 0 ? "+" : ""}${fmt1.format(lead.drift)}pt</strong>
+      <small>${state.lang === "zh" ? "Call 偏向" : "Call tilt"} ${callTilt.label} CP ${ratio(callTilt.cp)} · ${state.lang === "zh" ? "防守偏向" : "Defensive tilt"} ${coolTilt.label} CP ${ratio(coolTilt.cp)}</small>
+    </div>
+    <div class="signature-lanes">
+      ${segments.map((segment) => `
+        <span class="${segment.tone}">
+          <i>${segment.label}</i>
+          <b>${fmt1.format(segment.share)}%</b>
+          <small>${segment.drift >= 0 ? "+" : ""}${fmt1.format(segment.drift)}pt · CP ${ratio(segment.cp)}</small>
+          <em style="--w:${Math.max(7, Math.min(100, segment.share * 3)).toFixed(1)}%"></em>
+        </span>
+      `).join("")}
+    </div>
+  `;
 }
 
 function bucketProfileCard(label, value, tone) {

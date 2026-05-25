@@ -2503,6 +2503,102 @@ main {
   border-color: rgba(47, 97, 144, 0.34);
 }
 
+.bucket-signature {
+  display: grid;
+  grid-template-columns: 1.05fr 1.45fr;
+  gap: 9px;
+  margin: 0 0 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.signature-lead,
+.signature-lanes span {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.signature-lead {
+  display: grid;
+  align-content: center;
+  gap: 5px;
+  padding: 11px 12px;
+  border-left: 4px solid var(--gold);
+}
+
+.signature-lead.hot {
+  border-left-color: #c45335;
+}
+
+.signature-lead.cool {
+  border-left-color: #2f6190;
+}
+
+.signature-lead span,
+.signature-lanes i {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 820;
+  font-style: normal;
+}
+
+.signature-lead strong {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", "Songti SC", serif;
+  font-size: 24px;
+  line-height: 1.12;
+  font-weight: 400;
+}
+
+.signature-lead small,
+.signature-lanes small {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.signature-lead small {
+  white-space: normal;
+}
+
+.signature-lanes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.signature-lanes span {
+  display: grid;
+  gap: 5px;
+  padding: 10px 9px 9px;
+}
+
+.signature-lanes b {
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.signature-lanes em {
+  display: block;
+  width: var(--w);
+  height: 4px;
+  background: var(--bias-color, var(--gold));
+}
+
+.signature-lanes .hot {
+  --bias-color: #c45335;
+  border-color: rgba(196, 83, 53, 0.34);
+}
+
+.signature-lanes .cool {
+  --bias-color: #2f6190;
+  border-color: rgba(47, 97, 144, 0.34);
+}
+
 .bar-track {
   border-left: 1px solid rgba(201, 194, 178, 0.5);
   border-right: 1px solid rgba(201, 194, 178, 0.5);
@@ -2962,6 +3058,8 @@ body[data-theme="dark"] .rotation-head span,
 body[data-theme="dark"] .rotation-lane,
 body[data-theme="dark"] .rotation-row,
 body[data-theme="dark"] .flow-bucket,
+body[data-theme="dark"] .signature-lead,
+body[data-theme="dark"] .signature-lanes span,
 body[data-theme="dark"] .symbol-focus,
 body[data-theme="dark"] .trend-extremes button,
 body[data-theme="dark"] .trend-radar button,
@@ -3014,6 +3112,10 @@ body[data-theme="dark"] .rotation-row small,
 body[data-theme="dark"] .rotation-lane-title,
 body[data-theme="dark"] .flow-bucket i,
 body[data-theme="dark"] .flow-bucket small,
+body[data-theme="dark"] .signature-lead span,
+body[data-theme="dark"] .signature-lead small,
+body[data-theme="dark"] .signature-lanes i,
+body[data-theme="dark"] .signature-lanes small,
 body[data-theme="dark"] .heat-rhythm-card span,
 body[data-theme="dark"] .heat-rhythm-card small,
 body[data-theme="dark"] .signal-strip small,
@@ -3213,6 +3315,10 @@ body[data-theme="dark"] .tip-grid b {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
+  .bucket-signature {
+    grid-template-columns: 1fr;
+  }
+
   .focus-head,
   .focus-metrics,
   .focus-charts {
@@ -3313,6 +3419,15 @@ body[data-theme="dark"] .tip-grid b {
 
   .bucket-flow {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .signature-lanes {
+    grid-template-columns: 1fr;
+  }
+
+  .signature-lead small,
+  .signature-lanes small {
+    white-space: normal;
   }
 
   .momentum-row {
