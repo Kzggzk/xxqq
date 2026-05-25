@@ -1917,12 +1917,74 @@ function renderSymbolFocus() {
       ${focusExtremeButton(state.lang === "zh" ? "CP 极值" : "CP high", highCp, ratio(highCp.cpRatio), "hot")}
       ${focusExtremeButton(state.lang === "zh" ? "防守极值" : "CP low", lowCp, ratio(lowCp.cpRatio), "cool")}
     </div>
+    ${focusWindowStack(series)}
     ${focusSessionTape(series)}
     <div class="focus-charts">
       <div><span>${state.lang === "zh" ? "成交量" : "Volume"}</span>${sparkline(series, "totalVol", 280, 62, tone === "hot" ? "#c45335" : tone === "cool" ? "#2f6190" : "#9a6a12")}</div>
       <div><span>${state.lang === "zh" ? "权利金" : "Premium"}</span>${sparkline(series, "premiumNotional", 280, 62, "#9a6a12")}</div>
       <div><span>CP</span>${sparkline(series, "cpRatio", 280, 62, "#148355")}</div>
     </div>
+  `;
+}
+
+function focusWindowStack(series) {
+  const windows = [5, 20, 60]
+    .map((period) => focusWindowStats(series, period))
+    .filter(Boolean);
+  if (!windows.length) return "";
+  const lead = windows.reduce((best, item) => Math.abs(item.volumeMove) > Math.abs(best.volumeMove) ? item : best, windows[0]);
+  const tone = lead.volumeMove >= 12 || lead.premiumMove >= 18 ? "hot" : lead.volumeMove <= -12 || lead.premiumMove <= -18 ? "cool" : "flat";
+  const label = state.lang === "zh" ? "标的短中长节奏" : "Symbol window rhythm";
+  const summary = state.lang === "zh"
+    ? `${lead.label} 成交 ${lead.volumeMove >= 0 ? "+" : ""}${fmt1.format(lead.volumeMove)}%，权利金 ${lead.premiumMove >= 0 ? "+" : ""}${fmt1.format(lead.premiumMove)}%。`
+    : `${lead.label} volume ${lead.volumeMove >= 0 ? "+" : ""}${fmt1.format(lead.volumeMove)}%, premium ${lead.premiumMove >= 0 ? "+" : ""}${fmt1.format(lead.premiumMove)}%.`;
+  return `
+    <div class="focus-window-stack">
+      <div class="focus-window-lead ${tone}">
+        <span>${label}</span>
+        <strong>${lead.label}</strong>
+        <small>${summary}</small>
+      </div>
+      <div class="focus-window-cards">
+        ${windows.map((item) => focusWindowCard(item)).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function focusWindowStats(series, period) {
+  if (series.length < 2) return null;
+  const size = Math.min(period, series.length);
+  const current = series.slice(-size);
+  const previous = series.slice(Math.max(0, series.length - size * 2), series.length - size);
+  const base = previous.length ? previous : series.slice(0, Math.max(1, Math.min(size, series.length - current.length)));
+  if (!current.length || !base.length) return null;
+  const currentVol = average(current.map((row) => row.totalVol));
+  const baseVol = average(base.map((row) => row.totalVol));
+  const currentPremium = average(current.map((row) => row.premiumNotional));
+  const basePremium = average(base.map((row) => row.premiumNotional));
+  const currentCp = average(current.map((row) => row.cpRatio));
+  const baseCp = average(base.map((row) => row.cpRatio));
+  const volumeMove = baseVol ? ((currentVol - baseVol) / baseVol) * 100 : 0;
+  const premiumMove = basePremium ? ((currentPremium - basePremium) / basePremium) * 100 : 0;
+  const cpMove = currentCp - baseCp;
+  const tone = volumeMove >= 12 || premiumMove >= 18 ? "hot" : volumeMove <= -12 || premiumMove <= -18 ? "cool" : "flat";
+  return { label: `${size}D`, tone, volumeMove, premiumMove, cpMove, currentVol, currentPremium, currentCp };
+}
+
+function focusWindowCard(item) {
+  const volumeWidth = Math.max(8, Math.min(100, 50 + item.volumeMove));
+  const premiumWidth = Math.max(8, Math.min(100, 50 + item.premiumMove * 0.55));
+  const cpWidth = Math.max(8, Math.min(100, 50 + item.cpMove * 42));
+  return `
+    <span class="${item.tone}">
+      <i>${item.label}</i>
+      <b>${item.volumeMove >= 0 ? "+" : ""}${fmt1.format(item.volumeMove)}%</b>
+      <small>${state.lang === "zh" ? "权利金" : "premium"} ${item.premiumMove >= 0 ? "+" : ""}${fmt1.format(item.premiumMove)}% · CP ${item.cpMove >= 0 ? "+" : ""}${fmt2.format(item.cpMove)}</small>
+      <em class="vol" style="--w:${volumeWidth.toFixed(1)}%"></em>
+      <em class="prem" style="--w:${premiumWidth.toFixed(1)}%"></em>
+      <em class="cp" style="--w:${cpWidth.toFixed(1)}%"></em>
+    </span>
   `;
 }
 
