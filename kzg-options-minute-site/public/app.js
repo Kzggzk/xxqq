@@ -1267,10 +1267,15 @@ function renderSymbolRotation() {
   const target = $("symbolRotation");
   if (!target) return;
   const rows = symbolRotationRows();
-  const hot = rows.filter((row) => row.delta >= 0).slice(0, 7);
-  const cool = rows.filter((row) => row.delta < 0).sort((a, b) => a.delta - b.delta).slice(0, 7);
-  const breadth = rows.length ? rows.filter((row) => row.delta >= 0).length / rows.length * 100 : 0;
+  const hotAll = rows.filter((row) => row.delta >= 0);
+  const coolAll = rows.filter((row) => row.delta < 0);
+  const hot = hotAll.slice(0, 7);
+  const cool = [...coolAll].sort((a, b) => a.delta - b.delta).slice(0, 7);
+  const breadth = rows.length ? hotAll.length / rows.length * 100 : 0;
   const leadership = hot.slice(0, 3).map((row) => row.symbol).join(" / ") || "--";
+  const premiumLeader = rows.reduce((best, row) => row.premiumDelta > best.premiumDelta ? row : best, rows[0] || {});
+  const callLeader = rows.reduce((best, row) => Number(row.cpRatio) > Number(best.cpRatio) ? row : best, rows[0] || {});
+  const putLeader = rows.reduce((best, row) => Number(row.cpRatio) < Number(best.cpRatio) ? row : best, rows[0] || {});
   target.innerHTML = `
     <div class="rotation-head">
       <span>
@@ -1278,14 +1283,48 @@ function renderSymbolRotation() {
         <b>${fmt1.format(breadth)}%</b>
       </span>
       <span>
+        <i>${state.lang === "zh" ? "冷热数量" : "Warm / Cool"}</i>
+        <b>${hotAll.length} / ${coolAll.length}</b>
+      </span>
+      <span>
         <i>${state.lang === "zh" ? "升温前三" : "Top leaders"}</i>
         <b>${escapeHtml(leadership)}</b>
       </span>
+      <span>
+        <i>${state.lang === "zh" ? "权利金领头" : "Premium lead"}</i>
+        <b>${escapeHtml(premiumLeader.symbol || "--")} ${premiumLeader.premiumDelta >= 0 ? "+" : ""}${fmt1.format(premiumLeader.premiumDelta || 0)}%</b>
+      </span>
+    </div>
+    <div class="rotation-brief">
+      <p>${rotationNarrative(breadth, hotAll, coolAll, premiumLeader, callLeader, putLeader)}</p>
+      <div>
+        ${rotationChip(state.lang === "zh" ? "Call 领头" : "Call lead", `${callLeader.symbol || "--"} CP ${ratio(callLeader.cpRatio)}`, "hot")}
+        ${rotationChip(state.lang === "zh" ? "Put 防守" : "Put defense", `${putLeader.symbol || "--"} CP ${ratio(putLeader.cpRatio)}`, "cool")}
+        ${rotationChip(state.lang === "zh" ? "权利金" : "Premium", `${premiumLeader.symbol || "--"} ${moneyCompact(premiumLeader.premiumNotional)}`, "flat")}
+      </div>
     </div>
     <div class="rotation-lanes">
       ${rotationLane(state.lang === "zh" ? "升温标的" : "Warming", hot, "hot")}
       ${rotationLane(state.lang === "zh" ? "降温标的" : "Cooling", cool, "cool")}
     </div>
+  `;
+}
+
+function rotationNarrative(breadth, hotAll, coolAll, premiumLeader, callLeader, putLeader) {
+  if (state.lang !== "zh") {
+    const tape = breadth >= 58 ? "warming breadth" : breadth <= 42 ? "cooling breadth" : "balanced breadth";
+    return `${tape}: ${hotAll.length} warming vs ${coolAll.length} cooling. Premium leadership sits in ${premiumLeader.symbol || "--"}; CP extremes are ${callLeader.symbol || "--"} and ${putLeader.symbol || "--"}.`;
+  }
+  const tape = breadth >= 58 ? "升温扩散占优" : breadth <= 42 ? "降温扩散占优" : "冷热扩散均衡";
+  return `${tape}：${hotAll.length} 个升温、${coolAll.length} 个降温。权利金领头在 ${premiumLeader.symbol || "--"}，CP 两端是 ${callLeader.symbol || "--"} 与 ${putLeader.symbol || "--"}。`;
+}
+
+function rotationChip(label, value, tone) {
+  return `
+    <span class="${tone}">
+      <i>${escapeHtml(label)}</i>
+      <b>${escapeHtml(value)}</b>
+    </span>
   `;
 }
 

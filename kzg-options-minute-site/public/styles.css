@@ -2645,7 +2645,7 @@ main {
 
 .rotation-head {
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
+  grid-template-columns: 150px 150px minmax(0, 1fr) minmax(0, 1fr);
   gap: 10px;
 }
 
@@ -2672,6 +2672,70 @@ main {
   font-size: 17px;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.rotation-brief {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.78fr);
+  gap: 10px;
+  align-items: stretch;
+}
+
+.rotation-brief p,
+.rotation-brief span {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.rotation-brief p {
+  margin: 0;
+  padding: 12px 13px;
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.62;
+}
+
+.rotation-brief > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.rotation-brief span {
+  display: grid;
+  gap: 5px;
+  padding: 10px 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.rotation-brief i {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 820;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rotation-brief b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rotation-brief .hot {
+  border-color: rgba(196, 83, 53, 0.34);
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
+.rotation-brief .cool {
+  border-color: rgba(47, 97, 144, 0.34);
+  box-shadow: inset 3px 0 0 #2f6190;
 }
 
 .rotation-lanes {
@@ -3055,6 +3119,8 @@ main {
 body[data-theme="dark"] .range-tabs,
 body[data-theme="dark"] .momentum-row,
 body[data-theme="dark"] .rotation-head span,
+body[data-theme="dark"] .rotation-brief p,
+body[data-theme="dark"] .rotation-brief span,
 body[data-theme="dark"] .rotation-lane,
 body[data-theme="dark"] .rotation-row,
 body[data-theme="dark"] .flow-bucket,
@@ -3108,6 +3174,7 @@ body[data-theme="dark"] .bucket-profile i,
 body[data-theme="dark"] .heatmap-summary i,
 body[data-theme="dark"] .heatmap-summary small,
 body[data-theme="dark"] .rotation-head i,
+body[data-theme="dark"] .rotation-brief i,
 body[data-theme="dark"] .rotation-row small,
 body[data-theme="dark"] .rotation-lane-title,
 body[data-theme="dark"] .flow-bucket i,
@@ -3302,8 +3369,13 @@ body[data-theme="dark"] .tip-grid b {
   }
 
   .rotation-head,
+  .rotation-brief,
   .rotation-lanes {
     grid-template-columns: 1fr;
+  }
+
+  .rotation-brief > div {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .rotation-row {
@@ -3397,6 +3469,14 @@ body[data-theme="dark"] .tip-grid b {
 
   .rotation-head span {
     padding: 9px 10px;
+  }
+
+  .rotation-brief > div {
+    grid-template-columns: 1fr;
+  }
+
+  .rotation-brief p {
+    font-size: 12px;
   }
 
   .rotation-row {
