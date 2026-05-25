@@ -47,6 +47,8 @@ const copy = {
     signalSub: "成交、权利金、CP、开收盘节奏压成一张读盘卡。",
     regime: "交易日温度带",
     regimeSub: "最近 120 个交易日的热冷切换。",
+    rotation: "标的轮动扩散",
+    rotationSub: "相对 20 日均量的升温与降温标的。",
     momentum: "核心标的动量",
     momentumSub: "悬停标的查看跨日成交小图。",
     symbolFocus: "标的聚焦",
@@ -91,6 +93,8 @@ const copy = {
     signalSub: "Volume, premium, CP, open and close rhythm in one read.",
     regime: "Session Temperature",
     regimeSub: "Hot/cool regime switches across the latest 120 sessions.",
+    rotation: "Symbol Rotation",
+    rotationSub: "Warming and cooling symbols versus their 20-session average.",
     momentum: "Core Symbol Momentum",
     momentumSub: "Hover a symbol for its cross-day mini chart.",
     symbolFocus: "Symbol Lens",
@@ -266,7 +270,7 @@ async function loadIndex() {
     if (!symbol || !state.day) return;
     state.focusSymbol = symbol;
     renderSymbolFocus();
-    document.querySelectorAll(".momentum-row").forEach((row) => {
+    document.querySelectorAll(".momentum-row, .rotation-row").forEach((row) => {
       row.classList.toggle("active", row.dataset.symbol === symbol);
     });
   });
@@ -418,6 +422,7 @@ function renderDay() {
   renderRegimeMap();
   renderStockTable();
   renderSymbolFocus();
+  renderSymbolRotation();
   renderSymbolMomentum();
   renderStaticCopy();
 }
@@ -436,6 +441,8 @@ function renderStaticCopy() {
   $("heatmapSub").textContent = t("heatmapSub");
   $("bucketTitle").textContent = t("buckets");
   $("bucketSub").textContent = t("bucketsSub");
+  $("rotationTitle").textContent = t("rotation");
+  $("rotationSub").textContent = t("rotationSub");
   document.querySelector(".side-rail .section-head h2").textContent = t("digest");
   document.querySelector(".side-rail .section-head p").textContent = t("digestSub");
   document.querySelector(".search-wrap span").textContent = t("filter");
@@ -1002,6 +1009,75 @@ function renderSymbolMomentum() {
       </button>
     `;
   }).join("");
+}
+
+function renderSymbolRotation() {
+  const target = $("symbolRotation");
+  if (!target) return;
+  const rows = symbolRotationRows();
+  const hot = rows.filter((row) => row.delta >= 0).slice(0, 7);
+  const cool = rows.filter((row) => row.delta < 0).sort((a, b) => a.delta - b.delta).slice(0, 7);
+  const breadth = rows.length ? rows.filter((row) => row.delta >= 0).length / rows.length * 100 : 0;
+  const leadership = hot.slice(0, 3).map((row) => row.symbol).join(" / ") || "--";
+  target.innerHTML = `
+    <div class="rotation-head">
+      <span>
+        <i>${state.lang === "zh" ? "扩散率" : "Breadth"}</i>
+        <b>${fmt1.format(breadth)}%</b>
+      </span>
+      <span>
+        <i>${state.lang === "zh" ? "升温前三" : "Top leaders"}</i>
+        <b>${escapeHtml(leadership)}</b>
+      </span>
+    </div>
+    <div class="rotation-lanes">
+      ${rotationLane(state.lang === "zh" ? "升温标的" : "Warming", hot, "hot")}
+      ${rotationLane(state.lang === "zh" ? "降温标的" : "Cooling", cool, "cool")}
+    </div>
+  `;
+}
+
+function symbolRotationRows() {
+  const seen = new Set();
+  return [...state.day.indexRows, ...state.day.etfRows, ...state.day.stockRows]
+    .filter((row) => {
+      if (seen.has(row.symbol)) return false;
+      seen.add(row.symbol);
+      return true;
+    })
+    .map((row) => {
+      const series = symbolSeriesUntil(row.symbol, 50);
+      const prev = series.slice(0, -1).slice(-20);
+      const avg = average(prev.map((item) => item.totalVol));
+      const delta = avg ? ((Number(row.totalVol) - avg) / avg) * 100 : 0;
+      const premiumAvg = average(prev.map((item) => item.premiumNotional));
+      const premiumDelta = premiumAvg ? ((Number(row.premiumNotional) - premiumAvg) / premiumAvg) * 100 : 0;
+      return { ...row, delta, premiumDelta, series };
+    })
+    .filter((row) => row.series.length >= 5)
+    .sort((a, b) => b.delta - a.delta);
+}
+
+function rotationLane(title, rows, tone) {
+  return `
+    <div class="rotation-lane ${tone}">
+      <div class="rotation-lane-title">
+        <b>${title}</b>
+        <span>${rows.length}${state.lang === "zh" ? " 个" : ""}</span>
+      </div>
+      ${rows.map((row) => {
+        const active = row.symbol === state.focusSymbol ? " active" : "";
+        return `
+        <button type="button" class="rotation-row${active}" data-symbol="${escapeHtml(row.symbol)}">
+          <strong>${escapeHtml(row.symbol)}</strong>
+          <span>${sparkline(row.series, "totalVol", 112, 28, tone === "hot" ? "#c45335" : "#2f6190")}</span>
+          <em>${row.delta >= 0 ? "+" : ""}${fmt1.format(row.delta)}%</em>
+          <small>${moneyCompact(row.premiumNotional)} · ${row.premiumDelta >= 0 ? "+" : ""}${fmt1.format(row.premiumDelta)}%</small>
+        </button>
+      `;
+      }).join("")}
+    </div>
+  `;
 }
 
 function ensureFocusSymbol() {

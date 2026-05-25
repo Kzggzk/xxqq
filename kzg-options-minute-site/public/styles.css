@@ -1714,7 +1714,7 @@ main {
 
 .analysis-grid {
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  align-items: stretch;
+  align-items: start;
   gap: 18px;
 }
 
@@ -1736,6 +1736,10 @@ main {
 
 .bucket-panel {
   grid-column: span 5;
+}
+
+.rotation-panel {
+  grid-column: 1 / -1;
 }
 
 .range-tabs {
@@ -2216,6 +2220,143 @@ main {
   margin-bottom: 16px;
 }
 
+.symbol-rotation {
+  display: grid;
+  gap: 12px;
+}
+
+.rotation-head {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 10px;
+}
+
+.rotation-head span {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  padding: 11px 12px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.62);
+  font-variant-numeric: tabular-nums;
+}
+
+.rotation-head i {
+  color: var(--muted);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 820;
+}
+
+.rotation-head b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 17px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rotation-lanes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.rotation-lane {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.rotation-lane.hot {
+  box-shadow: inset 4px 0 0 #c45335;
+}
+
+.rotation-lane.cool {
+  box-shadow: inset 4px 0 0 #2f6190;
+}
+
+.rotation-lane-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.rotation-lane-title b {
+  color: var(--ink);
+  font-size: 12px;
+}
+
+.rotation-row {
+  display: grid;
+  grid-template-columns: 58px minmax(84px, 1fr) 74px 118px;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 43px;
+  padding: 6px 10px;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+}
+
+.rotation-row:last-child {
+  border-bottom: 0;
+}
+
+.rotation-row:hover {
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.rotation-row.active {
+  background: rgba(154, 106, 18, 0.12);
+  box-shadow: inset 0 0 0 1px rgba(154, 106, 18, 0.22);
+}
+
+.rotation-row strong {
+  font-weight: 860;
+}
+
+.rotation-row svg {
+  display: block;
+  width: 100%;
+  height: 28px;
+}
+
+.rotation-row em,
+.rotation-row small {
+  overflow: hidden;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.rotation-row em {
+  font-style: normal;
+  font-weight: 820;
+}
+
+.rotation-lane.hot .rotation-row em {
+  color: var(--red);
+}
+
+.rotation-lane.cool .rotation-row em {
+  color: var(--blue);
+}
+
+.rotation-row small {
+  color: var(--muted);
+  font-size: 11px;
+}
+
 .symbol-momentum {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2466,6 +2607,9 @@ main {
 
 body[data-theme="dark"] .range-tabs,
 body[data-theme="dark"] .momentum-row,
+body[data-theme="dark"] .rotation-head span,
+body[data-theme="dark"] .rotation-lane,
+body[data-theme="dark"] .rotation-row,
 body[data-theme="dark"] .symbol-focus,
 body[data-theme="dark"] .trend-extremes button,
 body[data-theme="dark"] .trend-lens span,
@@ -2480,6 +2624,7 @@ body[data-theme="dark"] .market-tooltip {
 }
 
 body[data-theme="dark"] .trend-extremes button:hover,
+body[data-theme="dark"] .rotation-row:hover,
 body[data-theme="dark"] .regime-stats button:hover {
   background: #27231d;
 }
@@ -2500,6 +2645,9 @@ body[data-theme="dark"] .trend-lens small,
 body[data-theme="dark"] .bucket-profile i,
 body[data-theme="dark"] .heatmap-summary i,
 body[data-theme="dark"] .heatmap-summary small,
+body[data-theme="dark"] .rotation-head i,
+body[data-theme="dark"] .rotation-row small,
+body[data-theme="dark"] .rotation-lane-title,
 body[data-theme="dark"] .signal-strip small,
 body[data-theme="dark"] .signal-strip span {
   color: var(--muted);
@@ -2517,6 +2665,11 @@ body[data-theme="dark"] .momentum-row:hover {
 
 body[data-theme="dark"] .momentum-row.active {
   background: #27231d;
+}
+
+body[data-theme="dark"] .rotation-row.active {
+  background: rgba(216, 168, 75, 0.14);
+  box-shadow: inset 0 0 0 1px rgba(216, 168, 75, 0.24);
 }
 
 body[data-theme="dark"] .market-tooltip {
@@ -2613,6 +2766,16 @@ body[data-theme="dark"] .tip-grid b {
     grid-template-columns: 1fr;
   }
 
+  .rotation-head,
+  .rotation-lanes {
+    grid-template-columns: 1fr;
+  }
+
+  .rotation-row {
+    grid-template-columns: 52px minmax(0, 1fr) 68px 100px;
+    gap: 7px;
+  }
+
   .focus-head,
   .focus-metrics,
   .focus-charts {
@@ -2643,6 +2806,24 @@ body[data-theme="dark"] .tip-grid b {
 }
 
 @media (max-width: 520px) {
+  .rotation-head span {
+    padding: 9px 10px;
+  }
+
+  .rotation-row {
+    grid-template-columns: 48px minmax(0, 1fr) 62px;
+    gap: 5px;
+    padding: 6px 7px;
+  }
+
+  .rotation-row small {
+    display: none;
+  }
+
+  .rotation-row em {
+    font-size: 11px;
+  }
+
   .momentum-row {
     grid-template-columns: 48px minmax(0, 1fr) 68px 54px;
     gap: 5px;
