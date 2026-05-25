@@ -1143,42 +1143,48 @@ function renderTrend() {
         <span>${state.lang === "zh" ? "区间分位" : "Percentile"} ${fmt0.format(selectedRank)}%</span>
       </div>
     </div>
-    <div class="trend-lens">
-      ${trendLensCard(state.lang === "zh" ? "成交变化" : "Volume move", `${change >= 0 ? "+" : ""}${fmt1.format(change)}%`, `${shortDate(prev?.date || first.date)} → ${shortDate(latest.date)}`, change >= 8 ? "hot" : change <= -8 ? "cool" : "flat")}
-      ${trendLensCard(state.lang === "zh" ? "权利金变化" : "Premium move", `${premiumChange >= 0 ? "+" : ""}${fmt1.format(premiumChange)}%`, `${moneyCompact(first.totalPremium)} → ${moneyCompact(latest.totalPremium)}`, premiumChange >= 12 ? "hot" : premiumChange <= -12 ? "cool" : "flat")}
-      ${trendLensCard(state.lang === "zh" ? "CP 漂移" : "CP drift", `${cpDrift >= 0 ? "+" : ""}${fmt2.format(cpDrift)}`, `${ratio(first.marketCp)} → ${ratio(latest.marketCp)}`, cpDrift >= 0.18 ? "hot" : cpDrift <= -0.18 ? "cool" : "flat")}
-      ${trendLensCard(state.lang === "zh" ? "个股权重" : "Stock share", `${stockShareDrift >= 0 ? "+" : ""}${fmt1.format(stockShareDrift)}pt`, `${fmt1.format(stockShareFirst)}% → ${fmt1.format(stockShareLatest)}%`, stockShareDrift >= 5 ? "hot" : stockShareDrift <= -5 ? "cool" : "flat")}
-    </div>
-    <div class="trend-radar">
-      ${trendRadar.map((item) => trendRadarCard(item)).join("")}
+    <div class="trend-cockpit">
+      <div class="trend-cockpit-left">
+        <div class="trend-lens">
+          ${trendLensCard(state.lang === "zh" ? "成交变化" : "Volume move", `${change >= 0 ? "+" : ""}${fmt1.format(change)}%`, `${shortDate(prev?.date || first.date)} → ${shortDate(latest.date)}`, change >= 8 ? "hot" : change <= -8 ? "cool" : "flat")}
+          ${trendLensCard(state.lang === "zh" ? "权利金变化" : "Premium move", `${premiumChange >= 0 ? "+" : ""}${fmt1.format(premiumChange)}%`, `${moneyCompact(first.totalPremium)} → ${moneyCompact(latest.totalPremium)}`, premiumChange >= 12 ? "hot" : premiumChange <= -12 ? "cool" : "flat")}
+          ${trendLensCard(state.lang === "zh" ? "CP 漂移" : "CP drift", `${cpDrift >= 0 ? "+" : ""}${fmt2.format(cpDrift)}`, `${ratio(first.marketCp)} → ${ratio(latest.marketCp)}`, cpDrift >= 0.18 ? "hot" : cpDrift <= -0.18 ? "cool" : "flat")}
+          ${trendLensCard(state.lang === "zh" ? "个股权重" : "Stock share", `${stockShareDrift >= 0 ? "+" : ""}${fmt1.format(stockShareDrift)}pt`, `${fmt1.format(stockShareFirst)}% → ${fmt1.format(stockShareLatest)}%`, stockShareDrift >= 5 ? "hot" : stockShareDrift <= -5 ? "cool" : "flat")}
+        </div>
+        <div class="trend-radar">
+          ${trendRadar.map((item) => trendRadarCard(item)).join("")}
+        </div>
+      </div>
+      <div class="trend-cockpit-right">
+        <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${t("trend")}">
+          <defs>
+            <linearGradient id="trendFill" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stop-color="${change >= 0 ? "#d96a4a" : "#2f6190"}" stop-opacity=".28"/>
+              <stop offset="1" stop-color="${change >= 0 ? "#d96a4a" : "#2f6190"}" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <polygon points="${area}" fill="url(#trendFill)"></polygon>
+          ${pointsVol.map((point, index) => `<line x1="${point.x.toFixed(1)}" x2="${point.x.toFixed(1)}" y1="${height - padY}" y2="${point.y.toFixed(1)}" stroke="${change >= 0 ? "#d7a28f" : "#9cb7d0"}" stroke-width="${Math.max(2, 12 / Math.sqrt(rows.length)).toFixed(1)}" opacity=".34"></line>`).join("")}
+          <polyline points="${lineVol}" fill="none" stroke="${change >= 0 ? "#c45335" : "#2f6190"}" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"></polyline>
+          <polyline points="${linePremium}" fill="none" stroke="#a47419" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" opacity=".85"></polyline>
+          <polyline points="${lineCp}" fill="none" stroke="#148355" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" opacity=".72"></polyline>
+          ${trendMarker(highPoint, "high", state.lang === "zh" ? "高" : "H")}
+          ${trendMarker(lowPoint, "low", state.lang === "zh" ? "低" : "L")}
+          ${trendMarker(latestPoint, "latest", state.lang === "zh" ? "今" : "N")}
+          ${pointsVol.map((point, index) => index % Math.max(1, Math.ceil(rows.length / 7)) === 0 || index === pointsVol.length - 1 ? `<text x="${point.x.toFixed(1)}" y="${height - 6}" text-anchor="middle">${shortDate(point.row.date)}</text>` : "").join("")}
+          <text x="${padX}" y="16" text-anchor="start">${state.lang === "zh" ? "成交量" : "Volume"}</text>
+          <text x="${width - padX}" y="16" text-anchor="end">${state.lang === "zh" ? "权利金 / CP" : "Premium / CP"}</text>
+        </svg>
+        <div class="trend-extremes">
+          <button type="button" data-jump-date="${rangeHigh.date}">${state.lang === "zh" ? "区间高点" : "Range high"} <b>${shortDate(rangeHigh.date)} · ${wan(rangeHigh.totalVol)}</b></button>
+          <button type="button" data-jump-date="${rangeLow.date}">${state.lang === "zh" ? "区间低点" : "Range low"} <b>${shortDate(rangeLow.date)} · ${wan(rangeLow.totalVol)}</b></button>
+          <button type="button" data-jump-date="${latest.date}">${state.lang === "zh" ? "当前权利金" : "Current premium"} <b>${moneyCompact(latest.totalPremium)}</b></button>
+        </div>
+        ${categoryStack(latest)}
+        ${trendPulseStrip(rows)}
+      </div>
     </div>
     ${trendWindowStack(rows)}
-    ${trendPulseStrip(rows)}
-    <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${t("trend")}">
-      <defs>
-        <linearGradient id="trendFill" x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0" stop-color="${change >= 0 ? "#d96a4a" : "#2f6190"}" stop-opacity=".28"/>
-          <stop offset="1" stop-color="${change >= 0 ? "#d96a4a" : "#2f6190"}" stop-opacity="0"/>
-        </linearGradient>
-      </defs>
-      <polygon points="${area}" fill="url(#trendFill)"></polygon>
-      ${pointsVol.map((point, index) => `<line x1="${point.x.toFixed(1)}" x2="${point.x.toFixed(1)}" y1="${height - padY}" y2="${point.y.toFixed(1)}" stroke="${change >= 0 ? "#d7a28f" : "#9cb7d0"}" stroke-width="${Math.max(2, 12 / Math.sqrt(rows.length)).toFixed(1)}" opacity=".34"></line>`).join("")}
-      <polyline points="${lineVol}" fill="none" stroke="${change >= 0 ? "#c45335" : "#2f6190"}" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"></polyline>
-      <polyline points="${linePremium}" fill="none" stroke="#a47419" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" opacity=".85"></polyline>
-      <polyline points="${lineCp}" fill="none" stroke="#148355" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" opacity=".72"></polyline>
-      ${trendMarker(highPoint, "high", state.lang === "zh" ? "高" : "H")}
-      ${trendMarker(lowPoint, "low", state.lang === "zh" ? "低" : "L")}
-      ${trendMarker(latestPoint, "latest", state.lang === "zh" ? "今" : "N")}
-      ${pointsVol.map((point, index) => index % Math.max(1, Math.ceil(rows.length / 7)) === 0 || index === pointsVol.length - 1 ? `<text x="${point.x.toFixed(1)}" y="${height - 6}" text-anchor="middle">${shortDate(point.row.date)}</text>` : "").join("")}
-      <text x="${padX}" y="16" text-anchor="start">${state.lang === "zh" ? "成交量" : "Volume"}</text>
-      <text x="${width - padX}" y="16" text-anchor="end">${state.lang === "zh" ? "权利金 / CP" : "Premium / CP"}</text>
-    </svg>
-    <div class="trend-extremes">
-      <button type="button" data-jump-date="${rangeHigh.date}">${state.lang === "zh" ? "区间高点" : "Range high"} <b>${shortDate(rangeHigh.date)} · ${wan(rangeHigh.totalVol)}</b></button>
-      <button type="button" data-jump-date="${rangeLow.date}">${state.lang === "zh" ? "区间低点" : "Range low"} <b>${shortDate(rangeLow.date)} · ${wan(rangeLow.totalVol)}</b></button>
-      <button type="button" data-jump-date="${latest.date}">${state.lang === "zh" ? "当前权利金" : "Current premium"} <b>${moneyCompact(latest.totalPremium)}</b></button>
-    </div>
-    ${categoryStack(latest)}
   `;
 }
 

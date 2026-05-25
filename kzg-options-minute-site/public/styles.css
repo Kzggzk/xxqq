@@ -2425,6 +2425,58 @@ main {
   font-variant-numeric: tabular-nums;
 }
 
+.trend-cockpit {
+  display: grid;
+  grid-template-columns: minmax(390px, 0.82fr) minmax(0, 1.28fr);
+  gap: 14px;
+  align-items: start;
+}
+
+.trend-cockpit-left,
+.trend-cockpit-right {
+  min-width: 0;
+}
+
+.trend-cockpit .trend-lens {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 0 10px;
+}
+
+.trend-cockpit .trend-radar {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 0 10px;
+}
+
+.trend-cockpit .trend-radar button:last-child {
+  grid-column: 1 / -1;
+}
+
+.trend-cockpit .trend-window-stack {
+  grid-template-columns: 1fr;
+  margin: 0 0 10px;
+}
+
+.trend-cockpit .trend-pulse-strip {
+  grid-template-columns: 92px minmax(0, 1fr);
+  margin: 0;
+}
+
+.trend-cockpit-right .trend-pulse-strip {
+  margin-top: 10px;
+}
+
+.trend-cockpit-right svg {
+  margin-top: 2px;
+}
+
+.trend-cockpit-right .trend-extremes {
+  margin: 10px 0 10px;
+}
+
+.trend-cockpit + .trend-window-stack {
+  margin: 12px 0 0;
+}
+
 .trend-lens {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -4663,6 +4715,20 @@ body[data-theme="dark"] .tip-grid b {
   .bucket-panel,
   .momentum-panel {
     grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 1080px) {
+  .trend-cockpit {
+    grid-template-columns: 1fr;
+  }
+
+  .trend-cockpit .trend-radar {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .trend-cockpit .trend-radar button:last-child {
+    grid-column: auto;
   }
 }
 
