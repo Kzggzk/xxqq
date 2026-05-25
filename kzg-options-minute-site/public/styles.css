@@ -1095,6 +1095,144 @@ main {
   box-shadow: inset 3px 0 0 #2f6190;
 }
 
+.heatmap-baton {
+  display: grid;
+  grid-template-columns: 0.72fr 1.55fr;
+  gap: 9px;
+  margin: -4px 0 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.heat-baton-head,
+.heat-baton-row {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.heat-baton-head {
+  display: grid;
+  align-content: center;
+  gap: 5px;
+  padding: 10px 11px;
+  border-left: 4px solid var(--gold);
+}
+
+.heat-baton-head.hot {
+  border-left-color: #c45335;
+}
+
+.heat-baton-head.cool {
+  border-left-color: #2f6190;
+}
+
+.heat-baton-head span,
+.heat-baton-head small,
+.heat-baton-row small {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 820;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.heat-baton-head strong {
+  overflow: hidden;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", "Songti SC", serif;
+  font-size: 23px;
+  line-height: 1;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.heat-baton-head small {
+  line-height: 1.35;
+  white-space: normal;
+}
+
+.heat-baton-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.heat-baton-row {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr) 72px;
+  gap: 4px 8px;
+  align-items: center;
+  padding: 8px 9px;
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+}
+
+.heat-baton-row:hover {
+  border-color: var(--ink);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.heat-baton-row.hot {
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
+.heat-baton-row.cool {
+  box-shadow: inset 3px 0 0 #2f6190;
+}
+
+.heat-baton-row strong,
+.heat-baton-row b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 860;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.heat-baton-row b {
+  text-align: right;
+}
+
+.heat-baton-row small {
+  grid-column: 1 / -1;
+  font-size: 9px;
+}
+
+.heat-baton-track {
+  display: flex;
+  min-width: 0;
+  height: 6px;
+  overflow: hidden;
+  background: rgba(201, 194, 178, 0.24);
+}
+
+.heat-baton-track i {
+  display: block;
+  min-width: 3px;
+  height: 100%;
+}
+
+.heat-baton-track .open {
+  background: rgba(196, 83, 53, 0.72);
+}
+
+.heat-baton-track .mid {
+  background: rgba(154, 106, 18, 0.68);
+}
+
+.heat-baton-track .close {
+  background: rgba(47, 97, 144, 0.72);
+}
+
+.heat-baton-track .rest {
+  background: rgba(20, 131, 85, 0.58);
+}
+
 .heat-table {
   display: grid;
   grid-template-columns: 74px repeat(13, minmax(60px, 1fr));
@@ -4313,6 +4451,8 @@ body[data-theme="dark"] .trend-lens span,
 body[data-theme="dark"] .bucket-profile span,
 body[data-theme="dark"] .heatmap-summary span,
 body[data-theme="dark"] .heat-rhythm-card,
+body[data-theme="dark"] .heat-baton-head,
+body[data-theme="dark"] .heat-baton-row,
 body[data-theme="dark"] .regime-stats span,
 body[data-theme="dark"] .regime-stats button,
 body[data-theme="dark"] .signal-strip,
@@ -4338,6 +4478,7 @@ body[data-theme="dark"] .trend-extremes button:hover,
 body[data-theme="dark"] .trend-radar button:hover,
 body[data-theme="dark"] .rotation-row:hover,
 body[data-theme="dark"] .heat-rhythm-card:hover,
+body[data-theme="dark"] .heat-baton-row:hover,
 body[data-theme="dark"] .session-chip-grid button:hover,
 body[data-theme="dark"] .side-leader-list button:hover,
 body[data-theme="dark"] .side-extreme-list button:hover,
@@ -4417,6 +4558,9 @@ body[data-theme="dark"] .risk-pulse span,
 body[data-theme="dark"] .risk-cells i,
 body[data-theme="dark"] .heat-rhythm-card span,
 body[data-theme="dark"] .heat-rhythm-card small,
+body[data-theme="dark"] .heat-baton-head span,
+body[data-theme="dark"] .heat-baton-head small,
+body[data-theme="dark"] .heat-baton-row small,
 body[data-theme="dark"] .signal-strip small,
 body[data-theme="dark"] .signal-strip span {
   color: var(--muted);
@@ -4571,7 +4715,8 @@ body[data-theme="dark"] .tip-grid b {
   .trend-extremes,
   .signal-board,
   .signal-strips,
-  .heatmap-rhythm {
+  .heatmap-rhythm,
+  .heatmap-baton {
     grid-template-columns: 1fr;
   }
 
@@ -4782,6 +4927,7 @@ body[data-theme="dark"] .tip-grid b {
   .momentum-list,
   .session-tape,
   .side-flow-grid,
+  .heat-baton-list,
   .side-leader-list button,
   .side-lane-stack span,
   .side-extreme-list {

@@ -944,6 +944,7 @@ function renderHeatmap() {
   } else {
     $("heatmapRhythm").innerHTML = "";
   }
+  $("heatmapBaton").innerHTML = heatmapBaton(heatmapBatonRows(heat));
   let html = `<div class="heat-table"><div class="heat-cell head">${state.lang === "zh" ? "标的" : "Symbol"}</div>`;
   html += labels.map((label) => `<div class="heat-cell head">${label}</div>`).join("");
   for (const row of heat) {
@@ -998,6 +999,80 @@ function heatmapRhythmCard(label, row, value, sub, tone) {
       <strong>${escapeHtml(row.symbol)}</strong>
       <b>${escapeHtml(value)}</b>
       <small>${escapeHtml(sub)}</small>
+    </button>
+  `;
+}
+
+function heatmapBatonRows(heat) {
+  return heat.map((row) => {
+    const values = row.values.map((value) => Number(value) || 0);
+    const total = values.reduce((sum, value) => sum + value, 0) || 1;
+    const openVol = values.slice(0, 2).reduce((sum, value) => sum + value, 0);
+    const midVol = values.slice(5, 8).reduce((sum, value) => sum + value, 0);
+    const closeVol = values.slice(-2).reduce((sum, value) => sum + value, 0);
+    const restVol = Math.max(0, total - openVol - midVol - closeVol);
+    const peakIndex = values.reduce((best, value, index) => value > values[best] ? index : best, 0);
+    const openShare = (openVol / total) * 100;
+    const midShare = (midVol / total) * 100;
+    const closeShare = (closeVol / total) * 100;
+    const closeShift = closeShare - openShare;
+    const tone = closeShift >= 9 ? "hot" : closeShift <= -9 ? "cool" : "flat";
+    return {
+      symbol: row.symbol,
+      total,
+      openVol,
+      midVol,
+      closeVol,
+      restVol,
+      openShare,
+      midShare,
+      closeShare,
+      restShare: (restVol / total) * 100,
+      closeShift,
+      peakSlot: state.day.buckets.labels[peakIndex] || "--",
+      tone,
+    };
+  }).sort((a, b) => b.total - a.total).slice(0, 6);
+}
+
+function heatmapBaton(rows) {
+  if (!rows.length) return "";
+  const top = rows[0];
+  const closeLift = rows.reduce((best, row) => row.closeShift > best.closeShift ? row : best, rows[0]);
+  const openLead = rows.reduce((best, row) => row.openShare > best.openShare ? row : best, rows[0]);
+  const tone = closeLift.closeShift >= 9 ? "hot" : openLead.openShare >= 30 ? "cool" : "flat";
+  const title = state.lang === "zh" ? "日内接力路径" : "Intraday relay path";
+  const read = state.lang === "zh"
+    ? `总量锚点 ${top.symbol}，尾盘升温 ${closeLift.symbol} ${closeLift.closeShift >= 0 ? "+" : ""}${fmt1.format(closeLift.closeShift)}pt。`
+    : `Volume anchor ${top.symbol}; closing lift ${closeLift.symbol} ${closeLift.closeShift >= 0 ? "+" : ""}${fmt1.format(closeLift.closeShift)}pt.`;
+  return `
+    <div class="heat-baton-head ${tone}">
+      <span>${title}</span>
+      <strong>${escapeHtml(top.symbol)} → ${escapeHtml(closeLift.symbol)}</strong>
+      <small>${read}</small>
+    </div>
+    <div class="heat-baton-list">
+      ${rows.map((row) => heatmapBatonRow(row)).join("")}
+    </div>
+  `;
+}
+
+function heatmapBatonRow(row) {
+  const label = state.lang === "zh"
+    ? `开 ${fmt1.format(row.openShare)}% · 中 ${fmt1.format(row.midShare)}% · 尾 ${fmt1.format(row.closeShare)}%`
+    : `O ${fmt1.format(row.openShare)}% · M ${fmt1.format(row.midShare)}% · C ${fmt1.format(row.closeShare)}%`;
+  const shift = `${row.closeShift >= 0 ? "+" : ""}${fmt1.format(row.closeShift)}pt`;
+  return `
+    <button type="button" class="heat-baton-row ${row.tone}" data-symbol="${escapeHtml(row.symbol)}">
+      <strong>${escapeHtml(row.symbol)}</strong>
+      <span class="heat-baton-track" aria-hidden="true">
+        <i class="open" style="width:${Math.max(5, row.openShare).toFixed(1)}%"></i>
+        <i class="mid" style="width:${Math.max(5, row.midShare).toFixed(1)}%"></i>
+        <i class="close" style="width:${Math.max(5, row.closeShare).toFixed(1)}%"></i>
+        <i class="rest" style="width:${Math.max(5, row.restShare).toFixed(1)}%"></i>
+      </span>
+      <b>${wan(row.total)}</b>
+      <small>${label} · ${state.lang === "zh" ? "峰值" : "peak"} ${escapeHtml(row.peakSlot)} · ${shift}</small>
     </button>
   `;
 }
