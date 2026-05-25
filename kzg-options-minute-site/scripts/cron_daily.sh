@@ -31,17 +31,34 @@ log "step: download_massive.py"
 dl_status=${PIPESTATUS[0]}
 log "download_massive.py exit=$dl_status"
 
-# Step 2: daily build + deploy.
-log "step: daily_update.py --deploy"
-/usr/bin/env python3 scripts/daily_update.py --deploy 2>&1 | tee -a "$LOG"
+# Step 2: build (no --deploy yet, we orchestrate deploy after per-day-html step).
+log "step: daily_update.py (build only)"
+/usr/bin/env python3 scripts/daily_update.py 2>&1 | tee -a "$LOG"
 status=${PIPESTATUS[0]}
 log "daily_update.py exit=$status"
-
-# exit 2 = missing source csv.gz, non-fatal (downloader already warned).
-# anything else non-zero is a real failure — abort and surface.
 if [ "$status" -ne 0 ] && [ "$status" -ne 2 ]; then
-  log "ERR daily_update.py failed unexpectedly — aborting before deploy validation"
+  log "ERR daily_update.py failed unexpectedly — aborting"
   exit 5
+fi
+
+# Step 3: merge per-day HTML reports into dist/ so /r/:date and /latest resolve.
+log "step: per_day_to_dist.py"
+/usr/bin/env python3 scripts/per_day_to_dist.py 2>&1 | tee -a "$LOG"
+perday_status=${PIPESTATUS[0]}
+log "per_day_to_dist.py exit=$perday_status"
+if [ "$perday_status" -ne 0 ]; then
+  log "ERR per_day_to_dist.py failed"
+  exit 6
+fi
+
+# Step 4: netlify deploy --prod --dir dist
+log "step: netlify deploy --prod --dir dist"
+/usr/local/bin/npx --yes netlify-cli deploy --prod --dir dist 2>&1 | tee -a "$LOG"
+deploy_status=${PIPESTATUS[0]}
+log "netlify deploy exit=$deploy_status"
+if [ "$deploy_status" -ne 0 ]; then
+  log "ERR netlify deploy failed"
+  exit 7
 fi
 
 if [ "$status" -eq 2 ]; then

@@ -3,10 +3,11 @@
 Static Netlify site generated from local Massive options minute aggregate flat files.
 
 Live: <https://kzg-option-house.netlify.app>
-- `/` — full SPA dashboard (timeline + heatmap + tables)
-- `/r/YYYY-MM-DD` — per-day compact report (toolbar, prev/next, zh/en toggle)
-- `/latest` — newest trading day
-- `/data/index.json` — manifest (all dates + missing days)
+- `/` — full SPA dashboard (timeline + heatmap + tables) — 74 perf (CLS-limited)
+- `/r/YYYY-MM-DD` — per-day compact report (toolbar, prev/next, zh/en toggle) — 93 perf
+- `/latest` — alias to newest trading day's report
+- `/r/report-YYYY-MM-DD.html` — direct file URL (the rewrite target)
+- `/data/*` & `/reports/*` are 404 (data lives in `/assets/kzg-pack.js` bundle)
 
 ## Source data
 
@@ -20,12 +21,12 @@ Files arrive from <https://massive.com/dashboard> → Flat Files → Options →
 
 `launchd` job `com.kzg.options-report` fires every day at **20:00 Asia/Shanghai** (post US market close):
 
-1. `scripts/cron_daily.sh` invokes `daily_update.py --deploy`
-2. `daily_update.py` resolves previous trading day via NYSE holiday calendar
-3. If iCloud has the `csv.gz` → `build_options_site.py --date {date} --force`
-4. Render pass rebuilds all per-day HTMLs with prev/next nav
-5. `npx netlify deploy --prod --dir public` ships to Netlify CDN
-6. Smoke check curls `/latest` and `/data/index.json` for HTTP 200
+1. `scripts/cron_daily.sh` orchestrates the chain
+2. `scripts/download_massive.py` — cookie-reuse curl scaffold (exit 2 if env not set, idempotent)
+3. `scripts/daily_update.py` (no `--deploy`) — resolves previous trading day via NYSE calendar; if iCloud lacks the csv.gz, tries Polygon-compatible S3 endpoint via Keychain creds; builds `data/days/{date}.json` + per-day `public/reports/{date}.html`; packs `dist/assets/kzg-pack.js` payload
+4. `scripts/per_day_to_dist.py` — copies `public/reports/*.html` → `dist/r/report-*.html` + `public/styles/report.css` → `dist/styles/report.css` + `dist/r/latest.html`
+5. `npx netlify-cli deploy --prod --dir dist` ships SPA + per-day HTMLs to CDN
+6. Smoke check curls `/` and `/assets/kzg-pack.js` for HTTP 200
 
 If the source csv.gz is missing for the target trading day, daily_update exits with code 2 and the cron log records `WARN: source csv.gz missing`. Trigger the Massive downloader manually in that case.
 
