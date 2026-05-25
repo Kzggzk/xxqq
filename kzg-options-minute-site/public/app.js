@@ -423,6 +423,7 @@ function renderDay() {
   renderSignalBoard();
   renderRegimeMap();
   renderStockTable();
+  renderSideIntel();
   renderSymbolFocus();
   renderSymbolRotation();
   renderSymbolMomentum();
@@ -457,6 +458,161 @@ function renderStaticCopy() {
 
 function renderDigest() {
   $("digest").innerHTML = state.day.digest.map((line) => `<div>${escapeHtml(line)}</div>`).join("");
+}
+
+function renderSideIntel() {
+  const target = $("sideIntel");
+  if (!target || !state.day) return;
+  const buckets = state.day.buckets.market || [];
+  const avg = trailingBucketAverage(state.selectedIndex, 20);
+  const total = buckets.reduce((sum, row) => sum + (Number(row.total) || 0), 0) || 1;
+  const peak = buckets.reduce((best, row) => Number(row.total) > Number(best.total) ? row : best, buckets[0] || {});
+  const anomaly = buckets.reduce((best, row, index) => {
+    const base = avg[index] || 0;
+    const spread = base ? ((Number(row.total) - base) / base) * 100 : 0;
+    const item = { ...row, spread };
+    return !best || Math.abs(item.spread) > Math.abs(best.spread) ? item : best;
+  }, null);
+  const open = bucketShare(buckets, [0, 1], total);
+  const mid = bucketShare(buckets, [5, 6, 7], total);
+  const close = bucketShare(buckets, [buckets.length - 2, buckets.length - 1], total);
+  const cpTilt = buckets.reduce((best, row) => bucketCp(row) > bucketCp(best) ? row : best, buckets[0] || {});
+  const leaders = [
+    { lane: t("index"), row: state.day.indexRows[0], tone: "cool" },
+    { lane: t("etf"), row: state.day.etfRows[0], tone: "flat" },
+    { lane: t("stock"), row: state.day.stockRows[0], tone: "hot" },
+  ].filter((item) => item.row);
+  const allRows = uniqueSymbolRows();
+  const premiumLead = allRows.reduce((best, row) => Number(row.premiumNotional) > Number(best.premiumNotional) ? row : best, allRows[0] || {});
+  const callLead = allRows.reduce((best, row) => Number(row.cpRatio) > Number(best.cpRatio) ? row : best, allRows[0] || {});
+  const putLead = allRows.reduce((best, row) => Number(row.cpRatio) < Number(best.cpRatio) ? row : best, allRows[0] || {});
+  const ov = state.day.overview;
+  const lanes = [
+    { label: t("index"), key: "INDEX", tone: "cool" },
+    { label: t("etf"), key: "ETF", tone: "flat" },
+    { label: t("stock"), key: "STOCK", tone: "hot" },
+  ].map((lane) => ({ ...lane, item: ov.category[lane.key] || {} }));
+
+  target.innerHTML = `
+    <div class="side-module">
+      <div class="side-module-head">
+        <b>${state.lang === "zh" ? "日内节奏快读" : "Intraday Quick Read"}</b>
+        <span>${state.lang === "zh" ? "30分钟桶" : "30m buckets"}</span>
+      </div>
+      <div class="side-flow-grid">
+        ${sideMetric(state.lang === "zh" ? "峰值时段" : "Peak slot", peak.time || "--", wan(peak.total || 0), "hot")}
+        ${sideMetric(state.lang === "zh" ? "异常桶" : "Outlier", anomaly?.time || "--", `${(anomaly?.spread || 0) >= 0 ? "+" : ""}${fmt1.format(anomaly?.spread || 0)}%`, (anomaly?.spread || 0) >= 0 ? "hot" : "cool")}
+        ${sideMetric(state.lang === "zh" ? "尾盘/开盘" : "Close/Open", `${fmt1.format(close)}% / ${fmt1.format(open)}%`, state.lang === "zh" ? "成交占比" : "volume share", close >= open ? "hot" : "cool")}
+        ${sideMetric(state.lang === "zh" ? "Call 最强" : "Call tilt", cpTilt.time || "--", `CP ${ratio(bucketCp(cpTilt))}`, bucketCp(cpTilt) >= 1.4 ? "hot" : "flat")}
+      </div>
+      <div class="side-bucket-strip">
+        ${buckets.map((row, index) => {
+          const share = (Number(row.total) || 0) / total * 100;
+          const spread = avg[index] ? ((Number(row.total) - avg[index]) / avg[index]) * 100 : 0;
+          const tone = spread >= 18 ? "hot" : spread <= -18 ? "cool" : "flat";
+          return `<span class="${tone}" title="${escapeHtml(`${row.time} · ${wan(row.total)} · ${spread >= 0 ? "+" : ""}${fmt1.format(spread)}%`)}" style="--h:${Math.max(12, share * 4.2).toFixed(1)}%"><i>${row.time.slice(0, 2)}</i></span>`;
+        }).join("")}
+      </div>
+      <p>${sideRhythmNarrative(open, mid, close, peak, anomaly)}</p>
+    </div>
+    <div class="side-module">
+      <div class="side-module-head">
+        <b>${state.lang === "zh" ? "头部标的路径" : "Leader Path"}</b>
+        <span>${state.lang === "zh" ? "点击联动" : "click to focus"}</span>
+      </div>
+      <div class="side-leader-list">
+        ${leaders.map((item) => sideLeaderRow(item)).join("")}
+      </div>
+    </div>
+    <div class="side-module">
+      <div class="side-module-head">
+        <b>${state.lang === "zh" ? "结构拆分" : "Structure Split"}</b>
+        <span>${state.lang === "zh" ? "占比 / 极值" : "share / extremes"}</span>
+      </div>
+      <div class="side-lane-stack">
+        ${lanes.map((lane) => sideLaneRow(lane, ov.totalVol)).join("")}
+      </div>
+      <div class="side-extreme-list">
+        ${sideExtremeButton(state.lang === "zh" ? "权利金" : "Premium", premiumLead, moneyCompact(premiumLead.premiumNotional), "flat")}
+        ${sideExtremeButton(state.lang === "zh" ? "Call 极端" : "Call extreme", callLead, `CP ${ratio(callLead.cpRatio)}`, "hot")}
+        ${sideExtremeButton(state.lang === "zh" ? "Put 防守" : "Put defense", putLead, `CP ${ratio(putLead.cpRatio)}`, "cool")}
+      </div>
+    </div>
+  `;
+}
+
+function uniqueSymbolRows() {
+  const seen = new Set();
+  return [...state.day.indexRows, ...state.day.etfRows, ...state.day.stockRows].filter((row) => {
+    if (!row?.symbol || seen.has(row.symbol)) return false;
+    seen.add(row.symbol);
+    return true;
+  });
+}
+
+function bucketShare(rows, indexes, total) {
+  return indexes.map((index) => rows[index]).filter(Boolean).reduce((sum, row) => sum + (Number(row.total) || 0), 0) / total * 100;
+}
+
+function bucketCp(row) {
+  if (!row) return 0;
+  const call = Number(row.call) || 0;
+  const put = Number(row.put) || 0;
+  return put ? call / put : call ? call : 0;
+}
+
+function sideMetric(label, value, sub, tone) {
+  return `
+    <span class="${tone}">
+      <i>${escapeHtml(label)}</i>
+      <b>${escapeHtml(String(value))}</b>
+      <small>${escapeHtml(String(sub))}</small>
+    </span>
+  `;
+}
+
+function sideLeaderRow(item) {
+  const row = item.row;
+  return `
+    <button type="button" class="${item.tone}" data-symbol="${escapeHtml(row.symbol)}">
+      <span>${escapeHtml(item.lane)}</span>
+      <b>${escapeHtml(row.symbol)}</b>
+      <i>${wan(row.totalVol)} · CP ${ratio(row.cpRatio)}</i>
+      <small>${moneyCompact(row.premiumNotional)} · ${escapeHtml(row.hottestShort || "--")}</small>
+    </button>
+  `;
+}
+
+function sideLaneRow(lane, totalVol) {
+  const volume = Number(lane.item.volume) || 0;
+  const share = totalVol ? (volume / totalVol) * 100 : 0;
+  return `
+    <span class="${lane.tone}" style="--w:${Math.max(5, share).toFixed(1)}%">
+      <i>${escapeHtml(lane.label)}</i>
+      <b>${fmt1.format(share)}%</b>
+      <small>${wan(volume)} · CP ${ratio(lane.item.cpRatio)}</small>
+      <em></em>
+    </span>
+  `;
+}
+
+function sideExtremeButton(label, row, value, tone) {
+  return `
+    <button type="button" class="${tone}" data-symbol="${escapeHtml(row.symbol || "")}">
+      <span>${escapeHtml(label)}</span>
+      <b>${escapeHtml(row.symbol || "--")}</b>
+      <i>${escapeHtml(value || "--")}</i>
+    </button>
+  `;
+}
+
+function sideRhythmNarrative(open, mid, close, peak, anomaly) {
+  if (state.lang !== "zh") {
+    const rhythm = close > open ? "closing flow is heavier than the open" : "opening flow still dominates the session";
+    return `${rhythm}; the peak bucket is ${peak?.time || "--"}, with ${anomaly?.time || "--"} showing the largest 20D deviation.`;
+  }
+  const rhythm = close > open ? "尾盘成交强于开盘" : "开盘成交仍是主导";
+  return `${rhythm}；峰值在 ${peak?.time || "--"}，相对 20 日均值偏离最大的是 ${anomaly?.time || "--"}。`;
 }
 
 function syncSymbolActive() {
