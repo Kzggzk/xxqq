@@ -246,6 +246,14 @@ async function loadIndex() {
     const button = event.target.closest("button[data-index]");
     if (button) loadDayByIndex(Number(button.dataset.index));
   });
+  $("trendChart").addEventListener("click", (event) => {
+    const target = event.target.closest("[data-jump-date]");
+    if (target) loadDayByDate(target.dataset.jumpDate);
+  });
+  $("regimeMap").addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-date]");
+    if (button) loadDayByDate(button.dataset.date);
+  });
   $("goToday").addEventListener("click", () => loadDayByIndex(state.datesAsc.length - 1));
   $("themeToggle").addEventListener("click", toggleTheme);
   $("langToggle").addEventListener("click", toggleLang);
@@ -331,6 +339,11 @@ async function loadDayByIndex(index) {
   if (token !== state.requestToken) return;
   state.day = day;
   renderDay();
+}
+
+function loadDayByDate(date) {
+  const index = state.datesAsc.findIndex((item) => item.date === date);
+  if (index >= 0) loadDayByIndex(index);
 }
 
 function updateTimelineSelection() {
@@ -549,9 +562,9 @@ function renderTrend() {
       <text x="${width - padX}" y="16" text-anchor="end">${state.lang === "zh" ? "权利金 / CP" : "Premium / CP"}</text>
     </svg>
     <div class="trend-extremes">
-      <span>${state.lang === "zh" ? "区间高点" : "Range high"} <b>${shortDate(rangeHigh.date)} · ${wan(rangeHigh.totalVol)}</b></span>
-      <span>${state.lang === "zh" ? "区间低点" : "Range low"} <b>${shortDate(rangeLow.date)} · ${wan(rangeLow.totalVol)}</b></span>
-      <span>${state.lang === "zh" ? "当前权利金" : "Current premium"} <b>${moneyCompact(latest.totalPremium)}</b></span>
+      <button type="button" data-jump-date="${rangeHigh.date}">${state.lang === "zh" ? "区间高点" : "Range high"} <b>${shortDate(rangeHigh.date)} · ${wan(rangeHigh.totalVol)}</b></button>
+      <button type="button" data-jump-date="${rangeLow.date}">${state.lang === "zh" ? "区间低点" : "Range low"} <b>${shortDate(rangeLow.date)} · ${wan(rangeLow.totalVol)}</b></button>
+      <button type="button" data-jump-date="${latest.date}">${state.lang === "zh" ? "当前权利金" : "Current premium"} <b>${moneyCompact(latest.totalPremium)}</b></button>
     </div>
     ${categoryStack(latest)}
   `;
@@ -659,7 +672,8 @@ function renderRegimeMap() {
     const move = prev && prev.totalVol ? ((row.totalVol - prev.totalVol) / prev.totalVol) * 100 : 0;
     const heat = (Number(row.totalVol) - minVol) / Math.max(1, maxVol - minVol);
     const tone = move >= 8 ? "hot" : move <= -8 ? "cool" : "flat";
-    return `<button type="button" class="${tone}" data-date="${row.date}" title="${row.date} · ${wan(row.totalVol)} · ${move >= 0 ? "+" : ""}${fmt1.format(move)}%" style="--heat:${heat.toFixed(2)}"></button>`;
+    const selectedClass = row.date === state.day.tradeDate ? " selected" : "";
+    return `<button type="button" class="${tone}${selectedClass}" data-date="${row.date}" aria-label="${row.date} ${wan(row.totalVol)}" title="${row.date} · ${wan(row.totalVol)} · ${move >= 0 ? "+" : ""}${fmt1.format(move)}%" style="--heat:${heat.toFixed(2)}"></button>`;
   }).join("");
   const avgVol = average(rows.map((row) => row.totalVol));
   const selectedMove = avgVol ? ((selected.totalVol - avgVol) / avgVol) * 100 : 0;
