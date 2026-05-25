@@ -3503,11 +3503,26 @@ main {
 }
 
 .momentum-panel {
+  display: grid;
   grid-column: 1 / -1;
+  grid-template-columns: minmax(430px, 0.82fr) minmax(0, 1.18fr);
+  gap: 14px;
+  align-items: start;
 }
 
 .momentum-panel .section-head {
-  margin-bottom: 16px;
+  grid-column: 1 / -1;
+  margin-bottom: 2px;
+}
+
+.momentum-panel .symbol-focus {
+  grid-column: 1;
+  margin-bottom: 0;
+}
+
+.momentum-panel .symbol-momentum {
+  grid-column: 2;
+  min-width: 0;
 }
 
 .symbol-rotation {
@@ -4380,6 +4395,10 @@ main {
   .momentum-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .momentum-panel .momentum-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1281px) {
@@ -4721,6 +4740,15 @@ body[data-theme="dark"] .tip-grid b {
 @media (max-width: 1080px) {
   .trend-cockpit {
     grid-template-columns: 1fr;
+  }
+
+  .momentum-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .momentum-panel .symbol-focus,
+  .momentum-panel .symbol-momentum {
+    grid-column: 1 / -1;
   }
 
   .trend-cockpit .trend-radar {
