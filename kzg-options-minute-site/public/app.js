@@ -267,6 +267,10 @@ async function loadIndex() {
     const button = event.target.closest("button[data-date]");
     if (button) loadDayByDate(button.dataset.date);
   });
+  $("sessionTape").addEventListener("click", (event) => {
+    const target = event.target.closest("[data-jump-date]");
+    if (target) loadDayByDate(target.dataset.jumpDate);
+  });
   $("symbolFocus").addEventListener("click", (event) => {
     const target = event.target.closest("[data-jump-date]");
     if (target) loadDayByDate(target.dataset.jumpDate);
@@ -419,6 +423,7 @@ function renderDay() {
   ensureFocusSymbol();
 
   $("downloadReport").onclick = () => exportReportPng(day.tradeDate);
+  renderSessionTape(delta);
   renderDigest();
   renderReportCanvas();
   renderBuckets();
@@ -458,6 +463,64 @@ function renderStaticCopy() {
   document.querySelector(".mini-head span").textContent = t("volumeRank");
   $("momentumTitle").textContent = t("momentum");
   $("momentumSub").textContent = t("momentumSub");
+}
+
+function renderSessionTape(delta) {
+  const target = $("sessionTape");
+  if (!target || !state.day) return;
+  const ov = state.day.overview;
+  const rows20 = (state.analytics?.daily || []).slice(Math.max(0, state.selectedIndex - 20), state.selectedIndex);
+  const avg20 = average(rows20.map((row) => row.totalVol));
+  const volumeDelta20 = avg20 ? ((Number(ov.totalVol) - avg20) / avg20) * 100 : 0;
+  const buckets = state.day.buckets.market || [];
+  const bucketTotal = buckets.reduce((sum, row) => sum + (Number(row.total) || 0), 0) || 1;
+  const openShare = bucketShare(buckets, [0, 1], bucketTotal);
+  const closeShare = bucketShare(buckets, [buckets.length - 2, buckets.length - 1], bucketTotal);
+  const dominant = dominantCategory(ov.category, ov.totalVol);
+  const allRows = uniqueSymbolRows();
+  const topSymbol = allRows[0] || {};
+  const premiumLead = allRows.reduce((best, row) => Number(row.premiumNotional) > Number(best.premiumNotional) ? row : best, allRows[0] || {});
+  const cpLead = allRows.reduce((best, row) => Number(row.cpRatio) > Number(best.cpRatio) ? row : best, allRows[0] || {});
+  const range = (state.analytics?.daily || []).slice(Math.max(0, state.selectedIndex - 27), state.selectedIndex + 1);
+  const high = range.reduce((best, row) => Number(row.totalVol) > Number(best.totalVol) ? row : best, range[0] || {});
+  const tapeTone = volumeDelta20 >= 12 || Number(ov.marketCp) >= 1.55 ? "hot" : volumeDelta20 <= -12 || Number(ov.marketCp) <= 0.95 ? "cool" : "flat";
+  const rhythm = closeShare > openShare ? (state.lang === "zh" ? "尾盘强于开盘" : "close leads open") : (state.lang === "zh" ? "开盘成交主导" : "open leads close");
+  const deltaText = delta === null ? "--" : `${delta >= 0 ? "+" : ""}${fmt1.format(delta)}%`;
+  target.innerHTML = `
+    <div class="session-copy ${tapeTone}">
+      <span>${state.lang === "zh" ? "今日读盘总线" : "Session tape"}</span>
+      <strong>${sessionTapeNarrative(volumeDelta20, dominant.label, rhythm)}</strong>
+      <small>${state.lang === "zh" ? "较前日" : "vs prev"} ${deltaText} · CP ${ratio(ov.marketCp)} · ${state.lang === "zh" ? "头部" : "leaders"} ${escapeHtml([topSymbol.symbol, premiumLead.symbol, cpLead.symbol].filter(Boolean).join(" / "))}</small>
+    </div>
+    <div class="session-chip-grid">
+      ${sessionChip(state.lang === "zh" ? "量能温度" : "Volume heat", `${volumeDelta20 >= 0 ? "+" : ""}${fmt1.format(volumeDelta20)}%`, state.lang === "zh" ? "vs 20D" : "vs 20D", tapeTone)}
+      ${sessionChip(state.lang === "zh" ? "主导通道" : "Dominant lane", dominant.label, `${dominant.share} · CP ${ratio(dominant.cpRatio)}`, dominant.key === "STOCK" ? "hot" : dominant.key === "INDEX" ? "cool" : "flat")}
+      ${sessionChip(state.lang === "zh" ? "日内节奏" : "Intraday rhythm", rhythm, `${fmt1.format(openShare)}% / ${fmt1.format(closeShare)}%`, closeShare > openShare ? "hot" : "flat")}
+      ${sessionChip(state.lang === "zh" ? "28D 高点" : "28D high", shortDate(high.date || state.day.tradeDate), wan(high.totalVol || ov.totalVol), "flat", `data-jump-date="${escapeHtml(high.date || state.day.tradeDate)}"`)}
+      ${sessionChip(state.lang === "zh" ? "权利金锚" : "Premium anchor", premiumLead.symbol || "--", moneyCompact(premiumLead.premiumNotional), "flat", `data-symbol="${escapeHtml(premiumLead.symbol || "")}"`)}
+      ${sessionChip(state.lang === "zh" ? "CP 极端" : "CP extreme", cpLead.symbol || "--", `CP ${ratio(cpLead.cpRatio)}`, "hot", `data-symbol="${escapeHtml(cpLead.symbol || "")}"`)}
+    </div>
+  `;
+}
+
+function sessionTapeNarrative(volumeDelta20, lane, rhythm) {
+  if (state.lang !== "zh") {
+    const energy = volumeDelta20 >= 12 ? "volume expansion" : volumeDelta20 <= -12 ? "cooler volume" : "balanced volume";
+    return `${energy}; ${lane} leads; ${rhythm}.`;
+  }
+  const energy = volumeDelta20 >= 12 ? "量能扩张" : volumeDelta20 <= -12 ? "量能降温" : "量能均衡";
+  return `${energy}，${lane}主导，${rhythm}。`;
+}
+
+function sessionChip(label, value, sub, tone, attrs = "") {
+  const tag = attrs ? "button" : "span";
+  return `
+    <${tag} class="${tone}" ${attrs}>
+      <i>${escapeHtml(label)}</i>
+      <b>${escapeHtml(String(value || "--"))}</b>
+      <small>${escapeHtml(String(sub || "--"))}</small>
+    </${tag}>
+  `;
 }
 
 function renderDigest() {

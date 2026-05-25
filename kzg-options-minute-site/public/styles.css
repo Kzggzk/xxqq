@@ -400,6 +400,115 @@ main {
   color: var(--red);
 }
 
+.session-tape {
+  display: grid;
+  grid-template-columns: minmax(290px, 0.86fr) minmax(0, 1.55fr);
+  gap: 14px;
+  align-items: stretch;
+  padding: 14px 0 0;
+}
+
+.session-copy,
+.session-chip-grid span,
+.session-chip-grid button {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.session-copy {
+  display: grid;
+  gap: 6px;
+  padding: 13px 14px;
+  border-left: 4px solid var(--gold);
+}
+
+.session-copy.hot {
+  border-left-color: #c45335;
+}
+
+.session-copy.cool {
+  border-left-color: #2f6190;
+}
+
+.session-copy span,
+.session-copy small,
+.session-chip-grid i,
+.session-chip-grid small {
+  overflow: hidden;
+  color: var(--muted);
+  font-style: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.session-copy span,
+.session-chip-grid i {
+  font-size: 10px;
+  font-weight: 840;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.session-copy strong {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.session-copy small,
+.session-chip-grid small {
+  font-size: 10px;
+}
+
+.session-chip-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.session-chip-grid span,
+.session-chip-grid button {
+  display: grid;
+  gap: 5px;
+  padding: 11px 10px;
+  color: var(--ink);
+  text-align: left;
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+}
+
+.session-chip-grid button {
+  cursor: pointer;
+}
+
+.session-chip-grid button:hover {
+  border-color: var(--gold);
+  background: rgba(154, 106, 18, 0.1);
+}
+
+.session-chip-grid b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.session-chip-grid .hot {
+  border-color: rgba(196, 83, 53, 0.34);
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
+.session-chip-grid .cool {
+  border-color: rgba(47, 97, 144, 0.34);
+  box-shadow: inset 3px 0 0 #2f6190;
+}
+
 .workbench {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 392px;
@@ -3638,6 +3747,9 @@ body[data-theme="dark"] .regime-stats span,
 body[data-theme="dark"] .regime-stats button,
 body[data-theme="dark"] .signal-strip,
 body[data-theme="dark"] .signal-pulse-tape,
+body[data-theme="dark"] .session-copy,
+body[data-theme="dark"] .session-chip-grid span,
+body[data-theme="dark"] .session-chip-grid button,
 body[data-theme="dark"] .side-flow-grid span,
 body[data-theme="dark"] .side-leader-list button,
 body[data-theme="dark"] .side-lane-stack span,
@@ -3654,6 +3766,7 @@ body[data-theme="dark"] .trend-extremes button:hover,
 body[data-theme="dark"] .trend-radar button:hover,
 body[data-theme="dark"] .rotation-row:hover,
 body[data-theme="dark"] .heat-rhythm-card:hover,
+body[data-theme="dark"] .session-chip-grid button:hover,
 body[data-theme="dark"] .side-leader-list button:hover,
 body[data-theme="dark"] .side-extreme-list button:hover,
 body[data-theme="dark"] .focus-extremes button:hover,
@@ -3680,6 +3793,10 @@ body[data-theme="dark"] .trend-pulse-strip span,
 body[data-theme="dark"] .trend-pulse-cells span,
 body[data-theme="dark"] .signal-pulse-tape span,
 body[data-theme="dark"] .signal-pulse-cells span,
+body[data-theme="dark"] .session-copy span,
+body[data-theme="dark"] .session-copy small,
+body[data-theme="dark"] .session-chip-grid i,
+body[data-theme="dark"] .session-chip-grid small,
 body[data-theme="dark"] .bucket-profile i,
 body[data-theme="dark"] .heatmap-summary i,
 body[data-theme="dark"] .heatmap-summary small,
@@ -3784,6 +3901,14 @@ body[data-theme="dark"] .tip-grid b {
     grid-template-columns: 1fr;
   }
 
+  .session-tape {
+    grid-template-columns: 1fr;
+  }
+
+  .session-chip-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .side-rail {
     position: static;
   }
@@ -3878,6 +4003,10 @@ body[data-theme="dark"] .tip-grid b {
 
   .side-flow-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .session-chip-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .pulse-gauge {
@@ -4022,11 +4151,16 @@ body[data-theme="dark"] .tip-grid b {
   .momentum-summary,
   .focus-extremes,
   .momentum-list,
+  .session-tape,
   .side-flow-grid,
   .side-leader-list button,
   .side-lane-stack span,
   .side-extreme-list {
     grid-template-columns: 1fr;
+  }
+
+  .session-chip-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .side-leader-list small {
