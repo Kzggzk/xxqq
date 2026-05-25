@@ -39,6 +39,9 @@ import subprocess
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from build_options_site import US_MARKET_HOLIDAYS  # noqa: E402
+
 HOME = Path.home()
 SECRETS = HOME / ".kzg-option-house" / "secrets.env"
 DOWNLOADS = HOME / "Downloads"
@@ -47,26 +50,13 @@ ICLOUD_ROOT = HOME / "Library" / "Mobile Documents" / "com~apple~CloudDocs" / "K
 MIN_VALID_BYTES = 5_000_000  # smallest plausible options minute file ≈ 5MB
 GZIP_MAGIC = b"\x1f\x8b"
 
-US_MARKET_HOLIDAYS_2026 = {
-    date(2026, 1, 1),
-    date(2026, 1, 19),
-    date(2026, 2, 16),
-    date(2026, 4, 3),
-    date(2026, 5, 25),
-    date(2026, 6, 19),
-    date(2026, 7, 3),
-    date(2026, 9, 7),
-    date(2026, 11, 26),
-    date(2026, 12, 25),
-}
-
 
 def log(payload: dict) -> None:
     print(json.dumps(payload, ensure_ascii=False), flush=True)
 
 
 def is_market_day(day: date) -> bool:
-    return day.weekday() < 5 and day not in US_MARKET_HOLIDAYS_2026
+    return day.weekday() < 5 and day not in US_MARKET_HOLIDAYS
 
 
 def previous_market_day(day: date) -> date:

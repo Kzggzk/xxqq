@@ -1,11 +1,13 @@
 const state = {
   index: null,
+  analytics: null,
   datesAsc: [],
   dayCache: new Map(),
   day: null,
   selectedIndex: 0,
   query: "",
   requestToken: 0,
+  trendWindow: "90",
   lang: localStorage.getItem("kzg-option-house-lang") || "zh",
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
@@ -34,12 +36,14 @@ const copy = {
     filter: "筛选标的",
     stockTop: "个股 Top25",
     volumeRank: "成交量排序",
-    heatmap: "分钟聚合成交热力图",
-    heatmapSub: "Top15 标的，单位万张。",
-    buckets: "日内成交分布",
-    bucketsSub: "全市场 30 分钟桶。",
-    trend: "成交额走势",
-    trendSub: "最近 30 个交易日，热/冷由成交变化决定。",
+    heatmap: "分钟级标的热力",
+    heatmapSub: "Top15 标的横向看日内节奏，单位万张。",
+    buckets: "日内节奏 vs 20日均值",
+    bucketsSub: "当前交易日与最近 20 个交易日的 30 分钟桶对比。",
+    trend: "跨日成交趋势",
+    trendSub: "成交量、权利金和 CP 结构随时间同步变化。",
+    momentum: "核心标的动量",
+    momentumSub: "悬停标的查看跨日成交小图。",
     totalVolume: "总期权成交量",
     premium: "权利金成交额",
     marketCp: "Put/Call 成交量",
@@ -70,12 +74,14 @@ const copy = {
     filter: "Symbol filter",
     stockTop: "Stock Top 25",
     volumeRank: "Sorted by volume",
-    heatmap: "Minute Heatmap",
-    heatmapSub: "Top 15 underlyings, unit: x10k contracts.",
-    buckets: "Intraday Distribution",
-    bucketsSub: "Market-wide 30-minute buckets.",
-    trend: "Turnover Trend",
-    trendSub: "Last 30 trading days; hot/cold follows volume change.",
+    heatmap: "Symbol Minute Heatmap",
+    heatmapSub: "Top 15 intraday rhythm, unit: x10k contracts.",
+    buckets: "Intraday vs 20D Avg",
+    bucketsSub: "Selected day against the trailing 20-session bucket average.",
+    trend: "Cross-Day Flow",
+    trendSub: "Volume, premium notional, and CP structure over time.",
+    momentum: "Core Symbol Momentum",
+    momentumSub: "Hover a symbol for its cross-day mini chart.",
     totalVolume: "Total Option Volume",
     premium: "Premium Notional",
     marketCp: "Call / Put Volume",
@@ -207,10 +213,12 @@ async function loadIndex() {
   applyUiState();
   const payload = await loadPackedData();
   state.index = payload.index;
+  state.analytics = payload.analytics || null;
   state.dayCache = new Map(Object.entries(payload.days || {}));
   state.datesAsc = [...state.index.dates].reverse();
   if (!state.datesAsc.length) throw new Error("No trading days found.");
 
+  $("timelineStart").textContent = state.datesAsc[0].date.replaceAll("-", "/");
   $("timelineEnd").textContent = state.index.latestDate.replaceAll("-", "/");
   $("symbolSearch").addEventListener("input", (event) => {
     state.query = event.target.value.trim().toUpperCase();
@@ -219,9 +227,23 @@ async function loadIndex() {
   $("prevDay").addEventListener("click", () => loadDayByIndex(state.selectedIndex - 1));
   $("nextDay").addEventListener("click", () => loadDayByIndex(state.selectedIndex + 1));
   $("timelineRange").addEventListener("input", (event) => loadDayByIndex(Number(event.target.value)));
+  $("dayBars").addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-index]");
+    if (button) loadDayByIndex(Number(button.dataset.index));
+  });
   $("goToday").addEventListener("click", () => loadDayByIndex(state.datesAsc.length - 1));
   $("themeToggle").addEventListener("click", toggleTheme);
   $("langToggle").addEventListener("click", toggleLang);
+  document.querySelectorAll("[data-window]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.trendWindow = button.dataset.window;
+      document.querySelectorAll("[data-window]").forEach((node) => {
+        node.classList.toggle("active", node === button);
+      });
+      renderTrend();
+    });
+  });
+  installTooltip();
 
   renderTimelineShell();
   await loadDayByIndex(state.datesAsc.length - 1);
@@ -248,6 +270,8 @@ function toggleLang() {
   state.lang = state.lang === "zh" ? "en" : "zh";
   localStorage.setItem("kzg-option-house-lang", state.lang);
   applyUiState();
+  renderTimelineShell();
+  updateTimelineSelection();
   if (state.day) renderDay();
 }
 
@@ -266,21 +290,18 @@ function renderTimelineShell() {
   const monthTicks = $("monthTicks");
   monthTicks.style.gridTemplateColumns = monthGroups.map((group) => `${group.count}fr`).join(" ");
   monthTicks.innerHTML = monthGroups.map((group) => {
-    const [, month] = group.month.split("-");
-    return `<span>${state.lang === "zh" ? `2026年${Number(month)}月` : `2026/${month}`}</span>`;
+    const [year, month] = group.month.split("-");
+    const label = state.lang === "zh" ? `${year.slice(2)}年${Number(month)}月` : `${year}/${month}`;
+    return `<span>${label}</span>`;
   }).join("");
 
   const maxVol = Math.max(...state.datesAsc.map((item) => Number(item.totalVol) || 0), 1);
   const dayBars = $("dayBars");
-  dayBars.style.gridTemplateColumns = `repeat(${state.datesAsc.length}, minmax(1px, 1fr))`;
+  dayBars.style.gridTemplateColumns = `repeat(${state.datesAsc.length}, minmax(0, 1fr))`;
   dayBars.innerHTML = state.datesAsc.map((item, index) => {
     const height = 6 + ((Number(item.totalVol) || 0) / maxVol) * 30;
     return `<button type="button" data-index="${index}" style="--h:${height.toFixed(1)}px" title="${item.date} · ${wan(item.totalVol)}"></button>`;
   }).join("");
-  dayBars.addEventListener("click", (event) => {
-    const button = event.target.closest("button[data-index]");
-    if (button) loadDayByIndex(Number(button.dataset.index));
-  });
 }
 
 async function loadDayByIndex(index) {
@@ -348,6 +369,7 @@ function renderDay() {
   renderHeatmap();
   renderTrend();
   renderStockTable();
+  renderSymbolMomentum();
   renderStaticCopy();
 }
 
@@ -368,20 +390,45 @@ function renderStaticCopy() {
   if (subs[1]) subs[1].textContent = t("heatmapSub");
   if (heads[2]) heads[2].textContent = t("buckets");
   if (subs[2]) subs[2].textContent = t("bucketsSub");
+  $("momentumTitle").textContent = t("momentum");
+  $("momentumSub").textContent = t("momentumSub");
 }
 
 function renderDigest() {
   $("digest").innerHTML = state.day.digest.map((line) => `<div>${escapeHtml(line)}</div>`).join("");
 }
 
+function trailingBucketAverage(endIndex, lookback) {
+  const daily = state.analytics?.daily;
+  if (!daily?.length) return new Array(state.day.buckets.market.length).fill(0);
+  const rows = daily.slice(Math.max(0, endIndex - lookback), endIndex);
+  if (!rows.length) return new Array(state.day.buckets.market.length).fill(0);
+  const sums = new Array(state.day.buckets.market.length).fill(0);
+  for (const row of rows) {
+    (row.buckets || []).forEach((value, index) => {
+      sums[index] += Number(value) || 0;
+    });
+  }
+  return sums.map((value) => value / rows.length);
+}
+
 function renderBuckets() {
   const rows = state.day.buckets.market;
+  const avg = trailingBucketAverage(state.selectedIndex, 20);
   const max = Math.max(...rows.map((row) => row.total), 1);
-  $("bucketBars").innerHTML = rows.map((row) => {
-    const height = Math.max(2, (row.total / max) * 100);
+  const avgMax = Math.max(...avg, 1);
+  const scale = Math.max(max, avgMax);
+  $("bucketBars").innerHTML = rows.map((row, index) => {
+    const currentHeight = Math.max(2, (row.total / scale) * 100);
+    const avgHeight = Math.max(2, ((avg[index] || 0) / scale) * 100);
+    const spread = avg[index] ? ((row.total - avg[index]) / avg[index]) * 100 : 0;
+    const tone = spread >= 18 ? "hot" : spread <= -18 ? "cool" : "flat";
     return `
-      <div class="bar">
-        <div class="bar-track"><div class="bar-fill" style="height:${height.toFixed(2)}%"></div></div>
+      <div class="bar ${tone}">
+        <div class="bar-track">
+          <div class="bar-avg" style="height:${avgHeight.toFixed(2)}%"></div>
+          <div class="bar-fill" style="height:${currentHeight.toFixed(2)}%"></div>
+        </div>
         <strong>${wan(row.total)}</strong>
         <span>${row.time}</span>
       </div>
@@ -397,13 +444,13 @@ function renderHeatmap() {
   let html = `<div class="heat-table"><div class="heat-cell head">${state.lang === "zh" ? "标的" : "Symbol"}</div>`;
   html += labels.map((label) => `<div class="heat-cell head">${label}</div>`).join("");
   for (const row of heat) {
-    html += `<div class="heat-cell symbol">${row.symbol}</div>`;
+    html += `<div class="heat-cell symbol" data-symbol="${escapeHtml(row.symbol)}">${row.symbol}</div>`;
     html += row.values.map((value) => {
       if (!value) return `<div class="heat-cell" style="background:#f4f1e9;color:#817b70">-</div>`;
       const level = value / max;
       const bg = blueHeat(level);
       const fg = level > 0.56 ? "#fff" : "#28323b";
-      return `<div class="heat-cell" style="background:${bg};color:${fg}">${fmt1.format(value / 10000)}</div>`;
+      return `<div class="heat-cell" data-symbol="${escapeHtml(row.symbol)}" style="background:${bg};color:${fg}">${fmt1.format(value / 10000)}</div>`;
     }).join("");
   }
   html += "</div>";
@@ -411,34 +458,47 @@ function renderHeatmap() {
 }
 
 function renderTrend() {
-  const end = state.selectedIndex;
-  const rows = state.datesAsc.slice(Math.max(0, end - 29), end + 1);
+  const rows = selectedTrendRows();
   if (!rows.length) {
     $("trendChart").innerHTML = "";
     return;
   }
-  const width = 760;
-  const height = 214;
-  const pad = 28;
-  const maxVol = Math.max(...rows.map((row) => Number(row.totalVol) || 0), 1);
-  const minVol = Math.min(...rows.map((row) => Number(row.totalVol) || 0), maxVol);
-  const span = Math.max(1, maxVol - minVol);
-  const points = rows.map((row, index) => {
-    const x = pad + (index / Math.max(1, rows.length - 1)) * (width - pad * 2);
-    const y = height - pad - (((Number(row.totalVol) || 0) - minVol) / span) * (height - pad * 2);
-    return { x, y, row };
-  });
-  const line = points.map((point) => `${point.x.toFixed(1)},${point.y.toFixed(1)}`).join(" ");
-  const area = `${pad},${height - pad} ${line} ${width - pad},${height - pad}`;
+  const width = 880;
+  const height = 244;
+  const padX = 34;
+  const padY = 28;
+  const volValues = rows.map((row) => Number(row.totalVol) || 0);
+  const premiumValues = rows.map((row) => Number(row.totalPremium) || 0);
+  const maxVol = Math.max(...volValues, 1);
+  const minVol = Math.min(...volValues, maxVol);
+  const maxPremium = Math.max(...premiumValues, 1);
+  const minPremium = Math.min(...premiumValues, maxPremium);
+  const scaleY = (value, min, max) => {
+    const span = Math.max(1, max - min);
+    return height - padY - ((value - min) / span) * (height - padY * 2);
+  };
+  const xAt = (index) => padX + (index / Math.max(1, rows.length - 1)) * (width - padX * 2);
+  const pointsVol = rows.map((row, index) => ({ x: xAt(index), y: scaleY(Number(row.totalVol) || 0, minVol, maxVol), row }));
+  const pointsPremium = rows.map((row, index) => ({ x: xAt(index), y: scaleY(Number(row.totalPremium) || 0, minPremium, maxPremium), row }));
+  const lineVol = pointsVol.map((point) => `${point.x.toFixed(1)},${point.y.toFixed(1)}`).join(" ");
+  const linePremium = pointsPremium.map((point) => `${point.x.toFixed(1)},${point.y.toFixed(1)}`).join(" ");
+  const area = `${padX},${height - padY} ${lineVol} ${width - padX},${height - padY}`;
   const prev = rows[rows.length - 2];
   const latest = rows[rows.length - 1];
   const change = prev ? ((latest.totalVol - prev.totalVol) / prev.totalVol) * 100 : 0;
   const tone = change >= 0 ? "trend-hot" : "trend-cool";
+  const avgCp = rows.reduce((sum, row) => sum + (Number(row.marketCp) || 0), 0) / rows.length;
 
   $("trendChart").innerHTML = `
     <div class="trend-summary ${tone}">
-      <strong>${wan(latest.totalVol)}</strong>
-      <span>${shortDate(rows[0].date)} - ${shortDate(latest.date)} · ${change >= 0 ? "+" : ""}${fmt1.format(change)}%</span>
+      <div>
+        <strong>${wan(latest.totalVol)}</strong>
+        <span>${shortDate(rows[0].date)} - ${shortDate(latest.date)} · ${change >= 0 ? "+" : ""}${fmt1.format(change)}%</span>
+      </div>
+      <div class="trend-kpis">
+        <span>${state.lang === "zh" ? "权利金" : "Premium"} ${moneyCompact(latest.totalPremium)}</span>
+        <span>CP ${ratio(latest.marketCp)} · ${state.lang === "zh" ? "均值" : "avg"} ${ratio(avgCp)}</span>
+      </div>
     </div>
     <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${t("trend")}">
       <defs>
@@ -448,9 +508,47 @@ function renderTrend() {
         </linearGradient>
       </defs>
       <polygon points="${area}" fill="url(#trendFill)"></polygon>
-      <polyline points="${line}" fill="none" stroke="${change >= 0 ? "#c45335" : "#2f6190"}" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"></polyline>
-      ${points.map((point, index) => index % 5 === 0 || index === points.length - 1 ? `<text x="${point.x.toFixed(1)}" y="${height - 6}" text-anchor="middle">${shortDate(point.row.date)}</text>` : "").join("")}
+      ${pointsVol.map((point, index) => `<line x1="${point.x.toFixed(1)}" x2="${point.x.toFixed(1)}" y1="${height - padY}" y2="${point.y.toFixed(1)}" stroke="${change >= 0 ? "#d7a28f" : "#9cb7d0"}" stroke-width="${Math.max(2, 12 / Math.sqrt(rows.length)).toFixed(1)}" opacity=".34"></line>`).join("")}
+      <polyline points="${lineVol}" fill="none" stroke="${change >= 0 ? "#c45335" : "#2f6190"}" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"></polyline>
+      <polyline points="${linePremium}" fill="none" stroke="#a47419" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" opacity=".85"></polyline>
+      ${pointsVol.map((point, index) => index % Math.max(1, Math.ceil(rows.length / 7)) === 0 || index === pointsVol.length - 1 ? `<text x="${point.x.toFixed(1)}" y="${height - 6}" text-anchor="middle">${shortDate(point.row.date)}</text>` : "").join("")}
+      <text x="${padX}" y="16" text-anchor="start">${state.lang === "zh" ? "成交量" : "Volume"}</text>
+      <text x="${width - padX}" y="16" text-anchor="end">${state.lang === "zh" ? "权利金" : "Premium"}</text>
     </svg>
+    ${categoryStack(latest)}
+  `;
+}
+
+function selectedTrendRows() {
+  const daily = state.analytics?.daily;
+  const source = daily?.length ? daily : state.datesAsc;
+  const end = state.selectedIndex;
+  const windowSize = state.trendWindow === "all" ? source.length : Number(state.trendWindow) || 90;
+  return source.slice(Math.max(0, end - windowSize + 1), end + 1);
+}
+
+function categoryStack(row) {
+  const category = row.category || state.day.overview.category;
+  const total = Number(row.totalVol) || 1;
+  const parts = [
+    ["INDEX", t("index"), "#2f6190"],
+    ["ETF", t("etf"), "#9a6a12"],
+    ["STOCK", t("stock"), "#c45335"],
+  ];
+  return `
+    <div class="flow-stack">
+      ${parts.map(([key, label, color]) => {
+        const item = category[key] || {};
+        const width = Math.max(6, (Number(item.volume) || 0) / total * 100);
+        return `
+          <div class="flow-part" style="--w:${width.toFixed(2)}%;--c:${color}">
+            <i style="width:${width.toFixed(2)}%"></i>
+            <span>${label}</span>
+            <b>${pct(item.volume, total)} · CP ${ratio(item.cpRatio)}</b>
+          </div>
+        `;
+      }).join("")}
+    </div>
   `;
 }
 
@@ -481,7 +579,7 @@ function renderTable(target, rows) {
     return;
   }
   const body = rows.map((row, index) => `
-    <tr>
+    <tr data-symbol="${escapeHtml(row.symbol)}">
       <td>${index + 1}</td>
       <td class="symbol">${escapeHtml(row.symbol)}</td>
       <td class="right">${wan(row.totalVol)}</td>
@@ -491,6 +589,120 @@ function renderTable(target, rows) {
     </tr>
   `).join("");
   target.innerHTML = `${head}<tbody>${body}</tbody>`;
+}
+
+function renderSymbolMomentum() {
+  const target = $("symbolMomentum");
+  const seen = new Set();
+  const rows = [...state.day.indexRows, ...state.day.etfRows, ...state.day.stockRows]
+    .filter((row) => {
+      if (seen.has(row.symbol)) return false;
+      seen.add(row.symbol);
+      return true;
+    })
+    .slice(0, 18)
+    .map((row) => {
+      const series = symbolSeriesUntil(row.symbol, 45);
+      const prev = series.slice(0, -1).slice(-20);
+      const avg = prev.length ? prev.reduce((sum, item) => sum + (Number(item.totalVol) || 0), 0) / prev.length : 0;
+      const delta = avg ? ((Number(row.totalVol) - avg) / avg) * 100 : 0;
+      return { ...row, delta, series };
+    });
+
+  target.innerHTML = rows.map((row) => {
+    const hot = row.delta >= 20;
+    const cool = row.delta <= -20;
+    const cls = hot ? "hot" : cool ? "cool" : "flat";
+    return `
+      <button type="button" class="momentum-row ${cls}" data-symbol="${escapeHtml(row.symbol)}">
+        <span class="mom-symbol">${escapeHtml(row.symbol)}</span>
+        <span class="mom-spark">${sparkline(row.series, "totalVol", 118, 34, hot ? "#c45335" : cool ? "#2f6190" : "#9a6a12")}</span>
+        <span class="mom-value">${wan(row.totalVol)}</span>
+        <span class="mom-delta">${row.delta >= 0 ? "+" : ""}${fmt1.format(row.delta)}%</span>
+      </button>
+    `;
+  }).join("");
+}
+
+function symbolSeriesUntil(symbol, limit = 60) {
+  const full = state.analytics?.symbolSeries?.[symbol] || [];
+  const selectedDate = state.day?.tradeDate;
+  const end = full.findIndex((item) => item.date === selectedDate);
+  const sliceEnd = end >= 0 ? end + 1 : full.length;
+  return full.slice(Math.max(0, sliceEnd - limit), sliceEnd);
+}
+
+function sparkline(series, key = "totalVol", width = 150, height = 42, color = "#2f6190") {
+  if (!series.length) return "";
+  const values = series.map((item) => Number(item[key]) || 0);
+  const max = Math.max(...values, 1);
+  const min = Math.min(...values, max);
+  const span = Math.max(1, max - min);
+  const pad = 3;
+  const points = values.map((value, index) => {
+    const x = pad + (index / Math.max(1, values.length - 1)) * (width - pad * 2);
+    const y = height - pad - ((value - min) / span) * (height - pad * 2);
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(" ");
+  const area = `${pad},${height - pad} ${points} ${width - pad},${height - pad}`;
+  return `
+    <svg viewBox="0 0 ${width} ${height}" aria-hidden="true">
+      <polygon points="${area}" fill="${color}" opacity=".12"></polygon>
+      <polyline points="${points}" fill="none" stroke="${color}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></polyline>
+    </svg>
+  `;
+}
+
+function installTooltip() {
+  const tooltip = $("marketTooltip");
+  document.addEventListener("pointermove", (event) => {
+    const target = event.target.closest("[data-symbol]");
+    if (!target || !state.day) {
+      tooltip.hidden = true;
+      tooltip.removeAttribute("data-symbol");
+      return;
+    }
+    const symbol = target.dataset.symbol;
+    if (!symbol) return;
+    if (tooltip.dataset.symbol !== symbol || tooltip.dataset.date !== state.day.tradeDate) {
+      tooltip.innerHTML = renderSymbolTooltip(symbol);
+      tooltip.dataset.symbol = symbol;
+      tooltip.dataset.date = state.day.tradeDate;
+    }
+    tooltip.hidden = false;
+    const rect = tooltip.getBoundingClientRect();
+    const left = Math.min(window.innerWidth - rect.width - 12, event.clientX + 18);
+    const top = Math.min(window.innerHeight - rect.height - 12, event.clientY + 18);
+    tooltip.style.left = `${Math.max(12, left)}px`;
+    tooltip.style.top = `${Math.max(12, top)}px`;
+  });
+  document.addEventListener("pointerleave", () => {
+    tooltip.hidden = true;
+  });
+}
+
+function renderSymbolTooltip(symbol) {
+  const series = symbolSeriesUntil(symbol, 60);
+  const current = [...state.day.topUnderlyings].find((row) => row.symbol === symbol);
+  if (!current) {
+    return `<strong>${escapeHtml(symbol)}</strong><span>No packed history</span>`;
+  }
+  const first = series[0];
+  const last = series[series.length - 1];
+  const delta = first && last && first.totalVol ? ((last.totalVol - first.totalVol) / first.totalVol) * 100 : 0;
+  return `
+    <div class="tip-head">
+      <strong>${escapeHtml(symbol)}</strong>
+      <span>${current.category || ""}</span>
+    </div>
+    <div class="tip-chart">${sparkline(series, "totalVol", 210, 58, delta >= 0 ? "#c45335" : "#2f6190")}</div>
+    <div class="tip-grid">
+      <span>${state.lang === "zh" ? "当日成交" : "Volume"} <b>${wan(current.totalVol)}</b></span>
+      <span>${state.lang === "zh" ? "权利金" : "Premium"} <b>${moneyCompact(current.premiumNotional)}</b></span>
+      <span>CP <b>${ratio(current.cpRatio)}</b></span>
+      <span>${series.length}${state.lang === "zh" ? "日变化" : "D move"} <b>${delta >= 0 ? "+" : ""}${fmt1.format(delta)}%</b></span>
+    </div>
+  `;
 }
 
 function renderReportCanvas() {

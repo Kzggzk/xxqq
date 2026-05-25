@@ -55,7 +55,38 @@ OPT_ETF = {
     "YINN", "YANG", "FAS", "FAZ", "DRIP", "GUSH", "NUGT", "DUST", "JDST", "JNUG",
 }
 
-US_MARKET_HOLIDAYS_2026 = {
+US_MARKET_HOLIDAYS = {
+    date(2023, 1, 2),
+    date(2023, 1, 16),
+    date(2023, 2, 20),
+    date(2023, 4, 7),
+    date(2023, 5, 29),
+    date(2023, 6, 19),
+    date(2023, 7, 4),
+    date(2023, 9, 4),
+    date(2023, 11, 23),
+    date(2023, 12, 25),
+    date(2024, 1, 1),
+    date(2024, 1, 15),
+    date(2024, 2, 19),
+    date(2024, 3, 29),
+    date(2024, 5, 27),
+    date(2024, 6, 19),
+    date(2024, 7, 4),
+    date(2024, 9, 2),
+    date(2024, 11, 28),
+    date(2024, 12, 25),
+    date(2025, 1, 1),
+    date(2025, 1, 9),
+    date(2025, 1, 20),
+    date(2025, 2, 17),
+    date(2025, 4, 18),
+    date(2025, 5, 26),
+    date(2025, 6, 19),
+    date(2025, 7, 4),
+    date(2025, 9, 1),
+    date(2025, 11, 27),
+    date(2025, 12, 25),
     date(2026, 1, 1),
     date(2026, 1, 19),
     date(2026, 2, 16),
@@ -106,7 +137,11 @@ def trade_date_from_path(path: Path) -> str:
 
 
 def file_list(since: str | None, until: str | None, limit: int | None) -> list[Path]:
-    paths = sorted(KZG_OPTIONS_ROOT.glob("2026-*/options_minute_aggregates_2026-*.csv.gz"))
+    paths = [
+        path for path in KZG_OPTIONS_ROOT.glob("20??-*/options_minute_aggregates_20??-??-??.csv.gz")
+        if DATE_RE.search(path.name)
+    ]
+    paths.sort(key=trade_date_from_path)
     if since:
         paths = [path for path in paths if trade_date_from_path(path) >= since]
     if until:
@@ -116,10 +151,15 @@ def file_list(since: str | None, until: str | None, limit: int | None) -> list[P
     return paths
 
 
+def nth_weekday(year: int, month: int, weekday: int, n: int) -> date:
+    day = date(year, month, 1)
+    days_until = (weekday - day.weekday()) % 7
+    return day + timedelta(days=days_until + (n - 1) * 7)
+
+
 def et_offset_seconds(day: date) -> int:
-    # US DST is enough for the 2026 YTD source set used here.
-    dst_start = date(2026, 3, 8)
-    dst_end = date(2026, 11, 1)
+    dst_start = nth_weekday(day.year, 3, 6, 2)
+    dst_end = nth_weekday(day.year, 11, 6, 1)
     return -4 * 3600 if dst_start <= day < dst_end else -5 * 3600
 
 
@@ -712,9 +752,13 @@ def write_day(day: dict[str, Any]) -> None:
     )
 
 
+def day_json_paths() -> list[Path]:
+    return sorted(path for path in DAYS_DIR.glob("20??-??-??.json") if path.stem.count("-") == 2)
+
+
 def render_reports_pass() -> list[str]:
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
-    paths = sorted(DAYS_DIR.glob("2026-*.json"))
+    paths = day_json_paths()
     dates_asc = [path.stem for path in paths]
     dates_desc = list(reversed(dates_asc))
     rendered: list[str] = []
@@ -735,7 +779,7 @@ def render_reports_pass() -> list[str]:
 
 
 def is_market_day(day: date) -> bool:
-    return day.weekday() < 5 and day not in US_MARKET_HOLIDAYS_2026
+    return day.weekday() < 5 and day not in US_MARKET_HOLIDAYS
 
 
 def missing_market_days(paths: list[Path]) -> list[str]:
@@ -755,7 +799,7 @@ def missing_market_days(paths: list[Path]) -> list[str]:
 
 def write_index(paths: list[Path], processed_dates: set[str]) -> None:
     existing_dates = []
-    for path in sorted(DAYS_DIR.glob("2026-*.json")):
+    for path in day_json_paths():
         existing_dates.append(path.stem)
     existing_dates = sorted(set(existing_dates), reverse=True)
     entries = []
@@ -793,7 +837,7 @@ def write_index(paths: list[Path], processed_dates: set[str]) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Build KZG Option House static data from Massive options minute files.")
-    parser.add_argument("--since", default="2026-01-01")
+    parser.add_argument("--since", default="2023-05-10")
     parser.add_argument("--until")
     parser.add_argument("--limit", type=int)
     parser.add_argument("--force", action="store_true")

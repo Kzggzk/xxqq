@@ -37,7 +37,7 @@ def main() -> int:
 
     copied = 0
     dates: list[str] = []
-    for src in sorted(REPORTS_SRC.glob("2026-*.html")):
+    for src in sorted(REPORTS_SRC.glob("20??-??-??.html")):
         date = src.stem
         dst = DIST_R / f"report-{date}.html"
         shutil.copy2(src, dst)

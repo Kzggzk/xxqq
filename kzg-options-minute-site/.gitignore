@@ -1,5 +1,7 @@
 .netlify/
 dist/
+public/data/
+public/reports/
 qa-*.png
 **/__pycache__/
 *.pyc

@@ -11,6 +11,9 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from build_options_site import US_MARKET_HOLIDAYS  # noqa: E402
+
 KZG_OPTIONS_ROOT = Path(
     "/Users/fangbao/Library/Mobile Documents/com~apple~CloudDocs/KZG/23_DATA_Massive_期权分钟_Minute"
 )
@@ -25,22 +28,9 @@ KEYCHAIN_ACCOUNT = "KZGOptionHouse"
 KEYCHAIN_ACCESS = "kzg-option-house.massive-s3-access-key-id"
 KEYCHAIN_SECRET = "kzg-option-house.massive-s3-secret-access-key"
 
-US_MARKET_HOLIDAYS_2026 = {
-    date(2026, 1, 1),
-    date(2026, 1, 19),
-    date(2026, 2, 16),
-    date(2026, 4, 3),
-    date(2026, 5, 25),
-    date(2026, 6, 19),
-    date(2026, 7, 3),
-    date(2026, 9, 7),
-    date(2026, 11, 26),
-    date(2026, 12, 25),
-}
-
 
 def is_market_day(day: date) -> bool:
-    return day.weekday() < 5 and day not in US_MARKET_HOLIDAYS_2026
+    return day.weekday() < 5 and day not in US_MARKET_HOLIDAYS
 
 
 def previous_market_day(day: date) -> date:
@@ -55,7 +45,7 @@ def source_path(trade_date: str) -> Path:
 
 
 def latest_local() -> str | None:
-    paths = sorted(KZG_OPTIONS_ROOT.glob("2026-*/options_minute_aggregates_2026-*.csv.gz"))
+    paths = sorted(KZG_OPTIONS_ROOT.glob("20??-*/options_minute_aggregates_20??-??-??.csv.gz"))
     if not paths:
         return None
     name = paths[-1].name
