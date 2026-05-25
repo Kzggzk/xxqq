@@ -8,6 +8,7 @@ const state = {
   query: "",
   requestToken: 0,
   trendWindow: "90",
+  focusSymbol: null,
   lang: localStorage.getItem("kzg-option-house-lang") || "zh",
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
@@ -48,6 +49,8 @@ const copy = {
     regimeSub: "最近 120 个交易日的热冷切换。",
     momentum: "核心标的动量",
     momentumSub: "悬停标的查看跨日成交小图。",
+    symbolFocus: "标的聚焦",
+    symbolFocusSub: "点击任意标的锁定 90 日成交、权利金与 CP 结构。",
     totalVolume: "总期权成交量",
     premium: "权利金成交额",
     marketCp: "Put/Call 成交量",
@@ -90,6 +93,8 @@ const copy = {
     regimeSub: "Hot/cool regime switches across the latest 120 sessions.",
     momentum: "Core Symbol Momentum",
     momentumSub: "Hover a symbol for its cross-day mini chart.",
+    symbolFocus: "Symbol Lens",
+    symbolFocusSub: "Click any symbol to lock its 90-session volume, premium, and CP structure.",
     totalVolume: "Total Option Volume",
     premium: "Premium Notional",
     marketCp: "Call / Put Volume",
@@ -254,9 +259,21 @@ async function loadIndex() {
     const button = event.target.closest("button[data-date]");
     if (button) loadDayByDate(button.dataset.date);
   });
+  document.addEventListener("click", (event) => {
+    const target = event.target.closest("[data-symbol]");
+    if (!target || target.closest("input, textarea, [contenteditable='true']")) return;
+    const symbol = target.dataset.symbol;
+    if (!symbol || !state.day) return;
+    state.focusSymbol = symbol;
+    renderSymbolFocus();
+    document.querySelectorAll(".momentum-row").forEach((row) => {
+      row.classList.toggle("active", row.dataset.symbol === symbol);
+    });
+  });
   $("goToday").addEventListener("click", () => loadDayByIndex(state.datesAsc.length - 1));
   $("themeToggle").addEventListener("click", toggleTheme);
   $("langToggle").addEventListener("click", toggleLang);
+  window.addEventListener("resize", fitReportCanvas);
   document.querySelectorAll("[data-window]").forEach((button) => {
     button.addEventListener("click", () => {
       state.trendWindow = button.dataset.window;
@@ -389,6 +406,7 @@ function renderDay() {
   $("etfCp").textContent = `CP ${ratio(ov.category.ETF.cpRatio)} · ${moneyCompact(ov.category.ETF.premium)}`;
   $("stockShare").textContent = pct(ov.category.STOCK.volume, ov.totalVol);
   $("stockCp").textContent = `CP ${ratio(ov.category.STOCK.cpRatio)} · ${moneyCompact(ov.category.STOCK.premium)}`;
+  ensureFocusSymbol();
 
   $("downloadReport").onclick = () => exportReportPng(day.tradeDate);
   renderDigest();
@@ -399,6 +417,7 @@ function renderDay() {
   renderSignalBoard();
   renderRegimeMap();
   renderStockTable();
+  renderSymbolFocus();
   renderSymbolMomentum();
   renderStaticCopy();
 }
@@ -893,8 +912,9 @@ function renderSymbolMomentum() {
     const hot = row.delta >= 20;
     const cool = row.delta <= -20;
     const cls = hot ? "hot" : cool ? "cool" : "flat";
+    const active = row.symbol === state.focusSymbol ? " active" : "";
     return `
-      <button type="button" class="momentum-row ${cls}" data-symbol="${escapeHtml(row.symbol)}">
+      <button type="button" class="momentum-row ${cls}${active}" data-symbol="${escapeHtml(row.symbol)}">
         <span class="mom-symbol">${escapeHtml(row.symbol)}</span>
         <span class="mom-spark">${sparkline(row.series, "totalVol", 118, 34, hot ? "#c45335" : cool ? "#2f6190" : "#9a6a12")}</span>
         <span class="mom-value">${wan(row.totalVol)}</span>
@@ -902,6 +922,57 @@ function renderSymbolMomentum() {
       </button>
     `;
   }).join("");
+}
+
+function ensureFocusSymbol() {
+  const exists = state.day.topUnderlyings.some((row) => row.symbol === state.focusSymbol);
+  if (!state.focusSymbol || !exists) {
+    state.focusSymbol = state.day.topUnderlyings[0]?.symbol || state.day.stockRows[0]?.symbol || "SPY";
+  }
+}
+
+function renderSymbolFocus() {
+  const target = $("symbolFocus");
+  if (!target || !state.day) return;
+  ensureFocusSymbol();
+  const symbol = state.focusSymbol;
+  const current = state.day.topUnderlyings.find((row) => row.symbol === symbol);
+  const series = symbolSeriesUntil(symbol, 90);
+  if (!current || !series.length) {
+    target.innerHTML = "";
+    return;
+  }
+  const first = series[0];
+  const last = series[series.length - 1];
+  const prev20 = series.slice(0, -1).slice(-20);
+  const avg20 = average(prev20.map((row) => row.totalVol));
+  const volumeMove = avg20 ? ((Number(current.totalVol) - avg20) / avg20) * 100 : 0;
+  const premiumMove = first?.premiumNotional ? ((Number(last.premiumNotional) - Number(first.premiumNotional)) / Number(first.premiumNotional)) * 100 : 0;
+  const cpAvg = average(series.map((row) => row.cpRatio));
+  const tone = volumeMove >= 20 ? "hot" : volumeMove <= -20 ? "cool" : "flat";
+  target.innerHTML = `
+    <div class="focus-head ${tone}">
+      <div>
+        <span>${t("symbolFocus")}</span>
+        <strong>${escapeHtml(symbol)}</strong>
+        <small>${current.category || ""} · ${series.length}${state.lang === "zh" ? "日历史" : " sessions"}</small>
+      </div>
+      <div class="focus-contract">
+        <span>${state.lang === "zh" ? "最热合约" : "Top contract"}</span>
+        <b>${escapeHtml(current.hottestShort || "--")}</b>
+      </div>
+    </div>
+    <div class="focus-metrics">
+      <span>${state.lang === "zh" ? "当日成交" : "Volume"} <b>${wan(current.totalVol)}</b><i>${volumeMove >= 0 ? "+" : ""}${fmt1.format(volumeMove)}% vs 20D</i></span>
+      <span>${state.lang === "zh" ? "权利金" : "Premium"} <b>${moneyCompact(current.premiumNotional)}</b><i>${premiumMove >= 0 ? "+" : ""}${fmt1.format(premiumMove)}% / ${series.length}D</i></span>
+      <span>CP <b>${ratio(current.cpRatio)}</b><i>${state.lang === "zh" ? "均值" : "avg"} ${ratio(cpAvg)}</i></span>
+    </div>
+    <div class="focus-charts">
+      <div><span>${state.lang === "zh" ? "成交量" : "Volume"}</span>${sparkline(series, "totalVol", 280, 62, tone === "hot" ? "#c45335" : tone === "cool" ? "#2f6190" : "#9a6a12")}</div>
+      <div><span>${state.lang === "zh" ? "权利金" : "Premium"}</span>${sparkline(series, "premiumNotional", 280, 62, "#9a6a12")}</div>
+      <div><span>CP</span>${sparkline(series, "cpRatio", 280, 62, "#148355")}</div>
+    </div>
+  `;
 }
 
 function symbolSeriesUntil(symbol, limit = 60) {
@@ -1017,6 +1088,7 @@ function renderReportCanvas() {
       </footer>
     </article>
   `;
+  fitReportCanvas();
 }
 
 function orderRows(rows, symbols) {
@@ -1110,12 +1182,22 @@ async function exportReportPng(date) {
     button.disabled = true;
     button.innerHTML = `<span aria-hidden="true">↓</span>${t("exporting")}`;
     if (document.fonts?.ready) await document.fonts.ready;
-    const canvas = await window.html2canvas(report, {
-      backgroundColor: "#ffffff",
-      scale: 2.5,
-      useCORS: true,
-      logging: false,
-    });
+    const wrapper = document.createElement("div");
+    wrapper.className = "export-clone";
+    const clone = report.cloneNode(true);
+    wrapper.appendChild(clone);
+    document.body.appendChild(wrapper);
+    let canvas;
+    try {
+      canvas = await window.html2canvas(clone, {
+        backgroundColor: "#ffffff",
+        scale: 2.5,
+        useCORS: true,
+        logging: false,
+      });
+    } finally {
+      wrapper.remove();
+    }
     const link = document.createElement("a");
     link.href = canvas.toDataURL("image/png");
     link.download = `kzg-option-house-${date}-${state.lang}.png`;
@@ -1126,6 +1208,17 @@ async function exportReportPng(date) {
     button.disabled = false;
     button.innerHTML = original;
   }
+}
+
+function fitReportCanvas() {
+  const canvas = $("reportCanvas");
+  const sheet = canvas?.querySelector(".kzg-sheet");
+  if (!canvas || !sheet) return;
+  const available = Math.max(1, canvas.clientWidth);
+  const scale = Math.min(1, available / 760);
+  canvas.style.setProperty("--sheet-scale", scale.toFixed(4));
+  canvas.classList.toggle("is-scaled", scale < 0.999);
+  canvas.style.height = scale < 0.999 ? `${Math.ceil(sheet.scrollHeight * scale)}px` : "";
 }
 
 function heatLevel(value) {
