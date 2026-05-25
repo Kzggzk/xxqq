@@ -1660,9 +1660,18 @@ main {
   background: #2f6190;
 }
 
+.momentum-panel {
+  grid-column: 1 / -1;
+}
+
+.momentum-panel .section-head {
+  margin-bottom: 16px;
+}
+
 .symbol-momentum {
   display: grid;
-  gap: 8px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px 12px;
 }
 
 .momentum-row {
@@ -1670,7 +1679,7 @@ main {
   grid-template-columns: 64px minmax(90px, 1fr) 92px 70px;
   align-items: center;
   gap: 10px;
-  min-height: 46px;
+  min-height: 48px;
   padding: 6px 10px;
   border: 1px solid var(--line);
   border-radius: 6px;
@@ -1713,6 +1722,12 @@ main {
 
 .momentum-row.cool .mom-delta {
   color: var(--blue);
+}
+
+@media (min-width: 1500px) {
+  .symbol-momentum {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 [data-symbol] {
@@ -1842,6 +1857,10 @@ body[data-theme="dark"] .tip-grid b {
 
   .range-tabs button {
     flex: 1;
+  }
+
+  .symbol-momentum {
+    grid-template-columns: 1fr;
   }
 
   .momentum-row {

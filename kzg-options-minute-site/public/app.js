@@ -161,8 +161,13 @@ function shortDate(value) {
 
 function installGuards() {
   const allowText = (target) => target?.closest?.("input, textarea, [contenteditable='true']");
+  document.documentElement.setAttribute("oncontextmenu", "return false");
+  document.body?.setAttribute("oncontextmenu", "return false");
   document.addEventListener("contextmenu", (event) => {
     if (!allowText(event.target)) event.preventDefault();
+  }, { capture: true });
+  document.addEventListener("mousedown", (event) => {
+    if (event.button === 2 && !allowText(event.target)) event.preventDefault();
   }, { capture: true });
   document.addEventListener("dragstart", (event) => event.preventDefault(), { capture: true });
   document.addEventListener("selectstart", (event) => {
@@ -175,8 +180,10 @@ function installGuards() {
     if (allowText(event.target)) return;
     const key = event.key.toLowerCase();
     const blocked =
-      ((event.metaKey || event.ctrlKey) && ["u", "s", "c", "p", "x"].includes(key)) ||
-      ((event.metaKey || event.ctrlKey) && event.shiftKey && ["i", "j", "c"].includes(key));
+      event.key === "F12" ||
+      event.key === "ContextMenu" ||
+      ((event.metaKey || event.ctrlKey) && ["u", "s", "c", "p", "x", "a"].includes(key)) ||
+      ((event.metaKey || event.ctrlKey) && event.shiftKey && ["i", "j", "c", "k", "u"].includes(key));
     if (blocked) event.preventDefault();
   }, { capture: true });
 }
