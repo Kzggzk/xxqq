@@ -3146,6 +3146,64 @@ main {
 
 .symbol-momentum {
   display: grid;
+  gap: 12px;
+}
+
+.momentum-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.momentum-summary span {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  padding: 10px 11px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
+  font-variant-numeric: tabular-nums;
+}
+
+.momentum-summary span.hot {
+  border-color: rgba(196, 83, 53, 0.34);
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
+.momentum-summary span.cool {
+  border-color: rgba(47, 97, 144, 0.34);
+  box-shadow: inset 3px 0 0 #2f6190;
+}
+
+.momentum-summary i,
+.momentum-summary small {
+  overflow: hidden;
+  color: var(--muted);
+  font-style: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.momentum-summary i {
+  font-size: 10px;
+  font-weight: 820;
+}
+
+.momentum-summary b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.momentum-summary small {
+  font-size: 10px;
+}
+
+.momentum-list {
+  display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 9px 12px;
 }
@@ -3246,6 +3304,143 @@ main {
   white-space: nowrap;
 }
 
+.focus-extremes {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-bottom: 1px solid var(--line);
+}
+
+.focus-extremes button {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  padding: 10px 16px;
+  border: 0;
+  border-right: 1px solid var(--line);
+  background: rgba(246, 242, 233, 0.55);
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+  font-variant-numeric: tabular-nums;
+}
+
+.focus-extremes button:last-child {
+  border-right: 0;
+}
+
+.focus-extremes button:hover {
+  background: rgba(154, 106, 18, 0.1);
+}
+
+.focus-extremes span,
+.focus-extremes small {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 820;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.focus-extremes b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.focus-extremes .hot {
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
+.focus-extremes .cool {
+  box-shadow: inset 3px 0 0 #2f6190;
+}
+
+.focus-session-tape {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 12px;
+  align-items: stretch;
+  padding: 12px 14px 4px;
+}
+
+.focus-session-tape > div:first-child {
+  display: grid;
+  align-content: center;
+  gap: 3px;
+  min-width: 0;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.56);
+}
+
+.focus-session-tape span {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 820;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.focus-session-tape b {
+  color: var(--ink);
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+}
+
+.focus-session-cells {
+  display: grid;
+  grid-template-columns: repeat(28, minmax(0, 1fr));
+  align-items: end;
+  gap: 3px;
+  min-height: 58px;
+}
+
+.focus-session-cells button {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 4px;
+  align-items: end;
+  min-width: 0;
+  height: 58px;
+  padding: 0 0 2px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.focus-session-cells button.active {
+  border-bottom-color: var(--ink);
+}
+
+.focus-session-cells i {
+  display: block;
+  width: 100%;
+  height: var(--h);
+  min-height: 8px;
+  background: #b99b5f;
+}
+
+.focus-session-cells .hot i {
+  background: #c45335;
+}
+
+.focus-session-cells .cool i {
+  background: #2f6190;
+}
+
+.focus-session-cells span {
+  min-height: 10px;
+  font-size: 8px;
+  text-align: center;
+}
+
 .focus-charts {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -3321,7 +3516,7 @@ main {
 }
 
 @media (min-width: 1500px) {
-  .symbol-momentum {
+  .momentum-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
@@ -3447,6 +3642,9 @@ body[data-theme="dark"] .side-flow-grid span,
 body[data-theme="dark"] .side-leader-list button,
 body[data-theme="dark"] .side-lane-stack span,
 body[data-theme="dark"] .side-extreme-list button,
+body[data-theme="dark"] .momentum-summary span,
+body[data-theme="dark"] .focus-extremes button,
+body[data-theme="dark"] .focus-session-tape > div:first-child,
 body[data-theme="dark"] .market-tooltip {
   background: rgba(31, 29, 26, 0.96);
   color: var(--ink);
@@ -3458,6 +3656,7 @@ body[data-theme="dark"] .rotation-row:hover,
 body[data-theme="dark"] .heat-rhythm-card:hover,
 body[data-theme="dark"] .side-leader-list button:hover,
 body[data-theme="dark"] .side-extreme-list button:hover,
+body[data-theme="dark"] .focus-extremes button:hover,
 body[data-theme="dark"] .regime-stats button:hover {
   background: #27231d;
 }
@@ -3495,6 +3694,12 @@ body[data-theme="dark"] .side-leader-list small,
 body[data-theme="dark"] .side-lane-stack i,
 body[data-theme="dark"] .side-lane-stack small,
 body[data-theme="dark"] .side-extreme-list span,
+body[data-theme="dark"] .momentum-summary i,
+body[data-theme="dark"] .momentum-summary small,
+body[data-theme="dark"] .focus-extremes span,
+body[data-theme="dark"] .focus-extremes small,
+body[data-theme="dark"] .focus-session-tape span,
+body[data-theme="dark"] .focus-session-cells span,
 body[data-theme="dark"] .rotation-row small,
 body[data-theme="dark"] .rotation-lane-title,
 body[data-theme="dark"] .flow-bucket i,
@@ -3530,7 +3735,8 @@ body[data-theme="dark"] .trend-radar button.active {
 }
 
 body[data-theme="dark"] .trend-pulse-cells button.active,
-body[data-theme="dark"] .signal-pulse-cells button.active {
+body[data-theme="dark"] .signal-pulse-cells button.active,
+body[data-theme="dark"] .focus-session-cells button.active {
   border-bottom-color: var(--ink);
 }
 
@@ -3702,8 +3908,21 @@ body[data-theme="dark"] .tip-grid b {
     font-size: 13px;
   }
 
-  .symbol-momentum {
+  .momentum-list {
     grid-template-columns: 1fr;
+  }
+
+  .momentum-summary,
+  .focus-extremes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .focus-session-tape {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-session-cells {
+    grid-template-columns: repeat(14, minmax(0, 1fr));
   }
 
   .rotation-head,
@@ -3795,10 +4014,14 @@ body[data-theme="dark"] .tip-grid b {
   }
 
   .trend-pulse-cells span,
-  .signal-pulse-cells span {
+  .signal-pulse-cells span,
+  .focus-session-cells span {
     display: none;
   }
 
+  .momentum-summary,
+  .focus-extremes,
+  .momentum-list,
   .side-flow-grid,
   .side-leader-list button,
   .side-lane-stack span,
@@ -3811,7 +4034,8 @@ body[data-theme="dark"] .tip-grid b {
   }
 
   .trend-pulse-cells button,
-  .signal-pulse-cells button {
+  .signal-pulse-cells button,
+  .focus-session-cells button {
     gap: 0;
     padding-bottom: 3px;
   }

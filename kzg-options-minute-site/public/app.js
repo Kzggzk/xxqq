@@ -267,6 +267,10 @@ async function loadIndex() {
     const button = event.target.closest("button[data-date]");
     if (button) loadDayByDate(button.dataset.date);
   });
+  $("symbolFocus").addEventListener("click", (event) => {
+    const target = event.target.closest("[data-jump-date]");
+    if (target) loadDayByDate(target.dataset.jumpDate);
+  });
   document.addEventListener("click", (event) => {
     const target = event.target.closest("[data-symbol]");
     if (!target || target.closest("input, textarea, [contenteditable='true']")) return;
@@ -1402,8 +1406,22 @@ function renderSymbolMomentum() {
       const delta = avg ? ((Number(row.totalVol) - avg) / avg) * 100 : 0;
       return { ...row, delta, series };
     });
+  const hotRows = rows.filter((row) => row.delta >= 20);
+  const coolRows = rows.filter((row) => row.delta <= -20);
+  const warmLead = rows.reduce((best, row) => row.delta > best.delta ? row : best, rows[0] || {});
+  const coolLead = rows.reduce((best, row) => row.delta < best.delta ? row : best, rows[0] || {});
+  const premiumLead = rows.reduce((best, row) => Number(row.premiumNotional) > Number(best.premiumNotional) ? row : best, rows[0] || {});
+  const cpLead = rows.reduce((best, row) => Number(row.cpRatio) > Number(best.cpRatio) ? row : best, rows[0] || {});
 
-  target.innerHTML = rows.map((row) => {
+  target.innerHTML = `
+    <div class="momentum-summary">
+      ${momentumSummaryCard(state.lang === "zh" ? "升温队列" : "Warming", `${hotRows.length}/${rows.length}`, `${warmLead.symbol || "--"} ${warmLead.delta >= 0 ? "+" : ""}${fmt1.format(warmLead.delta || 0)}%`, "hot")}
+      ${momentumSummaryCard(state.lang === "zh" ? "降温队列" : "Cooling", `${coolRows.length}/${rows.length}`, `${coolLead.symbol || "--"} ${coolLead.delta >= 0 ? "+" : ""}${fmt1.format(coolLead.delta || 0)}%`, "cool")}
+      ${momentumSummaryCard(state.lang === "zh" ? "权利金锚点" : "Premium anchor", premiumLead.symbol || "--", moneyCompact(premiumLead.premiumNotional), "flat")}
+      ${momentumSummaryCard(state.lang === "zh" ? "CP 领头" : "CP lead", cpLead.symbol || "--", `CP ${ratio(cpLead.cpRatio)}`, "flat")}
+    </div>
+    <div class="momentum-list">
+      ${rows.map((row) => {
     const hot = row.delta >= 20;
     const cool = row.delta <= -20;
     const cls = hot ? "hot" : cool ? "cool" : "flat";
@@ -1416,7 +1434,19 @@ function renderSymbolMomentum() {
         <span class="mom-delta">${row.delta >= 0 ? "+" : ""}${fmt1.format(row.delta)}%</span>
       </button>
     `;
-  }).join("");
+      }).join("")}
+    </div>
+  `;
+}
+
+function momentumSummaryCard(label, value, sub, tone) {
+  return `
+    <span class="${tone}">
+      <i>${escapeHtml(label)}</i>
+      <b>${escapeHtml(String(value))}</b>
+      <small>${escapeHtml(String(sub || "--"))}</small>
+    </span>
+  `;
 }
 
 function renderSymbolRotation() {
@@ -1553,6 +1583,10 @@ function renderSymbolFocus() {
   const premiumMove = first?.premiumNotional ? ((Number(last.premiumNotional) - Number(first.premiumNotional)) / Number(first.premiumNotional)) * 100 : 0;
   const cpAvg = average(series.map((row) => row.cpRatio));
   const volumeRank = percentileRank(current.totalVol, series.map((row) => row.totalVol));
+  const highVol = series.reduce((best, row) => Number(row.totalVol) > Number(best.totalVol) ? row : best, series[0]);
+  const highPremium = series.reduce((best, row) => Number(row.premiumNotional) > Number(best.premiumNotional) ? row : best, series[0]);
+  const highCp = series.reduce((best, row) => Number(row.cpRatio) > Number(best.cpRatio) ? row : best, series[0]);
+  const lowCp = series.reduce((best, row) => Number(row.cpRatio) < Number(best.cpRatio) ? row : best, series[0]);
   const tone = volumeMove >= 20 ? "hot" : volumeMove <= -20 ? "cool" : "flat";
   target.innerHTML = `
     <div class="focus-head ${tone}">
@@ -1572,10 +1606,57 @@ function renderSymbolFocus() {
       <span>CP <b>${ratio(current.cpRatio)}</b><i>${state.lang === "zh" ? "均值" : "avg"} ${ratio(cpAvg)}</i></span>
       <span>${state.lang === "zh" ? "历史分位" : "History rank"} <b>${fmt0.format(volumeRank)}%</b><i>${series.length}${state.lang === "zh" ? "日成交区间" : " sessions"}</i></span>
     </div>
+    <div class="focus-extremes">
+      ${focusExtremeButton(state.lang === "zh" ? "成交峰值" : "Volume high", highVol, wan(highVol.totalVol), "hot")}
+      ${focusExtremeButton(state.lang === "zh" ? "权利金峰值" : "Premium high", highPremium, moneyCompact(highPremium.premiumNotional), "flat")}
+      ${focusExtremeButton(state.lang === "zh" ? "CP 极值" : "CP high", highCp, ratio(highCp.cpRatio), "hot")}
+      ${focusExtremeButton(state.lang === "zh" ? "防守极值" : "CP low", lowCp, ratio(lowCp.cpRatio), "cool")}
+    </div>
+    ${focusSessionTape(series)}
     <div class="focus-charts">
       <div><span>${state.lang === "zh" ? "成交量" : "Volume"}</span>${sparkline(series, "totalVol", 280, 62, tone === "hot" ? "#c45335" : tone === "cool" ? "#2f6190" : "#9a6a12")}</div>
       <div><span>${state.lang === "zh" ? "权利金" : "Premium"}</span>${sparkline(series, "premiumNotional", 280, 62, "#9a6a12")}</div>
       <div><span>CP</span>${sparkline(series, "cpRatio", 280, 62, "#148355")}</div>
+    </div>
+  `;
+}
+
+function focusExtremeButton(label, row, value, tone) {
+  return `
+    <button type="button" class="${tone}" data-jump-date="${row.date}">
+      <span>${escapeHtml(label)}</span>
+      <b>${escapeHtml(String(value || "--"))}</b>
+      <small>${shortDate(row.date)}</small>
+    </button>
+  `;
+}
+
+function focusSessionTape(series) {
+  const sample = series.slice(-28);
+  if (sample.length < 2) return "";
+  const maxVol = Math.max(...sample.map((row) => Number(row.totalVol) || 0), 1);
+  const buttons = sample.map((row, index) => {
+    const prev = sample[index - 1];
+    const move = prev?.totalVol ? ((Number(row.totalVol) - Number(prev.totalVol)) / Number(prev.totalVol)) * 100 : 0;
+    const cp = Number(row.cpRatio) || 0;
+    const tone = move >= 12 || cp >= 2 ? "hot" : move <= -12 || cp <= 0.8 ? "cool" : "flat";
+    const active = row.date === state.day.tradeDate ? " active" : "";
+    const height = Math.max(10, ((Number(row.totalVol) || 0) / maxVol) * 100);
+    const title = `${row.date} · ${wan(row.totalVol)} · CP ${ratio(row.cpRatio)} · ${move >= 0 ? "+" : ""}${fmt1.format(move)}%`;
+    return `
+      <button type="button" class="${tone}${active}" data-jump-date="${row.date}" title="${escapeHtml(title)}" style="--h:${height.toFixed(1)}%">
+        <i></i>
+        <span>${index % 5 === 0 || active || index === sample.length - 1 ? shortDate(row.date) : ""}</span>
+      </button>
+    `;
+  }).join("");
+  return `
+    <div class="focus-session-tape">
+      <div>
+        <span>${state.lang === "zh" ? "标的节奏带" : "Symbol rhythm"}</span>
+        <b>${sample.length}D</b>
+      </div>
+      <div class="focus-session-cells">${buttons}</div>
     </div>
   `;
 }
