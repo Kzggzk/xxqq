@@ -24,7 +24,14 @@ export PATH="/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PAT
 
 cd "$ROOT" || { log "ERR cd failed"; exit 2; }
 
-# Run daily_update.py — it computes previous trading day, checks iCloud, then build + deploy if --deploy.
+# Step 1: Massive downloader for previous trading day (idempotent — skips if iCloud already has file).
+# Exit codes (non-fatal): 2=env not configured, 3=non-trading day, 4=download failed, 5=invalid file.
+log "step: download_massive.py"
+/usr/bin/env python3 scripts/download_massive.py 2>&1 | tee -a "$LOG"
+dl_status=${PIPESTATUS[0]}
+log "download_massive.py exit=$dl_status"
+
+# Step 2: daily build + deploy.
 log "step: daily_update.py --deploy"
 /usr/bin/env python3 scripts/daily_update.py --deploy 2>&1 | tee -a "$LOG"
 status=${PIPESTATUS[0]}

@@ -128,8 +128,45 @@ npx netlify-cli login
 - SEO: canonical, OG meta, theme-color, description
 - The compact report deliberately omits the legacy "指数期权 Call/Put 占比" pie module from the older KZG OS browser tool because it always rendered ~50/50 (suspected bug). CP ratios are still surfaced in the overview paragraph and per-row CP columns.
 
+## Massive downloader — one-time setup
+
+`scripts/download_massive.py` (called from `cron_daily.sh` before `daily_update.py`) does cookie-reuse curl against Massive's actual Download endpoint. It needs URL + Cookie captured once from a manual download.
+
+1. Copy the template:
+   ```bash
+   cp ~/.kzg-option-house/secrets.env.example ~/.kzg-option-house/secrets.env
+   chmod 600 ~/.kzg-option-house/secrets.env
+   ```
+2. In Chrome (logged into https://massive.com/dashboard), open DevTools → Network tab → enable "Preserve log" + filter for `csv`.
+3. Navigate Flat Files → Options → Minute Aggregates → click Download on any day.
+4. Find the actual `.csv.gz` request in the network panel (HTTP 200, response is a binary download).
+5. Right-click → Copy → Copy as cURL (POSIX).
+6. From that cURL extract:
+   - The URL (replace the date portion with placeholder `{date}`, or `{yyyymmdd}` / `{yyyy}{mm}{dd}` as needed).
+   - The full `Cookie:` header value.
+7. Paste into `~/.kzg-option-house/secrets.env`:
+   ```env
+   MASSIVE_DOWNLOAD_URL_TEMPLATE='https://massive.com/.../options/minute/{date}/...'
+   MASSIVE_SESSION_COOKIE='session=...; other=...'
+   ```
+8. Sanity-check:
+   ```bash
+   python3 scripts/download_massive.py --dry-run --date 2026-05-22
+   python3 scripts/download_massive.py --date 2026-05-19  # actually fetch a missing day
+   ```
+
+Exit codes:
+- `0` — downloaded (or already present)
+- `2` — env not configured (prints hint)
+- `3` — non-trading day, nothing to fetch
+- `4` — curl failed (likely cookie expired or URL drift)
+- `5` — file invalid (size/header check failed)
+
+Cookies typically last weeks/months. When the curl 4xx's, recapture the cookie and update env.
+
 ## Open follow-ups
 
-- Massive downloader (`scripts/cron_daily.sh` warns when csv.gz is missing but does not yet fetch). Decide between AppleScript+System Events vs Chrome DevTools Protocol vs Cookie-reuse curl. See `docs/lessons.md` for tradeoffs.
-- Lighthouse audit (not yet run in this branch; informal pass expected per static lean output).
-- The home repo at `/Users/fangbao` has zero commits yet; this project is staged on branch `feat/kzg-option-house-daily-auto`.
+- Lighthouse audit not yet run; informal pass expected per static lean output.
+- The home repo at `/Users/fangbao` was zero-commit at session start; this project is on branch `feat/kzg-option-house-daily-auto` with one initial commit.
+- 2026-05-19 and 2026-05-21 csv.gz still missing from iCloud — first test of the downloader will likely target one of these dates.
+- `index.html`, `public/styles.css`, `public/vendor/html2canvas.min.js` are owned by a concurrent editor — backend scripts here leave them alone.
