@@ -270,9 +270,7 @@ async function loadIndex() {
     if (!symbol || !state.day) return;
     state.focusSymbol = symbol;
     renderSymbolFocus();
-    document.querySelectorAll(".momentum-row, .rotation-row").forEach((row) => {
-      row.classList.toggle("active", row.dataset.symbol === symbol);
-    });
+    syncSymbolActive();
   });
   $("goToday").addEventListener("click", () => loadDayByIndex(state.datesAsc.length - 1));
   $("themeToggle").addEventListener("click", toggleTheme);
@@ -425,6 +423,7 @@ function renderDay() {
   renderSymbolRotation();
   renderSymbolMomentum();
   renderStaticCopy();
+  syncSymbolActive();
 }
 
 function renderStaticCopy() {
@@ -454,6 +453,16 @@ function renderStaticCopy() {
 
 function renderDigest() {
   $("digest").innerHTML = state.day.digest.map((line) => `<div>${escapeHtml(line)}</div>`).join("");
+}
+
+function syncSymbolActive() {
+  const symbol = state.focusSymbol;
+  document.querySelectorAll("[data-symbol]").forEach((node) => {
+    node.classList.toggle("symbol-active", !!symbol && node.dataset.symbol === symbol);
+  });
+  document.querySelectorAll(".momentum-row, .rotation-row").forEach((row) => {
+    row.classList.toggle("active", !!symbol && row.dataset.symbol === symbol);
+  });
 }
 
 function trailingBucketAverage(endIndex, lookback) {
@@ -679,6 +688,7 @@ function renderTrend() {
   const highPoint = pointsVol.find((point) => point.row.date === rangeHigh.date) || pointsVol[0];
   const lowPoint = pointsVol.find((point) => point.row.date === rangeLow.date) || pointsVol[0];
   const latestPoint = pointsVol[pointsVol.length - 1];
+  const trendRadar = trendRadarRows(rows);
 
   $("trendChart").innerHTML = `
     <div class="trend-summary ${tone}">
@@ -697,6 +707,9 @@ function renderTrend() {
       ${trendLensCard(state.lang === "zh" ? "权利金变化" : "Premium move", `${premiumChange >= 0 ? "+" : ""}${fmt1.format(premiumChange)}%`, `${moneyCompact(first.totalPremium)} → ${moneyCompact(latest.totalPremium)}`, premiumChange >= 12 ? "hot" : premiumChange <= -12 ? "cool" : "flat")}
       ${trendLensCard(state.lang === "zh" ? "CP 漂移" : "CP drift", `${cpDrift >= 0 ? "+" : ""}${fmt2.format(cpDrift)}`, `${ratio(first.marketCp)} → ${ratio(latest.marketCp)}`, cpDrift >= 0.18 ? "hot" : cpDrift <= -0.18 ? "cool" : "flat")}
       ${trendLensCard(state.lang === "zh" ? "个股权重" : "Stock share", `${stockShareDrift >= 0 ? "+" : ""}${fmt1.format(stockShareDrift)}pt`, `${fmt1.format(stockShareFirst)}% → ${fmt1.format(stockShareLatest)}%`, stockShareDrift >= 5 ? "hot" : stockShareDrift <= -5 ? "cool" : "flat")}
+    </div>
+    <div class="trend-radar">
+      ${trendRadar.map((item) => trendRadarCard(item)).join("")}
     </div>
     <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${t("trend")}">
       <defs>
@@ -723,6 +736,62 @@ function renderTrend() {
       <button type="button" data-jump-date="${latest.date}">${state.lang === "zh" ? "当前权利金" : "Current premium"} <b>${moneyCompact(latest.totalPremium)}</b></button>
     </div>
     ${categoryStack(latest)}
+  `;
+}
+
+function trendRadarRows(rows) {
+  const fallback = rows[rows.length - 1];
+  const moves = rows.slice(1).map((row, index) => {
+    const prev = rows[index];
+    const volMove = prev.totalVol ? ((row.totalVol - prev.totalVol) / prev.totalVol) * 100 : 0;
+    const premiumMove = prev.totalPremium ? ((row.totalPremium - prev.totalPremium) / prev.totalPremium) * 100 : 0;
+    const stockMove = categoryShareForRow(row, "STOCK") - categoryShareForRow(prev, "STOCK");
+    return { row, volMove, premiumMove, stockMove };
+  });
+  const byAbs = (key) => moves.reduce((best, item) => Math.abs(item[key]) > Math.abs(best[key]) ? item : best, moves[0] || { row: fallback, [key]: 0 });
+  const volume = byAbs("volMove");
+  const premium = byAbs("premiumMove");
+  const stock = byAbs("stockMove");
+  const cpHigh = rows.reduce((best, row) => Number(row.marketCp) > Number(best.marketCp) ? row : best, rows[0]);
+  return [
+    {
+      label: state.lang === "zh" ? "量能脉冲" : "Volume pulse",
+      date: volume.row.date,
+      value: `${volume.volMove >= 0 ? "+" : ""}${fmt1.format(volume.volMove)}%`,
+      sub: wan(volume.row.totalVol),
+      tone: volume.volMove >= 8 ? "hot" : volume.volMove <= -8 ? "cool" : "flat",
+    },
+    {
+      label: state.lang === "zh" ? "权利金脉冲" : "Premium pulse",
+      date: premium.row.date,
+      value: `${premium.premiumMove >= 0 ? "+" : ""}${fmt1.format(premium.premiumMove)}%`,
+      sub: moneyCompact(premium.row.totalPremium),
+      tone: premium.premiumMove >= 12 ? "hot" : premium.premiumMove <= -12 ? "cool" : "flat",
+    },
+    {
+      label: state.lang === "zh" ? "CP 极值" : "CP extreme",
+      date: cpHigh.date,
+      value: ratio(cpHigh.marketCp),
+      sub: shortDate(cpHigh.date),
+      tone: Number(cpHigh.marketCp) >= 1.5 ? "hot" : Number(cpHigh.marketCp) <= 0.95 ? "cool" : "flat",
+    },
+    {
+      label: state.lang === "zh" ? "个股切换" : "Stock shift",
+      date: stock.row.date,
+      value: `${stock.stockMove >= 0 ? "+" : ""}${fmt1.format(stock.stockMove)}pt`,
+      sub: shortDate(stock.row.date),
+      tone: stock.stockMove >= 5 ? "hot" : stock.stockMove <= -5 ? "cool" : "flat",
+    },
+  ];
+}
+
+function trendRadarCard(item) {
+  return `
+    <button type="button" class="${item.tone}" data-jump-date="${item.date}">
+      <span>${item.label}</span>
+      <b>${item.value}</b>
+      <small>${item.sub}</small>
+    </button>
   `;
 }
 
