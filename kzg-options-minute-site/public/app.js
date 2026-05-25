@@ -42,6 +42,10 @@ const copy = {
     bucketsSub: "当前交易日与最近 20 个交易日的 30 分钟桶对比。",
     trend: "跨日成交趋势",
     trendSub: "成交量、权利金和 CP 结构随时间同步变化。",
+    signal: "市场结构情报",
+    signalSub: "成交、权利金、CP、开收盘节奏压成一张读盘卡。",
+    regime: "交易日温度带",
+    regimeSub: "最近 120 个交易日的热冷切换。",
     momentum: "核心标的动量",
     momentumSub: "悬停标的查看跨日成交小图。",
     totalVolume: "总期权成交量",
@@ -80,6 +84,10 @@ const copy = {
     bucketsSub: "Selected day against the trailing 20-session bucket average.",
     trend: "Cross-Day Flow",
     trendSub: "Volume, premium notional, and CP structure over time.",
+    signal: "Market Structure",
+    signalSub: "Volume, premium, CP, open and close rhythm in one read.",
+    regime: "Session Temperature",
+    regimeSub: "Hot/cool regime switches across the latest 120 sessions.",
     momentum: "Core Symbol Momentum",
     momentumSub: "Hover a symbol for its cross-day mini chart.",
     totalVolume: "Total Option Volume",
@@ -375,6 +383,8 @@ function renderDay() {
   renderBuckets();
   renderHeatmap();
   renderTrend();
+  renderSignalBoard();
+  renderRegimeMap();
   renderStockTable();
   renderSymbolMomentum();
   renderStaticCopy();
@@ -386,17 +396,19 @@ function renderStaticCopy() {
   document.querySelector(".section-head p").textContent = t("reportCanvasSub");
   $("trendTitle").textContent = t("trend");
   $("trendSub").textContent = t("trendSub");
+  $("signalTitle").textContent = t("signal");
+  $("signalSub").textContent = t("signalSub");
+  $("regimeTitle").textContent = t("regime");
+  $("regimeSub").textContent = t("regimeSub");
+  $("heatmapTitle").textContent = t("heatmap");
+  $("heatmapSub").textContent = t("heatmapSub");
+  $("bucketTitle").textContent = t("buckets");
+  $("bucketSub").textContent = t("bucketsSub");
   document.querySelector(".side-rail .section-head h2").textContent = t("digest");
   document.querySelector(".side-rail .section-head p").textContent = t("digestSub");
   document.querySelector(".search-wrap span").textContent = t("filter");
   document.querySelector(".mini-head b").textContent = t("stockTop");
   document.querySelector(".mini-head span").textContent = t("volumeRank");
-  const heads = document.querySelectorAll(".analysis-grid .panel .section-head h2");
-  const subs = document.querySelectorAll(".analysis-grid .panel .section-head p");
-  if (heads[1]) heads[1].textContent = t("heatmap");
-  if (subs[1]) subs[1].textContent = t("heatmapSub");
-  if (heads[2]) heads[2].textContent = t("buckets");
-  if (subs[2]) subs[2].textContent = t("bucketsSub");
   $("momentumTitle").textContent = t("momentum");
   $("momentumSub").textContent = t("momentumSub");
 }
@@ -495,6 +507,18 @@ function renderTrend() {
   const change = prev ? ((latest.totalVol - prev.totalVol) / prev.totalVol) * 100 : 0;
   const tone = change >= 0 ? "trend-hot" : "trend-cool";
   const avgCp = rows.reduce((sum, row) => sum + (Number(row.marketCp) || 0), 0) / rows.length;
+  const cpValues = rows.map((row) => Number(row.marketCp) || 0);
+  const maxCp = Math.max(...cpValues, 1);
+  const minCp = Math.min(...cpValues, maxCp);
+  const pointsCp = rows.map((row, index) => ({
+    x: xAt(index),
+    y: scaleY(Number(row.marketCp) || 0, minCp, maxCp),
+    row,
+  }));
+  const lineCp = pointsCp.map((point) => `${point.x.toFixed(1)},${point.y.toFixed(1)}`).join(" ");
+  const selectedRank = percentileRank(latest.totalVol, rows.map((row) => row.totalVol));
+  const rangeHigh = rows.reduce((best, row) => Number(row.totalVol) > Number(best.totalVol) ? row : best, rows[0]);
+  const rangeLow = rows.reduce((best, row) => Number(row.totalVol) < Number(best.totalVol) ? row : best, rows[0]);
 
   $("trendChart").innerHTML = `
     <div class="trend-summary ${tone}">
@@ -505,6 +529,7 @@ function renderTrend() {
       <div class="trend-kpis">
         <span>${state.lang === "zh" ? "权利金" : "Premium"} ${moneyCompact(latest.totalPremium)}</span>
         <span>CP ${ratio(latest.marketCp)} · ${state.lang === "zh" ? "均值" : "avg"} ${ratio(avgCp)}</span>
+        <span>${state.lang === "zh" ? "区间分位" : "Percentile"} ${fmt0.format(selectedRank)}%</span>
       </div>
     </div>
     <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${t("trend")}">
@@ -518,11 +543,132 @@ function renderTrend() {
       ${pointsVol.map((point, index) => `<line x1="${point.x.toFixed(1)}" x2="${point.x.toFixed(1)}" y1="${height - padY}" y2="${point.y.toFixed(1)}" stroke="${change >= 0 ? "#d7a28f" : "#9cb7d0"}" stroke-width="${Math.max(2, 12 / Math.sqrt(rows.length)).toFixed(1)}" opacity=".34"></line>`).join("")}
       <polyline points="${lineVol}" fill="none" stroke="${change >= 0 ? "#c45335" : "#2f6190"}" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"></polyline>
       <polyline points="${linePremium}" fill="none" stroke="#a47419" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" opacity=".85"></polyline>
+      <polyline points="${lineCp}" fill="none" stroke="#148355" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" opacity=".72"></polyline>
       ${pointsVol.map((point, index) => index % Math.max(1, Math.ceil(rows.length / 7)) === 0 || index === pointsVol.length - 1 ? `<text x="${point.x.toFixed(1)}" y="${height - 6}" text-anchor="middle">${shortDate(point.row.date)}</text>` : "").join("")}
       <text x="${padX}" y="16" text-anchor="start">${state.lang === "zh" ? "成交量" : "Volume"}</text>
-      <text x="${width - padX}" y="16" text-anchor="end">${state.lang === "zh" ? "权利金" : "Premium"}</text>
+      <text x="${width - padX}" y="16" text-anchor="end">${state.lang === "zh" ? "权利金 / CP" : "Premium / CP"}</text>
     </svg>
+    <div class="trend-extremes">
+      <span>${state.lang === "zh" ? "区间高点" : "Range high"} <b>${shortDate(rangeHigh.date)} · ${wan(rangeHigh.totalVol)}</b></span>
+      <span>${state.lang === "zh" ? "区间低点" : "Range low"} <b>${shortDate(rangeLow.date)} · ${wan(rangeLow.totalVol)}</b></span>
+      <span>${state.lang === "zh" ? "当前权利金" : "Current premium"} <b>${moneyCompact(latest.totalPremium)}</b></span>
+    </div>
     ${categoryStack(latest)}
+  `;
+}
+
+function renderSignalBoard() {
+  const target = $("signalBoard");
+  const daily = state.analytics?.daily || [];
+  const rows90 = daily.slice(Math.max(0, state.selectedIndex - 89), state.selectedIndex + 1);
+  const rows20 = daily.slice(Math.max(0, state.selectedIndex - 20), state.selectedIndex);
+  const avg20Vol = average(rows20.map((row) => row.totalVol));
+  const avg20Premium = average(rows20.map((row) => row.totalPremium));
+  const ov = state.day.overview;
+  const buckets = state.day.buckets.market || [];
+  const bucketTotal = buckets.reduce((sum, row) => sum + (Number(row.total) || 0), 0) || 1;
+  const openShare = buckets.slice(0, 2).reduce((sum, row) => sum + (Number(row.total) || 0), 0) / bucketTotal * 100;
+  const closeShare = buckets.slice(-2).reduce((sum, row) => sum + (Number(row.total) || 0), 0) / bucketTotal * 100;
+  const noonShare = buckets.slice(5, 8).reduce((sum, row) => sum + (Number(row.total) || 0), 0) / bucketTotal * 100;
+  const premiumDensity = ov.totalVol ? ov.totalPremium / ov.totalVol : 0;
+  const volumeDelta20 = avg20Vol ? ((ov.totalVol - avg20Vol) / avg20Vol) * 100 : 0;
+  const premiumDelta20 = avg20Premium ? ((ov.totalPremium - avg20Premium) / avg20Premium) * 100 : 0;
+  const volPct = percentileRank(ov.totalVol, rows90.map((row) => row.totalVol));
+  const cpPct = percentileRank(ov.marketCp, rows90.map((row) => row.marketCp));
+  const dominant = dominantCategory(ov.category, ov.totalVol);
+  const bucketDivergence = strongestBucketDivergence();
+  const pulse = Math.max(4, Math.min(100, (volPct * 0.45) + (Math.max(0, volumeDelta20) * 0.35) + (Math.max(0, premiumDelta20) * 0.2)));
+  const pulseTone = pulse >= 72 ? "hot" : pulse <= 36 ? "cool" : "warm";
+  const cards = [
+    {
+      label: state.lang === "zh" ? "量能分位" : "Volume rank",
+      value: `${fmt0.format(volPct)}%`,
+      sub: `${volumeDelta20 >= 0 ? "+" : ""}${fmt1.format(volumeDelta20)}% ${state.lang === "zh" ? "vs 20日均值" : "vs 20D avg"}`,
+      meter: volPct,
+      tone: volPct >= 70 ? "hot" : volPct <= 35 ? "cool" : "warm",
+    },
+    {
+      label: state.lang === "zh" ? "权利金密度" : "Premium density",
+      value: moneyCompact(premiumDensity),
+      sub: `${premiumDelta20 >= 0 ? "+" : ""}${fmt1.format(premiumDelta20)}% ${state.lang === "zh" ? "权利金变化" : "premium move"}`,
+      meter: Math.max(8, Math.min(100, 50 + premiumDelta20)),
+      tone: premiumDelta20 >= 18 ? "hot" : premiumDelta20 <= -18 ? "cool" : "warm",
+    },
+    {
+      label: state.lang === "zh" ? "开盘集中度" : "Opening focus",
+      value: `${fmt1.format(openShare)}%`,
+      sub: `${state.lang === "zh" ? "前 60 分钟" : "first 60 min"} · ${fmt1.format(noonShare)}% ${state.lang === "zh" ? "午盘" : "midday"}`,
+      meter: openShare,
+      tone: openShare >= 28 ? "hot" : openShare <= 16 ? "cool" : "warm",
+    },
+    {
+      label: state.lang === "zh" ? "尾盘集中度" : "Closing focus",
+      value: `${fmt1.format(closeShare)}%`,
+      sub: bucketDivergence,
+      meter: closeShare,
+      tone: closeShare >= 24 ? "hot" : closeShare <= 13 ? "cool" : "warm",
+    },
+    {
+      label: state.lang === "zh" ? "主导类别" : "Dominant lane",
+      value: dominant.label,
+      sub: `${dominant.share} · CP ${ratio(dominant.cpRatio)}`,
+      meter: Number.parseFloat(dominant.share) || 0,
+      tone: dominant.key === "STOCK" ? "hot" : dominant.key === "INDEX" ? "cool" : "warm",
+    },
+    {
+      label: state.lang === "zh" ? "CP 结构" : "CP regime",
+      value: ratio(ov.marketCp),
+      sub: `${fmt0.format(cpPct)}% ${state.lang === "zh" ? "历史分位" : "rank"} · Call / Put`,
+      meter: cpPct,
+      tone: ov.marketCp >= 1.5 ? "hot" : ov.marketCp <= 0.95 ? "cool" : "warm",
+    },
+  ];
+
+  target.innerHTML = `
+    <div class="pulse-gauge ${pulseTone}" style="--pulse:${pulse.toFixed(1)}%">
+      <div>
+        <span>${state.lang === "zh" ? "盘面温度" : "Market pulse"}</span>
+        <strong>${fmt0.format(pulse)}</strong>
+      </div>
+      <p>${signalNarrative(volumeDelta20, premiumDelta20, openShare, closeShare, dominant.label)}</p>
+    </div>
+    <div class="signal-strips">
+      ${cards.map((card) => `
+        <div class="signal-strip ${card.tone}" style="--meter:${Math.max(4, Math.min(100, card.meter)).toFixed(1)}%">
+          <span>${card.label}</span>
+          <strong>${card.value}</strong>
+          <small>${card.sub}</small>
+          <i></i>
+        </div>
+      `).join("")}
+    </div>
+  `;
+}
+
+function renderRegimeMap() {
+  const rows = (state.analytics?.daily || []).slice(Math.max(0, state.selectedIndex - 119), state.selectedIndex + 1);
+  if (!rows.length) {
+    $("regimeMap").innerHTML = "";
+    return;
+  }
+  const maxVol = Math.max(...rows.map((row) => Number(row.totalVol) || 0), 1);
+  const minVol = Math.min(...rows.map((row) => Number(row.totalVol) || 0), maxVol);
+  const selected = rows[rows.length - 1];
+  const cells = rows.map((row, index) => {
+    const prev = rows[index - 1];
+    const move = prev && prev.totalVol ? ((row.totalVol - prev.totalVol) / prev.totalVol) * 100 : 0;
+    const heat = (Number(row.totalVol) - minVol) / Math.max(1, maxVol - minVol);
+    const tone = move >= 8 ? "hot" : move <= -8 ? "cool" : "flat";
+    return `<button type="button" class="${tone}" data-date="${row.date}" title="${row.date} · ${wan(row.totalVol)} · ${move >= 0 ? "+" : ""}${fmt1.format(move)}%" style="--heat:${heat.toFixed(2)}"></button>`;
+  }).join("");
+  const avgVol = average(rows.map((row) => row.totalVol));
+  const selectedMove = avgVol ? ((selected.totalVol - avgVol) / avgVol) * 100 : 0;
+  $("regimeMap").innerHTML = `
+    <div class="regime-tape">${cells}</div>
+    <div class="regime-foot">
+      <span>${shortDate(rows[0].date)} - ${shortDate(selected.date)}</span>
+      <b>${selectedMove >= 0 ? "+" : ""}${fmt1.format(selectedMove)}% ${state.lang === "zh" ? "相对区间均量" : "vs window avg"}</b>
+    </div>
   `;
 }
 
@@ -557,6 +703,71 @@ function categoryStack(row) {
       }).join("")}
     </div>
   `;
+}
+
+function average(values) {
+  const nums = values.map(Number).filter(Number.isFinite);
+  if (!nums.length) return 0;
+  return nums.reduce((sum, value) => sum + value, 0) / nums.length;
+}
+
+function percentileRank(value, values) {
+  const nums = values.map(Number).filter(Number.isFinite).sort((a, b) => a - b);
+  const n = Number(value);
+  if (!nums.length || !Number.isFinite(n)) return 0;
+  const lowerOrEqual = nums.filter((item) => item <= n).length;
+  return Math.max(0, Math.min(100, (lowerOrEqual / nums.length) * 100));
+}
+
+function dominantCategory(category, totalVol) {
+  const parts = [
+    ["INDEX", t("index")],
+    ["ETF", t("etf")],
+    ["STOCK", t("stock")],
+  ];
+  const best = parts
+    .map(([key, label]) => {
+      const item = category?.[key] || {};
+      return {
+        key,
+        label,
+        volume: Number(item.volume) || 0,
+        cpRatio: item.cpRatio,
+      };
+    })
+    .sort((a, b) => b.volume - a.volume)[0];
+  return {
+    ...best,
+    share: pct(best.volume, totalVol),
+  };
+}
+
+function strongestBucketDivergence() {
+  const rows = state.day.buckets.market || [];
+  const avg = trailingBucketAverage(state.selectedIndex, 20);
+  let best = null;
+  rows.forEach((row, index) => {
+    const base = avg[index] || 0;
+    const spread = base ? ((Number(row.total) - base) / base) * 100 : 0;
+    if (!best || Math.abs(spread) > Math.abs(best.spread)) {
+      best = { time: row.time, spread };
+    }
+  });
+  if (!best) return state.lang === "zh" ? "暂无 20 日均值" : "no 20D average";
+  return `${best.time} ${best.spread >= 0 ? "+" : ""}${fmt1.format(best.spread)}% ${state.lang === "zh" ? "vs 20日桶均值" : "vs 20D bucket avg"}`;
+}
+
+function signalNarrative(volumeDelta20, premiumDelta20, openShare, closeShare, lane) {
+  if (state.lang !== "zh") {
+    const energy = volumeDelta20 >= 18 ? "active tape" : volumeDelta20 <= -18 ? "cool tape" : "balanced tape";
+    const premium = premiumDelta20 >= 18 ? "premium is expanding" : premiumDelta20 <= -18 ? "premium is lighter" : "premium is steady";
+    const rhythm = closeShare > openShare ? "closing demand leads" : "opening demand leads";
+    return `${energy}; ${premium}; ${rhythm}. Dominant lane: ${lane}.`;
+  }
+  const energy = volumeDelta20 >= 18 ? "量能明显放大" : volumeDelta20 <= -18 ? "量能偏冷" : "量能处于均衡带";
+  const premium = premiumDelta20 >= 18 ? "权利金同步扩张" : premiumDelta20 <= -18 ? "权利金收缩" : "权利金保持稳定";
+  const rhythm = closeShare > openShare ? "尾盘需求强于开盘" : "开盘需求更集中";
+  return `${energy}，${premium}，${rhythm}。主导通道：${lane}。`;
 }
 
 function renderStockTable() {

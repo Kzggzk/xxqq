@@ -156,21 +156,41 @@
           <div id="trendChart" class="trend-chart"></div>
         </section>
 
-        <section class="panel">
+        <section class="panel signal-panel">
           <div class="section-head">
             <div>
-              <h2>分钟聚合成交热力图</h2>
-              <p>Top15 标的，单位万张。</p>
+              <h2 id="signalTitle">市场结构情报</h2>
+              <p id="signalSub">把成交、权利金、CP、开收盘节奏压成一张读盘卡。</p>
+            </div>
+          </div>
+          <div id="signalBoard" class="signal-board"></div>
+        </section>
+
+        <section class="panel regime-panel">
+          <div class="section-head">
+            <div>
+              <h2 id="regimeTitle">交易日温度带</h2>
+              <p id="regimeSub">最近 120 个交易日的热冷切换。</p>
+            </div>
+          </div>
+          <div id="regimeMap" class="regime-map"></div>
+        </section>
+
+        <section class="panel heatmap-panel">
+          <div class="section-head">
+            <div>
+              <h2 id="heatmapTitle">分钟聚合成交热力图</h2>
+              <p id="heatmapSub">Top15 标的，单位万张。</p>
             </div>
           </div>
           <div id="heatmap" class="heatmap"></div>
         </section>
 
-        <section class="panel">
+        <section class="panel bucket-panel">
           <div class="section-head">
             <div>
-              <h2>日内成交分布</h2>
-              <p>全市场 30 分钟桶。</p>
+              <h2 id="bucketTitle">日内成交分布</h2>
+              <p id="bucketSub">全市场 30 分钟桶。</p>
             </div>
           </div>
           <div id="bucketBars" class="bucket-bars"></div>
