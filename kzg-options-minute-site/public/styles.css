@@ -2401,6 +2401,109 @@ main {
   box-shadow: inset 3px 0 0 #2f6190;
 }
 
+.trend-window-stack {
+  display: grid;
+  grid-template-columns: 0.74fr 1.6fr;
+  gap: 8px;
+  margin: -2px 0 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.trend-window-lead,
+.trend-window-cards span {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.trend-window-lead {
+  display: grid;
+  align-content: center;
+  gap: 5px;
+  padding: 10px 11px;
+  border-left: 4px solid var(--gold);
+}
+
+.trend-window-lead.hot {
+  border-left-color: #c45335;
+}
+
+.trend-window-lead.cool {
+  border-left-color: #2f6190;
+}
+
+.trend-window-lead span,
+.trend-window-lead small,
+.trend-window-cards i,
+.trend-window-cards small {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 820;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.trend-window-lead strong {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", "Songti SC", serif;
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.trend-window-lead small {
+  line-height: 1.35;
+  white-space: normal;
+}
+
+.trend-window-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.trend-window-cards span {
+  display: grid;
+  gap: 5px;
+  padding: 9px 10px 8px;
+  border-top: 3px solid var(--gold);
+}
+
+.trend-window-cards .hot {
+  border-top-color: #c45335;
+}
+
+.trend-window-cards .cool {
+  border-top-color: #2f6190;
+}
+
+.trend-window-cards b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 840;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.trend-window-cards em {
+  display: block;
+  width: var(--w);
+  height: 3px;
+  background: rgba(154, 106, 18, 0.76);
+}
+
+.trend-window-cards .prem {
+  background: rgba(47, 97, 144, 0.68);
+}
+
+.trend-window-cards .stock {
+  background: rgba(196, 83, 53, 0.66);
+}
+
 .trend-pulse-strip {
   display: grid;
   grid-template-columns: 106px minmax(0, 1fr);
@@ -3907,6 +4010,8 @@ body[data-theme="dark"] .symbol-focus,
 body[data-theme="dark"] .trend-extremes button,
 body[data-theme="dark"] .trend-radar button,
 body[data-theme="dark"] .trend-pulse-strip > div:first-child,
+body[data-theme="dark"] .trend-window-lead,
+body[data-theme="dark"] .trend-window-cards span,
 body[data-theme="dark"] .trend-lens span,
 body[data-theme="dark"] .bucket-profile span,
 body[data-theme="dark"] .heatmap-summary span,
@@ -3957,6 +4062,10 @@ body[data-theme="dark"] .trend-lens i,
 body[data-theme="dark"] .trend-lens small,
 body[data-theme="dark"] .trend-radar span,
 body[data-theme="dark"] .trend-radar small,
+body[data-theme="dark"] .trend-window-lead span,
+body[data-theme="dark"] .trend-window-lead small,
+body[data-theme="dark"] .trend-window-cards i,
+body[data-theme="dark"] .trend-window-cards small,
 body[data-theme="dark"] .trend-pulse-strip span,
 body[data-theme="dark"] .trend-pulse-cells span,
 body[data-theme="dark"] .signal-pulse-tape span,
@@ -4163,8 +4272,13 @@ body[data-theme="dark"] .tip-grid b {
   }
 
   .trend-pulse-strip,
+  .trend-window-stack,
   .signal-pulse-tape {
     grid-template-columns: 1fr;
+  }
+
+  .trend-window-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .trend-pulse-cells {
@@ -4322,6 +4436,10 @@ body[data-theme="dark"] .tip-grid b {
   .trend-radar small {
     font-size: 9px;
     white-space: normal;
+  }
+
+  .trend-window-cards {
+    grid-template-columns: 1fr;
   }
 
   .trend-pulse-cells span,

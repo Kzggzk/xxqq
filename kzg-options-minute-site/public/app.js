@@ -1077,6 +1077,7 @@ function renderTrend() {
     <div class="trend-radar">
       ${trendRadar.map((item) => trendRadarCard(item)).join("")}
     </div>
+    ${trendWindowStack(rows)}
     ${trendPulseStrip(rows)}
     <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${t("trend")}">
       <defs>
@@ -1103,6 +1104,81 @@ function renderTrend() {
       <button type="button" data-jump-date="${latest.date}">${state.lang === "zh" ? "当前权利金" : "Current premium"} <b>${moneyCompact(latest.totalPremium)}</b></button>
     </div>
     ${categoryStack(latest)}
+  `;
+}
+
+function trendWindowStack(rows) {
+  const windows = [5, 20, 60]
+    .map((period) => trendWindowStats(rows, period))
+    .filter(Boolean);
+  if (!windows.length) return "";
+  const pulse = windows.map((item) => Math.max(-42, Math.min(42, item.volumeMove))).reduce((sum, value) => sum + value, 0) / windows.length;
+  const tone = pulse >= 6 ? "hot" : pulse <= -6 ? "cool" : "flat";
+  const title = state.lang === "zh" ? "短中长节奏" : "Short / mid / long rhythm";
+  const read = state.lang === "zh"
+    ? `${windows[0].label} ${windows[0].volumeMove >= 0 ? "+" : ""}${fmt1.format(windows[0].volumeMove)}%，${windows[windows.length - 1].label} ${windows[windows.length - 1].volumeMove >= 0 ? "+" : ""}${fmt1.format(windows[windows.length - 1].volumeMove)}%。`
+    : `${windows[0].label} ${windows[0].volumeMove >= 0 ? "+" : ""}${fmt1.format(windows[0].volumeMove)}%, ${windows[windows.length - 1].label} ${windows[windows.length - 1].volumeMove >= 0 ? "+" : ""}${fmt1.format(windows[windows.length - 1].volumeMove)}%.`;
+  return `
+    <div class="trend-window-stack">
+      <div class="trend-window-lead ${tone}">
+        <span>${title}</span>
+        <strong>${pulse >= 0 ? "+" : ""}${fmt1.format(pulse)}%</strong>
+        <small>${read}</small>
+      </div>
+      <div class="trend-window-cards">
+        ${windows.map((item) => trendWindowCard(item)).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function trendWindowStats(rows, period) {
+  if (rows.length < 2) return null;
+  const size = Math.min(period, rows.length);
+  const current = rows.slice(-size);
+  const previous = rows.slice(Math.max(0, rows.length - size * 2), rows.length - size);
+  const base = previous.length ? previous : rows.slice(0, Math.max(1, Math.min(size, rows.length - current.length)));
+  if (!current.length || !base.length) return null;
+  const currentVol = average(current.map((row) => row.totalVol));
+  const baseVol = average(base.map((row) => row.totalVol));
+  const currentPremium = average(current.map((row) => row.totalPremium));
+  const basePremium = average(base.map((row) => row.totalPremium));
+  const currentCp = average(current.map((row) => row.marketCp));
+  const baseCp = average(base.map((row) => row.marketCp));
+  const currentStock = average(current.map((row) => categoryShareForRow(row, "STOCK")));
+  const baseStock = average(base.map((row) => categoryShareForRow(row, "STOCK")));
+  const volumeMove = baseVol ? ((currentVol - baseVol) / baseVol) * 100 : 0;
+  const premiumMove = basePremium ? ((currentPremium - basePremium) / basePremium) * 100 : 0;
+  const cpMove = currentCp - baseCp;
+  const stockMove = currentStock - baseStock;
+  const tone = volumeMove >= 8 || premiumMove >= 12 ? "hot" : volumeMove <= -8 || premiumMove <= -12 ? "cool" : "flat";
+  return {
+    label: `${size}D`,
+    tone,
+    volumeMove,
+    premiumMove,
+    cpMove,
+    stockMove,
+    currentVol,
+    currentPremium,
+    currentCp,
+    currentStock,
+  };
+}
+
+function trendWindowCard(item) {
+  const volumeWidth = Math.max(8, Math.min(100, 50 + item.volumeMove));
+  const premiumWidth = Math.max(8, Math.min(100, 50 + item.premiumMove * 0.72));
+  const stockWidth = Math.max(8, Math.min(100, item.currentStock));
+  return `
+    <span class="${item.tone}">
+      <i>${item.label}</i>
+      <b>${item.volumeMove >= 0 ? "+" : ""}${fmt1.format(item.volumeMove)}%</b>
+      <small>${state.lang === "zh" ? "权利金" : "premium"} ${item.premiumMove >= 0 ? "+" : ""}${fmt1.format(item.premiumMove)}% · CP ${item.cpMove >= 0 ? "+" : ""}${fmt2.format(item.cpMove)}</small>
+      <em class="vol" style="--w:${volumeWidth.toFixed(1)}%"></em>
+      <em class="prem" style="--w:${premiumWidth.toFixed(1)}%"></em>
+      <em class="stock" style="--w:${stockWidth.toFixed(1)}%"></em>
+    </span>
   `;
 }
 
