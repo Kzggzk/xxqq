@@ -1984,6 +1984,101 @@ main {
   box-shadow: inset 3px 0 0 #2f6190;
 }
 
+.trend-pulse-strip {
+  display: grid;
+  grid-template-columns: 106px minmax(0, 1fr);
+  align-items: stretch;
+  gap: 10px;
+  margin: -2px 0 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.trend-pulse-strip > div:first-child {
+  display: grid;
+  align-content: center;
+  gap: 4px;
+  min-width: 0;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.trend-pulse-strip span,
+.signal-pulse-tape span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 820;
+}
+
+.trend-pulse-strip b,
+.signal-pulse-tape b {
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1;
+}
+
+.trend-pulse-cells,
+.signal-pulse-cells {
+  display: grid;
+  align-items: end;
+  min-width: 0;
+}
+
+.trend-pulse-cells {
+  grid-template-columns: repeat(28, minmax(0, 1fr));
+  gap: 3px;
+}
+
+.trend-pulse-cells button,
+.signal-pulse-cells button {
+  display: grid;
+  align-content: end;
+  gap: 4px;
+  min-width: 0;
+  border: 0;
+  border-bottom: 2px solid rgba(154, 106, 18, 0.28);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0 0 4px;
+  text-align: center;
+}
+
+.trend-pulse-cells button:hover,
+.signal-pulse-cells button:hover,
+.trend-pulse-cells button.active,
+.signal-pulse-cells button.active {
+  border-bottom-color: var(--ink);
+}
+
+.trend-pulse-cells i,
+.signal-pulse-cells i {
+  display: block;
+  width: 100%;
+  height: var(--h);
+  min-height: 9px;
+  background: rgba(154, 106, 18, 0.42);
+}
+
+.trend-pulse-cells .hot i,
+.signal-pulse-cells .hot i {
+  background: rgba(196, 83, 53, 0.72);
+}
+
+.trend-pulse-cells .cool i,
+.signal-pulse-cells .cool i {
+  background: rgba(47, 97, 144, 0.72);
+}
+
+.trend-pulse-cells span,
+.signal-pulse-cells span {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 9px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .trend-extremes {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2113,6 +2208,12 @@ main {
   gap: 10px;
 }
 
+.signal-right {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+
 .signal-strip {
   display: grid;
   align-content: start;
@@ -2160,6 +2261,32 @@ main {
 
 .signal-strip.cool {
   --meter-color: #2f6190;
+}
+
+.signal-pulse-tape {
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr);
+  gap: 9px;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
+  font-variant-numeric: tabular-nums;
+}
+
+.signal-pulse-tape > div:first-child {
+  display: grid;
+  align-content: center;
+  gap: 4px;
+}
+
+.signal-pulse-cells {
+  grid-template-columns: repeat(18, minmax(0, 1fr));
+  gap: 3px;
+}
+
+.signal-pulse-cells i {
+  min-height: 8px;
 }
 
 .regime-map {
@@ -2838,6 +2965,7 @@ body[data-theme="dark"] .flow-bucket,
 body[data-theme="dark"] .symbol-focus,
 body[data-theme="dark"] .trend-extremes button,
 body[data-theme="dark"] .trend-radar button,
+body[data-theme="dark"] .trend-pulse-strip > div:first-child,
 body[data-theme="dark"] .trend-lens span,
 body[data-theme="dark"] .bucket-profile span,
 body[data-theme="dark"] .heatmap-summary span,
@@ -2845,6 +2973,7 @@ body[data-theme="dark"] .heat-rhythm-card,
 body[data-theme="dark"] .regime-stats span,
 body[data-theme="dark"] .regime-stats button,
 body[data-theme="dark"] .signal-strip,
+body[data-theme="dark"] .signal-pulse-tape,
 body[data-theme="dark"] .market-tooltip {
   background: rgba(31, 29, 26, 0.96);
   color: var(--ink);
@@ -2873,6 +3002,10 @@ body[data-theme="dark"] .trend-lens i,
 body[data-theme="dark"] .trend-lens small,
 body[data-theme="dark"] .trend-radar span,
 body[data-theme="dark"] .trend-radar small,
+body[data-theme="dark"] .trend-pulse-strip span,
+body[data-theme="dark"] .trend-pulse-cells span,
+body[data-theme="dark"] .signal-pulse-tape span,
+body[data-theme="dark"] .signal-pulse-cells span,
 body[data-theme="dark"] .bucket-profile i,
 body[data-theme="dark"] .heatmap-summary i,
 body[data-theme="dark"] .heatmap-summary small,
@@ -2905,6 +3038,11 @@ body[data-theme="dark"] .momentum-row.active {
 body[data-theme="dark"] .trend-radar button.active {
   background: rgba(216, 168, 75, 0.14);
   box-shadow: inset 0 0 0 1px rgba(216, 168, 75, 0.24);
+}
+
+body[data-theme="dark"] .trend-pulse-cells button.active,
+body[data-theme="dark"] .signal-pulse-cells button.active {
+  border-bottom-color: var(--ink);
 }
 
 body[data-theme="dark"] tr.symbol-active td {
@@ -3016,6 +3154,19 @@ body[data-theme="dark"] .tip-grid b {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .trend-pulse-strip,
+  .signal-pulse-tape {
+    grid-template-columns: 1fr;
+  }
+
+  .trend-pulse-cells {
+    grid-template-columns: repeat(14, minmax(0, 1fr));
+  }
+
+  .signal-pulse-cells {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+
   .pulse-gauge {
     min-height: 236px;
   }
@@ -3125,6 +3276,17 @@ body[data-theme="dark"] .tip-grid b {
   .trend-radar small {
     font-size: 9px;
     white-space: normal;
+  }
+
+  .trend-pulse-cells span,
+  .signal-pulse-cells span {
+    display: none;
+  }
+
+  .trend-pulse-cells button,
+  .signal-pulse-cells button {
+    gap: 0;
+    padding-bottom: 3px;
   }
 
   .rotation-head span {

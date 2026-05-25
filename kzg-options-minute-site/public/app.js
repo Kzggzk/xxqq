@@ -259,6 +259,10 @@ async function loadIndex() {
     const target = event.target.closest("[data-jump-date]");
     if (target) loadDayByDate(target.dataset.jumpDate);
   });
+  $("signalBoard").addEventListener("click", (event) => {
+    const target = event.target.closest("[data-jump-date]");
+    if (target) loadDayByDate(target.dataset.jumpDate);
+  });
   $("regimeMap").addEventListener("click", (event) => {
     const button = event.target.closest("button[data-date]");
     if (button) loadDayByDate(button.dataset.date);
@@ -711,6 +715,7 @@ function renderTrend() {
     <div class="trend-radar">
       ${trendRadar.map((item) => trendRadarCard(item)).join("")}
     </div>
+    ${trendPulseStrip(rows)}
     <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${t("trend")}">
       <defs>
         <linearGradient id="trendFill" x1="0" x2="0" y1="0" y2="1">
@@ -736,6 +741,36 @@ function renderTrend() {
       <button type="button" data-jump-date="${latest.date}">${state.lang === "zh" ? "当前权利金" : "Current premium"} <b>${moneyCompact(latest.totalPremium)}</b></button>
     </div>
     ${categoryStack(latest)}
+  `;
+}
+
+function trendPulseStrip(rows) {
+  const sample = rows.slice(Math.max(0, rows.length - 28));
+  if (sample.length < 2) return "";
+  const maxVol = Math.max(...sample.map((row) => Number(row.totalVol) || 0), 1);
+  const cells = sample.map((row, index) => {
+    const prev = sample[index - 1];
+    const move = prev?.totalVol ? ((Number(row.totalVol) - Number(prev.totalVol)) / Number(prev.totalVol)) * 100 : 0;
+    const height = Math.max(12, ((Number(row.totalVol) || 0) / maxVol) * 100);
+    const cp = Number(row.marketCp) || 0;
+    const tone = move >= 8 || cp >= 1.55 ? "hot" : move <= -8 || cp <= 0.95 ? "cool" : "flat";
+    const active = row.date === state.day.tradeDate ? " active" : "";
+    const title = `${row.date} · ${wan(row.totalVol)} · CP ${ratio(row.marketCp)} · ${move >= 0 ? "+" : ""}${fmt1.format(move)}%`;
+    return `
+      <button type="button" class="${tone}${active}" data-jump-date="${row.date}" title="${escapeHtml(title)}" style="--h:${height.toFixed(1)}%">
+        <i></i>
+        <span>${index % 4 === 0 || index === sample.length - 1 || active ? shortDate(row.date) : ""}</span>
+      </button>
+    `;
+  }).join("");
+  return `
+    <div class="trend-pulse-strip" aria-label="${state.lang === "zh" ? "最近交易日脉冲" : "Recent session pulses"}">
+      <div>
+        <span>${state.lang === "zh" ? "最近脉冲" : "Recent pulses"}</span>
+        <b>${sample.length}D</b>
+      </div>
+      <div class="trend-pulse-cells">${cells}</div>
+    </div>
   `;
 }
 
@@ -895,15 +930,51 @@ function renderSignalBoard() {
       </div>
       <p>${signalNarrative(volumeDelta20, premiumDelta20, openShare, closeShare, dominant.label)}</p>
     </div>
-    <div class="signal-strips">
-      ${cards.map((card) => `
-        <div class="signal-strip ${card.tone}" style="--meter:${Math.max(4, Math.min(100, card.meter)).toFixed(1)}%">
-          <span>${card.label}</span>
-          <strong>${card.value}</strong>
-          <small>${card.sub}</small>
-          <i></i>
-        </div>
-      `).join("")}
+    <div class="signal-right">
+      <div class="signal-strips">
+        ${cards.map((card) => `
+          <div class="signal-strip ${card.tone}" style="--meter:${Math.max(4, Math.min(100, card.meter)).toFixed(1)}%">
+            <span>${card.label}</span>
+            <strong>${card.value}</strong>
+            <small>${card.sub}</small>
+            <i></i>
+          </div>
+        `).join("")}
+      </div>
+      ${signalPulseTape(rows90)}
+    </div>
+  `;
+}
+
+function signalPulseTape(rows) {
+  const sample = rows.slice(Math.max(0, rows.length - 18));
+  if (sample.length < 2) return "";
+  const maxVol = Math.max(...sample.map((row) => Number(row.totalVol) || 0), 1);
+  const cells = sample.map((row, index) => {
+    const prev = sample[index - 1];
+    const move = prev?.totalVol ? ((Number(row.totalVol) - Number(prev.totalVol)) / Number(prev.totalVol)) * 100 : 0;
+    const cp = Number(row.marketCp) || 0;
+    const height = Math.max(9, ((Number(row.totalVol) || 0) / maxVol) * 100);
+    const tone = move >= 8 || cp >= 1.55 ? "hot" : move <= -8 || cp <= 0.95 ? "cool" : "flat";
+    const active = row.date === state.day.tradeDate ? " active" : "";
+    const title = `${row.date} · ${wan(row.totalVol)} · CP ${ratio(row.marketCp)} · ${move >= 0 ? "+" : ""}${fmt1.format(move)}%`;
+    return `
+      <button type="button" class="${tone}${active}" data-jump-date="${row.date}" title="${escapeHtml(title)}" style="--h:${height.toFixed(1)}%">
+        <i></i>
+        <span>${index % 3 === 0 || index === sample.length - 1 || active ? row.date.slice(8) : ""}</span>
+      </button>
+    `;
+  }).join("");
+  const latest = sample[sample.length - 1];
+  const first = sample[0];
+  const change = first?.totalVol ? ((Number(latest.totalVol) - Number(first.totalVol)) / Number(first.totalVol)) * 100 : 0;
+  return `
+    <div class="signal-pulse-tape">
+      <div>
+        <span>${state.lang === "zh" ? "18日节奏" : "18D rhythm"}</span>
+        <b>${change >= 0 ? "+" : ""}${fmt1.format(change)}%</b>
+      </div>
+      <div class="signal-pulse-cells">${cells}</div>
     </div>
   `;
 }
