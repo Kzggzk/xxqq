@@ -782,12 +782,20 @@ function trendRadarRows(rows) {
       sub: shortDate(stock.row.date),
       tone: stock.stockMove >= 5 ? "hot" : stock.stockMove <= -5 ? "cool" : "flat",
     },
+    {
+      label: state.lang === "zh" ? "当前日" : "Current day",
+      date: fallback.date,
+      value: shortDate(fallback.date),
+      sub: `${wan(fallback.totalVol)} · CP ${ratio(fallback.marketCp)}`,
+      tone: "flat",
+    },
   ];
 }
 
 function trendRadarCard(item) {
+  const active = item.date === state.day.tradeDate ? " active" : "";
   return `
-    <button type="button" class="${item.tone}" data-jump-date="${item.date}">
+    <button type="button" class="${item.tone}${active}" data-jump-date="${item.date}">
       <span>${item.label}</span>
       <b>${item.value}</b>
       <small>${item.sub}</small>
@@ -1235,6 +1243,7 @@ function renderSymbolFocus() {
   const volumeMove = avg20 ? ((Number(current.totalVol) - avg20) / avg20) * 100 : 0;
   const premiumMove = first?.premiumNotional ? ((Number(last.premiumNotional) - Number(first.premiumNotional)) / Number(first.premiumNotional)) * 100 : 0;
   const cpAvg = average(series.map((row) => row.cpRatio));
+  const volumeRank = percentileRank(current.totalVol, series.map((row) => row.totalVol));
   const tone = volumeMove >= 20 ? "hot" : volumeMove <= -20 ? "cool" : "flat";
   target.innerHTML = `
     <div class="focus-head ${tone}">
@@ -1252,6 +1261,7 @@ function renderSymbolFocus() {
       <span>${state.lang === "zh" ? "当日成交" : "Volume"} <b>${wan(current.totalVol)}</b><i>${volumeMove >= 0 ? "+" : ""}${fmt1.format(volumeMove)}% vs 20D</i></span>
       <span>${state.lang === "zh" ? "权利金" : "Premium"} <b>${moneyCompact(current.premiumNotional)}</b><i>${premiumMove >= 0 ? "+" : ""}${fmt1.format(premiumMove)}% / ${series.length}D</i></span>
       <span>CP <b>${ratio(current.cpRatio)}</b><i>${state.lang === "zh" ? "均值" : "avg"} ${ratio(cpAvg)}</i></span>
+      <span>${state.lang === "zh" ? "历史分位" : "History rank"} <b>${fmt0.format(volumeRank)}%</b><i>${series.length}${state.lang === "zh" ? "日成交区间" : " sessions"}</i></span>
     </div>
     <div class="focus-charts">
       <div><span>${state.lang === "zh" ? "成交量" : "Volume"}</span>${sparkline(series, "totalVol", 280, 62, tone === "hot" ? "#c45335" : tone === "cool" ? "#2f6190" : "#9a6a12")}</div>
@@ -1327,17 +1337,34 @@ function renderSymbolTooltip(symbol) {
   const first = series[0];
   const last = series[series.length - 1];
   const delta = first && last && first.totalVol ? ((last.totalVol - first.totalVol) / first.totalVol) * 100 : 0;
+  const prev20 = series.slice(0, -1).slice(-20);
+  const avg20 = average(prev20.map((row) => row.totalVol));
+  const volumeDelta20 = avg20 ? ((Number(current.totalVol) - avg20) / avg20) * 100 : 0;
+  const premiumAvg = average(prev20.map((row) => row.premiumNotional));
+  const premiumDelta20 = premiumAvg ? ((Number(current.premiumNotional) - premiumAvg) / premiumAvg) * 100 : 0;
+  const cpAvg = average(series.map((row) => row.cpRatio));
   return `
     <div class="tip-head">
       <strong>${escapeHtml(symbol)}</strong>
       <span>${current.category || ""}</span>
     </div>
-    <div class="tip-chart">${sparkline(series, "totalVol", 210, 58, delta >= 0 ? "#c45335" : "#2f6190")}</div>
+    <div class="tip-chart">
+      <span>${state.lang === "zh" ? "60 日成交轨迹" : "60-session volume"}</span>
+      ${sparkline(series, "totalVol", 232, 54, delta >= 0 ? "#c45335" : "#2f6190")}
+    </div>
+    <div class="tip-mini">
+      <span>${state.lang === "zh" ? "权利金" : "Premium"} ${sparkline(series, "premiumNotional", 112, 30, "#9a6a12")}</span>
+      <span>CP ${sparkline(series, "cpRatio", 112, 30, "#148355")}</span>
+    </div>
     <div class="tip-grid">
       <span>${state.lang === "zh" ? "当日成交" : "Volume"} <b>${wan(current.totalVol)}</b></span>
       <span>${state.lang === "zh" ? "权利金" : "Premium"} <b>${moneyCompact(current.premiumNotional)}</b></span>
       <span>CP <b>${ratio(current.cpRatio)}</b></span>
       <span>${series.length}${state.lang === "zh" ? "日变化" : "D move"} <b>${delta >= 0 ? "+" : ""}${fmt1.format(delta)}%</b></span>
+      <span>20D Vol <b>${volumeDelta20 >= 0 ? "+" : ""}${fmt1.format(volumeDelta20)}%</b></span>
+      <span>20D Prem <b>${premiumDelta20 >= 0 ? "+" : ""}${fmt1.format(premiumDelta20)}%</b></span>
+      <span>${state.lang === "zh" ? "均值 CP" : "Avg CP"} <b>${ratio(cpAvg)}</b></span>
+      <span>${state.lang === "zh" ? "热门合约" : "Top contract"} <b>${escapeHtml(current.hottestShort || "--")}</b></span>
     </div>
   `;
 }
