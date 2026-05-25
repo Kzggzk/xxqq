@@ -1,0 +1,37 @@
+[build]
+  publish = "public"
+  command = ""
+
+# Pretty per-report URL: /r/2026-05-22 → /reports/2026-05-22.html (no redirect, server-side rewrite).
+[[redirects]]
+  from = "/r/:date"
+  to = "/reports/:date.html"
+  status = 200
+
+# Convenience: /latest → newest report.
+[[redirects]]
+  from = "/latest"
+  to = "/reports/latest.html"
+  status = 200
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+
+[[headers]]
+  for = "/reports/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/styles/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, immutable"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "interest-cohort=()"

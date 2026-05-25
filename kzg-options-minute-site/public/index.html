@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KZG Option House</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true">KZG</div>
+        <div>
+          <h1>KZG Option House</h1>
+          <p>Minute Aggregate Option Report</p>
+        </div>
+      </div>
+      <div class="dateplate">
+        <b id="headerDate">--</b>
+        <span id="generatedAt">loading</span>
+      </div>
+      <div class="toolbar">
+        <button id="downloadReport" class="button primary" type="button" title="导出当前日报 PNG">
+          <span aria-hidden="true">↓</span>
+          导出 PNG
+        </button>
+        <a id="openReport" class="button" href="/reports/latest.html" target="_blank" rel="noreferrer" title="打开当前日报">
+          <span aria-hidden="true">↗</span>
+          打开报告
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="timeboard" aria-label="交易日时间轴">
+        <div class="timeboard-copy">
+          <h2>交易日时间轴</h2>
+          <p>从 2026/01/01 至 <span id="timelineEnd">--</span></p>
+        </div>
+        <button id="prevDay" class="nav-day" type="button" aria-label="前一个交易日">‹</button>
+        <div class="timeline-wrap">
+          <div id="monthTicks" class="month-ticks"></div>
+          <div id="dayBars" class="day-bars"></div>
+          <input id="timelineRange" class="timeline-range" type="range" min="0" max="0" value="0" aria-label="选择交易日">
+          <div class="timeline-rule">
+            <span></span>
+          </div>
+          <div class="timeline-legend">
+            <span><i class="dot selected"></i>已选交易日 <b id="selectedDateLabel">--</b></span>
+            <span><i class="dot available"></i>有数据</span>
+            <span><i class="dot missing"></i>无交易/未落地</span>
+          </div>
+        </div>
+        <button id="nextDay" class="nav-day" type="button" aria-label="后一个交易日">›</button>
+      </section>
+
+      <section class="metric-rail" aria-label="Market summary">
+        <div class="metric lead">
+          <span>当前交易日</span>
+          <strong id="tradeDate">--</strong>
+          <small id="sourceStatus">loading</small>
+        </div>
+        <div class="metric">
+          <span>总期权成交量</span>
+          <strong id="totalVol">--</strong>
+          <small id="volDelta">contracts</small>
+        </div>
+        <div class="metric">
+          <span>总成交笔数</span>
+          <strong id="totalTxn">--</strong>
+          <small>transactions</small>
+        </div>
+        <div class="metric">
+          <span>Put/Call 成交量</span>
+          <strong id="marketCp">--</strong>
+          <small>Call / Put</small>
+        </div>
+        <div class="metric">
+          <span>指数</span>
+          <strong id="indexShare">--</strong>
+          <small id="indexCp">--</small>
+        </div>
+        <div class="metric">
+          <span>ETF</span>
+          <strong id="etfShare">--</strong>
+          <small id="etfCp">--</small>
+        </div>
+        <div class="metric">
+          <span>个股</span>
+          <strong id="stockShare">--</strong>
+          <small id="stockCp">--</small>
+        </div>
+        <div class="metric">
+          <span>源文件</span>
+          <strong id="rowCount">--</strong>
+          <small id="sourcePath">--</small>
+        </div>
+      </section>
+
+      <section class="workbench">
+        <section class="report-stage" aria-label="KZG report canvas">
+          <div class="section-head">
+            <div>
+              <h2>日报画布</h2>
+              <p>当前画布就是 PNG 导出的内容。</p>
+            </div>
+          </div>
+          <article id="reportCanvas" class="kzg-report"></article>
+        </section>
+
+        <aside class="side-rail" aria-label="Daily digest">
+          <div class="section-head compact">
+            <div>
+              <h2>盘口摘要</h2>
+              <p>按当前交易日同步刷新。</p>
+            </div>
+          </div>
+          <label class="search-wrap">
+            <span>筛选标的</span>
+            <input id="symbolSearch" type="search" autocomplete="off" placeholder="SPY / NVDA / TSLA">
+          </label>
+          <div id="digest" class="digest"></div>
+          <div class="mini-table">
+            <div class="mini-head">
+              <b>个股 Top25</b>
+              <span>成交量排序</span>
+            </div>
+            <table id="stockTable"></table>
+          </div>
+        </aside>
+      </section>
+
+      <section class="analysis-grid">
+        <section class="panel">
+          <div class="section-head">
+            <div>
+              <h2>分钟聚合成交热力图</h2>
+              <p>Top15 标的，单位万张。</p>
+            </div>
+          </div>
+          <div id="heatmap" class="heatmap"></div>
+        </section>
+
+        <section class="panel">
+          <div class="section-head">
+            <div>
+              <h2>日内成交分布</h2>
+              <p>全市场 30 分钟桶。</p>
+            </div>
+          </div>
+          <div id="bucketBars" class="bucket-bars"></div>
+        </section>
+      </section>
+    </main>
+  </div>
+  <script src="/vendor/html2canvas.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
