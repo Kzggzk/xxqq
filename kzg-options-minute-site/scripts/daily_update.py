@@ -18,6 +18,7 @@ GOOGLE_OPTIONS_ROOT = Path(
     "/Users/fangbao/Library/CloudStorage/GoogleDrive-baofang1990@gmail.com/我的云端硬盘/KZG/23_DATA_Massive_期权分钟_Minute"
 )
 BUILD_SCRIPT = ROOT / "scripts" / "build_options_site.py"
+PACK_SCRIPT = ROOT / "scripts" / "build_payload.py"
 NPX = Path("/usr/local/bin/npx")
 CURL = Path("/usr/bin/curl")
 KEYCHAIN_ACCOUNT = "KZGOptionHouse"
@@ -161,7 +162,7 @@ def deploy() -> int:
     if not NPX.exists():
         print(json.dumps({"deploy": "blocked", "reason": f"missing {NPX}"}, ensure_ascii=False), flush=True)
         return 2
-    return run([str(NPX), "netlify", "deploy", "--prod", "--dir", "public"])
+    return run([str(NPX), "netlify", "deploy", "--prod", "--dir", "dist"])
 
 
 def main() -> int:
@@ -231,6 +232,9 @@ def main() -> int:
         target = latest
 
     code = run([sys.executable, str(BUILD_SCRIPT), "--date", target, "--force"])
+    if code != 0:
+        return code
+    code = run([sys.executable, str(PACK_SCRIPT)])
     if code != 0:
         return code
     if args.deploy:

@@ -75,6 +75,7 @@ class Agg:
     category: str
     total_vol: int = 0
     txn: int = 0
+    premium_notional: float = 0.0
     call_vol: int = 0
     put_vol: int = 0
     leap_call: int = 0
@@ -185,6 +186,7 @@ def process_file(path: Path) -> dict[str, Any]:
             cp = match.group(3)
             volume = parse_number(row.get("volume", "0"))
             tx = parse_number(row.get("transactions", "0"))
+            close_price = parse_float(row.get("close", "0"))
             valid_rows += 1
 
             agg = aggs.get(symbol)
@@ -193,6 +195,7 @@ def process_file(path: Path) -> dict[str, Any]:
                 aggs[symbol] = agg
             agg.total_vol += volume
             agg.txn += tx
+            agg.premium_notional += volume * close_price * 100
             if cp == "C":
                 agg.call_vol += volume
             else:
@@ -234,6 +237,7 @@ def process_file(path: Path) -> dict[str, Any]:
                 "category": agg.category,
                 "totalVol": agg.total_vol,
                 "txn": agg.txn,
+                "premiumNotional": round(agg.premium_notional, 2),
                 "callVol": agg.call_vol,
                 "putVol": agg.put_vol,
                 "leapCall": agg.leap_call,
@@ -251,14 +255,21 @@ def process_file(path: Path) -> dict[str, Any]:
 
     total_vol = sum(item["totalVol"] for item in underlyings)
     total_txn = sum(item["txn"] for item in underlyings)
+    total_premium = round(sum(item["premiumNotional"] for item in underlyings), 2)
     total_call = sum(item["callVol"] for item in underlyings)
     total_put = sum(item["putVol"] for item in underlyings)
-    cat = {name: {"volume": 0, "call": 0, "put": 0, "cpRatio": None} for name in ("INDEX", "ETF", "STOCK")}
+    cat = {
+        name: {"volume": 0, "premium": 0.0, "call": 0, "put": 0, "cpRatio": None}
+        for name in ("INDEX", "ETF", "STOCK")
+    }
     for item in underlyings:
         bucket = cat[item["category"]]
         bucket["volume"] += item["totalVol"]
+        bucket["premium"] += item["premiumNotional"]
         bucket["call"] += item["callVol"]
         bucket["put"] += item["putVol"]
+    for bucket in cat.values():
+        bucket["premium"] = round(float(bucket["premium"]), 2)
     for bucket in cat.values():
         bucket["cpRatio"] = bucket["call"] / bucket["put"] if bucket["put"] else None
 
@@ -298,6 +309,7 @@ def process_file(path: Path) -> dict[str, Any]:
         "overview": {
             "totalVol": total_vol,
             "totalTxn": total_txn,
+            "totalPremium": total_premium,
             "totalCall": total_call,
             "totalPut": total_put,
             "marketCp": total_call / total_put if total_put else None,
@@ -758,6 +770,7 @@ def write_index(paths: list[Path], processed_dates: set[str]) -> None:
                 "sourceSize": day["source"]["byteSize"],
                 "validRows": day["validRows"],
                 "totalVol": day["overview"]["totalVol"],
+                "totalPremium": day["overview"].get("totalPremium", 0),
                 "marketCp": day["overview"]["marketCp"],
                 "topSymbols": [row["symbol"] for row in day["topUnderlyings"][:5]],
                 "rebuilt": trade_date in processed_dates,

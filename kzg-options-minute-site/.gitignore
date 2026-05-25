@@ -1,4 +1,6 @@
 .netlify/
+dist/
+qa-*.png
 **/__pycache__/
 *.pyc
 *.pyo

@@ -558,8 +558,12 @@ function sheetTable(rows, columns) {
     <tr>
       ${columns.map(([, getter, cls]) => {
         const value = getter(row, index);
-        const heat = cls?.includes("heat") ? ` style="--heat:${heatLevel(Number(value))}"` : "";
-        return `<td class="${cls || ""}"${heat}>${escapeHtml(value)}</td>`;
+        let style = "";
+        if (cls?.includes("heat")) {
+          const level = heatLevel(Number(value));
+          style = ` style="background:${blueHeat(level)};color:${level > 0.7 ? "#fff" : "#26323a"}"`;
+        }
+        return `<td class="${cls || ""}"${style}>${escapeHtml(value)}</td>`;
       }).join("")}
     </tr>
   `).join("");
@@ -604,20 +608,17 @@ function sheetHeatmap(heat, labels) {
 
 async function exportReportPng(date) {
   const button = $("downloadReport");
-  const report = $("reportCanvas");
+  const report = $("reportCanvas").querySelector(".kzg-sheet");
   if (!window.html2canvas) {
     alert("PNG renderer not loaded.");
     return;
   }
   const original = button.innerHTML;
-  const clone = report.cloneNode(true);
-  clone.classList.add("export-clone");
-  document.body.appendChild(clone);
   try {
     button.disabled = true;
     button.innerHTML = `<span aria-hidden="true">↓</span>${t("exporting")}`;
     if (document.fonts?.ready) await document.fonts.ready;
-    const canvas = await window.html2canvas(clone, {
+    const canvas = await window.html2canvas(report, {
       backgroundColor: "#ffffff",
       scale: 2.5,
       useCORS: true,
@@ -630,7 +631,6 @@ async function exportReportPng(date) {
     link.click();
     link.remove();
   } finally {
-    clone.remove();
     button.disabled = false;
     button.innerHTML = original;
   }
