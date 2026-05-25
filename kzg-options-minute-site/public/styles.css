@@ -616,6 +616,67 @@ main {
   box-shadow: inset 3px 0 0 #c45335;
 }
 
+.heatmap-rhythm {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: -4px 0 12px;
+}
+
+.heat-rhythm-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 5px 10px;
+  min-width: 0;
+  padding: 10px 11px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.56);
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+  font-variant-numeric: tabular-nums;
+}
+
+.heat-rhythm-card:hover {
+  background: rgba(255, 255, 255, 0.78);
+  border-color: var(--ink);
+}
+
+.heat-rhythm-card span,
+.heat-rhythm-card small {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.heat-rhythm-card strong {
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 860;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.heat-rhythm-card b {
+  grid-row: span 2;
+  align-self: center;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1;
+}
+
+.heat-rhythm-card.hot {
+  border-color: rgba(196, 83, 53, 0.34);
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
+.heat-rhythm-card.cool {
+  border-color: rgba(47, 97, 144, 0.34);
+  box-shadow: inset 3px 0 0 #2f6190;
+}
+
 .heat-table {
   display: grid;
   grid-template-columns: 74px repeat(13, minmax(60px, 1fr));
@@ -2181,6 +2242,66 @@ main {
   box-shadow: inset 3px 0 0 #2f6190;
 }
 
+.bucket-flow {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+  margin: 0 0 12px;
+}
+
+.flow-bucket {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  padding: 8px 6px 7px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.6);
+  font-variant-numeric: tabular-nums;
+}
+
+.flow-bucket i,
+.flow-bucket b,
+.flow-bucket small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.flow-bucket i {
+  color: var(--muted);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 820;
+}
+
+.flow-bucket b {
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1;
+}
+
+.flow-bucket small {
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.flow-bucket em {
+  display: block;
+  width: var(--bias);
+  height: 3px;
+  background: var(--bias-color, var(--gold));
+}
+
+.flow-bucket.hot {
+  --bias-color: #c45335;
+  border-color: rgba(196, 83, 53, 0.34);
+}
+
+.flow-bucket.cool {
+  --bias-color: #2f6190;
+  border-color: rgba(47, 97, 144, 0.34);
+}
+
 .bar-track {
   border-left: 1px solid rgba(201, 194, 178, 0.5);
   border-right: 1px solid rgba(201, 194, 178, 0.5);
@@ -2539,6 +2660,12 @@ main {
   }
 }
 
+@media (min-width: 1281px) {
+  .bucket-panel .bucket-bars {
+    min-height: 420px;
+  }
+}
+
 [data-symbol] {
   cursor: default;
 }
@@ -2610,11 +2737,13 @@ body[data-theme="dark"] .momentum-row,
 body[data-theme="dark"] .rotation-head span,
 body[data-theme="dark"] .rotation-lane,
 body[data-theme="dark"] .rotation-row,
+body[data-theme="dark"] .flow-bucket,
 body[data-theme="dark"] .symbol-focus,
 body[data-theme="dark"] .trend-extremes button,
 body[data-theme="dark"] .trend-lens span,
 body[data-theme="dark"] .bucket-profile span,
 body[data-theme="dark"] .heatmap-summary span,
+body[data-theme="dark"] .heat-rhythm-card,
 body[data-theme="dark"] .regime-stats span,
 body[data-theme="dark"] .regime-stats button,
 body[data-theme="dark"] .signal-strip,
@@ -2625,6 +2754,7 @@ body[data-theme="dark"] .market-tooltip {
 
 body[data-theme="dark"] .trend-extremes button:hover,
 body[data-theme="dark"] .rotation-row:hover,
+body[data-theme="dark"] .heat-rhythm-card:hover,
 body[data-theme="dark"] .regime-stats button:hover {
   background: #27231d;
 }
@@ -2648,6 +2778,10 @@ body[data-theme="dark"] .heatmap-summary small,
 body[data-theme="dark"] .rotation-head i,
 body[data-theme="dark"] .rotation-row small,
 body[data-theme="dark"] .rotation-lane-title,
+body[data-theme="dark"] .flow-bucket i,
+body[data-theme="dark"] .flow-bucket small,
+body[data-theme="dark"] .heat-rhythm-card span,
+body[data-theme="dark"] .heat-rhythm-card small,
 body[data-theme="dark"] .signal-strip small,
 body[data-theme="dark"] .signal-strip span {
   color: var(--muted);
@@ -2738,7 +2872,8 @@ body[data-theme="dark"] .tip-grid b {
 
   .trend-extremes,
   .signal-board,
-  .signal-strips {
+  .signal-strips,
+  .heatmap-rhythm {
     grid-template-columns: 1fr;
   }
 
@@ -2774,6 +2909,10 @@ body[data-theme="dark"] .tip-grid b {
   .rotation-row {
     grid-template-columns: 52px minmax(0, 1fr) 68px 100px;
     gap: 7px;
+  }
+
+  .bucket-flow {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .focus-head,
@@ -2822,6 +2961,14 @@ body[data-theme="dark"] .tip-grid b {
 
   .rotation-row em {
     font-size: 11px;
+  }
+
+  .flow-bucket {
+    padding: 7px 5px;
+  }
+
+  .bucket-flow {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .momentum-row {

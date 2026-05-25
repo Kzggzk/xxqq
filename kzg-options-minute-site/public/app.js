@@ -491,6 +491,22 @@ function renderBuckets() {
     bucketProfileCard(state.lang === "zh" ? "尾盘首小时" : "Closing hour", `${fmt1.format(closeShare)}%`, closeShare >= 24 ? "hot" : closeShare <= 13 ? "cool" : "flat"),
     bucketProfileCard(state.lang === "zh" ? "异常桶" : "Outlier bucket", `${anomaly?.time || "--"} ${anomaly?.spread >= 0 ? "+" : ""}${fmt1.format(anomaly?.spread || 0)}%`, anomaly?.spread >= 18 ? "hot" : anomaly?.spread <= -18 ? "cool" : "flat"),
   ].join("");
+  $("bucketFlow").innerHTML = rows.map((row, index) => {
+    const base = avg[index] || 0;
+    const spread = base ? ((row.total - base) / base) * 100 : 0;
+    const cp = row.put ? row.call / row.put : row.call ? row.call : 0;
+    const bias = Math.max(7, Math.min(100, (cp / 2.6) * 100));
+    const tone = spread >= 18 ? "hot" : spread <= -18 ? "cool" : "flat";
+    const title = `${row.time} · ${wan(row.total)} · CP ${ratio(cp)} · ${spread >= 0 ? "+" : ""}${fmt1.format(spread)}% vs 20D`;
+    return `
+      <span class="flow-bucket ${tone}" title="${escapeHtml(title)}">
+        <i>${row.time}</i>
+        <b>${spread >= 0 ? "+" : ""}${fmt0.format(spread)}%</b>
+        <small>CP ${ratio(cp)}</small>
+        <em style="--bias:${bias.toFixed(1)}%"></em>
+      </span>
+    `;
+  }).join("");
   $("bucketBars").innerHTML = rows.map((row, index) => {
     const currentHeight = Math.max(2, (row.total / scale) * 100);
     const avgHeight = Math.max(2, ((avg[index] || 0) / scale) * 100);
@@ -540,6 +556,19 @@ function renderHeatmap() {
     heatmapSummaryCard(state.lang === "zh" ? "峰值时段" : "Peak slot", hotSlot.label, wan(hotSlot.total), "flat"),
     heatmapSummaryCard(state.lang === "zh" ? "Top3 集中度" : "Top3 focus", `${fmt1.format((top3Total / allTotal) * 100)}%`, rowTotals.slice(0, 3).map((row) => row.symbol).join(" / "), (top3Total / allTotal) >= 0.55 ? "hot" : "flat"),
   ].join("");
+  const rhythm = heatmapRhythmRows(heat);
+  if (rhythm.length) {
+    const opening = rhythm.reduce((best, row) => row.openShare > best.openShare ? row : best, rhythm[0]);
+    const midday = rhythm.reduce((best, row) => row.midShare > best.midShare ? row : best, rhythm[0]);
+    const closing = rhythm.reduce((best, row) => row.closeShift > best.closeShift ? row : best, rhythm[0]);
+    $("heatmapRhythm").innerHTML = [
+      heatmapRhythmCard(state.lang === "zh" ? "开盘最强" : "Opening lead", opening, `${fmt1.format(opening.openShare)}%`, wan(opening.openVol), "hot"),
+      heatmapRhythmCard(state.lang === "zh" ? "午盘承接" : "Midday hold", midday, `${fmt1.format(midday.midShare)}%`, wan(midday.midVol), "flat"),
+      heatmapRhythmCard(state.lang === "zh" ? "尾盘升温" : "Closing lift", closing, `${closing.closeShift >= 0 ? "+" : ""}${fmt1.format(closing.closeShift)}pt`, `${wan(closing.closeVol)} / ${wan(closing.openVol)}`, closing.closeShift >= 8 ? "hot" : closing.closeShift <= -8 ? "cool" : "flat"),
+    ].join("");
+  } else {
+    $("heatmapRhythm").innerHTML = "";
+  }
   let html = `<div class="heat-table"><div class="heat-cell head">${state.lang === "zh" ? "标的" : "Symbol"}</div>`;
   html += labels.map((label) => `<div class="heat-cell head">${label}</div>`).join("");
   for (const row of heat) {
@@ -563,6 +592,38 @@ function heatmapSummaryCard(label, value, sub, tone) {
       <b>${escapeHtml(value)}</b>
       <small>${escapeHtml(sub)}</small>
     </span>
+  `;
+}
+
+function heatmapRhythmRows(heat) {
+  return heat.map((row) => {
+    const values = row.values.map((value) => Number(value) || 0);
+    const total = values.reduce((sum, value) => sum + value, 0) || 1;
+    const openVol = values.slice(0, 2).reduce((sum, value) => sum + value, 0);
+    const midVol = values.slice(5, 8).reduce((sum, value) => sum + value, 0);
+    const closeVol = values.slice(-2).reduce((sum, value) => sum + value, 0);
+    return {
+      symbol: row.symbol,
+      openVol,
+      midVol,
+      closeVol,
+      openShare: (openVol / total) * 100,
+      midShare: (midVol / total) * 100,
+      closeShare: (closeVol / total) * 100,
+      closeShift: ((closeVol - openVol) / total) * 100,
+    };
+  });
+}
+
+function heatmapRhythmCard(label, row, value, sub, tone) {
+  if (!row) return "";
+  return `
+    <button type="button" class="heat-rhythm-card ${tone}" data-symbol="${escapeHtml(row.symbol)}">
+      <span>${label}</span>
+      <strong>${escapeHtml(row.symbol)}</strong>
+      <b>${escapeHtml(value)}</b>
+      <small>${escapeHtml(sub)}</small>
+    </button>
   `;
 }
 
