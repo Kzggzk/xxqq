@@ -3420,6 +3420,197 @@ main {
   box-shadow: inset 3px 0 0 #2f6190;
 }
 
+.rotation-map {
+  display: grid;
+  grid-template-columns: 0.72fr 1.78fr 0.82fr;
+  gap: 10px;
+  align-items: stretch;
+  min-height: 250px;
+}
+
+.rotation-map-lead,
+.rotation-map-grid,
+.rotation-map-stats span {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.rotation-map-lead {
+  display: grid;
+  align-content: center;
+  gap: 7px;
+  padding: 14px;
+  border-left: 4px solid var(--gold);
+}
+
+.rotation-map-lead.hot {
+  border-left-color: #c45335;
+}
+
+.rotation-map-lead.cool {
+  border-left-color: #2f6190;
+}
+
+.rotation-map-lead span,
+.rotation-map-lead small,
+.rotation-map-stats i,
+.rotation-map-stats small {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 820;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rotation-map-lead strong {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", "Songti SC", serif;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.rotation-map-lead small {
+  line-height: 1.45;
+  white-space: normal;
+}
+
+.rotation-map-grid {
+  position: relative;
+  overflow: hidden;
+  min-height: 250px;
+  background:
+    linear-gradient(90deg, rgba(47, 97, 144, 0.07), transparent 48%, rgba(196, 83, 53, 0.07)),
+    linear-gradient(0deg, rgba(47, 97, 144, 0.05), transparent 50%, rgba(154, 106, 18, 0.07)),
+    rgba(255, 255, 255, 0.54);
+}
+
+.rotation-map-grid .axis-x,
+.rotation-map-grid .axis-y {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  background: rgba(117, 110, 96, 0.28);
+}
+
+.rotation-map-grid .axis-x {
+  top: var(--y0);
+  right: 0;
+  left: 0;
+  height: 1px;
+}
+
+.rotation-map-grid .axis-y {
+  top: 0;
+  bottom: 0;
+  left: var(--x0);
+  width: 1px;
+}
+
+.rotation-map-grid .quad {
+  position: absolute;
+  z-index: 2;
+  color: rgba(101, 95, 82, 0.62);
+  font-size: 10px;
+  font-weight: 820;
+  pointer-events: none;
+}
+
+.rotation-map-grid .q1 {
+  top: 10px;
+  right: 12px;
+}
+
+.rotation-map-grid .q2 {
+  top: 10px;
+  left: 12px;
+}
+
+.rotation-map-grid .q3 {
+  bottom: 10px;
+  left: 12px;
+}
+
+.rotation-map-grid .q4 {
+  right: 12px;
+  bottom: 10px;
+}
+
+.rotation-map-grid button {
+  position: absolute;
+  z-index: 3;
+  top: var(--y);
+  left: var(--x);
+  display: grid;
+  place-items: center;
+  width: var(--s);
+  height: var(--s);
+  max-width: 68px;
+  max-height: 68px;
+  min-width: 28px;
+  min-height: 28px;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(154, 106, 18, 0.34);
+  border-radius: 999px;
+  background: rgba(154, 106, 18, 0.78);
+  color: #fff;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 860;
+  font-variant-numeric: tabular-nums;
+  box-shadow: 0 8px 18px rgba(80, 66, 38, 0.12);
+}
+
+.rotation-map-grid button.hot {
+  border-color: rgba(196, 83, 53, 0.42);
+  background: rgba(196, 83, 53, 0.82);
+}
+
+.rotation-map-grid button.cool {
+  border-color: rgba(47, 97, 144, 0.42);
+  background: rgba(47, 97, 144, 0.82);
+}
+
+.rotation-map-grid button:hover,
+.rotation-map-grid button.symbol-active {
+  z-index: 5;
+  border-color: var(--ink);
+  box-shadow: 0 0 0 3px rgba(17, 17, 17, 0.1), 0 14px 28px rgba(17, 17, 17, 0.18);
+}
+
+.rotation-map-stats {
+  display: grid;
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.rotation-map-stats span {
+  display: grid;
+  align-content: center;
+  gap: 4px;
+  padding: 8px 10px;
+  border-top: 3px solid var(--gold);
+  font-variant-numeric: tabular-nums;
+}
+
+.rotation-map-stats .hot {
+  border-top-color: #c45335;
+}
+
+.rotation-map-stats .cool {
+  border-top-color: #2f6190;
+}
+
+.rotation-map-stats b {
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 840;
+}
+
 .rotation-lanes {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3998,6 +4189,9 @@ body[data-theme="dark"] .momentum-row,
 body[data-theme="dark"] .rotation-head span,
 body[data-theme="dark"] .rotation-brief p,
 body[data-theme="dark"] .rotation-brief span,
+body[data-theme="dark"] .rotation-map-lead,
+body[data-theme="dark"] .rotation-map-grid,
+body[data-theme="dark"] .rotation-map-stats span,
 body[data-theme="dark"] .rotation-lane,
 body[data-theme="dark"] .rotation-row,
 body[data-theme="dark"] .flow-bucket,
@@ -4079,6 +4273,10 @@ body[data-theme="dark"] .heatmap-summary i,
 body[data-theme="dark"] .heatmap-summary small,
 body[data-theme="dark"] .rotation-head i,
 body[data-theme="dark"] .rotation-brief i,
+body[data-theme="dark"] .rotation-map-lead span,
+body[data-theme="dark"] .rotation-map-lead small,
+body[data-theme="dark"] .rotation-map-stats i,
+body[data-theme="dark"] .rotation-map-stats small,
 body[data-theme="dark"] .side-flow-grid i,
 body[data-theme="dark"] .side-flow-grid small,
 body[data-theme="dark"] .side-module p,
@@ -4157,6 +4355,11 @@ body[data-theme="dark"] .side-extreme-list button.symbol-active {
 body[data-theme="dark"] .rotation-row.active {
   background: rgba(216, 168, 75, 0.14);
   box-shadow: inset 0 0 0 1px rgba(216, 168, 75, 0.24);
+}
+
+body[data-theme="dark"] .rotation-map-grid button.symbol-active {
+  border-color: var(--ink);
+  box-shadow: 0 0 0 3px rgba(216, 168, 75, 0.16), 0 14px 28px rgba(0, 0, 0, 0.24);
 }
 
 body[data-theme="dark"] .market-tooltip {
@@ -4344,8 +4547,22 @@ body[data-theme="dark"] .tip-grid b {
 
   .rotation-head,
   .rotation-brief,
+  .rotation-map,
   .rotation-lanes {
     grid-template-columns: 1fr;
+  }
+
+  .rotation-map {
+    min-height: 0;
+  }
+
+  .rotation-map-grid {
+    min-height: 300px;
+  }
+
+  .rotation-map-stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: none;
   }
 
   .rotation-brief > div {
@@ -4480,6 +4697,25 @@ body[data-theme="dark"] .tip-grid b {
 
   .rotation-brief > div {
     grid-template-columns: 1fr;
+  }
+
+  .rotation-map-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rotation-map-grid {
+    min-height: 270px;
+  }
+
+  .rotation-map-grid .quad {
+    font-size: 9px;
+  }
+
+  .rotation-map-grid button {
+    overflow: hidden;
+    max-width: 48px;
+    max-height: 48px;
+    font-size: 9px;
   }
 
   .rotation-brief p {

@@ -1724,6 +1724,7 @@ function renderSymbolRotation() {
         ${rotationChip(state.lang === "zh" ? "权利金" : "Premium", `${premiumLeader.symbol || "--"} ${moneyCompact(premiumLeader.premiumNotional)}`, "flat")}
       </div>
     </div>
+    ${rotationMap(rows)}
     <div class="rotation-lanes">
       ${rotationLane(state.lang === "zh" ? "升温标的" : "Warming", hot, "hot")}
       ${rotationLane(state.lang === "zh" ? "降温标的" : "Cooling", cool, "cool")}
@@ -1745,6 +1746,75 @@ function rotationChip(label, value, tone) {
     <span class="${tone}">
       <i>${escapeHtml(label)}</i>
       <b>${escapeHtml(value)}</b>
+    </span>
+  `;
+}
+
+function rotationMap(rows) {
+  if (!rows.length) return "";
+  const selected = [];
+  const seen = new Set();
+  for (const row of [...rows.slice(0, 14), ...rows.slice(-14), ...[...rows].sort((a, b) => b.premiumDelta - a.premiumDelta).slice(0, 6)]) {
+    if (!row?.symbol || seen.has(row.symbol)) continue;
+    seen.add(row.symbol);
+    selected.push(row);
+  }
+  const deltaValues = selected.map((row) => Number(row.delta) || 0);
+  const premiumValues = selected.map((row) => Number(row.premiumDelta) || 0);
+  const xMin = Math.min(-30, ...deltaValues);
+  const xMax = Math.max(30, ...deltaValues);
+  const yMin = Math.min(-40, ...premiumValues);
+  const yMax = Math.max(40, ...premiumValues);
+  const xSpan = Math.max(1, xMax - xMin);
+  const ySpan = Math.max(1, yMax - yMin);
+  const xZero = Math.max(0, Math.min(100, ((0 - xMin) / xSpan) * 100));
+  const yZero = Math.max(0, Math.min(100, 100 - ((0 - yMin) / ySpan) * 100));
+  const maxVol = Math.max(...selected.map((row) => Number(row.totalVol) || 0), 1);
+  const attack = rows.filter((row) => row.delta >= 0 && row.premiumDelta >= 0);
+  const volumeOnly = rows.filter((row) => row.delta >= 0 && row.premiumDelta < 0);
+  const premiumOnly = rows.filter((row) => row.delta < 0 && row.premiumDelta >= 0);
+  const fade = rows.filter((row) => row.delta < 0 && row.premiumDelta < 0);
+  const lead = attack.slice().sort((a, b) => (b.delta + b.premiumDelta * 0.45) - (a.delta + a.premiumDelta * 0.45))[0] || rows[0];
+  const tone = attack.length >= fade.length ? "hot" : "cool";
+  return `
+    <div class="rotation-map">
+      <div class="rotation-map-lead ${tone}">
+        <span>${state.lang === "zh" ? "轮动象限图" : "Rotation quadrant"}</span>
+        <strong>${escapeHtml(lead?.symbol || "--")}</strong>
+        <small>${state.lang === "zh" ? "右上为量价同升，左下为同步降温。" : "Upper-right means volume and premium warming; lower-left means cooling."}</small>
+      </div>
+      <div class="rotation-map-grid" style="--x0:${xZero.toFixed(1)}%;--y0:${yZero.toFixed(1)}%">
+        <i class="axis-x"></i>
+        <i class="axis-y"></i>
+        <span class="quad q1">${state.lang === "zh" ? "量价同升" : "Volume + premium"}</span>
+        <span class="quad q2">${state.lang === "zh" ? "权利金先行" : "Premium leads"}</span>
+        <span class="quad q3">${state.lang === "zh" ? "同步降温" : "Cooling"}</span>
+        <span class="quad q4">${state.lang === "zh" ? "量能先行" : "Volume leads"}</span>
+        ${selected.map((row) => {
+          const x = Math.max(3, Math.min(97, ((Number(row.delta) - xMin) / xSpan) * 100));
+          const y = Math.max(5, Math.min(95, 100 - ((Number(row.premiumDelta) - yMin) / ySpan) * 100));
+          const size = Math.max(28, Math.min(58, 24 + ((Number(row.totalVol) || 0) / maxVol) * 34));
+          const toneClassName = row.delta >= 0 && row.premiumDelta >= 0 ? "hot" : row.delta < 0 && row.premiumDelta < 0 ? "cool" : "flat";
+          const title = `${row.symbol} · Vol ${row.delta >= 0 ? "+" : ""}${fmt1.format(row.delta)}% · Premium ${row.premiumDelta >= 0 ? "+" : ""}${fmt1.format(row.premiumDelta)}% · CP ${ratio(row.cpRatio)}`;
+          return `<button type="button" class="${toneClassName}" data-symbol="${escapeHtml(row.symbol)}" title="${escapeHtml(title)}" style="--x:${x.toFixed(1)}%;--y:${y.toFixed(1)}%;--s:${size.toFixed(0)}px">${escapeHtml(row.symbol)}</button>`;
+        }).join("")}
+      </div>
+      <div class="rotation-map-stats">
+        ${rotationMapStat(state.lang === "zh" ? "量价同升" : "Both warming", attack.length, attack[0]?.symbol, "hot")}
+        ${rotationMapStat(state.lang === "zh" ? "权利金先行" : "Premium first", premiumOnly.length, premiumOnly[0]?.symbol, "flat")}
+        ${rotationMapStat(state.lang === "zh" ? "量能先行" : "Volume first", volumeOnly.length, volumeOnly[0]?.symbol, "flat")}
+        ${rotationMapStat(state.lang === "zh" ? "同步降温" : "Both cooling", fade.length, fade[0]?.symbol, "cool")}
+      </div>
+    </div>
+  `;
+}
+
+function rotationMapStat(label, value, symbol, tone) {
+  return `
+    <span class="${tone}">
+      <i>${escapeHtml(label)}</i>
+      <b>${fmt0.format(value)}</b>
+      <small>${escapeHtml(symbol || "--")}</small>
     </span>
   `;
 }
