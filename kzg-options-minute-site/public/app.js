@@ -745,6 +745,7 @@ function renderBuckets() {
     `;
   }).join("");
   $("bucketSignature").innerHTML = bucketSignature(rows, avg, total, avgTotal);
+  $("bucketRisk").innerHTML = bucketRiskRadar(rows, avg, total, avgTotal);
   $("bucketBars").innerHTML = rows.map((row, index) => {
     const currentHeight = Math.max(2, (row.total / scale) * 100);
     const avgHeight = Math.max(2, ((avg[index] || 0) / scale) * 100);
@@ -802,6 +803,101 @@ function bucketSignature(rows, avg, total, avgTotal) {
       `).join("")}
     </div>
   `;
+}
+
+function bucketRiskRadar(rows, avg, total, avgTotal) {
+  const points = rows.map((row, index) => {
+    const volume = Number(row.total) || 0;
+    const base = Number(avg[index]) || 0;
+    const spread = base ? ((volume - base) / base) * 100 : 0;
+    const cp = row.put ? row.call / row.put : row.call ? row.call : 0;
+    const share = total ? (volume / total) * 100 : 0;
+    const avgShare = avgTotal ? (base / avgTotal) * 100 : 0;
+    const drift = share - avgShare;
+    return { ...row, volume, base, spread, cp, share, avgShare, drift };
+  });
+  if (!points.length) return "";
+
+  const impact = points.reduce((best, point) => point.spread > best.spread ? point : best, points[0]);
+  const defense = points.reduce((best, point) => point.cp < best.cp ? point : best, points[0]);
+  const chase = points.reduce((best, point) => point.cp > best.cp ? point : best, points[0]);
+  const top3 = [...points].sort((a, b) => b.volume - a.volume).slice(0, 3);
+  const concentration = top3.reduce((sum, point) => sum + point.share, 0);
+  const hotBuckets = points.filter((point) => point.spread >= 18).length;
+  const coolBuckets = points.filter((point) => point.spread <= -18).length;
+  const shock = Math.max(0, impact.spread);
+  const defensePressure = Math.max(0, 1.05 - defense.cp) * 72;
+  const callPressure = Math.max(0, chase.cp - 1.35) * 24;
+  const concentrationPressure = Math.max(0, concentration - 34) * 1.4;
+  const score = Math.max(1, Math.min(99, 28 + shock * 0.45 + defensePressure + callPressure + concentrationPressure));
+  const tone = score >= 68 ? "hot" : score <= 42 ? "cool" : "flat";
+  const narrative = bucketRiskNarrative({ impact, defense, chase, concentration, hotBuckets, coolBuckets });
+  const cards = [
+    {
+      label: state.lang === "zh" ? "成交冲击" : "Volume shock",
+      value: `${impact.time} ${impact.spread >= 0 ? "+" : ""}${fmt0.format(impact.spread)}%`,
+      sub: `${wan(impact.volume)} · ${state.lang === "zh" ? "占全日" : "share"} ${fmt1.format(impact.share)}%`,
+      tone: impact.spread >= 18 ? "hot" : impact.spread <= -18 ? "cool" : "flat",
+    },
+    {
+      label: state.lang === "zh" ? "防守压力" : "Defense pressure",
+      value: `${defense.time} CP ${ratio(defense.cp)}`,
+      sub: `${defense.drift >= 0 ? "+" : ""}${fmt1.format(defense.drift)}pt ${state.lang === "zh" ? "份额漂移" : "share drift"}`,
+      tone: defense.cp <= 0.95 ? "cool" : "flat",
+    },
+    {
+      label: state.lang === "zh" ? "Call 追击" : "Call chase",
+      value: `${chase.time} CP ${ratio(chase.cp)}`,
+      sub: `${chase.drift >= 0 ? "+" : ""}${fmt1.format(chase.drift)}pt ${state.lang === "zh" ? "份额漂移" : "share drift"}`,
+      tone: chase.cp >= 1.55 ? "hot" : "flat",
+    },
+    {
+      label: state.lang === "zh" ? "三桶集中" : "Top-3 slots",
+      value: `${fmt1.format(concentration)}%`,
+      sub: top3.map((point) => point.time).join(" / "),
+      tone: concentration >= 42 ? "hot" : concentration <= 28 ? "cool" : "flat",
+    },
+  ];
+  const maxSpread = Math.max(...points.map((point) => Math.abs(point.spread)), 1);
+  return `
+    <div class="risk-lead ${tone}">
+      <span>${state.lang === "zh" ? "日内风险雷达" : "Intraday risk radar"}</span>
+      <strong>${fmt0.format(score)}</strong>
+      <small>${narrative}</small>
+    </div>
+    <div class="risk-cards">
+      ${cards.map((card) => `
+        <span class="${card.tone}" title="${escapeHtml(`${card.label} · ${card.value} · ${card.sub}`)}">
+          <i>${card.label}</i>
+          <b>${card.value}</b>
+          <small>${card.sub}</small>
+        </span>
+      `).join("")}
+    </div>
+    <div class="risk-pulse">
+      <div>
+        <span>${state.lang === "zh" ? "偏离带" : "Deviation tape"}</span>
+        <b>${hotBuckets}/${coolBuckets}</b>
+      </div>
+      <div class="risk-cells">
+        ${points.map((point) => {
+          const toneClassName = point.spread >= 18 ? "hot" : point.spread <= -18 ? "cool" : "flat";
+          const height = Math.max(8, Math.min(100, Math.abs(point.spread) / maxSpread * 100));
+          const title = `${point.time} · ${point.spread >= 0 ? "+" : ""}${fmt1.format(point.spread)}% vs 20D · CP ${ratio(point.cp)}`;
+          return `<span class="${toneClassName}" title="${escapeHtml(title)}" style="--h:${height.toFixed(1)}%"><i>${point.time.slice(0, 2)}</i></span>`;
+        }).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function bucketRiskNarrative({ impact, defense, chase, concentration, hotBuckets, coolBuckets }) {
+  if (state.lang === "zh") {
+    const bias = hotBuckets > coolBuckets ? "上冲桶更多" : coolBuckets > hotBuckets ? "降温桶更多" : "冷热桶均衡";
+    return `${impact.time} 是最大成交冲击，${defense.time} 防守 CP 最低，${chase.time} Call 追击最强；前三桶集中 ${fmt1.format(concentration)}%，${bias}。`;
+  }
+  const bias = hotBuckets > coolBuckets ? "more hot buckets" : coolBuckets > hotBuckets ? "more cooling buckets" : "balanced hot/cool buckets";
+  return `${impact.time} is the largest shock, ${defense.time} has the lowest defensive CP, ${chase.time} has the strongest call chase; top three slots hold ${fmt1.format(concentration)}%, ${bias}.`;
 }
 
 function bucketProfileCard(label, value, tone) {

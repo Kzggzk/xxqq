@@ -234,7 +234,7 @@ main {
 .day-bars {
   display: grid;
   align-items: end;
-  gap: 2px;
+  gap: 0;
   height: 36px;
   padding: 0 12px;
 }
@@ -935,7 +935,7 @@ main {
 .bucket-bars {
   display: grid;
   grid-template-columns: repeat(13, minmax(46px, 1fr));
-  align-items: end;
+  align-items: stretch;
   gap: 8px;
   min-height: 222px;
   overflow-x: auto;
@@ -946,14 +946,16 @@ main {
   grid-template-rows: 1fr auto auto;
   gap: 7px;
   min-width: 46px;
-  height: 206px;
+  min-height: 206px;
+  height: 100%;
   text-align: center;
 }
 
 .bar-track {
   position: relative;
-  align-self: end;
-  height: 152px;
+  align-self: stretch;
+  min-height: 152px;
+  height: auto;
   border-bottom: 1px solid var(--line-strong);
   background: linear-gradient(180deg, transparent, rgba(234, 217, 174, 0.35));
 }
@@ -2139,6 +2141,7 @@ main {
 }
 
 .day-bars {
+  gap: 0;
   height: 44px;
   padding-inline: 8px;
 }
@@ -3013,6 +3016,168 @@ main {
   border-color: rgba(47, 97, 144, 0.34);
 }
 
+.bucket-risk {
+  display: grid;
+  grid-template-columns: 0.9fr 1.55fr 0.95fr;
+  gap: 8px;
+  margin: 0 0 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.risk-lead,
+.risk-cards span,
+.risk-pulse {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.risk-lead {
+  display: grid;
+  align-content: center;
+  gap: 5px;
+  padding: 11px 12px;
+  border-left: 4px solid var(--gold);
+}
+
+.risk-lead.hot {
+  border-left-color: #c45335;
+}
+
+.risk-lead.cool {
+  border-left-color: #2f6190;
+}
+
+.risk-lead span,
+.risk-cards i,
+.risk-pulse span,
+.risk-cells i {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 820;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.risk-lead strong {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", "Songti SC", serif;
+  font-size: 31px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.risk-lead small,
+.risk-cards small {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+}
+
+.risk-lead small {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.risk-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.risk-cards span {
+  display: grid;
+  gap: 5px;
+  padding: 10px 9px 9px;
+  border-top: 3px solid var(--gold);
+}
+
+.risk-cards .hot {
+  border-top-color: #c45335;
+}
+
+.risk-cards .cool {
+  border-top-color: #2f6190;
+}
+
+.risk-cards b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.1;
+  font-weight: 840;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.risk-pulse {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 8px;
+  padding: 10px 9px 9px;
+}
+
+.risk-pulse > div:first-child {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.risk-pulse b {
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 840;
+}
+
+.risk-cells {
+  display: grid;
+  grid-template-columns: repeat(13, minmax(0, 1fr));
+  align-items: end;
+  gap: 3px;
+  min-height: 62px;
+}
+
+.risk-cells span {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-width: 0;
+  height: 100%;
+  padding-bottom: 13px;
+}
+
+.risk-cells span::before {
+  content: "";
+  position: absolute;
+  right: 12%;
+  bottom: 13px;
+  left: 12%;
+  height: var(--h);
+  min-height: 4px;
+  background: rgba(154, 106, 18, 0.72);
+}
+
+.risk-cells .hot::before {
+  background: rgba(196, 83, 53, 0.78);
+}
+
+.risk-cells .cool::before {
+  background: rgba(47, 97, 144, 0.78);
+}
+
+.risk-cells i {
+  position: absolute;
+  bottom: 0;
+  font-size: 8px;
+}
+
 .bar-track {
   border-left: 1px solid rgba(201, 194, 178, 0.5);
   border-right: 1px solid rgba(201, 194, 178, 0.5);
@@ -3735,6 +3900,9 @@ body[data-theme="dark"] .rotation-row,
 body[data-theme="dark"] .flow-bucket,
 body[data-theme="dark"] .signature-lead,
 body[data-theme="dark"] .signature-lanes span,
+body[data-theme="dark"] .risk-lead,
+body[data-theme="dark"] .risk-cards span,
+body[data-theme="dark"] .risk-pulse,
 body[data-theme="dark"] .symbol-focus,
 body[data-theme="dark"] .trend-extremes button,
 body[data-theme="dark"] .trend-radar button,
@@ -3825,6 +3993,12 @@ body[data-theme="dark"] .signature-lead span,
 body[data-theme="dark"] .signature-lead small,
 body[data-theme="dark"] .signature-lanes i,
 body[data-theme="dark"] .signature-lanes small,
+body[data-theme="dark"] .risk-lead span,
+body[data-theme="dark"] .risk-lead small,
+body[data-theme="dark"] .risk-cards i,
+body[data-theme="dark"] .risk-cards small,
+body[data-theme="dark"] .risk-pulse span,
+body[data-theme="dark"] .risk-cells i,
 body[data-theme="dark"] .heat-rhythm-card span,
 body[data-theme="dark"] .heat-rhythm-card small,
 body[data-theme="dark"] .signal-strip small,
@@ -4077,6 +4251,14 @@ body[data-theme="dark"] .tip-grid b {
     grid-template-columns: 1fr;
   }
 
+  .bucket-risk {
+    grid-template-columns: 1fr;
+  }
+
+  .risk-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .focus-head,
   .focus-metrics,
   .focus-charts {
@@ -4210,6 +4392,19 @@ body[data-theme="dark"] .tip-grid b {
 
   .signature-lanes {
     grid-template-columns: 1fr;
+  }
+
+  .risk-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .risk-cells {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    min-height: 56px;
+  }
+
+  .risk-cells span:nth-child(even) {
+    display: none;
   }
 
   .signature-lead small,
