@@ -566,6 +566,56 @@ main {
   overflow-x: auto;
 }
 
+.heatmap-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.heatmap-summary span {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  padding: 10px 11px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.6);
+  font-variant-numeric: tabular-nums;
+}
+
+.heatmap-summary i,
+.heatmap-summary small {
+  overflow: hidden;
+  color: var(--muted);
+  font-style: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.heatmap-summary i {
+  font-size: 11px;
+  font-weight: 820;
+}
+
+.heatmap-summary b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 820;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.heatmap-summary small {
+  font-size: 10px;
+}
+
+.heatmap-summary .hot {
+  border-color: rgba(196, 83, 53, 0.34);
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
 .heat-table {
   display: grid;
   grid-template-columns: 74px repeat(13, minmax(60px, 1fr));
@@ -1055,6 +1105,10 @@ td.symbol {
     min-width: 100%;
   }
 
+  .heatmap-summary {
+    grid-template-columns: 1fr;
+  }
+
   .heat-cell {
     min-height: 25px;
     padding: 6px 1px;
@@ -1071,6 +1125,10 @@ td.symbol {
     grid-template-columns: repeat(13, minmax(0, 1fr));
     gap: 3px;
     overflow-x: hidden;
+  }
+
+  .bucket-profile {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .bar {
@@ -1732,6 +1790,61 @@ main {
   font-variant-numeric: tabular-nums;
 }
 
+.trend-lens {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin: -2px 0 12px;
+}
+
+.trend-lens span {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  padding: 10px 11px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
+  font-variant-numeric: tabular-nums;
+}
+
+.trend-lens i,
+.trend-lens small {
+  overflow: hidden;
+  color: var(--muted);
+  font-style: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.trend-lens i {
+  font-size: 11px;
+  font-weight: 820;
+}
+
+.trend-lens b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1;
+  font-weight: 820;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.trend-lens small {
+  font-size: 10px;
+}
+
+.trend-lens .hot {
+  border-color: rgba(196, 83, 53, 0.34);
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
+.trend-lens .cool {
+  border-color: rgba(47, 97, 144, 0.34);
+  box-shadow: inset 3px 0 0 #2f6190;
+}
+
 .trend-extremes {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2016,6 +2129,52 @@ main {
 
 .bucket-bars {
   min-height: 236px;
+}
+
+.bucket-profile {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.bucket-profile span {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  padding: 10px 11px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.6);
+  font-variant-numeric: tabular-nums;
+}
+
+.bucket-profile i {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 820;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bucket-profile b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 820;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bucket-profile .hot {
+  border-color: rgba(196, 83, 53, 0.36);
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
+.bucket-profile .cool {
+  border-color: rgba(47, 97, 144, 0.36);
+  box-shadow: inset 3px 0 0 #2f6190;
 }
 
 .bar-track {
@@ -2309,6 +2468,9 @@ body[data-theme="dark"] .range-tabs,
 body[data-theme="dark"] .momentum-row,
 body[data-theme="dark"] .symbol-focus,
 body[data-theme="dark"] .trend-extremes button,
+body[data-theme="dark"] .trend-lens span,
+body[data-theme="dark"] .bucket-profile span,
+body[data-theme="dark"] .heatmap-summary span,
 body[data-theme="dark"] .regime-stats span,
 body[data-theme="dark"] .regime-stats button,
 body[data-theme="dark"] .signal-strip,
@@ -2333,6 +2495,11 @@ body[data-theme="dark"] .pulse-gauge::after {
 }
 
 body[data-theme="dark"] .regime-foot,
+body[data-theme="dark"] .trend-lens i,
+body[data-theme="dark"] .trend-lens small,
+body[data-theme="dark"] .bucket-profile i,
+body[data-theme="dark"] .heatmap-summary i,
+body[data-theme="dark"] .heatmap-summary small,
 body[data-theme="dark"] .signal-strip small,
 body[data-theme="dark"] .signal-strip span {
   color: var(--muted);
@@ -2420,6 +2587,10 @@ body[data-theme="dark"] .tip-grid b {
   .signal-board,
   .signal-strips {
     grid-template-columns: 1fr;
+  }
+
+  .trend-lens {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .pulse-gauge {

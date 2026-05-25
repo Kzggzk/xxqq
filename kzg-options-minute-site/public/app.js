@@ -469,6 +469,21 @@ function renderBuckets() {
   const max = Math.max(...rows.map((row) => row.total), 1);
   const avgMax = Math.max(...avg, 1);
   const scale = Math.max(max, avgMax);
+  const total = rows.reduce((sum, row) => sum + (Number(row.total) || 0), 0) || 1;
+  const openShare = rows.slice(0, 2).reduce((sum, row) => sum + (Number(row.total) || 0), 0) / total * 100;
+  const midShare = rows.slice(5, 8).reduce((sum, row) => sum + (Number(row.total) || 0), 0) / total * 100;
+  const closeShare = rows.slice(-2).reduce((sum, row) => sum + (Number(row.total) || 0), 0) / total * 100;
+  const anomaly = rows.reduce((best, row, index) => {
+    const base = avg[index] || 0;
+    const spread = base ? ((Number(row.total) - base) / base) * 100 : 0;
+    return !best || Math.abs(spread) > Math.abs(best.spread) ? { time: row.time, spread } : best;
+  }, null);
+  $("bucketProfile").innerHTML = [
+    bucketProfileCard(state.lang === "zh" ? "开盘首小时" : "Opening hour", `${fmt1.format(openShare)}%`, openShare >= 28 ? "hot" : openShare <= 16 ? "cool" : "flat"),
+    bucketProfileCard(state.lang === "zh" ? "午盘吸收" : "Midday absorb", `${fmt1.format(midShare)}%`, midShare >= 24 ? "hot" : midShare <= 13 ? "cool" : "flat"),
+    bucketProfileCard(state.lang === "zh" ? "尾盘首小时" : "Closing hour", `${fmt1.format(closeShare)}%`, closeShare >= 24 ? "hot" : closeShare <= 13 ? "cool" : "flat"),
+    bucketProfileCard(state.lang === "zh" ? "异常桶" : "Outlier bucket", `${anomaly?.time || "--"} ${anomaly?.spread >= 0 ? "+" : ""}${fmt1.format(anomaly?.spread || 0)}%`, anomaly?.spread >= 18 ? "hot" : anomaly?.spread <= -18 ? "cool" : "flat"),
+  ].join("");
   $("bucketBars").innerHTML = rows.map((row, index) => {
     const currentHeight = Math.max(2, (row.total / scale) * 100);
     const avgHeight = Math.max(2, ((avg[index] || 0) / scale) * 100);
@@ -487,11 +502,37 @@ function renderBuckets() {
   }).join("");
 }
 
+function bucketProfileCard(label, value, tone) {
+  return `
+    <span class="${tone}">
+      <i>${label}</i>
+      <b>${value}</b>
+    </span>
+  `;
+}
+
 function renderHeatmap() {
   const heat = state.day.buckets.heatmap;
   const labels = state.day.buckets.labels;
   const values = heat.flatMap((row) => row.values);
   const max = Math.max(...values, 1);
+  const rowTotals = heat.map((row) => ({
+    symbol: row.symbol,
+    total: row.values.reduce((sum, value) => sum + (Number(value) || 0), 0),
+  })).sort((a, b) => b.total - a.total);
+  const labelTotals = labels.map((label, index) => ({
+    label,
+    total: heat.reduce((sum, row) => sum + (Number(row.values[index]) || 0), 0),
+  })).sort((a, b) => b.total - a.total);
+  const top3Total = rowTotals.slice(0, 3).reduce((sum, row) => sum + row.total, 0);
+  const allTotal = rowTotals.reduce((sum, row) => sum + row.total, 0) || 1;
+  const topSymbol = rowTotals[0] || { symbol: "--", total: 0 };
+  const hotSlot = labelTotals[0] || { label: "--", total: 0 };
+  $("heatmapSummary").innerHTML = [
+    heatmapSummaryCard(state.lang === "zh" ? "最热标的" : "Hottest symbol", topSymbol.symbol, wan(topSymbol.total), "hot"),
+    heatmapSummaryCard(state.lang === "zh" ? "峰值时段" : "Peak slot", hotSlot.label, wan(hotSlot.total), "flat"),
+    heatmapSummaryCard(state.lang === "zh" ? "Top3 集中度" : "Top3 focus", `${fmt1.format((top3Total / allTotal) * 100)}%`, rowTotals.slice(0, 3).map((row) => row.symbol).join(" / "), (top3Total / allTotal) >= 0.55 ? "hot" : "flat"),
+  ].join("");
   let html = `<div class="heat-table"><div class="heat-cell head">${state.lang === "zh" ? "标的" : "Symbol"}</div>`;
   html += labels.map((label) => `<div class="heat-cell head">${label}</div>`).join("");
   for (const row of heat) {
@@ -506,6 +547,16 @@ function renderHeatmap() {
   }
   html += "</div>";
   $("heatmap").innerHTML = html;
+}
+
+function heatmapSummaryCard(label, value, sub, tone) {
+  return `
+    <span class="${tone}">
+      <i>${label}</i>
+      <b>${escapeHtml(value)}</b>
+      <small>${escapeHtml(sub)}</small>
+    </span>
+  `;
 }
 
 function renderTrend() {
@@ -539,6 +590,12 @@ function renderTrend() {
   const change = prev ? ((latest.totalVol - prev.totalVol) / prev.totalVol) * 100 : 0;
   const tone = change >= 0 ? "trend-hot" : "trend-cool";
   const avgCp = rows.reduce((sum, row) => sum + (Number(row.marketCp) || 0), 0) / rows.length;
+  const first = rows[0];
+  const premiumChange = first.totalPremium ? ((latest.totalPremium - first.totalPremium) / first.totalPremium) * 100 : 0;
+  const cpDrift = (Number(latest.marketCp) || 0) - (Number(first.marketCp) || 0);
+  const stockShareFirst = categoryShareForRow(first, "STOCK");
+  const stockShareLatest = categoryShareForRow(latest, "STOCK");
+  const stockShareDrift = stockShareLatest - stockShareFirst;
   const cpValues = rows.map((row) => Number(row.marketCp) || 0);
   const maxCp = Math.max(...cpValues, 1);
   const minCp = Math.min(...cpValues, maxCp);
@@ -567,6 +624,12 @@ function renderTrend() {
         <span>${state.lang === "zh" ? "区间分位" : "Percentile"} ${fmt0.format(selectedRank)}%</span>
       </div>
     </div>
+    <div class="trend-lens">
+      ${trendLensCard(state.lang === "zh" ? "成交变化" : "Volume move", `${change >= 0 ? "+" : ""}${fmt1.format(change)}%`, `${shortDate(prev?.date || first.date)} → ${shortDate(latest.date)}`, change >= 8 ? "hot" : change <= -8 ? "cool" : "flat")}
+      ${trendLensCard(state.lang === "zh" ? "权利金变化" : "Premium move", `${premiumChange >= 0 ? "+" : ""}${fmt1.format(premiumChange)}%`, `${moneyCompact(first.totalPremium)} → ${moneyCompact(latest.totalPremium)}`, premiumChange >= 12 ? "hot" : premiumChange <= -12 ? "cool" : "flat")}
+      ${trendLensCard(state.lang === "zh" ? "CP 漂移" : "CP drift", `${cpDrift >= 0 ? "+" : ""}${fmt2.format(cpDrift)}`, `${ratio(first.marketCp)} → ${ratio(latest.marketCp)}`, cpDrift >= 0.18 ? "hot" : cpDrift <= -0.18 ? "cool" : "flat")}
+      ${trendLensCard(state.lang === "zh" ? "个股权重" : "Stock share", `${stockShareDrift >= 0 ? "+" : ""}${fmt1.format(stockShareDrift)}pt`, `${fmt1.format(stockShareFirst)}% → ${fmt1.format(stockShareLatest)}%`, stockShareDrift >= 5 ? "hot" : stockShareDrift <= -5 ? "cool" : "flat")}
+    </div>
     <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${t("trend")}">
       <defs>
         <linearGradient id="trendFill" x1="0" x2="0" y1="0" y2="1">
@@ -593,6 +656,23 @@ function renderTrend() {
     </div>
     ${categoryStack(latest)}
   `;
+}
+
+function trendLensCard(label, value, sub, tone) {
+  return `
+    <span class="${tone}">
+      <i>${label}</i>
+      <b>${value}</b>
+      <small>${sub}</small>
+    </span>
+  `;
+}
+
+function categoryShareForRow(row, key) {
+  const category = row.category || {};
+  const total = Number(row.totalVol) || 0;
+  const volume = Number(category[key]?.volume) || 0;
+  return total ? (volume / total) * 100 : 0;
 }
 
 function renderSignalBoard() {
