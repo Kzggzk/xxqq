@@ -31,6 +31,19 @@ Recorded 2026-05-25 after the first end-to-end automation milestone.
 - **First-time `npx netlify-cli` invocation** — if auth not cached, would block on browser login. We were lucky it was cached. Future cold installs need `npx netlify-cli login` manual step.
 - **Massive download requires logged-in Chrome session** — Netlify scheduled function path is dead unless Massive exposes an API/S3 we don't know about. Local launchd + Chrome is the only viable path until/unless Massive offers credentials.
 
+## Mid-session pivot — payload-bundle deploy
+
+Late in the session a concurrent editor (parallel agent or user) replaced the per-day-HTML deploy model with a single payload-bundle SPA:
+
+- `public/` is no longer the publish dir; `netlify.toml` now sets `publish = "dist"`.
+- New script `scripts/build_payload.py` produces `dist/index.html` + `dist/assets/kzg-pack.js` (a single ~1.1 MB encoded blob containing all 96 days).
+- The new `netlify.toml` explicitly 404's `/reports/*`, `/r/*`, `/latest`, `/data/*` — the SPA owns all routing client-side.
+- The per-day toolbar / `report.css` / external CSS optimization built earlier in the session is still in `public/` but no longer reachable on the deployed site.
+
+**Side effect**: `build_payload.py` still does `shutil.copy2(public/app.js → dist/)` but `public/app.js` was deleted in the pivot. Every cron run now fails at this step with `FileNotFoundError`. Smoke check (homepage + kzg-pack.js) still passes because the last good deploy is what users see. Fix is one line in `build_payload.py` — out of scope here (concurrent editor owns it).
+
+**`cron_daily.sh` change**: now aborts (exit 5) when `daily_update.py` returns non-zero non-2 — previously the smoke check would mask the failure.
+
 ## Open follow-ups (carry over)
 
 1. **Massive downloader** — three plausible paths (per stop-and-ask in next session):

@@ -37,17 +37,26 @@ log "step: daily_update.py --deploy"
 status=${PIPESTATUS[0]}
 log "daily_update.py exit=$status"
 
+# exit 2 = missing source csv.gz, non-fatal (downloader already warned).
+# anything else non-zero is a real failure — abort and surface.
+if [ "$status" -ne 0 ] && [ "$status" -ne 2 ]; then
+  log "ERR daily_update.py failed unexpectedly — aborting before deploy validation"
+  exit 5
+fi
+
 if [ "$status" -eq 2 ]; then
   log "WARN: source csv.gz missing for previous trading day — manual Massive download required"
 fi
 
-# Smoke-check the live site for /latest and /data/index.json.
+# Smoke-check the live site. Concurrent editor pivoted to a SPA payload bundle:
+# routes /reports /r /latest are now intentional 404s, the canonical entrypoints
+# are / (homepage shell) and /assets/kzg-pack.js (bundled payload).
 log "step: smoke check live"
-http_latest=$(/usr/bin/curl -s -o /dev/null -w "%{http_code}" "https://kzg-option-house.netlify.app/latest")
-http_index=$(/usr/bin/curl -s -o /dev/null -w "%{http_code}" "https://kzg-option-house.netlify.app/data/index.json")
-log "live /latest=$http_latest /data/index.json=$http_index"
+http_home=$(/usr/bin/curl -s -o /dev/null -w "%{http_code}" "https://kzg-option-house.netlify.app/")
+http_pack=$(/usr/bin/curl -s -o /dev/null -w "%{http_code}" "https://kzg-option-house.netlify.app/assets/kzg-pack.js")
+log "live /=$http_home /assets/kzg-pack.js=$http_pack"
 
-if [ "$http_latest" != "200" ] || [ "$http_index" != "200" ]; then
+if [ "$http_home" != "200" ] || [ "$http_pack" != "200" ]; then
   log "ERR live smoke failed"
   exit 3
 fi
