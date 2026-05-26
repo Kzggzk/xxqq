@@ -13,6 +13,8 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
+const UI_VERSION = "v27";
+
 const $ = (id) => document.getElementById(id);
 const fmt0 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
 const fmt1 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 1, minimumFractionDigits: 1 });
@@ -407,7 +409,7 @@ function renderDay() {
   $("marketCp").textContent = ratio(ov.marketCp);
   $("rowCount").textContent = fmt0.format(day.validRows);
   $("sourceStatus").textContent = `${fmt0.format(day.validRows)} ${t("validRows")}`;
-  $("sourcePath").textContent = "KZG packed";
+  $("sourcePath").textContent = `KZG packed · UI ${UI_VERSION}`;
   $("totalPremiumLabel").textContent = t("premium");
 
   const deltaText = delta === null ? (state.lang === "zh" ? "首个本地交易日" : "first local day") : `${state.lang === "zh" ? "较前日" : "vs prev"} ${delta >= 0 ? "+" : ""}${fmt1.format(delta)}%`;
@@ -744,6 +746,8 @@ function renderBuckets() {
       </span>
     `;
   }).join("");
+  document.querySelector(".bucket-pressure-ribbon")?.remove();
+  $("bucketFlow").insertAdjacentHTML("afterend", bucketPressureRibbon(rows, avg, total, avgTotal));
   $("bucketSignature").innerHTML = bucketSignature(rows, avg, total, avgTotal);
   $("bucketRisk").innerHTML = bucketRiskRadar(rows, avg, total, avgTotal);
   $("bucketBars").innerHTML = rows.map((row, index) => {
@@ -762,6 +766,45 @@ function renderBuckets() {
       </div>
     `;
   }).join("");
+}
+
+function bucketPressureRibbon(rows, avg, total, avgTotal) {
+  const points = rows.map((row, index) => {
+    const volume = Number(row.total) || 0;
+    const base = Number(avg[index]) || 0;
+    const share = total ? (volume / total) * 100 : 0;
+    const baseShare = avgTotal ? (base / avgTotal) * 100 : 0;
+    const spread = base ? ((volume - base) / base) * 100 : 0;
+    const cp = row.put ? row.call / row.put : row.call ? row.call : 0;
+    const tone = spread >= 18 || cp >= 1.55 ? "hot" : spread <= -18 || cp <= 0.95 ? "cool" : "flat";
+    const strength = Math.max(8, Math.min(100, Math.abs(spread) * 1.35 + Math.abs(share - baseShare) * 5));
+    return { ...row, volume, base, share, baseShare, spread, cp, tone, strength };
+  });
+  if (!points.length) return "";
+  const hot = points.filter((point) => point.tone === "hot").length;
+  const cool = points.filter((point) => point.tone === "cool").length;
+  const lead = points.reduce((best, point) => point.strength > best.strength ? point : best, points[0]);
+  const tone = hot > cool ? "hot" : cool > hot ? "cool" : "flat";
+  const read = state.lang === "zh"
+    ? `${lead.time} 是最强压力点，${hot} 个热桶、${cool} 个冷桶。`
+    : `${lead.time} is the strongest pressure point; ${hot} hot buckets, ${cool} cool buckets.`;
+  return `
+    <div class="bucket-pressure-ribbon ${tone}">
+      <div>
+        <span>${state.lang === "zh" ? "桶间压力带" : "Bucket pressure tape"}</span>
+        <strong>${escapeHtml(lead.time || "--")}</strong>
+        <small>${read}</small>
+      </div>
+      <div class="bucket-pressure-track">
+        ${points.map((point) => `
+          <span class="${point.tone}" title="${escapeHtml(`${point.time} · ${point.spread >= 0 ? "+" : ""}${fmt1.format(point.spread)}% vs 20D · CP ${ratio(point.cp)}`)}">
+            <i style="--w:${point.strength.toFixed(1)}%"></i>
+            <b>${escapeHtml(point.time.slice(0, 2))}</b>
+          </span>
+        `).join("")}
+      </div>
+    </div>
+  `;
 }
 
 function bucketSignature(rows, avg, total, avgTotal) {
@@ -1211,6 +1254,77 @@ function renderTrend() {
       </div>
     </div>
     ${trendWindowStack(rows)}
+    ${trendDriftLedger(rows)}
+  `;
+}
+
+function trendDriftLedger(rows) {
+  if (rows.length < 2) return "";
+  const latest = rows[rows.length - 1];
+  const sample = rows.slice(Math.max(0, rows.length - Math.min(60, rows.length)));
+  const first = sample[0] || rows[0];
+  const volumeMove = first.totalVol ? ((latest.totalVol - first.totalVol) / first.totalVol) * 100 : 0;
+  const premiumMove = first.totalPremium ? ((latest.totalPremium - first.totalPremium) / first.totalPremium) * 100 : 0;
+  const cpMove = (Number(latest.marketCp) || 0) - (Number(first.marketCp) || 0);
+  const stockMove = categoryShareForRow(latest, "STOCK") - categoryShareForRow(first, "STOCK");
+  const etfMove = categoryShareForRow(latest, "ETF") - categoryShareForRow(first, "ETF");
+  const indexMove = categoryShareForRow(latest, "INDEX") - categoryShareForRow(first, "INDEX");
+  const rowsOut = [
+    {
+      label: state.lang === "zh" ? "量能漂移" : "Volume drift",
+      value: `${volumeMove >= 0 ? "+" : ""}${fmt1.format(volumeMove)}%`,
+      sub: `${shortDate(first.date)} → ${shortDate(latest.date)}`,
+      width: 50 + volumeMove * 0.72,
+      tone: volumeMove >= 8 ? "hot" : volumeMove <= -8 ? "cool" : "flat",
+    },
+    {
+      label: state.lang === "zh" ? "权利金漂移" : "Premium drift",
+      value: `${premiumMove >= 0 ? "+" : ""}${fmt1.format(premiumMove)}%`,
+      sub: `${moneyCompact(first.totalPremium)} → ${moneyCompact(latest.totalPremium)}`,
+      width: 50 + premiumMove * 0.54,
+      tone: premiumMove >= 12 ? "hot" : premiumMove <= -12 ? "cool" : "flat",
+    },
+    {
+      label: state.lang === "zh" ? "CP 结构" : "CP structure",
+      value: `${cpMove >= 0 ? "+" : ""}${fmt2.format(cpMove)}`,
+      sub: `${ratio(first.marketCp)} → ${ratio(latest.marketCp)}`,
+      width: 50 + cpMove * 90,
+      tone: cpMove >= 0.18 ? "hot" : cpMove <= -0.18 ? "cool" : "flat",
+    },
+    {
+      label: state.lang === "zh" ? "个股扩散" : "Single-stock spread",
+      value: `${stockMove >= 0 ? "+" : ""}${fmt1.format(stockMove)}pt`,
+      sub: `${state.lang === "zh" ? "ETF" : "ETF"} ${etfMove >= 0 ? "+" : ""}${fmt1.format(etfMove)}pt · ${state.lang === "zh" ? "指数" : "Index"} ${indexMove >= 0 ? "+" : ""}${fmt1.format(indexMove)}pt`,
+      width: 50 + stockMove * 3.2,
+      tone: stockMove >= 5 ? "hot" : stockMove <= -5 ? "cool" : "flat",
+    },
+  ];
+  const pressure = rowsOut.reduce((sum, row) => {
+    const sign = row.tone === "hot" ? 1 : row.tone === "cool" ? -1 : 0;
+    return sum + sign;
+  }, 0);
+  const tone = pressure >= 2 ? "hot" : pressure <= -2 ? "cool" : "flat";
+  const read = state.lang === "zh"
+    ? `${sample.length} 日窗口内，量能、权利金、CP 和类别份额一起读，避免只看单日。`
+    : `${sample.length}-session window: volume, premium, CP, and lane share are read together.`;
+  return `
+    <div class="trend-drift-ledger">
+      <div class="trend-drift-lead ${tone}">
+        <span>${state.lang === "zh" ? "跨日结构账本" : "Cross-day structure ledger"}</span>
+        <strong>${sample.length}D</strong>
+        <small>${read}</small>
+      </div>
+      <div class="trend-drift-rows">
+        ${rowsOut.map((row) => `
+          <span class="${row.tone}">
+            <i>${escapeHtml(row.label)}</i>
+            <b>${escapeHtml(row.value)}</b>
+            <small>${escapeHtml(row.sub)}</small>
+            <em style="--w:${Math.max(8, Math.min(100, row.width)).toFixed(1)}%"></em>
+          </span>
+        `).join("")}
+      </div>
+    </div>
   `;
 }
 
