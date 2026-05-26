@@ -7583,3 +7583,183 @@ body[data-theme="dark"] .focus-metrics span {
     text-overflow: clip;
   }
 }
+
+/* v41-v45 pass: sparse time axis, denser trend cockpit, softer hover targets. */
+.month-ticks span {
+  overflow: hidden;
+  color: rgba(17, 17, 17, 0.56);
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+.month-ticks span.year {
+  color: var(--ink);
+}
+
+.month-ticks span:empty {
+  opacity: 0;
+}
+
+.trend-summary {
+  margin-bottom: 7px;
+  padding: 10px 12px;
+}
+
+.trend-summary strong {
+  font-size: 27px;
+}
+
+.trend-chart {
+  min-height: 0;
+}
+
+.trend-cockpit {
+  grid-template-columns: 1fr;
+  gap: 9px;
+}
+
+.trend-cockpit-left {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: 8px;
+}
+
+.trend-cockpit .trend-lens,
+.trend-cockpit .trend-radar {
+  margin: 0;
+  gap: 6px;
+}
+
+.trend-cockpit .trend-lens {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.trend-cockpit .trend-radar {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.trend-cockpit .trend-radar button:last-child {
+  grid-column: auto;
+}
+
+.trend-lens span,
+.trend-radar button {
+  padding: 8px 9px;
+}
+
+.trend-lens b,
+.trend-radar b {
+  font-size: 15px;
+}
+
+.trend-cockpit-right {
+  display: grid;
+  grid-template-columns: minmax(0, 1.48fr) minmax(260px, 0.52fr);
+  gap: 9px;
+  align-items: start;
+}
+
+.trend-cockpit-right svg {
+  grid-row: span 3;
+  margin-top: 0;
+}
+
+.trend-cockpit-right .trend-extremes {
+  grid-template-columns: 1fr;
+  gap: 6px;
+  margin: 0;
+}
+
+.trend-cockpit-right .flow-stack {
+  grid-template-columns: 1fr;
+  gap: 6px;
+  margin: 0;
+}
+
+.trend-cockpit-right .trend-pulse-strip {
+  grid-column: 1 / -1;
+  margin-top: 0;
+}
+
+.trend-hit {
+  cursor: pointer;
+  fill: transparent;
+  pointer-events: all;
+  stroke: transparent;
+  stroke-width: 12;
+}
+
+.trend-hit:hover {
+  stroke: rgba(17, 17, 17, 0.16);
+}
+
+.trend-cockpit + .trend-window-stack,
+.trend-drift-ledger {
+  margin-top: 8px;
+}
+
+.trend-window-stack {
+  margin-bottom: 9px;
+}
+
+.trend-window-lead,
+.trend-drift-lead {
+  padding: 8px 10px;
+}
+
+.trend-window-cards span,
+.trend-drift-rows span {
+  padding: 7px 9px;
+}
+
+.trend-window-lead strong,
+.trend-drift-lead strong {
+  font-size: 22px;
+}
+
+body[data-theme="dark"] .month-ticks span {
+  color: rgba(245, 240, 230, 0.56);
+}
+
+body[data-theme="dark"] .month-ticks span.year {
+  color: var(--ink);
+}
+
+body[data-theme="dark"] .trend-hit:hover {
+  stroke: rgba(245, 240, 230, 0.18);
+}
+
+@media (max-width: 1080px) {
+  .trend-cockpit-left,
+  .trend-cockpit-right {
+    grid-template-columns: 1fr;
+  }
+
+  .trend-cockpit-right svg {
+    grid-row: auto;
+  }
+
+  .trend-cockpit-right .trend-extremes,
+  .trend-cockpit-right .flow-stack {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) {
+  .month-ticks span {
+    font-size: 9px;
+  }
+
+  .trend-cockpit .trend-lens {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .trend-cockpit .trend-radar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .trend-cockpit-right .trend-extremes,
+  .trend-cockpit-right .flow-stack {
+    grid-template-columns: 1fr;
+  }
+}

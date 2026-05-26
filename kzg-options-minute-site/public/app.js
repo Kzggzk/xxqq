@@ -13,7 +13,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "v40";
+const UI_VERSION = "v45";
 
 const $ = (id) => document.getElementById(id);
 const fmt0 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
@@ -360,10 +360,14 @@ function renderTimelineShell() {
   }
   const monthTicks = $("monthTicks");
   monthTicks.style.gridTemplateColumns = monthGroups.map((group) => `${group.count}fr`).join(" ");
-  monthTicks.innerHTML = monthGroups.map((group) => {
+  const monthStep = monthGroups.length > 22 ? 4 : monthGroups.length > 15 ? 3 : monthGroups.length > 10 ? 2 : 1;
+  monthTicks.innerHTML = monthGroups.map((group, index) => {
     const [year, month] = group.month.split("-");
-    const label = state.lang === "zh" ? `${year.slice(2)}年${Number(month)}月` : `${year}/${month}`;
-    return `<span>${label}</span>`;
+    const isYearStart = month === "01";
+    const isEdge = index === 0 || index === monthGroups.length - 1;
+    const show = isEdge || isYearStart || index % monthStep === 0;
+    const label = timelineMonthLabel(year, month, isEdge || isYearStart);
+    return `<span class="${isYearStart ? "year" : ""}">${show ? label : ""}</span>`;
   }).join("");
 
   const maxVol = Math.max(...state.datesAsc.map((item) => Number(item.totalVol) || 0), 1);
@@ -373,6 +377,12 @@ function renderTimelineShell() {
     const height = 6 + ((Number(item.totalVol) || 0) / maxVol) * 30;
     return `<button type="button" data-index="${index}" style="--h:${height.toFixed(1)}px" title="${item.date} · ${wan(item.totalVol)}"></button>`;
   }).join("");
+}
+
+function timelineMonthLabel(year, month, showYear) {
+  const m = Number(month);
+  if (state.lang === "zh") return showYear ? `${year.slice(2)}年${m}月` : `${m}月`;
+  return showYear ? `${year.slice(2)}/${month}` : month;
 }
 
 async function loadDayByIndex(index) {
@@ -1252,6 +1262,11 @@ function renderTrend() {
           <polyline points="${lineVol}" fill="none" stroke="${change >= 0 ? "#c45335" : "#2f6190"}" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"></polyline>
           <polyline points="${linePremium}" fill="none" stroke="#a47419" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" opacity=".85"></polyline>
           <polyline points="${lineCp}" fill="none" stroke="#148355" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" opacity=".72"></polyline>
+          ${pointsVol.map((point) => {
+            const row = point.row;
+            const title = `${row.date} · ${wan(row.totalVol)} · ${moneyCompact(row.totalPremium)} · CP ${ratio(row.marketCp)}`;
+            return `<circle class="trend-hit" data-jump-date="${row.date}" cx="${point.x.toFixed(1)}" cy="${point.y.toFixed(1)}" r="${Math.max(7, 34 / Math.sqrt(rows.length)).toFixed(1)}"><title>${escapeHtml(title)}</title></circle>`;
+          }).join("")}
           ${trendMarker(highPoint, "high", state.lang === "zh" ? "高" : "H")}
           ${trendMarker(lowPoint, "low", state.lang === "zh" ? "低" : "L")}
           ${trendMarker(latestPoint, "latest", state.lang === "zh" ? "今" : "N")}
