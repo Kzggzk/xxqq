@@ -8237,6 +8237,16 @@ body[data-theme="dark"] .heat-lane-track {
 .pipeline-lead span,
 .pipeline-steps small,
 .pipeline-steps i,
+.checkout-simulation span,
+.checkout-simulation small,
+.checkout-simulation i,
+.unlock-lead span,
+.unlock-lead p,
+.unlock-lead small,
+.unlock-tabs i,
+.unlock-tabs span,
+.unlock-checklist i,
+.unlock-mini-tape b,
 .signal-stack-lead span,
 .signal-stack-lead p,
 .signal-stack-rows i,
@@ -8315,6 +8325,162 @@ body[data-theme="dark"] .heat-lane-track {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
+}
+
+.premium-unlock-deck {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.48fr) minmax(0, 1fr) minmax(300px, 0.62fr);
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.unlock-lead,
+.unlock-tabs button,
+.unlock-preview {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.unlock-lead {
+  display: grid;
+  align-content: center;
+  gap: 7px;
+  padding: 15px;
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.unlock-lead strong {
+  color: var(--ink);
+  font-size: 21px;
+  line-height: 1.05;
+}
+
+.unlock-lead p {
+  line-height: 1.45;
+}
+
+.unlock-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.unlock-tabs button {
+  display: grid;
+  align-content: start;
+  gap: 5px;
+  min-height: 112px;
+  padding: 12px;
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+}
+
+.unlock-tabs button.active {
+  border-color: rgba(154, 106, 18, 0.56);
+  background: rgba(234, 217, 174, 0.24);
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.unlock-tabs b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.15;
+  text-overflow: ellipsis;
+}
+
+.unlock-preview {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.52fr) minmax(0, 1fr);
+  gap: 8px;
+  padding: 10px;
+  background:
+    linear-gradient(90deg, rgba(154, 106, 18, 0.06), transparent 55%),
+    rgba(251, 250, 246, 0.72);
+}
+
+.unlock-preview.is-blurred {
+  filter: blur(4.2px);
+  opacity: 0.72;
+  pointer-events: none;
+  user-select: none;
+}
+
+.unlock-checklist {
+  display: grid;
+  gap: 7px;
+}
+
+.unlock-checklist span {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  padding: 9px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.unlock-checklist span.hot {
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
+.unlock-checklist span.cool {
+  box-shadow: inset 3px 0 0 #2f6190;
+}
+
+.unlock-checklist b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.unlock-mini-tape {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 3px;
+  align-items: end;
+  min-height: 116px;
+}
+
+.unlock-mini-tape button {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) 14px;
+  align-items: end;
+  min-width: 0;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.unlock-mini-tape i {
+  display: block;
+  width: 100%;
+  height: var(--h);
+  min-height: 8px;
+  background: rgba(154, 106, 18, 0.34);
+}
+
+.unlock-mini-tape .hot i {
+  background: rgba(196, 83, 53, 0.48);
+}
+
+.unlock-mini-tape .cool i {
+  background: rgba(47, 97, 144, 0.46);
+}
+
+.unlock-mini-tape b {
+  overflow: hidden;
+  margin-top: 4px;
+  text-align: center;
+  text-overflow: clip;
+  white-space: nowrap;
 }
 
 .premium-card {
@@ -9093,6 +9259,59 @@ body[data-theme="dark"] .heat-lane-track {
   line-height: 1.45;
 }
 
+.checkout-simulation {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.48fr) minmax(0, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+  padding: 11px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(90deg, rgba(47, 97, 144, 0.06), transparent 62%),
+    rgba(255, 255, 255, 0.58);
+}
+
+.checkout-simulation > div {
+  min-width: 0;
+}
+
+.checkout-simulation > div:first-child {
+  display: grid;
+  align-content: center;
+  gap: 5px;
+}
+
+.checkout-simulation > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.checkout-simulation b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.checkout-simulation span {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid var(--line);
+  background: rgba(251, 250, 246, 0.7);
+}
+
+.checkout-simulation > div:first-child span {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
 .billing-panel {
   display: grid;
   align-content: start;
@@ -9337,6 +9556,10 @@ body.modal-open {
 body[data-theme="dark"] .button.pro-button,
 body[data-theme="dark"] .access-copy,
 body[data-theme="dark"] .premium-preview,
+body[data-theme="dark"] .premium-unlock-deck .unlock-lead,
+body[data-theme="dark"] .premium-unlock-deck .unlock-tabs button,
+body[data-theme="dark"] .premium-unlock-deck .unlock-preview,
+body[data-theme="dark"] .unlock-checklist span,
 body[data-theme="dark"] .premium-card,
 body[data-theme="dark"] .premium-quadrant-copy,
 body[data-theme="dark"] .premium-quadrant-map,
@@ -9352,6 +9575,8 @@ body[data-theme="dark"] .lookback-tabs button,
 body[data-theme="dark"] .account-sheet,
 body[data-theme="dark"] .account-status-grid span,
 body[data-theme="dark"] .login-method-grid button,
+body[data-theme="dark"] .checkout-simulation,
+body[data-theme="dark"] .checkout-simulation span,
 body[data-theme="dark"] .billing-row,
 body[data-theme="dark"] .billing-console button,
 body[data-theme="dark"] .billing-date-picker button,
@@ -9379,6 +9604,14 @@ body[data-theme="dark"] .account-sheet {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .premium-unlock-deck {
+    grid-template-columns: 1fr;
+  }
+
+  .unlock-preview {
+    grid-template-columns: 1fr;
+  }
+
   .premium-quadrant {
     grid-template-columns: 1fr;
   }
@@ -9401,6 +9634,10 @@ body[data-theme="dark"] .account-sheet {
   }
 
   .login-method-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-simulation {
     grid-template-columns: 1fr;
   }
 
@@ -9434,7 +9671,8 @@ body[data-theme="dark"] .account-sheet {
   }
 
   .premium-grid,
-  .pricing-grid {
+  .pricing-grid,
+  .unlock-tabs {
     grid-template-columns: 1fr;
   }
 
@@ -9481,6 +9719,19 @@ body[data-theme="dark"] .account-sheet {
 
   .signal-stack-tape b {
     display: none;
+  }
+
+  .unlock-mini-tape {
+    gap: 2px;
+    min-height: 88px;
+  }
+
+  .unlock-mini-tape b {
+    display: none;
+  }
+
+  .checkout-simulation > div:last-child {
+    grid-template-columns: 1fr;
   }
 
   .billing-console button,

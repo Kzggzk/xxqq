@@ -16,12 +16,13 @@ const state = {
   selectedLogin: "email",
   selectedBillingAction: "upgrade",
   selectedBillingDate: "1",
+  selectedUnlockScope: "history",
   checkoutMessage: "",
   lang: localStorage.getItem("kzg-option-house-lang") || "zh",
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "v64";
+const UI_VERSION = "v65";
 
 const $ = (id) => document.getElementById(id);
 const fmt0 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
@@ -418,6 +419,13 @@ async function loadIndex() {
       loadDayByDate(premiumJumpTarget.dataset.jumpDate);
       return;
     }
+    const unlockScopeTarget = event.target.closest("[data-unlock-scope]");
+    if (unlockScopeTarget) {
+      event.preventDefault();
+      state.selectedUnlockScope = unlockScopeTarget.dataset.unlockScope || state.selectedUnlockScope;
+      renderPremiumPreview();
+      return;
+    }
     const lookbackTarget = event.target.closest("[data-pro-lookback]");
     if (lookbackTarget) {
       event.preventDefault();
@@ -596,6 +604,7 @@ function renderAccountModal() {
         <div class="checkout-note ${state.checkoutMessage ? "visible" : ""}">
           ${escapeHtml(state.checkoutMessage || (state.lang === "zh" ? "点击套餐会显示对应支付接入轨道；不会发起真实扣费。" : "Click a plan to preview payment wiring; no real charge will be started."))}
         </div>
+        ${checkoutSimulationCard()}
       </section>
       <section class="billing-panel">
         <div class="account-section-head">
@@ -731,6 +740,41 @@ function accountPipelineCard() {
             <small>${escapeHtml(step[1])}</small>
           </span>
         `).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function checkoutSimulationCard() {
+  const locale = state.lang === "zh" ? "zh" : "en";
+  const selectedPlan = pricingPlans.find((item) => item.id === state.selectedPlan) || pricingPlans[1];
+  const rail = state.selectedRail === "stripe"
+    ? "Stripe Billing"
+    : state.selectedRail === "wallet"
+      ? "Wallet mapping"
+      : "WeChat QR";
+  const rows = state.lang === "zh"
+    ? [
+      ["Checkout mode", state.selectedPlan === "lifetime" ? "payment" : "subscription"],
+      ["Price object", `${selectedPlan[locale].price} ${selectedPlan[locale].cycle}`],
+      ["Portal 权限", "升级 / 降级 / 发票 / 付款方式"],
+      ["Webhook", "checkout.session.completed -> entitlement"],
+    ]
+    : [
+      ["Checkout mode", state.selectedPlan === "lifetime" ? "payment" : "subscription"],
+      ["Price object", `${selectedPlan[locale].price} ${selectedPlan[locale].cycle}`],
+      ["Portal access", "upgrade / downgrade / invoices / payment method"],
+      ["Webhook", "checkout.session.completed -> entitlement"],
+    ];
+  return `
+    <div class="checkout-simulation">
+      <div>
+        <span>${state.lang === "zh" ? "结算预演" : "Checkout preview"}</span>
+        <b>${escapeHtml(selectedPlan[locale].name)} · ${escapeHtml(rail)}</b>
+        <small>${state.lang === "zh" ? "这里只是产品前端，不会创建真实 Session。" : "Interface-only; no real Session is created here."}</small>
+      </div>
+      <div>
+        ${rows.map((row) => `<span><i>${escapeHtml(row[0])}</i><b>${escapeHtml(row[1])}</b></span>`).join("")}
       </div>
     </div>
   `;
@@ -895,6 +939,7 @@ function renderPremiumPreview() {
       </div>
       <button type="button" data-open-account>${locked ? t("upgrade") : (state.lang === "zh" ? "查看 Pro" : "View Pro")}</button>
     </div>
+    ${premiumUnlockDeck(rows, locked)}
     <div class="premium-grid ${locked ? "is-blurred" : ""}">
       ${premiumCard(state.lang === "zh" ? "轮动象限回看" : "Rotation lookback", lead.symbol || "--", `${attack.length}/${fade.length}`, state.lang === "zh" ? "量价同升 vs 同步降温" : "warming vs cooling")}
       ${premiumCard(state.lang === "zh" ? "异常分钟雷达" : "Anomaly minute radar", maxBucket.time || "--", wan(maxBucket.total || 0), state.lang === "zh" ? "峰值桶 + 历史偏离" : "peak bucket + history drift")}
@@ -906,6 +951,136 @@ function renderPremiumPreview() {
     ${premiumQuadrantPreview(rows, locked)}
     ${locked ? `<button type="button" class="premium-lock" data-open-account><b>${t("paywallTitle")}</b><span>${t("paywallSub")}</span></button>` : ""}
   `;
+}
+
+function premiumUnlockDeck(rows, locked) {
+  const scopes = unlockScopes(rows);
+  const active = scopes.find((item) => item.id === state.selectedUnlockScope) || scopes[0];
+  const daily = state.analytics?.daily || state.datesAsc || [];
+  const bars = daily.slice(Math.max(0, state.selectedIndex - 11), state.selectedIndex + 1);
+  const maxVol = Math.max(...bars.map((row) => Number(row.totalVol) || 0), 1);
+  const symbolCount = Object.keys(state.analytics?.symbols || {}).length || rows.length || 0;
+  const archiveCopy = state.lang === "zh"
+    ? `${fmt0.format(daily.length)} 个交易日 · ${fmt0.format(symbolCount)} 个标的历史 · 最新日免费，历史深挖进入 Pro。`
+    : `${fmt0.format(daily.length)} sessions · ${fmt0.format(symbolCount)} symbols · latest day free, deep history is Pro.`;
+  return `
+    <div class="premium-unlock-deck ${locked ? "is-locked" : ""}">
+      <div class="unlock-lead">
+        <span>${state.lang === "zh" ? "Pro 解锁地图" : "Pro unlock map"}</span>
+        <strong>${escapeHtml(active.title)}</strong>
+        <p>${escapeHtml(active.copy)}</p>
+        <small>${escapeHtml(archiveCopy)}</small>
+      </div>
+      <div class="unlock-tabs">
+        ${scopes.map((item) => `
+          <button type="button" class="${item.id === active.id ? "active" : ""}" data-unlock-scope="${escapeHtml(item.id)}">
+            <i>${escapeHtml(item.kicker)}</i>
+            <b>${escapeHtml(item.title)}</b>
+            <span>${escapeHtml(item.value)}</span>
+          </button>
+        `).join("")}
+      </div>
+      <div class="unlock-preview ${locked ? "is-blurred" : ""}">
+        <div class="unlock-checklist">
+          ${active.rows.map((row) => `
+            <span class="${row[2]}">
+              <i>${escapeHtml(row[0])}</i>
+              <b>${escapeHtml(row[1])}</b>
+            </span>
+          `).join("")}
+        </div>
+        <div class="unlock-mini-tape" aria-hidden="true">
+          ${bars.map((row, index) => {
+            const prev = bars[index - 1];
+            const move = prev?.totalVol ? ((Number(row.totalVol) - Number(prev.totalVol)) / Number(prev.totalVol)) * 100 : 0;
+            const cls = move >= 8 ? "hot" : move <= -8 ? "cool" : "flat";
+            const height = Math.max(18, ((Number(row.totalVol) || 0) / maxVol) * 100);
+            return `<button type="button" class="${cls}" data-jump-date="${escapeHtml(row.date)}" style="--h:${height.toFixed(1)}%"><i></i><b>${shortDate(row.date)}</b></button>`;
+          }).join("")}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function unlockScopes(rows) {
+  const daily = state.analytics?.daily || [];
+  const allRows = uniqueSymbolRows();
+  const premiumLead = allRows.reduce((best, row) => Number(row.premiumNotional) > Number(best.premiumNotional || 0) ? row : best, allRows[0] || {});
+  const attack = rows.filter((row) => row.delta >= 0 && row.premiumDelta >= 0);
+  const fade = rows.filter((row) => row.delta < 0 && row.premiumDelta < 0);
+  const topMomentum = attack[0] || rows[0] || {};
+  const historyHigh = daily.slice(0, state.selectedIndex + 1).reduce((best, row) => Number(row.totalVol) > Number(best.totalVol || 0) ? row : best, daily[0] || {});
+  if (state.lang !== "zh") {
+    return [
+      {
+        id: "history",
+        kicker: "Archive",
+        title: "Historical cockpit",
+        value: `${fmt0.format(daily.length)}D`,
+        copy: "Full historical dates, comparison windows, prior extremes, and locked-date navigation become a paid workspace.",
+        rows: [["History dates", `${fmt0.format(daily.length)} sessions`, "hot"], ["Current high", shortDate(historyHigh.date || state.day.tradeDate), "flat"], ["Locked dates", "blur preview now", "cool"]],
+      },
+      {
+        id: "prediction",
+        kicker: "Signal",
+        title: "Predictive attribution",
+        value: topMomentum.symbol || "--",
+        copy: "Momentum, premium slope, CP pressure, and rotation breadth are joined into a usable research layer.",
+        rows: [["Leader", topMomentum.symbol || "--", "hot"], ["Warming", `${attack.length} symbols`, "hot"], ["Cooling", `${fade.length} symbols`, "cool"]],
+      },
+      {
+        id: "export",
+        kicker: "PNG",
+        title: "Clean export lane",
+        value: "Pro",
+        copy: "Free keeps subtle KZG branding. Pro can later unlock cleaner client-facing exports without breaking the old sheet.",
+        rows: [["Free", "KZG branded", "flat"], ["Pro", "clean path", "hot"], ["Format", "old sheet preserved", "flat"]],
+      },
+      {
+        id: "alerts",
+        kicker: "Watch",
+        title: "Watchlist alerts",
+        value: premiumLead.symbol || "--",
+        copy: "Future email, wallet, or WeChat identity can bind alert rules to symbols and rotation events.",
+        rows: [["Premium lead", premiumLead.symbol || "--", "hot"], ["Rail", "email / wallet / WeChat", "flat"], ["Status", "queued", "cool"]],
+      },
+    ];
+  }
+  return [
+    {
+      id: "history",
+      kicker: "档案",
+      title: "历史驾驶舱",
+      value: `${fmt0.format(daily.length)}日`,
+      copy: "完整历史日期、对比窗口、前高前低和锁定日期导航，都会成为付费工作台。",
+      rows: [["历史日期", `${fmt0.format(daily.length)} 个交易日`, "hot"], ["当前高点", shortDate(historyHigh.date || state.day.tradeDate), "flat"], ["锁定日期", "当前只给模糊预览", "cool"]],
+    },
+    {
+      id: "prediction",
+      kicker: "信号",
+      title: "预测归因",
+      value: topMomentum.symbol || "--",
+      copy: "动量、权利金斜率、CP 压力和轮动扩散会合成更可用的研究层。",
+      rows: [["主导标的", topMomentum.symbol || "--", "hot"], ["升温", `${attack.length} 个标的`, "hot"], ["降温", `${fade.length} 个标的`, "cool"]],
+    },
+    {
+      id: "export",
+      kicker: "导出",
+      title: "无水印导出路线",
+      value: "Pro",
+      copy: "免费版保留细微 KZG 品牌植入；Pro 后续可开更干净的客户展示图，同时不破坏旧日报表格格式。",
+      rows: [["免费版", "KZG 品牌版", "flat"], ["Pro", "可接无额外水印", "hot"], ["格式", "旧日报样式保留", "flat"]],
+    },
+    {
+      id: "alerts",
+      kicker: "提醒",
+      title: "订阅组合提醒",
+      value: premiumLead.symbol || "--",
+      copy: "后续邮箱、钱包或微信身份可以绑定标的、轮动象限和异常分钟提醒。",
+      rows: [["权利金锚", premiumLead.symbol || "--", "hot"], ["身份轨道", "邮箱 / 钱包 / 微信", "flat"], ["状态", "待接入", "cool"]],
+    },
+  ];
 }
 
 function premiumLookbackPanel(locked) {
