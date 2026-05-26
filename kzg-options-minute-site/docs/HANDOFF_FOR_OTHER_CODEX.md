@@ -19,7 +19,7 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
 - Production version last verified / 最近生产验证版本: `1.40`
-- Local version last verified / 最近本地验证版本: `1.40`
+- Local version last verified / 最近本地验证版本: `1.41`
 - Latest unique deploy / 最近唯一部署: `https://6a157e2c75d8fa059c5e904c--kzg-option-house.netlify.app/`
 - iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.2`
 - Latest verified data date / 最近验证数据日: `2026-05-22`

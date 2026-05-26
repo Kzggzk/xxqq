@@ -29,7 +29,7 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
 - 最近验证唯一部署: `https://6a157e2c75d8fa059c5e904c--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.40`
-- 最近本地验证 UI 版本: `1.40`
+- 最近本地验证 UI 版本: `1.41`
 - 当前 iOS 伴生版本: `0.2`，对应 Web `1.40`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
@@ -47,7 +47,7 @@ English:
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
 - Latest verified unique deploy: `https://6a157e2c75d8fa059c5e904c--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.40`
-- Latest locally verified UI version: `1.40`
+- Latest locally verified UI version: `1.41`
 - Current iOS companion version: `0.2`, mapped to Web `1.40`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
@@ -179,6 +179,20 @@ English:
 Around 2026-05-26 19:08 Asia/Shanghai, Web `1.40` became the new production checkpoint. The public site only keeps user-facing value expression: latest-day free insight, blurred advanced preview, live-layer silhouette, and KZG-branded PNG export boundary. Payment, domain, registration, API plan, pricing, authorization path, backend plan, and commercial experiments remain only in GitHub docs, Apple Notes, `.private`, or this thread. Unique production deploy is `https://6a157e2c75d8fa059c5e904c--kzg-option-house.netlify.app/`; main production is `https://kzg-option-house.netlify.app/`.
 
 Verified facts this round: `505` trading days, range `2024-05-17 -> 2026-05-22`, latest `2026-05-22`; mobile `390x844` has no horizontal overflow and topbar `89px`; PNG export `/tmp/kzg-option-house-v140-export.png` is `885,309` bytes; production `/data/index.json` and `/assets/kzg-pack.js` both remain `404`. iOS companion is synced to `0.2` and Swift source typecheck passes, but full Xcode destination build is blocked by the local simulator runtime versus `iphonesimulator26.5` SDK destination mismatch. No App Store/TestFlight/signing/developer-account action was performed.
+
+## 4.2 v1.41 local density checkpoint / v1.41 本地密度检查点
+
+中文:
+
+北京时间 2026-05-26 19:19 左右，Web `1.41` 成为新的本地检查点，但没有部署生产。它承接 v1.40 生产后第一轮继续打磨：不改 PNG 老日报，不加入真实付费，不公开域名/API/授权方案，只把公开 dashboard 下半段的高级情报、历史回看、实时轮廓、信号栈和轮动象限继续压缩间距。目的不是多堆功能，而是让已有数据更像一台连续金融终端，减少高级模块带来的松散白块。
+
+验证事实：`node --check public/app.js` 通过；build 仍是 `505` 天，最新 `2026-05-22`，analytics symbols `98`；内置 Browser 默认视口和手机视口无 console error，主题按钮从 light 切到 dark；Chrome/CDP 桌面 `1440x1100` 与手机 `390x844` 均无横向溢出；手机 topbar 约 `87px`，`KZG OPTION HOUSE` 完整可见；公开风险词扫描为 0；PNG 导出 `/tmp/kzg-option-house-v141-export-final.png` 大小 `885,309` bytes。生产仍是 v1.40。
+
+English:
+
+Around 2026-05-26 19:19 Asia/Shanghai, Web `1.41` became the new local checkpoint, but it was not deployed to production. It is the first polishing step after the v1.40 production checkpoint: it does not change the old KZG PNG sheet, does not launch real payment, and does not publish domain/API/authorization mechanics. It tightens lower-dashboard spacing across advanced intelligence, history lookback, live silhouette, signal stack, and rotation quadrant. The purpose is not to pile on more features, but to make existing data read more like a continuous financial terminal with fewer loose blank blocks.
+
+Verified facts: `node --check public/app.js` passed; build remains `505` days, latest `2026-05-22`, analytics symbols `98`; in-app Browser default and mobile viewports have no console errors, and the theme button switches from light to dark; Chrome/CDP desktop `1440x1100` and mobile `390x844` both have no horizontal overflow; mobile topbar is about `87px`, and `KZG OPTION HOUSE` is fully visible; public-risk scan is 0; PNG export `/tmp/kzg-option-house-v141-export-final.png` is `885,309` bytes. Production remains v1.40.
 
 ## 5. SaaS architecture / SaaS 架构
 

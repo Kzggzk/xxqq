@@ -11466,3 +11466,247 @@ body[data-theme="dark"] .lock-preview-chips i {
     padding-right: 18px;
   }
 }
+
+/* v1.41 pass: tighten lower-dashboard rhythm without changing the KZG PNG sheet. */
+.premium-preview {
+  scroll-margin-top: 88px;
+}
+
+@media (min-width: 1181px) {
+  .premium-preview {
+    padding: 12px;
+  }
+
+  .premium-head {
+    padding-bottom: 9px;
+  }
+
+  .premium-head h2 {
+    font-size: 16px;
+    line-height: 1.05;
+  }
+
+  .premium-head p {
+    max-width: 520px;
+    line-height: 1.42;
+  }
+
+  .premium-unlock-deck {
+    grid-template-columns: minmax(198px, 0.38fr) minmax(0, 1fr) minmax(262px, 0.52fr);
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .unlock-lead,
+  .unlock-preview,
+  .premium-card,
+  .premium-quadrant-copy,
+  .premium-quadrant-stats span,
+  .lookback-head,
+  .lookback-metrics span,
+  .signal-stack-lead,
+  .signal-stack-rows span,
+  .live-silhouette-lead,
+  .live-silhouette-lanes span,
+  .live-silhouette-stream {
+    border-color: rgba(201, 194, 178, 0.86);
+  }
+
+  .unlock-lead,
+  .unlock-preview {
+    padding: 10px;
+  }
+
+  .unlock-lead strong {
+    font-size: 18px;
+  }
+
+  .unlock-tabs {
+    gap: 6px;
+  }
+
+  .unlock-tabs button {
+    min-height: 86px;
+    padding: 9px;
+  }
+
+  .unlock-tabs b,
+  .unlock-checklist b {
+    font-size: 12px;
+  }
+
+  .premium-grid {
+    gap: 7px;
+  }
+
+  .premium-card {
+    min-height: 74px;
+    padding: 10px;
+  }
+
+  .premium-card strong {
+    font-size: 20px;
+  }
+
+  .premium-lookback,
+  .premium-signal-stack,
+  .live-silhouette,
+  .premium-quadrant {
+    margin-top: 8px;
+  }
+
+  .lookback-body {
+    grid-template-columns: minmax(0, 1fr) minmax(224px, 0.36fr);
+    gap: 8px;
+    padding: 9px 10px 10px;
+  }
+
+  .lookback-chart {
+    min-height: 96px;
+    gap: 3px;
+    padding: 8px;
+  }
+
+  .lookback-metrics {
+    gap: 6px;
+  }
+
+  .lookback-metrics span {
+    padding: 8px;
+  }
+
+  .lookback-metrics b {
+    font-size: 17px;
+  }
+
+  .premium-signal-stack {
+    grid-template-columns: minmax(184px, 0.34fr) minmax(260px, 0.58fr) minmax(226px, 0.5fr);
+    gap: 8px;
+  }
+
+  .signal-stack-lead,
+  .signal-stack-rows span {
+    padding: 10px;
+  }
+
+  .signal-stack-lead strong {
+    font-size: 30px;
+  }
+
+  .signal-stack-rows {
+    gap: 6px;
+  }
+
+  .signal-stack-rows b {
+    font-size: 18px;
+  }
+
+  .signal-stack-tape {
+    gap: 5px;
+    padding: 9px;
+  }
+
+  .live-silhouette {
+    grid-template-columns: minmax(178px, 0.4fr) minmax(0, 0.68fr) minmax(280px, 1fr);
+  }
+
+  .live-silhouette-lead strong {
+    font-size: 28px;
+  }
+
+  .premium-quadrant {
+    grid-template-columns: minmax(196px, 0.44fr) minmax(0, 1fr) minmax(152px, 0.32fr);
+  }
+
+  .premium-quadrant-copy {
+    padding: 12px;
+  }
+
+  .premium-quadrant-copy strong {
+    font-size: 19px;
+  }
+
+  .premium-quadrant-map {
+    min-height: 220px;
+  }
+
+  .premium-quadrant-stats {
+    gap: 6px;
+  }
+
+  .premium-quadrant-stats span {
+    padding: 9px;
+  }
+}
+
+@media (max-width: 760px) {
+  .report-stage .kzg-report {
+    max-height: 780px;
+  }
+
+  .report-stage .kzg-report::after {
+    height: 58px;
+  }
+
+  .premium-head {
+    gap: 6px;
+  }
+
+  .premium-head h2 {
+    font-size: 15px;
+  }
+
+  .premium-unlock-deck,
+  .premium-lookback,
+  .premium-signal-stack,
+  .live-silhouette,
+  .premium-quadrant {
+    margin-top: 8px;
+  }
+
+  .unlock-tabs button,
+  .premium-card,
+  .lookback-metrics span,
+  .signal-stack-rows span,
+  .premium-quadrant-stats span {
+    padding: 8px;
+  }
+
+  .unlock-tabs button {
+    min-height: 72px;
+  }
+
+  .lookback-chart {
+    min-height: 92px;
+  }
+
+  .live-silhouette-lead strong,
+  .signal-stack-lead strong {
+    font-size: 28px;
+  }
+
+  .premium-quadrant-map {
+    min-height: 214px;
+  }
+}
+
+@media (max-width: 520px) {
+  .mark {
+    width: 34px;
+    height: 34px;
+    font-size: 13px;
+  }
+
+  .brand {
+    gap: 7px;
+  }
+
+  .brand h1 {
+    font-size: 16px;
+  }
+
+  .brand p {
+    font-size: 7.5px;
+    letter-spacing: 0.07em;
+  }
+}
