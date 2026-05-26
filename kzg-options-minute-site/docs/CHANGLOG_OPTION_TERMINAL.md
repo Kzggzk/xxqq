@@ -26,15 +26,15 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 分支: `feat/kzg-option-house-daily-auto`
 - 远端: `https://github.com/Kzggzk/xxqq.git`
 - 生产站: `https://kzg-option-house.netlify.app/`
-- 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.56` flow-book pass，具体 commit 以最新 GitHub backup 提交为准
-- 最近验证唯一部署: `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`
-- 最近生产 UI 显示版本: `1.56`
-- 最近本地稠密版本: `1.59`，本轮为 Web 三段式产品脊柱和公开供应商标签清理，公开 Web 生产仍为 `1.56`
+- 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.60` realtime Flow Router pass，具体 commit 以最新 GitHub backup 提交为准
+- 最近验证唯一部署: `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`
+- 最近生产 UI 显示版本: `1.60`
+- 最近本地稠密版本: `1.60`，本轮为 Web realtime reserve Flow Router 压缩和手机 timeboard 修正，已部署生产
 - 当前 iOS 伴生版本: `0.5`，对应稠密 Web `1.57`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；当前本机目录没有找到 `2023-*.csv.gz`
-- Apple Notes: 需要置顶同名 note，作为 owner-facing 操作日志
+- Apple Notes: 置顶同名 note 已在 v1.60 后同步，`updated=1`，`created=0`，正文约 `157,747` chars
 - GitHub: 需要持续提交 docs，让另一个 Codex 能从仓库继续
 
 English:
@@ -44,18 +44,48 @@ English:
 - Branch: `feat/kzg-option-house-daily-auto`
 - Remote: `https://github.com/Kzggzk/xxqq.git`
 - Production site: `https://kzg-option-house.netlify.app/`
-- Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.56` flow-book pass; exact commit is the latest GitHub backup commit
-- Latest verified unique deploy: `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`
-- Latest visible production UI version: `1.56`
-- Latest local dense version: `1.59`, used for Web three-sector product spine and public provider-label cleanup while public Web production remains `1.56`
+- Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.60` realtime Flow Router pass; exact commit is the latest GitHub backup commit
+- Latest verified unique deploy: `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`
+- Latest visible production UI version: `1.60`
+- Latest local dense version: `1.60`, used for Web realtime reserve Flow Router compression and mobile timeboard correction, now deployed to production
 - Current iOS companion version: `0.5`, mapped to dense Web `1.57`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; no local `2023-*.csv.gz` files were found in the verified folder
-- Apple Notes: maintain a pinned note with this title for owner-facing continuity
+- Apple Notes: pinned note with this title was synced after v1.60, `updated=1`, `created=0`, about `157,747` body characters
 - GitHub: keep docs committed so another Codex can continue from the repository
 
-## 1A. Latest heartbeat record v1.57 / 最新心跳记录 v1.57
+## 1A. Latest heartbeat record v1.60 / 最新心跳记录 v1.60
+
+中文:
+
+北京时间 2026-05-27 01:25 左右，稠密版本 `1.60` 进入 Web realtime reserve 的结构压缩。本轮继续执行 Fangbao 的最新产品边界：当前已经生成的分钟聚合能力全部开放，不能 blur、lock 或 paywall；只有未来 realtime option-flow tape/reserve 可以作为预留体验。真实 API key、供应商、套餐、支付、域名、注册、账号、升级降级和内部商业规划仍不得出现在公开站。
+
+改动文件：`public/app.js`、`public/styles.css`、`docs/CHANGELOG.md`、`docs/CHANGLOG_OPTION_TERMINAL.md`，以及后续同步的 realtime/product 状态文档。`public/app.js` 把 `UI_VERSION` 提到 `1.60`，并新增 `realtimeFlowRouter()`。它在 realtime reserve 顶部加入一层 Flow Router：方向门、权利金门、策略门、风险门、16 格暗色微型 tape，以及量价同升、同步降温、峰值分钟摘要。这个模块的意义是把未来实时流的产品逻辑讲清楚：先把成交流分路由，再做解释和二级页面，而不是在公开页继续堆复杂按钮。
+
+视觉意图：v1.59 已经建立三段式页面脊柱；v1.60 则把第二段 realtime reserve 的开场压得更像金融终端。桌面是解释栏、四个 gate、暗色路由 tape 的三列；手机端自动收成单列和双列。另补一个手机 timeboard 修正，把交易日时间轴标题和覆盖日期放在滑条上方，避免标题竖排或压进 chart lane。它应该增强未来实时流的速度感和产品感，但不把历史层或当前派生功能锁起来。
+
+边界：本轮仍不接真实凭证、不做 Massive 升级、不购买域名、不创建 payment、不卡历史数据、不改 PNG 老日报表格风格、不触碰 KZG OS 保护路径。截图里暴露过的 key 继续视为已暴露，任何真实接入前必须轮换。
+
+验证与部署：`node --check public/app.js` 通过；`git diff --check` 通过；公开风险词扫描 `public/app.js public/index.html public/styles.css` 无命中。构建生成 `505` 天 payload，latest `2026-05-22`，analytics symbols `98`，最终 pack asset `kzg-frame-9969016096ae.js`，`per_day_to_dist` 返回 `copied=505`。Browser 本地确认 v1.60、三段 sector、Flow Router、4 个 gate、16 格 router tape、旧锁层 0、旧 `.is-blurred` 0、横向溢出 0。Playwright 本地 dist 和线上唯一部署均验证桌面/手机：console issue 0，404 响应 0，公开风险词 false，`user-select:none`，右键 contextmenu 被阻止，实时 tape blur 为 `blur(2.7px) saturate(1.25)`，手机 timeboard title `nowrap`。PNG 导出本地与线上均成功，大小 `1,482,138` bytes。生产站 `https://kzg-option-house.netlify.app/` 已更新，唯一部署 `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`，deploy id `6a15daeafdbe07993e28b173`。Apple Notes 置顶 `CHANGLOG 期权终端` 已从本文件同步，结果 `updated=1`，`created=0`，正文约 `157,747` chars。
+
+下一步：v1.61 优先压缩手机 realtime reserve 长度，复查 Flow Router 到历史轮动之间的滚动节奏，继续保持当前生成分钟能力开放，不接真实 key、不做真实升级、不花钱、不提交 raw data。
+
+English:
+
+Around 2026-05-27 01:25 Asia/Shanghai, dense version `1.60` moved into Web realtime-reserve compression. This round follows Fangbao's latest boundary: current generated minute-aggregate capabilities are fully open and must not be blurred, locked, or paywalled. Only the future realtime option-flow tape/reserve may use a reserve treatment. Real API keys, provider names, plan details, payment, domains, registration, accounts, upgrade/downgrade copy, and internal commercial planning still must not appear on the public site.
+
+Changed files: `public/app.js`, `public/styles.css`, `docs/CHANGELOG.md`, `docs/CHANGLOG_OPTION_TERMINAL.md`, plus the realtime/product status docs synced afterward. `public/app.js` moves `UI_VERSION` to `1.60` and adds `realtimeFlowRouter()`. It adds a Flow Router layer at the top of the realtime reserve: bias gate, premium gate, strategy gate, risk gate, 16-cell dark micro tape, and a summary for volume-premium warming, cooling, and peak minute. The point is to clarify future live-flow product logic: route the tape first, then explain it and open detail pages, instead of piling more complex buttons onto the public page.
+
+Visual intent: v1.59 established the three-sector page spine; v1.60 makes the second sector's opening feel more like a finance terminal. Desktop uses three columns: explanation rail, four gates, and dark routing tape. Mobile collapses into single/two-column layers. It also adds a mobile timeboard correction that keeps the trading-timeline title and coverage dates above the slider, preventing the title from turning vertical or entering the chart lane. It should increase the sense of speed and product power without locking historical or current derived features.
+
+Boundary: this round still does not connect real credentials, upgrade Massive, buy domains, create payments, lock historical data, alter the old KZG PNG sheet style, or touch protected KZG OS paths. Keys exposed in screenshots remain treated as compromised and must be rotated before any real integration.
+
+Verification and deploy: `node --check public/app.js` passed; `git diff --check` passed; public-risk scan over `public/app.js public/index.html public/styles.css` had no matches. Build produced a `505`-day payload, latest `2026-05-22`, analytics symbols `98`, final pack asset `kzg-frame-9969016096ae.js`, and `per_day_to_dist` returned `copied=505`. Browser locally confirmed v1.60, three sector cards, Flow Router, 4 gates, 16 router-tape cells, 0 old lock layers, 0 old `.is-blurred` nodes, and 0 horizontal overflow. Playwright verified both local dist and the live unique deploy on desktop/phone: 0 console issues, 0 bad responses, public-risk false, `user-select:none`, right-click contextmenu prevented, realtime tape blur `blur(2.7px) saturate(1.25)`, and mobile timeboard title `nowrap`. PNG export succeeded locally and live at `1,482,138` bytes. Production site `https://kzg-option-house.netlify.app/` is updated; unique deploy `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`; deploy id `6a15daeafdbe07993e28b173`. Pinned Apple Notes `CHANGLOG 期权终端` was synced from this file: `updated=1`, `created=0`, about `157,747` body characters.
+
+Next: v1.61 should compress the mobile realtime-reserve length, recheck the scroll rhythm from Flow Router into historical rotation, keep current generated-minute capabilities open, and still avoid real keys, real upgrades, spending, or raw-data commits.
+
+## 1B. Latest heartbeat record v1.57 / 最新心跳记录 v1.57
 
 中文:
 

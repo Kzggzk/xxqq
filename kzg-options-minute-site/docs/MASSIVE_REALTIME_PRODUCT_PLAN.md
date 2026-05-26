@@ -250,7 +250,7 @@ Future commercial candidate after approval:
 - Feed tape modes: hot burst, cooling, premium-led, volume-led, hedge-defense, gamma watch / Feed tape 模式：爆发、降温、权利金先行、量能先行、防守、gamma 观察。
 - Consumer explanations: "why this moved", "what changed in the last 5 minutes", "what is unusual versus 20D" / 消费者解释层：为什么动、过去 5 分钟变了什么、相对 20D 哪里异常。
 
-## Dense roadmap v1.51-v1.58 / 稠密路线 v1.51-v1.58
+## Dense roadmap v1.51-v1.60 / 稠密路线 v1.51-v1.60
 
 - v1.51: public live-feed silhouette and internal Massive architecture research. No real key. No public provider/price. / 公开实时流轮廓与内部 Massive 架构研究。不接真实 key，不公开供应商/价格。
 - v1.52: internal mock feed schema and adapter using generated/mock events from existing minute data. / 用现有分钟数据生成 mock event，建立内部 feed schema 和 adapter。
@@ -260,6 +260,27 @@ Future commercial candidate after approval:
 - v1.56: flow-book and strategy-filter refinement for the future realtime reserve, still generated/mock and not a real feed. / 未来 realtime reserve 的 flow book 与策略过滤树细化，仍为生成/mock，不是真实 feed。
 - v1.57: iOS companion `0.5` syncs the same boundary: top open dashboard, middle future realtime reserve, bottom open historical layer. No real key and no client-side provider connection. / iOS 伴生 `0.5` 同步同一边界：顶部开放 dashboard、中段未来实时 reserve、底部开放历史层。不接真实 key，不让客户端直连供应商。
 - v1.58: Web reserve transition pass: three-sector transition rail plus filter-weight rail, still generated/mock and not a real feed. / Web reserve 过渡优化：三段 transition rail 加 filter 权重 rail，仍为生成/mock，不是真实 feed。
+- v1.59: public three-sector product spine after the open status strip, plus provider-name scrub from the public source label. / 开放状态条后加入公开三段式产品脊柱，并从公开 source label 清掉供应商名。
+- v1.60: realtime Flow Router compression and production deploy: bias gate, premium gate, strategy gate, risk gate, dark micro tape, and mobile timeboard cleanup, still generated/mock and not a real feed. / realtime Flow Router 压缩并部署生产：方向门、权利金门、策略门、风险门、暗色微型 tape 和手机 timeboard 修正，仍为生成/mock，不是真实 feed。
+
+## v1.60 Flow Router rule / v1.60 Flow Router 规则
+
+The public realtime reserve may show the product shape of a future live option-flow terminal, but it should be organized as routing logic, not as payment or entitlement logic. v1.60 defines four public-safe gates:
+
+公开 realtime reserve 可以展示未来实时期权流终端的产品形态，但应组织成路由逻辑，而不是支付或权限逻辑。v1.60 定义四个公开安全 gate：
+
+- Bias gate: bullish/bearish pressure from derived samples.
+- 方向门：用派生样张表达 Bullish/Bearish 压力。
+- Premium gate: premium concentration and notional anchors.
+- 权利金门：表达权利金集中和成交额锚点。
+- Strategy gate: automatic strategy labels such as sweep/spread/straddle/calendar.
+- 策略门：自动策略标签，如 sweep/spread/straddle/calendar。
+- Risk gate: hit density, anomaly pressure, and detail-page routing.
+- 风险门：hit 密度、异常压力和二级页面路由。
+
+This remains a mock-derived UI from existing minute aggregates. It must not connect credentials, expose provider names, show plan/pricing/payment copy, or imply a live entitlement is active. v1.60 is live in production at `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`, but the live deploy is still only a public-safe reserve prototype.
+
+这仍然是从现有分钟聚合派生的 mock UI。不得接入凭证，不得暴露供应商名，不得展示套餐、价格、支付文案，也不得暗示真实实时权限已经打开。v1.60 已部署生产到 `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`，但线上版本仍只是公开安全的 reserve prototype。
 
 ## v1.52 adapter result / v1.52 adapter 结果
 

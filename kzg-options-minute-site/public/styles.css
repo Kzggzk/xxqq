@@ -15448,3 +15448,301 @@ body[data-theme="dark"] .sector-spine-buttons button {
     grid-template-columns: 24px minmax(0, 1fr);
   }
 }
+
+/* v1.60 pass: compress the realtime reserve into a router before the heavy tape. */
+.realtime-router {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.52fr) minmax(300px, 0.78fr) minmax(360px, 1fr);
+  gap: 10px;
+  align-items: stretch;
+  padding: 12px;
+  border: 1px solid var(--line-strong);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 252, 0.94), rgba(248, 246, 239, 0.91)),
+    linear-gradient(90deg, rgba(196, 83, 53, 0.045), transparent 36%, rgba(47, 97, 144, 0.045));
+}
+
+.router-copy {
+  display: grid;
+  align-content: center;
+  gap: 7px;
+  min-width: 0;
+  padding-right: 4px;
+}
+
+.router-copy span,
+.router-gates i,
+.router-footer span,
+.router-tape small {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 860;
+  line-height: 1;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.router-copy b {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(26px, 3.3vw, 44px);
+  line-height: 0.92;
+  font-weight: 930;
+  letter-spacing: 0;
+}
+
+.router-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.48;
+  font-weight: 640;
+}
+
+.router-gates {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 7px;
+  min-width: 0;
+}
+
+.router-gates span {
+  display: grid;
+  align-content: space-between;
+  min-width: 0;
+  min-height: 86px;
+  gap: 6px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
+  font-variant-numeric: tabular-nums;
+}
+
+.router-gates .hot {
+  box-shadow: inset 3px 0 0 rgba(196, 83, 53, 0.74);
+}
+
+.router-gates .cool {
+  box-shadow: inset 3px 0 0 rgba(47, 97, 144, 0.74);
+}
+
+.router-gates b,
+.router-gates small,
+.router-footer b,
+.router-tape b {
+  overflow: hidden;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.router-gates b {
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 920;
+}
+
+.router-gates small {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 760;
+}
+
+.router-tape {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-auto-rows: 32px;
+  gap: 5px;
+  min-width: 0;
+  padding: 4px;
+  border: 1px solid rgba(25, 27, 27, 0.08);
+  background:
+    linear-gradient(180deg, rgba(17, 18, 18, 0.95), rgba(28, 29, 27, 0.96)),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 34px);
+}
+
+.router-tape button {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 4px;
+  align-items: center;
+  min-width: 0;
+  padding: 6px 7px;
+  border: 1px solid rgba(238, 232, 218, 0.08);
+  background: rgba(255, 255, 255, 0.026);
+  color: rgba(255, 255, 250, 0.9);
+  cursor: pointer;
+  text-align: left;
+  font-variant-numeric: tabular-nums;
+}
+
+.router-tape button::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: var(--w);
+  height: 2px;
+  content: "";
+  background: rgba(189, 154, 89, 0.72);
+}
+
+.router-tape button.hot::before {
+  background: rgba(217, 85, 53, 0.86);
+}
+
+.router-tape button.cool::before {
+  background: rgba(83, 151, 220, 0.84);
+}
+
+.router-tape button i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(238, 232, 218, 0.38);
+}
+
+.router-tape button.hot i {
+  background: rgba(217, 85, 53, 0.9);
+}
+
+.router-tape button.cool i {
+  background: rgba(83, 151, 220, 0.86);
+}
+
+.router-tape b {
+  color: rgba(255, 255, 250, 0.92);
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.router-tape small {
+  color: rgba(238, 232, 218, 0.62);
+  font-size: 8px;
+  text-align: right;
+}
+
+.router-footer {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto 44px auto 44px auto 64px;
+  gap: 8px;
+  align-items: center;
+  min-width: 0;
+  padding-top: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.router-footer b {
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+body[data-theme="dark"] .realtime-router,
+body[data-theme="dark"] .router-gates span {
+  border-color: rgba(238, 232, 218, 0.12);
+  background:
+    linear-gradient(180deg, rgba(26, 28, 28, 0.92), rgba(18, 19, 19, 0.94)),
+    linear-gradient(90deg, rgba(225, 159, 74, 0.05), transparent);
+}
+
+@media (max-width: 1180px) {
+  .realtime-router {
+    grid-template-columns: 1fr;
+  }
+
+  .router-footer {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .realtime-router {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .router-copy b {
+    font-size: clamp(24px, 9vw, 36px);
+  }
+
+  .router-gates {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .router-gates span {
+    min-height: 68px;
+    padding: 8px;
+  }
+
+  .router-tape {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-rows: 30px;
+  }
+
+  .router-footer {
+    grid-template-columns: repeat(3, minmax(0, auto));
+    gap: 6px 10px;
+  }
+
+  .timeboard-copy h2 {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 420px) {
+  .timeboard-copy {
+    grid-template-columns: max-content minmax(0, 1fr);
+  }
+
+  .router-gates {
+    grid-template-columns: 1fr;
+  }
+
+  .router-tape {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* v1.60 mobile timeboard refinement: keep the timeline title out of the chart lane. */
+@media (max-width: 520px) {
+  .timeboard {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+    padding: 10px 0 8px;
+  }
+
+  .timeboard-copy {
+    grid-column: 1;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0 9px;
+  }
+
+  .timeboard-copy h2 {
+    min-width: max-content;
+    font-size: 17px;
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+
+  .timeboard-copy p {
+    max-width: 180px;
+    text-align: right;
+  }
+
+  .timeline-wrap {
+    grid-column: 1;
+    padding: 0 9px;
+  }
+
+  .nav-day {
+    display: none;
+  }
+}

@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.59";
+const UI_VERSION = "1.60";
 
 const dataAudit = {
   dataset: "23_DATA_期权分钟_Minute",
@@ -739,6 +739,7 @@ function renderPremiumPreview() {
       historyCount: state.analytics?.daily?.length || 0,
       lead: lead.symbol || "--",
     })}
+    ${realtimeFlowRouter(flowRows, rows, maxBucket)}
     <div class="realtime-layout">
       <div class="realtime-brief">
         <div class="realtime-brief-main">
@@ -794,6 +795,79 @@ function realtimeTransitionRail(info) {
           <small>${escapeHtml(row[3])}</small>
         </span>
       `).join("")}
+    </div>
+  `;
+}
+
+function realtimeFlowRouter(flowRows, rotationRows, peakBucket) {
+  const rankedPremium = flowRows.slice().sort((a, b) => Number(b.notional || 0) - Number(a.notional || 0));
+  const rankedHits = flowRows.slice().sort((a, b) => Number(b.hits || 0) - Number(a.hits || 0));
+  const hot = flowRows.filter((row) => row.tone === "hot");
+  const cool = flowRows.filter((row) => row.tone === "cool");
+  const attack = rotationRows.filter((row) => Number(row.delta) >= 0 && Number(row.premiumDelta) >= 0);
+  const fade = rotationRows.filter((row) => Number(row.delta) < 0 && Number(row.premiumDelta) < 0);
+  const premiumLead = rankedPremium[0] || flowRows[0] || {};
+  const hitLead = rankedHits[0] || flowRows[0] || {};
+  const strategyCounts = flowRows.reduce((map, row) => {
+    const key = row.tag || "Flow";
+    map.set(key, (map.get(key) || 0) + 1);
+    return map;
+  }, new Map());
+  const strategyText = [...strategyCounts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 3)
+    .map(([key, value]) => `${key} ${value}`)
+    .join(" / ");
+  const skew = flowRows.length ? Math.round((hot.length / flowRows.length) * 100) : 0;
+  const tape = flowRows.slice(0, 16);
+  const maxNotional = Math.max(...tape.map((row) => Number(row.notional) || 0), 1);
+  const gates = state.lang === "zh"
+    ? [
+      ["方向门", `${skew}% Bull`, `${hot.length} 热 / ${cool.length} 冷`, skew >= 56 ? "hot" : skew <= 44 ? "cool" : "flat"],
+      ["权利金门", premiumLead.symbol || "--", premiumLead.premium || "--", "hot"],
+      ["策略门", strategyText || "--", "自动归类", "flat"],
+      ["风险门", hitLead.symbol || "--", `${fmt0.format(hitLead.hits || 0)} hits`, hitLead.tone || "flat"],
+    ]
+    : [
+      ["Bias gate", `${skew}% Bull`, `${hot.length} hot / ${cool.length} cool`, skew >= 56 ? "hot" : skew <= 44 ? "cool" : "flat"],
+      ["Premium gate", premiumLead.symbol || "--", premiumLead.premium || "--", "hot"],
+      ["Strategy gate", strategyText || "--", "auto-classified", "flat"],
+      ["Risk gate", hitLead.symbol || "--", `${fmt0.format(hitLead.hits || 0)} hits`, hitLead.tone || "flat"],
+    ];
+  const summary = state.lang === "zh"
+    ? `未来实时流先过四个门：方向、权利金、策略、风险。当前用 ${fmt0.format(flowRows.length)} 条派生样张展示路由逻辑，历史与日报仍完全开放。`
+    : `The future stream first passes four gates: bias, premium, strategy, and risk. This build uses ${fmt0.format(flowRows.length)} derived sample rows to show the routing logic while history and daily reads stay open.`;
+  return `
+    <div class="realtime-router">
+      <div class="router-copy">
+        <span>${state.lang === "zh" ? "Flow Router" : "Flow Router"}</span>
+        <b>${state.lang === "zh" ? "先分流 再解释" : "Route first, explain second"}</b>
+        <p>${escapeHtml(summary)}</p>
+      </div>
+      <div class="router-gates">
+        ${gates.map((gate) => `
+          <span class="${gate[3]}">
+            <i>${escapeHtml(gate[0])}</i>
+            <b>${escapeHtml(gate[1])}</b>
+            <small>${escapeHtml(gate[2])}</small>
+          </span>
+        `).join("")}
+      </div>
+      <div class="router-tape" aria-hidden="true">
+        ${tape.map((row, index) => {
+          const width = Math.max(12, Math.min(100, (Number(row.notional || 0) / maxNotional) * 100));
+          const marker = index % 4 === 0 ? row.time : "";
+          return `<button type="button" class="${row.tone}" data-symbol="${escapeHtml(row.symbol)}" style="--w:${width.toFixed(1)}%"><i></i><b>${escapeHtml(row.symbol)}</b><small>${escapeHtml(marker)}</small></button>`;
+        }).join("")}
+      </div>
+      <div class="router-footer">
+        <span>${state.lang === "zh" ? "量价同升" : "Volume + premium"}</span>
+        <b>${fmt0.format(attack.length)}</b>
+        <span>${state.lang === "zh" ? "同步降温" : "Cooling"}</span>
+        <b>${fmt0.format(fade.length)}</b>
+        <span>${state.lang === "zh" ? "峰值分钟" : "Peak minute"}</span>
+        <b>${escapeHtml(peakBucket?.time || "--")}</b>
+      </div>
     </div>
   `;
 }
@@ -1016,7 +1090,7 @@ function realtimeFlowTerminal(rows) {
       <div class="terminal-veil">
         <strong>${state.lang === "zh" ? "未来实时席位" : "Future realtime seat"}</strong>
         <span>${state.lang === "zh"
-          ? "真实 feed 经后端确认后打开完整明细、排序、过滤、订阅提醒和二级页面。"
+          ? "真实 feed 经后端确认后打开完整明细、排序、过滤、提醒路由和二级页面。"
           : "Real feed opens full details, sorting, filters, alerts, and the dedicated flow page after backend approval."}</span>
       </div>
     </div>
