@@ -19,7 +19,7 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
 - Production version last verified / 最近生产验证版本: `1.45`
-- Local version last verified / 最近本地验证版本: `1.46`
+- Local version last verified / 最近本地验证版本: `1.47`
 - Latest unique deploy / 最近唯一部署: `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`
 - iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.3`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
@@ -83,6 +83,14 @@ Latest local v1.46 note:
 Web `1.46` is the latest local-only checkpoint. It is not deployed. It keeps production at v1.45 and improves the phone lower-page unity between advanced preview, symbol rotation, and symbol momentum. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.46`, mobile/narrow visual connector lines, unified section heading borders/radius, tighter premium/rotation/momentum gaps, and quieter mobile rotation dots capped at `30px`. Browser and Playwright verified v1.46, no console warnings/errors, no horizontal overflow, no public-risk string leak, and PNG export `/tmp/kzg-option-house-v146-export.png` at `1,482,138` bytes. Next deploy should normally wait until v1.48-v1.50.
 
 Web `1.46` 是最新本地检查点，未部署生产。生产仍为 v1.45。本轮改的是手机下半页统一感，把高级预览、标的轮动、核心动量三段接成更连续的读盘脊柱。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.46`、移动/窄屏连接线、统一 section heading 边界与圆角、更紧的 premium/rotation/momentum 间距、手机轮动气泡上限降到 `30px`。Browser 与 Playwright 已验证 v1.46、无 console warning/error、无横向溢出、无公开风险词泄露，PNG 导出 `/tmp/kzg-option-house-v146-export.png` 为 `1,482,138` bytes。下一次常规部署默认等 v1.48-v1.50。
+
+Latest local v1.47 note:
+
+最新本地 v1.47 说明：
+
+Web `1.47` is the latest local-only checkpoint. It is not deployed. It keeps production at v1.45 and compresses the phone advanced-preview entry plus the momentum-panel tail. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.47`, two-line capability lead, two-column phone capability rails, one-row four-button unlock tabs, shorter capability meter, shorter focus rhythm stack/tape/charts, and phone momentum list reduced to 10 visible rows. Browser and Playwright verified v1.47, theme toggle interaction, no console warnings/errors, no horizontal overflow, no public-risk string leak, and PNG export `/tmp/kzg-option-house-v147-export.png` at `1,482,138` bytes. Next deploy should normally wait until v1.48-v1.50.
+
+Web `1.47` 是最新本地检查点，未部署生产。生产仍为 v1.45。本轮压缩手机端高级预览入口和动量面板尾部。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.47`、capability lead 两行化、手机 capability rails 两列化、unlock tabs 一行四按钮、更短的 capability meter、更短的 focus rhythm stack/tape/charts，手机动量列表压到 10 条可见。Browser 与 Playwright 已验证 v1.47、theme toggle 交互、无 console warning/error、无横向溢出、无公开风险词泄露，PNG 导出 `/tmp/kzg-option-house-v147-export.png` 为 `1,482,138` bytes。下一次常规部署默认等 v1.48-v1.50。
 
 ## Verification checklist / 验证清单
 

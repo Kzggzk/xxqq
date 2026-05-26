@@ -29,7 +29,7 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
 - 最近验证唯一部署: `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.45`
-- 最近本地验证 UI 版本: `1.46`
+- 最近本地验证 UI 版本: `1.47`
 - 当前 iOS 伴生版本: `0.3`，对应 Web `1.45`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
@@ -47,7 +47,7 @@ English:
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
 - Latest verified unique deploy: `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.45`
-- Latest locally verified UI version: `1.46`
+- Latest locally verified UI version: `1.47`
 - Current iOS companion version: `0.3`, mapped to Web `1.45`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
@@ -303,6 +303,32 @@ Verified facts: `node --check public/app.js` passed; `python3 scripts/build_payl
 Visual verification: local Playwright/Chrome desktop `1440x1100` showed v1.46, topbar `69px`, advanced preview `1828px`, rotation `814px`, momentum `585px`, no horizontal overflow, no console error, and no internal string leak. Mobile `390x844` showed v1.46, topbar `91px`, advanced preview about `3204px`, rotation `781px`, momentum `967px`, visible rotation rows `12`, visible momentum rows `12`, and mobile rotation-dot CSS cap `30px`. PNG export was clicked successfully: `/tmp/kzg-option-house-v146-export.png`, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v146-desktop.png`, `/tmp/kzg-option-house-v146-mobile.png`, `/tmp/kzg-option-house-v146-mobile-rotation.png`, `/tmp/kzg-option-house-v146-mobile-momentum.png`.
 
 Current state: v1.46 is a local and GitHub-docs checkpoint, not a production deploy. Production remains v1.45 at `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`. Next v1.47 should continue lower-phone detail work: advanced-preview entry height, rotation-quadrant dot density, momentum-list tail whitespace, and desktop reading rhythm from trend into rotation. The next normal production deploy should wait until v1.48-v1.50 unless a public-risk fix appears earlier.
+
+## 4.8 v1.47 advanced entry and momentum tail compression / v1.47 高级入口与动量尾部压缩
+
+中文:
+
+北京时间 2026-05-26 20:51 左右，心跳进入 Web `1.47`。这次继续只做公开 UI 质量，不部署生产，不加入真实付费、注册、域名、API、价格、Stripe、钱包、微信支付或 Massive plan 内容。生产仍保持 v1.45。v1.47 的目标是把 v1.46 后仍偏长的两个手机区域继续压缩：高级功能预览入口和核心标的动量尾部。
+
+具体变化：`public/app.js` 将 `UI_VERSION` 从 `1.46` 升到 `1.47`。`public/styles.css` 追加 v1.47 层：手机端 `.premium-capability-rail` 缩小 gap；`.capability-lead` 改成左侧说明、右侧主导标的的紧凑 grid，说明文案限制为两行；`.capability-rails` 在 `390px` 手机从一列恢复成两列短指标，隐藏次要 small 文案，指标块高度压到约 `42px`；`.capability-meter` 去掉底部日期标签，变成更短的能量条；`.unlock-tabs` 从两行双列改成一行四列，隐藏次级 span，按钮高度压到 `36px`；`.unlock-mini-tape` 降到 `52px`。动量面板中，`.focus-window-stack` 改成 `66px + 1fr` 的短结构，lead 和窗口卡都更矮，长说明隐藏；`.focus-session-tape`、`.focus-session-cells`、`.focus-charts` 全部降高；手机动量列表只显示前 10 条有效行，行高压到约 `21px`，sparkline 降到 `12px`。
+
+验证事实：`node --check public/app.js` 通过；`python3 scripts/build_payload.py` 生成 `505` 天 payload，最新交易日 `2026-05-22`，analytics symbols `98`，pack asset `kzg-frame-a8980441344c.js`；`python3 scripts/per_day_to_dist.py` 复制 `505` 个 report。source 和 dist 的公开风险词扫描均为 0。内置 Browser 打开 `http://127.0.0.1:4177/` 成功，显示 v1.47，KZG 内容可见，选中日期 `2026-05-22`，`user-select:none`，console warn/error 为 0；交互验证点击 `themeToggle` 后从 light 切到 dark，再切回，版本和页面状态不丢失。
+
+视觉验证：Playwright/Chrome 桌面 `1440x1100` 显示 v1.47，桌面布局不回退，高级预览 `1828px`，rotation `814px`，momentum `585px`，无横向溢出。手机 `390x844` 显示 v1.47，topbar `91px`；高级预览从 v1.46 的约 `3204px` 降到 `2780px`，减少约 `424px`；momentum 从约 `967px` 降到 `794px`，减少约 `173px`；capability rail `216px`，unlock deck `341px`，focus window `75px`，focus tape `51px`，focus charts `50px`，visible rotation rows `12`，visible momentum rows `10`。PNG 导出实际点击成功，文件 `/tmp/kzg-option-house-v147-export.png`，建议文件名 `kzg-option-house-2026-05-22-zh.png`，大小 `1,482,138` bytes。截图证据：`/tmp/kzg-option-house-v147-desktop.png`、`/tmp/kzg-option-house-v147-mobile.png`、`/tmp/kzg-option-house-v147-mobile-premium.png`、`/tmp/kzg-option-house-v147-mobile-momentum.png`。
+
+当前状态：v1.47 是本地和 GitHub docs checkpoint，不是生产部署。生产仍为 v1.45，生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`。下一步 v1.48 可以继续处理桌面下半区 trend 到 rotation 的过渡、手机高级预览内部 live silhouette 高度，以及暗色模式下的高级预览/动量对比。下一次常规生产部署默认等 v1.48-v1.50 形成一组稳定版本后再上线。
+
+English:
+
+Around 2026-05-26 20:51 Asia/Shanghai, the heartbeat moved Web to `1.47`. This remains a public-UI quality pass only. Production is not deployed, and no real payment, registration, domain, API, price, Stripe, wallet, WeChat Pay, or Massive-plan content is added. Production remains v1.45. The v1.47 target is to compress the two mobile areas that still carried too much height after v1.46: advanced-preview entry and the core-symbol momentum tail.
+
+Concrete changes: `public/app.js` moved `UI_VERSION` from `1.46` to `1.47`. `public/styles.css` adds the v1.47 layer: on phone, `.premium-capability-rail` has smaller gaps; `.capability-lead` becomes a compact grid with explanatory copy on the left and leader symbol on the right, with copy clamped to two lines; `.capability-rails` returns from one column to two short metric columns at `390px`, hides secondary small copy, and compresses metric blocks to about `42px`; `.capability-meter` drops bottom date labels and becomes a shorter energy strip; `.unlock-tabs` changes from two-by-two into one row of four short buttons, hides secondary spans, and compresses buttons to `36px`; `.unlock-mini-tape` drops to `52px`. In the momentum panel, `.focus-window-stack` becomes a `66px + 1fr` compact structure, the lead and window cards become shorter, long explanations are hidden, `.focus-session-tape`, `.focus-session-cells`, and `.focus-charts` all get lower, and the phone momentum list shows the first 10 effective rows with about `21px` row height and `12px` sparklines.
+
+Verified facts: `node --check public/app.js` passed; `python3 scripts/build_payload.py` produced a `505`-day payload, latest trading day `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-a8980441344c.js`; `python3 scripts/per_day_to_dist.py` copied `505` reports. Source and dist public-risk scans both returned 0. In-app Browser opened `http://127.0.0.1:4177/` successfully, showed v1.47, visible KZG content, selected date `2026-05-22`, `user-select:none`, and no console warnings/errors. Interaction proof clicked `themeToggle`, switched from light to dark and back, and kept version/page state intact.
+
+Visual verification: local Playwright/Chrome desktop `1440x1100` showed v1.47 with no desktop regression: advanced preview `1828px`, rotation `814px`, momentum `585px`, and no horizontal overflow. Mobile `390x844` showed v1.47 with topbar `91px`; advanced preview dropped from about `3204px` in v1.46 to `2780px`, down about `424px`; momentum dropped from about `967px` to `794px`, down about `173px`; capability rail `216px`, unlock deck `341px`, focus window `75px`, focus tape `51px`, focus charts `50px`, visible rotation rows `12`, visible momentum rows `10`. PNG export was clicked successfully: `/tmp/kzg-option-house-v147-export.png`, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v147-desktop.png`, `/tmp/kzg-option-house-v147-mobile.png`, `/tmp/kzg-option-house-v147-mobile-premium.png`, `/tmp/kzg-option-house-v147-mobile-momentum.png`.
+
+Current state: v1.47 is a local and GitHub-docs checkpoint, not a production deploy. Production remains v1.45 at `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`. Next v1.48 can continue desktop lower-page transition from trend into rotation, phone live-silhouette height inside advanced preview, and dark-mode contrast in advanced preview and momentum. The next normal production deploy should wait until a stable v1.48-v1.50 group is ready.
 
 ## 5. SaaS architecture / SaaS 架构
 

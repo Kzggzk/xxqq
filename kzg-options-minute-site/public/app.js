@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.46";
+const UI_VERSION = "1.47";
 
 const dataAudit = {
   dataset: "23_DATA_Massive_期权分钟_Minute",
