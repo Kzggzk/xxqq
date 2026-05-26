@@ -13,7 +13,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "v28";
+const UI_VERSION = "v29";
 
 const $ = (id) => document.getElementById(id);
 const fmt0 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
@@ -218,7 +218,9 @@ async function decodePack(encoded) {
 
 async function loadPackedData() {
   if (window.__KZG_PACK__) {
-    return decodePack(window.__KZG_PACK__);
+    const payload = await decodePack(window.__KZG_PACK__);
+    scrubPackedRuntime();
+    return payload;
   }
   if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
     const indexResponse = await fetch(`/data/index.json?ts=${Date.now()}`);
@@ -232,6 +234,19 @@ async function loadPackedData() {
     return { index, days };
   }
   throw new Error("KZG packed payload is missing.");
+}
+
+function scrubPackedRuntime() {
+  try {
+    window.__KZG_PACK__ = "";
+    window.__KZG_PACK_META__ = { loaded: true };
+    document.querySelectorAll('script[src*="kzg-frame"], script[src*="kzg-pack"]').forEach((script) => {
+      script.removeAttribute("src");
+      script.dataset.kzgLoaded = "true";
+    });
+  } catch {
+    // Protection friction only; never block the dashboard if a browser refuses DOM mutation.
+  }
 }
 
 async function loadIndex() {
