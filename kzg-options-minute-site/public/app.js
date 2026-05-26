@@ -13,7 +13,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "v30";
+const UI_VERSION = "v35";
 
 const $ = (id) => document.getElementById(id);
 const fmt0 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });

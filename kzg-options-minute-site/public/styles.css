@@ -6834,3 +6834,280 @@ body[data-theme="dark"] .bucket-pressure-track b {
     max-width: 190px;
   }
 }
+
+/* v31-v35 cohesion pass: thinner ledgers, fewer floating boxes, denser lower analysis. */
+.section-head {
+  margin-bottom: 12px;
+}
+
+.rotation-map {
+  gap: 10px;
+}
+
+.rotation-map-grid {
+  min-height: 304px;
+  background:
+    linear-gradient(90deg, transparent calc(var(--x0) - 1px), rgba(17, 17, 17, 0.14) var(--x0), transparent calc(var(--x0) + 1px)),
+    linear-gradient(180deg, transparent calc(var(--y0) - 1px), rgba(17, 17, 17, 0.14) var(--y0), transparent calc(var(--y0) + 1px)),
+    radial-gradient(circle at 82% 18%, rgba(196, 83, 53, 0.08), transparent 34%),
+    radial-gradient(circle at 16% 82%, rgba(47, 97, 144, 0.08), transparent 34%),
+    rgba(255, 255, 255, 0.42);
+}
+
+.rotation-map-grid .axis-x,
+.rotation-map-grid .axis-y {
+  display: none;
+}
+
+.rotation-map-grid button {
+  border-radius: 999px;
+  box-shadow: 0 0 0 1px rgba(17, 17, 17, 0.08), 0 7px 18px rgba(17, 17, 17, 0.08);
+}
+
+.rotation-map-stats {
+  grid-template-rows: repeat(4, minmax(0, auto));
+}
+
+.rotation-map-stats span {
+  padding: 9px 10px;
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.rotation-lanes {
+  gap: 10px;
+}
+
+.rotation-lane {
+  border-left: 3px solid var(--gold);
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.rotation-lane.hot,
+.rotation-lane.cool {
+  box-shadow: none;
+}
+
+.rotation-lane.hot {
+  border-left-color: #c45335;
+}
+
+.rotation-lane.cool {
+  border-left-color: #2f6190;
+}
+
+.rotation-lane-title {
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.46);
+}
+
+.rotation-row {
+  grid-template-columns: 54px minmax(78px, 1fr) 66px 104px;
+  min-height: 35px;
+  gap: 8px;
+  padding: 5px 8px;
+}
+
+.rotation-row svg {
+  height: 21px;
+}
+
+.rotation-row small {
+  font-size: 10px;
+}
+
+.symbol-focus {
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.focus-head {
+  padding: 11px 13px;
+}
+
+.focus-head strong {
+  font-size: 30px;
+}
+
+.focus-contract b {
+  margin-top: 5px;
+}
+
+.focus-metrics span {
+  padding: 9px 12px;
+}
+
+.focus-metrics b {
+  font-size: 20px;
+}
+
+.focus-extremes button {
+  padding: 8px 12px;
+}
+
+.focus-window-stack,
+.focus-session-tape,
+.focus-charts {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.focus-window-stack {
+  gap: 8px;
+  padding-top: 10px;
+}
+
+.focus-window-lead,
+.focus-window-cards span,
+.focus-session-tape > div:first-child {
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.focus-window-cards span {
+  padding: 8px 9px 7px;
+}
+
+.focus-session-tape {
+  gap: 9px;
+  padding-top: 10px;
+}
+
+.focus-session-cells {
+  min-height: 48px;
+  gap: 2px;
+}
+
+.focus-session-cells button {
+  height: 48px;
+}
+
+.focus-session-cells i {
+  min-height: 6px;
+  opacity: 0.84;
+}
+
+.focus-charts {
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+.focus-charts svg {
+  height: 50px;
+}
+
+.symbol-momentum {
+  gap: 10px;
+}
+
+.momentum-summary {
+  gap: 6px;
+}
+
+.momentum-summary span {
+  padding: 8px 9px;
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.momentum-summary b {
+  font-size: 14px;
+}
+
+.momentum-list {
+  gap: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.momentum-row {
+  min-height: 36px;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.66);
+}
+
+.momentum-row:hover,
+.momentum-row.active {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.momentum-row.active {
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.mom-spark svg {
+  height: 24px;
+}
+
+.mom-value,
+.mom-delta {
+  font-size: 11px;
+}
+
+body[data-theme="dark"] .rotation-map-grid,
+body[data-theme="dark"] .rotation-map-stats span,
+body[data-theme="dark"] .rotation-lane,
+body[data-theme="dark"] .rotation-lane-title,
+body[data-theme="dark"] .symbol-focus,
+body[data-theme="dark"] .focus-window-lead,
+body[data-theme="dark"] .focus-window-cards span,
+body[data-theme="dark"] .focus-session-tape > div:first-child,
+body[data-theme="dark"] .momentum-summary span,
+body[data-theme="dark"] .momentum-row {
+  background: rgba(245, 240, 230, 0.04);
+}
+
+body[data-theme="dark"] .rotation-map-grid {
+  background:
+    linear-gradient(90deg, transparent calc(var(--x0) - 1px), rgba(245, 240, 230, 0.14) var(--x0), transparent calc(var(--x0) + 1px)),
+    linear-gradient(180deg, transparent calc(var(--y0) - 1px), rgba(245, 240, 230, 0.14) var(--y0), transparent calc(var(--y0) + 1px)),
+    radial-gradient(circle at 82% 18%, rgba(224, 121, 110, 0.11), transparent 34%),
+    radial-gradient(circle at 16% 82%, rgba(124, 175, 223, 0.1), transparent 34%),
+    rgba(245, 240, 230, 0.04);
+}
+
+@media (min-width: 1500px) {
+  .momentum-panel .momentum-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1280px) {
+  .rotation-map-grid {
+    min-height: 286px;
+  }
+}
+
+@media (max-width: 520px) {
+  .rotation-map-grid {
+    min-height: 204px;
+  }
+
+  .rotation-row {
+    min-height: 33px;
+  }
+
+  .focus-head {
+    padding: 9px 11px;
+  }
+
+  .focus-head strong {
+    font-size: 26px;
+  }
+
+  .focus-window-stack,
+  .focus-session-tape,
+  .focus-charts {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .focus-charts svg {
+    height: 42px;
+  }
+
+  .momentum-row {
+    min-height: 42px;
+  }
+}
