@@ -6245,8 +6245,8 @@ body[data-theme="dark"] .tip-grid b {
 
 .heat-lane-board {
   display: grid;
-  gap: 4px;
-  padding: 7px;
+  gap: 0;
+  padding: 6px 7px;
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.44);
 }
@@ -6254,13 +6254,14 @@ body[data-theme="dark"] .tip-grid b {
 .heat-lane-axis,
 .heat-lane-row {
   display: grid;
-  grid-template-columns: 58px minmax(0, 1fr) 96px;
-  gap: 10px;
+  grid-template-columns: 54px minmax(0, 1fr) 76px;
+  gap: 8px;
   align-items: center;
 }
 
 .heat-lane-axis {
-  padding: 0 8px 2px;
+  padding: 0 6px 3px;
+  border-bottom: 1px solid rgba(201, 194, 178, 0.52);
   color: var(--muted);
   font-size: 9px;
   font-weight: 780;
@@ -6281,10 +6282,11 @@ body[data-theme="dark"] .tip-grid b {
 
 .heat-lane-row {
   min-width: 0;
-  min-height: 30px;
-  padding: 4px 8px;
-  border: 1px solid rgba(201, 194, 178, 0.62);
-  background: rgba(255, 255, 255, 0.54);
+  min-height: 27px;
+  padding: 3px 6px;
+  border: 0;
+  border-bottom: 1px solid rgba(201, 194, 178, 0.45);
+  background: transparent;
   color: var(--ink);
   cursor: pointer;
   text-align: left;
@@ -6293,16 +6295,15 @@ body[data-theme="dark"] .tip-grid b {
 
 .heat-lane-row:hover,
 .heat-lane-row.symbol-active {
-  border-color: rgba(17, 17, 17, 0.42);
-  background: rgba(255, 255, 255, 0.76);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .heat-lane-row.hot {
-  box-shadow: inset 3px 0 0 rgba(196, 83, 53, 0.72);
+  box-shadow: inset 2px 0 0 rgba(196, 83, 53, 0.68);
 }
 
 .heat-lane-row.cool {
-  box-shadow: inset 3px 0 0 rgba(47, 97, 144, 0.72);
+  box-shadow: inset 2px 0 0 rgba(47, 97, 144, 0.68);
 }
 
 .heat-lane-row strong,
@@ -6319,10 +6320,10 @@ body[data-theme="dark"] .tip-grid b {
   display: grid;
   grid-template-columns: repeat(13, minmax(0, 1fr));
   align-items: end;
-  height: 13px;
+  height: 10px;
   min-width: 0;
-  gap: 3px;
-  padding: 2px 0 0;
+  gap: 2px;
+  padding: 1px 0 0;
   border-bottom: 1px solid rgba(201, 194, 178, 0.58);
 }
 
@@ -6338,19 +6339,13 @@ body[data-theme="dark"] .tip-grid b {
 
 .heat-lane-meta {
   display: grid;
+  align-items: center;
   justify-items: end;
-  gap: 3px;
   min-width: 0;
 }
 
 .heat-lane-meta small {
-  overflow: hidden;
-  max-width: 100%;
-  color: var(--muted);
-  font-size: 9px;
-  font-weight: 780;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  display: none;
 }
 
 .regime-map {
@@ -6429,8 +6424,8 @@ body[data-theme="dark"] .heat-lane-track {
 
   .heat-lane-axis,
   .heat-lane-row {
-    grid-template-columns: 42px minmax(0, 1fr) 70px;
-    gap: 7px;
+    grid-template-columns: 42px minmax(0, 1fr) 62px;
+    gap: 6px;
   }
 
   .heat-lane-axis {
@@ -6439,8 +6434,8 @@ body[data-theme="dark"] .heat-lane-track {
   }
 
   .heat-lane-row {
-    min-height: 28px;
-    padding: 4px 6px;
+    min-height: 25px;
+    padding: 3px 5px;
   }
 
   .heat-lane-row strong,
@@ -6449,7 +6444,7 @@ body[data-theme="dark"] .heat-lane-track {
   }
 
   .heat-lane-track {
-    height: 12px;
+    height: 9px;
     gap: 2px;
   }
 
