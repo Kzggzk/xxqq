@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.52";
+const UI_VERSION = "1.53";
 
 const dataAudit = {
   dataset: "23_DATA_Massive_期权分钟_Minute",
@@ -427,6 +427,63 @@ function isLatestDay() {
 
 function isHistoryLocked() {
   return !isPro() && !isLatestDay();
+}
+
+function feedVisibilityState(locked) {
+  const latest = isLatestDay();
+  const tier = latest ? "public-latest" : locked ? "blurred-history" : "advanced-derived";
+  const steps = state.lang === "zh"
+    ? [
+      {
+        id: "public-latest",
+        title: "今日开放",
+        value: latest ? "读取中" : "最新日",
+        note: "最新交易日派生事件完整可读",
+        tone: "open",
+      },
+      {
+        id: "blurred-history",
+        title: "历史预览",
+        value: locked ? "模糊" : "可读",
+        note: "历史日期保留方向和节奏轮廓",
+        tone: "preview",
+      },
+      {
+        id: "advanced-derived",
+        title: "深层派生",
+        value: isPro() ? "开放" : "排队",
+        note: "更深事件层等待服务边界确认",
+        tone: "queued",
+      },
+    ]
+    : [
+      {
+        id: "public-latest",
+        title: "Latest open",
+        value: latest ? "Live" : "Latest",
+        note: "Current-day derived events are readable",
+        tone: "open",
+      },
+      {
+        id: "blurred-history",
+        title: "History preview",
+        value: locked ? "Blurred" : "Readable",
+        note: "Historical dates keep direction and rhythm",
+        tone: "preview",
+      },
+      {
+        id: "advanced-derived",
+        title: "Deep derived",
+        value: isPro() ? "Open" : "Queued",
+        note: "Deeper event layer waits for service boundary",
+        tone: "queued",
+      },
+    ];
+  return {
+    tier,
+    label: steps.find((step) => step.id === tier)?.title || tier,
+    steps: steps.map((step) => ({ ...step, active: step.id === tier })),
+  };
 }
 
 function openAccountModal() {
@@ -976,7 +1033,8 @@ function liveFeedSilhouette(rows, locked) {
     const width = Math.max(18, Math.min(100, Math.abs(velocity) + 22 + index * 2));
     return { ...row, velocity, tone, width };
   });
-  const feedEvents = derivedFeedEvents(pressure, peak);
+  const visibility = feedVisibilityState(locked);
+  const feedEvents = derivedFeedEvents(pressure, peak, visibility);
   const lead = pressure.reduce((best, row) => Math.abs(row.velocity) > Math.abs(best.velocity || 0) ? row : best, pressure[0] || {});
   const hot = pressure.filter((row) => row.tone === "hot").length;
   const cool = pressure.filter((row) => row.tone === "cool").length;
@@ -1021,12 +1079,13 @@ function liveFeedSilhouette(rows, locked) {
           </button>
         `).join("")}
       </div>
+      ${feedBoundaryRail(visibility)}
       ${liveEventQueue(feedEvents, locked)}
     </div>
   `;
 }
 
-function derivedFeedEvents(pressureRows, peak) {
+function derivedFeedEvents(pressureRows, peak, visibility) {
   const buckets = state.day.buckets.market || [];
   return pressureRows.slice(0, 8).map((row, index) => {
     const bucket = buckets[(index * 2) % Math.max(1, buckets.length)] || peak || {};
@@ -1063,6 +1122,8 @@ function derivedFeedEvents(pressureRows, peak) {
       kind,
       tone,
       time: bucket.time || peak?.time || "--",
+      source: "derived-minute-aggregate",
+      visibleTier: visibility?.tier || "public-latest",
       score,
       detail,
       cp,
@@ -1070,6 +1131,21 @@ function derivedFeedEvents(pressureRows, peak) {
       premiumBias,
     };
   });
+}
+
+function feedBoundaryRail(visibility) {
+  if (!visibility?.steps?.length) return "";
+  return `
+    <div class="feed-boundary-rail" data-visible-tier="${escapeHtml(visibility.tier)}" aria-label="${state.lang === "zh" ? "事件流可见边界" : "Event visibility boundary"}">
+      ${visibility.steps.map((step) => `
+        <span class="${step.tone} ${step.active ? "active" : ""}">
+          <i>${escapeHtml(step.title)}</i>
+          <b>${escapeHtml(step.value)}</b>
+          <small>${escapeHtml(step.note)}</small>
+        </span>
+      `).join("")}
+    </div>
+  `;
 }
 
 function liveEventQueue(events, locked) {

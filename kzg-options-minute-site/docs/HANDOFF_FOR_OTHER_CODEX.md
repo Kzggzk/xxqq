@@ -19,7 +19,7 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
 - Production version last verified / 最近生产验证版本: `1.52`
-- Local version last verified / 最近本地验证版本: `1.52`
+- Local version last verified / 最近本地验证版本: `1.53`
 - Latest unique deploy / 最近唯一部署: `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`
 - iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.4`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
@@ -131,6 +131,14 @@ Latest local v1.52 note:
 Web `1.52` is the latest local and production checkpoint. It turns the safe live-feed silhouette into a derived event queue without using real credentials or a real backend. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.52`, new `derivedFeedEvents()` and `liveEventQueue()`, desktop eight-cell short event tape, phone two-column event tape, rows after the fourth hidden on narrow phones. The new internal doc is `docs/REALTIME_FEED_SCHEMA.md`, and it defines event fields for Web, future backend, and iOS: `id`, `tradeDate`, `time`, `symbol`, `kind`, `tone`, `score`, `detail`, `source`, `visibleTier`, and compact metrics. Public event kinds are burst, premium, CP slope, defense, cooling, and rhythm. No real Massive key, provider route, plan price, payment, registration, domain, checkout, raw contract payload, or legal assumption is exposed. Local QA passed: `505`-day build, risk scan 0, desktop/mobile/event screenshots with no overflow or console issue, and PNG export `/tmp/kzg-option-house-v152-export.png` at `1,482,138` bytes. Production unique deploy is `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`; live smoke confirms `/`, `/latest`, and `/r/latest.html` as `200`, raw endpoints remain `404`, `/app.js` is `UI_VERSION="1.52"`, and production phone has no overflow or public-risk text. Next default Web step is `1.53` entitlement-safe event boundaries; next default iOS sync is Web `1.55`.
 
 Web `1.52` 是最新本地和生产检查点。它把安全实时流轮廓推进成派生事件队列，但不使用真实凭证或真实后端。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.52`，新增 `derivedFeedEvents()` 和 `liveEventQueue()`，桌面八格短事件 tape，手机两列事件 tape，窄手机隐藏第 5 条之后的事件。新增内部文档 `docs/REALTIME_FEED_SCHEMA.md`，定义 Web、未来后端和 iOS 共用事件字段：`id`、`tradeDate`、`time`、`symbol`、`kind`、`tone`、`score`、`detail`、`source`、`visibleTier` 和紧凑 metrics。公开事件类型是爆发、权利金、CP 斜率、防守、降温和节奏。不暴露真实 Massive key、provider route、套餐价格、支付、注册、域名、checkout、原始合约 payload 或法律假设。本地 QA 通过：`505` 天构建、风险扫描 0、桌面/手机/事件区截图无横向溢出和 console issue，PNG 导出 `/tmp/kzg-option-house-v152-export.png` 为 `1,482,138` bytes。生产唯一部署为 `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`；线上 smoke 确认 `/`、`/latest`、`/r/latest.html` 为 `200`，raw endpoints 继续 `404`，`/app.js` 是 `UI_VERSION="1.52"`，线上手机无溢出、无公开风险词。下一默认 Web 步骤是 `1.53` 权限安全事件边界；下一默认 iOS 同步是 Web `1.55`。
+
+Latest local v1.53 note:
+
+最新本地 v1.53 说明：
+
+Web `1.53` is the latest local checkpoint and is not deployed to production. Production remains v1.52 at `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.53`, new `feedVisibilityState()` and `feedBoundaryRail()`, derived events now carry `source` and a safe neutral `visibleTier`, and the live silhouette has a compact three-cell boundary rail for latest open, history preview, and deep derived queued. Public code uses `advanced-derived` instead of exposing paid-product mechanics. Verification passed: `node --check`, 505-day build latest `2026-05-22`, public/dist risk scan 0, local Playwright desktop/mobile/event screenshots with no overflow or console issue, 3 visible boundary cells, and PNG export `/tmp/kzg-option-house-v153-export.png` at `1,482,138` bytes. Next default Web step is `1.54` fanout/load/cache modeling; next default iOS sync is Web `1.55`.
+
+Web `1.53` 是最新本地检查点，未部署生产。生产仍为 v1.52，生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.53`，新增 `feedVisibilityState()` 和 `feedBoundaryRail()`，派生事件现在带 `source` 和公开安全的中性 `visibleTier`，实时流轮廓加入三格短边界条，分别是今日开放、历史预览、深层派生排队。公开代码使用 `advanced-derived`，不暴露付费产品机制。验证通过：`node --check`、505 天构建最新 `2026-05-22`、public/dist 风险扫描 0、本地 Playwright 桌面/手机/事件区截图无溢出和 console issue、3 格边界条可见、PNG 导出 `/tmp/kzg-option-house-v153-export.png` 为 `1,482,138` bytes。下一默认 Web 步骤是 `1.54` fanout/load/cache 建模；下一默认 iOS 同步是 Web `1.55`。
 
 ## Verification checklist / 验证清单
 

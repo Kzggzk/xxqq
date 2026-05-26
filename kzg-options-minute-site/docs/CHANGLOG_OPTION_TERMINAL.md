@@ -29,7 +29,7 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
 - 最近验证唯一部署: `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.52`
-- 最近本地验证 UI 版本: `1.52`
+- 最近本地验证 UI 版本: `1.53`
 - 当前 iOS 伴生版本: `0.4`，对应 Web `1.50`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
@@ -47,7 +47,7 @@ English:
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
 - Latest verified unique deploy: `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.52`
-- Latest locally verified UI version: `1.52`
+- Latest locally verified UI version: `1.53`
 - Current iOS companion version: `0.4`, mapped to Web `1.50`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
@@ -241,6 +241,32 @@ Verification facts: `node --check public/app.js` passed; the build produced a `5
 Production result: v1.52 is deployed to production. Production site `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`. Live smoke confirmed `/`, `/latest`, `/r/latest.html`, and `/app.js` as `200`, `/app.js` as `UI_VERSION="1.52"`, and `/data/index.json` plus `/assets/kzg-pack.js` as `404`. Live phone `390x844` shows `1.52 · 505/505 complete`, 4 visible event cards, no horizontal overflow, no console issue, and no public-risk text.
 
 Handoff record: pinned Apple Notes `CHANGLOG 期权终端` has been synced from this file, with current note body around `116k` characters. GitHub docs are the canonical entry for another Codex; Apple Notes is Fangbao's live owner-facing view.
+
+## 4.0.3 v1.53 feed visibility boundary / v1.53 事件流可见边界
+
+中文:
+
+北京时间 2026-05-26 22:40 左右进入 Web `1.53`。这一轮不是生产部署轮，而是继续接上 v1.52 派生事件队列，把“用户到底能看见什么”从口头规则变成公开 UI 中的边界骨架。它仍然不使用真实 Massive key，不接真实后端，不做套餐升级，不触碰 payment、domain、Stripe、Supabase、TestFlight 或任何花钱和凭证动作。
+
+公开代码动作：`public/app.js` 将 `UI_VERSION` 提到 `1.53`，新增 `feedVisibilityState()` 与 `feedBoundaryRail()`。派生事件对象现在带 `source: derived-minute-aggregate` 和 `visibleTier`。公开代码采用中性层级：`public-latest`、`blurred-history`、`advanced-derived`。其中 `advanced-derived` 是公开页面能写出来的能力边界，避免在浏览器代码里出现付费机制、价格、账号或套餐路径。
+
+公开视觉动作：`public/styles.css` 新增 `.feed-boundary-rail`。它是实时流轮廓和派生事件队列之间的一条三格短状态胶片：今日开放、历史预览、深层派生排队。第一版边界条太高，会把 live 区域拉长；随后压成一行短条，桌面 live 区域约 `400px`，手机约 `470px`，避免新的说明层变成新的空白和冗长卡片。
+
+验证事实：`node --check public/app.js` 通过；构建生成 `505` 天 payload，最新日 `2026-05-22`，analytics symbols `98`，pack asset `kzg-frame-81f858a7af7c.js`；`per_day_to_dist.py` 返回 `copied=505`。`public` 和 `dist` 风险词扫描为 0。Playwright 本地验证桌面、手机、手机事件区无横向溢出、无 console issue、`user-select:none`；桌面事件队列 8 条可见，手机 4 条可见，边界条 3 格可见，当前层级 `public-latest`。截图为 `/tmp/kzg-option-house-v153-desktop.png`、`/tmp/kzg-option-house-v153-mobile.png`、`/tmp/kzg-option-house-v153-mobile-events.png`。PNG 导出 `/tmp/kzg-option-house-v153-export.png` 成功，大小 `1,482,138` bytes。
+
+部署状态：v1.53 不部署生产。生产仍为 v1.52，唯一部署 `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`。下一步 v1.54 做 fanout/load/cache 和事件压缩模型；v1.55 默认同步 iOS companion。
+
+English:
+
+Around 2026-05-26 22:40 Asia/Shanghai, Web `1.53` started. This is not a production deploy round. It continues the v1.52 derived event queue and turns the question of what users can see into a visible UI boundary skeleton. It still does not use real Massive keys, connect a real backend, upgrade a plan, or touch payment, domain, Stripe, Supabase, TestFlight, spending, or credentials.
+
+Public code action: `public/app.js` moves `UI_VERSION` to `1.53` and adds `feedVisibilityState()` plus `feedBoundaryRail()`. Derived event objects now carry `source: derived-minute-aggregate` and `visibleTier`. Public code uses neutral tiers: `public-latest`, `blurred-history`, and `advanced-derived`. `advanced-derived` is the capability boundary that can safely appear in browser code without exposing paid mechanics, prices, accounts, or plan routes.
+
+Public visual action: `public/styles.css` adds `.feed-boundary-rail`. It is a three-cell short status strip between the live silhouette and the derived event queue: latest open, history preview, deep derived queued. The first rail pass was too tall and stretched the live area, so it was compressed into a one-line strip; desktop live area is about `400px`, phone about `470px`, avoiding a new explanatory layer becoming blank space or another long card.
+
+Verification facts: `node --check public/app.js` passed; build produced a `505`-day payload, latest date `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-81f858a7af7c.js`; `per_day_to_dist.py` returned `copied=505`. Risk scans over `public` and `dist` returned 0. Local Playwright verified desktop, phone, and phone event area with no horizontal overflow, no console issue, and `user-select:none`; desktop shows 8 event cards, phone shows 4, the boundary rail has 3 visible cells, and current tier is `public-latest`. Screenshots are `/tmp/kzg-option-house-v153-desktop.png`, `/tmp/kzg-option-house-v153-mobile.png`, and `/tmp/kzg-option-house-v153-mobile-events.png`. PNG export `/tmp/kzg-option-house-v153-export.png` succeeded at `1,482,138` bytes.
+
+Deploy state: v1.53 is not deployed to production. Production remains v1.52, unique deploy `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`. Next v1.54 should model fanout/load/cache and event compression; v1.55 remains the default iOS companion sync.
 
 ## 4.1 v1.40 production checkpoint / v1.40 生产检查点
 

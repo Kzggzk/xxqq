@@ -71,12 +71,18 @@ Public UI must not show provider names, API routes, API keys, plan names, plan p
 
 1. v1.52 Web adapter: compute events in `public/app.js` from symbol rotation rows and 30-minute buckets.
 2. v1.52 Web adapter：在 `public/app.js` 中从标的轮动行和 30 分钟桶生成事件。
-3. v1.53 contract: move event naming and visibility tiers into a stable boundary doc and tests.
-4. v1.53 合约：把事件命名和可见层级稳定下来，并补测试。
+3. v1.53 contract: public code uses neutral visibility tiers `public-latest`, `blurred-history`, and `advanced-derived`; internal backend planning may later map `advanced-derived` to paid-derived after Fangbao confirms credentials and commercial entitlement.
+4. v1.53 合约：公开代码使用中性可见层级 `public-latest`、`blurred-history` 和 `advanced-derived`；内部后端规划未来可在 Fangbao 确认真凭证和商业权限后，把 `advanced-derived` 映射到 paid-derived。
 5. v1.54 backend model: decide cache TTL, event compression, watchlist size, and fanout limits.
 6. v1.54 后端模型：决定缓存 TTL、事件压缩、观察列表大小和分发限制。
 7. v1.55 iOS sync: render the same event shape natively, still with mock-derived data unless Fangbao approves real backend access.
 8. v1.55 iOS 同步：原生端渲染同一事件结构；除非 Fangbao 批准真实后端，否则仍使用 mock-derived 数据。
+
+## v1.53 visibility rail / v1.53 可见边界条
+
+The public page now renders a compact boundary rail beside the derived event queue. It shows only product-safe states: latest open, history preview, and deep derived queued. It intentionally avoids payment, pricing, provider, API route, domain, account, and plan language.
+
+公开页现在在派生事件队列旁渲染一条紧凑边界条。它只展示产品安全状态：今日开放、历史预览、深层派生排队。它故意不展示支付、价格、供应商、API 路由、域名、账号和套餐语言。
 
 ## Security boundary / 安全边界
 

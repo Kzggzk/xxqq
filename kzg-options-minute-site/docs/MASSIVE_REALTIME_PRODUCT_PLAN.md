@@ -227,6 +227,12 @@ The canonical internal event contract is now in `docs/REALTIME_FEED_SCHEMA.md`.
 
 标准内部事件合约现在写在 `docs/REALTIME_FEED_SCHEMA.md`。
 
+## v1.53 boundary result / v1.53 边界结果
+
+v1.53 adds a public-safe feed visibility boundary. The public UI labels the states as latest open, history preview, and deep derived queued. The browser code uses neutral `advanced-derived` instead of exposing paid-product mechanics. Future backend work can map that state to a real entitlement table only after Fangbao confirms credentials, commercial rights, and service terms.
+
+v1.53 新增公开安全的 feed 可见边界。公开 UI 把状态写成今日开放、历史预览、深层派生排队。浏览器代码使用中性的 `advanced-derived`，不暴露付费产品机制。未来后端只有在 Fangbao 确认凭证、商业权利和服务条款后，才能把这个状态映射到真实权限表。
+
 ## Implementation stages / 实施阶段
 
 Stage 1: current safe product.
