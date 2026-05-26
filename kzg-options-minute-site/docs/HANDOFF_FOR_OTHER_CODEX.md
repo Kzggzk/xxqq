@@ -18,9 +18,9 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Remote / 远端: `https://github.com/Kzggzk/xxqq.git`
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
-- Production version last verified / 最近生产验证版本: `1.45`
-- Local version last verified / 最近本地验证版本: `1.48`
-- Latest unique deploy / 最近唯一部署: `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`
+- Production version last verified / 最近生产验证版本: `1.49`
+- Local version last verified / 最近本地验证版本: `1.49`
+- Latest unique deploy / 最近唯一部署: `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`
 - iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.3`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
 - Local verified option-minute window / 本地已验证期权分钟范围: `2024-05-17 -> 2026-05-22`, `505` files.
@@ -76,29 +76,37 @@ Web `1.45` is the latest production checkpoint and focuses on phone ledger densi
 
 Web `1.45` 是最新生产检查点，重点是手机端账本密度和 iOS 伴生端同步。它保留 v1.44 的桌面/iPad 稳定成果，隐藏手机端轮动长说明，把手机轮动与动量可见行都压到 `12` 条，并把原生 SwiftUI 伴生端更新到 iOS `0.3`。唯一部署：`https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`。XcodeBuildMCP 仍遇到本机 simulator destination 阻塞，但 `swiftc -typecheck` 通过。
 
-Latest local v1.46 note:
+Previous local v1.46 note:
 
-最新本地 v1.46 说明：
+较早本地 v1.46 说明：
 
-Web `1.46` is the latest local-only checkpoint. It is not deployed. It keeps production at v1.45 and improves the phone lower-page unity between advanced preview, symbol rotation, and symbol momentum. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.46`, mobile/narrow visual connector lines, unified section heading borders/radius, tighter premium/rotation/momentum gaps, and quieter mobile rotation dots capped at `30px`. Browser and Playwright verified v1.46, no console warnings/errors, no horizontal overflow, no public-risk string leak, and PNG export `/tmp/kzg-option-house-v146-export.png` at `1,482,138` bytes. Next deploy should normally wait until v1.48-v1.50.
+Web `1.46` is a previous local-only checkpoint. It is not deployed. It keeps production at v1.45 and improves the phone lower-page unity between advanced preview, symbol rotation, and symbol momentum. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.46`, mobile/narrow visual connector lines, unified section heading borders/radius, tighter premium/rotation/momentum gaps, and quieter mobile rotation dots capped at `30px`. Browser and Playwright verified v1.46, no console warnings/errors, no horizontal overflow, no public-risk string leak, and PNG export `/tmp/kzg-option-house-v146-export.png` at `1,482,138` bytes.
 
-Web `1.46` 是最新本地检查点，未部署生产。生产仍为 v1.45。本轮改的是手机下半页统一感，把高级预览、标的轮动、核心动量三段接成更连续的读盘脊柱。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.46`、移动/窄屏连接线、统一 section heading 边界与圆角、更紧的 premium/rotation/momentum 间距、手机轮动气泡上限降到 `30px`。Browser 与 Playwright 已验证 v1.46、无 console warning/error、无横向溢出、无公开风险词泄露，PNG 导出 `/tmp/kzg-option-house-v146-export.png` 为 `1,482,138` bytes。下一次常规部署默认等 v1.48-v1.50。
+Web `1.46` 是较早本地检查点，未部署生产。生产当时仍为 v1.45。本轮改的是手机下半页统一感，把高级预览、标的轮动、核心动量三段接成更连续的读盘脊柱。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.46`、移动/窄屏连接线、统一 section heading 边界与圆角、更紧的 premium/rotation/momentum 间距、手机轮动气泡上限降到 `30px`。Browser 与 Playwright 已验证 v1.46、无 console warning/error、无横向溢出、无公开风险词泄露，PNG 导出 `/tmp/kzg-option-house-v146-export.png` 为 `1,482,138` bytes。
 
-Latest local v1.47 note:
+Previous local v1.47 note:
 
-最新本地 v1.47 说明：
+较早本地 v1.47 说明：
 
-Web `1.47` is the latest local-only checkpoint. It is not deployed. It keeps production at v1.45 and compresses the phone advanced-preview entry plus the momentum-panel tail. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.47`, two-line capability lead, two-column phone capability rails, one-row four-button unlock tabs, shorter capability meter, shorter focus rhythm stack/tape/charts, and phone momentum list reduced to 10 visible rows. Browser and Playwright verified v1.47, theme toggle interaction, no console warnings/errors, no horizontal overflow, no public-risk string leak, and PNG export `/tmp/kzg-option-house-v147-export.png` at `1,482,138` bytes. Next deploy should normally wait until v1.48-v1.50.
+Web `1.47` is a previous local-only checkpoint. It is not deployed. It keeps production at v1.45 and compresses the phone advanced-preview entry plus the momentum-panel tail. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.47`, two-line capability lead, two-column phone capability rails, one-row four-button unlock tabs, shorter capability meter, shorter focus rhythm stack/tape/charts, and phone momentum list reduced to 10 visible rows. Browser and Playwright verified v1.47, theme toggle interaction, no console warnings/errors, no horizontal overflow, no public-risk string leak, and PNG export `/tmp/kzg-option-house-v147-export.png` at `1,482,138` bytes.
 
-Web `1.47` 是最新本地检查点，未部署生产。生产仍为 v1.45。本轮压缩手机端高级预览入口和动量面板尾部。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.47`、capability lead 两行化、手机 capability rails 两列化、unlock tabs 一行四按钮、更短的 capability meter、更短的 focus rhythm stack/tape/charts，手机动量列表压到 10 条可见。Browser 与 Playwright 已验证 v1.47、theme toggle 交互、无 console warning/error、无横向溢出、无公开风险词泄露，PNG 导出 `/tmp/kzg-option-house-v147-export.png` 为 `1,482,138` bytes。下一次常规部署默认等 v1.48-v1.50。
+Web `1.47` 是较早本地检查点，未部署生产。生产当时仍为 v1.45。本轮压缩手机端高级预览入口和动量面板尾部。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.47`、capability lead 两行化、手机 capability rails 两列化、unlock tabs 一行四按钮、更短的 capability meter、更短的 focus rhythm stack/tape/charts，手机动量列表压到 10 条可见。Browser 与 Playwright 已验证 v1.47、theme toggle 交互、无 console warning/error、无横向溢出、无公开风险词泄露，PNG 导出 `/tmp/kzg-option-house-v147-export.png` 为 `1,482,138` bytes。
 
-Latest local v1.48 note:
+Previous local v1.48 note:
 
-最新本地 v1.48 说明：
+较早本地 v1.48 说明：
 
-Web `1.48` is the latest local-only checkpoint. It is not deployed. It keeps production at v1.45 and compresses the live-feed silhouette plus the lower desktop reading rhythm. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.48`, desktop analysis-grid/panel padding unification, tighter desktop live silhouette columns, phone premium cards as two short columns, phone live silhouette lead reduced to a short title strip, phone live stream reduced to 7 visible pressure rows, and quadrant map lowered to `132px`. Browser verified page identity, theme toggle, no overlay, no console warnings/errors, and `user-select:none`; Browser screenshot timed out once, so Playwright provided visual proof. Playwright verified no horizontal overflow, no commercial-risk string leak after excluding market-data dollar amounts, and PNG export `/tmp/kzg-option-house-v148-export.png` at `1,482,138` bytes. Next deploy should normally wait until v1.49-v1.50.
+Web `1.48` is a previous local-only checkpoint. It is not deployed. It keeps production at v1.45 and compresses the live-feed silhouette plus the lower desktop reading rhythm. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.48`, desktop analysis-grid/panel padding unification, tighter desktop live silhouette columns, phone premium cards as two short columns, phone live silhouette lead reduced to a short title strip, phone live stream reduced to 7 visible pressure rows, and quadrant map lowered to `132px`. Browser verified page identity, theme toggle, no overlay, no console warnings/errors, and `user-select:none`; Browser screenshot timed out once, so Playwright provided visual proof. Playwright verified no horizontal overflow, no commercial-risk string leak after excluding market-data dollar amounts, and PNG export `/tmp/kzg-option-house-v148-export.png` at `1,482,138` bytes.
 
-Web `1.48` 是最新本地检查点，未部署生产。生产仍为 v1.45。本轮压缩实时流轮廓和桌面下半区阅读节奏。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.48`、桌面 analysis-grid/panel padding 统一、桌面 live silhouette 三列更紧、手机 premium cards 两列短卡、手机 live silhouette lead 降为短标题条、手机 live stream 降为 7 条可见压力行、quadrant map 降到 `132px`。Browser 已验证页面身份、theme toggle、无 overlay、无 console warning/error、`user-select:none`；Browser 截图本轮超时一次，所以用 Playwright 补视觉证据。Playwright 已验证无横向溢出、排除市场数据美元金额后的商业风险词为 0，PNG 导出 `/tmp/kzg-option-house-v148-export.png` 为 `1,482,138` bytes。下一次常规部署默认等 v1.49-v1.50。
+Web `1.48` 是较早本地检查点，未部署生产。生产当时仍为 v1.45。本轮压缩实时流轮廓和桌面下半区阅读节奏。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.48`、桌面 analysis-grid/panel padding 统一、桌面 live silhouette 三列更紧、手机 premium cards 两列短卡、手机 live silhouette lead 降为短标题条、手机 live stream 降为 7 条可见压力行、quadrant map 降到 `132px`。Browser 已验证页面身份、theme toggle、无 overlay、无 console warning/error、`user-select:none`；Browser 截图本轮超时一次，所以用 Playwright 补视觉证据。Playwright 已验证无横向溢出、排除市场数据美元金额后的商业风险词为 0，PNG 导出 `/tmp/kzg-option-house-v148-export.png` 为 `1,482,138` bytes。
+
+Latest production v1.49 note:
+
+最新生产 v1.49 说明：
+
+Web `1.49` is now both the latest local and production checkpoint. It deploys the stable group after v1.45. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.49`, tighter phone transition from advanced preview into rotation, shorter premium quadrant flow, quieter rotation quadrant map, denser desktop lower analysis, and stronger dark-mode contrast for live silhouette and rotation rows. Browser verified the local page identity, latest date, `user-select:none`, and no internal-risk strings; Browser screenshot capture timed out, so Playwright provided screenshot evidence. Local Playwright verified desktop and phone no horizontal overflow, no console warnings/errors, PNG export `/tmp/kzg-option-house-v149-export.png` at `1,482,138` bytes, and screenshots under `/tmp/kzg-option-house-v149-*.png`. Production unique deploy is `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`; live smoke confirms `/`, `/r/latest.html`, and `/latest` as `200`, `/data/index.json` and `/assets/kzg-pack.js` as `404`, `/app.js` with `UI_VERSION="1.49"`, and live phone no horizontal overflow or public-risk strings. Next default target is Web `1.50`, including the iOS companion cadence checkpoint.
+
+Web `1.49` 现在是最新本地和生产检查点，已把 v1.45 之后的稳定版本组部署上线。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.49`、手机高级预览到轮动的过渡更紧、premium quadrant flow 更短、轮动象限图更安静、桌面下半区信息密度更统一、暗色模式下 live silhouette 与 rotation rows 对比更强。Browser 已验证本地页面身份、最新日期、`user-select:none`、无内部风险词；Browser 截图仍超时，所以用 Playwright 留视觉证据。本地 Playwright 已验证桌面和手机无横向溢出、无 console warning/error，PNG 导出 `/tmp/kzg-option-house-v149-export.png` 为 `1,482,138` bytes，截图在 `/tmp/kzg-option-house-v149-*.png`。生产唯一部署为 `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`；线上 smoke 确认 `/`、`/r/latest.html`、`/latest` 为 `200`，`/data/index.json` 与 `/assets/kzg-pack.js` 为 `404`，`/app.js` 为 `UI_VERSION="1.49"`，线上手机无横向溢出、无公开风险词。下一默认目标是 Web `1.50`，同时进入 iOS companion cadence checkpoint。
 
 ## Verification checklist / 验证清单
 

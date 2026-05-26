@@ -12,8 +12,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - `1.01 -> 2.00` 代表 100 个稠密迭代。
 - A future `11.85` means 1085 post-1.00 dense iterations, not a symbolic number.
 - 未来如果到 `11.85`，它代表从 1.00 之后真的经历了 1085 个稠密迭代，不是随便喊出来的数字。
-- The latest local checkpoint is public UI `1.48`. The latest production checkpoint is public UI `1.45` at unique deploy `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`. The next dense step is `1.49`.
-- 最近本地检查点是公开 UI `1.48`。最近生产检查点是公开 UI `1.45`，唯一部署是 `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`。下一次稠密版本是 `1.49`。
+- The latest local checkpoint is public UI `1.49`. The latest production checkpoint is public UI `1.49` at unique deploy `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`. The next dense step is `1.50`.
+- 最近本地检查点是公开 UI `1.49`。最近生产检查点是公开 UI `1.49`，唯一部署是 `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`。下一次稠密版本是 `1.50`。
 
 ## iOS companion cadence / iOS 伴生节奏
 

@@ -27,9 +27,9 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 远端: `https://github.com/Kzggzk/xxqq.git`
 - 生产站: `https://kzg-option-house.netlify.app/`
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
-- 最近验证唯一部署: `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`
-- 最近生产 UI 显示版本: `1.45`
-- 最近本地验证 UI 版本: `1.48`
+- 最近验证唯一部署: `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`
+- 最近生产 UI 显示版本: `1.49`
+- 最近本地验证 UI 版本: `1.49`
 - 当前 iOS 伴生版本: `0.3`，对应 Web `1.45`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
@@ -45,9 +45,9 @@ English:
 - Remote: `https://github.com/Kzggzk/xxqq.git`
 - Production site: `https://kzg-option-house.netlify.app/`
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
-- Latest verified unique deploy: `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`
-- Latest visible production UI version: `1.45`
-- Latest locally verified UI version: `1.48`
+- Latest verified unique deploy: `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`
+- Latest visible production UI version: `1.49`
+- Latest locally verified UI version: `1.49`
 - Current iOS companion version: `0.3`, mapped to Web `1.45`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
@@ -359,6 +359,36 @@ Verified facts: `node --check public/app.js` passed; `python3 scripts/build_payl
 Visual verification: local Playwright/Chrome desktop `1440x1100` showed v1.48 with no horizontal overflow; advanced preview dropped from v1.47's `1828px` to `1782px`, live silhouette `301px`, rotation `816px`, momentum `587px`. Mobile `390x844` showed v1.48 with no horizontal overflow; advanced preview dropped from v1.47's `2780px` to `2686px`, live silhouette `308px`, live lead `32px`, visible live rows `7`, visible momentum rows still `10`. PNG export was clicked successfully: `/tmp/kzg-option-house-v148-export.png`, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v148-desktop.png`, `/tmp/kzg-option-house-v148-mobile.png`, `/tmp/kzg-option-house-v148-mobile-premium.png`, `/tmp/kzg-option-house-v148-mobile-live.png`.
 
 Current state: v1.48 is a local and GitHub-docs checkpoint, not a production deploy. Production remains v1.45 at `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`. Next v1.49 should inspect the phone transition from advanced-preview tail into rotation, dark-mode contrast for live silhouette/rotation, and desktop lower-analysis density. The next normal production deploy should wait until v1.49-v1.50 before deciding.
+
+## 4.10 v1.49 production transition and dark contrast pass / v1.49 生产过渡与暗色对比
+
+中文:
+
+北京时间 2026-05-26 21:32 左右，心跳进入 Web `1.49` 并完成生产部署。这是 v1.45 生产版之后的第 4 个扎实版本组，符合“每 3-5 个版本部署一次”的稠密部署规则。工作仍然只发生在 `/Users/fangbao/kzg-options-minute-site`，没有触碰受保护 KZG OS 路径，没有做真实域名购买、付款账户动作、Massive 升级、凭证传输或任何花钱动作。
+
+具体变化：`public/app.js` 将 `UI_VERSION` 从 `1.48` 升到 `1.49`。`public/styles.css` 追加 v1.49 层。桌面 `1181px+` 下，`premium-lookback`、`premium-signal-stack`、`live-silhouette`、`premium-quadrant` 的最小高度约束更安静，`trend-drift-ledger`、`regime-grid`、`bucket-risk-grid`、`rotation-map-stats`、`momentum-summary` 的 gap 收到 `6px`，rotation map 和 lanes 的间距更像同一套下半区账本。手机 `760px` 以下，高级预览尾部的连接线更短，`.rotation-panel` 继续轻微上提；`520px` 以下，premium quadrant copy 和 quadrant flow 被压成短双列，stats 和 rotation stats 的卡片高度降低，rotation map 降噪，气泡上限从 v1.48 的 `30px` 继续收至 `28px`。暗色模式下，`live-silhouette` 改成更深的双段 gradient，stream、rotation lane 和 rotation row 的边框/底色对比增强，避免 live/rotation 在暗色下糊成一块灰。
+
+验证事实：`node --check public/app.js` 通过；`python3 scripts/build_payload.py` 生成 `505` 天 payload，最新交易日 `2026-05-22`，analytics symbols `98`，pack asset `kzg-frame-98f993776851.js`；`python3 scripts/per_day_to_dist.py` 复制 `505` 个 report。source 与 dist 公开风险词扫描均为 0。内置 Browser 打开 `http://127.0.0.1:4179/` 成功，显示 v1.49、最新日 `2026-05-22`、`user-select:none`、无内部风险词；Browser 截图仍然因 CDP capture timeout 失败，所以继续用 Playwright 保存视觉证据。
+
+视觉验证：Playwright/Chrome 本地桌面 `1440x1100` 显示 v1.49，topbar `69px`，高级预览 `1782px`，rotation `816px`，momentum `587px`，横向溢出 `0`，console warn/error 为 `0`。手机 `390x844` 显示 v1.49，topbar `91px`，高级预览 `2638px`，rotation `776px`，momentum `794px`，live silhouette `308px`，visible rotation rows `12`，visible momentum rows `10`，横向溢出 `0`，console warn/error 为 `0`。暗色模式验证为 `theme=dark`，live 背景为深色 gradient，stream border 为 `rgba(238,232,218,0.15)`，rotation lane 背景为 `rgba(255,251,240,0.035)`。PNG 导出实际点击成功，文件 `/tmp/kzg-option-house-v149-export.png`，建议文件名 `kzg-option-house-2026-05-22-zh.png`，大小 `1,482,138` bytes。截图证据：`/tmp/kzg-option-house-v149-desktop.png`、`/tmp/kzg-option-house-v149-mobile.png`、`/tmp/kzg-option-house-v149-mobile-transition.png`、`/tmp/kzg-option-house-v149-mobile-dark.png`。
+
+生产结果：Netlify production deploy 成功。生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`。线上 smoke 确认 `/` `200`、`/r/latest.html` `200`、`/latest` `200`、`/data/index.json` `404`、`/assets/kzg-pack.js` `404`，线上 `/app.js` 为 `UI_VERSION="1.49"`，线上首页引用 `kzg-frame-98f993776851.js`。线上手机 `390x844` 显示 v1.49、最新日 `2026-05-22`、横向溢出 `0`、无公开风险词、无 console issue。Apple Notes 置顶 `CHANGLOG 期权终端` 已同步，本轮同步正文约 `97,412` chars。
+
+当前状态：v1.49 是最新本地和生产检查点。GitHub docs、Apple Notes 和生产站都应以 v1.49 为准。下一步 v1.50 是 iOS companion cadence checkpoint：默认要做一次 iOS `0.4` 级别的小同步，同时继续优化手机首屏到日报画布之间的纵向扫读和暗色模式下历史/轮动/动量的统一感。公开页仍不得放入真实付款、域名、API、账号、价格或授权接入方案。
+
+English:
+
+Around 2026-05-26 21:32 Asia/Shanghai, the heartbeat entered Web `1.49` and deployed it to production. This is the fourth solid version group after the v1.45 production checkpoint, matching the dense deploy rule of deploying every 3-5 versions. Work remained inside `/Users/fangbao/kzg-options-minute-site`; protected KZG OS paths were not touched. No real domain purchase, payment-account action, Massive upgrade, credential transmission, or spending action was performed.
+
+Concrete changes: `public/app.js` moved `UI_VERSION` from `1.48` to `1.49`. `public/styles.css` adds a v1.49 layer. On desktop `1181px+`, `premium-lookback`, `premium-signal-stack`, `live-silhouette`, and `premium-quadrant` have quieter minimum-height behavior, while `trend-drift-ledger`, `regime-grid`, `bucket-risk-grid`, `rotation-map-stats`, and `momentum-summary` tighten to `6px` gaps. Rotation map and lanes now belong better to the same lower-dashboard ledger. On phone under `760px`, the advanced-preview connector line is shorter and `.rotation-panel` remains slightly lifted; under `520px`, premium quadrant copy and quadrant flow compress into short two-column rows, stats and rotation-stat cards get shorter, the rotation map is quieter, and bubble caps move from the v1.48 `30px` to `28px`. In dark mode, `live-silhouette` uses a deeper two-stop gradient, and stream, rotation lane, and rotation row border/background contrast is strengthened so live/rotation do not collapse into one gray surface.
+
+Verified facts: `node --check public/app.js` passed; `python3 scripts/build_payload.py` produced a `505`-day payload, latest trading date `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-98f993776851.js`; `python3 scripts/per_day_to_dist.py` copied `505` reports. Source and dist public-risk scans both returned 0. In-app Browser opened `http://127.0.0.1:4179/`, showed v1.49, latest date `2026-05-22`, `user-select:none`, and no internal-risk strings; Browser screenshot still failed on CDP capture timeout, so Playwright again provided visual proof.
+
+Visual verification: local Playwright/Chrome desktop `1440x1100` showed v1.49 with topbar `69px`, advanced preview `1782px`, rotation `816px`, momentum `587px`, horizontal overflow `0`, and console warnings/errors `0`. Phone `390x844` showed v1.49 with topbar `91px`, advanced preview `2638px`, rotation `776px`, momentum `794px`, live silhouette `308px`, visible rotation rows `12`, visible momentum rows `10`, horizontal overflow `0`, and console warnings/errors `0`. Dark-mode verification had `theme=dark`, live background as a deep gradient, stream border `rgba(238,232,218,0.15)`, and rotation lane background `rgba(255,251,240,0.035)`. PNG export was clicked successfully: `/tmp/kzg-option-house-v149-export.png`, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v149-desktop.png`, `/tmp/kzg-option-house-v149-mobile.png`, `/tmp/kzg-option-house-v149-mobile-transition.png`, `/tmp/kzg-option-house-v149-mobile-dark.png`.
+
+Production result: Netlify production deploy succeeded. Production site `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`. Live smoke confirmed `/` `200`, `/r/latest.html` `200`, `/latest` `200`, `/data/index.json` `404`, `/assets/kzg-pack.js` `404`, live `/app.js` as `UI_VERSION="1.49"`, and live home referencing `kzg-frame-98f993776851.js`. Live phone `390x844` showed v1.49, latest date `2026-05-22`, horizontal overflow `0`, no public-risk strings, and no console issue. Pinned Apple Notes `CHANGLOG 期权终端` was synced in this round at about `97,412` chars.
+
+Current state: v1.49 is the latest local and production checkpoint. GitHub docs, Apple Notes, and the production site should now treat v1.49 as current. Next v1.50 is the iOS companion cadence checkpoint: by default it should include a small iOS `0.4` sync, continue improving the phone vertical scan from first viewport into the report canvas, and unify dark-mode treatment across history, rotation, and momentum. The public page must still not include real payment, domain, API, account, price, or authorization mechanics.
 
 ## 5. SaaS architecture / SaaS 架构
 

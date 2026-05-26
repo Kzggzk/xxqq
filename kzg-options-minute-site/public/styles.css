@@ -13432,3 +13432,130 @@ body[data-theme="dark"] .live-silhouette-lanes span,
 body[data-theme="dark"] .live-silhouette-stream {
   border-color: rgba(238, 232, 218, 0.14);
 }
+
+/* v1.49 pass: connect the advanced-preview tail to rotation and improve dark-mode contrast. */
+@media (min-width: 1181px) {
+  .premium-lookback,
+  .premium-signal-stack,
+  .live-silhouette,
+  .premium-quadrant {
+    min-height: 0;
+  }
+
+  .trend-drift-ledger,
+  .regime-grid,
+  .bucket-risk-grid,
+  .rotation-map-stats,
+  .momentum-summary {
+    gap: 6px;
+  }
+
+  .rotation-map {
+    gap: 8px;
+  }
+
+  .rotation-map-grid {
+    min-height: 196px;
+  }
+
+  .rotation-lanes {
+    gap: 6px;
+  }
+}
+
+@media (max-width: 760px) {
+  .premium-preview {
+    margin-bottom: 0;
+  }
+
+  #premiumPreview::after {
+    left: 28px;
+    right: 28px;
+    bottom: -6px;
+  }
+
+  .rotation-panel {
+    margin-top: -2px;
+  }
+}
+
+@media (max-width: 520px) {
+  .premium-quadrant {
+    margin-bottom: 0;
+  }
+
+  .premium-quadrant-copy {
+    padding: 6px;
+  }
+
+  .premium-quadrant-copy strong {
+    font-size: 15px;
+  }
+
+  .premium-quadrant-flow {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3px;
+  }
+
+  .premium-quadrant-flow span {
+    min-height: 30px;
+    padding: 4px 5px;
+  }
+
+  .premium-quadrant-stats {
+    gap: 3px;
+  }
+
+  .premium-quadrant-stats span,
+  .rotation-map-stats span {
+    min-height: 34px;
+    padding: 5px;
+  }
+
+  .rotation-map {
+    gap: 5px;
+  }
+
+  .rotation-map-grid {
+    min-height: 142px;
+    background-size: 50% 50%;
+  }
+
+  .rotation-map-grid button {
+    max-width: 28px;
+    max-height: 28px;
+  }
+
+  .rotation-lanes {
+    gap: 5px;
+  }
+}
+
+body[data-theme="dark"] .live-silhouette {
+  background: linear-gradient(135deg, rgba(22, 25, 25, 0.96), rgba(14, 16, 17, 0.96));
+  border-color: rgba(236, 229, 214, 0.16);
+}
+
+body[data-theme="dark"] .live-silhouette-lead,
+body[data-theme="dark"] .live-silhouette-stream,
+body[data-theme="dark"] .rotation-map,
+body[data-theme="dark"] .rotation-lane,
+body[data-theme="dark"] .rotation-map-stats span {
+  background: rgba(255, 251, 240, 0.035);
+  border-color: rgba(238, 232, 218, 0.15);
+}
+
+body[data-theme="dark"] .live-silhouette-lanes span,
+body[data-theme="dark"] .rotation-row {
+  background: rgba(255, 251, 240, 0.045);
+  border-color: rgba(238, 232, 218, 0.13);
+}
+
+body[data-theme="dark"] .live-silhouette-stream .hot i::before {
+  background: linear-gradient(90deg, rgba(233, 168, 94, 0.72), rgba(215, 91, 78, 0.9));
+}
+
+body[data-theme="dark"] .live-silhouette-stream .cool i::before {
+  background: linear-gradient(90deg, rgba(114, 159, 208, 0.7), rgba(89, 122, 164, 0.88));
+}
