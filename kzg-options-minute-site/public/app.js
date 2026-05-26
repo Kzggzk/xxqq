@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.51";
+const UI_VERSION = "1.52";
 
 const dataAudit = {
   dataset: "23_DATA_Massive_期权分钟_Minute",
@@ -976,6 +976,7 @@ function liveFeedSilhouette(rows, locked) {
     const width = Math.max(18, Math.min(100, Math.abs(velocity) + 22 + index * 2));
     return { ...row, velocity, tone, width };
   });
+  const feedEvents = derivedFeedEvents(pressure, peak);
   const lead = pressure.reduce((best, row) => Math.abs(row.velocity) > Math.abs(best.velocity || 0) ? row : best, pressure[0] || {});
   const hot = pressure.filter((row) => row.tone === "hot").length;
   const cool = pressure.filter((row) => row.tone === "cool").length;
@@ -1020,6 +1021,69 @@ function liveFeedSilhouette(rows, locked) {
           </button>
         `).join("")}
       </div>
+      ${liveEventQueue(feedEvents, locked)}
+    </div>
+  `;
+}
+
+function derivedFeedEvents(pressureRows, peak) {
+  const buckets = state.day.buckets.market || [];
+  return pressureRows.slice(0, 8).map((row, index) => {
+    const bucket = buckets[(index * 2) % Math.max(1, buckets.length)] || peak || {};
+    const premiumBias = Number(row.premiumDelta) || 0;
+    const volumeBias = Number(row.delta) || 0;
+    const cp = Number(row.cpRatio) || 0;
+    const score = Math.max(4, Math.min(99, Math.abs(row.velocity || 0) + Math.abs(premiumBias) * 0.16 + Math.abs(volumeBias) * 0.1));
+    let kind = state.lang === "zh" ? "节奏" : "Rhythm";
+    let detail = state.lang === "zh" ? "盘口节奏抬升" : "flow rhythm lifted";
+    let tone = row.tone || "flat";
+    if (premiumBias >= 35 && premiumBias >= volumeBias * 0.72) {
+      kind = state.lang === "zh" ? "权利金" : "Premium";
+      detail = state.lang === "zh" ? "资金变化领先" : "premium led the move";
+      tone = "hot";
+    } else if (volumeBias >= 45) {
+      kind = state.lang === "zh" ? "爆发" : "Burst";
+      detail = state.lang === "zh" ? "成交放量领先" : "volume burst led";
+      tone = "hot";
+    } else if (cp >= 3.2) {
+      kind = state.lang === "zh" ? "CP斜率" : "CP slope";
+      detail = state.lang === "zh" ? "Call 侧压力更强" : "call pressure expanded";
+      tone = "hot";
+    } else if (cp <= 0.78 && cp > 0) {
+      kind = state.lang === "zh" ? "防守" : "Defense";
+      detail = state.lang === "zh" ? "Put 侧保护升温" : "put-side defense warmed";
+      tone = "cool";
+    } else if (volumeBias <= -12 || premiumBias <= -18) {
+      kind = state.lang === "zh" ? "降温" : "Cooling";
+      detail = state.lang === "zh" ? "量价同步收缩" : "volume and premium cooled";
+      tone = "cool";
+    }
+    return {
+      symbol: row.symbol || "--",
+      kind,
+      tone,
+      time: bucket.time || peak?.time || "--",
+      score,
+      detail,
+      cp,
+      volumeBias,
+      premiumBias,
+    };
+  });
+}
+
+function liveEventQueue(events, locked) {
+  if (!events.length) return "";
+  return `
+    <div class="live-event-queue ${locked ? "is-blurred" : ""}" aria-label="${state.lang === "zh" ? "实时事件队列" : "Derived event queue"}">
+      ${events.map((event) => `
+        <button type="button" class="${event.tone}" data-symbol="${escapeHtml(event.symbol)}" data-event-kind="${escapeHtml(event.kind)}" data-event-score="${event.score.toFixed(1)}">
+          <i>${escapeHtml(event.time)}</i>
+          <b>${escapeHtml(event.symbol)}</b>
+          <span>${escapeHtml(event.kind)} · ${event.score.toFixed(0)}</span>
+          <small>${escapeHtml(event.detail)}</small>
+        </button>
+      `).join("")}
     </div>
   `;
 }

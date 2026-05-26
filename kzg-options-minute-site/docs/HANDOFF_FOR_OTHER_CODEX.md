@@ -18,9 +18,9 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Remote / 远端: `https://github.com/Kzggzk/xxqq.git`
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
-- Production version last verified / 最近生产验证版本: `1.49`
-- Local version last verified / 最近本地验证版本: `1.50`
-- Latest unique deploy / 最近唯一部署: `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`
+- Production version last verified / 最近生产验证版本: `1.52`
+- Local version last verified / 最近本地验证版本: `1.52`
+- Latest unique deploy / 最近唯一部署: `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`
 - iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.4`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
 - Local verified option-minute window / 本地已验证期权分钟范围: `2024-05-17 -> 2026-05-22`, `505` files.
@@ -116,13 +116,21 @@ Web `1.50` is the latest local checkpoint and is not deployed to production. Pro
 
 Web `1.50` 是最新本地检查点，未部署生产。生产仍为 v1.49，生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`。主要代码改动是 `public/app.js`、`public/styles.css` 和原生 SwiftUI iOS 伴生文件：UI 版本 `1.50`、手机首屏到日报画布路径更短、移动端 `.side-rail` 不再覆盖高级预览、暗色模式 panel 更统一，iOS companion 到 `0.4`，Header、checkpoint strip、timeline、rotation、symbol chips、KZGCard、MetricTile 都更紧。Local build 生成 `505` 天，最新 `2026-05-22`，pack asset `kzg-frame-b4e896d3b7a1.js`；`public` 与 `dist` 风险词扫描为 0。Playwright 验证桌面、手机首屏、手机日报入口、手机高级预览浅色和暗色均无横向溢出和 console issue；PNG 导出 `/tmp/kzg-option-house-v150-export.png` 为 `1,482,138` bytes。XcodeBuildMCP profile 正确，但 `build_sim` 仍失败于 simulator destination 匹配；`swiftc -typecheck` 通过。
 
-Latest local v1.51 note:
+Previous local v1.51 note:
 
-最新本地 v1.51 说明：
+上一轮本地 v1.51 说明：
 
 Web `1.51` is the latest local checkpoint and is not deployed to production. Production remains v1.49 at `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`. Main code changes are `public/app.js`, `public/styles.css`, and internal docs. UI version is `1.51`; the public page only gets a stronger `Live feed silhouette` visual layer, with scan texture, inline pressure dots, and dark-mode feed contrast. It does not expose Massive provider mechanics, API keys, plan prices, payment, checkout, registration, domain, or backend internals. The internal plan in `docs/MASSIVE_REALTIME_PRODUCT_PLAN.md` now states the real architecture: backend-only ingestion, curated contract universe, derived KZG signals, compact cache, entitlement fanout, Business/OPRA rights before public real-time resale, and API key rotation because Fangbao's screenshot exposed keys in conversation context. Do not use those exposed keys. Rotate keys before any real backend work. Verification passed: `node --check`, `505`-day build with latest `2026-05-22`, public/dist risk scan 0, Browser local title/version/live-silhouette/console check 0, Playwright desktop/mobile/live screenshots with no overflow, and PNG export `/tmp/kzg-option-house-v151-export.png` at `1,482,138` bytes. Next default Web step is `1.52` mock feed schema; next default iOS sync is Web `1.55`.
 
 Web `1.51` 是最新本地检查点，未部署生产。生产仍为 v1.49，生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`。主要代码改动是 `public/app.js`、`public/styles.css` 和内部文档。UI 版本为 `1.51`；公开页面只强化 `实时流轮廓 / Live feed silhouette` 的视觉层，加入扫描底纹、行内压力点、暗色模式实时层对比。不公开 Massive 供应商机制、API key、套餐价格、支付、checkout、注册、域名或后端内部。`docs/MASSIVE_REALTIME_PRODUCT_PLAN.md` 现在写清真实架构：后端采集、精选合约池、KZG 派生信号、紧凑缓存、权限分发、公开实时商业销售前确认 Business/OPRA 权利，并因为 Fangbao 截图在对话上下文暴露了 key，真实后端前必须轮换 API key。不要使用这些暴露 key。验证通过：`node --check`、`505` 天 build 最新 `2026-05-22`、public/dist 风险扫描 0、Browser 本地标题/版本/实时轮廓/console 0、Playwright 桌面/手机/实时流截图均无横向溢出、PNG 导出 `/tmp/kzg-option-house-v151-export.png` 为 `1,482,138` bytes。下一默认 Web 步骤是 `1.52` mock feed schema；下一默认 iOS 同步是 Web `1.55`。
+
+Latest local v1.52 note:
+
+最新本地 v1.52 说明：
+
+Web `1.52` is the latest local and production checkpoint. It turns the safe live-feed silhouette into a derived event queue without using real credentials or a real backend. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.52`, new `derivedFeedEvents()` and `liveEventQueue()`, desktop eight-cell short event tape, phone two-column event tape, rows after the fourth hidden on narrow phones. The new internal doc is `docs/REALTIME_FEED_SCHEMA.md`, and it defines event fields for Web, future backend, and iOS: `id`, `tradeDate`, `time`, `symbol`, `kind`, `tone`, `score`, `detail`, `source`, `visibleTier`, and compact metrics. Public event kinds are burst, premium, CP slope, defense, cooling, and rhythm. No real Massive key, provider route, plan price, payment, registration, domain, checkout, raw contract payload, or legal assumption is exposed. Local QA passed: `505`-day build, risk scan 0, desktop/mobile/event screenshots with no overflow or console issue, and PNG export `/tmp/kzg-option-house-v152-export.png` at `1,482,138` bytes. Production unique deploy is `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`; live smoke confirms `/`, `/latest`, and `/r/latest.html` as `200`, raw endpoints remain `404`, `/app.js` is `UI_VERSION="1.52"`, and production phone has no overflow or public-risk text. Next default Web step is `1.53` entitlement-safe event boundaries; next default iOS sync is Web `1.55`.
+
+Web `1.52` 是最新本地和生产检查点。它把安全实时流轮廓推进成派生事件队列，但不使用真实凭证或真实后端。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.52`，新增 `derivedFeedEvents()` 和 `liveEventQueue()`，桌面八格短事件 tape，手机两列事件 tape，窄手机隐藏第 5 条之后的事件。新增内部文档 `docs/REALTIME_FEED_SCHEMA.md`，定义 Web、未来后端和 iOS 共用事件字段：`id`、`tradeDate`、`time`、`symbol`、`kind`、`tone`、`score`、`detail`、`source`、`visibleTier` 和紧凑 metrics。公开事件类型是爆发、权利金、CP 斜率、防守、降温和节奏。不暴露真实 Massive key、provider route、套餐价格、支付、注册、域名、checkout、原始合约 payload 或法律假设。本地 QA 通过：`505` 天构建、风险扫描 0、桌面/手机/事件区截图无横向溢出和 console issue，PNG 导出 `/tmp/kzg-option-house-v152-export.png` 为 `1,482,138` bytes。生产唯一部署为 `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`；线上 smoke 确认 `/`、`/latest`、`/r/latest.html` 为 `200`，raw endpoints 继续 `404`，`/app.js` 是 `UI_VERSION="1.52"`，线上手机无溢出、无公开风险词。下一默认 Web 步骤是 `1.53` 权限安全事件边界；下一默认 iOS 同步是 Web `1.55`。
 
 ## Verification checklist / 验证清单
 

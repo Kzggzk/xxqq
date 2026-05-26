@@ -200,6 +200,33 @@ Paid:
 - v1.54: load and fanout model: cache TTL, symbol universe, event compression, 1000-user outbound estimate. / 负载和分发模型：cache TTL、标的池、事件压缩、1000 用户出站估算。
 - v1.55: iOS companion sync for live silhouette concepts, still offline/mock unless Fangbao separately approves real backend work. / iOS 伴生同步实时轮廓概念；除非 Fangbao 另行批准真实后端，仍保持离线/mock。
 
+## v1.52 adapter result / v1.52 adapter 结果
+
+v1.52 implements the first public-safe event queue in `public/app.js`. It is intentionally computed from generated minute data and symbol-rotation metrics. It does not call a vendor endpoint and does not use any credential.
+
+v1.52 在 `public/app.js` 实现了第一版公开安全事件队列。它刻意只从已生成分钟数据和标的轮动指标计算，不调用供应商 endpoint，也不使用任何凭证。
+
+Event kinds now used by the UI:
+
+当前 UI 使用的事件类型：
+
+- `burst` / 爆发: volume delta leads.
+- `burst` / 爆发：成交量变化领先。
+- `premium` / 权利金: premium delta leads.
+- `premium` / 权利金：权利金变化领先。
+- `cp_slope` / CP斜率: call-side pressure expands.
+- `cp_slope` / CP斜率：Call 侧压力扩张。
+- `defense` / 防守: put-side defense warms.
+- `defense` / 防守：Put 侧保护升温。
+- `cooling` / 降温: volume and premium contract.
+- `cooling` / 降温：量价收缩。
+- `rhythm` / 节奏: bucket rhythm changes without a stronger classification.
+- `rhythm` / 节奏：桶节奏变化但没有更强分类。
+
+The canonical internal event contract is now in `docs/REALTIME_FEED_SCHEMA.md`.
+
+标准内部事件合约现在写在 `docs/REALTIME_FEED_SCHEMA.md`。
+
 ## Implementation stages / 实施阶段
 
 Stage 1: current safe product.

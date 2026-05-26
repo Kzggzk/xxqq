@@ -27,9 +27,9 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 远端: `https://github.com/Kzggzk/xxqq.git`
 - 生产站: `https://kzg-option-house.netlify.app/`
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
-- 最近验证唯一部署: `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`
-- 最近生产 UI 显示版本: `1.49`
-- 最近本地验证 UI 版本: `1.51`
+- 最近验证唯一部署: `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`
+- 最近生产 UI 显示版本: `1.52`
+- 最近本地验证 UI 版本: `1.52`
 - 当前 iOS 伴生版本: `0.4`，对应 Web `1.50`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
@@ -45,9 +45,9 @@ English:
 - Remote: `https://github.com/Kzggzk/xxqq.git`
 - Production site: `https://kzg-option-house.netlify.app/`
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
-- Latest verified unique deploy: `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`
-- Latest visible production UI version: `1.49`
-- Latest locally verified UI version: `1.51`
+- Latest verified unique deploy: `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`
+- Latest visible production UI version: `1.52`
+- Latest locally verified UI version: `1.52`
 - Current iOS companion version: `0.4`, mapped to Web `1.50`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
@@ -203,6 +203,44 @@ Public UI action: `public/app.js` moves `UI_VERSION` from `1.50` to `1.51`. `pub
 Next: v1.52 should build a mock feed schema and adapter using existing minute data only; v1.53 should define entitlement-safe feed contracts; v1.54 should model 1,000-user fanout/load/cache; v1.55 should be the next iOS companion sync. TestFlight, App Store, real Massive upgrade, payment, domain purchase, and Stripe/Supabase mutation all require stopping for Fangbao confirmation at action time.
 
 Verification facts: `node --check public/app.js` passed; the build produced a `505`-day payload, latest date `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-8c3b708705de.js`. Public `public` and `dist` risk scans returned 0. Browser confirmed the local page title, `UI_VERSION 1.51`, visible live-feed silhouette, 0 console warnings/errors, and screenshot `/tmp/kzg-option-house-v151-browser-desktop.png`. Playwright verified desktop, phone, and phone live-feed area with no horizontal overflow, `user-select:none`, `publicRisk=false`, and 0 console issues; screenshots are `/tmp/kzg-option-house-v151-desktop.png`, `/tmp/kzg-option-house-v151-mobile.png`, and `/tmp/kzg-option-house-v151-mobile-live.png`. PNG export `/tmp/kzg-option-house-v151-export.png` succeeded at `1,482,138` bytes, suggested filename `kzg-option-house-2026-05-22-zh.png`.
+
+## 4.0.2 v1.52 derived event queue / v1.52 派生事件队列
+
+中文:
+
+北京时间 2026-05-26 22:32 左右进入 Web `1.52`。这一版承接 v1.51 的 Massive 实时架构研究，但仍然不接真实 key、不接真实后端、不做套餐升级、不做商业授权假设。目标是先建立“像实时流一样可读”的事件语言，让用户能感受到 feed 的节奏，同时让未来后端和 iOS 有统一 schema。
+
+公开代码动作：`public/app.js` 把 `UI_VERSION` 从 `1.51` 提到 `1.52`，新增 `derivedFeedEvents()` 和 `liveEventQueue()`。这些事件从现有的 symbol rotation rows、30 分钟 bucket、volume delta、premium delta 和 CP ratio 推导出来。事件类型包括爆发、权利金、CP斜率、防守、降温、节奏。每个事件只展示 time、symbol、kind、tone、score 和短解释。它不是原始 OPRA 行，不含原始期权合约 payload，不含供应商 API 路由，不含 secret。
+
+公开视觉动作：`public/styles.css` 新增 `.live-event-queue`。桌面为八格短事件 tape，手机为两列，窄手机只留前四条，避免实时流感觉变成新的长列表。它和 v1.51 的 live silhouette 组成一套：上方是压力条和指标，下方是 KZG 派生事件队列。
+
+内部文档动作：新增 `docs/REALTIME_FEED_SCHEMA.md`，定义未来 Web、后端和 iOS 共用字段：`id`、`tradeDate`、`time`、`symbol`、`kind`、`tone`、`score`、`detail`、`source`、`visibleTier`、`metrics`。v1.52 的 source 固定是 `derived-minute-aggregate`，visibleTier 未来分为 `public-latest`、`blurred-history`、`paid-derived`。
+
+边界：公开页仍不展示 Massive provider、API key、套餐名、`$199`、pricing、payment、billing、Stripe、wallet、WeChat、domain candidate、checkout、registration、法律假设或 raw contract。截图里暴露过的 key 继续当作已暴露处理，真实后端前必须轮换。
+
+验证事实：`node --check public/app.js` 通过；构建生成 `505` 天 payload，最新日 `2026-05-22`，analytics symbols `98`，pack asset `kzg-frame-bfd6858cf066.js`。`public` 与 `dist` 风险词扫描为 0。Playwright 本地验证桌面、手机、手机事件区、桌面事件区均无横向溢出、`user-select:none`、`publicRisk=false`、console issue 为 0；桌面事件队列 8 条可见，队列高度约 `56px`；手机事件队列 4 条可见。截图为 `/tmp/kzg-option-house-v152-desktop.png`、`/tmp/kzg-option-house-v152-mobile.png`、`/tmp/kzg-option-house-v152-mobile-events.png`、`/tmp/kzg-option-house-v152-desktop-events.png`。PNG 导出 `/tmp/kzg-option-house-v152-export.png` 成功，建议文件名 `kzg-option-house-2026-05-22-zh.png`，大小 `1,482,138` bytes。
+
+生产结果：v1.52 已部署生产。生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`。线上 smoke 确认 `/`、`/latest`、`/r/latest.html`、`/app.js` 均为 `200`，`/app.js` 显示 `UI_VERSION="1.52"`，`/data/index.json` 和 `/assets/kzg-pack.js` 继续 `404`。线上手机 `390x844` 显示 `1.52 · 505/505 complete`，事件队列 4 条可见，无横向溢出，无 console issue，无公开风险词。
+
+交接记录：Apple Notes 置顶 `CHANGLOG 期权终端` 已从本文件同步，当前 note 正文约 `116k` 字符。GitHub docs 是另一个 Codex 的标准入口，Apple Notes 是 Fangbao 现场查看入口。
+
+English:
+
+Around 2026-05-26 22:32 Asia/Shanghai, Web `1.52` started. This version follows the v1.51 Massive real-time architecture research, but still does not connect a real key, real backend, plan upgrade, or commercial entitlement assumption. The goal is to establish an event language that reads like a live feed while giving future backend and iOS work one shared schema.
+
+Public code action: `public/app.js` moves `UI_VERSION` from `1.51` to `1.52` and adds `derivedFeedEvents()` plus `liveEventQueue()`. These events are derived from existing symbol rotation rows, 30-minute buckets, volume delta, premium delta, and CP ratio. Event kinds include burst, premium, CP slope, defense, cooling, and rhythm. Each event only shows time, symbol, kind, tone, score, and short explanation. It is not a raw OPRA row, does not contain raw option-contract payload, does not contain vendor API routes, and does not contain secrets.
+
+Public visual action: `public/styles.css` adds `.live-event-queue`. Desktop gets an eight-cell short event tape. Phone gets a two-column tape, and narrow phones keep only the first four events so the live feeling does not become another long list. Together with the v1.51 live silhouette, the upper layer shows pressure bars and metrics while the lower layer shows KZG-derived events.
+
+Internal docs action: new `docs/REALTIME_FEED_SCHEMA.md` defines shared future Web/backend/iOS fields: `id`, `tradeDate`, `time`, `symbol`, `kind`, `tone`, `score`, `detail`, `source`, `visibleTier`, and `metrics`. v1.52 source is fixed at `derived-minute-aggregate`; future visible tiers are `public-latest`, `blurred-history`, and `paid-derived`.
+
+Boundary: the public page still does not show Massive provider, API key, plan name, `$199`, pricing, payment, billing, Stripe, wallet, WeChat, domain candidate, checkout, registration, legal assumption, or raw contract. Keys exposed in screenshots continue to be treated as exposed and must be rotated before real backend work.
+
+Verification facts: `node --check public/app.js` passed; the build produced a `505`-day payload, latest date `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-bfd6858cf066.js`. Risk scans over `public` and `dist` returned 0. Local Playwright verified desktop, phone, phone event area, and desktop event area with no horizontal overflow, `user-select:none`, `publicRisk=false`, and 0 console issues; desktop shows 8 visible event cards with queue height around `56px`, and phone shows 4. Screenshots are `/tmp/kzg-option-house-v152-desktop.png`, `/tmp/kzg-option-house-v152-mobile.png`, `/tmp/kzg-option-house-v152-mobile-events.png`, and `/tmp/kzg-option-house-v152-desktop-events.png`. PNG export `/tmp/kzg-option-house-v152-export.png` succeeded, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes.
+
+Production result: v1.52 is deployed to production. Production site `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`. Live smoke confirmed `/`, `/latest`, `/r/latest.html`, and `/app.js` as `200`, `/app.js` as `UI_VERSION="1.52"`, and `/data/index.json` plus `/assets/kzg-pack.js` as `404`. Live phone `390x844` shows `1.52 · 505/505 complete`, 4 visible event cards, no horizontal overflow, no console issue, and no public-risk text.
+
+Handoff record: pinned Apple Notes `CHANGLOG 期权终端` has been synced from this file, with current note body around `116k` characters. GitHub docs are the canonical entry for another Codex; Apple Notes is Fangbao's live owner-facing view.
 
 ## 4.1 v1.40 production checkpoint / v1.40 生产检查点
 

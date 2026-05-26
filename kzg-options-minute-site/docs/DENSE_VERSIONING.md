@@ -12,8 +12,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - `1.01 -> 2.00` 代表 100 个稠密迭代。
 - A future `11.85` means 1085 post-1.00 dense iterations, not a symbolic number.
 - 未来如果到 `11.85`，它代表从 1.00 之后真的经历了 1085 个稠密迭代，不是随便喊出来的数字。
-- The latest local checkpoint is public UI `1.51`. The latest production checkpoint is public UI `1.49` at unique deploy `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`. The next dense step is `1.52`.
-- 最近本地检查点是公开 UI `1.51`。最近生产检查点是公开 UI `1.49`，唯一部署是 `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`。下一次稠密版本是 `1.52`。
+- The latest local checkpoint is public UI `1.52`. The latest production checkpoint is also public UI `1.52` at unique deploy `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`. The next dense step is `1.53`.
+- 最近本地检查点是公开 UI `1.52`。最近生产检查点也是公开 UI `1.52`，唯一部署是 `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`。下一次稠密版本是 `1.53`。
 
 ## iOS companion cadence / iOS 伴生节奏
 
@@ -30,9 +30,9 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 
 - v1.51 documents the Massive real-time architecture and only improves the public live-feed silhouette. It does not use any real key.
 - v1.51 记录 Massive 实时架构，并只优化公开实时流轮廓。它不使用任何真实 key。
-- v1.52 should create a mock feed schema from existing generated minute data.
-- v1.52 应基于现有生成分钟数据建立 mock feed schema。
-- v1.53 should define entitlement-safe feed boundaries for free/latest-day, blurred historical, and paid derived signals.
+- v1.52 creates a mock-derived event queue and adds `docs/REALTIME_FEED_SCHEMA.md` from existing generated minute data.
+- v1.52 基于现有生成分钟数据建立 mock-derived 事件队列，并新增 `docs/REALTIME_FEED_SCHEMA.md`。
+- v1.53 should define entitlement-safe feed boundaries for free/latest-day, blurred historical, and paid-derived signals.
 - v1.53 应定义权限安全的 feed 边界：免费最新日、历史模糊、付费派生信号。
 - v1.54 should model load, cache, event compression, and 1000-user fanout.
 - v1.54 应建模负载、缓存、事件压缩和 1000 用户分发。
