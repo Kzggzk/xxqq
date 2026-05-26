@@ -16,7 +16,7 @@ DATA_DIR = PUBLIC / "data"
 DAYS_DIR = DATA_DIR / "days"
 DIST = ROOT / "dist"
 
-COPY_FILES = ("index.html", "app.js", "styles.css")
+COPY_FILES = ("index.html", "app.js", "styles.css", "favicon.svg")
 COPY_DIRS = ("vendor",)
 FOCUS_SYMBOLS = {
     "SPY",

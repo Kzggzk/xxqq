@@ -27,8 +27,8 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 远端: `https://github.com/Kzggzk/xxqq.git`
 - 生产站: `https://kzg-option-house.netlify.app/`
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
-- 最近验证唯一部署: `https://6a1553c0896ae0a442361055--kzg-option-house.netlify.app/`
-- 最近公开 UI 显示版本: `1.27`
+- 最近验证唯一部署: `https://6a155f54945106b4d1611609--kzg-option-house.netlify.app/`
+- 最近公开 UI 显示版本: `1.32`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；当前本机目录没有找到 `2023-*.csv.gz`
@@ -43,8 +43,8 @@ English:
 - Remote: `https://github.com/Kzggzk/xxqq.git`
 - Production site: `https://kzg-option-house.netlify.app/`
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
-- Latest verified unique deploy: `https://6a1553c0896ae0a442361055--kzg-option-house.netlify.app/`
-- Latest visible public UI version: `1.27`
+- Latest verified unique deploy: `https://6a155f54945106b4d1611609--kzg-option-house.netlify.app/`
+- Latest visible public UI version: `1.32`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; no local `2023-*.csv.gz` files were found in the verified folder
@@ -396,3 +396,13 @@ Character count:
 字符数：
 
 `1951`
+
+## 15. Heartbeat v1.32 lower-cockpit trace / 心跳 v1.32 下半屏节奏留痕
+
+中文:
+
+北京时间 2026-05-26 16:40 心跳进入 v1.32。触发条件是 Fangbao 要求继续按 paid-product/UI goal 稠密迭代，同时明确内部商业路线不能放公开页面。本轮目标不是添加付费流程，而是把公开 dashboard 的下半屏做得更紧、更统一、更像成熟产品能力预览。改动文件为 `/Users/fangbao/kzg-options-minute-site/public/app.js`、`/Users/fangbao/kzg-options-minute-site/public/styles.css`、`/Users/fangbao/kzg-options-minute-site/public/index.html`、`/Users/fangbao/kzg-options-minute-site/public/favicon.svg`、`/Users/fangbao/kzg-options-minute-site/scripts/build_payload.py`、`/Users/fangbao/kzg-options-minute-site/docs/CHANGELOG.md`、`/Users/fangbao/kzg-options-minute-site/docs/CHANGLOG_OPTION_TERMINAL.md`。公开 UI 版本号从 `1.31` 提到 `1.32`。视觉改动集中在高级预览区域：压缩 `.premium-preview` 外边距和内边距，重排 `.data-audit-seal`、`.premium-unlock-deck`、`.premium-signal-stack`、`.premium-quadrant` 的桌面列宽，降低卡片大字、tab 高度、lookback chart 和 signal tape 高度，并在 `1180px` 以下统一退回单列，减少桌面窄宽下的空白块。额外修复：增加 `favicon.svg` 并纳入 build copy，清掉浏览器 favicon 404 噪音。公开安全检查继续执行：本轮没有加入 Stripe、支付、域名候选、API key、Massive 套餐价格、Supabase 或真实注册路线。验证结果：build 生成 `505` 天 payload，最新日 `2026-05-22`，pack asset `kzg-frame-592efcfd3a2e.js`；本地桌面 `1440x1100` 与手机 `390x844` 截图无横向溢出；公开风险词检索为 0；PNG 导出生成 `kzg-option-house-2026-05-22-zh.png`，大小约 `1.47MB`；生产 smoke 为 `home=200`、`/latest=200`、`/data/index.json=404`、`/favicon.svg=200`、`/app.js` 显示 `UI_VERSION = "1.32"`。部署链接：`https://6a155f54945106b4d1611609--kzg-option-house.netlify.app/`。下一步 v1.33 继续处理移动端高级预览、底部 analysis panel 的进入节奏和 PNG 导出保真。
+
+English:
+
+The 2026-05-26 16:40 Asia/Shanghai heartbeat entered v1.32. The trigger was Fangbao's instruction to continue the dense paid-product/UI goal while keeping internal commercial routes off the public page. This version does not add a payment flow. It tightens the lower public dashboard so the advanced preview feels more unified, more compact, and more like a mature product capability layer. Changed files are `/Users/fangbao/kzg-options-minute-site/public/app.js`, `/Users/fangbao/kzg-options-minute-site/public/styles.css`, `/Users/fangbao/kzg-options-minute-site/public/index.html`, `/Users/fangbao/kzg-options-minute-site/public/favicon.svg`, `/Users/fangbao/kzg-options-minute-site/scripts/build_payload.py`, `/Users/fangbao/kzg-options-minute-site/docs/CHANGELOG.md`, and `/Users/fangbao/kzg-options-minute-site/docs/CHANGLOG_OPTION_TERMINAL.md`. Public UI version moved from `1.31` to `1.32`. Visual changes focus on the advanced preview: reduced `.premium-preview` outer/inner spacing, rebalanced desktop column widths for `.data-audit-seal`, `.premium-unlock-deck`, `.premium-signal-stack`, and `.premium-quadrant`, lowered oversized card type, tab height, lookback chart height, and signal tape height, and added a `1180px` one-column fallback to reduce awkward blank blocks on narrower desktop widths. Extra fix: added `favicon.svg` to the public shell and build copy to remove favicon 404 noise. Public safety check remains in force: no Stripe, payment, domain candidates, API keys, Massive plan prices, Supabase internals, or real registration routes were added. Verification: build produced a `505`-day payload, latest date `2026-05-22`, pack asset `kzg-frame-592efcfd3a2e.js`; local desktop `1440x1100` and mobile `390x844` screenshots showed no horizontal overflow; public risk-token scan returned 0; PNG export produced `kzg-option-house-2026-05-22-zh.png` at about `1.47MB`; production smoke passed with `home=200`, `/latest=200`, `/data/index.json=404`, `/favicon.svg=200`, and `/app.js` showing `UI_VERSION = "1.32"`. Unique deploy: `https://6a155f54945106b4d1611609--kzg-option-house.netlify.app/`. Next v1.33 should continue mobile advanced-preview rhythm, lower analysis panel entry rhythm, and PNG export fidelity.

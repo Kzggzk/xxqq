@@ -10,9 +10,9 @@ This is the GitHub canonical changelog. Apple Notes has a pinned owner-facing co
 - Git root / Git 根目录: `/Users/fangbao`
 - Branch / 分支: `feat/kzg-option-house-daily-auto`
 - Production / 生产站: <https://kzg-option-house.netlify.app/>
-- Latest public verified version / 最近公开验证版本: `1.27`
+- Latest public verified version / 最近公开验证版本: `1.32`
 - Latest production fix / 最近生产修复: `6c909a9 remove public commercial planning from option house`
-- Latest unique deploy verified / 最近验证唯一部署: <https://6a1553c0896ae0a442361055--kzg-option-house.netlify.app/>
+- Latest unique deploy verified / 最近验证唯一部署: <https://6a155f54945106b4d1611609--kzg-option-house.netlify.app/>
 - Local option-minute data verified / 本地期权分钟数据核验: `505` files, `2024-05-17 -> 2026-05-22`
 - Public raw-data rule / 公开 raw-data 规则: `/data/index.json` and direct packed raw paths should stay blocked unless Fangbao approves.
 - Git dirty generated exceptions / Git 脏文件例外: generated `public/data/index.json` and `public/reports/2026-01-02.html` may remain dirty and should not be committed.
@@ -119,6 +119,28 @@ English:
 - Verification: Build produced a `505`-day payload; Chrome headless produced desktop and mobile screenshots; added mobile topbar/grid overflow protection; production smoke check passed with `home=200`, `/latest=200`, `/data/index.json=404`, `/assets/kzg-pack.js=404`, and `/app.js` showing `UI_VERSION = "1.31"`.
 - Deploy: production `https://kzg-option-house.netlify.app/`; unique deploy `https://6a155a982b0a5da4f255af13--kzg-option-house.netlify.app/`.
 - Next: Continue compressing lower-screen visual blankness, especially premium preview and analysis-grid desktop rhythm.
+
+## v1.32 - 2026-05-26 16:44 Asia/Shanghai - lower-cockpit rhythm pass
+
+中文:
+
+- 改动: 将公开 UI 版本号从 `1.31` 提到 `1.32`，并增加 v1.32 下半屏节奏层。
+- 重点: 不再增加公开商业流程，只改高级预览、数据审计封印、回看窗口、预测动量栈、轮动象限和 analysis grid 的桌面密度。
+- 视觉动作: 缩小高级预览外边距和内边距；把三列审计/解锁/信号区域压成更平衡的比例；降低卡片大字、减少 tab 高度、压低柱状 tape 高度；在 `1180px` 以下统一退回单列，避免桌面窄宽产生空白块。
+- 公开边界: 本轮再次检索公开目录，没有新增 Stripe、域名候选、支付方式、API key、Massive 套餐价格、Supabase 或真实注册路线。
+- 验证: build 生成 `505` 天 payload，最新日 `2026-05-22`，pack asset `kzg-frame-592efcfd3a2e.js`；本地桌面 `1440x1100` 与手机 `390x844` 截图通过，无横向溢出；公开风险词检索为 0；PNG 导出生成 `kzg-option-house-2026-05-22-zh.png`，大小约 `1.47MB`；生产 smoke 为 `home=200`、`/latest=200`、`/data/index.json=404`、`/favicon.svg=200`、`/app.js` 显示 `UI_VERSION = "1.32"`。
+- 部署: 生产站 `https://kzg-option-house.netlify.app/`；唯一部署 `https://6a155f54945106b4d1611609--kzg-option-house.netlify.app/`。
+- 下一步: v1.33 继续检查移动端高级预览、底部 analysis panel 的首屏切入位置和 PNG 导出保真。
+
+English:
+
+- Change: Bumped public UI version from `1.31` to `1.32` and added a lower-cockpit rhythm layer.
+- Focus: No new public commercial flow. This version only adjusts the density of the advanced preview, data audit seal, lookback window, predictive momentum stack, rotation quadrant, and analysis grid.
+- Visual actions: Reduced advanced-preview outer and inner spacing; balanced the three-column audit/unlock/signal ratios; lowered oversized card type, tab height, and tape height; added a `1180px` single-column fallback to avoid awkward blank blocks on narrower desktop widths.
+- Public boundary: Re-scanned the public directory; no Stripe, domain candidates, payment rails, API keys, Massive plan prices, Supabase internals, or real registration route were added.
+- Verification: Build produced a `505`-day payload, latest date `2026-05-22`, pack asset `kzg-frame-592efcfd3a2e.js`; local desktop `1440x1100` and mobile `390x844` screenshots passed with no horizontal overflow; public risk-token scan returned 0; PNG export produced `kzg-option-house-2026-05-22-zh.png` at about `1.47MB`; production smoke passed with `home=200`, `/latest=200`, `/data/index.json=404`, `/favicon.svg=200`, and `/app.js` showing `UI_VERSION = "1.32"`.
+- Deploy: production `https://kzg-option-house.netlify.app/`; unique deploy `https://6a155f54945106b4d1611609--kzg-option-house.netlify.app/`.
+- Next: v1.33 should keep polishing mobile advanced preview, the lower analysis panel entry point, and PNG export fidelity.
 
 ## Git-evidenced build ledger / Git 可证实构建流水
 

@@ -10201,3 +10201,223 @@ body[data-theme="dark"] .account-sheet {
     grid-column: 1 / -1;
   }
 }
+
+/* v1.32 pass: compact lower cockpit rhythm without exposing commercial internals. */
+.premium-preview {
+  margin-top: 18px;
+  padding: 14px;
+  background:
+    linear-gradient(90deg, rgba(154, 106, 18, 0.045), transparent 42%),
+    rgba(255, 255, 255, 0.7);
+}
+
+.premium-head {
+  align-items: end;
+  margin-bottom: 10px;
+}
+
+.premium-head h2 {
+  font-size: 17px;
+}
+
+.premium-head p {
+  max-width: 760px;
+  line-height: 1.48;
+}
+
+.data-audit-seal {
+  grid-template-columns: minmax(230px, 0.58fr) minmax(0, 1.08fr) minmax(210px, 0.42fr);
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.audit-lead,
+.audit-note {
+  padding: 12px;
+}
+
+.audit-grid {
+  gap: 6px;
+}
+
+.audit-grid span {
+  padding: 9px 10px;
+}
+
+.audit-lead strong,
+.audit-note b {
+  font-size: 16px;
+}
+
+.premium-unlock-deck {
+  grid-template-columns: minmax(210px, 0.4fr) minmax(0, 1.12fr) minmax(260px, 0.5fr);
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.unlock-lead {
+  gap: 6px;
+  padding: 13px;
+}
+
+.unlock-lead strong {
+  font-size: 19px;
+}
+
+.unlock-tabs {
+  gap: 6px;
+}
+
+.unlock-tabs button {
+  min-height: 96px;
+  padding: 10px;
+}
+
+.unlock-preview {
+  gap: 6px;
+  padding: 8px;
+}
+
+.unlock-checklist {
+  gap: 6px;
+}
+
+.unlock-checklist span {
+  padding: 8px;
+}
+
+.unlock-mini-tape {
+  min-height: 104px;
+}
+
+.premium-grid {
+  gap: 8px;
+}
+
+.premium-card {
+  min-height: 114px;
+  padding: 11px 12px;
+}
+
+.premium-card strong {
+  font-size: 22px;
+}
+
+.premium-lookback,
+.premium-signal-stack,
+.premium-quadrant {
+  margin-top: 10px;
+}
+
+.lookback-head {
+  padding: 12px;
+}
+
+.lookback-body {
+  grid-template-columns: minmax(0, 1fr) minmax(230px, 0.36fr);
+  gap: 10px;
+  padding: 10px 12px 12px;
+}
+
+.lookback-chart {
+  min-height: 112px;
+}
+
+.lookback-metrics {
+  gap: 6px;
+}
+
+.lookback-metrics span {
+  padding: 9px;
+}
+
+.lookback-metrics b {
+  font-size: 18px;
+}
+
+.premium-signal-stack {
+  grid-template-columns: minmax(190px, 0.34fr) minmax(0, 0.8fr) minmax(220px, 0.46fr);
+  gap: 8px;
+}
+
+.signal-stack-lead {
+  padding: 13px;
+}
+
+.signal-stack-lead strong {
+  font-size: 30px;
+}
+
+.signal-stack-rows {
+  gap: 6px;
+}
+
+.signal-stack-rows span {
+  padding: 10px;
+}
+
+.signal-stack-rows b {
+  font-size: 19px;
+}
+
+.signal-stack-tape {
+  min-height: 138px;
+  padding: 8px;
+}
+
+.premium-quadrant {
+  grid-template-columns: minmax(190px, 0.3fr) minmax(0, 1fr) minmax(150px, 0.24fr);
+  gap: 10px;
+}
+
+.premium-quadrant-copy {
+  padding: 14px;
+}
+
+.premium-quadrant-copy strong {
+  font-size: 20px;
+}
+
+.premium-quadrant-meta {
+  gap: 6px;
+}
+
+.premium-quadrant-map {
+  min-height: 262px;
+}
+
+.premium-quadrant-stats {
+  gap: 6px;
+}
+
+.premium-quadrant-stats span {
+  padding: 10px;
+}
+
+.premium-lock {
+  right: 14px;
+  bottom: 14px;
+  padding: 10px 12px;
+}
+
+.analysis-grid {
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.panel {
+  padding: 14px;
+}
+
+@media (max-width: 1180px) {
+  .data-audit-seal,
+  .premium-unlock-deck,
+  .premium-signal-stack,
+  .premium-quadrant {
+    grid-template-columns: 1fr;
+  }
+
+  .premium-quadrant-map {
+    min-height: 300px;
+  }
+}
