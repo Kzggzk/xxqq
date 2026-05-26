@@ -22,7 +22,24 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "v65";
+const UI_VERSION = "1.25";
+
+const dataAudit = {
+  dataset: "23_DATA_Massive_期权分钟_Minute",
+  provider: "Massive Flat Files / Options / Minute Aggregates",
+  coverageStart: "2024-05-17",
+  coverageEnd: "2026-05-22",
+  fileCount: 505,
+  bytes: 10295934305,
+  iCloudFiles: 505,
+  googleDriveFiles: 505,
+  complete: 505,
+  failed: 0,
+  report: "massive_options_minute_complete_audit_20260526T065928Z.json",
+  releaseFrom: "1.01",
+  releaseTo: "1.25",
+  extraVersions: 24,
+};
 
 const $ = (id) => document.getElementById(id);
 const fmt0 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
@@ -939,6 +956,7 @@ function renderPremiumPreview() {
       </div>
       <button type="button" data-open-account>${locked ? t("upgrade") : (state.lang === "zh" ? "查看 Pro" : "View Pro")}</button>
     </div>
+    ${dataAuditSeal()}
     ${premiumUnlockDeck(rows, locked)}
     <div class="premium-grid ${locked ? "is-blurred" : ""}">
       ${premiumCard(state.lang === "zh" ? "轮动象限回看" : "Rotation lookback", lead.symbol || "--", `${attack.length}/${fade.length}`, state.lang === "zh" ? "量价同升 vs 同步降温" : "warming vs cooling")}
@@ -950,6 +968,51 @@ function renderPremiumPreview() {
     ${premiumSignalStack(rows, locked)}
     ${premiumQuadrantPreview(rows, locked)}
     ${locked ? `<button type="button" class="premium-lock" data-open-account><b>${t("paywallTitle")}</b><span>${t("paywallSub")}</span></button>` : ""}
+  `;
+}
+
+function dataAuditSeal() {
+  const completePct = dataAudit.complete ? (dataAudit.complete / dataAudit.fileCount) * 100 : 0;
+  const bytesGb = dataAudit.bytes / 1e9;
+  const rows = state.lang === "zh"
+    ? [
+      ["iCloud", `${fmt0.format(dataAudit.iCloudFiles)} 文件`, "双云校验"],
+      ["Google Drive", `${fmt0.format(dataAudit.googleDriveFiles)} 文件`, "大小一致"],
+      ["可下载窗口", `${dataAudit.complete}/${dataAudit.fileCount}`, `failed=${dataAudit.failed}`],
+      ["覆盖范围", `${dataAudit.coverageStart} → ${dataAudit.coverageEnd}`, "Options Starter 2Y"],
+    ]
+    : [
+      ["iCloud", `${fmt0.format(dataAudit.iCloudFiles)} files`, "dual-cloud checked"],
+      ["Google Drive", `${fmt0.format(dataAudit.googleDriveFiles)} files`, "size matched"],
+      ["Download window", `${dataAudit.complete}/${dataAudit.fileCount}`, `failed=${dataAudit.failed}`],
+      ["Coverage", `${dataAudit.coverageStart} → ${dataAudit.coverageEnd}`, "Options Starter 2Y"],
+    ];
+  return `
+    <div class="data-audit-seal">
+      <div class="audit-lead">
+        <span>${state.lang === "zh" ? "数据完整性封印" : "Data integrity seal"}</span>
+        <strong>${escapeHtml(dataAudit.dataset)}</strong>
+        <p>${state.lang === "zh"
+          ? `${dataAudit.provider} 已按 Massive 页面重新核对。${fmt0.format(dataAudit.fileCount)} 个文件，${fmt2.format(bytesGb)}GB，当前套餐可下载窗口 ${fmt1.format(completePct)}% complete。`
+          : `${dataAudit.provider} rechecked against Massive. ${fmt0.format(dataAudit.fileCount)} files, ${fmt2.format(bytesGb)}GB, current plan window ${fmt1.format(completePct)}% complete.`}</p>
+      </div>
+      <div class="audit-grid">
+        ${rows.map((row) => `
+          <span>
+            <i>${escapeHtml(row[0])}</i>
+            <b>${escapeHtml(row[1])}</b>
+            <small>${escapeHtml(row[2])}</small>
+          </span>
+        `).join("")}
+      </div>
+      <div class="audit-note">
+        <b>${escapeHtml(dataAudit.releaseFrom)} → ${escapeHtml(dataAudit.releaseTo)}</b>
+        <span>${state.lang === "zh"
+          ? `全新版本命名 · extra ${dataAudit.extraVersions} versions · 旧段 2023-05 到 2024-04 显示 Upgrade，S3 403，需更长历史权限。`
+          : `New version line · extra ${dataAudit.extraVersions} versions · older 2023-05 to 2024-04 shows Upgrade / S3 403 and needs deeper history access.`}</span>
+        <small>${escapeHtml(dataAudit.report)}</small>
+      </div>
+    </div>
   `;
 }
 
@@ -1429,7 +1492,7 @@ function renderDay() {
   $("marketCp").textContent = ratio(ov.marketCp);
   $("rowCount").textContent = fmt0.format(day.validRows);
   $("sourceStatus").textContent = `${fmt0.format(day.validRows)} ${t("validRows")}`;
-  $("sourcePath").textContent = `KZG packed · UI ${UI_VERSION}`;
+  $("sourcePath").textContent = `${dataAudit.dataset} · ${dataAudit.releaseTo} · ${dataAudit.complete}/${dataAudit.fileCount} complete`;
   $("totalPremiumLabel").textContent = t("premium");
 
   const deltaText = delta === null ? (state.lang === "zh" ? "首个本地交易日" : "first local day") : `${state.lang === "zh" ? "较前日" : "vs prev"} ${delta >= 0 ? "+" : ""}${fmt1.format(delta)}%`;

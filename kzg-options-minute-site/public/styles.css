@@ -8240,6 +8240,12 @@ body[data-theme="dark"] .heat-lane-track {
 .checkout-simulation span,
 .checkout-simulation small,
 .checkout-simulation i,
+.audit-lead span,
+.audit-lead p,
+.audit-grid i,
+.audit-grid small,
+.audit-note span,
+.audit-note small,
 .unlock-lead span,
 .unlock-lead p,
 .unlock-lead small,
@@ -8319,6 +8325,86 @@ body[data-theme="dark"] .heat-lane-track {
 
 .premium-head p {
   margin-top: 5px;
+}
+
+.data-audit-seal {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1fr) minmax(240px, 0.48fr);
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.audit-lead,
+.audit-grid span,
+.audit-note {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.audit-lead {
+  display: grid;
+  align-content: center;
+  gap: 7px;
+  padding: 14px;
+  box-shadow: inset 3px 0 0 #148355;
+}
+
+.audit-lead strong {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.08;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.audit-lead p,
+.audit-note span {
+  line-height: 1.45;
+}
+
+.audit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.audit-grid span {
+  display: grid;
+  align-content: center;
+  gap: 5px;
+  padding: 11px 12px;
+}
+
+.audit-grid b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.05;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.audit-note {
+  display: grid;
+  align-content: center;
+  gap: 6px;
+  padding: 13px;
+  box-shadow: inset 3px 0 0 #2f6190;
+}
+
+.audit-note b {
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.audit-note small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .premium-grid {
@@ -9556,6 +9642,9 @@ body.modal-open {
 body[data-theme="dark"] .button.pro-button,
 body[data-theme="dark"] .access-copy,
 body[data-theme="dark"] .premium-preview,
+body[data-theme="dark"] .data-audit-seal .audit-lead,
+body[data-theme="dark"] .data-audit-seal .audit-grid span,
+body[data-theme="dark"] .data-audit-seal .audit-note,
 body[data-theme="dark"] .premium-unlock-deck .unlock-lead,
 body[data-theme="dark"] .premium-unlock-deck .unlock-tabs button,
 body[data-theme="dark"] .premium-unlock-deck .unlock-preview,
@@ -9598,6 +9687,14 @@ body[data-theme="dark"] .account-sheet {
   .access-strip,
   .account-grid {
     grid-template-columns: 1fr;
+  }
+
+  .data-audit-seal {
+    grid-template-columns: 1fr;
+  }
+
+  .audit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .premium-grid {
@@ -9674,6 +9771,15 @@ body[data-theme="dark"] .account-sheet {
   .pricing-grid,
   .unlock-tabs {
     grid-template-columns: 1fr;
+  }
+
+  .audit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .audit-lead strong,
+  .audit-note small {
+    white-space: normal;
   }
 
   .access-actions {
