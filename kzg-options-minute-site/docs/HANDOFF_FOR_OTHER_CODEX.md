@@ -19,9 +19,9 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
 - Production version last verified / 最近生产验证版本: `1.49`
-- Local version last verified / 最近本地验证版本: `1.49`
+- Local version last verified / 最近本地验证版本: `1.50`
 - Latest unique deploy / 最近唯一部署: `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`
-- iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.3`
+- iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.4`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
 - Local verified option-minute window / 本地已验证期权分钟范围: `2024-05-17 -> 2026-05-22`, `505` files.
 
@@ -107,6 +107,14 @@ Latest production v1.49 note:
 Web `1.49` is now both the latest local and production checkpoint. It deploys the stable group after v1.45. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.49`, tighter phone transition from advanced preview into rotation, shorter premium quadrant flow, quieter rotation quadrant map, denser desktop lower analysis, and stronger dark-mode contrast for live silhouette and rotation rows. Browser verified the local page identity, latest date, `user-select:none`, and no internal-risk strings; Browser screenshot capture timed out, so Playwright provided screenshot evidence. Local Playwright verified desktop and phone no horizontal overflow, no console warnings/errors, PNG export `/tmp/kzg-option-house-v149-export.png` at `1,482,138` bytes, and screenshots under `/tmp/kzg-option-house-v149-*.png`. Production unique deploy is `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`; live smoke confirms `/`, `/r/latest.html`, and `/latest` as `200`, `/data/index.json` and `/assets/kzg-pack.js` as `404`, `/app.js` with `UI_VERSION="1.49"`, and live phone no horizontal overflow or public-risk strings. Next default target is Web `1.50`, including the iOS companion cadence checkpoint.
 
 Web `1.49` 现在是最新本地和生产检查点，已把 v1.45 之后的稳定版本组部署上线。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.49`、手机高级预览到轮动的过渡更紧、premium quadrant flow 更短、轮动象限图更安静、桌面下半区信息密度更统一、暗色模式下 live silhouette 与 rotation rows 对比更强。Browser 已验证本地页面身份、最新日期、`user-select:none`、无内部风险词；Browser 截图仍超时，所以用 Playwright 留视觉证据。本地 Playwright 已验证桌面和手机无横向溢出、无 console warning/error，PNG 导出 `/tmp/kzg-option-house-v149-export.png` 为 `1,482,138` bytes，截图在 `/tmp/kzg-option-house-v149-*.png`。生产唯一部署为 `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`；线上 smoke 确认 `/`、`/r/latest.html`、`/latest` 为 `200`，`/data/index.json` 与 `/assets/kzg-pack.js` 为 `404`，`/app.js` 为 `UI_VERSION="1.49"`，线上手机无横向溢出、无公开风险词。下一默认目标是 Web `1.50`，同时进入 iOS companion cadence checkpoint。
+
+Latest local v1.50 note:
+
+最新本地 v1.50 说明：
+
+Web `1.50` is the latest local checkpoint and is not deployed to production. Production remains v1.49 at `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`. Main code changes are `public/app.js`, `public/styles.css`, and the native SwiftUI iOS companion files: UI version `1.50`, tighter phone first-screen path into the report canvas, mobile `.side-rail` no longer overlaps advanced preview, stronger dark-mode panel unity, and iOS companion `0.4` with tighter Header, checkpoint strip, timeline, rotation, symbol chips, KZGCard, and MetricTile. Local build produced `505` days with latest `2026-05-22`, pack asset `kzg-frame-b4e896d3b7a1.js`; risk scan over `public` and `dist` returned 0. Playwright verified desktop, phone first screen, phone report entry, phone advanced-preview light, and phone advanced-preview dark with no horizontal overflow or console issues; PNG export `/tmp/kzg-option-house-v150-export.png` is `1,482,138` bytes. XcodeBuildMCP profile is correct but `build_sim` still fails on simulator destination matching; `swiftc -typecheck` passes.
+
+Web `1.50` 是最新本地检查点，未部署生产。生产仍为 v1.49，生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`。主要代码改动是 `public/app.js`、`public/styles.css` 和原生 SwiftUI iOS 伴生文件：UI 版本 `1.50`、手机首屏到日报画布路径更短、移动端 `.side-rail` 不再覆盖高级预览、暗色模式 panel 更统一，iOS companion 到 `0.4`，Header、checkpoint strip、timeline、rotation、symbol chips、KZGCard、MetricTile 都更紧。Local build 生成 `505` 天，最新 `2026-05-22`，pack asset `kzg-frame-b4e896d3b7a1.js`；`public` 与 `dist` 风险词扫描为 0。Playwright 验证桌面、手机首屏、手机日报入口、手机高级预览浅色和暗色均无横向溢出和 console issue；PNG 导出 `/tmp/kzg-option-house-v150-export.png` 为 `1,482,138` bytes。XcodeBuildMCP profile 正确，但 `build_sim` 仍失败于 simulator destination 匹配；`swiftc -typecheck` 通过。
 
 ## Verification checklist / 验证清单
 

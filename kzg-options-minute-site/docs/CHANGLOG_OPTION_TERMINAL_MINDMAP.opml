@@ -5,6 +5,12 @@
   </head>
   <body>
     <outline text="CHANGLOG 期权终端">
+      <outline text="Current state / 当前状态">
+        <outline text="Local verified Web 1.50 / 本地已验 Web 1.50"/>
+        <outline text="Production Web 1.49 / 生产 Web 1.49"/>
+        <outline text="iOS companion 0.4 / iOS 伴生 0.4"/>
+        <outline text="505 files 2024-05-17 to 2026-05-22 / 505 文件范围"/>
+      </outline>
       <outline text="SaaS Product / SaaS 产品">
         <outline text="Public dashboard / 公开仪表盘">
           <outline text="Latest day free insight / 最新日免费洞察"/>

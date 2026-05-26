@@ -6,10 +6,10 @@ struct KZGCard<Content: View>: View {
   @ViewBuilder var content: Content
 
   var body: some View {
-    VStack(alignment: .leading, spacing: 11) {
+    VStack(alignment: .leading, spacing: 9) {
       VStack(alignment: .leading, spacing: 3) {
         Text(title)
-          .font(.system(.title3, design: .serif, weight: .semibold))
+          .font(.system(.headline, design: .serif, weight: .semibold))
           .foregroundStyle(.primary)
         if let subtitle {
           Text(subtitle)
@@ -19,12 +19,12 @@ struct KZGCard<Content: View>: View {
       }
       content
     }
-    .padding(13)
+    .padding(11)
     .background(
-      RoundedRectangle(cornerRadius: 8, style: .continuous)
+      RoundedRectangle(cornerRadius: 7, style: .continuous)
         .fill(Color(.secondarySystemBackground))
         .overlay(
-          RoundedRectangle(cornerRadius: 8, style: .continuous)
+          RoundedRectangle(cornerRadius: 7, style: .continuous)
             .stroke(Color.primary.opacity(0.08), lineWidth: 1)
         )
     )
@@ -38,12 +38,12 @@ struct MetricTile: View {
   var accent: Color = Color(red: 0.66, green: 0.43, blue: 0.15)
 
   var body: some View {
-    VStack(alignment: .leading, spacing: 5) {
+    VStack(alignment: .leading, spacing: 4) {
       Text(label)
         .font(.caption2.weight(.semibold))
         .foregroundStyle(.secondary)
       Text(value)
-        .font(.system(.title2, design: .rounded, weight: .bold))
+        .font(.system(.title3, design: .rounded, weight: .bold))
         .lineLimit(1)
         .minimumScaleFactor(0.72)
       Text(detail)
@@ -53,7 +53,7 @@ struct MetricTile: View {
         .minimumScaleFactor(0.75)
     }
     .frame(maxWidth: .infinity, alignment: .leading)
-    .padding(10)
+    .padding(8)
     .background(
       RoundedRectangle(cornerRadius: 7, style: .continuous)
         .fill(accent.opacity(0.08))

@@ -9,10 +9,10 @@ This document defines the iOS track for KZG Option House. The iOS app is a compa
 - iOS project / iOS 工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`
 - Scheme / Scheme: `KZG Option House`
 - Bundle id / Bundle ID: `com.kzg.optionhouse`
-- Current iOS version / 当前 iOS 版本: `0.3`
-- Web baseline / 对应 Web 基线: public Web `1.45`
+- Current iOS version / 当前 iOS 版本: `0.4`
+- Web baseline / 对应 Web 基线: public Web `1.50`
 - First simulator proof / 首次模拟器证明: `/tmp/kzg-option-house-ios-v01.png`
-- Build proof / 构建证明: v0.3 Swift source typecheck passed with `swiftc`; full Xcode destination build is currently blocked by local simulator runtime selection.
+- Build proof / 构建证明: v0.4 Swift source typecheck passed with `swiftc`; full Xcode destination build is currently blocked by local simulator runtime selection.
 
 ## Cadence / 节奏
 
@@ -20,8 +20,8 @@ This document defines the iOS track for KZG Option House. The iOS app is a compa
 - Web 继续按 `0.01` 稠密迭代。
 - iOS updates every 5 Web dense versions unless Fangbao explicitly asks for an immediate iOS pass.
 - iOS 每 5 个 Web 稠密版本同步一次，除非 Fangbao 明确要求立即同步。
-- Current checkpoint: iOS `0.3` at Web `1.45`; next planned iOS checkpoint is Web `1.50`.
-- 当前检查点：iOS `0.3` 对应 Web `1.45`；下一次计划 iOS 检查点是 Web `1.50`。
+- Current checkpoint: iOS `0.4` at Web `1.50`; next planned iOS checkpoint is Web `1.55`.
+- 当前检查点：iOS `0.4` 对应 Web `1.50`；下一次计划 iOS 检查点是 Web `1.55`。
 
 ## Product direction / 产品方向
 
@@ -61,8 +61,8 @@ Current verified steps:
 
 - Xcode scheme exists: `KZG Option House`.
 - Xcode scheme 已存在：`KZG Option House`。
-- v0.3 SwiftUI source typecheck passed with `swiftc -typecheck`.
-- v0.3 SwiftUI 源码已通过 `swiftc -typecheck`。
+- v0.4 SwiftUI source typecheck passed with `swiftc -typecheck`.
+- v0.4 SwiftUI 源码已通过 `swiftc -typecheck`。
 - First v0.1 simulator proof remains `/tmp/kzg-option-house-ios-v01.png`.
 - 首次 v0.1 模拟器证明仍为 `/tmp/kzg-option-house-ios-v01.png`。
 
@@ -70,5 +70,15 @@ Known caveat:
 
 已知注意点：
 
-- For v0.3, XcodeBuildMCP still finds the correct project, scheme, and `iPhone 17 Pro` simulator profile, but build-by-destination fails on this machine because the provided simulator destination cannot be matched against the installed runtime. Source typecheck passes, so this is still recorded as a local Xcode/destination blocker, not a Swift syntax blocker.
-- 对 v0.3 来说，XcodeBuildMCP 仍能找到正确工程、scheme 和 `iPhone 17 Pro` 模拟器 profile，但按 destination 构建在本机仍失败，因为给定 simulator destination 与已安装 runtime 对不上。源码类型检查通过，所以继续记录为本机 Xcode/destination 阻塞，不是 Swift 语法阻塞。
+- For v0.4, XcodeBuildMCP still finds the correct project, scheme, and `iPhone 17 Pro` simulator profile, but `build_sim` fails on this machine because the destination `{ platform:iOS Simulator, id:9DAFEA29-80F2-4D94-BE75-C0106CE8D97E }` cannot be matched against the installed runtime. Source typecheck passes, so this is still recorded as a local Xcode/destination blocker, not a Swift syntax blocker.
+- 对 v0.4 来说，XcodeBuildMCP 仍能找到正确工程、scheme 和 `iPhone 17 Pro` 模拟器 profile，但 `build_sim` 在本机仍失败，因为 destination `{ platform:iOS Simulator, id:9DAFEA29-80F2-4D94-BE75-C0106CE8D97E }` 与已安装 runtime 对不上。源码类型检查通过，所以继续记录为本机 Xcode/destination 阻塞，不是 Swift 语法阻塞。
+
+## v0.4 checkpoint / v0.4 检查点
+
+中文:
+
+Web `1.50` 同步 iOS `0.4`。这轮不是 App Store/TestFlight 动作，只是原生 SwiftUI 伴生端的排版同步：主栈 spacing 从更松的 10/12 尺度降到 8/10，Header 标题、checkpoint strip、时间轴柱、轮动象限和 symbol chip 都更适合手机扫读。Checkpoint tile 显示 Web `1.50`、iOS `0.4`、PNG `KZG`。验证上，XcodeBuildMCP profile 正确但 simulator destination 仍卡住，`swiftc -typecheck` 通过。
+
+English:
+
+Web `1.50` syncs iOS `0.4`. This is not an App Store or TestFlight action; it is a native SwiftUI companion layout sync. Main stack spacing moves from the looser 10/12 scale to 8/10, and the Header, checkpoint strip, timeline bars, rotation quadrant, and symbol chips are tighter for phone scanning. Checkpoint tiles show Web `1.50`, iOS `0.4`, PNG `KZG`. Verification: XcodeBuildMCP profile is correct but simulator destination remains blocked; `swiftc -typecheck` passes.

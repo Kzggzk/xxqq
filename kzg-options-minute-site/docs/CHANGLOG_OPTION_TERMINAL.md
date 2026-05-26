@@ -29,8 +29,8 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
 - 最近验证唯一部署: `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.49`
-- 最近本地验证 UI 版本: `1.49`
-- 当前 iOS 伴生版本: `0.3`，对应 Web `1.45`
+- 最近本地验证 UI 版本: `1.50`
+- 当前 iOS 伴生版本: `0.4`，对应 Web `1.50`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；当前本机目录没有找到 `2023-*.csv.gz`
@@ -47,8 +47,8 @@ English:
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
 - Latest verified unique deploy: `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.49`
-- Latest locally verified UI version: `1.49`
-- Current iOS companion version: `0.3`, mapped to Web `1.45`
+- Latest locally verified UI version: `1.50`
+- Current iOS companion version: `0.4`, mapped to Web `1.50`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; no local `2023-*.csv.gz` files were found in the verified folder
@@ -388,7 +388,33 @@ Visual verification: local Playwright/Chrome desktop `1440x1100` showed v1.49 wi
 
 Production result: Netlify production deploy succeeded. Production site `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`. Live smoke confirmed `/` `200`, `/r/latest.html` `200`, `/latest` `200`, `/data/index.json` `404`, `/assets/kzg-pack.js` `404`, live `/app.js` as `UI_VERSION="1.49"`, and live home referencing `kzg-frame-98f993776851.js`. Live phone `390x844` showed v1.49, latest date `2026-05-22`, horizontal overflow `0`, no public-risk strings, and no console issue. Pinned Apple Notes `CHANGLOG 期权终端` was synced in this round at about `97,412` chars.
 
-Current state: v1.49 is the latest local and production checkpoint. GitHub docs, Apple Notes, and the production site should now treat v1.49 as current. Next v1.50 is the iOS companion cadence checkpoint: by default it should include a small iOS `0.4` sync, continue improving the phone vertical scan from first viewport into the report canvas, and unify dark-mode treatment across history, rotation, and momentum. The public page must still not include real payment, domain, API, account, price, or authorization mechanics.
+Current state: v1.49 is the latest production checkpoint. GitHub docs, Apple Notes, and production should treat v1.49 as the live deploy baseline. Next v1.50 is the iOS companion cadence checkpoint: by default it should include a small iOS `0.4` sync, continue improving the phone vertical scan from first viewport into the report canvas, and unify dark-mode treatment across history, rotation, and momentum. The public page must still not include real payment, domain, API, account, price, or authorization mechanics.
+
+## 4.11 v1.50 phone first-screen and iOS 0.4 checkpoint / v1.50 手机首屏与 iOS 0.4 检查点
+
+中文:
+
+北京时间 2026-05-26 21:54 左右，心跳进入 Web `1.50`，这是 v1.49 生产部署后的第一个本地稠密版本，也是 Web `1.45 -> 1.50` 的 iOS companion 五版本同步点。工作只发生在 `/Users/fangbao/kzg-options-minute-site`，没有触碰受保护 KZG OS 路径，没有真实域名购买、付款账户动作、Massive 升级、凭证传输或花钱动作。
+
+具体变化：`public/app.js` 将 `UI_VERSION` 从 `1.49` 升到 `1.50`。`public/styles.css` 追加 v1.50 层，手机端继续压缩 topbar、timeboard、metric rail、session tape、access strip 到日报画布之间的纵向距离；report-stage、side-rail、panel 的圆角和 padding 统一到更克制的 7px/10px 尺度；日报画布说明在手机隐藏，首屏更快进入真实 KZG 报表。验证时发现手机滚动到高级预览时，side-rail 内部较长摘要会因后续样式重新设置 `max-height` 形成残影覆盖高级预览；本轮用 `.side-rail { max-height:none; overflow:visible; }` 明确修复，使 `sidePremiumOverlap=false`。暗色模式下，trend/signal/regime/bucket/rotation/momentum 的 panel 背景与边框被统一成更深、更有层次的终端灰。iOS companion 同步到 `0.4`，包括 SwiftUI 主栈 spacing、Header、CheckpointStrip、TimelineStrip、RotationCard、SymbolFocusCard、KZGCard、MetricTile 的小屏密度收紧；checkpoint 从 Web `1.45` / iOS `0.3` 变为 Web `1.50` / iOS `0.4`。
+
+验证事实：`node --check public/app.js` 通过；`python3 scripts/build_payload.py` 生成 `505` 天 payload，最新交易日 `2026-05-22`，analytics symbols `98`，pack asset `kzg-frame-b4e896d3b7a1.js`；`python3 scripts/per_day_to_dist.py` 复制 `505` 个 report。source 与 dist 公开风险词扫描均为 0。Playwright/Chrome 本地验证桌面、手机首屏、手机日报画布入口、手机高级预览浅色、手机高级预览暗色：全部 `overflowX=0`，console warn/error 为 `0`，公开风险词为 0，`user-select:none`。PNG 导出实际点击成功，文件 `/tmp/kzg-option-house-v150-export.png`，建议文件名 `kzg-option-house-2026-05-22-zh.png`，大小 `1,482,138` bytes。Apple Notes 置顶 `CHANGLOG 期权终端` 已同步，本轮同步正文约 `103,830` chars。截图证据：`/tmp/kzg-option-house-v150-desktop.png`、`/tmp/kzg-option-house-v150-mobile.png`、`/tmp/kzg-option-house-v150-mobile-report-entry.png`、`/tmp/kzg-option-house-v150-mobile-premium-light.png`、`/tmp/kzg-option-house-v150-mobile-dark.png`。
+
+iOS 验证：XcodeBuildMCP 当前 profile 为 `kzg-option-house-ios`，工程 `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`，scheme `KZG Option House`，bundle `com.kzg.optionhouse`。`build_sim` 仍失败，错误是本机无法匹配 simulator destination `{ platform:iOS Simulator, id:9DAFEA29-80F2-4D94-BE75-C0106CE8D97E }`，与前几轮记录的本机 runtime/destination 阻塞一致。fallback 源码验证 `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator` 通过，所以本轮记录为本机 Xcode destination 阻塞，不是 SwiftUI 语法阻塞。
+
+当前状态：v1.50 是最新本地验证 checkpoint；生产仍为 v1.49。下一步 v1.51 继续处理手机 side-rail 的长度与信息排序、高级预览暗色灰层质感、日报画布下方到高级预览之间的节奏，以及 iOS 0.4 模拟器 destination 复核。下一次常规生产部署默认等 v1.52-v1.54 形成一组稳定版本后再决定，除非出现公开风险修复。
+
+English:
+
+Around 2026-05-26 21:54 Asia/Shanghai, the heartbeat entered Web `1.50`. This is the first local dense version after the v1.49 production deploy and the iOS companion five-version checkpoint for Web `1.45 -> 1.50`. Work stayed inside `/Users/fangbao/kzg-options-minute-site`; protected KZG OS paths were not touched. No real domain purchase, payment-account action, Massive upgrade, credential transmission, or spending action was performed.
+
+Concrete changes: `public/app.js` moved `UI_VERSION` from `1.49` to `1.50`. `public/styles.css` adds a v1.50 layer that further compresses the phone vertical path from topbar, timeboard, metric rail, session tape, and access strip into the report canvas; report-stage, side-rail, and panel radius/padding are unified into a tighter 7px/10px scale; phone report-canvas copy is hidden so the first scroll reaches the real KZG report faster. During verification, side-rail's long summary could visually cover the advanced preview because later CSS restored `max-height`; this is fixed with `.side-rail { max-height:none; overflow:visible; }`, and verification now reports `sidePremiumOverlap=false`. In dark mode, trend/signal/regime/bucket/rotation/momentum panel backgrounds and borders now share a deeper terminal-gray treatment. iOS companion moved to `0.4`, tightening SwiftUI main stack spacing, Header, CheckpointStrip, TimelineStrip, RotationCard, SymbolFocusCard, KZGCard, and MetricTile. Checkpoint tiles move from Web `1.45` / iOS `0.3` to Web `1.50` / iOS `0.4`.
+
+Verified facts: `node --check public/app.js` passed; `python3 scripts/build_payload.py` produced a `505`-day payload, latest trading date `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-b4e896d3b7a1.js`; `python3 scripts/per_day_to_dist.py` copied `505` reports. Source and dist public-risk scans both returned 0. Local Playwright/Chrome checked desktop, phone first screen, phone report entry, phone advanced-preview light, and phone advanced-preview dark: all had `overflowX=0`, console warnings/errors `0`, public-risk strings `0`, and `user-select:none`. PNG export was clicked successfully: `/tmp/kzg-option-house-v150-export.png`, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes. Pinned Apple Notes `CHANGLOG 期权终端` was synced in this round at about `103,830` chars. Screenshot evidence: `/tmp/kzg-option-house-v150-desktop.png`, `/tmp/kzg-option-house-v150-mobile.png`, `/tmp/kzg-option-house-v150-mobile-report-entry.png`, `/tmp/kzg-option-house-v150-mobile-premium-light.png`, `/tmp/kzg-option-house-v150-mobile-dark.png`.
+
+iOS verification: XcodeBuildMCP current profile is `kzg-option-house-ios`, project `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`. `build_sim` still fails because this machine cannot match simulator destination `{ platform:iOS Simulator, id:9DAFEA29-80F2-4D94-BE75-C0106CE8D97E }`, matching the known local runtime/destination blocker from previous rounds. Fallback source validation `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator` passed, so this is recorded as a local Xcode destination blocker, not a SwiftUI syntax blocker.
+
+Current state: v1.50 is the latest locally verified checkpoint; production remains v1.49. Next v1.51 should continue phone side-rail length and information ordering, dark-mode gray-layer quality inside advanced preview, rhythm from report/digest into advanced preview, and the iOS 0.4 simulator destination recheck. The next normal production deploy should wait until a stable v1.52-v1.54 group unless a public-risk fix appears.
 
 ## 5. SaaS architecture / SaaS 架构
 
@@ -651,7 +677,7 @@ The 2026-05-26 16:55 Asia/Shanghai heartbeat entered v1.33. The goal is to keep 
 
 Fangbao 在 2026-05-26 追问 “note 不够” 和 “其他插件做得怎样”。这说明 Apple Notes 不能只写版本流水，还要能回答外部服务到底推进到哪里。完整插件总账写入 `docs/PLUGIN_SERVICE_STATUS.md`，本段是 owner-facing 摘要。
 
-已实际跑通的服务：GitHub 已作为代码与交接备份，当前分支 `feat/kzg-option-house-daily-auto`；Netlify 已作为生产部署，生产站 `https://kzg-option-house.netlify.app/`，最近生产版本 v1.32；Apple Notes 已有置顶 note `CHANGLOG 期权终端`，并从本文件同步；本地 iCloud 数据路径已用于 505 个期权分钟文件；Browser/Playwright/Chrome 已用于桌面、移动端、风险词和 PNG 导出 QA；自动化心跳仍在推动稠密迭代。
+已实际跑通的服务：GitHub 已作为代码与交接备份，当前分支 `feat/kzg-option-house-daily-auto`；Netlify 已作为生产部署，生产站 `https://kzg-option-house.netlify.app/`，最近生产版本 v1.49，最近本地验证版本 v1.50；Apple Notes 已有置顶 note `CHANGLOG 期权终端`，并从本文件同步；本地 iCloud 数据路径已用于 505 个期权分钟文件；Browser/Playwright/Chrome 已用于桌面、移动端、风险词和 PNG 导出 QA；原生 SwiftUI iOS companion 已到 `0.4` 源码验证；自动化心跳仍在推动稠密迭代。
 
 已研究但未真实上线的服务：Massive 实时 API 路线已做官方文档研究，结论是 `$199/month` individual plan 适合 owner 侧研究和私有采集，但不能默认用于公开付费 SaaS 实时再分发；真实实时 feed 需要后端采集、派生信号、权限控制和 Business/法律确认。
 
@@ -665,7 +691,7 @@ English:
 
 On 2026-05-26 Fangbao said the note is not enough and asked how the other plugins are doing. That means Apple Notes cannot only be a version log; it must answer where every external service stands. The complete plugin ledger is `docs/PLUGIN_SERVICE_STATUS.md`; this section is the owner-facing summary.
 
-Actually working services: GitHub is the code and handoff backup on branch `feat/kzg-option-house-daily-auto`; Netlify is production deployment at `https://kzg-option-house.netlify.app/`, with v1.32 as the latest production version; Apple Notes has the pinned note `CHANGLOG 期权终端` synced from this file; local iCloud data has powered the 505 option-minute files; Browser/Playwright/Chrome have been used for desktop/mobile/risk-token/PNG export QA; heartbeat automation continues the dense iteration loop.
+Actually working services: GitHub is the code and handoff backup on branch `feat/kzg-option-house-daily-auto`; Netlify is production deployment at `https://kzg-option-house.netlify.app/`, with v1.49 as the latest production version and v1.50 as the latest local verified version; Apple Notes has the pinned note `CHANGLOG 期权终端` synced from this file; local iCloud data has powered the 505 option-minute files; Browser/Playwright/Chrome have been used for desktop/mobile/risk-token/PNG export QA; native SwiftUI iOS companion is source-verified at `0.4`; heartbeat automation continues the dense iteration loop.
 
 Researched but not live: Massive real-time API has been studied from official docs. The conclusion is that the `$199/month` individual plan is useful for owner-side research and private ingestion, but should not be assumed to authorize public paid SaaS redistribution. A real-time product needs backend ingestion, derived signals, entitlement controls, and Business/legal confirmation.
 

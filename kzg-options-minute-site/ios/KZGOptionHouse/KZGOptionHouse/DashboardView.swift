@@ -11,7 +11,7 @@ struct DashboardView: View {
   var body: some View {
     NavigationStack {
       ScrollView {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 8) {
           Header(snapshot: snapshot)
           CheckpointStrip()
           TimelineStrip(points: snapshot.timeline)
@@ -22,8 +22,8 @@ struct DashboardView: View {
           RotationCard(points: snapshot.rotations)
           SymbolFocusCard(symbols: snapshot.symbols, selectedSymbol: $selectedSymbol, selectedPulse: selectedPulse)
         }
-        .padding(.horizontal, 12)
-        .padding(.vertical, 10)
+        .padding(.horizontal, 10)
+        .padding(.vertical, 8)
       }
       .background(Color(red: 0.97, green: 0.96, blue: 0.93))
       .navigationBarTitleDisplayMode(.inline)
@@ -41,11 +41,11 @@ private struct Header: View {
   let snapshot: OptionSnapshot
 
   var body: some View {
-    VStack(alignment: .leading, spacing: 8) {
-      HStack(alignment: .firstTextBaseline) {
+    VStack(alignment: .leading, spacing: 7) {
+      HStack(alignment: .firstTextBaseline, spacing: 8) {
         VStack(alignment: .leading, spacing: 2) {
           Text("KZG OPTION HOUSE")
-            .font(.system(size: 24, weight: .black, design: .serif))
+            .font(.system(size: 21, weight: .black, design: .serif))
           Text("MINUTE AGGREGATE OPTION REPORT")
             .font(.system(size: 10, weight: .bold, design: .rounded))
             .foregroundStyle(.secondary)
@@ -54,7 +54,7 @@ private struct Header: View {
         VStack(alignment: .trailing, spacing: 2) {
           Text(snapshot.tradeDate)
             .font(.system(.subheadline, design: .rounded, weight: .bold))
-          Text("iOS companion 0.3")
+          Text("iOS companion 0.4")
             .font(.caption2.weight(.semibold))
             .foregroundStyle(.secondary)
         }
@@ -67,7 +67,7 @@ private struct Header: View {
         .font(.caption2.weight(.semibold))
         .foregroundStyle(.secondary)
     }
-    .padding(13)
+    .padding(11)
     .background(
       Rectangle()
         .fill(Color(.systemBackground))
@@ -80,9 +80,9 @@ private struct Header: View {
 
 private struct CheckpointStrip: View {
   private let items = [
-    ("Web", "1.45", "local sync"),
-    ("iOS", "0.3", "phone fit"),
-    ("PNG", "KZG", "sheet safe")
+    ("Web", "1.50", "live"),
+    ("iOS", "0.4", "scan fit"),
+    ("PNG", "KZG", "safe")
   ]
 
   var body: some View {
@@ -93,7 +93,7 @@ private struct CheckpointStrip: View {
             .font(.caption2.weight(.bold))
             .foregroundStyle(.secondary)
           Text(item.1)
-            .font(.system(.title3, design: .serif, weight: .bold))
+            .font(.system(.headline, design: .serif, weight: .bold))
           Text(item.2)
             .font(.system(size: 9, weight: .semibold, design: .rounded))
             .foregroundStyle(.secondary)
@@ -101,8 +101,8 @@ private struct CheckpointStrip: View {
             .minimumScaleFactor(0.72)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.vertical, 8)
-        .padding(.horizontal, 9)
+        .padding(.vertical, 7)
+        .padding(.horizontal, 8)
         .background(Color(.systemBackground).opacity(0.78), in: RoundedRectangle(cornerRadius: 7, style: .continuous))
       }
     }
@@ -113,13 +113,13 @@ private struct TimelineStrip: View {
   let points: [TimelinePoint]
 
   var body: some View {
-    KZGCard(title: "交易日时间轴", subtitle: "505 个文件覆盖窗口") {
+    KZGCard(title: "交易日时间轴", subtitle: "505 文件窗口") {
       HStack(alignment: .bottom, spacing: 6) {
         ForEach(points) { point in
           VStack(spacing: 6) {
             Capsule()
               .fill(Color(red: 0.65, green: 0.52, blue: 0.34).opacity(0.45 + point.heat * 0.45))
-              .frame(height: 20 + point.heat * 34)
+              .frame(height: 18 + point.heat * 30)
             Text(point.label)
               .font(.system(size: 9, weight: .semibold, design: .rounded))
               .foregroundStyle(.secondary)
@@ -133,7 +133,7 @@ private struct TimelineStrip: View {
           .font(.caption2.weight(.bold))
           .foregroundStyle(.secondary)
         Spacer()
-        Text("2026-05-22 有数据")
+        Text("2026-05-22 完整")
           .font(.caption.weight(.bold))
       }
     }
@@ -286,8 +286,8 @@ private struct RotationCard: View {
             .position(x: map(point.volumeChange, min: -0.5, max: 4.5, size: 300), y: 200 - map(point.premiumChange, min: -0.8, max: 7.0, size: 200))
         }
       }
-      .frame(height: 178)
-      Text("右上为量价同升，左下为同步降温。iOS 版先保留当日免费象限，历史回看后续按 Web 每 5 个版本同步。")
+        .frame(height: 160)
+      Text("右上量价同升，左下同步降温。iOS 版按 Web 五版本节奏同步。")
         .font(.caption2)
         .foregroundStyle(.secondary)
     }
@@ -307,7 +307,7 @@ private struct SymbolFocusCard: View {
   var body: some View {
     KZGCard(title: "核心标的动量", subtitle: "手机端先做轻量聚焦") {
       ScrollView(.horizontal, showsIndicators: false) {
-        HStack(spacing: 8) {
+        HStack(spacing: 7) {
           ForEach(symbols) { item in
             Button {
               selectedSymbol = item.symbol
@@ -321,8 +321,8 @@ private struct SymbolFocusCard: View {
                   .font(.caption2)
               }
               .foregroundStyle(selectedSymbol == item.symbol ? Color.white : Color.primary)
-              .padding(10)
-              .frame(width: 96, alignment: .leading)
+              .padding(8)
+              .frame(width: 88, alignment: .leading)
               .background(
                 RoundedRectangle(cornerRadius: 7, style: .continuous)
                   .fill(selectedSymbol == item.symbol ? item.tone.color : Color.primary.opacity(0.045))
@@ -332,9 +332,9 @@ private struct SymbolFocusCard: View {
           }
         }
       }
-      VStack(alignment: .leading, spacing: 8) {
+      VStack(alignment: .leading, spacing: 7) {
         Text(selectedPulse.symbol)
-          .font(.system(.largeTitle, design: .serif, weight: .bold))
+          .font(.system(.title, design: .serif, weight: .bold))
         HStack {
           MetricTile(label: "成交", value: selectedPulse.volume, detail: selectedPulse.premium, accent: selectedPulse.tone.color)
           MetricTile(label: "CP", value: selectedPulse.cp, detail: "最热合约同步中", accent: selectedPulse.tone.color)
