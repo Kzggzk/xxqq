@@ -7763,3 +7763,420 @@ body[data-theme="dark"] .trend-hit:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* v46-v50 pass: richer hover card, slimmer lower analysis. */
+.market-tooltip {
+  width: 348px;
+  padding: 12px;
+  border-radius: 0;
+}
+
+.tip-read {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+  padding: 8px 9px;
+  border-left: 3px solid var(--gold);
+  background: rgba(246, 242, 233, 0.72);
+}
+
+.tip-read.hot {
+  border-left-color: #c45335;
+}
+
+.tip-read.cool {
+  border-left-color: #2f6190;
+}
+
+.tip-read b {
+  font-size: 12px;
+}
+
+.tip-read span {
+  color: #6f716b;
+  font-size: 10px;
+  line-height: 1.35;
+}
+
+.tip-bands {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.tip-bands span {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  padding: 7px 8px;
+  border: 1px solid #ebe6dc;
+  background: rgba(255, 255, 255, 0.66);
+  font-variant-numeric: tabular-nums;
+}
+
+.tip-bands span.hot {
+  border-color: rgba(196, 83, 53, 0.34);
+  box-shadow: inset 2px 0 0 #c45335;
+}
+
+.tip-bands span.cool {
+  border-color: rgba(47, 97, 144, 0.34);
+  box-shadow: inset 2px 0 0 #2f6190;
+}
+
+.tip-bands i,
+.tip-bands small {
+  overflow: hidden;
+  color: #777065;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 780;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tip-bands b {
+  color: #171717;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.tip-bands em {
+  display: block;
+  width: var(--w);
+  height: 3px;
+  background: #9a6a12;
+}
+
+.tip-bands .hot em {
+  background: #c45335;
+}
+
+.tip-bands .cool em {
+  background: #2f6190;
+}
+
+.tip-contract {
+  display: grid;
+  gap: 4px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #ebe6dc;
+}
+
+.tip-contract span {
+  color: #777065;
+  font-size: 10px;
+  font-weight: 780;
+}
+
+.tip-contract b {
+  overflow: hidden;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rotation-map {
+  min-height: 0;
+  gap: 8px;
+}
+
+.rotation-map-grid {
+  min-height: 252px;
+}
+
+.rotation-map-lead strong {
+  font-size: 28px;
+}
+
+.rotation-map-stats {
+  gap: 6px;
+}
+
+.rotation-map-stats span {
+  padding: 7px 8px;
+}
+
+.rotation-lanes {
+  gap: 8px;
+}
+
+.rotation-lane-title {
+  padding: 7px 9px;
+}
+
+.rotation-row {
+  min-height: 31px;
+  padding: 4px 7px;
+  gap: 7px;
+}
+
+.rotation-row svg {
+  height: 19px;
+}
+
+.momentum-panel {
+  gap: 10px;
+}
+
+.focus-head {
+  padding: 10px 12px;
+}
+
+.focus-head strong {
+  font-size: 26px;
+}
+
+.focus-metrics span {
+  padding: 8px 10px;
+}
+
+.focus-metrics b {
+  font-size: 18px;
+}
+
+.focus-extremes button {
+  padding: 7px 10px;
+}
+
+.focus-window-stack {
+  gap: 7px;
+  padding-top: 8px;
+}
+
+.focus-window-cards span {
+  padding: 7px 8px 6px;
+}
+
+.focus-session-cells,
+.focus-session-cells button {
+  height: 42px;
+  min-height: 42px;
+}
+
+.focus-charts {
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+
+.focus-charts svg {
+  height: 44px;
+}
+
+.momentum-row {
+  min-height: 32px;
+  padding: 3px 7px;
+}
+
+.mom-spark svg {
+  height: 22px;
+}
+
+body[data-theme="dark"] .tip-read,
+body[data-theme="dark"] .tip-bands span {
+  border-color: rgba(245, 240, 230, 0.16);
+  background: rgba(245, 240, 230, 0.055);
+}
+
+body[data-theme="dark"] .tip-read span,
+body[data-theme="dark"] .tip-bands i,
+body[data-theme="dark"] .tip-bands small,
+body[data-theme="dark"] .tip-contract span {
+  color: var(--muted);
+}
+
+body[data-theme="dark"] .tip-bands b,
+body[data-theme="dark"] .tip-contract b {
+  color: var(--ink);
+}
+
+@media (max-width: 520px) {
+  .market-tooltip {
+    width: min(330px, calc(100vw - 24px));
+  }
+
+  .tip-bands {
+    grid-template-columns: 1fr;
+  }
+
+  .rotation-map-grid {
+    min-height: 212px;
+  }
+
+  .momentum-row {
+    min-height: 40px;
+  }
+}
+
+/* v51-v55 pass: replace blocky pulse grids with thin flow tapes. */
+.trend-pulse-strip,
+.signal-pulse-tape,
+.focus-session-tape {
+  gap: 8px;
+}
+
+.trend-pulse-strip > div:first-child,
+.signal-pulse-tape > div:first-child,
+.focus-session-tape > div:first-child,
+.risk-pulse > div:first-child {
+  background: rgba(255, 255, 255, 0.44);
+}
+
+.trend-pulse-cells,
+.signal-pulse-cells,
+.focus-session-cells,
+.risk-cells {
+  display: flex;
+  gap: 2px;
+  align-items: stretch;
+  min-height: 46px;
+  padding: 4px 0 0;
+  border-bottom: 1px solid rgba(154, 106, 18, 0.28);
+}
+
+.trend-pulse-cells button,
+.signal-pulse-cells button,
+.focus-session-cells button {
+  position: relative;
+  flex: 1 1 0;
+  height: 46px;
+  min-width: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.34), rgba(201, 194, 178, 0.12));
+}
+
+.trend-pulse-cells button:hover,
+.signal-pulse-cells button:hover,
+.focus-session-cells button:hover,
+.trend-pulse-cells button.active,
+.signal-pulse-cells button.active,
+.focus-session-cells button.active {
+  box-shadow: inset 0 -3px 0 var(--ink);
+}
+
+.trend-pulse-cells i,
+.signal-pulse-cells i,
+.focus-session-cells i {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: var(--h);
+  min-height: 5px;
+  background: rgba(154, 106, 18, 0.68);
+}
+
+.trend-pulse-cells .hot i,
+.signal-pulse-cells .hot i,
+.focus-session-cells .hot i {
+  background: rgba(196, 83, 53, 0.76);
+}
+
+.trend-pulse-cells .cool i,
+.signal-pulse-cells .cool i,
+.focus-session-cells .cool i {
+  background: rgba(47, 97, 144, 0.76);
+}
+
+.trend-pulse-cells span,
+.signal-pulse-cells span,
+.focus-session-cells span {
+  position: absolute;
+  right: -1px;
+  bottom: 5px;
+  left: -1px;
+  min-height: 0;
+  color: transparent;
+  font-size: 0;
+}
+
+.trend-pulse-cells button.active span,
+.signal-pulse-cells button.active span,
+.focus-session-cells button.active span {
+  bottom: 1px;
+  color: var(--ink);
+  font-size: 7px;
+  line-height: 1;
+}
+
+.risk-pulse {
+  gap: 6px;
+}
+
+.risk-cells {
+  min-height: 46px;
+  padding-bottom: 0;
+}
+
+.risk-cells span {
+  flex: 1 1 0;
+  height: 46px;
+  padding-bottom: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.34), rgba(201, 194, 178, 0.12));
+}
+
+.risk-cells span::before {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: var(--h);
+  min-height: 5px;
+}
+
+.risk-cells i {
+  bottom: 2px;
+  color: transparent;
+  font-size: 0;
+}
+
+.heat-lane-track {
+  gap: 2px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid rgba(154, 106, 18, 0.22);
+}
+
+.heat-lane-track i {
+  min-width: 3px;
+  height: max(5px, calc(var(--h) * 0.74));
+  background: var(--c);
+}
+
+body[data-theme="dark"] .trend-pulse-strip > div:first-child,
+body[data-theme="dark"] .signal-pulse-tape > div:first-child,
+body[data-theme="dark"] .focus-session-tape > div:first-child,
+body[data-theme="dark"] .risk-pulse > div:first-child {
+  background: rgba(245, 240, 230, 0.055);
+}
+
+body[data-theme="dark"] .trend-pulse-cells,
+body[data-theme="dark"] .signal-pulse-cells,
+body[data-theme="dark"] .focus-session-cells,
+body[data-theme="dark"] .risk-cells,
+body[data-theme="dark"] .heat-lane-track {
+  border-color: rgba(245, 240, 230, 0.2);
+}
+
+@media (max-width: 520px) {
+  .trend-pulse-cells,
+  .signal-pulse-cells,
+  .focus-session-cells,
+  .risk-cells {
+    min-height: 38px;
+  }
+
+  .trend-pulse-cells button,
+  .signal-pulse-cells button,
+  .focus-session-cells button,
+  .risk-cells span {
+    height: 38px;
+  }
+}

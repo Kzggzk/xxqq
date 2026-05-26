@@ -13,7 +13,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "v45";
+const UI_VERSION = "v55";
 
 const $ = (id) => document.getElementById(id);
 const fmt0 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
@@ -2351,14 +2351,33 @@ function renderSymbolTooltip(symbol) {
   const premiumAvg = average(prev20.map((row) => row.premiumNotional));
   const premiumDelta20 = premiumAvg ? ((Number(current.premiumNotional) - premiumAvg) / premiumAvg) * 100 : 0;
   const cpAvg = average(series.map((row) => row.cpRatio));
+  const volumeRank = percentileRank(current.totalVol, series.map((row) => row.totalVol));
+  const cpDrift = (Number(current.cpRatio) || 0) - cpAvg;
+  const tooltipTone = volumeDelta20 >= 18 || premiumDelta20 >= 24 || cpDrift >= 0.28
+    ? "hot"
+    : volumeDelta20 <= -18 || premiumDelta20 <= -24 || cpDrift <= -0.28
+      ? "cool"
+      : "flat";
+  const read = state.lang === "zh"
+    ? `20D 成交 ${volumeDelta20 >= 0 ? "+" : ""}${fmt1.format(volumeDelta20)}%，权利金 ${premiumDelta20 >= 0 ? "+" : ""}${fmt1.format(premiumDelta20)}%，历史分位 ${fmt0.format(volumeRank)}%。`
+    : `20D volume ${volumeDelta20 >= 0 ? "+" : ""}${fmt1.format(volumeDelta20)}%, premium ${premiumDelta20 >= 0 ? "+" : ""}${fmt1.format(premiumDelta20)}%, ${fmt0.format(volumeRank)} percentile.`;
   return `
     <div class="tip-head">
       <strong>${escapeHtml(symbol)}</strong>
       <span>${current.category || ""}</span>
     </div>
+    <div class="tip-read ${tooltipTone}">
+      <b>${tooltipTone === "hot" ? (state.lang === "zh" ? "升温" : "warming") : tooltipTone === "cool" ? (state.lang === "zh" ? "降温" : "cooling") : (state.lang === "zh" ? "均衡" : "balanced")}</b>
+      <span>${escapeHtml(read)}</span>
+    </div>
     <div class="tip-chart">
       <span>${state.lang === "zh" ? "60 日成交轨迹" : "60-session volume"}</span>
       ${sparkline(series, "totalVol", 232, 54, delta >= 0 ? "#c45335" : "#2f6190")}
+    </div>
+    <div class="tip-bands">
+      ${tooltipBand("20D Vol", `${volumeDelta20 >= 0 ? "+" : ""}${fmt1.format(volumeDelta20)}%`, `${state.lang === "zh" ? "分位" : "rank"} ${fmt0.format(volumeRank)}%`, 50 + volumeDelta20 * 0.58, volumeDelta20 >= 18 ? "hot" : volumeDelta20 <= -18 ? "cool" : "flat")}
+      ${tooltipBand(state.lang === "zh" ? "权利金" : "Premium", `${premiumDelta20 >= 0 ? "+" : ""}${fmt1.format(premiumDelta20)}%`, moneyCompact(current.premiumNotional), 50 + premiumDelta20 * 0.45, premiumDelta20 >= 24 ? "hot" : premiumDelta20 <= -24 ? "cool" : "flat")}
+      ${tooltipBand("CP", ratio(current.cpRatio), `${cpDrift >= 0 ? "+" : ""}${fmt2.format(cpDrift)} vs avg`, 50 + cpDrift * 42, cpDrift >= 0.28 ? "hot" : cpDrift <= -0.28 ? "cool" : "flat")}
     </div>
     <div class="tip-mini">
       <span>${state.lang === "zh" ? "权利金" : "Premium"} ${sparkline(series, "premiumNotional", 112, 30, "#9a6a12")}</span>
@@ -2372,8 +2391,22 @@ function renderSymbolTooltip(symbol) {
       <span>20D Vol <b>${volumeDelta20 >= 0 ? "+" : ""}${fmt1.format(volumeDelta20)}%</b></span>
       <span>20D Prem <b>${premiumDelta20 >= 0 ? "+" : ""}${fmt1.format(premiumDelta20)}%</b></span>
       <span>${state.lang === "zh" ? "均值 CP" : "Avg CP"} <b>${ratio(cpAvg)}</b></span>
-      <span>${state.lang === "zh" ? "热门合约" : "Top contract"} <b>${escapeHtml(current.hottestShort || "--")}</b></span>
     </div>
+    <div class="tip-contract">
+      <span>${state.lang === "zh" ? "热门合约" : "Top contract"}</span>
+      <b>${escapeHtml(current.hottestShort || "--")}</b>
+    </div>
+  `;
+}
+
+function tooltipBand(label, value, sub, width, tone) {
+  return `
+    <span class="${tone}">
+      <i>${escapeHtml(label)}</i>
+      <b>${escapeHtml(value)}</b>
+      <small>${escapeHtml(sub)}</small>
+      <em style="--w:${Math.max(8, Math.min(100, width)).toFixed(1)}%"></em>
+    </span>
   `;
 }
 
