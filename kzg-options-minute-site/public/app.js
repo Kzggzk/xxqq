@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.36";
+const UI_VERSION = "1.37";
 
 const dataAudit = {
   dataset: "23_DATA_Massive_期权分钟_Minute",
@@ -555,6 +555,7 @@ function renderPremiumPreview() {
       </div>
     </div>
     ${dataAuditSeal()}
+    ${premiumCapabilityRail(rows, locked)}
     ${premiumUnlockDeck(rows, locked)}
     <div class="premium-grid ${locked ? "is-blurred" : ""}">
       ${premiumCard(state.lang === "zh" ? "轮动象限回看" : "Rotation lookback", lead.symbol || "--", `${attack.length}/${fade.length}`, state.lang === "zh" ? "量价同升 vs 同步降温" : "warming vs cooling")}
@@ -567,6 +568,76 @@ function renderPremiumPreview() {
     ${liveFeedSilhouette(rows, locked)}
     ${premiumQuadrantPreview(rows, locked)}
     ${locked ? `<div class="premium-lock" aria-hidden="true"><b>${t("paywallTitle")}</b><span>${t("paywallSub")}</span></div>` : ""}
+  `;
+}
+
+function premiumCapabilityRail(rows, locked) {
+  const daily = state.analytics?.daily || state.datesAsc || [];
+  const history = daily.slice(Math.max(0, state.selectedIndex - 59), state.selectedIndex + 1);
+  const baseRows = history.slice(0, -1);
+  const current = history[history.length - 1] || state.datesAsc[state.selectedIndex] || {};
+  const avgVol = average(baseRows.map((row) => row.totalVol));
+  const avgPremium = average(baseRows.map((row) => row.totalPremium));
+  const volLift = avgVol ? ((Number(current.totalVol) - avgVol) / avgVol) * 100 : 0;
+  const premiumLift = avgPremium ? ((Number(current.totalPremium) - avgPremium) / avgPremium) * 100 : 0;
+  const attack = rows.filter((row) => row.delta >= 0 && row.premiumDelta >= 0);
+  const fade = rows.filter((row) => row.delta < 0 && row.premiumDelta < 0);
+  const breadth = rows.length ? (attack.length / rows.length) * 100 : 0;
+  const buckets = state.day.buckets.market || [];
+  const maxBucket = buckets.reduce((best, row) => Number(row.total) > Number(best.total || 0) ? row : best, buckets[0] || {});
+  const openShare = state.day.overview.totalVol
+    ? buckets.slice(0, 2).reduce((sum, row) => sum + Number(row.total || 0), 0) / state.day.overview.totalVol * 100
+    : 0;
+  const closeShare = state.day.overview.totalVol
+    ? buckets.slice(-2).reduce((sum, row) => sum + Number(row.total || 0), 0) / state.day.overview.totalVol * 100
+    : 0;
+  const tone = volLift >= 10 || premiumLift >= 12 || breadth >= 36 ? "hot" : volLift <= -10 || premiumLift <= -12 || breadth <= 18 ? "cool" : "flat";
+  const lead = attack.slice().sort((a, b) => (b.delta + b.premiumDelta * 0.6) - (a.delta + a.premiumDelta * 0.6))[0] || rows[0] || {};
+  const mode = locked
+    ? (state.lang === "zh" ? "历史日期保留模糊轮廓" : "Historical dates stay as blurred silhouettes")
+    : (state.lang === "zh" ? "当日完整开放" : "Latest session is open");
+  const rails = state.lang === "zh"
+    ? [
+      ["能量", `${volLift >= 0 ? "+" : ""}${fmt1.format(volLift)}%`, "vs 60D", volLift >= 10 ? "hot" : volLift <= -10 ? "cool" : "flat"],
+      ["资金", `${premiumLift >= 0 ? "+" : ""}${fmt1.format(premiumLift)}%`, "权利金斜率", premiumLift >= 12 ? "hot" : premiumLift <= -12 ? "cool" : "flat"],
+      ["轮动", `${fmt1.format(breadth)}%`, `${attack.length} 升 / ${fade.length} 降`, breadth >= 36 ? "hot" : breadth <= 18 ? "cool" : "flat"],
+      ["节奏", maxBucket.time || "--", `开 ${fmt1.format(openShare)}% · 尾 ${fmt1.format(closeShare)}%`, openShare > closeShare ? "hot" : "flat"],
+    ]
+    : [
+      ["Energy", `${volLift >= 0 ? "+" : ""}${fmt1.format(volLift)}%`, "vs 60D", volLift >= 10 ? "hot" : volLift <= -10 ? "cool" : "flat"],
+      ["Capital", `${premiumLift >= 0 ? "+" : ""}${fmt1.format(premiumLift)}%`, "premium slope", premiumLift >= 12 ? "hot" : premiumLift <= -12 ? "cool" : "flat"],
+      ["Rotation", `${fmt1.format(breadth)}%`, `${attack.length} up / ${fade.length} down`, breadth >= 36 ? "hot" : breadth <= 18 ? "cool" : "flat"],
+      ["Rhythm", maxBucket.time || "--", `open ${fmt1.format(openShare)}% · close ${fmt1.format(closeShare)}%`, openShare > closeShare ? "hot" : "flat"],
+    ];
+  const summary = state.lang === "zh"
+    ? `${mode}。${lead.symbol || "--"} 是当前轮动引线，公开页只给可读信号和 PNG 输出，不给原始数据入口。`
+    : `${mode}. ${lead.symbol || "--"} is the current rotation lead. The public page gives readable signals and PNG export only, not raw data entry points.`;
+  return `
+    <div class="premium-capability-rail ${tone} ${locked ? "is-locked" : ""}">
+      <div class="capability-lead">
+        <span>${state.lang === "zh" ? "高级预览" : "Advanced preview"}</span>
+        <strong>${escapeHtml(lead.symbol || "--")}</strong>
+        <p>${escapeHtml(summary)}</p>
+      </div>
+      <div class="capability-rails">
+        ${rails.map((row) => `
+          <span class="${row[3]}">
+            <i>${escapeHtml(row[0])}</i>
+            <b>${escapeHtml(row[1])}</b>
+            <small>${escapeHtml(row[2])}</small>
+          </span>
+        `).join("")}
+      </div>
+      <div class="capability-meter" aria-hidden="true">
+        ${history.slice(-30).map((row, index, list) => {
+          const prev = list[index - 1];
+          const move = prev?.totalVol ? ((Number(row.totalVol) - Number(prev.totalVol)) / Number(prev.totalVol)) * 100 : 0;
+          const cls = move >= 7 ? "hot" : move <= -7 ? "cool" : "flat";
+          const height = Math.max(12, Math.min(100, 50 + move * 1.2));
+          return `<button type="button" class="${cls}" data-jump-date="${escapeHtml(row.date)}" style="--h:${height.toFixed(1)}%"><i></i><b>${index % 6 === 0 || index === list.length - 1 ? shortDate(row.date) : ""}</b></button>`;
+        }).join("")}
+      </div>
+    </div>
   `;
 }
 
@@ -890,8 +961,8 @@ function liveFeedSilhouette(rows, locked) {
   const hot = pressure.filter((row) => row.tone === "hot").length;
   const cool = pressure.filter((row) => row.tone === "cool").length;
   const publicNote = state.lang === "zh"
-    ? "这里只展示实时层的产品轮廓。真实接入、授权、账户和计费不写入公开页面。"
-    : "This only shows the live-layer product silhouette. Real access, authorization, account, and billing mechanics are not published.";
+    ? "这里只展示实时层的产品轮廓。真实接入和授权路径保留在后端方案，不写入公开页面。"
+    : "This only shows the live-layer product silhouette. Real access and authorization paths stay in backend planning, not on the public page.";
   const laneRows = state.lang === "zh"
     ? [
       ["主导压力", lead.symbol || "--", `${lead.velocity >= 0 ? "+" : ""}${fmt1.format(lead.velocity || 0)}`],

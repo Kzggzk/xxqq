@@ -27,8 +27,9 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 远端: `https://github.com/Kzggzk/xxqq.git`
 - 生产站: `https://kzg-option-house.netlify.app/`
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
-- 最近验证唯一部署: `https://6a15650fe0f26408c3f1c230--kzg-option-house.netlify.app/`
-- 最近公开 UI 显示版本: `1.35`
+- 最近验证唯一部署: `https://6a156cbee55c2318be31e1b4--kzg-option-house.netlify.app/`
+- 最近生产 UI 显示版本: `1.36`
+- 最近本地验证 UI 版本: `1.37`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；当前本机目录没有找到 `2023-*.csv.gz`
@@ -43,8 +44,9 @@ English:
 - Remote: `https://github.com/Kzggzk/xxqq.git`
 - Production site: `https://kzg-option-house.netlify.app/`
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
-- Latest verified unique deploy: `https://6a15650fe0f26408c3f1c230--kzg-option-house.netlify.app/`
-- Latest visible public UI version: `1.35`
+- Latest verified unique deploy: `https://6a156cbee55c2318be31e1b4--kzg-option-house.netlify.app/`
+- Latest visible production UI version: `1.36`
+- Latest locally verified UI version: `1.37`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; no local `2023-*.csv.gz` files were found in the verified folder
@@ -502,3 +504,33 @@ Deploy result: Netlify production deploy succeeded. Production URL is `https://k
 Cadence rule: current checkpoint is Web `1.35` -> iOS `0.1`. Next default iOS checkpoint is Web `1.40`. If Fangbao directly asks for an immediate iOS sync, do it earlier but record why the cadence was overridden.
 
 Boundary rule: do not submit to App Store review yet, do not upload TestFlight, do not choose a real signing team, do not modify developer-account state, do not use certificates, and do not spend money. At the exact step where upload/review/developer-account access is needed, stop and ask Fangbao to confirm.
+
+## 20. Heartbeat v1.37 advanced preview rail / 心跳 v1.37 高级预览能力带
+
+中文:
+
+北京时间 2026-05-26 18:10 心跳进入 Web v1.37。触发背景是继续执行 dense paid-product/UI goal，但公开页必须保持克制：不能把 payment、authorization、domain、API key、Massive plan、pricing、registration 等内部方案写回页面。本轮只改公开 UI 和日志，改动文件是 `/Users/fangbao/kzg-options-minute-site/public/app.js`、`/Users/fangbao/kzg-options-minute-site/public/styles.css`、`/Users/fangbao/kzg-options-minute-site/docs/CHANGELOG.md`、`/Users/fangbao/kzg-options-minute-site/docs/CHANGLOG_OPTION_TERMINAL.md`。
+
+产品动作：新增 `premium-capability-rail`。它把高级情报层里的产品能力从硬卡片堆叠改成一条连续能力带：左侧是当前轮动引线 `RGTI`，中间是能量、资金、轮动、节奏四个读盘指标，右侧是最近 30 个交易日的微型脉冲带。它的设计目标是让用户感受到“这里还有更强的能力”，但只看到由数据派生出的可读信号和 PNG 边界，不看到真实商业接入方式。
+
+设计纠偏：第一次实现时右侧 30 日历史条被画成 30 条横线，导致整条 rail 高度约 `618px`，左侧出现大块空白，不符合 Fangbao 反复强调的 spacing/calligraphy。随后立即改成时间胶片式小柱带，桌面高度压到约 `122px`，视觉上更像一条横向产品能力带，而不是新的大白块。
+
+公开边界：删除公开页英文文案中的 `billing mechanics`。风险词扫描确认公开 app shell 中没有 Stripe、Checkout、Wallet、Crypto、微信、Namecheap、optionflow、optionpulse、flowgamma、`$29`、`$49`、`$199`、pricing、payment、billing、注册、订阅、升级、降级等内部商业或授权词。
+
+验证结果：`node --check public/app.js` 通过；build 重新生成 `505` 天 payload，最新交易日 `2026-05-22`，pack asset `kzg-frame-4d22fd74cc0b.js`；内置 Browser DOM QA 确认 v1.37 已渲染、无横向溢出、无 console error、无内部商业词；Playwright 桌面 `1440x1100` 高级 rail 高度 `122px`，无横向溢出，console error 为 `0`；手机 `390x844` 无横向溢出，console error 为 `0`；PNG 导出 `/tmp/kzg-option-house-v137-export.png` 约 `1.48MB`。
+
+部署节奏：本轮不是公开风险修复，所以没有生产部署；生产仍为 v1.36，v1.37 作为本地验证和 GitHub/Apple Notes 留痕版本累计。下一步 v1.38 继续处理高级区下半段、历史模糊态和 analysis panels 的统一感。iOS 不在本轮同步，下一次默认 iOS checkpoint 仍是 Web v1.40。
+
+English:
+
+The 2026-05-26 18:10 Asia/Shanghai heartbeat entered Web v1.37. The trigger was the continuing dense paid-product/UI goal, while keeping the public page restrained: payment, authorization, domain, API key, Massive plan, pricing, registration, and other internal plans must not return to the page. This round changes only public UI and logs. Changed files are `/Users/fangbao/kzg-options-minute-site/public/app.js`, `/Users/fangbao/kzg-options-minute-site/public/styles.css`, `/Users/fangbao/kzg-options-minute-site/docs/CHANGELOG.md`, and `/Users/fangbao/kzg-options-minute-site/docs/CHANGLOG_OPTION_TERMINAL.md`.
+
+Product action: added `premium-capability-rail`. It turns advanced intelligence capability from rigid card stacking into one continuous capability rail: current rotation lead `RGTI` on the left, energy/capital/rotation/rhythm metrics in the center, and a compact 30-session pulse strip on the right. The goal is to make users feel that stronger capability exists, while showing only derived readable signals and the PNG boundary, not the real commercial access path.
+
+Design correction: the first implementation rendered the 30-session history as 30 horizontal rows, stretching the rail to about `618px` and creating a large blank block on the left. That failed Fangbao's spacing/calligraphy standard, so it was immediately changed into a film-strip mini bar sequence. Desktop rail height is now about `122px`, reading as a horizontal product capability rail rather than another blank block.
+
+Public boundary: removed the public English wording `billing mechanics`. Risk-token scan confirms the public app shell contains no Stripe, Checkout, Wallet, Crypto, WeChat, Namecheap, optionflow, optionpulse, flowgamma, `$29`, `$49`, `$199`, pricing, payment, billing, registration, subscription, upgrade, or downgrade strings.
+
+Verification: `node --check public/app.js` passed; build regenerated a `505`-day payload, latest trading day `2026-05-22`, pack asset `kzg-frame-4d22fd74cc0b.js`; in-app Browser DOM QA confirmed v1.37 rendered, no horizontal overflow, no console errors, and no internal commercial strings; Playwright desktop `1440x1100` saw advanced rail height `122px`, no horizontal overflow, and `0` console errors; mobile `390x844` had no horizontal overflow and `0` console errors; PNG export `/tmp/kzg-option-house-v137-export.png` was about `1.48MB`.
+
+Deploy cadence: this was not a public-risk fix, so it was not deployed to production. Production remains v1.36. v1.37 is accumulated as a locally verified GitHub/Apple Notes breadcrumb. Next v1.38 should continue the lower advanced area, historical blur state, and analysis-panel unity. iOS is not synced in this round; the next default iOS checkpoint remains Web v1.40.
