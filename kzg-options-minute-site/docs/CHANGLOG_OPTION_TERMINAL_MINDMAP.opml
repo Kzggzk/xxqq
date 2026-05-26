@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>CHANGLOG 期权终端</title>
+  </head>
+  <body>
+    <outline text="CHANGLOG 期权终端">
+      <outline text="SaaS Product / SaaS 产品">
+        <outline text="Public dashboard / 公开仪表盘">
+          <outline text="Latest day free insight / 最新日免费洞察"/>
+          <outline text="Timeline and selected history / 时间轴与精选历史"/>
+          <outline text="KZG-branded PNG export / KZG 品牌 PNG 导出"/>
+          <outline text="Bilingual UI and theme switch / 中英文与深浅色"/>
+          <outline text="Blur previews for advanced power / 高级功能模糊预览"/>
+        </outline>
+        <outline text="Paid product / 付费产品">
+          <outline text="Historical lookback / 历史回看"/>
+          <outline text="Rotation quadrant history / 轮动象限历史"/>
+          <outline text="Symbol rooms / 标的房间"/>
+          <outline text="Predictive momentum panels / 预测动量面板"/>
+          <outline text="Clean export policy / 无水印导出策略"/>
+          <outline text="Real-time derived feed after license approval / 授权后实时派生 feed"/>
+        </outline>
+      </outline>
+      <outline text="Identity / 身份">
+        <outline text="Registration / 注册"/>
+        <outline text="Login / 登录"/>
+        <outline text="User account / 用户账户"/>
+        <outline text="Password or magic link / 密码或 magic link"/>
+        <outline text="Wallet identity later / 钱包身份后置"/>
+        <outline text="Entitlement state / 权限状态"/>
+      </outline>
+      <outline text="Backend / 后端">
+        <outline text="Supabase candidate / Supabase 候选">
+          <outline text="auth.users / 用户"/>
+          <outline text="profiles / 用户资料"/>
+          <outline text="subscriptions / 订阅"/>
+          <outline text="entitlements / 权限"/>
+          <outline text="usage_events / 使用记录"/>
+          <outline text="export_jobs / 导出记录"/>
+          <outline text="signal_snapshots / 信号快照"/>
+        </outline>
+        <outline text="API layer / API 层">
+          <outline text="Massive ingestion private only / Massive 私有采集"/>
+          <outline text="Signal generation / 信号生成"/>
+          <outline text="Cache snapshots / 快照缓存"/>
+          <outline text="Fanout to frontend / 分发到前端"/>
+        </outline>
+      </outline>
+      <outline text="Data / 数据">
+        <outline text="Massive Flat Files / Massive Flat Files">
+          <outline text="Options minute aggregates / 期权分钟聚合"/>
+          <outline text="Current local proof 2024-05-17 to 2026-05-22 / 当前本地已证范围"/>
+          <outline text="2023-05 target re-audit / 2023-05 目标复核"/>
+        </outline>
+        <outline text="Future realtime / 未来实时">
+          <outline text="WebSocket ingest backend only / WebSocket 只进后端"/>
+          <outline text="No API key in browser / 浏览器不放 API key"/>
+          <outline text="Business license required for public resale / 公开销售需商业授权"/>
+        </outline>
+      </outline>
+      <outline text="Payments / 支付">
+        <outline text="USD / 美国钱">
+          <outline text="Stripe Checkout / Stripe 结账"/>
+          <outline text="Stripe Billing / Stripe 订阅"/>
+          <outline text="Customer Portal / 客户自助管理"/>
+        </outline>
+        <outline text="China money / 中国钱">
+          <outline text="WeChat merchant route / 微信商户路线"/>
+          <outline text="QR/manual bridge early / 早期二维码或人工桥接"/>
+          <outline text="Later merchant API / 后期商户 API"/>
+        </outline>
+        <outline text="USDT / 稳定币">
+          <outline text="Wallet connect later / 钱包连接后置"/>
+          <outline text="Address mapping / 地址映射"/>
+          <outline text="Manual confirmation before automation / 自动化前先人工确认"/>
+        </outline>
+      </outline>
+      <outline text="Domain and deploy / 域名与部署">
+        <outline text="Domain candidate research / 域名候选研究"/>
+        <outline text="Stop before purchase / 购买前必须停下确认"/>
+        <outline text="Netlify production / Netlify 生产站"/>
+        <outline text="DNS connection / DNS 连接"/>
+        <outline text="GitHub backup / GitHub 备份"/>
+      </outline>
+      <outline text="Protection / 保护">
+        <outline text="No raw data commit / 不提交 raw 数据"/>
+        <outline text="No public commercial internals / 公开站不放商业内部"/>
+        <outline text="Right-click/copy/drag friction / 右键复制拖拽阻力"/>
+        <outline text="PNG-only user export / 用户只导出 PNG"/>
+        <outline text="Secrets in backend/keychain only / 密钥只进后端或 Keychain"/>
+      </outline>
+    </outline>
+  </body>
+</opml>
