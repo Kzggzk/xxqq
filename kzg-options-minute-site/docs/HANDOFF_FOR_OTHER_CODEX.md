@@ -18,9 +18,9 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Remote / 远端: `https://github.com/Kzggzk/xxqq.git`
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
-- Production version last verified / 最近生产验证版本: `1.54`
-- Local version last verified / 最近本地验证版本: `1.54`
-- Latest unique deploy / 最近唯一部署: `https://6a15b9924af25310d2950255--kzg-option-house.netlify.app/`
+- Production version last verified / 最近生产验证版本: `1.56`
+- Local version last verified / 最近本地验证版本: `1.56`
+- Latest unique deploy / 最近唯一部署: `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`
 - iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.4`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
 - Local verified option-minute window / 本地已验证期权分钟范围: `2024-05-17 -> 2026-05-22`, `505` files.
@@ -67,6 +67,22 @@ Latest v1.42 note:
 Web `1.42` is a mobile/desktop spacing checkpoint, not a payment or domain feature. It compresses the phone header and summary rail, keeps PNG export stable, and keeps internal payment/domain/API planning out of the public site. Production unique deploy is `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`.
 
 Web `1.42` 是移动端/桌面端 spacing 检查点，不是支付或域名功能。它压缩手机顶栏和摘要指标区，保持 PNG 导出稳定，并继续把支付/域名/API 内部规划排除在公开站之外。生产唯一部署是 `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`。
+
+Latest local v1.56 note:
+
+最新本地 v1.56 说明：
+
+Web `1.56` is the latest local and production checkpoint. It builds on v1.55's three-sector structure and upgrades the middle realtime reserve into a tighter flow-book preview. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.56`, derived `hits` counts for flow rows, Bullish/Bearish ledgers formatted as symbol/count/strategy+delta/premium, a `Flow Book` filter control, and a five-group strategy recognition tree. It still uses no real API key, no provider route, no payment/domain/price copy, and no backend connection. Only the future realtime tape remains blurred; current daily/history/rotation/trend/export features stay open. Local and production QA passed on desktop `1440x1100` and phone `390x844`: no overflow, no old lock/blur nodes, no console issues, risk strings 0, 18 realtime tape rows, and PNG export works. Production unique deploy is `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`.
+
+Web `1.56` 是最新本地和生产检查点。它承接 v1.55 三段式结构，把中段 realtime reserve 升级为更紧凑的 flow-book 预览。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.56`、flow rows 增加派生 `hits` 次数、Bullish/Bearish 账本改成标的/次数/策略+变化/权利金格式、过滤器增加 `Flow Book` 控制、策略识别库扩成五组。它仍不使用真实 API key、不展示 provider route、不展示支付/域名/价格文案、不接后端。只有未来实时 tape 保留模糊；当前日报/历史/轮动/趋势/导出功能保持开放。本地和生产桌面 `1440x1100` 与手机 `390x844` QA 通过：无横向溢出、无旧锁层/旧模糊节点、无 console issue、风险词 0、实时 tape 18 行、PNG 导出可用。生产唯一部署是 `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`。
+
+Previous local v1.55 note:
+
+较早本地 v1.55 说明：
+
+Web `1.55` is the latest local checkpoint and reshapes the public page into three product sectors: an open daily/yesterday dashboard with timeline, a future realtime options-flow reserve, and an open historical intraday layer. Main code changes are `public/index.html`, `public/app.js`, and `public/styles.css`: UI version `1.55`, new realtime reserve sector, filter console, strategy-recognition cloud, blurred terminal tape only for the future realtime layer, Bullish/Bearish flow lanes, and a history-sector intro. Current generated-minute features remain open. Public risk scan and rendered-text scan are clean for payment/domain/API/provider/pricing leakage. Local Browser and Playwright verified desktop and phone no overflow, no old lock/blur nodes, no console issues, realtime tape blur limited to `.terminal-table-body`, and PNG export works.
+
+Web `1.55` 是最新本地检查点，把公开页面重塑为三段产品结构：开放的当日/昨日 dashboard 与时间轴、未来实时期权流预留席位、开放的历史日内层。主要代码改动是 `public/index.html`、`public/app.js`、`public/styles.css`：UI 版本 `1.55`、新增 realtime reserve sector、filter console、策略识别库、仅用于未来实时层的模糊 terminal tape、Bullish/Bearish flow lanes、history-sector intro。当前已生成分钟数据功能保持开放。公开风险扫描和渲染文本扫描均未发现 payment/domain/API/provider/pricing 泄漏。本地 Browser 与 Playwright 已验证桌面和手机无溢出、无旧 lock/blur 节点、无 console issue、实时 tape blur 只限 `.terminal-table-body`，PNG 导出可用。
 
 Latest local v1.45 note:
 

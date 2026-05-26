@@ -6,8 +6,9 @@
   <body>
     <outline text="CHANGLOG 期权终端">
       <outline text="Current state / 当前状态">
-        <outline text="Local verified Web 1.50 / 本地已验 Web 1.50"/>
-        <outline text="Production Web 1.49 / 生产 Web 1.49"/>
+        <outline text="Local verified Web 1.56 / 本地已验 Web 1.56"/>
+        <outline text="Production Web 1.56 / 生产 Web 1.56"/>
+        <outline text="Unique deploy 6a15c1b6531adb3fd145e39d / 唯一部署"/>
         <outline text="iOS companion 0.4 / iOS 伴生 0.4"/>
         <outline text="505 files 2024-05-17 to 2026-05-22 / 505 文件范围"/>
       </outline>
@@ -17,14 +18,14 @@
           <outline text="Timeline and selected history / 时间轴与精选历史"/>
           <outline text="KZG-branded PNG export / KZG 品牌 PNG 导出"/>
           <outline text="Bilingual UI and theme switch / 中英文与深浅色"/>
-          <outline text="Blur previews for advanced power / 高级功能模糊预览"/>
+          <outline text="Open generated-minute analytics / 生成分钟数据开放"/>
+          <outline text="Future realtime sector only / 仅未来实时区预留"/>
         </outline>
-        <outline text="Paid product / 付费产品">
-          <outline text="Historical lookback / 历史回看"/>
-          <outline text="Rotation quadrant history / 轮动象限历史"/>
-          <outline text="Symbol rooms / 标的房间"/>
-          <outline text="Predictive momentum panels / 预测动量面板"/>
-          <outline text="Clean export policy / 无水印导出策略"/>
+        <outline text="Future commercial layer / 未来商业层">
+          <outline text="Current generated-minute features stay open / 当前生成分钟功能开放"/>
+          <outline text="Realtime flow book and filters / 实时 flow book 与过滤器"/>
+          <outline text="Bullish and bearish lanes / 多空分栏"/>
+          <outline text="Strategy recognition tree / 策略识别树"/>
           <outline text="Real-time derived feed after license approval / 授权后实时派生 feed"/>
         </outline>
       </outline>

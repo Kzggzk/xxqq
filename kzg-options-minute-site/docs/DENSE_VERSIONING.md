@@ -12,8 +12,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - `1.01 -> 2.00` 代表 100 个稠密迭代。
 - A future `11.85` means 1085 post-1.00 dense iterations, not a symbolic number.
 - 未来如果到 `11.85`，它代表从 1.00 之后真的经历了 1085 个稠密迭代，不是随便喊出来的数字。
-- The latest local checkpoint is public UI `1.54`. The latest production checkpoint is public UI `1.54` at unique deploy `https://6a15b9924af25310d2950255--kzg-option-house.netlify.app/`. The next dense step is `1.55`.
-- 最近本地检查点是公开 UI `1.54`。最近生产检查点是公开 UI `1.54`，唯一部署是 `https://6a15b9924af25310d2950255--kzg-option-house.netlify.app/`。下一次稠密版本是 `1.55`。
+- The latest local and production checkpoint is public UI `1.56`, unique deploy `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`. The next dense step is `1.57`.
+- 最近本地和生产检查点都是公开 UI `1.56`，唯一部署是 `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`。下一次稠密版本是 `1.57`。
 
 ## iOS companion cadence / iOS 伴生节奏
 
@@ -21,8 +21,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - iOS app 是原生 SwiftUI，位于 `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse`。
 - iOS does not update on every Web `0.01` version. It updates every 5 Web dense versions unless Fangbao asks for an immediate iOS pass.
 - iOS 不跟随每一个 Web `0.01` 版本更新。默认每 5 个 Web 稠密版本同步一次，除非 Fangbao 要求立即更新 iOS。
-- Current iOS checkpoint: `iOS 0.4` at Web `1.50`; next default checkpoint target: Web `1.55`.
-- 当前 iOS 检查点：`iOS 0.4` 对应 Web `1.50`；下一默认检查点目标：Web `1.55`。
+- Current iOS checkpoint: `iOS 0.4` at Web `1.50`; Web `1.55/1.56` has reached the next sync target, but this pass prioritized the public Web realtime-sector restructure and deploy readiness. The next agent should either do an iOS companion sync at `1.56/1.57` or record why it is deferred.
+- 当前 iOS 检查点：`iOS 0.4` 对应 Web `1.50`；Web `1.55/1.56` 已到达下一次同步目标，但本轮优先处理公开 Web 实时区重构和部署准备。下一个 agent 应在 `1.56/1.57` 做一次 iOS 伴生同步，或记录为何延后。
 - App Store signing, TestFlight upload, review submission, or developer-account actions require Fangbao confirmation at that moment.
 - App Store 签名、TestFlight 上传、审核提交或开发者账号动作，都必须在当时让 Fangbao 确认。
 
@@ -36,8 +36,10 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - v1.53 曾定义旧版 feed 可见边界，随后 v1.54 纠偏：当前公开功能开放，安全可见层级现在是 `public-latest`、`history-open` 和 `future-live-feed`。
 - Future load, cache, event compression, and 1000-user fanout belong to the real-time feed backend phase, not current public gating.
 - 未来负载、缓存、事件压缩和 1000 用户分发属于真实实时流后端阶段，不属于当前公开遮挡。
-- v1.55 is the next iOS companion checkpoint unless Fangbao asks for earlier native work.
-- v1.55 是下一次 iOS 伴生检查点，除非 Fangbao 要求更早做原生端。
+- v1.55 reshapes the public page into three sectors: open daily dashboard, future realtime-flow reserve, and open historical intraday layer. Only the future realtime tape may be blurred; current generated-minute features stay open.
+- v1.55 把公开页重塑成三段：开放日报 dashboard、未来 realtime-flow 预留席位、开放历史日内层。只有未来实时 tape 可以模糊；当前已生成分钟数据功能保持开放。
+- v1.56 upgrades the realtime reserve into a flow-book style preview: Bullish/Bearish lanes show derived counts, strategy tags, delta, and premium; filters include a future Flow Book control and a richer strategy tree.
+- v1.56 把 realtime reserve 升级成 flow-book 风格预览：Bullish/Bearish 分栏显示派生次数、策略标签、变化和权利金；过滤器加入未来 Flow Book 控制和更完整的策略树。
 
 ## Heartbeat protocol / 心跳协议
 

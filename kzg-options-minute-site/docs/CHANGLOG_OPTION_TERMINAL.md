@@ -26,10 +26,10 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 分支: `feat/kzg-option-house-daily-auto`
 - 远端: `https://github.com/Kzggzk/xxqq.git`
 - 生产站: `https://kzg-option-house.netlify.app/`
-- 最近生产风险修复: Web `1.54` public-open correction；具体 commit 以最新 GitHub backup 提交为准
-- 最近验证唯一部署: `https://6a15b9924af25310d2950255--kzg-option-house.netlify.app/`
-- 最近生产 UI 显示版本: `1.54`
-- 最近本地验证 UI 版本: `1.54`
+- 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.56` flow-book pass，具体 commit 以最新 GitHub backup 提交为准
+- 最近验证唯一部署: `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`
+- 最近生产 UI 显示版本: `1.56`
+- 最近本地验证 UI 版本: `1.56`
 - 当前 iOS 伴生版本: `0.4`，对应 Web `1.50`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
@@ -44,10 +44,10 @@ English:
 - Branch: `feat/kzg-option-house-daily-auto`
 - Remote: `https://github.com/Kzggzk/xxqq.git`
 - Production site: `https://kzg-option-house.netlify.app/`
-- Latest public-risk fix: Web `1.54` public-open correction; exact commit is the latest GitHub backup commit
-- Latest verified unique deploy: `https://6a15b9924af25310d2950255--kzg-option-house.netlify.app/`
-- Latest visible production UI version: `1.54`
-- Latest locally verified UI version: `1.54`
+- Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.56` flow-book pass; exact commit is the latest GitHub backup commit
+- Latest verified unique deploy: `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`
+- Latest visible production UI version: `1.56`
+- Latest locally verified UI version: `1.56`
 - Current iOS companion version: `0.4`, mapped to Web `1.50`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
@@ -304,6 +304,62 @@ Production result: deployed immediately to production. Production site `https://
 Apple Notes: the owner-facing note with exact title `CHANGLOG 期权终端` has been synced from this file. After sync, there is 1 note with that exact title and about `127k` body characters, including the v1.54 public-open correction, the new Netlify unique deploy, the no-blur/no-lock/no-paywall current rule, and the boundary that future paid planning belongs only to the real-time feed service layer.
 
 Next: v1.55 should continue spacing/calligraphy, especially the phone rhythm from summary into the advanced area. If the iOS companion is touched, sync this "current features open" product state. Real-time feed paid planning remains internal architecture only, not homepage content, and exposed screenshot keys must not be used.
+
+## 4.0.5 v1.55 three-sector realtime reserve / v1.55 三段式实时预留
+
+中文:
+
+北京时间 2026-05-26 23:41 左右进入 Web `1.55`。触发条件是 Fangbao 纠偏后重新定义产品结构：当前已生成分钟数据不能被复杂付费遮挡，公开站应先被用户看懂。页面被压成三段：第一段是开放的当日/昨日 dashboard 与时间轴；第二段是未来真实实时 option flow 的预留席位；第三段是开放历史日内层，继续承接跨日趋势、日内桶、轮动象限、量价同升和标的动量。
+
+公开代码动作：`public/index.html` 新增 `historySectorIntro`，并把旧高级预览容器变成 `premium-preview realtime-sector`。`public/app.js` 把 `UI_VERSION` 提到 `1.55`，重写 `renderPremiumPreview()`，新增 `realtimeStat()`、`realtimeFlowModel()`、`realtimePreviewRows()`、`realtimeFilterConsole()`、`realtimeStrategyCloud()`、`realtimeFlowTerminal()`、`realtimeBiasList()`、`renderHistorySectorIntro()`。公开中段展示实时层逻辑、过滤器、策略识别、模糊实时 tape、Bullish/Bearish flow 分栏和体验边界。只有 `.terminal-table-body` 使用 `blur(2.7px) saturate(1.25)`，代表未来真实 feed 接入后才打开明细；当前日报、历史、轮动和派生分析都保持开放。
+
+视觉纠偏：第一版中段在桌面右侧出现大空白，filter 卡片也显得过高。随后改成四列：实时层逻辑、过滤器与策略识别库、实时 tape、Bullish/Bearish 分栏。策略识别库和 flow model 填补了原先空洞，让中段像一个未来实时终端雏形，而不是又一堆孤立方块。手机端改为纵向阅读，无横向溢出。
+
+验证事实：`node --check public/app.js` 通过；build 生成 `505` 天 payload，最新日 `2026-05-22`，analytics symbols `98`，pack asset `kzg-frame-7c2d5997acd1.js`；`per_day_to_dist.py` 返回 `copied=505`。Browser 本地验证页面身份、v1.55、实时 sector、历史 intro、实时 blur、旧锁层 0、旧 `.is-blurred` 0、横向溢出 0、console issue 0。Playwright 验证桌面与手机均显示 `23_DATA_Massive_期权分钟_Minute · 1.55 · 505/505 complete`，实时 tape 18 行，风险词 0，PNG 导出 `/tmp/kzg-v155-finalqa/kzg-option-house-2026-05-22-zh.png` 成功。
+
+部署状态：v1.55 为本地稳定检查点，等待与下一轮一起作为 3-5 版本组部署。生产当时仍为 v1.54。iOS 在 Web v1.55 已到默认同步点，但本轮优先处理公开 Web 结构，iOS 同步记录为延后。
+
+English:
+
+Around 2026-05-26 23:41 Asia/Shanghai, Web `1.55` started. The trigger was Fangbao's corrected product structure: current generated minute data must not be hidden behind premature paid mechanics, and users must understand the public site first. The page is compressed into three sectors: an open current/yesterday dashboard with timeline; a reserved future real-time option-flow seat; and an open historical intraday layer that continues cross-day trends, intraday buckets, rotation quadrants, volume-premium warming, and symbol momentum.
+
+Public code action: `public/index.html` adds `historySectorIntro` and turns the old advanced preview container into `premium-preview realtime-sector`. `public/app.js` moves `UI_VERSION` to `1.55`, rewrites `renderPremiumPreview()`, and adds `realtimeStat()`, `realtimeFlowModel()`, `realtimePreviewRows()`, `realtimeFilterConsole()`, `realtimeStrategyCloud()`, `realtimeFlowTerminal()`, `realtimeBiasList()`, and `renderHistorySectorIntro()`. The public middle sector shows live-layer logic, filters, strategy recognition, blurred realtime tape, Bullish/Bearish flow lanes, and the experience boundary. Only `.terminal-table-body` uses `blur(2.7px) saturate(1.25)` to represent details opening after a real feed connection; current daily, history, rotation, and derived analytics stay open.
+
+Visual correction: the first middle-sector pass left a large blank area on desktop and made filter cards feel too tall. It was corrected into four columns: live-layer logic, filters and strategy recognition, realtime tape, and Bullish/Bearish lanes. The strategy recognition library and flow model fill the former void, so the middle sector reads like a future real-time terminal prototype instead of another pile of isolated blocks. Phone layout is vertical with no horizontal overflow.
+
+Verification facts: `node --check public/app.js` passed; build produced a `505`-day payload, latest date `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-7c2d5997acd1.js`; `per_day_to_dist.py` returned `copied=505`. Browser local verification confirmed page identity, v1.55, realtime sector, history intro, realtime blur, old lock layers 0, old `.is-blurred` 0, horizontal overflow 0, and console issues 0. Playwright verified desktop and phone both show `23_DATA_Massive_期权分钟_Minute · 1.55 · 505/505 complete`, realtime tape has 18 rows, risk strings are 0, and PNG export `/tmp/kzg-v155-finalqa/kzg-option-house-2026-05-22-zh.png` succeeded.
+
+Deploy state: v1.55 is a local stable checkpoint, waiting to deploy together with the next round as a 3-5 version group. Production remained v1.54 at that time. Web v1.55 reached the default iOS sync point, but this round prioritized public Web structure and records iOS sync as deferred.
+
+## 4.0.6 v1.56 realtime flow-book filter pass / v1.56 实时 flow book 与过滤树
+
+中文:
+
+北京时间 2026-05-26 23:58 左右进入 Web `1.56`。触发条件是 Fangbao 又发来一个外部 options flow 页面中做得好的部分：它的 Bullish Flow、Bearish Flow、策略分类和过滤器能让用户快速感到“实时流在发生”。本轮没有复制对方站点、价格、活动文案或页脚，而是把这些思路改写成 KZG 自己的中段实时席位语言。
+
+公开代码动作：`public/app.js` 把 `UI_VERSION` 从 `1.55` 提到 `1.56`。`realtimePreviewRows()` 为每条派生 flow 增加 `hits` 次数字段，来自现有分钟数据的交易计数或 volume/premium 变化推导；`realtimeBiasList()` 从普通列表改成 flow book，显示 `Symbol / hits / strategy + delta / premium`。过滤器把 `Direction` 改成 `Flow Book`，并让提醒条件覆盖 volume、premium、CP、sweep。`realtimeStrategyCloud()` 扩展为方向、收入、价差、波动、高级五类，形成更接近未来真实筛选树的结构。
+
+公开视觉动作：`public/styles.css` 调整 `.realtime-bias-list` 网格，新增 `em` 次数字段样式，保持桌面四列布局不变，手机端仍无横向溢出。Bullish/Bearish 右侧账本现在更像实时订单流侧栏，第一行在验证中显示为 `RGTI 103 扫单 · +417.9% $122.7M`。
+
+边界：当前日报、历史数据、轮动象限、趋势、PNG 导出继续开放。只有未来实时 tape 保留 blur。公开页不出现外部 flow 站品牌、不出现 Stripe、Namecheap、Network Solutions、API key、Memorial Day、Upgrade、真实价格、checkout、域名候选或供应商凭证。截图中暴露的 Massive key 未使用、未存储、未提交。
+
+验证事实：`node --check public/app.js` 通过；`scripts/build_payload.py` 生成 `505` 天 payload，最新日 `2026-05-22`，analytics symbols `98`，pack asset `kzg-frame-2e0dbdf2b94a.js`；`scripts/per_day_to_dist.py` 返回 `copied=505`。Playwright/Node 验证桌面 `1440x1100` 和手机 `390x844` 均显示 `1.56 · 505/505 complete`，实时区和历史 intro 存在，实时 tape 18 行，唯一 filter 是 `.terminal-table-body` 的 `blur(2.7px) saturate(1.25)`，旧锁层 0，旧 `.is-blurred` 0，横向溢出 0，console issue 0。PNG 导出 `/tmp/kzg-v156-export.png` 成功，建议文件名 `kzg-option-house-2026-05-22-zh.png`。
+
+生产结果：v1.56 已部署生产。生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`，Netlify deploy id `6a15c1b6531adb3fd145e39d`。线上 smoke 确认 `/` 为 `200`，`/app.js` 为 `UI_VERSION = "1.56"`，`/data/index.json` 与 `/assets/kzg-pack.js` 继续 `404`。线上桌面和手机都显示 `1.56 · 505/505 complete`，实时区与历史 intro 存在，实时 tape 18 行，旧锁层 0，旧 `.is-blurred` 0，横向溢出 0，风险词 0，console issue 0。线上 PNG 导出 `/tmp/kzg-v156-prod-export.png` 成功。
+
+English:
+
+Around 2026-05-26 23:58 Asia/Shanghai, Web `1.56` started. The trigger was Fangbao sending more examples of what an external options-flow page does well: Bullish Flow, Bearish Flow, strategy categories, and filters make users feel that live flow is happening. This round does not copy that site, its prices, sale copy, or footer. It translates the useful pattern into KZG's own middle realtime-reserve language.
+
+Public code action: `public/app.js` moves `UI_VERSION` from `1.55` to `1.56`. `realtimePreviewRows()` adds a derived `hits` count to each flow row, using existing minute-data trade counts or volume/premium changes; `realtimeBiasList()` changes from a plain list into a flow book showing `Symbol / hits / strategy + delta / premium`. The filter console changes `Direction` into `Flow Book`, and alert conditions cover volume, premium, CP, and sweep. `realtimeStrategyCloud()` expands into Directional, Income, Spreads, Volatility, and Advanced groups, closer to the future real filter tree.
+
+Public visual action: `public/styles.css` adjusts `.realtime-bias-list` grid columns and adds `em` styling for the count field. Desktop keeps the four-column realtime layout, and phone still has no horizontal overflow. The Bullish/Bearish side ledger now reads more like a real-time order-flow sidebar; verification shows the first row as `RGTI 103 扫单 · +417.9% $122.7M`.
+
+Boundary: current daily data, historical data, rotation quadrant, trends, and PNG export remain open. Only the future realtime tape is blurred. The public page does not show the external flow-site brand, Stripe, Namecheap, Network Solutions, API key, Memorial Day, Upgrade, real prices, checkout, domain candidates, or provider credentials. Massive keys exposed in screenshots were not used, stored, or committed.
+
+Verification facts: `node --check public/app.js` passed; `scripts/build_payload.py` produced a `505`-day payload, latest date `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-2e0dbdf2b94a.js`; `scripts/per_day_to_dist.py` returned `copied=505`. Playwright/Node verified desktop `1440x1100` and phone `390x844` both show `1.56 · 505/505 complete`, realtime sector and history intro exist, realtime tape has 18 rows, the only filter is `.terminal-table-body` with `blur(2.7px) saturate(1.25)`, old lock layers are 0, old `.is-blurred` nodes are 0, horizontal overflow is 0, and console issues are 0. PNG export `/tmp/kzg-v156-export.png` succeeded with suggested filename `kzg-option-house-2026-05-22-zh.png`.
+
+Production result: v1.56 is deployed to production. Production site `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`, Netlify deploy id `6a15c1b6531adb3fd145e39d`. Live smoke confirmed `/` as `200`, `/app.js` as `UI_VERSION = "1.56"`, and `/data/index.json` plus `/assets/kzg-pack.js` still `404`. Live desktop and phone both show `1.56 · 505/505 complete`, realtime sector and history intro exist, realtime tape has 18 rows, old lock layers are 0, old `.is-blurred` nodes are 0, horizontal overflow is 0, risk strings are 0, and console issues are 0. Live PNG export `/tmp/kzg-v156-prod-export.png` succeeded.
 
 ## 4.1 v1.40 production checkpoint / v1.40 生产检查点
 

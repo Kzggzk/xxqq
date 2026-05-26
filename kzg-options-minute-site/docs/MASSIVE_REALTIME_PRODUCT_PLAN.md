@@ -14,6 +14,49 @@ The public site may show current generated-minute analytics fully open and reada
 
 公开站可以完整开放当前已生成分钟数据分析，也可以展示产品安全的实时流轮廓，但不得展示供应商名、套餐价格、checkout 文案、账号机制或 API 实现细节。实时商业交付在确认 Business/OPRA 展示与再分发权利前继续阻断。
 
+## v1.55 public UX line / v1.55 公开体验边界
+
+v1.55 implements the product-facing split that should guide future work:
+
+v1.55 已把未来工作应遵守的公开产品边界做进页面：
+
+1. Current generated-minute dashboard stays open.
+2. 当前已生成分钟 dashboard 保持开放。
+3. Future realtime option flow is the only reserved/blurred product area.
+4. 未来实时 option flow 是唯一预留/模糊的产品区域。
+5. Historical intraday trends, rotation quadrant, and derived analytics stay open.
+6. 历史日内趋势、轮动象限和派生分析保持开放。
+7. Public UI may show a simulated/derived realtime tape, filters, strategy recognition, and Bullish/Bearish lanes, but it must not show provider names, real credentials, plan prices, checkout routes, domain candidates, or internal entitlement plumbing.
+8. 公开 UI 可以展示模拟/派生实时 tape、过滤器、策略识别、Bullish/Bearish 分栏，但不得展示供应商名、真实凭证、套餐价格、checkout 路线、域名候选或内部权限管线。
+
+This means future paid-product work should focus on a backend-only live-flow service and a dedicated realtime page, while the existing daily/history product remains an open acquisition surface.
+
+这意味着未来付费产品工作应聚焦后端持有的 live-flow 服务和专门实时页面；现有日报/历史产品继续作为开放获客面。
+
+## v1.56 flow-book refinement / v1.56 flow book 细化
+
+v1.56 adds a public-safe product pattern for the future realtime page: Bullish/Bearish flow lanes now show a derived count, strategy type, day-over-day signal, and premium notional. Filters now include a `Flow Book` control and strategy recognition groups. This is still derived from existing minute aggregates and must not be mistaken for a real feed.
+
+v1.56 为未来实时页面加入公开安全的产品形态：Bullish/Bearish flow 分栏现在显示派生次数、策略类型、日变化信号和权利金成交额。过滤器加入 `Flow Book` 控制和策略识别分组。这仍然来自现有分钟聚合派生，不能误认为真实实时 feed。
+
+The next backend-only design step should map these public-safe fields to a future event schema:
+
+下一步后端内部设计应把这些公开安全字段映射到未来 event schema：
+
+- `symbol`
+- `bias`
+- `hitCount`
+- `strategyFamily`
+- `premiumNotional`
+- `expirationBucket`
+- `cpPressure`
+- `sourceConfidence`
+- `visibleTier`
+
+No provider names, live API routes, secrets, plan prices, checkout state, or legal assumptions should enter browser code.
+
+浏览器代码不应出现供应商名、实时 API 路由、密钥、套餐价格、checkout 状态或法律假设。
+
 ## Verified official facts / 已核官方事实
 
 Checked on 2026-05-26 Asia/Shanghai against Massive official docs/pages.
@@ -190,13 +233,14 @@ Future commercial candidate after approval:
 - Feed tape modes: hot burst, cooling, premium-led, volume-led, hedge-defense, gamma watch / Feed tape 模式：爆发、降温、权利金先行、量能先行、防守、gamma 观察。
 - Consumer explanations: "why this moved", "what changed in the last 5 minutes", "what is unusual versus 20D" / 消费者解释层：为什么动、过去 5 分钟变了什么、相对 20D 哪里异常。
 
-## Dense roadmap v1.51-v1.55 / 稠密路线 v1.51-v1.55
+## Dense roadmap v1.51-v1.56 / 稠密路线 v1.51-v1.56
 
 - v1.51: public live-feed silhouette and internal Massive architecture research. No real key. No public provider/price. / 公开实时流轮廓与内部 Massive 架构研究。不接真实 key，不公开供应商/价格。
 - v1.52: internal mock feed schema and adapter using generated/mock events from existing minute data. / 用现有分钟数据生成 mock event，建立内部 feed schema 和 adapter。
 - v1.53: older entitlement-safe feed boundary prototype, superseded by v1.54 for the current public site. / 较早权限安全 feed 边界原型；当前公开站以 v1.54 纠偏为准。
 - v1.54: public-open correction: no current feature blur, lock, or paywall; future load/fanout modeling moves to the real-time backend phase. / 公开开放纠偏：当前功能不模糊、不锁定、不 paywall；未来负载和分发模型移动到真实实时后端阶段。
-- v1.55: iOS companion sync for live silhouette concepts, still offline/mock unless Fangbao separately approves real backend work. / iOS 伴生同步实时轮廓概念；除非 Fangbao 另行批准真实后端，仍保持离线/mock。
+- v1.55: public three-sector restructure: open daily dashboard, future realtime reserve, open historical intraday layer. / 公开三段式重构：开放日报、未来实时预留、开放历史日内层。
+- v1.56: flow-book and strategy-filter refinement for the future realtime reserve, still generated/mock and not a real feed. / 未来 realtime reserve 的 flow book 与策略过滤树细化，仍为生成/mock，不是真实 feed。
 
 ## v1.52 adapter result / v1.52 adapter 结果
 

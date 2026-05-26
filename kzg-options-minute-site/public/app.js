@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.54";
+const UI_VERSION = "1.56";
 
 const dataAudit = {
   dataset: "23_DATA_Massive_期权分钟_Minute",
@@ -595,35 +595,323 @@ function renderAccessStrip() {
 function renderPremiumPreview() {
   const target = $("premiumPreview");
   if (!target || !state.day) return;
-  const locked = false;
   const rows = symbolRotationRows();
   const attack = rows.filter((row) => row.delta >= 0 && row.premiumDelta >= 0);
   const fade = rows.filter((row) => row.delta < 0 && row.premiumDelta < 0);
-  const lead = attack.slice().sort((a, b) => (b.delta + b.premiumDelta) - (a.delta + a.premiumDelta))[0] || rows[0] || {};
   const buckets = state.day.buckets.market || [];
   const maxBucket = buckets.reduce((best, row) => Number(row.total) > Number(best.total || 0) ? row : best, buckets[0] || {});
   const allRows = uniqueSymbolRows();
   const premiumLead = allRows.reduce((best, row) => Number(row.premiumNotional) > Number(best.premiumNotional) ? row : best, allRows[0] || {});
+  const flowRows = realtimePreviewRows(rows, allRows, maxBucket);
+  const bullishRows = flowRows.filter((row) => row.tone === "hot").slice(0, 9);
+  const bearishRows = flowRows.filter((row) => row.tone === "cool").slice(0, 9);
+  const lead = attack.slice().sort((a, b) => (b.delta + b.premiumDelta) - (a.delta + a.premiumDelta))[0] || flowRows[0] || rows[0] || {};
+  const flowVolume = flowRows.reduce((sum, row) => sum + Number(row.notional || 0), 0);
+  const commandStats = state.lang === "zh"
+    ? [
+      ["当日Dashboard", "开放", state.day.tradeDate, "flat"],
+      ["实时Flow", "预留", "接入后打开", "hot"],
+      ["历史趋势", "开放", `${fmt0.format(state.analytics?.daily?.length || 0)}日`, "flat"],
+    ]
+    : [
+      ["Daily dashboard", "Open", state.day.tradeDate, "flat"],
+      ["Live flow", "Reserved", "opens after backend", "hot"],
+      ["History trends", "Open", `${fmt0.format(state.analytics?.daily?.length || 0)}D`, "flat"],
+    ];
   target.innerHTML = `
-    <div class="premium-head">
-      <div>
-        <h2>${state.lang === "zh" ? "高级情报层" : "Advanced intelligence layer"}</h2>
-        <p>${state.lang === "zh" ? "现有分钟数据能力完整开放；未来实时流作为下一阶段单独设计。" : "Current minute-data features are open; the future live feed is a separate next stage."}</p>
+    <div class="realtime-topline">
+      <div class="realtime-heading">
+        <span>${state.lang === "zh" ? "第二段 · Future realtime sector" : "Sector 2 · Future realtime layer"}</span>
+        <h2>${state.lang === "zh" ? "实时期权流预留席位" : "Realtime options flow reserve"}</h2>
+        <p>${state.lang === "zh"
+          ? "上方日报和下方历史趋势继续免费开放。真正需要权限的是未来实时成交流：高速跳动、策略识别、过滤器和异常扫单。"
+          : "The daily report above and historical trends below stay open. The gated future layer is live options flow: fast tape, strategy labels, filters, and unusual sweeps."}</p>
+      </div>
+      <div class="realtime-command-strip">
+        ${commandStats.map((row, index) => `
+          <span class="${row[3]} ${index === 1 ? "active" : ""}">
+            <i>${escapeHtml(row[0])}</i>
+            <b>${escapeHtml(row[1])}</b>
+            <small>${escapeHtml(row[2])}</small>
+          </span>
+        `).join("")}
       </div>
     </div>
-    ${dataAuditSeal()}
-    ${premiumCapabilityRail(rows, locked)}
-    ${premiumUnlockDeck(rows, locked)}
-    <div class="premium-grid">
-      ${premiumCard(state.lang === "zh" ? "轮动象限回看" : "Rotation lookback", lead.symbol || "--", `${attack.length}/${fade.length}`, state.lang === "zh" ? "量价同升 vs 同步降温" : "warming vs cooling")}
-      ${premiumCard(state.lang === "zh" ? "异常分钟雷达" : "Anomaly minute radar", maxBucket.time || "--", wan(maxBucket.total || 0), state.lang === "zh" ? "峰值桶 + 历史偏离" : "peak bucket + history drift")}
-      ${premiumCard(state.lang === "zh" ? "权利金追踪" : "Premium tracking", premiumLead.symbol || "--", moneyCompact(premiumLead.premiumNotional), state.lang === "zh" ? "资金锚点与变化率" : "premium anchor and velocity")}
-      ${premiumCard(state.lang === "zh" ? "观察列表异动" : "Watchlist movement", "SPY / NVDA", state.lang === "zh" ? "预览" : "preview", state.lang === "zh" ? "核心标的异动与轮动提示" : "core symbol movement and rotation hints")}
+    <div class="realtime-layout">
+      <div class="realtime-brief">
+        <div class="realtime-brief-main">
+          <span>${state.lang === "zh" ? "实时层逻辑" : "Live layer logic"}</span>
+          <strong>${escapeHtml(lead.symbol || "--")}</strong>
+          <p>${state.lang === "zh"
+            ? `未来接入真实流后，这里只负责把成交方向、策略结构、权利金和异常类型压成可读交易流。当前先用现有分钟数据生成产品轮廓。`
+            : `When the true feed is connected, this layer compresses direction, strategy shape, premium, and anomaly type into a readable trading tape. This build first uses existing minute data to shape the product experience.`}</p>
+        </div>
+        <div class="realtime-scoreboard">
+          ${realtimeStat(state.lang === "zh" ? "Bullish Flow" : "Bullish Flow", bullishRows.length || attack.length, moneyCompact(flowVolume * 0.55 || premiumLead.premiumNotional), "hot")}
+          ${realtimeStat(state.lang === "zh" ? "Bearish Flow" : "Bearish Flow", bearishRows.length || fade.length, maxBucket.time || "--", "cool")}
+          ${realtimeStat(state.lang === "zh" ? "策略识别" : "Strategy tags", `${flowRows.length}`, state.lang === "zh" ? "扫单/价差/防守" : "sweep/spread/defense", "flat")}
+          ${realtimeStat(state.lang === "zh" ? "权利金锚" : "Premium anchor", premiumLead.symbol || "--", moneyCompact(premiumLead.premiumNotional), "flat")}
+        </div>
+        ${realtimeFlowModel()}
+      </div>
+      ${realtimeFilterConsole(rows)}
+      ${realtimeFlowTerminal(flowRows)}
+      <div class="realtime-side-lists">
+        ${realtimeBiasList(state.lang === "zh" ? "Bullish Flow" : "Bullish Flow", bullishRows, "hot", flowRows)}
+        ${realtimeBiasList(state.lang === "zh" ? "Bearish Flow" : "Bearish Flow", bearishRows, "cool", flowRows)}
+      </div>
     </div>
-    ${premiumLookbackPanel(locked)}
-    ${premiumSignalStack(rows, locked)}
-    ${liveFeedSilhouette(rows, locked)}
-    ${premiumQuadrantPreview(rows, locked)}
+    <div class="realtime-boundary-note">
+      <b>${state.lang === "zh" ? "体验边界" : "Experience boundary"}</b>
+      <span>${state.lang === "zh"
+        ? "当前是未来实时产品的体验轮廓：展示速度、筛选、分栏和事件密度，完整实时明细会在专门页面打开。"
+        : "This is the future live-product outline: speed, filters, bias lanes, and event density are visible; full realtime detail opens in a dedicated page."}</span>
+    </div>
+  `;
+}
+
+function realtimeStat(label, value, sub, tone) {
+  return `
+    <span class="${tone}">
+      <i>${escapeHtml(label)}</i>
+      <b>${escapeHtml(String(value || "--"))}</b>
+      <small>${escapeHtml(String(sub || "--"))}</small>
+    </span>
+  `;
+}
+
+function realtimeFlowModel() {
+  const rows = state.lang === "zh"
+    ? [
+      ["1", "方向", "买卖压力与 Call Put 侧"],
+      ["2", "结构", "单腿 价差 跨式 日历"],
+      ["3", "密度", "权利金 频率 扫单类型"],
+      ["4", "触发", "异动排序与二级页面"],
+    ]
+    : [
+      ["1", "Bias", "buy sell pressure and call put side"],
+      ["2", "Shape", "single leg spread straddle calendar"],
+      ["3", "Density", "premium frequency sweep type"],
+      ["4", "Trigger", "anomaly ranking and detail page"],
+    ];
+  return `
+    <div class="realtime-flow-model">
+      ${rows.map((row) => `
+        <span>
+          <i>${escapeHtml(row[0])}</i>
+          <b>${escapeHtml(row[1])}</b>
+          <small>${escapeHtml(row[2])}</small>
+        </span>
+      `).join("")}
+    </div>
+  `;
+}
+
+function realtimePreviewRows(rotationRows, symbolRows, peakBucket) {
+  const source = rotationRows.length ? rotationRows : symbolRows.map((row) => ({
+    ...row,
+    delta: 0,
+    premiumDelta: 0,
+  }));
+  const strategyNames = state.lang === "zh"
+    ? ["扫单", "价差", "跨式", "日历", "防守", "动量", "收入", "波动"]
+    : ["Sweep", "Spread", "Straddle", "Calendar", "Defense", "Momentum", "Income", "Volatility"];
+  const verbs = state.lang === "zh"
+    ? ["Buy", "Sell", "Open", "Roll", "Lift", "Hit"]
+    : ["Buy", "Sell", "Open", "Roll", "Lift", "Hit"];
+  return source.slice(0, 28).map((row, index) => {
+    const cp = Number(row.cpRatio) || 0;
+    const delta = Number(row.delta) || 0;
+    const premiumDelta = Number(row.premiumDelta) || 0;
+    const score = delta * 0.45 + premiumDelta * 0.3 + (cp - 1) * 12;
+    const tone = score >= 10 || cp >= 2.2 ? "hot" : score <= -10 || cp <= 0.72 ? "cool" : "flat";
+    const optionSide = tone === "cool" ? "Put" : "Call";
+    const strikeSeed = Math.max(3, Math.round((Number(row.avgTradeSize) || 12) * (index + 3)));
+    const notional = Number(row.premiumNotional) || Number(row.totalVol || 0) * 100;
+    const hitsBase = Number(row.totalTrades || row.trades || row.tradeCount || 0);
+    const hits = Math.max(2, Math.min(188, Math.round(hitsBase ? hitsBase / 4200 : (Math.abs(delta) + Math.abs(premiumDelta)) / 11 + index + 4)));
+    const time = peakBucket?.time && index % 3 === 0
+      ? peakBucket.time
+      : ["09:31", "09:48", "10:12", "10:57", "11:36", "13:18", "14:42", "15:21"][index % 8];
+    return {
+      symbol: row.symbol || "--",
+      company: row.category || "",
+      time,
+      strategy: `${verbs[index % verbs.length]} ${strikeSeed} ${optionSide}`,
+      tag: strategyNames[index % strategyNames.length],
+      expiry: ["0DTE", "1W", "2W", "Monthly", "LEAP"][index % 5],
+      premium: moneyCompact(notional),
+      notional,
+      hits,
+      cp,
+      delta,
+      premiumDelta,
+      tone,
+      score,
+    };
+  });
+}
+
+function realtimeFilterConsole(rows) {
+  const hot = rows.filter((row) => row.delta >= 0);
+  const cool = rows.filter((row) => row.delta < 0);
+  const labels = state.lang === "zh"
+    ? [
+      ["Tickers", "加入 / 排除标的", "SPY NVDA TSLA RGTI"],
+      ["Premium", "最低权利金", "$100k / $500k / $1m"],
+      ["Expiration", "到期窗口", "0DTE 1W 1M LEAP"],
+      ["Strategy", "策略类型", "Call Put Spread Sweep"],
+      ["Flow Book", "多空流向账本", `${hot.length} Bull / ${cool.length} Bear`],
+      ["Alert", "异动提醒", "volume premium CP sweep"],
+    ]
+    : [
+      ["Tickers", "include / exclude", "SPY NVDA TSLA RGTI"],
+      ["Premium", "minimum notional", "$100k / $500k / $1m"],
+      ["Expiration", "date window", "0DTE 1W 1M LEAP"],
+      ["Strategy", "strategy shape", "Call Put Spread Sweep"],
+      ["Flow Book", "bull bear ledger", `${hot.length} Bull / ${cool.length} Bear`],
+      ["Alert", "anomaly trigger", "volume premium CP sweep"],
+    ];
+  return `
+    <div class="realtime-filter-console">
+      <div class="filter-console-head">
+        <span>${state.lang === "zh" ? "过滤器与提醒" : "Filters and alerts"}</span>
+        <b>${state.lang === "zh" ? "Future controls" : "Future controls"}</b>
+      </div>
+      <div class="filter-console-grid">
+        ${labels.map((row) => `
+          <button type="button">
+            <i>${escapeHtml(row[0])}</i>
+            <b>${escapeHtml(row[1])}</b>
+            <small>${escapeHtml(row[2])}</small>
+          </button>
+        `).join("")}
+      </div>
+      ${realtimeStrategyCloud()}
+    </div>
+  `;
+}
+
+function realtimeStrategyCloud() {
+  const groups = state.lang === "zh"
+    ? [
+      ["方向", "Long Call", "Long Put", "Synthetic"],
+      ["收入", "Covered Call", "Cash Put", "Short Vol"],
+      ["价差", "Bull Call", "Bear Put", "Calendar"],
+      ["波动", "Straddle", "Strangle", "Condor"],
+      ["高级", "Ratio", "Broken Wing", "Ladder"],
+    ]
+    : [
+      ["Directional", "Long Call", "Long Put", "Synthetic"],
+      ["Income", "Covered Call", "Cash Put", "Short Vol"],
+      ["Spreads", "Bull Call", "Bear Put", "Calendar"],
+      ["Volatility", "Straddle", "Strangle", "Condor"],
+      ["Advanced", "Ratio", "Broken Wing", "Ladder"],
+    ];
+  return `
+    <div class="strategy-cloud">
+      <div>
+        <span>${state.lang === "zh" ? "策略识别库" : "Strategy recognition"}</span>
+        <b>${state.lang === "zh" ? "未来流会自动归类" : "auto-classified in live flow"}</b>
+      </div>
+      ${groups.map((group) => `
+        <p>
+          <strong>${escapeHtml(group[0])}</strong>
+          ${group.slice(1).map((item) => `<i>${escapeHtml(item)}</i>`).join("")}
+        </p>
+      `).join("")}
+    </div>
+  `;
+}
+
+function realtimeFlowTerminal(rows) {
+  if (!rows.length) return "";
+  return `
+    <div class="realtime-terminal">
+      <div class="terminal-head">
+        <span>${state.lang === "zh" ? "Realtime Flow Tape" : "Realtime Flow Tape"}</span>
+        <b>${state.lang === "zh" ? "接入后高速刷新" : "high-speed after connection"}</b>
+      </div>
+      <div class="terminal-table-head" aria-hidden="true">
+        <span>Time</span>
+        <span>Symbol</span>
+        <span>Strategy</span>
+        <span>Expiry</span>
+        <span>Premium</span>
+        <span>Type</span>
+      </div>
+      <div class="terminal-table-body is-realtime-gated" aria-label="${state.lang === "zh" ? "未来实时流预览" : "Future realtime flow preview"}">
+        ${rows.slice(0, 18).map((row) => `
+          <button type="button" class="${row.tone}" data-symbol="${escapeHtml(row.symbol)}">
+            <span>${escapeHtml(row.time)}</span>
+            <b>${escapeHtml(row.symbol)}</b>
+            <span>${escapeHtml(row.strategy)}</span>
+            <span>${escapeHtml(row.expiry)}</span>
+            <strong>${escapeHtml(row.premium)}</strong>
+            <i>${escapeHtml(row.tag)}</i>
+          </button>
+        `).join("")}
+      </div>
+      <div class="terminal-veil">
+        <strong>${state.lang === "zh" ? "未来实时席位" : "Future realtime seat"}</strong>
+        <span>${state.lang === "zh"
+          ? "真实 feed 接入后打开完整明细、排序、过滤、订阅提醒和二级页面。"
+          : "Real feed unlocks full details, sorting, filters, alerts, and the dedicated flow page."}</span>
+      </div>
+    </div>
+  `;
+}
+
+function realtimeBiasList(title, rows, tone, allRows = []) {
+  const ranked = [...allRows].sort((a, b) => tone === "cool" ? a.score - b.score : b.score - a.score);
+  const seen = new Set(rows.map((row) => row.symbol));
+  const fillers = ranked.filter((row) => !seen.has(row.symbol)).slice(0, Math.max(0, 8 - rows.length));
+  const displayRows = [...rows, ...fillers].slice(0, 8);
+  const flowCount = displayRows.reduce((sum, row) => sum + Number(row.hits || 0), 0);
+  return `
+    <div class="realtime-bias-list ${tone}">
+      <div>
+        <span>${escapeHtml(title)}</span>
+        <b>${fmt0.format(flowCount)}</b>
+      </div>
+      ${displayRows.map((row) => `
+        <button type="button" data-symbol="${escapeHtml(row.symbol)}">
+          <strong>${escapeHtml(row.symbol)}</strong>
+          <em>${fmt0.format(row.hits || 0)}</em>
+          <span>${escapeHtml(`${row.tag || "Flow"} · ${row.delta >= 0 ? "+" : ""}${fmt1.format(row.delta || 0)}%`)}</span>
+          <b>${escapeHtml(row.premium)}</b>
+        </button>
+      `).join("")}
+    </div>
+  `;
+}
+
+function renderHistorySectorIntro() {
+  const target = $("historySectorIntro");
+  if (!target || !state.day) return;
+  const rows = symbolRotationRows();
+  const attack = rows.filter((row) => row.delta >= 0 && row.premiumDelta >= 0);
+  const fade = rows.filter((row) => row.delta < 0 && row.premiumDelta < 0);
+  const premiumLead = rows.reduce((best, row) => row.premiumDelta > Number(best.premiumDelta || -Infinity) ? row : best, rows[0] || {});
+  const volumeLead = rows.reduce((best, row) => row.delta > Number(best.delta || -Infinity) ? row : best, rows[0] || {});
+  const daily = state.analytics?.daily || [];
+  const selected = daily.find((row) => row.date === state.day.tradeDate) || daily[state.selectedIndex] || {};
+  const start = daily[Math.max(0, state.selectedIndex - 59)] || daily[0] || {};
+  target.innerHTML = `
+    <div class="history-intro-copy">
+      <span>${state.lang === "zh" ? "第三段 · Open historical intraday layer" : "Sector 3 · Open historical intraday layer"}</span>
+      <h2>${state.lang === "zh" ? "历史日内趋势全部开放" : "Historical intraday trends stay open"}</h2>
+      <p>${state.lang === "zh"
+        ? "这里回到已经落地的分钟聚合数据：跨日成交、权利金、CP、轮动象限和日内桶都可直接读。重点看量价同升、同步降温和标的扩散。"
+        : "This returns to landed minute aggregates: cross-day volume, premium, CP, rotation quadrants, and intraday buckets stay readable. The focus is volume-premium warming, cooling, and symbol breadth."}</p>
+    </div>
+    <div class="history-intro-stats">
+      ${realtimeStat(state.lang === "zh" ? "量价同升" : "Volume + premium", attack.length, attack[0]?.symbol || "--", "hot")}
+      ${realtimeStat(state.lang === "zh" ? "同步降温" : "Cooling", fade.length, fade[0]?.symbol || "--", "cool")}
+      ${realtimeStat(state.lang === "zh" ? "成交领头" : "Volume lead", volumeLead.symbol || "--", `${volumeLead.delta >= 0 ? "+" : ""}${fmt1.format(volumeLead.delta || 0)}%`, "flat")}
+      ${realtimeStat(state.lang === "zh" ? "权利金领头" : "Premium lead", premiumLead.symbol || "--", `${premiumLead.premiumDelta >= 0 ? "+" : ""}${fmt1.format(premiumLead.premiumDelta || 0)}%`, "flat")}
+      ${realtimeStat(state.lang === "zh" ? "窗口" : "Window", `${shortDate(start.date || selected.date || state.day.tradeDate)} → ${shortDate(selected.date || state.day.tradeDate)}`, `${fmt0.format(daily.length)} sessions`, "flat")}
+    </div>
   `;
 }
 
@@ -1456,6 +1744,7 @@ function renderDay() {
   renderSymbolRotation();
   renderSymbolMomentum();
   renderPremiumPreview();
+  renderHistorySectorIntro();
   renderStaticCopy();
   applyAccessState();
   syncSymbolActive();
