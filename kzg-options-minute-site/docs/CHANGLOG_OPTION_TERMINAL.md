@@ -29,8 +29,8 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.56` flow-book pass，具体 commit 以最新 GitHub backup 提交为准
 - 最近验证唯一部署: `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.56`
-- 最近本地验证 UI 版本: `1.56`
-- 当前 iOS 伴生版本: `0.4`，对应 Web `1.50`
+- 最近本地稠密版本: `1.57`，本轮为 iOS 伴生同步，公开 Web 生产仍为 `1.56`
+- 当前 iOS 伴生版本: `0.5`，对应稠密 Web `1.57`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；当前本机目录没有找到 `2023-*.csv.gz`
@@ -47,13 +47,39 @@ English:
 - Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.56` flow-book pass; exact commit is the latest GitHub backup commit
 - Latest verified unique deploy: `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.56`
-- Latest locally verified UI version: `1.56`
-- Current iOS companion version: `0.4`, mapped to Web `1.50`
+- Latest local dense version: `1.57`, used for iOS companion sync while public Web production remains `1.56`
+- Current iOS companion version: `0.5`, mapped to dense Web `1.57`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; no local `2023-*.csv.gz` files were found in the verified folder
 - Apple Notes: maintain a pinned note with this title for owner-facing continuity
 - GitHub: keep docs committed so another Codex can continue from the repository
+
+## 1A. Latest heartbeat record v1.57 / 最新心跳记录 v1.57
+
+中文:
+
+北京时间 2026-05-27 00:03 左右，稠密版本 `1.57` 完成 iOS 伴生同步。本轮没有改公开 Web 生产页面，也没有部署 Netlify；生产继续是 Web `1.56`，唯一部署 `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`。本轮解决的是 iOS 已经落后于 Web `1.55/1.56` 的问题：原生 SwiftUI app 从 `0.4` 升到 `0.5`，把三段式产品边界同步到手机端。
+
+改动文件：`ios/KZGOptionHouse/KZGOptionHouse/DashboardView.swift`、`ios/KZGOptionHouse/KZGOptionHouse/Models.swift`、`ios/KZGOptionHouse/KZGOptionHouse/SnapshotProvider.swift`，以及本 GitHub docs。`DashboardView.swift` 的页面顺序现在是顶部开放日内 dashboard 和时间轴，中段未来实时流 Reserve，底部开放历史层，再往下是日内桶、轮动象限和核心标的动量。`Models.swift` 新增 flow filter、flow lane、flow item、history pillar。`SnapshotProvider.swift` 新增四个 filter chips、Bullish/Bearish 派生 flow rows、505/98/60D 三个历史层指标。
+
+公开边界：本轮 iOS 只写产品形态，不写真实 API key、不写供应商名称、不写支付路线、不写域名候选、不写价格、不写真正注册/账号流程。截图里暴露过的 key 继续视为已暴露；本轮没有使用、复制、存储、提交或放入 iOS。当前生成分钟数据能力继续开放；只有未来真实实时 feed reserve 可在未来做特殊体验。
+
+验证：XcodeBuildMCP `session_show_defaults` 确认 profile 指向 `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`，scheme `KZG Option House`，simulator `iPhone 17 Pro`。随后 `build_run_sim` 仍被本机 simulator destination/runtime mismatch 阻塞，日志为 `/Users/fangbao/Library/Developer/XcodeBuildMCP/workspaces/fangbao-e14a434e56b6/logs/build_run_sim_2026-05-26T16-03-05-731Z_pid85738_5623ca35.log`。fallback `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator` 通过，所以阻塞不是 Swift 语法问题。
+
+下一步：`1.58` 回到 Web 端，继续优化顶部日内 dashboard 到中段 realtime reserve 的过渡、手机 spacing/calligraphy、flow filter 可扫读性；仍然不接真实 key、不做真实升级、不花钱、不提交 raw data。
+
+English:
+
+Around 2026-05-27 00:03 Asia/Shanghai, dense version `1.57` completed the iOS companion sync. This round did not change the public Web production page and did not deploy Netlify; production remains Web `1.56`, unique deploy `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`. The purpose was to catch iOS up to the Web `1.55/1.56` product boundary. Native SwiftUI moves from `0.4` to `0.5` and now mirrors the three-sector product structure on phone.
+
+Changed files: `ios/KZGOptionHouse/KZGOptionHouse/DashboardView.swift`, `ios/KZGOptionHouse/KZGOptionHouse/Models.swift`, `ios/KZGOptionHouse/KZGOptionHouse/SnapshotProvider.swift`, plus these GitHub docs. `DashboardView.swift` now orders the screen as top open intraday dashboard and timeline, middle future realtime Reserve, bottom open historical layer, then intraday buckets, rotation quadrant, and symbol momentum. `Models.swift` adds flow filters, flow lanes, flow items, and history pillars. `SnapshotProvider.swift` adds four filter chips, Bullish/Bearish derived flow rows, and 505/98/60D historical-layer metrics.
+
+Public boundary: this iOS pass only expresses product form. It does not write a real API key, provider name, payment route, candidate domain, price, registration flow, or account flow. Keys exposed in screenshots remain treated as compromised; this round did not use, copy, store, commit, or place any key in iOS. Current generated-minute capabilities stay open; only future real realtime feed reserve may later receive special treatment.
+
+Verification: XcodeBuildMCP `session_show_defaults` confirmed the profile points to `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, simulator `iPhone 17 Pro`. `build_run_sim` is still blocked by the local simulator destination/runtime mismatch; log path is `/Users/fangbao/Library/Developer/XcodeBuildMCP/workspaces/fangbao-e14a434e56b6/logs/build_run_sim_2026-05-26T16-03-05-731Z_pid85738_5623ca35.log`. Fallback `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator` passed, so the blocker is not Swift syntax.
+
+Next: `1.58` should return to Web, refine the transition from top intraday dashboard into the middle realtime reserve, improve mobile spacing/calligraphy and flow-filter scanability, and still avoid real keys, real upgrades, spending, or raw-data commits.
 
 ## 2. Why this exists / 为什么必须有这个日志
 

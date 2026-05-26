@@ -12,8 +12,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - `1.01 -> 2.00` 代表 100 个稠密迭代。
 - A future `11.85` means 1085 post-1.00 dense iterations, not a symbolic number.
 - 未来如果到 `11.85`，它代表从 1.00 之后真的经历了 1085 个稠密迭代，不是随便喊出来的数字。
-- The latest local and production checkpoint is public UI `1.56`, unique deploy `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`. The next dense step is `1.57`.
-- 最近本地和生产检查点都是公开 UI `1.56`，唯一部署是 `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`。下一次稠密版本是 `1.57`。
+- The latest local checkpoint is `1.57` for iOS companion sync. The latest production Web checkpoint remains public UI `1.56`, unique deploy `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`. The next dense step is `1.58`.
+- 最近本地检查点是 `1.57` iOS 伴生同步。最新生产 Web 检查点仍是公开 UI `1.56`，唯一部署是 `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`。下一次稠密版本是 `1.58`。
 
 ## iOS companion cadence / iOS 伴生节奏
 
@@ -21,8 +21,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - iOS app 是原生 SwiftUI，位于 `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse`。
 - iOS does not update on every Web `0.01` version. It updates every 5 Web dense versions unless Fangbao asks for an immediate iOS pass.
 - iOS 不跟随每一个 Web `0.01` 版本更新。默认每 5 个 Web 稠密版本同步一次，除非 Fangbao 要求立即更新 iOS。
-- Current iOS checkpoint: `iOS 0.4` at Web `1.50`; Web `1.55/1.56` has reached the next sync target, but this pass prioritized the public Web realtime-sector restructure and deploy readiness. The next agent should either do an iOS companion sync at `1.56/1.57` or record why it is deferred.
-- 当前 iOS 检查点：`iOS 0.4` 对应 Web `1.50`；Web `1.55/1.56` 已到达下一次同步目标，但本轮优先处理公开 Web 实时区重构和部署准备。下一个 agent 应在 `1.56/1.57` 做一次 iOS 伴生同步，或记录为何延后。
+- Current iOS checkpoint: `iOS 0.5` at dense Web `1.57`. It syncs the three-sector public-open structure into native SwiftUI: top daily dashboard, middle future realtime reserve, and bottom open historical layer. XcodeBuildMCP still has a local simulator destination blocker, but Swift source typecheck passes.
+- 当前 iOS 检查点：`iOS 0.5` 对应稠密 Web `1.57`。它把三段式公开开放结构同步进原生 SwiftUI：顶部日报 dashboard、中段未来实时 reserve、底部开放历史层。XcodeBuildMCP 仍有本机 simulator destination 阻塞，但 Swift 源码 typecheck 通过。
 - App Store signing, TestFlight upload, review submission, or developer-account actions require Fangbao confirmation at that moment.
 - App Store 签名、TestFlight 上传、审核提交或开发者账号动作，都必须在当时让 Fangbao 确认。
 
@@ -40,6 +40,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - v1.55 把公开页重塑成三段：开放日报 dashboard、未来 realtime-flow 预留席位、开放历史日内层。只有未来实时 tape 可以模糊；当前已生成分钟数据功能保持开放。
 - v1.56 upgrades the realtime reserve into a flow-book style preview: Bullish/Bearish lanes show derived counts, strategy tags, delta, and premium; filters include a future Flow Book control and a richer strategy tree.
 - v1.56 把 realtime reserve 升级成 flow-book 风格预览：Bullish/Bearish 分栏显示派生次数、策略标签、变化和权利金；过滤器加入未来 Flow Book 控制和更完整的策略树。
+- v1.57 syncs that product boundary into iOS companion `0.5`; it does not deploy Web or connect real keys.
+- v1.57 把这个产品边界同步到 iOS 伴生 `0.5`；它不部署 Web，也不接真实 key。
 
 ## Heartbeat protocol / 心跳协议
 

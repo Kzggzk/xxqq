@@ -9,10 +9,10 @@ This document defines the iOS track for KZG Option House. The iOS app is a compa
 - iOS project / iOS 工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`
 - Scheme / Scheme: `KZG Option House`
 - Bundle id / Bundle ID: `com.kzg.optionhouse`
-- Current iOS version / 当前 iOS 版本: `0.4`
-- Web baseline / 对应 Web 基线: public Web `1.50`
+- Current iOS version / 当前 iOS 版本: `0.5`
+- Web baseline / 对应 Web 基线: dense Web `1.57`, production Web still `1.56`
 - First simulator proof / 首次模拟器证明: `/tmp/kzg-option-house-ios-v01.png`
-- Build proof / 构建证明: v0.4 Swift source typecheck passed with `swiftc`; full Xcode destination build is currently blocked by local simulator runtime selection.
+- Build proof / 构建证明: v0.5 Swift source typecheck passed with `swiftc`; full XcodeBuildMCP simulator run is currently blocked by local simulator runtime selection.
 
 ## Cadence / 节奏
 
@@ -20,8 +20,8 @@ This document defines the iOS track for KZG Option House. The iOS app is a compa
 - Web 继续按 `0.01` 稠密迭代。
 - iOS updates every 5 Web dense versions unless Fangbao explicitly asks for an immediate iOS pass.
 - iOS 每 5 个 Web 稠密版本同步一次，除非 Fangbao 明确要求立即同步。
-- Current checkpoint: iOS `0.4` at Web `1.50`; next planned iOS checkpoint is Web `1.55`.
-- 当前检查点：iOS `0.4` 对应 Web `1.50`；下一次计划 iOS 检查点是 Web `1.55`。
+- Current checkpoint: iOS `0.5` at dense Web `1.57`; next planned iOS checkpoint is around Web `1.62` unless Fangbao asks earlier.
+- 当前检查点：iOS `0.5` 对应稠密 Web `1.57`；下一次计划 iOS 检查点约在 Web `1.62`，除非 Fangbao 提前要求。
 
 ## Product direction / 产品方向
 
@@ -63,6 +63,8 @@ Current verified steps:
 - Xcode scheme 已存在：`KZG Option House`。
 - v0.4 SwiftUI source typecheck passed with `swiftc -typecheck`.
 - v0.4 SwiftUI 源码已通过 `swiftc -typecheck`。
+- v0.5 SwiftUI source typecheck passed with `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator`.
+- v0.5 SwiftUI 源码已通过 `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator`。
 - First v0.1 simulator proof remains `/tmp/kzg-option-house-ios-v01.png`.
 - 首次 v0.1 模拟器证明仍为 `/tmp/kzg-option-house-ios-v01.png`。
 
@@ -70,8 +72,18 @@ Known caveat:
 
 已知注意点：
 
-- For v0.4, XcodeBuildMCP still finds the correct project, scheme, and `iPhone 17 Pro` simulator profile, but `build_sim` fails on this machine because the destination `{ platform:iOS Simulator, id:9DAFEA29-80F2-4D94-BE75-C0106CE8D97E }` cannot be matched against the installed runtime. Source typecheck passes, so this is still recorded as a local Xcode/destination blocker, not a Swift syntax blocker.
-- 对 v0.4 来说，XcodeBuildMCP 仍能找到正确工程、scheme 和 `iPhone 17 Pro` 模拟器 profile，但 `build_sim` 在本机仍失败，因为 destination `{ platform:iOS Simulator, id:9DAFEA29-80F2-4D94-BE75-C0106CE8D97E }` 与已安装 runtime 对不上。源码类型检查通过，所以继续记录为本机 Xcode/destination 阻塞，不是 Swift 语法阻塞。
+- For v0.5, XcodeBuildMCP still finds the correct project, scheme, and `iPhone 17 Pro` simulator profile, but `build_run_sim` fails on this machine because the destination `{ platform:iOS Simulator, id:9DAFEA29-80F2-4D94-BE75-C0106CE8D97E }` cannot be matched against the installed runtime. Source typecheck passes, so this is still recorded as a local Xcode/destination blocker, not a Swift syntax blocker.
+- 对 v0.5 来说，XcodeBuildMCP 仍能找到正确工程、scheme 和 `iPhone 17 Pro` 模拟器 profile，但 `build_run_sim` 在本机仍失败，因为 destination `{ platform:iOS Simulator, id:9DAFEA29-80F2-4D94-BE75-C0106CE8D97E }` 与已安装 runtime 对不上。源码类型检查通过，所以继续记录为本机 Xcode/destination 阻塞，不是 Swift 语法阻塞。
+
+## v0.5 checkpoint / v0.5 检查点
+
+中文:
+
+Web dense `1.57` 同步 iOS `0.5`。这轮承接 Web `1.55/1.56` 的三段式产品结构，不做 TestFlight 或 App Store 动作。原生 SwiftUI 首页现在按手机读盘顺序组织：顶部开放日内 dashboard 和 timeline，中段未来实时流 Reserve，底部开放历史层和轮动/日内/标的聚焦。`DashboardView.swift` 增加 Realtime Reserve 卡、filter chips、Bullish/Bearish flow lanes、开放历史层，并把轮动象限坐标改为自适应 GeometryReader；`Models.swift` 和 `SnapshotProvider.swift` 增加本地派生样张。公开边界仍然是：iOS 不放真实 API key、不放供应商路线、不放支付、域名、价格或注册机制。验证上，XcodeBuildMCP profile 正确但 simulator destination 仍卡住，fallback `swiftc -typecheck` 通过。
+
+English:
+
+Web dense `1.57` syncs iOS `0.5`. This round follows the Web `1.55/1.56` three-sector product structure and does not perform TestFlight or App Store work. The native SwiftUI home now follows phone reading order: top open intraday dashboard and timeline, middle future realtime Reserve, and bottom open historical layer with rotation/intraday/symbol focus. `DashboardView.swift` adds the Realtime Reserve card, filter chips, Bullish/Bearish flow lanes, open historical layer, and adaptive GeometryReader coordinates for the rotation quadrant; `Models.swift` and `SnapshotProvider.swift` add local derived sample data. Boundary remains: iOS contains no real API key, provider route, payment, domain, price, or registration mechanics. Verification: XcodeBuildMCP profile is correct but simulator destination is still blocked; fallback `swiftc -typecheck` passes.
 
 ## v0.4 checkpoint / v0.4 检查点
 

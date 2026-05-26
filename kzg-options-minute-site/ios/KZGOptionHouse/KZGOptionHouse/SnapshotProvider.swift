@@ -58,6 +58,39 @@ enum OptionSnapshotProvider {
       .init(symbol: "SPY", volumeChange: -0.01, premiumChange: 0.07),
       .init(symbol: "INTC", volumeChange: -0.29, premiumChange: -0.44),
       .init(symbol: "SLV", volumeChange: -0.28, premiumChange: -0.46)
+    ],
+    flowFilters: [
+      .init(label: "方向", value: "Bull / Bear", detail: "按偏向分流"),
+      .init(label: "权利金", value: "$100k+", detail: "过滤小噪音"),
+      .init(label: "到期", value: "0D-2Y", detail: "按时间桶扫读"),
+      .init(label: "策略", value: "Spread", detail: "识别组合腿")
+    ],
+    flowLanes: [
+      .init(
+        title: "Bullish Flow",
+        subtitle: "量价同升样张",
+        tone: .hot,
+        items: [
+          .init(time: "15:30", symbol: "RGTI", count: "103", strategy: "Sweep", premium: "$122.7M", delta: "+417.9%"),
+          .init(time: "15:00", symbol: "QBTS", count: "82", strategy: "Calls", premium: "$113.2M", delta: "+309.3%"),
+          .init(time: "13:30", symbol: "ASTS", count: "64", strategy: "Spread", premium: "$374.6M", delta: "+155.5%")
+        ]
+      ),
+      .init(
+        title: "Bearish Flow",
+        subtitle: "防守压力样张",
+        tone: .cool,
+        items: [
+          .init(time: "15:00", symbol: "SMH", count: "44", strategy: "Puts", premium: "$303.4M", delta: "+189.8%"),
+          .init(time: "14:30", symbol: "INTC", count: "31", strategy: "Put side", premium: "$345.6M", delta: "-28.7%"),
+          .init(time: "13:00", symbol: "SLV", count: "24", strategy: "Hedge", premium: "$92.2M", delta: "-27.7%")
+        ]
+      )
+    ],
+    historyPillars: [
+      .init(title: "开放窗口", value: "505", detail: "2024-05-17 至 2026-05-22"),
+      .init(title: "轮动样本", value: "98", detail: "核心标的可继续扫读"),
+      .init(title: "趋势层", value: "60D", detail: "量能 权利金 CP 同读")
     ]
   )
 }

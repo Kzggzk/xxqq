@@ -11,19 +11,21 @@ struct DashboardView: View {
   var body: some View {
     NavigationStack {
       ScrollView {
-        VStack(alignment: .leading, spacing: 8) {
+        VStack(alignment: .leading, spacing: 10) {
           Header(snapshot: snapshot)
           CheckpointStrip()
           TimelineStrip(points: snapshot.timeline)
           SummaryGrid(snapshot: snapshot)
           ReadBus(snapshot: snapshot)
+          RealtimeReserveCard(filters: snapshot.flowFilters, lanes: snapshot.flowLanes)
           SectorBand(sectors: snapshot.sectors)
+          OpenHistoryCard(pillars: snapshot.historyPillars)
           IntradayCard(buckets: snapshot.buckets)
           RotationCard(points: snapshot.rotations)
           SymbolFocusCard(symbols: snapshot.symbols, selectedSymbol: $selectedSymbol, selectedPulse: selectedPulse)
         }
-        .padding(.horizontal, 10)
-        .padding(.vertical, 8)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 10)
       }
       .background(Color(red: 0.97, green: 0.96, blue: 0.93))
       .navigationBarTitleDisplayMode(.inline)
@@ -54,7 +56,7 @@ private struct Header: View {
         VStack(alignment: .trailing, spacing: 2) {
           Text(snapshot.tradeDate)
             .font(.system(.subheadline, design: .rounded, weight: .bold))
-          Text("iOS companion 0.4")
+          Text("iOS companion 0.5")
             .font(.caption2.weight(.semibold))
             .foregroundStyle(.secondary)
         }
@@ -80,9 +82,9 @@ private struct Header: View {
 
 private struct CheckpointStrip: View {
   private let items = [
-    ("Web", "1.50", "live"),
-    ("iOS", "0.4", "scan fit"),
-    ("PNG", "KZG", "safe")
+    ("Web", "1.57", "open"),
+    ("iOS", "0.5", "3-sector"),
+    ("Live", "Future", "derived")
   ]
 
   var body: some View {
@@ -173,6 +175,138 @@ private struct ReadBus: View {
   }
 }
 
+private struct RealtimeReserveCard: View {
+  let filters: [FlowFilter]
+  let lanes: [FlowLane]
+
+  var body: some View {
+    KZGCard(title: "未来实时流 Reserve", subtitle: "中段预留 · 当前为派生样张") {
+      VStack(alignment: .leading, spacing: 10) {
+        HStack(alignment: .top, spacing: 10) {
+          VStack(alignment: .leading, spacing: 4) {
+            Text("实时接入后这里会成为高速 flow tape。")
+              .font(.system(.subheadline, design: .serif, weight: .semibold))
+              .lineSpacing(2)
+            Text("现在只展示产品形态，真实接入前不放入可复制的原始流。")
+              .font(.caption2)
+              .foregroundStyle(.secondary)
+              .lineSpacing(2)
+          }
+          Spacer(minLength: 6)
+          Text("RESERVE")
+            .font(.system(size: 9, weight: .black, design: .rounded))
+            .foregroundStyle(Color(red: 0.55, green: 0.36, blue: 0.12))
+            .padding(.vertical, 5)
+            .padding(.horizontal, 7)
+            .background(Color(red: 0.55, green: 0.36, blue: 0.12).opacity(0.10), in: Capsule())
+        }
+
+        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 7) {
+          ForEach(filters) { filter in
+            FlowFilterPill(filter: filter)
+          }
+        }
+
+        VStack(spacing: 8) {
+          ForEach(lanes) { lane in
+            FlowLaneView(lane: lane)
+          }
+        }
+      }
+    }
+  }
+}
+
+private struct FlowFilterPill: View {
+  let filter: FlowFilter
+
+  var body: some View {
+    VStack(alignment: .leading, spacing: 3) {
+      Text(filter.label)
+        .font(.caption2.weight(.bold))
+        .foregroundStyle(.secondary)
+      Text(filter.value)
+        .font(.caption.weight(.black))
+        .lineLimit(1)
+        .minimumScaleFactor(0.76)
+      Text(filter.detail)
+        .font(.system(size: 9, weight: .medium, design: .rounded))
+        .foregroundStyle(.secondary)
+        .lineLimit(1)
+        .minimumScaleFactor(0.72)
+    }
+    .frame(maxWidth: .infinity, alignment: .leading)
+    .padding(.vertical, 7)
+    .padding(.horizontal, 8)
+    .background(Color.primary.opacity(0.040), in: RoundedRectangle(cornerRadius: 6, style: .continuous))
+  }
+}
+
+private struct FlowLaneView: View {
+  let lane: FlowLane
+
+  var body: some View {
+    VStack(alignment: .leading, spacing: 7) {
+      HStack(alignment: .firstTextBaseline) {
+        Text(lane.title)
+          .font(.system(.headline, design: .serif, weight: .bold))
+        Spacer()
+        Text(lane.subtitle)
+          .font(.caption2.weight(.semibold))
+          .foregroundStyle(.secondary)
+      }
+
+      ForEach(lane.items) { item in
+        FlowRow(item: item, color: lane.tone.color)
+      }
+    }
+    .padding(9)
+    .background(
+      RoundedRectangle(cornerRadius: 7, style: .continuous)
+        .fill(lane.tone.color.opacity(0.07))
+        .overlay(alignment: .leading) {
+          Rectangle()
+            .fill(lane.tone.color)
+            .frame(width: 3)
+        }
+    )
+  }
+}
+
+private struct FlowRow: View {
+  let item: FlowItem
+  let color: Color
+
+  var body: some View {
+    HStack(spacing: 8) {
+      Text(item.time)
+        .font(.system(size: 9, weight: .bold, design: .rounded))
+        .foregroundStyle(.secondary)
+        .frame(width: 34, alignment: .leading)
+      Text(item.symbol)
+        .font(.system(.subheadline, design: .rounded, weight: .black))
+        .frame(width: 48, alignment: .leading)
+      VStack(alignment: .leading, spacing: 1) {
+        Text("\(item.count) · \(item.strategy)")
+          .font(.caption.weight(.bold))
+          .lineLimit(1)
+          .minimumScaleFactor(0.72)
+        Text(item.delta)
+          .font(.system(size: 9, weight: .semibold, design: .rounded))
+          .foregroundStyle(color)
+      }
+      Spacer(minLength: 4)
+      Text(item.premium)
+        .font(.caption.weight(.black))
+        .lineLimit(1)
+        .minimumScaleFactor(0.72)
+    }
+    .padding(.vertical, 6)
+    .padding(.horizontal, 7)
+    .background(Color(.systemBackground).opacity(0.74), in: RoundedRectangle(cornerRadius: 6, style: .continuous))
+  }
+}
+
 private struct MiniSignal: View {
   var label: String
   var value: String
@@ -228,6 +362,41 @@ private struct SectorBand: View {
   }
 }
 
+private struct OpenHistoryCard: View {
+  let pillars: [HistoryPillar]
+
+  var body: some View {
+    KZGCard(title: "开放历史层", subtitle: "跨日趋势与轮动继续可见") {
+      VStack(alignment: .leading, spacing: 9) {
+        Text("中段实时流是未来 reserve，底部历史日内数据继续开放，用来找量价同升、同步降温和标的扩散。")
+          .font(.system(.subheadline, design: .serif, weight: .semibold))
+          .lineSpacing(3)
+        HStack(spacing: 7) {
+          ForEach(pillars) { pillar in
+            VStack(alignment: .leading, spacing: 3) {
+              Text(pillar.title)
+                .font(.caption2.weight(.bold))
+                .foregroundStyle(.secondary)
+              Text(pillar.value)
+                .font(.system(.title3, design: .rounded, weight: .black))
+                .lineLimit(1)
+                .minimumScaleFactor(0.70)
+              Text(pillar.detail)
+                .font(.system(size: 9, weight: .medium, design: .rounded))
+                .foregroundStyle(.secondary)
+                .lineLimit(2)
+                .minimumScaleFactor(0.72)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(8)
+            .background(Color(.systemBackground).opacity(0.66), in: RoundedRectangle(cornerRadius: 6, style: .continuous))
+          }
+        }
+      }
+    }
+  }
+}
+
 private struct IntradayCard: View {
   let buckets: [IntradayBucket]
 
@@ -266,27 +435,35 @@ private struct RotationCard: View {
 
   var body: some View {
     KZGCard(title: "轮动象限", subtitle: "量能变化 × 权利金变化") {
-      ZStack {
-        RoundedRectangle(cornerRadius: 7, style: .continuous)
-          .fill(Color.primary.opacity(0.035))
-        Path { path in
-          path.move(to: CGPoint(x: 0, y: 100))
-          path.addLine(to: CGPoint(x: 300, y: 100))
-          path.move(to: CGPoint(x: 150, y: 0))
-          path.addLine(to: CGPoint(x: 150, y: 200))
-        }
-        .stroke(Color.primary.opacity(0.10), lineWidth: 1)
-        ForEach(points) { point in
-          Text(point.symbol)
-            .font(.system(size: 10, weight: .black, design: .rounded))
-            .foregroundStyle(point.volumeChange >= 0 && point.premiumChange >= 0 ? Color.red : Color.secondary)
-            .padding(.horizontal, 6)
-            .padding(.vertical, 4)
-            .background(Color(.systemBackground).opacity(0.86), in: Capsule())
-            .position(x: map(point.volumeChange, min: -0.5, max: 4.5, size: 300), y: 200 - map(point.premiumChange, min: -0.8, max: 7.0, size: 200))
+      GeometryReader { proxy in
+        let width = proxy.size.width
+        let height = proxy.size.height
+
+        ZStack {
+          RoundedRectangle(cornerRadius: 7, style: .continuous)
+            .fill(Color.primary.opacity(0.035))
+          Path { path in
+            path.move(to: CGPoint(x: 0, y: height * 0.52))
+            path.addLine(to: CGPoint(x: width, y: height * 0.52))
+            path.move(to: CGPoint(x: width * 0.36, y: 0))
+            path.addLine(to: CGPoint(x: width * 0.36, y: height))
+          }
+          .stroke(Color.primary.opacity(0.10), lineWidth: 1)
+          ForEach(points) { point in
+            Text(point.symbol)
+              .font(.system(size: 10, weight: .black, design: .rounded))
+              .foregroundStyle(point.volumeChange >= 0 && point.premiumChange >= 0 ? Color.red : Color.secondary)
+              .padding(.horizontal, 6)
+              .padding(.vertical, 4)
+              .background(Color(.systemBackground).opacity(0.86), in: Capsule())
+              .position(
+                x: map(point.volumeChange, min: -0.5, max: 4.5, size: width),
+                y: height - map(point.premiumChange, min: -0.8, max: 7.0, size: height)
+              )
+          }
         }
       }
-        .frame(height: 160)
+      .frame(height: 166)
       Text("右上量价同升，左下同步降温。iOS 版按 Web 五版本节奏同步。")
         .font(.caption2)
         .foregroundStyle(.secondary)

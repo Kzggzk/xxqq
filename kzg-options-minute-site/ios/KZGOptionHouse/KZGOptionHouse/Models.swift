@@ -16,6 +16,9 @@ struct OptionSnapshot {
   var symbols: [SymbolPulse]
   var buckets: [IntradayBucket]
   var rotations: [RotationPoint]
+  var flowFilters: [FlowFilter]
+  var flowLanes: [FlowLane]
+  var historyPillars: [HistoryPillar]
 }
 
 struct TimelinePoint: Identifiable {
@@ -54,6 +57,38 @@ struct RotationPoint: Identifiable {
   var symbol: String
   var volumeChange: Double
   var premiumChange: Double
+}
+
+struct FlowFilter: Identifiable {
+  var id = UUID()
+  var label: String
+  var value: String
+  var detail: String
+}
+
+struct FlowLane: Identifiable {
+  var id = UUID()
+  var title: String
+  var subtitle: String
+  var tone: PulseTone
+  var items: [FlowItem]
+}
+
+struct FlowItem: Identifiable {
+  var id = UUID()
+  var time: String
+  var symbol: String
+  var count: String
+  var strategy: String
+  var premium: String
+  var delta: String
+}
+
+struct HistoryPillar: Identifiable {
+  var id = UUID()
+  var title: String
+  var value: String
+  var detail: String
 }
 
 enum PulseTone {

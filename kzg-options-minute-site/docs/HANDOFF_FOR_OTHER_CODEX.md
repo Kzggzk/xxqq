@@ -19,9 +19,9 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
 - Production version last verified / 最近生产验证版本: `1.56`
-- Local version last verified / 最近本地验证版本: `1.56`
+- Local version last verified / 最近本地验证版本: `1.57` iOS companion sync
 - Latest unique deploy / 最近唯一部署: `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`
-- iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.4`
+- iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.5`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
 - Local verified option-minute window / 本地已验证期权分钟范围: `2024-05-17 -> 2026-05-22`, `505` files.
 
@@ -75,6 +75,14 @@ Latest local v1.56 note:
 Web `1.56` is the latest local and production checkpoint. It builds on v1.55's three-sector structure and upgrades the middle realtime reserve into a tighter flow-book preview. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.56`, derived `hits` counts for flow rows, Bullish/Bearish ledgers formatted as symbol/count/strategy+delta/premium, a `Flow Book` filter control, and a five-group strategy recognition tree. It still uses no real API key, no provider route, no payment/domain/price copy, and no backend connection. Only the future realtime tape remains blurred; current daily/history/rotation/trend/export features stay open. Local and production QA passed on desktop `1440x1100` and phone `390x844`: no overflow, no old lock/blur nodes, no console issues, risk strings 0, 18 realtime tape rows, and PNG export works. Production unique deploy is `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`.
 
 Web `1.56` 是最新本地和生产检查点。它承接 v1.55 三段式结构，把中段 realtime reserve 升级为更紧凑的 flow-book 预览。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.56`、flow rows 增加派生 `hits` 次数、Bullish/Bearish 账本改成标的/次数/策略+变化/权利金格式、过滤器增加 `Flow Book` 控制、策略识别库扩成五组。它仍不使用真实 API key、不展示 provider route、不展示支付/域名/价格文案、不接后端。只有未来实时 tape 保留模糊；当前日报/历史/轮动/趋势/导出功能保持开放。本地和生产桌面 `1440x1100` 与手机 `390x844` QA 通过：无横向溢出、无旧锁层/旧模糊节点、无 console issue、风险词 0、实时 tape 18 行、PNG 导出可用。生产唯一部署是 `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`。
+
+Latest local v1.57 note:
+
+最新本地 v1.57 说明：
+
+Dense `1.57` does not deploy Web. It syncs the Web `1.55/1.56` product boundary into native iOS companion `0.5`. Main source changes are `ios/KZGOptionHouse/KZGOptionHouse/DashboardView.swift`, `Models.swift`, and `SnapshotProvider.swift`: three-sector phone reading order, Realtime Reserve card, filter chips, Bullish/Bearish derived flow lanes, open historical layer, and adaptive rotation quadrant coordinates. iOS contains no real API key, provider route, payment, domain, price, registration, or account route. XcodeBuildMCP profile is correct but `build_run_sim` still fails on local simulator destination mismatch; fallback `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator` passes. Production remains v1.56.
+
+稠密 `1.57` 不部署 Web。它把 Web `1.55/1.56` 的产品边界同步到原生 iOS 伴生 `0.5`。主要源码改动是 `ios/KZGOptionHouse/KZGOptionHouse/DashboardView.swift`、`Models.swift`、`SnapshotProvider.swift`：三段式手机读盘顺序、Realtime Reserve 卡、过滤 chips、Bullish/Bearish 派生 flow lanes、开放历史层，以及自适应轮动象限坐标。iOS 不包含真实 API key、provider route、支付、域名、价格、注册或账号路线。XcodeBuildMCP profile 正确，但 `build_run_sim` 仍因本机 simulator destination 不匹配失败；fallback `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator` 通过。生产仍为 v1.56。
 
 Previous local v1.55 note:
 
