@@ -8534,6 +8534,171 @@ body[data-theme="dark"] .heat-lane-track {
   user-select: none;
 }
 
+.premium-lookback {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.lookback-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: end;
+  padding: 13px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.lookback-head.hot {
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
+.lookback-head.cool {
+  box-shadow: inset 3px 0 0 #2f6190;
+}
+
+.lookback-head.flat {
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.lookback-head span,
+.lookback-head p,
+.lookback-metrics i,
+.lookback-metrics small,
+.lookback-chart b {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 760;
+}
+
+.lookback-head strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--ink);
+  font-size: 20px;
+  line-height: 1.05;
+}
+
+.lookback-head p {
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+.lookback-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(46px, 1fr));
+  gap: 6px;
+}
+
+.lookback-tabs button {
+  min-height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  background: rgba(251, 250, 246, 0.8);
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 860;
+  cursor: pointer;
+}
+
+.lookback-tabs button.active {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.lookback-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.42fr);
+  gap: 12px;
+  padding: 12px 14px 14px;
+}
+
+.lookback-chart {
+  display: grid;
+  grid-template-columns: repeat(24, minmax(0, 1fr));
+  gap: 4px;
+  align-items: end;
+  min-height: 126px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(196, 83, 53, 0.07), transparent 50%, rgba(47, 97, 144, 0.07)),
+    rgba(251, 250, 246, 0.7);
+}
+
+.lookback-chart span {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) 14px;
+  align-items: end;
+  min-width: 0;
+  height: 100%;
+}
+
+.lookback-chart i {
+  display: block;
+  width: 100%;
+  height: var(--h);
+  min-height: 7px;
+  background: rgba(154, 106, 18, 0.36);
+}
+
+.lookback-chart .hot i {
+  background: rgba(196, 83, 53, 0.48);
+}
+
+.lookback-chart .cool i {
+  background: rgba(47, 97, 144, 0.46);
+}
+
+.lookback-chart b {
+  overflow: hidden;
+  margin-top: 4px;
+  text-align: center;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+.lookback-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.lookback-metrics span {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid var(--line);
+  background: rgba(251, 250, 246, 0.76);
+}
+
+.lookback-metrics span.hot {
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
+.lookback-metrics span.cool {
+  box-shadow: inset 3px 0 0 #2f6190;
+}
+
+.lookback-metrics b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 20px;
+  line-height: 1.05;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.premium-lookback.is-blurred .lookback-body {
+  filter: blur(5px);
+  opacity: 0.7;
+  user-select: none;
+}
+
 .premium-lock {
   position: absolute;
   right: 16px;
@@ -8916,6 +9081,10 @@ body[data-theme="dark"] .premium-quadrant-copy,
 body[data-theme="dark"] .premium-quadrant-map,
 body[data-theme="dark"] .premium-quadrant-stats span,
 body[data-theme="dark"] .premium-quadrant-meta span,
+body[data-theme="dark"] .premium-lookback,
+body[data-theme="dark"] .lookback-chart,
+body[data-theme="dark"] .lookback-metrics span,
+body[data-theme="dark"] .lookback-tabs button,
 body[data-theme="dark"] .account-sheet,
 body[data-theme="dark"] .account-status-grid span,
 body[data-theme="dark"] .login-method-grid button,
@@ -8948,6 +9117,11 @@ body[data-theme="dark"] .account-sheet {
 
   .premium-quadrant-map {
     min-height: 320px;
+  }
+
+  .lookback-head,
+  .lookback-body {
+    grid-template-columns: 1fr;
   }
 
   .account-status-grid {
@@ -9001,6 +9175,24 @@ body[data-theme="dark"] .account-sheet {
   }
 
   .account-status-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lookback-tabs {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lookback-chart {
+    gap: 2px;
+    min-height: 112px;
+    padding: 8px;
+  }
+
+  .lookback-chart b {
+    display: none;
+  }
+
+  .lookback-metrics {
     grid-template-columns: 1fr;
   }
 

@@ -8,6 +8,7 @@ const state = {
   query: "",
   requestToken: 0,
   trendWindow: "90",
+  proLookback: "20",
   focusSymbol: null,
   plan: "free",
   selectedPlan: "pro",
@@ -18,7 +19,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "v62";
+const UI_VERSION = "v63";
 
 const $ = (id) => document.getElementById(id);
 const fmt0 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
@@ -391,6 +392,13 @@ async function loadIndex() {
       state.selectedLogin = loginTarget.dataset.loginMethod || state.selectedLogin;
       state.checkoutMessage = loginNotice(state.selectedLogin);
       renderAccountModal();
+      return;
+    }
+    const lookbackTarget = event.target.closest("[data-pro-lookback]");
+    if (lookbackTarget) {
+      event.preventDefault();
+      state.proLookback = lookbackTarget.dataset.proLookback || state.proLookback;
+      renderPremiumPreview();
     }
   });
   window.addEventListener("resize", fitReportCanvas);
@@ -726,8 +734,86 @@ function renderPremiumPreview() {
       ${premiumCard(state.lang === "zh" ? "权利金追踪" : "Premium tracking", premiumLead.symbol || "--", moneyCompact(premiumLead.premiumNotional), state.lang === "zh" ? "资金锚点与变化率" : "premium anchor and velocity")}
       ${premiumCard(state.lang === "zh" ? "订阅组合监控" : "Watchlist alerts", "SPY / NVDA", state.lang === "zh" ? "待接" : "queued", state.lang === "zh" ? "邮件/微信/钱包身份后续接入" : "email/WeChat/wallet identity later")}
     </div>
+    ${premiumLookbackPanel(locked)}
     ${premiumQuadrantPreview(rows, locked)}
     ${locked ? `<button type="button" class="premium-lock" data-open-account><b>${t("paywallTitle")}</b><span>${t("paywallSub")}</span></button>` : ""}
+  `;
+}
+
+function premiumLookbackPanel(locked) {
+  const daily = state.analytics?.daily || state.datesAsc || [];
+  const end = state.selectedIndex;
+  const windows = ["5", "20", "60", "all"];
+  const requested = state.proLookback === "all" ? daily.length : Number(state.proLookback) || 20;
+  const rows = daily.slice(Math.max(0, end - requested + 1), end + 1);
+  const fallback = rows.length ? rows : [state.datesAsc[end]].filter(Boolean);
+  const first = fallback[0] || {};
+  const last = fallback[fallback.length - 1] || {};
+  const volumeMove = first.totalVol ? ((Number(last.totalVol) - Number(first.totalVol)) / Number(first.totalVol)) * 100 : 0;
+  const premiumMove = first.totalPremium ? ((Number(last.totalPremium) - Number(first.totalPremium)) / Number(first.totalPremium)) * 100 : 0;
+  const cpMove = (Number(last.marketCp) || 0) - (Number(first.marketCp) || 0);
+  const avgVol = average(fallback.map((row) => row.totalVol));
+  const lastVol = Number(last.totalVol) || 0;
+  const heat = avgVol ? ((lastVol - avgVol) / avgVol) * 100 : 0;
+  const topDate = fallback.reduce((best, row) => Number(row.totalVol) > Number(best.totalVol || 0) ? row : best, fallback[0] || {});
+  const cpHigh = fallback.reduce((best, row) => Number(row.marketCp) > Number(best.marketCp || 0) ? row : best, fallback[0] || {});
+  const cpLow = fallback.reduce((best, row) => Number(row.marketCp) < Number(best.marketCp || Infinity) ? row : best, fallback[0] || {});
+  const bars = fallback.slice(-24);
+  const maxVol = Math.max(...bars.map((row) => Number(row.totalVol) || 0), 1);
+  const tone = heat >= 10 || volumeMove >= 10 ? "hot" : heat <= -10 || volumeMove <= -10 ? "cool" : "flat";
+  const title = state.lang === "zh" ? "预测回看窗口" : "Predictive lookback";
+  const summary = state.lang === "zh"
+    ? `${windowLabel(state.proLookback)} 里成交 ${volumeMove >= 0 ? "+" : ""}${fmt1.format(volumeMove)}%，权利金 ${premiumMove >= 0 ? "+" : ""}${fmt1.format(premiumMove)}%，CP 漂移 ${cpMove >= 0 ? "+" : ""}${fmt2.format(cpMove)}。`
+    : `${windowLabel(state.proLookback)} volume ${volumeMove >= 0 ? "+" : ""}${fmt1.format(volumeMove)}%, premium ${premiumMove >= 0 ? "+" : ""}${fmt1.format(premiumMove)}%, CP drift ${cpMove >= 0 ? "+" : ""}${fmt2.format(cpMove)}.`;
+  return `
+    <div class="premium-lookback ${locked ? "is-blurred" : ""}">
+      <div class="lookback-head ${tone}">
+        <div>
+          <span>${state.lang === "zh" ? "Pro 回看" : "Pro lookback"}</span>
+          <strong>${title}</strong>
+          <p>${summary}</p>
+        </div>
+        <div class="lookback-tabs" aria-label="${escapeHtml(title)}">
+          ${windows.map((item) => `
+            <button type="button" class="${state.proLookback === item ? "active" : ""}" data-pro-lookback="${item}">
+              ${windowLabel(item)}
+            </button>
+          `).join("")}
+        </div>
+      </div>
+      <div class="lookback-body">
+        <div class="lookback-chart" aria-hidden="true">
+          ${bars.map((row, index) => {
+            const prev = bars[index - 1];
+            const move = prev?.totalVol ? ((Number(row.totalVol) - Number(prev.totalVol)) / Number(prev.totalVol)) * 100 : 0;
+            const cls = move >= 8 ? "hot" : move <= -8 ? "cool" : "flat";
+            const height = Math.max(12, ((Number(row.totalVol) || 0) / maxVol) * 100);
+            return `<span class="${cls}" style="--h:${height.toFixed(1)}%"><i></i><b>${index % 5 === 0 || index === bars.length - 1 ? shortDate(row.date) : ""}</b></span>`;
+          }).join("")}
+        </div>
+        <div class="lookback-metrics">
+          ${lookbackMetric(state.lang === "zh" ? "窗口均量" : "Avg volume", wan(avgVol), `${heat >= 0 ? "+" : ""}${fmt1.format(heat)}%`, tone)}
+          ${lookbackMetric(state.lang === "zh" ? "成交峰值" : "Volume peak", shortDate(topDate.date || last.date || ""), wan(topDate.totalVol || 0), "hot")}
+          ${lookbackMetric("CP High", shortDate(cpHigh.date || last.date || ""), ratio(cpHigh.marketCp), "flat")}
+          ${lookbackMetric("CP Low", shortDate(cpLow.date || last.date || ""), ratio(cpLow.marketCp), "cool")}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function windowLabel(value) {
+  if (value === "all") return state.lang === "zh" ? "ALL" : "ALL";
+  return `${value}D`;
+}
+
+function lookbackMetric(label, value, sub, tone) {
+  return `
+    <span class="${tone}">
+      <i>${escapeHtml(label)}</i>
+      <b>${escapeHtml(String(value || "--"))}</b>
+      <small>${escapeHtml(String(sub || "--"))}</small>
+    </span>
   `;
 }
 
