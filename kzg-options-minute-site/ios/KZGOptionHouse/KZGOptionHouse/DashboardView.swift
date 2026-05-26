@@ -13,6 +13,7 @@ struct DashboardView: View {
       ScrollView {
         VStack(alignment: .leading, spacing: 14) {
           Header(snapshot: snapshot)
+          CheckpointStrip()
           TimelineStrip(points: snapshot.timeline)
           SummaryGrid(snapshot: snapshot)
           ReadBus(snapshot: snapshot)
@@ -53,7 +54,7 @@ private struct Header: View {
         VStack(alignment: .trailing, spacing: 2) {
           Text(snapshot.tradeDate)
             .font(.system(.subheadline, design: .rounded, weight: .bold))
-          Text("iOS companion 0.1")
+          Text("iOS companion 0.2")
             .font(.caption2.weight(.semibold))
             .foregroundStyle(.secondary)
         }
@@ -74,6 +75,37 @@ private struct Header: View {
           Rectangle().fill(Color.black).frame(width: 4)
         }
     )
+  }
+}
+
+private struct CheckpointStrip: View {
+  private let items = [
+    ("Web", "1.40", "deploy checkpoint"),
+    ("iOS", "0.2", "5-version sync"),
+    ("PNG", "KZG", "sheet style")
+  ]
+
+  var body: some View {
+    HStack(spacing: 8) {
+      ForEach(items, id: \.0) { item in
+        VStack(alignment: .leading, spacing: 3) {
+          Text(item.0)
+            .font(.caption2.weight(.bold))
+            .foregroundStyle(.secondary)
+          Text(item.1)
+            .font(.system(.title3, design: .serif, weight: .bold))
+          Text(item.2)
+            .font(.system(size: 9, weight: .semibold, design: .rounded))
+            .foregroundStyle(.secondary)
+            .lineLimit(1)
+            .minimumScaleFactor(0.72)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.vertical, 9)
+        .padding(.horizontal, 10)
+        .background(Color(.systemBackground).opacity(0.78), in: RoundedRectangle(cornerRadius: 7, style: .continuous))
+      }
+    }
   }
 }
 

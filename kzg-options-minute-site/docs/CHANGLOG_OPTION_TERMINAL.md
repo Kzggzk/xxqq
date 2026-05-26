@@ -27,9 +27,10 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 远端: `https://github.com/Kzggzk/xxqq.git`
 - 生产站: `https://kzg-option-house.netlify.app/`
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
-- 最近验证唯一部署: `https://6a156cbee55c2318be31e1b4--kzg-option-house.netlify.app/`
-- 最近生产 UI 显示版本: `1.36`
-- 最近本地验证 UI 版本: `1.39`
+- 最近验证唯一部署: `https://6a157e2c75d8fa059c5e904c--kzg-option-house.netlify.app/`
+- 最近生产 UI 显示版本: `1.40`
+- 最近本地验证 UI 版本: `1.40`
+- 当前 iOS 伴生版本: `0.2`，对应 Web `1.40`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；当前本机目录没有找到 `2023-*.csv.gz`
@@ -44,9 +45,10 @@ English:
 - Remote: `https://github.com/Kzggzk/xxqq.git`
 - Production site: `https://kzg-option-house.netlify.app/`
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
-- Latest verified unique deploy: `https://6a156cbee55c2318be31e1b4--kzg-option-house.netlify.app/`
-- Latest visible production UI version: `1.36`
-- Latest locally verified UI version: `1.39`
+- Latest verified unique deploy: `https://6a157e2c75d8fa059c5e904c--kzg-option-house.netlify.app/`
+- Latest visible production UI version: `1.40`
+- Latest locally verified UI version: `1.40`
+- Current iOS companion version: `0.2`, mapped to Web `1.40`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; no local `2023-*.csv.gz` files were found in the verified folder
@@ -163,6 +165,20 @@ CHANGLOG 期权终端
 English:
 
 The larger requirement - SaaS, login, payments, domain, Supabase, backend API, three payment rails, and handoff for another Codex - was clarified after the public dashboard had already gone through the v55 UI phase and after public commercial planning was urgently removed. In the Git backbone, it belongs immediately after `6c909a9`, in the documentation/operating-memory layer defined here as `v1.28/v1.29`. It is not a public UI feature; it is an upgrade to the product operating system.
+
+## 4.1 v1.40 production checkpoint / v1.40 生产检查点
+
+中文:
+
+北京时间 2026-05-26 19:08 左右，Web `1.40` 成为新的生产检查点。公开站只保留用户能看到的价值表达：最新日免费洞察、模糊高级预览、实时层轮廓、KZG 品牌 PNG 输出边界。支付、域名、注册、API 套餐、价格、授权路径、后端方案和商业实验继续只写在 GitHub docs、Apple Notes、`.private` 或当前线程里。生产唯一部署为 `https://6a157e2c75d8fa059c5e904c--kzg-option-house.netlify.app/`，生产主站为 `https://kzg-option-house.netlify.app/`。
+
+本轮验证事实：`505` 个交易日，范围 `2024-05-17 -> 2026-05-22`，最新日 `2026-05-22`；手机 `390x844` 无横向溢出，topbar `89px`；PNG 导出 `/tmp/kzg-option-house-v140-export.png` 大小 `885,309` bytes；生产 `/data/index.json` 和 `/assets/kzg-pack.js` 均保持 `404`。iOS 伴生工程同步到 `0.2`，源码类型检查通过，但完整 Xcode destination 构建受本机 simulator runtime 与 `iphonesimulator26.5` SDK destination 不匹配影响，未进行 App Store/TestFlight/签名/开发者账号动作。
+
+English:
+
+Around 2026-05-26 19:08 Asia/Shanghai, Web `1.40` became the new production checkpoint. The public site only keeps user-facing value expression: latest-day free insight, blurred advanced preview, live-layer silhouette, and KZG-branded PNG export boundary. Payment, domain, registration, API plan, pricing, authorization path, backend plan, and commercial experiments remain only in GitHub docs, Apple Notes, `.private`, or this thread. Unique production deploy is `https://6a157e2c75d8fa059c5e904c--kzg-option-house.netlify.app/`; main production is `https://kzg-option-house.netlify.app/`.
+
+Verified facts this round: `505` trading days, range `2024-05-17 -> 2026-05-22`, latest `2026-05-22`; mobile `390x844` has no horizontal overflow and topbar `89px`; PNG export `/tmp/kzg-option-house-v140-export.png` is `885,309` bytes; production `/data/index.json` and `/assets/kzg-pack.js` both remain `404`. iOS companion is synced to `0.2` and Swift source typecheck passes, but full Xcode destination build is blocked by the local simulator runtime versus `iphonesimulator26.5` SDK destination mismatch. No App Store/TestFlight/signing/developer-account action was performed.
 
 ## 5. SaaS architecture / SaaS 架构
 

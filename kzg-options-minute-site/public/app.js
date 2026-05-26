@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.39";
+const UI_VERSION = "1.40";
 
 const dataAudit = {
   dataset: "23_DATA_Massive_期权分钟_Minute",
@@ -89,7 +89,7 @@ const copy = {
     upgrade: "功能预览",
     preview: "功能预览",
     accountTitle: "KZG Option House 高级功能",
-    accountSub: "公开页面只展示数据产品能力；内部产品方案不在这里展示。",
+    accountSub: "公开页面只展示可读信号、模糊预览和 PNG 输出边界。",
     paywallTitle: "历史深度预览",
     paywallSub: "今日读盘完整开放；历史回看以模糊结构展示，保留方向、节奏和导出边界。",
   },
@@ -145,7 +145,7 @@ const copy = {
     upgrade: "Feature preview",
     preview: "Feature preview",
     accountTitle: "KZG Option House Advanced",
-    accountSub: "The public page shows product capability only. Internal product planning is not published here.",
+    accountSub: "The public page shows readable signals, blurred previews, and PNG export boundaries.",
     paywallTitle: "Historical depth preview",
     paywallSub: "Latest session is fully open; history appears as a blurred structure with direction, rhythm, and export boundary.",
   },
@@ -478,7 +478,7 @@ function renderAccountModal() {
     <div class="entitlement-matrix public-boundary">
       <div class="account-section-head">
         <b>${state.lang === "zh" ? "公开展示边界" : "Public display boundary"}</b>
-        <span>${state.lang === "zh" ? "内部产品方案不会写入公开页面" : "Internal product planning is not published"}</span>
+        <span>${state.lang === "zh" ? "只展示用户可见的功能边界" : "Only user-facing feature boundaries are shown"}</span>
       </div>
       ${entitlementRows()}
     </div>
@@ -785,8 +785,8 @@ function unlockScopes(rows) {
         kicker: "PNG",
         title: "Export boundary",
         value: "PNG",
-        copy: "The public page keeps the KZG-branded sheet. Cleaner export modes stay in internal planning.",
-        rows: [["Public", "KZG branded", "flat"], ["Future", "internal plan", "hot"], ["Format", "old sheet preserved", "flat"]],
+        copy: "The public page keeps the KZG-branded sheet and limits sharing to rendered images.",
+        rows: [["Public", "KZG branded", "flat"], ["Boundary", "PNG only", "hot"], ["Format", "old sheet preserved", "flat"]],
       },
       {
         id: "alerts",
@@ -804,7 +804,7 @@ function unlockScopes(rows) {
       kicker: "档案",
       title: "历史驾驶舱",
       value: `${fmt0.format(daily.length)}日`,
-      copy: "完整历史日期、对比窗口、前高前低和锁定日期导航，先保留为内部产品方案。",
+      copy: "完整历史日期、对比窗口、前高前低和锁定日期导航，只以模糊轮廓呈现。",
       rows: [["历史日期", `${fmt0.format(daily.length)} 个交易日`, "hot"], ["当前高点", shortDate(historyHigh.date || state.day.tradeDate), "flat"], ["锁定日期", "当前只给模糊预览", "cool"]],
     },
     {
@@ -820,8 +820,8 @@ function unlockScopes(rows) {
       kicker: "导出",
       title: "导出边界",
       value: "PNG",
-      copy: "公开页保留 KZG 品牌日报；更干净的客户展示图先进入内部方案，不放公开页面。",
-      rows: [["公开页", "KZG 品牌版", "flat"], ["未来", "内部方案", "hot"], ["格式", "旧日报样式保留", "flat"]],
+      copy: "公开页保留 KZG 品牌日报；分享边界限制在渲染后的 PNG 图片。",
+      rows: [["公开页", "KZG 品牌版", "flat"], ["边界", "仅 PNG", "hot"], ["格式", "旧日报样式保留", "flat"]],
     },
     {
       id: "alerts",
@@ -980,8 +980,8 @@ function liveFeedSilhouette(rows, locked) {
   const hot = pressure.filter((row) => row.tone === "hot").length;
   const cool = pressure.filter((row) => row.tone === "cool").length;
   const publicNote = state.lang === "zh"
-    ? "这里只展示实时层的产品轮廓。真实接入和授权路径保留在后端方案，不写入公开页面。"
-    : "This only shows the live-layer product silhouette. Real access and authorization paths stay in backend planning, not on the public page.";
+    ? "这里只展示实时层的产品轮廓。公开页只保留方向、压力和节奏信号。"
+    : "This only shows the live-layer product silhouette: direction, pressure, and rhythm signals.";
   const laneRows = state.lang === "zh"
     ? [
       ["主导压力", lead.symbol || "--", `${lead.velocity >= 0 ? "+" : ""}${fmt1.format(lead.velocity || 0)}`],

@@ -9,10 +9,10 @@ This document defines the iOS track for KZG Option House. The iOS app is a compa
 - iOS project / iOS 工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`
 - Scheme / Scheme: `KZG Option House`
 - Bundle id / Bundle ID: `com.kzg.optionhouse`
-- First iOS version / 首个 iOS 版本: `0.1`
-- Web baseline / 对应 Web 基线: public Web `1.35`
+- Current iOS version / 当前 iOS 版本: `0.2`
+- Web baseline / 对应 Web 基线: public Web `1.40`
 - First simulator proof / 首次模拟器证明: `/tmp/kzg-option-house-ios-v01.png`
-- Build proof / 构建证明: generic iOS Simulator build succeeded through Xcode with derived data at `/tmp/KZGOptionHouseDD`.
+- Build proof / 构建证明: v0.2 Swift source typecheck passed with `swiftc`; full Xcode destination build is currently blocked by local simulator runtime selection.
 
 ## Cadence / 节奏
 
@@ -20,8 +20,8 @@ This document defines the iOS track for KZG Option House. The iOS app is a compa
 - Web 继续按 `0.01` 稠密迭代。
 - iOS updates every 5 Web dense versions unless Fangbao explicitly asks for an immediate iOS pass.
 - iOS 每 5 个 Web 稠密版本同步一次，除非 Fangbao 明确要求立即同步。
-- Current checkpoint: iOS `0.1` at Web `1.35`; next planned iOS checkpoint is Web `1.40`.
-- 当前检查点：iOS `0.1` 对应 Web `1.35`；下一次计划 iOS 检查点是 Web `1.40`。
+- Current checkpoint: iOS `0.2` at Web `1.40`; next planned iOS checkpoint is Web `1.45`.
+- 当前检查点：iOS `0.2` 对应 Web `1.40`；下一次计划 iOS 检查点是 Web `1.45`。
 
 ## Product direction / 产品方向
 
@@ -61,16 +61,14 @@ Current verified steps:
 
 - Xcode scheme exists: `KZG Option House`.
 - Xcode scheme 已存在：`KZG Option House`。
-- SwiftUI generic iOS Simulator build succeeded.
-- SwiftUI generic iOS Simulator 构建通过。
-- iPhone 17 Pro simulator installed and launched `com.kzg.optionhouse`.
-- iPhone 17 Pro 模拟器已安装并启动 `com.kzg.optionhouse`。
-- Screenshot captured at `/tmp/kzg-option-house-ios-v01.png`.
-- 截图已生成 `/tmp/kzg-option-house-ios-v01.png`。
+- v0.2 SwiftUI source typecheck passed with `swiftc -typecheck`.
+- v0.2 SwiftUI 源码已通过 `swiftc -typecheck`。
+- First v0.1 simulator proof remains `/tmp/kzg-option-house-ios-v01.png`.
+- 首次 v0.1 模拟器证明仍为 `/tmp/kzg-option-house-ios-v01.png`。
 
 Known caveat:
 
 已知注意点：
 
-- XcodeBuildMCP build-by-destination failed because the current local simulator runtime set does not match the newest `iphonesimulator26.5` SDK destination expectations. Direct Xcode generic simulator build works. Keep this note for the next agent.
-- XcodeBuildMCP 按具体 destination 构建时失败，原因是本机 simulator runtime 与最新 `iphonesimulator26.5` SDK 的 destination 期待不完全匹配；直接使用 Xcode generic simulator build 可通过。下一个 agent 需要保留这条。
+- For v0.2, XcodeBuildMCP build-by-destination and direct `xcodebuild` simulator destination both fail on this machine because the installed simulator runtimes and the newest `iphonesimulator26.5` SDK destination expectations do not line up. Source typecheck passes, so this is recorded as a local Xcode/destination blocker, not a Swift syntax blocker.
+- 对 v0.2 来说，XcodeBuildMCP 按具体 destination 构建和直接 `xcodebuild` simulator destination 构建在本机都会失败，原因是已安装 simulator runtime 与最新 `iphonesimulator26.5` SDK 的 destination 期待不一致。源码类型检查通过，所以记录为本机 Xcode/destination 阻塞，不是 Swift 语法阻塞。

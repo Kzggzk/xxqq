@@ -11338,3 +11338,131 @@ body[data-theme="dark"] .lock-preview-chips i {
     padding: 10px;
   }
 }
+
+/* v1.40 pass: deploy-checkpoint polish for desktop fit, advanced silhouettes, and mobile lower rhythm. */
+@media (min-width: 1181px) {
+  .workbench {
+    grid-template-columns: minmax(0, 1fr) clamp(330px, 23vw, 374px);
+    gap: 14px;
+    align-items: start;
+  }
+
+  .report-stage,
+  .side-rail,
+  .panel {
+    padding: 13px;
+  }
+
+  .side-rail {
+    display: grid;
+    gap: 10px;
+  }
+
+  .digest {
+    gap: 7px;
+  }
+
+  .digest div {
+    min-height: 36px;
+    padding: 9px 10px;
+  }
+
+  .premium-preview {
+    padding: 14px;
+  }
+
+  .premium-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .premium-capability-rail {
+    grid-template-columns: minmax(180px, 0.42fr) minmax(0, 1fr) minmax(270px, 0.62fr);
+  }
+
+  .live-silhouette {
+    grid-template-columns: minmax(190px, 0.48fr) minmax(0, 0.78fr) minmax(300px, 1.12fr);
+    gap: 8px;
+  }
+
+  .live-silhouette-lead,
+  .live-silhouette-lanes span {
+    padding: 10px 11px;
+  }
+
+  .live-silhouette-stream {
+    gap: 6px;
+    padding: 10px;
+  }
+
+  .live-silhouette-stream button {
+    min-height: 31px;
+  }
+
+  .premium-quadrant {
+    grid-template-columns: minmax(218px, 0.52fr) minmax(0, 1.14fr) minmax(174px, 0.38fr);
+    gap: 8px;
+  }
+
+  .premium-quadrant-map {
+    min-height: 246px;
+  }
+}
+
+@media (max-width: 760px) {
+  .side-rail {
+    gap: 9px;
+  }
+
+  .digest {
+    gap: 6px;
+  }
+
+  .digest div {
+    min-height: auto;
+    padding: 8px 9px;
+  }
+
+  .premium-grid,
+  .live-silhouette,
+  .premium-quadrant,
+  .premium-signal-stack {
+    gap: 7px;
+  }
+
+  .live-silhouette-lead,
+  .live-silhouette-lanes span,
+  .live-silhouette-stream {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .access-strip,
+  .access-copy {
+    gap: 7px;
+  }
+
+  .access-copy {
+    grid-template-columns: 88px minmax(96px, 0.72fr) minmax(0, 1fr);
+    padding: 9px;
+  }
+
+  .access-copy b {
+    font-size: 15px;
+  }
+
+  .account-sheet {
+    width: calc(100vw - 22px);
+    max-height: calc(100vh - 22px);
+  }
+
+  .account-hero,
+  .account-status-grid,
+  .account-readiness,
+  .account-section,
+  .entitlement-matrix {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}

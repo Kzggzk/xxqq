@@ -276,7 +276,7 @@
 					UIInterfaceOrientationPortrait,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 0.1;
+					MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kzg.optionhouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = (
@@ -305,7 +305,7 @@
 					UIInterfaceOrientationPortrait,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 0.1;
+					MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kzg.optionhouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = (
