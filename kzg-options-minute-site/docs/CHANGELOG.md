@@ -10,9 +10,9 @@ This is the GitHub canonical changelog. Apple Notes has a pinned owner-facing co
 - Git root / Git 根目录: `/Users/fangbao`
 - Branch / 分支: `feat/kzg-option-house-daily-auto`
 - Production / 生产站: <https://kzg-option-house.netlify.app/>
-- Latest public verified version / 最近公开验证版本: `1.32`
+- Latest public verified version / 最近公开验证版本: `1.35`
 - Latest production fix / 最近生产修复: `6c909a9 remove public commercial planning from option house`
-- Latest unique deploy verified / 最近验证唯一部署: <https://6a155f54945106b4d1611609--kzg-option-house.netlify.app/>
+- Latest unique deploy verified / 最近验证唯一部署: <https://6a15650fe0f26408c3f1c230--kzg-option-house.netlify.app/>
 - Local option-minute data verified / 本地期权分钟数据核验: `505` files, `2024-05-17 -> 2026-05-22`
 - Public raw-data rule / 公开 raw-data 规则: `/data/index.json` and direct packed raw paths should stay blocked unless Fangbao approves.
 - Git dirty generated exceptions / Git 脏文件例外: generated `public/data/index.json` and `public/reports/2026-01-02.html` may remain dirty and should not be committed.
@@ -177,6 +177,28 @@ English:
 - Public boundary: Internal docs only. No public-site change, no deploy, no commercial mechanics on the page.
 - Plugin status: GitHub/Netlify/Apple Notes/iCloud/Browsers are actually used; Massive real-time route is researched but not upgraded; Stripe/Supabase/domain/WeChat/USDT are planning-only; Google Drive mirror is Fangbao-reported and awaits future connector verification.
 - Next: Sync this richer plugin ledger into Apple Notes and push a GitHub backup.
+
+## v1.35 - 2026-05-26 17:17 Asia/Shanghai - live-silhouette premium rail pass
+
+中文:
+
+- 改动文件: `public/app.js`、`public/styles.css`、`docs/CHANGELOG.md`、`docs/CHANGLOG_OPTION_TERMINAL.md`。
+- 改动: 将公开 UI 版本号提到 `1.35`，在高级情报层加入 `实时流轮廓` 模块，并把高级区若干孤立方块改成更连续的 rail 语言。
+- 设计目的: 回应 Fangbao 对 spacing/calligraphy 和“不要一堆方块”的要求。高级能力要能让用户感到强，但公开页只能展示产品轮廓、摘要和模糊预览，不能展示支付、域名、真实授权、API key 或套餐内部方案。
+- 公开边界: 页面文案明确为“这里只展示实时层的产品轮廓。真实接入、授权、账户和计费不写入公开页面。”没有加入 Stripe、Network Solutions、域名候选、USDT、微信支付、checkout、API key 或 Massive 价格。
+- 验证: `node --check public/app.js` 通过；build 生成 `505` 天 payload，最新日 `2026-05-22`，pack asset `kzg-frame-097929558aa7.js`；Playwright 本地桌面 `1440x1100` 与手机 `390x844` 无横向溢出，控制台错误为 `0`；PNG 导出 `qa-v135-export.png` 大约 `1.48MB`；公开风险词扫描为 `0`。
+- 部署: 生产站 `https://kzg-option-house.netlify.app/`；唯一部署 `https://6a15650fe0f26408c3f1c230--kzg-option-house.netlify.app/`；生产 smoke 为 `home=200`、`/latest=200`、`/data/index.json=404`、`/assets/kzg-pack.js=404`、`/app.js` 显示 `UI_VERSION = "1.35"`。
+- 下一步: v1.36 应继续从 premium preview 往下推进，重点是轮动象限图和历史模糊态，让“强功能可感知但不可复制”的体验更统一。
+
+English:
+
+- Changed files: `public/app.js`, `public/styles.css`, `docs/CHANGELOG.md`, and `docs/CHANGLOG_OPTION_TERMINAL.md`.
+- Change: Bumped public UI version to `1.35`, added a `Live feed silhouette` module to the advanced intelligence layer, and turned several isolated premium blocks into calmer continuous rails.
+- Design intent: Respond to Fangbao's spacing/calligraphy direction and the complaint about too many square blocks. The advanced layer should feel powerful, but the public page may only show product silhouette, summaries, and blurred previews, not payment, domain, real authorization, API key, or plan internals.
+- Public boundary: The public text says that this only shows the live-layer product silhouette and real access, authorization, account, and billing mechanics are not published. No Stripe, Network Solutions, domain candidate, USDT, WeChat Pay, checkout, API key, or Massive price was added.
+- Verification: `node --check public/app.js` passed; build produced a `505`-day payload, latest date `2026-05-22`, pack asset `kzg-frame-097929558aa7.js`; Playwright local desktop `1440x1100` and mobile `390x844` had no horizontal overflow and `0` console errors; PNG export `qa-v135-export.png` was about `1.48MB`; public risk-token scan returned `0`.
+- Deploy: production `https://kzg-option-house.netlify.app/`; unique deploy `https://6a15650fe0f26408c3f1c230--kzg-option-house.netlify.app/`; production smoke returned `home=200`, `/latest=200`, `/data/index.json=404`, `/assets/kzg-pack.js=404`, and `/app.js` showing `UI_VERSION = "1.35"`.
+- Next: v1.36 should continue below premium preview, especially rotation quadrant and historical blurred states, so powerful features are perceptible but not copyable.
 
 ## Git-evidenced build ledger / Git 可证实构建流水
 

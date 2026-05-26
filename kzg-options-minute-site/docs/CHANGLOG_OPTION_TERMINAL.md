@@ -27,8 +27,8 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 远端: `https://github.com/Kzggzk/xxqq.git`
 - 生产站: `https://kzg-option-house.netlify.app/`
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
-- 最近验证唯一部署: `https://6a155f54945106b4d1611609--kzg-option-house.netlify.app/`
-- 最近公开 UI 显示版本: `1.32`
+- 最近验证唯一部署: `https://6a15650fe0f26408c3f1c230--kzg-option-house.netlify.app/`
+- 最近公开 UI 显示版本: `1.35`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；当前本机目录没有找到 `2023-*.csv.gz`
@@ -43,8 +43,8 @@ English:
 - Remote: `https://github.com/Kzggzk/xxqq.git`
 - Production site: `https://kzg-option-house.netlify.app/`
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
-- Latest verified unique deploy: `https://6a155f54945106b4d1611609--kzg-option-house.netlify.app/`
-- Latest visible public UI version: `1.32`
+- Latest verified unique deploy: `https://6a15650fe0f26408c3f1c230--kzg-option-house.netlify.app/`
+- Latest visible public UI version: `1.35`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; no local `2023-*.csv.gz` files were found in the verified folder
@@ -446,3 +446,29 @@ Planned only, not connected: Stripe has no product, price, Checkout Session, Cus
 Explicitly unused plugins: Canva, Figma, Slack, Gmail, Calendar, Notion, and similar plugins are not part of the current phase because the current product work is data terminal, Netlify, GitHub, Apple Notes, browser QA, and future SaaS architecture, not design files, messaging, email, or calendar work.
 
 Bottom line: any spend, domain purchase, Massive upgrade, Stripe product creation, Supabase credential use, WeChat merchant credential use, wallet payment connection, or API key/secret transmission must stop for Fangbao confirmation. The public website continues to show product capability only, not internal commercial mechanics.
+
+## 18. Heartbeat v1.35 live-silhouette premium rail trace / 心跳 v1.35 实时轮廓与高级轨道留痕
+
+中文:
+
+北京时间 2026-05-26 17:17 心跳进入 v1.35。触发背景是 Fangbao 要求继续 paid-product/UI 稠密迭代，同时明确 payment、authorization、domain、API key、套餐价格和注册方案不得放回公开页面。本轮不是接入真实实时 API，也不是上线付费功能，而是在公开 dashboard 上做“能力可感知但机制不可见”的一层。改动文件为 `/Users/fangbao/kzg-options-minute-site/public/app.js`、`/Users/fangbao/kzg-options-minute-site/public/styles.css`、`/Users/fangbao/kzg-options-minute-site/docs/CHANGELOG.md`、`/Users/fangbao/kzg-options-minute-site/docs/CHANGLOG_OPTION_TERMINAL.md`。公开 UI 版本号从 `1.33` 提到 `1.35`，因为 v1.34 已用于插件总账和 Apple Notes 补强。
+
+产品动作：在高级情报层新增 `实时流轮廓` 模块，使用当前交易日的标的轮动、峰值分钟、权利金锚、CP 极端和一组压力条，让用户看到未来实时 feed 的产品威力，但文案明确只展示轮廓。页面写明真实接入、授权、账户和计费不写入公开页面。视觉动作：把数据审计卡、高级功能地图和四个高级卡从一堆孤立小方块压成更连续的 rail，降低一屏里的 blocky 感，继续回应 spacing/calligraphy 要求。
+
+公开边界：本轮没有写入 Stripe、Network Solutions、域名候选、optionflow、optionpulse、flowgamma、checkout、USDT、微信支付、API key、`$199` 或 Massive 套餐价格。所有真实商业路线仍只在 docs、`.private`、Apple Notes 或当前线程讨论。
+
+验证结果：`node --check public/app.js` 通过；build 生成 `505` 天 payload，最新日 `2026-05-22`，pack asset `kzg-frame-097929558aa7.js`；本地 Playwright 桌面 `1440x1100` 与手机 `390x844` 均无横向溢出，控制台错误为 `0`；PNG 导出 `qa-v135-export.png` 大约 `1.48MB`；公开风险词扫描为 `0`；生产 smoke 为 `home=200`、`/latest=200`、`/data/index.json=404`、`/assets/kzg-pack.js=404`、`/app.js` 显示 `UI_VERSION = "1.35"`。生产部署链接：`https://6a15650fe0f26408c3f1c230--kzg-option-house.netlify.app/`。
+
+下一步 v1.36：继续处理高级区下半段，尤其是轮动象限图、历史日期模糊态、hover 解释和下方 analysis panels 的统一感。目标仍然是强功能可感知、公开数据不可复制、商业机制不泄漏。
+
+English:
+
+The 2026-05-26 17:17 Asia/Shanghai heartbeat entered v1.35. The trigger was Fangbao's instruction to continue the dense paid-product/UI evolution while keeping payment, authorization, domain, API key, plan price, and registration mechanics out of the public page. This version does not connect a real-time API and does not launch paid functionality. It adds a public-facing layer where capability is perceptible but mechanics remain private. Changed files are `/Users/fangbao/kzg-options-minute-site/public/app.js`, `/Users/fangbao/kzg-options-minute-site/public/styles.css`, `/Users/fangbao/kzg-options-minute-site/docs/CHANGELOG.md`, and `/Users/fangbao/kzg-options-minute-site/docs/CHANGLOG_OPTION_TERMINAL.md`. Public UI version moved from `1.33` to `1.35` because v1.34 was used for the plugin ledger and Apple Notes expansion.
+
+Product action: added a `Live feed silhouette` module to the advanced intelligence layer, using the selected day's symbol rotation, peak minute, premium anchor, CP extreme, and pressure bars to show the future live-feed product power without exposing the real integration. The page explicitly says that real access, authorization, account, and billing mechanics are not published. Visual action: the data audit cards, advanced feature map, and four advanced cards were pushed from isolated square blocks into calmer continuous rails, reducing the blocky feeling and continuing Fangbao's spacing/calligraphy direction.
+
+Public boundary: this version does not publish Stripe, Network Solutions, domain candidates, optionflow, optionpulse, flowgamma, checkout, USDT, WeChat Pay, API key, `$199`, or Massive plan pricing. All real commercial mechanics remain in docs, `.private`, Apple Notes, or this thread only.
+
+Verification: `node --check public/app.js` passed; build produced a `505`-day payload, latest date `2026-05-22`, pack asset `kzg-frame-097929558aa7.js`; local Playwright desktop `1440x1100` and mobile `390x844` had no horizontal overflow and `0` console errors; PNG export `qa-v135-export.png` was about `1.48MB`; public risk-token scan returned `0`; production smoke returned `home=200`, `/latest=200`, `/data/index.json=404`, `/assets/kzg-pack.js=404`, and `/app.js` showing `UI_VERSION = "1.35"`. Production unique deploy: `https://6a15650fe0f26408c3f1c230--kzg-option-house.netlify.app/`.
+
+Next v1.36: continue the lower advanced area, especially rotation quadrant, historical blurred state, hover explanations, and visual unity across the downstream analysis panels. The goal remains: powerful features are perceptible, public data is hard to copy, and commercial mechanics do not leak.

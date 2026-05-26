@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.33";
+const UI_VERSION = "1.35";
 
 const dataAudit = {
   dataset: "23_DATA_Massive_期权分钟_Minute",
@@ -564,6 +564,7 @@ function renderPremiumPreview() {
     </div>
     ${premiumLookbackPanel(locked)}
     ${premiumSignalStack(rows, locked)}
+    ${liveFeedSilhouette(rows, locked)}
     ${premiumQuadrantPreview(rows, locked)}
     ${locked ? `<div class="premium-lock" aria-hidden="true"><b>${t("paywallTitle")}</b><span>${t("paywallSub")}</span></div>` : ""}
   `;
@@ -866,6 +867,68 @@ function premiumSignalStack(rows, locked) {
           const height = Math.max(16, ((Number(row.totalVol) || 0) / maxVol) * 100);
           return `<button type="button" class="${cls}" data-jump-date="${escapeHtml(row.date)}" style="--h:${height.toFixed(1)}%"><i></i><b>${shortDate(row.date)}</b></button>`;
         }).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function liveFeedSilhouette(rows, locked) {
+  const sample = rows.slice(0, 9);
+  if (!sample.length) return "";
+  const buckets = state.day.buckets.market || [];
+  const peak = buckets.reduce((best, row) => Number(row.total) > Number(best.total || 0) ? row : best, buckets[0] || {});
+  const allRows = uniqueSymbolRows();
+  const premiumLead = allRows.reduce((best, row) => Number(row.premiumNotional) > Number(best.premiumNotional || 0) ? row : best, allRows[0] || {});
+  const cpLead = allRows.reduce((best, row) => Number(row.cpRatio) > Number(best.cpRatio || 0) ? row : best, allRows[0] || {});
+  const pressure = sample.map((row, index) => {
+    const velocity = Math.max(-99, Math.min(99, (Number(row.delta) || 0) * 0.6 + (Number(row.premiumDelta) || 0) * 0.24 + (Number(row.cpRatio) || 0) * 6));
+    const tone = velocity >= 18 ? "hot" : velocity <= -18 ? "cool" : "flat";
+    const width = Math.max(18, Math.min(100, Math.abs(velocity) + 22 + index * 2));
+    return { ...row, velocity, tone, width };
+  });
+  const lead = pressure.reduce((best, row) => Math.abs(row.velocity) > Math.abs(best.velocity || 0) ? row : best, pressure[0] || {});
+  const hot = pressure.filter((row) => row.tone === "hot").length;
+  const cool = pressure.filter((row) => row.tone === "cool").length;
+  const publicNote = state.lang === "zh"
+    ? "这里只展示实时层的产品轮廓。真实接入、授权、账户和计费不写入公开页面。"
+    : "This only shows the live-layer product silhouette. Real access, authorization, account, and billing mechanics are not published.";
+  const laneRows = state.lang === "zh"
+    ? [
+      ["主导压力", lead.symbol || "--", `${lead.velocity >= 0 ? "+" : ""}${fmt1.format(lead.velocity || 0)}`],
+      ["峰值分钟", peak.time || "--", wan(peak.total || 0)],
+      ["权利金锚", premiumLead.symbol || "--", moneyCompact(premiumLead.premiumNotional)],
+      ["CP 斜率", cpLead.symbol || "--", `CP ${ratio(cpLead.cpRatio)}`],
+    ]
+    : [
+      ["Lead pressure", lead.symbol || "--", `${lead.velocity >= 0 ? "+" : ""}${fmt1.format(lead.velocity || 0)}`],
+      ["Peak minute", peak.time || "--", wan(peak.total || 0)],
+      ["Premium anchor", premiumLead.symbol || "--", moneyCompact(premiumLead.premiumNotional)],
+      ["CP slope", cpLead.symbol || "--", `CP ${ratio(cpLead.cpRatio)}`],
+    ];
+  return `
+    <div class="live-silhouette ${locked ? "is-blurred" : ""}">
+      <div class="live-silhouette-lead">
+        <span>${state.lang === "zh" ? "实时流轮廓" : "Live feed silhouette"}</span>
+        <strong>${escapeHtml(lead.symbol || "--")}</strong>
+        <p>${escapeHtml(publicNote)}</p>
+      </div>
+      <div class="live-silhouette-lanes">
+        ${laneRows.map((row, index) => `
+          <span class="${index === 0 && hot > cool ? "hot" : index === 0 && cool > hot ? "cool" : "flat"}">
+            <i>${escapeHtml(row[0])}</i>
+            <b>${escapeHtml(row[1])}</b>
+            <small>${escapeHtml(row[2])}</small>
+          </span>
+        `).join("")}
+      </div>
+      <div class="live-silhouette-stream" aria-hidden="true">
+        ${pressure.map((row) => `
+          <button type="button" class="${row.tone}" data-symbol="${escapeHtml(row.symbol)}" style="--w:${row.width.toFixed(1)}%">
+            <b>${escapeHtml(row.symbol)}</b>
+            <i></i>
+            <span>${row.velocity >= 0 ? "+" : ""}${fmt1.format(row.velocity)}</span>
+          </button>
+        `).join("")}
       </div>
     </div>
   `;

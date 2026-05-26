@@ -12,7 +12,7 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - `1.01 -> 2.00` 代表 100 个稠密迭代。
 - A future `11.85` means 1085 post-1.00 dense iterations, not a symbolic number.
 - 未来如果到 `11.85`，它代表从 1.00 之后真的经历了 1085 个稠密迭代，不是随便喊出来的数字。
-- The currently visible public site was verified at `1.27`. The next public UI step should continue as `1.28` unless Fangbao renames the product/version baseline.
+- The currently visible public site was verified at `1.35`. The next public UI step should continue as `1.36` unless Fangbao renames the product/version baseline.
 - 当前公开站点已验证显示 `1.27`。下一次公开 UI 迭代应继续为 `1.28`，除非 Fangbao 重新命名产品或版本基线。
 
 ## Heartbeat protocol / 心跳协议
