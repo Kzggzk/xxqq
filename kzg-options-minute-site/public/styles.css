@@ -12121,3 +12121,214 @@ body[data-theme="dark"] .lock-preview-chips i {
     font-size: 24px;
   }
 }
+
+/* v1.43 pass: compress the mobile long page below the first screen. */
+@media (max-width: 520px) {
+  .premium-preview {
+    margin-top: 14px;
+    padding: 7px;
+  }
+
+  .premium-head {
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .premium-head h2 {
+    font-size: 13px;
+  }
+
+  .premium-head p {
+    font-size: 10px;
+    line-height: 1.32;
+  }
+
+  .premium-unlock-deck {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin-bottom: 6px;
+  }
+
+  .unlock-lead,
+  .unlock-preview {
+    padding: 7px;
+  }
+
+  .unlock-lead {
+    gap: 4px;
+  }
+
+  .unlock-lead strong {
+    font-size: 15px;
+  }
+
+  .unlock-lead p {
+    font-size: 10px;
+    line-height: 1.32;
+  }
+
+  .unlock-tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .unlock-tabs button {
+    min-height: 46px;
+    gap: 2px;
+    padding: 6px;
+  }
+
+  .unlock-tabs i {
+    display: none;
+  }
+
+  .unlock-preview {
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1fr);
+    gap: 5px;
+  }
+
+  .unlock-checklist {
+    gap: 5px;
+  }
+
+  .unlock-checklist span {
+    padding: 6px;
+  }
+
+  .unlock-checklist b {
+    font-size: 11px;
+  }
+
+  .unlock-mini-tape {
+    min-height: 66px;
+  }
+
+  .premium-card {
+    min-height: 54px;
+    gap: 4px;
+    padding: 7px;
+  }
+
+  .premium-lookback,
+  .premium-signal-stack,
+  .live-silhouette,
+  .premium-quadrant {
+    margin-top: 6px;
+  }
+
+  .lookback-body {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 7px;
+  }
+
+  .lookback-chart {
+    min-height: 68px;
+    gap: 2px;
+    padding: 6px;
+  }
+
+  .lookback-chart span,
+  .signal-stack-tape button {
+    grid-template-rows: minmax(0, 1fr) 10px;
+  }
+
+  .lookback-metrics,
+  .signal-stack-rows,
+  .live-silhouette-lanes,
+  .premium-quadrant-stats,
+  .premium-quadrant-meta {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+  }
+
+  .lookback-metrics span,
+  .signal-stack-rows span,
+  .live-silhouette-lanes span,
+  .premium-quadrant-stats span,
+  .premium-quadrant-meta span {
+    min-height: 48px;
+    padding: 6px;
+  }
+
+  .lookback-metrics b,
+  .signal-stack-rows b,
+  .live-silhouette-lanes b,
+  .premium-quadrant-stats b,
+  .premium-quadrant-meta b {
+    font-size: 12px;
+    line-height: 1.05;
+  }
+
+  .premium-signal-stack,
+  .live-silhouette,
+  .premium-quadrant {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .signal-stack-lead,
+  .live-silhouette-lead,
+  .premium-quadrant-copy {
+    min-height: 0;
+    padding: 8px;
+  }
+
+  .signal-stack-lead,
+  .live-silhouette-lead {
+    gap: 4px;
+  }
+
+  .signal-stack-lead p,
+  .live-silhouette-lead p,
+  .premium-quadrant-copy p {
+    display: none;
+  }
+
+  .signal-stack-lead strong,
+  .live-silhouette-lead strong {
+    font-size: 20px;
+  }
+
+  .signal-stack-tape {
+    min-height: 70px;
+    padding: 6px;
+  }
+
+  .live-silhouette-stream {
+    gap: 4px;
+    padding: 7px;
+  }
+
+  .live-silhouette-stream button {
+    grid-template-columns: 42px minmax(0, 1fr) 44px;
+    gap: 5px;
+    min-height: 22px;
+    padding: 1px 0;
+  }
+
+  .premium-quadrant-copy {
+    gap: 5px;
+  }
+
+  .premium-quadrant-copy strong {
+    font-size: 15px;
+  }
+
+  .premium-quadrant-flow {
+    gap: 3px;
+  }
+
+  .premium-quadrant-flow span {
+    grid-template-columns: minmax(0, 1fr) 26px 34px;
+    gap: 4px;
+    padding: 4px 0 5px;
+  }
+
+  .premium-quadrant-map {
+    min-height: 168px;
+  }
+
+  .premium-quadrant-map .q {
+    font-size: 8px;
+  }
+}

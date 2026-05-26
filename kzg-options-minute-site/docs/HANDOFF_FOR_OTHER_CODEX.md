@@ -19,7 +19,7 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
 - Production version last verified / 最近生产验证版本: `1.42`
-- Local version last verified / 最近本地验证版本: `1.42`
+- Local version last verified / 最近本地验证版本: `1.43`
 - Latest unique deploy / 最近唯一部署: `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`
 - iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.2`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
@@ -67,6 +67,14 @@ Latest v1.42 note:
 Web `1.42` is a mobile/desktop spacing checkpoint, not a payment or domain feature. It compresses the phone header and summary rail, keeps PNG export stable, and keeps internal payment/domain/API planning out of the public site. Production unique deploy is `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`.
 
 Web `1.42` 是移动端/桌面端 spacing 检查点，不是支付或域名功能。它压缩手机顶栏和摘要指标区，保持 PNG 导出稳定，并继续把支付/域名/API 内部规划排除在公开站之外。生产唯一部署是 `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`。
+
+Latest local v1.43 note:
+
+最新本地 v1.43 说明：
+
+Web `1.43` is local-only and focuses on the mobile long page below the fold. It reduces the advanced preview height at `390px` from about `4825px` to `3163px`, while keeping production at v1.42 until the next deploy checkpoint.
+
+Web `1.43` 仅本地验证，重点是手机折叠线以下的长页面。它把 `390px` 手机上高级预览高度从约 `4825px` 压到 `3163px`；生产站保持 v1.42，直到下一个部署检查点。
 
 ## Verification checklist / 验证清单
 

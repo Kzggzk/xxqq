@@ -29,7 +29,7 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
 - 最近验证唯一部署: `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.42`
-- 最近本地验证 UI 版本: `1.42`
+- 最近本地验证 UI 版本: `1.43`
 - 当前 iOS 伴生版本: `0.2`，对应 Web `1.40`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
@@ -47,7 +47,7 @@ English:
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
 - Latest verified unique deploy: `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.42`
-- Latest locally verified UI version: `1.42`
+- Latest locally verified UI version: `1.43`
 - Current iOS companion version: `0.2`, mapped to Web `1.40`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
@@ -211,6 +211,24 @@ Around 2026-05-26 19:45 Asia/Shanghai, Web `1.42` became the new local and produ
 Concrete changes: `public/app.js` moved `UI_VERSION` from `1.41` to `1.42`; `public/styles.css` added a v1.42 CSS layer. Mobile topbar now has two layers: brand and date on the first row, four equal command buttons on the second row; the date is no longer truncated and shows `2026年5月22日 星期五`. Mobile Market summary changed from loose stacked cards into a dense `4x2` instrument grid, reducing the measured summary height from the earlier `458px` to `201px`; the report-canvas entry moved upward from `y=1064` to `y=766`. Desktop spacing was also tightened across the timeline, core summary, advanced preview, history lookback, live silhouette, signal stack, and rotation quadrant to reduce lower-screen blankness.
 
 Verified facts: `node --check public/app.js` passed; build still produces a `505`-day payload, latest date `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-554ac5ef64e9.js`. In-app Browser verified nonblank page, visible v1.42, no console errors, `user-select: none`, no horizontal overflow, and no internal commercial string leak. Chrome/CDP local desktop `1440x1100` measured `overflowX=0`; mobile `390x844` measured `overflowX=0`, topbar `91px`, metric rail `201px`. PNG export chain passed through interception with file name `kzg-option-house-2026-05-22-zh.png` and data URL length `1,976,206`. Production unique deploy `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/` is live; production smoke is home `200`, `/r/latest.html` `200`, `/app.js` `200` with `UI_VERSION="1.42"`, `/data/index.json` `404`, `/assets/kzg-pack.js` `404`, and production mobile also verifies v1.42, latest date `2026-05-22`, no horizontal overflow, and no internal string leak.
+
+## 4.4 v1.43 mobile lower-page compression / v1.43 手机下半页压缩
+
+中文:
+
+北京时间 2026-05-26 19:48 左右，Web `1.43` 成为新的本地检查点，生产不变。这个版本承接 v1.42：v1.42 解决手机首屏，v1.43 继续解决手机折叠线以下太长的问题。没有加入任何支付、域名、API、注册、价格或内部商业规划公开文案。
+
+具体变化：`public/app.js` 将 `UI_VERSION` 升到 `1.43`；`public/styles.css` 追加 v1.43 移动端样式层。手机端的解锁预览按钮改成紧双列，历史回看、信号栈、实时轮廓和轮动象限里的小指标统一为 `4` 列，重复解释性长句在手机端隐藏，只保留读盘数据和结构。结果是 `390px` 手机下高级预览总高度从 v1.42 的约 `4825px` 降到 `3163px`，少了约 `1662px`。核心首屏保持 v1.42 的成果：topbar `91px`，metric rail `201px`，日报画布入口 `y=766`。
+
+验证事实：`node --check public/app.js` 通过；build 仍是 `505` 天，最新 `2026-05-22`，analytics symbols `98`，pack asset `kzg-frame-a14a84714653.js`；公开风险词扫描为 0；内置 Browser 本地 smoke 通过，确认 v1.43、无 console error、无横向溢出、`user-select:none`；Chrome/CDP 桌面 `1440x1100` 与手机 `390x844` 均 `overflowX=0`。生产不部署，仍保持 v1.42 唯一部署 `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`。
+
+English:
+
+Around 2026-05-26 19:48 Asia/Shanghai, Web `1.43` became the new local checkpoint, while production stayed unchanged. It follows v1.42: v1.42 solved the phone first screen; v1.43 continues by reducing the long mobile page below the fold. No payment, domain, API, registration, pricing, or internal commercial-planning copy was added to the public page.
+
+Concrete changes: `public/app.js` moves `UI_VERSION` to `1.43`; `public/styles.css` adds a v1.43 mobile layer. On phone, unlock preview buttons become tight two-column controls; history lookback, signal stack, live silhouette, and rotation quadrant small metrics are unified into `4` columns; repeated explanatory long copy is hidden on mobile, leaving the data-reading structure. At `390px` width, advanced preview height drops from about `4825px` in v1.42 to `3163px`, reducing about `1662px`. The first-screen win from v1.42 stays intact: topbar `91px`, metric rail `201px`, report-canvas entry `y=766`.
+
+Verified facts: `node --check public/app.js` passed; build remains `505` days, latest `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-a14a84714653.js`; public risk-token scan is 0; in-app Browser local smoke passed with v1.43, no console errors, no horizontal overflow, and `user-select:none`; Chrome/CDP desktop `1440x1100` and mobile `390x844` both measured `overflowX=0`. This version is not deployed; production remains the v1.42 unique deploy `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`.
 
 ## 5. SaaS architecture / SaaS 架构
 
