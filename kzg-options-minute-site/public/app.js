@@ -12,12 +12,13 @@ const state = {
   plan: "free",
   selectedPlan: "pro",
   selectedRail: "stripe",
+  selectedLogin: "email",
   checkoutMessage: "",
   lang: localStorage.getItem("kzg-option-house-lang") || "zh",
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "v61";
+const UI_VERSION = "v62";
 
 const $ = (id) => document.getElementById(id);
 const fmt0 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
@@ -382,6 +383,14 @@ async function loadIndex() {
       state.selectedRail = railTarget.dataset.checkoutRail || state.selectedRail;
       state.checkoutMessage = railNotice(state.selectedRail);
       renderAccountModal();
+      return;
+    }
+    const loginTarget = event.target.closest("[data-login-method]");
+    if (loginTarget) {
+      event.preventDefault();
+      state.selectedLogin = loginTarget.dataset.loginMethod || state.selectedLogin;
+      state.checkoutMessage = loginNotice(state.selectedLogin);
+      renderAccountModal();
     }
   });
   window.addEventListener("resize", fitReportCanvas);
@@ -471,6 +480,17 @@ function renderAccountModal() {
       ["wallet", "Wallet / Crypto", "Wallet login and crypto payments as a second rail with account mapping.", "later"],
       ["wechat", "WeChat QR", "Start with manual QR confirmation, then wire merchant APIs later.", "manual"],
     ];
+  const loginMethods = state.lang === "zh"
+    ? [
+      ["email", "邮箱登录", "最稳的订阅账户映射，适合 Stripe Customer Portal。"],
+      ["wallet", "钱包登录", "适合 Crypto rail，后续接签名验证与链上地址。"],
+      ["kzg", "KZG 口令", "早期内测席位和人工白名单，可以先快跑。"],
+    ]
+    : [
+      ["email", "Email login", "Best account mapping for Stripe Customer Portal."],
+      ["wallet", "Wallet login", "For crypto rail with signature verification later."],
+      ["kzg", "KZG code", "Fast early-access allowlist for manual seats."],
+    ];
   const domainRows = [
     ["optionflowhouse.com", "$11.99", state.lang === "zh" ? "可注册" : "available"],
     ["optionpulse.ai", "$159.98", state.lang === "zh" ? "可注册" : "available"],
@@ -487,6 +507,18 @@ function renderAccountModal() {
     </div>
     <div class="account-grid">
       <section class="pricing-panel">
+        <div class="account-section-head">
+          <b>${state.lang === "zh" ? "登录方式" : "Login method"}</b>
+          <span>${state.lang === "zh" ? "先做入口态，不写真实凭证" : "interface only, no credentials"}</span>
+        </div>
+        <div class="login-method-grid">
+          ${loginMethods.map((row) => `
+            <button type="button" class="${row[0] === state.selectedLogin ? "active" : ""}" data-login-method="${escapeHtml(row[0])}">
+              <b>${escapeHtml(row[1])}</b>
+              <span>${escapeHtml(row[2])}</span>
+            </button>
+          `).join("")}
+        </div>
         <div class="account-section-head">
           <b>${state.lang === "zh" ? "套餐" : "Plans"}</b>
           <span>${state.lang === "zh" ? "先搭结构，真实扣费待确认" : "Structure first, real billing later"}</span>
@@ -532,6 +564,13 @@ function renderAccountModal() {
         `).join("")}
       </section>
     </div>
+    <div class="entitlement-matrix">
+      <div class="account-section-head">
+        <b>${state.lang === "zh" ? "免费版 vs Pro 权限" : "Free vs Pro entitlement"}</b>
+        <span>${state.lang === "zh" ? "真实鉴权上线前仍需服务端确认" : "server-side entitlement needed before real launch"}</span>
+      </div>
+      ${entitlementRows()}
+    </div>
   `;
 }
 
@@ -543,18 +582,25 @@ function accountStatusCards() {
     wallet: "Wallet",
     wechat: state.lang === "zh" ? "微信" : "WeChat",
   }[state.selectedRail] || "Stripe";
+  const loginLabel = {
+    email: state.lang === "zh" ? "邮箱" : "Email",
+    wallet: "Wallet",
+    kzg: state.lang === "zh" ? "KZG 口令" : "KZG code",
+  }[state.selectedLogin] || "Email";
   const locked = isHistoryLocked();
   const rows = state.lang === "zh"
     ? [
       ["当前访问", locked ? "历史锁定" : "今日开放", state.day?.tradeDate || "--"],
       ["选择套餐", plan[locale].name, `${plan[locale].price}${plan[locale].cycle}`],
-      ["结算轨道", railLabel, "真实扣费前停下确认"],
+      ["登录身份", loginLabel, "真实凭证不在前端存放"],
+      ["结算轨道", railLabel, "扣费前停下确认"],
       ["导出权限", isPro() ? "无水印" : "品牌水印", "PNG 样式保持 KZG 旧日报"],
     ]
     : [
       ["Access", locked ? "History locked" : "Today open", state.day?.tradeDate || "--"],
       ["Selected plan", plan[locale].name, `${plan[locale].price}${plan[locale].cycle}`],
-      ["Rail", railLabel, "confirmation before real billing"],
+      ["Identity", loginLabel, "no real credentials in frontend"],
+      ["Rail", railLabel, "confirmation before billing"],
       ["Export", isPro() ? "Clean" : "Branded", "PNG keeps the KZG sheet style"],
     ];
   return rows.map((row) => `
@@ -564,6 +610,40 @@ function accountStatusCards() {
       <small>${escapeHtml(row[2])}</small>
     </span>
   `).join("");
+}
+
+function entitlementRows() {
+  const rows = state.lang === "zh"
+    ? [
+      ["当日核心数据", "开放", "开放", "最新交易日完整读盘，作为免费入口。"],
+      ["历史日期回看", "模糊预览", "完整交互", "跨日趋势、轮动象限、动量回看进入 Pro。"],
+      ["预测式结构信号", "摘要", "完整", "趋势窗口、极值、标的节奏带和 hover 细节。"],
+      ["PNG 导出", "KZG 品牌版", "可接无额外水印", "当前仍保留旧 KZG 日报格式。"],
+      ["订阅与提醒", "不可用", "待接", "后续接邮箱、微信或钱包身份提醒。"],
+    ]
+    : [
+      ["Latest session", "Open", "Open", "The latest full read stays as the free entry."],
+      ["Historical lookback", "Blur preview", "Full interaction", "Trend, rotation quadrant, and momentum history move to Pro."],
+      ["Predictive structure", "Summary", "Full", "Trend windows, extremes, symbol rhythm, and hover detail."],
+      ["PNG export", "KZG branded", "Clean path", "Current sheet style remains the original KZG format."],
+      ["Alerts", "Unavailable", "Queued", "Later via email, WeChat, or wallet identity."],
+    ];
+  return `
+    <div class="entitlement-head-row">
+      <span>${state.lang === "zh" ? "功能" : "Feature"}</span>
+      <span>Free</span>
+      <span>Pro</span>
+      <span>${state.lang === "zh" ? "说明" : "Notes"}</span>
+    </div>
+    ${rows.map((row, index) => `
+      <div class="entitlement-row ${index === 0 ? "open" : index >= 1 && index <= 3 ? "locked" : "queued"}">
+        <b>${escapeHtml(row[0])}</b>
+        <span>${escapeHtml(row[1])}</span>
+        <strong>${escapeHtml(row[2])}</strong>
+        <small>${escapeHtml(row[3])}</small>
+      </div>
+    `).join("")}
+  `;
 }
 
 function paymentNotice(plan) {
@@ -583,6 +663,17 @@ function railNotice(rail) {
   if (rail === "wallet") return "已选择 Wallet / Crypto：上线前需要钱包身份映射和付款确认后端。";
   if (rail === "wechat") return "已选择微信支付码：可以先人工确认收款，后续再接商户 API。";
   return "已选择 Stripe：推荐路线是 Billing Checkout Session、webhook 权限同步和 Customer Portal。";
+}
+
+function loginNotice(method) {
+  if (state.lang !== "zh") {
+    if (method === "wallet") return "Wallet login selected: this is only UI until signature verification and account mapping are added.";
+    if (method === "kzg") return "KZG code selected: suitable for early-access allowlists before automated billing is live.";
+    return "Email login selected: best default for Stripe subscriptions and Customer Portal mapping.";
+  }
+  if (method === "wallet") return "已选择钱包登录：目前只是入口态，后续需要签名验证和账户映射。";
+  if (method === "kzg") return "已选择 KZG 口令：适合内测白名单，自动订阅上线前可以先快跑。";
+  return "已选择邮箱登录：最适合 Stripe 订阅和 Customer Portal 账户映射。";
 }
 
 function renderAccessStrip() {
