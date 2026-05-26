@@ -1,4 +1,5 @@
 .netlify/
+.private/
 dist/
 public/data/
 public/reports/

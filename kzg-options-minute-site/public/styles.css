@@ -8186,7 +8186,7 @@ body[data-theme="dark"] .heat-lane-track {
   flex-wrap: wrap;
 }
 
-.button.pro-button {
+.button.advanced-button {
   border-color: rgba(154, 106, 18, 0.46);
   background: linear-gradient(180deg, rgba(234, 217, 174, 0.4), rgba(255, 255, 255, 0.72));
 }
@@ -8228,25 +8228,25 @@ body[data-theme="dark"] .heat-lane-track {
 .account-hero span,
 .account-hero p,
 .account-section-head span,
-.billing-row span,
-.domain-row span,
-.domain-row i,
-.billing-console span,
-.billing-console small,
-.billing-date-picker span,
+.service-row span,
+.route-row span,
+.route-row i,
+.service-console span,
+.service-console small,
+.service-date-picker span,
 .pipeline-lead span,
 .pipeline-steps small,
 .pipeline-steps i,
-.checkout-simulation span,
-.checkout-simulation small,
-.checkout-simulation i,
+.flow-simulation span,
+.flow-simulation small,
+.flow-simulation i,
 .readiness-lead span,
 .readiness-lead small,
 .readiness-steps i,
 .readiness-steps small,
-.pro-readiness-ribbon span,
-.pro-readiness-ribbon small,
-.pro-readiness-ribbon i,
+.advanced-readiness-ribbon span,
+.advanced-readiness-ribbon small,
+.advanced-readiness-ribbon i,
 .audit-lead span,
 .audit-lead p,
 .audit-grid i,
@@ -8265,7 +8265,7 @@ body[data-theme="dark"] .heat-lane-track {
 .signal-stack-rows i,
 .signal-stack-rows small,
 .signal-stack-tape b,
-.checkout-note {
+.flow-note {
   color: var(--muted);
   font-size: 11px;
   font-weight: 760;
@@ -8292,7 +8292,7 @@ body[data-theme="dark"] .heat-lane-track {
 .access-actions button,
 .premium-head button,
 .premium-lock,
-.price-card,
+.tier-card,
 .account-close {
   border: 1px solid var(--line-strong);
   background: rgba(255, 255, 255, 0.76);
@@ -8414,20 +8414,20 @@ body[data-theme="dark"] .heat-lane-track {
   white-space: nowrap;
 }
 
-.pro-readiness-ribbon {
+.advanced-readiness-ribbon {
   display: grid;
   grid-template-columns: minmax(240px, 0.5fr) minmax(0, 1fr);
   gap: 10px;
   margin-bottom: 12px;
 }
 
-.pro-readiness-ribbon > div {
+.advanced-readiness-ribbon > div {
   min-width: 0;
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.62);
 }
 
-.pro-readiness-ribbon > div:first-child {
+.advanced-readiness-ribbon > div:first-child {
   display: grid;
   align-content: center;
   gap: 6px;
@@ -8435,11 +8435,11 @@ body[data-theme="dark"] .heat-lane-track {
   box-shadow: inset 3px 0 0 var(--gold);
 }
 
-.pro-readiness-ribbon.is-locked > div:first-child {
+.advanced-readiness-ribbon.is-locked > div:first-child {
   box-shadow: inset 3px 0 0 #c45335;
 }
 
-.pro-readiness-ribbon b {
+.advanced-readiness-ribbon b {
   overflow: hidden;
   color: var(--ink);
   font-size: 16px;
@@ -8448,13 +8448,13 @@ body[data-theme="dark"] .heat-lane-track {
   white-space: nowrap;
 }
 
-.pro-readiness-ribbon > div:last-child {
+.advanced-readiness-ribbon > div:last-child {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 0;
 }
 
-.pro-readiness-ribbon > div:last-child span {
+.advanced-readiness-ribbon > div:last-child span {
   display: grid;
   align-content: center;
   gap: 4px;
@@ -8463,19 +8463,19 @@ body[data-theme="dark"] .heat-lane-track {
   border-right: 1px solid var(--line);
 }
 
-.pro-readiness-ribbon > div:last-child span:last-child {
+.advanced-readiness-ribbon > div:last-child span:last-child {
   border-right: 0;
 }
 
-.pro-readiness-ribbon .ready {
+.advanced-readiness-ribbon .ready {
   box-shadow: inset 0 3px 0 rgba(20, 131, 85, 0.72);
 }
 
-.pro-readiness-ribbon .queued {
+.advanced-readiness-ribbon .queued {
   box-shadow: inset 0 3px 0 rgba(47, 97, 144, 0.62);
 }
 
-.pro-readiness-ribbon .locked {
+.advanced-readiness-ribbon .locked {
   box-shadow: inset 0 3px 0 rgba(196, 83, 53, 0.62);
 }
 
@@ -8696,7 +8696,7 @@ body[data-theme="dark"] .heat-lane-track {
 .premium-quadrant-stats small,
 .account-status-grid i,
 .account-status-grid small,
-.billing-row i {
+.service-row i {
   color: var(--muted);
   font-size: 11px;
   font-weight: 760;
@@ -9425,13 +9425,13 @@ body[data-theme="dark"] .heat-lane-track {
   font-size: 15px;
 }
 
-.pricing-grid {
+.tier-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
 }
 
-.price-card {
+.tier-card {
   display: grid;
   gap: 8px;
   min-height: 146px;
@@ -9439,40 +9439,40 @@ body[data-theme="dark"] .heat-lane-track {
   text-align: left;
 }
 
-.price-card.featured {
+.tier-card.featured {
   border-color: var(--ink);
   box-shadow: inset 3px 0 0 var(--gold);
 }
 
-.price-card.active {
+.tier-card.active {
   background: rgba(234, 217, 174, 0.28);
   box-shadow: inset 0 0 0 1px rgba(154, 106, 18, 0.42);
 }
 
-.price-card span,
-.price-card p {
+.tier-card span,
+.tier-card p {
   color: var(--muted);
   font-size: 11px;
   font-weight: 780;
 }
 
-.price-card strong {
+.tier-card strong {
   color: var(--ink);
   font-size: 27px;
   line-height: 1;
 }
 
-.price-card small {
+.tier-card small {
   color: var(--muted);
   font-size: 12px;
 }
 
-.price-card p {
+.tier-card p {
   margin-top: auto;
   line-height: 1.38;
 }
 
-.checkout-note {
+.flow-note {
   margin-top: 10px;
   padding: 10px 12px;
   border-left: 3px solid var(--gold);
@@ -9480,7 +9480,7 @@ body[data-theme="dark"] .heat-lane-track {
   line-height: 1.45;
 }
 
-.checkout-simulation {
+.flow-simulation {
   display: grid;
   grid-template-columns: minmax(150px, 0.48fr) minmax(0, 1fr);
   gap: 8px;
@@ -9492,23 +9492,23 @@ body[data-theme="dark"] .heat-lane-track {
     rgba(255, 255, 255, 0.58);
 }
 
-.checkout-simulation > div {
+.flow-simulation > div {
   min-width: 0;
 }
 
-.checkout-simulation > div:first-child {
+.flow-simulation > div:first-child {
   display: grid;
   align-content: center;
   gap: 5px;
 }
 
-.checkout-simulation > div:last-child {
+.flow-simulation > div:last-child {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 6px;
 }
 
-.checkout-simulation b {
+.flow-simulation b {
   overflow: hidden;
   color: var(--ink);
   font-size: 13px;
@@ -9517,7 +9517,7 @@ body[data-theme="dark"] .heat-lane-track {
   white-space: nowrap;
 }
 
-.checkout-simulation span {
+.flow-simulation span {
   display: grid;
   gap: 2px;
   min-width: 0;
@@ -9526,21 +9526,21 @@ body[data-theme="dark"] .heat-lane-track {
   background: rgba(251, 250, 246, 0.7);
 }
 
-.checkout-simulation > div:first-child span {
+.flow-simulation > div:first-child span {
   display: block;
   padding: 0;
   border: 0;
   background: transparent;
 }
 
-.billing-panel {
+.service-panel {
   display: grid;
   align-content: start;
   gap: 8px;
 }
 
-.billing-row,
-.domain-row {
+.service-row,
+.route-row {
   display: grid;
   gap: 3px;
   padding: 10px 11px;
@@ -9548,29 +9548,29 @@ body[data-theme="dark"] .heat-lane-track {
   background: rgba(255, 255, 255, 0.62);
 }
 
-.billing-row {
+.service-row {
   font: inherit;
   text-align: left;
   cursor: pointer;
 }
 
-.billing-row.active {
+.service-row.active {
   border-color: rgba(154, 106, 18, 0.54);
   box-shadow: inset 3px 0 0 var(--gold);
 }
 
-.billing-row b,
-.domain-row b {
+.service-row b,
+.route-row b {
   color: var(--ink);
   font-size: 13px;
 }
 
-.billing-console {
+.service-console {
   display: grid;
   gap: 7px;
 }
 
-.billing-console button {
+.service-console button {
   display: grid;
   grid-template-columns: 74px minmax(96px, 0.6fr) minmax(0, 1fr);
   gap: 8px;
@@ -9584,14 +9584,14 @@ body[data-theme="dark"] .heat-lane-track {
   text-align: left;
 }
 
-.billing-console button.active {
+.service-console button.active {
   border-color: rgba(154, 106, 18, 0.54);
   background: rgba(234, 217, 174, 0.22);
   box-shadow: inset 3px 0 0 var(--gold);
 }
 
-.billing-console b,
-.billing-date-picker b,
+.service-console b,
+.service-date-picker b,
 .pipeline-lead b,
 .pipeline-steps b {
   overflow: hidden;
@@ -9601,21 +9601,21 @@ body[data-theme="dark"] .heat-lane-track {
   white-space: nowrap;
 }
 
-.billing-console span,
-.billing-console small {
+.service-console span,
+.service-console small {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.billing-date-picker {
+.service-date-picker {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 7px;
   margin-top: 3px;
 }
 
-.billing-date-picker button {
+.service-date-picker button {
   display: grid;
   gap: 3px;
   min-width: 0;
@@ -9627,7 +9627,7 @@ body[data-theme="dark"] .heat-lane-track {
   text-align: left;
 }
 
-.billing-date-picker button.active {
+.service-date-picker button.active {
   border-color: rgba(47, 97, 144, 0.42);
   box-shadow: inset 3px 0 0 #2f6190;
 }
@@ -9679,17 +9679,17 @@ body[data-theme="dark"] .heat-lane-track {
   font-style: normal;
 }
 
-.domain-head {
+.route-head {
   margin-top: 12px;
   margin-bottom: 2px;
 }
 
-.domain-row {
+.route-row {
   grid-template-columns: minmax(0, 1fr) auto auto;
   align-items: center;
 }
 
-.domain-row b {
+.route-row b {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -9774,14 +9774,14 @@ body.modal-open {
   overflow: hidden;
 }
 
-body[data-theme="dark"] .button.pro-button,
+body[data-theme="dark"] .button.advanced-button,
 body[data-theme="dark"] .access-copy,
 body[data-theme="dark"] .premium-preview,
 body[data-theme="dark"] .data-audit-seal .audit-lead,
 body[data-theme="dark"] .data-audit-seal .audit-grid span,
 body[data-theme="dark"] .data-audit-seal .audit-note,
-body[data-theme="dark"] .pro-readiness-ribbon > div,
-body[data-theme="dark"] .pro-readiness-ribbon > div:last-child span,
+body[data-theme="dark"] .advanced-readiness-ribbon > div,
+body[data-theme="dark"] .advanced-readiness-ribbon > div:last-child span,
 body[data-theme="dark"] .premium-unlock-deck .unlock-lead,
 body[data-theme="dark"] .premium-unlock-deck .unlock-tabs button,
 body[data-theme="dark"] .premium-unlock-deck .unlock-preview,
@@ -9803,15 +9803,15 @@ body[data-theme="dark"] .account-status-grid span,
 body[data-theme="dark"] .account-readiness .readiness-lead,
 body[data-theme="dark"] .account-readiness .readiness-steps span,
 body[data-theme="dark"] .login-method-grid button,
-body[data-theme="dark"] .checkout-simulation,
-body[data-theme="dark"] .checkout-simulation span,
-body[data-theme="dark"] .billing-row,
-body[data-theme="dark"] .billing-console button,
-body[data-theme="dark"] .billing-date-picker button,
+body[data-theme="dark"] .flow-simulation,
+body[data-theme="dark"] .flow-simulation span,
+body[data-theme="dark"] .service-row,
+body[data-theme="dark"] .service-console button,
+body[data-theme="dark"] .service-date-picker button,
 body[data-theme="dark"] .account-pipeline,
 body[data-theme="dark"] .pipeline-steps i,
-body[data-theme="dark"] .domain-row,
-body[data-theme="dark"] .price-card,
+body[data-theme="dark"] .route-row,
+body[data-theme="dark"] .tier-card,
 body[data-theme="dark"] .pro-lock-overlay,
 body[data-theme="dark"] .premium-lock {
   border-color: rgba(245, 240, 230, 0.18);
@@ -9826,7 +9826,7 @@ body[data-theme="dark"] .account-sheet {
   .access-strip,
   .account-grid,
   .account-readiness,
-  .pro-readiness-ribbon {
+  .advanced-readiness-ribbon {
     grid-template-columns: 1fr;
   }
 
@@ -9842,7 +9842,7 @@ body[data-theme="dark"] .account-sheet {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .pro-readiness-ribbon > div:last-child,
+  .advanced-readiness-ribbon > div:last-child,
   .readiness-steps {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -9884,11 +9884,11 @@ body[data-theme="dark"] .account-sheet {
     grid-template-columns: 1fr;
   }
 
-  .checkout-simulation {
+  .flow-simulation {
     grid-template-columns: 1fr;
   }
 
-  .billing-console button {
+  .service-console button {
     grid-template-columns: 72px minmax(96px, 0.7fr) minmax(0, 1fr);
   }
 
@@ -9918,7 +9918,7 @@ body[data-theme="dark"] .account-sheet {
   }
 
   .premium-grid,
-  .pricing-grid,
+  .tier-grid,
   .unlock-tabs {
     grid-template-columns: 1fr;
   }
@@ -9949,7 +9949,7 @@ body[data-theme="dark"] .account-sheet {
     grid-template-columns: 1fr;
   }
 
-  .pro-readiness-ribbon > div:last-child,
+  .advanced-readiness-ribbon > div:last-child,
   .readiness-steps {
     grid-template-columns: 1fr;
   }
@@ -9969,7 +9969,7 @@ body[data-theme="dark"] .account-sheet {
   }
 
   .signal-stack-rows,
-  .billing-date-picker {
+  .service-date-picker {
     grid-template-columns: 1fr;
   }
 
@@ -9992,18 +9992,18 @@ body[data-theme="dark"] .account-sheet {
     display: none;
   }
 
-  .checkout-simulation > div:last-child {
+  .flow-simulation > div:last-child {
     grid-template-columns: 1fr;
   }
 
-  .billing-console button,
+  .service-console button,
   .pipeline-steps span {
     grid-template-columns: 1fr;
   }
 
-  .billing-console span,
-  .billing-console b,
-  .billing-console small,
+  .service-console span,
+  .service-console b,
+  .service-console small,
   .pipeline-steps b,
   .pipeline-steps small {
     white-space: normal;

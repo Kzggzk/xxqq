@@ -11,31 +11,21 @@ const state = {
   proLookback: "20",
   focusSymbol: null,
   plan: "free",
-  selectedPlan: "pro",
-  selectedRail: "stripe",
-  selectedLogin: "email",
-  selectedBillingAction: "upgrade",
-  selectedBillingDate: "1",
   selectedUnlockScope: "history",
-  checkoutMessage: "",
   lang: localStorage.getItem("kzg-option-house-lang") || "zh",
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.26";
+const UI_VERSION = "1.27";
 
 const dataAudit = {
   dataset: "23_DATA_Massive_期权分钟_Minute",
-  provider: "Massive Flat Files / Options / Minute Aggregates",
   coverageStart: "2024-05-17",
   coverageEnd: "2026-05-22",
   fileCount: 505,
   bytes: 10295934305,
-  iCloudFiles: 505,
-  googleDriveFiles: 505,
   complete: 505,
   failed: 0,
-  report: "massive_options_minute_complete_audit_20260526T065928Z.json",
   releaseFrom: "1.01",
   releaseTo: "1.25",
   extraVersions: 24,
@@ -92,16 +82,16 @@ const copy = {
     currentDay: "当前交易日",
     kzgByline: "口罩哥独家数据整理",
     kzgPlanet: "口罩哥星球",
-    loginPro: "登录 / Pro",
-    proActive: "Pro 已启用",
+    loginPro: "功能边界",
+    proActive: "高级功能",
     latestFree: "今日免费",
     historyLocked: "历史回看已锁定",
-    upgrade: "升级 Pro",
+    upgrade: "功能预览",
     preview: "功能预览",
-    accountTitle: "KZG Option House Pro",
-    accountSub: "当前为产品接入阶段：可看到登录、套餐、支付轨道和锁层体验；真实扣费与域名购买前会再次确认。",
-    paywallTitle: "Pro 回看已上锁",
-    paywallSub: "今天的读盘免费开放；历史日期、预测式回看、轮动象限深挖和无水印导出进入 Pro。",
+    accountTitle: "KZG Option House 高级功能",
+    accountSub: "公开页面只展示数据产品能力；内部产品方案不在这里展示。",
+    paywallTitle: "深度回看暂不公开",
+    paywallSub: "今天的读盘免费开放；历史日期、深度回看和高级导出暂不公开。",
   },
   en: {
     today: "Today",
@@ -148,42 +138,18 @@ const copy = {
     currentDay: "Current Day",
     kzgByline: "Curated by 口罩哥",
     kzgPlanet: "KZG Inner Circle",
-    loginPro: "Log in / Pro",
-    proActive: "Pro active",
+    loginPro: "Feature boundary",
+    proActive: "Advanced layer",
     latestFree: "Today is free",
     historyLocked: "History locked",
-    upgrade: "Upgrade Pro",
+    upgrade: "Feature preview",
     preview: "Feature preview",
-    accountTitle: "KZG Option House Pro",
-    accountSub: "Product wiring phase: login, pricing, payment rails, and locked-preview UX are visible. Real charges and domain purchase require explicit confirmation.",
-    paywallTitle: "Pro history is locked",
-    paywallSub: "Today stays free; historical dates, predictive lookbacks, rotation quadrant deep dives, and watermark-free export move behind Pro.",
+    accountTitle: "KZG Option House Advanced",
+    accountSub: "The public page shows product capability only. Internal product planning is not published here.",
+    paywallTitle: "Deep history is not public",
+    paywallSub: "Today stays free; historical depth and advanced exports are not public yet.",
   },
 };
-
-const pricingPlans = [
-  {
-    id: "starter",
-    zh: { name: "Starter", price: "$9.99", cycle: "/月", desc: "历史日报回看、基础轮动、PNG 导出。" },
-    en: { name: "Starter", price: "$9.99", cycle: "/mo", desc: "Historical daily sheets, basic rotation, PNG export." },
-  },
-  {
-    id: "pro",
-    featured: true,
-    zh: { name: "Pro", price: "$29.99", cycle: "/月", desc: "预测式动量、轮动象限深挖、无水印导出。" },
-    en: { name: "Pro", price: "$29.99", cycle: "/mo", desc: "Predictive momentum, quadrant deep dive, watermark-free export." },
-  },
-  {
-    id: "quarterly",
-    zh: { name: "Quarterly", price: "$49.99", cycle: "/季度", desc: "季度访问权，适合短线密集使用。" },
-    en: { name: "Quarterly", price: "$49.99", cycle: "/quarter", desc: "Quarterly access for active research cycles." },
-  },
-  {
-    id: "lifetime",
-    zh: { name: "Lifetime", price: "$199", cycle: "一次性", desc: "早鸟终身席位，后续高级功能另行分层。" },
-    en: { name: "Lifetime", price: "$199", cycle: "once", desc: "Early lifetime seat; future advanced tiers can be separated." },
-  },
-];
 
 function t(key) {
   return copy[state.lang]?.[key] || copy.zh[key] || key;
@@ -374,7 +340,8 @@ async function loadIndex() {
   $("goToday").addEventListener("click", () => loadDayByIndex(state.datesAsc.length - 1));
   $("themeToggle").addEventListener("click", toggleTheme);
   $("langToggle").addEventListener("click", toggleLang);
-  $("accountButton").addEventListener("click", openAccountModal);
+  const accountButton = $("accountButton");
+  if (accountButton) accountButton.addEventListener("click", openAccountModal);
   document.querySelectorAll("[data-close-account]").forEach((node) => {
     node.addEventListener("click", closeAccountModal);
   });
@@ -385,49 +352,7 @@ async function loadIndex() {
     const openTarget = event.target.closest("[data-open-account]");
     if (openTarget) {
       event.preventDefault();
-      state.checkoutMessage = openTarget.dataset.message || "";
       openAccountModal();
-      return;
-    }
-    const checkoutTarget = event.target.closest("[data-checkout-plan]");
-    if (checkoutTarget) {
-      event.preventDefault();
-      const plan = pricingPlans.find((item) => item.id === checkoutTarget.dataset.checkoutPlan);
-      state.selectedPlan = plan?.id || state.selectedPlan;
-      state.checkoutMessage = paymentNotice(plan);
-      renderAccountModal();
-      return;
-    }
-    const railTarget = event.target.closest("[data-checkout-rail]");
-    if (railTarget) {
-      event.preventDefault();
-      state.selectedRail = railTarget.dataset.checkoutRail || state.selectedRail;
-      state.checkoutMessage = railNotice(state.selectedRail);
-      renderAccountModal();
-      return;
-    }
-    const loginTarget = event.target.closest("[data-login-method]");
-    if (loginTarget) {
-      event.preventDefault();
-      state.selectedLogin = loginTarget.dataset.loginMethod || state.selectedLogin;
-      state.checkoutMessage = loginNotice(state.selectedLogin);
-      renderAccountModal();
-      return;
-    }
-    const billingActionTarget = event.target.closest("[data-billing-action]");
-    if (billingActionTarget) {
-      event.preventDefault();
-      state.selectedBillingAction = billingActionTarget.dataset.billingAction || state.selectedBillingAction;
-      state.checkoutMessage = billingActionNotice(state.selectedBillingAction);
-      renderAccountModal();
-      return;
-    }
-    const billingDateTarget = event.target.closest("[data-billing-date]");
-    if (billingDateTarget) {
-      event.preventDefault();
-      state.selectedBillingDate = billingDateTarget.dataset.billingDate || state.selectedBillingDate;
-      state.checkoutMessage = billingDateNotice(state.selectedBillingDate);
-      renderAccountModal();
       return;
     }
     const premiumJumpTarget = event.target.closest("#premiumPreview [data-jump-date]");
@@ -519,326 +444,43 @@ function closeAccountModal() {
   modal.hidden = true;
   modal.setAttribute("aria-hidden", "true");
   document.body.classList.remove("modal-open");
-  state.checkoutMessage = "";
 }
 
 function renderAccountModal() {
   const target = $("accountContent");
   if (!target) return;
-  const locale = state.lang === "zh" ? "zh" : "en";
-  const paymentRails = state.lang === "zh"
+  const rows = state.lang === "zh"
     ? [
-      ["stripe", "Stripe Checkout", "订阅与信用卡，建议用 Billing + Checkout + Customer Portal。", "首选"],
-      ["wallet", "Wallet / Crypto", "钱包登录与链上收款作为第二支付轨道，先做账户映射。", "后接"],
-      ["wechat", "微信支付码", "先用人工确认或二维码收款，后续再接商户 API。", "人工确认"],
+      ["当日读盘", "免费开放", "最新交易日保留完整市场结构。"],
+      ["历史深挖", "暂未公开", "历史日期只保留模糊预览和研究线索。"],
+      ["PNG 输出", "保持稳定", "延续 KZG 老日报表格导出，不暴露底层数据包。"],
     ]
     : [
-      ["stripe", "Stripe Checkout", "Subscriptions and cards via Billing + Checkout + Customer Portal.", "primary"],
-      ["wallet", "Wallet / Crypto", "Wallet login and crypto payments as a second rail with account mapping.", "later"],
-      ["wechat", "WeChat QR", "Start with manual QR confirmation, then wire merchant APIs later.", "manual"],
+      ["Latest read", "Open", "The latest session keeps the full market structure."],
+      ["Deep history", "Not public", "Historical dates keep blurred previews and research hints."],
+      ["PNG export", "Stable", "The original KZG sheet export remains, without exposing raw data."],
     ];
-  const loginMethods = state.lang === "zh"
-    ? [
-      ["email", "邮箱登录", "最稳的订阅账户映射，适合 Stripe Customer Portal。"],
-      ["wallet", "钱包登录", "适合 Crypto rail，后续接签名验证与链上地址。"],
-      ["kzg", "KZG 口令", "早期内测席位和人工白名单，可以先快跑。"],
-    ]
-    : [
-      ["email", "Email login", "Best account mapping for Stripe Customer Portal."],
-      ["wallet", "Wallet login", "For crypto rail with signature verification later."],
-      ["kzg", "KZG code", "Fast early-access allowlist for manual seats."],
-    ];
-  const billingActions = state.lang === "zh"
-    ? [
-      ["upgrade", "升级", "Checkout Session", "选择新 Price，Stripe 处理首付、税费和试用。"],
-      ["downgrade", "降级", "Customer Portal", "用 Portal 改订阅，服务端 webhook 同步权限。"],
-      ["billing-date", "账单日", "Portal / schedule", "后续用 Billing schedule 或 Portal 调整续费日期。"],
-      ["receipt", "发票", "Invoices", "发票、收据、付款失败提醒全部走 Billing。"],
-      ["pause", "暂停", "Portal policy", "保留账户，停止续费，历史导出权限按规则降级。"],
-    ]
-    : [
-      ["upgrade", "Upgrade", "Checkout Session", "Select a new Price; Stripe handles first payment, tax, and trials."],
-      ["downgrade", "Downgrade", "Customer Portal", "Portal changes the subscription; webhooks sync entitlement."],
-      ["billing-date", "Billing date", "Portal / schedule", "Later via Billing schedules or Portal renewal settings."],
-      ["receipt", "Invoices", "Invoices", "Receipts, invoices, and failed-payment notices stay in Billing."],
-      ["pause", "Pause", "Portal policy", "Keep the account, stop renewals, and downgrade exports by rule."],
-    ];
-  const billingDates = state.lang === "zh"
-    ? [
-      ["1", "每月 1 号", "适合月初复盘"],
-      ["15", "每月 15 号", "适合月中续费"],
-      ["close", "美股月末", "后续按交易日锚定"],
-    ]
-    : [
-      ["1", "1st monthly", "good for monthly reviews"],
-      ["15", "15th monthly", "mid-month renewal"],
-      ["close", "US month-end", "later anchored to sessions"],
-    ];
-  const domainRows = [
-    ["optionflowhouse.com", "$11.99", state.lang === "zh" ? "可注册" : "available"],
-    ["optionpulse.ai", "$159.98", state.lang === "zh" ? "可注册" : "available"],
-    ["flowgamma.com", "--", state.lang === "zh" ? "已被注册" : "taken"],
-  ];
   target.innerHTML = `
     <div class="account-hero">
       <span>${isPro() ? t("proActive") : t("loginPro")}</span>
       <h2 id="accountTitle">${t("accountTitle")}</h2>
       <p>${t("accountSub")}</p>
     </div>
-    <div class="account-status-grid">
-      ${accountStatusCards()}
+    <div class="account-status-grid public-only">
+      ${rows.map((row) => `
+        <span>
+          <i>${escapeHtml(row[0])}</i>
+          <b>${escapeHtml(row[1])}</b>
+          <small>${escapeHtml(row[2])}</small>
+        </span>
+      `).join("")}
     </div>
-    ${accountReadinessPanel()}
-    <div class="account-grid">
-      <section class="pricing-panel">
-        <div class="account-section-head">
-          <b>${state.lang === "zh" ? "登录方式" : "Login method"}</b>
-          <span>${state.lang === "zh" ? "先做入口态，不写真实凭证" : "interface only, no credentials"}</span>
-        </div>
-        <div class="login-method-grid">
-          ${loginMethods.map((row) => `
-            <button type="button" class="${row[0] === state.selectedLogin ? "active" : ""}" data-login-method="${escapeHtml(row[0])}">
-              <b>${escapeHtml(row[1])}</b>
-              <span>${escapeHtml(row[2])}</span>
-            </button>
-          `).join("")}
-        </div>
-        <div class="account-section-head">
-          <b>${state.lang === "zh" ? "套餐" : "Plans"}</b>
-          <span>${state.lang === "zh" ? "先搭结构，真实扣费待确认" : "Structure first, real billing later"}</span>
-        </div>
-        <div class="pricing-grid">
-          ${pricingPlans.map((plan) => {
-            const text = plan[locale];
-            return `
-              <button type="button" class="price-card ${plan.featured ? "featured" : ""} ${plan.id === state.selectedPlan ? "active" : ""}" data-checkout-plan="${plan.id}">
-                <span>${escapeHtml(text.name)}</span>
-                <strong>${escapeHtml(text.price)} <small>${escapeHtml(text.cycle)}</small></strong>
-                <p>${escapeHtml(text.desc)}</p>
-              </button>
-            `;
-          }).join("")}
-        </div>
-        <div class="checkout-note ${state.checkoutMessage ? "visible" : ""}">
-          ${escapeHtml(state.checkoutMessage || (state.lang === "zh" ? "点击套餐会显示对应支付接入轨道；不会发起真实扣费。" : "Click a plan to preview payment wiring; no real charge will be started."))}
-        </div>
-        ${checkoutSimulationCard()}
-      </section>
-      <section class="billing-panel">
-        <div class="account-section-head">
-          <b>${state.lang === "zh" ? "支付轨道" : "Payment rails"}</b>
-          <span>${state.lang === "zh" ? "可接入路线" : "wiring path"}</span>
-        </div>
-        ${paymentRails.map((row) => `
-          <button type="button" class="billing-row ${row[0] === state.selectedRail ? "active" : ""}" data-checkout-rail="${escapeHtml(row[0])}">
-            <b>${escapeHtml(row[1])}</b>
-            <span>${escapeHtml(row[2])}</span>
-            <i>${escapeHtml(row[3])}</i>
-          </button>
-        `).join("")}
-        <div class="account-section-head domain-head">
-          <b>${state.lang === "zh" ? "账户控制台" : "Account console"}</b>
-          <span>${state.lang === "zh" ? "升级/降级/账单管理" : "upgrade, downgrade, billing"}</span>
-        </div>
-        <div class="billing-console">
-          ${billingActions.map((row) => `
-            <button type="button" class="${row[0] === state.selectedBillingAction ? "active" : ""}" data-billing-action="${escapeHtml(row[0])}">
-              <span>${escapeHtml(row[1])}</span>
-              <b>${escapeHtml(row[2])}</b>
-              <small>${escapeHtml(row[3])}</small>
-            </button>
-          `).join("")}
-        </div>
-        <div class="billing-date-picker">
-          ${billingDates.map((row) => `
-            <button type="button" class="${row[0] === state.selectedBillingDate ? "active" : ""}" data-billing-date="${escapeHtml(row[0])}">
-              <b>${escapeHtml(row[1])}</b>
-              <span>${escapeHtml(row[2])}</span>
-            </button>
-          `).join("")}
-        </div>
-        ${accountPipelineCard()}
-        <div class="account-section-head domain-head">
-          <b>${state.lang === "zh" ? "域名候选" : "Domain candidates"}</b>
-          <span>${state.lang === "zh" ? "已查可用性，购买前需你确认" : "availability checked; purchase needs confirmation"}</span>
-        </div>
-        ${domainRows.map((row) => `
-          <div class="domain-row">
-            <b>${escapeHtml(row[0])}</b>
-            <span>${escapeHtml(row[1])}</span>
-            <i>${escapeHtml(row[2])}</i>
-          </div>
-        `).join("")}
-      </section>
-    </div>
-    <div class="entitlement-matrix">
+    <div class="entitlement-matrix public-boundary">
       <div class="account-section-head">
-        <b>${state.lang === "zh" ? "免费版 vs Pro 权限" : "Free vs Pro entitlement"}</b>
-        <span>${state.lang === "zh" ? "真实鉴权上线前仍需服务端确认" : "server-side entitlement needed before real launch"}</span>
+        <b>${state.lang === "zh" ? "公开展示边界" : "Public display boundary"}</b>
+        <span>${state.lang === "zh" ? "内部产品方案不会写入公开页面" : "Internal product planning is not published"}</span>
       </div>
       ${entitlementRows()}
-    </div>
-  `;
-}
-
-function accountStatusCards() {
-  const plan = pricingPlans.find((item) => item.id === state.selectedPlan) || pricingPlans[1];
-  const locale = state.lang === "zh" ? "zh" : "en";
-  const railLabel = {
-    stripe: "Stripe",
-    wallet: "Wallet",
-    wechat: state.lang === "zh" ? "微信" : "WeChat",
-  }[state.selectedRail] || "Stripe";
-  const loginLabel = {
-    email: state.lang === "zh" ? "邮箱" : "Email",
-    wallet: "Wallet",
-    kzg: state.lang === "zh" ? "KZG 口令" : "KZG code",
-  }[state.selectedLogin] || "Email";
-  const actionLabel = billingActionLabel(state.selectedBillingAction);
-  const billingDateLabel = billingDateLabelText(state.selectedBillingDate);
-  const locked = isHistoryLocked();
-  const rows = state.lang === "zh"
-    ? [
-      ["当前访问", locked ? "历史锁定" : "今日开放", state.day?.tradeDate || "--"],
-      ["选择套餐", plan[locale].name, `${plan[locale].price}${plan[locale].cycle}`],
-      ["登录身份", loginLabel, "真实凭证不在前端存放"],
-      ["账户动作", actionLabel, billingDateLabel],
-      ["结算轨道", railLabel, "扣费前停下确认"],
-    ]
-    : [
-      ["Access", locked ? "History locked" : "Today open", state.day?.tradeDate || "--"],
-      ["Selected plan", plan[locale].name, `${plan[locale].price}${plan[locale].cycle}`],
-      ["Identity", loginLabel, "no real credentials in frontend"],
-      ["Account action", actionLabel, billingDateLabel],
-      ["Rail", railLabel, "confirmation before billing"],
-    ];
-  return rows.map((row) => `
-    <span>
-      <i>${escapeHtml(row[0])}</i>
-      <b>${escapeHtml(row[1])}</b>
-      <small>${escapeHtml(row[2])}</small>
-    </span>
-  `).join("");
-}
-
-function entitlementStages() {
-  const locked = isHistoryLocked();
-  return state.lang === "zh"
-    ? [
-      ["身份", loginLabelText(state.selectedLogin), "前端入口完成", "ready"],
-      ["Checkout", state.selectedRail === "stripe" ? "Stripe Billing" : "人工映射", "不创建真实 Session", "ready"],
-      ["Webhook", "权限同步", "待接服务端", "queued"],
-      ["Portal", "升级/降级/发票", "待接 Customer Portal", "queued"],
-      ["导出", locked ? "品牌版" : "当日开放", locked ? "历史无水印锁定" : "PNG 正常", locked ? "locked" : "ready"],
-    ]
-    : [
-      ["Identity", loginLabelText(state.selectedLogin), "frontend entry ready", "ready"],
-      ["Checkout", state.selectedRail === "stripe" ? "Stripe Billing" : "manual mapping", "no real Session created", "ready"],
-      ["Webhook", "entitlement sync", "server pending", "queued"],
-      ["Portal", "upgrade / invoices", "Customer Portal pending", "queued"],
-      ["Export", locked ? "branded" : "latest open", locked ? "clean history locked" : "PNG works", locked ? "locked" : "ready"],
-    ];
-}
-
-function accountReadinessPanel() {
-  const plan = pricingPlans.find((item) => item.id === state.selectedPlan) || pricingPlans[1];
-  const locale = state.lang === "zh" ? "zh" : "en";
-  const stages = entitlementStages();
-  const ready = stages.filter((row) => row[3] === "ready").length;
-  return `
-    <div class="account-readiness">
-      <div class="readiness-lead">
-        <span>${state.lang === "zh" ? "商业闭环状态" : "Commercial loop status"}</span>
-        <b>${escapeHtml(plan[locale].name)} · ${ready}/${stages.length}</b>
-        <small>${state.lang === "zh" ? "这是一条可上线前端路线；真实鉴权、扣费和 Portal 都必须接服务端。" : "Frontend route only; real auth, billing, and Portal require backend wiring."}</small>
-      </div>
-      <div class="readiness-steps">
-        ${stages.map((row, index) => `
-          <span class="${row[3]}">
-            <i>${fmt0.format(index + 1)}</i>
-            <b>${escapeHtml(row[0])}</b>
-            <strong>${escapeHtml(row[1])}</strong>
-            <small>${escapeHtml(row[2])}</small>
-          </span>
-        `).join("")}
-      </div>
-    </div>
-  `;
-}
-
-function accountPipelineCard() {
-  const selectedPlan = pricingPlans.find((item) => item.id === state.selectedPlan) || pricingPlans[1];
-  const locale = state.lang === "zh" ? "zh" : "en";
-  const rail = state.selectedRail;
-  const planName = selectedPlan[locale].name;
-  const action = billingActionLabel(state.selectedBillingAction);
-  const date = billingDateLabelText(state.selectedBillingDate);
-  const steps = state.lang === "zh"
-    ? [
-      ["身份", `${loginLabelText(state.selectedLogin)} -> KZG account id`],
-      ["价格", `${planName} -> Stripe Price / 手动收款映射`],
-      ["权限", "Webhook -> Pro entitlement -> 前端锁层"],
-      ["自助", "Customer Portal -> 升级、降级、发票、账单日"],
-    ]
-    : [
-      ["Identity", `${loginLabelText(state.selectedLogin)} -> KZG account id`],
-      ["Price", `${planName} -> Stripe Price / manual rail mapping`],
-      ["Entitlement", "Webhook -> Pro entitlement -> frontend lock layer"],
-      ["Self-serve", "Customer Portal -> upgrade, downgrade, invoices, billing date"],
-    ];
-  const copyText = state.lang === "zh"
-    ? `${action} · ${date} · ${rail === "stripe" ? "优先 Stripe Billing；钱包/微信只做入口，不碰真钱。" : "非 Stripe 轨道需要人工确认和账号绑定后再上线。"}`
-    : `${action} · ${date} · ${rail === "stripe" ? "Stripe Billing first; wallet/WeChat stay interface-only." : "Non-Stripe rails need manual confirmation and account mapping before launch."}`;
-  return `
-    <div class="account-pipeline">
-      <div class="pipeline-lead">
-        <span>${state.lang === "zh" ? "接入路线" : "Wiring route"}</span>
-        <b>${escapeHtml(copyText)}</b>
-      </div>
-      <div class="pipeline-steps">
-        ${steps.map((step, index) => `
-          <span>
-            <i>${fmt0.format(index + 1)}</i>
-            <b>${escapeHtml(step[0])}</b>
-            <small>${escapeHtml(step[1])}</small>
-          </span>
-        `).join("")}
-      </div>
-    </div>
-  `;
-}
-
-function checkoutSimulationCard() {
-  const locale = state.lang === "zh" ? "zh" : "en";
-  const selectedPlan = pricingPlans.find((item) => item.id === state.selectedPlan) || pricingPlans[1];
-  const rail = state.selectedRail === "stripe"
-    ? "Stripe Billing"
-    : state.selectedRail === "wallet"
-      ? "Wallet mapping"
-      : "WeChat QR";
-  const rows = state.lang === "zh"
-    ? [
-      ["Checkout mode", state.selectedPlan === "lifetime" ? "payment" : "subscription"],
-      ["Price object", `${selectedPlan[locale].price} ${selectedPlan[locale].cycle}`],
-      ["Portal 权限", "升级 / 降级 / 发票 / 付款方式"],
-      ["Webhook", "checkout.session.completed -> entitlement"],
-    ]
-    : [
-      ["Checkout mode", state.selectedPlan === "lifetime" ? "payment" : "subscription"],
-      ["Price object", `${selectedPlan[locale].price} ${selectedPlan[locale].cycle}`],
-      ["Portal access", "upgrade / downgrade / invoices / payment method"],
-      ["Webhook", "checkout.session.completed -> entitlement"],
-    ];
-  return `
-    <div class="checkout-simulation">
-      <div>
-        <span>${state.lang === "zh" ? "结算预演" : "Checkout preview"}</span>
-        <b>${escapeHtml(selectedPlan[locale].name)} · ${escapeHtml(rail)}</b>
-        <small>${state.lang === "zh" ? "这里只是产品前端，不会创建真实 Session。" : "Interface-only; no real Session is created here."}</small>
-      </div>
-      <div>
-        ${rows.map((row) => `<span><i>${escapeHtml(row[0])}</i><b>${escapeHtml(row[1])}</b></span>`).join("")}
-      </div>
     </div>
   `;
 }
@@ -846,116 +488,31 @@ function checkoutSimulationCard() {
 function entitlementRows() {
   const rows = state.lang === "zh"
     ? [
-      ["当日核心数据", "开放", "开放", "最新交易日完整读盘，作为免费入口。"],
-      ["历史日期回看", "模糊预览", "完整交互", "跨日趋势、轮动象限、动量回看进入 Pro。"],
-      ["预测式结构信号", "摘要", "完整", "趋势窗口、极值、标的节奏带和 hover 细节。"],
-      ["升级/降级", "不可用", "Portal", "Stripe Customer Portal 负责套餐切换和付款方式。"],
-      ["PNG 导出", "KZG 品牌版", "可接无额外水印", "当前仍保留旧 KZG 日报格式。"],
-      ["订阅与提醒", "不可用", "待接", "后续接邮箱、微信或钱包身份提醒。"],
+      ["最新交易日", "完整", "当天读盘、分钟节奏和 PNG 导出保持开放。"],
+      ["历史回看", "模糊", "保留趋势提示，不直接公开完整历史工作台。"],
+      ["高级信号", "预览", "轮动、动量和异常分钟只展示可理解的摘要。"],
+      ["原始数据", "不公开", "页面只允许生成 PNG，不提供数据包和底层文件入口。"],
     ]
     : [
-      ["Latest session", "Open", "Open", "The latest full read stays as the free entry."],
-      ["Historical lookback", "Blur preview", "Full interaction", "Trend, rotation quadrant, and momentum history move to Pro."],
-      ["Predictive structure", "Summary", "Full", "Trend windows, extremes, symbol rhythm, and hover detail."],
-      ["Upgrade / downgrade", "Unavailable", "Portal", "Stripe Customer Portal handles plan and payment-method changes."],
-      ["PNG export", "KZG branded", "Clean path", "Current sheet style remains the original KZG format."],
-      ["Alerts", "Unavailable", "Queued", "Later via email, WeChat, or wallet identity."],
+      ["Latest session", "Full", "Daily read, minute rhythm, and PNG export remain open."],
+      ["History", "Blurred", "Trend hints stay visible without publishing the full historical workspace."],
+      ["Advanced signals", "Preview", "Rotation, momentum, and anomaly minutes show readable summaries only."],
+      ["Raw data", "Private", "The page exports PNG only, without raw file entry points."],
     ];
   return `
-    <div class="entitlement-head-row">
-      <span>${state.lang === "zh" ? "功能" : "Feature"}</span>
-      <span>Free</span>
-      <span>Pro</span>
-      <span>${state.lang === "zh" ? "说明" : "Notes"}</span>
+    <div class="entitlement-head-row compact">
+      <span>${state.lang === "zh" ? "模块" : "Module"}</span>
+      <span>${state.lang === "zh" ? "状态" : "State"}</span>
+      <span>${state.lang === "zh" ? "公开说明" : "Public note"}</span>
     </div>
     ${rows.map((row, index) => `
-      <div class="entitlement-row ${index === 0 ? "open" : index >= 1 && index <= 3 ? "locked" : "queued"}">
+      <div class="entitlement-row compact ${index === 0 ? "open" : index === 3 ? "locked" : "queued"}">
         <b>${escapeHtml(row[0])}</b>
-        <span>${escapeHtml(row[1])}</span>
-        <strong>${escapeHtml(row[2])}</strong>
-        <small>${escapeHtml(row[3])}</small>
+        <strong>${escapeHtml(row[1])}</strong>
+        <small>${escapeHtml(row[2])}</small>
       </div>
     `).join("")}
   `;
-}
-
-function paymentNotice(plan) {
-  const name = plan?.[state.lang === "zh" ? "zh" : "en"]?.name || "Pro";
-  if (state.lang !== "zh") {
-    return `${name}: selected. Next step is ${state.selectedRail === "stripe" ? "Stripe Billing Checkout Session + Customer Portal" : "account-mapped manual payment intake"}. Wallet and WeChat rails need account/payment credentials, so I will ask before touching real money.`;
-  }
-  return `${name}：已选中。下一步是${state.selectedRail === "stripe" ? "接 Stripe Billing Checkout Session + Customer Portal" : "做账号映射后的人工收款入口"}。钱包与微信支付需要账号/收款配置，涉及真钱前我会停下让你确认。`;
-}
-
-function railNotice(rail) {
-  if (state.lang !== "zh") {
-    if (rail === "wallet") return "Wallet rail selected: this needs wallet identity mapping and a payment-confirmation backend before launch.";
-    if (rail === "wechat") return "WeChat QR selected: this can start as manual confirmation, then move to merchant APIs after credentials are ready.";
-    return "Stripe rail selected: recommended path is Billing Checkout Session, webhook entitlement sync, and Customer Portal.";
-  }
-  if (rail === "wallet") return "已选择 Wallet / Crypto：上线前需要钱包身份映射和付款确认后端。";
-  if (rail === "wechat") return "已选择微信支付码：可以先人工确认收款，后续再接商户 API。";
-  return "已选择 Stripe：推荐路线是 Billing Checkout Session、webhook 权限同步和 Customer Portal。";
-}
-
-function loginNotice(method) {
-  if (state.lang !== "zh") {
-    if (method === "wallet") return "Wallet login selected: this is only UI until signature verification and account mapping are added.";
-    if (method === "kzg") return "KZG code selected: suitable for early-access allowlists before automated billing is live.";
-    return "Email login selected: best default for Stripe subscriptions and Customer Portal mapping.";
-  }
-  if (method === "wallet") return "已选择钱包登录：目前只是入口态，后续需要签名验证和账户映射。";
-  if (method === "kzg") return "已选择 KZG 口令：适合内测白名单，自动订阅上线前可以先快跑。";
-  return "已选择邮箱登录：最适合 Stripe 订阅和 Customer Portal 账户映射。";
-}
-
-function loginLabelText(method) {
-  if (method === "wallet") return "Wallet";
-  if (method === "kzg") return state.lang === "zh" ? "KZG 口令" : "KZG code";
-  return state.lang === "zh" ? "邮箱" : "Email";
-}
-
-function billingActionLabel(action) {
-  const labels = state.lang === "zh"
-    ? { upgrade: "升级", downgrade: "降级", "billing-date": "账单日", receipt: "发票", pause: "暂停" }
-    : { upgrade: "Upgrade", downgrade: "Downgrade", "billing-date": "Billing date", receipt: "Invoices", pause: "Pause" };
-  return labels[action] || labels.upgrade;
-}
-
-function billingDateLabelText(value) {
-  const labels = state.lang === "zh"
-    ? { 1: "每月 1 号", 15: "每月 15 号", close: "美股月末" }
-    : { 1: "1st monthly", 15: "15th monthly", close: "US month-end" };
-  return labels[value] || labels[1];
-}
-
-function billingActionNotice(action) {
-  if (state.lang !== "zh") {
-    const notices = {
-      upgrade: "Upgrade selected: create a subscription Checkout Session against a Stripe Price, then sync Pro entitlement by webhook.",
-      downgrade: "Downgrade selected: this belongs in Stripe Customer Portal so proration, renewal, and payment method changes stay managed.",
-      "billing-date": "Billing date selected: show the preference now; real renewal-date changes need Billing schedules or Portal policy.",
-      receipt: "Invoices selected: receipts and failed-payment notices should stay in Stripe Billing, not a manual renewal loop.",
-      pause: "Pause selected: design a self-serve policy first; real account pause needs server-side entitlement rules.",
-    };
-    return notices[action] || notices.upgrade;
-  }
-  const notices = {
-    upgrade: "已选择升级：后续用 Stripe Price 创建订阅 Checkout Session，再用 webhook 同步 Pro 权限。",
-    downgrade: "已选择降级：这类操作应放进 Stripe Customer Portal，避免手写续费和退款逻辑。",
-    "billing-date": "已选择账单日：前端先展示偏好；真实续费日变更需要 Billing schedule 或 Portal 策略。",
-    receipt: "已选择发票：收据、发票、扣款失败提醒应交给 Stripe Billing，不做手写续费循环。",
-    pause: "已选择暂停：先设计自助规则；真实暂停必须有服务端权限降级逻辑。",
-  };
-  return notices[action] || notices.upgrade;
-}
-
-function billingDateNotice(value) {
-  const label = billingDateLabelText(value);
-  if (state.lang !== "zh") {
-    return `${label} selected. This is a UI preference until Stripe Billing schedule / Portal rules are wired.`;
-  }
-  return `已选择 ${label}。这只是前端偏好，真实账单日需要 Stripe Billing schedule / Portal 规则接入。`;
 }
 
 function renderAccessStrip() {
@@ -965,19 +522,15 @@ function renderAccessStrip() {
   const latest = isLatestDay();
   const label = isPro() ? t("proActive") : latest ? t("latestFree") : t("historyLocked");
   const sub = isPro()
-    ? (state.lang === "zh" ? "历史回看、预测式动量、无水印导出已开放。" : "History, predictive momentum, and clean exports are open.")
+    ? (state.lang === "zh" ? "历史回看和深度动量层已开放。" : "History and deep momentum are open.")
     : latest
-      ? (state.lang === "zh" ? "当前交易日完整开放；历史日期会显示 Pro 模糊预览。" : "Latest trading day is open; history shows Pro blurred previews.")
+      ? (state.lang === "zh" ? "当前交易日完整开放；历史日期保留模糊预览。" : "Latest trading day is open; history keeps blurred previews.")
       : t("paywallSub");
   target.innerHTML = `
     <div class="access-copy ${locked ? "locked" : "open"}">
       <span>${escapeHtml(label)}</span>
       <b>${escapeHtml(state.day.tradeDate)}</b>
       <small>${escapeHtml(sub)}</small>
-    </div>
-    <div class="access-actions">
-      <button type="button" data-open-account>${t("upgrade")}</button>
-      <button type="button" data-open-account data-message="${escapeHtml(state.lang === "zh" ? "Pro 导出路线：登录后导出无额外水印版本；免费版保留 KZG 品牌植入。" : "Pro export path: clean export after login; free export keeps KZG branding.")}">${state.lang === "zh" ? "无水印导出" : "Clean export"}</button>
     </div>
   `;
 }
@@ -997,24 +550,22 @@ function renderPremiumPreview() {
   target.innerHTML = `
     <div class="premium-head">
       <div>
-        <h2>${state.lang === "zh" ? "Pro 情报层" : "Pro intelligence layer"}</h2>
-        <p>${state.lang === "zh" ? "今日交易日免费展示核心能力；历史回看进入 Pro 模糊预览。" : "Latest session shows the core layer for free; historical lookback moves into Pro blur."}</p>
+        <h2>${state.lang === "zh" ? "高级情报层" : "Advanced intelligence layer"}</h2>
+        <p>${state.lang === "zh" ? "今日交易日免费展示核心能力；历史回看保留模糊预览。" : "Latest session shows the core layer for free; historical lookback stays blurred."}</p>
       </div>
-      <button type="button" data-open-account>${locked ? t("upgrade") : (state.lang === "zh" ? "查看 Pro" : "View Pro")}</button>
     </div>
     ${dataAuditSeal()}
-    ${proReadinessRibbon(locked)}
     ${premiumUnlockDeck(rows, locked)}
     <div class="premium-grid ${locked ? "is-blurred" : ""}">
       ${premiumCard(state.lang === "zh" ? "轮动象限回看" : "Rotation lookback", lead.symbol || "--", `${attack.length}/${fade.length}`, state.lang === "zh" ? "量价同升 vs 同步降温" : "warming vs cooling")}
       ${premiumCard(state.lang === "zh" ? "异常分钟雷达" : "Anomaly minute radar", maxBucket.time || "--", wan(maxBucket.total || 0), state.lang === "zh" ? "峰值桶 + 历史偏离" : "peak bucket + history drift")}
       ${premiumCard(state.lang === "zh" ? "权利金追踪" : "Premium tracking", premiumLead.symbol || "--", moneyCompact(premiumLead.premiumNotional), state.lang === "zh" ? "资金锚点与变化率" : "premium anchor and velocity")}
-      ${premiumCard(state.lang === "zh" ? "订阅组合监控" : "Watchlist alerts", "SPY / NVDA", state.lang === "zh" ? "待接" : "queued", state.lang === "zh" ? "邮件/微信/钱包身份后续接入" : "email/WeChat/wallet identity later")}
+      ${premiumCard(state.lang === "zh" ? "观察列表异动" : "Watchlist movement", "SPY / NVDA", state.lang === "zh" ? "预览" : "preview", state.lang === "zh" ? "核心标的异动与轮动提示" : "core symbol movement and rotation hints")}
     </div>
     ${premiumLookbackPanel(locked)}
     ${premiumSignalStack(rows, locked)}
     ${premiumQuadrantPreview(rows, locked)}
-    ${locked ? `<button type="button" class="premium-lock" data-open-account><b>${t("paywallTitle")}</b><span>${t("paywallSub")}</span></button>` : ""}
+    ${locked ? `<div class="premium-lock" aria-hidden="true"><b>${t("paywallTitle")}</b><span>${t("paywallSub")}</span></div>` : ""}
   `;
 }
 
@@ -1023,16 +574,16 @@ function dataAuditSeal() {
   const bytesGb = dataAudit.bytes / 1e9;
   const rows = state.lang === "zh"
     ? [
-      ["iCloud", `${fmt0.format(dataAudit.iCloudFiles)} 文件`, "双云校验"],
-      ["Google Drive", `${fmt0.format(dataAudit.googleDriveFiles)} 文件`, "大小一致"],
-      ["可下载窗口", `${dataAudit.complete}/${dataAudit.fileCount}`, `failed=${dataAudit.failed}`],
-      ["覆盖范围", `${dataAudit.coverageStart} → ${dataAudit.coverageEnd}`, "Options Starter 2Y"],
+      ["文件窗口", `${fmt0.format(dataAudit.fileCount)} 文件`, "已校验"],
+      ["覆盖范围", `${dataAudit.coverageStart} → ${dataAudit.coverageEnd}`, "交易日数据"],
+      ["完整度", `${dataAudit.complete}/${dataAudit.fileCount}`, `failed=${dataAudit.failed}`],
+      ["版本线", `${dataAudit.releaseFrom} → ${dataAudit.releaseTo}`, `${dataAudit.extraVersions} 次细化`],
     ]
     : [
-      ["iCloud", `${fmt0.format(dataAudit.iCloudFiles)} files`, "dual-cloud checked"],
-      ["Google Drive", `${fmt0.format(dataAudit.googleDriveFiles)} files`, "size matched"],
-      ["Download window", `${dataAudit.complete}/${dataAudit.fileCount}`, `failed=${dataAudit.failed}`],
-      ["Coverage", `${dataAudit.coverageStart} → ${dataAudit.coverageEnd}`, "Options Starter 2Y"],
+      ["File window", `${fmt0.format(dataAudit.fileCount)} files`, "verified"],
+      ["Coverage", `${dataAudit.coverageStart} → ${dataAudit.coverageEnd}`, "trading data"],
+      ["Completeness", `${dataAudit.complete}/${dataAudit.fileCount}`, `failed=${dataAudit.failed}`],
+      ["Version line", `${dataAudit.releaseFrom} → ${dataAudit.releaseTo}`, `${dataAudit.extraVersions} refinements`],
     ];
   return `
     <div class="data-audit-seal">
@@ -1040,8 +591,8 @@ function dataAuditSeal() {
         <span>${state.lang === "zh" ? "数据完整性封印" : "Data integrity seal"}</span>
         <strong>${escapeHtml(dataAudit.dataset)}</strong>
         <p>${state.lang === "zh"
-          ? `${dataAudit.provider} 已按 Massive 页面重新核对。${fmt0.format(dataAudit.fileCount)} 个文件，${fmt2.format(bytesGb)}GB，当前套餐可下载窗口 ${fmt1.format(completePct)}% complete。`
-          : `${dataAudit.provider} rechecked against Massive. ${fmt0.format(dataAudit.fileCount)} files, ${fmt2.format(bytesGb)}GB, current plan window ${fmt1.format(completePct)}% complete.`}</p>
+          ? `数据窗口已重新核对。${fmt0.format(dataAudit.fileCount)} 个文件，${fmt2.format(bytesGb)}GB，完整度 ${fmt1.format(completePct)}%。`
+          : `The data window has been verified. ${fmt0.format(dataAudit.fileCount)} files, ${fmt2.format(bytesGb)}GB, ${fmt1.format(completePct)}% complete.`}</p>
       </div>
       <div class="audit-grid">
         ${rows.map((row) => `
@@ -1055,32 +606,8 @@ function dataAuditSeal() {
       <div class="audit-note">
         <b>${escapeHtml(dataAudit.releaseFrom)} → ${escapeHtml(dataAudit.releaseTo)}</b>
         <span>${state.lang === "zh"
-          ? `全新版本命名 · extra ${dataAudit.extraVersions} versions · 旧段 2023-05 到 2024-04 显示 Upgrade，S3 403，需更长历史权限。`
-          : `New version line · extra ${dataAudit.extraVersions} versions · older 2023-05 to 2024-04 shows Upgrade / S3 403 and needs deeper history access.`}</span>
-        <small>${escapeHtml(dataAudit.report)}</small>
-      </div>
-    </div>
-  `;
-}
-
-function proReadinessRibbon(locked) {
-  const stages = entitlementStages();
-  return `
-    <div class="pro-readiness-ribbon ${locked ? "is-locked" : "is-open"}">
-      <div>
-        <span>${state.lang === "zh" ? "权限接入状态" : "Entitlement wiring"}</span>
-        <b>${locked ? t("historyLocked") : t("latestFree")}</b>
-        <small>${state.lang === "zh"
-          ? "免费版看最新日与模糊历史；Pro 接入后开放历史、预测归因和无额外水印导出。"
-          : "Free sees latest day plus blurred history; Pro unlocks history, attribution, and clean export."}</small>
-      </div>
-      <div>
-        ${stages.map((row) => `
-          <span class="${row[3]}">
-            <i>${escapeHtml(row[0])}</i>
-            <b>${escapeHtml(row[1])}</b>
-          </span>
-        `).join("")}
+          ? `全新版本命名 · extra ${dataAudit.extraVersions} versions · 公开页只展示可用数据窗口。`
+          : `New version line · extra ${dataAudit.extraVersions} versions · public page shows the usable data window only.`}</span>
       </div>
     </div>
   `;
@@ -1094,12 +621,12 @@ function premiumUnlockDeck(rows, locked) {
   const maxVol = Math.max(...bars.map((row) => Number(row.totalVol) || 0), 1);
   const symbolCount = Object.keys(state.analytics?.symbols || {}).length || rows.length || 0;
   const archiveCopy = state.lang === "zh"
-    ? `${fmt0.format(daily.length)} 个交易日 · ${fmt0.format(symbolCount)} 个标的历史 · 最新日免费，历史深挖进入 Pro。`
-    : `${fmt0.format(daily.length)} sessions · ${fmt0.format(symbolCount)} symbols · latest day free, deep history is Pro.`;
+    ? `${fmt0.format(daily.length)} 个交易日 · ${fmt0.format(symbolCount)} 个标的历史 · 最新日开放，历史深挖保留预览。`
+    : `${fmt0.format(daily.length)} sessions · ${fmt0.format(symbolCount)} symbols · latest day open, deep history stays previewed.`;
   return `
     <div class="premium-unlock-deck ${locked ? "is-locked" : ""}">
       <div class="unlock-lead">
-        <span>${state.lang === "zh" ? "Pro 解锁地图" : "Pro unlock map"}</span>
+        <span>${state.lang === "zh" ? "高级功能地图" : "Advanced feature map"}</span>
         <strong>${escapeHtml(active.title)}</strong>
         <p>${escapeHtml(active.copy)}</p>
         <small>${escapeHtml(archiveCopy)}</small>
@@ -1165,18 +692,18 @@ function unlockScopes(rows) {
       {
         id: "export",
         kicker: "PNG",
-        title: "Clean export lane",
-        value: "Pro",
-        copy: "Free keeps subtle KZG branding. Pro can later unlock cleaner client-facing exports without breaking the old sheet.",
-        rows: [["Free", "KZG branded", "flat"], ["Pro", "clean path", "hot"], ["Format", "old sheet preserved", "flat"]],
+        title: "Export boundary",
+        value: "PNG",
+        copy: "The public page keeps the KZG-branded sheet. Cleaner export modes stay in internal planning.",
+        rows: [["Public", "KZG branded", "flat"], ["Future", "internal plan", "hot"], ["Format", "old sheet preserved", "flat"]],
       },
       {
         id: "alerts",
         kicker: "Watch",
-        title: "Watchlist alerts",
+        title: "Watchlist movement",
         value: premiumLead.symbol || "--",
-        copy: "Future email, wallet, or WeChat identity can bind alert rules to symbols and rotation events.",
-        rows: [["Premium lead", premiumLead.symbol || "--", "hot"], ["Rail", "email / wallet / WeChat", "flat"], ["Status", "queued", "cool"]],
+        copy: "Future alert rules can bind symbols, rotation events, and anomaly minutes without exposing account mechanics.",
+        rows: [["Premium lead", premiumLead.symbol || "--", "hot"], ["Signal", "movement rules", "flat"], ["Status", "research", "cool"]],
       },
     ];
   }
@@ -1186,7 +713,7 @@ function unlockScopes(rows) {
       kicker: "档案",
       title: "历史驾驶舱",
       value: `${fmt0.format(daily.length)}日`,
-      copy: "完整历史日期、对比窗口、前高前低和锁定日期导航，都会成为付费工作台。",
+      copy: "完整历史日期、对比窗口、前高前低和锁定日期导航，先保留为内部产品方案。",
       rows: [["历史日期", `${fmt0.format(daily.length)} 个交易日`, "hot"], ["当前高点", shortDate(historyHigh.date || state.day.tradeDate), "flat"], ["锁定日期", "当前只给模糊预览", "cool"]],
     },
     {
@@ -1200,18 +727,18 @@ function unlockScopes(rows) {
     {
       id: "export",
       kicker: "导出",
-      title: "无水印导出路线",
-      value: "Pro",
-      copy: "免费版保留细微 KZG 品牌植入；Pro 后续可开更干净的客户展示图，同时不破坏旧日报表格格式。",
-      rows: [["免费版", "KZG 品牌版", "flat"], ["Pro", "可接无额外水印", "hot"], ["格式", "旧日报样式保留", "flat"]],
+      title: "导出边界",
+      value: "PNG",
+      copy: "公开页保留 KZG 品牌日报；更干净的客户展示图先进入内部方案，不放公开页面。",
+      rows: [["公开页", "KZG 品牌版", "flat"], ["未来", "内部方案", "hot"], ["格式", "旧日报样式保留", "flat"]],
     },
     {
       id: "alerts",
       kicker: "提醒",
-      title: "订阅组合提醒",
+      title: "观察列表异动",
       value: premiumLead.symbol || "--",
-      copy: "后续邮箱、钱包或微信身份可以绑定标的、轮动象限和异常分钟提醒。",
-      rows: [["权利金锚", premiumLead.symbol || "--", "hot"], ["身份轨道", "邮箱 / 钱包 / 微信", "flat"], ["状态", "待接入", "cool"]],
+      copy: "后续可把标的、轮动象限和异常分钟做成提醒规则，但账户机制不放公开页。",
+      rows: [["权利金锚", premiumLead.symbol || "--", "hot"], ["信号", "异动规则", "flat"], ["状态", "研究中", "cool"]],
     },
   ];
 }
@@ -1245,7 +772,7 @@ function premiumLookbackPanel(locked) {
     <div class="premium-lookback ${locked ? "is-blurred" : ""}">
       <div class="lookback-head ${tone}">
         <div>
-          <span>${state.lang === "zh" ? "Pro 回看" : "Pro lookback"}</span>
+          <span>${state.lang === "zh" ? "深度回看" : "Deep lookback"}</span>
           <strong>${title}</strong>
           <p>${summary}</p>
         </div>
@@ -1313,8 +840,8 @@ function premiumSignalStack(rows, locked) {
       ["Rotation breadth", `${fmt1.format(breadth)}%`, `${attack.length} warming / ${fade.length} cooling`, breadth >= 34 ? "hot" : breadth <= 18 ? "cool" : "flat"],
     ];
   const verdict = state.lang === "zh"
-    ? `${lead.symbol || "--"} 主导，综合分 ${score >= 0 ? "+" : ""}${fmt1.format(score)}。历史日期的完整解释、标的归因和导出无水印进入 Pro。`
-    : `${lead.symbol || "--"} leads, composite ${score >= 0 ? "+" : ""}${fmt1.format(score)}. Historical explanation, attribution, and clean export are Pro.`;
+    ? `${lead.symbol || "--"} 主导，综合分 ${score >= 0 ? "+" : ""}${fmt1.format(score)}。历史日期的完整解释和标的归因暂不公开。`
+    : `${lead.symbol || "--"} leads, composite ${score >= 0 ? "+" : ""}${fmt1.format(score)}. Full historical explanation and attribution are not public yet.`;
   return `
     <div class="premium-signal-stack ${tone} ${locked ? "is-blurred" : ""}">
       <div class="signal-stack-lead">
@@ -1395,7 +922,7 @@ function premiumQuadrantPreview(rows, locked) {
       <div class="premium-quadrant-copy">
         <span>${locked ? t("historyLocked") : t("latestFree")}</span>
         <strong>${state.lang === "zh" ? "轮动象限图" : "Rotation quadrant"}</strong>
-        <p>${state.lang === "zh" ? `当日核心信号开放：${lead.symbol || "--"} 处在主导象限。历史日期点击升级后回看。` : `Latest core signal is open: ${lead.symbol || "--"} leads the dominant quadrant. Historical dates unlock after upgrade.`}</p>
+        <p>${state.lang === "zh" ? `当日核心信号开放：${lead.symbol || "--"} 处在主导象限。历史日期保留模糊预览。` : `Latest core signal is open: ${lead.symbol || "--"} leads the dominant quadrant. Historical dates stay blurred.`}</p>
         <div class="premium-quadrant-meta">
           <span><i>${state.lang === "zh" ? "主导" : "Leader"}</i><b>${escapeHtml(lead.symbol || "--")}</b></span>
           <span><i>${state.lang === "zh" ? "扩散" : "Breadth"}</i><b>${fmt1.format(breadth)}%</b></span>
@@ -1464,7 +991,6 @@ function applyAccessState() {
       overlay = document.createElement("button");
       overlay.type = "button";
       overlay.className = "pro-lock-overlay";
-      overlay.setAttribute("data-open-account", "");
       panel.appendChild(overlay);
     }
     if (overlay) {
