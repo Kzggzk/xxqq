@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.37";
+const UI_VERSION = "1.38";
 
 const dataAudit = {
   dataset: "23_DATA_Massive_期权分钟_Minute",
@@ -90,8 +90,8 @@ const copy = {
     preview: "功能预览",
     accountTitle: "KZG Option House 高级功能",
     accountSub: "公开页面只展示数据产品能力；内部产品方案不在这里展示。",
-    paywallTitle: "深度回看暂不公开",
-    paywallSub: "今天的读盘免费开放；历史日期、深度回看和高级导出暂不公开。",
+    paywallTitle: "历史深度预览",
+    paywallSub: "今日读盘完整开放；历史回看以模糊结构展示，保留方向、节奏和导出边界。",
   },
   en: {
     today: "Today",
@@ -146,8 +146,8 @@ const copy = {
     preview: "Feature preview",
     accountTitle: "KZG Option House Advanced",
     accountSub: "The public page shows product capability only. Internal product planning is not published here.",
-    paywallTitle: "Deep history is not public",
-    paywallSub: "Today stays free; historical depth and advanced exports are not public yet.",
+    paywallTitle: "Historical depth preview",
+    paywallSub: "Latest session is fully open; history appears as a blurred structure with direction, rhythm, and export boundary.",
   },
 };
 
@@ -567,7 +567,26 @@ function renderPremiumPreview() {
     ${premiumSignalStack(rows, locked)}
     ${liveFeedSilhouette(rows, locked)}
     ${premiumQuadrantPreview(rows, locked)}
-    ${locked ? `<div class="premium-lock" aria-hidden="true"><b>${t("paywallTitle")}</b><span>${t("paywallSub")}</span></div>` : ""}
+    ${locked ? `<div class="premium-lock" aria-hidden="true">${lockedPreviewOverlay(t("paywallTitle"), "premium")}</div>` : ""}
+  `;
+}
+
+function lockedPreviewOverlay(label, variant = "panel") {
+  const chips = state.lang === "zh"
+    ? ["方向轮廓", "历史对比", "导出边界"]
+    : ["Signal shape", "History compare", "Export boundary"];
+  const foot = variant === "quadrant"
+    ? (state.lang === "zh" ? "点位被压成轮廓，象限关系仍可感知。" : "Points are softened into a silhouette while quadrant relationships remain readable.")
+    : variant === "premium"
+      ? (state.lang === "zh" ? "保留产品力量感，不暴露内部实现。" : "Keeps product power visible without exposing internal mechanics.")
+      : (state.lang === "zh" ? "当日开放，历史只展示结构预览。" : "Latest day is open; history shows structure preview only.");
+  return `
+    <b>${escapeHtml(label)}</b>
+    <span>${t("paywallSub")}</span>
+    <div class="lock-preview-chips">
+      ${chips.map((chip) => `<i>${escapeHtml(chip)}</i>`).join("")}
+    </div>
+    <small>${escapeHtml(foot)}</small>
   `;
 }
 
@@ -1115,7 +1134,7 @@ function premiumQuadrantPreview(rows, locked) {
           const title = `${row.symbol} · ${quadrantName(row)} · Vol ${row.delta >= 0 ? "+" : ""}${fmt1.format(row.delta)}% · Premium ${row.premiumDelta >= 0 ? "+" : ""}${fmt1.format(row.premiumDelta)}%`;
           return `<button type="button" class="${tone}" data-symbol="${escapeHtml(row.symbol)}" title="${escapeHtml(title)}" style="--x:${x.toFixed(1)}%;--y:${y.toFixed(1)}%;--s:${size.toFixed(0)}px">${escapeHtml(row.symbol)}</button>`;
         }).join("")}
-        ${locked ? `<div class="premium-quadrant-veil"><b>${t("historyLocked")}</b><span>${t("paywallSub")}</span></div>` : ""}
+        ${locked ? `<div class="premium-quadrant-veil">${lockedPreviewOverlay(t("historyLocked"), "quadrant")}</div>` : ""}
       </div>
       <div class="premium-quadrant-stats">
         ${statRows.map((row) => `
@@ -1193,7 +1212,7 @@ function applyAccessState() {
     }
     if (overlay) {
       overlay.hidden = !locked;
-      overlay.innerHTML = `<b>${escapeHtml(label)}</b><span>${t("paywallSub")}</span>`;
+      overlay.innerHTML = lockedPreviewOverlay(label);
     }
   }
 }

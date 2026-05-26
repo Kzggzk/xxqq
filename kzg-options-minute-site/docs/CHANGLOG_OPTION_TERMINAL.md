@@ -29,7 +29,7 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
 - 最近验证唯一部署: `https://6a156cbee55c2318be31e1b4--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.36`
-- 最近本地验证 UI 版本: `1.37`
+- 最近本地验证 UI 版本: `1.38`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；当前本机目录没有找到 `2023-*.csv.gz`
@@ -46,7 +46,7 @@ English:
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
 - Latest verified unique deploy: `https://6a156cbee55c2318be31e1b4--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.36`
-- Latest locally verified UI version: `1.37`
+- Latest locally verified UI version: `1.38`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; no local `2023-*.csv.gz` files were found in the verified folder
@@ -534,3 +534,33 @@ Public boundary: removed the public English wording `billing mechanics`. Risk-to
 Verification: `node --check public/app.js` passed; build regenerated a `505`-day payload, latest trading day `2026-05-22`, pack asset `kzg-frame-4d22fd74cc0b.js`; in-app Browser DOM QA confirmed v1.37 rendered, no horizontal overflow, no console errors, and no internal commercial strings; Playwright desktop `1440x1100` saw advanced rail height `122px`, no horizontal overflow, and `0` console errors; mobile `390x844` had no horizontal overflow and `0` console errors; PNG export `/tmp/kzg-option-house-v137-export.png` was about `1.48MB`.
 
 Deploy cadence: this was not a public-risk fix, so it was not deployed to production. Production remains v1.36. v1.37 is accumulated as a locally verified GitHub/Apple Notes breadcrumb. Next v1.38 should continue the lower advanced area, historical blur state, and analysis-panel unity. iOS is not synced in this round; the next default iOS checkpoint remains Web v1.40.
+
+## 21. Heartbeat v1.38 compact historical blur preview / 心跳 v1.38 历史模糊态浮层
+
+中文:
+
+北京时间 2026-05-26 18:28 心跳进入 Web v1.38。触发背景是继续执行 dense paid-product/UI goal，优先处理 Fangbao 对公开页面的两个并行要求：第一，不能把 payment、authorization、domain、API key、Massive plan、pricing、registration 等内部商业路线放回公开网站；第二，历史日期和高级能力的 blur 不能像普通遮罩，必须让用户感觉背后有真实结构、有回看价值、有产品力量。
+
+本轮只改公开 UI 和日志，改动文件是 `/Users/fangbao/kzg-options-minute-site/public/app.js`、`/Users/fangbao/kzg-options-minute-site/public/styles.css`、`/Users/fangbao/kzg-options-minute-site/docs/CHANGELOG.md`、`/Users/fangbao/kzg-options-minute-site/docs/CHANGLOG_OPTION_TERMINAL.md`、`/Users/fangbao/kzg-options-minute-site/docs/HANDOFF_FOR_OTHER_CODEX.md`。没有触碰 KZG OS 保护路径，没有做 Stripe、Supabase、域名、Massive 升级、App Store、TestFlight 或任何花钱动作。
+
+产品改动：`UI_VERSION` 从 `1.37` 提到 `1.38`。新增 `lockedPreviewOverlay(label, variant)`，把历史模糊态统一成一个可复用的产品预览浮层。这个浮层有三层信息：标题，例如“跨日趋势回看”或“历史深度预览”；说明，例如“今日读盘完整开放；历史回看以模糊结构展示，保留方向、节奏和导出边界”；三个短标签“方向轮廓 / 历史对比 / 导出边界”。这让用户知道历史页后面不是空的，而是有方向、结构、导出边界和回看能力。
+
+视觉纠偏：v1.38 初稿把 `.pro-lock-overlay` 铺满整个趋势面板，截图里重新出现一块大白矩形，这违背 Fangbao 对留白和 spacing/calligraphy 的要求。随后立刻改成居中的 `382px` 小浮层，背景图表继续以 blur 形式露出，浮层只承担解释和边界提示。现在历史日期的趋势图、结构情报、温度带、轮动扩散、标的动量都保持模糊数据纹理，而不是被一块白板盖住。
+
+验证结果：`node --check public/app.js` 通过；build 重新生成 `505` 天 payload，最新交易日 `2026-05-22`，pack asset `kzg-frame-257c256d3f5e.js`。内置 Browser 插件这轮返回底层浏览器对象，缺少 tab 控制能力，所以用 Playwright fallback 做完整 QA。桌面 `1440x1100` 最新日显示 `UI_VERSION 1.38`、`historyLocked=false`、横向溢出 `0`、console error `0`。历史日期 timeline index `420` 对应 `2026-01-22`，触发 `historyLocked=true`、5 个 `.pro-lock-overlay`、1 个 `.premium-lock`、1 个 `.premium-quadrant-veil`，标签包含“方向轮廓 / 历史对比 / 导出边界”，横向溢出 `0`。手机 `390x844` 显示 `UI_VERSION 1.38`、横向溢出 `0`、console error `0`。PNG 导出 `/tmp/kzg-option-house-v138-export-final.png` 成功，大小 `1,482,138` bytes。
+
+部署节奏：本轮不部署生产，因为它不是公开风险修复，而是视觉体验迭代。生产仍为 v1.36。v1.38 已作为 GitHub/Apple Notes 留痕版本累计，等待 3-5 个扎实版本后统一 deploy。下一步 v1.39 应继续压缩移动端 topbar 和按钮区高度，同时检查高级区下方 analysis panels 的节奏，避免任何新的大白块。
+
+English:
+
+The 2026-05-26 18:28 Asia/Shanghai heartbeat entered Web v1.38. The trigger was the continuing dense paid-product/UI goal, focused on two public-page constraints from Fangbao: first, payment, authorization, domain, API key, Massive plan, pricing, registration, and other internal commercial routes must stay off the public website; second, historical and advanced blur states must not feel like plain masks. They need to show that real structure, lookback value, and product power exist behind the blur.
+
+This round changes only public UI and logs. Changed files are `/Users/fangbao/kzg-options-minute-site/public/app.js`, `/Users/fangbao/kzg-options-minute-site/public/styles.css`, `/Users/fangbao/kzg-options-minute-site/docs/CHANGELOG.md`, `/Users/fangbao/kzg-options-minute-site/docs/CHANGLOG_OPTION_TERMINAL.md`, and `/Users/fangbao/kzg-options-minute-site/docs/HANDOFF_FOR_OTHER_CODEX.md`. Protected KZG OS paths were not touched. No Stripe, Supabase, domain, Massive upgrade, App Store, TestFlight, or spending action was performed.
+
+Product change: `UI_VERSION` moved from `1.37` to `1.38`. Added `lockedPreviewOverlay(label, variant)`, a reusable product-preview overlay for locked historical states. The overlay has three information layers: a title such as `Cross-day trend` or `Historical depth preview`; explanatory copy saying the latest session is fully open while history appears as a blurred structure with direction, rhythm, and export boundary; and three short chips: `Signal shape / History compare / Export boundary`. This lets users understand that the history page is not empty; it contains direction, structure, export boundaries, and lookback capability.
+
+Visual correction: The first v1.38 draft made `.pro-lock-overlay` cover the whole trend panel, which recreated a large white rectangle in screenshots and violated Fangbao's spacing/calligraphy direction. It was immediately corrected to a centered `382px` floating panel. The underlying charts still show through as blurred data texture, while the floating panel only explains the boundary. Historical trend, structure, regime, rotation, and symbol-momentum panels now preserve the feeling of blurred data rather than being covered by a blank board.
+
+Verification: `node --check public/app.js` passed; build regenerated a `505`-day payload, latest trading day `2026-05-22`, pack asset `kzg-frame-257c256d3f5e.js`. The in-app Browser plugin returned a low-level browser object without tab controls in this round, so Playwright fallback was used for complete QA. Desktop `1440x1100` latest day shows `UI_VERSION 1.38`, `historyLocked=false`, horizontal overflow `0`, and console errors `0`. Historical timeline index `420`, date `2026-01-22`, triggers `historyLocked=true`, 5 `.pro-lock-overlay` nodes, 1 `.premium-lock`, 1 `.premium-quadrant-veil`, chips `Signal shape / History compare / Export boundary`, and horizontal overflow `0`. Mobile `390x844` shows `UI_VERSION 1.38`, horizontal overflow `0`, and console errors `0`. PNG export `/tmp/kzg-option-house-v138-export-final.png` succeeded at `1,482,138` bytes.
+
+Deploy cadence: this round is not deployed to production because it is a visual/experience iteration, not a public-risk fix. Production remains v1.36. v1.38 is accumulated as a GitHub/Apple Notes breadcrumb until the next 3-5 solid-version deploy checkpoint. Next v1.39 should compress the mobile topbar/button height and inspect lower advanced analysis-panel rhythm to avoid any new large blank areas.
