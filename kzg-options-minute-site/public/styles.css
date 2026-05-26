@@ -8333,6 +8333,200 @@ body[data-theme="dark"] .heat-lane-track {
   white-space: nowrap;
 }
 
+.premium-quadrant {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.34fr) minmax(0, 1fr) minmax(170px, 0.28fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.premium-quadrant-copy,
+.premium-quadrant-map,
+.premium-quadrant-stats span,
+.account-status-grid span {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.premium-quadrant-copy {
+  display: grid;
+  align-content: center;
+  gap: 8px;
+  padding: 16px;
+}
+
+.premium-quadrant-copy span,
+.premium-quadrant-copy p,
+.premium-quadrant-stats i,
+.premium-quadrant-stats small,
+.account-status-grid i,
+.account-status-grid small,
+.billing-row i {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 760;
+}
+
+.premium-quadrant-copy strong {
+  color: var(--ink);
+  font-size: 22px;
+  line-height: 1.05;
+}
+
+.premium-quadrant-copy p {
+  line-height: 1.45;
+}
+
+.premium-quadrant-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+  margin-top: 4px;
+}
+
+.premium-quadrant-meta span {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid var(--line);
+  background: rgba(251, 250, 246, 0.76);
+}
+
+.premium-quadrant-meta i {
+  color: var(--muted);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 760;
+}
+
+.premium-quadrant-meta b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.premium-quadrant-map {
+  position: relative;
+  min-height: 286px;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(47, 97, 144, 0.07), transparent 48%, rgba(196, 83, 53, 0.07)),
+    linear-gradient(180deg, rgba(196, 83, 53, 0.08), transparent 50%, rgba(47, 97, 144, 0.08)),
+    rgba(251, 250, 246, 0.72);
+}
+
+.premium-quadrant-map .axis-x,
+.premium-quadrant-map .axis-y {
+  position: absolute;
+  background: rgba(17, 17, 17, 0.24);
+  pointer-events: none;
+}
+
+.premium-quadrant-map .axis-x {
+  left: 0;
+  right: 0;
+  top: var(--y0);
+  height: 1px;
+}
+
+.premium-quadrant-map .axis-y {
+  top: 0;
+  bottom: 0;
+  left: var(--x0);
+  width: 1px;
+}
+
+.premium-quadrant-map .q {
+  position: absolute;
+  z-index: 1;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 840;
+  text-transform: uppercase;
+}
+
+.premium-quadrant-map .q1 {
+  top: 10px;
+  right: 12px;
+}
+
+.premium-quadrant-map .q2 {
+  top: 10px;
+  left: 12px;
+}
+
+.premium-quadrant-map .q3 {
+  left: 12px;
+  bottom: 10px;
+}
+
+.premium-quadrant-map .q4 {
+  right: 12px;
+  bottom: 10px;
+}
+
+.premium-quadrant-map button {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  z-index: 2;
+  width: var(--s);
+  height: var(--s);
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(17, 17, 17, 0.26);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--ink);
+  font-size: clamp(8px, calc(var(--s) * 0.24), 12px);
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.premium-quadrant-map button.hot {
+  border-color: rgba(196, 83, 53, 0.5);
+  background: rgba(196, 83, 53, 0.12);
+}
+
+.premium-quadrant-map button.cool {
+  border-color: rgba(47, 97, 144, 0.5);
+  background: rgba(47, 97, 144, 0.12);
+}
+
+.premium-quadrant-stats {
+  display: grid;
+  gap: 8px;
+}
+
+.premium-quadrant-stats span {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+  padding: 11px;
+}
+
+.premium-quadrant-stats b {
+  color: var(--ink);
+  font-size: 20px;
+}
+
+.premium-quadrant-stats .hot {
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
+.premium-quadrant-stats .cool {
+  box-shadow: inset 3px 0 0 #2f6190;
+}
+
+.premium-quadrant.is-blurred .premium-quadrant-map,
+.premium-quadrant.is-blurred .premium-quadrant-stats {
+  filter: blur(4.8px);
+  opacity: 0.72;
+  user-select: none;
+}
+
 .premium-grid.is-blurred .premium-card {
   filter: blur(3.6px);
   opacity: 0.78;
@@ -8453,6 +8647,28 @@ body[data-theme="dark"] .heat-lane-track {
   line-height: 1.5;
 }
 
+.account-status-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  padding: 14px 32px 0;
+}
+
+.account-status-grid span {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  padding: 12px;
+}
+
+.account-status-grid b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .account-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
@@ -8489,6 +8705,11 @@ body[data-theme="dark"] .heat-lane-track {
 .price-card.featured {
   border-color: var(--ink);
   box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.price-card.active {
+  background: rgba(234, 217, 174, 0.28);
+  box-shadow: inset 0 0 0 1px rgba(154, 106, 18, 0.42);
 }
 
 .price-card span,
@@ -8537,6 +8758,17 @@ body[data-theme="dark"] .heat-lane-track {
   background: rgba(255, 255, 255, 0.62);
 }
 
+.billing-row {
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.billing-row.active {
+  border-color: rgba(154, 106, 18, 0.54);
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
 .billing-row b,
 .domain-row b {
   color: var(--ink);
@@ -8567,7 +8799,12 @@ body[data-theme="dark"] .button.pro-button,
 body[data-theme="dark"] .access-copy,
 body[data-theme="dark"] .premium-preview,
 body[data-theme="dark"] .premium-card,
+body[data-theme="dark"] .premium-quadrant-copy,
+body[data-theme="dark"] .premium-quadrant-map,
+body[data-theme="dark"] .premium-quadrant-stats span,
+body[data-theme="dark"] .premium-quadrant-meta span,
 body[data-theme="dark"] .account-sheet,
+body[data-theme="dark"] .account-status-grid span,
 body[data-theme="dark"] .billing-row,
 body[data-theme="dark"] .domain-row,
 body[data-theme="dark"] .price-card,
@@ -8588,6 +8825,18 @@ body[data-theme="dark"] .account-sheet {
   }
 
   .premium-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .premium-quadrant {
+    grid-template-columns: 1fr;
+  }
+
+  .premium-quadrant-map {
+    min-height: 320px;
+  }
+
+  .account-status-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -8621,9 +8870,14 @@ body[data-theme="dark"] .account-sheet {
   }
 
   .account-hero,
+  .account-status-grid,
   .account-grid {
     padding-right: 18px;
     padding-left: 18px;
+  }
+
+  .account-status-grid {
+    grid-template-columns: 1fr;
   }
 
   .account-hero h2 {

@@ -10,12 +10,14 @@ const state = {
   trendWindow: "90",
   focusSymbol: null,
   plan: "free",
+  selectedPlan: "pro",
+  selectedRail: "stripe",
   checkoutMessage: "",
   lang: localStorage.getItem("kzg-option-house-lang") || "zh",
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "v60";
+const UI_VERSION = "v61";
 
 const $ = (id) => document.getElementById(id);
 const fmt0 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
@@ -369,7 +371,16 @@ async function loadIndex() {
     if (checkoutTarget) {
       event.preventDefault();
       const plan = pricingPlans.find((item) => item.id === checkoutTarget.dataset.checkoutPlan);
+      state.selectedPlan = plan?.id || state.selectedPlan;
       state.checkoutMessage = paymentNotice(plan);
+      renderAccountModal();
+      return;
+    }
+    const railTarget = event.target.closest("[data-checkout-rail]");
+    if (railTarget) {
+      event.preventDefault();
+      state.selectedRail = railTarget.dataset.checkoutRail || state.selectedRail;
+      state.checkoutMessage = railNotice(state.selectedRail);
       renderAccountModal();
     }
   });
@@ -451,14 +462,14 @@ function renderAccountModal() {
   const locale = state.lang === "zh" ? "zh" : "en";
   const paymentRails = state.lang === "zh"
     ? [
-      ["Stripe Checkout", "订阅与信用卡，建议用 Billing + Checkout + Customer Portal。"],
-      ["Wallet / Crypto", "钱包登录与链上收款作为第二支付轨道，先做账户映射。"],
-      ["微信支付码", "先用人工确认或二维码收款，后续再接商户 API。"],
+      ["stripe", "Stripe Checkout", "订阅与信用卡，建议用 Billing + Checkout + Customer Portal。", "首选"],
+      ["wallet", "Wallet / Crypto", "钱包登录与链上收款作为第二支付轨道，先做账户映射。", "后接"],
+      ["wechat", "微信支付码", "先用人工确认或二维码收款，后续再接商户 API。", "人工确认"],
     ]
     : [
-      ["Stripe Checkout", "Subscriptions and cards via Billing + Checkout + Customer Portal."],
-      ["Wallet / Crypto", "Wallet login and crypto payments as a second rail with account mapping."],
-      ["WeChat QR", "Start with manual QR confirmation, then wire merchant APIs later."],
+      ["stripe", "Stripe Checkout", "Subscriptions and cards via Billing + Checkout + Customer Portal.", "primary"],
+      ["wallet", "Wallet / Crypto", "Wallet login and crypto payments as a second rail with account mapping.", "later"],
+      ["wechat", "WeChat QR", "Start with manual QR confirmation, then wire merchant APIs later.", "manual"],
     ];
   const domainRows = [
     ["optionflowhouse.com", "$11.99", state.lang === "zh" ? "可注册" : "available"],
@@ -471,6 +482,9 @@ function renderAccountModal() {
       <h2 id="accountTitle">${t("accountTitle")}</h2>
       <p>${t("accountSub")}</p>
     </div>
+    <div class="account-status-grid">
+      ${accountStatusCards()}
+    </div>
     <div class="account-grid">
       <section class="pricing-panel">
         <div class="account-section-head">
@@ -481,7 +495,7 @@ function renderAccountModal() {
           ${pricingPlans.map((plan) => {
             const text = plan[locale];
             return `
-              <button type="button" class="price-card ${plan.featured ? "featured" : ""}" data-checkout-plan="${plan.id}">
+              <button type="button" class="price-card ${plan.featured ? "featured" : ""} ${plan.id === state.selectedPlan ? "active" : ""}" data-checkout-plan="${plan.id}">
                 <span>${escapeHtml(text.name)}</span>
                 <strong>${escapeHtml(text.price)} <small>${escapeHtml(text.cycle)}</small></strong>
                 <p>${escapeHtml(text.desc)}</p>
@@ -499,10 +513,11 @@ function renderAccountModal() {
           <span>${state.lang === "zh" ? "可接入路线" : "wiring path"}</span>
         </div>
         ${paymentRails.map((row) => `
-          <div class="billing-row">
-            <b>${escapeHtml(row[0])}</b>
-            <span>${escapeHtml(row[1])}</span>
-          </div>
+          <button type="button" class="billing-row ${row[0] === state.selectedRail ? "active" : ""}" data-checkout-rail="${escapeHtml(row[0])}">
+            <b>${escapeHtml(row[1])}</b>
+            <span>${escapeHtml(row[2])}</span>
+            <i>${escapeHtml(row[3])}</i>
+          </button>
         `).join("")}
         <div class="account-section-head domain-head">
           <b>${state.lang === "zh" ? "域名候选" : "Domain candidates"}</b>
@@ -520,12 +535,54 @@ function renderAccountModal() {
   `;
 }
 
+function accountStatusCards() {
+  const plan = pricingPlans.find((item) => item.id === state.selectedPlan) || pricingPlans[1];
+  const locale = state.lang === "zh" ? "zh" : "en";
+  const railLabel = {
+    stripe: "Stripe",
+    wallet: "Wallet",
+    wechat: state.lang === "zh" ? "微信" : "WeChat",
+  }[state.selectedRail] || "Stripe";
+  const locked = isHistoryLocked();
+  const rows = state.lang === "zh"
+    ? [
+      ["当前访问", locked ? "历史锁定" : "今日开放", state.day?.tradeDate || "--"],
+      ["选择套餐", plan[locale].name, `${plan[locale].price}${plan[locale].cycle}`],
+      ["结算轨道", railLabel, "真实扣费前停下确认"],
+      ["导出权限", isPro() ? "无水印" : "品牌水印", "PNG 样式保持 KZG 旧日报"],
+    ]
+    : [
+      ["Access", locked ? "History locked" : "Today open", state.day?.tradeDate || "--"],
+      ["Selected plan", plan[locale].name, `${plan[locale].price}${plan[locale].cycle}`],
+      ["Rail", railLabel, "confirmation before real billing"],
+      ["Export", isPro() ? "Clean" : "Branded", "PNG keeps the KZG sheet style"],
+    ];
+  return rows.map((row) => `
+    <span>
+      <i>${escapeHtml(row[0])}</i>
+      <b>${escapeHtml(row[1])}</b>
+      <small>${escapeHtml(row[2])}</small>
+    </span>
+  `).join("");
+}
+
 function paymentNotice(plan) {
   const name = plan?.[state.lang === "zh" ? "zh" : "en"]?.name || "Pro";
   if (state.lang !== "zh") {
-    return `${name}: next implementation step is Stripe Billing Checkout Session + Customer Portal. Wallet and WeChat rails need account/payment credentials, so I will ask before touching real money.`;
+    return `${name}: selected. Next step is ${state.selectedRail === "stripe" ? "Stripe Billing Checkout Session + Customer Portal" : "account-mapped manual payment intake"}. Wallet and WeChat rails need account/payment credentials, so I will ask before touching real money.`;
   }
-  return `${name}：下一步接 Stripe Billing Checkout Session + Customer Portal。钱包与微信支付需要账号/收款配置，涉及真钱前我会停下让你确认。`;
+  return `${name}：已选中。下一步是${state.selectedRail === "stripe" ? "接 Stripe Billing Checkout Session + Customer Portal" : "做账号映射后的人工收款入口"}。钱包与微信支付需要账号/收款配置，涉及真钱前我会停下让你确认。`;
+}
+
+function railNotice(rail) {
+  if (state.lang !== "zh") {
+    if (rail === "wallet") return "Wallet rail selected: this needs wallet identity mapping and a payment-confirmation backend before launch.";
+    if (rail === "wechat") return "WeChat QR selected: this can start as manual confirmation, then move to merchant APIs after credentials are ready.";
+    return "Stripe rail selected: recommended path is Billing Checkout Session, webhook entitlement sync, and Customer Portal.";
+  }
+  if (rail === "wallet") return "已选择 Wallet / Crypto：上线前需要钱包身份映射和付款确认后端。";
+  if (rail === "wechat") return "已选择微信支付码：可以先人工确认收款，后续再接商户 API。";
+  return "已选择 Stripe：推荐路线是 Billing Checkout Session、webhook 权限同步和 Customer Portal。";
 }
 
 function renderAccessStrip() {
@@ -555,7 +612,7 @@ function renderAccessStrip() {
 function renderPremiumPreview() {
   const target = $("premiumPreview");
   if (!target || !state.day) return;
-  const locked = !isPro();
+  const locked = !isPro() && !isLatestDay();
   const rows = symbolRotationRows();
   const attack = rows.filter((row) => row.delta >= 0 && row.premiumDelta >= 0);
   const fade = rows.filter((row) => row.delta < 0 && row.premiumDelta < 0);
@@ -568,9 +625,9 @@ function renderPremiumPreview() {
     <div class="premium-head">
       <div>
         <h2>${state.lang === "zh" ? "Pro 情报层" : "Pro intelligence layer"}</h2>
-        <p>${state.lang === "zh" ? "这些功能先以模糊预览展示强度，登录后进入完整交互。" : "These features show blurred previews first; login unlocks full interaction."}</p>
+        <p>${state.lang === "zh" ? "今日交易日免费展示核心能力；历史回看进入 Pro 模糊预览。" : "Latest session shows the core layer for free; historical lookback moves into Pro blur."}</p>
       </div>
-      <button type="button" data-open-account>${t("upgrade")}</button>
+      <button type="button" data-open-account>${locked ? t("upgrade") : (state.lang === "zh" ? "查看 Pro" : "View Pro")}</button>
     </div>
     <div class="premium-grid ${locked ? "is-blurred" : ""}">
       ${premiumCard(state.lang === "zh" ? "轮动象限回看" : "Rotation lookback", lead.symbol || "--", `${attack.length}/${fade.length}`, state.lang === "zh" ? "量价同升 vs 同步降温" : "warming vs cooling")}
@@ -578,7 +635,75 @@ function renderPremiumPreview() {
       ${premiumCard(state.lang === "zh" ? "权利金追踪" : "Premium tracking", premiumLead.symbol || "--", moneyCompact(premiumLead.premiumNotional), state.lang === "zh" ? "资金锚点与变化率" : "premium anchor and velocity")}
       ${premiumCard(state.lang === "zh" ? "订阅组合监控" : "Watchlist alerts", "SPY / NVDA", state.lang === "zh" ? "待接" : "queued", state.lang === "zh" ? "邮件/微信/钱包身份后续接入" : "email/WeChat/wallet identity later")}
     </div>
+    ${premiumQuadrantPreview(rows, locked)}
     ${locked ? `<button type="button" class="premium-lock" data-open-account><b>${t("paywallTitle")}</b><span>${t("paywallSub")}</span></button>` : ""}
+  `;
+}
+
+function premiumQuadrantPreview(rows, locked) {
+  const sample = rows.slice(0, 42);
+  if (!sample.length) return "";
+  const attack = rows.filter((row) => row.delta >= 0 && row.premiumDelta >= 0);
+  const volumeOnly = rows.filter((row) => row.delta >= 0 && row.premiumDelta < 0);
+  const premiumOnly = rows.filter((row) => row.delta < 0 && row.premiumDelta >= 0);
+  const fade = rows.filter((row) => row.delta < 0 && row.premiumDelta < 0);
+  const lead = attack.slice().sort((a, b) => (b.delta + b.premiumDelta * 0.5) - (a.delta + a.premiumDelta * 0.5))[0] || sample[0] || {};
+  const breadth = rows.length ? (attack.length / rows.length) * 100 : 0;
+  const xValues = sample.map((row) => Number(row.delta) || 0);
+  const yValues = sample.map((row) => Number(row.premiumDelta) || 0);
+  const xMin = Math.min(-40, ...xValues);
+  const xMax = Math.max(40, ...xValues);
+  const yMin = Math.min(-60, ...yValues);
+  const yMax = Math.max(60, ...yValues);
+  const xSpan = Math.max(1, xMax - xMin);
+  const ySpan = Math.max(1, yMax - yMin);
+  const xZero = Math.max(0, Math.min(100, ((0 - xMin) / xSpan) * 100));
+  const yZero = Math.max(0, Math.min(100, 100 - ((0 - yMin) / ySpan) * 100));
+  const maxVol = Math.max(...sample.map((row) => Number(row.totalVol) || 0), 1);
+  const statRows = [
+    [state.lang === "zh" ? "量价同升" : "Both warming", attack.length, attack[0]?.symbol, "hot"],
+    [state.lang === "zh" ? "权利金先行" : "Premium first", premiumOnly.length, premiumOnly[0]?.symbol, "flat"],
+    [state.lang === "zh" ? "量能先行" : "Volume first", volumeOnly.length, volumeOnly[0]?.symbol, "flat"],
+    [state.lang === "zh" ? "同步降温" : "Cooling", fade.length, fade[0]?.symbol, "cool"],
+  ];
+  return `
+    <div class="premium-quadrant ${locked ? "is-blurred" : ""}">
+      <div class="premium-quadrant-copy">
+        <span>${locked ? t("historyLocked") : t("latestFree")}</span>
+        <strong>${state.lang === "zh" ? "轮动象限图" : "Rotation quadrant"}</strong>
+        <p>${state.lang === "zh" ? `当日核心信号开放：${lead.symbol || "--"} 处在主导象限。历史日期点击升级后回看。` : `Latest core signal is open: ${lead.symbol || "--"} leads the dominant quadrant. Historical dates unlock after upgrade.`}</p>
+        <div class="premium-quadrant-meta">
+          <span><i>${state.lang === "zh" ? "主导" : "Leader"}</i><b>${escapeHtml(lead.symbol || "--")}</b></span>
+          <span><i>${state.lang === "zh" ? "扩散" : "Breadth"}</i><b>${fmt1.format(breadth)}%</b></span>
+          <span><i>${state.lang === "zh" ? "成交" : "Volume"}</i><b>${wan(lead.totalVol || 0)}</b></span>
+          <span><i>${state.lang === "zh" ? "权利金" : "Premium"}</i><b>${lead.premiumDelta >= 0 ? "+" : ""}${fmt1.format(lead.premiumDelta || 0)}%</b></span>
+        </div>
+      </div>
+      <div class="premium-quadrant-map" style="--x0:${xZero.toFixed(1)}%;--y0:${yZero.toFixed(1)}%">
+        <i class="axis-x"></i>
+        <i class="axis-y"></i>
+        <span class="q q1">${state.lang === "zh" ? "量价同升" : "warming"}</span>
+        <span class="q q2">${state.lang === "zh" ? "权利金先行" : "premium"}</span>
+        <span class="q q3">${state.lang === "zh" ? "同步降温" : "cooling"}</span>
+        <span class="q q4">${state.lang === "zh" ? "量能先行" : "volume"}</span>
+        ${sample.map((row) => {
+          const x = Math.max(8, Math.min(92, ((Number(row.delta) - xMin) / xSpan) * 100));
+          const y = Math.max(10, Math.min(90, 100 - ((Number(row.premiumDelta) - yMin) / ySpan) * 100));
+          const size = Math.max(24, Math.min(52, 20 + ((Number(row.totalVol) || 0) / maxVol) * 34));
+          const tone = row.delta >= 0 && row.premiumDelta >= 0 ? "hot" : row.delta < 0 && row.premiumDelta < 0 ? "cool" : "flat";
+          return `<button type="button" class="${tone}" data-symbol="${escapeHtml(row.symbol)}" style="--x:${x.toFixed(1)}%;--y:${y.toFixed(1)}%;--s:${size.toFixed(0)}px">${escapeHtml(row.symbol)}</button>`;
+        }).join("")}
+      </div>
+      <div class="premium-quadrant-stats">
+        ${statRows.map((row) => `
+          <span class="${row[3]}">
+            <i>${escapeHtml(row[0])}</i>
+            <b>${fmt0.format(row[1])}</b>
+            <small>${escapeHtml(row[2] || "--")}</small>
+          </span>
+        `).join("")}
+      </div>
+    </div>
   `;
 }
 
