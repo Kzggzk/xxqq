@@ -29,7 +29,7 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.56` flow-book pass，具体 commit 以最新 GitHub backup 提交为准
 - 最近验证唯一部署: `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.56`
-- 最近本地稠密版本: `1.57`，本轮为 iOS 伴生同步，公开 Web 生产仍为 `1.56`
+- 最近本地稠密版本: `1.58`，本轮为 Web realtime reserve 过渡优化，公开 Web 生产仍为 `1.56`
 - 当前 iOS 伴生版本: `0.5`，对应稠密 Web `1.57`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
@@ -47,7 +47,7 @@ English:
 - Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.56` flow-book pass; exact commit is the latest GitHub backup commit
 - Latest verified unique deploy: `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.56`
-- Latest local dense version: `1.57`, used for iOS companion sync while public Web production remains `1.56`
+- Latest local dense version: `1.58`, used for Web realtime reserve transition polish while public Web production remains `1.56`
 - Current iOS companion version: `0.5`, mapped to dense Web `1.57`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
@@ -80,6 +80,32 @@ Public boundary: this iOS pass only expresses product form. It does not write a 
 Verification: XcodeBuildMCP `session_show_defaults` confirmed the profile points to `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, simulator `iPhone 17 Pro`. `build_run_sim` is still blocked by the local simulator destination/runtime mismatch; log path is `/Users/fangbao/Library/Developer/XcodeBuildMCP/workspaces/fangbao-e14a434e56b6/logs/build_run_sim_2026-05-26T16-03-05-731Z_pid85738_5623ca35.log`. Fallback `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator` passed, so the blocker is not Swift syntax.
 
 Next: `1.58` should return to Web, refine the transition from top intraday dashboard into the middle realtime reserve, improve mobile spacing/calligraphy and flow-filter scanability, and still avoid real keys, real upgrades, spending, or raw-data commits.
+
+## 1B. Latest heartbeat record v1.58 / 最新心跳记录 v1.58
+
+中文:
+
+北京时间 2026-05-27 00:17 左右，稠密版本 `1.58` 完成本地 Web 体验迭代。本轮没有部署 Netlify，生产仍是 Web `1.56`，唯一部署 `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`。本轮的目标是把顶部开放日报和中段未来 realtime reserve 接得更顺，让用户从“昨天发生了什么”自然进入“未来实时流会强在哪里”。
+
+改动文件：`public/app.js`、`public/styles.css`，以及本 GitHub docs。`public/app.js` 把 `UI_VERSION` 提到 `1.58`；新增 `realtimeTransitionRail()`，在中段顶部加入三格阅读路径：昨日总线、未来实时流、历史开放层；新增 `realtimeFilterWeightRail()`，在 filter console 内加入偏向、量能、权利金、噪音阈值四格权重条。`public/styles.css` 增加 v1.58 覆盖层：中段 margin/gap 收紧，新增 transition rail 和 filter weight rail 的桌面/手机样式，手机 command chips 保持横向扫读，窄屏 filter 再收成单列，terminal 高度略收。
+
+公开边界：当前生成分钟能力仍开放；历史、趋势、轮动、事件队列、PNG 导出没有被 blur/lock/paywall。唯一 blur 仍是未来实时 tape 的 `.terminal-table-body.is-realtime-gated`。公开页面没有加入真实 API、供应商、支付、域名、价格、注册或账号路线。风险扫描只命中数据集名 `23_DATA_Massive_期权分钟_Minute` 里的 Massive，不是凭证或商业计划泄漏。
+
+验证：`node --check public/app.js` 通过；`python3 scripts/build_payload.py` 生成 505 天 payload，latest `2026-05-22`，analytics symbols `98`，pack asset `kzg-frame-705fedd65d01.js`；`python3 scripts/per_day_to_dist.py` 返回 `copied=505`。本地 Playwright 验证桌面 `1440x1100` 和手机 `390x844`：source path 显示 `1.58 · 505/505 complete`，transition rail 3 格，filter weight rail 4 格，realtime tape 18 行，realtime blur 为 `blur(2.7px) saturate(1.25)`，旧锁层 0，旧 `.is-blurred` 0，风险词 false，doc/body 横向溢出 0，console warning/error 0，`user-select:none`。PNG 导出成功：`/tmp/kzg-option-house-v158-export.png`，建议文件名 `kzg-option-house-2026-05-22-zh.png`，大小 `1,482,138` bytes。截图证据：`/tmp/kzg-option-house-v158-desktop.png`、`/tmp/kzg-option-house-v158-phone.png`。
+
+下一步：`1.59` 继续做中段下方到历史开放层的视觉节奏，重点检查桌面 side lists、手机 filter 密度、history intro 到轮动象限之间的空白。仍不接真实 key、不做真实升级、不花钱、不提交 raw data。
+
+English:
+
+Around 2026-05-27 00:17 Asia/Shanghai, dense version `1.58` completed a local Web experience iteration. No Netlify deploy happened; production remains Web `1.56`, unique deploy `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`. The goal is to make the open daily report flow into the middle future realtime reserve more naturally, so users move from "what happened yesterday" into "why the future live flow matters."
+
+Changed files: `public/app.js`, `public/styles.css`, plus these GitHub docs. `public/app.js` moves `UI_VERSION` to `1.58`; adds `realtimeTransitionRail()`, a three-cell reading path for daily bus, future realtime flow, and open historical layer; and adds `realtimeFilterWeightRail()`, a four-cell control strip for bias, volume, premium, and noise gate. `public/styles.css` adds a v1.58 override layer: tighter middle-sector margin/gap, desktop/mobile styles for the transition rail and filter-weight rail, horizontal scan-ready command chips on phones, narrow-screen filter collapse, and slightly reduced terminal height.
+
+Public boundary: current generated-minute capabilities remain open; history, trends, rotation, event queues, and PNG export are not blurred, locked, or paywalled. The only blur remains the future realtime tape `.terminal-table-body.is-realtime-gated`. The public page does not add a real API, provider, payment, domain, price, registration, or account route. Risk scan only matches `Massive` inside the dataset name `23_DATA_Massive_期权分钟_Minute`, not a credential or commercial-plan leak.
+
+Verification: `node --check public/app.js` passed; `python3 scripts/build_payload.py` produced a 505-day payload, latest `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-705fedd65d01.js`; `python3 scripts/per_day_to_dist.py` returned `copied=505`. Local Playwright verified desktop `1440x1100` and phone `390x844`: source path shows `1.58 · 505/505 complete`, transition rail has 3 cells, filter weight rail has 4 cells, realtime tape has 18 rows, realtime blur is `blur(2.7px) saturate(1.25)`, old locks are 0, old `.is-blurred` nodes are 0, risk text is false, doc/body horizontal overflow is 0, console warning/error count is 0, and `user-select:none`. PNG export succeeded at `/tmp/kzg-option-house-v158-export.png`, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v158-desktop.png` and `/tmp/kzg-option-house-v158-phone.png`.
+
+Next: `1.59` should continue the visual rhythm from the lower middle sector into the open historical layer, focusing on desktop side lists, mobile filter density, and whitespace between history intro and rotation quadrant. Still do not connect real keys, perform real upgrades, spend money, or commit raw data.
 
 ## 2. Why this exists / 为什么必须有这个日志
 
