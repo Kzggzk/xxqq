@@ -13,7 +13,18 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - A future `11.85` means 1085 post-1.00 dense iterations, not a symbolic number.
 - 未来如果到 `11.85`，它代表从 1.00 之后真的经历了 1085 个稠密迭代，不是随便喊出来的数字。
 - The currently visible public site was verified at `1.35`. The next public UI step should continue as `1.36` unless Fangbao renames the product/version baseline.
-- 当前公开站点已验证显示 `1.27`。下一次公开 UI 迭代应继续为 `1.28`，除非 Fangbao 重新命名产品或版本基线。
+- 当前公开站点已验证显示 `1.35`。下一次公开 UI 迭代应继续为 `1.36`，除非 Fangbao 重新命名产品或版本基线。
+
+## iOS companion cadence / iOS 伴生节奏
+
+- The iOS app is native SwiftUI and lives at `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse`.
+- iOS app 是原生 SwiftUI，位于 `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse`。
+- iOS does not update on every Web `0.01` version. It updates every 5 Web dense versions unless Fangbao asks for an immediate iOS pass.
+- iOS 不跟随每一个 Web `0.01` 版本更新。默认每 5 个 Web 稠密版本同步一次，除非 Fangbao 要求立即更新 iOS。
+- Current iOS checkpoint: `iOS 0.1` at Web `1.35`; next checkpoint target: Web `1.40`.
+- 当前 iOS 检查点：`iOS 0.1` 对应 Web `1.35`；下一检查点目标：Web `1.40`。
+- App Store signing, TestFlight upload, review submission, or developer-account actions require Fangbao confirmation at that moment.
+- App Store 签名、TestFlight 上传、审核提交或开发者账号动作，都必须在当时让 Fangbao 确认。
 
 ## Heartbeat protocol / 心跳协议
 

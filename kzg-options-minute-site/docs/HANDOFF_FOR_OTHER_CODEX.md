@@ -6,9 +6,9 @@ This document is the receiving prompt plus operating checklist for any future Co
 
 ## Receiving prompt / 接手提示词
 
-You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-minute-site` unless Fangbao explicitly expands scope. Read `/Users/fangbao/AGENTS.md` first and do not touch protected KZG OS paths. Keep public product work separate from private commercial planning. Do not commit raw generated data. Use `docs/CHANGELOG.md`, `docs/DENSE_VERSIONING.md`, `docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`, `docs/processing-spec.md`, and `docs/lessons.md` before making changes. Current production site is `https://kzg-option-house.netlify.app/`. Current branch is `feat/kzg-option-house-daily-auto`. Continue dense versions by `0.01`, verify locally, deploy every 3-5 solid versions, push GitHub backup, and update both GitHub changelog and pinned Apple Notes.
+You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-minute-site` unless Fangbao explicitly expands scope. Read `/Users/fangbao/AGENTS.md` first and do not touch protected KZG OS paths. Keep public product work separate from private commercial planning. Do not commit raw generated data. Use `docs/CHANGELOG.md`, `docs/DENSE_VERSIONING.md`, `docs/IOS_COMPANION_PLAN.md`, `docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`, `docs/processing-spec.md`, and `docs/lessons.md` before making changes. Current production site is `https://kzg-option-house.netlify.app/`. Current branch is `feat/kzg-option-house-daily-auto`. Continue Web dense versions by `0.01`, update iOS every 5 Web versions, verify locally, deploy every 3-5 solid Web versions, push GitHub backup, and update both GitHub changelog and pinned Apple Notes.
 
-你正在继续 KZG Option House。除非 Fangbao 明确扩大范围，否则只在 `/Users/fangbao/kzg-options-minute-site` 工作。先读 `/Users/fangbao/AGENTS.md`，不要碰受保护的 KZG OS 路径。公开产品工作和内部商业规划必须分开。不要提交 raw generated data。动手前先读 `docs/CHANGELOG.md`、`docs/DENSE_VERSIONING.md`、`docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`、`docs/processing-spec.md`、`docs/lessons.md`。当前生产站是 `https://kzg-option-house.netlify.app/`。当前分支是 `feat/kzg-option-house-daily-auto`。继续按 `0.01` 稠密版本迭代，本地验证，每 3-5 个扎实版本部署一次，推 GitHub 备份，并同时更新 GitHub changelog 与 Apple Notes 置顶日志。
+你正在继续 KZG Option House。除非 Fangbao 明确扩大范围，否则只在 `/Users/fangbao/kzg-options-minute-site` 工作。先读 `/Users/fangbao/AGENTS.md`，不要碰受保护的 KZG OS 路径。公开产品工作和内部商业规划必须分开。不要提交 raw generated data。动手前先读 `docs/CHANGELOG.md`、`docs/DENSE_VERSIONING.md`、`docs/IOS_COMPANION_PLAN.md`、`docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`、`docs/processing-spec.md`、`docs/lessons.md`。当前生产站是 `https://kzg-option-house.netlify.app/`。当前分支是 `feat/kzg-option-house-daily-auto`。Web 继续按 `0.01` 稠密版本迭代，iOS 每 5 个 Web 版本同步一次，本地验证，每 3-5 个扎实 Web 版本部署一次，推 GitHub 备份，并同时更新 GitHub changlog 与 Apple Notes 置顶日志。
 
 ## Current repo state / 当前仓库状态
 
@@ -19,6 +19,7 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
 - Public visible version last verified / 最近公开验证版本: `1.35`
+- iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.1`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
 - Local verified option-minute window / 本地已验证期权分钟范围: `2024-05-17 -> 2026-05-22`, `505` files.
 
@@ -71,6 +72,7 @@ Before any public deploy:
 - `/data/index.json` returns 404 on production unless intentionally changed / 生产环境 `/data/index.json` 除非明确改变，否则应返回 404；
 - raw packed asset paths are not trivially exposed / 打包原始数据路径不要轻易暴露；
 - latest date and file count are stated accurately / 最新日期与文件数准确。
+- if touching iOS, SwiftUI simulator build succeeds or the blocker is recorded in `docs/IOS_COMPANION_PLAN.md` / 如果触碰 iOS，SwiftUI 模拟器构建要通过，或把阻塞写入 `docs/IOS_COMPANION_PLAN.md`。
 
 ## Apple Notes changelog / Apple Notes 置顶日志
 

@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.35";
+const UI_VERSION = "1.36";
 
 const dataAudit = {
   dataset: "23_DATA_Massive_期权分钟_Minute",
@@ -980,17 +980,53 @@ function premiumQuadrantPreview(rows, locked) {
     [state.lang === "zh" ? "量能先行" : "Volume first", volumeOnly.length, volumeOnly[0]?.symbol, "flat"],
     [state.lang === "zh" ? "同步降温" : "Cooling", fade.length, fade[0]?.symbol, "cool"],
   ];
+  const flowRows = [
+    {
+      label: state.lang === "zh" ? "量价同升" : "Both warming",
+      value: attack.length,
+      share: rows.length ? (attack.length / rows.length) * 100 : 0,
+      tone: "hot",
+      lead: attack[0]?.symbol,
+    },
+    {
+      label: state.lang === "zh" ? "权利金先行" : "Premium first",
+      value: premiumOnly.length,
+      share: rows.length ? (premiumOnly.length / rows.length) * 100 : 0,
+      tone: "flat",
+      lead: premiumOnly[0]?.symbol,
+    },
+    {
+      label: state.lang === "zh" ? "量能先行" : "Volume first",
+      value: volumeOnly.length,
+      share: rows.length ? (volumeOnly.length / rows.length) * 100 : 0,
+      tone: "flat",
+      lead: volumeOnly[0]?.symbol,
+    },
+    {
+      label: state.lang === "zh" ? "同步降温" : "Both cooling",
+      value: fade.length,
+      share: rows.length ? (fade.length / rows.length) * 100 : 0,
+      tone: "cool",
+      lead: fade[0]?.symbol,
+    },
+  ];
+  const visibleMode = locked
+    ? (state.lang === "zh" ? "历史日期只保留方向轮廓，完整标的解释暂不公开。" : "Historical dates keep directional silhouettes only; full attribution is not public.")
+    : (state.lang === "zh" ? "当日象限开放，历史回看会转为模糊预览。" : "The latest quadrant is open; history turns into a blurred preview.");
   return `
-    <div class="premium-quadrant ${locked ? "is-blurred" : ""}">
+    <div class="premium-quadrant ${locked ? "is-blurred is-history-preview" : ""}">
       <div class="premium-quadrant-copy">
         <span>${locked ? t("historyLocked") : t("latestFree")}</span>
         <strong>${state.lang === "zh" ? "轮动象限图" : "Rotation quadrant"}</strong>
-        <p>${state.lang === "zh" ? `当日核心信号开放：${lead.symbol || "--"} 处在主导象限。历史日期保留模糊预览。` : `Latest core signal is open: ${lead.symbol || "--"} leads the dominant quadrant. Historical dates stay blurred.`}</p>
+        <p>${state.lang === "zh" ? `核心信号：${lead.symbol || "--"} 位于${quadrantName(lead)}。${visibleMode}` : `Core signal: ${lead.symbol || "--"} sits in ${quadrantName(lead)}. ${visibleMode}`}</p>
         <div class="premium-quadrant-meta">
           <span><i>${state.lang === "zh" ? "主导" : "Leader"}</i><b>${escapeHtml(lead.symbol || "--")}</b></span>
           <span><i>${state.lang === "zh" ? "扩散" : "Breadth"}</i><b>${fmt1.format(breadth)}%</b></span>
           <span><i>${state.lang === "zh" ? "成交" : "Volume"}</i><b>${wan(lead.totalVol || 0)}</b></span>
           <span><i>${state.lang === "zh" ? "权利金" : "Premium"}</i><b>${lead.premiumDelta >= 0 ? "+" : ""}${fmt1.format(lead.premiumDelta || 0)}%</b></span>
+        </div>
+        <div class="premium-quadrant-flow">
+          ${flowRows.map((row) => premiumQuadrantFlowStat(row)).join("")}
         </div>
       </div>
       <div class="premium-quadrant-map" style="--x0:${xZero.toFixed(1)}%;--y0:${yZero.toFixed(1)}%">
@@ -1004,9 +1040,11 @@ function premiumQuadrantPreview(rows, locked) {
           const x = Math.max(8, Math.min(92, ((Number(row.delta) - xMin) / xSpan) * 100));
           const y = Math.max(10, Math.min(90, 100 - ((Number(row.premiumDelta) - yMin) / ySpan) * 100));
           const size = Math.max(24, Math.min(52, 20 + ((Number(row.totalVol) || 0) / maxVol) * 34));
-          const tone = row.delta >= 0 && row.premiumDelta >= 0 ? "hot" : row.delta < 0 && row.premiumDelta < 0 ? "cool" : "flat";
-          return `<button type="button" class="${tone}" data-symbol="${escapeHtml(row.symbol)}" style="--x:${x.toFixed(1)}%;--y:${y.toFixed(1)}%;--s:${size.toFixed(0)}px">${escapeHtml(row.symbol)}</button>`;
+          const tone = quadrantTone(row);
+          const title = `${row.symbol} · ${quadrantName(row)} · Vol ${row.delta >= 0 ? "+" : ""}${fmt1.format(row.delta)}% · Premium ${row.premiumDelta >= 0 ? "+" : ""}${fmt1.format(row.premiumDelta)}%`;
+          return `<button type="button" class="${tone}" data-symbol="${escapeHtml(row.symbol)}" title="${escapeHtml(title)}" style="--x:${x.toFixed(1)}%;--y:${y.toFixed(1)}%;--s:${size.toFixed(0)}px">${escapeHtml(row.symbol)}</button>`;
         }).join("")}
+        ${locked ? `<div class="premium-quadrant-veil"><b>${t("historyLocked")}</b><span>${t("paywallSub")}</span></div>` : ""}
       </div>
       <div class="premium-quadrant-stats">
         ${statRows.map((row) => `
@@ -1019,6 +1057,32 @@ function premiumQuadrantPreview(rows, locked) {
       </div>
     </div>
   `;
+}
+
+function premiumQuadrantFlowStat(row) {
+  return `
+    <span class="${row.tone}" style="--w:${Math.max(5, Math.min(100, row.share)).toFixed(1)}%">
+      <i>${escapeHtml(row.label)}</i>
+      <b>${fmt0.format(row.value)}</b>
+      <small>${escapeHtml(row.lead || "--")}</small>
+      <em></em>
+    </span>
+  `;
+}
+
+function quadrantTone(row) {
+  if (!row) return "flat";
+  if (row.delta >= 0 && row.premiumDelta >= 0) return "hot";
+  if (row.delta < 0 && row.premiumDelta < 0) return "cool";
+  return "flat";
+}
+
+function quadrantName(row) {
+  if (!row) return state.lang === "zh" ? "未定位" : "unmapped";
+  if (row.delta >= 0 && row.premiumDelta >= 0) return state.lang === "zh" ? "量价同升" : "both warming";
+  if (row.delta < 0 && row.premiumDelta >= 0) return state.lang === "zh" ? "权利金先行" : "premium first";
+  if (row.delta >= 0 && row.premiumDelta < 0) return state.lang === "zh" ? "量能先行" : "volume first";
+  return state.lang === "zh" ? "同步降温" : "both cooling";
 }
 
 function premiumCard(label, value, sub, foot) {
@@ -3081,6 +3145,9 @@ function renderSymbolTooltip(symbol) {
   const read = state.lang === "zh"
     ? `20D 成交 ${volumeDelta20 >= 0 ? "+" : ""}${fmt1.format(volumeDelta20)}%，权利金 ${premiumDelta20 >= 0 ? "+" : ""}${fmt1.format(premiumDelta20)}%，历史分位 ${fmt0.format(volumeRank)}%。`
     : `20D volume ${volumeDelta20 >= 0 ? "+" : ""}${fmt1.format(volumeDelta20)}%, premium ${premiumDelta20 >= 0 ? "+" : ""}${fmt1.format(premiumDelta20)}%, ${fmt0.format(volumeRank)} percentile.`;
+  const quadrantRow = { ...current, delta: volumeDelta20, premiumDelta: premiumDelta20 };
+  const quadrant = quadrantName(quadrantRow);
+  const quadrantToneClass = quadrantTone(quadrantRow);
   return `
     <div class="tip-head">
       <strong>${escapeHtml(symbol)}</strong>
@@ -3098,6 +3165,13 @@ function renderSymbolTooltip(symbol) {
       ${tooltipBand("20D Vol", `${volumeDelta20 >= 0 ? "+" : ""}${fmt1.format(volumeDelta20)}%`, `${state.lang === "zh" ? "分位" : "rank"} ${fmt0.format(volumeRank)}%`, 50 + volumeDelta20 * 0.58, volumeDelta20 >= 18 ? "hot" : volumeDelta20 <= -18 ? "cool" : "flat")}
       ${tooltipBand(state.lang === "zh" ? "权利金" : "Premium", `${premiumDelta20 >= 0 ? "+" : ""}${fmt1.format(premiumDelta20)}%`, moneyCompact(current.premiumNotional), 50 + premiumDelta20 * 0.45, premiumDelta20 >= 24 ? "hot" : premiumDelta20 <= -24 ? "cool" : "flat")}
       ${tooltipBand("CP", ratio(current.cpRatio), `${cpDrift >= 0 ? "+" : ""}${fmt2.format(cpDrift)} vs avg`, 50 + cpDrift * 42, cpDrift >= 0.28 ? "hot" : cpDrift <= -0.28 ? "cool" : "flat")}
+    </div>
+    <div class="tip-quadrant ${quadrantToneClass}">
+      <span>${state.lang === "zh" ? "轮动定位" : "Rotation position"}</span>
+      <b>${escapeHtml(quadrant)}</b>
+      <small>${state.lang === "zh"
+        ? `成交 ${volumeDelta20 >= 0 ? "+" : ""}${fmt1.format(volumeDelta20)}% · 权利金 ${premiumDelta20 >= 0 ? "+" : ""}${fmt1.format(premiumDelta20)}%`
+        : `Volume ${volumeDelta20 >= 0 ? "+" : ""}${fmt1.format(volumeDelta20)}% · Premium ${premiumDelta20 >= 0 ? "+" : ""}${fmt1.format(premiumDelta20)}%`}</small>
     </div>
     <div class="tip-mini">
       <span>${state.lang === "zh" ? "权利金" : "Premium"} ${sparkline(series, "premiumNotional", 112, 30, "#9a6a12")}</span>

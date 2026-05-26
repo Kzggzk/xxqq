@@ -472,3 +472,33 @@ Public boundary: this version does not publish Stripe, Network Solutions, domain
 Verification: `node --check public/app.js` passed; build produced a `505`-day payload, latest date `2026-05-22`, pack asset `kzg-frame-097929558aa7.js`; local Playwright desktop `1440x1100` and mobile `390x844` had no horizontal overflow and `0` console errors; PNG export `qa-v135-export.png` was about `1.48MB`; public risk-token scan returned `0`; production smoke returned `home=200`, `/latest=200`, `/data/index.json=404`, `/assets/kzg-pack.js=404`, and `/app.js` showing `UI_VERSION = "1.35"`. Production unique deploy: `https://6a15650fe0f26408c3f1c230--kzg-option-house.netlify.app/`.
 
 Next v1.36: continue the lower advanced area, especially rotation quadrant, historical blurred state, hover explanations, and visual unity across the downstream analysis panels. The goal remains: powerful features are perceptible, public data is hard to copy, and commercial mechanics do not leak.
+
+## 19. iOS companion v0.1 track / iOS 伴生端 v0.1 轨道
+
+中文:
+
+北京时间 2026-05-26 17:40 左右，Fangbao 明确要求同步开发 iOS 版本，但 iOS 不需要跟随每个 Web 小版本部署；iOS 按每 5 个 Web 版本做一次对应迭代。响应这个要求后，新增原生 SwiftUI 工程 `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`，scheme 为 `KZG Option House`，bundle id 为 `com.kzg.optionhouse`，首个 iOS 版本记为 `0.1`，对应当前公开 Web `1.35`。同一轮还完成 Web v1.36：高级轮动象限新增 flow rows、hover title 和 symbol tooltip 里的轮动定位，让功能能力更可感知但仍不泄漏付费或 API 内部机制。
+
+iOS 产品定位：它不是 WebView 也不是网页缩小版，而是 KZG Option House 的手机读盘端。首屏必须更像金融终端在手机上的纵向阅读体验，重点是 KZG serif header、今日日期、交易日时间轴、成交和权利金摘要、Put/Call、今日读盘总线、结构拆分、日内节奏、轮动象限和核心标的聚焦。手机端要减少横向表格依赖，减少空白块，控制大字号，保持 spacing 和 calligraphy 比网页更适配手指和单屏扫读。
+
+已验证结果：Xcode 识别 scheme；generic iOS Simulator 构建成功；iPhone 17 Pro 模拟器安装并启动 `com.kzg.optionhouse`；截图保存为 `/tmp/kzg-option-house-ios-v01.png`。XcodeBuildMCP 按具体 simulator destination 构建时遇到本机 runtime 与 `iphonesimulator26.5` SDK destination 不匹配的问题，但直接 Xcode generic simulator build 可通过，因此这个 caveat 已写入 `docs/IOS_COMPANION_PLAN.md`，供下一个 agent 接手。Web 侧验证包括：`node --check public/app.js` 通过，构建生成 `505` 天 payload，最新日 `2026-05-22`，pack asset `kzg-frame-5b14aa592fd6.js`，本地 desktop `1440x1100` 与 mobile `390x844` 无横向溢出，控制台错误为 0，PNG 导出 `/tmp/kzg-option-house-v136-export.png` 约 `1.4MB`，公开风险词为 0。
+
+部署结果：Netlify production deploy 成功，生产 URL `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a156cbee55c2318be31e1b4--kzg-option-house.netlify.app/`。唯一部署 smoke 通过：home `200`、latest `200`、`/data/index.json` `404`、`/assets/kzg-pack.js` `404`、`app.js` 显示 `UI_VERSION = "1.36"`。本机当前对主生产域名解析到本地代理地址导致 SSL smoke 不稳定，但 Netlify CLI 已确认 production live，唯一部署可正常验证。
+
+节奏规则：iOS 当前检查点是 Web `1.35` -> iOS `0.1`。下一次 iOS 检查点默认是 Web `1.40`。如果 Fangbao 直接要求某个 iOS 版本立刻同步，则可以提前做，但必须在 changlog 写明为什么破例。
+
+边界规则：当前不能直接提交 App Store 审核，也不能进行 TestFlight 上传、选择真实签名 team、修改开发者账号、使用证书或执行任何花钱动作。到了需要上传审核或使用开发者账号的那一步，必须停下来让 Fangbao 当场确认。
+
+English:
+
+Around 2026-05-26 17:40 Asia/Shanghai, Fangbao explicitly asked to develop an iOS version in parallel, but not to update iOS on every Web patch. iOS should iterate once every 5 Web versions. In response, a native SwiftUI project was added at `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle id `com.kzg.optionhouse`, first iOS version `0.1`, mapped to public Web `1.35`. In the same round, Web v1.36 was completed: the advanced rotation quadrant gained flow rows, hover titles, and symbol-tooltip rotation positioning, making the capability more perceptible without leaking paid-product or API mechanics.
+
+iOS product position: it is not a WebView and not a shrunken web page. It is the phone reading surface for KZG Option House. The first screen should feel like a finance terminal redesigned for vertical mobile reading: KZG serif header, current date, trading-day timeline, volume and premium summary, Put/Call, daily read bus, structure split, intraday rhythm, rotation quadrant, and symbol focus. Mobile should rely less on horizontal tables, reduce blank blocks, control oversized type, and make spacing/calligraphy better suited to thumb reading and single-screen scanning.
+
+Verified result: Xcode sees the scheme; generic iOS Simulator build succeeded; iPhone 17 Pro simulator installed and launched `com.kzg.optionhouse`; screenshot saved to `/tmp/kzg-option-house-ios-v01.png`. XcodeBuildMCP destination build hit a local runtime versus `iphonesimulator26.5` SDK destination mismatch, while direct Xcode generic simulator build works. This caveat is documented in `docs/IOS_COMPANION_PLAN.md` for the next agent. Web verification: `node --check public/app.js` passed, build produced a `505`-day payload with latest date `2026-05-22`, pack asset `kzg-frame-5b14aa592fd6.js`, local desktop `1440x1100` and mobile `390x844` had no horizontal overflow, console errors were 0, PNG export `/tmp/kzg-option-house-v136-export.png` was about `1.4MB`, and public risk-token scan returned 0.
+
+Deploy result: Netlify production deploy succeeded. Production URL is `https://kzg-option-house.netlify.app/`; unique deploy is `https://6a156cbee55c2318be31e1b4--kzg-option-house.netlify.app/`. Unique deploy smoke passed: home `200`, latest `200`, `/data/index.json` `404`, `/assets/kzg-pack.js` `404`, and `app.js` has `UI_VERSION = "1.36"`. The local machine currently resolves the primary production hostname through a local proxy address, causing unstable SSL smoke, but Netlify CLI reports production live and the unique deploy verifies correctly.
+
+Cadence rule: current checkpoint is Web `1.35` -> iOS `0.1`. Next default iOS checkpoint is Web `1.40`. If Fangbao directly asks for an immediate iOS sync, do it earlier but record why the cadence was overridden.
+
+Boundary rule: do not submit to App Store review yet, do not upload TestFlight, do not choose a real signing team, do not modify developer-account state, do not use certificates, and do not spend money. At the exact step where upload/review/developer-account access is needed, stop and ask Fangbao to confirm.

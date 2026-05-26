@@ -13,6 +13,7 @@ This folder is the GitHub-side operating memory for KZG Option House. It is inte
 - [DENSE_VERSIONING.md](DENSE_VERSIONING.md): 0.01 version cadence, heartbeat protocol, deploy rules, and changelog template.
 - [MASSIVE_REALTIME_PRODUCT_PLAN.md](MASSIVE_REALTIME_PRODUCT_PLAN.md): internal product plan for Massive real-time data, legal/commercial boundary, concurrency model, and paid feature architecture.
 - [PLUGIN_SERVICE_STATUS.md](PLUGIN_SERVICE_STATUS.md): internal ledger for GitHub, Netlify, Apple Notes, Massive, iCloud, Google Drive, Stripe, Supabase, domains, WeChat, USDT, browser QA, and unused plugins.
+- [IOS_COMPANION_PLAN.md](IOS_COMPANION_PLAN.md): native SwiftUI iOS companion cadence, project path, verification proof, and App Store boundary.
 - [TEXT_REPLACEMENT_TRACEABLE_SAAS_PROMPT.md](TEXT_REPLACEMENT_TRACEABLE_SAAS_PROMPT.md): 1951-character no-punctuation Text Replacement prompt for starting any future traceable SaaS build.
 - [processing-spec.md](processing-spec.md): current CSV parsing and derived-metric spec.
 - [lessons.md](lessons.md): first-session lessons and traps.
