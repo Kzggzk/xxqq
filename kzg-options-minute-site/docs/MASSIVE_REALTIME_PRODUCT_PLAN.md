@@ -10,9 +10,9 @@ Fangbao's Massive dashboard screenshot exposed real API keys in the conversation
 
 Fangbao 的 Massive dashboard 截图在对话/浏览器上下文里暴露了真实 API key。按生产安全标准，应把这些 key 当作已暴露处理。不要把它们粘进源码、文档、Apple Notes、issue、截图、Netlify 环境变量、iOS 代码或任何浏览器运行时。这个 agent session 不使用这些 key。任何真实后端接入前，Fangbao 应先在 Massive 内轮换/重新生成 key，再通过批准的 secret 通道提供替换 key。
 
-The public site may show a live-feed silhouette, but it must not show provider names, plan prices, checkout text, account mechanics, or API implementation details. Real-time commercial delivery remains blocked until Business/OPRA display and redistribution rights are confirmed.
+The public site may show current generated-minute analytics fully open and readable, plus a product-safe live-feed silhouette. It must not show provider names, plan prices, checkout text, account mechanics, or API implementation details. Real-time commercial delivery remains blocked until Business/OPRA display and redistribution rights are confirmed.
 
-公开站可以展示实时流轮廓，但不得展示供应商名、套餐价格、checkout 文案、账号机制或 API 实现细节。实时商业交付在确认 Business/OPRA 展示与再分发权利前继续阻断。
+公开站可以完整开放当前已生成分钟数据分析，也可以展示产品安全的实时流轮廓，但不得展示供应商名、套餐价格、checkout 文案、账号机制或 API 实现细节。实时商业交付在确认 Business/OPRA 展示与再分发权利前继续阻断。
 
 ## Verified official facts / 已核官方事实
 
@@ -43,9 +43,9 @@ The `$199/month` individual plan can be excellent for owner-side research, priva
 
 `$199/month` 个人套餐非常适合 owner 研究、私有采集、原型信号生成和内部 dashboard。但不能默认认为它允许把实时 OPRA 派生数据再分发给付费公众 SaaS 用户。
 
-The product should sell proprietary analysis, summaries, rankings, alerts, PNG reports, delayed/history dashboards, and blurred previews first. Direct real-time feed resale should wait for a business/commercial entitlement.
+The current public product should keep generated-minute analysis, historical lookback, derived panels, rotation views, and PNG export open. The future commercial product should focus on proprietary real-time interpretation, alerts, service reliability, and account workflows after a real backend and rights are confirmed. Direct real-time feed resale should wait for a business/commercial entitlement.
 
-产品应优先销售自有分析、摘要、排名、提醒、PNG 报告、延迟/历史 dashboard、模糊高级预览。直接销售实时 feed 应等 Business/商业权限确认后再做。
+当前公开产品应保持已生成分钟数据分析、历史回看、派生面板、轮动视图和 PNG 导出开放。未来商业产品应聚焦真实后端和权利确认后的自有实时解读、提醒、服务稳定性和账号工作流。直接销售实时 feed 应等 Business/商业权限确认后再做。
 
 The best commercial framing is not "resell raw data." It is "KZG reads the option tape for the user": curated pressure, unusual burst, rotation quadrant, premium acceleration, IV/Greek context, and actionable daily/live narratives. This product should sell interpretation, not a raw OPRA pipe.
 
@@ -71,10 +71,10 @@ Correct flow:
 4. 后端筛选标的/合约池，并计算自有指标。
 5. Backend stores compact snapshots, not raw redistributable feeds.
 6. 后端存紧凑快照，不存面向再分发的原始 feed。
-7. Frontend receives derived signals, blurred previews, rankings, charts, and exportable PNG.
-8. 前端接收派生信号、模糊预览、排名、图表和可导出 PNG。
-9. Entitlement service decides free vs paid access.
-10. 权限服务决定免费/付费访问范围。
+7. Frontend receives derived signals, rankings, charts, explanations, and exportable PNG.
+8. 前端接收派生信号、排名、图表、解释和可导出 PNG。
+9. Entitlement service, if later approved, applies only to the future real-time feed/service layer, not the current generated-minute features.
+10. 如果未来批准权限服务，它只作用于未来真实实时 feed/服务层，不作用于当前已生成分钟数据功能。
 
 Reference implementation shape:
 
@@ -146,39 +146,37 @@ Rough outbound example:
 - 50 KB/s/user at 1,000 users is about 400 Mbps and needs a serious streaming layer.
 - 每用户 50 KB/s，1000 用户约 400 Mbps，需要认真设计流式层。
 
-## Paid/free feature line / 免费与付费边界
+## Current-open and future-commercial line / 当前开放与未来商业边界
 
-Free:
+Current public open:
 
-免费：
+当前公开开放：
 
 - latest trading day dashboard;
 - 最新交易日 dashboard；
-- selected top tables;
-- 部分 Top 表；
-- one or two rotation snapshots;
-- 一两个轮动快照；
+- historical date lookback from landed generated data;
+- 已落地生成数据的历史日期回看；
+- top tables and derived analysis panels;
+- Top 表与派生分析面板；
+- rotation quadrant and rhythm views;
+- 轮动象限和节奏视图；
 - KZG-branded PNG export with watermark;
 - 带 KZG 水印的 PNG 导出；
-- blurred historical and real-time previews.
-- 历史与实时功能的模糊预览。
+- product-safe real-time silhouette without real credentials.
+- 不使用真实凭证的产品安全实时流轮廓。
 
-Paid:
+Future commercial candidate after approval:
 
-付费：
+未来批准后的商业候选：
 
-- historical date lookback beyond latest day;
-- 最新交易日以外的历史回看；
-- rotation quadrant history;
-- 轮动象限历史；
-- premium momentum and predictive panels;
-- 高级动量与预测面板；
-- symbol rooms and hover deep charts;
-- 标的房间和 hover 深图；
-- clean PNG export without watermark if Fangbao approves;
-- Fangbao 批准后可提供无水印 PNG；
-- real-time derived feed after business/legal entitlement is confirmed.
-- 商业/法律权限确认后开放实时派生 feed。
+- real-time derived feed after business/legal entitlement is confirmed;
+- 商业/法律权限确认后的实时派生 feed；
+- real-time alert engine and account delivery workflow;
+- 实时提醒引擎和账户交付流程；
+- service reliability, watchlists, saved rooms, and notification routing;
+- 服务稳定性、观察列表、保存房间和通知路由；
+- future clean export or higher-frequency replay only if Fangbao approves.
+- Fangbao 批准后才考虑未来无水印导出或更高频 replay。
 
 ## Real-time feature candidates / 实时功能候选
 
@@ -196,8 +194,8 @@ Paid:
 
 - v1.51: public live-feed silhouette and internal Massive architecture research. No real key. No public provider/price. / 公开实时流轮廓与内部 Massive 架构研究。不接真实 key，不公开供应商/价格。
 - v1.52: internal mock feed schema and adapter using generated/mock events from existing minute data. / 用现有分钟数据生成 mock event，建立内部 feed schema 和 adapter。
-- v1.53: entitlement-safe feed API contract: free latest-day sample, blurred history, paid derived signal slots. / 权限安全 feed API 合约：免费最新日样本、历史模糊、付费派生信号槽位。
-- v1.54: load and fanout model: cache TTL, symbol universe, event compression, 1000-user outbound estimate. / 负载和分发模型：cache TTL、标的池、事件压缩、1000 用户出站估算。
+- v1.53: older entitlement-safe feed boundary prototype, superseded by v1.54 for the current public site. / 较早权限安全 feed 边界原型；当前公开站以 v1.54 纠偏为准。
+- v1.54: public-open correction: no current feature blur, lock, or paywall; future load/fanout modeling moves to the real-time backend phase. / 公开开放纠偏：当前功能不模糊、不锁定、不 paywall；未来负载和分发模型移动到真实实时后端阶段。
 - v1.55: iOS companion sync for live silhouette concepts, still offline/mock unless Fangbao separately approves real backend work. / iOS 伴生同步实时轮廓概念；除非 Fangbao 另行批准真实后端，仍保持离线/mock。
 
 ## v1.52 adapter result / v1.52 adapter 结果
@@ -227,11 +225,11 @@ The canonical internal event contract is now in `docs/REALTIME_FEED_SCHEMA.md`.
 
 标准内部事件合约现在写在 `docs/REALTIME_FEED_SCHEMA.md`。
 
-## v1.53 boundary result / v1.53 边界结果
+## v1.54 boundary correction / v1.54 边界纠偏
 
-v1.53 adds a public-safe feed visibility boundary. The public UI labels the states as latest open, history preview, and deep derived queued. The browser code uses neutral `advanced-derived` instead of exposing paid-product mechanics. Future backend work can map that state to a real entitlement table only after Fangbao confirms credentials, commercial rights, and service terms.
+v1.53 added an older public-safe feed visibility boundary. v1.54 supersedes it for the current site: latest and historical generated-minute features are open, and the only future boundary is the real-time feed service layer. Future backend work can map that future state to a real entitlement table only after Fangbao confirms credentials, commercial rights, and service terms.
 
-v1.53 新增公开安全的 feed 可见边界。公开 UI 把状态写成今日开放、历史预览、深层派生排队。浏览器代码使用中性的 `advanced-derived`，不暴露付费产品机制。未来后端只有在 Fangbao 确认凭证、商业权利和服务条款后，才能把这个状态映射到真实权限表。
+v1.53 曾新增较早的公开安全 feed 可见边界。v1.54 对当前站点进行纠偏：今日和历史的已生成分钟数据功能全部开放，唯一未来边界是真实实时 feed 服务层。未来后端只有在 Fangbao 确认凭证、商业权利和服务条款后，才能把这个未来状态映射到真实权限表。
 
 ## Implementation stages / 实施阶段
 
@@ -245,8 +243,8 @@ Stage 1: current safe product.
 - 每天 20:00 Asia/Shanghai 更新。
 - PNG export.
 - PNG 导出。
-- Blurred paid previews only as product UX, no real payment.
-- 只做模糊付费预览，不接真实支付。
+- Current generated-minute features open and readable, no blur, no real payment.
+- 当前已生成分钟数据功能开放可读，不做模糊，不接真实支付。
 
 Stage 2: entitlement prototype.
 
@@ -254,8 +252,8 @@ Stage 2: entitlement prototype.
 
 - Auth shell with no real money.
 - 不涉及真钱的登录壳。
-- Local/preview entitlement states.
-- 本地/预览权限状态。
+- Local entitlement planning only for the future real-time service layer.
+- 本地权限规划只面向未来真实实时服务层。
 - Stripe plan written as internal docs, not public checkout.
 - Stripe 套餐先写内部文档，不开放公开 checkout。
 

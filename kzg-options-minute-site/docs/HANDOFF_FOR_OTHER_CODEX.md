@@ -18,9 +18,9 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Remote / 远端: `https://github.com/Kzggzk/xxqq.git`
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
-- Production version last verified / 最近生产验证版本: `1.52`
-- Local version last verified / 最近本地验证版本: `1.53`
-- Latest unique deploy / 最近唯一部署: `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`
+- Production version last verified / 最近生产验证版本: `1.54`
+- Local version last verified / 最近本地验证版本: `1.54`
+- Latest unique deploy / 最近唯一部署: `https://6a15b9924af25310d2950255--kzg-option-house.netlify.app/`
 - iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.4`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
 - Local verified option-minute window / 本地已验证期权分钟范围: `2024-05-17 -> 2026-05-22`, `505` files.
@@ -140,6 +140,14 @@ Web `1.53` is the latest local checkpoint and is not deployed to production. Pro
 
 Web `1.53` 是最新本地检查点，未部署生产。生产仍为 v1.52，生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.53`，新增 `feedVisibilityState()` 和 `feedBoundaryRail()`，派生事件现在带 `source` 和公开安全的中性 `visibleTier`，实时流轮廓加入三格短边界条，分别是今日开放、历史预览、深层派生排队。公开代码使用 `advanced-derived`，不暴露付费产品机制。验证通过：`node --check`、505 天构建最新 `2026-05-22`、public/dist 风险扫描 0、本地 Playwright 桌面/手机/事件区截图无溢出和 console issue、3 格边界条可见、PNG 导出 `/tmp/kzg-option-house-v153-export.png` 为 `1,482,138` bytes。下一默认 Web 步骤是 `1.54` fanout/load/cache 建模；下一默认 iOS 同步是 Web `1.55`。
 
+Latest production v1.54 note:
+
+最新生产 v1.54 说明：
+
+Web `1.54` is now the latest local and production checkpoint. It corrects the public experience after Fangbao clarified that the current site should not blur, lock, or paywall any existing feature. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.54`, `isHistoryLocked()` always returns `false`, the advanced preview always renders open, old `is-blurred` template output is removed from public JS, and the feed visibility tiers are now `public-latest`, `history-open`, and `future-live-feed`. Paid planning is moved back to the future real-time option feed backend/service layer only. Verification passed locally and in production: desktop and phone historical date `2026-01-22` show `historyLocked=false`, `visibleBlurred=0`, `visibleLocks=0`, `riskText=false`, `eventTier=history-open`, no horizontal overflow, and no console issue. PNG export remains stable at `1,482,138` bytes. Production unique deploy is `https://6a15b9924af25310d2950255--kzg-option-house.netlify.app/`.
+
+Web `1.54` 现在是最新本地和生产检查点。它根据 Fangbao 纠偏修正公开体验：当前站不应对任何现有功能做 blur、lock 或 paywall。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.54`，`isHistoryLocked()` 始终返回 `false`，高级预览始终开放渲染，公开 JS 清掉旧的 `is-blurred` 模板输出，feed 可见层级改为 `public-latest`、`history-open`、`future-live-feed`。付费规划回到未来真实实时 option feed 后端/服务层。验证已在本地和生产通过：桌面与手机切到历史日 `2026-01-22` 后均为 `historyLocked=false`、`visibleBlurred=0`、`visibleLocks=0`、`riskText=false`、`eventTier=history-open`，无横向溢出，无 console issue。PNG 导出保持稳定，大小 `1,482,138` bytes。生产唯一部署是 `https://6a15b9924af25310d2950255--kzg-option-house.netlify.app/`。
+
 ## Verification checklist / 验证清单
 
 Before any public deploy:
@@ -175,7 +183,7 @@ Public page may include:
 公开页面可以包含：
 
 - latest day free insights / 当日免费洞察；
-- blurred advanced previews / 模糊高级预览；
+- open historical and derived panels / 历史与派生面板开放可读；
 - KZG-branded PNG export / KZG 品牌 PNG 导出；
 - language and theme toggles / 中英文与深浅色切换；
 - product-value hints without real payment plumbing / 不暴露真实支付流程的产品价值提示。

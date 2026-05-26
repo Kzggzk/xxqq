@@ -1,20 +1,20 @@
 # Real-time feed schema / 实时流事件结构
 
-This is an internal handoff document. It defines the safe event shape for KZG Option House v1.52. It does not contain credentials and must not be treated as permission to connect real vendor feeds.
+This is an internal handoff document. It defines the safe event shape for KZG Option House v1.52-v1.54. It does not contain credentials and must not be treated as permission to connect real vendor feeds.
 
-这是内部交接文档，定义 KZG Option House v1.52 的安全事件结构。本文不包含凭证，也不代表已经允许接入真实供应商 feed。
+这是内部交接文档，定义 KZG Option House v1.52-v1.54 的安全事件结构。本文不包含凭证，也不代表已经允许接入真实供应商 feed。
 
 ## Purpose / 目标
 
-v1.52 creates a mock-derived feed from existing generated minute data. The goal is to let Web, iOS, and a future backend speak the same event language before any real key, plan upgrade, or commercial entitlement is used.
+v1.52 creates a mock-derived feed from existing generated minute data. v1.54 corrects the public rule: all current minute-data features are open and readable; paid planning belongs only to a future real-time feed service layer. The goal is to let Web, iOS, and a future backend speak the same event language before any real key, plan upgrade, or commercial entitlement is used.
 
-v1.52 用现有生成分钟数据构造 mock-derived feed。目标是在使用任何真实 key、套餐升级或商业授权前，让 Web、iOS 和未来后端先共享同一套事件语言。
+v1.52 用现有生成分钟数据构造 mock-derived feed。v1.54 纠正公开规则：当前分钟数据功能全部开放可读；付费规划只属于未来真实实时 feed 服务层。目标是在使用任何真实 key、套餐升级或商业授权前，让 Web、iOS 和未来后端先共享同一套事件语言。
 
 ## Public rule / 公开规则
 
-Public UI may show derived event rhythm, symbol, score, time bucket, and short explanation.
+Public UI may show derived event rhythm, symbol, score, time bucket, historical lookback, quadrant state, and short explanation. Do not blur, lock, or paywall current generated-minute features.
 
-公开 UI 可以展示派生事件节奏、标的、分数、时间桶和简短解释。
+公开 UI 可以展示派生事件节奏、标的、分数、时间桶、历史回看、象限状态和简短解释。当前已生成分钟数据功能不做模糊、不锁定、不做 paywall。
 
 Public UI must not show provider names, API routes, API keys, plan names, plan prices, account mechanics, checkout state, raw contract payloads, or legal assumptions.
 
@@ -33,7 +33,7 @@ Public UI must not show provider names, API routes, API keys, plan names, plan p
   "score": 94.2,
   "detail": "premium led the move",
   "source": "derived-minute-aggregate",
-  "visibleTier": "public-latest",
+  "visibleTier": "history-open",
   "metrics": {
     "volumeDeltaPct": 417.9,
     "premiumDeltaPct": 671.6,
@@ -62,8 +62,8 @@ Public UI must not show provider names, API routes, API keys, plan names, plan p
 - `detail`: 面向用户的短解释。
 - `source`: `derived-minute-aggregate` for v1.52. Future real backend should still emit derived events, not raw feed rows.
 - `source`: v1.52 固定为 `derived-minute-aggregate`。未来真实后端仍应输出派生事件，不输出原始 feed 行。
-- `visibleTier`: `public-latest`, `blurred-history`, or `paid-derived`.
-- `visibleTier`: `public-latest`、`blurred-history` 或 `paid-derived`。
+- `visibleTier`: `public-latest`, `history-open`, or `future-live-feed`.
+- `visibleTier`: `public-latest`、`history-open` 或 `future-live-feed`。
 - `metrics`: compact derived metrics allowed for internal debugging and future backend tests.
 - `metrics`: 紧凑派生指标，用于内部调试和未来后端测试。
 
@@ -71,18 +71,20 @@ Public UI must not show provider names, API routes, API keys, plan names, plan p
 
 1. v1.52 Web adapter: compute events in `public/app.js` from symbol rotation rows and 30-minute buckets.
 2. v1.52 Web adapter：在 `public/app.js` 中从标的轮动行和 30 分钟桶生成事件。
-3. v1.53 contract: public code uses neutral visibility tiers `public-latest`, `blurred-history`, and `advanced-derived`; internal backend planning may later map `advanced-derived` to paid-derived after Fangbao confirms credentials and commercial entitlement.
-4. v1.53 合约：公开代码使用中性可见层级 `public-latest`、`blurred-history` 和 `advanced-derived`；内部后端规划未来可在 Fangbao 确认真凭证和商业权限后，把 `advanced-derived` 映射到 paid-derived。
-5. v1.54 backend model: decide cache TTL, event compression, watchlist size, and fanout limits.
-6. v1.54 后端模型：决定缓存 TTL、事件压缩、观察列表大小和分发限制。
-7. v1.55 iOS sync: render the same event shape natively, still with mock-derived data unless Fangbao approves real backend access.
-8. v1.55 iOS 同步：原生端渲染同一事件结构；除非 Fangbao 批准真实后端，否则仍使用 mock-derived 数据。
+3. v1.53 contract: public code briefly introduced a neutral visibility boundary, but v1.54 supersedes it for the current site.
+4. v1.53 合约：公开代码曾短暂引入中性可见边界，但当前站点以 v1.54 规则为准。
+5. v1.54 public-open rule: current generated-minute features use `public-latest` and `history-open`; only a later real-time backend may use `future-live-feed` as a service-layer marker.
+6. v1.54 公开开放规则：当前已生成分钟数据功能使用 `public-latest` 与 `history-open`；只有未来真实实时后端才可用 `future-live-feed` 作为服务层标记。
+7. Future backend model: decide cache TTL, event compression, watchlist size, and fanout limits only after Fangbao confirms real credentials and commercial rights.
+8. 未来后端模型：只有 Fangbao 确认真凭证和商业权利后，才决定缓存 TTL、事件压缩、观察列表大小和分发限制。
+9. v1.55 iOS sync: render the same event shape natively, still with mock-derived data unless Fangbao approves real backend access.
+10. v1.55 iOS 同步：原生端渲染同一事件结构；除非 Fangbao 批准真实后端，否则仍使用 mock-derived 数据。
 
-## v1.53 visibility rail / v1.53 可见边界条
+## v1.54 public-open rail / v1.54 公开开放边界
 
-The public page now renders a compact boundary rail beside the derived event queue. It shows only product-safe states: latest open, history preview, and deep derived queued. It intentionally avoids payment, pricing, provider, API route, domain, account, and plan language.
+The public page now renders a compact boundary rail beside the derived event queue. It shows only product-safe states: latest open, history open, and future live feed. It intentionally avoids payment, pricing, provider, API route, domain, account, and plan language. It also avoids current-feature blur or lock states.
 
-公开页现在在派生事件队列旁渲染一条紧凑边界条。它只展示产品安全状态：今日开放、历史预览、深层派生排队。它故意不展示支付、价格、供应商、API 路由、域名、账号和套餐语言。
+公开页现在在派生事件队列旁渲染一条紧凑边界条。它只展示产品安全状态：今日开放、历史开放、未来实时流。它故意不展示支付、价格、供应商、API 路由、域名、账号和套餐语言，也不对当前功能做模糊或锁定。
 
 ## Security boundary / 安全边界
 

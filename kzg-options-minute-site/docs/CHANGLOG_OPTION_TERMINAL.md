@@ -26,10 +26,10 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 分支: `feat/kzg-option-house-daily-auto`
 - 远端: `https://github.com/Kzggzk/xxqq.git`
 - 生产站: `https://kzg-option-house.netlify.app/`
-- 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
-- 最近验证唯一部署: `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`
-- 最近生产 UI 显示版本: `1.52`
-- 最近本地验证 UI 版本: `1.53`
+- 最近生产风险修复: Web `1.54` public-open correction；具体 commit 以最新 GitHub backup 提交为准
+- 最近验证唯一部署: `https://6a15b9924af25310d2950255--kzg-option-house.netlify.app/`
+- 最近生产 UI 显示版本: `1.54`
+- 最近本地验证 UI 版本: `1.54`
 - 当前 iOS 伴生版本: `0.4`，对应 Web `1.50`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
@@ -44,10 +44,10 @@ English:
 - Branch: `feat/kzg-option-house-daily-auto`
 - Remote: `https://github.com/Kzggzk/xxqq.git`
 - Production site: `https://kzg-option-house.netlify.app/`
-- Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
-- Latest verified unique deploy: `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`
-- Latest visible production UI version: `1.52`
-- Latest locally verified UI version: `1.53`
+- Latest public-risk fix: Web `1.54` public-open correction; exact commit is the latest GitHub backup commit
+- Latest verified unique deploy: `https://6a15b9924af25310d2950255--kzg-option-house.netlify.app/`
+- Latest visible production UI version: `1.54`
+- Latest locally verified UI version: `1.54`
 - Current iOS companion version: `0.4`, mapped to Web `1.50`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
@@ -92,14 +92,13 @@ CHANGLOG 期权终端
       Timeline and selected history / 时间轴与精选历史
       KZG-branded PNG export / KZG 品牌 PNG 导出
       Bilingual UI and theme switch / 中英文与深浅色
-      Blur previews for advanced power / 高级功能模糊预览
-    Paid product / 付费产品
-      Historical lookback / 历史回看
-      Rotation quadrant history / 轮动象限历史
-      Symbol rooms / 标的房间
-      Predictive momentum panels / 预测动量面板
-      Clean export policy / 无水印导出策略
+      Open derived panels / 派生功能开放可读
+    Future commercial layer / 未来商业层
+      Current generated-minute features stay open / 当前已生成分钟数据功能保持开放
       Real-time derived feed after license approval / 授权后实时派生 feed
+      Alert service and watchlists / 提醒服务与观察列表
+      Account workflow after backend approval / 后端批准后的账户流程
+      Export policy only if Fangbao approves / 导出策略需 Fangbao 另批
   Identity / 身份
     Registration / 注册
     Login / 登录
@@ -267,6 +266,44 @@ Public visual action: `public/styles.css` adds `.feed-boundary-rail`. It is a th
 Verification facts: `node --check public/app.js` passed; build produced a `505`-day payload, latest date `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-81f858a7af7c.js`; `per_day_to_dist.py` returned `copied=505`. Risk scans over `public` and `dist` returned 0. Local Playwright verified desktop, phone, and phone event area with no horizontal overflow, no console issue, and `user-select:none`; desktop shows 8 event cards, phone shows 4, the boundary rail has 3 visible cells, and current tier is `public-latest`. Screenshots are `/tmp/kzg-option-house-v153-desktop.png`, `/tmp/kzg-option-house-v153-mobile.png`, and `/tmp/kzg-option-house-v153-mobile-events.png`. PNG export `/tmp/kzg-option-house-v153-export.png` succeeded at `1,482,138` bytes.
 
 Deploy state: v1.53 is not deployed to production. Production remains v1.52, unique deploy `https://6a15ae01b139b100d8816c5e--kzg-option-house.netlify.app/`. Next v1.54 should model fanout/load/cache and event compression; v1.55 remains the default iOS companion sync.
+
+## 4.0.4 v1.54 public-open correction / v1.54 当前功能全开放纠偏
+
+中文:
+
+北京时间 2026-05-26 23:02 左右进入 Web `1.54`。触发条件是 Fangbao 明确纠偏：当前不要 blur 任何事，不要现在做付费订阅唤醒或现有功能遮挡；所有现有分钟数据能力先给用户直接使用。未来真正值得设计付费计划的地方，是接入真实实时 option feed 之后的服务层。
+
+公开代码动作：`public/app.js` 把 `UI_VERSION` 从 `1.53` 提到 `1.54`。`isHistoryLocked()` 现在始终返回 `false`，`renderPremiumPreview()` 内的 `locked` 固定为 `false`，旧的 `is-blurred` 模板输出已从公开 JS 清理；后续补刀让 `applyAccessState()` 直接移除旧 `.pro-lock-overlay`，不再创建锁层。`feedVisibilityState()` 不再输出 `blurred-history`，改成 `public-latest`、`history-open`、`future-live-feed`。文案改成“历史回看开放”“当前分钟数据能力完整开放”“未来实时流另行设计服务层”。这意味着当前网页上的趋势、轮动、动量、事件队列、历史回看、PNG 导出都保持可读，不再做视觉遮挡。
+
+公开视觉动作：`public/styles.css` 追加 v1.54 兜底层，并把旧 `.is-blurred` 与 `.is-pro-locked` 视觉规则改为 `filter:none`、`opacity:1`、可交互。即使未来某段旧代码误把旧锁类挂回 DOM，`.premium-lock`、`.premium-quadrant-veil`、`.pro-lock-overlay` 也会被隐藏，旧高级区域不会再产生可见模糊。当前实际 DOM 验证中 `visibleBlurred=0`，`visibleLocks=0`。
+
+产品判断：付费规划没有取消，而是被放回正确位置。当前静态分钟数据站不应该靠遮挡已有能力卖付费；它应该先把 dashboard 本身做强。真正的商业层应围绕 future real-time option feed：后端采集、授权确认、缓存、事件压缩、fanout、账户权限、服务层和 iOS/Web 同步。真实 key、套餐升级、商业授权、支付、域名和 TestFlight 仍然必须先停下确认。
+
+验证事实：`node --check public/app.js` 通过。build 生成 `505` 天 payload，最新交易日 `2026-05-22`，analytics symbols `98`，pack asset `kzg-frame-20c5a70ad594.js`；`per_day_to_dist.py` 复制 `505` 个 report。公开 source/dist 商业风险词扫描为 0；`public/app.js` 与 `dist/app.js` 无旧的 `模糊/blurred/paid/paywall` 公开文案。Browser 本地验证 `historyLocked=false`、`visibleBlurred=0`、`visibleLocks=0`、`riskText=false`、`overflowX=0`。Playwright 本地桌面 `1440x1100` 和手机 `390x844` 都切到历史日 `2026-01-22`，仍是 `history-open`，无可见模糊、无遮罩、无横向溢出、无 console issue。PNG 导出 `/tmp/kzg-option-house-v154-export.png` 成功，大小 `1,482,138` bytes。
+
+生产结果：立即部署生产。生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a15b9924af25310d2950255--kzg-option-house.netlify.app/`。线上 smoke 确认 `/` 为 `200`，`/app.js` 为 `UI_VERSION="1.54"`，`/data/index.json` 和 `/assets/kzg-pack.js` 继续 `404`。线上桌面与手机切到历史日后均为 `historyLocked=false`、`eventTier=history-open`、`visibleBlurred=0`、`visibleLocks=0`、`riskText=false`、横向溢出 `0`。线上 PNG 导出 `/tmp/kzg-option-house-v154-prod-export.png` 成功，大小 `1,482,138` bytes。
+
+Apple Notes：置顶/owner-facing 同名笔记 `CHANGLOG 期权终端` 已从本文件同步。同步后同名 note 数量为 1，正文约 `127k` 字符，包含 v1.54 公开全开放纠偏、新 Netlify 唯一部署、当前不再 blur/lock/paywall 的规则，以及未来付费计划只进入真实实时 feed 服务层的边界。
+
+下一步：v1.55 继续 spacing/calligraphy，尤其手机端从摘要到高级区的阅读节奏。若做 iOS companion，同步这次“当前功能全开放”的产品状态。实时 feed 付费计划继续只写内部架构，不进公开主页，不使用截图暴露 key。
+
+English:
+
+Around 2026-05-26 23:02 Asia/Shanghai, Web `1.54` started. The trigger was Fangbao's explicit correction: do not blur anything now, do not wake a subscription flow now, and do not hide existing features. All current minute-data capability should be directly usable. The real paid-plan design belongs to the future real-time option feed service layer after actual backend/API work.
+
+Public code action: `public/app.js` moves `UI_VERSION` from `1.53` to `1.54`. `isHistoryLocked()` now always returns `false`, `renderPremiumPreview()` forces `locked=false`, old `is-blurred` template output has been removed from public JS, and `applyAccessState()` now removes old `.pro-lock-overlay` nodes instead of creating lock layers. `feedVisibilityState()` no longer emits `blurred-history`; it now uses `public-latest`, `history-open`, and `future-live-feed`. Copy changed to history open, current minute-data features open, and future live feed as a separate service layer. This keeps trend, rotation, momentum, event queue, historical lookback, and PNG export readable with no visual veil.
+
+Public visual action: `public/styles.css` adds a v1.54 safeguard layer and changes old `.is-blurred` and `.is-pro-locked` visual rules to `filter:none`, `opacity:1`, and interactive. If old lock classes ever get attached by mistake, `.premium-lock`, `.premium-quadrant-veil`, and `.pro-lock-overlay` are hidden, and old advanced-section blur cannot return. Actual DOM verification reports `visibleBlurred=0` and `visibleLocks=0`.
+
+Product judgment: paid planning is not canceled; it is moved back to the right place. The current static minute-data site should not sell by hiding existing capability. It should make the dashboard itself stronger first. The real commercial layer should center on the future real-time option feed: backend ingestion, entitlement confirmation, cache, event compression, fanout, account access, service layer, and Web/iOS sync. Real keys, plan upgrade, commercial rights, payment, domain, and TestFlight actions still require stopping for Fangbao confirmation.
+
+Verification facts: `node --check public/app.js` passed. The build produced `505` days, latest trading date `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-20c5a70ad594.js`; `per_day_to_dist.py` copied `505` reports. Public source/dist commercial-risk scan returned 0; `public/app.js` and `dist/app.js` no longer contain the old public blur/paid/paywall copy. Browser local verification reported `historyLocked=false`, `visibleBlurred=0`, `visibleLocks=0`, `riskText=false`, and `overflowX=0`. Local Playwright desktop `1440x1100` and phone `390x844` both moved to historical date `2026-01-22` and stayed `history-open` with no visible blur, no veil, no horizontal overflow, and no console issue. PNG export `/tmp/kzg-option-house-v154-export.png` succeeded at `1,482,138` bytes.
+
+Production result: deployed immediately to production. Production site `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15b9924af25310d2950255--kzg-option-house.netlify.app/`. Live smoke confirmed `/` as `200`, `/app.js` as `UI_VERSION="1.54"`, and `/data/index.json` plus `/assets/kzg-pack.js` still `404`. Live desktop and phone on a historical date both reported `historyLocked=false`, `eventTier=history-open`, `visibleBlurred=0`, `visibleLocks=0`, `riskText=false`, and horizontal overflow `0`. Live PNG export `/tmp/kzg-option-house-v154-prod-export.png` succeeded at `1,482,138` bytes.
+
+Apple Notes: the owner-facing note with exact title `CHANGLOG 期权终端` has been synced from this file. After sync, there is 1 note with that exact title and about `127k` body characters, including the v1.54 public-open correction, the new Netlify unique deploy, the no-blur/no-lock/no-paywall current rule, and the boundary that future paid planning belongs only to the real-time feed service layer.
+
+Next: v1.55 should continue spacing/calligraphy, especially the phone rhythm from summary into the advanced area. If the iOS companion is touched, sync this "current features open" product state. Real-time feed paid planning remains internal architecture only, not homepage content, and exposed screenshot keys must not be used.
 
 ## 4.1 v1.40 production checkpoint / v1.40 生产检查点
 
@@ -535,9 +572,9 @@ Core layers:
 1. Frontend dashboard / 前端仪表盘
    - Public latest-day view, timeline, charts, tables, hover panels, PNG export.
    - 公开最新日、时间轴、图表、表格、hover 面板、PNG 导出。
-2. Entitlement layer / 权限层
-   - Decides free vs paid, latest-day vs historical, watermarked vs clean export, blurred vs opened panels.
-   - 决定免费/付费、当日/历史、水印/无水印、模糊/开放。
+2. Future entitlement layer / 未来权限层
+   - Current generated-minute features stay open. Future entitlement applies only to real-time feed, alerts, saved rooms, or approved export changes.
+   - 当前已生成分钟数据功能保持开放。未来权限只作用于真实实时 feed、提醒、保存房间或 Fangbao 另批的导出变化。
 3. Auth layer / 登录层
    - Email/password or magic link first; wallet identity later; WeChat identity only after product need is clear.
    - 优先邮箱/密码或 magic link；钱包身份后置；微信身份等产品需要明确后再做。
@@ -628,33 +665,33 @@ USDT：
 - Automate only after fraud/accounting rules exist.
 - 有反欺诈和账务规则后再自动化。
 
-## 8. Free vs paid line / 免费与付费边界
+## 8. Current open vs future real-time line / 当前开放与未来实时边界
 
-Free should be useful enough to prove value. Paid should feel obviously deeper without leaking raw data.
+Current public features should be useful, readable, and open. Future paid value should come from real-time service capability after backend, legal, and credential approval, not from hiding existing generated-minute features.
 
-免费版要有足够价值证明产品。付费版要明显更深，但不能泄漏原始数据。
+当前公开功能要有足够价值、可读、开放。未来付费价值应来自后端、法律和凭证批准后的真实实时服务能力，而不是遮挡现有已生成分钟数据功能。
 
-Free:
+Current open:
 
-免费：
+当前开放：
 
 - latest trading day / 最新交易日；
+- historical lookback from landed generated data / 已落地生成数据的历史回看；
 - top tables / 核心 Top 表；
-- basic rotation snapshot / 基础轮动快照；
+- rotation quadrant and rhythm panels / 轮动象限和节奏面板；
+- derived momentum and signal panels / 派生动量和信号面板；
 - watermarked PNG export / 带水印 PNG；
-- blurred premium modules / 模糊高级模块。
+- product-safe live-feed silhouette without real credentials / 不用真实凭证的产品安全实时流轮廓。
 
-Paid:
+Future commercial after approval:
 
-付费：
+未来批准后的商业层：
 
-- historical lookback / 历史回看；
-- predictive momentum panels / 预测动量面板；
-- symbol rooms / 标的房间；
-- rotation quadrant history / 轮动象限历史；
-- deeper hover charts / 更深 hover 图；
-- export policy upgrade if approved / 批准后导出策略升级；
-- future real-time derived feed after legal/business entitlement / 商业授权后开放实时派生 feed。
+- real-time derived feed / 实时派生 feed；
+- alert engine and notification routing / 提醒引擎和通知分发；
+- saved watchlists and symbol rooms / 保存观察列表和标的房间；
+- service-level reliability and account workflow / 服务稳定性和账户工作流；
+- export policy changes only if Fangbao separately approves / 导出策略变化需 Fangbao 另批。
 
 ## 9. Massive and API boundary / Massive 与 API 边界
 

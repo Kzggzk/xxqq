@@ -8344,7 +8344,7 @@ body[data-theme="dark"] .heat-lane-track {
   }
 }
 
-/* v56-v60 pass: paid-product shell, login surface, and Pro preview locks. */
+/* v56-v60 pass: product navigation shell and advanced analysis rails. */
 .toolbar {
   flex-wrap: wrap;
 }
@@ -8723,10 +8723,10 @@ body[data-theme="dark"] .heat-lane-track {
 }
 
 .unlock-preview.is-blurred {
-  filter: blur(4.2px);
-  opacity: 0.72;
-  pointer-events: none;
-  user-select: none;
+  filter: none;
+  opacity: 1;
+  pointer-events: auto;
+  user-select: auto;
 }
 
 .unlock-checklist {
@@ -9109,16 +9109,16 @@ body[data-theme="dark"] .heat-lane-track {
 
 .premium-quadrant.is-blurred .premium-quadrant-map,
 .premium-quadrant.is-blurred .premium-quadrant-stats {
-  filter: blur(4.8px);
-  opacity: 0.72;
-  user-select: none;
+  filter: none;
+  opacity: 1;
+  user-select: auto;
 }
 
 .premium-grid.is-blurred .premium-card {
-  filter: blur(3.6px);
-  opacity: 0.78;
+  filter: none;
+  opacity: 1;
   transform: translateZ(0);
-  user-select: none;
+  user-select: auto;
 }
 
 .premium-lookback {
@@ -9281,9 +9281,9 @@ body[data-theme="dark"] .heat-lane-track {
 }
 
 .premium-lookback.is-blurred .lookback-body {
-  filter: blur(5px);
-  opacity: 0.7;
-  user-select: none;
+  filter: none;
+  opacity: 1;
+  user-select: auto;
 }
 
 .premium-signal-stack {
@@ -9417,9 +9417,9 @@ body[data-theme="dark"] .heat-lane-track {
 
 .premium-signal-stack.is-blurred .signal-stack-rows,
 .premium-signal-stack.is-blurred .signal-stack-tape {
-  filter: blur(5px);
-  opacity: 0.7;
-  user-select: none;
+  filter: none;
+  opacity: 1;
+  user-select: auto;
 }
 
 .live-silhouette {
@@ -9564,10 +9564,10 @@ body[data-theme="dark"] .heat-lane-track {
 
 .live-silhouette.is-blurred .live-silhouette-lanes,
 .live-silhouette.is-blurred .live-silhouette-stream {
-  filter: blur(5px);
-  opacity: 0.7;
-  pointer-events: none;
-  user-select: none;
+  filter: none;
+  opacity: 1;
+  pointer-events: auto;
+  user-select: auto;
 }
 
 /* v1.35 pass: turn premium blocks into quieter continuous rails. */
@@ -9693,10 +9693,10 @@ body[data-theme="dark"] .heat-lane-track {
 }
 
 .panel.is-pro-locked > :not(.section-head):not(.pro-lock-overlay) {
-  filter: blur(6px);
-  opacity: 0.56;
-  pointer-events: none;
-  user-select: none;
+  filter: none;
+  opacity: 1;
+  pointer-events: auto;
+  user-select: auto;
 }
 
 .pro-lock-overlay {
@@ -11111,10 +11111,10 @@ body[data-theme="dark"] .account-sheet {
 
 .premium-capability-rail.is-locked .capability-rails,
 .premium-capability-rail.is-locked .capability-meter {
-  filter: blur(4.8px);
-  opacity: 0.72;
-  pointer-events: none;
-  user-select: none;
+  filter: none;
+  opacity: 1;
+  pointer-events: auto;
+  user-select: auto;
 }
 
 body[data-theme="dark"] .capability-lead,
@@ -13802,8 +13802,8 @@ body[data-theme="dark"] .live-silhouette-stream .cool i::before {
   }
 
   .panel.is-pro-locked > :not(.section-head):not(.pro-lock-overlay) {
-    filter: blur(8px);
-    opacity: 0.24;
+    filter: none;
+    opacity: 1;
   }
 
   .pro-lock-overlay {
@@ -14087,10 +14087,10 @@ body[data-theme="dark"] .pro-lock-overlay {
 }
 
 .live-event-queue.is-blurred {
-  filter: blur(5px);
-  opacity: 0.68;
-  pointer-events: none;
-  user-select: none;
+  filter: none;
+  opacity: 1;
+  pointer-events: auto;
+  user-select: auto;
 }
 
 .premium-capability-rail {
@@ -14264,4 +14264,29 @@ body[data-theme="dark"] .feed-boundary-rail span {
   .live-event-queue button:nth-child(n+5) {
     display: none;
   }
+}
+
+/* v1.54 public-open correction: no public feature blur or lock veil. */
+.premium-grid.is-blurred .premium-card,
+.premium-quadrant.is-blurred .premium-quadrant-map,
+.premium-quadrant.is-blurred .premium-quadrant-stats,
+.premium-lookback.is-blurred .lookback-body,
+.premium-signal-stack.is-blurred .signal-stack-rows,
+.premium-signal-stack.is-blurred .signal-stack-tape,
+.premium-capability-rail.is-locked .capability-rails,
+.premium-capability-rail.is-locked .capability-meter,
+.unlock-preview.is-blurred,
+.live-silhouette.is-blurred .live-silhouette-lanes,
+.live-silhouette.is-blurred .live-silhouette-stream,
+.live-event-queue.is-blurred,
+.panel.is-pro-locked > :not(.section-head):not(.pro-lock-overlay) {
+  filter: none !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.premium-lock,
+.premium-quadrant-veil,
+.pro-lock-overlay {
+  display: none !important;
 }

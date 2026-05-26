@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.53";
+const UI_VERSION = "1.54";
 
 const dataAudit = {
   dataset: "23_DATA_Massive_期权分钟_Minute",
@@ -70,7 +70,7 @@ const copy = {
     momentum: "核心标的动量",
     momentumSub: "悬停标的查看跨日成交小图。",
     symbolFocus: "标的聚焦",
-    symbolFocusSub: "点击任意标的锁定 90 日成交、权利金与 CP 结构。",
+    symbolFocusSub: "点击任意标的固定查看 90 日成交、权利金与 CP 结构。",
     totalVolume: "总期权成交量",
     premium: "权利金成交额",
     marketCp: "Put/Call 成交量",
@@ -82,16 +82,16 @@ const copy = {
     currentDay: "当前交易日",
     kzgByline: "口罩哥独家数据整理",
     kzgPlanet: "口罩哥星球",
-    loginPro: "功能边界",
+    loginPro: "功能路线",
     proActive: "高级功能",
-    latestFree: "今日免费",
-    historyLocked: "历史回看已锁定",
+    latestFree: "当前开放",
+    historyLocked: "历史回看开放",
     upgrade: "功能预览",
     preview: "功能预览",
     accountTitle: "KZG Option House 高级功能",
-    accountSub: "公开页面只展示可读信号、模糊预览和 PNG 输出边界。",
-    paywallTitle: "历史深度预览",
-    paywallSub: "今日读盘完整开放；历史回看以模糊结构展示，保留方向、节奏和导出边界。",
+    accountSub: "现有分钟数据能力完整开放；未来实时流另行规划。",
+    depthTitle: "历史深度回看",
+    depthSub: "当前分钟数据能力完整开放；未来实时期权流再单独设计服务层。",
   },
   en: {
     today: "Today",
@@ -138,16 +138,16 @@ const copy = {
     currentDay: "Current Day",
     kzgByline: "Curated by 口罩哥",
     kzgPlanet: "KZG Inner Circle",
-    loginPro: "Feature boundary",
+    loginPro: "Feature map",
     proActive: "Advanced layer",
-    latestFree: "Today is free",
-    historyLocked: "History locked",
+    latestFree: "Open now",
+    historyLocked: "History open",
     upgrade: "Feature preview",
     preview: "Feature preview",
     accountTitle: "KZG Option House Advanced",
-    accountSub: "The public page shows readable signals, blurred previews, and PNG export boundaries.",
-    paywallTitle: "Historical depth preview",
-    paywallSub: "Latest session is fully open; history appears as a blurred structure with direction, rhythm, and export boundary.",
+    accountSub: "Current minute-data features are open; future live feed is planned separately.",
+    depthTitle: "Historical depth",
+    depthSub: "Current minute-data features are open; the future real-time option feed can carry its own service layer later.",
   },
 };
 
@@ -426,33 +426,33 @@ function isLatestDay() {
 }
 
 function isHistoryLocked() {
-  return !isPro() && !isLatestDay();
+  return false;
 }
 
 function feedVisibilityState(locked) {
   const latest = isLatestDay();
-  const tier = latest ? "public-latest" : locked ? "blurred-history" : "advanced-derived";
+  const tier = latest ? "public-latest" : "history-open";
   const steps = state.lang === "zh"
     ? [
       {
         id: "public-latest",
         title: "今日开放",
-        value: latest ? "读取中" : "最新日",
+        value: latest ? "当前" : "最新日",
         note: "最新交易日派生事件完整可读",
         tone: "open",
       },
       {
-        id: "blurred-history",
-        title: "历史预览",
-        value: locked ? "模糊" : "可读",
-        note: "历史日期保留方向和节奏轮廓",
-        tone: "preview",
+        id: "history-open",
+        title: "历史开放",
+        value: "可读",
+        note: "历史日期、趋势和轮动信号完整开放",
+        tone: "open",
       },
       {
-        id: "advanced-derived",
-        title: "深层派生",
-        value: isPro() ? "开放" : "排队",
-        note: "更深事件层等待服务边界确认",
+        id: "future-live-feed",
+        title: "实时流规划",
+        value: "后续",
+        note: "真实实时期权流以后端和授权确认后再接",
         tone: "queued",
       },
     ]
@@ -465,17 +465,17 @@ function feedVisibilityState(locked) {
         tone: "open",
       },
       {
-        id: "blurred-history",
-        title: "History preview",
-        value: locked ? "Blurred" : "Readable",
-        note: "Historical dates keep direction and rhythm",
-        tone: "preview",
+        id: "history-open",
+        title: "History open",
+        value: "Readable",
+        note: "Historical dates, trend, and rotation signals are open",
+        tone: "open",
       },
       {
-        id: "advanced-derived",
-        title: "Deep derived",
-        value: isPro() ? "Open" : "Queued",
-        note: "Deeper event layer waits for service boundary",
+        id: "future-live-feed",
+        title: "Live feed later",
+        value: "Later",
+        note: "A real-time option feed waits for backend and rights confirmation",
         tone: "queued",
       },
     ];
@@ -509,12 +509,12 @@ function renderAccountModal() {
   const rows = state.lang === "zh"
     ? [
       ["当日读盘", "免费开放", "最新交易日保留完整市场结构。"],
-      ["历史深挖", "暂未公开", "历史日期只保留模糊预览和研究线索。"],
+      ["历史深挖", "完整开放", "历史日期、趋势窗口和轮动线索直接可读。"],
       ["PNG 输出", "保持稳定", "延续 KZG 老日报表格导出，不暴露底层数据包。"],
     ]
     : [
       ["Latest read", "Open", "The latest session keeps the full market structure."],
-      ["Deep history", "Not public", "Historical dates keep blurred previews and research hints."],
+      ["Deep history", "Open", "Historical dates, trend windows, and rotation hints are readable."],
       ["PNG export", "Stable", "The original KZG sheet export remains, without exposing raw data."],
     ];
   target.innerHTML = `
@@ -546,14 +546,14 @@ function entitlementRows() {
   const rows = state.lang === "zh"
     ? [
       ["最新交易日", "完整", "当天读盘、分钟节奏和 PNG 导出保持开放。"],
-      ["历史回看", "模糊", "保留趋势提示，不直接公开完整历史工作台。"],
-      ["高级信号", "预览", "轮动、动量和异常分钟只展示可理解的摘要。"],
+      ["历史回看", "完整", "趋势、轮动、动量和异常分钟保持开放。"],
+      ["高级信号", "可读", "现有派生信号都直接展示，真实实时流另行规划。"],
       ["原始数据", "不公开", "页面只允许生成 PNG，不提供数据包和底层文件入口。"],
     ]
     : [
       ["Latest session", "Full", "Daily read, minute rhythm, and PNG export remain open."],
-      ["History", "Blurred", "Trend hints stay visible without publishing the full historical workspace."],
-      ["Advanced signals", "Preview", "Rotation, momentum, and anomaly minutes show readable summaries only."],
+      ["History", "Full", "Trend, rotation, momentum, and anomaly minutes remain open."],
+      ["Advanced signals", "Readable", "Current derived signals are shown; real-time feed is planned separately."],
       ["Raw data", "Private", "The page exports PNG only, without raw file entry points."],
     ];
   return `
@@ -581,8 +581,8 @@ function renderAccessStrip() {
   const sub = isPro()
     ? (state.lang === "zh" ? "历史回看和深度动量层已开放。" : "History and deep momentum are open.")
     : latest
-      ? (state.lang === "zh" ? "当前交易日完整开放；历史日期保留模糊预览。" : "Latest trading day is open; history keeps blurred previews.")
-      : t("paywallSub");
+      ? (state.lang === "zh" ? "当前交易日完整开放；历史日期也可直接回看。" : "Latest trading day is open; history is directly readable too.")
+      : t("depthSub");
   target.innerHTML = `
     <div class="access-copy ${locked ? "locked" : "open"}">
       <span>${escapeHtml(label)}</span>
@@ -595,7 +595,7 @@ function renderAccessStrip() {
 function renderPremiumPreview() {
   const target = $("premiumPreview");
   if (!target || !state.day) return;
-  const locked = !isPro() && !isLatestDay();
+  const locked = false;
   const rows = symbolRotationRows();
   const attack = rows.filter((row) => row.delta >= 0 && row.premiumDelta >= 0);
   const fade = rows.filter((row) => row.delta < 0 && row.premiumDelta < 0);
@@ -608,13 +608,13 @@ function renderPremiumPreview() {
     <div class="premium-head">
       <div>
         <h2>${state.lang === "zh" ? "高级情报层" : "Advanced intelligence layer"}</h2>
-        <p>${state.lang === "zh" ? "今日交易日免费展示核心能力；历史回看保留模糊预览。" : "Latest session shows the core layer for free; historical lookback stays blurred."}</p>
+        <p>${state.lang === "zh" ? "现有分钟数据能力完整开放；未来实时流作为下一阶段单独设计。" : "Current minute-data features are open; the future live feed is a separate next stage."}</p>
       </div>
     </div>
     ${dataAuditSeal()}
     ${premiumCapabilityRail(rows, locked)}
     ${premiumUnlockDeck(rows, locked)}
-    <div class="premium-grid ${locked ? "is-blurred" : ""}">
+    <div class="premium-grid">
       ${premiumCard(state.lang === "zh" ? "轮动象限回看" : "Rotation lookback", lead.symbol || "--", `${attack.length}/${fade.length}`, state.lang === "zh" ? "量价同升 vs 同步降温" : "warming vs cooling")}
       ${premiumCard(state.lang === "zh" ? "异常分钟雷达" : "Anomaly minute radar", maxBucket.time || "--", wan(maxBucket.total || 0), state.lang === "zh" ? "峰值桶 + 历史偏离" : "peak bucket + history drift")}
       ${premiumCard(state.lang === "zh" ? "权利金追踪" : "Premium tracking", premiumLead.symbol || "--", moneyCompact(premiumLead.premiumNotional), state.lang === "zh" ? "资金锚点与变化率" : "premium anchor and velocity")}
@@ -624,7 +624,6 @@ function renderPremiumPreview() {
     ${premiumSignalStack(rows, locked)}
     ${liveFeedSilhouette(rows, locked)}
     ${premiumQuadrantPreview(rows, locked)}
-    ${locked ? `<div class="premium-lock" aria-hidden="true">${lockedPreviewOverlay(t("paywallTitle"), "premium")}</div>` : ""}
   `;
 }
 
@@ -639,7 +638,7 @@ function lockedPreviewOverlay(label, variant = "panel") {
       : (state.lang === "zh" ? "当日开放，历史只展示结构预览。" : "Latest day is open; history shows structure preview only.");
   return `
     <b>${escapeHtml(label)}</b>
-    <span>${t("paywallSub")}</span>
+    <span>${t("depthSub")}</span>
     <div class="lock-preview-chips">
       ${chips.map((chip) => `<i>${escapeHtml(chip)}</i>`).join("")}
     </div>
@@ -669,9 +668,7 @@ function premiumCapabilityRail(rows, locked) {
     : 0;
   const tone = volLift >= 10 || premiumLift >= 12 || breadth >= 36 ? "hot" : volLift <= -10 || premiumLift <= -12 || breadth <= 18 ? "cool" : "flat";
   const lead = attack.slice().sort((a, b) => (b.delta + b.premiumDelta * 0.6) - (a.delta + a.premiumDelta * 0.6))[0] || rows[0] || {};
-  const mode = locked
-    ? (state.lang === "zh" ? "历史日期保留模糊轮廓" : "Historical dates stay as blurred silhouettes")
-    : (state.lang === "zh" ? "当日完整开放" : "Latest session is open");
+  const mode = state.lang === "zh" ? "当前与历史数据都完整开放" : "Current and historical data are open";
   const rails = state.lang === "zh"
     ? [
       ["能量", `${volLift >= 0 ? "+" : ""}${fmt1.format(volLift)}%`, "vs 60D", volLift >= 10 ? "hot" : volLift <= -10 ? "cool" : "flat"],
@@ -769,8 +766,8 @@ function premiumUnlockDeck(rows, locked) {
   const maxVol = Math.max(...bars.map((row) => Number(row.totalVol) || 0), 1);
   const symbolCount = Object.keys(state.analytics?.symbols || {}).length || rows.length || 0;
   const archiveCopy = state.lang === "zh"
-    ? `${fmt0.format(daily.length)} 个交易日 · ${fmt0.format(symbolCount)} 个标的历史 · 最新日开放，历史深挖保留预览。`
-    : `${fmt0.format(daily.length)} sessions · ${fmt0.format(symbolCount)} symbols · latest day open, deep history stays previewed.`;
+    ? `${fmt0.format(daily.length)} 个交易日 · ${fmt0.format(symbolCount)} 个标的历史 · 当前数据能力开放。`
+    : `${fmt0.format(daily.length)} sessions · ${fmt0.format(symbolCount)} symbols · current data features open.`;
   return `
     <div class="premium-unlock-deck ${locked ? "is-locked" : ""}">
       <div class="unlock-lead">
@@ -788,7 +785,7 @@ function premiumUnlockDeck(rows, locked) {
           </button>
         `).join("")}
       </div>
-      <div class="unlock-preview ${locked ? "is-blurred" : ""}">
+      <div class="unlock-preview">
         <div class="unlock-checklist">
           ${active.rows.map((row) => `
             <span class="${row[2]}">
@@ -826,8 +823,8 @@ function unlockScopes(rows) {
         kicker: "Archive",
         title: "Historical cockpit",
         value: `${fmt0.format(daily.length)}D`,
-        copy: "Full historical dates, comparison windows, prior extremes, and locked-date navigation become a paid workspace.",
-        rows: [["History dates", `${fmt0.format(daily.length)} sessions`, "hot"], ["Current high", shortDate(historyHigh.date || state.day.tradeDate), "flat"], ["Locked dates", "blur preview now", "cool"]],
+        copy: "Historical dates, comparison windows, prior extremes, and selected-date navigation are open in the current workspace.",
+        rows: [["History dates", `${fmt0.format(daily.length)} sessions`, "hot"], ["Current high", shortDate(historyHigh.date || state.day.tradeDate), "flat"], ["Selected date", "readable now", "flat"]],
       },
       {
         id: "prediction",
@@ -861,8 +858,8 @@ function unlockScopes(rows) {
       kicker: "档案",
       title: "历史驾驶舱",
       value: `${fmt0.format(daily.length)}日`,
-      copy: "完整历史日期、对比窗口、前高前低和锁定日期导航，只以模糊轮廓呈现。",
-      rows: [["历史日期", `${fmt0.format(daily.length)} 个交易日`, "hot"], ["当前高点", shortDate(historyHigh.date || state.day.tradeDate), "flat"], ["锁定日期", "当前只给模糊预览", "cool"]],
+      copy: "完整历史日期、对比窗口、前高前低和选定日期导航，当前工作台都可直接阅读。",
+      rows: [["历史日期", `${fmt0.format(daily.length)} 个交易日`, "hot"], ["当前高点", shortDate(historyHigh.date || state.day.tradeDate), "flat"], ["选定日期", "当前可读", "flat"]],
     },
     {
       id: "prediction",
@@ -917,7 +914,7 @@ function premiumLookbackPanel(locked) {
     ? `${windowLabel(state.proLookback)} 里成交 ${volumeMove >= 0 ? "+" : ""}${fmt1.format(volumeMove)}%，权利金 ${premiumMove >= 0 ? "+" : ""}${fmt1.format(premiumMove)}%，CP 漂移 ${cpMove >= 0 ? "+" : ""}${fmt2.format(cpMove)}。`
     : `${windowLabel(state.proLookback)} volume ${volumeMove >= 0 ? "+" : ""}${fmt1.format(volumeMove)}%, premium ${premiumMove >= 0 ? "+" : ""}${fmt1.format(premiumMove)}%, CP drift ${cpMove >= 0 ? "+" : ""}${fmt2.format(cpMove)}.`;
   return `
-    <div class="premium-lookback ${locked ? "is-blurred" : ""}">
+    <div class="premium-lookback">
       <div class="lookback-head ${tone}">
         <div>
           <span>${state.lang === "zh" ? "深度回看" : "Deep lookback"}</span>
@@ -988,10 +985,10 @@ function premiumSignalStack(rows, locked) {
       ["Rotation breadth", `${fmt1.format(breadth)}%`, `${attack.length} warming / ${fade.length} cooling`, breadth >= 34 ? "hot" : breadth <= 18 ? "cool" : "flat"],
     ];
   const verdict = state.lang === "zh"
-    ? `${lead.symbol || "--"} 主导，综合分 ${score >= 0 ? "+" : ""}${fmt1.format(score)}。历史日期的完整解释和标的归因暂不公开。`
-    : `${lead.symbol || "--"} leads, composite ${score >= 0 ? "+" : ""}${fmt1.format(score)}. Full historical explanation and attribution are not public yet.`;
+    ? `${lead.symbol || "--"} 主导，综合分 ${score >= 0 ? "+" : ""}${fmt1.format(score)}。历史解释和标的归因保持可读。`
+    : `${lead.symbol || "--"} leads, composite ${score >= 0 ? "+" : ""}${fmt1.format(score)}. Historical explanation and symbol attribution remain readable.`;
   return `
-    <div class="premium-signal-stack ${tone} ${locked ? "is-blurred" : ""}">
+    <div class="premium-signal-stack ${tone}">
       <div class="signal-stack-lead">
         <span>${state.lang === "zh" ? "预测动量栈" : "Predictive momentum stack"}</span>
         <strong>${score >= 0 ? "+" : ""}${fmt1.format(score)}</strong>
@@ -1055,7 +1052,7 @@ function liveFeedSilhouette(rows, locked) {
       ["CP slope", cpLead.symbol || "--", `CP ${ratio(cpLead.cpRatio)}`],
     ];
   return `
-    <div class="live-silhouette ${locked ? "is-blurred" : ""}">
+    <div class="live-silhouette">
       <div class="live-silhouette-lead">
         <span>${state.lang === "zh" ? "实时流轮廓" : "Live feed silhouette"}</span>
         <strong>${escapeHtml(lead.symbol || "--")}</strong>
@@ -1151,7 +1148,7 @@ function feedBoundaryRail(visibility) {
 function liveEventQueue(events, locked) {
   if (!events.length) return "";
   return `
-    <div class="live-event-queue ${locked ? "is-blurred" : ""}" aria-label="${state.lang === "zh" ? "实时事件队列" : "Derived event queue"}">
+    <div class="live-event-queue" aria-label="${state.lang === "zh" ? "实时事件队列" : "Derived event queue"}">
       ${events.map((event) => `
         <button type="button" class="${event.tone}" data-symbol="${escapeHtml(event.symbol)}" data-event-kind="${escapeHtml(event.kind)}" data-event-score="${event.score.toFixed(1)}">
           <i>${escapeHtml(event.time)}</i>
@@ -1240,11 +1237,11 @@ function premiumQuadrantPreview(rows, locked) {
       lead: fade[0]?.symbol,
     },
   ];
-  const visibleMode = locked
-    ? (state.lang === "zh" ? "历史日期只保留方向轮廓，完整标的解释暂不公开。" : "Historical dates keep directional silhouettes only; full attribution is not public.")
-    : (state.lang === "zh" ? "当日象限开放，历史回看会转为模糊预览。" : "The latest quadrant is open; history turns into a blurred preview.");
+  const visibleMode = state.lang === "zh"
+    ? "当日和历史象限都保持开放，未来实时流再单独设计。"
+    : "Latest and historical quadrants stay open; the future live feed is a separate design.";
   return `
-    <div class="premium-quadrant ${locked ? "is-blurred is-history-preview" : ""}">
+    <div class="premium-quadrant">
       <div class="premium-quadrant-copy">
         <span>${locked ? t("historyLocked") : t("latestFree")}</span>
         <strong>${state.lang === "zh" ? "轮动象限图" : "Rotation quadrant"}</strong>
@@ -1274,7 +1271,6 @@ function premiumQuadrantPreview(rows, locked) {
           const title = `${row.symbol} · ${quadrantName(row)} · Vol ${row.delta >= 0 ? "+" : ""}${fmt1.format(row.delta)}% · Premium ${row.premiumDelta >= 0 ? "+" : ""}${fmt1.format(row.premiumDelta)}%`;
           return `<button type="button" class="${tone}" data-symbol="${escapeHtml(row.symbol)}" title="${escapeHtml(title)}" style="--x:${x.toFixed(1)}%;--y:${y.toFixed(1)}%;--s:${size.toFixed(0)}px">${escapeHtml(row.symbol)}</button>`;
         }).join("")}
-        ${locked ? `<div class="premium-quadrant-veil">${lockedPreviewOverlay(t("historyLocked"), "quadrant")}</div>` : ""}
       </div>
       <div class="premium-quadrant-stats">
         ${statRows.map((row) => `
@@ -1327,33 +1323,17 @@ function premiumCard(label, value, sub, foot) {
 }
 
 function applyAccessState() {
-  document.body.dataset.plan = isPro() ? "pro" : "free";
-  document.body.dataset.historyLocked = isHistoryLocked() ? "true" : "false";
+  document.body.dataset.plan = "open";
+  document.body.dataset.historyLocked = "false";
   const accountText = $("accountButtonText");
-  if (accountText) accountText.textContent = isPro() ? t("proActive") : t("loginPro");
-  const locked = isHistoryLocked();
-  const gated = [
-    [".trend-panel", state.lang === "zh" ? "跨日趋势回看" : "Cross-day trend"],
-    [".signal-panel", state.lang === "zh" ? "预测式结构读盘" : "Predictive structure"],
-    [".regime-panel", state.lang === "zh" ? "温度带历史" : "Regime history"],
-    [".rotation-panel", state.lang === "zh" ? "轮动象限深挖" : "Rotation deep dive"],
-    [".momentum-panel", state.lang === "zh" ? "标的动量回看" : "Symbol momentum history"],
-  ];
-  for (const [selector, label] of gated) {
+  if (accountText) accountText.textContent = t("loginPro");
+  const openPanels = [".trend-panel", ".signal-panel", ".regime-panel", ".rotation-panel", ".momentum-panel"];
+  for (const selector of openPanels) {
     const panel = document.querySelector(selector);
     if (!panel) continue;
-    panel.classList.toggle("is-pro-locked", locked);
+    panel.classList.remove("is-pro-locked");
     let overlay = panel.querySelector(".pro-lock-overlay");
-    if (locked && !overlay) {
-      overlay = document.createElement("button");
-      overlay.type = "button";
-      overlay.className = "pro-lock-overlay";
-      panel.appendChild(overlay);
-    }
-    if (overlay) {
-      overlay.hidden = !locked;
-      overlay.innerHTML = lockedPreviewOverlay(label);
-    }
+    if (overlay) overlay.remove();
   }
 }
 
