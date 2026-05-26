@@ -945,20 +945,7 @@ function renderHeatmap() {
     $("heatmapRhythm").innerHTML = "";
   }
   $("heatmapBaton").innerHTML = heatmapBaton(heatmapBatonRows(heat));
-  let html = `<div class="heat-table"><div class="heat-cell head">${state.lang === "zh" ? "标的" : "Symbol"}</div>`;
-  html += labels.map((label) => `<div class="heat-cell head">${label}</div>`).join("");
-  for (const row of heat) {
-    html += `<div class="heat-cell symbol" data-symbol="${escapeHtml(row.symbol)}">${row.symbol}</div>`;
-    html += row.values.map((value) => {
-      if (!value) return `<div class="heat-cell" style="background:#f4f1e9;color:#817b70">-</div>`;
-      const level = value / max;
-      const bg = blueHeat(level);
-      const fg = level > 0.56 ? "#fff" : "#28323b";
-      return `<div class="heat-cell" data-symbol="${escapeHtml(row.symbol)}" style="background:${bg};color:${fg}">${fmt1.format(value / 10000)}</div>`;
-    }).join("");
-  }
-  html += "</div>";
-  $("heatmap").innerHTML = html;
+  $("heatmap").innerHTML = heatmapLaneBoard(heat, labels, max);
 }
 
 function heatmapSummaryCard(label, value, sub, tone) {
@@ -968,6 +955,45 @@ function heatmapSummaryCard(label, value, sub, tone) {
       <b>${escapeHtml(value)}</b>
       <small>${escapeHtml(sub)}</small>
     </span>
+  `;
+}
+
+function heatmapLaneBoard(heat, labels, max) {
+  const axisIndexes = new Set([0, 3, 6, 9, labels.length - 1]);
+  const rows = heat.map((row) => {
+    const values = row.values.map((value) => Number(value) || 0);
+    const total = values.reduce((sum, value) => sum + value, 0) || 1;
+    const peakIndex = values.reduce((best, value, index) => value > values[best] ? index : best, 0);
+    const openVol = values.slice(0, 2).reduce((sum, value) => sum + value, 0);
+    const closeVol = values.slice(-2).reduce((sum, value) => sum + value, 0);
+    const closeShift = ((closeVol - openVol) / total) * 100;
+    const tone = closeShift >= 9 ? "hot" : closeShift <= -9 ? "cool" : "flat";
+    const segments = values.map((value, index) => {
+      const level = value ? value / max : 0;
+      const height = value ? Math.max(8, Math.min(100, level * 100)) : 2;
+      const label = labels[index] || "--";
+      const bg = value ? blueHeat(level) : "rgba(201, 194, 178, 0.26)";
+      return `<i title="${escapeHtml(`${label} · ${wan(value)}`)}" style="--h:${height.toFixed(1)}%;--c:${bg}"></i>`;
+    }).join("");
+    const shift = `${closeShift >= 0 ? "+" : ""}${fmt1.format(closeShift)}pt`;
+    const title = `${row.symbol} · ${wan(total)} · ${labels[peakIndex] || "--"} ${wan(values[peakIndex] || 0)} · ${shift}`;
+    return `
+      <button type="button" class="heat-lane-row ${tone}" data-symbol="${escapeHtml(row.symbol)}" title="${escapeHtml(title)}">
+        <strong>${escapeHtml(row.symbol)}</strong>
+        <span class="heat-lane-track" aria-hidden="true">${segments}</span>
+        <span class="heat-lane-meta">
+          <b>${wan(total)}</b>
+          <small>${escapeHtml(labels[peakIndex] || "--")} · ${shift}</small>
+        </span>
+      </button>
+    `;
+  }).join("");
+  const axis = labels.map((label, index) => `<span>${axisIndexes.has(index) ? escapeHtml(label) : ""}</span>`).join("");
+  return `
+    <div class="heat-lane-board">
+      <div class="heat-lane-axis" aria-hidden="true"><span></span><span>${axis}</span><span></span></div>
+      ${rows}
+    </div>
   `;
 }
 
