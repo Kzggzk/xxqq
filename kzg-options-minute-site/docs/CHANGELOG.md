@@ -142,6 +142,24 @@ English:
 - Deploy: production `https://kzg-option-house.netlify.app/`; unique deploy `https://6a155f54945106b4d1611609--kzg-option-house.netlify.app/`.
 - Next: v1.33 should keep polishing mobile advanced preview, the lower analysis panel entry point, and PNG export fidelity.
 
+## v1.33 - 2026-05-26 16:55 Asia/Shanghai - mobile advanced-preview compression
+
+中文:
+
+- 改动: 将本地 UI 版本号从 `1.32` 提到 `1.33`，新增移动端高级预览压缩层。
+- 重点: 继续只做公开 UI，不加入支付、注册、域名、API key、Stripe、Supabase、Massive 套餐或内部商业路线。
+- 视觉动作: 在 `760px` 以下压缩高级预览内边距；审计卡、功能地图、预测动量栈、轮动象限统一 8px gap；功能 tab 和高级卡改为双列扫读；lookback 指标、signal rows、quadrant stats 在手机宽度优先双列；在 `420px` 以下再退回单列，避免窄屏文字挤压。
+- 验证: build 生成 `505` 天 payload，最新日 `2026-05-22`，pack asset `kzg-frame-968c88f20da3.js`；本地 `390x844`、`420x920`、`1440x1100` 三个视口通过，无横向溢出；控制台错误为 0；公开风险词检索为 0；PNG 导出仍生成 `kzg-option-house-2026-05-22-zh.png`，大小约 `1.47MB`。该版本先作为 GitHub 备份，不立即生产部署，生产仍为 v1.32。
+- 下一步: v1.34 继续做首屏到日报画布、再到高级预览的滚动节奏。
+
+English:
+
+- Change: Bumped local UI version from `1.32` to `1.33` and added a mobile advanced-preview compression layer.
+- Focus: Public UI only. No payment, registration, domain, API key, Stripe, Supabase, Massive plan, or internal commercial route was added.
+- Visual actions: Below `760px`, advanced preview padding is tighter; audit cards, feature map, predictive stack, and quadrant share an 8px gap; feature tabs and advanced cards switch to a two-column scan layout; lookback metrics, signal rows, and quadrant stats prefer two columns on phone width; below `420px`, dense stat areas fall back to one column to avoid cramped text.
+- Verification: Build produced a `505`-day payload, latest date `2026-05-22`, pack asset `kzg-frame-968c88f20da3.js`; local `390x844`, `420x920`, and `1440x1100` viewports passed with no horizontal overflow; console errors were 0; public risk-token scan returned 0; PNG export still produced `kzg-option-house-2026-05-22-zh.png` at about `1.47MB`. This version is a GitHub backup first, not an immediate production deploy; production remains v1.32.
+- Next: v1.34 should polish the scroll rhythm from first viewport to daily sheet and then into advanced preview.
+
 ## Git-evidenced build ledger / Git 可证实构建流水
 
 The table below maps the repository history into a dense handoff narrative. It is not the complete visual subversion count; it is the Git-evidenced backbone.

@@ -10421,3 +10421,143 @@ body[data-theme="dark"] .account-sheet {
     min-height: 300px;
   }
 }
+
+/* v1.33 pass: mobile advanced-preview compression and lower-panel entry rhythm. */
+@media (max-width: 760px) {
+  .premium-preview {
+    margin-top: 14px;
+    padding: 12px;
+  }
+
+  .premium-head {
+    display: grid;
+    gap: 6px;
+  }
+
+  .premium-head h2 {
+    font-size: 16px;
+  }
+
+  .data-audit-seal,
+  .premium-unlock-deck,
+  .premium-signal-stack,
+  .premium-quadrant {
+    gap: 8px;
+  }
+
+  .audit-lead,
+  .audit-note,
+  .unlock-lead,
+  .premium-quadrant-copy,
+  .signal-stack-lead {
+    padding: 11px;
+  }
+
+  .audit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .audit-grid span {
+    min-height: 68px;
+  }
+
+  .unlock-tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .unlock-tabs button {
+    min-height: 78px;
+  }
+
+  .premium-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .premium-card {
+    min-height: 96px;
+  }
+
+  .premium-card strong {
+    font-size: 20px;
+  }
+
+  .lookback-body {
+    grid-template-columns: 1fr;
+  }
+
+  .lookback-chart {
+    min-height: 92px;
+  }
+
+  .lookback-metrics,
+  .signal-stack-rows,
+  .premium-quadrant-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .signal-stack-tape {
+    min-height: 96px;
+  }
+
+  .premium-quadrant-map {
+    min-height: 238px;
+  }
+
+  .analysis-grid {
+    gap: 12px;
+    margin-top: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .premium-preview {
+    padding: 10px;
+  }
+
+  .audit-grid,
+  .premium-grid,
+  .lookback-metrics,
+  .signal-stack-rows,
+  .premium-quadrant-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .audit-grid span,
+  .premium-card,
+  .signal-stack-rows span,
+  .premium-quadrant-stats span {
+    min-height: auto;
+  }
+
+  .unlock-tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .unlock-tabs button {
+    min-height: 70px;
+  }
+
+  .unlock-tabs b {
+    font-size: 12px;
+  }
+
+  .unlock-preview {
+    padding: 7px;
+  }
+
+  .unlock-mini-tape,
+  .signal-stack-tape,
+  .lookback-chart {
+    min-height: 82px;
+  }
+
+  .premium-quadrant-map {
+    min-height: 220px;
+  }
+
+  .premium-lock {
+    position: static;
+    max-width: none;
+    margin-top: 8px;
+  }
+}
