@@ -14,12 +14,14 @@ const state = {
   selectedPlan: "pro",
   selectedRail: "stripe",
   selectedLogin: "email",
+  selectedBillingAction: "upgrade",
+  selectedBillingDate: "1",
   checkoutMessage: "",
   lang: localStorage.getItem("kzg-option-house-lang") || "zh",
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "v63";
+const UI_VERSION = "v64";
 
 const $ = (id) => document.getElementById(id);
 const fmt0 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
@@ -394,6 +396,28 @@ async function loadIndex() {
       renderAccountModal();
       return;
     }
+    const billingActionTarget = event.target.closest("[data-billing-action]");
+    if (billingActionTarget) {
+      event.preventDefault();
+      state.selectedBillingAction = billingActionTarget.dataset.billingAction || state.selectedBillingAction;
+      state.checkoutMessage = billingActionNotice(state.selectedBillingAction);
+      renderAccountModal();
+      return;
+    }
+    const billingDateTarget = event.target.closest("[data-billing-date]");
+    if (billingDateTarget) {
+      event.preventDefault();
+      state.selectedBillingDate = billingDateTarget.dataset.billingDate || state.selectedBillingDate;
+      state.checkoutMessage = billingDateNotice(state.selectedBillingDate);
+      renderAccountModal();
+      return;
+    }
+    const premiumJumpTarget = event.target.closest("#premiumPreview [data-jump-date]");
+    if (premiumJumpTarget) {
+      event.preventDefault();
+      loadDayByDate(premiumJumpTarget.dataset.jumpDate);
+      return;
+    }
     const lookbackTarget = event.target.closest("[data-pro-lookback]");
     if (lookbackTarget) {
       event.preventDefault();
@@ -499,6 +523,32 @@ function renderAccountModal() {
       ["wallet", "Wallet login", "For crypto rail with signature verification later."],
       ["kzg", "KZG code", "Fast early-access allowlist for manual seats."],
     ];
+  const billingActions = state.lang === "zh"
+    ? [
+      ["upgrade", "升级", "Checkout Session", "选择新 Price，Stripe 处理首付、税费和试用。"],
+      ["downgrade", "降级", "Customer Portal", "用 Portal 改订阅，服务端 webhook 同步权限。"],
+      ["billing-date", "账单日", "Portal / schedule", "后续用 Billing schedule 或 Portal 调整续费日期。"],
+      ["receipt", "发票", "Invoices", "发票、收据、付款失败提醒全部走 Billing。"],
+      ["pause", "暂停", "Portal policy", "保留账户，停止续费，历史导出权限按规则降级。"],
+    ]
+    : [
+      ["upgrade", "Upgrade", "Checkout Session", "Select a new Price; Stripe handles first payment, tax, and trials."],
+      ["downgrade", "Downgrade", "Customer Portal", "Portal changes the subscription; webhooks sync entitlement."],
+      ["billing-date", "Billing date", "Portal / schedule", "Later via Billing schedules or Portal renewal settings."],
+      ["receipt", "Invoices", "Invoices", "Receipts, invoices, and failed-payment notices stay in Billing."],
+      ["pause", "Pause", "Portal policy", "Keep the account, stop renewals, and downgrade exports by rule."],
+    ];
+  const billingDates = state.lang === "zh"
+    ? [
+      ["1", "每月 1 号", "适合月初复盘"],
+      ["15", "每月 15 号", "适合月中续费"],
+      ["close", "美股月末", "后续按交易日锚定"],
+    ]
+    : [
+      ["1", "1st monthly", "good for monthly reviews"],
+      ["15", "15th monthly", "mid-month renewal"],
+      ["close", "US month-end", "later anchored to sessions"],
+    ];
   const domainRows = [
     ["optionflowhouse.com", "$11.99", state.lang === "zh" ? "可注册" : "available"],
     ["optionpulse.ai", "$159.98", state.lang === "zh" ? "可注册" : "available"],
@@ -560,6 +610,28 @@ function renderAccountModal() {
           </button>
         `).join("")}
         <div class="account-section-head domain-head">
+          <b>${state.lang === "zh" ? "账户控制台" : "Account console"}</b>
+          <span>${state.lang === "zh" ? "升级/降级/账单管理" : "upgrade, downgrade, billing"}</span>
+        </div>
+        <div class="billing-console">
+          ${billingActions.map((row) => `
+            <button type="button" class="${row[0] === state.selectedBillingAction ? "active" : ""}" data-billing-action="${escapeHtml(row[0])}">
+              <span>${escapeHtml(row[1])}</span>
+              <b>${escapeHtml(row[2])}</b>
+              <small>${escapeHtml(row[3])}</small>
+            </button>
+          `).join("")}
+        </div>
+        <div class="billing-date-picker">
+          ${billingDates.map((row) => `
+            <button type="button" class="${row[0] === state.selectedBillingDate ? "active" : ""}" data-billing-date="${escapeHtml(row[0])}">
+              <b>${escapeHtml(row[1])}</b>
+              <span>${escapeHtml(row[2])}</span>
+            </button>
+          `).join("")}
+        </div>
+        ${accountPipelineCard()}
+        <div class="account-section-head domain-head">
           <b>${state.lang === "zh" ? "域名候选" : "Domain candidates"}</b>
           <span>${state.lang === "zh" ? "已查可用性，购买前需你确认" : "availability checked; purchase needs confirmation"}</span>
         </div>
@@ -595,21 +667,23 @@ function accountStatusCards() {
     wallet: "Wallet",
     kzg: state.lang === "zh" ? "KZG 口令" : "KZG code",
   }[state.selectedLogin] || "Email";
+  const actionLabel = billingActionLabel(state.selectedBillingAction);
+  const billingDateLabel = billingDateLabelText(state.selectedBillingDate);
   const locked = isHistoryLocked();
   const rows = state.lang === "zh"
     ? [
       ["当前访问", locked ? "历史锁定" : "今日开放", state.day?.tradeDate || "--"],
       ["选择套餐", plan[locale].name, `${plan[locale].price}${plan[locale].cycle}`],
       ["登录身份", loginLabel, "真实凭证不在前端存放"],
+      ["账户动作", actionLabel, billingDateLabel],
       ["结算轨道", railLabel, "扣费前停下确认"],
-      ["导出权限", isPro() ? "无水印" : "品牌水印", "PNG 样式保持 KZG 旧日报"],
     ]
     : [
       ["Access", locked ? "History locked" : "Today open", state.day?.tradeDate || "--"],
       ["Selected plan", plan[locale].name, `${plan[locale].price}${plan[locale].cycle}`],
       ["Identity", loginLabel, "no real credentials in frontend"],
+      ["Account action", actionLabel, billingDateLabel],
       ["Rail", railLabel, "confirmation before billing"],
-      ["Export", isPro() ? "Clean" : "Branded", "PNG keeps the KZG sheet style"],
     ];
   return rows.map((row) => `
     <span>
@@ -620,12 +694,55 @@ function accountStatusCards() {
   `).join("");
 }
 
+function accountPipelineCard() {
+  const selectedPlan = pricingPlans.find((item) => item.id === state.selectedPlan) || pricingPlans[1];
+  const locale = state.lang === "zh" ? "zh" : "en";
+  const rail = state.selectedRail;
+  const planName = selectedPlan[locale].name;
+  const action = billingActionLabel(state.selectedBillingAction);
+  const date = billingDateLabelText(state.selectedBillingDate);
+  const steps = state.lang === "zh"
+    ? [
+      ["身份", `${loginLabelText(state.selectedLogin)} -> KZG account id`],
+      ["价格", `${planName} -> Stripe Price / 手动收款映射`],
+      ["权限", "Webhook -> Pro entitlement -> 前端锁层"],
+      ["自助", "Customer Portal -> 升级、降级、发票、账单日"],
+    ]
+    : [
+      ["Identity", `${loginLabelText(state.selectedLogin)} -> KZG account id`],
+      ["Price", `${planName} -> Stripe Price / manual rail mapping`],
+      ["Entitlement", "Webhook -> Pro entitlement -> frontend lock layer"],
+      ["Self-serve", "Customer Portal -> upgrade, downgrade, invoices, billing date"],
+    ];
+  const copyText = state.lang === "zh"
+    ? `${action} · ${date} · ${rail === "stripe" ? "优先 Stripe Billing；钱包/微信只做入口，不碰真钱。" : "非 Stripe 轨道需要人工确认和账号绑定后再上线。"}`
+    : `${action} · ${date} · ${rail === "stripe" ? "Stripe Billing first; wallet/WeChat stay interface-only." : "Non-Stripe rails need manual confirmation and account mapping before launch."}`;
+  return `
+    <div class="account-pipeline">
+      <div class="pipeline-lead">
+        <span>${state.lang === "zh" ? "接入路线" : "Wiring route"}</span>
+        <b>${escapeHtml(copyText)}</b>
+      </div>
+      <div class="pipeline-steps">
+        ${steps.map((step, index) => `
+          <span>
+            <i>${fmt0.format(index + 1)}</i>
+            <b>${escapeHtml(step[0])}</b>
+            <small>${escapeHtml(step[1])}</small>
+          </span>
+        `).join("")}
+      </div>
+    </div>
+  `;
+}
+
 function entitlementRows() {
   const rows = state.lang === "zh"
     ? [
       ["当日核心数据", "开放", "开放", "最新交易日完整读盘，作为免费入口。"],
       ["历史日期回看", "模糊预览", "完整交互", "跨日趋势、轮动象限、动量回看进入 Pro。"],
       ["预测式结构信号", "摘要", "完整", "趋势窗口、极值、标的节奏带和 hover 细节。"],
+      ["升级/降级", "不可用", "Portal", "Stripe Customer Portal 负责套餐切换和付款方式。"],
       ["PNG 导出", "KZG 品牌版", "可接无额外水印", "当前仍保留旧 KZG 日报格式。"],
       ["订阅与提醒", "不可用", "待接", "后续接邮箱、微信或钱包身份提醒。"],
     ]
@@ -633,6 +750,7 @@ function entitlementRows() {
       ["Latest session", "Open", "Open", "The latest full read stays as the free entry."],
       ["Historical lookback", "Blur preview", "Full interaction", "Trend, rotation quadrant, and momentum history move to Pro."],
       ["Predictive structure", "Summary", "Full", "Trend windows, extremes, symbol rhythm, and hover detail."],
+      ["Upgrade / downgrade", "Unavailable", "Portal", "Stripe Customer Portal handles plan and payment-method changes."],
       ["PNG export", "KZG branded", "Clean path", "Current sheet style remains the original KZG format."],
       ["Alerts", "Unavailable", "Queued", "Later via email, WeChat, or wallet identity."],
     ];
@@ -682,6 +800,55 @@ function loginNotice(method) {
   if (method === "wallet") return "已选择钱包登录：目前只是入口态，后续需要签名验证和账户映射。";
   if (method === "kzg") return "已选择 KZG 口令：适合内测白名单，自动订阅上线前可以先快跑。";
   return "已选择邮箱登录：最适合 Stripe 订阅和 Customer Portal 账户映射。";
+}
+
+function loginLabelText(method) {
+  if (method === "wallet") return "Wallet";
+  if (method === "kzg") return state.lang === "zh" ? "KZG 口令" : "KZG code";
+  return state.lang === "zh" ? "邮箱" : "Email";
+}
+
+function billingActionLabel(action) {
+  const labels = state.lang === "zh"
+    ? { upgrade: "升级", downgrade: "降级", "billing-date": "账单日", receipt: "发票", pause: "暂停" }
+    : { upgrade: "Upgrade", downgrade: "Downgrade", "billing-date": "Billing date", receipt: "Invoices", pause: "Pause" };
+  return labels[action] || labels.upgrade;
+}
+
+function billingDateLabelText(value) {
+  const labels = state.lang === "zh"
+    ? { 1: "每月 1 号", 15: "每月 15 号", close: "美股月末" }
+    : { 1: "1st monthly", 15: "15th monthly", close: "US month-end" };
+  return labels[value] || labels[1];
+}
+
+function billingActionNotice(action) {
+  if (state.lang !== "zh") {
+    const notices = {
+      upgrade: "Upgrade selected: create a subscription Checkout Session against a Stripe Price, then sync Pro entitlement by webhook.",
+      downgrade: "Downgrade selected: this belongs in Stripe Customer Portal so proration, renewal, and payment method changes stay managed.",
+      "billing-date": "Billing date selected: show the preference now; real renewal-date changes need Billing schedules or Portal policy.",
+      receipt: "Invoices selected: receipts and failed-payment notices should stay in Stripe Billing, not a manual renewal loop.",
+      pause: "Pause selected: design a self-serve policy first; real account pause needs server-side entitlement rules.",
+    };
+    return notices[action] || notices.upgrade;
+  }
+  const notices = {
+    upgrade: "已选择升级：后续用 Stripe Price 创建订阅 Checkout Session，再用 webhook 同步 Pro 权限。",
+    downgrade: "已选择降级：这类操作应放进 Stripe Customer Portal，避免手写续费和退款逻辑。",
+    "billing-date": "已选择账单日：前端先展示偏好；真实续费日变更需要 Billing schedule 或 Portal 策略。",
+    receipt: "已选择发票：收据、发票、扣款失败提醒应交给 Stripe Billing，不做手写续费循环。",
+    pause: "已选择暂停：先设计自助规则；真实暂停必须有服务端权限降级逻辑。",
+  };
+  return notices[action] || notices.upgrade;
+}
+
+function billingDateNotice(value) {
+  const label = billingDateLabelText(value);
+  if (state.lang !== "zh") {
+    return `${label} selected. This is a UI preference until Stripe Billing schedule / Portal rules are wired.`;
+  }
+  return `已选择 ${label}。这只是前端偏好，真实账单日需要 Stripe Billing schedule / Portal 规则接入。`;
 }
 
 function renderAccessStrip() {
@@ -735,6 +902,7 @@ function renderPremiumPreview() {
       ${premiumCard(state.lang === "zh" ? "订阅组合监控" : "Watchlist alerts", "SPY / NVDA", state.lang === "zh" ? "待接" : "queued", state.lang === "zh" ? "邮件/微信/钱包身份后续接入" : "email/WeChat/wallet identity later")}
     </div>
     ${premiumLookbackPanel(locked)}
+    ${premiumSignalStack(rows, locked)}
     ${premiumQuadrantPreview(rows, locked)}
     ${locked ? `<button type="button" class="premium-lock" data-open-account><b>${t("paywallTitle")}</b><span>${t("paywallSub")}</span></button>` : ""}
   `;
@@ -800,6 +968,77 @@ function premiumLookbackPanel(locked) {
       </div>
     </div>
   `;
+}
+
+function premiumSignalStack(rows, locked) {
+  const daily = state.analytics?.daily || state.datesAsc || [];
+  const history = daily.slice(Math.max(0, state.selectedIndex - 64), state.selectedIndex + 1);
+  if (history.length < 3) return "";
+  const current = history.slice(-5);
+  const base = history.slice(Math.max(0, history.length - 25), Math.max(0, history.length - 5));
+  const baseRows = base.length ? base : history.slice(0, -1);
+  const volPulse = percentMove(average(current.map((row) => row.totalVol)), average(baseRows.map((row) => row.totalVol)));
+  const premiumPulse = percentMove(average(current.map((row) => row.totalPremium)), average(baseRows.map((row) => row.totalPremium)));
+  const cpNow = Number(history[history.length - 1]?.marketCp) || Number(state.day.overview.marketCp) || 0;
+  const cpBase = average(baseRows.map((row) => row.marketCp));
+  const cpDrift = cpNow - cpBase;
+  const attack = rows.filter((row) => row.delta >= 0 && row.premiumDelta >= 0);
+  const fade = rows.filter((row) => row.delta < 0 && row.premiumDelta < 0);
+  const breadth = rows.length ? (attack.length / rows.length) * 100 : 0;
+  const lead = attack.slice().sort((a, b) => (b.delta + b.premiumDelta) - (a.delta + a.premiumDelta))[0] || rows[0] || {};
+  const compression = rows.length ? (fade.length / rows.length) * 100 : 0;
+  const score = Math.max(-100, Math.min(100, volPulse * 0.34 + premiumPulse * 0.28 + cpDrift * 22 + (breadth - compression) * 0.24));
+  const tone = score >= 12 ? "hot" : score <= -12 ? "cool" : "flat";
+  const bars = history.slice(-18);
+  const maxVol = Math.max(...bars.map((row) => Number(row.totalVol) || 0), 1);
+  const signalRows = state.lang === "zh"
+    ? [
+      ["量能加速度", `${volPulse >= 0 ? "+" : ""}${fmt1.format(volPulse)}%`, "5D vs 前 20D", volPulse >= 8 ? "hot" : volPulse <= -8 ? "cool" : "flat"],
+      ["权利金斜率", `${premiumPulse >= 0 ? "+" : ""}${fmt1.format(premiumPulse)}%`, "资金强弱变化", premiumPulse >= 10 ? "hot" : premiumPulse <= -10 ? "cool" : "flat"],
+      ["CP 压力漂移", `${cpDrift >= 0 ? "+" : ""}${fmt2.format(cpDrift)}`, `当前 ${ratio(cpNow)}`, cpDrift >= 0.14 ? "hot" : cpDrift <= -0.14 ? "cool" : "flat"],
+      ["轮动扩散", `${fmt1.format(breadth)}%`, `${attack.length} 升温 / ${fade.length} 降温`, breadth >= 34 ? "hot" : breadth <= 18 ? "cool" : "flat"],
+    ]
+    : [
+      ["Volume acceleration", `${volPulse >= 0 ? "+" : ""}${fmt1.format(volPulse)}%`, "5D vs prior 20D", volPulse >= 8 ? "hot" : volPulse <= -8 ? "cool" : "flat"],
+      ["Premium slope", `${premiumPulse >= 0 ? "+" : ""}${fmt1.format(premiumPulse)}%`, "capital intensity", premiumPulse >= 10 ? "hot" : premiumPulse <= -10 ? "cool" : "flat"],
+      ["CP pressure drift", `${cpDrift >= 0 ? "+" : ""}${fmt2.format(cpDrift)}`, `now ${ratio(cpNow)}`, cpDrift >= 0.14 ? "hot" : cpDrift <= -0.14 ? "cool" : "flat"],
+      ["Rotation breadth", `${fmt1.format(breadth)}%`, `${attack.length} warming / ${fade.length} cooling`, breadth >= 34 ? "hot" : breadth <= 18 ? "cool" : "flat"],
+    ];
+  const verdict = state.lang === "zh"
+    ? `${lead.symbol || "--"} 主导，综合分 ${score >= 0 ? "+" : ""}${fmt1.format(score)}。历史日期的完整解释、标的归因和导出无水印进入 Pro。`
+    : `${lead.symbol || "--"} leads, composite ${score >= 0 ? "+" : ""}${fmt1.format(score)}. Historical explanation, attribution, and clean export are Pro.`;
+  return `
+    <div class="premium-signal-stack ${tone} ${locked ? "is-blurred" : ""}">
+      <div class="signal-stack-lead">
+        <span>${state.lang === "zh" ? "预测动量栈" : "Predictive momentum stack"}</span>
+        <strong>${score >= 0 ? "+" : ""}${fmt1.format(score)}</strong>
+        <p>${escapeHtml(verdict)}</p>
+      </div>
+      <div class="signal-stack-rows">
+        ${signalRows.map((row) => `
+          <span class="${row[3]}">
+            <i>${escapeHtml(row[0])}</i>
+            <b>${escapeHtml(row[1])}</b>
+            <small>${escapeHtml(row[2])}</small>
+          </span>
+        `).join("")}
+      </div>
+      <div class="signal-stack-tape" aria-hidden="true">
+        ${bars.map((row, index) => {
+          const prev = bars[index - 1];
+          const move = prev?.totalVol ? ((Number(row.totalVol) - Number(prev.totalVol)) / Number(prev.totalVol)) * 100 : 0;
+          const cls = move >= 7 ? "hot" : move <= -7 ? "cool" : "flat";
+          const height = Math.max(16, ((Number(row.totalVol) || 0) / maxVol) * 100);
+          return `<button type="button" class="${cls}" data-jump-date="${escapeHtml(row.date)}" style="--h:${height.toFixed(1)}%"><i></i><b>${shortDate(row.date)}</b></button>`;
+        }).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function percentMove(current, base) {
+  if (!base) return 0;
+  return ((Number(current) - Number(base)) / Number(base)) * 100;
 }
 
 function windowLabel(value) {

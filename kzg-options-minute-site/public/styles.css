@@ -8231,6 +8231,17 @@ body[data-theme="dark"] .heat-lane-track {
 .billing-row span,
 .domain-row span,
 .domain-row i,
+.billing-console span,
+.billing-console small,
+.billing-date-picker span,
+.pipeline-lead span,
+.pipeline-steps small,
+.pipeline-steps i,
+.signal-stack-lead span,
+.signal-stack-lead p,
+.signal-stack-rows i,
+.signal-stack-rows small,
+.signal-stack-tape b,
 .checkout-note {
   color: var(--muted);
   font-size: 11px;
@@ -8699,6 +8710,142 @@ body[data-theme="dark"] .heat-lane-track {
   user-select: none;
 }
 
+.premium-signal-stack {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.42fr) minmax(300px, 0.7fr) minmax(260px, 0.58fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.signal-stack-lead,
+.signal-stack-rows span,
+.signal-stack-tape {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.signal-stack-lead {
+  display: grid;
+  align-content: center;
+  gap: 8px;
+  padding: 16px;
+}
+
+.premium-signal-stack.hot .signal-stack-lead {
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
+.premium-signal-stack.cool .signal-stack-lead {
+  box-shadow: inset 3px 0 0 #2f6190;
+}
+
+.premium-signal-stack.flat .signal-stack-lead {
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.signal-stack-lead strong {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", "Songti SC", serif;
+  font-size: 36px;
+  line-height: 0.95;
+  font-weight: 400;
+}
+
+.signal-stack-lead p {
+  line-height: 1.45;
+}
+
+.signal-stack-rows {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.signal-stack-rows span {
+  display: grid;
+  gap: 5px;
+  padding: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.signal-stack-rows span.hot {
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
+.signal-stack-rows span.cool {
+  box-shadow: inset 3px 0 0 #2f6190;
+}
+
+.signal-stack-rows span.flat {
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.signal-stack-rows b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 21px;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.signal-stack-tape {
+  display: grid;
+  grid-template-columns: repeat(18, minmax(0, 1fr));
+  gap: 3px;
+  align-items: end;
+  min-height: 170px;
+  padding: 10px;
+  background:
+    linear-gradient(180deg, rgba(196, 83, 53, 0.07), transparent 54%, rgba(47, 97, 144, 0.08)),
+    rgba(251, 250, 246, 0.68);
+}
+
+.signal-stack-tape button {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) 14px;
+  align-items: end;
+  min-width: 0;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.signal-stack-tape i {
+  display: block;
+  width: 100%;
+  height: var(--h);
+  min-height: 7px;
+  background: rgba(154, 106, 18, 0.34);
+}
+
+.signal-stack-tape .hot i {
+  background: rgba(196, 83, 53, 0.52);
+}
+
+.signal-stack-tape .cool i {
+  background: rgba(47, 97, 144, 0.48);
+}
+
+.signal-stack-tape b {
+  overflow: hidden;
+  margin-top: 4px;
+  text-align: center;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+.premium-signal-stack.is-blurred .signal-stack-rows,
+.premium-signal-stack.is-blurred .signal-stack-tape {
+  filter: blur(5px);
+  opacity: 0.7;
+  user-select: none;
+}
+
 .premium-lock {
   position: absolute;
   right: 16px;
@@ -8978,6 +9125,120 @@ body[data-theme="dark"] .heat-lane-track {
   font-size: 13px;
 }
 
+.billing-console {
+  display: grid;
+  gap: 7px;
+}
+
+.billing-console button {
+  display: grid;
+  grid-template-columns: 74px minmax(96px, 0.6fr) minmax(0, 1fr);
+  gap: 8px;
+  align-items: center;
+  min-width: 0;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+}
+
+.billing-console button.active {
+  border-color: rgba(154, 106, 18, 0.54);
+  background: rgba(234, 217, 174, 0.22);
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.billing-console b,
+.billing-date-picker b,
+.pipeline-lead b,
+.pipeline-steps b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.billing-console span,
+.billing-console small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.billing-date-picker {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+  margin-top: 3px;
+}
+
+.billing-date-picker button {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.56);
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+}
+
+.billing-date-picker button.active {
+  border-color: rgba(47, 97, 144, 0.42);
+  box-shadow: inset 3px 0 0 #2f6190;
+}
+
+.account-pipeline {
+  display: grid;
+  gap: 8px;
+  margin-top: 4px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(90deg, rgba(154, 106, 18, 0.08), transparent 62%),
+    rgba(251, 250, 246, 0.68);
+}
+
+.pipeline-lead {
+  display: grid;
+  gap: 5px;
+}
+
+.pipeline-lead b {
+  font-size: 13px;
+  line-height: 1.35;
+  white-space: normal;
+}
+
+.pipeline-steps {
+  display: grid;
+  gap: 6px;
+}
+
+.pipeline-steps span {
+  display: grid;
+  grid-template-columns: 22px 68px minmax(0, 1fr);
+  gap: 7px;
+  align-items: center;
+  min-width: 0;
+  padding-top: 7px;
+  border-top: 1px solid rgba(201, 194, 178, 0.62);
+}
+
+.pipeline-steps i {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.64);
+  font-style: normal;
+}
+
 .domain-head {
   margin-top: 12px;
   margin-bottom: 2px;
@@ -9082,6 +9343,9 @@ body[data-theme="dark"] .premium-quadrant-map,
 body[data-theme="dark"] .premium-quadrant-stats span,
 body[data-theme="dark"] .premium-quadrant-meta span,
 body[data-theme="dark"] .premium-lookback,
+body[data-theme="dark"] .premium-signal-stack .signal-stack-lead,
+body[data-theme="dark"] .premium-signal-stack .signal-stack-rows span,
+body[data-theme="dark"] .premium-signal-stack .signal-stack-tape,
 body[data-theme="dark"] .lookback-chart,
 body[data-theme="dark"] .lookback-metrics span,
 body[data-theme="dark"] .lookback-tabs button,
@@ -9089,6 +9353,10 @@ body[data-theme="dark"] .account-sheet,
 body[data-theme="dark"] .account-status-grid span,
 body[data-theme="dark"] .login-method-grid button,
 body[data-theme="dark"] .billing-row,
+body[data-theme="dark"] .billing-console button,
+body[data-theme="dark"] .billing-date-picker button,
+body[data-theme="dark"] .account-pipeline,
+body[data-theme="dark"] .pipeline-steps i,
 body[data-theme="dark"] .domain-row,
 body[data-theme="dark"] .price-card,
 body[data-theme="dark"] .pro-lock-overlay,
@@ -9115,6 +9383,10 @@ body[data-theme="dark"] .account-sheet {
     grid-template-columns: 1fr;
   }
 
+  .premium-signal-stack {
+    grid-template-columns: 1fr;
+  }
+
   .premium-quadrant-map {
     min-height: 320px;
   }
@@ -9130,6 +9402,10 @@ body[data-theme="dark"] .account-sheet {
 
   .login-method-grid {
     grid-template-columns: 1fr;
+  }
+
+  .billing-console button {
+    grid-template-columns: 72px minmax(96px, 0.7fr) minmax(0, 1fr);
   }
 
   .entitlement-head-row,
@@ -9190,6 +9466,34 @@ body[data-theme="dark"] .account-sheet {
 
   .lookback-chart b {
     display: none;
+  }
+
+  .signal-stack-rows,
+  .billing-date-picker {
+    grid-template-columns: 1fr;
+  }
+
+  .signal-stack-tape {
+    gap: 2px;
+    min-height: 118px;
+    padding: 8px;
+  }
+
+  .signal-stack-tape b {
+    display: none;
+  }
+
+  .billing-console button,
+  .pipeline-steps span {
+    grid-template-columns: 1fr;
+  }
+
+  .billing-console span,
+  .billing-console b,
+  .billing-console small,
+  .pipeline-steps b,
+  .pipeline-steps small {
+    white-space: normal;
   }
 
   .lookback-metrics {
