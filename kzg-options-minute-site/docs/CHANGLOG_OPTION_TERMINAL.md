@@ -350,6 +350,16 @@ English:
 - v1.34: Re-audit the 2023-05 data route with separate evidence for local, iCloud, Google Drive, Massive S3/API, and plan entitlement.
 - v1.35: Deploy one solid visual version to production and push GitHub.
 
+## 14. Heartbeat v1.31 visual trace / 心跳 v1.31 视觉留痕
+
+中文:
+
+北京时间 2026-05-26 16:25 心跳执行 v1.31。目标是继续 spacing calligraphy，而不是扩大公开商业功能。改动文件为 `/Users/fangbao/kzg-options-minute-site/public/app.js`、`/Users/fangbao/kzg-options-minute-site/public/styles.css`、`/Users/fangbao/kzg-options-minute-site/docs/CHANGELOG.md`、`/Users/fangbao/kzg-options-minute-site/docs/CHANGLOG_OPTION_TERMINAL.md`。视觉重点是把分钟热力图继续从硬方块改成柔和 lane，把背景网格存在感降低，把高级预览 blur 的卡片透明度和半径统一，并补上移动端 topbar/grid 防横向溢出约束。构建生成 `505` 天 payload，生产部署为 `https://6a155a982b0a5da4f255af13--kzg-option-house.netlify.app/`，smoke check 结果为 `home=200`、`/latest=200`、`/data/index.json=404`、`/assets/kzg-pack.js=404`、`/app.js` 显示 `UI_VERSION = "1.31"`。公开边界保持不变：不放支付、注册、域名、API key、Massive 套餐或 Stripe/Supabase 内部路线。
+
+English:
+
+The 2026-05-26 16:25 Asia/Shanghai heartbeat ran v1.31. The goal was spacing and calligraphy, not expanded public commercial function. Changed files: `/Users/fangbao/kzg-options-minute-site/public/app.js`, `/Users/fangbao/kzg-options-minute-site/public/styles.css`, `/Users/fangbao/kzg-options-minute-site/docs/CHANGELOG.md`, and `/Users/fangbao/kzg-options-minute-site/docs/CHANGLOG_OPTION_TERMINAL.md`. The visual focus was moving the minute heatmap further away from hard block language into softer lanes, reducing background grid presence, unifying radius/opacity in blurred advanced preview surfaces, and adding mobile topbar/grid overflow protection. Build produced a `505`-day payload. Production unique deploy is `https://6a155a982b0a5da4f255af13--kzg-option-house.netlify.app/`; smoke check passed with `home=200`, `/latest=200`, `/data/index.json=404`, `/assets/kzg-pack.js=404`, and `/app.js` showing `UI_VERSION = "1.31"`. Public boundary stays unchanged: no payment, registration, domain, API key, Massive plan, Stripe, or Supabase internals on the public page.
+
 ## 13. Cross-terminal traceability doctrine / 跨终端留痕原则
 
 中文:

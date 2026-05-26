@@ -27,8 +27,8 @@ html {
 body {
   margin: 0;
   background:
-    linear-gradient(90deg, rgba(17, 17, 17, 0.035) 1px, transparent 1px) 0 0 / 72px 72px,
-    linear-gradient(180deg, rgba(154, 106, 18, 0.035), transparent 300px),
+    linear-gradient(90deg, rgba(17, 17, 17, 0.018) 1px, transparent 1px) 0 0 / 96px 96px,
+    linear-gradient(180deg, rgba(154, 106, 18, 0.028), transparent 320px),
     var(--paper);
   color: var(--ink);
   font-family: Inter, "SF Pro Text", "PingFang SC", "Hiragino Sans GB", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -8150,6 +8150,134 @@ body[data-theme="dark"] .tip-contract b {
   background: var(--c);
 }
 
+/* v1.31 pass: soften blocky heat surfaces and tighten typographic rhythm. */
+.heat-lane-board {
+  gap: 6px;
+  padding: 11px;
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(47, 97, 144, 0.045), transparent 44%, rgba(154, 106, 18, 0.045)),
+    rgba(255, 255, 255, 0.5);
+}
+
+.heat-lane-axis {
+  padding: 0 9px 1px;
+  border-bottom: 0;
+  opacity: 0.78;
+}
+
+.heat-lane-row {
+  min-height: 36px;
+  padding: 6px 9px;
+  border: 1px solid rgba(201, 194, 178, 0.44);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.heat-lane-row:hover,
+.heat-lane-row.symbol-active {
+  border-color: rgba(154, 106, 18, 0.62);
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.heat-lane-track {
+  height: 14px;
+  gap: 3px;
+  align-items: center;
+  padding: 0;
+  border-bottom: 0;
+}
+
+.heat-lane-track i {
+  height: max(3px, calc(var(--h) * 0.24));
+  min-height: 3px;
+  opacity: 0.72;
+}
+
+.heat-lane-meta small {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.05;
+}
+
+.heatmap-summary span,
+.heat-rhythm-card,
+.heat-baton-head,
+.heat-baton-row,
+.premium-card,
+.unlock-lead,
+.unlock-tabs button,
+.unlock-preview,
+.premium-quadrant-copy,
+.premium-quadrant-map,
+.premium-quadrant-stats span,
+.premium-lookback,
+.premium-signal-stack {
+  border-radius: 6px;
+}
+
+.section-head h2,
+.timeboard-copy h2 {
+  letter-spacing: 0;
+}
+
+.section-head p,
+.timeboard-copy p,
+.digest div,
+.side-module p {
+  line-height: 1.55;
+}
+
+.premium-preview {
+  border-radius: 8px;
+}
+
+.premium-head h2 {
+  font-size: 17px;
+}
+
+.premium-grid.is-blurred .premium-card,
+.premium-quadrant.is-blurred .premium-quadrant-map,
+.premium-quadrant.is-blurred .premium-quadrant-stats,
+.premium-lookback.is-blurred .lookback-body,
+.premium-signal-stack.is-blurred .signal-stack-rows,
+.premium-signal-stack.is-blurred .signal-stack-tape {
+  opacity: 0.68;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 520px) {
+  .topbar {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dateplate {
+    justify-self: start;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .toolbar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .toolbar .button {
+    min-width: 0;
+  }
+
+  .button.primary {
+    grid-column: 1 / -1;
+  }
+}
+
 body[data-theme="dark"] .trend-pulse-strip > div:first-child,
 body[data-theme="dark"] .signal-pulse-tape > div:first-child,
 body[data-theme="dark"] .focus-session-tape > div:first-child,
@@ -10041,5 +10169,35 @@ body[data-theme="dark"] .account-sheet {
 
   .pro-lock-overlay {
     inset: 58px 10px 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .topbar {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .toolbar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+    width: 100%;
+  }
+
+  .toolbar .button {
+    min-width: 0;
+    padding: 0 8px;
+    overflow: hidden;
+    font-size: 11px;
+  }
+
+  .toolbar .button span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .toolbar .button.primary {
+    grid-column: 1 / -1;
   }
 }

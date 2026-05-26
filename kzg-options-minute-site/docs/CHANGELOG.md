@@ -98,6 +98,28 @@ English:
 - Verification: Character count is `1951`; prompt body has no punctuation; the file contains only the raw single-paragraph prompt.
 - Next: Keep syncing this doctrine into Apple Notes `CHANGLOG 期权终端`, and expand responsibility boundaries whenever a new service is connected.
 
+## v1.31 - 2026-05-26 16:25 Asia/Shanghai - heat-lane calligraphy pass
+
+中文:
+
+- 改动: 将公开 UI 版本号从 `1.27` 提到 `1.31`，并在 `public/styles.css` 增加 v1.31 视觉层。
+- 重点: 继续回应 Fangbao 关于 spacing 和 calligraphy 的要求，降低背景网格存在感，把分钟热力从硬方块感继续推向连续 lane 语言。
+- 视觉动作: `body` 背景网格从 72px 强线改成 96px 弱线；`.heat-lane-board` 改成柔和底色、8px 半径、行间留白；`.heat-lane-row` 从纯分隔线改成轻边界的横向数据 lane；`.heat-lane-track` 降低柱状高度，改成更像连续脉冲的细线；关键卡片统一 6px 半径。
+- 公开边界: 没有加入支付、域名、注册、API key、Massive 套餐、Stripe、Supabase 或内部商业路线。
+- 验证: 本轮 build 已生成 `505` 天 payload；Chrome headless 生成桌面与移动截图；补充移动端 topbar/grid 防横向溢出约束；生产 smoke check `home=200`、`/latest=200`、`/data/index.json=404`、`/assets/kzg-pack.js=404`，`/app.js` 显示 `UI_VERSION = "1.31"`。
+- 部署: 生产站 `https://kzg-option-house.netlify.app/`；唯一部署 `https://6a155a982b0a5da4f255af13--kzg-option-house.netlify.app/`。
+- 下一步: 继续压缩下半屏视觉空白，尤其是 premium preview 和 analysis grid 的桌面节奏。
+
+English:
+
+- Change: Bumped public UI version from `1.27` to `1.31` and added a v1.31 visual layer in `public/styles.css`.
+- Focus: Continued Fangbao's spacing/calligraphy direction by reducing background grid presence and pushing minute heatmap language away from hard square blocks toward continuous lanes.
+- Visual actions: `body` background grid changed from stronger 72px lines to softer 96px lines; `.heat-lane-board` now has a softer surface, 8px radius, and row breathing room; `.heat-lane-row` now reads as a lightweight horizontal data lane; `.heat-lane-track` uses shorter pulse strokes; key cards share a 6px radius.
+- Public boundary: No payment, domain, registration, API key, Massive plan, Stripe, Supabase, or internal commercial route added to the public site.
+- Verification: Build produced a `505`-day payload; Chrome headless produced desktop and mobile screenshots; added mobile topbar/grid overflow protection; production smoke check passed with `home=200`, `/latest=200`, `/data/index.json=404`, `/assets/kzg-pack.js=404`, and `/app.js` showing `UI_VERSION = "1.31"`.
+- Deploy: production `https://kzg-option-house.netlify.app/`; unique deploy `https://6a155a982b0a5da4f255af13--kzg-option-house.netlify.app/`.
+- Next: Continue compressing lower-screen visual blankness, especially premium preview and analysis-grid desktop rhythm.
+
 ## Git-evidenced build ledger / Git 可证实构建流水
 
 The table below maps the repository history into a dense handoff narrative. It is not the complete visual subversion count; it is the Git-evidenced backbone.
