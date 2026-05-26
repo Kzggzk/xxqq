@@ -18,7 +18,7 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Remote / 远端: `https://github.com/Kzggzk/xxqq.git`
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
-- Public visible version last verified / 最近公开验证版本: `1.27`
+- Public visible version last verified / 最近公开验证版本: `1.32`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
 - Local verified option-minute window / 本地已验证期权分钟范围: `2024-05-17 -> 2026-05-22`, `505` files.
 
@@ -78,11 +78,11 @@ The pinned Apple Note title is:
 
 置顶 Apple Note 标题：
 
-`KZG Option House - CRAZY CHANGELOG`
+`CHANGLOG 期权终端`
 
-The GitHub changelog is canonical for other agents; Apple Notes is the owner-facing live notebook. Update both.
+The GitHub changelog is canonical for other agents; Apple Notes is the owner-facing live notebook. Update both. Also read `docs/PLUGIN_SERVICE_STATUS.md` before touching external connectors.
 
-GitHub changelog 是其他 agent 的标准交接源；Apple Notes 是给 owner 看的现场笔记。两边都要更新。
+GitHub changelog 是其他 agent 的标准交接源；Apple Notes 是给 owner 看的现场笔记。两边都要更新。触碰外部 connector 前还必须读 `docs/PLUGIN_SERVICE_STATUS.md`。
 
 ## Product boundary / 产品边界
 

@@ -416,3 +416,33 @@ The 2026-05-26 16:40 Asia/Shanghai heartbeat entered v1.32. The trigger was Fang
 English:
 
 The 2026-05-26 16:55 Asia/Shanghai heartbeat entered v1.33. The goal is to keep the public page as a product capability presentation, not an internal commercial-planning page. Changed files are `/Users/fangbao/kzg-options-minute-site/public/app.js`, `/Users/fangbao/kzg-options-minute-site/public/styles.css`, `/Users/fangbao/kzg-options-minute-site/docs/CHANGELOG.md`, and `/Users/fangbao/kzg-options-minute-site/docs/CHANGLOG_OPTION_TERMINAL.md`. Public UI version moved from `1.32` to `1.33`. The visual focus is mobile advanced-preview compression: below `760px`, advanced preview, audit seal, feature map, predictive stack, and rotation quadrant use tighter shared gaps and padding; feature tabs and advanced cards become two-column scan surfaces; lookback metrics, signal rows, and quadrant stats prefer two columns on phone width; below `420px`, dense stat areas fall back to one column to avoid cramped text. Public boundary stays unchanged: no payment, registration, domain, API key, Stripe, Supabase, Massive plan, or real commercial flow was added. Verification: build produced a `505`-day payload, latest date `2026-05-22`, pack asset `kzg-frame-968c88f20da3.js`; local `390x844`, `420x920`, and `1440x1100` viewports passed with no horizontal overflow; console errors were 0; public risk-token scan returned 0; PNG export still produced `kzg-option-house-2026-05-22-zh.png` at about `1.47MB`. This version is a GitHub backup first and is not deployed immediately; production remains v1.32 until 3 to 5 solid versions accumulate or a public-risk fix is needed.
+
+## 17. Plugin and service ledger / 插件与服务总账
+
+中文:
+
+Fangbao 在 2026-05-26 追问 “note 不够” 和 “其他插件做得怎样”。这说明 Apple Notes 不能只写版本流水，还要能回答外部服务到底推进到哪里。完整插件总账写入 `docs/PLUGIN_SERVICE_STATUS.md`，本段是 owner-facing 摘要。
+
+已实际跑通的服务：GitHub 已作为代码与交接备份，当前分支 `feat/kzg-option-house-daily-auto`；Netlify 已作为生产部署，生产站 `https://kzg-option-house.netlify.app/`，最近生产版本 v1.32；Apple Notes 已有置顶 note `CHANGLOG 期权终端`，并从本文件同步；本地 iCloud 数据路径已用于 505 个期权分钟文件；Browser/Playwright/Chrome 已用于桌面、移动端、风险词和 PNG 导出 QA；自动化心跳仍在推动稠密迭代。
+
+已研究但未真实上线的服务：Massive 实时 API 路线已做官方文档研究，结论是 `$199/month` individual plan 适合 owner 侧研究和私有采集，但不能默认用于公开付费 SaaS 实时再分发；真实实时 feed 需要后端采集、派生信号、权限控制和 Business/法律确认。
+
+只做规划、没有真实接入的服务：Stripe 还没有创建产品、价格、Checkout Session、Customer Portal 或 webhook；Supabase 只写了 auth/profile/subscription/entitlement/usage/export schema 候选；Network Solutions 或任何域名商没有购买域名；微信支付没有商户凭证接入；USDT/钱包没有连接签名、地址映射或收款；Google Drive 镜像状态来自 Fangbao 回执，未来需要 Google Drive connector 直接复核 505 文件、字节数和日期范围。
+
+明确未使用的插件：Canva、Figma、Slack、Gmail、Calendar、Notion 等没有参与当前产品阶段，因为当前任务核心是数据终端、Netlify、GitHub、Apple Notes、浏览器 QA 和未来 SaaS 架构，不是设计稿、消息、邮件或日程。
+
+底线：任何花钱、买域名、升级 Massive、创建 Stripe 商品、接入 Supabase 凭证、使用微信商户凭证、连接钱包支付、传输 API key 或 secret 的动作，都必须先停下让 Fangbao 明确确认。公开网页继续只展示产品能力，不展示内部商业路线。
+
+English:
+
+On 2026-05-26 Fangbao said the note is not enough and asked how the other plugins are doing. That means Apple Notes cannot only be a version log; it must answer where every external service stands. The complete plugin ledger is `docs/PLUGIN_SERVICE_STATUS.md`; this section is the owner-facing summary.
+
+Actually working services: GitHub is the code and handoff backup on branch `feat/kzg-option-house-daily-auto`; Netlify is production deployment at `https://kzg-option-house.netlify.app/`, with v1.32 as the latest production version; Apple Notes has the pinned note `CHANGLOG 期权终端` synced from this file; local iCloud data has powered the 505 option-minute files; Browser/Playwright/Chrome have been used for desktop/mobile/risk-token/PNG export QA; heartbeat automation continues the dense iteration loop.
+
+Researched but not live: Massive real-time API has been studied from official docs. The conclusion is that the `$199/month` individual plan is useful for owner-side research and private ingestion, but should not be assumed to authorize public paid SaaS redistribution. A real-time product needs backend ingestion, derived signals, entitlement controls, and Business/legal confirmation.
+
+Planned only, not connected: Stripe has no product, price, Checkout Session, Customer Portal, or webhook; Supabase only has candidate auth/profile/subscription/entitlement/usage/export schema; Network Solutions or any registrar has not purchased a domain; WeChat Pay has no merchant credential integration; USDT/wallet has no signature, address mapping, or collection rail; Google Drive mirror status is Fangbao-reported and should be directly re-verified later with a Google Drive connector.
+
+Explicitly unused plugins: Canva, Figma, Slack, Gmail, Calendar, Notion, and similar plugins are not part of the current phase because the current product work is data terminal, Netlify, GitHub, Apple Notes, browser QA, and future SaaS architecture, not design files, messaging, email, or calendar work.
+
+Bottom line: any spend, domain purchase, Massive upgrade, Stripe product creation, Supabase credential use, WeChat merchant credential use, wallet payment connection, or API key/secret transmission must stop for Fangbao confirmation. The public website continues to show product capability only, not internal commercial mechanics.

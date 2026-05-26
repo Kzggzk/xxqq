@@ -160,6 +160,24 @@ English:
 - Verification: Build produced a `505`-day payload, latest date `2026-05-22`, pack asset `kzg-frame-968c88f20da3.js`; local `390x844`, `420x920`, and `1440x1100` viewports passed with no horizontal overflow; console errors were 0; public risk-token scan returned 0; PNG export still produced `kzg-option-house-2026-05-22-zh.png` at about `1.47MB`. This version is a GitHub backup first, not an immediate production deploy; production remains v1.32.
 - Next: v1.34 should polish the scroll rhythm from first viewport to daily sheet and then into advanced preview.
 
+## v1.34 - 2026-05-26 17:0x Asia/Shanghai - plugin ledger and note expansion
+
+中文:
+
+- 改动: 新增 `docs/PLUGIN_SERVICE_STATUS.md`，并修正 `docs/HANDOFF_FOR_OTHER_CODEX.md` 里的 Apple Notes 旧标题，把置顶 note 明确为 `CHANGLOG 期权终端`。
+- 原因: Fangbao 指出 note 不够，并追问其他插件进展。需要把 GitHub、Netlify、Apple Notes、Massive、iCloud、Google Drive、Browser/Playwright、Stripe、Supabase、Network Solutions、微信、USDT、自动化心跳以及未使用插件的状态写成可交接总账。
+- 公开边界: 这是内部文档更新，不改公开站，不部署，不放商业路线到页面。
+- 插件状态: GitHub/Netlify/Apple Notes/iCloud/Browsers 已实际使用；Massive 实时路线已研究但未升级；Stripe/Supabase/域名/微信/USDT 只做规划，没有真实接入；Google Drive 镜像来自 Fangbao 回执，待未来 connector 复核。
+- 下一步: Apple Notes 同步这份更完整的插件总账，并推 GitHub 备份。
+
+English:
+
+- Change: Added `docs/PLUGIN_SERVICE_STATUS.md` and fixed the old Apple Notes title in `docs/HANDOFF_FOR_OTHER_CODEX.md`; the pinned note is now explicitly `CHANGLOG 期权终端`.
+- Reason: Fangbao said the note is not enough and asked how the other plugins are doing. The status of GitHub, Netlify, Apple Notes, Massive, iCloud, Google Drive, Browser/Playwright, Stripe, Supabase, Network Solutions, WeChat, USDT, heartbeat automation, and unused plugins needs to be a handoff-grade ledger.
+- Public boundary: Internal docs only. No public-site change, no deploy, no commercial mechanics on the page.
+- Plugin status: GitHub/Netlify/Apple Notes/iCloud/Browsers are actually used; Massive real-time route is researched but not upgraded; Stripe/Supabase/domain/WeChat/USDT are planning-only; Google Drive mirror is Fangbao-reported and awaits future connector verification.
+- Next: Sync this richer plugin ledger into Apple Notes and push a GitHub backup.
+
 ## Git-evidenced build ledger / Git 可证实构建流水
 
 The table below maps the repository history into a dense handoff narrative. It is not the complete visual subversion count; it is the Git-evidenced backbone.
