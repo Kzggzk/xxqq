@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import base64
 import gzip
+import hashlib
 import json
 import shutil
 from datetime import datetime, timezone
@@ -208,12 +209,19 @@ def main() -> int:
     copy_public_shell()
     assets = DIST / "assets"
     assets.mkdir(parents=True, exist_ok=True)
-    (assets / "kzg-pack.js").write_text(
+    pack_hash = hashlib.sha256(encoded.encode("ascii")).hexdigest()[:12]
+    pack_name = f"kzg-frame-{pack_hash}.js"
+    (assets / pack_name).write_text(
         "window.__KZG_PACK__="
         + json.dumps(encoded)
         + ";\nwindow.__KZG_PACK_META__="
         + json.dumps({"packagedAt": payload["packagedAt"], "latestDate": index["latestDate"]})
         + ";\n",
+        encoding="utf-8",
+    )
+    index_dist = DIST / "index.html"
+    index_dist.write_text(
+        index_dist.read_text(encoding="utf-8").replace("/assets/kzg-pack.js", f"/assets/{pack_name}"),
         encoding="utf-8",
     )
     print(
@@ -225,6 +233,7 @@ def main() -> int:
                 "analyticsDays": len(analytics["daily"]),
                 "analyticsSymbols": len(analytics["symbols"]),
                 "encodedBytes": len(encoded),
+                "packAsset": pack_name,
             },
             ensure_ascii=False,
         )
