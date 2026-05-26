@@ -6,7 +6,7 @@ struct KZGCard<Content: View>: View {
   @ViewBuilder var content: Content
 
   var body: some View {
-    VStack(alignment: .leading, spacing: 14) {
+    VStack(alignment: .leading, spacing: 11) {
       VStack(alignment: .leading, spacing: 3) {
         Text(title)
           .font(.system(.title3, design: .serif, weight: .semibold))
@@ -19,7 +19,7 @@ struct KZGCard<Content: View>: View {
       }
       content
     }
-    .padding(16)
+    .padding(13)
     .background(
       RoundedRectangle(cornerRadius: 8, style: .continuous)
         .fill(Color(.secondarySystemBackground))
@@ -38,7 +38,7 @@ struct MetricTile: View {
   var accent: Color = Color(red: 0.66, green: 0.43, blue: 0.15)
 
   var body: some View {
-    VStack(alignment: .leading, spacing: 6) {
+    VStack(alignment: .leading, spacing: 5) {
       Text(label)
         .font(.caption2.weight(.semibold))
         .foregroundStyle(.secondary)
@@ -53,7 +53,7 @@ struct MetricTile: View {
         .minimumScaleFactor(0.75)
     }
     .frame(maxWidth: .infinity, alignment: .leading)
-    .padding(12)
+    .padding(10)
     .background(
       RoundedRectangle(cornerRadius: 7, style: .continuous)
         .fill(accent.opacity(0.08))

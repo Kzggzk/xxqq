@@ -19,9 +19,9 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
 - Production version last verified / 最近生产验证版本: `1.42`
-- Local version last verified / 最近本地验证版本: `1.44`
+- Local version last verified / 最近本地验证版本: `1.45`
 - Latest unique deploy / 最近唯一部署: `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`
-- iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.2`
+- iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.3`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
 - Local verified option-minute window / 本地已验证期权分钟范围: `2024-05-17 -> 2026-05-22`, `505` files.
 
@@ -68,13 +68,13 @@ Web `1.42` is a mobile/desktop spacing checkpoint, not a payment or domain featu
 
 Web `1.42` 是移动端/桌面端 spacing 检查点，不是支付或域名功能。它压缩手机顶栏和摘要指标区，保持 PNG 导出稳定，并继续把支付/域名/API 内部规划排除在公开站之外。生产唯一部署是 `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`。
 
-Latest local v1.44 note:
+Latest local v1.45 note:
 
-最新本地 v1.44 说明：
+最新本地 v1.45 说明：
 
-Web `1.44` is local-only and focuses on the lower rotation and momentum fit. It keeps production at v1.42, preserves the v1.43 mobile advanced-preview compression, tightens the rotation quadrant / lanes / symbol focus / momentum list, and adds a `521px -> 1080px` topbar fallback so tablet or small desktop widths do not crowd the command buttons.
+Web `1.45` is local-only and focuses on phone ledger density plus iOS companion sync. It keeps production at v1.42, preserves the v1.44 desktop/tablet stability, hides long mobile rotation narrative, reduces mobile rotation and momentum visible rows to `12` each, and updates the native SwiftUI companion to iOS `0.3`. XcodeBuildMCP still hits a local simulator destination blocker, but `swiftc -typecheck` passes.
 
-Web `1.44` 仅本地验证，重点是下半区轮动与动量 fit。生产站保持 v1.42，保留 v1.43 的手机高级预览压缩成果，继续压缩轮动象限、轮动 lanes、标的聚焦、动量列表，并增加 `521px -> 1080px` 顶栏兜底，避免 iPad 或小桌面宽度下命令按钮拥挤。
+Web `1.45` 仅本地验证，重点是手机端账本密度和 iOS 伴生端同步。生产站保持 v1.42，保留 v1.44 的桌面/iPad 稳定成果，隐藏手机端轮动长说明，把手机轮动与动量可见行都压到 `12` 条，并把原生 SwiftUI 伴生端更新到 iOS `0.3`。XcodeBuildMCP 仍遇到本机 simulator destination 阻塞，但 `swiftc -typecheck` 通过。
 
 ## Verification checklist / 验证清单
 

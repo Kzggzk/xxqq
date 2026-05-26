@@ -29,8 +29,8 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
 - 最近验证唯一部署: `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.42`
-- 最近本地验证 UI 版本: `1.43`
-- 当前 iOS 伴生版本: `0.2`，对应 Web `1.40`
+- 最近本地验证 UI 版本: `1.45`
+- 当前 iOS 伴生版本: `0.3`，对应 Web `1.45`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；当前本机目录没有找到 `2023-*.csv.gz`
@@ -47,8 +47,8 @@ English:
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
 - Latest verified unique deploy: `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.42`
-- Latest locally verified UI version: `1.43`
-- Current iOS companion version: `0.2`, mapped to Web `1.40`
+- Latest locally verified UI version: `1.45`
+- Current iOS companion version: `0.3`, mapped to Web `1.45`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; no local `2023-*.csv.gz` files were found in the verified folder
@@ -251,6 +251,32 @@ Concrete changes: `public/app.js` moved `UI_VERSION` from `1.43` to `1.44`; `pub
 Verified facts: `node --check public/app.js` passed; build produced a `505`-day payload, latest `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-af03d65ae13f.js`; `per_day_to_dist` copied `505` reports; public risk-token scan returned 0; in-app Browser smoke passed with v1.44, latest date, no console errors, no horizontal overflow, `user-select:none`, and no internal commercial strings. Playwright/Chrome verified `1440x1100`, `973x547`, and `390x844`, all with `overflowX=0`. PNG export was clicked successfully and saved as `/tmp/kzg-option-house-v144-export.png`, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes. Screenshot evidence lives at `/tmp/kzg-option-house-v144-desktop.png`, `/tmp/kzg-option-house-v144-tablet.png`, `/tmp/kzg-option-house-v144-mobile.png`, and `/tmp/kzg-option-house-v144-mobile-rotation.png`.
 
 Current state: GitHub docs are updated, Apple Notes should sync from this file, and production remains the v1.42 unique deploy `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`. Next v1.45 should keep reducing vertical height in mobile rotation lanes and momentum lists, then evaluate iOS companion `0.3` under the every-5-Web-versions cadence.
+
+## 4.6 v1.45 mobile ledger and iOS 0.3 sync / v1.45 手机账本与 iOS 0.3 同步
+
+中文:
+
+北京时间 2026-05-26 20:16 左右，Web `1.45` 成为新的本地检查点，生产仍不部署。这个版本继续执行 Fangbao 的“下一轮 update 提前开始”和“手机端体验更好”的要求，同时兑现每 5 个 Web 稠密版本同步一次 iOS companion 的规则。公开站没有加入任何支付、域名、API、注册、价格、Stripe、钱包、微信支付、Massive plan 或内部商业规划内容。
+
+具体变化：`public/app.js` 将 `UI_VERSION` 从 `1.44` 升到 `1.45`；`public/styles.css` 追加 v1.45 手机端样式层。手机端的轮动说明长句隐藏，轮动象限 lead 改成更短的两列标识，象限气泡尺寸降低，轮动 lanes 每列只显示前 6 个有效行，动量队列只显示前 12 个有效行。这样做不是删除数据，而是在手机首要路径上把“标的轮动扩散”和“核心标的动量”压成更像终端账本的读法。同步修改 iOS SwiftUI：`DashboardView.swift` 和 `Components.swift` 把主栈、Header、卡片、MetricTile、轮动象限和 symbol chip 的 padding/spacing 收紧，并把 checkpoint tile 改为 Web `1.45`、iOS `0.3`、PNG `KZG`。
+
+验证事实：`node --check public/app.js` 通过；build 生成 `505` 天 payload，最新 `2026-05-22`，analytics symbols `98`，pack asset `kzg-frame-83d3cae4a163.js`；`per_day_to_dist` 复制 `505` 个 report；source 和 dist 的公开风险词扫描均为 0。XcodeBuildMCP 当前 profile 正确指向 `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`、scheme `KZG Option House`、simulator `iPhone 17 Pro`，但 simulator destination 仍因本机 runtime/SDK 对不上而构建失败；随后 `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator` 通过，说明 v0.3 是源码层通过而不是语法坏掉。
+
+视觉验证：Playwright/Chrome 本地桌面 `1440x1100` 显示 v1.45，topbar `69px`、timeline `137px`、rotation `814px`、momentum `585px`、`overflowX=0`、`user-select:none`、无 console error。手机 `390x844` 显示 v1.45，topbar `91px`、高级预览 `3163px`、rotation panel `778px`、momentum panel `959px`、可见轮动行 `12`、可见动量行 `12`、`overflowX=0`、无内部词泄露。PNG 导出实际点击成功，文件 `/tmp/kzg-option-house-v145-export.png`，建议文件名 `kzg-option-house-2026-05-22-zh.png`，大小 `1,482,138` bytes。截图证据：`/tmp/kzg-option-house-v145-desktop.png`、`/tmp/kzg-option-house-v145-mobile.png`、`/tmp/kzg-option-house-v145-mobile-rotation.png`。
+
+当前状态：v1.45 是本地/GitHub/Apple Notes 留痕版本，不是生产部署版本。生产仍是 v1.42 唯一部署 `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`。下一步 v1.46 应继续处理手机下半页三段之间的统一感：高级预览、轮动、动量之间不要像三个不同产品拼起来；若再累计 3-5 个扎实版本，或者出现公开风险修复，则重新 build、验证、部署生产。
+
+English:
+
+Around 2026-05-26 20:16 Asia/Shanghai, Web `1.45` became the new local checkpoint and production was not deployed. This version continues Fangbao's request to start the next update early and raise the phone experience, while also honoring the rule that iOS companion syncs every 5 dense Web versions. The public site still adds no payment, domain, API, registration, pricing, Stripe, wallet, WeChat Pay, Massive plan, or internal commercial-planning content.
+
+Concrete changes: `public/app.js` moved `UI_VERSION` from `1.44` to `1.45`; `public/styles.css` added a v1.45 mobile layer. On phone, the long rotation narrative is hidden, rotation quadrant lead becomes a shorter two-column marker, quadrant bubbles shrink, each rotation lane shows only the first 6 effective rows, and the momentum queue shows only the first 12 effective rows. This is not deleting data; it makes the priority phone path read more like a terminal ledger for `symbol rotation` and `symbol momentum`. iOS SwiftUI also changed: `DashboardView.swift` and `Components.swift` tighten main-stack, Header, card, MetricTile, rotation quadrant, and symbol-chip padding/spacing; checkpoint tiles now read Web `1.45`, iOS `0.3`, PNG `KZG`.
+
+Verified facts: `node --check public/app.js` passed; build produced a `505`-day payload, latest `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-83d3cae4a163.js`; `per_day_to_dist` copied `505` reports; source and dist public-risk scans both returned 0. XcodeBuildMCP currently points to the correct project `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, simulator `iPhone 17 Pro`, but simulator destination still fails because the local runtime/SDK do not line up; fallback `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator` passed, confirming v0.3 source-level validity.
+
+Visual verification: local Playwright/Chrome desktop `1440x1100` showed v1.45 with topbar `69px`, timeline `137px`, rotation `814px`, momentum `585px`, `overflowX=0`, `user-select:none`, and no console errors. Mobile `390x844` showed v1.45 with topbar `91px`, advanced preview `3163px`, rotation panel `778px`, momentum panel `959px`, visible rotation rows `12`, visible momentum rows `12`, `overflowX=0`, and no internal string leak. PNG export was clicked successfully: `/tmp/kzg-option-house-v145-export.png`, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v145-desktop.png`, `/tmp/kzg-option-house-v145-mobile.png`, `/tmp/kzg-option-house-v145-mobile-rotation.png`.
+
+Current state: v1.45 is a local/GitHub/Apple Notes breadcrumb, not a production deploy. Production remains the v1.42 unique deploy `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`. Next v1.46 should continue unifying the mobile lower-page rhythm across advanced preview, rotation, and momentum so they do not feel like three different products. After another 3-5 solid versions, or immediately after any public-risk fix, rebuild, verify, and deploy production again.
 
 ## 5. SaaS architecture / SaaS 架构
 

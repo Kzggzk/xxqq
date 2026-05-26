@@ -11,7 +11,7 @@ struct DashboardView: View {
   var body: some View {
     NavigationStack {
       ScrollView {
-        VStack(alignment: .leading, spacing: 14) {
+        VStack(alignment: .leading, spacing: 10) {
           Header(snapshot: snapshot)
           CheckpointStrip()
           TimelineStrip(points: snapshot.timeline)
@@ -22,8 +22,8 @@ struct DashboardView: View {
           RotationCard(points: snapshot.rotations)
           SymbolFocusCard(symbols: snapshot.symbols, selectedSymbol: $selectedSymbol, selectedPulse: selectedPulse)
         }
-        .padding(.horizontal, 14)
-        .padding(.vertical, 12)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 10)
       }
       .background(Color(red: 0.97, green: 0.96, blue: 0.93))
       .navigationBarTitleDisplayMode(.inline)
@@ -54,7 +54,7 @@ private struct Header: View {
         VStack(alignment: .trailing, spacing: 2) {
           Text(snapshot.tradeDate)
             .font(.system(.subheadline, design: .rounded, weight: .bold))
-          Text("iOS companion 0.2")
+          Text("iOS companion 0.3")
             .font(.caption2.weight(.semibold))
             .foregroundStyle(.secondary)
         }
@@ -67,7 +67,7 @@ private struct Header: View {
         .font(.caption2.weight(.semibold))
         .foregroundStyle(.secondary)
     }
-    .padding(16)
+    .padding(13)
     .background(
       Rectangle()
         .fill(Color(.systemBackground))
@@ -80,9 +80,9 @@ private struct Header: View {
 
 private struct CheckpointStrip: View {
   private let items = [
-    ("Web", "1.40", "deploy checkpoint"),
-    ("iOS", "0.2", "5-version sync"),
-    ("PNG", "KZG", "sheet style")
+    ("Web", "1.45", "local sync"),
+    ("iOS", "0.3", "phone fit"),
+    ("PNG", "KZG", "sheet safe")
   ]
 
   var body: some View {
@@ -101,8 +101,8 @@ private struct CheckpointStrip: View {
             .minimumScaleFactor(0.72)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.vertical, 9)
-        .padding(.horizontal, 10)
+        .padding(.vertical, 8)
+        .padding(.horizontal, 9)
         .background(Color(.systemBackground).opacity(0.78), in: RoundedRectangle(cornerRadius: 7, style: .continuous))
       }
     }
@@ -286,7 +286,7 @@ private struct RotationCard: View {
             .position(x: map(point.volumeChange, min: -0.5, max: 4.5, size: 300), y: 200 - map(point.premiumChange, min: -0.8, max: 7.0, size: 200))
         }
       }
-      .frame(height: 200)
+      .frame(height: 178)
       Text("右上为量价同升，左下为同步降温。iOS 版先保留当日免费象限，历史回看后续按 Web 每 5 个版本同步。")
         .font(.caption2)
         .foregroundStyle(.secondary)
@@ -321,8 +321,8 @@ private struct SymbolFocusCard: View {
                   .font(.caption2)
               }
               .foregroundStyle(selectedSymbol == item.symbol ? Color.white : Color.primary)
-              .padding(12)
-              .frame(width: 104, alignment: .leading)
+              .padding(10)
+              .frame(width: 96, alignment: .leading)
               .background(
                 RoundedRectangle(cornerRadius: 7, style: .continuous)
                   .fill(selectedSymbol == item.symbol ? item.tone.color : Color.primary.opacity(0.045))

@@ -12,8 +12,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - `1.01 -> 2.00` 代表 100 个稠密迭代。
 - A future `11.85` means 1085 post-1.00 dense iterations, not a symbolic number.
 - 未来如果到 `11.85`，它代表从 1.00 之后真的经历了 1085 个稠密迭代，不是随便喊出来的数字。
-- The latest local checkpoint is public UI `1.44`; production remains `1.42` at unique deploy `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`. The next dense step is `1.45`.
-- 最近本地检查点是公开 UI `1.44`；生产仍为 `1.42`，唯一部署是 `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`。下一次稠密版本是 `1.45`。
+- The latest local checkpoint is public UI `1.45`; production remains `1.42` at unique deploy `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`. The next dense step is `1.46`.
+- 最近本地检查点是公开 UI `1.45`；生产仍为 `1.42`，唯一部署是 `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`。下一次稠密版本是 `1.46`。
 
 ## iOS companion cadence / iOS 伴生节奏
 
@@ -21,8 +21,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - iOS app 是原生 SwiftUI，位于 `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse`。
 - iOS does not update on every Web `0.01` version. It updates every 5 Web dense versions unless Fangbao asks for an immediate iOS pass.
 - iOS 不跟随每一个 Web `0.01` 版本更新。默认每 5 个 Web 稠密版本同步一次，除非 Fangbao 要求立即更新 iOS。
-- Current iOS checkpoint: `iOS 0.2` at Web `1.40`; next checkpoint target: Web `1.45`.
-- 当前 iOS 检查点：`iOS 0.2` 对应 Web `1.40`；下一检查点目标：Web `1.45`。
+- Current iOS checkpoint: `iOS 0.3` at Web `1.45`; next default checkpoint target: Web `1.50`.
+- 当前 iOS 检查点：`iOS 0.3` 对应 Web `1.45`；下一默认检查点目标：Web `1.50`。
 - App Store signing, TestFlight upload, review submission, or developer-account actions require Fangbao confirmation at that moment.
 - App Store 签名、TestFlight 上传、审核提交或开发者账号动作，都必须在当时让 Fangbao 确认。
 
