@@ -16,10 +16,10 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.58";
+const UI_VERSION = "1.59";
 
 const dataAudit = {
-  dataset: "23_DATA_Massive_期权分钟_Minute",
+  dataset: "23_DATA_期权分钟_Minute",
   coverageStart: "2024-05-17",
   coverageEnd: "2026-05-22",
   fileCount: 505,
@@ -361,6 +361,13 @@ async function loadIndex() {
       loadDayByDate(premiumJumpTarget.dataset.jumpDate);
       return;
     }
+    const sectorTarget = event.target.closest("[data-scroll-sector]");
+    if (sectorTarget) {
+      event.preventDefault();
+      const section = $(sectorTarget.dataset.scrollSector);
+      if (section) section.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
     const unlockScopeTarget = event.target.closest("[data-unlock-scope]");
     if (unlockScopeTarget) {
       event.preventDefault();
@@ -588,6 +595,92 @@ function renderAccessStrip() {
       <span>${escapeHtml(label)}</span>
       <b>${escapeHtml(state.day.tradeDate)}</b>
       <small>${escapeHtml(sub)}</small>
+    </div>
+  `;
+}
+
+function renderSectorSpine() {
+  const target = $("sectorSpine");
+  if (!target || !state.day) return;
+  const rows = symbolRotationRows();
+  const attack = rows.filter((row) => Number(row.delta) >= 0 && Number(row.premiumDelta) >= 0);
+  const fade = rows.filter((row) => Number(row.delta) < 0 && Number(row.premiumDelta) < 0);
+  const premiumLead = uniqueSymbolRows().reduce((best, row) => Number(row.premiumNotional || 0) > Number(best.premiumNotional || 0) ? row : best, {});
+  const historyCount = state.analytics?.daily?.length || state.datesAsc.length || 0;
+  const items = state.lang === "zh"
+    ? [
+      {
+        id: "sessionTape",
+        number: "01",
+        label: "昨日数据总线",
+        title: "日报与 PNG 全开放",
+        value: wan(state.day.overview.totalVol),
+        meta: `${state.day.tradeDate} · ${moneyCompact(state.day.overview.totalPremium)}`,
+        tone: "flat",
+      },
+      {
+        id: "premiumPreview",
+        number: "02",
+        label: "未来实时席位",
+        title: "Flow Tape 预留",
+        value: premiumLead.symbol || "--",
+        meta: "后端确认后打开真实明细",
+        tone: "hot",
+      },
+      {
+        id: "historySectorIntro",
+        number: "03",
+        label: "历史日内层",
+        title: "趋势与轮动全开放",
+        value: `${fmt0.format(historyCount)}日`,
+        meta: `${fmt0.format(attack.length)} 升温 · ${fmt0.format(fade.length)} 降温`,
+        tone: "cool",
+      },
+    ]
+    : [
+      {
+        id: "sessionTape",
+        number: "01",
+        label: "Daily data bus",
+        title: "Report and PNG stay open",
+        value: wan(state.day.overview.totalVol),
+        meta: `${state.day.tradeDate} · ${moneyCompact(state.day.overview.totalPremium)}`,
+        tone: "flat",
+      },
+      {
+        id: "premiumPreview",
+        number: "02",
+        label: "Future live seat",
+        title: "Flow tape reserve",
+        value: premiumLead.symbol || "--",
+        meta: "true detail opens after backend approval",
+        tone: "hot",
+      },
+      {
+        id: "historySectorIntro",
+        number: "03",
+        label: "Historical intraday",
+        title: "Trends and rotation open",
+        value: `${fmt0.format(historyCount)}D`,
+        meta: `${fmt0.format(attack.length)} warm · ${fmt0.format(fade.length)} cool`,
+        tone: "cool",
+      },
+    ];
+  target.innerHTML = `
+    <div class="sector-spine-copy">
+      <span>${state.lang === "zh" ? "产品阅读路径" : "Product reading path"}</span>
+      <b>${state.lang === "zh" ? "三段式，不绕路" : "Three sectors, no detour"}</b>
+    </div>
+    <div class="sector-spine-buttons">
+      ${items.map((item) => `
+        <button type="button" class="${item.tone}" data-scroll-sector="${escapeHtml(item.id)}">
+          <i>${escapeHtml(item.number)}</i>
+          <span>${escapeHtml(item.label)}</span>
+          <strong>${escapeHtml(item.title)}</strong>
+          <b>${escapeHtml(item.value)}</b>
+          <small>${escapeHtml(item.meta)}</small>
+        </button>
+      `).join("")}
     </div>
   `;
 }
@@ -898,7 +991,7 @@ function realtimeFlowTerminal(rows) {
     <div class="realtime-terminal">
       <div class="terminal-head">
         <span>${state.lang === "zh" ? "Realtime Flow Tape" : "Realtime Flow Tape"}</span>
-        <b>${state.lang === "zh" ? "接入后高速刷新" : "high-speed after connection"}</b>
+        <b>${state.lang === "zh" ? "后端确认后高速刷新" : "high-speed after backend approval"}</b>
       </div>
       <div class="terminal-table-head" aria-hidden="true">
         <span>Time</span>
@@ -923,8 +1016,8 @@ function realtimeFlowTerminal(rows) {
       <div class="terminal-veil">
         <strong>${state.lang === "zh" ? "未来实时席位" : "Future realtime seat"}</strong>
         <span>${state.lang === "zh"
-          ? "真实 feed 接入后打开完整明细、排序、过滤、订阅提醒和二级页面。"
-          : "Real feed unlocks full details, sorting, filters, alerts, and the dedicated flow page."}</span>
+          ? "真实 feed 经后端确认后打开完整明细、排序、过滤、订阅提醒和二级页面。"
+          : "Real feed opens full details, sorting, filters, alerts, and the dedicated flow page after backend approval."}</span>
       </div>
     </div>
   `;
@@ -1799,6 +1892,7 @@ function renderDay() {
   $("downloadReport").onclick = () => exportReportPng(day.tradeDate);
   renderSessionTape(delta);
   renderAccessStrip();
+  renderSectorSpine();
   renderDigest();
   renderReportCanvas();
   renderBuckets();

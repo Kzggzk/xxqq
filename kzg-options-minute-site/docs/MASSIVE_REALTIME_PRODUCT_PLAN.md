@@ -57,6 +57,23 @@ No provider names, live API routes, secrets, plan prices, checkout state, or leg
 
 浏览器代码不应出现供应商名、实时 API 路由、密钥、套餐价格、checkout 状态或法律假设。
 
+## v1.59 public spine rule / v1.59 公开脊柱规则
+
+v1.59 adds a simple public product spine immediately after the open access strip. It should remain the public-facing mental model:
+
+v1.59 在开放状态条后加入简单公开产品脊柱。后续公开页面应继续遵守这个心智模型：
+
+1. Daily/yesterday data bus is open.
+2. 昨日/当日数据总线开放。
+3. Future realtime flow seat is reserved and mock-derived until backend approval.
+4. 未来实时流席位预留，在后端确认前只能是 mock-derived。
+5. Historical intraday layer is open.
+6. 历史日内层开放。
+
+The displayed public dataset label is now `23_DATA_期权分钟_Minute`. Do not reintroduce provider names, plan names, key screenshots, checkout language, or domain/pricing experiments into the homepage. If a future agent needs to mention provider/API facts, keep them in this document or another internal handoff document.
+
+公开显示的数据标签现在是 `23_DATA_期权分钟_Minute`。不要把供应商名、套餐名、key 截图、checkout 语言或域名/价格实验重新放进主页。未来 agent 如果需要记录 provider/API 事实，只能写在本文档或其他内部交接文档里。
+
 ## Verified official facts / 已核官方事实
 
 Checked on 2026-05-26 Asia/Shanghai against Massive official docs/pages.

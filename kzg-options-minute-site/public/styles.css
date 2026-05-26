@@ -15256,3 +15256,195 @@ body[data-theme="dark"] .filter-weight-rail span {
     grid-template-columns: 1fr;
   }
 }
+
+/* v1.59 pass: make the page read as three simple sectors before the heavy panels begin. */
+.sector-spine {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.28fr) minmax(0, 1fr);
+  gap: 10px;
+  align-items: stretch;
+  margin-top: 10px;
+}
+
+.sector-spine-copy,
+.sector-spine-buttons button {
+  border: 1px solid var(--line-strong);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 252, 0.94), rgba(248, 246, 239, 0.91)),
+    linear-gradient(90deg, rgba(167, 128, 44, 0.045), transparent);
+}
+
+.sector-spine-copy {
+  display: grid;
+  align-content: center;
+  gap: 7px;
+  min-width: 0;
+  padding: 12px 13px;
+}
+
+.sector-spine-copy span {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 880;
+  line-height: 1;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.sector-spine-copy b {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(22px, 2.8vw, 34px);
+  line-height: 0.94;
+  font-weight: 920;
+  letter-spacing: 0;
+}
+
+.sector-spine-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  min-width: 0;
+}
+
+.sector-spine-buttons button {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) minmax(70px, 0.34fr);
+  gap: 5px 9px;
+  align-items: baseline;
+  min-width: 0;
+  min-height: 84px;
+  padding: 11px 12px 10px;
+  color: inherit;
+  cursor: pointer;
+  font-variant-numeric: tabular-nums;
+  text-align: left;
+}
+
+.sector-spine-buttons button:hover {
+  border-color: rgba(167, 128, 44, 0.52);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 252, 0.98), rgba(250, 247, 241, 0.96)),
+    linear-gradient(90deg, rgba(167, 128, 44, 0.08), transparent);
+}
+
+.sector-spine-buttons button.hot {
+  box-shadow: inset 3px 0 0 rgba(196, 83, 53, 0.78);
+}
+
+.sector-spine-buttons button.cool {
+  box-shadow: inset 3px 0 0 rgba(47, 97, 144, 0.74);
+}
+
+.sector-spine-buttons i,
+.sector-spine-buttons span,
+.sector-spine-buttons strong,
+.sector-spine-buttons b,
+.sector-spine-buttons small {
+  overflow: hidden;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sector-spine-buttons i {
+  color: var(--gold);
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 950;
+}
+
+.sector-spine-buttons span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.sector-spine-buttons strong {
+  grid-column: 2 / 4;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 920;
+}
+
+.sector-spine-buttons b {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 940;
+}
+
+.sector-spine-buttons small {
+  grid-column: 2 / 4;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 760;
+}
+
+body[data-theme="dark"] .sector-spine-copy,
+body[data-theme="dark"] .sector-spine-buttons button {
+  border-color: rgba(238, 232, 218, 0.12);
+  background:
+    linear-gradient(180deg, rgba(26, 28, 28, 0.92), rgba(18, 19, 19, 0.94)),
+    linear-gradient(90deg, rgba(225, 159, 74, 0.05), transparent);
+}
+
+@media (max-width: 1080px) {
+  .sector-spine {
+    grid-template-columns: 1fr;
+  }
+
+  .sector-spine-copy {
+    min-height: 72px;
+  }
+}
+
+@media (max-width: 760px) {
+  .sector-spine {
+    gap: 7px;
+    margin-top: 8px;
+  }
+
+  .sector-spine-copy {
+    min-height: 0;
+    padding: 10px 11px;
+  }
+
+  .sector-spine-buttons {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .sector-spine-buttons button {
+    grid-template-columns: 24px minmax(0, 1fr);
+    min-height: 66px;
+    padding: 9px 10px;
+  }
+
+  .sector-spine-buttons strong,
+  .sector-spine-buttons b,
+  .sector-spine-buttons small {
+    grid-column: 2;
+  }
+
+  .sector-spine-buttons b {
+    justify-self: start;
+    font-size: 14px;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .sector-spine-copy b {
+    font-size: 24px;
+  }
+
+  .sector-spine-buttons button {
+    grid-template-columns: 24px minmax(0, 1fr);
+  }
+}

@@ -19,7 +19,7 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
 - Production version last verified / 最近生产验证版本: `1.56`
-- Local version last verified / 最近本地验证版本: `1.58` Web realtime reserve transition polish
+- Local version last verified / 最近本地验证版本: `1.59` Web three-sector product spine and public provider-label cleanup
 - Latest unique deploy / 最近唯一部署: `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`
 - iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.5`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
@@ -91,6 +91,14 @@ Latest local v1.58 note:
 Web `1.58` is a local experience checkpoint, not a production deploy. Main source changes are `public/app.js` and `public/styles.css`: UI version `1.58`, new `realtimeTransitionRail()` under the realtime top line, new `realtimeFilterWeightRail()` inside the filter console, tighter realtime-sector spacing, mobile command chips kept in a scan-ready row, and terminal height reduced slightly. Verification passed: `node --check public/app.js`, `python3 scripts/build_payload.py`, `python3 scripts/per_day_to_dist.py`, Playwright desktop `1440x1100`, phone `390x844`, no console issues, doc/body overflow 0, old locks 0, old `.is-blurred` 0, realtime tape 18 rows, transition rail 3 cells, filter rail 4 cells, PNG export `/tmp/kzg-option-house-v158-export.png`. Production remains v1.56. Do not commit generated `public/data/*` or `public/reports/*` dirties.
 
 Web `1.58` 是本地体验检查点，不部署生产。主要源码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.58`，realtime top line 下方新增 `realtimeTransitionRail()`，filter console 内新增 `realtimeFilterWeightRail()`，中段 spacing 更紧，手机 command chips 保持可扫读横排，terminal 高度略收。验证通过：`node --check public/app.js`、`python3 scripts/build_payload.py`、`python3 scripts/per_day_to_dist.py`、Playwright 桌面 `1440x1100`、手机 `390x844`、无 console issue、doc/body overflow 0、旧锁层 0、旧 `.is-blurred` 0、实时 tape 18 行、transition rail 3 格、filter rail 4 格、PNG 导出 `/tmp/kzg-option-house-v158-export.png`。生产仍为 v1.56。不要提交生成的 `public/data/*` 或 `public/reports/*` 脏文件。
+
+Latest local v1.59 note:
+
+最新本地 v1.59 说明：
+
+Web `1.59` is a local Web checkpoint, not a production deploy. Main source changes are `public/index.html`, `public/app.js`, and `public/styles.css`: UI version `1.59`, new `section#sectorSpine`, new `renderSectorSpine()`, clickable `[data-scroll-sector]` navigation, and a v1.59 CSS spine that makes the page read as three simple sectors after the first screen. It also changes the public displayed dataset label to `23_DATA_期权分钟_Minute` so the website no longer exposes the provider name in the metric rail. Local Browser plus Playwright QA passed on desktop `1440x1100` and phone `390x844`: source path shows `1.59 · 505/505 complete`, sector buttons 3 with child overflow 0, transition rail 3, filter rail 4, realtime tape 18 rows, realtime-only blur remains `blur(2.7px) saturate(1.25)`, old lock/blur nodes 0, public risk text false, doc/body overflow 0, console issue 0, and PNG export `/tmp/kzg-option-house-v159-export.png` works at `1,482,138` bytes. Production remains v1.56. Do not commit generated `public/data/*` or `public/reports/*` dirties.
+
+Web `1.59` 是本地 Web 检查点，不部署生产。主要源码改动是 `public/index.html`、`public/app.js`、`public/styles.css`：UI 版本 `1.59`、新增 `section#sectorSpine`、新增 `renderSectorSpine()`、新增可点击 `[data-scroll-sector]` 导航，以及 v1.59 CSS 产品脊柱，让页面在首屏后读成三个简单 sector。它同时把公开显示的数据标签改为 `23_DATA_期权分钟_Minute`，公开网站不再在指标栏暴露供应商名。本地 Browser 加 Playwright QA 通过，桌面 `1440x1100` 与手机 `390x844` 均显示 `1.59 · 505/505 complete`，sector 按钮 3 个且 child overflow 0，transition rail 3 格，filter rail 4 格，realtime tape 18 行，只有未来实时 tape 保留 `blur(2.7px) saturate(1.25)`，旧锁/旧 blur 节点 0，公开风险词 false，doc/body overflow 0，console issue 0，PNG 导出 `/tmp/kzg-option-house-v159-export.png` 成功且大小 `1,482,138` bytes。生产仍为 v1.56。不要提交生成的 `public/data/*` 或 `public/reports/*` 脏文件。
 
 Previous local v1.55 note:
 

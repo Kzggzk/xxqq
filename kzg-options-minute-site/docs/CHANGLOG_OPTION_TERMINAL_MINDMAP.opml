@@ -6,7 +6,7 @@
   <body>
     <outline text="CHANGLOG 期权终端">
       <outline text="Current state / 当前状态">
-        <outline text="Local dense 1.58 Web reserve transition / 本地稠密 1.58 Web reserve 过渡"/>
+        <outline text="Local dense 1.59 Web three-sector spine / 本地稠密 1.59 Web 三段脊柱"/>
         <outline text="Production Web 1.56 / 生产 Web 1.56"/>
         <outline text="Unique deploy 6a15c1b6531adb3fd145e39d / 唯一部署"/>
         <outline text="iOS companion 0.5 / iOS 伴生 0.5"/>
@@ -20,12 +20,14 @@
           <outline text="Bilingual UI and theme switch / 中英文与深浅色"/>
           <outline text="Open generated-minute analytics / 生成分钟数据开放"/>
           <outline text="Future realtime sector only / 仅未来实时区预留"/>
+          <outline text="Three-sector product spine / 三段式产品脊柱"/>
           <outline text="iOS three-sector companion / iOS 三段式伴生"/>
         </outline>
         <outline text="Future commercial layer / 未来商业层">
           <outline text="Current generated-minute features stay open / 当前生成分钟功能开放"/>
           <outline text="Realtime flow book and filters / 实时 flow book 与过滤器"/>
           <outline text="Transition rail and filter weight rail / 过渡 rail 与过滤权重 rail"/>
+          <outline text="Public provider label scrub / 公开供应商标签清理"/>
           <outline text="Bullish and bearish lanes / 多空分栏"/>
           <outline text="Strategy recognition tree / 策略识别树"/>
           <outline text="iOS flow reserve sample / iOS flow reserve 样张"/>

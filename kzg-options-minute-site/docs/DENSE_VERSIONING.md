@@ -12,8 +12,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - `1.01 -> 2.00` 代表 100 个稠密迭代。
 - A future `11.85` means 1085 post-1.00 dense iterations, not a symbolic number.
 - 未来如果到 `11.85`，它代表从 1.00 之后真的经历了 1085 个稠密迭代，不是随便喊出来的数字。
-- The latest local checkpoint is `1.58` for Web realtime-reserve transition polish. The latest production Web checkpoint remains public UI `1.56`, unique deploy `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`. The next dense step is `1.59`.
-- 最近本地检查点是 `1.58` Web realtime reserve 过渡优化。最新生产 Web 检查点仍是公开 UI `1.56`，唯一部署是 `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`。下一次稠密版本是 `1.59`。
+- The latest local checkpoint is `1.59` for Web three-sector product spine and public provider-label cleanup. The latest production Web checkpoint remains public UI `1.56`, unique deploy `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`. The next dense step is `1.60`.
+- 最近本地检查点是 `1.59` Web 三段式产品脊柱和公开供应商标签清理。最新生产 Web 检查点仍是公开 UI `1.56`，唯一部署是 `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`。下一次稠密版本是 `1.60`。
 
 ## iOS companion cadence / iOS 伴生节奏
 
@@ -44,6 +44,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - v1.57 把这个产品边界同步到 iOS 伴生 `0.5`；它不部署 Web，也不接真实 key。
 - v1.58 returns to Web and adds a three-sector transition rail plus a filter-weight rail for the future realtime reserve. Production remains v1.56.
 - v1.58 回到 Web，为未来实时 reserve 增加三段过渡 rail 和 filter 权重 rail。生产仍为 v1.56。
+- v1.59 adds a compact three-sector product spine after the access strip, makes the three sectors clickable, removes the public provider name from the displayed dataset label, and verifies desktop/mobile child overflow is 0. Production remains v1.56.
+- v1.59 在 access strip 后加入紧凑三段式产品脊柱，让三段区块可点击跳转，移除公开数据标签里的供应商名，并验证桌面/手机 child overflow 为 0。生产仍为 v1.56。
 
 ## Heartbeat protocol / 心跳协议
 

@@ -29,7 +29,7 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.56` flow-book pass，具体 commit 以最新 GitHub backup 提交为准
 - 最近验证唯一部署: `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.56`
-- 最近本地稠密版本: `1.58`，本轮为 Web realtime reserve 过渡优化，公开 Web 生产仍为 `1.56`
+- 最近本地稠密版本: `1.59`，本轮为 Web 三段式产品脊柱和公开供应商标签清理，公开 Web 生产仍为 `1.56`
 - 当前 iOS 伴生版本: `0.5`，对应稠密 Web `1.57`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
@@ -47,7 +47,7 @@ English:
 - Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.56` flow-book pass; exact commit is the latest GitHub backup commit
 - Latest verified unique deploy: `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.56`
-- Latest local dense version: `1.58`, used for Web realtime reserve transition polish while public Web production remains `1.56`
+- Latest local dense version: `1.59`, used for Web three-sector product spine and public provider-label cleanup while public Web production remains `1.56`
 - Current iOS companion version: `0.5`, mapped to dense Web `1.57`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
@@ -106,6 +106,36 @@ Public boundary: current generated-minute capabilities remain open; history, tre
 Verification: `node --check public/app.js` passed; `python3 scripts/build_payload.py` produced a 505-day payload, latest `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-705fedd65d01.js`; `python3 scripts/per_day_to_dist.py` returned `copied=505`. Local Playwright verified desktop `1440x1100` and phone `390x844`: source path shows `1.58 · 505/505 complete`, transition rail has 3 cells, filter weight rail has 4 cells, realtime tape has 18 rows, realtime blur is `blur(2.7px) saturate(1.25)`, old locks are 0, old `.is-blurred` nodes are 0, risk text is false, doc/body horizontal overflow is 0, console warning/error count is 0, and `user-select:none`. PNG export succeeded at `/tmp/kzg-option-house-v158-export.png`, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v158-desktop.png` and `/tmp/kzg-option-house-v158-phone.png`.
 
 Next: `1.59` should continue the visual rhythm from the lower middle sector into the open historical layer, focusing on desktop side lists, mobile filter density, and whitespace between history intro and rotation quadrant. Still do not connect real keys, perform real upgrades, spend money, or commit raw data.
+
+## 1C. Latest heartbeat record v1.59 / 最新心跳记录 v1.59
+
+中文:
+
+北京时间 2026-05-27 00:32 左右，稠密版本 `1.59` 完成本地 Web 迭代。本轮不部署 Netlify，生产继续是 Web `1.56`，唯一部署 `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`。本轮回应 Fangbao 对“三段 sector”与公开边界的最新要求：不要继续把页面复杂化，不要把当前已生成分钟能力锁住，也不要把供应商/API/支付/域名细节放到公开站。
+
+改动文件：`public/index.html`、`public/app.js`、`public/styles.css`，以及本 GitHub docs。`public/index.html` 在 `accessStrip` 后加入 `section#sectorSpine`。`public/app.js` 把 `UI_VERSION` 提到 `1.59`，新增 `renderSectorSpine()`，把页面压成三张可点击的阅读卡：`01 昨日数据总线`、`02 未来实时席位`、`03 历史日内层`；新增 `[data-scroll-sector]` 点击跳转，用户点中段卡会滚到 realtime reserve。`dataAudit.dataset` 从 `23_DATA_Massive_期权分钟_Minute` 改成 `23_DATA_期权分钟_Minute`，公开指标栏不再展示供应商名。`public/styles.css` 新增 v1.59 样式：桌面左侧是“产品阅读路径 / 三段式，不绕路”，右侧三枚 sector 卡；手机端收成纵向卡片，数值放回正文列内。
+
+关键修复：第一次手机截图发现三段卡内的大数值挤到左边界，随后将手机按钮改为两列阅读，`strong/b/small` 都回到第 2 列。第二次桌面验证又发现第一张 sector 卡的成交量在 CSS grid 自动放置下落进第 1 列并向左溢出，随后显式指定 `.sector-spine-buttons b { grid-column: 3; grid-row: 1; }`，手机端再覆盖回第 2 列。最终桌面和手机 `badChildren` 均为 `[]`。
+
+公开边界：当前生成分钟能力继续全开放。历史、趋势、轮动、事件队列、PNG 导出没有 blur/lock/paywall。唯一 blur 仍是未来 realtime tape 的 `.terminal-table-body.is-realtime-gated`。公开页面渲染文本扫描确认无供应商名、支付、域名、真实 API、价格、注册或账号路线；源标签显示为 `23_DATA_期权分钟_Minute · 1.59 · 505/505 complete`。真实 API key 继续未使用、未存储、未提交。
+
+验证：`node --check public/app.js` 通过；`git diff --check -- public/app.js public/index.html public/styles.css` 通过；公开风险词扫描 `public/app.js public/index.html public/styles.css` 无命中。`python3 scripts/build_payload.py` 生成 505 天 payload，latest `2026-05-22`，analytics days `505`，analytics symbols `98`，最终 pack asset `kzg-frame-d02ec0281e37.js`。`python3 scripts/per_day_to_dist.py` 返回 `copied=505`。Browser 插件验证 `http://127.0.0.1:4191/`：页面 title 正确，含 `1.59`，含三段 spine，console warning/error 0。Playwright 验证桌面 `1440x1100` 和手机 `390x844`：source path 为 `23_DATA_期权分钟_Minute · 1.59 · 505/505 complete`；sector 按钮 3 个且 child overflow 0；transition rail 3 格；filter weight rail 4 格；realtime tape 18 行；realtime blur 为 `blur(2.7px) saturate(1.25)`；旧锁层 0；旧 `.is-blurred` 0；公开风险词 false；doc/body 横向溢出 0；console issue 0；`user-select:none`。点击 `未来实时席位` 可滚到 realtime reserve。PNG 导出成功：`/tmp/kzg-option-house-v159-export.png`，建议文件名 `kzg-option-house-2026-05-22-zh.png`，大小 `1,482,138` bytes。截图证据：`/tmp/kzg-option-house-v159-desktop.png`、`/tmp/kzg-option-house-v159-phone.png`。
+
+下一步：`1.60` 可以继续压缩 sector spine 到 realtime reserve 的滚动距离，检查中段 terminal 在手机上是否过长，并准备一个生产部署候选。仍不接真实 key、不做真实升级、不花钱、不提交 raw data。
+
+English:
+
+Around 2026-05-27 00:32 Asia/Shanghai, dense version `1.59` completed a local Web iteration. No Netlify deploy happened; production remains Web `1.56`, unique deploy `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`. This round responds to Fangbao's latest three-sector and public-boundary direction: do not keep overcomplicating the page, do not lock current generated-minute capabilities, and do not place provider/API/payment/domain details on the public site.
+
+Changed files: `public/index.html`, `public/app.js`, `public/styles.css`, plus these GitHub docs. `public/index.html` adds `section#sectorSpine` after `accessStrip`. `public/app.js` moves `UI_VERSION` to `1.59`, adds `renderSectorSpine()`, and compresses the page into three clickable reading cards: `01 Daily data bus`, `02 Future live seat`, and `03 Historical intraday`; it also adds `[data-scroll-sector]` scroll handling so clicking the middle card scrolls to realtime reserve. `dataAudit.dataset` changes from `23_DATA_Massive_期权分钟_Minute` to `23_DATA_期权分钟_Minute`, so the public metric rail no longer shows the provider name. `public/styles.css` adds the v1.59 system: desktop left copy says "Product reading path / Three sectors, no detour" while the right side carries three sector cards; phone collapses to vertical cards with values inside the text column.
+
+Important fix: the first mobile screenshot showed large values inside sector cards pushed to the left edge. The mobile buttons were changed into a two-column reading layout, placing `strong/b/small` back into column 2. A second desktop check found the first card's volume value auto-placed into column 1 and overflowing left, so `.sector-spine-buttons b { grid-column: 3; grid-row: 1; }` was set explicitly, with the phone override returning it to column 2. Final desktop and phone `badChildren` are both `[]`.
+
+Public boundary: current generated-minute capabilities remain fully open. History, trends, rotation, event queues, and PNG export are not blurred, locked, or paywalled. The only blur remains the future realtime tape `.terminal-table-body.is-realtime-gated`. Rendered public text scan confirms no provider name, payment, domain, real API, price, registration, or account route; source label displays `23_DATA_期权分钟_Minute · 1.59 · 505/505 complete`. Real API keys remain unused, unstored, and uncommitted.
+
+Verification: `node --check public/app.js` passed; `git diff --check -- public/app.js public/index.html public/styles.css` passed; public risk-term scan over `public/app.js public/index.html public/styles.css` had no matches. `python3 scripts/build_payload.py` produced a 505-day payload, latest `2026-05-22`, analytics days `505`, analytics symbols `98`, final pack asset `kzg-frame-d02ec0281e37.js`. `python3 scripts/per_day_to_dist.py` returned `copied=505`. Browser plugin verified `http://127.0.0.1:4191/`: title is correct, `1.59` exists, sector spine exists, and warning/error console logs are 0. Playwright verified desktop `1440x1100` and phone `390x844`: source path is `23_DATA_期权分钟_Minute · 1.59 · 505/505 complete`; 3 sector buttons with child overflow 0; 3 transition-rail cells; 4 filter-weight cells; 18 realtime tape rows; realtime blur is `blur(2.7px) saturate(1.25)`; old lock layers are 0; old `.is-blurred` nodes are 0; public risk text is false; doc/body horizontal overflow is 0; console issue count is 0; `user-select:none`. Clicking `Future live seat` scrolls to realtime reserve. PNG export succeeded at `/tmp/kzg-option-house-v159-export.png`, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v159-desktop.png` and `/tmp/kzg-option-house-v159-phone.png`.
+
+Next: `1.60` can keep compressing the scroll distance from the sector spine to realtime reserve, check whether the middle terminal is still too tall on phones, and prepare a production-deploy candidate. Still do not connect real keys, perform real upgrades, spend money, or commit raw data.
 
 ## 2. Why this exists / 为什么必须有这个日志
 
