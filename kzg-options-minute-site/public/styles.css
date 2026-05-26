@@ -13291,3 +13291,144 @@ body[data-theme="dark"] .rotation-panel::after {
     height: 12px;
   }
 }
+
+/* v1.48 pass: compact the live-feed silhouette and tighten the lower desktop reading rhythm. */
+@media (min-width: 1181px) {
+  .analysis-grid {
+    gap: 14px 16px;
+  }
+
+  .trend-panel,
+  .signal-panel,
+  .regime-panel,
+  .heatmap-panel,
+  .bucket-panel,
+  .rotation-panel,
+  .momentum-panel {
+    padding: 13px;
+  }
+
+  .rotation-panel {
+    margin-top: -2px;
+  }
+
+  .premium-preview {
+    gap: 10px;
+  }
+
+  .live-silhouette {
+    grid-template-columns: minmax(168px, 0.36fr) minmax(0, 0.7fr) minmax(256px, 0.86fr);
+    gap: 7px;
+  }
+
+  .live-silhouette-lead,
+  .live-silhouette-lanes span {
+    padding: 9px 10px;
+  }
+
+  .live-silhouette-stream {
+    gap: 5px;
+    padding: 8px;
+  }
+
+  .live-silhouette-stream button {
+    min-height: 27px;
+  }
+}
+
+@media (max-width: 520px) {
+  .premium-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px;
+  }
+
+  .premium-card {
+    min-height: 46px;
+    padding: 6px;
+  }
+
+  .premium-card p {
+    display: none;
+  }
+
+  .premium-card b {
+    font-size: 16px;
+  }
+
+  .live-silhouette {
+    gap: 4px;
+  }
+
+  .live-silhouette-lead {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 2px 7px;
+    padding: 6px 7px;
+  }
+
+  .live-silhouette-lead span {
+    grid-column: 1;
+  }
+
+  .live-silhouette-lead strong {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+    max-width: 92px;
+    font-size: 18px;
+    text-align: right;
+  }
+
+  .live-silhouette-lead p {
+    display: none;
+  }
+
+  .live-silhouette-lanes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3px;
+  }
+
+  .live-silhouette-lanes span {
+    min-height: 36px;
+    padding: 5px 6px;
+  }
+
+  .live-silhouette-lanes b {
+    font-size: 11px;
+  }
+
+  .live-silhouette-lanes small {
+    display: none;
+  }
+
+  .live-silhouette-stream {
+    gap: 3px;
+    padding: 5px;
+  }
+
+  .live-silhouette-stream button {
+    grid-template-columns: 36px minmax(0, 1fr) 38px;
+    min-height: 19px;
+    gap: 4px;
+    padding: 2px 4px;
+    font-size: 9px;
+  }
+
+  .live-silhouette-stream button:nth-of-type(n+8) {
+    display: none;
+  }
+
+  .live-silhouette-stream i {
+    min-height: 4px;
+  }
+
+  .premium-quadrant-map {
+    min-height: 132px;
+  }
+}
+
+body[data-theme="dark"] .live-silhouette-lead,
+body[data-theme="dark"] .live-silhouette-lanes span,
+body[data-theme="dark"] .live-silhouette-stream {
+  border-color: rgba(238, 232, 218, 0.14);
+}

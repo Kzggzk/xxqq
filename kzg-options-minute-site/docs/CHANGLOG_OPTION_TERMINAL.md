@@ -29,7 +29,7 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
 - 最近验证唯一部署: `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.45`
-- 最近本地验证 UI 版本: `1.47`
+- 最近本地验证 UI 版本: `1.48`
 - 当前 iOS 伴生版本: `0.3`，对应 Web `1.45`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
@@ -47,7 +47,7 @@ English:
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
 - Latest verified unique deploy: `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.45`
-- Latest locally verified UI version: `1.47`
+- Latest locally verified UI version: `1.48`
 - Current iOS companion version: `0.3`, mapped to Web `1.45`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
@@ -329,6 +329,36 @@ Verified facts: `node --check public/app.js` passed; `python3 scripts/build_payl
 Visual verification: local Playwright/Chrome desktop `1440x1100` showed v1.47 with no desktop regression: advanced preview `1828px`, rotation `814px`, momentum `585px`, and no horizontal overflow. Mobile `390x844` showed v1.47 with topbar `91px`; advanced preview dropped from about `3204px` in v1.46 to `2780px`, down about `424px`; momentum dropped from about `967px` to `794px`, down about `173px`; capability rail `216px`, unlock deck `341px`, focus window `75px`, focus tape `51px`, focus charts `50px`, visible rotation rows `12`, visible momentum rows `10`. PNG export was clicked successfully: `/tmp/kzg-option-house-v147-export.png`, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v147-desktop.png`, `/tmp/kzg-option-house-v147-mobile.png`, `/tmp/kzg-option-house-v147-mobile-premium.png`, `/tmp/kzg-option-house-v147-mobile-momentum.png`.
 
 Current state: v1.47 is a local and GitHub-docs checkpoint, not a production deploy. Production remains v1.45 at `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`. Next v1.48 can continue desktop lower-page transition from trend into rotation, phone live-silhouette height inside advanced preview, and dark-mode contrast in advanced preview and momentum. The next normal production deploy should wait until a stable v1.48-v1.50 group is ready.
+
+## 4.9 v1.48 live silhouette and lower rhythm compression / v1.48 实时轮廓与下半区节奏压缩
+
+中文:
+
+北京时间 2026-05-26 21:17 左右，心跳进入 Web `1.48`。这次仍然是公开 UI 质量迭代，不部署生产，不加入真实付费、注册、域名、API、价格、Stripe、钱包、微信支付、Massive plan 或任何内部商业方案。生产继续保持 v1.45。v1.48 的目标是接上 v1.47：v1.47 压缩了高级入口和动量尾部，但高级预览内部的“实时流轮廓”仍然偏像一张长卡，缺少短促、强烈、可感知但不泄露的 feed terminal 感。
+
+具体变化：`public/app.js` 将 `UI_VERSION` 从 `1.47` 升到 `1.48`。`public/styles.css` 追加 v1.48 层。桌面 `1181px+` 下，`.analysis-grid` 从较松的垂直节奏收成 `14px 16px`，trend、signal、regime、heatmap、bucket、rotation、momentum 的 panel padding 统一为 `13px`，`.rotation-panel` 上提 `-2px`，让 trend 到 rotation 的阅读不像断层。`.premium-preview` 内部 gap 收到 `10px`，`.live-silhouette` 桌面三列改成更紧比例，lead 和 lanes padding 下调，stream padding 和 gap 下调，stream button 最小高度从约 `31px` 降到 `27px`。
+
+手机变化：`390px` 手机下，`.premium-grid` 保持两列短卡，`.premium-card` 降到约 `46px`，隐藏卡片说明，只保留核心指标。`.live-silhouette-lead` 改成标题 + 右侧强标的短条，约 `32px` 高，说明文案隐藏。`.live-silhouette-lanes` 改成两列，隐藏 small，保持主导压力、峰值分钟、权利金锚、CP 斜率四个短指标。`.live-silhouette-stream` 只保留前 7 条有效压力行，每行约 `19px`，把原来偏重的实时轮廓压成信号带。`.premium-quadrant-map` 降到 `132px`，避免高级预览尾部再拖长。
+
+验证事实：`node --check public/app.js` 通过；`python3 scripts/build_payload.py` 生成 `505` 天 payload，最新交易日 `2026-05-22`，analytics symbols `98`，pack asset `kzg-frame-001c1dbd17f4.js`；`python3 scripts/per_day_to_dist.py` 复制 `505` 个 report。source 和 dist 风险词扫描均为 0。内置 Browser 打开 `http://127.0.0.1:4178/` 成功，显示 v1.48，页面无 framework overlay，theme toggle 从 light 切到 dark，`user-select:none`，console warn/error 为 0；Browser 截图能力本轮超时一次，因此截图证据由本地 Playwright 兜底。浏览器文本里出现 `$29.4B`、`$49.6B` 这类权利金数据金额，但不是商业定价；排除数据金额后，商业风险词为 0。Apple Notes 置顶 `CHANGLOG 期权终端` 已同步，正文约 `90,395` chars。
+
+视觉验证：Playwright/Chrome 桌面 `1440x1100` 显示 v1.48，无横向溢出；高级预览从 v1.47 的 `1828px` 降到 `1782px`，live silhouette `301px`，rotation `816px`，momentum `587px`。手机 `390x844` 显示 v1.48，无横向溢出；高级预览从 v1.47 的 `2780px` 降到 `2686px`，live silhouette `308px`，live lead `32px`，visible live rows `7`，visible momentum rows 仍为 `10`。PNG 导出实际点击成功，文件 `/tmp/kzg-option-house-v148-export.png`，建议文件名 `kzg-option-house-2026-05-22-zh.png`，大小 `1,482,138` bytes。截图证据：`/tmp/kzg-option-house-v148-desktop.png`、`/tmp/kzg-option-house-v148-mobile.png`、`/tmp/kzg-option-house-v148-mobile-premium.png`、`/tmp/kzg-option-house-v148-mobile-live.png`。
+
+当前状态：v1.48 是本地和 GitHub docs checkpoint，不是生产部署。生产仍为 v1.45，生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`。下一步 v1.49 应继续检查手机高级预览尾部到轮动面板的过渡、暗色模式下 live silhouette/rotation 的对比、以及桌面 lower analysis 的信息密度。下一次常规生产部署默认等 v1.49-v1.50 再决定。
+
+English:
+
+Around 2026-05-26 21:17 Asia/Shanghai, the heartbeat moved Web to `1.48`. This is still a public-UI quality pass only. Production is not deployed, and no real payment, registration, domain, API, price, Stripe, wallet, WeChat Pay, Massive-plan, or internal commercial route is added. Production remains v1.45. The v1.48 target continues v1.47: v1.47 compressed the advanced entry and momentum tail, but the live-feed silhouette inside the advanced preview still read as a long card rather than a short, strong, visible-but-not-leaking feed terminal.
+
+Concrete changes: `public/app.js` moved `UI_VERSION` from `1.47` to `1.48`. `public/styles.css` adds a v1.48 layer. On desktop `1181px+`, `.analysis-grid` tightens to `14px 16px`, trend/signal/regime/heatmap/bucket/rotation/momentum panels share `13px` padding, and `.rotation-panel` is nudged up `-2px` so the transition from trend into rotation feels less broken. Inside `.premium-preview`, gap becomes `10px`; `.live-silhouette` uses a tighter three-column ratio, lead and lanes padding are reduced, stream padding and gap are reduced, and stream button minimum height drops from about `31px` to `27px`.
+
+Phone changes: at `390px`, `.premium-grid` stays as two short columns, `.premium-card` drops to about `46px`, and secondary card copy is hidden so only the core metrics remain. `.live-silhouette-lead` becomes a short title plus right-aligned lead-symbol strip about `32px` high, with explanatory copy hidden. `.live-silhouette-lanes` becomes two columns, hides small copy, and keeps only the four short metrics: lead pressure, peak minute, premium anchor, and CP slope. `.live-silhouette-stream` keeps the first 7 effective pressure rows, about `19px` each, turning the previously heavier live silhouette into a signal strip. `.premium-quadrant-map` drops to `132px` to prevent the advanced-preview tail from getting long again.
+
+Verified facts: `node --check public/app.js` passed; `python3 scripts/build_payload.py` produced a `505`-day payload, latest trading day `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-001c1dbd17f4.js`; `python3 scripts/per_day_to_dist.py` copied `505` reports. Source and dist public-risk scans returned 0. In-app Browser opened `http://127.0.0.1:4178/`, showed v1.48, had no framework overlay, toggled theme from light to dark, kept `user-select:none`, and had no console warnings/errors. Browser screenshot capture timed out once this round, so local Playwright supplied screenshot proof. Browser text contained data amounts such as `$29.4B` and `$49.6B`, but those are premium-notional market data, not commercial pricing; after excluding data amounts, commercial risk terms were 0. Pinned Apple Notes `CHANGLOG 期权终端` was synced at about `90,395` chars.
+
+Visual verification: local Playwright/Chrome desktop `1440x1100` showed v1.48 with no horizontal overflow; advanced preview dropped from v1.47's `1828px` to `1782px`, live silhouette `301px`, rotation `816px`, momentum `587px`. Mobile `390x844` showed v1.48 with no horizontal overflow; advanced preview dropped from v1.47's `2780px` to `2686px`, live silhouette `308px`, live lead `32px`, visible live rows `7`, visible momentum rows still `10`. PNG export was clicked successfully: `/tmp/kzg-option-house-v148-export.png`, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v148-desktop.png`, `/tmp/kzg-option-house-v148-mobile.png`, `/tmp/kzg-option-house-v148-mobile-premium.png`, `/tmp/kzg-option-house-v148-mobile-live.png`.
+
+Current state: v1.48 is a local and GitHub-docs checkpoint, not a production deploy. Production remains v1.45 at `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`. Next v1.49 should inspect the phone transition from advanced-preview tail into rotation, dark-mode contrast for live silhouette/rotation, and desktop lower-analysis density. The next normal production deploy should wait until v1.49-v1.50 before deciding.
 
 ## 5. SaaS architecture / SaaS 架构
 
