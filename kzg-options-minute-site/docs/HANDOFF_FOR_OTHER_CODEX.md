@@ -19,7 +19,7 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
 - Production version last verified / 最近生产验证版本: `1.42`
-- Local version last verified / 最近本地验证版本: `1.43`
+- Local version last verified / 最近本地验证版本: `1.44`
 - Latest unique deploy / 最近唯一部署: `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`
 - iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.2`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
@@ -68,13 +68,13 @@ Web `1.42` is a mobile/desktop spacing checkpoint, not a payment or domain featu
 
 Web `1.42` 是移动端/桌面端 spacing 检查点，不是支付或域名功能。它压缩手机顶栏和摘要指标区，保持 PNG 导出稳定，并继续把支付/域名/API 内部规划排除在公开站之外。生产唯一部署是 `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`。
 
-Latest local v1.43 note:
+Latest local v1.44 note:
 
-最新本地 v1.43 说明：
+最新本地 v1.44 说明：
 
-Web `1.43` is local-only and focuses on the mobile long page below the fold. It reduces the advanced preview height at `390px` from about `4825px` to `3163px`, while keeping production at v1.42 until the next deploy checkpoint.
+Web `1.44` is local-only and focuses on the lower rotation and momentum fit. It keeps production at v1.42, preserves the v1.43 mobile advanced-preview compression, tightens the rotation quadrant / lanes / symbol focus / momentum list, and adds a `521px -> 1080px` topbar fallback so tablet or small desktop widths do not crowd the command buttons.
 
-Web `1.43` 仅本地验证，重点是手机折叠线以下的长页面。它把 `390px` 手机上高级预览高度从约 `4825px` 压到 `3163px`；生产站保持 v1.42，直到下一个部署检查点。
+Web `1.44` 仅本地验证，重点是下半区轮动与动量 fit。生产站保持 v1.42，保留 v1.43 的手机高级预览压缩成果，继续压缩轮动象限、轮动 lanes、标的聚焦、动量列表，并增加 `521px -> 1080px` 顶栏兜底，避免 iPad 或小桌面宽度下命令按钮拥挤。
 
 ## Verification checklist / 验证清单
 

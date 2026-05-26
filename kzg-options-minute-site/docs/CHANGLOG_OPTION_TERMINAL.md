@@ -230,6 +230,28 @@ Concrete changes: `public/app.js` moves `UI_VERSION` to `1.43`; `public/styles.c
 
 Verified facts: `node --check public/app.js` passed; build remains `505` days, latest `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-a14a84714653.js`; public risk-token scan is 0; in-app Browser local smoke passed with v1.43, no console errors, no horizontal overflow, and `user-select:none`; Chrome/CDP desktop `1440x1100` and mobile `390x844` both measured `overflowX=0`. This version is not deployed; production remains the v1.42 unique deploy `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`.
 
+## 4.5 v1.44 rotation and momentum fit pass / v1.44 轮动与动量适配
+
+中文:
+
+北京时间 2026-05-26 20:00 左右，Fangbao 要求“下一轮 update 提前开始”，因此 Web `1.44` 不等下一个心跳，直接成为新的本地检查点。生产不部署，仍保持 v1.42。这个版本继续执行 spacing/calligraphy 目标：不新增支付、域名、API、注册、价格或商业路线公开内容，只处理公开 dashboard 的视觉密度和可读性。
+
+具体变化：`public/app.js` 将 `UI_VERSION` 从 `1.43` 升到 `1.44`；`public/styles.css` 追加 v1.44 样式层。桌面端压缩 `.rotation-map`、`.rotation-lanes`、`.rotation-row`、`.symbol-focus`、`.focus-window-stack`、`.focus-session-tape`、`.focus-charts`、`.momentum-list` 和 `.momentum-row`，让轮动象限与核心标的动量不再显得松散。手机端进一步压紧轮动头部、说明卡、象限图、四格统计、升温/降温列表、标的聚焦、短中长窗口卡和动量行。额外补了 `521px -> 1080px` 的顶栏兜底：品牌和日期在第一层，四个工具按钮变成全宽四等分第二层，解决内置 Browser 中等宽度截图里按钮挤边的问题。
+
+验证事实：`node --check public/app.js` 通过；build 生成 `505` 天 payload，最新 `2026-05-22`，analytics symbols `98`，pack asset `kzg-frame-af03d65ae13f.js`；`per_day_to_dist` 复制 `505` 个 report；公开风险词扫描为 0；内置 Browser smoke 通过，确认 v1.44、最新日、无 console error、无横向溢出、`user-select:none`、无内部商业词泄露。Playwright/Chrome 复核 `1440x1100`、`973x547`、`390x844` 三个视口，均为 `overflowX=0`。PNG 导出实际点击成功，保存 `/tmp/kzg-option-house-v144-export.png`，建议文件名 `kzg-option-house-2026-05-22-zh.png`，大小 `1,482,138` bytes。截图证据放在 `/tmp/kzg-option-house-v144-desktop.png`、`/tmp/kzg-option-house-v144-tablet.png`、`/tmp/kzg-option-house-v144-mobile.png`、`/tmp/kzg-option-house-v144-mobile-rotation.png`。
+
+当前状态：GitHub docs 已更新，Apple Notes 需要同步本文件，生产仍是 v1.42 唯一部署 `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`。下一步 v1.45 继续减少手机轮动 lanes 和动量列表的纵向高度，并根据“每 5 个 Web 版本同步一次 iOS”的规则评估 iOS companion `0.3`。
+
+English:
+
+Around 2026-05-26 20:00 Asia/Shanghai, Fangbao asked to start the next update early, so Web `1.44` became the new local checkpoint without waiting for the next heartbeat. It is not deployed; production stays on v1.42. This version continues the spacing/calligraphy goal: it does not add payment, domain, API, registration, pricing, or commercial-route public content. It only improves the public dashboard's visual density and readability.
+
+Concrete changes: `public/app.js` moved `UI_VERSION` from `1.43` to `1.44`; `public/styles.css` added a v1.44 layer. Desktop tightens `.rotation-map`, `.rotation-lanes`, `.rotation-row`, `.symbol-focus`, `.focus-window-stack`, `.focus-session-tape`, `.focus-charts`, `.momentum-list`, and `.momentum-row`, making rotation quadrant and core symbol momentum feel less loose. Mobile tightens the rotation header, narrative card, quadrant map, four stat cells, warming/cooling lists, symbol focus, short/mid/long window cards, and momentum rows. A `521px -> 1080px` topbar fallback was also added: brand and date stay on the first line, while the four tool buttons become a full-width four-column second line, fixing the cramped mid-width Browser screenshot.
+
+Verified facts: `node --check public/app.js` passed; build produced a `505`-day payload, latest `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-af03d65ae13f.js`; `per_day_to_dist` copied `505` reports; public risk-token scan returned 0; in-app Browser smoke passed with v1.44, latest date, no console errors, no horizontal overflow, `user-select:none`, and no internal commercial strings. Playwright/Chrome verified `1440x1100`, `973x547`, and `390x844`, all with `overflowX=0`. PNG export was clicked successfully and saved as `/tmp/kzg-option-house-v144-export.png`, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes. Screenshot evidence lives at `/tmp/kzg-option-house-v144-desktop.png`, `/tmp/kzg-option-house-v144-tablet.png`, `/tmp/kzg-option-house-v144-mobile.png`, and `/tmp/kzg-option-house-v144-mobile-rotation.png`.
+
+Current state: GitHub docs are updated, Apple Notes should sync from this file, and production remains the v1.42 unique deploy `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`. Next v1.45 should keep reducing vertical height in mobile rotation lanes and momentum lists, then evaluate iOS companion `0.3` under the every-5-Web-versions cadence.
+
 ## 5. SaaS architecture / SaaS 架构
 
 中文:

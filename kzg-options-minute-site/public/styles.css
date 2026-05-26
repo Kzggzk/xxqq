@@ -12332,3 +12332,485 @@ body[data-theme="dark"] .lock-preview-chips i {
     font-size: 8px;
   }
 }
+
+/* v1.44 pass: tighten rotation, focus, and momentum panels after the premium stack. */
+@media (min-width: 1181px) {
+  .symbol-rotation,
+  .symbol-momentum {
+    gap: 10px;
+  }
+
+  .rotation-map {
+    gap: 7px;
+    min-height: 224px;
+  }
+
+  .rotation-map-grid {
+    min-height: 224px;
+  }
+
+  .rotation-map-lead {
+    padding: 12px;
+  }
+
+  .rotation-map-lead strong {
+    font-size: 30px;
+  }
+
+  .rotation-map-stats {
+    gap: 6px;
+  }
+
+  .rotation-map-stats span {
+    padding: 7px 8px;
+  }
+
+  .rotation-lanes {
+    gap: 8px;
+  }
+
+  .rotation-row {
+    grid-template-columns: 54px minmax(70px, 1fr) 64px 94px;
+    min-height: 34px;
+    gap: 7px;
+    padding: 4px 8px;
+  }
+
+  .rotation-row svg {
+    height: 20px;
+  }
+
+  .momentum-panel {
+    gap: 10px;
+  }
+
+  .momentum-panel .symbol-focus {
+    margin-bottom: 0;
+  }
+
+  .focus-head {
+    padding: 11px 13px;
+  }
+
+  .focus-head strong {
+    font-size: 29px;
+  }
+
+  .focus-metrics span {
+    padding: 9px 11px;
+  }
+
+  .focus-metrics b {
+    font-size: 20px;
+  }
+
+  .focus-extremes button {
+    padding: 8px 11px;
+  }
+
+  .focus-window-stack {
+    gap: 7px;
+    padding: 9px 11px 0;
+  }
+
+  .focus-window-cards {
+    gap: 5px;
+  }
+
+  .focus-window-cards span {
+    padding: 7px 8px 6px;
+  }
+
+  .focus-session-tape {
+    grid-template-columns: 82px minmax(0, 1fr);
+    gap: 8px;
+    padding: 9px 11px 3px;
+  }
+
+  .focus-session-cells,
+  .focus-session-cells button {
+    height: 40px;
+    min-height: 40px;
+  }
+
+  .focus-charts {
+    gap: 8px;
+    padding: 9px 11px 11px;
+  }
+
+  .focus-charts svg {
+    height: 40px;
+  }
+
+  .momentum-list {
+    gap: 6px 8px;
+  }
+
+  .momentum-row {
+    grid-template-columns: 54px minmax(72px, 1fr) 72px 58px;
+    min-height: 34px;
+    gap: 7px;
+    padding: 4px 8px;
+  }
+
+  .mom-spark svg {
+    height: 20px;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 1080px) {
+  .topbar {
+    grid-template-columns: minmax(0, 1fr) minmax(176px, auto);
+    gap: 8px 12px;
+    padding: 9px 18px;
+  }
+
+  .brand {
+    gap: 9px;
+  }
+
+  .mark {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .brand h1 {
+    font-size: 23px;
+  }
+
+  .brand p {
+    margin-top: 3px;
+    font-size: 8px;
+    letter-spacing: 0.12em;
+  }
+
+  .dateplate {
+    min-width: 0;
+    text-align: right;
+  }
+
+  .dateplate b {
+    font-size: 16px;
+  }
+
+  .dateplate span {
+    font-size: 10px;
+  }
+
+  .toolbar {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 7px;
+    width: 100%;
+  }
+
+  .toolbar .button {
+    min-width: 0;
+    min-height: 38px;
+    padding: 0 10px;
+    font-size: 13px;
+  }
+
+  .toolbar .button.primary {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .rotation-panel,
+  .momentum-panel {
+    gap: 8px;
+  }
+
+  .symbol-rotation,
+  .symbol-momentum {
+    gap: 8px;
+  }
+
+  .rotation-head {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+  }
+
+  .rotation-head span {
+    min-height: 46px;
+    gap: 3px;
+    padding: 6px;
+  }
+
+  .rotation-head i {
+    font-size: 8px;
+  }
+
+  .rotation-head b {
+    font-size: 12px;
+  }
+
+  .rotation-brief {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .rotation-brief p {
+    padding: 7px 8px;
+    font-size: 11px;
+    line-height: 1.35;
+  }
+
+  .rotation-brief > div {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4px;
+  }
+
+  .rotation-brief span {
+    min-height: 40px;
+    gap: 3px;
+    padding: 6px;
+  }
+
+  .rotation-brief i {
+    font-size: 8px;
+  }
+
+  .rotation-brief b {
+    font-size: 11px;
+  }
+
+  .rotation-map {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .rotation-map-lead {
+    align-content: start;
+    gap: 4px;
+    padding: 8px;
+  }
+
+  .rotation-map-lead strong {
+    font-size: 22px;
+  }
+
+  .rotation-map-grid {
+    min-height: 168px;
+  }
+
+  .rotation-map-grid .quad {
+    font-size: 8px;
+  }
+
+  .rotation-map-grid button {
+    min-width: 22px;
+    min-height: 22px;
+    max-width: 44px;
+    max-height: 44px;
+    font-size: 8px;
+  }
+
+  .rotation-map-stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: none;
+    gap: 4px;
+  }
+
+  .rotation-map-stats span {
+    min-height: 42px;
+    gap: 3px;
+    padding: 5px;
+  }
+
+  .rotation-map-stats i,
+  .rotation-map-stats small {
+    font-size: 8px;
+  }
+
+  .rotation-map-stats b {
+    font-size: 12px;
+  }
+
+  .rotation-lanes {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .rotation-lane-title {
+    padding: 5px 7px;
+  }
+
+  .rotation-row {
+    grid-template-columns: 42px minmax(0, 1fr) 46px;
+    min-height: 26px;
+    gap: 5px;
+    padding: 3px 6px;
+  }
+
+  .rotation-row svg {
+    height: 15px;
+  }
+
+  .rotation-row small {
+    display: none;
+  }
+
+  .rotation-row em {
+    font-size: 10px;
+  }
+
+  .momentum-panel .symbol-focus {
+    margin-bottom: 7px;
+  }
+
+  .focus-head {
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .focus-head strong {
+    font-size: 23px;
+  }
+
+  .focus-head small,
+  .focus-contract b {
+    font-size: 10px;
+  }
+
+  .focus-contract {
+    min-width: 104px;
+  }
+
+  .focus-metrics,
+  .focus-extremes {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .focus-metrics span {
+    gap: 3px;
+    padding: 6px;
+    font-size: 8px;
+  }
+
+  .focus-metrics b {
+    font-size: 14px;
+  }
+
+  .focus-extremes button {
+    gap: 3px;
+    padding: 6px;
+  }
+
+  .focus-extremes span,
+  .focus-extremes small {
+    font-size: 8px;
+  }
+
+  .focus-extremes b {
+    font-size: 11px;
+  }
+
+  .focus-window-stack {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 7px 7px 0;
+  }
+
+  .focus-window-lead {
+    gap: 4px;
+    padding: 7px;
+  }
+
+  .focus-window-lead strong {
+    font-size: 19px;
+  }
+
+  .focus-window-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4px;
+  }
+
+  .focus-window-cards span {
+    gap: 3px;
+    padding: 6px;
+  }
+
+  .focus-window-cards b {
+    font-size: 11px;
+  }
+
+  .focus-window-cards i,
+  .focus-window-cards small {
+    font-size: 8px;
+  }
+
+  .focus-session-tape {
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 5px;
+    padding: 7px 7px 2px;
+  }
+
+  .focus-session-tape > div:first-child {
+    padding: 6px;
+  }
+
+  .focus-session-tape b {
+    font-size: 12px;
+  }
+
+  .focus-session-cells,
+  .focus-session-cells button {
+    height: 30px;
+    min-height: 30px;
+  }
+
+  .focus-charts {
+    gap: 5px;
+    padding: 7px;
+  }
+
+  .focus-charts svg {
+    height: 30px;
+  }
+
+  .momentum-summary {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+  }
+
+  .momentum-summary span {
+    min-height: 44px;
+    gap: 3px;
+    padding: 6px;
+  }
+
+  .momentum-summary i,
+  .momentum-summary small {
+    font-size: 8px;
+  }
+
+  .momentum-summary b {
+    font-size: 11px;
+  }
+
+  .momentum-list {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .momentum-row {
+    grid-template-columns: 42px minmax(0, 1fr) 46px 42px;
+    min-height: 26px;
+    gap: 5px;
+    padding: 3px 6px;
+  }
+
+  .mom-symbol,
+  .mom-value,
+  .mom-delta {
+    font-size: 10px;
+  }
+
+  .mom-spark svg {
+    height: 15px;
+  }
+}
