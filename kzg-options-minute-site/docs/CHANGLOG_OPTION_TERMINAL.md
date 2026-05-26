@@ -27,9 +27,9 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 远端: `https://github.com/Kzggzk/xxqq.git`
 - 生产站: `https://kzg-option-house.netlify.app/`
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
-- 最近验证唯一部署: `https://6a157e2c75d8fa059c5e904c--kzg-option-house.netlify.app/`
-- 最近生产 UI 显示版本: `1.40`
-- 最近本地验证 UI 版本: `1.41`
+- 最近验证唯一部署: `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`
+- 最近生产 UI 显示版本: `1.42`
+- 最近本地验证 UI 版本: `1.42`
 - 当前 iOS 伴生版本: `0.2`，对应 Web `1.40`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
@@ -45,9 +45,9 @@ English:
 - Remote: `https://github.com/Kzggzk/xxqq.git`
 - Production site: `https://kzg-option-house.netlify.app/`
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
-- Latest verified unique deploy: `https://6a157e2c75d8fa059c5e904c--kzg-option-house.netlify.app/`
-- Latest visible production UI version: `1.40`
-- Latest locally verified UI version: `1.41`
+- Latest verified unique deploy: `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`
+- Latest visible production UI version: `1.42`
+- Latest locally verified UI version: `1.42`
 - Current iOS companion version: `0.2`, mapped to Web `1.40`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
@@ -193,6 +193,24 @@ English:
 Around 2026-05-26 19:19 Asia/Shanghai, Web `1.41` became the new local checkpoint, but it was not deployed to production. It is the first polishing step after the v1.40 production checkpoint: it does not change the old KZG PNG sheet, does not launch real payment, and does not publish domain/API/authorization mechanics. It tightens lower-dashboard spacing across advanced intelligence, history lookback, live silhouette, signal stack, and rotation quadrant. The purpose is not to pile on more features, but to make existing data read more like a continuous financial terminal with fewer loose blank blocks.
 
 Verified facts: `node --check public/app.js` passed; build remains `505` days, latest `2026-05-22`, analytics symbols `98`; in-app Browser default and mobile viewports have no console errors, and the theme button switches from light to dark; Chrome/CDP desktop `1440x1100` and mobile `390x844` both have no horizontal overflow; mobile topbar is about `87px`, and `KZG OPTION HOUSE` is fully visible; public-risk scan is 0; PNG export `/tmp/kzg-option-house-v141-export-final.png` is `885,309` bytes. Production remains v1.40.
+
+## 4.3 v1.42 mobile terminal fit and production deploy / v1.42 手机终端适配与生产部署
+
+中文:
+
+北京时间 2026-05-26 19:45 左右，Web `1.42` 成为新的本地和生产检查点。Fangbao 最新强调“手机端体验要非常好”，所以这一轮不是加商业入口，也不是把支付/域名/API 规划放回公开页，而是继续从 spacing/calligraphy 角度把公开仪表盘变得更像可每天使用的移动金融终端。
+
+具体变化：`public/app.js` 将 `UI_VERSION` 从 `1.41` 升到 `1.42`；`public/styles.css` 追加 v1.42 样式层。手机端顶栏改为两层：第一层品牌与日期同排，第二层四个等宽按钮；日期不再省略，完整显示 `2026年5月22日 星期五`。手机 Market summary 从原来的松散多行卡片改成 `4x2` 密集仪表盘，把摘要区高度从最早测得的 `458px` 压到 `201px`；日报画布入口从 `y=1064` 提前到 `y=766`。桌面端继续压缩时间轴、核心摘要、高级预览、历史回看、实时轮廓、信号栈和轮动象限之间的间距，减少下半屏大白块。
+
+验证事实：`node --check public/app.js` 通过；build 仍生成 `505` 天 payload，最新日 `2026-05-22`，analytics symbols `98`，pack asset `kzg-frame-554ac5ef64e9.js`。内置 Browser 验证页面不是空白、v1.42 可见、无 console error、`user-select: none`、无横向溢出、无内部商业词泄露。Chrome/CDP 本地桌面 `1440x1100` 为 `overflowX=0`，手机 `390x844` 为 `overflowX=0`，topbar `91px`，metric rail `201px`。PNG 导出链路通过拦截验证，生成文件名 `kzg-option-house-2026-05-22-zh.png`，data URL 长度 `1,976,206`。生产唯一部署 `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/` 已上线，生产 smoke 为 home `200`、`/r/latest.html` `200`、`/app.js` `200` 且 `UI_VERSION="1.42"`、`/data/index.json` `404`、`/assets/kzg-pack.js` `404`，手机生产页也确认 v1.42、最新日 `2026-05-22`、无横向溢出和无内部词泄露。
+
+English:
+
+Around 2026-05-26 19:45 Asia/Shanghai, Web `1.42` became the new local and production checkpoint. Fangbao's latest emphasis was that the phone experience must feel very good, so this round is not a commercial-entry pass and does not put payment/domain/API planning back onto the public page. It continues improving the public dashboard from the spacing/calligraphy angle so it feels more like a daily mobile financial terminal.
+
+Concrete changes: `public/app.js` moved `UI_VERSION` from `1.41` to `1.42`; `public/styles.css` added a v1.42 CSS layer. Mobile topbar now has two layers: brand and date on the first row, four equal command buttons on the second row; the date is no longer truncated and shows `2026年5月22日 星期五`. Mobile Market summary changed from loose stacked cards into a dense `4x2` instrument grid, reducing the measured summary height from the earlier `458px` to `201px`; the report-canvas entry moved upward from `y=1064` to `y=766`. Desktop spacing was also tightened across the timeline, core summary, advanced preview, history lookback, live silhouette, signal stack, and rotation quadrant to reduce lower-screen blankness.
+
+Verified facts: `node --check public/app.js` passed; build still produces a `505`-day payload, latest date `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-554ac5ef64e9.js`. In-app Browser verified nonblank page, visible v1.42, no console errors, `user-select: none`, no horizontal overflow, and no internal commercial string leak. Chrome/CDP local desktop `1440x1100` measured `overflowX=0`; mobile `390x844` measured `overflowX=0`, topbar `91px`, metric rail `201px`. PNG export chain passed through interception with file name `kzg-option-house-2026-05-22-zh.png` and data URL length `1,976,206`. Production unique deploy `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/` is live; production smoke is home `200`, `/r/latest.html` `200`, `/app.js` `200` with `UI_VERSION="1.42"`, `/data/index.json` `404`, `/assets/kzg-pack.js` `404`, and production mobile also verifies v1.42, latest date `2026-05-22`, no horizontal overflow, and no internal string leak.
 
 ## 5. SaaS architecture / SaaS 架构
 

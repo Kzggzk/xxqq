@@ -11710,3 +11710,414 @@ body[data-theme="dark"] .lock-preview-chips i {
     letter-spacing: 0.07em;
   }
 }
+
+/* v1.42 pass: mobile-first screen fit and calmer desktop lower-panel calligraphy. */
+@media (min-width: 1181px) {
+  .topbar {
+    gap: 13px;
+  }
+
+  .toolbar {
+    gap: 7px;
+  }
+
+  .hero {
+    gap: 12px;
+  }
+
+  .timeboard {
+    padding: 18px 18px 16px;
+  }
+
+  .timeboard-copy h2 {
+    font-size: 24px;
+  }
+
+  .timeboard-copy p {
+    max-width: 360px;
+    line-height: 1.44;
+  }
+
+  .metric-rail {
+    gap: 8px;
+  }
+
+  .metric {
+    min-height: 86px;
+    padding: 10px 11px;
+  }
+
+  .metric strong {
+    font-size: 22px;
+  }
+
+  .workbench {
+    gap: 12px;
+  }
+
+  .report-stage,
+  .side-rail,
+  .panel {
+    padding: 12px;
+  }
+
+  .premium-preview {
+    padding: 11px;
+  }
+
+  .premium-unlock-deck {
+    grid-template-columns: minmax(188px, 0.36fr) minmax(0, 1fr) minmax(244px, 0.48fr);
+    gap: 7px;
+    margin-bottom: 7px;
+  }
+
+  .unlock-lead,
+  .unlock-preview {
+    padding: 9px;
+  }
+
+  .unlock-tabs button {
+    min-height: 78px;
+    padding: 8px;
+  }
+
+  .premium-card {
+    min-height: 68px;
+    padding: 9px;
+  }
+
+  .premium-card strong {
+    font-size: 19px;
+  }
+
+  .premium-lookback,
+  .premium-signal-stack,
+  .live-silhouette,
+  .premium-quadrant {
+    margin-top: 7px;
+  }
+
+  .lookback-body {
+    grid-template-columns: minmax(0, 1fr) minmax(210px, 0.34fr);
+    gap: 7px;
+    padding: 8px 9px 9px;
+  }
+
+  .lookback-chart {
+    min-height: 88px;
+  }
+
+  .premium-signal-stack {
+    grid-template-columns: minmax(172px, 0.32fr) minmax(250px, 0.56fr) minmax(210px, 0.46fr);
+    gap: 7px;
+  }
+
+  .signal-stack-lead,
+  .signal-stack-rows span,
+  .live-silhouette-lead,
+  .live-silhouette-lanes span,
+  .live-silhouette-stream {
+    padding: 9px;
+  }
+
+  .signal-stack-tape {
+    min-height: 136px;
+    padding: 8px;
+  }
+
+  .live-silhouette {
+    grid-template-columns: minmax(168px, 0.34fr) minmax(0, 0.62fr) minmax(260px, 0.94fr);
+    gap: 7px;
+  }
+
+  .premium-quadrant {
+    grid-template-columns: minmax(184px, 0.4fr) minmax(0, 1fr) minmax(146px, 0.3fr);
+    gap: 7px;
+  }
+
+  .premium-quadrant-map {
+    min-height: 204px;
+  }
+
+  .premium-quadrant-stats span {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    gap: 9px;
+    padding-top: 8px;
+  }
+
+  .toolbar {
+    gap: 6px;
+  }
+
+  .hero {
+    gap: 9px;
+  }
+
+  .timeboard {
+    padding: 18px 12px 14px;
+  }
+
+  .timeboard-copy h2 {
+    font-size: clamp(25px, 7.2vw, 32px);
+    line-height: 1.05;
+  }
+
+  .timeboard-copy p {
+    line-height: 1.45;
+  }
+
+  .metric-rail {
+    gap: 7px;
+  }
+
+  .metric {
+    padding: 9px 10px;
+  }
+
+  .report-stage {
+    padding: 10px;
+  }
+
+  .report-stage .section-head {
+    gap: 4px;
+  }
+
+  .report-stage .kzg-report {
+    max-height: 720px;
+  }
+
+  .report-stage .kzg-report::after {
+    height: 52px;
+  }
+
+  .premium-preview {
+    padding: 8px;
+  }
+
+  .premium-grid {
+    gap: 6px;
+  }
+
+  .premium-unlock-deck,
+  .premium-lookback,
+  .premium-signal-stack,
+  .live-silhouette,
+  .premium-quadrant {
+    gap: 6px;
+    margin-top: 7px;
+  }
+
+  .unlock-tabs {
+    gap: 6px;
+  }
+
+  .unlock-tabs button {
+    min-height: 66px;
+  }
+
+  .premium-card,
+  .lookback-metrics span,
+  .signal-stack-rows span,
+  .premium-quadrant-stats span {
+    padding: 7px;
+  }
+
+  .lookback-body {
+    padding: 8px;
+  }
+
+  .lookback-chart {
+    min-height: 84px;
+  }
+
+  .signal-stack-tape {
+    min-height: 118px;
+    padding: 7px;
+  }
+
+  .premium-quadrant-map {
+    min-height: 196px;
+  }
+}
+
+@media (max-width: 520px) {
+  .app-shell {
+    padding-inline: 10px;
+  }
+
+  .topbar {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 7px;
+    padding: 8px 12px 9px;
+    align-items: center;
+  }
+
+  .brand {
+    min-width: 0;
+    gap: 7px;
+  }
+
+  .mark {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .brand h1 {
+    font-size: 15px;
+    line-height: 0.98;
+  }
+
+  .brand p {
+    margin-top: 3px;
+    font-size: 7px;
+    letter-spacing: 0.08em;
+  }
+
+  .dateplate {
+    max-width: 132px;
+    min-width: 0;
+    text-align: right;
+  }
+
+  .dateplate b {
+    font-size: 11px;
+    line-height: 1;
+    overflow: visible;
+    text-overflow: clip;
+  }
+
+  .dateplate span {
+    margin-top: 3px;
+    font-size: 7.5px;
+    line-height: 1.15;
+  }
+
+  .toolbar {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .toolbar .button {
+    min-height: 34px;
+    padding-inline: 6px;
+    gap: 5px;
+    font-size: 11px;
+  }
+
+  .timeboard {
+    gap: 10px;
+  }
+
+  .timeboard-copy {
+    gap: 5px;
+  }
+
+  .timeline-shell {
+    padding: 8px 8px 10px;
+  }
+
+  .timeline-labels {
+    font-size: 9px;
+  }
+
+  .metric-rail {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .metric.lead,
+  .metric:last-child {
+    grid-column: auto;
+  }
+
+  .metric,
+  .metric:nth-child(odd),
+  .metric:nth-child(2n),
+  .metric:nth-child(4n),
+  .metric.lead,
+  .metric:last-child {
+    border-top: 1px solid var(--line-strong);
+    border-right: 1px solid var(--line-strong);
+  }
+
+  .metric:nth-child(-n + 4) {
+    border-top: 0;
+  }
+
+  .metric:nth-child(4n) {
+    border-right: 0;
+  }
+
+  .metric {
+    min-height: 58px;
+    padding: 7px 6px;
+  }
+
+  .metric strong {
+    margin-top: 3px;
+    font-size: 15px;
+    line-height: 1.05;
+  }
+
+  .metric span {
+    font-size: 7.5px;
+    line-height: 1.15;
+  }
+
+  .metric small {
+    margin-top: 3px;
+    font-size: 7px;
+    line-height: 1.15;
+  }
+
+  .access-copy {
+    grid-template-columns: 82px minmax(84px, 0.64fr) minmax(0, 1fr);
+  }
+
+  .workbench {
+    gap: 10px;
+  }
+
+  .section-head h2 {
+    font-size: 17px;
+  }
+
+  .section-head p {
+    font-size: 12px;
+    line-height: 1.42;
+  }
+
+  .premium-head h2 {
+    font-size: 14px;
+  }
+
+  .premium-head p {
+    font-size: 11px;
+  }
+
+  .premium-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .premium-card {
+    min-height: 62px;
+  }
+
+  .premium-card strong,
+  .lookback-metrics b,
+  .signal-stack-rows b {
+    font-size: 16px;
+  }
+
+  .live-silhouette-lead strong,
+  .signal-stack-lead strong {
+    font-size: 24px;
+  }
+}
