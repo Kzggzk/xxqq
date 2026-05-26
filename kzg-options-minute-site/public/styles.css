@@ -8240,6 +8240,13 @@ body[data-theme="dark"] .heat-lane-track {
 .checkout-simulation span,
 .checkout-simulation small,
 .checkout-simulation i,
+.readiness-lead span,
+.readiness-lead small,
+.readiness-steps i,
+.readiness-steps small,
+.pro-readiness-ribbon span,
+.pro-readiness-ribbon small,
+.pro-readiness-ribbon i,
 .audit-lead span,
 .audit-lead p,
 .audit-grid i,
@@ -8405,6 +8412,71 @@ body[data-theme="dark"] .heat-lane-track {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.pro-readiness-ribbon {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.5fr) minmax(0, 1fr);
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.pro-readiness-ribbon > div {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.pro-readiness-ribbon > div:first-child {
+  display: grid;
+  align-content: center;
+  gap: 6px;
+  padding: 13px 14px;
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.pro-readiness-ribbon.is-locked > div:first-child {
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
+.pro-readiness-ribbon b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.05;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pro-readiness-ribbon > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+}
+
+.pro-readiness-ribbon > div:last-child span {
+  display: grid;
+  align-content: center;
+  gap: 4px;
+  min-width: 0;
+  padding: 11px;
+  border-right: 1px solid var(--line);
+}
+
+.pro-readiness-ribbon > div:last-child span:last-child {
+  border-right: 0;
+}
+
+.pro-readiness-ribbon .ready {
+  box-shadow: inset 0 3px 0 rgba(20, 131, 85, 0.72);
+}
+
+.pro-readiness-ribbon .queued {
+  box-shadow: inset 0 3px 0 rgba(47, 97, 144, 0.62);
+}
+
+.pro-readiness-ribbon .locked {
+  box-shadow: inset 0 3px 0 rgba(196, 83, 53, 0.62);
 }
 
 .premium-grid {
@@ -9233,6 +9305,69 @@ body[data-theme="dark"] .heat-lane-track {
   white-space: nowrap;
 }
 
+.account-readiness {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.42fr) minmax(0, 1fr);
+  gap: 8px;
+  padding: 14px 32px 0;
+}
+
+.readiness-lead,
+.readiness-steps span {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.readiness-lead {
+  display: grid;
+  align-content: center;
+  gap: 5px;
+  padding: 12px;
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.readiness-lead b {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.readiness-steps {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.readiness-steps span {
+  display: grid;
+  gap: 4px;
+  padding: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+.readiness-steps span.ready {
+  box-shadow: inset 3px 0 0 #148355;
+}
+
+.readiness-steps span.queued {
+  box-shadow: inset 3px 0 0 #2f6190;
+}
+
+.readiness-steps span.locked {
+  box-shadow: inset 3px 0 0 #c45335;
+}
+
+.readiness-steps strong {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .account-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
@@ -9645,6 +9780,8 @@ body[data-theme="dark"] .premium-preview,
 body[data-theme="dark"] .data-audit-seal .audit-lead,
 body[data-theme="dark"] .data-audit-seal .audit-grid span,
 body[data-theme="dark"] .data-audit-seal .audit-note,
+body[data-theme="dark"] .pro-readiness-ribbon > div,
+body[data-theme="dark"] .pro-readiness-ribbon > div:last-child span,
 body[data-theme="dark"] .premium-unlock-deck .unlock-lead,
 body[data-theme="dark"] .premium-unlock-deck .unlock-tabs button,
 body[data-theme="dark"] .premium-unlock-deck .unlock-preview,
@@ -9663,6 +9800,8 @@ body[data-theme="dark"] .lookback-metrics span,
 body[data-theme="dark"] .lookback-tabs button,
 body[data-theme="dark"] .account-sheet,
 body[data-theme="dark"] .account-status-grid span,
+body[data-theme="dark"] .account-readiness .readiness-lead,
+body[data-theme="dark"] .account-readiness .readiness-steps span,
 body[data-theme="dark"] .login-method-grid button,
 body[data-theme="dark"] .checkout-simulation,
 body[data-theme="dark"] .checkout-simulation span,
@@ -9685,7 +9824,9 @@ body[data-theme="dark"] .account-sheet {
 
 @media (max-width: 980px) {
   .access-strip,
-  .account-grid {
+  .account-grid,
+  .account-readiness,
+  .pro-readiness-ribbon {
     grid-template-columns: 1fr;
   }
 
@@ -9698,6 +9839,11 @@ body[data-theme="dark"] .account-sheet {
   }
 
   .premium-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pro-readiness-ribbon > div:last-child,
+  .readiness-steps {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -9728,6 +9874,10 @@ body[data-theme="dark"] .account-sheet {
 
   .account-status-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .account-readiness {
+    padding-top: 10px;
   }
 
   .login-method-grid {
@@ -9788,6 +9938,7 @@ body[data-theme="dark"] .account-sheet {
 
   .account-hero,
   .account-status-grid,
+  .account-readiness,
   .entitlement-matrix,
   .account-grid {
     padding-right: 18px;
@@ -9795,6 +9946,11 @@ body[data-theme="dark"] .account-sheet {
   }
 
   .account-status-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pro-readiness-ribbon > div:last-child,
+  .readiness-steps {
     grid-template-columns: 1fr;
   }
 

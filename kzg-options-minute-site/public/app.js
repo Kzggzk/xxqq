@@ -22,7 +22,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.25";
+const UI_VERSION = "1.26";
 
 const dataAudit = {
   dataset: "23_DATA_Massive_期权分钟_Minute",
@@ -588,6 +588,7 @@ function renderAccountModal() {
     <div class="account-status-grid">
       ${accountStatusCards()}
     </div>
+    ${accountReadinessPanel()}
     <div class="account-grid">
       <section class="pricing-panel">
         <div class="account-section-head">
@@ -718,6 +719,51 @@ function accountStatusCards() {
       <small>${escapeHtml(row[2])}</small>
     </span>
   `).join("");
+}
+
+function entitlementStages() {
+  const locked = isHistoryLocked();
+  return state.lang === "zh"
+    ? [
+      ["身份", loginLabelText(state.selectedLogin), "前端入口完成", "ready"],
+      ["Checkout", state.selectedRail === "stripe" ? "Stripe Billing" : "人工映射", "不创建真实 Session", "ready"],
+      ["Webhook", "权限同步", "待接服务端", "queued"],
+      ["Portal", "升级/降级/发票", "待接 Customer Portal", "queued"],
+      ["导出", locked ? "品牌版" : "当日开放", locked ? "历史无水印锁定" : "PNG 正常", locked ? "locked" : "ready"],
+    ]
+    : [
+      ["Identity", loginLabelText(state.selectedLogin), "frontend entry ready", "ready"],
+      ["Checkout", state.selectedRail === "stripe" ? "Stripe Billing" : "manual mapping", "no real Session created", "ready"],
+      ["Webhook", "entitlement sync", "server pending", "queued"],
+      ["Portal", "upgrade / invoices", "Customer Portal pending", "queued"],
+      ["Export", locked ? "branded" : "latest open", locked ? "clean history locked" : "PNG works", locked ? "locked" : "ready"],
+    ];
+}
+
+function accountReadinessPanel() {
+  const plan = pricingPlans.find((item) => item.id === state.selectedPlan) || pricingPlans[1];
+  const locale = state.lang === "zh" ? "zh" : "en";
+  const stages = entitlementStages();
+  const ready = stages.filter((row) => row[3] === "ready").length;
+  return `
+    <div class="account-readiness">
+      <div class="readiness-lead">
+        <span>${state.lang === "zh" ? "商业闭环状态" : "Commercial loop status"}</span>
+        <b>${escapeHtml(plan[locale].name)} · ${ready}/${stages.length}</b>
+        <small>${state.lang === "zh" ? "这是一条可上线前端路线；真实鉴权、扣费和 Portal 都必须接服务端。" : "Frontend route only; real auth, billing, and Portal require backend wiring."}</small>
+      </div>
+      <div class="readiness-steps">
+        ${stages.map((row, index) => `
+          <span class="${row[3]}">
+            <i>${fmt0.format(index + 1)}</i>
+            <b>${escapeHtml(row[0])}</b>
+            <strong>${escapeHtml(row[1])}</strong>
+            <small>${escapeHtml(row[2])}</small>
+          </span>
+        `).join("")}
+      </div>
+    </div>
+  `;
 }
 
 function accountPipelineCard() {
@@ -957,6 +1003,7 @@ function renderPremiumPreview() {
       <button type="button" data-open-account>${locked ? t("upgrade") : (state.lang === "zh" ? "查看 Pro" : "View Pro")}</button>
     </div>
     ${dataAuditSeal()}
+    ${proReadinessRibbon(locked)}
     ${premiumUnlockDeck(rows, locked)}
     <div class="premium-grid ${locked ? "is-blurred" : ""}">
       ${premiumCard(state.lang === "zh" ? "轮动象限回看" : "Rotation lookback", lead.symbol || "--", `${attack.length}/${fade.length}`, state.lang === "zh" ? "量价同升 vs 同步降温" : "warming vs cooling")}
@@ -1011,6 +1058,29 @@ function dataAuditSeal() {
           ? `全新版本命名 · extra ${dataAudit.extraVersions} versions · 旧段 2023-05 到 2024-04 显示 Upgrade，S3 403，需更长历史权限。`
           : `New version line · extra ${dataAudit.extraVersions} versions · older 2023-05 to 2024-04 shows Upgrade / S3 403 and needs deeper history access.`}</span>
         <small>${escapeHtml(dataAudit.report)}</small>
+      </div>
+    </div>
+  `;
+}
+
+function proReadinessRibbon(locked) {
+  const stages = entitlementStages();
+  return `
+    <div class="pro-readiness-ribbon ${locked ? "is-locked" : "is-open"}">
+      <div>
+        <span>${state.lang === "zh" ? "权限接入状态" : "Entitlement wiring"}</span>
+        <b>${locked ? t("historyLocked") : t("latestFree")}</b>
+        <small>${state.lang === "zh"
+          ? "免费版看最新日与模糊历史；Pro 接入后开放历史、预测归因和无额外水印导出。"
+          : "Free sees latest day plus blurred history; Pro unlocks history, attribution, and clean export."}</small>
+      </div>
+      <div>
+        ${stages.map((row) => `
+          <span class="${row[3]}">
+            <i>${escapeHtml(row[0])}</i>
+            <b>${escapeHtml(row[1])}</b>
+          </span>
+        `).join("")}
       </div>
     </div>
   `;
@@ -1492,7 +1562,7 @@ function renderDay() {
   $("marketCp").textContent = ratio(ov.marketCp);
   $("rowCount").textContent = fmt0.format(day.validRows);
   $("sourceStatus").textContent = `${fmt0.format(day.validRows)} ${t("validRows")}`;
-  $("sourcePath").textContent = `${dataAudit.dataset} · ${dataAudit.releaseTo} · ${dataAudit.complete}/${dataAudit.fileCount} complete`;
+  $("sourcePath").textContent = `${dataAudit.dataset} · ${UI_VERSION} · ${dataAudit.complete}/${dataAudit.fileCount} complete`;
   $("totalPremiumLabel").textContent = t("premium");
 
   const deltaText = delta === null ? (state.lang === "zh" ? "首个本地交易日" : "first local day") : `${state.lang === "zh" ? "较前日" : "vs prev"} ${delta >= 0 ? "+" : ""}${fmt1.format(delta)}%`;
