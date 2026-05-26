@@ -4,6 +4,16 @@ This is internal product architecture. Do not surface this as homepage content u
 
 这是内部产品架构文档。未经 Fangbao 批准，不要把这些内容做成主页公开内容。
 
+## v1.51 active warning / v1.51 当前警戒线
+
+Fangbao's Massive dashboard screenshot exposed real API keys in the conversation/browser context. Treat those keys as compromised for production purposes. Do not paste them into source, docs, Apple Notes, issue trackers, screenshots, Netlify env, iOS code, or any browser-side runtime. Do not use them from this agent session. Before any real backend integration, Fangbao should rotate/regenerate the keys inside Massive and then provide the replacement only through an approved secret channel.
+
+Fangbao 的 Massive dashboard 截图在对话/浏览器上下文里暴露了真实 API key。按生产安全标准，应把这些 key 当作已暴露处理。不要把它们粘进源码、文档、Apple Notes、issue、截图、Netlify 环境变量、iOS 代码或任何浏览器运行时。这个 agent session 不使用这些 key。任何真实后端接入前，Fangbao 应先在 Massive 内轮换/重新生成 key，再通过批准的 secret 通道提供替换 key。
+
+The public site may show a live-feed silhouette, but it must not show provider names, plan prices, checkout text, account mechanics, or API implementation details. Real-time commercial delivery remains blocked until Business/OPRA display and redistribution rights are confirmed.
+
+公开站可以展示实时流轮廓，但不得展示供应商名、套餐价格、checkout 文案、账号机制或 API 实现细节。实时商业交付在确认 Business/OPRA 展示与再分发权利前继续阻断。
+
 ## Verified official facts / 已核官方事实
 
 Checked on 2026-05-26 Asia/Shanghai against Massive official docs/pages.
@@ -12,10 +22,16 @@ Checked on 2026-05-26 Asia/Shanghai against Massive official docs/pages.
 
 - Options Advanced is listed at `$199/month` and includes real-time data, `5+ Years Historical Data`, WebSockets, snapshots, second aggregates, trades, quotes, Greeks/IV, daily open interest, flat files, reference data, corporate actions, technical indicators, and minute aggregates. Source: <https://massive.com/options>
 - Options Advanced 页面列出 `$199/month`，包括实时数据、`5+ Years Historical Data`、WebSockets、Snapshot、Second Aggregates、Trades、Quotes、Greeks/IV、Daily Open Interest、Flat Files、Reference Data、Corporate Actions、Technical Indicators、Minute Aggregates。来源：<https://massive.com/options>
+- Options REST snapshots can consolidate break-even, day-over-day change, implied volatility, open interest, Greeks, latest quote, latest trade, and underlying price for a contract or chain. Source: <https://massive.com/docs/rest/options/overview>
+- Options REST Snapshot 可把 break-even、日变化、IV、open interest、Greeks、最新 quote、最新 trade、underlying price 汇总到合约或链层级。来源：<https://massive.com/docs/rest/options/overview>
+- Options WebSocket feeds include minute aggregates, second aggregates, trades, and quotes. Trades are tick-level; quotes carry best bid/ask prices and sizes. Source: <https://massive.com/docs/websocket/options/overview>
+- Options WebSocket 包括分钟聚合、秒聚合、trades 和 quotes。Trades 是 tick-level；quotes 携带 best bid/ask prices 和 sizes。来源：<https://massive.com/docs/websocket/options/overview>
 - Options quote WebSocket subscriptions are capped at 1,000 option contracts per connection. Source: <https://massive.com/docs/websocket/options/quotes>
 - Options Quotes WebSocket 每个连接最多订阅 1,000 个期权合约。来源：<https://massive.com/docs/websocket/options/quotes>
 - Massive WebSocket quickstart says the default is one concurrent WebSocket connection per asset class, and multiple simultaneous connections require support. Source: <https://massive.com/docs/websocket>
 - Massive WebSocket quickstart 写明默认每个资产类别一个并发 WebSocket 连接，需要更多同时连接要联系 support。来源：<https://massive.com/docs/websocket>
+- Options Flat Files include minute aggregates, trades, and quotes sourced from OPRA, with daily S3/CSV datasets. Source: <https://massive.com/docs/flat-files/options/overview>
+- Options Flat Files 包括来自 OPRA 的 minute aggregates、trades、quotes，并以 daily S3/CSV 数据集提供。来源：<https://massive.com/docs/flat-files/options/overview>
 - Massive/Polygon market data terms say individual market data is personal/non-business/non-commercial and must not be used to build an end-user application or publicly distribute market data without written consent. Source: <https://massive.com/terms/market_data_terms.pdf>
 - Massive/Polygon 市场数据条款写明个人市场数据用于个人、非商业用途，不能未经书面同意构建面向终端用户的应用或公开分发市场数据。来源：<https://massive.com/terms/market_data_terms.pdf>
 - Business plans are the safer route for a paid public SaaS, but require direct confirmation on redistribution/display rights. Source: <https://massive.com/business-options>
@@ -30,6 +46,10 @@ The `$199/month` individual plan can be excellent for owner-side research, priva
 The product should sell proprietary analysis, summaries, rankings, alerts, PNG reports, delayed/history dashboards, and blurred previews first. Direct real-time feed resale should wait for a business/commercial entitlement.
 
 产品应优先销售自有分析、摘要、排名、提醒、PNG 报告、延迟/历史 dashboard、模糊高级预览。直接销售实时 feed 应等 Business/商业权限确认后再做。
+
+The best commercial framing is not "resell raw data." It is "KZG reads the option tape for the user": curated pressure, unusual burst, rotation quadrant, premium acceleration, IV/Greek context, and actionable daily/live narratives. This product should sell interpretation, not a raw OPRA pipe.
+
+最好的商业表达不是“转售原始数据”，而是“KZG 替用户读懂期权 tape”：精选压力、异常爆发、轮动象限、权利金加速、IV/Greek 语境和可行动的日内/实时叙事。这个产品卖解释，不卖原始 OPRA 管道。
 
 ## Correct architecture / 正确架构
 
@@ -55,6 +75,24 @@ Correct flow:
 8. 前端接收派生信号、模糊预览、排名、图表和可导出 PNG。
 9. Entitlement service decides free vs paid access.
 10. 权限服务决定免费/付费访问范围。
+
+Reference implementation shape:
+
+参考实现形态：
+
+```text
+Massive REST / WebSocket / Flat Files
+  -> private ingest worker
+  -> contract universe selector
+  -> signal engine
+  -> compact snapshot store
+  -> entitlement fanout API
+  -> Web dashboard and iOS companion
+```
+
+No browser, static asset, or iOS binary should contain a Massive secret.
+
+浏览器、静态资源或 iOS binary 都不能包含 Massive secret。
 
 ## 1,000-user pressure model / 1000 用户压力模型
 
@@ -151,6 +189,16 @@ Paid:
 - Quote pressure summary: spread, bid/ask size, imbalance, not raw quote feed / 报价压力摘要：价差、bid/ask size、失衡，不提供原始 quote feed。
 - Alert engine for unusual premium, CP skew, and expiry/strike concentration / 异常权利金、CP 偏斜、到期/行权价集中提醒。
 - Historical replay from stored minute/second aggregates / 基于已存分钟/秒级聚合的历史回放。
+- Feed tape modes: hot burst, cooling, premium-led, volume-led, hedge-defense, gamma watch / Feed tape 模式：爆发、降温、权利金先行、量能先行、防守、gamma 观察。
+- Consumer explanations: "why this moved", "what changed in the last 5 minutes", "what is unusual versus 20D" / 消费者解释层：为什么动、过去 5 分钟变了什么、相对 20D 哪里异常。
+
+## Dense roadmap v1.51-v1.55 / 稠密路线 v1.51-v1.55
+
+- v1.51: public live-feed silhouette and internal Massive architecture research. No real key. No public provider/price. / 公开实时流轮廓与内部 Massive 架构研究。不接真实 key，不公开供应商/价格。
+- v1.52: internal mock feed schema and adapter using generated/mock events from existing minute data. / 用现有分钟数据生成 mock event，建立内部 feed schema 和 adapter。
+- v1.53: entitlement-safe feed API contract: free latest-day sample, blurred history, paid derived signal slots. / 权限安全 feed API 合约：免费最新日样本、历史模糊、付费派生信号槽位。
+- v1.54: load and fanout model: cache TTL, symbol universe, event compression, 1000-user outbound estimate. / 负载和分发模型：cache TTL、标的池、事件压缩、1000 用户出站估算。
+- v1.55: iOS companion sync for live silhouette concepts, still offline/mock unless Fangbao separately approves real backend work. / iOS 伴生同步实时轮廓概念；除非 Fangbao 另行批准真实后端，仍保持离线/mock。
 
 ## Implementation stages / 实施阶段
 

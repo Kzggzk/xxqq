@@ -29,7 +29,7 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
 - 最近验证唯一部署: `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.49`
-- 最近本地验证 UI 版本: `1.50`
+- 最近本地验证 UI 版本: `1.51`
 - 当前 iOS 伴生版本: `0.4`，对应 Web `1.50`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
@@ -47,7 +47,7 @@ English:
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
 - Latest verified unique deploy: `https://6a15a0b9761b0a09fe20d22b--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.49`
-- Latest locally verified UI version: `1.50`
+- Latest locally verified UI version: `1.51`
 - Current iOS companion version: `0.4`, mapped to Web `1.50`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
@@ -165,6 +165,44 @@ CHANGLOG 期权终端
 English:
 
 The larger requirement - SaaS, login, payments, domain, Supabase, backend API, three payment rails, and handoff for another Codex - was clarified after the public dashboard had already gone through the v55 UI phase and after public commercial planning was urgently removed. In the Git backbone, it belongs immediately after `6c909a9`, in the documentation/operating-memory layer defined here as `v1.28/v1.29`. It is not a public UI feature; it is an upgrade to the product operating system.
+
+## 4.0.1 v1.51 Massive real-time route and key safety / v1.51 Massive 实时路线与 key 安全
+
+中文:
+
+北京时间 2026-05-26 22:07 左右进入 Web `1.51`。这一轮由 Fangbao 展示 Massive dashboard、Options Advanced 能力清单和 API key 截图触发。核心判断不是“把 key 塞进网页”，而是必须把 Massive 的 real-time trades、quotes、WebSockets、snapshots、Greeks/IV、daily open interest、flat files 和 second/minute aggregates 转成 KZG 自有的实时读盘产品。
+
+安全事件：截图里出现了真实 Massive API key。这个日志不复述、不存储、不引用具体 key。后续 agent 必须把这些 key 当作生产上已暴露处理：不要使用，不要写入代码，不要提交 Git，不要放到 Netlify env，不要放到 iOS，不要放到 Apple Notes。真正接后端前让 Fangbao 在 Massive 里 rotate/regenerate，然后只通过批准的 secret 通道给新 key。
+
+官方研究结果：Massive 官方 Options 页面显示 Options Advanced 为 `$199/month`，包含 real-time data、5+ years history、WebSockets、Snapshot、Second Aggregates、Trades、Quotes、Greeks/IV、Daily Open Interest、Flat Files 等。Options REST overview 说明 Snapshot 能提供 IV、open interest、Greeks、latest quote/trade 和 underlying price。Options WebSocket overview 说明实时 trades、quotes、分钟聚合和秒聚合都存在；Quotes 文档写明每个 WebSocket 连接最多订阅 1000 个 option contracts；WebSocket quickstart 写明默认每个 asset class 一个并发连接，更多连接要联系 support。Market Data Terms 说明个人 market data 是 personal、non-business、non-commercial，不能默认拿来给终端用户做商业应用或再分发/销售/展示派生作品。
+
+产品判断：`$199/month` 个人套餐非常适合 owner 研究、内部原型、后端私有 ingest 和信号生成，但不能当作公开付费 SaaS 的再分发许可。真正商业化要问清 Business/OPRA display 与 redistribution rights。KZG Option House 应该卖的是“解释能力”：实时权利金爆发、轮动象限、quote pressure、CP 结构、IV/Greek radar、异常提醒、历史回放和今日叙事，而不是卖原始 OPRA 管道。
+
+架构结论：永远不要让 1000 个用户浏览器直接连 Massive，也不要让浏览器或 iOS app 持有 API key。正确链路是 private backend ingest -> curated contract universe -> KZG signal engine -> compact snapshot cache -> entitlement fanout API -> Web and iOS. 用户数量增加时，增长的是 KZG 自己的出站流量，不应增加 Massive 连接数。
+
+公开 UI 动作：`public/app.js` 把 `UI_VERSION` 从 `1.50` 提到 `1.51`。`public/styles.css` 追加 v1.51 样式层，只强化公开的 `实时流轮廓 / Live feed silhouette`：左侧状态纵线、扫描底纹、行内压力点、暗色模式对比、capability meter 胶片纹理。公开页不出现 Massive provider、真实 key、`$199`、pricing、payment、billing、Stripe、wallet、WeChat、domain、checkout、registration 或内部后端路线。
+
+下一步：v1.52 做 mock feed schema 和 adapter，只用现有分钟数据模拟 event；v1.53 做权限安全 feed 合约；v1.54 做 1000 用户 fanout/load/cache 模型；v1.55 做下一次 iOS companion 同步。TestFlight、App Store、真实 Massive 升级、支付、域名购买、Stripe/Supabase 变更都必须在动作前停下让 Fangbao 确认。
+
+验证事实：`node --check public/app.js` 通过；构建生成 `505` 天 payload，最新日 `2026-05-22`，analytics symbols `98`，pack asset `kzg-frame-8c3b708705de.js`。公开 `public` 与 `dist` 风险词扫描为 0。Browser 确认本地页面标题、`UI_VERSION 1.51`、实时流轮廓可见、console warning/error 为 0，截图 `/tmp/kzg-option-house-v151-browser-desktop.png`。Playwright 验证桌面、手机、手机实时流区域均无横向溢出、`user-select:none`、`publicRisk=false`、console issue 为 0，截图 `/tmp/kzg-option-house-v151-desktop.png`、`/tmp/kzg-option-house-v151-mobile.png`、`/tmp/kzg-option-house-v151-mobile-live.png`。PNG 导出 `/tmp/kzg-option-house-v151-export.png` 成功，大小 `1,482,138` bytes，建议文件名 `kzg-option-house-2026-05-22-zh.png`。
+
+English:
+
+Around 2026-05-26 22:07 Asia/Shanghai, Web `1.51` started. This round was triggered by Fangbao showing the Massive dashboard, Options Advanced feature list, and API-key screenshot. The core move is not to put a key into the website. The real product move is to turn Massive real-time trades, quotes, WebSockets, snapshots, Greeks/IV, daily open interest, flat files, and second/minute aggregates into KZG-owned live tape intelligence.
+
+Security event: real Massive API keys appeared in the screenshot. This changelog does not repeat, store, or cite any key. Future agents must treat those keys as exposed for production purposes. Do not use them, write them into code, commit them, put them in Netlify env, put them in iOS, or put them in Apple Notes. Before real backend work, Fangbao should rotate/regenerate keys inside Massive and provide replacements only through an approved secret channel.
+
+Official research result: Massive's official Options page lists Options Advanced at `$199/month` with real-time data, 5+ years history, WebSockets, snapshots, second aggregates, trades, quotes, Greeks/IV, daily open interest, flat files, and more. Options REST overview says snapshots can provide IV, open interest, Greeks, latest quote/trade, and underlying price. Options WebSocket overview shows real-time trades, quotes, minute aggregates, and second aggregates. The Quotes doc says each WebSocket connection can subscribe to up to 1,000 option contracts. The WebSocket quickstart says the default is one concurrent WebSocket connection per asset class, and more simultaneous connections require support. Market Data Terms say individual market data is personal, non-business, and non-commercial, so it must not be assumed to authorize a commercial end-user application or redistribution/sale/display of derived works.
+
+Product judgment: the `$199/month` individual plan is excellent for owner research, internal prototypes, private backend ingest, and signal generation, but it is not a public paid-SaaS redistribution permission by default. Commercialization requires Business/OPRA display and redistribution rights. KZG Option House should sell interpretation: live premium bursts, rotation quadrants, quote pressure, CP structure, IV/Greek radar, unusual alerts, historical replay, and daily/live narrative, not a raw OPRA pipe.
+
+Architecture conclusion: never let 1,000 browsers connect directly to Massive, and never put the API key in the browser or iOS app. Correct flow is private backend ingest -> curated contract universe -> KZG signal engine -> compact snapshot cache -> entitlement fanout API -> Web and iOS. When user count grows, KZG outbound traffic grows; Massive connection count should not.
+
+Public UI action: `public/app.js` moves `UI_VERSION` from `1.50` to `1.51`. `public/styles.css` adds a v1.51 layer only for the public `Live feed silhouette`: left status rail, scan texture, inline pressure dots, dark-mode contrast, and capability-meter film-strip texture. The public page does not show the Massive provider, real keys, `$199`, pricing, payment, billing, Stripe, wallet, WeChat, domain, checkout, registration, or internal backend routes.
+
+Next: v1.52 should build a mock feed schema and adapter using existing minute data only; v1.53 should define entitlement-safe feed contracts; v1.54 should model 1,000-user fanout/load/cache; v1.55 should be the next iOS companion sync. TestFlight, App Store, real Massive upgrade, payment, domain purchase, and Stripe/Supabase mutation all require stopping for Fangbao confirmation at action time.
+
+Verification facts: `node --check public/app.js` passed; the build produced a `505`-day payload, latest date `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-8c3b708705de.js`. Public `public` and `dist` risk scans returned 0. Browser confirmed the local page title, `UI_VERSION 1.51`, visible live-feed silhouette, 0 console warnings/errors, and screenshot `/tmp/kzg-option-house-v151-browser-desktop.png`. Playwright verified desktop, phone, and phone live-feed area with no horizontal overflow, `user-select:none`, `publicRisk=false`, and 0 console issues; screenshots are `/tmp/kzg-option-house-v151-desktop.png`, `/tmp/kzg-option-house-v151-mobile.png`, and `/tmp/kzg-option-house-v151-mobile-live.png`. PNG export `/tmp/kzg-option-house-v151-export.png` succeeded at `1,482,138` bytes, suggested filename `kzg-option-house-2026-05-22-zh.png`.
 
 ## 4.1 v1.40 production checkpoint / v1.40 生产检查点
 
