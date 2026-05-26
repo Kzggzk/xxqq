@@ -9,11 +9,13 @@ const state = {
   requestToken: 0,
   trendWindow: "90",
   focusSymbol: null,
+  plan: "free",
+  checkoutMessage: "",
   lang: localStorage.getItem("kzg-option-house-lang") || "zh",
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "v55";
+const UI_VERSION = "v60";
 
 const $ = (id) => document.getElementById(id);
 const fmt0 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
@@ -66,6 +68,16 @@ const copy = {
     currentDay: "当前交易日",
     kzgByline: "口罩哥独家数据整理",
     kzgPlanet: "口罩哥星球",
+    loginPro: "登录 / Pro",
+    proActive: "Pro 已启用",
+    latestFree: "今日免费",
+    historyLocked: "历史回看已锁定",
+    upgrade: "升级 Pro",
+    preview: "功能预览",
+    accountTitle: "KZG Option House Pro",
+    accountSub: "当前为产品接入阶段：可看到登录、套餐、支付轨道和锁层体验；真实扣费与域名购买前会再次确认。",
+    paywallTitle: "Pro 回看已上锁",
+    paywallSub: "今天的读盘免费开放；历史日期、预测式回看、轮动象限深挖和无水印导出进入 Pro。",
   },
   en: {
     today: "Today",
@@ -112,8 +124,42 @@ const copy = {
     currentDay: "Current Day",
     kzgByline: "Curated by 口罩哥",
     kzgPlanet: "KZG Inner Circle",
+    loginPro: "Log in / Pro",
+    proActive: "Pro active",
+    latestFree: "Today is free",
+    historyLocked: "History locked",
+    upgrade: "Upgrade Pro",
+    preview: "Feature preview",
+    accountTitle: "KZG Option House Pro",
+    accountSub: "Product wiring phase: login, pricing, payment rails, and locked-preview UX are visible. Real charges and domain purchase require explicit confirmation.",
+    paywallTitle: "Pro history is locked",
+    paywallSub: "Today stays free; historical dates, predictive lookbacks, rotation quadrant deep dives, and watermark-free export move behind Pro.",
   },
 };
+
+const pricingPlans = [
+  {
+    id: "starter",
+    zh: { name: "Starter", price: "$9.99", cycle: "/月", desc: "历史日报回看、基础轮动、PNG 导出。" },
+    en: { name: "Starter", price: "$9.99", cycle: "/mo", desc: "Historical daily sheets, basic rotation, PNG export." },
+  },
+  {
+    id: "pro",
+    featured: true,
+    zh: { name: "Pro", price: "$29.99", cycle: "/月", desc: "预测式动量、轮动象限深挖、无水印导出。" },
+    en: { name: "Pro", price: "$29.99", cycle: "/mo", desc: "Predictive momentum, quadrant deep dive, watermark-free export." },
+  },
+  {
+    id: "quarterly",
+    zh: { name: "Quarterly", price: "$49.99", cycle: "/季度", desc: "季度访问权，适合短线密集使用。" },
+    en: { name: "Quarterly", price: "$49.99", cycle: "/quarter", desc: "Quarterly access for active research cycles." },
+  },
+  {
+    id: "lifetime",
+    zh: { name: "Lifetime", price: "$199", cycle: "一次性", desc: "早鸟终身席位，后续高级功能另行分层。" },
+    en: { name: "Lifetime", price: "$199", cycle: "once", desc: "Early lifetime seat; future advanced tiers can be separated." },
+  },
+];
 
 function t(key) {
   return copy[state.lang]?.[key] || copy.zh[key] || key;
@@ -304,6 +350,29 @@ async function loadIndex() {
   $("goToday").addEventListener("click", () => loadDayByIndex(state.datesAsc.length - 1));
   $("themeToggle").addEventListener("click", toggleTheme);
   $("langToggle").addEventListener("click", toggleLang);
+  $("accountButton").addEventListener("click", openAccountModal);
+  document.querySelectorAll("[data-close-account]").forEach((node) => {
+    node.addEventListener("click", closeAccountModal);
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeAccountModal();
+  });
+  document.addEventListener("click", (event) => {
+    const openTarget = event.target.closest("[data-open-account]");
+    if (openTarget) {
+      event.preventDefault();
+      state.checkoutMessage = openTarget.dataset.message || "";
+      openAccountModal();
+      return;
+    }
+    const checkoutTarget = event.target.closest("[data-checkout-plan]");
+    if (checkoutTarget) {
+      event.preventDefault();
+      const plan = pricingPlans.find((item) => item.id === checkoutTarget.dataset.checkoutPlan);
+      state.checkoutMessage = paymentNotice(plan);
+      renderAccountModal();
+    }
+  });
   window.addEventListener("resize", fitReportCanvas);
   document.querySelectorAll("[data-window]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -344,6 +413,216 @@ function toggleLang() {
   renderTimelineShell();
   updateTimelineSelection();
   if (state.day) renderDay();
+}
+
+function isPro() {
+  return state.plan === "pro";
+}
+
+function isLatestDay() {
+  return state.selectedIndex >= state.datesAsc.length - 1;
+}
+
+function isHistoryLocked() {
+  return !isPro() && !isLatestDay();
+}
+
+function openAccountModal() {
+  const modal = $("accountModal");
+  if (!modal) return;
+  renderAccountModal();
+  modal.hidden = false;
+  modal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+}
+
+function closeAccountModal() {
+  const modal = $("accountModal");
+  if (!modal || modal.hidden) return;
+  modal.hidden = true;
+  modal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-open");
+  state.checkoutMessage = "";
+}
+
+function renderAccountModal() {
+  const target = $("accountContent");
+  if (!target) return;
+  const locale = state.lang === "zh" ? "zh" : "en";
+  const paymentRails = state.lang === "zh"
+    ? [
+      ["Stripe Checkout", "订阅与信用卡，建议用 Billing + Checkout + Customer Portal。"],
+      ["Wallet / Crypto", "钱包登录与链上收款作为第二支付轨道，先做账户映射。"],
+      ["微信支付码", "先用人工确认或二维码收款，后续再接商户 API。"],
+    ]
+    : [
+      ["Stripe Checkout", "Subscriptions and cards via Billing + Checkout + Customer Portal."],
+      ["Wallet / Crypto", "Wallet login and crypto payments as a second rail with account mapping."],
+      ["WeChat QR", "Start with manual QR confirmation, then wire merchant APIs later."],
+    ];
+  const domainRows = [
+    ["optionflowhouse.com", "$11.99", state.lang === "zh" ? "可注册" : "available"],
+    ["optionpulse.ai", "$159.98", state.lang === "zh" ? "可注册" : "available"],
+    ["flowgamma.com", "--", state.lang === "zh" ? "已被注册" : "taken"],
+  ];
+  target.innerHTML = `
+    <div class="account-hero">
+      <span>${isPro() ? t("proActive") : t("loginPro")}</span>
+      <h2 id="accountTitle">${t("accountTitle")}</h2>
+      <p>${t("accountSub")}</p>
+    </div>
+    <div class="account-grid">
+      <section class="pricing-panel">
+        <div class="account-section-head">
+          <b>${state.lang === "zh" ? "套餐" : "Plans"}</b>
+          <span>${state.lang === "zh" ? "先搭结构，真实扣费待确认" : "Structure first, real billing later"}</span>
+        </div>
+        <div class="pricing-grid">
+          ${pricingPlans.map((plan) => {
+            const text = plan[locale];
+            return `
+              <button type="button" class="price-card ${plan.featured ? "featured" : ""}" data-checkout-plan="${plan.id}">
+                <span>${escapeHtml(text.name)}</span>
+                <strong>${escapeHtml(text.price)} <small>${escapeHtml(text.cycle)}</small></strong>
+                <p>${escapeHtml(text.desc)}</p>
+              </button>
+            `;
+          }).join("")}
+        </div>
+        <div class="checkout-note ${state.checkoutMessage ? "visible" : ""}">
+          ${escapeHtml(state.checkoutMessage || (state.lang === "zh" ? "点击套餐会显示对应支付接入轨道；不会发起真实扣费。" : "Click a plan to preview payment wiring; no real charge will be started."))}
+        </div>
+      </section>
+      <section class="billing-panel">
+        <div class="account-section-head">
+          <b>${state.lang === "zh" ? "支付轨道" : "Payment rails"}</b>
+          <span>${state.lang === "zh" ? "可接入路线" : "wiring path"}</span>
+        </div>
+        ${paymentRails.map((row) => `
+          <div class="billing-row">
+            <b>${escapeHtml(row[0])}</b>
+            <span>${escapeHtml(row[1])}</span>
+          </div>
+        `).join("")}
+        <div class="account-section-head domain-head">
+          <b>${state.lang === "zh" ? "域名候选" : "Domain candidates"}</b>
+          <span>${state.lang === "zh" ? "已查可用性，购买前需你确认" : "availability checked; purchase needs confirmation"}</span>
+        </div>
+        ${domainRows.map((row) => `
+          <div class="domain-row">
+            <b>${escapeHtml(row[0])}</b>
+            <span>${escapeHtml(row[1])}</span>
+            <i>${escapeHtml(row[2])}</i>
+          </div>
+        `).join("")}
+      </section>
+    </div>
+  `;
+}
+
+function paymentNotice(plan) {
+  const name = plan?.[state.lang === "zh" ? "zh" : "en"]?.name || "Pro";
+  if (state.lang !== "zh") {
+    return `${name}: next implementation step is Stripe Billing Checkout Session + Customer Portal. Wallet and WeChat rails need account/payment credentials, so I will ask before touching real money.`;
+  }
+  return `${name}：下一步接 Stripe Billing Checkout Session + Customer Portal。钱包与微信支付需要账号/收款配置，涉及真钱前我会停下让你确认。`;
+}
+
+function renderAccessStrip() {
+  const target = $("accessStrip");
+  if (!target || !state.day) return;
+  const locked = isHistoryLocked();
+  const latest = isLatestDay();
+  const label = isPro() ? t("proActive") : latest ? t("latestFree") : t("historyLocked");
+  const sub = isPro()
+    ? (state.lang === "zh" ? "历史回看、预测式动量、无水印导出已开放。" : "History, predictive momentum, and clean exports are open.")
+    : latest
+      ? (state.lang === "zh" ? "当前交易日完整开放；历史日期会显示 Pro 模糊预览。" : "Latest trading day is open; history shows Pro blurred previews.")
+      : t("paywallSub");
+  target.innerHTML = `
+    <div class="access-copy ${locked ? "locked" : "open"}">
+      <span>${escapeHtml(label)}</span>
+      <b>${escapeHtml(state.day.tradeDate)}</b>
+      <small>${escapeHtml(sub)}</small>
+    </div>
+    <div class="access-actions">
+      <button type="button" data-open-account>${t("upgrade")}</button>
+      <button type="button" data-open-account data-message="${escapeHtml(state.lang === "zh" ? "Pro 导出路线：登录后导出无额外水印版本；免费版保留 KZG 品牌植入。" : "Pro export path: clean export after login; free export keeps KZG branding.")}">${state.lang === "zh" ? "无水印导出" : "Clean export"}</button>
+    </div>
+  `;
+}
+
+function renderPremiumPreview() {
+  const target = $("premiumPreview");
+  if (!target || !state.day) return;
+  const locked = !isPro();
+  const rows = symbolRotationRows();
+  const attack = rows.filter((row) => row.delta >= 0 && row.premiumDelta >= 0);
+  const fade = rows.filter((row) => row.delta < 0 && row.premiumDelta < 0);
+  const lead = attack.slice().sort((a, b) => (b.delta + b.premiumDelta) - (a.delta + a.premiumDelta))[0] || rows[0] || {};
+  const buckets = state.day.buckets.market || [];
+  const maxBucket = buckets.reduce((best, row) => Number(row.total) > Number(best.total || 0) ? row : best, buckets[0] || {});
+  const allRows = uniqueSymbolRows();
+  const premiumLead = allRows.reduce((best, row) => Number(row.premiumNotional) > Number(best.premiumNotional) ? row : best, allRows[0] || {});
+  target.innerHTML = `
+    <div class="premium-head">
+      <div>
+        <h2>${state.lang === "zh" ? "Pro 情报层" : "Pro intelligence layer"}</h2>
+        <p>${state.lang === "zh" ? "这些功能先以模糊预览展示强度，登录后进入完整交互。" : "These features show blurred previews first; login unlocks full interaction."}</p>
+      </div>
+      <button type="button" data-open-account>${t("upgrade")}</button>
+    </div>
+    <div class="premium-grid ${locked ? "is-blurred" : ""}">
+      ${premiumCard(state.lang === "zh" ? "轮动象限回看" : "Rotation lookback", lead.symbol || "--", `${attack.length}/${fade.length}`, state.lang === "zh" ? "量价同升 vs 同步降温" : "warming vs cooling")}
+      ${premiumCard(state.lang === "zh" ? "异常分钟雷达" : "Anomaly minute radar", maxBucket.time || "--", wan(maxBucket.total || 0), state.lang === "zh" ? "峰值桶 + 历史偏离" : "peak bucket + history drift")}
+      ${premiumCard(state.lang === "zh" ? "权利金追踪" : "Premium tracking", premiumLead.symbol || "--", moneyCompact(premiumLead.premiumNotional), state.lang === "zh" ? "资金锚点与变化率" : "premium anchor and velocity")}
+      ${premiumCard(state.lang === "zh" ? "订阅组合监控" : "Watchlist alerts", "SPY / NVDA", state.lang === "zh" ? "待接" : "queued", state.lang === "zh" ? "邮件/微信/钱包身份后续接入" : "email/WeChat/wallet identity later")}
+    </div>
+    ${locked ? `<button type="button" class="premium-lock" data-open-account><b>${t("paywallTitle")}</b><span>${t("paywallSub")}</span></button>` : ""}
+  `;
+}
+
+function premiumCard(label, value, sub, foot) {
+  return `
+    <article class="premium-card">
+      <span>${escapeHtml(label)}</span>
+      <strong>${escapeHtml(String(value || "--"))}</strong>
+      <b>${escapeHtml(String(sub || "--"))}</b>
+      <small>${escapeHtml(String(foot || ""))}</small>
+    </article>
+  `;
+}
+
+function applyAccessState() {
+  document.body.dataset.plan = isPro() ? "pro" : "free";
+  document.body.dataset.historyLocked = isHistoryLocked() ? "true" : "false";
+  const accountText = $("accountButtonText");
+  if (accountText) accountText.textContent = isPro() ? t("proActive") : t("loginPro");
+  const locked = isHistoryLocked();
+  const gated = [
+    [".trend-panel", state.lang === "zh" ? "跨日趋势回看" : "Cross-day trend"],
+    [".signal-panel", state.lang === "zh" ? "预测式结构读盘" : "Predictive structure"],
+    [".regime-panel", state.lang === "zh" ? "温度带历史" : "Regime history"],
+    [".rotation-panel", state.lang === "zh" ? "轮动象限深挖" : "Rotation deep dive"],
+    [".momentum-panel", state.lang === "zh" ? "标的动量回看" : "Symbol momentum history"],
+  ];
+  for (const [selector, label] of gated) {
+    const panel = document.querySelector(selector);
+    if (!panel) continue;
+    panel.classList.toggle("is-pro-locked", locked);
+    let overlay = panel.querySelector(".pro-lock-overlay");
+    if (locked && !overlay) {
+      overlay = document.createElement("button");
+      overlay.type = "button";
+      overlay.className = "pro-lock-overlay";
+      overlay.setAttribute("data-open-account", "");
+      panel.appendChild(overlay);
+    }
+    if (overlay) {
+      overlay.hidden = !locked;
+      overlay.innerHTML = `<b>${escapeHtml(label)}</b><span>${t("paywallSub")}</span>`;
+    }
+  }
 }
 
 function renderTimelineShell() {
@@ -451,6 +730,7 @@ function renderDay() {
 
   $("downloadReport").onclick = () => exportReportPng(day.tradeDate);
   renderSessionTape(delta);
+  renderAccessStrip();
   renderDigest();
   renderReportCanvas();
   renderBuckets();
@@ -463,7 +743,9 @@ function renderDay() {
   renderSymbolFocus();
   renderSymbolRotation();
   renderSymbolMomentum();
+  renderPremiumPreview();
   renderStaticCopy();
+  applyAccessState();
   syncSymbolActive();
 }
 

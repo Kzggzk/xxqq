@@ -33,6 +33,10 @@
           <span aria-hidden="true">文</span>
           <span data-i18n="language">EN</span>
         </button>
+        <button id="accountButton" class="button pro-button" type="button" title="登录并解锁 Pro 功能">
+          <span aria-hidden="true">◇</span>
+          <span id="accountButtonText">登录 / Pro</span>
+        </button>
         <button id="downloadReport" class="button primary" type="button" title="导出当前日报 PNG">
           <span aria-hidden="true">↓</span>
           <span data-i18n="export">导出 PNG</span>
@@ -107,6 +111,7 @@
       </section>
 
       <section id="sessionTape" class="session-tape" aria-label="今日读盘总线"></section>
+      <section id="accessStrip" class="access-strip" aria-label="会员状态"></section>
 
       <section class="workbench">
         <section class="report-stage" aria-label="KZG report canvas">
@@ -141,6 +146,8 @@
           <div id="sideIntel" class="side-intel"></div>
         </aside>
       </section>
+
+      <section id="premiumPreview" class="premium-preview" aria-label="Pro 功能预览"></section>
 
       <section class="analysis-grid">
         <section class="panel trend-panel">
@@ -230,6 +237,13 @@
     </main>
   </div>
   <div id="marketTooltip" class="market-tooltip" hidden></div>
+  <div id="accountModal" class="account-modal" hidden aria-hidden="true">
+    <div class="account-backdrop" data-close-account></div>
+    <section class="account-sheet" role="dialog" aria-modal="true" aria-labelledby="accountTitle">
+      <button class="account-close" type="button" data-close-account aria-label="关闭">×</button>
+      <div id="accountContent"></div>
+    </section>
+  </div>
   <script src="/assets/kzg-pack.js"></script>
   <script src="/vendor/html2canvas.min.js"></script>
   <script src="/app.js"></script>
