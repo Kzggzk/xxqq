@@ -29,7 +29,7 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
 - 最近验证唯一部署: `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.45`
-- 最近本地验证 UI 版本: `1.45`
+- 最近本地验证 UI 版本: `1.46`
 - 当前 iOS 伴生版本: `0.3`，对应 Web `1.45`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
@@ -47,7 +47,7 @@ English:
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
 - Latest verified unique deploy: `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.45`
-- Latest locally verified UI version: `1.45`
+- Latest locally verified UI version: `1.46`
 - Current iOS companion version: `0.3`, mapped to Web `1.45`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
@@ -277,6 +277,32 @@ Verified facts: `node --check public/app.js` passed; build produced a `505`-day 
 Visual verification: local Playwright/Chrome desktop `1440x1100` showed v1.45 with topbar `69px`, timeline `137px`, rotation `814px`, momentum `585px`, `overflowX=0`, `user-select:none`, and no console errors. Mobile `390x844` showed v1.45 with topbar `91px`, advanced preview `3163px`, rotation panel `778px`, momentum panel `959px`, visible rotation rows `12`, visible momentum rows `12`, `overflowX=0`, and no internal string leak. PNG export was clicked successfully: `/tmp/kzg-option-house-v145-export.png`, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v145-desktop.png`, `/tmp/kzg-option-house-v145-mobile.png`, `/tmp/kzg-option-house-v145-mobile-rotation.png`.
 
 Current state: v1.45 is now a production deploy. Production site `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`. Live smoke confirmed `/`, `/r/latest.html`, and `/latest` as `200`, `/data/index.json` and `/assets/kzg-pack.js` as `404`, live `/app.js` as `UI_VERSION="1.45"`, and phone `390x844` with no horizontal overflow or public-risk string leak. Next v1.46 should continue unifying the mobile lower-page rhythm across advanced preview, rotation, and momentum so they do not feel like three different products. The next normal deploy should wait until v1.48-v1.50 unless a public-risk fix appears earlier.
+
+## 4.7 v1.46 mobile spine unity / v1.46 手机连续读盘脊柱
+
+中文:
+
+北京时间 2026-05-26 20:34 左右，心跳进入 Web `1.46`。这次仍然只做公开 UI 质量，不做真实付费、注册、域名、API、价格、Stripe、钱包、微信支付或 Massive plan 展示。生产站保持 v1.45，不部署。v1.46 的核心任务来自 Fangbao 对手机端 spacing/calligraphy 的持续要求：高级预览、标的轮动扩散、核心标的动量不能像三块临时拼起来的页面，而要像一个连续的期权终端读盘脊柱。
+
+具体变化：`public/app.js` 将 `UI_VERSION` 从 `1.45` 升到 `1.46`。`public/styles.css` 追加 v1.46 层：在 `760px` 以下收紧 `.analysis-grid`；给 `#premiumPreview` 和 `.rotation-panel` 增加极轻的横向连接线；统一 `.premium-preview`、`.rotation-panel`、`.momentum-panel` 的圆角、弱阴影、标题下边界与标题字号；把 `.premium-capability-rail`、`.premium-unlock-deck`、`.premium-grid`、`.premium-lookback`、`.premium-signal-stack`、`.premium-quadrant`、`.symbol-rotation`、`.symbol-momentum` 的上边距压到同一节奏。在 `520px` 以下继续收紧：三段 panel 顶底 padding 改成更一致的 `13px`，标题区改成可压缩 grid，premium/rotation/momentum 内部 gap 统一为 `6px`，premium card、lookback metric、signal row、quadrant stat、rotation stat、momentum summary 的圆角统一到 `6px`，并把手机轮动象限气泡上限从 v1.45 的 `38px` 降到 `30px`，去掉重阴影，把透明度放到 `0.88`，减少左下角拥挤气泡的噪音。
+
+验证事实：`node --check public/app.js` 通过；`python3 scripts/build_payload.py` 重新生成 dist，输出 `505` 天 payload，最新交易日 `2026-05-22`，analytics symbols `98`，pack asset `kzg-frame-779e2008ac11.js`；`python3 scripts/per_day_to_dist.py` 复制 `505` 个 report。source 和 dist 的公开风险词扫描均为 0，未发现支付、域名、API key、价格、Massive plan 或内部商业路线泄露。内置 Browser 打开 `http://127.0.0.1:4176/` 成功，页面标题是 `KZG Option House · 美股期权日报`，`sourcePath` 显示 `23_DATA_Massive_期权分钟_Minute · 1.46 · 505/505 complete`，KZG 内容可见，`user-select` 仍是 `none`，console warn/error 为 0。Browser 内置窗口有一个由小数像素取整造成的 body scrollWidth 1px 差异，但 document scrollWidth 与 clientWidth 对齐；随后用 Playwright 做精确桌面和手机量测，确认 `docOverflowX=0`、`bodyOverflowX=0`。
+
+视觉验证：Playwright/Chrome 桌面 `1440x1100` 显示 v1.46，topbar `69px`，高级预览 `1828px`，rotation `814px`，momentum `585px`，无横向溢出、无 console error、无内部词泄露。手机 `390x844` 显示 v1.46，topbar `91px`，高级预览约 `3204px`，rotation `781px`，momentum `967px`，可见轮动行 `12`，可见动量行 `12`，手机轮动气泡 CSS 上限为 `30px`。PNG 导出实际点击成功，文件 `/tmp/kzg-option-house-v146-export.png`，建议文件名 `kzg-option-house-2026-05-22-zh.png`，大小 `1,482,138` bytes。截图证据：`/tmp/kzg-option-house-v146-desktop.png`、`/tmp/kzg-option-house-v146-mobile.png`、`/tmp/kzg-option-house-v146-mobile-rotation.png`、`/tmp/kzg-option-house-v146-mobile-momentum.png`。
+
+当前状态：v1.46 是本地和 GitHub docs checkpoint，不是生产部署。生产仍为 v1.45，生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`。下一步 v1.47 应继续顺着手机下半页做细节：高级预览入口高度、轮动象限气泡密度、动量列表末端留白、以及桌面从 trend 到 rotation 的阅读节奏。下一次常规生产部署默认等 v1.48-v1.50，除非出现公开风险修复。
+
+English:
+
+Around 2026-05-26 20:34 Asia/Shanghai, the heartbeat moved Web to `1.46`. This remains a public-UI quality pass only. It does not add real payment, registration, domain, API, price, Stripe, wallet, WeChat Pay, or Massive-plan content. Production stays on v1.45 and is not deployed. The core task comes from Fangbao's continuing spacing/calligraphy requirement: advanced preview, symbol rotation, and symbol momentum should not feel like three temporary stitched pages; they should read as one continuous option-terminal analysis spine.
+
+Concrete changes: `public/app.js` moved `UI_VERSION` from `1.45` to `1.46`. `public/styles.css` adds the v1.46 layer: under `760px`, `.analysis-grid` is tightened; `#premiumPreview` and `.rotation-panel` receive a very light connector line; `.premium-preview`, `.rotation-panel`, and `.momentum-panel` now share radius, soft shadow, title separator, and title scale; `.premium-capability-rail`, `.premium-unlock-deck`, `.premium-grid`, `.premium-lookback`, `.premium-signal-stack`, `.premium-quadrant`, `.symbol-rotation`, and `.symbol-momentum` share one top-spacing rhythm. Under `520px`, the three panels use consistent `13px` top/bottom padding, section heads become compressible grids, premium/rotation/momentum internal gaps move to `6px`, premium cards, lookback metrics, signal rows, quadrant stats, rotation stats, and momentum summaries share `6px` radius, and mobile rotation-quadrant bubbles shrink from the v1.45 `38px` cap to `30px`, with heavy shadows removed and opacity set to `0.88` to quiet the lower-left cluster.
+
+Verified facts: `node --check public/app.js` passed; `python3 scripts/build_payload.py` rebuilt dist with `505` days, latest trading day `2026-05-22`, analytics symbols `98`, pack asset `kzg-frame-779e2008ac11.js`; `python3 scripts/per_day_to_dist.py` copied `505` reports. Source and dist public-risk scans both returned 0, with no payment, domain, API key, price, Massive plan, or internal commercial route leaked. In-app Browser opened `http://127.0.0.1:4176/` successfully; title was `KZG Option House · 美股期权日报`, `sourcePath` showed `23_DATA_Massive_期权分钟_Minute · 1.46 · 505/505 complete`, KZG content was visible, `user-select` remained `none`, and console warn/error count was 0. The in-app Browser window showed a 1px body scrollWidth difference caused by fractional-pixel rounding, while document scrollWidth and clientWidth matched; Playwright then did precise desktop/phone measurement and confirmed `docOverflowX=0` and `bodyOverflowX=0`.
+
+Visual verification: local Playwright/Chrome desktop `1440x1100` showed v1.46, topbar `69px`, advanced preview `1828px`, rotation `814px`, momentum `585px`, no horizontal overflow, no console error, and no internal string leak. Mobile `390x844` showed v1.46, topbar `91px`, advanced preview about `3204px`, rotation `781px`, momentum `967px`, visible rotation rows `12`, visible momentum rows `12`, and mobile rotation-dot CSS cap `30px`. PNG export was clicked successfully: `/tmp/kzg-option-house-v146-export.png`, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v146-desktop.png`, `/tmp/kzg-option-house-v146-mobile.png`, `/tmp/kzg-option-house-v146-mobile-rotation.png`, `/tmp/kzg-option-house-v146-mobile-momentum.png`.
+
+Current state: v1.46 is a local and GitHub-docs checkpoint, not a production deploy. Production remains v1.45 at `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`. Next v1.47 should continue lower-phone detail work: advanced-preview entry height, rotation-quadrant dot density, momentum-list tail whitespace, and desktop reading rhythm from trend into rotation. The next normal production deploy should wait until v1.48-v1.50 unless a public-risk fix appears earlier.
 
 ## 5. SaaS architecture / SaaS 架构
 

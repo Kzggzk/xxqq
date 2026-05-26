@@ -12952,3 +12952,169 @@ body[data-theme="dark"] .lock-preview-chips i {
     padding: 2px 5px;
   }
 }
+
+/* v1.46 pass: make advanced preview, rotation, and momentum read as one mobile spine. */
+@media (max-width: 760px) {
+  .analysis-grid {
+    gap: 10px;
+  }
+
+  #premiumPreview,
+  .rotation-panel,
+  .momentum-panel {
+    position: relative;
+  }
+
+  .app-shell {
+    overflow-x: clip;
+    max-width: 100%;
+  }
+
+  #premiumPreview::after,
+  .rotation-panel::after {
+    content: "";
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: -8px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(40, 43, 39, 0.16), transparent);
+    pointer-events: none;
+  }
+
+  .premium-preview,
+  .rotation-panel,
+  .momentum-panel {
+    border-radius: 7px;
+    box-shadow: 0 1px 0 rgba(32, 32, 28, 0.05);
+  }
+
+  .premium-head,
+  .rotation-panel .section-head,
+  .momentum-panel .section-head {
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(35, 35, 30, 0.08);
+  }
+
+  .premium-head h2,
+  .rotation-panel .section-head h2,
+  .momentum-panel .section-head h2 {
+    font-size: clamp(18px, 5vw, 24px);
+    line-height: 1.02;
+  }
+
+  .premium-head p,
+  .rotation-panel .section-head p,
+  .momentum-panel .section-head p {
+    max-width: 34ch;
+  }
+
+  .premium-capability-rail,
+  .premium-unlock-deck,
+  .premium-grid,
+  .premium-lookback,
+  .premium-signal-stack,
+  .premium-quadrant,
+  .symbol-rotation,
+  .symbol-momentum {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .premium-preview,
+  .rotation-panel,
+  .momentum-panel {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  .premium-head,
+  .rotation-panel .section-head,
+  .momentum-panel .section-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 4px 8px;
+  }
+
+  .premium-head h2,
+  .rotation-panel .section-head h2,
+  .momentum-panel .section-head h2 {
+    margin: 0;
+  }
+
+  .premium-head p,
+  .rotation-panel .section-head p,
+  .momentum-panel .section-head p {
+    grid-column: 1 / -1;
+  }
+
+  .premium-capability-rail,
+  .premium-unlock-deck,
+  .premium-grid,
+  .premium-lookback,
+  .premium-signal-stack,
+  .premium-quadrant,
+  .symbol-rotation,
+  .symbol-momentum {
+    gap: 6px;
+  }
+
+  .premium-card,
+  .lookback-metrics span,
+  .signal-stack-rows span,
+  .premium-quadrant-stats span,
+  .rotation-head span,
+  .rotation-brief span,
+  .rotation-map-stats span,
+  .momentum-summary span {
+    border-radius: 6px;
+  }
+
+  .premium-card {
+    min-height: 58px;
+  }
+
+  .premium-card b {
+    font-size: 18px;
+  }
+
+  .premium-lookback,
+  .premium-signal-stack {
+    padding: 8px;
+  }
+
+  .premium-quadrant {
+    gap: 6px;
+  }
+
+  .premium-quadrant-map {
+    min-height: 142px;
+  }
+
+  .rotation-map-grid button {
+    min-width: 18px;
+    min-height: 18px;
+    max-width: 30px;
+    max-height: 30px;
+    font-size: 6.5px;
+    box-shadow: none;
+    opacity: 0.88;
+  }
+
+  .rotation-map-grid button:hover,
+  .rotation-map-grid button.symbol-active {
+    opacity: 1;
+    box-shadow: 0 0 0 2px rgba(17, 17, 17, 0.12);
+  }
+
+  .momentum-panel {
+    margin-bottom: 10px;
+  }
+}
+
+body[data-theme="dark"] #premiumPreview::after,
+body[data-theme="dark"] .rotation-panel::after {
+  background: linear-gradient(90deg, transparent, rgba(245, 241, 230, 0.16), transparent);
+}

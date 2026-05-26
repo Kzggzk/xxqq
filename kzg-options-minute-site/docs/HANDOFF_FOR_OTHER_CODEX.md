@@ -19,7 +19,7 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
 - Production version last verified / 最近生产验证版本: `1.45`
-- Local version last verified / 最近本地验证版本: `1.45`
+- Local version last verified / 最近本地验证版本: `1.46`
 - Latest unique deploy / 最近唯一部署: `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`
 - iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.3`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
@@ -75,6 +75,14 @@ Latest local v1.45 note:
 Web `1.45` is the latest production checkpoint and focuses on phone ledger density plus iOS companion sync. It preserves the v1.44 desktop/tablet stability, hides long mobile rotation narrative, reduces mobile rotation and momentum visible rows to `12` each, and updates the native SwiftUI companion to iOS `0.3`. Unique deploy: `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`. XcodeBuildMCP still hits a local simulator destination blocker, but `swiftc -typecheck` passes.
 
 Web `1.45` 是最新生产检查点，重点是手机端账本密度和 iOS 伴生端同步。它保留 v1.44 的桌面/iPad 稳定成果，隐藏手机端轮动长说明，把手机轮动与动量可见行都压到 `12` 条，并把原生 SwiftUI 伴生端更新到 iOS `0.3`。唯一部署：`https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`。XcodeBuildMCP 仍遇到本机 simulator destination 阻塞，但 `swiftc -typecheck` 通过。
+
+Latest local v1.46 note:
+
+最新本地 v1.46 说明：
+
+Web `1.46` is the latest local-only checkpoint. It is not deployed. It keeps production at v1.45 and improves the phone lower-page unity between advanced preview, symbol rotation, and symbol momentum. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.46`, mobile/narrow visual connector lines, unified section heading borders/radius, tighter premium/rotation/momentum gaps, and quieter mobile rotation dots capped at `30px`. Browser and Playwright verified v1.46, no console warnings/errors, no horizontal overflow, no public-risk string leak, and PNG export `/tmp/kzg-option-house-v146-export.png` at `1,482,138` bytes. Next deploy should normally wait until v1.48-v1.50.
+
+Web `1.46` 是最新本地检查点，未部署生产。生产仍为 v1.45。本轮改的是手机下半页统一感，把高级预览、标的轮动、核心动量三段接成更连续的读盘脊柱。主要代码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.46`、移动/窄屏连接线、统一 section heading 边界与圆角、更紧的 premium/rotation/momentum 间距、手机轮动气泡上限降到 `30px`。Browser 与 Playwright 已验证 v1.46、无 console warning/error、无横向溢出、无公开风险词泄露，PNG 导出 `/tmp/kzg-option-house-v146-export.png` 为 `1,482,138` bytes。下一次常规部署默认等 v1.48-v1.50。
 
 ## Verification checklist / 验证清单
 
