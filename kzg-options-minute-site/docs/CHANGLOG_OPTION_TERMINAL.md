@@ -29,7 +29,7 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
 - 最近验证唯一部署: `https://6a156cbee55c2318be31e1b4--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.36`
-- 最近本地验证 UI 版本: `1.38`
+- 最近本地验证 UI 版本: `1.39`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；当前本机目录没有找到 `2023-*.csv.gz`
@@ -46,7 +46,7 @@ English:
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
 - Latest verified unique deploy: `https://6a156cbee55c2318be31e1b4--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.36`
-- Latest locally verified UI version: `1.38`
+- Latest locally verified UI version: `1.39`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; no local `2023-*.csv.gz` files were found in the verified folder
@@ -564,3 +564,37 @@ Visual correction: The first v1.38 draft made `.pro-lock-overlay` cover the whol
 Verification: `node --check public/app.js` passed; build regenerated a `505`-day payload, latest trading day `2026-05-22`, pack asset `kzg-frame-257c256d3f5e.js`. The in-app Browser plugin returned a low-level browser object without tab controls in this round, so Playwright fallback was used for complete QA. Desktop `1440x1100` latest day shows `UI_VERSION 1.38`, `historyLocked=false`, horizontal overflow `0`, and console errors `0`. Historical timeline index `420`, date `2026-01-22`, triggers `historyLocked=true`, 5 `.pro-lock-overlay` nodes, 1 `.premium-lock`, 1 `.premium-quadrant-veil`, chips `Signal shape / History compare / Export boundary`, and horizontal overflow `0`. Mobile `390x844` shows `UI_VERSION 1.38`, horizontal overflow `0`, and console errors `0`. PNG export `/tmp/kzg-option-house-v138-export-final.png` succeeded at `1,482,138` bytes.
 
 Deploy cadence: this round is not deployed to production because it is a visual/experience iteration, not a public-risk fix. Production remains v1.36. v1.38 is accumulated as a GitHub/Apple Notes breadcrumb until the next 3-5 solid-version deploy checkpoint. Next v1.39 should compress the mobile topbar/button height and inspect lower advanced analysis-panel rhythm to avoid any new large blank areas.
+
+## 22. Heartbeat v1.39 compressed mobile command bar / 心跳 v1.39 移动端指令栏压缩
+
+中文:
+
+北京时间 2026-05-26 18:50 心跳进入 Web v1.39。触发背景是继续执行 dense paid-product/UI goal，同时承接 Fangbao 对移动端截图的反馈：spacing 和 calligraphy 仍然要不断进化，顶部工具和空白不能吞掉首屏，用户在手机上打开时必须更快进入时间轴、核心数据和今日读盘总线。本轮只改公开 UI 和日志，不碰 KZG OS 保护路径，不做 Stripe、Supabase、域名、Massive 升级、App Store、TestFlight 或任何花钱动作。
+
+改动文件：`/Users/fangbao/kzg-options-minute-site/public/app.js`、`/Users/fangbao/kzg-options-minute-site/public/styles.css`、`/Users/fangbao/kzg-options-minute-site/docs/CHANGELOG.md`、`/Users/fangbao/kzg-options-minute-site/docs/CHANGLOG_OPTION_TERMINAL.md`、`/Users/fangbao/kzg-options-minute-site/docs/HANDOFF_FOR_OTHER_CODEX.md`、`/Users/fangbao/kzg-options-minute-site/docs/DENSE_VERSIONING.md`。生成文件 `public/data/index.json` 和 `public/reports/2026-01-02.html` 因 build 变脏，但继续作为 raw/generated exception，不提交。
+
+产品动作：`UI_VERSION` 从 `1.38` 提到 `1.39`。在 `public/styles.css` 末尾追加 v1.39 移动端 final layer，针对 `max-width: 760px` 压缩 `.analysis-grid`、`.panel`、`.section-head`、trend/signal/bucket/rotation/momentum 区域间距；针对 `max-width: 520px` 把 `.topbar` 改成两行紧凑结构，第一行是品牌和日期，第二行是四个等宽工具按钮，`.primary-action` 不再横跨整行，按钮高度压到 `31px` 附近。
+
+视觉结果：手机第一屏的空间分配明显改善。Playwright `390x844` 实测 topbar 高度为 `89px`，而上一轮记录的移动端 topbar 高度约为 `258px`；四个按钮网格为 `87.75px 87.75px 87.75px 87.75px`；首屏能看到 topbar、交易日时间轴、核心 Market summary 和今日读盘总线开头。桌面 `1440x1100` topbar 保持 `69px`，analysis gap 为 `16px`，无横向溢出。历史日期模糊态仍保留 v1.38 的小浮层结构，没有退回大白块。
+
+公开边界：风险扫描继续通过。公开 source 与 dist app shell 中没有 Stripe、Checkout、Wallet、Crypto、微信、WeChat、Namecheap、Network Solutions、optionflow、optionpulse、flowgamma、价格、pricing、payment、billing、注册、订阅、升级、降级、API key、Massive plan 等内部商业或授权词。packed data asset 因为是压缩数据包而排除扫描，不作为公开文案判断依据。
+
+验证结果：`node --check public/app.js` 通过；build 重新生成 `505` 天 payload，最新交易日 `2026-05-22`，pack asset `kzg-frame-c49af8aef19c.js`。本轮 Browser 插件仍然只能返回不可操作的底层对象，所以继续使用 Playwright fallback。桌面 `1440x1100` 显示 v1.39、`historyLocked=false`、横向溢出 `0`、console error `0`。历史 timeline index `420` 触发 `historyLocked=true`、overlayCount `5`、浮层宽约 `382px`、标签包含“方向轮廓 / 历史对比 / 导出边界”、横向溢出 `0`。手机 `390x844` 显示 v1.39、横向溢出 `0`、console error `0`。PNG 导出 `/tmp/kzg-option-house-v139-export.png` 成功，大小 `1,482,138` bytes。
+
+部署节奏：本轮不部署生产，因为它是移动端 spacing/calligraphy 修正，不是公开风险修复。生产仍为 v1.36。v1.39 作为 GitHub/Apple Notes 留痕版本累计。下一步 v1.40 是默认部署 checkpoint，也是 iOS companion 从 Web v1.35 以来的 5-version checkpoint；如果继续执行，v1.40 应同步做生产前综合 QA、Netlify production deploy、GitHub backup，以及 iOS companion 的一次小幅同步。
+
+English:
+
+The 2026-05-26 18:50 Asia/Shanghai heartbeat entered Web v1.39. The trigger was the continuing dense paid-product/UI goal plus Fangbao's mobile screenshot feedback: spacing and calligraphy must keep evolving, top tools and blank areas must not consume the first screen, and phone users should reach the timeline, key data, and daily read bus sooner. This round changes only public UI and logs. Protected KZG OS paths were not touched. No Stripe, Supabase, domain, Massive upgrade, App Store, TestFlight, or spending action was performed.
+
+Changed files: `/Users/fangbao/kzg-options-minute-site/public/app.js`, `/Users/fangbao/kzg-options-minute-site/public/styles.css`, `/Users/fangbao/kzg-options-minute-site/docs/CHANGELOG.md`, `/Users/fangbao/kzg-options-minute-site/docs/CHANGLOG_OPTION_TERMINAL.md`, `/Users/fangbao/kzg-options-minute-site/docs/HANDOFF_FOR_OTHER_CODEX.md`, and `/Users/fangbao/kzg-options-minute-site/docs/DENSE_VERSIONING.md`. Generated `public/data/index.json` and `public/reports/2026-01-02.html` are dirty because of build output, but remain raw/generated exceptions and should not be committed.
+
+Product action: `UI_VERSION` moved from `1.38` to `1.39`. A v1.39 final mobile layer was appended at the end of `public/styles.css`: at `max-width: 760px`, it reduces `.analysis-grid`, `.panel`, `.section-head`, trend/signal/bucket/rotation/momentum spacing; at `max-width: 520px`, `.topbar` becomes a compact two-row structure, with brand/date first and four equal-width tool buttons second. `.primary-action` no longer spans a full row, and button height is compressed to about `31px`.
+
+Visual result: first-screen phone density is materially better. Playwright `390x844` measured topbar height at `89px`, versus the previous mobile topbar record of about `258px`; the four-button toolbar grid is `87.75px 87.75px 87.75px 87.75px`; the first viewport now includes topbar, trading-day timeline, core Market summary, and the start of the daily read bus. Desktop `1440x1100` keeps topbar at `69px`, analysis gap at `16px`, and no horizontal overflow. Historical blur states preserve the v1.38 compact floating overlays and do not revert to large white blocks.
+
+Public boundary: risk scans still pass. Public source and dist app shell contain no Stripe, Checkout, Wallet, Crypto, WeChat, Namecheap, Network Solutions, optionflow, optionpulse, flowgamma, price, pricing, payment, billing, registration, subscription, upgrade, downgrade, API key, or Massive plan strings. The packed data asset is excluded because it is compressed data, not visible public copy.
+
+Verification: `node --check public/app.js` passed; build regenerated a `505`-day payload, latest trading day `2026-05-22`, pack asset `kzg-frame-c49af8aef19c.js`. The Browser plugin still only returned a non-operable low-level object, so Playwright fallback was used. Desktop `1440x1100` shows v1.39, `historyLocked=false`, horizontal overflow `0`, and console errors `0`. Historical timeline index `420` triggers `historyLocked=true`, overlayCount `5`, overlay width about `382px`, chips `Signal shape / History compare / Export boundary`, and horizontal overflow `0`. Mobile `390x844` shows v1.39, horizontal overflow `0`, and console errors `0`. PNG export `/tmp/kzg-option-house-v139-export.png` succeeded at `1,482,138` bytes.
+
+Deploy cadence: this round is not deployed to production because it is a mobile spacing/calligraphy correction, not a public-risk fix. Production remains v1.36. v1.39 is accumulated as a GitHub/Apple Notes breadcrumb. Next v1.40 is the default deploy checkpoint and the iOS companion's 5-version checkpoint from Web v1.35; if the loop continues, v1.40 should combine pre-production QA, Netlify production deploy, GitHub backup, and a small iOS companion sync.

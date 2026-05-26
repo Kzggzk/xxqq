@@ -11179,3 +11179,162 @@ body[data-theme="dark"] .lock-preview-chips i {
     border-top: 0;
   }
 }
+
+/* v1.39 pass: final mobile chrome compression and lower-panel rhythm. */
+@media (max-width: 760px) {
+  .analysis-grid {
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .panel {
+    padding: 12px;
+  }
+
+  .section-head {
+    margin-bottom: 10px;
+  }
+
+  .section-head h2 {
+    font-size: 15px;
+  }
+
+  .section-head p {
+    margin-top: 4px;
+    line-height: 1.35;
+  }
+
+  .trend-cockpit,
+  .signal-dashboard,
+  .bucket-rhythm,
+  .rotation-map,
+  .symbol-momentum {
+    gap: 8px;
+  }
+
+  .trend-radar,
+  .signal-metrics,
+  .bucket-metrics,
+  .rotation-summary,
+  .focus-metrics {
+    gap: 6px;
+  }
+}
+
+@media (max-width: 520px) {
+  .topbar {
+    grid-template-columns: minmax(0, 1fr) minmax(104px, auto);
+    align-items: center;
+    gap: 6px 10px;
+    padding: 7px 12px 8px;
+  }
+
+  .brand {
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .mark {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .brand h1 {
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .brand p {
+    margin-top: 2px;
+    overflow: hidden;
+    font-size: 8px;
+    letter-spacing: 0.08em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .dateplate {
+    justify-self: end;
+    max-width: 118px;
+    min-width: 0;
+    text-align: right;
+  }
+
+  .dateplate b,
+  .dateplate span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .dateplate b {
+    font-size: 13px;
+  }
+
+  .dateplate span {
+    margin-top: 2px;
+    font-size: 8px;
+  }
+
+  .toolbar {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 5px;
+    width: 100%;
+  }
+
+  .toolbar .button,
+  .toolbar .button.primary {
+    grid-column: auto;
+    min-width: 0;
+    min-height: 31px;
+    gap: 3px;
+    padding: 0 5px;
+    overflow: hidden;
+    font-size: 10px;
+  }
+
+  .toolbar .button span:first-child {
+    font-size: 10px;
+  }
+
+  .toolbar .button span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .timeboard {
+    padding-top: 18px;
+  }
+
+  .premium-preview {
+    margin-top: 12px;
+    padding: 9px;
+  }
+
+  .premium-capability-rail,
+  .data-audit-seal,
+  .premium-unlock-deck,
+  .premium-grid,
+  .premium-lookback,
+  .premium-signal-stack,
+  .premium-quadrant {
+    gap: 7px;
+  }
+
+  .capability-lead,
+  .audit-lead,
+  .audit-note,
+  .unlock-lead,
+  .lookback-head,
+  .premium-quadrant-copy,
+  .signal-stack-lead {
+    padding: 10px;
+  }
+}
