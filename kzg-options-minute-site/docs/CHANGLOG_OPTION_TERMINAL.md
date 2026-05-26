@@ -27,8 +27,8 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 远端: `https://github.com/Kzggzk/xxqq.git`
 - 生产站: `https://kzg-option-house.netlify.app/`
 - 最近生产风险修复 commit: `6c909a9 remove public commercial planning from option house`
-- 最近验证唯一部署: `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`
-- 最近生产 UI 显示版本: `1.42`
+- 最近验证唯一部署: `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`
+- 最近生产 UI 显示版本: `1.45`
 - 最近本地验证 UI 版本: `1.45`
 - 当前 iOS 伴生版本: `0.3`，对应 Web `1.45`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
@@ -45,8 +45,8 @@ English:
 - Remote: `https://github.com/Kzggzk/xxqq.git`
 - Production site: `https://kzg-option-house.netlify.app/`
 - Latest public-risk fix commit: `6c909a9 remove public commercial planning from option house`
-- Latest verified unique deploy: `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`
-- Latest visible production UI version: `1.42`
+- Latest verified unique deploy: `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`
+- Latest visible production UI version: `1.45`
 - Latest locally verified UI version: `1.45`
 - Current iOS companion version: `0.3`, mapped to Web `1.45`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
@@ -264,7 +264,7 @@ Current state: GitHub docs are updated, Apple Notes should sync from this file, 
 
 视觉验证：Playwright/Chrome 本地桌面 `1440x1100` 显示 v1.45，topbar `69px`、timeline `137px`、rotation `814px`、momentum `585px`、`overflowX=0`、`user-select:none`、无 console error。手机 `390x844` 显示 v1.45，topbar `91px`、高级预览 `3163px`、rotation panel `778px`、momentum panel `959px`、可见轮动行 `12`、可见动量行 `12`、`overflowX=0`、无内部词泄露。PNG 导出实际点击成功，文件 `/tmp/kzg-option-house-v145-export.png`，建议文件名 `kzg-option-house-2026-05-22-zh.png`，大小 `1,482,138` bytes。截图证据：`/tmp/kzg-option-house-v145-desktop.png`、`/tmp/kzg-option-house-v145-mobile.png`、`/tmp/kzg-option-house-v145-mobile-rotation.png`。
 
-当前状态：v1.45 是本地/GitHub/Apple Notes 留痕版本，不是生产部署版本。生产仍是 v1.42 唯一部署 `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`。下一步 v1.46 应继续处理手机下半页三段之间的统一感：高级预览、轮动、动量之间不要像三个不同产品拼起来；若再累计 3-5 个扎实版本，或者出现公开风险修复，则重新 build、验证、部署生产。
+当前状态：v1.45 已成为生产部署版本。生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`。线上 smoke 已确认 `/`、`/r/latest.html`、`/latest` 为 `200`，`/data/index.json` 与 `/assets/kzg-pack.js` 为 `404`，线上 `/app.js` 为 `UI_VERSION="1.45"`，手机 `390x844` 无横向溢出且无公开风险词泄露。下一步 v1.46 应继续处理手机下半页三段之间的统一感：高级预览、轮动、动量之间不要像三个不同产品拼起来；下一次常规部署默认等 v1.48-v1.50，除非出现公开风险修复。
 
 English:
 
@@ -276,7 +276,7 @@ Verified facts: `node --check public/app.js` passed; build produced a `505`-day 
 
 Visual verification: local Playwright/Chrome desktop `1440x1100` showed v1.45 with topbar `69px`, timeline `137px`, rotation `814px`, momentum `585px`, `overflowX=0`, `user-select:none`, and no console errors. Mobile `390x844` showed v1.45 with topbar `91px`, advanced preview `3163px`, rotation panel `778px`, momentum panel `959px`, visible rotation rows `12`, visible momentum rows `12`, `overflowX=0`, and no internal string leak. PNG export was clicked successfully: `/tmp/kzg-option-house-v145-export.png`, suggested filename `kzg-option-house-2026-05-22-zh.png`, size `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v145-desktop.png`, `/tmp/kzg-option-house-v145-mobile.png`, `/tmp/kzg-option-house-v145-mobile-rotation.png`.
 
-Current state: v1.45 is a local/GitHub/Apple Notes breadcrumb, not a production deploy. Production remains the v1.42 unique deploy `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`. Next v1.46 should continue unifying the mobile lower-page rhythm across advanced preview, rotation, and momentum so they do not feel like three different products. After another 3-5 solid versions, or immediately after any public-risk fix, rebuild, verify, and deploy production again.
+Current state: v1.45 is now a production deploy. Production site `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`. Live smoke confirmed `/`, `/r/latest.html`, and `/latest` as `200`, `/data/index.json` and `/assets/kzg-pack.js` as `404`, live `/app.js` as `UI_VERSION="1.45"`, and phone `390x844` with no horizontal overflow or public-risk string leak. Next v1.46 should continue unifying the mobile lower-page rhythm across advanced preview, rotation, and momentum so they do not feel like three different products. The next normal deploy should wait until v1.48-v1.50 unless a public-risk fix appears earlier.
 
 ## 5. SaaS architecture / SaaS 架构
 

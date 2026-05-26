@@ -18,9 +18,9 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Remote / 远端: `https://github.com/Kzggzk/xxqq.git`
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
-- Production version last verified / 最近生产验证版本: `1.42`
+- Production version last verified / 最近生产验证版本: `1.45`
 - Local version last verified / 最近本地验证版本: `1.45`
-- Latest unique deploy / 最近唯一部署: `https://6a158610e727dc1f741ecf8a--kzg-option-house.netlify.app/`
+- Latest unique deploy / 最近唯一部署: `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`
 - iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.3`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
 - Local verified option-minute window / 本地已验证期权分钟范围: `2024-05-17 -> 2026-05-22`, `505` files.
@@ -72,9 +72,9 @@ Latest local v1.45 note:
 
 最新本地 v1.45 说明：
 
-Web `1.45` is local-only and focuses on phone ledger density plus iOS companion sync. It keeps production at v1.42, preserves the v1.44 desktop/tablet stability, hides long mobile rotation narrative, reduces mobile rotation and momentum visible rows to `12` each, and updates the native SwiftUI companion to iOS `0.3`. XcodeBuildMCP still hits a local simulator destination blocker, but `swiftc -typecheck` passes.
+Web `1.45` is the latest production checkpoint and focuses on phone ledger density plus iOS companion sync. It preserves the v1.44 desktop/tablet stability, hides long mobile rotation narrative, reduces mobile rotation and momentum visible rows to `12` each, and updates the native SwiftUI companion to iOS `0.3`. Unique deploy: `https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`. XcodeBuildMCP still hits a local simulator destination blocker, but `swiftc -typecheck` passes.
 
-Web `1.45` 仅本地验证，重点是手机端账本密度和 iOS 伴生端同步。生产站保持 v1.42，保留 v1.44 的桌面/iPad 稳定成果，隐藏手机端轮动长说明，把手机轮动与动量可见行都压到 `12` 条，并把原生 SwiftUI 伴生端更新到 iOS `0.3`。XcodeBuildMCP 仍遇到本机 simulator destination 阻塞，但 `swiftc -typecheck` 通过。
+Web `1.45` 是最新生产检查点，重点是手机端账本密度和 iOS 伴生端同步。它保留 v1.44 的桌面/iPad 稳定成果，隐藏手机端轮动长说明，把手机轮动与动量可见行都压到 `12` 条，并把原生 SwiftUI 伴生端更新到 iOS `0.3`。唯一部署：`https://6a15912a59bdd5425440cdb1--kzg-option-house.netlify.app/`。XcodeBuildMCP 仍遇到本机 simulator destination 阻塞，但 `swiftc -typecheck` 通过。
 
 ## Verification checklist / 验证清单
 
