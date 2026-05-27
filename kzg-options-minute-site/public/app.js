@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.71";
+const UI_VERSION = "1.72";
 
 const dataAudit = {
   dataset: "23_DATA_期权分钟_Minute",
@@ -30,6 +30,17 @@ const dataAudit = {
   releaseTo: "1.25",
   extraVersions: 24,
 };
+
+function syncDataAuditFromIndex() {
+  const dates = state.index?.dates || [];
+  if (!dates.length) return;
+  dataAudit.fileCount = dates.length;
+  dataAudit.complete = dates.length;
+  dataAudit.coverageEnd = state.index.latestDate || dates[0]?.date || dataAudit.coverageEnd;
+  dataAudit.coverageStart = dates[dates.length - 1]?.date || dataAudit.coverageStart;
+  const bytes = dates.reduce((sum, item) => sum + (Number(item.sourceSize) || 0), 0);
+  if (bytes > 0) dataAudit.bytes = bytes;
+}
 
 const $ = (id) => document.getElementById(id);
 const fmt0 = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
@@ -294,6 +305,7 @@ async function loadIndex() {
   state.dayCache = new Map(Object.entries(payload.days || {}));
   state.datesAsc = [...state.index.dates].reverse();
   if (!state.datesAsc.length) throw new Error("No trading days found.");
+  syncDataAuditFromIndex();
 
   $("timelineStart").textContent = state.datesAsc[0].date.replaceAll("-", "/");
   $("timelineEnd").textContent = state.index.latestDate.replaceAll("-", "/");
