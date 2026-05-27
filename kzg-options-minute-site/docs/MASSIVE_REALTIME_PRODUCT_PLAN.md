@@ -156,6 +156,25 @@ The story strip should follow these rules:
 7. The strip may scroll users into open historical panels, but it must not imply unlock, subscription, realtime entitlement, or provider access.
 8. 故事条可以把用户滚动到开放历史面板，但不得暗示解锁、订阅、实时权限或供应商访问。
 
+## v1.65 story-to-panel focus rule / v1.65 故事到面板聚焦规则
+
+v1.65 adds orientation feedback after the open-history story/path click. This is a UX handoff rule for the public historical layer, not a monetization or realtime-access rule.
+
+v1.65 在开放历史故事/路径点击后加入定位反馈。这是公开历史层的体验接力规则，不是商业化或实时权限规则。
+
+Implementation boundary:
+
+实现边界：
+
+1. A click may scroll to an open historical panel and briefly focus the target panel.
+2. 点击可以滚动到开放历史面板，并短暂聚焦目标面板。
+3. The focus pulse should help users understand where the story beat landed.
+4. 聚焦反馈用于帮助用户理解这个故事节拍落到了哪个区块。
+5. The pulse must not look like a locked/paywalled card, checkout state, entitlement marker, or realtime access state.
+6. 聚焦反馈不得看起来像锁定、付费墙、结账状态、权限标记或实时访问状态。
+7. Existing generated-minute history remains public and readable.
+8. 现有生成分钟历史层继续公开可读。
+
 ## Verified official facts / 已核官方事实
 
 Checked on 2026-05-26 Asia/Shanghai against Massive official docs/pages.

@@ -29,12 +29,12 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.63` open-history path router，具体 commit 以最新 GitHub backup 提交为准
 - 最近验证唯一部署: `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.63`
-- 最近本地稠密版本: `1.64`，本轮为 Web 开放历史层“开放读盘四拍”故事条；生产仍是 `1.63`；iOS 仍是 `0.6`
+- 最近本地稠密版本: `1.65`，本轮为 Web 开放历史层故事卡到目标面板的聚焦接力；生产仍是 `1.63`；iOS 仍是 `0.6`
 - 当前 iOS 伴生版本: `0.6`，对应稠密 Web `1.62`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；官方 flat-file 文档显示有 `2023/2023` 目录，但当前公开站只使用本机已证实的 `2024-05-17 -> 2026-05-22`，且本 agent 不使用暴露过的 key 测账号权限；公开参考 <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
-- Apple Notes: 置顶同名 note 已在 v1.64 后同步，`updated=1`，`created=0`，正文 `182,813` chars
+- Apple Notes: 置顶同名 note 已在 v1.65 后同步，`updated=1`，`created=0`，正文 `189,646` chars
 - GitHub: 需要持续提交 docs，让另一个 Codex 能从仓库继续
 
 English:
@@ -47,15 +47,41 @@ English:
 - Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.63` open-history path router; exact commit is the latest GitHub backup commit
 - Latest verified unique deploy: `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.63`
-- Latest local dense version: `1.64`, used for the Web open-history four-beat story strip; production remains `1.63`; iOS remains `0.6`
+- Latest local dense version: `1.65`, used for the Web open-history story-to-panel focus handoff; production remains `1.63`; iOS remains `0.6`
 - Current iOS companion version: `0.6`, mapped to dense Web `1.62`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; official flat-file docs show a `2023/2023` directory, but the public site only uses locally proven `2024-05-17 -> 2026-05-22`, and this agent must not use exposed keys to test account entitlement; public reference <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
-- Apple Notes: pinned note with this title was synced after v1.64, `updated=1`, `created=0`, `182,813` body characters
+- Apple Notes: pinned note with this title was synced after v1.65, `updated=1`, `created=0`, `189,646` body characters
 - GitHub: keep docs committed so another Codex can continue from the repository
 
-## 1A. Latest heartbeat record v1.64 / 最新心跳记录 v1.64
+## 1A. Latest heartbeat record v1.65 / 最新心跳记录 v1.65
+
+中文:
+
+北京时间 2026-05-27 15:44 左右，稠密版本 `1.65` 完成 Web 开放历史层故事卡到目标面板的聚焦接力。本轮不部署生产；生产仍是 `1.63`，生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`。本轮继续执行 Fangbao 最新公开边界：当前生成分钟能力全部开放，历史趋势、轮动、事件队列、PNG 导出不 blur、不 lock、不 paywall；只有未来 realtime option-flow tape/reserve 可以保留预留式 blur。公开站仍不展示真实 API key、供应商名、套餐、支付、域名、注册、账号或内部商业规划。
+
+改动文件：`public/app.js`、`public/styles.css`、`docs/CHANGELOG.md`、`docs/CHANGLOG_OPTION_TERMINAL.md`、`docs/DENSE_VERSIONING.md`、`docs/HANDOFF_FOR_OTHER_CODEX.md`、`docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`、`docs/PLUGIN_SERVICE_STATUS.md`、`docs/CHANGLOG_OPTION_TERMINAL_MINDMAP.opml`。`public/app.js` 把 `UI_VERSION` 提到 `1.65`，并新增 `scrollToSector()`。它替代原先点击 `[data-scroll-sector]` 后直接 `scrollIntoView()` 的行为：先找目标节点，再找外层 `.panel`，清除其他 `.history-scroll-focus`，给目标面板加聚焦 class，滚动到目标位置，1.8 秒后自动移除聚焦状态。`public/styles.css` 给 `.panel` 加 `scroll-margin-top: 88px`，并新增浅色/深色两套 `history-scroll-focus` 动画。
+
+体验调整：v1.63 解决“怎么从未来实时预留区进入开放历史层”；v1.64 解决“进入历史层先看哪四拍”；v1.65 解决“点完四拍以后我落到了哪里”。桌面点击 `量变/Drift` story card 后落到跨日趋势面板，`.trend-panel.history-scroll-focus` 出现；手机点击 `扩散/Breadth` story card 后落到轮动扩散面板，`.rotation-panel.history-scroll-focus` 出现。这个聚焦反馈只是开放历史层的方向感，不是解锁、订阅、付费门槛、实时权限或商业暗示。
+
+验证结果：`node --check public/app.js` 通过；`git diff --check -- public/app.js public/styles.css` 通过；公开风险词扫描 `public/app.js public/index.html public/styles.css` 无命中。build 生成 `505` 天 payload，latest `2026-05-22`，analytics days `505`，analytics symbols `98`，pack asset `kzg-frame-f4c56892294d.js`，`per_day_to_dist` 返回 `copied=505`。Browser 本地打开 `http://127.0.0.1:4204/`，确认标题、`1.65`、story cards 4、path buttons 4、future realtime gated 1、旧 blur/lock 0、横向溢出 0、console issue 0，点击后目标 `.panel.history-scroll-focus` 存在。Playwright 对 dist `http://127.0.0.1:4205/` 验证桌面和手机：页面非空、标题正确、story cards 4、桌面点击 `trendChart` 后 `.trend-panel.history-scroll-focus` 为 1、手机点击 `symbolRotation` 后 `.rotation-panel.history-scroll-focus` 为 1、横向溢出 0、旧 `.is-blurred`/`.is-locked` 0、console issue 0；最终构建后手机 smoke 仍显示 `1.65 · 505/505 complete`、story cards 4、rotation focus 1、横向溢出 0。PNG 导出成功且大小保持 `1,482,138` bytes。截图证据：`/tmp/kzg-option-house-v165-dist-desktop.png`、`/tmp/kzg-option-house-v165-focus-desktop.png`、`/tmp/kzg-option-house-v165-dist-mobile.png`、`/tmp/kzg-option-house-v165-focus-mobile.png`、`/tmp/kzg-option-house-v165-export.png`。
+
+阻塞与下一步：本轮没有 iOS 同步，因为 iOS 已在 Web v1.62 同步为 `0.6`，默认下次在 Web v1.67 左右。真实 API、Massive plan 升级、域名购买、Stripe/Supabase/支付、TestFlight 或任何花钱/传密钥动作都未执行。下一步 `1.66` 应继续把下半区开放历史模块从“信息堆叠”压成“顺滑读盘产品”：优先处理 bucket risk 到 symbol rotation 的转场、手机图表高度、文字节奏和下拉定位；仍不接真实 key、不做真实升级、不花钱、不提交 raw data。
+
+English:
+
+Around 2026-05-27 15:44 Asia/Shanghai, dense version `1.65` completed the Web open-history story-to-panel focus handoff. This round is not deployed; production remains `1.63` at `https://kzg-option-house.netlify.app/`, unique deploy `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`. It keeps Fangbao's latest public boundary: all generated-minute capabilities stay open; historical trends, rotation, event queues, and PNG export are not blurred, locked, or paywalled; only the future realtime option-flow tape/reserve may keep a reserve-style blur. The public site still must not expose real API keys, provider names, plan details, payment, domains, registration, accounts, or internal commercial planning.
+
+Changed files: `public/app.js`, `public/styles.css`, `docs/CHANGELOG.md`, `docs/CHANGLOG_OPTION_TERMINAL.md`, `docs/DENSE_VERSIONING.md`, `docs/HANDOFF_FOR_OTHER_CODEX.md`, `docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`, `docs/PLUGIN_SERVICE_STATUS.md`, and `docs/CHANGLOG_OPTION_TERMINAL_MINDMAP.opml`. `public/app.js` moves `UI_VERSION` to `1.65` and adds `scrollToSector()`. It replaces direct `scrollIntoView()` behavior after `[data-scroll-sector]` clicks: find the target node, resolve the surrounding `.panel`, clear other `.history-scroll-focus` nodes, focus the target panel, scroll to it, and remove the focus state after 1.8 seconds. `public/styles.css` adds `scroll-margin-top: 88px` to `.panel` and adds light/dark `history-scroll-focus` animations.
+
+Experience: v1.63 answered how to enter the open historical layer from the future realtime reserve; v1.64 answered what four beats to read first; v1.65 answers where the user landed after tapping a beat. On desktop, clicking the `Drift` story card lands on the cross-day trend panel and `.trend-panel.history-scroll-focus` appears. On phone, clicking the `Breadth` story card lands on the rotation panel and `.rotation-panel.history-scroll-focus` appears. This focus feedback is only orientation for the open historical layer, not an unlock, subscription, paid gate, realtime entitlement, or commercial hint.
+
+Verification result: `node --check public/app.js` passed; `git diff --check -- public/app.js public/styles.css` passed; public-risk scan across `public/app.js public/index.html public/styles.css` had no matches. Build produced a `505`-day payload, latest `2026-05-22`, analytics days `505`, analytics symbols `98`, pack asset `kzg-frame-f4c56892294d.js`, and `per_day_to_dist` returned `copied=505`. Browser opened local `http://127.0.0.1:4204/` and confirmed title, `1.65`, 4 story cards, 4 path buttons, future realtime gated 1, old blur/lock 0, horizontal overflow 0, console issues 0, and target `.panel.history-scroll-focus` after click. Playwright against dist `http://127.0.0.1:4205/` verified desktop and phone: page not blank, title correct, story cards 4, desktop click to `trendChart` gives `.trend-panel.history-scroll-focus = 1`, phone click to `symbolRotation` gives `.rotation-panel.history-scroll-focus = 1`, horizontal overflow 0, old `.is-blurred`/`.is-locked` 0, and console issues 0; post-build phone smoke still showed `1.65 · 505/505 complete`, story cards 4, rotation focus 1, and horizontal overflow 0. PNG export succeeded and stayed at `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v165-dist-desktop.png`, `/tmp/kzg-option-house-v165-focus-desktop.png`, `/tmp/kzg-option-house-v165-dist-mobile.png`, `/tmp/kzg-option-house-v165-focus-mobile.png`, and `/tmp/kzg-option-house-v165-export.png`.
+
+Blocker and next step: No iOS sync this round because iOS already synced to `0.6` at Web v1.62; the next default sync remains around Web v1.67. No real API, Massive plan upgrade, domain purchase, Stripe/Supabase/payment action, TestFlight action, spending, or secret transmission happened. Next `1.66` should keep turning the lower open-history area from an information stack into a smoother reading product: prioritize the transition from bucket risk to symbol rotation, phone chart height, text rhythm, and scroll orientation. Still do not connect real keys, perform real upgrades, spend money, or commit raw data.
+
+## 1B. Latest heartbeat record v1.64 / 最新心跳记录 v1.64
 
 中文:
 

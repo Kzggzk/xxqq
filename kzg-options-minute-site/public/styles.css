@@ -15098,6 +15098,18 @@ body[data-theme="dark"] .feed-boundary-rail span {
   box-shadow: inset 3px 0 0 rgba(47, 97, 144, 0.76);
 }
 
+.panel {
+  scroll-margin-top: 88px;
+}
+
+.panel.history-scroll-focus {
+  animation: history-scroll-focus 1800ms ease both;
+}
+
+body[data-theme="dark"] .panel.history-scroll-focus {
+  animation-name: history-scroll-focus-dark;
+}
+
 @keyframes realtime-scan {
   0% {
     transform: translateY(-100%);
@@ -15114,6 +15126,32 @@ body[data-theme="dark"] .feed-boundary-rail span {
   }
   48% {
     opacity: 1;
+  }
+}
+
+@keyframes history-scroll-focus {
+  0% {
+    box-shadow: 0 0 0 0 rgba(167, 128, 44, 0);
+  }
+  20% {
+    border-color: rgba(167, 128, 44, 0.68);
+    box-shadow: 0 0 0 4px rgba(167, 128, 44, 0.16), 0 12px 28px rgba(60, 52, 35, 0.11);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(167, 128, 44, 0);
+  }
+}
+
+@keyframes history-scroll-focus-dark {
+  0% {
+    box-shadow: 0 0 0 0 rgba(225, 159, 74, 0);
+  }
+  20% {
+    border-color: rgba(225, 159, 74, 0.58);
+    box-shadow: 0 0 0 4px rgba(225, 159, 74, 0.16), 0 12px 28px rgba(0, 0, 0, 0.36);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(225, 159, 74, 0);
   }
 }
 

@@ -19,7 +19,7 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
 - Production version last verified / 最近生产验证版本: `1.63`
-- Local version last verified / 最近本地验证版本: `1.64` Web open-history four-beat story strip
+- Local version last verified / 最近本地验证版本: `1.65` Web story-to-panel focus handoff
 - Latest unique deploy / 最近唯一部署: `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`
 - iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.6`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
@@ -75,6 +75,14 @@ Latest local v1.64 note:
 Web `1.64` is the latest local checkpoint; production remains `1.63`. Main source changes are `public/app.js` and `public/styles.css`: UI version `1.64`, new `historyStoryStrip()` below `historyLayerPath()`, and a public-open four-beat story strip for drift, pressure minute, breadth, and premium-notional anchor. The premium anchor now uses largest `premiumNotional` rather than the fastest premium-growth row, so the card reads as a true capital-weight entry (`SPY $2.1B` in the current 2026-05-22 data). Local Browser on `http://127.0.0.1:4202/` and Playwright on dist `http://127.0.0.1:4203/` passed: story cards 4, path buttons 4, old `.is-blurred` 0, future realtime gated 1, public-risk false, horizontal overflow 0 on desktop and phone, phone `#sourcePath` shows `1.64`, PNG export `1,482,138` bytes. No production deploy happened because v1.63 was just deployed and no public-risk fix was needed.
 
 Web `1.64` 是最新本地检查点；生产仍是 `1.63`。主要源码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.64`，在 `historyLayerPath()` 下新增 `historyStoryStrip()`，用公开开放的四拍故事条解释量变、压力分钟、扩散和权利金金额锚点。权利金锚点现在用最大的 `premiumNotional`，不再用最快的权利金增速行，所以这张卡读起来是真正的资金权重入口（当前 `2026-05-22` 数据为 `SPY $2.1B`）。本地 Browser `http://127.0.0.1:4202/` 与 Playwright dist `http://127.0.0.1:4203/` 通过：story cards 4、path buttons 4、旧 `.is-blurred` 0、future realtime gated 1、公开风险 false、桌面和手机横向溢出 0、手机 `#sourcePath` 显示 `1.64`、PNG 导出 `1,482,138` bytes。本轮未部署生产，因为 v1.63 刚部署，且没有公开风险修复需求。
+
+Latest local v1.65 note:
+
+最新本地 v1.65 说明：
+
+Web `1.65` is the latest local checkpoint; production remains `1.63`. Main source changes are `public/app.js` and `public/styles.css`: UI version `1.65`, new `scrollToSector()` replacing direct section scrolling, `.panel` scroll margin, and light/dark `.history-scroll-focus` pulse animation. Clicking a v1.64 story card or an open-history path card now scrolls to the target open historical panel and briefly highlights that panel, so users do not lose orientation in the long historical section. Local Browser on `http://127.0.0.1:4204/` passed: story cards 4, path buttons 4, future realtime gated 1, old blur/lock 0, horizontal overflow 0, console issue 0, and clicked target panel focused. Playwright on dist `http://127.0.0.1:4205/` passed on desktop and phone: title correct, not blank, story cards 4, `.trend-panel.history-scroll-focus` after desktop trend click, `.rotation-panel.history-scroll-focus` after phone rotation click, horizontal overflow 0, old `.is-blurred`/`.is-locked` 0, and PNG export still `1,482,138` bytes. No production deploy happened because this is a local interaction-rhythm improvement and no public-risk fix was needed.
+
+Web `1.65` 是最新本地检查点；生产仍是 `1.63`。主要源码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.65`，新增 `scrollToSector()` 替换直接 section 滚动，给 `.panel` 增加 scroll margin，并新增浅色/深色 `.history-scroll-focus` 聚焦动画。点击 v1.64 故事卡或开放历史路径卡后，会滚动到目标开放历史面板，并短暂高亮该面板，避免用户在长历史区里迷路。本地 Browser `http://127.0.0.1:4204/` 通过：story cards 4、path buttons 4、future realtime gated 1、旧 blur/lock 0、横向溢出 0、console issue 0、点击后目标面板聚焦。Playwright dist `http://127.0.0.1:4205/` 在桌面和手机通过：标题正确、页面非空、story cards 4、桌面点击趋势后 `.trend-panel.history-scroll-focus` 存在、手机点击轮动后 `.rotation-panel.history-scroll-focus` 存在、横向溢出 0、旧 `.is-blurred`/`.is-locked` 0、PNG 导出仍为 `1,482,138` bytes。本轮未部署生产，因为这是本地交互节奏增强，且没有公开风险修复需求。
 
 Latest v1.42 note:
 

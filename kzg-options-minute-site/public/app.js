@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.64";
+const UI_VERSION = "1.65";
 
 const dataAudit = {
   dataset: "23_DATA_期权分钟_Minute",
@@ -364,8 +364,7 @@ async function loadIndex() {
     const sectorTarget = event.target.closest("[data-scroll-sector]");
     if (sectorTarget) {
       event.preventDefault();
-      const section = $(sectorTarget.dataset.scrollSector);
-      if (section) section.scrollIntoView({ behavior: "smooth", block: "start" });
+      scrollToSector(sectorTarget.dataset.scrollSector);
       return;
     }
     const unlockScopeTarget = event.target.closest("[data-unlock-scope]");
@@ -413,6 +412,21 @@ function toggleTheme() {
   state.theme = state.theme === "dark" ? "light" : "dark";
   localStorage.setItem("kzg-option-house-theme", state.theme);
   applyUiState();
+}
+
+function scrollToSector(sectionId) {
+  const section = $(sectionId);
+  if (!section) return;
+  const panel = section.closest(".panel") || section;
+  document.querySelectorAll(".history-scroll-focus").forEach((node) => {
+    node.classList.remove("history-scroll-focus");
+  });
+  panel.classList.add("history-scroll-focus");
+  panel.scrollIntoView({ behavior: "smooth", block: "start" });
+  window.clearTimeout(panel._historyFocusTimer);
+  panel._historyFocusTimer = window.setTimeout(() => {
+    panel.classList.remove("history-scroll-focus");
+  }, 1800);
 }
 
 function toggleLang() {
