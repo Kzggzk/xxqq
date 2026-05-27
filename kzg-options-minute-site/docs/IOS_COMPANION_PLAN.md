@@ -10,7 +10,7 @@ This document defines the iOS track for KZG Option House. The iOS app is a compa
 - Scheme / Scheme: `KZG Option House`
 - Bundle id / Bundle ID: `com.kzg.optionhouse`
 - Current iOS version / 当前 iOS 版本: `0.7`
-- Web baseline / 对应 Web 基线: dense Web `1.67`, production Web still `1.63`
+- Web baseline / 对应 Web 基线: dense Web `1.67`, production Web now `1.68`
 - First simulator proof / 首次模拟器证明: `/tmp/kzg-option-house-ios-v01.png`
 - Build proof / 构建证明: v0.7 Swift source typecheck passed with `swiftc`; full XcodeBuildMCP simulator run is currently blocked by local simulator destination/runtime selection.
 
@@ -22,6 +22,8 @@ This document defines the iOS track for KZG Option House. The iOS app is a compa
 - iOS 每 5 个 Web 稠密版本同步一次，除非 Fangbao 明确要求立即同步。
 - Current checkpoint: iOS `0.7` at dense Web `1.67`; next planned iOS checkpoint is around Web `1.72` unless Fangbao asks earlier.
 - 当前检查点：iOS `0.7` 对应稠密 Web `1.67`；下一次计划 iOS 检查点约在 Web `1.72`，除非 Fangbao 提前要求。
+- Web v1.68 deployed after iOS `0.7`; it does not change iOS source and should be considered a Web-only checkpoint until the next iOS sync.
+- Web v1.68 已在 iOS `0.7` 后部署；它不改变 iOS 源码，在下次 iOS 同步前按 Web-only 检查点处理。
 
 ## Product direction / 产品方向
 

@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.66";
+const UI_VERSION = "1.68";
 
 const dataAudit = {
   dataset: "23_DATA_期权分钟_Minute",
@@ -3739,6 +3739,7 @@ function renderSymbolRotation() {
       ${rotationLane(state.lang === "zh" ? "升温标的" : "Warming", hot, "hot")}
       ${rotationLane(state.lang === "zh" ? "降温标的" : "Cooling", cool, "cool")}
     </div>
+    ${rotationFocusHandoff(rows, premiumLeader, callLeader, putLeader)}
   `;
 }
 
@@ -3825,6 +3826,52 @@ function rotationMapStat(label, value, symbol, tone) {
       <i>${escapeHtml(label)}</i>
       <b>${fmt0.format(value)}</b>
       <small>${escapeHtml(symbol || "--")}</small>
+    </span>
+  `;
+}
+
+function rotationFocusHandoff(rows, premiumLeader, callLeader, putLeader) {
+  if (!rows.length) return "";
+  const focusSymbols = new Set(state.day.topUnderlyings.map((row) => row.symbol));
+  const focusable = rows.filter((row) => focusSymbols.has(row.symbol));
+  const attack = focusable.filter((row) => row.delta >= 0 && row.premiumDelta >= 0);
+  const lead = (attack.length ? attack : focusable.length ? focusable : rows)
+    .slice()
+    .sort((a, b) => (b.delta + b.premiumDelta * 0.45) - (a.delta + a.premiumDelta * 0.45))[0] || {};
+  const tone = lead.delta >= 0 ? "hot" : "cool";
+  const leadMove = `${lead.symbol || "--"} ${lead.delta >= 0 ? "+" : ""}${fmt1.format(lead.delta || 0)}%`;
+  const premiumText = `${premiumLeader.symbol || "--"} ${moneyCompact(premiumLeader.premiumNotional)}`;
+  const cpText = `${callLeader.symbol || "--"} / ${putLeader.symbol || "--"}`;
+  const leadTitle = state.lang === "zh" ? `把 ${lead.symbol || "--"} 接到单标的节奏` : `Route ${lead.symbol || "--"} into symbol focus`;
+  return `
+    <div class="rotation-focus-handoff">
+      <div class="rotation-focus-shell ${tone}">
+        <div class="rotation-focus-copy">
+          <span>${state.lang === "zh" ? "轮动到标的聚焦" : "Rotation to symbol lens"}</span>
+          <b>${escapeHtml(leadTitle)}</b>
+          <small>${state.lang === "zh" ? "先读扩散，再看领头标的 90 日成交、权利金和 CP 结构。" : "Read breadth first, then inspect the leader's 90-session volume, premium, and CP structure."}</small>
+        </div>
+        <div class="rotation-focus-steps">
+          ${rotationFocusStep(state.lang === "zh" ? "领头标的" : "Leader", leadMove, state.lang === "zh" ? "量价同升优先" : "volume + premium first", tone)}
+          ${rotationFocusStep(state.lang === "zh" ? "资金锚点" : "Capital anchor", premiumText, moneyCompact(premiumLeader.premiumNotional), "flat")}
+          ${rotationFocusStep(state.lang === "zh" ? "CP 两端" : "CP edges", cpText, `${ratio(callLeader.cpRatio)} / ${ratio(putLeader.cpRatio)}`, "cool")}
+        </div>
+        <button type="button" class="rotation-focus-jump" data-symbol="${escapeHtml(lead.symbol || "")}" data-scroll-sector="symbolFocus">
+          <span>${state.lang === "zh" ? "进入单标的聚焦" : "Open symbol focus"}</span>
+          <b>${escapeHtml(lead.symbol || "--")}</b>
+          <small>${state.lang === "zh" ? "滚到开放历史标的镜头" : "Scroll to the open historical symbol lens"}</small>
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+function rotationFocusStep(label, value, sub, tone) {
+  return `
+    <span class="${tone}">
+      <i>${escapeHtml(label)}</i>
+      <b>${escapeHtml(value)}</b>
+      <small>${escapeHtml(sub || "--")}</small>
     </span>
   `;
 }

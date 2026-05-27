@@ -18,9 +18,9 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Remote / 远端: `https://github.com/Kzggzk/xxqq.git`
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
-- Production version last verified / 最近生产验证版本: `1.63`
-- Local version last verified / 最近本地验证版本: `1.67` iOS companion bucket-to-rotation handoff sync
-- Latest unique deploy / 最近唯一部署: `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`
+- Production version last verified / 最近生产验证版本: `1.68`
+- Local version last verified / 最近本地验证版本: `1.68` Web rotation-to-symbol focus handoff
+- Latest unique deploy / 最近唯一部署: `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`
 - iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.7`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
 - Local verified option-minute window / 本地已验证期权分钟范围: `2024-05-17 -> 2026-05-22`, `505` files.
@@ -67,6 +67,14 @@ Latest production v1.63 note:
 Web `1.63` is the latest production checkpoint and the previous local checkpoint. Production is `https://kzg-option-house.netlify.app/`, unique deploy `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`, deploy id `6a168b3efbed57514f5fc1ea`. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.63`, new `historyLayerPath()` under the open historical intro, four public-open path buttons into `trendChart`, `bucketProfile`, `symbolRotation`, and `symbolFocus`, and phone path cards changed to one column below 520px so dates and money values stay readable. Current generated-minute features stay open; only the future realtime tape keeps reserve blur. Local Browser and Playwright QA passed on desktop and phone: 4 path buttons, all 4 targets exist, old locks 0, old `.is-blurred` 0, public-risk false, horizontal overflow 0, and PNG export `1,482,138` bytes. Production verification passed: `app.js` contains `UI_VERSION = "1.63"`, `/data/index.json` and `/assets/kzg-pack.js` are `404`, Browser/Playwright production desktop and phone checks have console issue 0, old lock/blur 0, horizontal overflow 0, and PNG export `1,482,138` bytes. iOS remains `0.6` from Web v1.62; next default iOS sync is around Web v1.67. Do not connect or sell realtime data until backend credentials, rights, and Fangbao approval are confirmed.
 
 Web `1.63` 是最新生产检查点和上一轮本地检查点。生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`，deploy id `6a168b3efbed57514f5fc1ea`。主要源码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.63`，在开放历史 intro 下新增 `historyLayerPath()`，四个公开开放路径按钮分别进入 `trendChart`、`bucketProfile`、`symbolRotation` 和 `symbolFocus`，并把手机路径卡在 520px 以下改成单列，让日期和金额保持可读。当前生成分钟能力保持开放；只有未来实时 tape 保留预留式 blur。本地 Browser 与 Playwright 桌面/手机 QA 通过：4 个路径按钮、4 个目标全部存在、旧锁层 0、旧 `.is-blurred` 0、公开风险 false、横向溢出 0、PNG 导出 `1,482,138` bytes。生产验证通过：`app.js` 含 `UI_VERSION = "1.63"`，`/data/index.json` 和 `/assets/kzg-pack.js` 都是 `404`，生产 Browser/Playwright 桌面和手机 console issue 0、旧锁/旧 blur 0、横向溢出 0、PNG 导出 `1,482,138` bytes。iOS 仍是 Web v1.62 同步的 `0.6`；下次默认 iOS 同步在 Web v1.67 左右。不要在后端凭证、权利和 Fangbao 批准确认前接入或销售实时数据。
+
+Latest local and production v1.68 note:
+
+最新本地和生产 v1.68 说明：
+
+Web `1.68` is the latest local and production checkpoint. Main source changes are `public/app.js` and `public/styles.css`: UI version `1.68`, new `rotationFocusHandoff()` under the symbol-rotation lanes, new `rotationFocusStep()`, and a responsive/dark `rotation-focus` bridge. It connects rotation breadth into the open single-symbol lens: the jump button carries `data-symbol="RGTI"` and `data-scroll-sector="symbolFocus"`, so the click fixes the focus symbol and scrolls to `.momentum-panel` with the v1.65 focus pulse. It remains open historical guidance, not unlock, subscription, realtime entitlement, provider entry, account route, or payment route. Build produced `505` days, latest `2026-05-22`, pack asset `kzg-frame-78c457d24fa4.js`. Local Playwright on dist `http://127.0.0.1:4208/` passed on desktop and phone: `1.68 · 505/505 complete`, handoff 1, steps 3, jump 1, focus `RGTI`, horizontal overflow 0, old `.is-blurred`/`.is-locked` 0, future gate 1, console issue 0, PNG export `1,482,138` bytes. Production deploy id is `6a16acc1dbce120ee54cac50`, unique URL `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`; production `app.js` verifies `UI_VERSION="1.68"`, `/data/index.json` and `/assets/kzg-pack.js` are `404`, production desktop/mobile checks and PNG export pass.
+
+Web `1.68` 是最新本地和生产检查点。主要源码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.68`，在标的轮动 lanes 下新增 `rotationFocusHandoff()`，新增 `rotationFocusStep()`，并加入响应式/深色 `rotation-focus` 接力桥。它把轮动扩散接到开放单标的镜头：跳转按钮同时带 `data-symbol="RGTI"` 和 `data-scroll-sector="symbolFocus"`，点击后固定焦点标的并滚到 `.momentum-panel`，同时触发 v1.65 聚焦反馈。它仍是开放历史导读，不是解锁、订阅、实时权限、供应商入口、账号路线或支付路线。构建生成 `505` 天，latest `2026-05-22`，pack asset `kzg-frame-78c457d24fa4.js`。本地 Playwright dist `http://127.0.0.1:4208/` 桌面和手机通过：`1.68 · 505/505 complete`、handoff 1、steps 3、jump 1、focus `RGTI`、横向溢出 0、旧 `.is-blurred`/`.is-locked` 0、future gate 1、console issue 0、PNG 导出 `1,482,138` bytes。生产 deploy id `6a16acc1dbce120ee54cac50`，唯一 URL `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`；生产 `app.js` 验证 `UI_VERSION="1.68"`，`/data/index.json` 和 `/assets/kzg-pack.js` 都是 `404`，生产桌面/手机和 PNG 导出验证通过。
 
 Latest local v1.67 note:
 

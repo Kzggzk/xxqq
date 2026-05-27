@@ -213,6 +213,25 @@ Implementation boundary:
 7. Full simulator run remains a local Xcode destination issue until the simulator profile is repaired; Swift typecheck is the current source-level proof.
 8. 完整模拟器运行在 simulator profile 修好前仍是本机 Xcode destination 问题；Swift typecheck 是当前源码级证明。
 
+## v1.68 rotation-to-symbol focus rule / v1.68 轮动到单标的聚焦规则
+
+v1.68 adds the next open-history handoff: symbol rotation now routes into the open single-symbol lens. This is still current historical minute-aggregate UX, not realtime entitlement or monetization logic.
+
+v1.68 加入下一段开放历史接力：标的轮动现在可以接到开放的单标的镜头。这仍是当前历史分钟聚合体验，不是实时权限或商业化逻辑。
+
+Implementation boundary:
+
+实现边界：
+
+1. The handoff may choose a focusable rotation leader such as `RGTI` from landed historical data.
+2. 接力桥可以从已落地历史数据里选择可聚焦的轮动领头标的，例如 `RGTI`。
+3. It may show a capital anchor, CP edges, and a jump into the existing open symbol lens.
+4. 它可以展示资金锚点、CP 两端，并跳入现有开放的单标的镜头。
+5. It must not mention provider names, API keys, plan prices, checkout, subscription, unlock, account entitlement, or realtime access.
+6. 它不得提到供应商名、API key、套餐价格、checkout、订阅、解锁、账号权限或实时访问。
+7. It should make the lower open-history layer read as a continuous route: pressure bucket, rotation breadth, symbol lens.
+8. 它应让下半区开放历史层读起来像连续路线：压力桶、轮动扩散、单标的镜头。
+
 ## Verified official facts / 已核官方事实
 
 Checked on 2026-05-26 Asia/Shanghai against Massive official docs/pages.

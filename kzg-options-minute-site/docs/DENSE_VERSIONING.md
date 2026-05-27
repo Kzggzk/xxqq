@@ -12,8 +12,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - `1.01 -> 2.00` 代表 100 个稠密迭代。
 - A future `11.85` means 1085 post-1.00 dense iterations, not a symbolic number.
 - 未来如果到 `11.85`，它代表从 1.00 之后真的经历了 1085 个稠密迭代，不是随便喊出来的数字。
-- The latest local checkpoint is `1.67` for iOS companion `0.7`, syncing the Web v1.66 bucket-to-rotation handoff into native SwiftUI. The latest production checkpoint remains `1.63`, unique deploy `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`. The next dense step is `1.68`.
-- 最近本地检查点是 `1.67` iOS 伴生 `0.7`，把 Web v1.66 的 bucket 到轮动接力同步进原生 SwiftUI。最近生产检查点仍是 `1.63`，唯一部署是 `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`。下一次稠密版本是 `1.68`。
+- The latest local and production checkpoint is Web `1.68`, adding the rotation-to-symbol focus handoff and deploying it to production at `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`. iOS companion remains `0.7`. The next dense step is `1.69`.
+- 最近本地和生产检查点是 Web `1.68`，加入轮动到单标的聚焦接力，并部署到生产 `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`。iOS 伴生保持 `0.7`。下一次稠密版本是 `1.69`。
 
 ## iOS companion cadence / iOS 伴生节奏
 
@@ -62,6 +62,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - v1.66 在开放历史层内加入 bucket 到轮动的接力桥。它把日内压力桶、CP 极值和轮动扩散接成一条可读路径，并复用 v1.65 聚焦反馈点击进入开放的标的轮动面板。本轮仅本地完成；生产仍为 v1.63。
 - v1.67 syncs v1.66 into iOS companion `0.7`. The native app now shows Web `1.66`, iOS `0.7`, and a `分钟压力接力` card between intraday buckets and the rotation quadrant. It is local only; production Web remains v1.63.
 - v1.67 把 v1.66 同步到 iOS 伴生 `0.7`。原生 app 现在显示 Web `1.66`、iOS `0.7`，并在日内桶和轮动象限之间加入 `分钟压力接力` 卡。本轮仅本地完成；生产 Web 仍为 v1.63。
+- v1.68 returns to Web and adds the rotation-to-symbol focus handoff. The rotation quadrant now routes `RGTI` into the open 90-session symbol lens with the v1.65 focus pulse. It is deployed to production at `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`; iOS remains `0.7`.
+- v1.68 回到 Web，加入轮动到单标的聚焦接力。轮动象限现在把 `RGTI` 接入开放的 90 日单标的镜头，并复用 v1.65 聚焦反馈。它已部署生产到 `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`；iOS 保持 `0.7`。
 
 ## Heartbeat protocol / 心跳协议
 

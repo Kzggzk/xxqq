@@ -26,15 +26,15 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 分支: `feat/kzg-option-house-daily-auto`
 - 远端: `https://github.com/Kzggzk/xxqq.git`
 - 生产站: `https://kzg-option-house.netlify.app/`
-- 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.63` open-history path router，具体 commit 以最新 GitHub backup 提交为准
-- 最近验证唯一部署: `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`
-- 最近生产 UI 显示版本: `1.63`
-- 最近本地稠密版本: `1.67`，本轮为 iOS 伴生端同步 Web v1.66 bucket 到轮动的开放历史接力桥；生产仍是 `1.63`
+- 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.68` rotation-to-symbol focus handoff，具体 commit 以最新 GitHub backup 提交为准
+- 最近验证唯一部署: `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`
+- 最近生产 UI 显示版本: `1.68`
+- 最近本地稠密版本: `1.68`，本轮为 Web 公开历史层新增轮动到单标的聚焦接力；生产也是 `1.68`
 - 当前 iOS 伴生版本: `0.7`，对应稠密 Web `1.67`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；官方 flat-file 文档显示有 `2023/2023` 目录，但当前公开站只使用本机已证实的 `2024-05-17 -> 2026-05-22`，且本 agent 不使用暴露过的 key 测账号权限；公开参考 <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
-- Apple Notes: 置顶同名 note 已在 v1.67 后同步，`updated=1`，`created=0`，正文 `201,751` chars
+- Apple Notes: 置顶同名 note 已在 v1.68 后同步，`updated=1`，`created=0`，正文 `207631` chars
 - GitHub: 需要持续提交 docs，让另一个 Codex 能从仓库继续
 
 English:
@@ -44,18 +44,44 @@ English:
 - Branch: `feat/kzg-option-house-daily-auto`
 - Remote: `https://github.com/Kzggzk/xxqq.git`
 - Production site: `https://kzg-option-house.netlify.app/`
-- Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.63` open-history path router; exact commit is the latest GitHub backup commit
-- Latest verified unique deploy: `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`
-- Latest visible production UI version: `1.63`
-- Latest local dense version: `1.67`, used for the iOS companion sync of the Web v1.66 bucket-to-rotation open-history handoff; production remains `1.63`
+- Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.68` rotation-to-symbol focus handoff; exact commit is the latest GitHub backup commit
+- Latest verified unique deploy: `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`
+- Latest visible production UI version: `1.68`
+- Latest local dense version: `1.68`, adding the Web open-history rotation-to-symbol focus handoff; production is also `1.68`
 - Current iOS companion version: `0.7`, mapped to dense Web `1.67`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; official flat-file docs show a `2023/2023` directory, but the public site only uses locally proven `2024-05-17 -> 2026-05-22`, and this agent must not use exposed keys to test account entitlement; public reference <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
-- Apple Notes: pinned note with this title was synced after v1.67, `updated=1`, `created=0`, `201,751` body characters
+- Apple Notes: pinned note with this title was synced after v1.68, `updated=1`, `created=0`, `207631` body characters
 - GitHub: keep docs committed so another Codex can continue from the repository
 
-## 1A. Latest heartbeat record v1.67 / 最新心跳记录 v1.67
+## 1A. Latest heartbeat record v1.68 / 最新心跳记录 v1.68
+
+中文:
+
+北京时间 2026-05-27 16:34 左右，稠密版本 `1.68` 完成 Web 公开历史层的轮动到单标的聚焦接力，并部署生产。本轮继续执行 Fangbao 最新公开边界：当前生成分钟能力全部开放，历史趋势、轮动、事件队列、PNG 导出不 blur、不 lock、不 paywall；只有未来 realtime option-flow tape/reserve 可以保留预留式 blur。公开站不展示真实 API key、供应商名、套餐、支付、域名、注册、账号或内部商业规划。生产站是 `https://kzg-option-house.netlify.app/`，唯一部署是 `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`，deploy id `6a16acc1dbce120ee54cac50`。
+
+改动文件：`public/app.js`、`public/styles.css`、`docs/CHANGELOG.md`、`docs/CHANGLOG_OPTION_TERMINAL.md`、`docs/DENSE_VERSIONING.md`、`docs/HANDOFF_FOR_OTHER_CODEX.md`、`docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`、`docs/PLUGIN_SERVICE_STATUS.md`、`docs/IOS_COMPANION_PLAN.md`、`docs/CHANGLOG_OPTION_TERMINAL_MINDMAP.opml`。`public/app.js` 把 `UI_VERSION` 从 `1.66` 提到 `1.68`，在 `renderSymbolRotation()` 的 lanes 后新增 `rotationFocusHandoff()`，并增加 `rotationFocusStep()`。桥接区展示领头标的、资金锚点、CP 两端；按钮同时带 `data-symbol` 与 `data-scroll-sector="symbolFocus"`，点击后把焦点标的固定为 `RGTI` 并滚到开放历史的单标的镜头。`public/styles.css` 新增 `.rotation-focus-handoff`、`.rotation-focus-shell`、`.rotation-focus-steps`、`.rotation-focus-jump` 以及桌面、手机、深色样式。
+
+体验调整：v1.66 让“日内压力桶 -> 轮动象限”变成一条清晰路径；v1.68 把“轮动象限 -> 单标的聚焦”继续接上。用户现在可以从下半区开放历史层连续读：`15:00 +30%` 压力桶、CP 两端、轮动扩散，再进入 `RGTI` 的 90 日成交、权利金和 CP 结构。它是当前开放历史层导读，不是实时权限、订阅、解锁、付费或 provider 入口。
+
+验证结果：`node --check public/app.js` 通过；`git diff --check -- public/app.js public/styles.css` 通过。build 生成 `505` 天 payload，latest `2026-05-22`，analytics days `505`，analytics symbols `98`，pack asset `kzg-frame-78c457d24fa4.js`；`per_day_to_dist` 返回 `copied=505`。Browser 本地控制工具本轮未暴露，按验证流程退回 Playwright。Playwright 本地 dist `http://127.0.0.1:4208/` 验证桌面和手机：`1.68 · 505/505 complete`，handoff 1，steps 3，jump 1，jump symbol `RGTI`，点击后 `.momentum-panel.history-scroll-focus = 1` 且 `#symbolFocus` 为 `RGTI`，横向溢出 0，旧 `.is-blurred`/`.is-locked` 0，future gate 1，公开 provider/API/payment 字符 false，console issue 0，PNG 导出 `1,482,138` bytes。线上复核同样通过：线上 `app.js` 包含 `UI_VERSION = "1.68"`；`/data/index.json` 和 `/assets/kzg-pack.js` 均为 `404`；线上桌面/手机 handoff、focus、overflow、console 和 PNG 均通过。
+
+阻塞与下一步：没有真实 API、Massive plan 升级、域名购买、Stripe/Supabase/支付、TestFlight、App Store、开发者账号、花钱或传密钥动作。iOS companion 保持 `0.7`，下一次默认同步约 Web v1.72。下一步 `1.69` 继续 Web，把单标的聚焦和 momentum list 再接回资金锚点/轮动列表，减少“看完 RGTI 后下一步去哪”的断点。
+
+English:
+
+Around 2026-05-27 16:34 Asia/Shanghai, dense version `1.68` completed the Web open-history rotation-to-symbol focus handoff and deployed it to production. This round keeps Fangbao's latest public boundary: all generated-minute capabilities stay open; historical trends, rotation, event queues, and PNG export are not blurred, locked, or paywalled; only the future realtime option-flow tape/reserve may keep a reserve-style blur. The public site does not expose real API keys, provider names, plan details, payment, domains, registration, accounts, or internal commercial planning. Production is `https://kzg-option-house.netlify.app/`, unique deploy `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`, deploy id `6a16acc1dbce120ee54cac50`.
+
+Changed files: `public/app.js`, `public/styles.css`, `docs/CHANGELOG.md`, `docs/CHANGLOG_OPTION_TERMINAL.md`, `docs/DENSE_VERSIONING.md`, `docs/HANDOFF_FOR_OTHER_CODEX.md`, `docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`, `docs/PLUGIN_SERVICE_STATUS.md`, `docs/IOS_COMPANION_PLAN.md`, and `docs/CHANGLOG_OPTION_TERMINAL_MINDMAP.opml`. `public/app.js` moves `UI_VERSION` from `1.66` to `1.68`, adds `rotationFocusHandoff()` after the lanes inside `renderSymbolRotation()`, and adds `rotationFocusStep()`. The bridge shows leader, capital anchor, and CP edges; its button carries both `data-symbol` and `data-scroll-sector="symbolFocus"`, so tapping it fixes focus on `RGTI` and scrolls into the open historical symbol lens. `public/styles.css` adds `.rotation-focus-handoff`, `.rotation-focus-shell`, `.rotation-focus-steps`, `.rotation-focus-jump`, plus desktop, phone, and dark-mode styling.
+
+Experience: v1.66 made `intraday pressure bucket -> rotation quadrant` a clear path; v1.68 continues that path from `rotation quadrant -> single-symbol focus`. Users can now read the lower open-history layer continuously: `15:00 +30%` pressure bucket, CP edges, rotation breadth, then `RGTI` 90-session volume, premium, and CP structure. This is current open historical guidance, not realtime entitlement, subscription, unlock, payment, or provider entry.
+
+Verification result: `node --check public/app.js` passed; `git diff --check -- public/app.js public/styles.css` passed. Build produced a `505`-day payload, latest `2026-05-22`, analytics days `505`, analytics symbols `98`, pack asset `kzg-frame-78c457d24fa4.js`; `per_day_to_dist` returned `copied=505`. The Browser local-control tool was not exposed this round, so verification fell back to Playwright. Playwright against local dist `http://127.0.0.1:4208/` verified desktop and phone: `1.68 · 505/505 complete`, handoff 1, steps 3, jump 1, jump symbol `RGTI`, `.momentum-panel.history-scroll-focus = 1` after click with `#symbolFocus` set to `RGTI`, horizontal overflow 0, old `.is-blurred`/`.is-locked` 0, future gate 1, public provider/API/payment text false, console issues 0, and PNG export `1,482,138` bytes. Production verification also passed: live `app.js` contains `UI_VERSION = "1.68"`; `/data/index.json` and `/assets/kzg-pack.js` both return `404`; live desktop/phone handoff, focus, overflow, console, and PNG checks all pass.
+
+Blocker and next step: No real API, Massive plan upgrade, domain purchase, Stripe/Supabase/payment action, TestFlight, App Store, developer-account action, spending, or secret transmission happened. iOS companion remains `0.7`; the next default sync is around Web v1.72. Next `1.69` should stay on Web and connect the symbol lens and momentum list back into capital anchors/rotation rows, reducing the remaining break after a user finishes reading RGTI.
+
+## 1B. Latest heartbeat record v1.67 / 最新心跳记录 v1.67
 
 中文:
 
