@@ -137,6 +137,25 @@ Implementation boundary:
 7. Phone layout must prefer clear one-column readability over cramped two-column compression when numbers or dates truncate.
 8. 手机布局在数字或日期被截断时，应优先使用清晰单列，而不是硬塞两列。
 
+## v1.64 open-history story rule / v1.64 开放历史故事线规则
+
+v1.64 adds a public-safe four-beat story strip after the open-history path. This is still current historical minute-aggregate UX, not a real-time backend connection or paid gate.
+
+v1.64 在开放历史路径后加入公开安全的四拍故事条。这仍是当前历史分钟聚合体验，不是真实实时后端连接，也不是付费门槛。
+
+The story strip should follow these rules:
+
+故事条应遵守这些规则：
+
+1. Lead with simple historical reading beats: drift, pressure minute, breadth, and premium-notional anchor.
+2. 先用简单历史读盘节拍进入：量变、压力分钟、扩散和权利金金额锚点。
+3. Use real derived historical values from the landed dataset.
+4. 使用已落地数据集派生出来的真实历史数值。
+5. The premium anchor must be a capital-weight anchor, so prefer largest `premiumNotional` over fastest `premiumDelta`.
+6. 权利金锚点必须是资金权重锚点，所以优先使用最大的 `premiumNotional`，而不是最快的 `premiumDelta`。
+7. The strip may scroll users into open historical panels, but it must not imply unlock, subscription, realtime entitlement, or provider access.
+8. 故事条可以把用户滚动到开放历史面板，但不得暗示解锁、订阅、实时权限或供应商访问。
+
 ## Verified official facts / 已核官方事实
 
 Checked on 2026-05-26 Asia/Shanghai against Massive official docs/pages.

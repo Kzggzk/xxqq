@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.63";
+const UI_VERSION = "1.64";
 
 const dataAudit = {
   dataset: "23_DATA_期权分钟_Minute",
@@ -1175,12 +1175,24 @@ function renderHistorySectorIntro() {
   const attack = rows.filter((row) => row.delta >= 0 && row.premiumDelta >= 0);
   const fade = rows.filter((row) => row.delta < 0 && row.premiumDelta < 0);
   const premiumLead = rows.reduce((best, row) => row.premiumDelta > Number(best.premiumDelta || -Infinity) ? row : best, rows[0] || {});
+  const premiumAnchor = rows.reduce((best, row) => Number(row.premiumNotional || 0) > Number(best.premiumNotional || 0) ? row : best, rows[0] || {});
   const volumeLead = rows.reduce((best, row) => row.delta > Number(best.delta || -Infinity) ? row : best, rows[0] || {});
   const daily = state.analytics?.daily?.length ? state.analytics.daily : state.datesAsc;
   const selected = daily.find((row) => row.date === state.day.tradeDate) || daily[state.selectedIndex] || {};
   const start = daily[Math.max(0, state.selectedIndex - 59)] || daily[0] || {};
   const buckets = state.day.buckets.market || [];
   const peakBucket = buckets.reduce((best, row) => Number(row.total || 0) > Number(best.total || 0) ? row : best, buckets[0] || {});
+  const historyInfo = {
+    attack,
+    fade,
+    premiumLead,
+    premiumAnchor,
+    volumeLead,
+    peakBucket,
+    start,
+    selected,
+    historyCount: daily.length || dataAudit.fileCount,
+  };
   target.innerHTML = `
     <div class="history-intro-copy">
       <span>${state.lang === "zh" ? "第三段 · Open historical intraday layer" : "Sector 3 · Open historical intraday layer"}</span>
@@ -1196,16 +1208,8 @@ function renderHistorySectorIntro() {
       ${realtimeStat(state.lang === "zh" ? "权利金领头" : "Premium lead", premiumLead.symbol || "--", `${premiumLead.premiumDelta >= 0 ? "+" : ""}${fmt1.format(premiumLead.premiumDelta || 0)}%`, "flat")}
       ${realtimeStat(state.lang === "zh" ? "窗口" : "Window", `${shortDate(start.date || selected.date || state.day.tradeDate)} → ${shortDate(selected.date || state.day.tradeDate)}`, `${fmt0.format(daily.length || dataAudit.fileCount)} sessions`, "flat")}
     </div>
-    ${historyLayerPath({
-      attack,
-      fade,
-      premiumLead,
-      volumeLead,
-      peakBucket,
-      start,
-      selected,
-      historyCount: daily.length || dataAudit.fileCount,
-    })}
+    ${historyLayerPath(historyInfo)}
+    ${historyStoryStrip(historyInfo)}
   `;
 }
 
@@ -1237,6 +1241,47 @@ function historyLayerPath(info) {
       </div>
       ${rows.map((row, index) => `
         <button type="button" class="${row[4]}" data-scroll-sector="${escapeHtml(row[1])}">
+          <i>${fmt0.format(index + 1)}</i>
+          <span>${escapeHtml(row[0])}</span>
+          <b>${escapeHtml(row[2])}</b>
+          <small>${escapeHtml(row[3])}</small>
+        </button>
+      `).join("")}
+    </div>
+  `;
+}
+
+function historyStoryStrip(info) {
+  const selectedVol = Number(info.selected?.totalVol || state.day.overview.totalVol || 0);
+  const startVol = Number(info.start?.totalVol || 0);
+  const windowMove = startVol ? ((selectedVol - startVol) / startVol) * 100 : 0;
+  const attackCount = Number(info.attack?.length || 0);
+  const fadeCount = Number(info.fade?.length || 0);
+  const breadthBase = attackCount + fadeCount;
+  const breadth = breadthBase ? (attackCount / breadthBase) * 100 : 0;
+  const peakBucket = info.peakBucket || {};
+  const premiumAnchor = info.premiumAnchor || info.premiumLead || info.volumeLead || {};
+  const rows = state.lang === "zh"
+    ? [
+      ["量变", "trendChart", `${windowMove >= 0 ? "+" : ""}${fmt1.format(windowMove)}%`, `${shortDate(info.start?.date || state.day.tradeDate)} 到 ${shortDate(info.selected?.date || state.day.tradeDate)}，先看总量是否进入上行带。`, windowMove >= 0 ? "hot" : "cool"],
+      ["压力分钟", "bucketProfile", peakBucket.time || "--", `${wan(peakBucket.total || 0)}张峰值，把日内节奏压成可比较的时间锚。`, "cool"],
+      ["扩散", "symbolRotation", `${fmt0.format(attackCount)} / ${fmt0.format(fadeCount)}`, `${fmt1.format(breadth)}% 量价同升占比，判断热度是不是只集中在少数标的。`, "hot"],
+      ["权利金锚点", "symbolFocus", premiumAnchor.symbol || "--", `${moneyCompact(premiumAnchor.premiumNotional || 0)} 作为资金权重入口，再下钻到单标的节奏。`, "flat"],
+    ]
+    : [
+      ["Drift", "trendChart", `${windowMove >= 0 ? "+" : ""}${fmt1.format(windowMove)}%`, `${shortDate(info.start?.date || state.day.tradeDate)} to ${shortDate(info.selected?.date || state.day.tradeDate)} shows whether volume is lifting into an upper band.`, windowMove >= 0 ? "hot" : "cool"],
+      ["Pressure minute", "bucketProfile", peakBucket.time || "--", `${wan(peakBucket.total || 0)} peak contracts anchor the intraday rhythm.`, "cool"],
+      ["Breadth", "symbolRotation", `${fmt0.format(attackCount)} / ${fmt0.format(fadeCount)}`, `${fmt1.format(breadth)}% volume-premium warming shows whether heat is broad or narrow.`, "hot"],
+      ["Premium anchor", "symbolFocus", premiumAnchor.symbol || "--", `${moneyCompact(premiumAnchor.premiumNotional || 0)} starts the symbol-level drilldown.`, "flat"],
+    ];
+  return `
+    <div class="history-story-strip">
+      <div class="history-story-lede">
+        <span>${state.lang === "zh" ? "开放读盘四拍" : "Open readout in four beats"}</span>
+        <b>${state.lang === "zh" ? "先看故事，再进图表" : "Read the story before the dense panels"}</b>
+      </div>
+      ${rows.map((row, index) => `
+        <button type="button" class="history-story-card ${row[4]}" data-scroll-sector="${escapeHtml(row[1])}">
           <i>${fmt0.format(index + 1)}</i>
           <span>${escapeHtml(row[0])}</span>
           <b>${escapeHtml(row[2])}</b>
