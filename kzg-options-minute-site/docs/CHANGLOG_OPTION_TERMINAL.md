@@ -29,11 +29,11 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.60` realtime Flow Router pass，具体 commit 以最新 GitHub backup 提交为准
 - 最近验证唯一部署: `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.60`
-- 最近本地稠密版本: `1.60`，本轮为 Web realtime reserve Flow Router 压缩和手机 timeboard 修正，已部署生产
+- 最近本地稠密版本: `1.61`，本轮为 Web realtime reserve 手机压缩和 2023 数据权限只读审计，默认不部署
 - 当前 iOS 伴生版本: `0.5`，对应稠密 Web `1.57`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
-- `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；当前本机目录没有找到 `2023-*.csv.gz`
+- `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；官方 flat-file 文档显示有 `2023/2023` 目录，但当前公开站只使用本机已证实的 `2024-05-17 -> 2026-05-22`，且本 agent 不使用暴露过的 key 测账号权限；公开参考 <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
 - Apple Notes: 置顶同名 note 已在 v1.60 后同步，`updated=1`，`created=0`，正文约 `157,747` chars
 - GitHub: 需要持续提交 docs，让另一个 Codex 能从仓库继续
 
@@ -47,15 +47,37 @@ English:
 - Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.60` realtime Flow Router pass; exact commit is the latest GitHub backup commit
 - Latest verified unique deploy: `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.60`
-- Latest local dense version: `1.60`, used for Web realtime reserve Flow Router compression and mobile timeboard correction, now deployed to production
+- Latest local dense version: `1.61`, used for Web realtime-reserve mobile compression and read-only 2023 data entitlement audit notes, not deployed by default
 - Current iOS companion version: `0.5`, mapped to dense Web `1.57`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
-- `2023-05` status: keep as Fangbao's target/API-entitlement path; no local `2023-*.csv.gz` files were found in the verified folder
+- `2023-05` status: keep as Fangbao's target/API-entitlement path; official flat-file docs show a `2023/2023` directory, but the public site only uses locally proven `2024-05-17 -> 2026-05-22`, and this agent must not use exposed keys to test account entitlement; public reference <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
 - Apple Notes: pinned note with this title was synced after v1.60, `updated=1`, `created=0`, about `157,747` body characters
 - GitHub: keep docs committed so another Codex can continue from the repository
 
-## 1A. Latest heartbeat record v1.60 / 最新心跳记录 v1.60
+## 1A. Latest heartbeat record v1.61 / 最新心跳记录 v1.61
+
+中文:
+
+北京时间 2026-05-27 01:54 左右，稠密版本 `1.61` 进入手机 realtime reserve 压缩。本轮不改变 Fangbao 最新边界：当前已生成分钟聚合能力全部开放，历史趋势、轮动、事件队列和 PNG 导出不 blur、不 lock、不 paywall；只有未来 realtime option-flow tape/reserve 可保留预留式 blur。公开站仍不展示真实 API key、供应商名、套餐、支付、域名、注册、账号或内部商业规划。
+
+改动文件：`public/app.js`、`public/styles.css`、`docs/CHANGELOG.md`、`docs/CHANGLOG_OPTION_TERMINAL.md`、`docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`、`docs/PLUGIN_SERVICE_STATUS.md`。`public/app.js` 把 `UI_VERSION` 提到 `1.61`。`public/styles.css` 追加 v1.61 mobile compression 层：手机端 realtime top line、三段 transition rail、Flow Router、filter console、flow model、blurred terminal 和 Bull/Bear 列表都变矮，filter console 保持两列，router tape 变成短暗色网格，bias list 只保留最强样张，减少未来实时预留区在手机上的纵向拖沓感。
+
+2023 数据审计：Fangbao 问 `2023-05` 到底是否拿不到。官方 Massive Options Minute Aggregates flat-file 文档公开显示有 `2023/2023` 目录，也显示历史深度与 plan tier 有关；因此判断不是“官方完全没有 2023”，而是“公开目录存在，但当前账号能否下载取决于权限”。公开站当前仍只使用本机已证实的 `505` 文件，范围 `2024-05-17 -> 2026-05-22`。本轮没有使用截图里暴露过的任何 API key，没有测试真实账号权限，也没有把 provider/plan 信息放进公开页面。公开参考：<https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>。
+
+验证结果：`node --check public/app.js` 通过；`git diff --check` 通过；公开风险词扫描 `public/app.js public/index.html public/styles.css` 无命中。build 生成 `505` 天 payload，latest `2026-05-22`，analytics days `505`，analytics symbols `98`，pack asset `kzg-frame-30aac0e7a22e.js`，`per_day_to_dist` 返回 `copied=505`。Browser 本地打开 `http://127.0.0.1:4194/`，确认 `23_DATA_期权分钟_Minute · 1.61 · 505/505 complete`、future reserve、Flow Router、4 个 gate、16 格 tape、旧锁层 0、旧 `.is-blurred` 0、横向溢出 0、console warn/error 0、`user-select:none`。Playwright 对 dist `http://127.0.0.1:4195/` 验证桌面和手机：公开风险词 false，console issue 0，旧锁层 0，旧 `.is-blurred` 0，横向溢出 0；手机 router gates 2 列，router tape 4 列，filter console 2 列，terminal 展示 10 行；PNG 导出成功，大小 `1,482,138` bytes，建议文件名 `kzg-option-house-2026-05-22-zh.png`。截图证据：`/tmp/kzg-option-house-v161-dist-desktop.png`、`/tmp/kzg-option-house-v161-dist-mobile.png`、`/tmp/kzg-option-house-v161-realtime-desktop.png`、`/tmp/kzg-option-house-v161-realtime-mobile.png`。本轮无公开风险，默认不部署生产；生产仍是 v1.60。下一步 v1.62 接近 iOS cadence，默认应同步 iOS companion 或明确记录延期理由。
+
+English:
+
+Around 2026-05-27 01:54 Asia/Shanghai, dense version `1.61` moved into mobile compression for the realtime reserve. This does not change Fangbao's current boundary: existing generated-minute capabilities stay open, historical trends, rotation, event queues, and PNG export are not blurred, locked, or paywalled; only the future realtime option-flow tape/reserve may keep a reserve-style blur. The public site still must not expose real API keys, provider names, plan details, payment, domains, registration, accounts, or internal commercial planning.
+
+Changed files: `public/app.js`, `public/styles.css`, `docs/CHANGELOG.md`, `docs/CHANGLOG_OPTION_TERMINAL.md`, `docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`, and `docs/PLUGIN_SERVICE_STATUS.md`. `public/app.js` moves `UI_VERSION` to `1.61`. `public/styles.css` adds a v1.61 mobile compression layer: the phone realtime top line, three-sector transition rail, Flow Router, filter console, flow model, blurred terminal, and Bull/Bear lists are shorter; the filter console stays two-column; router tape becomes a short dark grid; and the bias lists keep only the strongest samples on narrow screens.
+
+2023 data audit: Fangbao asked whether `2023-05` is truly unavailable. Massive's public Options Minute Aggregates flat-file docs show a `2023/2023` directory and show history depth by plan tier. So the working conclusion is not "official 2023 does not exist"; it is "the public directory exists, but account download entitlement depends on permission." The public site still uses only the locally proven `505` files from `2024-05-17 -> 2026-05-22`. This round did not use any exposed screenshot API key, did not test live account entitlement, and did not place provider/plan facts on the public page. Public reference: <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>.
+
+Verification result: `node --check public/app.js` passed; `git diff --check` passed; public-risk scan over `public/app.js public/index.html public/styles.css` had no matches. Build produced a `505`-day payload, latest `2026-05-22`, analytics days `505`, analytics symbols `98`, pack asset `kzg-frame-30aac0e7a22e.js`, and `per_day_to_dist` returned `copied=505`. Browser opened local `http://127.0.0.1:4194/` and confirmed `23_DATA_期权分钟_Minute · 1.61 · 505/505 complete`, future reserve, Flow Router, 4 gates, 16 tape cells, 0 old lock layers, 0 old `.is-blurred` nodes, 0 horizontal overflow, 0 console warn/error logs, and `user-select:none`. Playwright against dist `http://127.0.0.1:4195/` verified desktop and phone: public-risk false, 0 console issues, 0 old lock layers, 0 old `.is-blurred` nodes, and 0 horizontal overflow; phone router gates use 2 columns, router tape uses 4 columns, filter console uses 2 columns, and the terminal shows 10 rows. PNG export succeeded at `1,482,138` bytes with suggested filename `kzg-option-house-2026-05-22-zh.png`. Screenshot evidence: `/tmp/kzg-option-house-v161-dist-desktop.png`, `/tmp/kzg-option-house-v161-dist-mobile.png`, `/tmp/kzg-option-house-v161-realtime-desktop.png`, and `/tmp/kzg-option-house-v161-realtime-mobile.png`. No public-risk issue appeared, so v1.61 is not deployed by default; production remains v1.60. Next v1.62 is near the iOS cadence checkpoint and should either sync the iOS companion or clearly record deferral.
+
+## 1B. Latest heartbeat record v1.60 / 最新心跳记录 v1.60
 
 中文:
 

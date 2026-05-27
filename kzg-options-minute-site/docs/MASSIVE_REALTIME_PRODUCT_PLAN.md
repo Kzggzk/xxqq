@@ -74,6 +74,27 @@ The displayed public dataset label is now `23_DATA_期权分钟_Minute`. Do not 
 
 公开显示的数据标签现在是 `23_DATA_期权分钟_Minute`。不要把供应商名、套餐名、key 截图、checkout 语言或域名/价格实验重新放进主页。未来 agent 如果需要记录 provider/API 事实，只能写在本文档或其他内部交接文档里。
 
+## v1.61 2023 flat-file audit line / v1.61 2023 flat-file 审计线
+
+Fangbao asked whether the `2023-05` target is truly unavailable. Current internal answer:
+
+Fangbao 追问 `2023-05` 目标到底是不是拿不到。当前内部答案：
+
+1. Massive's public Options Minute Aggregates flat-file documentation shows a `2023/2023` directory for `us_options_opra/minute_aggs_v1`.
+2. Massive 公开 Options Minute Aggregates flat-file 文档显示 `us_options_opra/minute_aggs_v1` 下有 `2023/2023` 目录。
+3. The same public documentation shows history depth depends on plan tier: shorter individual plans have limited history, while the deepest tier lists all history.
+4. 同一公开文档显示历史深度取决于套餐层级：较低个人套餐历史较短，最高个人层级显示 all history。
+5. Therefore, do not say "2023 does not exist." Say "2023 public directory exists, but current account download entitlement must be re-audited through a safe credential channel."
+6. 因此不要说“2023 不存在”。应说“2023 公开目录存在，但当前账号是否能下载必须通过安全凭证通道重新审计”。
+7. This agent must not use API keys exposed in screenshots or chat to test that entitlement.
+8. 本 agent 不得使用截图或聊天中暴露过的 API key 去测试权限。
+9. The public website should continue to show only the locally proven data window until older files are safely landed, audited, and built.
+10. 公开网站在旧文件安全落地、审计、构建之前，只显示本机已证实的数据范围。
+
+Source for the public directory and plan-history wording: <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
+
+公开目录和历史层级表述来源：<https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
+
 ## Verified official facts / 已核官方事实
 
 Checked on 2026-05-26 Asia/Shanghai against Massive official docs/pages.
