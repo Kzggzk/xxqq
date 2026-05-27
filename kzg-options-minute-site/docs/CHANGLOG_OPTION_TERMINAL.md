@@ -26,15 +26,15 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 分支: `feat/kzg-option-house-daily-auto`
 - 远端: `https://github.com/Kzggzk/xxqq.git`
 - 生产站: `https://kzg-option-house.netlify.app/`
-- 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.60` realtime Flow Router pass，具体 commit 以最新 GitHub backup 提交为准
-- 最近验证唯一部署: `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`
-- 最近生产 UI 显示版本: `1.60`
-- 最近本地稠密版本: `1.62`，本轮为 Web realtime reserve 到开放历史层的 handoff 桥，以及 iOS 伴生 `0.6` 同步，默认不部署
+- 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.63` open-history path router，具体 commit 以最新 GitHub backup 提交为准
+- 最近验证唯一部署: `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`
+- 最近生产 UI 显示版本: `1.63`
+- 最近本地稠密版本: `1.63`，本轮为 Web 开放历史层四步路径导航，已部署生产；iOS 仍是 `0.6`
 - 当前 iOS 伴生版本: `0.6`，对应稠密 Web `1.62`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；官方 flat-file 文档显示有 `2023/2023` 目录，但当前公开站只使用本机已证实的 `2024-05-17 -> 2026-05-22`，且本 agent 不使用暴露过的 key 测账号权限；公开参考 <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
-- Apple Notes: 置顶同名 note 已在 v1.62 后同步，`updated=1`，`created=0`，正文约 `169,975` chars
+- Apple Notes: 置顶同名 note 已在 v1.63 后同步，`updated=1`，`created=0`，正文 `176,833` chars
 - GitHub: 需要持续提交 docs，让另一个 Codex 能从仓库继续
 
 English:
@@ -44,18 +44,48 @@ English:
 - Branch: `feat/kzg-option-house-daily-auto`
 - Remote: `https://github.com/Kzggzk/xxqq.git`
 - Production site: `https://kzg-option-house.netlify.app/`
-- Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.60` realtime Flow Router pass; exact commit is the latest GitHub backup commit
-- Latest verified unique deploy: `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`
-- Latest visible production UI version: `1.60`
-- Latest local dense version: `1.62`, used for the Web realtime-reserve handoff bridge into the open historical layer and iOS companion `0.6` sync, not deployed by default
+- Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.63` open-history path router; exact commit is the latest GitHub backup commit
+- Latest verified unique deploy: `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`
+- Latest visible production UI version: `1.63`
+- Latest local dense version: `1.63`, used for the Web four-step open-history path router and deployed to production; iOS remains `0.6`
 - Current iOS companion version: `0.6`, mapped to dense Web `1.62`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; official flat-file docs show a `2023/2023` directory, but the public site only uses locally proven `2024-05-17 -> 2026-05-22`, and this agent must not use exposed keys to test account entitlement; public reference <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
-- Apple Notes: pinned note with this title was synced after v1.62, `updated=1`, `created=0`, about `169,975` body characters
+- Apple Notes: pinned note with this title was synced after v1.63, `updated=1`, `created=0`, `176,833` body characters
 - GitHub: keep docs committed so another Codex can continue from the repository
 
-## 1A. Latest heartbeat record v1.62 / 最新心跳记录 v1.62
+## 1A. Latest heartbeat record v1.63 / 最新心跳记录 v1.63
+
+中文:
+
+北京时间 2026-05-27 14:12 左右，稠密版本 `1.63` 完成 Web 开放历史层路径导航，并部署到生产。本轮继续执行 Fangbao 最新公开边界：当前生成分钟能力全部开放，历史趋势、轮动、事件队列、PNG 导出不 blur、不 lock、不 paywall；只有未来 realtime option-flow tape/reserve 可以保留预留式 blur。公开站仍不展示真实 API key、供应商名、套餐、支付、域名、注册、账号或内部商业规划。
+
+改动文件：`public/app.js`、`public/styles.css`、`docs/CHANGELOG.md`、`docs/CHANGLOG_OPTION_TERMINAL.md`、`docs/DENSE_VERSIONING.md`、`docs/HANDOFF_FOR_OTHER_CODEX.md`、`docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`、`docs/PLUGIN_SERVICE_STATUS.md`、`docs/CHANGLOG_OPTION_TERMINAL_MINDMAP.opml`。`public/app.js` 把 `UI_VERSION` 提到 `1.63`，在 `renderHistorySectorIntro()` 后新增 `historyLayerPath()`。它把未来实时预留区后的开放历史层做成 4 个可点击入口：跨日趋势、日内桶、轮动象限、标的聚焦，分别跳到 `trendChart`、`bucketProfile`、`symbolRotation`、`symbolFocus`。这不是付费墙，也不是 API 接入，而是让用户从中段未来实时概念自然进入下方免费的 505 日历史读盘层。
+
+视觉体验：桌面显示一条 “开放历史路径 / 四步进入真正可读的 505 日层” 横向 rail，四格分别展示 `02/27 -> 05/22 -2.5%`、`09:30 1,147.8万张峰值`、`15 / 12 RGTI 量价方向`、`RGTI $122.7M`。首次 QA 发现手机两列会把日期和金额压成省略号，所以 `public/styles.css` 在 520px 以下改为单列，并允许关键值换行。手机最终截图显示四张路径卡完整可读，没有横向溢出。
+
+验证结果：`node --check public/app.js` 通过；`git diff --check -- public/app.js public/styles.css` 通过；公开风险词扫描 `public/app.js public/index.html public/styles.css` 无命中。build 生成 `505` 天 payload，latest `2026-05-22`，analytics days `505`，analytics symbols `98`，pack asset `kzg-frame-c5239c6574b9.js`，`per_day_to_dist` 返回 `copied=505`。Browser 本地打开 `http://127.0.0.1:4200/`，确认页面标题、history path、4 个按钮、4 个目标、旧锁层 0、旧 `.is-blurred` 0、横向溢出 0、console issue 0。Playwright 对 dist `http://127.0.0.1:4201/` 验证桌面和手机：桌面路径 rail 为 5 列，手机路径卡为 1 列；4 个目标存在；按钮点击能滚到目标区；旧锁层 0，旧 `.is-blurred` 0，future blur 仅在 `.terminal-table-body.is-realtime-gated`；PNG 导出成功，大小 `1,482,138` bytes。截图证据：`/tmp/kzg-option-house-v163-final-dist-desktop.png`、`/tmp/kzg-option-house-v163-final-dist-mobile.png`、`/tmp/kzg-option-house-v163-final-dist-desktop-path.png`、`/tmp/kzg-option-house-v163-final-dist-mobile-path.png`、`/tmp/kzg-option-house-v163-final-export.png`。
+
+部署与线上验证：已部署生产，生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`，deploy id `6a168b3efbed57514f5fc1ea`。线上 `app.js` 验证 `UI_VERSION = "1.63"`；线上 `/data/index.json` 和 `/assets/kzg-pack.js` 均为 `404`；线上响应头保留 `noindex, noarchive, nosnippet`、`X-Frame-Options: DENY`、CSP 等保护。线上 Browser 和 Playwright 桌面/手机验证通过：history path 存在、4 个按钮和目标存在、横向溢出 0、旧锁层 0、旧 `.is-blurred` 0、console issue 0、PNG 导出 `1,482,138` bytes。
+
+阻塞与下一步：本轮没有 iOS 同步，因为 iOS 已在 Web v1.62 同步为 `0.6`，默认下次在 Web v1.67 左右。真实 API、Massive plan 升级、域名购买、Stripe/Supabase/支付、TestFlight 或任何花钱/传密钥动作都未执行。下一步 `1.64` 应继续简化开放历史层的读盘路径，把量价齐升、降温、压力分钟、权利金锚点做成更顺滑的故事线，并保持所有当前生成分钟能力开放。
+
+English:
+
+Around 2026-05-27 14:12 Asia/Shanghai, dense version `1.63` completed the Web open-history path router and deployed it to production. It keeps Fangbao's latest public boundary: all generated-minute capabilities stay open; historical trends, rotation, event queues, and PNG export are not blurred, locked, or paywalled; only the future realtime option-flow tape/reserve may keep a reserve-style blur. The public site still must not expose real API keys, provider names, plan details, payment, domains, registration, accounts, or internal commercial planning.
+
+Changed files: `public/app.js`, `public/styles.css`, `docs/CHANGELOG.md`, `docs/CHANGLOG_OPTION_TERMINAL.md`, `docs/DENSE_VERSIONING.md`, `docs/HANDOFF_FOR_OTHER_CODEX.md`, `docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`, `docs/PLUGIN_SERVICE_STATUS.md`, and `docs/CHANGLOG_OPTION_TERMINAL_MINDMAP.opml`. `public/app.js` moves `UI_VERSION` to `1.63` and adds `historyLayerPath()` after `renderHistorySectorIntro()`. It turns the open historical layer after the future realtime reserve into four clickable entries: Cross-day, Intraday buckets, Rotation map, and Symbol lens, jumping to `trendChart`, `bucketProfile`, `symbolRotation`, and `symbolFocus`. This is not a paywall or API connection; it is a clearer way to move users from the future realtime concept into the free 505-session historical reading layer.
+
+Experience: Desktop shows an "Open history path / Four steps into the readable 505-session layer" rail with `02/27 -> 05/22 -2.5%`, `09:30 1,147.8万 peak`, `15 / 12 RGTI direction`, and `RGTI $122.7M`. Initial QA found that two-column phone cards hid dates and money values behind ellipses, so `public/styles.css` switches below 520px to a single column and lets key values wrap. The final phone screenshot shows four readable path cards with no horizontal overflow.
+
+Verification result: `node --check public/app.js` passed; `git diff --check -- public/app.js public/styles.css` passed; public-risk scan across `public/app.js public/index.html public/styles.css` had no matches. Build produced a `505`-day payload, latest `2026-05-22`, analytics days `505`, analytics symbols `98`, pack asset `kzg-frame-c5239c6574b9.js`, and `per_day_to_dist` returned `copied=505`. Browser opened local `http://127.0.0.1:4200/` and confirmed title, history path, 4 buttons, 4 targets, 0 old lock layers, 0 old `.is-blurred` nodes, 0 horizontal overflow, and 0 console issues. Playwright against dist `http://127.0.0.1:4201/` verified desktop and phone: desktop path rail is 5 columns, phone path cards are 1 column; all 4 targets exist; button clicks scroll to the targets; old locks 0, old `.is-blurred` 0, future blur only on `.terminal-table-body.is-realtime-gated`; PNG export succeeded at `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v163-final-dist-desktop.png`, `/tmp/kzg-option-house-v163-final-dist-mobile.png`, `/tmp/kzg-option-house-v163-final-dist-desktop-path.png`, `/tmp/kzg-option-house-v163-final-dist-mobile-path.png`, and `/tmp/kzg-option-house-v163-final-export.png`.
+
+Deploy and production verification: Deployed to production at `https://kzg-option-house.netlify.app/`, unique deploy `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`, deploy id `6a168b3efbed57514f5fc1ea`. Production `app.js` verifies `UI_VERSION = "1.63"`; production `/data/index.json` and `/assets/kzg-pack.js` both return `404`; production headers keep `noindex, noarchive, nosnippet`, `X-Frame-Options: DENY`, CSP, and related protection. Production Browser and Playwright desktop/phone checks passed: history path exists, 4 buttons and targets exist, horizontal overflow 0, old locks 0, old `.is-blurred` 0, console issues 0, and PNG export `1,482,138` bytes.
+
+Blocker and next step: No iOS sync this round because iOS already synced to `0.6` at Web v1.62; the next default sync remains around Web v1.67. No real API, Massive plan upgrade, domain purchase, Stripe/Supabase/payment action, TestFlight action, spending, or secret transmission happened. Next `1.64` should continue simplifying the open historical layer, making volume-premium warming, cooling, pressure minutes, and premium anchors read as a smoother story while keeping all current generated-minute capabilities open.
+
+## 1B. Latest heartbeat record v1.62 / 最新心跳记录 v1.62
 
 中文:
 

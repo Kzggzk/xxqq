@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.62";
+const UI_VERSION = "1.63";
 
 const dataAudit = {
   dataset: "23_DATA_期权分钟_Minute",
@@ -1179,6 +1179,8 @@ function renderHistorySectorIntro() {
   const daily = state.analytics?.daily?.length ? state.analytics.daily : state.datesAsc;
   const selected = daily.find((row) => row.date === state.day.tradeDate) || daily[state.selectedIndex] || {};
   const start = daily[Math.max(0, state.selectedIndex - 59)] || daily[0] || {};
+  const buckets = state.day.buckets.market || [];
+  const peakBucket = buckets.reduce((best, row) => Number(row.total || 0) > Number(best.total || 0) ? row : best, buckets[0] || {});
   target.innerHTML = `
     <div class="history-intro-copy">
       <span>${state.lang === "zh" ? "第三段 · Open historical intraday layer" : "Sector 3 · Open historical intraday layer"}</span>
@@ -1193,6 +1195,54 @@ function renderHistorySectorIntro() {
       ${realtimeStat(state.lang === "zh" ? "成交领头" : "Volume lead", volumeLead.symbol || "--", `${volumeLead.delta >= 0 ? "+" : ""}${fmt1.format(volumeLead.delta || 0)}%`, "flat")}
       ${realtimeStat(state.lang === "zh" ? "权利金领头" : "Premium lead", premiumLead.symbol || "--", `${premiumLead.premiumDelta >= 0 ? "+" : ""}${fmt1.format(premiumLead.premiumDelta || 0)}%`, "flat")}
       ${realtimeStat(state.lang === "zh" ? "窗口" : "Window", `${shortDate(start.date || selected.date || state.day.tradeDate)} → ${shortDate(selected.date || state.day.tradeDate)}`, `${fmt0.format(daily.length || dataAudit.fileCount)} sessions`, "flat")}
+    </div>
+    ${historyLayerPath({
+      attack,
+      fade,
+      premiumLead,
+      volumeLead,
+      peakBucket,
+      start,
+      selected,
+      historyCount: daily.length || dataAudit.fileCount,
+    })}
+  `;
+}
+
+function historyLayerPath(info) {
+  const selectedVol = Number(info.selected?.totalVol || state.day.overview.totalVol || 0);
+  const startVol = Number(info.start?.totalVol || 0);
+  const windowMove = startVol ? ((selectedVol - startVol) / startVol) * 100 : 0;
+  const volumeLead = info.volumeLead || {};
+  const premiumLead = info.premiumLead || {};
+  const peakBucket = info.peakBucket || {};
+  const rows = state.lang === "zh"
+    ? [
+      ["跨日趋势", "trendChart", `${shortDate(info.start?.date || state.day.tradeDate)} → ${shortDate(info.selected?.date || state.day.tradeDate)}`, `${windowMove >= 0 ? "+" : ""}${fmt1.format(windowMove)}%`, windowMove >= 0 ? "hot" : "cool"],
+      ["日内桶", "bucketProfile", peakBucket.time || "--", `${wan(peakBucket.total || 0)}张峰值`, "cool"],
+      ["轮动象限", "symbolRotation", `${fmt0.format(info.attack?.length || 0)} / ${fmt0.format(info.fade?.length || 0)}`, `${volumeLead.symbol || "--"} 量价方向`, "hot"],
+      ["标的聚焦", "symbolFocus", premiumLead.symbol || volumeLead.symbol || "--", `${moneyCompact(premiumLead.premiumNotional || volumeLead.premiumNotional || 0)}`, "flat"],
+    ]
+    : [
+      ["Cross-day", "trendChart", `${shortDate(info.start?.date || state.day.tradeDate)} → ${shortDate(info.selected?.date || state.day.tradeDate)}`, `${windowMove >= 0 ? "+" : ""}${fmt1.format(windowMove)}%`, windowMove >= 0 ? "hot" : "cool"],
+      ["Intraday buckets", "bucketProfile", peakBucket.time || "--", `${wan(peakBucket.total || 0)} peak`, "cool"],
+      ["Rotation map", "symbolRotation", `${fmt0.format(info.attack?.length || 0)} / ${fmt0.format(info.fade?.length || 0)}`, `${volumeLead.symbol || "--"} direction`, "hot"],
+      ["Symbol lens", "symbolFocus", premiumLead.symbol || volumeLead.symbol || "--", `${moneyCompact(premiumLead.premiumNotional || volumeLead.premiumNotional || 0)}`, "flat"],
+    ];
+  return `
+    <div class="history-intro-path">
+      <div>
+        <span>${state.lang === "zh" ? "开放历史路径" : "Open history path"}</span>
+        <b>${state.lang === "zh" ? "四步进入真正可读的 505 日层" : "Four steps into the readable 505-session layer"}</b>
+      </div>
+      ${rows.map((row, index) => `
+        <button type="button" class="${row[4]}" data-scroll-sector="${escapeHtml(row[1])}">
+          <i>${fmt0.format(index + 1)}</i>
+          <span>${escapeHtml(row[0])}</span>
+          <b>${escapeHtml(row[2])}</b>
+          <small>${escapeHtml(row[3])}</small>
+        </button>
+      `).join("")}
     </div>
   `;
 }

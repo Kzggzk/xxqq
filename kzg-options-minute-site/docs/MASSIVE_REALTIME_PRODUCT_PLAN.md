@@ -118,6 +118,25 @@ iOS `0.6` mirrors this rule with a native Flow Router card. It remains a local S
 
 iOS `0.6` 用原生 Flow Router 卡同步这条规则。它仍是本地 SwiftUI 产品壳，不能包含真实 secret 或客户端供应商连接。
 
+## v1.63 open-history path rule / v1.63 开放历史路径规则
+
+v1.63 turns the post-realtime handoff into four public-open navigation targets: cross-day trend, intraday buckets, rotation quadrant, and symbol lens. These are not paid gates. They are the current acquisition layer and should stay readable until Fangbao explicitly changes the product boundary.
+
+v1.63 把实时预留区之后的接力桥变成四个公开开放导航目标：跨日趋势、日内桶、轮动象限、标的聚焦。这些不是付费门槛。它们是当前获客层，应保持可读，除非 Fangbao 明确改变产品边界。
+
+Implementation boundary:
+
+实现边界：
+
+1. The four path buttons can summarize derived historical signals.
+2. 四个路径按钮可以总结派生历史信号。
+3. The buttons may scroll into existing open sections.
+4. 按钮可以滚动到现有开放区块。
+5. The path must not mention providers, credentials, plans, prices, checkout, domains, or entitlement mechanics.
+6. 路径不得提供应商、凭证、套餐、价格、checkout、域名或权限机制。
+7. Phone layout must prefer clear one-column readability over cramped two-column compression when numbers or dates truncate.
+8. 手机布局在数字或日期被截断时，应优先使用清晰单列，而不是硬塞两列。
+
 ## Verified official facts / 已核官方事实
 
 Checked on 2026-05-26 Asia/Shanghai against Massive official docs/pages.
