@@ -29,12 +29,12 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.60` realtime Flow Router pass，具体 commit 以最新 GitHub backup 提交为准
 - 最近验证唯一部署: `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.60`
-- 最近本地稠密版本: `1.61`，本轮为 Web realtime reserve 手机压缩和 2023 数据权限只读审计，默认不部署
-- 当前 iOS 伴生版本: `0.5`，对应稠密 Web `1.57`
+- 最近本地稠密版本: `1.62`，本轮为 Web realtime reserve 到开放历史层的 handoff 桥，以及 iOS 伴生 `0.6` 同步，默认不部署
+- 当前 iOS 伴生版本: `0.6`，对应稠密 Web `1.62`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；官方 flat-file 文档显示有 `2023/2023` 目录，但当前公开站只使用本机已证实的 `2024-05-17 -> 2026-05-22`，且本 agent 不使用暴露过的 key 测账号权限；公开参考 <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
-- Apple Notes: 置顶同名 note 已在 v1.60 后同步，`updated=1`，`created=0`，正文约 `157,747` chars
+- Apple Notes: 置顶同名 note 已在 v1.62 后同步，`updated=1`，`created=0`，正文约 `169,975` chars
 - GitHub: 需要持续提交 docs，让另一个 Codex 能从仓库继续
 
 English:
@@ -47,15 +47,41 @@ English:
 - Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.60` realtime Flow Router pass; exact commit is the latest GitHub backup commit
 - Latest verified unique deploy: `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.60`
-- Latest local dense version: `1.61`, used for Web realtime-reserve mobile compression and read-only 2023 data entitlement audit notes, not deployed by default
-- Current iOS companion version: `0.5`, mapped to dense Web `1.57`
+- Latest local dense version: `1.62`, used for the Web realtime-reserve handoff bridge into the open historical layer and iOS companion `0.6` sync, not deployed by default
+- Current iOS companion version: `0.6`, mapped to dense Web `1.62`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; official flat-file docs show a `2023/2023` directory, but the public site only uses locally proven `2024-05-17 -> 2026-05-22`, and this agent must not use exposed keys to test account entitlement; public reference <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
-- Apple Notes: pinned note with this title was synced after v1.60, `updated=1`, `created=0`, about `157,747` body characters
+- Apple Notes: pinned note with this title was synced after v1.62, `updated=1`, `created=0`, about `169,975` body characters
 - GitHub: keep docs committed so another Codex can continue from the repository
 
-## 1A. Latest heartbeat record v1.61 / 最新心跳记录 v1.61
+## 1A. Latest heartbeat record v1.62 / 最新心跳记录 v1.62
+
+中文:
+
+北京时间 2026-05-27 13:40 左右，稠密版本 `1.62` 完成本地 Web 和 iOS 同步。本轮继续执行 Fangbao 最新公开边界：当前生成分钟能力全部开放，历史趋势、轮动、事件队列、PNG 导出不 blur、不 lock、不 paywall；只有未来 realtime option-flow tape/reserve 可以保留预留式 blur。公开站仍不展示真实 API key、供应商名、套餐、支付、域名、注册、账号或内部商业规划。
+
+改动文件：`public/app.js`、`public/styles.css`、`ios/KZGOptionHouse/KZGOptionHouse/DashboardView.swift`、`docs/CHANGELOG.md`、`docs/CHANGLOG_OPTION_TERMINAL.md`、`docs/IOS_COMPANION_PLAN.md`、`docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`、`docs/PLUGIN_SERVICE_STATUS.md`、`docs/DENSE_VERSIONING.md`、`docs/HANDOFF_FOR_OTHER_CODEX.md`、`docs/CHANGLOG_OPTION_TERMINAL_MINDMAP.opml`。`public/app.js` 把 `UI_VERSION` 提到 `1.62`，新增 `realtimeHistoryHandoff()`，在未来 realtime reserve 与下方开放历史层之间插入 handoff 桥。它用现有生成分钟数据讲清：实时预留到这里，下方继续免费读 505 日历史；RGTI 代表量价同升样张，09:30 是压力分钟，SPY 是同步降温队列样张。`symbolRotationRows()` 加 fallback，避免开发状态无 symbol history 时轮动接力空白。`public/styles.css` 新增 `.realtime-history-handoff` 桌面/手机样式，桌面为说明栏加四格，手机压成两列短格。
+
+iOS 同步：原生 SwiftUI 伴生从 `0.5` 提到 `0.6`。`DashboardView.swift` 的 checkpoint strip 更新为 Web `1.62`、iOS `0.6`、Flow `Future`，并新增 `FlowRouterCard`、`RouterGateTile`、`TapeChip`。这把 Web 中段 Flow Router 的分流逻辑同步到 iOS：先分流，再解释；但仍只是 future reserve 形态，不接真实实时 API，不写供应商、支付、域名、价格、注册或账号路线。
+
+验证结果：`node --check public/app.js` 通过；iOS `swiftc -typecheck` 通过；`git diff --check` 通过；公开风险词扫描 Web 与 iOS 公开源码无命中。build 生成 `505` 天 payload，latest `2026-05-22`，analytics days `505`，analytics symbols `98`，pack asset `kzg-frame-6b392e1504a6.js`，`per_day_to_dist` 返回 `copied=505`。Browser 本地打开 `http://127.0.0.1:4198/`，确认 `23_DATA_期权分钟_Minute · 1.62 · 505/505 complete`、handoff 存在、Flow Router 存在、4 个 gate、16 格 tape、旧锁层 0、旧 `.is-blurred` 0、横向溢出 0、console issue 0、`user-select:none`。Playwright 对 dist `http://127.0.0.1:4199/` 验证桌面和手机：handoff 包含 505 日、RGTI +417.9% / +671.6%、09:30、SPY cooling；手机 handoff 两列；public risk false，旧锁层 0，旧 `.is-blurred` 0，横向溢出 0；PNG 导出成功，大小 `1,482,138` bytes。
+
+阻塞与部署：XcodeBuildMCP `build_run_sim` 仍被本机 simulator destination/runtime 阻塞；shell `xcodebuild` 明确报 `iOS 26.5 is not installed`。Swift 类型检查通过，所以这是本机 Xcode platform/runtime blocker，不是源码 blocker。本轮不部署生产，生产仍是 Web `1.60`，生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`。下一步 `1.63` 应继续打磨 handoff 到开放历史层的滚动节奏，并准备 v1.63-v1.65 之间的下一次生产候选。
+
+English:
+
+Around 2026-05-27 13:40 Asia/Shanghai, dense version `1.62` completed a local Web and iOS sync. It keeps Fangbao's current public boundary: all generated-minute capabilities stay open; historical trends, rotation, event queues, and PNG export are not blurred, locked, or paywalled; only the future realtime option-flow tape/reserve may keep a reserve-style blur. The public site still must not expose real API keys, provider names, plan details, payment, domains, registration, accounts, or internal commercial planning.
+
+Changed files: `public/app.js`, `public/styles.css`, `ios/KZGOptionHouse/KZGOptionHouse/DashboardView.swift`, `docs/CHANGELOG.md`, `docs/CHANGLOG_OPTION_TERMINAL.md`, `docs/IOS_COMPANION_PLAN.md`, `docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`, `docs/PLUGIN_SERVICE_STATUS.md`, `docs/DENSE_VERSIONING.md`, `docs/HANDOFF_FOR_OTHER_CODEX.md`, and `docs/CHANGLOG_OPTION_TERMINAL_MINDMAP.opml`. `public/app.js` moves `UI_VERSION` to `1.62` and adds `realtimeHistoryHandoff()` between the future realtime reserve and the open historical layer. It explains, using existing generated-minute data, that realtime is reserved here while the 505-day historical layer below stays free and readable; RGTI is the volume-premium warming sample, 09:30 is the pressure minute, and SPY is the cooling sample. `symbolRotationRows()` adds a fallback so development states without symbol history do not blank the rotation handoff. `public/styles.css` adds `.realtime-history-handoff` for desktop and phone: copy rail plus four cells on desktop, two compact columns on phones.
+
+iOS sync: Native SwiftUI companion moves from `0.5` to `0.6`. `DashboardView.swift` checkpoint strip now shows Web `1.62`, iOS `0.6`, and Flow `Future`; it adds `FlowRouterCard`, `RouterGateTile`, and `TapeChip`. This mirrors the Web middle-sector Flow Router logic on iOS: route first, explain second. It remains a future-reserve shape, with no real realtime API, provider, payment, domain, price, registration, or account route.
+
+Verification result: `node --check public/app.js` passed; iOS `swiftc -typecheck` passed; `git diff --check` passed; public-risk scan across Web and iOS public source had no matches. Build produced a `505`-day payload, latest `2026-05-22`, analytics days `505`, analytics symbols `98`, pack asset `kzg-frame-6b392e1504a6.js`, and `per_day_to_dist` returned `copied=505`. Browser opened local `http://127.0.0.1:4198/` and confirmed `23_DATA_期权分钟_Minute · 1.62 · 505/505 complete`, handoff, Flow Router, 4 gates, 16 tape cells, 0 old lock layers, 0 old `.is-blurred` nodes, 0 horizontal overflow, 0 console issues, and `user-select:none`. Playwright against dist `http://127.0.0.1:4199/` verified desktop and phone: handoff includes 505 days, RGTI +417.9% / +671.6%, 09:30, and SPY cooling; phone handoff uses two columns; public risk false, old locks 0, old `.is-blurred` 0, horizontal overflow 0; PNG export succeeded at `1,482,138` bytes.
+
+Blocker and deploy: XcodeBuildMCP `build_run_sim` is still blocked by local simulator destination/runtime selection; shell `xcodebuild` explicitly reports `iOS 26.5 is not installed`. Swift typecheck passes, so this is a local Xcode platform/runtime blocker, not a source blocker. This round is not deployed. Production remains Web `1.60` at `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`. Next `1.63` should refine the scroll rhythm from the handoff into the open historical layer and prepare the next production candidate around v1.63-v1.65.
+
+## 1B. Latest heartbeat record v1.61 / 最新心跳记录 v1.61
 
 中文:
 

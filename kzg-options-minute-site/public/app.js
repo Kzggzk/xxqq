@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.61";
+const UI_VERSION = "1.62";
 
 const dataAudit = {
   dataset: "23_DATA_期权分钟_Minute",
@@ -700,16 +700,17 @@ function renderPremiumPreview() {
   const bearishRows = flowRows.filter((row) => row.tone === "cool").slice(0, 9);
   const lead = attack.slice().sort((a, b) => (b.delta + b.premiumDelta) - (a.delta + a.premiumDelta))[0] || flowRows[0] || rows[0] || {};
   const flowVolume = flowRows.reduce((sum, row) => sum + Number(row.notional || 0), 0);
+  const historyCount = state.analytics?.daily?.length || state.datesAsc.length || dataAudit.fileCount;
   const commandStats = state.lang === "zh"
     ? [
       ["当日Dashboard", "开放", state.day.tradeDate, "flat"],
       ["实时Flow", "预留", "后端确认后", "hot"],
-      ["历史趋势", "开放", `${fmt0.format(state.analytics?.daily?.length || 0)}日`, "flat"],
+      ["历史趋势", "开放", `${fmt0.format(historyCount)}日`, "flat"],
     ]
     : [
       ["Daily dashboard", "Open", state.day.tradeDate, "flat"],
       ["Live flow", "Reserved", "after backend approval", "hot"],
-      ["History trends", "Open", `${fmt0.format(state.analytics?.daily?.length || 0)}D`, "flat"],
+      ["History trends", "Open", `${fmt0.format(historyCount)}D`, "flat"],
     ];
   target.innerHTML = `
     <div class="realtime-topline">
@@ -736,7 +737,7 @@ function renderPremiumPreview() {
       flowRows: flowRows.length,
       hotCount: bullishRows.length,
       coolCount: bearishRows.length,
-      historyCount: state.analytics?.daily?.length || 0,
+      historyCount,
       lead: lead.symbol || "--",
     })}
     ${realtimeFlowRouter(flowRows, rows, maxBucket)}
@@ -764,11 +765,57 @@ function renderPremiumPreview() {
         ${realtimeBiasList(state.lang === "zh" ? "Bearish Flow" : "Bearish Flow", bearishRows, "cool", flowRows)}
       </div>
     </div>
+    ${realtimeHistoryHandoff({
+      attack,
+      fade,
+      peakBucket: maxBucket,
+      premiumLead,
+      flowRows,
+      volumeLead: lead,
+      historyCount,
+    })}
     <div class="realtime-boundary-note">
       <b>${state.lang === "zh" ? "体验边界" : "Experience boundary"}</b>
       <span>${state.lang === "zh"
         ? "当前是未来实时产品的体验轮廓：展示速度、筛选、分栏和事件密度，完整实时明细会在专门页面打开。"
         : "This is the future live-product outline: speed, filters, bias lanes, and event density are visible; full realtime detail opens in a dedicated page."}</span>
+    </div>
+  `;
+}
+
+function realtimeHistoryHandoff(info) {
+  const attackLead = info.attack?.[0] || info.flowRows?.find((row) => row.tone === "hot") || info.volumeLead || {};
+  const fadeLead = info.fade?.[0] || info.flowRows?.find((row) => row.tone === "cool") || {};
+  const historyCount = info.historyCount || state.datesAsc.length || dataAudit.fileCount;
+  const cells = state.lang === "zh"
+    ? [
+      ["向下读", "历史层开放", `${fmt0.format(historyCount)} 日窗口`, "flat"],
+      ["量价同升", attackLead.symbol || "--", `${attackLead.delta >= 0 ? "+" : ""}${fmt1.format(attackLead.delta || 0)}% · ${attackLead.premiumDelta >= 0 ? "+" : ""}${fmt1.format(attackLead.premiumDelta || 0)}%`, "hot"],
+      ["压力分钟", info.peakBucket?.time || "--", `${wan(info.peakBucket?.total || 0)}张`, "cool"],
+      ["同步降温", fadeLead.symbol || "--", `${fmt1.format(fadeLead.delta || 0)}% · ${fmt1.format(fadeLead.premiumDelta || 0)}%`, "flat"],
+    ]
+    : [
+      ["Read next", "Open history", `${fmt0.format(historyCount)} sessions`, "flat"],
+      ["Vol + premium", attackLead.symbol || "--", `${attackLead.delta >= 0 ? "+" : ""}${fmt1.format(attackLead.delta || 0)}% · ${attackLead.premiumDelta >= 0 ? "+" : ""}${fmt1.format(attackLead.premiumDelta || 0)}%`, "hot"],
+      ["Pressure minute", info.peakBucket?.time || "--", `${wan(info.peakBucket?.total || 0)} contracts`, "cool"],
+      ["Cooling", fadeLead.symbol || "--", `${fmt1.format(fadeLead.delta || 0)}% · ${fmt1.format(fadeLead.premiumDelta || 0)}%`, "flat"],
+    ];
+  return `
+    <div class="realtime-history-handoff">
+      <div>
+        <span>${state.lang === "zh" ? "Open layer handoff" : "Open layer handoff"}</span>
+        <b>${state.lang === "zh" ? "实时预留到这里 下方继续免费读历史" : "Reserve ends here, open history continues below"}</b>
+        <p>${state.lang === "zh"
+          ? "实时席位只负责未来高速流。已经落地的分钟数据继续开放，下一屏直接进入轮动、日内桶和标的扩散。"
+          : "The reserve only frames the future high-speed stream. Landed minute data stays open, and the next screen moves into rotation, intraday buckets, and symbol breadth."}</p>
+      </div>
+      ${cells.map((cell) => `
+        <span class="${cell[3]}">
+          <i>${escapeHtml(cell[0])}</i>
+          <b>${escapeHtml(cell[1])}</b>
+          <small>${escapeHtml(cell[2])}</small>
+        </span>
+      `).join("")}
     </div>
   `;
 }
@@ -1129,7 +1176,7 @@ function renderHistorySectorIntro() {
   const fade = rows.filter((row) => row.delta < 0 && row.premiumDelta < 0);
   const premiumLead = rows.reduce((best, row) => row.premiumDelta > Number(best.premiumDelta || -Infinity) ? row : best, rows[0] || {});
   const volumeLead = rows.reduce((best, row) => row.delta > Number(best.delta || -Infinity) ? row : best, rows[0] || {});
-  const daily = state.analytics?.daily || [];
+  const daily = state.analytics?.daily?.length ? state.analytics.daily : state.datesAsc;
   const selected = daily.find((row) => row.date === state.day.tradeDate) || daily[state.selectedIndex] || {};
   const start = daily[Math.max(0, state.selectedIndex - 59)] || daily[0] || {};
   target.innerHTML = `
@@ -1145,7 +1192,7 @@ function renderHistorySectorIntro() {
       ${realtimeStat(state.lang === "zh" ? "同步降温" : "Cooling", fade.length, fade[0]?.symbol || "--", "cool")}
       ${realtimeStat(state.lang === "zh" ? "成交领头" : "Volume lead", volumeLead.symbol || "--", `${volumeLead.delta >= 0 ? "+" : ""}${fmt1.format(volumeLead.delta || 0)}%`, "flat")}
       ${realtimeStat(state.lang === "zh" ? "权利金领头" : "Premium lead", premiumLead.symbol || "--", `${premiumLead.premiumDelta >= 0 ? "+" : ""}${fmt1.format(premiumLead.premiumDelta || 0)}%`, "flat")}
-      ${realtimeStat(state.lang === "zh" ? "窗口" : "Window", `${shortDate(start.date || selected.date || state.day.tradeDate)} → ${shortDate(selected.date || state.day.tradeDate)}`, `${fmt0.format(daily.length)} sessions`, "flat")}
+      ${realtimeStat(state.lang === "zh" ? "窗口" : "Window", `${shortDate(start.date || selected.date || state.day.tradeDate)} → ${shortDate(selected.date || state.day.tradeDate)}`, `${fmt0.format(daily.length || dataAudit.fileCount)} sessions`, "flat")}
     </div>
   `;
 }
@@ -3591,7 +3638,7 @@ function rotationMapStat(label, value, symbol, tone) {
 
 function symbolRotationRows() {
   const seen = new Set();
-  return [...state.day.indexRows, ...state.day.etfRows, ...state.day.stockRows]
+  const mapped = [...state.day.indexRows, ...state.day.etfRows, ...state.day.stockRows]
     .filter((row) => {
       if (seen.has(row.symbol)) return false;
       seen.add(row.symbol);
@@ -3606,8 +3653,9 @@ function symbolRotationRows() {
       const premiumDelta = premiumAvg ? ((Number(row.premiumNotional) - premiumAvg) / premiumAvg) * 100 : 0;
       return { ...row, delta, premiumDelta, series };
     })
-    .filter((row) => row.series.length >= 5)
     .sort((a, b) => b.delta - a.delta);
+  const withHistory = mapped.filter((row) => row.series.length >= 5);
+  return (withHistory.length ? withHistory : mapped).sort((a, b) => b.delta - a.delta);
 }
 
 function rotationLane(title, rows, tone) {

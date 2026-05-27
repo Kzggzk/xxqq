@@ -95,6 +95,29 @@ Source for the public directory and plan-history wording: <https://massive.com/d
 
 公开目录和历史层级表述来源：<https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
 
+## v1.62 realtime-to-history handoff rule / v1.62 实时到历史接力规则
+
+v1.62 adds a public-safe bridge from the future realtime reserve into the open historical layer. This is a product-experience rule, not a backend connection.
+
+v1.62 增加从未来实时预留区到开放历史层的公开安全桥。这是产品体验规则，不是真实后端连接。
+
+The bridge should say:
+
+桥的表达应是：
+
+1. Realtime reserve ends here unless a future backend and entitlement are approved.
+2. 实时预留区到这里为止，除非未来后端和权限被批准。
+3. The existing 505-day historical layer remains open and readable.
+4. 现有 505 日历史层继续开放可读。
+5. The bridge may preview derived historical signals such as volume-premium warming, pressure minute, and cooling queue.
+6. 桥可以预览派生历史信号，例如量价同升、压力分钟和降温队列。
+7. The bridge must not name providers, plan prices, checkout routes, account mechanics, or real API implementation.
+8. 桥不得写供应商名、套餐价格、checkout 路线、账号机制或真实 API 实现。
+
+iOS `0.6` mirrors this rule with a native Flow Router card. It remains a local SwiftUI product shell and must not contain a real secret or client-side provider connection.
+
+iOS `0.6` 用原生 Flow Router 卡同步这条规则。它仍是本地 SwiftUI 产品壳，不能包含真实 secret 或客户端供应商连接。
+
 ## Verified official facts / 已核官方事实
 
 Checked on 2026-05-26 Asia/Shanghai against Massive official docs/pages.

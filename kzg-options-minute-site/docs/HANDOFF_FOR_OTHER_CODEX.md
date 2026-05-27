@@ -18,10 +18,10 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Remote / 远端: `https://github.com/Kzggzk/xxqq.git`
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
-- Production version last verified / 最近生产验证版本: `1.56`
-- Local version last verified / 最近本地验证版本: `1.59` Web three-sector product spine and public provider-label cleanup
-- Latest unique deploy / 最近唯一部署: `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`
-- iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.5`
+- Production version last verified / 最近生产验证版本: `1.60`
+- Local version last verified / 最近本地验证版本: `1.62` Web realtime-to-open-history handoff and iOS companion `0.6`
+- Latest unique deploy / 最近唯一部署: `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`
+- iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.6`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
 - Local verified option-minute window / 本地已验证期权分钟范围: `2024-05-17 -> 2026-05-22`, `505` files.
 
@@ -59,6 +59,14 @@ python3 /Users/fangbao/kzg-options-minute-site/scripts/build_payload.py
 python3 /Users/fangbao/kzg-options-minute-site/scripts/per_day_to_dist.py
 npx netlify-cli deploy --prod --dir /Users/fangbao/kzg-options-minute-site/dist
 ```
+
+Latest local v1.62 note:
+
+最新本地 v1.62 说明：
+
+Web `1.62` is the latest local checkpoint and is not deployed to production. Production remains v1.60 at `https://kzg-option-house.netlify.app/`, unique deploy `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`. Main code changes are `public/app.js`, `public/styles.css`, and `ios/KZGOptionHouse/KZGOptionHouse/DashboardView.swift`: UI version `1.62`, new `realtimeHistoryHandoff()` bridge between the future realtime reserve and open historical layer, fallback behavior for `symbolRotationRows()`, `.realtime-history-handoff` responsive styles, and native iOS `0.6` Flow Router card. Current generated-minute features stay open; only the future realtime tape keeps reserve blur. Local Browser and Playwright QA passed on desktop and phone: source `23_DATA_期权分钟_Minute · 1.62 · 505/505 complete`, handoff present, 4 gates, 16 tape cells, old locks 0, old `.is-blurred` 0, public-risk false, horizontal overflow 0, and PNG export `1,482,138` bytes. iOS source typecheck passes; full simulator run is blocked by local Xcode/iOS `26.5` platform availability, not by Swift syntax. Do not deploy or sell realtime data until backend credentials, rights, and Fangbao approval are confirmed.
+
+Web `1.62` 是最新本地检查点，未部署生产。生产仍为 v1.60，生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`。主要源码改动是 `public/app.js`、`public/styles.css` 和 `ios/KZGOptionHouse/KZGOptionHouse/DashboardView.swift`：UI 版本 `1.62`，新增未来 realtime reserve 到开放历史层之间的 `realtimeHistoryHandoff()` 桥，`symbolRotationRows()` fallback，`.realtime-history-handoff` 响应式样式，以及原生 iOS `0.6` Flow Router 卡。当前生成分钟能力保持开放；只有未来实时 tape 保留预留式 blur。本地 Browser 与 Playwright 桌面/手机 QA 通过：source 为 `23_DATA_期权分钟_Minute · 1.62 · 505/505 complete`，handoff 存在，4 个 gate，16 格 tape，旧锁层 0，旧 `.is-blurred` 0，公开风险 false，横向溢出 0，PNG 导出 `1,482,138` bytes。iOS 源码 typecheck 通过；完整 simulator run 被本机 Xcode/iOS `26.5` platform 可用性阻塞，不是 Swift 语法问题。不要在后端凭证、权利和 Fangbao 批准确认前部署或销售实时数据。
 
 Latest v1.42 note:
 

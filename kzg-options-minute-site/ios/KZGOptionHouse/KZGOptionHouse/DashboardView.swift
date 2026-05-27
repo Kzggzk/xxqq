@@ -18,6 +18,7 @@ struct DashboardView: View {
           SummaryGrid(snapshot: snapshot)
           ReadBus(snapshot: snapshot)
           RealtimeReserveCard(filters: snapshot.flowFilters, lanes: snapshot.flowLanes)
+          FlowRouterCard(lanes: snapshot.flowLanes, pillars: snapshot.historyPillars)
           SectorBand(sectors: snapshot.sectors)
           OpenHistoryCard(pillars: snapshot.historyPillars)
           IntradayCard(buckets: snapshot.buckets)
@@ -56,7 +57,7 @@ private struct Header: View {
         VStack(alignment: .trailing, spacing: 2) {
           Text(snapshot.tradeDate)
             .font(.system(.subheadline, design: .rounded, weight: .bold))
-          Text("iOS companion 0.5")
+          Text("iOS companion 0.6")
             .font(.caption2.weight(.semibold))
             .foregroundStyle(.secondary)
         }
@@ -82,9 +83,9 @@ private struct Header: View {
 
 private struct CheckpointStrip: View {
   private let items = [
-    ("Web", "1.57", "open"),
-    ("iOS", "0.5", "3-sector"),
-    ("Live", "Future", "derived")
+    ("Web", "1.62", "open"),
+    ("iOS", "0.6", "router"),
+    ("Flow", "Future", "derived")
   ]
 
   var body: some View {
@@ -304,6 +305,125 @@ private struct FlowRow: View {
     .padding(.vertical, 6)
     .padding(.horizontal, 7)
     .background(Color(.systemBackground).opacity(0.74), in: RoundedRectangle(cornerRadius: 6, style: .continuous))
+  }
+}
+
+private struct FlowRouterCard: View {
+  let lanes: [FlowLane]
+  let pillars: [HistoryPillar]
+
+  private var items: [FlowItem] {
+    lanes.flatMap(\.items)
+  }
+
+  private var bullishCount: Int {
+    lanes.first { $0.title.localizedCaseInsensitiveContains("Bullish") }?.items.count ?? 0
+  }
+
+  private var bearishCount: Int {
+    lanes.first { $0.title.localizedCaseInsensitiveContains("Bearish") }?.items.count ?? 0
+  }
+
+  var body: some View {
+    KZGCard(title: "Flow Router", subtitle: "先分流 再解释") {
+      VStack(alignment: .leading, spacing: 9) {
+        Text("未来实时流先过方向门、权利金门、策略门和风险门；下方历史层继续开放。")
+          .font(.system(.subheadline, design: .serif, weight: .semibold))
+          .lineSpacing(2)
+
+        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 7) {
+          RouterGateTile(label: "方向门", value: "\(bullishCount) / \(bearishCount)", detail: "Bull Bear")
+          RouterGateTile(label: "权利金门", value: items.first?.symbol ?? "--", detail: items.first?.premium ?? "--", accent: Color(red: 0.67, green: 0.24, blue: 0.18))
+          RouterGateTile(label: "策略门", value: "Sweep", detail: "Spread 防守")
+          RouterGateTile(label: "风险门", value: items.last?.symbol ?? "--", detail: items.last?.delta ?? "--", accent: Color(red: 0.20, green: 0.40, blue: 0.58))
+        }
+
+        LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 5), count: 4), spacing: 5) {
+          ForEach(items.prefix(8)) { item in
+            TapeChip(item: item)
+          }
+        }
+
+        HStack(spacing: 7) {
+          ForEach(pillars.prefix(3)) { pillar in
+            VStack(alignment: .leading, spacing: 3) {
+              Text(pillar.title)
+                .font(.system(size: 9, weight: .black, design: .rounded))
+                .foregroundStyle(.secondary)
+              Text(pillar.value)
+                .font(.caption.weight(.black))
+              Text(pillar.detail)
+                .font(.system(size: 8, weight: .semibold, design: .rounded))
+                .foregroundStyle(.secondary)
+                .lineLimit(1)
+                .minimumScaleFactor(0.70)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(7)
+            .background(Color(red: 0.12, green: 0.48, blue: 0.34).opacity(0.08), in: RoundedRectangle(cornerRadius: 6, style: .continuous))
+          }
+        }
+      }
+    }
+  }
+}
+
+private struct RouterGateTile: View {
+  var label: String
+  var value: String
+  var detail: String
+  var accent: Color = Color(red: 0.62, green: 0.42, blue: 0.15)
+
+  var body: some View {
+    VStack(alignment: .leading, spacing: 3) {
+      Text(label)
+        .font(.caption2.weight(.bold))
+        .foregroundStyle(.secondary)
+      Text(value)
+        .font(.caption.weight(.black))
+        .lineLimit(1)
+        .minimumScaleFactor(0.70)
+      Text(detail)
+        .font(.system(size: 9, weight: .semibold, design: .rounded))
+        .foregroundStyle(.secondary)
+        .lineLimit(1)
+        .minimumScaleFactor(0.70)
+    }
+    .frame(maxWidth: .infinity, alignment: .leading)
+    .padding(8)
+    .background(
+      RoundedRectangle(cornerRadius: 6, style: .continuous)
+        .fill(accent.opacity(0.08))
+        .overlay(alignment: .leading) {
+          Rectangle()
+            .fill(accent)
+            .frame(width: 3)
+        }
+    )
+  }
+}
+
+private struct TapeChip: View {
+  let item: FlowItem
+
+  var body: some View {
+    VStack(alignment: .leading, spacing: 2) {
+      Text(item.time)
+        .font(.system(size: 8, weight: .bold, design: .rounded))
+        .foregroundStyle(.secondary)
+      Text(item.symbol)
+        .font(.system(size: 11, weight: .black, design: .rounded))
+        .lineLimit(1)
+      Text(item.premium)
+        .font(.system(size: 8, weight: .bold, design: .rounded))
+        .foregroundStyle(.secondary)
+        .lineLimit(1)
+        .minimumScaleFactor(0.65)
+    }
+    .frame(maxWidth: .infinity, alignment: .leading)
+    .padding(.vertical, 6)
+    .padding(.horizontal, 6)
+    .background(Color.black.opacity(0.055), in: RoundedRectangle(cornerRadius: 5, style: .continuous))
   }
 }
 

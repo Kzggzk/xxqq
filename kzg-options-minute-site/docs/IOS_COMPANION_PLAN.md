@@ -9,10 +9,10 @@ This document defines the iOS track for KZG Option House. The iOS app is a compa
 - iOS project / iOS 工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`
 - Scheme / Scheme: `KZG Option House`
 - Bundle id / Bundle ID: `com.kzg.optionhouse`
-- Current iOS version / 当前 iOS 版本: `0.5`
-- Web baseline / 对应 Web 基线: dense Web `1.57`, production Web still `1.56`
+- Current iOS version / 当前 iOS 版本: `0.6`
+- Web baseline / 对应 Web 基线: dense Web `1.62`, production Web still `1.60`
 - First simulator proof / 首次模拟器证明: `/tmp/kzg-option-house-ios-v01.png`
-- Build proof / 构建证明: v0.5 Swift source typecheck passed with `swiftc`; full XcodeBuildMCP simulator run is currently blocked by local simulator runtime selection.
+- Build proof / 构建证明: v0.6 Swift source typecheck passed with `swiftc`; full XcodeBuildMCP simulator run is currently blocked by local Xcode platform/runtime selection, currently reporting missing iOS `26.5`.
 
 ## Cadence / 节奏
 
@@ -20,8 +20,8 @@ This document defines the iOS track for KZG Option House. The iOS app is a compa
 - Web 继续按 `0.01` 稠密迭代。
 - iOS updates every 5 Web dense versions unless Fangbao explicitly asks for an immediate iOS pass.
 - iOS 每 5 个 Web 稠密版本同步一次，除非 Fangbao 明确要求立即同步。
-- Current checkpoint: iOS `0.5` at dense Web `1.57`; next planned iOS checkpoint is around Web `1.62` unless Fangbao asks earlier.
-- 当前检查点：iOS `0.5` 对应稠密 Web `1.57`；下一次计划 iOS 检查点约在 Web `1.62`，除非 Fangbao 提前要求。
+- Current checkpoint: iOS `0.6` at dense Web `1.62`; next planned iOS checkpoint is around Web `1.67` unless Fangbao asks earlier.
+- 当前检查点：iOS `0.6` 对应稠密 Web `1.62`；下一次计划 iOS 检查点约在 Web `1.67`，除非 Fangbao 提前要求。
 
 ## Product direction / 产品方向
 
@@ -65,6 +65,8 @@ Current verified steps:
 - v0.4 SwiftUI 源码已通过 `swiftc -typecheck`。
 - v0.5 SwiftUI source typecheck passed with `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator`.
 - v0.5 SwiftUI 源码已通过 `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator`。
+- v0.6 SwiftUI source typecheck passed with `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator`.
+- v0.6 SwiftUI 源码已通过 `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator`。
 - First v0.1 simulator proof remains `/tmp/kzg-option-house-ios-v01.png`.
 - 首次 v0.1 模拟器证明仍为 `/tmp/kzg-option-house-ios-v01.png`。
 
@@ -72,8 +74,18 @@ Known caveat:
 
 已知注意点：
 
-- For v0.5, XcodeBuildMCP still finds the correct project, scheme, and `iPhone 17 Pro` simulator profile, but `build_run_sim` fails on this machine because the destination `{ platform:iOS Simulator, id:9DAFEA29-80F2-4D94-BE75-C0106CE8D97E }` cannot be matched against the installed runtime. Source typecheck passes, so this is still recorded as a local Xcode/destination blocker, not a Swift syntax blocker.
-- 对 v0.5 来说，XcodeBuildMCP 仍能找到正确工程、scheme 和 `iPhone 17 Pro` 模拟器 profile，但 `build_run_sim` 在本机仍失败，因为 destination `{ platform:iOS Simulator, id:9DAFEA29-80F2-4D94-BE75-C0106CE8D97E }` 与已安装 runtime 对不上。源码类型检查通过，所以继续记录为本机 Xcode/destination 阻塞，不是 Swift 语法阻塞。
+- For v0.6, XcodeBuildMCP still finds the correct project, scheme, and `iPhone 17 Pro` simulator profile, but `build_run_sim` fails on this machine because the simulator destination/runtime is not usable. A shell `xcodebuild -destination 'generic/platform=iOS Simulator'` fallback reports `iOS 26.5 is not installed`. Source typecheck passes, so this is recorded as a local Xcode platform/runtime blocker, not a Swift syntax blocker.
+- 对 v0.6 来说，XcodeBuildMCP 仍能找到正确工程、scheme 和 `iPhone 17 Pro` 模拟器 profile，但 `build_run_sim` 在本机仍因 simulator destination/runtime 不可用而失败。shell `xcodebuild -destination 'generic/platform=iOS Simulator'` fallback 明确报 `iOS 26.5 is not installed`。源码类型检查通过，所以记录为本机 Xcode platform/runtime 阻塞，不是 Swift 语法阻塞。
+
+## v0.6 checkpoint / v0.6 检查点
+
+中文:
+
+Web dense `1.62` 同步 iOS `0.6`。这轮把 Web 中段 Flow Router 和 realtime-to-history handoff 的产品逻辑带到原生手机界面。`DashboardView.swift` 的顶部 checkpoint strip 改为 Web `1.62`、iOS `0.6`、Flow `Future`；`RealtimeReserveCard` 后新增 `FlowRouterCard`，包含四个 router gate、暗色 tape chips、以及开放历史层接力提示。iOS 仍不写真实 API key、不写供应商名、不写支付、域名、价格、注册或账号路线。本轮没有 TestFlight、App Store、签名 team 或付费账号动作。验证上，Swift source typecheck 通过；完整 simulator run 仍被本机 Xcode/iOS `26.5` platform 缺失阻塞。
+
+English:
+
+Web dense `1.62` syncs iOS `0.6`. This round brings the Web middle-sector Flow Router and realtime-to-history handoff logic into the native phone surface. `DashboardView.swift` checkpoint strip changes to Web `1.62`, iOS `0.6`, Flow `Future`; `FlowRouterCard` is added after `RealtimeReserveCard`, with four router gates, dark tape chips, and an open-history handoff hint. iOS still contains no real API key, provider name, payment, domain, price, registration, or account route. No TestFlight, App Store, signing-team, or paid account action happened. Verification: Swift source typecheck passed; full simulator run is still blocked by the local Xcode/iOS `26.5` platform gap.
 
 ## v0.5 checkpoint / v0.5 检查点
 

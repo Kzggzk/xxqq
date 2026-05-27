@@ -12,8 +12,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - `1.01 -> 2.00` 代表 100 个稠密迭代。
 - A future `11.85` means 1085 post-1.00 dense iterations, not a symbolic number.
 - 未来如果到 `11.85`，它代表从 1.00 之后真的经历了 1085 个稠密迭代，不是随便喊出来的数字。
-- The latest local checkpoint is `1.59` for Web three-sector product spine and public provider-label cleanup. The latest production Web checkpoint remains public UI `1.56`, unique deploy `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`. The next dense step is `1.60`.
-- 最近本地检查点是 `1.59` Web 三段式产品脊柱和公开供应商标签清理。最新生产 Web 检查点仍是公开 UI `1.56`，唯一部署是 `https://6a15c1b6531adb3fd145e39d--kzg-option-house.netlify.app/`。下一次稠密版本是 `1.60`。
+- The latest local checkpoint is `1.62` for Web realtime-to-open-history handoff and iOS companion `0.6`. The latest production Web checkpoint is public UI `1.60`, unique deploy `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`. The next dense step is `1.63`.
+- 最近本地检查点是 `1.62` Web 实时预留区到开放历史层 handoff，以及 iOS 伴生 `0.6`。最新生产 Web 检查点是公开 UI `1.60`，唯一部署是 `https://6a15daeafdbe07993e28b173--kzg-option-house.netlify.app/`。下一次稠密版本是 `1.63`。
 
 ## iOS companion cadence / iOS 伴生节奏
 
@@ -21,8 +21,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - iOS app 是原生 SwiftUI，位于 `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse`。
 - iOS does not update on every Web `0.01` version. It updates every 5 Web dense versions unless Fangbao asks for an immediate iOS pass.
 - iOS 不跟随每一个 Web `0.01` 版本更新。默认每 5 个 Web 稠密版本同步一次，除非 Fangbao 要求立即更新 iOS。
-- Current iOS checkpoint: `iOS 0.5` at dense Web `1.57`. It syncs the three-sector public-open structure into native SwiftUI: top daily dashboard, middle future realtime reserve, and bottom open historical layer. XcodeBuildMCP still has a local simulator destination blocker, but Swift source typecheck passes.
-- 当前 iOS 检查点：`iOS 0.5` 对应稠密 Web `1.57`。它把三段式公开开放结构同步进原生 SwiftUI：顶部日报 dashboard、中段未来实时 reserve、底部开放历史层。XcodeBuildMCP 仍有本机 simulator destination 阻塞，但 Swift 源码 typecheck 通过。
+- Current iOS checkpoint: `iOS 0.6` at dense Web `1.62`. It syncs the Flow Router and realtime-to-history handoff into native SwiftUI. XcodeBuildMCP still has a local simulator destination/runtime blocker, and shell `xcodebuild` reports missing iOS `26.5`, but Swift source typecheck passes.
+- 当前 iOS 检查点：`iOS 0.6` 对应稠密 Web `1.62`。它把 Flow Router 与实时预留区到历史层的 handoff 同步进原生 SwiftUI。XcodeBuildMCP 仍有本机 simulator destination/runtime 阻塞，shell `xcodebuild` 报缺少 iOS `26.5`，但 Swift 源码 typecheck 通过。
 - App Store signing, TestFlight upload, review submission, or developer-account actions require Fangbao confirmation at that moment.
 - App Store 签名、TestFlight 上传、审核提交或开发者账号动作，都必须在当时让 Fangbao 确认。
 
@@ -46,6 +46,12 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - v1.58 回到 Web，为未来实时 reserve 增加三段过渡 rail 和 filter 权重 rail。生产仍为 v1.56。
 - v1.59 adds a compact three-sector product spine after the access strip, makes the three sectors clickable, removes the public provider name from the displayed dataset label, and verifies desktop/mobile child overflow is 0. Production remains v1.56.
 - v1.59 在 access strip 后加入紧凑三段式产品脊柱，让三段区块可点击跳转，移除公开数据标签里的供应商名，并验证桌面/手机 child overflow 为 0。生产仍为 v1.56。
+- v1.60 deploys the Flow Router to production and keeps current generated-minute features open.
+- v1.60 将 Flow Router 部署到生产，同时保持当前生成分钟能力开放。
+- v1.61 compresses the future realtime reserve on phones and records the 2023 flat-file entitlement audit rule.
+- v1.61 压缩手机端未来 realtime reserve，并记录 2023 flat-file 权限审计规则。
+- v1.62 adds the realtime-to-open-history handoff bridge, confirms 505-day open history copy, and syncs iOS companion `0.6`. Production remains v1.60.
+- v1.62 增加 realtime 到开放历史层的 handoff 桥，确认 505 日开放历史文案，并同步 iOS 伴生 `0.6`。生产仍为 v1.60。
 
 ## Heartbeat protocol / 心跳协议
 

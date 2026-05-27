@@ -16070,3 +16070,130 @@ body[data-theme="dark"] .router-gates span {
     display: none;
   }
 }
+
+/* v1.62 pass: make the realtime reserve hand off into the open historical layer. */
+.realtime-history-handoff {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.15fr) repeat(4, minmax(0, 0.7fr));
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(90deg, rgba(22, 95, 72, 0.08), rgba(172, 92, 47, 0.08)),
+    var(--panel);
+}
+
+.realtime-history-handoff > div,
+.realtime-history-handoff > span {
+  min-width: 0;
+  border: 1px solid rgba(20, 20, 18, 0.09);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.realtime-history-handoff > div {
+  display: grid;
+  gap: 5px;
+  padding: 10px 11px;
+}
+
+.realtime-history-handoff > span {
+  display: grid;
+  align-content: space-between;
+  gap: 5px;
+  min-height: 86px;
+  padding: 9px 10px;
+}
+
+.realtime-history-handoff i,
+.realtime-history-handoff span:first-child,
+.realtime-history-handoff small {
+  color: var(--muted);
+  font: 800 10px/1.1 var(--sans);
+  letter-spacing: 0.01em;
+}
+
+.realtime-history-handoff > div span {
+  text-transform: uppercase;
+}
+
+.realtime-history-handoff b {
+  color: var(--ink);
+  font: 900 clamp(16px, 2.2vw, 22px)/0.98 var(--serif);
+  letter-spacing: 0;
+}
+
+.realtime-history-handoff p {
+  max-width: 60ch;
+  margin: 0;
+  color: var(--muted);
+  font: 700 12px/1.5 var(--sans);
+}
+
+.realtime-history-handoff > span b {
+  font-family: var(--sans);
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.realtime-history-handoff > span.hot {
+  border-left: 3px solid var(--red);
+}
+
+.realtime-history-handoff > span.cool {
+  border-left: 3px solid var(--blue);
+}
+
+body[data-theme="dark"] .realtime-history-handoff {
+  background:
+    linear-gradient(90deg, rgba(69, 181, 139, 0.09), rgba(226, 139, 88, 0.08)),
+    rgba(255, 255, 255, 0.04);
+}
+
+body[data-theme="dark"] .realtime-history-handoff > div,
+body[data-theme="dark"] .realtime-history-handoff > span {
+  background: rgba(255, 255, 255, 0.045);
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
+@media (max-width: 1180px) {
+  .realtime-history-handoff {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .realtime-history-handoff > div {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 760px) {
+  .realtime-history-handoff {
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .realtime-history-handoff > div {
+    padding: 9px;
+  }
+
+  .realtime-history-handoff > div p {
+    display: none;
+  }
+
+  .realtime-history-handoff > span {
+    min-height: 64px;
+    padding: 8px;
+  }
+
+  .realtime-history-handoff small {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 520px) {
+  .realtime-history-handoff {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .realtime-history-handoff > span {
+    min-height: 58px;
+  }
+}
