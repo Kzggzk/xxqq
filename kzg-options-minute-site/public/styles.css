@@ -7532,7 +7532,7 @@ body[data-theme="dark"] .focus-metrics span {
   }
 }
 
-/* v40 correction: preserve the rotation map's three-part reading structure on desktop. */
+/* v40 correction: keep the rotation map reading structure on desktop. */
 .rotation-map {
   grid-template-columns: minmax(158px, 0.58fr) minmax(0, 1.82fr) minmax(188px, 0.68fr);
 }
@@ -8344,7 +8344,7 @@ body[data-theme="dark"] .heat-lane-track {
   }
 }
 
-/* v56-v60 pass: product navigation shell and advanced analysis rails. */
+/* v56-v60 pass: navigation shell and advanced analysis rails. */
 .toolbar {
   flex-wrap: wrap;
 }
@@ -10960,7 +10960,7 @@ body[data-theme="dark"] .account-sheet {
   }
 }
 
-/* v1.37 pass: advanced-preview rail, softer product silhouette, less block-stack pressure. */
+/* v1.37 pass: advanced-preview rail with less block-stack pressure. */
 .premium-capability-rail {
   display: grid;
   grid-template-columns: minmax(230px, 0.42fr) minmax(360px, 0.7fr) minmax(280px, 0.58fr);
@@ -14291,7 +14291,7 @@ body[data-theme="dark"] .feed-boundary-rail span {
   display: none !important;
 }
 
-/* v1.55 three-sector restructure: only the future realtime tape is visually gated. */
+/* v1.55 restructure: daily, flow sample, and historical sections. */
 .premium-preview.realtime-sector {
   position: relative;
   display: grid;
@@ -15972,7 +15972,7 @@ body[data-theme="dark"] .strategy-cloud i {
   }
 }
 
-/* v1.58 pass: bridge the open daily dashboard into the future realtime reserve. */
+/* v1.58 pass: bridge the open daily dashboard into the flow sample. */
 .premium-preview.realtime-sector {
   gap: 10px;
   margin-top: 14px;
@@ -16401,7 +16401,7 @@ body[data-theme="dark"] .sector-spine-buttons button {
   }
 }
 
-/* v1.60 pass: compress the realtime reserve into a router before the heavy tape. */
+/* v1.60 pass: compact the flow sample controls before the heavy tape. */
 .realtime-router {
   display: grid;
   grid-template-columns: minmax(210px, 0.52fr) minmax(300px, 0.78fr) minmax(360px, 1fr);
@@ -16699,7 +16699,7 @@ body[data-theme="dark"] .router-gates span {
   }
 }
 
-/* v1.61 mobile compression: keep the future realtime sector fast, not tall. */
+/* v1.61 mobile compression: keep the flow sample fast, not tall. */
 @media (max-width: 760px) {
   .realtime-topline {
     grid-template-columns: minmax(0, 1fr);
@@ -17023,7 +17023,7 @@ body[data-theme="dark"] .router-gates span {
   }
 }
 
-/* v1.62 pass: make the realtime reserve hand off into the open historical layer. */
+/* v1.62 pass: make the flow sample transition into the open historical layer. */
 .realtime-history-handoff {
   display: grid;
   grid-template-columns: minmax(260px, 1.15fr) repeat(4, minmax(0, 0.7fr));

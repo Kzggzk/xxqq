@@ -12,8 +12,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - `1.01 -> 2.00` 代表 100 个稠密迭代。
 - A future `11.85` means 1085 post-1.00 dense iterations, not a symbolic number.
 - 未来如果到 `11.85`，它代表从 1.00 之后真的经历了 1085 个稠密迭代，不是随便喊出来的数字。
-- The latest local checkpoint is Web `1.70`, adding the momentum queue capital/CP/active-row compass. The latest production checkpoint remains Web `1.68` at `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`. iOS companion remains `0.7`. The next dense step is `1.71`.
-- 最近本地检查点是 Web `1.70`，加入动量队列的资金/CP/当前行读法罗盘。最近生产检查点仍是 Web `1.68`，位于 `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`。iOS 伴生保持 `0.7`。下一次稠密版本是 `1.71`。
+- The latest local and production checkpoint is Web `1.71`, a public-copy cleanup that removes internal planning language from the homepage and adds internal commercial-infrastructure documentation. Production deploy id is `6a16bc992cdd920079852497`. iOS companion remains `0.7`. The next dense step is paused until Fangbao asks for more work.
+- 最近本地和生产检查点是 Web `1.71`，这是公开文案清理：从首页移除内部规划话术，并新增内部商业基础设施文档。生产 deploy id 是 `6a16bc992cdd920079852497`。iOS 伴生保持 `0.7`。下一次稠密版本暂停，等 Fangbao 明确要求再继续。
 
 ## iOS companion cadence / iOS 伴生节奏
 
@@ -68,8 +68,14 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - v1.69 把开放单标的镜头接回动量队列。轮动接力后，RGTI 聚焦行会保留在队列里，队列跳转会聚焦 momentum 面板，但不增加任何锁、供应商路线或支付语言。本轮仅本地完成；生产仍为 v1.68。
 - v1.70 adds a compact momentum queue compass. The open momentum queue now reads as capital anchor, CP edge, and active row, with a jump back to the rotation quadrant. It is local only; production remains v1.68.
 - v1.70 加入紧凑动量队列读法罗盘。开放动量队列现在按资金锚点、CP 极值、当前行来读，并可跳回轮动象限。本轮仅本地完成；生产仍为 v1.68。
+- v1.71 stops the automation loop on Fangbao request, scrubs internal product/planning copy from the public homepage, removes the visible realtime tape blur gate, and moves Network Solutions/auth/Supabase planning into `docs/COMMERCIAL_INFRASTRUCTURE_PLAN.md`. It is deployed to production at `https://6a16bc992cdd920079852497--kzg-option-house.netlify.app/`.
+- v1.71 按 Fangbao 要求停止自动心跳，清理公开首页里的内部产品/规划话术，移除可见 realtime tape 模糊门，并把 Network Solutions、登录、Supabase 规划移到 `docs/COMMERCIAL_INFRASTRUCTURE_PLAN.md`。它已部署生产到 `https://6a16bc992cdd920079852497--kzg-option-house.netlify.app/`。
 
 ## Heartbeat protocol / 心跳协议
+
+Current status: the automation heartbeat `kzg-option-house-pro-evolution-loop` was deleted at Fangbao's request on 2026-05-27. Do not recreate it unless Fangbao explicitly asks.
+
+当前状态：自动心跳 `kzg-option-house-pro-evolution-loop` 已在 2026-05-27 按 Fangbao 要求删除。除非 Fangbao 明确要求，不要重建。
 
 Every 15-minute heartbeat should do a useful check or useful work. If the previous 15-minute segment is still running, the next heartbeat should report carryover instead of pretending a new clean cycle started.
 

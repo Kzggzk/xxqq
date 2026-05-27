@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.70";
+const UI_VERSION = "1.71";
 
 const dataAudit = {
   dataset: "23_DATA_期权分钟_Minute",
@@ -62,7 +62,7 @@ const copy = {
     trend: "跨日成交趋势",
     trendSub: "成交量、权利金和 CP 结构随时间同步变化。",
     signal: "市场结构情报",
-    signalSub: "成交、权利金、CP、开收盘节奏压成一张读盘卡。",
+    signalSub: "同步展示成交、权利金、CP、开收盘节奏。",
     regime: "交易日温度带",
     regimeSub: "最近 120 个交易日的热冷切换。",
     rotation: "标的轮动扩散",
@@ -89,9 +89,9 @@ const copy = {
     upgrade: "功能预览",
     preview: "功能预览",
     accountTitle: "KZG Option House 高级功能",
-    accountSub: "现有分钟数据能力完整开放；未来实时流另行规划。",
+    accountSub: "分钟数据、历史回看、轮动和 PNG 导出保持开放。",
     depthTitle: "历史深度回看",
-    depthSub: "当前分钟数据能力完整开放；未来实时期权流再单独设计服务层。",
+    depthSub: "当前分钟数据、趋势、轮动和动量层保持开放。",
   },
   en: {
     today: "Today",
@@ -118,7 +118,7 @@ const copy = {
     trend: "Cross-Day Flow",
     trendSub: "Volume, premium notional, and CP structure over time.",
     signal: "Market Structure",
-    signalSub: "Volume, premium, CP, open and close rhythm in one read.",
+    signalSub: "Volume, premium, CP, open and close rhythm shown together.",
     regime: "Session Temperature",
     regimeSub: "Hot/cool regime switches across the latest 120 sessions.",
     rotation: "Symbol Rotation",
@@ -145,9 +145,9 @@ const copy = {
     upgrade: "Feature preview",
     preview: "Feature preview",
     accountTitle: "KZG Option House Advanced",
-    accountSub: "Current minute-data features are open; future live feed is planned separately.",
+    accountSub: "Minute data, history, rotation, and PNG export stay open.",
     depthTitle: "Historical depth",
-    depthSub: "Current minute-data features are open; the future real-time option feed can carry its own service layer later.",
+    depthSub: "Minute data, trends, rotation, and momentum layers stay open.",
   },
 };
 
@@ -471,10 +471,10 @@ function feedVisibilityState(locked) {
         tone: "open",
       },
       {
-        id: "future-live-feed",
-        title: "实时流规划",
-        value: "后续",
-        note: "真实实时期权流以后端和授权确认后再接",
+        id: "flow-sample",
+        title: "期权流样张",
+        value: "样张",
+        note: "由当前分钟数据生成方向、压力和策略标签",
         tone: "queued",
       },
     ]
@@ -494,10 +494,10 @@ function feedVisibilityState(locked) {
         tone: "open",
       },
       {
-        id: "future-live-feed",
-        title: "Live feed later",
-        value: "Later",
-        note: "A real-time option feed waits for backend and rights confirmation",
+        id: "flow-sample",
+        title: "Flow sample",
+        value: "Sample",
+        note: "Minute data generates direction, pressure, and strategy tags",
         tone: "queued",
       },
     ];
@@ -569,13 +569,13 @@ function entitlementRows() {
     ? [
       ["最新交易日", "完整", "当天读盘、分钟节奏和 PNG 导出保持开放。"],
       ["历史回看", "完整", "趋势、轮动、动量和异常分钟保持开放。"],
-      ["高级信号", "可读", "现有派生信号都直接展示，真实实时流另行规划。"],
+      ["高级信号", "可读", "派生信号、结构标签和历史对比直接展示。"],
       ["原始数据", "不公开", "页面只允许生成 PNG，不提供数据包和底层文件入口。"],
     ]
     : [
       ["Latest session", "Full", "Daily read, minute rhythm, and PNG export remain open."],
       ["History", "Full", "Trend, rotation, momentum, and anomaly minutes remain open."],
-      ["Advanced signals", "Readable", "Current derived signals are shown; real-time feed is planned separately."],
+      ["Advanced signals", "Readable", "Derived signals, structure tags, and history comparisons are shown."],
       ["Raw data", "Private", "The page exports PNG only, without raw file entry points."],
     ];
   return `
@@ -636,10 +636,10 @@ function renderSectorSpine() {
       {
         id: "premiumPreview",
         number: "02",
-        label: "未来实时席位",
-        title: "Flow Tape 预留",
+        label: "期权流样张",
+        title: "Flow Tape 样张",
         value: premiumLead.symbol || "--",
-        meta: "后端确认后打开真实明细",
+        meta: "方向 · 策略 · 权利金",
         tone: "hot",
       },
       {
@@ -665,10 +665,10 @@ function renderSectorSpine() {
       {
         id: "premiumPreview",
         number: "02",
-        label: "Future live seat",
-        title: "Flow tape reserve",
+        label: "Options flow sample",
+        title: "Flow tape sample",
         value: premiumLead.symbol || "--",
-        meta: "true detail opens after backend approval",
+        meta: "bias · strategy · premium",
         tone: "hot",
       },
       {
@@ -683,8 +683,8 @@ function renderSectorSpine() {
     ];
   target.innerHTML = `
     <div class="sector-spine-copy">
-      <span>${state.lang === "zh" ? "产品阅读路径" : "Product reading path"}</span>
-      <b>${state.lang === "zh" ? "三段式，不绕路" : "Three sectors, no detour"}</b>
+      <span>${state.lang === "zh" ? "关键数据索引" : "Key data index"}</span>
+      <b>${state.lang === "zh" ? "日报 / 流动 / 历史" : "Daily / Flow / History"}</b>
     </div>
     <div class="sector-spine-buttons">
       ${items.map((item) => `
@@ -719,22 +719,22 @@ function renderPremiumPreview() {
   const commandStats = state.lang === "zh"
     ? [
       ["当日Dashboard", "开放", state.day.tradeDate, "flat"],
-      ["实时Flow", "预留", "后端确认后", "hot"],
+      ["期权流", "样张", "筛选分栏", "hot"],
       ["历史趋势", "开放", `${fmt0.format(historyCount)}日`, "flat"],
     ]
     : [
       ["Daily dashboard", "Open", state.day.tradeDate, "flat"],
-      ["Live flow", "Reserved", "after backend approval", "hot"],
+      ["Options flow", "Sample", "filters and lanes", "hot"],
       ["History trends", "Open", `${fmt0.format(historyCount)}D`, "flat"],
     ];
   target.innerHTML = `
     <div class="realtime-topline">
       <div class="realtime-heading">
-        <span>${state.lang === "zh" ? "第二段 · Future realtime sector" : "Sector 2 · Future realtime layer"}</span>
-        <h2>${state.lang === "zh" ? "实时期权流预留席位" : "Realtime options flow reserve"}</h2>
+        <span>${state.lang === "zh" ? "第二段 · 期权流样张" : "Sector 2 · Options flow sample"}</span>
+        <h2>${state.lang === "zh" ? "期权流样张" : "Options flow sample"}</h2>
         <p>${state.lang === "zh"
-          ? "上方日报和下方历史趋势继续开放。中段只负责预演未来实时成交流：高速跳动、策略识别、过滤器和异常扫单。"
-          : "The daily report above and historical trends below stay open. The middle sector previews future live options flow: fast tape, strategy labels, filters, and unusual sweeps."}</p>
+          ? "上方日报和下方历史趋势继续开放。中段用当前分钟数据生成流动性样张：方向、策略识别、过滤器和异常扫单。"
+          : "The daily report above and historical trends below stay open. This sector uses current minute data to form a flow sample: bias, strategy labels, filters, and unusual sweeps."}</p>
       </div>
       <div class="realtime-command-strip">
         ${commandStats.map((row, index) => `
@@ -759,11 +759,11 @@ function renderPremiumPreview() {
     <div class="realtime-layout">
       <div class="realtime-brief">
         <div class="realtime-brief-main">
-          <span>${state.lang === "zh" ? "实时层逻辑" : "Live layer logic"}</span>
+          <span>${state.lang === "zh" ? "流动样张逻辑" : "Flow sample logic"}</span>
           <strong>${escapeHtml(lead.symbol || "--")}</strong>
           <p>${state.lang === "zh"
-            ? `未来接入真实流后，这里只负责把成交方向、策略结构、权利金和异常类型压成可读交易流。当前先用现有分钟数据生成产品轮廓。`
-            : `When the true feed is connected, this layer compresses direction, strategy shape, premium, and anomaly type into a readable trading tape. This build first uses existing minute data to shape the product experience.`}</p>
+            ? `这里把成交方向、策略结构、权利金和异常类型压成可读交易流。当前样张来自已经落地的分钟数据。`
+            : `This layer compresses direction, strategy shape, premium, and anomaly type into a readable trading tape. The current sample comes from landed minute data.`}</p>
         </div>
         <div class="realtime-scoreboard">
           ${realtimeStat(state.lang === "zh" ? "Bullish Flow" : "Bullish Flow", bullishRows.length || attack.length, moneyCompact(flowVolume * 0.55 || premiumLead.premiumNotional), "hot")}
@@ -790,10 +790,10 @@ function renderPremiumPreview() {
       historyCount,
     })}
     <div class="realtime-boundary-note">
-      <b>${state.lang === "zh" ? "体验边界" : "Experience boundary"}</b>
+      <b>${state.lang === "zh" ? "样张说明" : "Sample note"}</b>
       <span>${state.lang === "zh"
-        ? "当前是未来实时产品的体验轮廓：展示速度、筛选、分栏和事件密度，完整实时明细会在专门页面打开。"
-        : "This is the future live-product outline: speed, filters, bias lanes, and event density are visible; full realtime detail opens in a dedicated page."}</span>
+        ? "这里展示速度、筛选、分栏和事件密度；数据来自当前分钟聚合。"
+        : "This shows speed, filters, bias lanes, and event density from current minute aggregates."}</span>
     </div>
   `;
 }
@@ -818,11 +818,11 @@ function realtimeHistoryHandoff(info) {
   return `
     <div class="realtime-history-handoff">
       <div>
-        <span>${state.lang === "zh" ? "Open layer handoff" : "Open layer handoff"}</span>
-        <b>${state.lang === "zh" ? "实时预留到这里 下方继续免费读历史" : "Reserve ends here, open history continues below"}</b>
+        <span>${state.lang === "zh" ? "进入历史数据" : "Enter historical data"}</span>
+        <b>${state.lang === "zh" ? "流动样张结束 下方进入历史数据" : "Flow sample ends here; history continues below"}</b>
         <p>${state.lang === "zh"
-          ? "实时席位只负责未来高速流。已经落地的分钟数据继续开放，下一屏直接进入轮动、日内桶和标的扩散。"
-          : "The reserve only frames the future high-speed stream. Landed minute data stays open, and the next screen moves into rotation, intraday buckets, and symbol breadth."}</p>
+          ? "已经落地的分钟数据继续开放，下一屏直接进入轮动、日内桶和标的扩散。"
+          : "Landed minute data stays open, and the next screen moves into rotation, intraday buckets, and symbol breadth."}</p>
       </div>
       ${cells.map((cell) => `
         <span class="${cell[3]}">
@@ -839,16 +839,16 @@ function realtimeTransitionRail(info) {
   const rows = state.lang === "zh"
     ? [
       ["1", "昨日总线", info.tradeDate, `${wan(info.totalVolume || 0)}张 · ${info.lead}`],
-      ["2", "未来实时流", `${fmt0.format(info.flowRows)} 条样张`, `${fmt0.format(info.hotCount)} Bull / ${fmt0.format(info.coolCount)} Bear`],
+      ["2", "期权流样张", `${fmt0.format(info.flowRows)} 条`, `${fmt0.format(info.hotCount)} Bull / ${fmt0.format(info.coolCount)} Bear`],
       ["3", "历史开放层", `${fmt0.format(info.historyCount)} 日`, "趋势 轮动 日内桶"],
     ]
     : [
       ["1", "Daily bus", info.tradeDate, `${wan(info.totalVolume || 0)} contracts · ${info.lead}`],
-      ["2", "Future flow", `${fmt0.format(info.flowRows)} sample rows`, `${fmt0.format(info.hotCount)} Bull / ${fmt0.format(info.coolCount)} Bear`],
+      ["2", "Flow sample", `${fmt0.format(info.flowRows)} rows`, `${fmt0.format(info.hotCount)} Bull / ${fmt0.format(info.coolCount)} Bear`],
       ["3", "Open history", `${fmt0.format(info.historyCount)} sessions`, "trend rotation buckets"],
     ];
   return `
-    <div class="realtime-transition-rail" aria-label="${state.lang === "zh" ? "三段式阅读路径" : "Three-sector reading path"}">
+    <div class="realtime-transition-rail" aria-label="${state.lang === "zh" ? "数据阅读索引" : "Data reading index"}">
       ${rows.map((row, index) => `
         <span class="${index === 1 ? "active" : ""}">
           <i>${escapeHtml(row[0])}</i>
@@ -897,13 +897,13 @@ function realtimeFlowRouter(flowRows, rotationRows, peakBucket) {
       ["Risk gate", hitLead.symbol || "--", `${fmt0.format(hitLead.hits || 0)} hits`, hitLead.tone || "flat"],
     ];
   const summary = state.lang === "zh"
-    ? `未来实时流先过四个门：方向、权利金、策略、风险。当前用 ${fmt0.format(flowRows.length)} 条派生样张展示路由逻辑，历史与日报仍完全开放。`
-    : `The future stream first passes four gates: bias, premium, strategy, and risk. This build uses ${fmt0.format(flowRows.length)} derived sample rows to show the routing logic while history and daily reads stay open.`;
+    ? `期权流样张先过四个门：方向、权利金、策略、风险。当前用 ${fmt0.format(flowRows.length)} 条派生样张展示筛选逻辑，历史与日报仍完全开放。`
+    : `The flow sample first passes four gates: bias, premium, strategy, and risk. This build uses ${fmt0.format(flowRows.length)} derived rows to show filter logic while history and daily reads stay open.`;
   return `
     <div class="realtime-router">
       <div class="router-copy">
-        <span>${state.lang === "zh" ? "Flow Router" : "Flow Router"}</span>
-        <b>${state.lang === "zh" ? "先分流 再解释" : "Route first, explain second"}</b>
+        <span>${state.lang === "zh" ? "Flow Filter" : "Flow Filter"}</span>
+        <b>${state.lang === "zh" ? "先筛选 再解释" : "Filter first, explain second"}</b>
         <p>${escapeHtml(summary)}</p>
       </div>
       <div class="router-gates">
@@ -1040,7 +1040,7 @@ function realtimeFilterConsole(rows) {
     <div class="realtime-filter-console">
       <div class="filter-console-head">
         <span>${state.lang === "zh" ? "过滤器与提醒" : "Filters and alerts"}</span>
-        <b>${state.lang === "zh" ? "Future controls" : "Future controls"}</b>
+        <b>${state.lang === "zh" ? "样张控件" : "Sample controls"}</b>
       </div>
       <div class="filter-console-grid">
         ${labels.map((row) => `
@@ -1109,7 +1109,7 @@ function realtimeStrategyCloud() {
     <div class="strategy-cloud">
       <div>
         <span>${state.lang === "zh" ? "策略识别库" : "Strategy recognition"}</span>
-        <b>${state.lang === "zh" ? "未来流会自动归类" : "auto-classified in live flow"}</b>
+        <b>${state.lang === "zh" ? "按样张自动归类" : "auto-classified from samples"}</b>
       </div>
       ${groups.map((group) => `
         <p>
@@ -1126,8 +1126,8 @@ function realtimeFlowTerminal(rows) {
   return `
     <div class="realtime-terminal">
       <div class="terminal-head">
-        <span>${state.lang === "zh" ? "Realtime Flow Tape" : "Realtime Flow Tape"}</span>
-        <b>${state.lang === "zh" ? "后端确认后高速刷新" : "high-speed after backend approval"}</b>
+        <span>${state.lang === "zh" ? "Options Flow Tape" : "Options Flow Tape"}</span>
+        <b>${state.lang === "zh" ? "按分钟样张滚动" : "minute-sample rhythm"}</b>
       </div>
       <div class="terminal-table-head" aria-hidden="true">
         <span>Time</span>
@@ -1137,7 +1137,7 @@ function realtimeFlowTerminal(rows) {
         <span>Premium</span>
         <span>Type</span>
       </div>
-      <div class="terminal-table-body is-realtime-gated" aria-label="${state.lang === "zh" ? "未来实时流预览" : "Future realtime flow preview"}">
+      <div class="terminal-table-body" aria-label="${state.lang === "zh" ? "期权流样张" : "Options flow sample"}">
         ${rows.slice(0, 18).map((row) => `
           <button type="button" class="${row.tone}" data-symbol="${escapeHtml(row.symbol)}">
             <span>${escapeHtml(row.time)}</span>
@@ -1148,12 +1148,6 @@ function realtimeFlowTerminal(rows) {
             <i>${escapeHtml(row.tag)}</i>
           </button>
         `).join("")}
-      </div>
-      <div class="terminal-veil">
-        <strong>${state.lang === "zh" ? "未来实时席位" : "Future realtime seat"}</strong>
-        <span>${state.lang === "zh"
-          ? "真实 feed 经后端确认后打开完整明细、排序、过滤、提醒路由和二级页面。"
-          : "Real feed opens full details, sorting, filters, alerts, and the dedicated flow page after backend approval."}</span>
       </div>
     </div>
   `;
@@ -1210,7 +1204,7 @@ function renderHistorySectorIntro() {
   };
   target.innerHTML = `
     <div class="history-intro-copy">
-      <span>${state.lang === "zh" ? "第三段 · Open historical intraday layer" : "Sector 3 · Open historical intraday layer"}</span>
+      <span>${state.lang === "zh" ? "历史日内数据" : "Historical intraday data"}</span>
       <h2>${state.lang === "zh" ? "历史日内趋势全部开放" : "Historical intraday trends stay open"}</h2>
       <p>${state.lang === "zh"
         ? "这里回到已经落地的分钟聚合数据：跨日成交、权利金、CP、轮动象限和日内桶都可直接读。重点看量价同升、同步降温和标的扩散。"
@@ -1251,8 +1245,8 @@ function historyLayerPath(info) {
   return `
     <div class="history-intro-path">
       <div>
-        <span>${state.lang === "zh" ? "开放历史路径" : "Open history path"}</span>
-        <b>${state.lang === "zh" ? "四步进入真正可读的 505 日层" : "Four steps into the readable 505-session layer"}</b>
+        <span>${state.lang === "zh" ? "历史快速入口" : "Historical quick entry"}</span>
+        <b>${state.lang === "zh" ? "趋势 / 日内桶 / 轮动 / 标的" : "Trend / Buckets / Rotation / Symbol"}</b>
       </div>
       ${rows.map((row, index) => `
         <button type="button" class="${row[4]}" data-scroll-sector="${escapeHtml(row[1])}">
@@ -1292,8 +1286,8 @@ function historyStoryStrip(info) {
   return `
     <div class="history-story-strip">
       <div class="history-story-lede">
-        <span>${state.lang === "zh" ? "开放读盘四拍" : "Open readout in four beats"}</span>
-        <b>${state.lang === "zh" ? "先看故事，再进图表" : "Read the story before the dense panels"}</b>
+        <span>${state.lang === "zh" ? "日内重点" : "Intraday highlights"}</span>
+        <b>${state.lang === "zh" ? "量能 / 压力 / 扩散 / 权利金" : "Volume / Pressure / Breadth / Premium"}</b>
       </div>
       ${rows.map((row, index) => `
         <button type="button" class="history-story-card ${row[4]}" data-scroll-sector="${escapeHtml(row[1])}">
@@ -1312,10 +1306,10 @@ function lockedPreviewOverlay(label, variant = "panel") {
     ? ["方向轮廓", "历史对比", "导出边界"]
     : ["Signal shape", "History compare", "Export boundary"];
   const foot = variant === "quadrant"
-    ? (state.lang === "zh" ? "点位被压成轮廓，象限关系仍可感知。" : "Points are softened into a silhouette while quadrant relationships remain readable.")
-    : variant === "premium"
-      ? (state.lang === "zh" ? "保留产品力量感，不暴露内部实现。" : "Keeps product power visible without exposing internal mechanics.")
-      : (state.lang === "zh" ? "当日开放，历史只展示结构预览。" : "Latest day is open; history shows structure preview only.");
+      ? (state.lang === "zh" ? "点位被压成轮廓，象限关系仍可感知。" : "Points are softened into a silhouette while quadrant relationships remain readable.")
+      : variant === "premium"
+        ? (state.lang === "zh" ? "保留节奏和方向，不暴露底层文件。" : "Keeps rhythm and direction visible without exposing raw files.")
+        : (state.lang === "zh" ? "分钟数据、历史与趋势保持开放。" : "Minute data, history, and trends stay open.");
   return `
     <b>${escapeHtml(label)}</b>
     <span>${t("depthSub")}</span>
@@ -1520,14 +1514,14 @@ function unlockScopes(rows) {
         title: "Export boundary",
         value: "PNG",
         copy: "The public page keeps the KZG-branded sheet and limits sharing to rendered images.",
-        rows: [["Public", "KZG branded", "flat"], ["Boundary", "PNG only", "hot"], ["Format", "old sheet preserved", "flat"]],
+        rows: [["Page", "KZG branded", "flat"], ["Boundary", "PNG only", "hot"], ["Format", "old sheet kept", "flat"]],
       },
       {
         id: "alerts",
         kicker: "Watch",
         title: "Watchlist movement",
         value: premiumLead.symbol || "--",
-        copy: "Future alert rules can bind symbols, rotation events, and anomaly minutes without exposing account mechanics.",
+        copy: "Watch rules bind symbols, rotation events, and anomaly minutes inside the current research view.",
         rows: [["Premium lead", premiumLead.symbol || "--", "hot"], ["Signal", "movement rules", "flat"], ["Status", "research", "cool"]],
       },
     ];
@@ -1562,7 +1556,7 @@ function unlockScopes(rows) {
       kicker: "提醒",
       title: "观察列表异动",
       value: premiumLead.symbol || "--",
-      copy: "后续可把标的、轮动象限和异常分钟做成提醒规则，但账户机制不放公开页。",
+      copy: "标的、轮动象限和异常分钟在当前研究视图内形成提醒规则。",
       rows: [["权利金锚", premiumLead.symbol || "--", "hot"], ["信号", "异动规则", "flat"], ["状态", "研究中", "cool"]],
     },
   ];
@@ -1716,8 +1710,8 @@ function liveFeedSilhouette(rows, locked) {
   const hot = pressure.filter((row) => row.tone === "hot").length;
   const cool = pressure.filter((row) => row.tone === "cool").length;
   const publicNote = state.lang === "zh"
-    ? "这里只展示实时层的产品轮廓。公开页只保留方向、压力和节奏信号。"
-    : "This only shows the live-layer product silhouette: direction, pressure, and rhythm signals.";
+    ? "这里展示方向、压力和节奏信号，全部来自当前分钟聚合。"
+    : "This shows direction, pressure, and rhythm signals from current minute aggregates.";
   const laneRows = state.lang === "zh"
     ? [
       ["主导压力", lead.symbol || "--", `${lead.velocity >= 0 ? "+" : ""}${fmt1.format(lead.velocity || 0)}`],
@@ -1734,7 +1728,7 @@ function liveFeedSilhouette(rows, locked) {
   return `
     <div class="live-silhouette">
       <div class="live-silhouette-lead">
-        <span>${state.lang === "zh" ? "实时流轮廓" : "Live feed silhouette"}</span>
+        <span>${state.lang === "zh" ? "期权流样张" : "Options flow sample"}</span>
         <strong>${escapeHtml(lead.symbol || "--")}</strong>
         <p>${escapeHtml(publicNote)}</p>
       </div>
@@ -1918,8 +1912,8 @@ function premiumQuadrantPreview(rows, locked) {
     },
   ];
   const visibleMode = state.lang === "zh"
-    ? "当日和历史象限都保持开放，未来实时流再单独设计。"
-    : "Latest and historical quadrants stay open; the future live feed is a separate design.";
+    ? "当日和历史象限都保持开放。"
+    : "Latest and historical quadrants stay open.";
   return `
     <div class="premium-quadrant">
       <div class="premium-quadrant-copy">
@@ -3697,7 +3691,7 @@ function momentumQueueCompass(rows, warmLead, premiumLead, cpLead) {
   const focusIndex = rows.findIndex((row) => row.symbol === focus.symbol);
   const focusSeat = focusIndex >= 0 ? `#${focusIndex + 1}/${rows.length}` : "--";
   const focusTone = focus.delta >= 20 ? "hot" : focus.delta <= -20 ? "cool" : "flat";
-  const title = state.lang === "zh" ? "动量队列读法" : "Momentum queue read";
+  const title = state.lang === "zh" ? "动量队列" : "Momentum queue";
   const copy = state.lang === "zh"
     ? `先看权利金锚，再看 CP 极值，最后回到 ${focus.symbol || "--"} 的 active 行。`
     : `Read premium anchor first, then CP edge, then return to the active ${focus.symbol || "--"} row.`;
@@ -3717,7 +3711,7 @@ function momentumQueueCompass(rows, warmLead, premiumLead, cpLead) {
         <button type="button" class="momentum-compass-jump" data-symbol="${escapeHtml(focus.symbol || "")}" data-scroll-sector="symbolRotation">
           <span>${state.lang === "zh" ? "回看轮动象限" : "Back to rotation quadrant"}</span>
           <b>${escapeHtml(focus.symbol || "--")}</b>
-          <small>${state.lang === "zh" ? "保持开放历史路径" : "Keep the open history path"}</small>
+          <small>${state.lang === "zh" ? "回到轮动象限" : "Back to rotation"}</small>
         </button>
       </div>
     </div>
@@ -3910,7 +3904,7 @@ function rotationFocusHandoff(rows, premiumLeader, callLeader, putLeader) {
         <button type="button" class="rotation-focus-jump" data-symbol="${escapeHtml(lead.symbol || "")}" data-scroll-sector="symbolFocus">
           <span>${state.lang === "zh" ? "进入单标的聚焦" : "Open symbol focus"}</span>
           <b>${escapeHtml(lead.symbol || "--")}</b>
-          <small>${state.lang === "zh" ? "滚到开放历史标的镜头" : "Scroll to the open historical symbol lens"}</small>
+          <small>${state.lang === "zh" ? "查看标的镜头" : "Open symbol lens"}</small>
         </button>
       </div>
     </div>
@@ -4070,7 +4064,7 @@ function symbolMomentumHandoff(current, volumeMove, premiumMove) {
         <button type="button" class="symbol-momentum-jump" data-symbol="${escapeHtml(symbol)}" data-scroll-sector="symbolMomentum">
           <span>${state.lang === "zh" ? "回到动量队列" : "Back to momentum queue"}</span>
           <b>${escapeHtml(symbol)}</b>
-          <small>${state.lang === "zh" ? "保持开放历史层，不加锁" : "Open historical layer, no lock"}</small>
+          <small>${state.lang === "zh" ? "回到队列" : "Back to queue"}</small>
         </button>
       </div>
     </div>

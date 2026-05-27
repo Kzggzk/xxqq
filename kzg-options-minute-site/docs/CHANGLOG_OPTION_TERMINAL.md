@@ -12,6 +12,7 @@ This is the long-form bilingual operating changelog for the KZG option-terminal 
 - Handoff manual / 接手手册: `docs/HANDOFF_FOR_OTHER_CODEX.md`
 - Dense cadence contract / 稠密版本契约: `docs/DENSE_VERSIONING.md`
 - Real-time API product plan / 实时 API 产品规划: `docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`
+- Commercial infrastructure plan / 商业基础设施计划: `docs/COMMERCIAL_INFRASTRUCTURE_PLAN.md`
 
 Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 
@@ -26,15 +27,15 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 分支: `feat/kzg-option-house-daily-auto`
 - 远端: `https://github.com/Kzggzk/xxqq.git`
 - 生产站: `https://kzg-option-house.netlify.app/`
-- 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.68` rotation-to-symbol focus handoff，具体 commit 以最新 GitHub backup 提交为准
-- 最近验证唯一部署: `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`
-- 最近生产 UI 显示版本: `1.68`
-- 最近本地稠密版本: `1.70`，本轮为 Web 公开历史层新增动量队列资金/CP/当前行读法罗盘；生产仍是 `1.68`
+- 最近生产风险修复: Web `1.71` public-copy scrub
+- 最近验证唯一部署: `https://6a16bc992cdd920079852497--kzg-option-house.netlify.app/`
+- 最近生产 UI 显示版本: `1.71`
+- 最近本地稠密版本: `1.71`，本轮为公开页面清理内部产品/规划话术，并新增商业基础设施内部文档；生产也是 `1.71`
 - 当前 iOS 伴生版本: `0.7`，对应稠密 Web `1.67`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；官方 flat-file 文档显示有 `2023/2023` 目录，但当前公开站只使用本机已证实的 `2024-05-17 -> 2026-05-22`，且本 agent 不使用暴露过的 key 测账号权限；公开参考 <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
-- Apple Notes: 置顶同名 note 已在 v1.70 后同步，`updated=1`，`created=0`，正文 `219729` chars
+- Apple Notes: 置顶同名 note 已在 v1.71 后同步，`updated=1`，`created=0`，正文 `223303` chars
 - GitHub: 需要持续提交 docs，让另一个 Codex 能从仓库继续
 
 English:
@@ -44,18 +45,40 @@ English:
 - Branch: `feat/kzg-option-house-daily-auto`
 - Remote: `https://github.com/Kzggzk/xxqq.git`
 - Production site: `https://kzg-option-house.netlify.app/`
-- Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.68` rotation-to-symbol focus handoff; exact commit is the latest GitHub backup commit
-- Latest verified unique deploy: `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`
-- Latest visible production UI version: `1.68`
-- Latest local dense version: `1.70`, adding the Web open-history momentum queue capital/CP/active-row compass; production remains `1.68`
+- Latest public-risk fix: Web `1.71` public-copy scrub
+- Latest verified unique deploy: `https://6a16bc992cdd920079852497--kzg-option-house.netlify.app/`
+- Latest visible production UI version: `1.71`
+- Latest local dense version: `1.71`, scrubbing public internal product/planning copy and adding internal commercial infrastructure docs; production is also `1.71`
 - Current iOS companion version: `0.7`, mapped to dense Web `1.67`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; official flat-file docs show a `2023/2023` directory, but the public site only uses locally proven `2024-05-17 -> 2026-05-22`, and this agent must not use exposed keys to test account entitlement; public reference <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
-- Apple Notes: pinned note with this title was synced after v1.70, `updated=1`, `created=0`, `219729` body characters
+- Apple Notes: pinned note with this title was synced after v1.71, `updated=1`, `created=0`, `223303` body characters
 - GitHub: keep docs committed so another Codex can continue from the repository
 
-## 1A. Latest heartbeat record v1.70 / 最新心跳记录 v1.70
+## 1A. Latest correction record v1.71 / 最新修正记录 v1.71
+
+中文:
+
+北京时间 2026-05-27 17:45 左右，Fangbao 明确要求停止自动心跳，并指出公开产品页面出现了不该出现的内部产品风格/规划话术。`kzg-option-house-pro-evolution-loop` 已删除，不再每 15 分钟自动推进。Web `1.71` 只做公开风险修正：清理公开页面里的内部话术，并把 Network Solutions、登录/auth、Supabase 和权益路线写入内部文档。v1.71 已部署生产，唯一部署 `https://6a16bc992cdd920079852497--kzg-option-house.netlify.app/`，deploy id `6a16bc992cdd920079852497`。
+
+改动文件：`public/app.js`、`public/index.html`、`public/styles.css`、`docs/COMMERCIAL_INFRASTRUCTURE_PLAN.md`、`docs/CHANGELOG.md`、`docs/CHANGLOG_OPTION_TERMINAL.md`、`docs/DENSE_VERSIONING.md`、`docs/HANDOFF_FOR_OTHER_CODEX.md`、`docs/PLUGIN_SERVICE_STATUS.md`。公开页面移除“产品阅读路径 / 三段式 / 不绕路 / 预留 / 后端确认 / 未来实时 / 专门页面 / 产品轮廓”等对内表达；中段改为普通“期权流样张”；tape 不再带可见 `is-realtime-gated` blur class，也移除遮罩文案。`docs/COMMERCIAL_INFRASTRUCTURE_PLAN.md` 只在内部记录域名、登录、Supabase、entitlement 与 hard stop。
+
+验证：构建生成 `505` 天 payload，latest `2026-05-22`，pack asset `kzg-frame-cb9ed4614a48.js`；本地和生产 Browser/Playwright 桌面/手机均验证 `1.71 · 505/505 complete`、公开话术扫描 false、overflow 0、blur/lock/gate/veil 0、console issue 0、tape rows 18，PNG 导出 `1,482,138` bytes。生产 `/data/index.json` 与 `/assets/kzg-pack.js` 均为 `404`。Apple Notes 置顶 `CHANGLOG 期权终端` 已同步，`updated=1`，`created=0`，正文 `223303` chars。
+
+边界：没有购买域名、没有改 DNS、没有创建 Supabase 项目或表、没有使用 API key、没有设置支付、没有 TestFlight/App Store 动作、没有花钱、没有传输 secrets、没有提交 raw generated data。下一步不要恢复自动心跳；任何 Network Solutions、登录、Supabase、支付、真实 API 动作都必须再次问 Fangbao。
+
+English:
+
+Around 2026-05-27 17:45 Asia/Shanghai, Fangbao explicitly asked to stop the automatic heartbeat and pointed out internal product-style/planning copy leaking onto the public product page. `kzg-option-house-pro-evolution-loop` has been deleted and no longer runs every 15 minutes. Web `1.71` is only a public-risk correction: scrub internal public-page copy and move Network Solutions, auth/login, Supabase, and entitlement planning into internal docs. v1.71 is deployed to production at unique deploy `https://6a16bc992cdd920079852497--kzg-option-house.netlify.app/`, deploy id `6a16bc992cdd920079852497`.
+
+Changed files: `public/app.js`, `public/index.html`, `public/styles.css`, `docs/COMMERCIAL_INFRASTRUCTURE_PLAN.md`, `docs/CHANGELOG.md`, `docs/CHANGLOG_OPTION_TERMINAL.md`, `docs/DENSE_VERSIONING.md`, `docs/HANDOFF_FOR_OTHER_CODEX.md`, and `docs/PLUGIN_SERVICE_STATUS.md`. The public page removes internal phrases such as product reading path, three-sector/no-detour, reserve, backend approval, future realtime, dedicated page, and product outline. The middle section is plain `Options flow sample`; the tape no longer carries the visible `is-realtime-gated` blur class and the overlay copy was removed. `docs/COMMERCIAL_INFRASTRUCTURE_PLAN.md` records domain, auth, Supabase, entitlement, and hard stops internally only.
+
+Verification: build produced `505` days, latest `2026-05-22`, pack asset `kzg-frame-cb9ed4614a48.js`; local and production Browser/Playwright desktop/phone checks verified `1.71 · 505/505 complete`, public-copy scan false, overflow 0, blur/lock/gate/veil 0, console issue 0, tape rows 18, and PNG export `1,482,138` bytes. Production `/data/index.json` and `/assets/kzg-pack.js` are both `404`. Apple Notes pinned `CHANGLOG 期权终端` synced with `updated=1`, `created=0`, `223303` body characters.
+
+Boundary: no domain was purchased, no DNS changed, no Supabase project or table was created, no API key was used, no payment setup happened, no TestFlight/App Store action happened, no money was spent, no secrets were transmitted, and no raw generated data was committed. Do not restore the automation heartbeat; any Network Solutions, auth, Supabase, payment, or real API action must ask Fangbao again.
+
+## 1B. Previous heartbeat record v1.70 / 上一条心跳记录 v1.70
 
 中文:
 

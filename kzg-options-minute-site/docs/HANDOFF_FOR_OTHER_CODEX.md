@@ -6,9 +6,9 @@ This document is the receiving prompt plus operating checklist for any future Co
 
 ## Receiving prompt / 接手提示词
 
-You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-minute-site` unless Fangbao explicitly expands scope. Read `/Users/fangbao/AGENTS.md` first and do not touch protected KZG OS paths. Keep public product work separate from private commercial planning. Do not commit raw generated data. Use `docs/CHANGELOG.md`, `docs/DENSE_VERSIONING.md`, `docs/IOS_COMPANION_PLAN.md`, `docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`, `docs/processing-spec.md`, and `docs/lessons.md` before making changes. Current production site is `https://kzg-option-house.netlify.app/`. Current branch is `feat/kzg-option-house-daily-auto`. Continue Web dense versions by `0.01`, update iOS every 5 Web versions, verify locally, deploy every 3-5 solid Web versions, push GitHub backup, and update both GitHub changelog and pinned Apple Notes.
+You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-minute-site` unless Fangbao explicitly expands scope. Read `/Users/fangbao/AGENTS.md` first and do not touch protected KZG OS paths. Keep public product work separate from private commercial planning. Do not commit raw generated data. Use `docs/CHANGELOG.md`, `docs/DENSE_VERSIONING.md`, `docs/COMMERCIAL_INFRASTRUCTURE_PLAN.md`, `docs/IOS_COMPANION_PLAN.md`, `docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`, `docs/processing-spec.md`, and `docs/lessons.md` before making changes. Current production site is `https://kzg-option-house.netlify.app/`. Current branch is `feat/kzg-option-house-daily-auto`. The automatic heartbeat `kzg-option-house-pro-evolution-loop` was deleted on Fangbao's request; do not recreate it unless Fangbao explicitly asks. Public UI must not contain internal product-planning, domain, auth, provider, API, subscription, payment, or backend wording.
 
-你正在继续 KZG Option House。除非 Fangbao 明确扩大范围，否则只在 `/Users/fangbao/kzg-options-minute-site` 工作。先读 `/Users/fangbao/AGENTS.md`，不要碰受保护的 KZG OS 路径。公开产品工作和内部商业规划必须分开。不要提交 raw generated data。动手前先读 `docs/CHANGELOG.md`、`docs/DENSE_VERSIONING.md`、`docs/IOS_COMPANION_PLAN.md`、`docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`、`docs/processing-spec.md`、`docs/lessons.md`。当前生产站是 `https://kzg-option-house.netlify.app/`。当前分支是 `feat/kzg-option-house-daily-auto`。Web 继续按 `0.01` 稠密版本迭代，iOS 每 5 个 Web 版本同步一次，本地验证，每 3-5 个扎实 Web 版本部署一次，推 GitHub 备份，并同时更新 GitHub changlog 与 Apple Notes 置顶日志。
+你正在继续 KZG Option House。除非 Fangbao 明确扩大范围，否则只在 `/Users/fangbao/kzg-options-minute-site` 工作。先读 `/Users/fangbao/AGENTS.md`，不要碰受保护的 KZG OS 路径。公开产品工作和内部商业规划必须分开。不要提交 raw generated data。动手前先读 `docs/CHANGELOG.md`、`docs/DENSE_VERSIONING.md`、`docs/COMMERCIAL_INFRASTRUCTURE_PLAN.md`、`docs/IOS_COMPANION_PLAN.md`、`docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`、`docs/processing-spec.md`、`docs/lessons.md`。当前生产站是 `https://kzg-option-house.netlify.app/`。当前分支是 `feat/kzg-option-house-daily-auto`。自动心跳 `kzg-option-house-pro-evolution-loop` 已按 Fangbao 要求删除；除非 Fangbao 明确要求，不要重建。公开 UI 不得包含内部产品规划、域名、登录、供应商、API、订阅、支付或后端路线话术。
 
 ## Current repo state / 当前仓库状态
 
@@ -18,12 +18,20 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Remote / 远端: `https://github.com/Kzggzk/xxqq.git`
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
-- Production version last verified / 最近生产验证版本: `1.68`
-- Local version last verified / 最近本地验证版本: `1.70` Web momentum queue compass
-- Latest unique deploy / 最近唯一部署: `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`
+- Production version last verified / 最近生产验证版本: `1.71`
+- Local version last verified / 最近本地验证版本: `1.71` public-copy cleanup and commercial infrastructure docs
+- Latest unique deploy / 最近唯一部署: `https://6a16bc992cdd920079852497--kzg-option-house.netlify.app/`
 - iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.7`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
 - Local verified option-minute window / 本地已验证期权分钟范围: `2024-05-17 -> 2026-05-22`, `505` files.
+
+Latest v1.71 correction:
+
+最新 v1.71 修正：
+
+Web `1.71` is a public-risk cleanup deployed to production at `https://6a16bc992cdd920079852497--kzg-option-house.netlify.app/`. It removes internal product/planning copy from `public/app.js`, `public/index.html`, and `public/styles.css`: no public "product reading path", "three-sector/no-detour", reserve, backend approval, future realtime, dedicated page, product outline, provider, API, subscription, payment, domain, Network Solutions, Supabase, or Stripe wording. The middle section is plain `Options flow sample`; the tape no longer carries the visible blur gate class and its overlay copy was removed. Commercial infrastructure planning now lives in `docs/COMMERCIAL_INFRASTRUCTURE_PLAN.md`. Production Browser/Playwright verified `1.71 · 505/505 complete`, public-copy scan false, overflow 0, blur/lock/gate/veil 0, console issue 0, PNG export `1,482,138` bytes, and `/data/index.json` plus `/assets/kzg-pack.js` both 404. The heartbeat automation is deleted and must stay deleted unless Fangbao asks.
+
+Web `1.71` 是公开风险清理，已部署生产到 `https://6a16bc992cdd920079852497--kzg-option-house.netlify.app/`。它从 `public/app.js`、`public/index.html`、`public/styles.css` 移除内部产品/规划文案：公开页面不再出现“产品阅读路径”、“三段式/不绕路”、预留、后端确认、未来实时、专门页面、产品轮廓、供应商、API、订阅、支付、域名、Network Solutions、Supabase 或 Stripe 话术。中段改成普通 `Options flow sample`；tape 不再带可见 blur gate class，也移除了 overlay 文案。商业基础设施规划现在只在 `docs/COMMERCIAL_INFRASTRUCTURE_PLAN.md`。生产 Browser/Playwright 验证 `1.71 · 505/505 complete`、公开话术扫描 false、overflow 0、blur/lock/gate/veil 0、console issue 0、PNG 导出 `1,482,138` bytes，`/data/index.json` 与 `/assets/kzg-pack.js` 均为 404。自动心跳已删除，除非 Fangbao 要求，否则保持删除。
 
 Important: Fangbao asked about data back to `2023-05`. Treat `2023-05` as a target to re-audit with API/plan entitlement. The local iCloud folder currently proves `2024-05-17 -> 2026-05-22`, not 2023 files.
 
