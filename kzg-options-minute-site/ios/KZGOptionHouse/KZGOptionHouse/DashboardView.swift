@@ -1,3 +1,4 @@
+import Foundation
 import SwiftUI
 
 struct DashboardView: View {
@@ -22,6 +23,7 @@ struct DashboardView: View {
           SectorBand(sectors: snapshot.sectors)
           OpenHistoryCard(pillars: snapshot.historyPillars)
           IntradayCard(buckets: snapshot.buckets)
+          BucketRotationHandoffCard(buckets: snapshot.buckets, rotations: snapshot.rotations)
           RotationCard(points: snapshot.rotations)
           SymbolFocusCard(symbols: snapshot.symbols, selectedSymbol: $selectedSymbol, selectedPulse: selectedPulse)
         }
@@ -57,7 +59,7 @@ private struct Header: View {
         VStack(alignment: .trailing, spacing: 2) {
           Text(snapshot.tradeDate)
             .font(.system(.subheadline, design: .rounded, weight: .bold))
-          Text("iOS companion 0.6")
+          Text("iOS companion 0.7")
             .font(.caption2.weight(.semibold))
             .foregroundStyle(.secondary)
         }
@@ -83,8 +85,8 @@ private struct Header: View {
 
 private struct CheckpointStrip: View {
   private let items = [
-    ("Web", "1.62", "open"),
-    ("iOS", "0.6", "router"),
+    ("Web", "1.66", "bridge"),
+    ("iOS", "0.7", "handoff"),
     ("Flow", "Future", "derived")
   ]
 
@@ -547,6 +549,153 @@ private struct IntradayCard: View {
         .font(.caption.weight(.semibold))
         .foregroundStyle(.secondary)
     }
+  }
+}
+
+private struct BucketRotationHandoffCard: View {
+  let buckets: [IntradayBucket]
+  let rotations: [RotationPoint]
+
+  private var pressureBucket: IntradayBucket {
+    buckets.max { $0.drift < $1.drift } ?? emptyBucket
+  }
+
+  private var callEdge: IntradayBucket {
+    buckets.max { $0.cp < $1.cp } ?? emptyBucket
+  }
+
+  private var putEdge: IntradayBucket {
+    buckets.min { $0.cp < $1.cp } ?? emptyBucket
+  }
+
+  private var warmingCount: Int {
+    rotations.filter { $0.volumeChange >= 0 && $0.premiumChange >= 0 }.count
+  }
+
+  private var coolingCount: Int {
+    rotations.filter { $0.volumeChange < 0 && $0.premiumChange < 0 }.count
+  }
+
+  private var leadRotation: RotationPoint {
+    rotations
+      .filter { $0.volumeChange >= 0 && $0.premiumChange >= 0 }
+      .max { weightedScore($0) < weightedScore($1) }
+      ?? rotations.max { $0.volumeChange < $1.volumeChange }
+      ?? emptyRotation
+  }
+
+  private var breadth: Double {
+    let total = warmingCount + coolingCount
+    guard total > 0 else { return 0 }
+    return Double(warmingCount) / Double(total)
+  }
+
+  var body: some View {
+    KZGCard(title: "分钟压力接力", subtitle: "从日内桶进入轮动象限") {
+      VStack(alignment: .leading, spacing: 9) {
+        Text("先定位最大压力桶和 CP 两端，再看热度是否扩散到标的轮动。")
+          .font(.system(.subheadline, design: .serif, weight: .semibold))
+          .lineSpacing(2)
+
+        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 7) {
+          BridgeTile(
+            label: "压力桶",
+            value: "\(pressureBucket.time) \(signedPercent(pressureBucket.drift))",
+            detail: "\(formatVolume(pressureBucket.volume)) · CP \(formatRatio(pressureBucket.cp))",
+            accent: Color(red: 0.68, green: 0.25, blue: 0.16)
+          )
+          BridgeTile(
+            label: "CP 两端",
+            value: "\(callEdge.time) / \(putEdge.time)",
+            detail: "\(formatRatio(callEdge.cp)) / \(formatRatio(putEdge.cp))",
+            accent: Color(red: 0.62, green: 0.42, blue: 0.15)
+          )
+          BridgeTile(
+            label: "扩散率",
+            value: "\(warmingCount) / \(coolingCount)",
+            detail: "\(Int((breadth * 100).rounded()))% · \(leadRotation.symbol)",
+            accent: Color(red: 0.18, green: 0.45, blue: 0.32)
+          )
+        }
+
+        HStack(alignment: .firstTextBaseline, spacing: 7) {
+          Text("下一屏")
+            .font(.caption2.weight(.bold))
+            .foregroundStyle(.secondary)
+          Text("轮动象限继续开放")
+            .font(.caption.weight(.black))
+          Spacer(minLength: 4)
+          Text(leadRotation.symbol)
+            .font(.caption.weight(.black))
+            .foregroundStyle(Color(red: 0.68, green: 0.25, blue: 0.16))
+            .padding(.vertical, 4)
+            .padding(.horizontal, 7)
+            .background(Color(red: 0.68, green: 0.25, blue: 0.16).opacity(0.10), in: Capsule())
+        }
+        .padding(8)
+        .background(Color(.systemBackground).opacity(0.62), in: RoundedRectangle(cornerRadius: 7, style: .continuous))
+      }
+    }
+  }
+
+  private func weightedScore(_ point: RotationPoint) -> Double {
+    point.volumeChange + point.premiumChange * 0.55
+  }
+
+  private var emptyBucket: IntradayBucket {
+    IntradayBucket(time: "--", volume: 0, cp: 0, drift: 0)
+  }
+
+  private var emptyRotation: RotationPoint {
+    RotationPoint(symbol: "--", volumeChange: 0, premiumChange: 0)
+  }
+
+  private func signedPercent(_ value: Double) -> String {
+    let percent = Int((value * 100).rounded())
+    return percent >= 0 ? "+\(percent)%" : "\(percent)%"
+  }
+
+  private func formatVolume(_ value: Double) -> String {
+    "\(String(format: "%.1f", value))万"
+  }
+
+  private func formatRatio(_ value: Double) -> String {
+    String(format: "%.2f", value)
+  }
+}
+
+private struct BridgeTile: View {
+  var label: String
+  var value: String
+  var detail: String
+  var accent: Color
+
+  var body: some View {
+    VStack(alignment: .leading, spacing: 4) {
+      Text(label)
+        .font(.caption2.weight(.bold))
+        .foregroundStyle(.secondary)
+      Text(value)
+        .font(.caption.weight(.black))
+        .lineLimit(2)
+        .minimumScaleFactor(0.72)
+      Text(detail)
+        .font(.system(size: 9, weight: .semibold, design: .rounded))
+        .foregroundStyle(.secondary)
+        .lineLimit(2)
+        .minimumScaleFactor(0.72)
+    }
+    .frame(maxWidth: .infinity, minHeight: 58, alignment: .leading)
+    .padding(8)
+    .background(
+      RoundedRectangle(cornerRadius: 6, style: .continuous)
+        .fill(accent.opacity(0.08))
+        .overlay(alignment: .leading) {
+          Rectangle()
+            .fill(accent)
+            .frame(width: 3)
+        }
+    )
   }
 }
 

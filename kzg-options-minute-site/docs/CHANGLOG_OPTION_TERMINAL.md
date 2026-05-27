@@ -29,12 +29,12 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.63` open-history path router，具体 commit 以最新 GitHub backup 提交为准
 - 最近验证唯一部署: `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.63`
-- 最近本地稠密版本: `1.66`，本轮为 Web 日内 bucket 风险到标的轮动象限的开放历史接力桥；生产仍是 `1.63`；iOS 仍是 `0.6`
-- 当前 iOS 伴生版本: `0.6`，对应稠密 Web `1.62`
+- 最近本地稠密版本: `1.67`，本轮为 iOS 伴生端同步 Web v1.66 bucket 到轮动的开放历史接力桥；生产仍是 `1.63`
+- 当前 iOS 伴生版本: `0.7`，对应稠密 Web `1.67`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；官方 flat-file 文档显示有 `2023/2023` 目录，但当前公开站只使用本机已证实的 `2024-05-17 -> 2026-05-22`，且本 agent 不使用暴露过的 key 测账号权限；公开参考 <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
-- Apple Notes: 置顶同名 note 已在 v1.66 后同步，`updated=1`，`created=0`，正文 `196,401` chars
+- Apple Notes: 置顶同名 note 已在 v1.67 后同步，`updated=1`，`created=0`，正文 `201,751` chars
 - GitHub: 需要持续提交 docs，让另一个 Codex 能从仓库继续
 
 English:
@@ -47,15 +47,41 @@ English:
 - Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.63` open-history path router; exact commit is the latest GitHub backup commit
 - Latest verified unique deploy: `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.63`
-- Latest local dense version: `1.66`, used for the Web open-history bucket-risk to symbol-rotation handoff bridge; production remains `1.63`; iOS remains `0.6`
-- Current iOS companion version: `0.6`, mapped to dense Web `1.62`
+- Latest local dense version: `1.67`, used for the iOS companion sync of the Web v1.66 bucket-to-rotation open-history handoff; production remains `1.63`
+- Current iOS companion version: `0.7`, mapped to dense Web `1.67`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; official flat-file docs show a `2023/2023` directory, but the public site only uses locally proven `2024-05-17 -> 2026-05-22`, and this agent must not use exposed keys to test account entitlement; public reference <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
-- Apple Notes: pinned note with this title was synced after v1.66, `updated=1`, `created=0`, `196,401` body characters
+- Apple Notes: pinned note with this title was synced after v1.67, `updated=1`, `created=0`, `201,751` body characters
 - GitHub: keep docs committed so another Codex can continue from the repository
 
-## 1A. Latest heartbeat record v1.66 / 最新心跳记录 v1.66
+## 1A. Latest heartbeat record v1.67 / 最新心跳记录 v1.67
+
+中文:
+
+北京时间 2026-05-27 16:15 左右，稠密版本 `1.67` 完成 iOS 伴生端 `0.7` 同步。本轮不改 Web 公开站，不部署生产；生产仍是 `1.63`，生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`。本轮继续执行 Fangbao 最新公开边界：当前生成分钟能力全部开放，历史趋势、轮动、事件队列、PNG 导出不 blur、不 lock、不 paywall；只有未来 realtime option-flow tape/reserve 可以保留预留式 blur。公开站与 iOS 端都不展示真实 API key、供应商名、套餐、支付、域名、注册、账号或内部商业规划。
+
+改动文件：`ios/KZGOptionHouse/KZGOptionHouse/DashboardView.swift`、`docs/CHANGELOG.md`、`docs/CHANGLOG_OPTION_TERMINAL.md`、`docs/IOS_COMPANION_PLAN.md`、`docs/DENSE_VERSIONING.md`、`docs/HANDOFF_FOR_OTHER_CODEX.md`、`docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`、`docs/PLUGIN_SERVICE_STATUS.md`、`docs/CHANGLOG_OPTION_TERMINAL_MINDMAP.opml`。`DashboardView.swift` 顶部增加 `import Foundation` 以支持数字格式化；主栈在 `IntradayCard` 和 `RotationCard` 之间新增 `BucketRotationHandoffCard`；Header 从 `iOS companion 0.6` 改成 `0.7`；`CheckpointStrip` 从 Web `1.62` / iOS `0.6` 更新为 Web `1.66` / iOS `0.7` / bridge-handoff。
+
+体验调整：Web v1.66 解决了“日内 bucket risk 看完后如何自然进入轮动象限”的问题。v1.67 把这条接力同步到 iOS 手机阅读路径：新增原生卡标题 `分钟压力接力`，副标题 `从日内桶进入轮动象限`；卡内三格分别显示压力桶、CP 两端、扩散率；底部写 `轮动象限继续开放`，并突出当前样张领头标的 `RGTI`。这让 iOS 不只是网页的缩小版，而是在手机纵向读盘里保留同一条产品逻辑。
+
+验证结果：XcodeBuildMCP `session_show_defaults` 确认当前 profile `kzg-option-house-ios` 指向正确工程 `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`、scheme `KZG Option House`、simulator `iPhone 17 Pro`。随后 `build_run_sim` 仍被本机 simulator destination 阻塞，错误为找不到 `{ platform:iOS Simulator, id:9DAFEA29-80F2-4D94-BE75-C0106CE8D97E }`。Fallback `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator` 通过；`git diff --check -- ios/KZGOptionHouse/KZGOptionHouse/DashboardView.swift` 通过；iOS Swift 源码公开风险词扫描无命中。Web 源码未改，最近 Web PNG 证明仍是 v1.66 的 `1,482,138` bytes。
+
+阻塞与下一步：本机 Xcode simulator runtime/destination 仍是已知阻塞，不是 Swift 源码 blocker。没有 TestFlight、App Store、签名 team、开发者账号、真实 API、Massive plan 升级、域名购买、Stripe/Supabase/支付或任何花钱/传密钥动作。下一步 `1.68` 回到 Web，继续压缩开放历史下半区的手机高度和连续读盘，优先处理 bucket bars、rotation lists、symbol momentum 的节奏；iOS 下一次默认同步约在 Web v1.72。
+
+English:
+
+Around 2026-05-27 16:15 Asia/Shanghai, dense version `1.67` completed iOS companion `0.7` sync. This round does not change the public Web app or deploy production; production remains `1.63` at `https://kzg-option-house.netlify.app/`, unique deploy `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`. It keeps Fangbao's latest public boundary: all generated-minute capabilities stay open; historical trends, rotation, event queues, and PNG export are not blurred, locked, or paywalled; only the future realtime option-flow tape/reserve may keep a reserve-style blur. Neither public Web nor iOS exposes real API keys, provider names, plan details, payment, domains, registration, accounts, or internal commercial planning.
+
+Changed files: `ios/KZGOptionHouse/KZGOptionHouse/DashboardView.swift`, `docs/CHANGELOG.md`, `docs/CHANGLOG_OPTION_TERMINAL.md`, `docs/IOS_COMPANION_PLAN.md`, `docs/DENSE_VERSIONING.md`, `docs/HANDOFF_FOR_OTHER_CODEX.md`, `docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`, `docs/PLUGIN_SERVICE_STATUS.md`, and `docs/CHANGLOG_OPTION_TERMINAL_MINDMAP.opml`. `DashboardView.swift` adds `import Foundation` for numeric formatting; the main stack adds `BucketRotationHandoffCard` between `IntradayCard` and `RotationCard`; Header moves from `iOS companion 0.6` to `0.7`; `CheckpointStrip` updates from Web `1.62` / iOS `0.6` to Web `1.66` / iOS `0.7` / bridge-handoff.
+
+Experience: Web v1.66 solved how to naturally move from intraday bucket risk into the rotation quadrant. v1.67 syncs that handoff into the iOS phone reading path: a native `分钟压力接力` card with subtitle `从日内桶进入轮动象限`; three cells for pressure bucket, CP extremes, and breadth; a footer that says `轮动象限继续开放` and highlights the current sample leader `RGTI`. This keeps iOS from becoming a shrunken web page and preserves the same product logic in a vertical phone flow.
+
+Verification result: XcodeBuildMCP `session_show_defaults` confirmed current profile `kzg-option-house-ios` points to the correct project `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, simulator `iPhone 17 Pro`. `build_run_sim` remains blocked by the local simulator destination, with unable to find `{ platform:iOS Simulator, id:9DAFEA29-80F2-4D94-BE75-C0106CE8D97E }`. Fallback `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator` passed; `git diff --check -- ios/KZGOptionHouse/KZGOptionHouse/DashboardView.swift` passed; public-risk scan across iOS Swift source had no matches. Web source was not changed; the latest Web PNG proof remains v1.66 at `1,482,138` bytes.
+
+Blocker and next step: The local Xcode simulator runtime/destination remains a known blocker, not a Swift source blocker. No TestFlight, App Store, signing team, developer account, real API, Massive plan upgrade, domain purchase, Stripe/Supabase/payment action, spending, or secret transmission happened. Next `1.68` should return to Web and keep compressing lower open-history phone height and reading continuity, especially bucket bars, rotation lists, and symbol momentum. The next default iOS sync is around Web v1.72.
+
+## 1B. Latest heartbeat record v1.66 / 最新心跳记录 v1.66
 
 中文:
 

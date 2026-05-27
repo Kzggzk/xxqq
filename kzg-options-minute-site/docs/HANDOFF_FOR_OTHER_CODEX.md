@@ -19,9 +19,9 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
 - Production version last verified / 最近生产验证版本: `1.63`
-- Local version last verified / 最近本地验证版本: `1.66` Web bucket-to-rotation handoff bridge
+- Local version last verified / 最近本地验证版本: `1.67` iOS companion bucket-to-rotation handoff sync
 - Latest unique deploy / 最近唯一部署: `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`
-- iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.6`
+- iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.7`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
 - Local verified option-minute window / 本地已验证期权分钟范围: `2024-05-17 -> 2026-05-22`, `505` files.
 
@@ -67,6 +67,14 @@ Latest production v1.63 note:
 Web `1.63` is the latest production checkpoint and the previous local checkpoint. Production is `https://kzg-option-house.netlify.app/`, unique deploy `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`, deploy id `6a168b3efbed57514f5fc1ea`. Main code changes are `public/app.js` and `public/styles.css`: UI version `1.63`, new `historyLayerPath()` under the open historical intro, four public-open path buttons into `trendChart`, `bucketProfile`, `symbolRotation`, and `symbolFocus`, and phone path cards changed to one column below 520px so dates and money values stay readable. Current generated-minute features stay open; only the future realtime tape keeps reserve blur. Local Browser and Playwright QA passed on desktop and phone: 4 path buttons, all 4 targets exist, old locks 0, old `.is-blurred` 0, public-risk false, horizontal overflow 0, and PNG export `1,482,138` bytes. Production verification passed: `app.js` contains `UI_VERSION = "1.63"`, `/data/index.json` and `/assets/kzg-pack.js` are `404`, Browser/Playwright production desktop and phone checks have console issue 0, old lock/blur 0, horizontal overflow 0, and PNG export `1,482,138` bytes. iOS remains `0.6` from Web v1.62; next default iOS sync is around Web v1.67. Do not connect or sell realtime data until backend credentials, rights, and Fangbao approval are confirmed.
 
 Web `1.63` 是最新生产检查点和上一轮本地检查点。生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`，deploy id `6a168b3efbed57514f5fc1ea`。主要源码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.63`，在开放历史 intro 下新增 `historyLayerPath()`，四个公开开放路径按钮分别进入 `trendChart`、`bucketProfile`、`symbolRotation` 和 `symbolFocus`，并把手机路径卡在 520px 以下改成单列，让日期和金额保持可读。当前生成分钟能力保持开放；只有未来实时 tape 保留预留式 blur。本地 Browser 与 Playwright 桌面/手机 QA 通过：4 个路径按钮、4 个目标全部存在、旧锁层 0、旧 `.is-blurred` 0、公开风险 false、横向溢出 0、PNG 导出 `1,482,138` bytes。生产验证通过：`app.js` 含 `UI_VERSION = "1.63"`，`/data/index.json` 和 `/assets/kzg-pack.js` 都是 `404`，生产 Browser/Playwright 桌面和手机 console issue 0、旧锁/旧 blur 0、横向溢出 0、PNG 导出 `1,482,138` bytes。iOS 仍是 Web v1.62 同步的 `0.6`；下次默认 iOS 同步在 Web v1.67 左右。不要在后端凭证、权利和 Fangbao 批准确认前接入或销售实时数据。
+
+Latest local v1.67 note:
+
+最新本地 v1.67 说明：
+
+Dense `1.67` is the latest local checkpoint and syncs Web v1.66 into native iOS companion `0.7`; production Web remains `1.63`. Main source change is `ios/KZGOptionHouse/KZGOptionHouse/DashboardView.swift`: Header now shows `iOS companion 0.7`, checkpoint strip shows Web `1.66` / iOS `0.7`, and a new `BucketRotationHandoffCard` sits between `IntradayCard` and `RotationCard`. The card reads pressure bucket, CP extremes, breadth, and lead symbol (`RGTI`) as a native phone path into the still-open rotation quadrant. It contains no real API key, provider name, payment, domain, price, registration, account route, or TestFlight/App Store action. XcodeBuildMCP defaults are correct for project `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, but `build_run_sim` remains blocked by the local simulator destination. Fallback Swift source typecheck passes with `xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator`. Next dense step is Web v1.68.
+
+稠密 `1.67` 是最新本地检查点，把 Web v1.66 同步到原生 iOS 伴生 `0.7`；生产 Web 仍是 `1.63`。主要源码改动是 `ios/KZGOptionHouse/KZGOptionHouse/DashboardView.swift`：Header 显示 `iOS companion 0.7`，checkpoint strip 显示 Web `1.66` / iOS `0.7`，并在 `IntradayCard` 与 `RotationCard` 之间新增 `BucketRotationHandoffCard`。这张卡把压力桶、CP 两端、扩散率和领头标的 `RGTI` 读成手机原生路径，进入下方仍开放的轮动象限。它不包含真实 API key、供应商名、支付、域名、价格、注册、账号路线，也没有 TestFlight/App Store 动作。XcodeBuildMCP 默认 profile 正确指向工程 `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj` 和 scheme `KZG Option House`，但 `build_run_sim` 仍被本机 simulator destination 阻塞。fallback Swift 源码 typecheck 通过：`xcrun --sdk iphonesimulator swiftc -typecheck ios/KZGOptionHouse/KZGOptionHouse/*.swift -target arm64-apple-ios17.0-simulator`。下一步稠密版本是 Web v1.68。
 
 Latest local v1.66 note:
 

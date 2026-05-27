@@ -194,6 +194,25 @@ Implementation boundary:
 7. It should keep current generated-minute history public and readable.
 8. 它应继续保持当前生成分钟历史层公开可读。
 
+## v1.67 iOS handoff sync rule / v1.67 iOS 接力同步规则
+
+v1.67 syncs the v1.66 bucket-to-rotation handoff into the native iOS companion. The iOS card is a companion reading surface, not a client-side realtime connector.
+
+v1.67 把 v1.66 bucket 到轮动接力同步进原生 iOS 伴生端。iOS 卡片是伴生读盘界面，不是客户端实时连接器。
+
+Implementation boundary:
+
+实现边界：
+
+1. iOS may show compact derived samples from the bundled snapshot.
+2. iOS 可以展示来自内置紧凑快照的派生样张。
+3. It may mirror Web's open-history pressure bucket, CP extremes, and breadth story.
+4. 它可以同步 Web 的开放历史压力桶、CP 两端和扩散故事。
+5. It must not embed credentials, provider routes, payment routes, subscription mechanics, or App Store/TestFlight actions.
+6. 它不得内置凭证、供应商路线、支付路线、订阅机制或 App Store/TestFlight 动作。
+7. Full simulator run remains a local Xcode destination issue until the simulator profile is repaired; Swift typecheck is the current source-level proof.
+8. 完整模拟器运行在 simulator profile 修好前仍是本机 Xcode destination 问题；Swift typecheck 是当前源码级证明。
+
 ## Verified official facts / 已核官方事实
 
 Checked on 2026-05-26 Asia/Shanghai against Massive official docs/pages.

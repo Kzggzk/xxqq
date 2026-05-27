@@ -12,8 +12,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - `1.01 -> 2.00` 代表 100 个稠密迭代。
 - A future `11.85` means 1085 post-1.00 dense iterations, not a symbolic number.
 - 未来如果到 `11.85`，它代表从 1.00 之后真的经历了 1085 个稠密迭代，不是随便喊出来的数字。
-- The latest local checkpoint is `1.66` for the Web bucket-to-rotation handoff bridge. The latest production checkpoint remains `1.63`, unique deploy `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`. iOS companion remains `0.6` from dense Web `1.62`. The next dense step is `1.67`, which is the default iOS sync checkpoint unless explicitly deferred.
-- 最近本地检查点是 `1.66` Web bucket 风险到标的轮动象限的接力桥。最近生产检查点仍是 `1.63`，唯一部署是 `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`。iOS 伴生仍是 Web `1.62` 同步的 `0.6`。下一次稠密版本是 `1.67`，默认应进入 iOS 同步点，除非明确记录延期。
+- The latest local checkpoint is `1.67` for iOS companion `0.7`, syncing the Web v1.66 bucket-to-rotation handoff into native SwiftUI. The latest production checkpoint remains `1.63`, unique deploy `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`. The next dense step is `1.68`.
+- 最近本地检查点是 `1.67` iOS 伴生 `0.7`，把 Web v1.66 的 bucket 到轮动接力同步进原生 SwiftUI。最近生产检查点仍是 `1.63`，唯一部署是 `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`。下一次稠密版本是 `1.68`。
 
 ## iOS companion cadence / iOS 伴生节奏
 
@@ -21,8 +21,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - iOS app 是原生 SwiftUI，位于 `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse`。
 - iOS does not update on every Web `0.01` version. It updates every 5 Web dense versions unless Fangbao asks for an immediate iOS pass.
 - iOS 不跟随每一个 Web `0.01` 版本更新。默认每 5 个 Web 稠密版本同步一次，除非 Fangbao 要求立即更新 iOS。
-- Current iOS checkpoint: `iOS 0.6` at dense Web `1.62`. It syncs the Flow Router and realtime-to-history handoff into native SwiftUI. XcodeBuildMCP still has a local simulator destination/runtime blocker, and shell `xcodebuild` reports missing iOS `26.5`, but Swift source typecheck passes.
-- 当前 iOS 检查点：`iOS 0.6` 对应稠密 Web `1.62`。它把 Flow Router 与实时预留区到历史层的 handoff 同步进原生 SwiftUI。XcodeBuildMCP 仍有本机 simulator destination/runtime 阻塞，shell `xcodebuild` 报缺少 iOS `26.5`，但 Swift 源码 typecheck 通过。
+- Current iOS checkpoint: `iOS 0.7` at dense Web `1.67`. It syncs the bucket-to-rotation handoff into native SwiftUI. XcodeBuildMCP still has a local simulator destination/runtime blocker, but Swift source typecheck passes.
+- 当前 iOS 检查点：`iOS 0.7` 对应稠密 Web `1.67`。它把 bucket 到轮动接力同步进原生 SwiftUI。XcodeBuildMCP 仍有本机 simulator destination/runtime 阻塞，但 Swift 源码 typecheck 通过。
 - App Store signing, TestFlight upload, review submission, or developer-account actions require Fangbao confirmation at that moment.
 - App Store 签名、TestFlight 上传、审核提交或开发者账号动作，都必须在当时让 Fangbao 确认。
 
@@ -60,6 +60,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - v1.65 加入故事条到目标面板的聚焦接力。点击故事卡或路径卡后，会滚动到开放历史面板并给目标面板一个短暂聚焦反馈，让桌面和手机用户知道自己落到哪里。本轮仅本地完成；生产仍为 v1.63。
 - v1.66 adds the bucket-to-rotation handoff bridge inside the open historical layer. It connects intraday pressure bucket, CP extremes, and rotation breadth into one readable route, then clicks into the open symbol-rotation panel with the v1.65 focus pulse. It is local only; production remains v1.63.
 - v1.66 在开放历史层内加入 bucket 到轮动的接力桥。它把日内压力桶、CP 极值和轮动扩散接成一条可读路径，并复用 v1.65 聚焦反馈点击进入开放的标的轮动面板。本轮仅本地完成；生产仍为 v1.63。
+- v1.67 syncs v1.66 into iOS companion `0.7`. The native app now shows Web `1.66`, iOS `0.7`, and a `分钟压力接力` card between intraday buckets and the rotation quadrant. It is local only; production Web remains v1.63.
+- v1.67 把 v1.66 同步到 iOS 伴生 `0.7`。原生 app 现在显示 Web `1.66`、iOS `0.7`，并在日内桶和轮动象限之间加入 `分钟压力接力` 卡。本轮仅本地完成；生产 Web 仍为 v1.63。
 
 ## Heartbeat protocol / 心跳协议
 
