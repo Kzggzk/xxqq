@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.68";
+const UI_VERSION = "1.69";
 
 const dataAudit = {
   dataset: "23_DATA_期权分钟_Minute",
@@ -335,6 +335,7 @@ async function loadIndex() {
     if (!symbol || !state.day) return;
     state.focusSymbol = symbol;
     renderSymbolFocus();
+    renderSymbolMomentum();
     syncSymbolActive();
   });
   $("goToday").addEventListener("click", () => loadDayByIndex(state.datesAsc.length - 1));
@@ -3637,13 +3638,18 @@ function renderTable(target, rows) {
 function renderSymbolMomentum() {
   const target = $("symbolMomentum");
   const seen = new Set();
-  const rows = [...state.day.indexRows, ...state.day.etfRows, ...state.day.stockRows]
+  const universe = [...state.day.indexRows, ...state.day.etfRows, ...state.day.stockRows]
     .filter((row) => {
       if (seen.has(row.symbol)) return false;
       seen.add(row.symbol);
       return true;
-    })
-    .slice(0, 18)
+    });
+  const rows = universe.slice(0, 18);
+  const focusRow = universe.find((row) => row.symbol === state.focusSymbol);
+  if (focusRow && !rows.some((row) => row.symbol === focusRow.symbol)) {
+    rows.splice(Math.max(0, rows.length - 1), 1, focusRow);
+  }
+  const mappedRows = rows
     .map((row) => {
       const series = symbolSeriesUntil(row.symbol, 45);
       const prev = series.slice(0, -1).slice(-20);
@@ -3651,22 +3657,22 @@ function renderSymbolMomentum() {
       const delta = avg ? ((Number(row.totalVol) - avg) / avg) * 100 : 0;
       return { ...row, delta, series };
     });
-  const hotRows = rows.filter((row) => row.delta >= 20);
-  const coolRows = rows.filter((row) => row.delta <= -20);
-  const warmLead = rows.reduce((best, row) => row.delta > best.delta ? row : best, rows[0] || {});
-  const coolLead = rows.reduce((best, row) => row.delta < best.delta ? row : best, rows[0] || {});
-  const premiumLead = rows.reduce((best, row) => Number(row.premiumNotional) > Number(best.premiumNotional) ? row : best, rows[0] || {});
-  const cpLead = rows.reduce((best, row) => Number(row.cpRatio) > Number(best.cpRatio) ? row : best, rows[0] || {});
+  const hotRows = mappedRows.filter((row) => row.delta >= 20);
+  const coolRows = mappedRows.filter((row) => row.delta <= -20);
+  const warmLead = mappedRows.reduce((best, row) => row.delta > best.delta ? row : best, mappedRows[0] || {});
+  const coolLead = mappedRows.reduce((best, row) => row.delta < best.delta ? row : best, mappedRows[0] || {});
+  const premiumLead = mappedRows.reduce((best, row) => Number(row.premiumNotional) > Number(best.premiumNotional) ? row : best, mappedRows[0] || {});
+  const cpLead = mappedRows.reduce((best, row) => Number(row.cpRatio) > Number(best.cpRatio) ? row : best, mappedRows[0] || {});
 
   target.innerHTML = `
     <div class="momentum-summary">
-      ${momentumSummaryCard(state.lang === "zh" ? "升温队列" : "Warming", `${hotRows.length}/${rows.length}`, `${warmLead.symbol || "--"} ${warmLead.delta >= 0 ? "+" : ""}${fmt1.format(warmLead.delta || 0)}%`, "hot")}
-      ${momentumSummaryCard(state.lang === "zh" ? "降温队列" : "Cooling", `${coolRows.length}/${rows.length}`, `${coolLead.symbol || "--"} ${coolLead.delta >= 0 ? "+" : ""}${fmt1.format(coolLead.delta || 0)}%`, "cool")}
+      ${momentumSummaryCard(state.lang === "zh" ? "升温队列" : "Warming", `${hotRows.length}/${mappedRows.length}`, `${warmLead.symbol || "--"} ${warmLead.delta >= 0 ? "+" : ""}${fmt1.format(warmLead.delta || 0)}%`, "hot")}
+      ${momentumSummaryCard(state.lang === "zh" ? "降温队列" : "Cooling", `${coolRows.length}/${mappedRows.length}`, `${coolLead.symbol || "--"} ${coolLead.delta >= 0 ? "+" : ""}${fmt1.format(coolLead.delta || 0)}%`, "cool")}
       ${momentumSummaryCard(state.lang === "zh" ? "权利金锚点" : "Premium anchor", premiumLead.symbol || "--", moneyCompact(premiumLead.premiumNotional), "flat")}
       ${momentumSummaryCard(state.lang === "zh" ? "CP 领头" : "CP lead", cpLead.symbol || "--", `CP ${ratio(cpLead.cpRatio)}`, "flat")}
     </div>
     <div class="momentum-list">
-      ${rows.map((row) => {
+      ${mappedRows.map((row) => {
     const hot = row.delta >= 20;
     const cool = row.delta <= -20;
     const cls = hot ? "hot" : cool ? "cool" : "flat";
@@ -3982,6 +3988,57 @@ function renderSymbolFocus() {
       <div><span>${state.lang === "zh" ? "权利金" : "Premium"}</span>${sparkline(series, "premiumNotional", 280, 62, "#9a6a12")}</div>
       <div><span>CP</span>${sparkline(series, "cpRatio", 280, 62, "#148355")}</div>
     </div>
+    ${symbolMomentumHandoff(current, volumeMove, premiumMove)}
+  `;
+}
+
+function symbolMomentumHandoff(current, volumeMove, premiumMove) {
+  if (!current || !state.day) return "";
+  const symbol = current.symbol;
+  const rotationRows = symbolRotationRows();
+  const queueIndex = rotationRows.findIndex((row) => row.symbol === symbol);
+  const queueLabel = queueIndex >= 0 ? `#${queueIndex + 1}/${rotationRows.length}` : (state.lang === "zh" ? "未进队列" : "off queue");
+  const universe = [...state.day.indexRows, ...state.day.etfRows, ...state.day.stockRows];
+  const premiumAnchor = universe.reduce((best, row) => Number(row.premiumNotional) > Number(best.premiumNotional) ? row : best, universe[0] || current);
+  const sameCategory = rotationRows
+    .filter((row) => row.category === current.category && row.symbol !== symbol)
+    .slice(0, 3)
+    .map((row) => row.symbol)
+    .join(" / ") || (state.lang === "zh" ? "同组待观察" : "watch peers");
+  const tone = volumeMove >= 20 || premiumMove >= 30 ? "hot" : volumeMove <= -20 || premiumMove <= -30 ? "cool" : "flat";
+  const leadText = state.lang === "zh"
+    ? `读完 ${symbol} 后，回到底下动量队列核对资金锚、队列位置和同组扩散。`
+    : `After reading ${symbol}, return to the momentum queue to check capital anchor, queue position, and peer breadth.`;
+  return `
+    <div class="symbol-momentum-handoff">
+      <div class="symbol-momentum-shell ${tone}">
+        <div class="symbol-momentum-copy">
+          <span>${state.lang === "zh" ? "标的到动量队列" : "Symbol to momentum queue"}</span>
+          <b>${escapeHtml(symbol)} ${volumeMove >= 0 ? "+" : ""}${fmt1.format(volumeMove)}%</b>
+          <small>${escapeHtml(leadText)}</small>
+        </div>
+        <div class="symbol-momentum-steps">
+          ${symbolMomentumStep(state.lang === "zh" ? "当前镜头" : "Current lens", `${symbol} ${wan(current.totalVol)}`, `${premiumMove >= 0 ? "+" : ""}${fmt1.format(premiumMove)}% ${state.lang === "zh" ? "权利金" : "premium"}`, tone)}
+          ${symbolMomentumStep(state.lang === "zh" ? "资金锚点" : "Capital anchor", `${premiumAnchor.symbol || "--"} ${moneyCompact(premiumAnchor.premiumNotional)}`, state.lang === "zh" ? "全市场权利金最大" : "largest premium notional", "flat")}
+          ${symbolMomentumStep(state.lang === "zh" ? "队列位置" : "Queue seat", queueLabel, sameCategory, queueIndex >= 0 ? "hot" : "cool")}
+        </div>
+        <button type="button" class="symbol-momentum-jump" data-symbol="${escapeHtml(symbol)}" data-scroll-sector="symbolMomentum">
+          <span>${state.lang === "zh" ? "回到动量队列" : "Back to momentum queue"}</span>
+          <b>${escapeHtml(symbol)}</b>
+          <small>${state.lang === "zh" ? "保持开放历史层，不加锁" : "Open historical layer, no lock"}</small>
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+function symbolMomentumStep(label, value, sub, tone) {
+  return `
+    <span class="${tone}">
+      <i>${escapeHtml(label)}</i>
+      <b>${escapeHtml(value)}</b>
+      <small>${escapeHtml(sub || "--")}</small>
+    </span>
   `;
 }
 

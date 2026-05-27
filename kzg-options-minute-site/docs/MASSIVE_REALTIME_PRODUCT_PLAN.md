@@ -232,6 +232,25 @@ Implementation boundary:
 7. It should make the lower open-history layer read as a continuous route: pressure bucket, rotation breadth, symbol lens.
 8. 它应让下半区开放历史层读起来像连续路线：压力桶、轮动扩散、单标的镜头。
 
+## v1.69 symbol-to-momentum queue rule / v1.69 单标的到动量队列规则
+
+v1.69 adds the return path after the single-symbol lens: the open symbol focus now hands back into the open momentum queue. This keeps the historical reading loop continuous without changing the public/private boundary.
+
+v1.69 加入单标的镜头后的回路：开放单标的聚焦现在会接回开放动量队列。这样历史读盘路径可以闭环，但不改变公开/内部边界。
+
+Implementation boundary:
+
+实现边界：
+
+1. The handoff may show current symbol, capital anchor, queue position, and same-category peers from landed historical data.
+2. 接力桥可以用已落地历史数据展示当前标的、资金锚点、队列位置和同组标的。
+3. The active focus symbol should remain visible in the momentum queue, even if it would normally be truncated out of the compact list.
+4. 当前聚焦标的应保留在动量队列中，即使它原本会被紧凑列表截掉。
+5. The jump may focus the existing open momentum panel.
+6. 跳转可以聚焦现有开放的 momentum 面板。
+7. It must not introduce locks, provider routes, API details, checkout, subscription, unlock, account entitlement, or realtime-access wording.
+8. 它不得引入锁、供应商路线、API 细节、checkout、订阅、解锁、账号权限或实时访问文案。
+
 ## Verified official facts / 已核官方事实
 
 Checked on 2026-05-26 Asia/Shanghai against Massive official docs/pages.

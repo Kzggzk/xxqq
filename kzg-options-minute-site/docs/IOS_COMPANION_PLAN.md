@@ -10,7 +10,7 @@ This document defines the iOS track for KZG Option House. The iOS app is a compa
 - Scheme / Scheme: `KZG Option House`
 - Bundle id / Bundle ID: `com.kzg.optionhouse`
 - Current iOS version / 当前 iOS 版本: `0.7`
-- Web baseline / 对应 Web 基线: dense Web `1.67`, production Web now `1.68`
+- Web baseline / 对应 Web 基线: dense Web `1.67`, production Web now `1.68`, latest local Web `1.69`
 - First simulator proof / 首次模拟器证明: `/tmp/kzg-option-house-ios-v01.png`
 - Build proof / 构建证明: v0.7 Swift source typecheck passed with `swiftc`; full XcodeBuildMCP simulator run is currently blocked by local simulator destination/runtime selection.
 
@@ -24,6 +24,8 @@ This document defines the iOS track for KZG Option House. The iOS app is a compa
 - 当前检查点：iOS `0.7` 对应稠密 Web `1.67`；下一次计划 iOS 检查点约在 Web `1.72`，除非 Fangbao 提前要求。
 - Web v1.68 deployed after iOS `0.7`; it does not change iOS source and should be considered a Web-only checkpoint until the next iOS sync.
 - Web v1.68 已在 iOS `0.7` 后部署；它不改变 iOS 源码，在下次 iOS 同步前按 Web-only 检查点处理。
+- Web v1.69 is also Web-only. It adds the symbol-to-momentum queue handoff and keeps iOS at `0.7` until the next planned sync around Web `1.72`.
+- Web v1.69 也是 Web-only。它加入单标的到动量队列接力，iOS 保持 `0.7`，直到 Web `1.72` 左右的下一次计划同步。
 
 ## Product direction / 产品方向
 

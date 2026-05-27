@@ -6,7 +6,7 @@
   <body>
     <outline text="CHANGLOG 期权终端">
       <outline text="Current state / 当前状态">
-        <outline text="Local and production dense 1.68 rotation-to-symbol focus / 本地和生产稠密 1.68 轮动到单标的聚焦"/>
+        <outline text="Local dense 1.69 symbol-to-momentum queue / 本地稠密 1.69 单标的到动量队列"/>
         <outline text="Production Web 1.68 / 生产 Web 1.68"/>
         <outline text="Unique deploy 6a16acc1dbce120ee54cac50 / 唯一部署"/>
         <outline text="iOS companion 0.7 / iOS 伴生 0.7"/>
@@ -29,6 +29,7 @@
           <outline text="Bucket-to-rotation handoff bridge / bucket 到轮动接力桥"/>
           <outline text="iOS bucket-to-rotation native card / iOS bucket 到轮动原生卡"/>
           <outline text="Rotation-to-symbol focus bridge / 轮动到单标的聚焦桥"/>
+          <outline text="Symbol-to-momentum queue bridge / 单标的到动量队列接力"/>
         </outline>
         <outline text="Future commercial layer / 未来商业层">
           <outline text="Current generated-minute features stay open / 当前生成分钟功能开放"/>
@@ -41,6 +42,7 @@
           <outline text="Pressure bucket CP extremes rotation breadth / 压力桶 CP 极值轮动扩散"/>
           <outline text="iOS 0.7 handoff card / iOS 0.7 接力卡"/>
           <outline text="RGTI symbol lens handoff / RGTI 单标的镜头接力"/>
+          <outline text="RGTI active momentum queue row / RGTI 动量队列激活行"/>
           <outline text="Public provider label scrub / 公开供应商标签清理"/>
           <outline text="Bullish and bearish lanes / 多空分栏"/>
           <outline text="Strategy recognition tree / 策略识别树"/>
