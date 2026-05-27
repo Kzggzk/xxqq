@@ -1,0 +1,540 @@
+en_trendforce
+2026-05-26 12:00:00
+[News] Huawei Unveils New Semiconductor Principle – Tau (τ) Scaling Law 
+Huawei presented its Tau (τ) Scaling Law at the 2026 International Symposium on Circuits and Systems in Shanghai, claiming to have designed 381 chips over six years using the new framework. The 'LogicFolding' architecture underpins Kirin processors expected later in 2026, offering China a path to semiconductor competitiveness despite US export controls. 
+
+-------------------------
+en_defensescoop
+2026-05-26 12:00:00
+Why DARPA Just Renamed and Reshaped 2 Key Technology Offices 
+DARPA transformed its Microsystems Technology Office into the Multi X Office (MXO) and its Information Innovation Office into the Information Processing office to better align research with multi-domain warfare needs. The agency said the new names reflect broader mandates covering cross-domain systems and advanced information processing capabilities. 
+
+-------------------------
+en_usni_news
+2026-05-26 12:00:00
+USNI News Fleet and Marine Tracker: May 26, 2026 
+The weekly tracker reports carrier USS George Washington operating in the Philippine Sea as the PLA Navy's Liaoning Carrier Strike Group operates in the region, with House authorizers seeking additional funding to procure a second carrier. Global naval posture reflects heightened operational tempo amid US-China maritime competition. 
+
+-------------------------
+en_cre_daily
+2026-05-26 12:00:00
+Policy Designed to Target Mansions Is Increasingly Hitting Multifamily and Commercial Development 
+A mansion tax intended to target luxury residential sales has unexpectedly burdened multifamily and commercial real estate transactions, adding millions in costs to development projects and investment sales. Industry groups are lobbying for threshold adjustments to exempt income-producing properties and workforce housing from the levy. 
+
+-------------------------
+en_freightos
+2026-05-26 12:00:00
+Demand Rebound Pushing Rates Up for Early Start to Ocean Peak Season – May 26, 2026 Update 
+Transpacific ocean freight rates jumped more than 10% on both main lanes with carriers announcing GRIs and PSSs ranging from $600 to $1,000 per FEU, signaling an early start to the peak shipping season. The rebound follows months of subdued volumes as tariff uncertainty dampened US import activity. 
+
+-------------------------
+en_bnn_bloomberg
+2026-05-26 12:00:00
+Canada Bank Profits to Grow Despite Insolvencies, Housing Market 
+Canada's major banks are expected to post profit growth despite rising consumer insolvencies—up 26% since December—and a subdued housing market weighing on core domestic business. Analysts say banks have built adequate loan loss reserves but warn that deteriorating credit quality could pressure second-half 2026 earnings. 
+
+-------------------------
+en_trendforce
+2026-05-25 12:00:00
+[News] South Korea–Netherlands Chip Ties May Go Beyond ASML; Silicon Photonics Seen as a Key Opportunity 
+The next phase of South Korea-Netherlands semiconductor cooperation may extend beyond ASML into silicon photonics, using light rather than electrical signals for next-generation chip interconnects. The two countries are exploring collaborative development to diversify their chipmaking capabilities beyond advanced-node lithography. 
+
+-------------------------
+en_cleantechnica
+2026-05-25 12:00:00
+The Future of Home Energy Is an Intelligent Ecosystem 
+AI-enabled home energy management systems are integrating rooftop solar, battery storage, EV charging, and smart appliances into unified platforms that optimize energy flows and reduce utility bills. Early adopters report 40-60% reductions in grid electricity purchases as these interconnected residential energy systems become increasingly affordable. 
+
+-------------------------
+en_bnn_bloomberg
+2026-05-25 12:00:00
+Market Outlook: Oil Retreat Fuels Rally as Investors Question Bank Valuations 
+Declining oil prices have fueled a Canadian equity market rally as energy stocks pull back and investors rotate into financials, though questions persist about whether bank valuations adequately reflect rising credit risk. The divergence between strong bank earnings and deteriorating consumer credit metrics is creating unusual valuation uncertainty. 
+
+-------------------------
+en_trendforce
+2026-05-22 12:00:00
+[News] SMIC, Hua Hong Reportedly Lift Prices Amid AI-Driven Capacity Shifts; Hua Hong Expects More 12-Inch Hikes in 2026 
+Chinese foundries SMIC and Hua Hong have raised wafer prices as AI-driven capacity reallocations tighten supply, with Hua Hong expecting further 12-inch product price hikes throughout 2026. The trend signals growing pricing power for mature-node Chinese foundries serving automotive, consumer, and industrial chip markets. 
+
+-------------------------
+en_defensescoop
+2026-05-22 12:00:00
+DOD Wants Nearly $30 Billion to Modernize Its AI Supercomputing Arsenal in Fiscal 2027 
+The Pentagon's fiscal 2027 budget request includes a $29.5 billion AI Arsenal initiative to purchase next-generation AI supercomputers and modernize military computing infrastructure across all branches. The investment would represent one of the largest single-year defense IT expenditures in history, aimed at maintaining US military AI superiority. 
+
+-------------------------
+en_army_recognition
+2026-05-22 12:00:00
+US Picket Defense Unveils Inferno RTC Counter-Drone Turret at SOF Week 2026 
+Picket Defense Systems unveiled the Inferno RTC, a close-range hard-kill counter-drone rotating turret capable of stopping FPV kamikaze drones in under three seconds, at Special Operations Forces Week 2026. The system addresses a critical vulnerability highlighted by drone-intensive combat in Ukraine and recent Middle East operations. 
+
+-------------------------
+en_contract_pharma
+2026-05-22 12:00:00
+The Friday Brief for May 22, 2026: Acquisitions and AI in Focus 
+Neurocrine Biosciences completed its $3 billion acquisition of Soleno Therapeutics while Bristol Myers Squibb deployed Claude AI across 30,000 employees spanning research, manufacturing, and commercial functions. Fujifilm Cellular Dynamics opened a new iPSC manufacturing facility in Wisconsin as biopharma consolidation and AI adoption accelerated simultaneously. 
+
+-------------------------
+en_cre_daily
+2026-05-22 12:00:00
+As Construction Slows Across North Texas, Multifamily Operators Bet the Worst of the Supply Wave Is Ending 
+North Texas multifamily operators are cautiously optimistic as new supply deliveries slow significantly from 2025 peaks, expecting occupancy and rent growth to stabilize in the second half of 2026. The market absorbed over 30,000 new apartments in 2025, and reduced pipeline activity should allow demand to catch up. 
+
+-------------------------
+en_connect_cre
+2026-05-22 12:00:00
+Chicago/Midwest People & Company News, Week of May 22, 2026 
+Connect CRE's weekly Midwest roundup covers key personnel moves and transactions across Chicago and the broader Midwest market, including broker appointments, investment sales closings, and debt financing events. The report highlights continued industrial sector strength alongside selective office leasing recovery in Chicago's CBD. 
+
+-------------------------
+en_cleantechnica
+2026-05-22 12:00:00
+More Utilities, Governments, and Private Citizens Are Adopting Solar Than Ever Before 
+Solar adoption is accelerating across all market segments in 2026, with the technology becoming the single largest contributor to new global power capacity additions. The IEA confirmed solar was the biggest contributor to 2025 global energy supply growth, accounting for over 25% of the increase. 
+
+-------------------------
+en_fintech_global
+2026-05-22 12:00:00
+3 FinTech Deals Account for Lion Share of Funding This Week 
+Three fintech transactions dominated weekly deal activity, with Paymentology securing $175 million led by Apis Partners and Primer closing a $100 million Series C for AI-enabled payments infrastructure. The week's total funding reflected continued strong investor confidence in fintech infrastructure and embedded finance platforms. 
+
+-------------------------
+en_cfr
+2026-05-22 12:00:00
+Amid Diplomatic Efforts, Hostilities Flare in the Gulf 
+CFR's weekly analysis reports that despite ongoing diplomatic engagement, hostilities in the Persian Gulf have intensified, with threats to Strait of Hormuz shipping driving oil prices higher. The US military is deploying layered defense assets including naval vessels, land-based missile systems, and AI-enabled threat detection to protect commercial shipping. 
+
+-------------------------
+en_esg_dive
+2026-05-22 12:00:00
+ESG, Sustainability Leadership Appointments Driving Change in 2026 
+A wave of new Chief Sustainability Officer appointments signals continued corporate commitment to ESG despite US political headwinds, with companies in energy, banking, and manufacturing bringing in senior sustainability leaders with operational mandates. The trend reflects a strategic shift from reputational ESG to measurement-driven sustainability integration tied to financial targets. 
+
+-------------------------
+en_esg_today
+2026-05-22 12:00:00
+EU Releases Proposed Finalized Mandatory and Voluntary Sustainability Reporting Standards 
+The European Commission published proposed revisions to its European Sustainability Reporting Standards, streamlining mandatory ESRS requirements while introducing voluntary standards for SMEs and non-EU companies. The update represents a major simplification of the CSRD reporting framework following intense industry criticism of its complexity and compliance cost. 
+
+-------------------------
+en_cre_daily
+2026-05-20 12:00:00
+Banks and Lenders Are Finally Cutting Losses on Troubled Commercial Real Estate Loans 
+After years of extend-and-pretend strategies, banks and lenders have begun recognizing losses on distressed CRE loans, with loan sales and workouts accelerating in early 2026. The shift reflects improved confidence that the worst of the rate-driven valuation corrections has passed, allowing institutions to clear problem assets and redeploy capital. 
+
+-------------------------
+en_container_news
+2026-05-20 12:00:00
+Posidonia 2026 Conference Programme Kicks Off Early With Geopolitics Dominant in Industry Agenda 
+Posidonia 2026 opened with geopolitics dominating shipping discussions, covering Red Sea security, sanctions compliance, and decarbonization regulation as the top three issues reshaping maritime trade. Shipping executives expressed cautious optimism about Red Sea reopening prospects but warned that insurance cost premiums may persist for 12-18 months. 
+
+-------------------------
+en_natural_gas_intel
+2026-05-20 12:00:00
+How Much More Can U.S. LNG Exporters Ship in 2026? Summer Heat May Dictate 
+US LNG export capacity has reached a record 19 Bcf/d as new terminals come online, but summer heat-driven domestic power demand could compete with feedgas supply, creating a ceiling for export volumes. Analysts are watching whether grid operators will prioritize domestic power generation over LNG feedgas during peak summer demand periods. 
+
+-------------------------
+en_cfr
+2026-05-20 12:00:00
+The Future of American Strategy Initiative Launches on May 20, 2026 
+CFR launched the Future of American Strategy Initiative, a multiyear project to develop a strategic vision for US foreign policy amid growing multipolar competition and declining confidence in existing alliance structures. The initiative will engage military, economic, and diplomatic experts to answer where America's global role should go from here. 
+
+-------------------------
+en_china_briefing
+2026-05-20 12:00:00
+China CIT Filing 2026: Fix Salary Deduction Errors Before May 31 
+With China's annual Corporate Income Tax reconciliation deadline on May 31, compliance advisors are flagging common salary deduction errors that trigger audits, including misclassification of bonuses and employee welfare expenses. CPA firms report a surge in last-minute compliance inquiries from foreign enterprises operating across China. 
+
+-------------------------
+en_hedgeweek
+2026-05-19 12:00:00
+Digital Assets Funds See Outflows of $1.07bn 
+Digital asset investment products recorded $1.07 billion in outflows, the first negative weekly flow in seven weeks and the third-largest weekly outflow of 2026, reflecting investor caution amid renewed regulatory uncertainty. The pullback coincided with Bitcoin price weakness and intensified scrutiny of crypto exchange practices. 
+
+-------------------------
+en_usni_news
+2026-05-18 12:00:00
+USNI News Fleet and Marine Tracker: May 18, 2026 
+The Iwo Jima Amphibious Ready Group is operating in the Caribbean Sea with the 22nd Marine Expeditionary Unit, while multiple carrier strike groups remain deployed across the Pacific amid sustained high operational tempo. The tracker provides weekly visibility into US Navy and Marine Corps global deployments and readiness posture. 
+
+-------------------------
+en_cleantechnica
+2026-05-18 12:00:00
+NEW! Solar Survey Report 2026 
+CleanTechnica's 2026 Solar Survey Report reveals continued cost declines and improving system performance, with respondents reporting average payback periods under five years. The report covers residential, commercial, and utility perspectives on the accelerating solar energy transition across the US and globally. 
+
+-------------------------
+en_hedgeweek
+2026-05-18 12:00:00
+Tiger Global Adds Intel and Robinhood Positions 
+Tiger Global Management expanded its equity portfolio in Q1 2026, opening new positions in Intel and Robinhood as the fund diversified away from pure AI-software plays. The moves signal renewed institutional interest in semiconductor infrastructure and retail fintech platforms as broader tech valuations stabilize. 
+
+-------------------------
+en_army_recognition
+2026-05-15 12:00:00
+United States and South Korea Formalize New Drone and Counter-Drone Partnership 
+The US and South Korea signed a letter of intent in Seoul formalizing a drone and counter-drone technology partnership, covering joint development, testing, and operational protocols for both offensive drone systems and defensive counter-UAS capabilities. The agreement reflects the growing centrality of unmanned systems in allied defense strategy. 
+
+-------------------------
+en_contract_pharma
+2026-05-15 12:00:00
+The Friday Brief for May 15, 2026: AI Powers Collabs and Development 
+Eli Lilly announced a $4.5 billion investment in two Indiana manufacturing sites as pharma companies race to expand domestic production capacity under reshoring incentives. AI-driven collaboration tools are transforming clinical development, with Incyte deploying Edison Scientific's Kosmos AI scientist across discovery and development lifecycles. 
+
+-------------------------
+en_connect_cre
+2026-05-15 12:00:00
+Chicago/Midwest People & Company News, Week of May 15, 2026 
+Weekly coverage of Chicago and Midwest commercial real estate includes senior hires at regional brokerages and completion of several industrial portfolio recapitalizations amid steady transaction activity. The coverage reflects ongoing deal flow in the sector despite elevated interest rates and valuation adjustments in the office market. 
+
+-------------------------
+en_fintech_global
+2026-05-15 12:00:00
+Modest Week in FinTech With $677M Raised in 14 Deals 
+FinTech Global's weekly funding tracker recorded $677 million raised across 14 deals, driven primarily by growth rounds in lending technology, regulatory compliance tools, and B2B payment automation platforms. The moderate activity follows a series of larger weeks and reflects typical mid-quarter financing patterns. 
+
+-------------------------
+en_cfr
+2026-05-15 12:00:00
+Trump Wraps China Visit 
+Trump returned from Beijing praising the Xi summit for improving bilateral ties, citing China's commitment to purchase 200 Boeing aircraft and agreement on a tariff reduction framework covering $30 billion in products each. CFR analysts cautioned that the summit's vague outcomes require implementation mechanisms to deliver durable de-escalation. 
+
+-------------------------
+en_china_briefing
+2026-05-15 12:00:00
+US-China Relations in the Trump 2.0 Era: A Timeline 
+China Briefing's timeline documents the evolution of US-China relations from initial 145% tariff escalation to the May 2026 Beijing summit that produced a tariff truce framework covering $30 billion in products and a Chinese commitment to purchase 200 Boeing aircraft. Critical minerals, semiconductor restrictions, and financial market access remain ongoing flashpoints. 
+
+-------------------------
+en_focus_taiwan
+2026-05-14 12:00:00
+TSMC Touts Advanced Packaging, 2nm Progress at Tech Symposium 
+TSMC showcased advances in next-generation chipmaking and packaging at its 2026 Taiwan Technology Symposium, including a 14-reticle-size CoWoS platform integrating 24 HBM chips planned for 2029. Executives highlighted AI demand as the primary driver of TSMC's accelerating technology roadmap and projected over-30% revenue growth in 2026. 
+
+-------------------------
+en_focus_taiwan
+2026-05-14 12:00:00
+AI to Drive Semiconductor Growth to US$1.5 Trillion by 2030: TSMC 
+TSMC executives projected that AI applications will displace smartphones as the primary semiconductor growth engine, driving global chip industry revenue to $1.5 trillion by 2030. Next-generation AI training clusters are expected to require exponentially greater compute density, power efficiency, and advanced packaging integration. 
+
+-------------------------
+en_esg_dive
+2026-05-14 12:00:00
+US CEOs Dialing Back on Sustainability in 2026: Report 
+A Conference Board survey found 38% of US CEOs consider sustainability-focused investments a non-priority in 2026 versus 20% of global CEOs, as executives prioritize cost efficiency and operational resilience. Despite the rhetoric shift, most companies are maintaining underlying sustainability programs while reducing public ESG communications. 
+
+-------------------------
+en_hedgeweek
+2026-05-12 12:00:00
+Hudson River Trading Reports Record Q1 Revenue 
+Hudson River Trading generated a record $6.4 billion in trading revenue during Q1 2026, capitalizing on heightened market volatility and strong activity across global asset classes. The result underscores the competitive advantage of algorithmic trading firms during periods of macro uncertainty. 
+
+-------------------------
+en_fintech_global
+2026-05-12 12:00:00
+NatWest Unveils 2026 FinTech Programme Cohort 
+NatWest Group announced eight AI-focused companies selected for its 2026 FinTech Programme, covering customer vulnerability detection, financial crime prevention, compliance automation, and risk management. The entirely AI-focused cohort signals how mainstream banks now treat AI capabilities as a core requirement for fintech partnerships. 
+
+-------------------------
+en_defensescoop
+2026-05-11 12:00:00
+Director of Pentagon's Secretive Strategic Capabilities Office Lays Out Focus Areas 
+The Strategic Capabilities Office director outlined focus areas including advanced autonomy, directed energy, and novel applications of existing weapons platforms to create asymmetric advantages against near-peer adversaries. The SCO serves as the Pentagon's in-house rapid-fielding unit for technology drawn from both classified and commercial sources. 
+
+-------------------------
+en_national_defense_magazine
+2026-05-11 12:00:00
+Pentagon Sprints to Field Systems to Sustain Troops in Denied Environments 
+The Pentagon set up five innovation sprints focused on contested logistics, targeting unmanned delivery systems, small modular reactors, advanced power solutions, AI-enabled logistics planning, and warfighter self-sufficiency technologies. The initiative reflects lessons from recent conflicts where logistics vulnerability proved as decisive as firepower. 
+
+-------------------------
+en_usni_news
+2026-05-11 12:00:00
+U.S. Navy's 2026 Shipbuilding Plan 
+The Navy's 2026 Shipbuilding Plan outlines fleet expansion focused on submarine and surface combatant production to counter growing Chinese naval capabilities. The plan faces budget competition from the ongoing Iran conflict but calls for sustained multiyear investment to maintain the US as the world's premier maritime force. 
+
+-------------------------
+en_propmodo
+2026-05-11 12:00:00
+Private Equity-Backed Proptech Firm Cuts 200 Jobs, Cites AI Adoption 
+MRI Software eliminated approximately 200 positions in a global workforce reorganization attributed to advancing AI adoption across its real estate management software products. The cuts reflect a broader proptech trend where AI-enabled automation is reducing headcount even as investment into AI-native real estate startups accelerates. 
+
+-------------------------
+en_the_paypers
+2026-05-11 12:00:00
+Wero Welcomes bunq to Its European Payments Network 
+Wero announced bunq as its latest member with rollout planned across Germany, Belgium, France, and the Netherlands, expanding the European instant payments network's competitive reach against Visa and Mastercard. The addition brings Wero closer to becoming a pan-European alternative for account-to-account payments at scale. 
+
+-------------------------
+en_esg_today
+2026-05-11 12:00:00
+DBS Appoints Kelvin Wong as New Chief Sustainability Officer 
+Singapore's DBS Bank appointed Kelvin Wong as its new Chief Sustainability Officer effective May 11, 2026, tasked with leading the bank's sustainability strategy and sustainable finance initiatives. The appointment comes as Asian financial institutions face growing pressure from institutional investors to align lending portfolios with Paris Agreement climate targets. 
+
+-------------------------
+en_natural_gas_intel
+2026-05-10 12:00:00
+US LNG Demand Reshapes Natural Gas Storage Indicators as Henry Hub Nears $3 
+Surging LNG export demand is drawing down storage faster than seasonal norms, pushing Henry Hub toward $3/MMBtu as the market tightens heading into summer. Domestic power demand and LNG feedgas needs are increasingly competing for the same supply, reshaping traditional seasonal storage injection patterns. 
+
+-------------------------
+en_contract_pharma
+2026-05-08 12:00:00
+The Friday Brief for May 8, 2026: Top 20 Companies Making Moves 
+Contract Pharma's weekly roundup highlighted the top 20 contract pharma and biopharma organizations driving strategic moves through M&A, facility expansions, and new technology partnerships. The report covers CDMO capacity investments and outsourcing trends as pharmaceutical manufacturing continues its structural shift toward US domestic production. 
+
+-------------------------
+en_esg_today
+2026-05-08 12:00:00
+Peter Thiel Leads $140 Million Capital Raise for Panthalassa to Power AI Computing Using Ocean Waves 
+Panthalassa raised $140 million in a Series B led by Peter Thiel to advance technology that powers AI computing using zero-emissions energy harvested from ocean waves, offering a solution to the surging electricity demands of AI data centers. The funding underscores growing investor interest in novel low-carbon power sources that can scale alongside AI infrastructure. 
+
+-------------------------
+en_the_paypers
+2026-05-07 12:00:00
+Parker Files for Chapter 7 Bankruptcy 
+Parker, a US fintech offering corporate credit cards and banking services for ecommerce businesses, filed for Chapter 7 bankruptcy with assets and liabilities each between $50 million and $100 million. The failure reflects ongoing pressure on embedded finance providers struggling to achieve profitability amid tightening credit conditions. 
+
+-------------------------
+en_national_defense_magazine
+2026-05-06 12:00:00
+Japan Focused on New Policies, Allies Amid Rising Geopolitical Tensions 
+Japan is navigating its most difficult security environment since World War II, accelerating its defense buildup with new policies and tighter allied partnerships in response to China's military expansion and North Korean provocations. Officials emphasized deeper integration with US, Australian, and South Korean forces under a new multilateral security framework. 
+
+-------------------------
+en_container_news
+2026-05-05 12:00:00
+CMA CGM Reports Resilient Q1 2026 Results 
+CMA CGM reported Q1 2026 volumes up 1.5% to 5.9 million TEUs despite maritime revenue falling 8.5% to $8 billion on lower average freight rates driven by structural market overcapacity. The carrier ordered six LNG-powered containerships from Cochin Shipyard and completed the Freightliner UK acquisition as part of its logistics diversification strategy. 
+
+-------------------------
+en_freightos
+2026-05-01 12:00:00
+Freightos Global Freight Outlook – May 2026 
+The May 2026 freight outlook highlights elevated rate volatility amid structural container market overcapacity, with spot rates fluctuating as carriers implement GRIs against the backdrop of over 7 million TEUs of recently delivered new capacity. Air freight demand remains elevated for time-sensitive cargo as ocean market unpredictability drives modal shifts. 
+
+-------------------------
+en_china_briefing
+2026-05-01 12:00:00
+China Anti-Bribery Compliance: New Penalty Thresholds Raise Stakes 
+A new judicial interpretation on corruption and bribery came into effect on May 1, 2026, raising penalty thresholds and expanding enforceable conduct for both individuals and companies operating in China. Multinationals are advised to audit compliance programs and update gift and hospitality policies in light of the more stringent enforcement framework. 
+
+-------------------------
+en_aerospace_manufacturing_design
+2026-05-01 12:00:00
+Checking in May 2026 
+Aerospace Manufacturing and Design's May check-in covers Boeing's order recovery trajectory as new aircraft deliveries reach planned rates for the first time in 18 months following the prolonged production crisis. GE Aerospace's LEAP engine production ramp and Safran nacelle investments are highlighted as key enablers of the commercial aviation recovery. 
+
+-------------------------
+en_foreign_policy
+2026-04-29 12:00:00
+Hedging in Geopolitics Is the New Normal 
+Hedging has become the dominant strategic approach in international relations as major and minor powers simultaneously navigate trade, technology, finance, energy, and security without committing to bloc alignment. Middle powers are extracting concessions from both Washington and Beijing by maintaining calculated strategic ambiguity. 
+
+-------------------------
+en_bnn_bloomberg
+2026-04-28 12:00:00
+Market Outlook: Bank of Canada Rate Hold Expected as Oil Prices Lift Inflation 
+The Bank of Canada is expected to hold its policy rate steady as rising oil prices stemming from Middle East supply disruptions push inflation higher and complicate the easing path. Money markets have pushed back rate cut expectations to late 2027, with some analysts now pricing in a modest hike cycle. 
+
+-------------------------
+en_19fortyfive
+2026-04-21 12:00:00
+There Is 'Chatter' That F-47 NGAD Fighter Might Have Flown Iran Combat Missions 
+Unconfirmed defense community reports suggest the Air Force's F-47 Next-Generation Air Dominance fighter may have been deployed in limited combat operations during US military activities against Iran. If confirmed, this would mark the first operational use of a sixth-generation stealth aircraft in combat history. 
+
+-------------------------
+en_army_recognition
+2026-04-20 12:00:00
+Spain Prioritizes Hypersonic Weapons Development in New Defense Innovation Strategy 
+Spain's Ministry of Defense made hypersonic weapon development a national priority in its 2026 Technology and Innovation Strategy for Defense, targeting an operational capability within a decade. The strategy establishes a national program to design, produce, and sustain high-speed strike systems domestically. 
+
+-------------------------
+en_propmodo
+2026-04-20 12:00:00
+Affordable Housing Has Been Overlooked by Proptech. AI Is Starting to Change That. 
+AI-powered tools are finally reaching the affordable housing sector with platforms designed to streamline Section 8 compliance, maintenance request prioritization, and rent collection for mission-driven housing operators. The article argues that affordable housing's data-rich but capital-constrained environment is well suited for AI optimization tools. 
+
+-------------------------
+en_esg_dive
+2026-04-20 12:00:00
+Companies Face Fragmented Climate Risk Disclosure Landscape in 2026 
+Companies operating globally are navigating a patchwork of mandatory climate disclosure requirements across California, the UK, Australia, and EU member states, creating significant compliance complexity. KPMG confirms California's August 2026 Scope 1 and 2 reporting deadline remains enforceable despite federal pushback, challenging multinational compliance teams. 
+
+-------------------------
+en_lng_industry
+2026-04-17 12:00:00
+EIA: US Natural Gas Exports to Grow Nearly 30% by 2027 as LNG Facilities Ramp Up 
+The EIA projects US natural gas exports will grow nearly 30% by 2027 as multiple new LNG export terminals including Corpus Christi Stage 3 trains and Golden Pass LNG ramp up production. The forecast positions the US to cement its status as the world's largest LNG exporter, reshaping global energy geopolitics. 
+
+-------------------------
+en_focus_taiwan
+2026-04-16 12:00:00
+TSMC Expanding 3nm Capacity in Taiwan, U.S., Japan 
+TSMC is accelerating 3nm capacity expansion across Taiwan, Arizona, and Kumamoto in response to surging AI chip orders from cloud hyperscalers and accelerator companies. Total 3nm monthly capacity is expected to nearly double by end of 2026. 
+
+-------------------------
+en_foreign_policy
+2026-04-16 12:00:00
+America's Wars Can't Make a New World Order 
+Despite US military engagement in the Middle East and continued Ukraine support, analysts argue that military action alone cannot reconstitute the post-Cold War liberal order requiring economic and institutional commitments. The piece critiques the Trump administration's transactional approach to alliances as insufficient for managing a multipolar world. 
+
+-------------------------
+en_nyrej
+2026-04-15 12:00:00
+Manhattan Office Leasing Roars Back in Q1 2026, Fueled by AI and Mega Deals 
+Manhattan office leasing approached 9 million square feet in Q1 2026, nearly matching last year's record-breaking first quarter, led by American Express's 2-million-square-foot commitment at 2 World Trade and a stream of AI and tech company leases. JLL attributes the demand surge to companies seeking premium, amenity-rich office space in the post-remote-work era. 
+
+-------------------------
+en_natural_gas_intel
+2026-04-15 12:00:00
+Clearer Timeline Emerges for Next Wave of U.S. LNG Projects as Buildout Hits Overdrive 
+Several post-2027 LNG export projects are advancing toward final investment decisions as developers gain confidence in long-term demand commitments from European and Asian buyers. Gulf Coast pipeline infrastructure construction is on pace for the largest single-year capacity addition in over a decade. 
+
+-------------------------
+en_the_paypers
+2026-04-15 12:00:00
+Agentic AI, Orchestration, and the Future of Payments 
+Experts at Money Motion 2026 discussed how agentic AI and payment orchestration are converging to enable fully automated commerce where AI agents negotiate, authorize, and settle transactions without human intervention. Stablecoins and digital identity are identified as critical enabling layers for the emerging agentic payments stack. 
+
+-------------------------
+en_19fortyfive
+2026-04-14 12:00:00
+The U.S. Navy Has a F/A-XX Stealth Fighter Headache It Just Can't Cure 
+The Navy's carrier-based sixth-generation F/A-XX program faces budget pressure and escalating requirements as the service attempts to award the contract by August 2026 amid active Iran conflict demands. Internal disagreements about capability thresholds versus cost constraints have complicated the acquisition timeline and design requirements. 
+
+-------------------------
+en_nyrej
+2026-04-10 12:00:00
+Levinson of L&L Holding and Burger of Infinite Global R.E. Join Forces With Launch of L&L Infinite 
+David Levinson of L&L Holding and Marty Burger of Infinite Global Real Estate Partners launched L&L Infinite to pursue development, acquisition, and debt strategies in New York metro and South Florida. The venture combines L&L's large-scale development expertise with Infinite's capital markets relationships to target complex mixed-use and ground-up projects. 
+
+-------------------------
+en_19fortyfive
+2026-04-07 12:00:00
+$1,500,000,000,000 Won't Fix the U.S. Military 
+Analysis argues that Trump's proposed $1.5 trillion defense budget would fail to address fundamental capacity shortfalls exposed by the Iran conflict, including depleted missile stocks and industrial base bottlenecks. The piece contends that procurement inefficiency and contractor consolidation mean more funding alone cannot solve the military's structural problems. 
+
+-------------------------
+en_container_news
+2026-04-07 12:00:00
+IMO MEPC 84 Advances Global Shipping Emissions Plan 
+The IMO's MEPC 84 meeting advanced its greenhouse gas reduction strategy, setting new 2030 emissions milestones for the global fleet and introducing a carbon pricing mechanism alongside technical efficiency standards. The agreement marks a significant step toward the industry's 2050 net-zero commitment. 
+
+-------------------------
+en_propmodo
+2026-04-05 12:00:00
+How AI and Investor Caution Are Reshaping the PropTech Startup Playbook 
+AI has replaced broad platform ambitions as the dominant investor pitch in proptech, with venture capital now concentrated in startups offering measurable ROI through specific AI applications rather than comprehensive software suites. The shift reflects lessons from the 2021-2022 proptech valuation bubble and a new emphasis on unit economics over growth. 
+
+-------------------------
+en_agweb
+2026-03-31 12:00:00
+2026 Acreage Outlook: Soybeans and Cotton Rise While Corn and Wheat Face Notable Declines 
+The USDA Prospective Plantings report showed corn acres falling to 95.3 million (-3%), soybeans rising to 84.7 million (+4%), wheat hitting a record low of 43.8 million, and cotton climbing to 9.64 million for 2026. The shift reflects farmer economic calculations driven by input costs, commodity prices, and crop insurance premium differentials following two years of compressed margins. 
+
+-------------------------
+en_national_defense_magazine
+2026-03-30 12:00:00
+Vital Signs 2026: Supercharging the U.S. Defense Industrial Base 
+The 2026 National Defense Strategy designates industrial base expansion as its fourth line of effort, with industry surveys identifying lack of contract vehicles, worker shortages, and capital access as top barriers to surge capacity. Global defense spending is projected to top $2.6 trillion in 2026, an 8.1% increase over 2025. 
+
+-------------------------
+en_lng_industry
+2026-03-30 12:00:00
+QatarEnergy Extends Force Majeure Until Mid-June 2026 
+QatarEnergy extended its force majeure declaration following the March 18 attack on the Ras Laffan LNG facility that damaged two liquefaction trains, with full capacity restoration estimated to take up to five years. The extension has tightened global LNG spot markets, particularly affecting European buyers dependent on Qatari supply. 
+
+-------------------------
+en_maritime_gateway
+2026-03-15 12:00:00
+CN Index Jumps as Geopolitical Shock Drives Shipping Pressure Higher 
+The Container News Index surged to 637 in March 2026, pushing global container shipping into the Very High Pressure range as Middle East escalation restricted maritime traffic through the Strait of Hormuz. Insurance premiums for routes through the region spiked to multi-year highs and COSCO SHIPPING LINES issued a Gulf navigation advisory. 
+
+-------------------------
+en_advanced_manufacturing
+2026-03-15 12:00:00
+AI Expected to Drive Manufacturing Margins in 2026 
+A TCS and AWS study found AI will significantly expand manufacturing margins as companies deploy it for predictive maintenance, quality control, and supply chain optimization, though 77% of manufacturers report a widening AI implementation skills gap. Siemens and Nvidia are collaborating to build the world's first AI-driven adaptive manufacturing site in Erlangen, Germany, starting in 2026. 
+
+-------------------------
+en_foreign_policy
+2026-03-12 12:00:00
+The Irresistible Urge to Invoke World War III as Wars Rage in Middle East, Ukraine 
+A Politico poll found majorities in Britain, Canada, France, and the United States believe World War III is more likely than not within five years, reflecting widespread anxiety about simultaneous conflicts. The article contextualizes these fears against nuclear deterrence mechanisms that have historically prevented localized conflicts from escalating globally. 
+
+-------------------------
+en_agweb
+2026-03-11 12:00:00
+Live Blog: USDA Releases March 2026 Crop Production and WASDE Numbers 
+The March WASDE maintained US corn ending stocks at 1.45 billion bushels while trimming wheat estimates amid drought-stressed winter wheat conditions affecting a record 57% of US winter wheat area. The report affirmed expectations for tight global wheat markets heading into the Northern Hemisphere 2026 growing season. 
+
+-------------------------
+en_freightos
+2026-03-01 12:00:00
+Global Freight Outlook – March 2026 
+Freightos's March analysis finds container shipping entering structural oversupply as more than 10 million TEUs of ordered capacity hits the market, with rate volatility expected to persist throughout 2026. Shippers are advised to use hybrid spot-and-contract strategies and plan for 4-6 week booking lead times. 
+
+-------------------------
+en_aerospace_manufacturing_design
+2026-03-01 12:00:00
+Current News About Additive Manufacturing/3D Printing March 2026 
+March 2026 additive manufacturing news includes GE Aerospace qualifying 3D-printed turbine blade materials for commercial use and Boom Supersonic advancing its XB-1 demonstrator with additively manufactured components. The defense sector now accounts for over 40% of aerospace AM revenue as military programs accelerate adoption of serial additive production. 
+
+-------------------------
+en_lng_industry
+2026-02-20 12:00:00
+SK Innovation to Lead US$2.3 Billion LNG Mega Project in Vietnam 
+SK Innovation was selected to lead a $2.3 billion LNG power project in Vietnam's Nghe An Province, encompassing a 1,500 MW combined cycle gas power plant, a 250,000 m3 LNG import terminal, and a dedicated port. The project represents one of the largest energy infrastructure investments in Southeast Asia in 2026. 
+
+-------------------------
+en_maritime_gateway
+2026-02-17 12:00:00
+Chinese New Year 2026: How the Holiday Impacts Global Shipping 
+Chinese New Year 2026 triggered significant disruption to global shipping as Chinese factories idled for up to two weeks, compressing production schedules and driving pre-holiday cargo surges at major Asian ports. Supply chain managers are advised to factor in 4-6 weeks of additional lead time for shipments booked around the annual holiday window. 
+
+-------------------------
+en_nyrej
+2026-02-15 12:00:00
+Marcus & Millichap Publishes 2026 NYC Multifamily Investment Forecast Report 
+Marcus & Millichap's annual report projects effective rents growing 2.1% to $3,190 per month in 2026, with new supply deliveries falling to approximately 15,000 units as the development pipeline slows significantly from 2025. Cap rates are expected to compress modestly as institutional capital returns to the New York multifamily sector. 
+
+-------------------------
+en_maritime_gateway
+2026-01-20 12:00:00
+Container Shipping Forecast 2026: Rates, Routes and Risks 
+Maritime Gateway's 2026 forecast warns of structural overcapacity as over 7 million TEUs of new capacity enters service, pushing the supply-demand ratio on East-West routes to a 10%+ surplus. Rate volatility, Red Sea security risks, and decarbonization compliance costs are identified as the three defining challenges for shipping in 2026. 
+
+-------------------------
+en_advanced_manufacturing
+2026-01-15 12:00:00
+Siemens and Nvidia Expand Partnership for Industrial AI 
+Siemens and Nvidia announced an expanded partnership to develop AI-driven adaptive manufacturing facilities, targeting Siemens's Erlangen electronics factory as the first fully autonomous manufacturing site in 2026. The collaboration leverages NVIDIA's Isaac platform and Siemens' industrial digital twin technology to optimize factory operations in real time. 
+
+-------------------------
+en_aerospace_manufacturing_design
+2026-01-15 12:00:00
+2026 Forecast: Aerospace Manufacturers Industry Outlook 
+IATA projects global passenger traffic will reach a record 5.2 billion in 2026, maintaining strong commercial aircraft demand despite supply chain disruptions limiting production rate increases at Boeing and Airbus. Emerging defense companies including Anduril and Shield AI are attracting billions in investment, creating new competitive dynamics alongside traditional defense primes. 
+
+-------------------------
+en_connect_cre
+2026-01-12 12:00:00
+A Year of Transition – Jan. 12, 2026 
+Connect CRE's commentary describes 2026 as a year of transition for commercial real estate as conditions improve from 2025's lows, with interest rate uncertainty easing and capital markets beginning to re-engage. Key themes include maturing CRE debt maturity walls, office conversion activity, and normalization of the industrial market from pandemic-era peaks. 
+
+-------------------------
+en_agweb
+2026-01-10 12:00:00
+The Major Market Forces That Could Reset or Further Tighten Farm Margins in the New Year 
+AgWeb analysts outline six macro forces threatening 2026 US farm margins: input cost inflation, tariff-disrupted export markets, policy uncertainty, drought risk, falling commodity prices, and eroding farmer confidence. The piece recommends hedging strategies and crop insurance adjustments to buffer against multiple simultaneous risk factors. 
+
+-------------------------
+en_advanced_manufacturing
+2026-01-05 12:00:00
+Deloitte Outlook Shows Smart Manufacturing Progress in 2026 
+Deloitte's 2026 manufacturing outlook finds cautious optimism as smart manufacturing adoption advances, with AI-enabled quality systems and digital twin deployments reducing scrap rates and improving throughput. Global industrial output growth is projected at 1.9% for 2026, below 2025's 2.7%, as tariff uncertainty weighs on capital investment decisions. 
+
+-------------------------
