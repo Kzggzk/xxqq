@@ -175,6 +175,25 @@ Implementation boundary:
 7. Existing generated-minute history remains public and readable.
 8. 现有生成分钟历史层继续公开可读。
 
+## v1.66 bucket-to-rotation handoff rule / v1.66 bucket 到轮动接力规则
+
+v1.66 adds a second open-history handoff inside the lower historical layer. It connects intraday bucket risk to symbol rotation, so users can read the pressure minute, CP extremes, and rotation breadth as one path instead of separate modules.
+
+v1.66 在下半区开放历史层内加入第二条接力。它把日内 bucket 风险接到标的轮动，让用户把压力分钟、CP 两端和轮动扩散读成一条路径，而不是分散模块。
+
+Implementation boundary:
+
+实现边界：
+
+1. The bridge may use landed historical minute data and derived 20D comparisons.
+2. 接力桥可以使用已落地历史分钟数据和派生 20D 对比。
+3. It may jump into the existing open symbol-rotation panel and use the focus pulse.
+4. 它可以跳进现有开放的标的轮动面板，并使用聚焦反馈。
+5. It must not imply a realtime feed, unlock, subscription, checkout, account entitlement, provider access, or API credential path.
+6. 它不得暗示实时 feed、解锁、订阅、checkout、账号权限、供应商访问或 API 凭证路径。
+7. It should keep current generated-minute history public and readable.
+8. 它应继续保持当前生成分钟历史层公开可读。
+
 ## Verified official facts / 已核官方事实
 
 Checked on 2026-05-26 Asia/Shanghai against Massive official docs/pages.

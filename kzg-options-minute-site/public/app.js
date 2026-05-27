@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.65";
+const UI_VERSION = "1.66";
 
 const dataAudit = {
   dataset: "23_DATA_期权分钟_Minute",
@@ -2450,6 +2450,7 @@ function renderBuckets() {
   $("bucketFlow").insertAdjacentHTML("afterend", bucketPressureRibbon(rows, avg, total, avgTotal));
   $("bucketSignature").innerHTML = bucketSignature(rows, avg, total, avgTotal);
   $("bucketRisk").innerHTML = bucketRiskRadar(rows, avg, total, avgTotal);
+  $("bucketRotationBridge").innerHTML = bucketRotationBridge(rows, avg, total, avgTotal);
   $("bucketBars").innerHTML = rows.map((row, index) => {
     const currentHeight = Math.max(2, (row.total / scale) * 100);
     const avgHeight = Math.max(2, ((avg[index] || 0) / scale) * 100);
@@ -2641,6 +2642,89 @@ function bucketRiskNarrative({ impact, defense, chase, concentration, hotBuckets
   }
   const bias = hotBuckets > coolBuckets ? "more hot buckets" : coolBuckets > hotBuckets ? "more cooling buckets" : "balanced hot/cool buckets";
   return `${impact.time} is the largest shock, ${defense.time} has the lowest defensive CP, ${chase.time} has the strongest call chase; top three slots hold ${fmt1.format(concentration)}%, ${bias}.`;
+}
+
+function bucketRotationBridge(rows, avg, total, avgTotal) {
+  const bucketPoints = rows.map((row, index) => {
+    const volume = Number(row.total) || 0;
+    const base = Number(avg[index]) || 0;
+    const spread = base ? ((volume - base) / base) * 100 : 0;
+    const cp = row.put ? row.call / row.put : row.call ? row.call : 0;
+    const share = total ? (volume / total) * 100 : 0;
+    const avgShare = avgTotal ? (base / avgTotal) * 100 : 0;
+    return { ...row, volume, spread, cp, share, shareDrift: share - avgShare };
+  });
+  if (!bucketPoints.length) return "";
+  const impact = bucketPoints.reduce((best, point) => point.spread > best.spread ? point : best, bucketPoints[0]);
+  const chase = bucketPoints.reduce((best, point) => point.cp > best.cp ? point : best, bucketPoints[0]);
+  const defense = bucketPoints.reduce((best, point) => point.cp < best.cp ? point : best, bucketPoints[0]);
+  const rotationRows = symbolRotationRows();
+  const attack = rotationRows.filter((row) => Number(row.delta) >= 0 && Number(row.premiumDelta) >= 0);
+  const fade = rotationRows.filter((row) => Number(row.delta) < 0 && Number(row.premiumDelta) < 0);
+  const lead = attack.slice().sort((a, b) => (Number(b.delta) + Number(b.premiumDelta) * 0.55) - (Number(a.delta) + Number(a.premiumDelta) * 0.55))[0]
+    || rotationRows.slice().sort((a, b) => Number(b.delta) - Number(a.delta))[0]
+    || {};
+  const breadthTotal = attack.length + fade.length;
+  const breadth = breadthTotal ? (attack.length / breadthTotal) * 100 : 0;
+  const tone = impact.spread >= 18 || breadth >= 55 ? "hot" : impact.spread <= -18 || breadth <= 38 ? "cool" : "flat";
+  const labels = state.lang === "zh"
+    ? {
+      lede: "分钟压力接力",
+      title: `从 ${impact.time || "--"} 冲击读到 ${lead.symbol || "--"} 扩散`,
+      copy: `先把日内最大偏离和 CP 极值定位，再进入标的轮动象限，确认热度是扩散还是只集中在少数标的。`,
+      step1: "压力桶",
+      step2: "CP 两端",
+      step3: "扩散率",
+      step4: "下一屏",
+      jump: "进入轮动象限",
+      jumpSub: "开放历史层继续可读",
+      call: "Call",
+      put: "Put",
+    }
+    : {
+      lede: "Minute pressure handoff",
+      title: `Read ${impact.time || "--"} shock into ${lead.symbol || "--"} breadth`,
+      copy: "Locate the largest intraday deviation and CP extremes first, then move into the symbol rotation quadrant to see whether heat is broad or concentrated.",
+      step1: "Pressure slot",
+      step2: "CP edges",
+      step3: "Breadth",
+      step4: "Next panel",
+      jump: "Open rotation map",
+      jumpSub: "Historical layer stays open",
+      call: "Call",
+      put: "Put",
+    };
+  return `
+    <div class="bucket-bridge-shell ${tone}">
+      <div class="bucket-bridge-copy">
+        <span>${escapeHtml(labels.lede)}</span>
+        <b>${escapeHtml(labels.title)}</b>
+        <small>${escapeHtml(labels.copy)}</small>
+      </div>
+      <div class="bucket-bridge-steps">
+        <span class="${impact.spread >= 18 ? "hot" : impact.spread <= -18 ? "cool" : "flat"}">
+          <i>${escapeHtml(labels.step1)}</i>
+          <b>${escapeHtml(`${impact.time || "--"} ${impact.spread >= 0 ? "+" : ""}${fmt0.format(impact.spread || 0)}%`)}</b>
+          <small>${escapeHtml(`${wan(impact.volume || 0)} · ${fmt1.format(impact.share || 0)}%`)}</small>
+        </span>
+        <span class="${chase.cp >= 1.55 ? "hot" : defense.cp <= 0.95 ? "cool" : "flat"}">
+          <i>${escapeHtml(labels.step2)}</i>
+          <b>${escapeHtml(`${labels.call} ${chase.time || "--"} · ${labels.put} ${defense.time || "--"}`)}</b>
+          <small>${escapeHtml(`CP ${ratio(chase.cp)} / ${ratio(defense.cp)}`)}</small>
+        </span>
+        <span class="${breadth >= 55 ? "hot" : breadth <= 38 ? "cool" : "flat"}">
+          <i>${escapeHtml(labels.step3)}</i>
+          <b>${escapeHtml(`${attack.length} / ${fade.length}`)}</b>
+          <small>${escapeHtml(`${fmt1.format(breadth)}% · ${lead.symbol || "--"}`)}</small>
+        </span>
+      </div>
+      <button type="button" class="bucket-bridge-jump" data-scroll-sector="symbolRotation">
+        <span>${escapeHtml(labels.step4)}</span>
+        <b>${escapeHtml(labels.jump)}</b>
+        <small>${escapeHtml(labels.jumpSub)}</small>
+      </button>
+    </div>
+  `;
 }
 
 function bucketProfileCard(label, value, tone) {

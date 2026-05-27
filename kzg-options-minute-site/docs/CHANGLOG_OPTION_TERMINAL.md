@@ -29,12 +29,12 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.63` open-history path router，具体 commit 以最新 GitHub backup 提交为准
 - 最近验证唯一部署: `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.63`
-- 最近本地稠密版本: `1.65`，本轮为 Web 开放历史层故事卡到目标面板的聚焦接力；生产仍是 `1.63`；iOS 仍是 `0.6`
+- 最近本地稠密版本: `1.66`，本轮为 Web 日内 bucket 风险到标的轮动象限的开放历史接力桥；生产仍是 `1.63`；iOS 仍是 `0.6`
 - 当前 iOS 伴生版本: `0.6`，对应稠密 Web `1.62`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；官方 flat-file 文档显示有 `2023/2023` 目录，但当前公开站只使用本机已证实的 `2024-05-17 -> 2026-05-22`，且本 agent 不使用暴露过的 key 测账号权限；公开参考 <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
-- Apple Notes: 置顶同名 note 已在 v1.65 后同步，`updated=1`，`created=0`，正文 `189,646` chars
+- Apple Notes: 置顶同名 note 已在 v1.66 后同步，`updated=1`，`created=0`，正文 `196,401` chars
 - GitHub: 需要持续提交 docs，让另一个 Codex 能从仓库继续
 
 English:
@@ -47,15 +47,41 @@ English:
 - Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.63` open-history path router; exact commit is the latest GitHub backup commit
 - Latest verified unique deploy: `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.63`
-- Latest local dense version: `1.65`, used for the Web open-history story-to-panel focus handoff; production remains `1.63`; iOS remains `0.6`
+- Latest local dense version: `1.66`, used for the Web open-history bucket-risk to symbol-rotation handoff bridge; production remains `1.63`; iOS remains `0.6`
 - Current iOS companion version: `0.6`, mapped to dense Web `1.62`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; official flat-file docs show a `2023/2023` directory, but the public site only uses locally proven `2024-05-17 -> 2026-05-22`, and this agent must not use exposed keys to test account entitlement; public reference <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
-- Apple Notes: pinned note with this title was synced after v1.65, `updated=1`, `created=0`, `189,646` body characters
+- Apple Notes: pinned note with this title was synced after v1.66, `updated=1`, `created=0`, `196,401` body characters
 - GitHub: keep docs committed so another Codex can continue from the repository
 
-## 1A. Latest heartbeat record v1.65 / 最新心跳记录 v1.65
+## 1A. Latest heartbeat record v1.66 / 最新心跳记录 v1.66
+
+中文:
+
+北京时间 2026-05-27 16:04 左右，稠密版本 `1.66` 完成 Web 开放历史层的 bucket-to-rotation 接力桥。本轮不部署生产；生产仍是 `1.63`，生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`。本轮继续执行 Fangbao 最新公开边界：当前生成分钟能力全部开放，历史趋势、轮动、事件队列、PNG 导出不 blur、不 lock、不 paywall；只有未来 realtime option-flow tape/reserve 可以保留预留式 blur。公开站仍不展示真实 API key、供应商名、套餐、支付、域名、注册、账号或内部商业规划。
+
+改动文件：`public/index.html`、`public/app.js`、`public/styles.css`、`docs/CHANGELOG.md`、`docs/CHANGLOG_OPTION_TERMINAL.md`、`docs/DENSE_VERSIONING.md`、`docs/HANDOFF_FOR_OTHER_CODEX.md`、`docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`、`docs/PLUGIN_SERVICE_STATUS.md`、`docs/CHANGLOG_OPTION_TERMINAL_MINDMAP.opml`。`public/index.html` 在 bucket risk 与 bucket bars 之间加入 `bucketRotationBridge` 容器。`public/app.js` 把 `UI_VERSION` 提到 `1.66`，新增 `bucketRotationBridge()`，在 `renderBuckets()` 内填充它。它用当前日内桶与 20D 均值派生最大成交冲击，用 CP 最大/最小桶派生 Call/Put 两端，再从标的轮动行里取量价同升与同步降温数量以及领头标的，形成三格“分钟压力接力”。`public/styles.css` 新增 `.bucket-rotation-bridge`、`.bucket-bridge-shell`、`.bucket-bridge-steps`、`.bucket-bridge-jump`，并补深色和手机样式。
+
+体验调整：v1.65 已经让故事条和路径卡能跳到目标面板，但开放历史下半区仍存在“bucket risk 看完后下一块是什么”的断层。v1.66 把这个断层变成可读路线：先看 `15:00 +30%` 的压力桶，再看 `Call 10:30 / Put 15:00` 的 CP 极值，最后进入 `RGTI` 领头的轮动扩散。桌面和手机都保持一屏内可读，按钮文案是“进入轮动象限”，强调下方开放历史层继续可读，不把它包装成付费解锁。
+
+验证结果：`node --check public/app.js` 通过；`git diff --check -- public/index.html public/app.js public/styles.css` 通过；公开风险词扫描 `public/app.js public/index.html public/styles.css` 无命中。build 生成 `505` 天 payload，latest `2026-05-22`，analytics days `505`，analytics symbols `98`，pack asset `kzg-frame-ee3731126f01.js`，`per_day_to_dist` 返回 `copied=505`。Playwright 对 dist `http://127.0.0.1:4207/` 验证桌面：`23_DATA_期权分钟_Minute · 1.66 · 505/505 complete`、bridge 1、steps 3、jump 1、点击后 `.rotation-panel.history-scroll-focus` 为 1、横向溢出 0、旧 `.is-blurred`/`.is-locked` 0、future gate 1、console issue 0。Playwright 对 dist 手机同样验证：bridge 1、steps 3、jump 1、点击后 rotation focus 1、横向溢出 0、旧 blur/lock 0、future gate 1、console issue 0。PNG 导出成功且大小保持 `1,482,138` bytes。截图证据：`/tmp/kzg-option-house-v166-dist-desktop.png`、`/tmp/kzg-option-house-v166-bridge-desktop-dist.png`、`/tmp/kzg-option-house-v166-dist-mobile.png`、`/tmp/kzg-option-house-v166-bridge-mobile.png`、`/tmp/kzg-option-house-v166-export.png`。
+
+阻塞与下一步：本轮没有 iOS 同步，因为 iOS 已在 Web v1.62 同步为 `0.6`；下一步 `1.67` 已到默认 iOS 同步点，应同步 iOS companion 或明确记录延期理由。真实 API、Massive plan 升级、域名购买、Stripe/Supabase/支付、TestFlight 或任何花钱/传密钥动作都未执行。下一步 Web 侧继续处理开放历史下半区：压缩手机 bucket bars 和 rotation lists 的高度，继续把 symbol momentum 与轮动象限接成更顺的读盘路径；仍不接真实 key、不做真实升级、不花钱、不提交 raw data。
+
+English:
+
+Around 2026-05-27 16:04 Asia/Shanghai, dense version `1.66` completed the Web open-history bucket-to-rotation handoff bridge. This round is not deployed; production remains `1.63` at `https://kzg-option-house.netlify.app/`, unique deploy `https://6a168b3efbed57514f5fc1ea--kzg-option-house.netlify.app/`. It keeps Fangbao's latest public boundary: all generated-minute capabilities stay open; historical trends, rotation, event queues, and PNG export are not blurred, locked, or paywalled; only the future realtime option-flow tape/reserve may keep a reserve-style blur. The public site still must not expose real API keys, provider names, plan details, payment, domains, registration, accounts, or internal commercial planning.
+
+Changed files: `public/index.html`, `public/app.js`, `public/styles.css`, `docs/CHANGELOG.md`, `docs/CHANGLOG_OPTION_TERMINAL.md`, `docs/DENSE_VERSIONING.md`, `docs/HANDOFF_FOR_OTHER_CODEX.md`, `docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`, `docs/PLUGIN_SERVICE_STATUS.md`, and `docs/CHANGLOG_OPTION_TERMINAL_MINDMAP.opml`. `public/index.html` adds the `bucketRotationBridge` container between bucket risk and bucket bars. `public/app.js` moves `UI_VERSION` to `1.66`, adds `bucketRotationBridge()`, and fills it inside `renderBuckets()`. It derives the largest bucket volume shock from the current intraday buckets versus 20D average, derives Call/Put extremes from max/min CP buckets, then reads warming/cooling breadth and the leading symbol from rotation rows to form a three-cell `minute pressure handoff`. `public/styles.css` adds `.bucket-rotation-bridge`, `.bucket-bridge-shell`, `.bucket-bridge-steps`, and `.bucket-bridge-jump`, plus dark and phone styling.
+
+Experience: v1.65 already let story and path cards jump to target panels, but the lower open-history area still had a break after bucket risk: users could ask what the next panel means. v1.66 turns that break into a readable route: first the `15:00 +30%` pressure bucket, then `Call 10:30 / Put 15:00` CP extremes, then the rotation breadth led by `RGTI`. Desktop and phone both stay readable inside the panel. The button copy says `Enter rotation quadrant`, emphasizing that the open historical layer remains readable below, without framing it as a paid unlock.
+
+Verification result: `node --check public/app.js` passed; `git diff --check -- public/index.html public/app.js public/styles.css` passed; public-risk scan across `public/app.js public/index.html public/styles.css` had no matches. Build produced a `505`-day payload, latest `2026-05-22`, analytics days `505`, analytics symbols `98`, pack asset `kzg-frame-ee3731126f01.js`, and `per_day_to_dist` returned `copied=505`. Playwright against dist `http://127.0.0.1:4207/` verified desktop: `23_DATA_期权分钟_Minute · 1.66 · 505/505 complete`, bridge 1, steps 3, jump 1, `.rotation-panel.history-scroll-focus = 1` after click, horizontal overflow 0, old `.is-blurred`/`.is-locked` 0, future gate 1, and console issues 0. Playwright against dist phone also passed: bridge 1, steps 3, jump 1, rotation focus 1 after click, horizontal overflow 0, old blur/lock 0, future gate 1, and console issues 0. PNG export succeeded and stayed at `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v166-dist-desktop.png`, `/tmp/kzg-option-house-v166-bridge-desktop-dist.png`, `/tmp/kzg-option-house-v166-dist-mobile.png`, `/tmp/kzg-option-house-v166-bridge-mobile.png`, and `/tmp/kzg-option-house-v166-export.png`.
+
+Blocker and next step: No iOS sync this round because iOS already synced to `0.6` at Web v1.62; next `1.67` is the default iOS sync point and should either sync the iOS companion or explicitly record deferral. No real API, Massive plan upgrade, domain purchase, Stripe/Supabase/payment action, TestFlight action, spending, or secret transmission happened. On Web, next work should continue the lower open-history layer: compress phone bucket bars and rotation lists, and connect symbol momentum back to the rotation quadrant as a smoother reading path. Still do not connect real keys, perform real upgrades, spend money, or commit raw data.
+
+## 1B. Latest heartbeat record v1.65 / 最新心跳记录 v1.65
 
 中文:
 
