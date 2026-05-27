@@ -19,7 +19,7 @@ You are continuing KZG Option House. Work only in `/Users/fangbao/kzg-options-mi
 - Production / 生产站: `https://kzg-option-house.netlify.app/`
 - Netlify site name / Netlify 站点: `kzg-option-house`
 - Production version last verified / 最近生产验证版本: `1.68`
-- Local version last verified / 最近本地验证版本: `1.69` Web symbol-to-momentum queue handoff
+- Local version last verified / 最近本地验证版本: `1.70` Web momentum queue compass
 - Latest unique deploy / 最近唯一部署: `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`
 - iOS companion / iOS 伴生工程: `/Users/fangbao/kzg-options-minute-site/ios/KZGOptionHouse/KZGOptionHouse.xcodeproj`, scheme `KZG Option House`, bundle `com.kzg.optionhouse`, current iOS `0.7`
 - Latest verified data date / 最近验证数据日: `2026-05-22`
@@ -83,6 +83,14 @@ Latest local v1.69 note:
 Web `1.69` is the latest local checkpoint; production remains `1.68`. Main source changes are `public/app.js` and `public/styles.css`: UI version `1.69`, new `symbolMomentumHandoff()` under the single-symbol lens, new `symbolMomentumStep()`, and a responsive/dark `symbol-momentum` bridge. It connects the open RGTI symbol lens back into the lower momentum queue. `renderSymbolMomentum()` now preserves the current focus symbol in the queue even if it falls outside the default first 18 rows, and `data-symbol` clicks rerender both the symbol lens and momentum queue. Build produced `505` days, latest `2026-05-22`, pack asset `kzg-frame-65a81a1ab0bf.js`. Playwright on dist `http://127.0.0.1:4209/` passed on desktop and phone: `1.69 · 505/505 complete`, handoff 1, steps 3, jump 1, focus `RGTI`, RGTI queue row 1, active RGTI row 1 after queue jump, horizontal overflow 0, old `.is-blurred`/`.is-locked` 0, future gate 1, public provider/API/payment text false, console issue 0, and PNG export `1,482,138` bytes. No production deploy happened because this is a local open-history continuity improvement after v1.68 production deploy.
 
 Web `1.69` 是最新本地检查点；生产仍是 `1.68`。主要源码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.69`，在单标的镜头下新增 `symbolMomentumHandoff()`，新增 `symbolMomentumStep()`，并加入响应式/深色 `symbol-momentum` 接力桥。它把开放的 RGTI 单标的镜头接回底部动量队列。`renderSymbolMomentum()` 现在会保留当前聚焦标的，即使它不在默认前 18 行里；点击 `data-symbol` 后会同时重渲染单标的镜头和动量队列。构建生成 `505` 天，latest `2026-05-22`，pack asset `kzg-frame-65a81a1ab0bf.js`。Playwright dist `http://127.0.0.1:4209/` 桌面和手机通过：`1.69 · 505/505 complete`、handoff 1、steps 3、jump 1、focus `RGTI`、RGTI queue row 1、队列跳转后 active RGTI row 1、横向溢出 0、旧 `.is-blurred`/`.is-locked` 0、future gate 1、公开 provider/API/payment 字符 false、console issue 0、PNG 导出 `1,482,138` bytes。本轮未部署生产，因为这是 v1.68 生产部署后的本地开放历史连续读盘增强。
+
+Latest local v1.70 note:
+
+最新本地 v1.70 说明：
+
+Web `1.70` is the latest local checkpoint; production remains `1.68`. Main source changes are `public/app.js` and `public/styles.css`: UI version `1.70`, new `momentumQueueCompass()` between the momentum summary and queue, new `momentumCompassStep()`, and responsive/dark `momentum-compass` styling. It compresses the open momentum queue into a three-step read: capital anchor, CP edge, active row, with a jump back to the rotation quadrant. Build produced `505` days, latest `2026-05-22`, pack asset `kzg-frame-95df00c31270.js`. Browser plugin and Playwright on dist `http://127.0.0.1:4210/` passed on desktop and phone: `1.70 · 505/505 complete`, compass 1, steps 3, jump 1, focus `RGTI`, RGTI queue row 1, active RGTI row 1, rotation focus 1 after compass jump, horizontal overflow 0, old `.is-blurred`/`.is-locked` 0, future gate 1, public provider/API/payment text false, console issue 0, and PNG export `1,482,138` bytes. No production deploy happened because this is a local open-history readability improvement after v1.68 production deploy.
+
+Web `1.70` 是最新本地检查点；生产仍是 `1.68`。主要源码改动是 `public/app.js` 和 `public/styles.css`：UI 版本 `1.70`，在动量 summary 和队列之间新增 `momentumQueueCompass()`，新增 `momentumCompassStep()`，并加入响应式/深色 `momentum-compass` 样式。它把开放动量队列压成三步读法：资金锚点、CP 极值、当前行，并可跳回轮动象限。构建生成 `505` 天，latest `2026-05-22`，pack asset `kzg-frame-95df00c31270.js`。Browser 插件与 Playwright dist `http://127.0.0.1:4210/` 桌面和手机通过：`1.70 · 505/505 complete`、compass 1、steps 3、jump 1、focus `RGTI`、RGTI queue row 1、active RGTI row 1、compass jump 后 rotation focus 1、横向溢出 0、旧 `.is-blurred`/`.is-locked` 0、future gate 1、公开 provider/API/payment 字符 false、console issue 0、PNG 导出 `1,482,138` bytes。本轮未部署生产，因为这是 v1.68 生产部署后的本地开放历史可读性增强。
 
 Latest local v1.67 note:
 

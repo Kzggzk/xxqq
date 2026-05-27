@@ -12,8 +12,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - `1.01 -> 2.00` 代表 100 个稠密迭代。
 - A future `11.85` means 1085 post-1.00 dense iterations, not a symbolic number.
 - 未来如果到 `11.85`，它代表从 1.00 之后真的经历了 1085 个稠密迭代，不是随便喊出来的数字。
-- The latest local checkpoint is Web `1.69`, adding the symbol-to-momentum queue handoff. The latest production checkpoint remains Web `1.68` at `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`. iOS companion remains `0.7`. The next dense step is `1.70`.
-- 最近本地检查点是 Web `1.69`，加入单标的到动量队列接力。最近生产检查点仍是 Web `1.68`，位于 `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`。iOS 伴生保持 `0.7`。下一次稠密版本是 `1.70`。
+- The latest local checkpoint is Web `1.70`, adding the momentum queue capital/CP/active-row compass. The latest production checkpoint remains Web `1.68` at `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`. iOS companion remains `0.7`. The next dense step is `1.71`.
+- 最近本地检查点是 Web `1.70`，加入动量队列的资金/CP/当前行读法罗盘。最近生产检查点仍是 Web `1.68`，位于 `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`。iOS 伴生保持 `0.7`。下一次稠密版本是 `1.71`。
 
 ## iOS companion cadence / iOS 伴生节奏
 
@@ -66,6 +66,8 @@ KZG Option House 使用稠密产品迭代。版本号不是营销口号，而是
 - v1.68 回到 Web，加入轮动到单标的聚焦接力。轮动象限现在把 `RGTI` 接入开放的 90 日单标的镜头，并复用 v1.65 聚焦反馈。它已部署生产到 `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`；iOS 保持 `0.7`。
 - v1.69 returns the open single-symbol lens into the momentum queue. The RGTI focus row is preserved in the queue after the rotation handoff, and the queue jump focuses the momentum panel without adding any lock, provider route, or payment language. It is local only; production remains v1.68.
 - v1.69 把开放单标的镜头接回动量队列。轮动接力后，RGTI 聚焦行会保留在队列里，队列跳转会聚焦 momentum 面板，但不增加任何锁、供应商路线或支付语言。本轮仅本地完成；生产仍为 v1.68。
+- v1.70 adds a compact momentum queue compass. The open momentum queue now reads as capital anchor, CP edge, and active row, with a jump back to the rotation quadrant. It is local only; production remains v1.68.
+- v1.70 加入紧凑动量队列读法罗盘。开放动量队列现在按资金锚点、CP 极值、当前行来读，并可跳回轮动象限。本轮仅本地完成；生产仍为 v1.68。
 
 ## Heartbeat protocol / 心跳协议
 

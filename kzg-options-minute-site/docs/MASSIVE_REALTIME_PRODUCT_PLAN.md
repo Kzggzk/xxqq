@@ -251,6 +251,25 @@ Implementation boundary:
 7. It must not introduce locks, provider routes, API details, checkout, subscription, unlock, account entitlement, or realtime-access wording.
 8. 它不得引入锁、供应商路线、API 细节、checkout、订阅、解锁、账号权限或实时访问文案。
 
+## v1.70 momentum queue compass rule / v1.70 动量队列读法罗盘规则
+
+v1.70 compresses the open momentum queue into a capital/CP/active-row compass. This is a public historical reading aid, not a realtime feed, entitlement marker, or monetization mechanic.
+
+v1.70 把开放动量队列压成资金/CP/当前行读法罗盘。这是公开历史读盘辅助，不是实时 feed、权限标记或商业化机制。
+
+Implementation boundary:
+
+实现边界：
+
+1. The compass may use landed historical rows to name the capital anchor, CP edge, and active row.
+2. 罗盘可以使用已落地历史行来展示资金锚点、CP 极值和当前行。
+3. The compass may jump back into the existing open rotation quadrant to keep the reading loop clear.
+4. 罗盘可以跳回现有开放轮动象限，让读盘回路更清晰。
+5. It must not mention provider names, API keys, realtime routes, checkout, subscription, unlock, plan pricing, account entitlement, or payment mechanics.
+6. 它不得提到供应商名、API key、实时路线、checkout、订阅、解锁、套餐价格、账号权限或支付机制。
+7. It should make phone scrolling shorter and more sequential, not add another dense module.
+8. 它应让手机下拉更短、更有顺序，而不是再增加一个重模块。
+
 ## Verified official facts / 已核官方事实
 
 Checked on 2026-05-26 Asia/Shanghai against Massive official docs/pages.

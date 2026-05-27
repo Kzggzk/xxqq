@@ -29,12 +29,12 @@ Spelling note: `CHANGLOG` preserves Fangbao's requested name exactly.
 - 最近生产风险修复: Web `1.54` public-open correction；最新生产部署为 Web `1.68` rotation-to-symbol focus handoff，具体 commit 以最新 GitHub backup 提交为准
 - 最近验证唯一部署: `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`
 - 最近生产 UI 显示版本: `1.68`
-- 最近本地稠密版本: `1.69`，本轮为 Web 公开历史层新增单标的到动量队列接力；生产仍是 `1.68`
+- 最近本地稠密版本: `1.70`，本轮为 Web 公开历史层新增动量队列资金/CP/当前行读法罗盘；生产仍是 `1.68`
 - 当前 iOS 伴生版本: `0.7`，对应稠密 Web `1.67`
 - 当前本机可证实期权分钟数据: `505` 个 `options_minute_aggregates_*.csv.gz`
 - 当前本机可证实数据范围: `2024-05-17 -> 2026-05-22`
 - `2023-05` 状态: 作为 Fangbao 提到的目标/权限/API 路线继续追踪；官方 flat-file 文档显示有 `2023/2023` 目录，但当前公开站只使用本机已证实的 `2024-05-17 -> 2026-05-22`，且本 agent 不使用暴露过的 key 测账号权限；公开参考 <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
-- Apple Notes: 置顶同名 note 已在 v1.69 后同步，`updated=1`，`created=0`，正文 `213719` chars
+- Apple Notes: 置顶同名 note 已在 v1.70 后同步，`updated=1`，`created=0`，正文 `219729` chars
 - GitHub: 需要持续提交 docs，让另一个 Codex 能从仓库继续
 
 English:
@@ -47,15 +47,41 @@ English:
 - Latest public-risk fix: Web `1.54` public-open correction; latest production deploy is Web `1.68` rotation-to-symbol focus handoff; exact commit is the latest GitHub backup commit
 - Latest verified unique deploy: `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`
 - Latest visible production UI version: `1.68`
-- Latest local dense version: `1.69`, adding the Web open-history symbol-to-momentum queue handoff; production remains `1.68`
+- Latest local dense version: `1.70`, adding the Web open-history momentum queue capital/CP/active-row compass; production remains `1.68`
 - Current iOS companion version: `0.7`, mapped to dense Web `1.67`
 - Current locally proven option-minute files: `505` `options_minute_aggregates_*.csv.gz`
 - Current locally proven data window: `2024-05-17 -> 2026-05-22`
 - `2023-05` status: keep as Fangbao's target/API-entitlement path; official flat-file docs show a `2023/2023` directory, but the public site only uses locally proven `2024-05-17 -> 2026-05-22`, and this agent must not use exposed keys to test account entitlement; public reference <https://massive.com/docs/flat-files/options/minute-aggregates?assetClass=options&display=all&license=personal>
-- Apple Notes: pinned note with this title was synced after v1.69, `updated=1`, `created=0`, `213719` body characters
+- Apple Notes: pinned note with this title was synced after v1.70, `updated=1`, `created=0`, `219729` body characters
 - GitHub: keep docs committed so another Codex can continue from the repository
 
-## 1A. Latest heartbeat record v1.69 / 最新心跳记录 v1.69
+## 1A. Latest heartbeat record v1.70 / 最新心跳记录 v1.70
+
+中文:
+
+北京时间 2026-05-27 17:12 左右，稠密版本 `1.70` 完成 Web 公开历史层的动量队列读法罗盘。本轮不部署生产；生产仍是 `1.68`，生产站 `https://kzg-option-house.netlify.app/`，唯一部署 `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`。本轮继续执行 Fangbao 最新公开边界：当前生成分钟能力全部开放，历史趋势、轮动、事件队列、PNG 导出不 blur、不 lock、不 paywall；只有未来 realtime option-flow tape/reserve 可以保留预留式 blur。公开站不展示真实 API key、供应商名、套餐、支付、域名、注册、账号或内部商业规划。
+
+改动文件：`public/app.js`、`public/styles.css`、`docs/CHANGELOG.md`、`docs/CHANGLOG_OPTION_TERMINAL.md`、`docs/DENSE_VERSIONING.md`、`docs/HANDOFF_FOR_OTHER_CODEX.md`、`docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`、`docs/PLUGIN_SERVICE_STATUS.md`、`docs/IOS_COMPANION_PLAN.md`、`docs/CHANGLOG_OPTION_TERMINAL_MINDMAP.opml`。`public/app.js` 把 `UI_VERSION` 从 `1.69` 提到 `1.70`，在 `renderSymbolMomentum()` 的 summary 和队列之间新增 `momentumQueueCompass()` 与 `momentumCompassStep()`。动量队列现在会先给出资金锚点，再给出 CP 极值，最后回到当前 active 行；底部按钮可跳回开放轮动象限。`public/styles.css` 新增 `.momentum-queue-compass`、`.momentum-compass-shell`、`.momentum-compass-steps`、`.momentum-compass-jump` 以及桌面、手机、深色样式。
+
+体验调整：v1.69 把 RGTI 单标的镜头接回动量队列；v1.70 把队列本身再压成三步读法，避免手机端下拉时只是看到一堆 symbol 行。现在用户读完 RGTI 后，可以按“资金先读 -> CP 极值 -> 当前行”理解队列，并从 compass 回看轮动象限。这仍是开放历史层的连续读盘，不是实时权限、订阅、解锁、付费、provider 或账号入口。
+
+验证结果：`node --check public/app.js` 通过；`git diff --check -- public/app.js public/styles.css` 通过；公开风险词扫描无命中。build 生成 `505` 天 payload，latest `2026-05-22`，analytics days `505`，analytics symbols `98`，pack asset `kzg-frame-95df00c31270.js`；`per_day_to_dist` 返回 `copied=505`。Browser 插件本轮可用，打开本地 dist `http://127.0.0.1:4210/` 验证标题、`1.70 · 505/505 complete`、momentum compass 1、steps 3、jump 1；点击轮动接力后 focus `RGTI`，RGTI queue row 1，点击队列后 active RGTI row 1，点击 compass jump 后 rotation focus 1，横向溢出 0，旧 `.is-blurred`/`.is-locked` 0，future gate 1，公开 provider/API/payment 字符 false，console issue 0。Playwright 对同一 dist 验证桌面 `1440x1100` 和手机 `390x844`：结果一致；PNG 导出 `1,482,138` bytes。截图证据：`/tmp/kzg-option-house-v170-dist-desktop.png`、`/tmp/kzg-option-house-v170-compass-desktop.png`、`/tmp/kzg-option-house-v170-dist-mobile.png`、`/tmp/kzg-option-house-v170-compass-mobile.png`、`/tmp/kzg-option-house-v170-export.png`。
+
+阻塞与下一步：没有真实 API、Massive plan 升级、域名购买、Stripe/Supabase/支付、TestFlight、App Store、开发者账号、花钱或传密钥动作。iOS companion 保持 `0.7`，下一次默认同步约 Web v1.72。下一步 `1.71` 继续 Web，优先压缩开放历史层手机高度，把动量队列、轮动象限和资金锚点之间的交互节奏继续做成读盘路径。
+
+English:
+
+Around 2026-05-27 17:12 Asia/Shanghai, dense version `1.70` completed the Web open-history momentum queue compass. This round is not deployed; production remains `1.68` at `https://kzg-option-house.netlify.app/`, unique deploy `https://6a16acc1dbce120ee54cac50--kzg-option-house.netlify.app/`. It keeps Fangbao's latest public boundary: all generated-minute capabilities stay open; historical trends, rotation, event queues, and PNG export are not blurred, locked, or paywalled; only the future realtime option-flow tape/reserve may keep a reserve-style blur. The public site does not expose real API keys, provider names, plan details, payment, domains, registration, accounts, or internal commercial planning.
+
+Changed files: `public/app.js`, `public/styles.css`, `docs/CHANGELOG.md`, `docs/CHANGLOG_OPTION_TERMINAL.md`, `docs/DENSE_VERSIONING.md`, `docs/HANDOFF_FOR_OTHER_CODEX.md`, `docs/MASSIVE_REALTIME_PRODUCT_PLAN.md`, `docs/PLUGIN_SERVICE_STATUS.md`, `docs/IOS_COMPANION_PLAN.md`, and `docs/CHANGLOG_OPTION_TERMINAL_MINDMAP.opml`. `public/app.js` moves `UI_VERSION` from `1.69` to `1.70`, adds `momentumQueueCompass()` and `momentumCompassStep()` between the summary and queue inside `renderSymbolMomentum()`. The momentum queue now shows capital anchor first, CP edge second, active row last, with a bottom jump back to the open rotation quadrant. `public/styles.css` adds `.momentum-queue-compass`, `.momentum-compass-shell`, `.momentum-compass-steps`, `.momentum-compass-jump`, plus desktop, phone, and dark-mode styling.
+
+Experience: v1.69 returned the RGTI symbol lens to the momentum queue; v1.70 compresses the queue itself into a three-step read, so phone users do not just see a pile of symbol rows. After reading RGTI, users can now read `Capital first -> CP edge -> Active row`, then use the compass to look back at the rotation quadrant. This is still open-history reading continuity, not realtime entitlement, subscription, unlock, payment, provider, or account entry.
+
+Verification result: `node --check public/app.js` passed; `git diff --check -- public/app.js public/styles.css` passed; public-risk scan had no matches. Build produced a `505`-day payload, latest `2026-05-22`, analytics days `505`, analytics symbols `98`, pack asset `kzg-frame-95df00c31270.js`; `per_day_to_dist` returned `copied=505`. Browser plugin was available this round and opened local dist `http://127.0.0.1:4210/`, verifying title, `1.70 · 505/505 complete`, momentum compass 1, steps 3, jump 1; after rotation handoff focus was `RGTI`, RGTI queue row 1, active RGTI row 1 after queue jump, rotation focus 1 after compass jump, horizontal overflow 0, old `.is-blurred`/`.is-locked` 0, future gate 1, public provider/API/payment text false, and console issues 0. Playwright against the same dist verified desktop `1440x1100` and phone `390x844` with the same result; PNG export remained `1,482,138` bytes. Screenshot evidence: `/tmp/kzg-option-house-v170-dist-desktop.png`, `/tmp/kzg-option-house-v170-compass-desktop.png`, `/tmp/kzg-option-house-v170-dist-mobile.png`, `/tmp/kzg-option-house-v170-compass-mobile.png`, and `/tmp/kzg-option-house-v170-export.png`.
+
+Blocker and next step: No real API, Massive plan upgrade, domain purchase, Stripe/Supabase/payment action, TestFlight, App Store, developer-account action, spending, or secret transmission happened. iOS companion remains `0.7`; the next default sync is around Web v1.72. Next `1.71` should stay on Web and further compress phone height in the open historical layer, continuing to turn the momentum queue, rotation quadrant, and capital anchor into a reading path.
+
+## 1B. Latest heartbeat record v1.69 / 最新心跳记录 v1.69
 
 中文:
 

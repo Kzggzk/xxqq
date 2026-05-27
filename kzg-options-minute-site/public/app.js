@@ -16,7 +16,7 @@ const state = {
   theme: localStorage.getItem("kzg-option-house-theme") || "light",
 };
 
-const UI_VERSION = "1.69";
+const UI_VERSION = "1.70";
 
 const dataAudit = {
   dataset: "23_DATA_期权分钟_Minute",
@@ -3671,6 +3671,7 @@ function renderSymbolMomentum() {
       ${momentumSummaryCard(state.lang === "zh" ? "权利金锚点" : "Premium anchor", premiumLead.symbol || "--", moneyCompact(premiumLead.premiumNotional), "flat")}
       ${momentumSummaryCard(state.lang === "zh" ? "CP 领头" : "CP lead", cpLead.symbol || "--", `CP ${ratio(cpLead.cpRatio)}`, "flat")}
     </div>
+    ${momentumQueueCompass(mappedRows, warmLead, premiumLead, cpLead)}
     <div class="momentum-list">
       ${mappedRows.map((row) => {
     const hot = row.delta >= 20;
@@ -3687,6 +3688,50 @@ function renderSymbolMomentum() {
     `;
       }).join("")}
     </div>
+  `;
+}
+
+function momentumQueueCompass(rows, warmLead, premiumLead, cpLead) {
+  if (!rows.length) return "";
+  const focus = rows.find((row) => row.symbol === state.focusSymbol) || warmLead || rows[0];
+  const focusIndex = rows.findIndex((row) => row.symbol === focus.symbol);
+  const focusSeat = focusIndex >= 0 ? `#${focusIndex + 1}/${rows.length}` : "--";
+  const focusTone = focus.delta >= 20 ? "hot" : focus.delta <= -20 ? "cool" : "flat";
+  const title = state.lang === "zh" ? "动量队列读法" : "Momentum queue read";
+  const copy = state.lang === "zh"
+    ? `先看权利金锚，再看 CP 极值，最后回到 ${focus.symbol || "--"} 的 active 行。`
+    : `Read premium anchor first, then CP edge, then return to the active ${focus.symbol || "--"} row.`;
+  return `
+    <div class="momentum-queue-compass">
+      <div class="momentum-compass-shell ${focusTone}">
+        <div class="momentum-compass-copy">
+          <span>${title}</span>
+          <b>${escapeHtml(focus.symbol || "--")} ${focus.delta >= 0 ? "+" : ""}${fmt1.format(focus.delta || 0)}%</b>
+          <small>${escapeHtml(copy)}</small>
+        </div>
+        <div class="momentum-compass-steps">
+          ${momentumCompassStep(state.lang === "zh" ? "资金先读" : "Capital first", `${premiumLead.symbol || "--"} ${moneyCompact(premiumLead.premiumNotional)}`, state.lang === "zh" ? "权利金锚点" : "premium anchor", "flat", premiumLead.symbol)}
+          ${momentumCompassStep(state.lang === "zh" ? "CP 极值" : "CP edge", `${cpLead.symbol || "--"} CP ${ratio(cpLead.cpRatio)}`, state.lang === "zh" ? "偏向边界" : "bias edge", "hot", cpLead.symbol)}
+          ${momentumCompassStep(state.lang === "zh" ? "当前行" : "Active row", `${focus.symbol || "--"} ${focusSeat}`, `${wan(focus.totalVol)} · ${focus.delta >= 0 ? "+" : ""}${fmt1.format(focus.delta || 0)}%`, focusTone, focus.symbol)}
+        </div>
+        <button type="button" class="momentum-compass-jump" data-symbol="${escapeHtml(focus.symbol || "")}" data-scroll-sector="symbolRotation">
+          <span>${state.lang === "zh" ? "回看轮动象限" : "Back to rotation quadrant"}</span>
+          <b>${escapeHtml(focus.symbol || "--")}</b>
+          <small>${state.lang === "zh" ? "保持开放历史路径" : "Keep the open history path"}</small>
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+function momentumCompassStep(label, value, sub, tone, symbol) {
+  const symbolAttr = symbol ? ` data-symbol="${escapeHtml(symbol)}"` : "";
+  return `
+    <button type="button" class="${tone}"${symbolAttr}>
+      <i>${escapeHtml(label)}</i>
+      <b>${escapeHtml(value)}</b>
+      <small>${escapeHtml(sub || "--")}</small>
+    </button>
   `;
 }
 

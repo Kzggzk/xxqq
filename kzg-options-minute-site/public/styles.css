@@ -15589,6 +15589,188 @@ body[data-theme="dark"] .symbol-momentum-jump {
   }
 }
 
+/* v1.70 pass: compact the open momentum queue into a readable capital/CP/active-row compass. */
+.momentum-queue-compass {
+  display: block;
+  margin: 7px 0;
+}
+
+.momentum-compass-shell {
+  display: grid;
+  grid-template-columns: minmax(185px, 0.88fr) minmax(260px, 1.32fr) minmax(136px, 0.5fr);
+  gap: 1px;
+  min-width: 0;
+  border: 1px solid rgba(20, 20, 18, 0.09);
+  background:
+    linear-gradient(90deg, rgba(167, 128, 44, 0.07), rgba(20, 131, 85, 0.06)),
+    rgba(255, 255, 252, 0.66);
+}
+
+.momentum-compass-shell.hot {
+  box-shadow: inset 4px 0 0 rgba(196, 83, 53, 0.72);
+}
+
+.momentum-compass-shell.cool {
+  box-shadow: inset 4px 0 0 rgba(47, 97, 144, 0.74);
+}
+
+.momentum-compass-shell.flat {
+  box-shadow: inset 4px 0 0 rgba(167, 128, 44, 0.68);
+}
+
+.momentum-compass-copy,
+.momentum-compass-steps button,
+.momentum-compass-jump {
+  min-width: 0;
+  padding: 9px 10px;
+}
+
+.momentum-compass-copy {
+  display: grid;
+  align-content: center;
+  gap: 5px;
+  background: rgba(255, 255, 252, 0.62);
+}
+
+.momentum-compass-copy span,
+.momentum-compass-steps i,
+.momentum-compass-jump span,
+.momentum-compass-copy small,
+.momentum-compass-steps small,
+.momentum-compass-jump small {
+  color: var(--muted);
+  font: 800 10px/1.22 var(--sans);
+}
+
+.momentum-compass-copy span,
+.momentum-compass-steps i,
+.momentum-compass-jump span {
+  text-transform: uppercase;
+}
+
+.momentum-compass-copy b,
+.momentum-compass-steps b,
+.momentum-compass-jump b {
+  overflow-wrap: anywhere;
+  color: var(--ink);
+  font: 900 13px/1.1 var(--sans);
+}
+
+.momentum-compass-copy b {
+  font: 900 16px/1.05 var(--serif);
+}
+
+.momentum-compass-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  min-width: 0;
+  background: rgba(20, 20, 18, 0.07);
+}
+
+.momentum-compass-steps button {
+  display: grid;
+  align-content: center;
+  gap: 4px;
+  border: 0;
+  background: rgba(255, 255, 252, 0.72);
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.momentum-compass-steps button:hover,
+.momentum-compass-jump:hover {
+  background: rgba(255, 255, 252, 0.94);
+}
+
+.momentum-compass-steps .hot {
+  box-shadow: inset 3px 0 0 rgba(196, 83, 53, 0.72);
+}
+
+.momentum-compass-steps .cool {
+  box-shadow: inset 3px 0 0 rgba(47, 97, 144, 0.76);
+}
+
+.momentum-compass-steps .flat {
+  box-shadow: inset 3px 0 0 rgba(167, 128, 44, 0.68);
+}
+
+.momentum-compass-jump {
+  display: grid;
+  align-content: center;
+  gap: 5px;
+  border: 0;
+  border-left: 1px solid rgba(20, 20, 18, 0.09);
+  background: rgba(255, 255, 252, 0.66);
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+body[data-theme="dark"] .momentum-compass-shell {
+  border-color: rgba(255, 255, 255, 0.12);
+  background:
+    linear-gradient(90deg, rgba(225, 159, 74, 0.09), rgba(69, 181, 139, 0.07)),
+    rgba(255, 255, 255, 0.045);
+}
+
+body[data-theme="dark"] .momentum-compass-copy,
+body[data-theme="dark"] .momentum-compass-steps button,
+body[data-theme="dark"] .momentum-compass-jump {
+  background: rgba(255, 255, 255, 0.045);
+}
+
+body[data-theme="dark"] .momentum-compass-steps {
+  background: rgba(255, 255, 255, 0.10);
+}
+
+body[data-theme="dark"] .momentum-compass-jump {
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
+@media (max-width: 920px) {
+  .momentum-compass-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .momentum-compass-jump {
+    border-left: 0;
+    border-top: 1px solid rgba(20, 20, 18, 0.09);
+  }
+}
+
+@media (max-width: 520px) {
+  .momentum-queue-compass {
+    margin: 5px 0;
+  }
+
+  .momentum-compass-copy,
+  .momentum-compass-steps button,
+  .momentum-compass-jump {
+    padding: 7px;
+  }
+
+  .momentum-compass-copy small,
+  .momentum-compass-jump small {
+    display: none;
+  }
+
+  .momentum-compass-steps button {
+    min-height: 40px;
+  }
+
+  .momentum-compass-steps i,
+  .momentum-compass-steps small {
+    font-size: 8px;
+  }
+
+  .momentum-compass-steps b,
+  .momentum-compass-jump b {
+    font-size: 11px;
+  }
+}
+
 @keyframes realtime-scan {
   0% {
     transform: translateY(-100%);
