@@ -1,0 +1,558 @@
+en_fiercepharma
+2026-05-30 12:00:00
+ASCO: Merck, Kelun's sac-TMT ADC combo beats Keytruda by 65% on progression in first-line lung cancer 
+Merck and Kelun-Biotech's sac-TMT antibody-drug conjugate combined with Keytruda cut the risk of disease progression or death by 65% versus Keytruda alone in treatment-naive, PD-L1-positive NSCLC, a potentially transformative advance in first-line lung cancer therapy. The data were presented in a high-profile session at ASCO 2026 in Chicago. 
+
+-------------------------
+en_targetedonc
+2026-05-30 12:00:00
+ASCO 2026 Lung Cancer Data Highlight Advances Across Targeted Agents and Immunotherapy 
+The 2026 ASCO Annual Meeting featured a robust collection of NSCLC data spanning amivantamab, lazertinib, pumitamig, silevertinib, and sacituzumab tirumotecan across multiple mutation types and treatment settings. Targeted Oncology reports that six abstracts collectively paint a picture of a rapidly evolving lung cancer treatment landscape. 
+
+-------------------------
+en_fiercepharma
+2026-05-30 08:00:00
+ASCO: Pfizer one-ups J&J with Talzenna combo's broad castration-sensitive prostate cancer win 
+Pfizer's Talzenna combined with Xtandi significantly reduced the risk of radiographic progression or death by 52% in men with HRR gene-mutated metastatic castration-sensitive prostate cancer, broadening its label potential in the Phase 3 Talapro-3 trial. The result was presented at ASCO 2026 and positions Talzenna as a broader PARP inhibitor rival to J&J's niraparib. 
+
+-------------------------
+en_fiercepharma
+2026-05-29 12:00:00
+ASCO preview: With expectations jacked up, Akeso's ivonescimab to face scrutiny in high-stakes plenary 
+China-developed bispecific antibody ivonescimab from Akeso will present overall survival data from the Phase 3 Harmoni-6 trial in a plenary session at ASCO 2026, with high investor expectations following earlier progression-free survival results. The dual PD-1 and VEGF inhibition mechanism represents China's most closely watched drug at the world's premier oncology meeting. 
+
+-------------------------
+en_targetedonc
+2026-05-29 12:00:00
+The LBAs to Watch for at the 2026 ASCO Meeting 
+Targeted Oncology previews the late-breaking abstracts at the 2026 ASCO Annual Meeting starting May 29 in Chicago, covering pivotal data across breast, colorectal, prostate, and lung cancer that are expected to reshape clinical practice. Over 200 presentations will feature at the meeting under the theme 'The Science and Practice of Translation.' 
+
+-------------------------
+en_semiconductor_today
+2026-05-29 12:00:00
+IQE's full-year 2025 revenue falls 17.6%, as 40% drop in wireless outweighs 15% growth in photonics 
+IQE plc reported full-year 2025 revenue declined 17.6% as a sharp 40% contraction in wireless compound semiconductor wafers more than offset a 15% rise in photonics revenue driven by AI data center and defense markets. The company expects IQE revenue for full-year 2026 to exceed 20% growth year-on-year as data center photonics demand accelerates. 
+
+-------------------------
+en_satnews
+2026-05-28 12:00:00
+AI just reached production in European space. The trust problem is what comes next. 
+European space agencies have deployed AI at production scale, but the industry now faces a harder challenge: establishing the auditability and governance frameworks needed to ensure AI-driven decisions in space systems meet regulatory and mission-critical trust standards. The article examines how European space is adapting to this new operational phase. 
+
+-------------------------
+en_mortgagenewsdaily
+2026-05-28 12:00:00
+Mortgage Rates Officially Hit 2 Week Lows 
+Top-tier 30-year fixed mortgage rates fell to 6.59% on May 28, 2026, reaching their lowest level in two weeks after earlier hitting a 9-month high of 6.75% driven by Iran conflict uncertainty and bond market volatility. Mortgage News Daily notes that the trajectory will depend heavily on whether the Iran ceasefire negotiations produce a durable agreement. 
+
+-------------------------
+en_satnews
+2026-05-28 08:00:00
+The pixel war is over. The integration war is what comes next. 
+As Earth observation satellite resolution reaches physical and commercial limits, competition in the sector is shifting toward who can best integrate imagery data with AI analytics, geospatial platforms, and real-time applications. SatNews argues the satellite imagery market is entering a new competitive paradigm defined by data pipelines rather than resolution specs. 
+
+-------------------------
+en_metaltechnews
+2026-05-27 12:00:00
+Boston Metal attracts broad investment 
+Boston Metal, developer of a molten oxide electrolysis process that eliminates carbon emissions from steel production, secured a new funding round backed by industrial and climate investors seeking to decarbonize the steelmaking sector. The investment signals growing confidence in the company's electrochemical iron production technology as an alternative to blast furnaces. 
+
+-------------------------
+en_anysilicon
+2026-05-27 12:00:00
+TSMC's 2026 North America Technology Symposium: A Roadmap Built for a More Segmented Compute Era 
+TSMC's 2026 North America Technology Symposium signaled a shift away from simple node-to-node scaling toward a competitive landscape defined by power architecture, advanced packaging depth, and design ecosystem integration. The strongest takeaway is that the next phase of semiconductor competition will not be decided by transistor density alone but by the interplay of process, power, and packaging. 
+
+-------------------------
+en_metaltechnews
+2026-05-27 08:00:00
+Eliminating a hidden rare earth dependency 
+Nth Cycle's electro-extraction technology is being integrated with IonicRE's rare earth processing platform to eliminate the supply chain dependence on oxalic acid, a critical bottleneck in domestic rare earth refining. The collaboration could reduce US rare earth processing costs and meaningfully improve supply chain resilience for defense and clean energy applications. 
+
+-------------------------
+en_circleofblue
+2026-05-26 12:00:00
+Federal Water Tap, May 26, 2026: EPA Proposes to Repeal Standards for Four PFAS in Drinking Water 
+The EPA proposed to repeal federal drinking water standards for four PFAS compounds—HFPO-DA, PFNA, PFHxS, and PFBS—while giving utilities more time to comply with existing rules for PFOA and PFOS. Circle of Blue reports the move signals a significant rollback of Biden-era water safety regulations, drawing objections from public health advocates and water utilities that have already begun compliance infrastructure upgrades. 
+
+-------------------------
+en_satnews
+2026-05-25 12:00:00
+China Launches Shenzhou-23 Mission to Tiangong, Slated for Record Year-Long Stay 
+China launched Shenzhou-23 on May 24, 2026, transporting a three-person crew to the Tiangong space station, with one astronaut scheduled for a record full-year continuous stay—the longest single-mission duration in China's space program history. The mission underlines China's expanding ambitions in long-duration human spaceflight ahead of planned lunar crewed missions. 
+
+-------------------------
+en_interestingengineering
+2026-05-25 12:00:00
+Huawei bets on a new law of physics to outmaneuver chip restrictions 
+Huawei presented the Tau Scaling Law, a new principle proposing that signal timing efficiency rather than transistor miniaturization should guide chip design progress, as the company targets 1.4nm-equivalent transistor density within five years using its LogicFolding architecture. The approach represents China's most ambitious attempt to circumvent US semiconductor export controls by establishing an alternative performance metric. 
+
+-------------------------
+en_moderndiplomacy
+2026-05-25 12:00:00
+Huawei Unveils Major Chip Design Breakthrough as China Pushes Past US Sanctions 
+Huawei's He Tingbo presented the Tau Scaling Law at a Shanghai conference, proposing a new chip design principle based on signal timing efficiency rather than transistor miniaturization, as China's national champion aims to achieve 1.4nm-equivalent density within five years without access to TSMC or ASML equipment. Modern Diplomacy frames the announcement as a significant moment in the US-China technology decoupling. 
+
+-------------------------
+en_spacenews
+2026-05-22 12:00:00
+SpaceX wins $2.29 billion Space Force contract for military data network 
+The U.S. Space Force awarded SpaceX a $2.29 billion contract to build the Space Data Network Backbone, a constellation of low Earth orbit satellites intended to function as a secure military communications network. The contract is part of the broader Golden Dome missile defense initiative and marks a significant expansion of SpaceX's national security business. 
+
+-------------------------
+en_interestingengineering
+2026-05-22 12:00:00
+New fused silk material rivals Kevlar in toughness while offering biocompatibility and 6G potential 
+Researchers developed a fused silk composite material that matches Kevlar in tensile toughness while remaining fully biocompatible and transparent to 6G terahertz frequencies, opening potential applications in medical devices, wearable electronics, and next-generation wireless infrastructure. The breakthrough was achieved by controlling the crystallization structure of silk proteins at the nanoscale. 
+
+-------------------------
+en_mortgagenewsdaily
+2026-05-22 12:00:00
+Borrowers Shift Toward ARMs as Fixed Rates Climb 
+MBA data show that the adjustable-rate mortgage share of applications rose to its highest level in 18 months as the 30-year fixed rate approached 6.75%, with borrowers seeking lower initial payments amid elevated housing costs. Mortgage News Daily reports that the ARM share shift is most pronounced in high-cost coastal markets where jumbo loan borrowers are most rate-sensitive. 
+
+-------------------------
+en_nationalmortgagenews
+2026-05-21 12:00:00
+Mortgage rates surge to 9-month high amid market turmoil 
+The 30-year fixed rate mortgage hit its highest level in nine months at 6.75% during the week of May 21, 2026, driven by bond market turmoil tied to inflation concerns and Iran war uncertainty. National Mortgage News reports that lenders are using rate locks and buydowns as competitive tools to maintain application volume in the challenging rate environment. 
+
+-------------------------
+en_metaltechnews
+2026-05-20 12:00:00
+DOE funding targets U.S. minerals processing 
+The U.S. Department of Energy selected 19 projects to share $45.7 million in federal funding for pilot-scale and next-generation technologies aimed at strengthening domestic critical mineral supply chains. The projects focus on separation, processing, and refining of rare earths, lithium, cobalt, and other strategic materials. 
+
+-------------------------
+en_anysilicon
+2026-05-20 12:00:00
+Semiconductor Foundry Revenue Grew in Q1 2026, Driven by AI, Power Management and Specialty Technologies 
+Global semiconductor foundry revenue grew significantly in Q1 2026 as AI-related demand, advanced-node capacity expansion, and specialty technology ramps drove strong performance across leading foundries. Total global semiconductor sales reached $298.5 billion in Q1 2026, up 25% compared with Q4 2025. 
+
+-------------------------
+en_interestingengineering
+2026-05-20 12:00:00
+Pentagon plans to field SpaceX-built tracking satellites by 2028 as military pushes space-based sensing 
+The Pentagon plans to deploy SpaceX-built tracking and targeting satellites by 2028 to support the Golden Dome missile defense architecture, with military leaders pushing for stronger space-based sensing capabilities against advanced hypersonic and ballistic threats. The contract represents a significant expansion of commercial space integration into US national security infrastructure. 
+
+-------------------------
+en_labiotech
+2026-05-20 12:00:00
+2026 biotech deals tracker: the latest partnerships and M&A 
+Labiotech.eu's running 2026 M&A tracker documents the year's landmark transactions, with total deal values exceeding prior years as pharma companies race to fill a looming $170 billion patent cliff. The tracker covers Sun Pharma's $11.75 billion Organon acquisition, Biogen's $5.6 billion Apellis deal, and Lilly's $7.8 billion purchase of Centessa among dozens of other transactions. 
+
+-------------------------
+en_eenews
+2026-05-20 12:00:00
+Trump hates renewables. The Iran war may help them. 
+E&E News by Politico reports that despite the Trump administration's hostility to clean energy, the ongoing Iran conflict is driving oil price volatility that is accelerating fleet electrification and renewable energy adoption by businesses and governments seeking to hedge energy costs. Almost 30% of all cars sold in 2026 are projected to be electric or plug-in hybrids. 
+
+-------------------------
+en_gasworld
+2026-05-20 12:00:00
+US to supply two-thirds of Europe's LNG imports in 2026, says IEEFA 
+The Institute for Energy Economics and Financial Analysis projects that US LNG will supply approximately two-thirds of Europe's total liquefied natural gas imports in 2026 as the continent diversifies away from Russian pipeline gas and Middle East supply disruptions reduce Qatari and UAE exports. US export capacity expansions at Corpus Christi and other Gulf Coast terminals underpin the outlook. 
+
+-------------------------
+en_tearsheet
+2026-05-20 12:00:00
+Capital is flowing again, just not where the consensus says 
+Tearsheet reports that US fintech funding hit $5.1 billion in Q1 2026, up 47% year-over-year, but capital concentration is shifting away from consumer fintech toward AI infrastructure companies like Rogo and Parallel Web. The article examines why agentic finance solutions are attracting disproportionate early-stage investment. 
+
+-------------------------
+en_mortgagenewsdaily
+2026-05-20 12:00:00
+Mortgage Rates Recover All of Yesterday's Losses 
+The 30-year fixed mortgage rate recovered a full day's losses to reach 6.61% on May 20, 2026 following a brief spike tied to a weaker-than-expected Treasury auction. Mortgage News Daily attributes the recovery to positive bond market sentiment following hints of progress in Iran ceasefire talks. 
+
+-------------------------
+en_pionline
+2026-05-20 12:00:00
+Inside the wave of active international equity manager terminations — and why pension funds are shifting course 
+Pensions & Investments reports that large pension funds are terminating active international equity mandates at elevated rates as index concentration grows and quality-factor strategies underperform, with many reallocating to passive vehicles or alternative factor strategies. The shift reflects a structural reassessment of the value proposition of active management in developed international markets. 
+
+-------------------------
+en_calcalistech
+2026-05-20 12:00:00
+Kela raising $200 million at $1 billion valuation with backing from Bill Ackman and Eric Schmidt 
+Israeli defense technology startup Kela is raising $200 million at a pre-money valuation of $1 billion in a round led by Stripe and D1 Capital Partners, with strategic backing from Bill Ackman and Eric Schmidt reflecting the growing intersection of Silicon Valley and Israeli defense tech. The company develops intelligence and threat analysis tools for government and enterprise security applications. 
+
+-------------------------
+en_aircargonews
+2026-05-20 12:00:00
+Air China Cargo to operate Shanghai-Prestwick route 
+Air China Cargo will launch a new scheduled freighter service from Shanghai Pudong International to Glasgow Prestwick Airport, strengthening China-UK airfreight connectivity and giving Chinese exporters a dedicated gateway into Scotland and Northern England. The service reflects growing demand for direct air cargo links between China and secondary European markets. 
+
+-------------------------
+en_robotics247
+2026-05-19 12:00:00
+Locus Robotics acquired Nexera Robotics, integrating NeuraGrasp grasping technology 
+Locus Robotics acquired Nexera Robotics and its NeuraGrasp AI-powered grasping technology to expand its mobile manipulation capabilities for warehouse and fulfillment automation. The acquisition enables Locus to offer end-to-end robotic picking solutions that combine autonomous mobile robots with advanced dexterous manipulation. 
+
+-------------------------
+en_spacenews
+2026-05-18 12:00:00
+SLS to launch without upper stage for Artemis 3 
+NASA plans to fly the Space Launch System on the Artemis 3 lunar landing mission without its Interim Cryogenic Propulsion Stage, using an inert spacer to maintain the rocket's structural configuration while reducing cost and complexity. The decision affects the mission's payload capacity and flight profile for the crewed lunar surface landing attempt. 
+
+-------------------------
+en_datacenterdynamics
+2026-05-15 12:00:00
+Microsoft brings 1GW of data center capacity online in Q2 2026 
+Microsoft brought more than 1 gigawatt of new data center capacity online in the second quarter of 2026, the largest single-quarter capacity addition in the company's history, as demand for AI computing infrastructure continues to outpace industry supply. The expansion spans multiple geographies including the US, Europe, and Asia-Pacific. 
+
+-------------------------
+en_paymentsdive
+2026-05-15 12:00:00
+Block leans into its AI future 
+Block Inc. is restructuring its product portfolio around AI-native payment and financial services capabilities, betting that agentic commerce and real-time payment infrastructure will define the next generation of fintech competition. The company's strategy shift includes deepened investments in Square, Cash App, and Afterpay AI integration. 
+
+-------------------------
+en_nationalmortgagenews
+2026-05-15 12:00:00
+Mortgage rates rise again as bond market reacts to inflation 
+Mortgage rates climbed for the third consecutive week to 6.56%, reaching their highest level in seven weeks, as bond markets reacted to hotter-than-expected inflation data and rising concerns that the Federal Reserve will delay any rate cuts. National Mortgage News reports that the rate environment is prompting borrowers to favor adjustable-rate products and shorter loan terms. 
+
+-------------------------
+en_the_scientist
+2026-05-15 12:00:00
+AI and Physics-Based Modeling Identifies a New Parkinson's Disease Drug 
+Researchers used a combination of AI-driven molecular docking and physics-based simulation to identify a novel small molecule candidate for Parkinson's disease that targets alpha-synuclein aggregation with improved selectivity over prior compounds. An investigational new drug application filing is planned for mid-2026, with Phase 1 and 2 studies to follow. 
+
+-------------------------
+en_pionline
+2026-05-15 12:00:00
+Asset owners plan to increase co-investments as access becomes manager selection factor — Cerulli 
+A Cerulli survey finds that 19% of asset owners plan to increase co-investment allocations over the next two years, increasingly viewing direct co-investment access as a key criterion in selecting private equity managers. Pension funds and sovereign wealth funds are driving demand for co-investments as a way to reduce fee drag and improve returns in private markets. 
+
+-------------------------
+en_humanoid_press
+2026-05-15 12:00:00
+Who Will Win the Humanoid Robots Race in 2026? Tesla vs. Figure AI vs. China's Upstarts 
+Humanoid Press analyzes the competitive dynamics between Tesla's Optimus Gen 3, Figure AI's Figure 03, and Chinese competitors Unitree and AgiBot as the humanoid robot market prepares for its first year of meaningful commercial deployment. China's output is expected to surge 94% in 2026, with Unitree and AgiBot projected to capture nearly 80% of global shipments. 
+
+-------------------------
+en_datainnovation
+2026-05-15 12:00:00
+10 Bits: The Data News Hotlist 
+The Center for Data Innovation's weekly data news roundup covers Google Home's new Gemini-powered automation features, IBM's AI partnership with Scuderia Ferrari for fan engagement, and academic research showing AI can accelerate carbon-capture material design. The newsletter highlights the breadth of AI applications entering production deployment across consumer, industrial, and scientific domains. 
+
+-------------------------
+en_aircargonews
+2026-05-15 12:00:00
+FedEx expands European road hub to support airfreight 
+FedEx is investing €46 million to expand its road hub in Duiven, Netherlands to strengthen its truck-fly-truck network connecting European surface and air freight operations. The investment supports FedEx's strategy of building dense European distribution infrastructure ahead of anticipated e-commerce growth driven by Southeast Asian imports. 
+
+-------------------------
+en_spacenews
+2026-05-12 12:00:00
+NASA to add missions to SpaceX commercial crew contract 
+NASA announced its intent to add six post-certification missions to SpaceX's commercial crew contract on a sole-source basis, extending the agency's reliance on Crew Dragon for International Space Station transportation beyond current contractual commitments. The move reflects NASA's continued confidence in SpaceX's crewed launch capabilities amid ongoing budget constraints. 
+
+-------------------------
+en_ieefa
+2026-05-12 12:00:00
+Impact of Middle East Crisis on Global Energy Markets 
+IEEFA's crisis response analysis, updated through May 12, 2026, documents how the Iran conflict has cut traffic through the Strait of Hormuz by over 95%, pushed Brent crude to $82 per barrel, and effectively shut in 20% of global LNG supply from Qatar and UAE. The institute argues the disruption is strengthening the long-term case for renewable energy investment as an energy security hedge. 
+
+-------------------------
+en_eenews
+2026-05-10 12:00:00
+Solar to produce more power than coal in Texas, EIA says 
+For the first time, utility-scale solar is on track to outproduce coal generation in Texas over a full year, with the Energy Information Administration projecting 78 billion kWh from solar versus 60 billion kWh from coal plants in 2026. The milestone marks a historic shift in the power mix of the nation's largest electricity market. 
+
+-------------------------
+en_tearsheet
+2026-05-10 12:00:00
+Why fintechs are transitioning from partners to principals in banking 
+A wave of fintech charter applications in Q1 2026 signals that leading fintechs are increasingly pursuing direct banking licenses rather than relying on bank-as-a-service partners, seeking greater operational certainty and regulatory standing. Tearsheet examines the strategic and economic calculus behind the shift from distribution partnerships to direct bank ownership. 
+
+-------------------------
+en_multihousingnews
+2026-05-10 12:00:00
+National Multifamily Report - April 2026 
+Multi-Housing News reports that US multifamily asking rents ticked up 0.4% year-to-date through April 2026, with average advertised rents reaching $1,758, though annual growth remains marginally negative at -0.2% as new supply continues to be absorbed. Sun Belt markets with strong job creation remain most competitive, while Midwestern markets with minimal new development show the strongest relative pricing power. 
+
+-------------------------
+en_calcalistech
+2026-05-10 12:00:00
+Sett secures $30 million Series B to automate game marketing with AI agents 
+Sett, an AI agent-based platform for automating game marketing workflows, raised $30 million in a Series B round bringing total funding to $57 million, reflecting strong investor demand for vertical AI automation in the gaming industry. The company's platform enables game publishers to automate user acquisition, creative testing, and campaign optimization at scale. 
+
+-------------------------
+en_aircargonews
+2026-05-10 12:00:00
+Latest Middle East escalation 'reverses recovery' of air cargo 
+Iranian missile and drone attacks on the UAE on May 4 created a global air cargo capacity shortfall of up to 16% as regional airspace restrictions grounded flights and forced rerouting across the Middle East. Air Cargo News reports that the latest escalation has reversed months of market recovery, with spot rates spiking and shippers scrambling for alternative routing options. 
+
+-------------------------
+en_targetedonc
+2026-05-05 12:00:00
+FDA Oncology News: April 2026 Approvals, NDAs, and Priority Reviews 
+The FDA granted full approval to CAR T-cell therapy brexucabtagene autoleucel (Tecartus) for relapsed or refractory mantle cell lymphoma based on long-term follow-up data from the ZUMA-2 trial. Targeted Oncology's April roundup also covers new NDAs and priority review designations for multiple oncology drugs. 
+
+-------------------------
+en_eenews
+2026-05-05 12:00:00
+Carbon trade measure slips into spending package 
+A carbon border adjustment mechanism provision was quietly included in the fiscal 2026 omnibus spending package, signaling a bipartisan shift toward carbon pricing tools even as the Trump administration rolls back domestic climate regulations. E&E News reports that the measure would apply tariffs on imports from countries without equivalent carbon pricing regimes. 
+
+-------------------------
+en_multihousingnews
+2026-05-05 12:00:00
+National Student Housing Report – April 2026 
+Student housing preleasing for the 2026-2027 academic year reached 52.3% in April, running approximately 7 percentage points ahead of the same period a year ago, as demand for purpose-built student accommodation near major universities outpaces supply. Multi-Housing News reports that rent growth in the sector is tracking between 2-4% nationally. 
+
+-------------------------
+en_moderndiplomacy
+2026-05-05 12:00:00
+Financial Brief: A Weekly Roundup on the Geopolitics of Money | May 05 
+Modern Diplomacy's geopolitics of money weekly covers how US tariff policy and dollar weaponization concerns are accelerating China's yuan internationalization push through bilateral trade agreements with BRICS+ nations. The brief also examines how European sovereign wealth funds are diversifying away from US Treasuries amid fiscal sustainability concerns. 
+
+-------------------------
+en_labiotech
+2026-05-01 12:00:00
+Top biotech deals in April 2026 
+Indian company Sun Pharma's $11.75 billion acquisition of Organon headlines April 2026 biotech M&A, taking over a portfolio of more than 70 women's health and generic medicines. Lilly's $7.8 billion acquisition of Centessa Pharmaceuticals was the most expensive deal that month, reflecting continued large-cap appetite for specialty pipeline assets. 
+
+-------------------------
+en_datacenterdynamics
+2026-04-29 12:00:00
+Google estimates 2026 capex of up to $185bn 
+Google's parent Alphabet disclosed plans to spend up to $185 billion in capital expenditure in 2026, approximately double its 2025 figure, with the majority earmarked for data center construction, AI compute infrastructure, and power procurement. The figure underscores the unprecedented scale of hyperscaler infrastructure investment driven by generative AI demand. 
+
+-------------------------
+en_labiotech
+2026-04-28 12:00:00
+AACR 2026: where is cancer therapeutics heading? 
+Labiotech.eu's coverage of the 2026 American Association for Cancer Research Annual Meeting highlights advances in antibody-drug conjugates, bispecific antibodies, and next-generation checkpoint inhibitors presented at the Chicago conference. Data presented suggest a continued shift toward combination strategies and biomarker-driven patient selection as the field matures beyond first-generation immuno-oncology. 
+
+-------------------------
+en_robotics247
+2026-04-27 12:00:00
+FANUC debuted the CRX-3iA cobot and unveiled new CRX capabilities 
+FANUC debuted the CRX-3iA collaborative robot at Automate 2026, targeting small parts assembly and inspection applications with a 3kg payload and enhanced force sensing. The company also unveiled expanded AI-powered programming and vision capabilities across its broader CRX cobot lineup, reducing setup time for new manufacturing applications. 
+
+-------------------------
+en_robotics247
+2026-04-24 12:00:00
+ABB Robotics launches PoWa cobot family for industrial-grade collaborative applications 
+ABB Robotics launched the PoWa cobot family at Automate 2026, targeting applications that demand industrial-grade precision and durability within a collaborative robot framework. The series features IP67 dust and water resistance, integrated torque sensing, and compatibility with ABB's RobotStudio simulation environment for offline programming. 
+
+-------------------------
+en_pionline
+2026-04-20 12:00:00
+New Jersey pension fund cuts private equity, real estate targets — adds investment-grade private credit 
+New Jersey's state pension system reduced its target allocations to private equity and real estate while adding a new allocation to investment-grade private credit, reflecting a broader institutional reassessment of illiquidity risk and fee-adjusted returns in the current rate environment. The rebalancing follows underperformance in the fund's real estate portfolio. 
+
+-------------------------
+en_circleofblue
+2026-04-20 12:00:00
+Federal Water Tap, April 20, 2026: Reclamation Moves to Protect Glen Canyon Dam 
+The Bureau of Reclamation announced new operational measures to protect Glen Canyon Dam as Lake Powell water levels remain critically low, while ongoing negotiations to replace the Colorado River's expiring 2026 management framework continue. Reclamation acknowledged that a stopgap interim agreement may be necessary if a comprehensive deal cannot be reached before year-end. 
+
+-------------------------
+en_gasworld
+2026-04-15 12:00:00
+Cumulative LNG supply losses could top 120 bcm by 2030 says IEA 
+The International Energy Agency warns that cumulative LNG supply losses from the Middle East conflict and delayed project completions could exceed 120 billion cubic metres by 2030, significantly tightening global gas markets and sustaining elevated LNG prices. The IEA recommends accelerating alternative supply development and demand-side flexibility measures. 
+
+-------------------------
+en_paymentsdive
+2026-04-15 12:00:00
+ACH Network starts 2026 with surge 
+The ACH Network processed 8.9 billion payments in Q1 2026, a 4.8% volume increase year-over-year, with transaction value rising 9.3% to $24.1 trillion as both B2B and consumer payments migrated to instant ACH and same-day settlement. The strong start underscores the continued displacement of check and wire payments by electronic alternatives. 
+
+-------------------------
+en_circleofblue
+2026-04-13 12:00:00
+Federal Water Tap, April 13, 2026: Water, Weather Data Points to Difficult Year for American West 
+Water and weather data for spring 2026 indicate another challenging year for the American West, with snowpack levels below average in key Colorado River and California watershed areas contributing to supply anxiety. Circle of Blue reports the data is complicating already difficult Colorado River compact renegotiations as states, tribes, and federal agencies navigate competing demands. 
+
+-------------------------
+en_multihousingnews
+2026-04-01 12:00:00
+2026 Senior Living Trends: Demand Leads, Capital Reopens 
+Senior housing fundamentals are expected to remain strong throughout 2026, with rental rate growth trending between 3-6% as aging baby boomer demographics drive occupancy toward pre-pandemic highs. Multi-Housing News reports that debt capital markets for senior living are reopening after a period of dislocation, with lenders showing renewed appetite for stabilized assets. 
+
+-------------------------
+en_humanoid_press
+2026-04-01 12:00:00
+The State of Humanoids — From Pilot Purgatory to Real-World Impact 
+Humanoid Press's comprehensive market report finds that the humanoid robot industry is transitioning from controlled pilots to real-world commercial deployments, with Agility Robotics' Digit active in Toyota Canada logistics and Boston Dynamics' Atlas committed to Hyundai and Google DeepMind applications. The 2026 market is projected to reach $3-5 billion as unit costs fall toward the $30,000 threshold. 
+
+-------------------------
+en_semiconductor_today
+2026-03-31 12:00:00
+Latest issue of Semiconductor Today now available 
+The latest print and digital edition of Semiconductor Today magazine covers advances in compound semiconductor materials including GaN, SiC, InP, and silicon photonics, with features on co-packaged optics, power electronics, and defense applications. The March 2026 edition includes market forecasts and technology roadmaps for the compound semiconductor industry. 
+
+-------------------------
+en_moderndiplomacy
+2026-03-31 12:00:00
+Global Tensions 2026: War, Economics, and the Human Cost of Power 
+Modern Diplomacy's comprehensive analysis examines how the Iran conflict, Ukraine reconstruction costs estimated at $524 billion, and intensifying US-China rivalry are collectively reshaping the international order in 2026. The piece argues that economic and military power are increasingly inseparable, with sanctions, technology controls, and resource competition becoming primary tools of statecraft. 
+
+-------------------------
+en_aigovernance
+2026-03-26 12:00:00
+H.R.8094 Bipartisan AI Foundation Model Disclosure Bill Introduced in Congress 
+A bipartisan group of US lawmakers introduced H.R.8094 on March 26, 2026, requiring developers of large AI foundation models to publicly disclose training data sources, model design, known limitations, risks, and evaluation methods. The AI Governance Institute covers the legislation as a significant step toward federal AI transparency requirements. 
+
+-------------------------
+en_datacenterdynamics
+2026-03-20 12:00:00
+Nvidia updates data center product roadmap following LPU launch at GTC 2026 
+At GTC 2026, Nvidia updated its data center product roadmap, unveiling the Groq 3 LPU scheduled for H2 2026 availability in liquid-cooled racks alongside updates to the Blackwell and next-generation GPU server architectures. The roadmap revision reflects Nvidia's strategy to address both inference efficiency and training throughput as AI workload diversity expands. 
+
+-------------------------
+en_gasworld
+2026-03-20 12:00:00
+LNG ramp-up drives record volumes at Corpus Christi in Texas 
+The Port of Corpus Christi recorded record first-quarter 2026 volumes of 54.5 million tonnes, driven by a 33% surge in LNG shipments as expanded liquefaction capacity at Sabine Pass and Corpus Christi LNG facilities came online. The record underscores Texas's growing role as the world's leading LNG export hub. 
+
+-------------------------
+en_paymentsdive
+2026-03-20 12:00:00
+PayPal pivots for 2026 
+PayPal announced a strategic refocus on its core checkout and merchant services businesses while scaling back some consumer-facing features, aiming to recapture lost market share against Apple Pay, Google Pay, and Stripe. The company unveiled AI-powered fraud detection and personalized offers tools as its primary competitive differentiators for 2026. 
+
+-------------------------
+en_gtreview
+2026-03-19 12:00:00
+Trade growth likely to feel tariff hit in 2026: WTO 
+The World Trade Organization projects global merchandise trade growth will slow to 1.9% in 2026 from 4.6% in 2025 as the cumulative effect of US tariff escalations, retaliatory measures, and geopolitical fragmentation weigh on cross-border commerce. GTR reports that the WTO's forecast revision is the sharpest downgrade in a non-pandemic year on record. 
+
+-------------------------
+en_semiconductor_today
+2026-03-16 12:00:00
+Semtech showcasing AI interconnects with live 1.6T demos at OFC 
+Semtech demonstrated live 1.6 terabit-per-second optical interconnect technology at the Optical Fiber Conference, targeting AI data center switch fabrics and hyperscaler backbone networks. The company's CopperEdge and optical chipset portfolio aims to address the bandwidth demands of next-generation AI cluster deployments. 
+
+-------------------------
+en_anysilicon
+2026-03-15 12:00:00
+Global Semiconductor Market grows 26% in 2025 to $796 billion 
+The global semiconductor market grew 26% in 2025 to reach $796 billion, driven by AI infrastructure buildout, automotive electrification, and renewed smartphone demand. Strong demand is expected to persist through 2026, with annual sales projected to approach $1 trillion for the first time. 
+
+-------------------------
+en_ieefa
+2026-03-15 12:00:00
+The Iran conflict is cutting the long-term role of LNG in Asia 
+IEEFA analysis finds that Asia's LNG imports plummeted in March 2026 as the Middle East conflict shut key supply corridors, and the disruption is accelerating a structural shift toward domestic renewables and nuclear power in South Korea, Japan, and India. The report projects that LNG's share of Asia's energy mix will peak earlier than previously forecast. 
+
+-------------------------
+en_datainnovation
+2026-03-15 12:00:00
+White House Gives Congress the Right Blueprint for AI Policy 
+The Center for Data Innovation praised the Trump White House's National Policy Framework for Artificial Intelligence as a pro-innovation governance model that addresses legitimate safety concerns without creating excessive regulatory barriers. The framework emphasizes AI leadership through deployment facilitation rather than precautionary restriction, aligning with the center's policy recommendations. 
+
+-------------------------
+en_calcalistech
+2026-03-15 12:00:00
+ZyG raises $60 million Series A at $500 million valuation just a year after launch 
+ZyG, founded by alumni of ironSource, raised $60 million in a Series A at a $500 million valuation just one year after its founding, becoming one of Israel's fastest companies to achieve unicorn-level valuations. The company operates in mobile growth and monetization infrastructure for app developers. 
+
+-------------------------
+en_ieefa
+2026-03-10 12:00:00
+Iran tensions underscore the urgency of Asia's renewables pivot for macroeconomic stability 
+IEEFA argues that the Iran conflict has exposed the macroeconomic fragility of Asia's dependence on Middle East fossil fuels, with oil price spikes triggering currency depreciation and current account deficits across import-dependent Asian economies. Countries with more advanced renewable deployment—including China and India—are better insulated from the shock. 
+
+-------------------------
+en_waterworld
+2026-03-04 12:00:00
+EPA launches RealWaterTA initiative to refocus water system technical assistance 
+The EPA launched the Real Water Technical Assistance (RealWaterTA) initiative on March 4, 2026, redirecting federal support toward engineering, operational guidance, and workforce development for water utilities in alignment with the administration's back-to-basics priorities. The initiative deemphasizes broader environmental programs in favor of direct infrastructure support. 
+
+-------------------------
+en_the_scientist
+2026-03-01 12:00:00
+US Research Funding Under Fire 
+Proposed NIH budget cuts of up to 40% in the Trump administration's FY2026 fiscal year request have triggered alarm across the biomedical research community, with institutions warning of lab closures, researcher departures, and a generational setback to US scientific output. The Scientist examines the downstream consequences for drug discovery pipelines and academic medical centers. 
+
+-------------------------
+en_humanoid_press
+2026-03-01 12:00:00
+HPS Global Leaderboard 2026 — Top 10 Humanoid Robots Ranked by Performance Score 
+The Humanoid Performance Score (HPS) Global Leaderboard ranks the top 10 commercial and near-commercial humanoid robots on dexterity, locomotion, battery life, payload, and deployment readiness. Boston Dynamics' Electric Atlas and Figure AI's Figure 03 lead on performance metrics, while Unitree's H1 Pro dominates on cost-effectiveness and production scale. 
+
+-------------------------
+en_datainnovation
+2026-02-20 12:00:00
+Public Sector AI Adoption Index 2026 
+The Center for Data Innovation's Public Sector AI Adoption Index 2026 evaluates conditions for effective government AI use across 10 countries, based on surveys of 3,335 public servants in the US, UK, Germany, France, Japan, Brazil, India, Singapore, South Africa, and Saudi Arabia. The US leads in AI tool availability and data infrastructure maturity, while European nations score higher on governance frameworks. 
+
+-------------------------
+en_waterdaily
+2026-02-19 12:00:00
+Texas water board backs $140M in municipal infrastructure upgrades statewide 
+The Texas Water Development Board approved nearly $140 million in financing for municipal water and wastewater infrastructure projects at its February 19 board meeting, advancing upgrades across communities in South Texas, Central Texas, and the Rio Grande Valley. The approvals draw primarily on State Revolving Fund and SWIFT program allocations. 
+
+-------------------------
+en_tearsheet
+2026-02-15 12:00:00
+Open banking's paywall era – and what it means for banks, fintechs, and policy in 2026 
+J.P. Morgan began negotiating paid data-access agreements with aggregators Plaid, MX, and Yodlee, signaling the end of free open banking data access as major banks assert the right to charge for API connectivity. Tearsheet analyzes the implications for the fintech ecosystem and policymakers who shaped the original open banking regulatory framework. 
+
+-------------------------
+en_gtreview
+2026-02-15 12:00:00
+Global goods trade growth could slow to 1.5% in 2026: UNCTAD 
+UNCTAD warned that global goods trade volume growth could decelerate to as low as 1.5% in 2026 amid financial volatility, ongoing Middle East supply chain disruptions, and declining consumer confidence in major economies. The agency identified trade in AI-enabling goods—which grew 21.9% in 2025—as the sole bright spot in an otherwise challenging environment. 
+
+-------------------------
+en_waterworld
+2026-02-10 12:00:00
+White House proposes $2.4B reduction for 2026 State Revolving Fund programs 
+The White House's FY2026 budget proposal cuts Drinking Water and Clean Water State Revolving Funds by $2.46 billion from 2025 levels, threatening the primary federal financing mechanism for municipal water and wastewater infrastructure upgrades. WaterWorld reports that utilities are lobbying Congress to restore the funding as billions in construction projects hang in the balance. 
+
+-------------------------
+en_aigovernance
+2026-02-02 12:00:00
+EU AI Act First Compliance Deadline Takes Effect: What Enterprise AI Teams Must Do Now 
+The EU AI Act's first major compliance deadline took effect on February 2, 2026, triggering obligations for organizations deploying high-risk AI systems in the European Union, including documentation, human oversight, and transparency requirements. The AI Governance Institute provides a compliance checklist and guidance on the risk classification framework that determines applicable obligations. 
+
+-------------------------
+en_gtreview
+2026-01-20 12:00:00
+Major infrastructure projects set to reshape global trade routes in 2026 
+Global Trade Review identifies several large-scale infrastructure projects in the Global South expected to reach financial close or begin construction in 2026, including new port facilities in Africa, South American rail links, and Gulf energy corridors that could remake global commodity and manufactured goods trade flows. The analysis highlights how infrastructure investment is emerging as a geopolitical tool in competition for developing-market trade relationships. 
+
+-------------------------
+en_waterworld
+2026-01-20 12:00:00
+State of the Industry 2026 
+WaterWorld's annual industry survey shows more than half of water utilities expect budget increases in 2026, with 54% anticipating rises driven by rate adjustments and infrastructure grants. Key challenges include PFAS compliance, aging pipe replacement, and workforce shortages as retirements outpace recruitment across the sector. 
+
+-------------------------
+en_nationalmortgagenews
+2026-01-15 12:00:00
+How top mortgage executives view 2026's challenges 
+National Mortgage News surveyed leading mortgage industry CEOs and CFOs who identified rate volatility, compressed margins, and regulatory uncertainty—particularly around CFPB enforcement priorities—as the defining challenges of 2026. Nearly three-quarters of lenders expect mortgage volume to improve year-over-year, with growth concentrated in refinancings and home equity products. 
+
+-------------------------
+en_the_scientist
+2026-01-15 12:00:00
+Industry Leaders Predict Life Science Trends for 2026 
+AI is the defining theme for life sciences in 2026, with industry leaders predicting it will accelerate drug manufacturing, clinical trial data analysis, and regulatory review through generative AI tools being adopted by both companies and the FDA. The Scientist's annual industry forecast also highlights RNA therapeutics maturation, cell and gene therapy commercialization, and GLP-1 drug pipeline expansion as top trends. 
+
+-------------------------
+en_waterdaily
+2026-01-15 12:00:00
+U.S. wastewater infrastructure set for major surge in 2026 
+America's wastewater infrastructure is entering one of its busiest capital investment years in recent memory, with hundreds of municipal systems launching long-deferred treatment plant expansions, sewer separation projects, and full-plant modernizations as federal Infrastructure Investment and Jobs Act funding reaches peak deployment. Water Daily reports that wastewater construction starts are tracking at record levels nationally. 
+
+-------------------------
+en_aigovernance
+2026-01-15 12:00:00
+Commerce Department Evaluation of State AI Laws — Upcoming Regulation & What to Prepare 
+The US Department of Commerce is required by a December 2025 Executive Order to evaluate state AI laws that conflict with federal priorities by March 2026, creating a potential mechanism for federal preemption of state-level AI regulations. The AI Governance Institute advises organizations operating across multiple states to map their AI deployments against both federal and state regulatory requirements in preparation for the evaluation's publication. 
+
+-------------------------
+en_waterdaily
+2025-12-20 12:00:00
+2025 SRF funding breakdown: Where billions in water infrastructure dollars are headed 
+Water Daily analyzes the distribution of Drinking Water and Clean Water State Revolving Fund grants in FY2025, mapping which states received the largest allocations and how funds are being directed across lead pipe replacement, PFAS treatment, and nutrient removal projects. The analysis highlights significant geographic disparities in per-capita infrastructure funding. 
+
+-------------------------
