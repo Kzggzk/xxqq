@@ -19,7 +19,9 @@ Files arrive from <https://massive.com/dashboard> → Flat Files → Options →
 
 ## Daily flow (automated)
 
-`launchd` job `com.kzg.options-report` fires every day at **20:00 Asia/Shanghai** (post US market close):
+The active update rule is fixed-point checking, not continuous iteration.
+
+The site checks for the previous real US market session hourly from **14:00 to 20:00 Asia/Shanghai** (the vendor's publish time is uneven, so several slots cover it):
 
 1. `scripts/cron_daily.sh` orchestrates the chain
 2. `scripts/download_massive.py` — cookie-reuse curl scaffold (exit 2 if env not set, idempotent)
@@ -28,7 +30,9 @@ Files arrive from <https://massive.com/dashboard> → Flat Files → Options →
 5. `npx netlify-cli deploy --prod --dir dist` ships SPA + per-day HTMLs to CDN
 6. Smoke check curls `/` and `/assets/kzg-pack.js` for HTTP 200
 
-If the source csv.gz is missing for the target trading day, daily_update exits with code 2 and the cron log records `WARN: source csv.gz missing`. Trigger the Massive downloader manually in that case.
+The checks are idempotent. If production is already on the target trading day, the later time slots only record `already latest` and do not rebuild or redeploy.
+
+If the source csv.gz is missing for the target trading day, `daily_update.py` exits with code 2 and the run should stop without fake-refreshing the site.
 
 Logs:
 - `~/Library/Logs/kzg-options-report.log` — full chain
@@ -50,6 +54,12 @@ python3 scripts/build_options_site.py --date 2026-05-20 --force
 Daily update for the previous US market day:
 ```bash
 python3 scripts/daily_update.py --deploy
+```
+
+Build and deploy the current public bundle only:
+```bash
+python3 scripts/build_payload.py
+npx netlify-cli deploy --prod --dir dist
 ```
 
 Backfill a window:
@@ -102,6 +112,33 @@ launchctl start com.kzg.options-report
 - `public/reports/YYYY-MM-DD.html` — compact per-day human report (toolbar + i18n)
 - `public/reports/latest.html` — copy of newest report
 - `public/styles/report.css` — shared report styles (cached separately by CDN)
+
+## Portable package
+
+This folder can be zipped and moved as a self-contained project handoff.
+
+Included:
+- `public/` — source site
+- `dist/` — latest built deployable bundle
+- `docs/` — project notes and changelogs
+- `scripts/` — update, build, and packaging scripts
+- `ios/` — iOS companion source
+- `README.md` / `netlify.toml` / `.gitignore`
+
+Excluded from a transfer zip by default:
+- `.git/` — local repository history
+- `.netlify/` — local Netlify link/cache state
+- macOS metadata such as `.DS_Store`
+
+Open locally:
+```bash
+open public/index.html
+```
+
+Serve locally:
+```bash
+python3 -m http.server 8000 --directory public
+```
 
 ## URL routing (netlify.toml)
 
