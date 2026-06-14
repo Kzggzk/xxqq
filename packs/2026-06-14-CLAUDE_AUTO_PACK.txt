@@ -1,0 +1,540 @@
+en_petroleum_news
+2026-06-14 12:00:00
+Explorers 2026: First year of multi-year exploration 
+ConocoPhillips Alaska launches a major multi-year exploration campaign in the National Petroleum Reserve-Alaska, including four permitted exploratory wells and a 3D seismic survey southwest of Nuiqsut. The initiative marks the first year of what the company characterizes as a sustained, multi-season exploration effort in one of America's largest remaining oil provinces. 
+
+-------------------------
+en_petroleum_news
+2026-06-14 10:00:00
+Vertical boundaries extended at Ninilchik 
+Alaska's Division of Oil and Gas approved a vertical boundary extension at the Ninilchik unit, expanding the producing area in one of Southcentral Alaska's key natural gas fields. The approval allows operators to access additional resource intervals not previously included within the unit boundary. 
+
+-------------------------
+en_edr_magazine
+2026-06-12 12:00:00
+Eurosatory 2026: The global defence and security landmark unveiled in Paris 
+Eurosatory 2026 opens June 15-19 at Paris Nord Villepinte, with over 1,800 exhibitors and delegations from more than 90 countries attending the world's premier land and airland defense exhibition. The show focuses on multi-domain operations, autonomous systems, and European rearmament priorities amid the ongoing NATO spending surge. 
+
+-------------------------
+en_azom
+2026-06-12 12:00:00
+IMPLICIT Opens New Pathways for Recycling Auxiliary Composite Manufacturing Waste into High-Value Products 
+The IMPLICIT project is developing recycling methods for single-use auxiliary composite materials such as vacuum bags, release films, and absorbent fabrics that currently end up in landfill or incineration. The initiative targets sectors including aerospace, railway, naval, and renewable energy where composite manufacturing generates substantial plastic waste. 
+
+-------------------------
+en_azom
+2026-06-12 10:00:00
+Forge Nano Secures Semiconductor Wafer Fab Equipment Order from Leading Photonics Technology Company 
+Forge Nano announced that a leading photonics technology company selected its TEPHRA semiconductor wafer fabrication platform, representing growing adoption of atomic layer deposition technology in commercial photonics manufacturing. The order reflects expanding demand for precision surface-engineering solutions in advanced semiconductor production. 
+
+-------------------------
+en_edr_magazine
+2026-06-11 12:00:00
+ILA 2026 - New fighting systems for Eurofighter 
+At the ILA Berlin Air Show, Airbus unveiled new Eurofighter capabilities including the Rafael Litening 5 targeting pod, Spice 250 precision guided munitions, and KEPD 350 Taurus cruise missile. The upgrades position the Typhoon for expanded precision strike roles ahead of its next combat service life extension across European air forces. 
+
+-------------------------
+en_edr_magazine
+2026-06-11 10:00:00
+Elbit Systems and Diehl Defence form strategic partnership to offer the SkyStriker loitering munition system to the German Armed Forces 
+Israeli defense firm Elbit Systems and German company Diehl Defence signed a partnership at ILA to jointly market the SkyStriker advanced loitering munition to the Bundeswehr. The deal reflects Germany's accelerating procurement of precision strike unmanned systems under the Zeitenwende defense investment program. 
+
+-------------------------
+en_mddi_online
+2026-06-10 12:00:00
+5 Packaging Impacts of the Medical Device Miniaturization Trend 
+Medical device packaging is being redesigned to accommodate smaller, more complex devices driven by miniaturization trends in wearables, implantables, and minimally invasive surgical tools. Key challenges include maintaining sterile barrier integrity, supporting precise clinical workflows, and adapting to global regulatory labeling requirements for compact form factors. 
+
+-------------------------
+en_bio_bucks
+2026-06-10 12:00:00
+Biotech M&A Tracker 2026: The Latest Deals 
+BioBucks' continuously updated 2026 M&A tracker documents the latest biotech acquisitions, with major pharma companies pursuing pipeline assets ahead of significant patent cliffs in 2027-2029. The tracker covers all disclosed transaction details including upfront payments, milestone structures, and therapeutic focus areas across oncology, obesity, and gene therapy. 
+
+-------------------------
+en_emarketer
+2026-06-10 12:00:00
+BNPL goes big on AI agents 
+Klarna has entered the agentic commerce arena with an open standard protocol enabling AI agents to complete buy-now-pay-later transactions autonomously on behalf of consumers. The move signals a broader industry shift as BNPL providers compete to integrate with AI shopping assistants before incumbents lock in default payment relationships. 
+
+-------------------------
+en_military_embedded
+2026-06-10 12:00:00
+Multi-domain defense technology trends to be highlighted at Eurosatory 2026 
+The 2026 Eurosatory program is built around multi-domain superiority, remote engagement, land maneuver, air mobility, comprehensive security, and industrial resilience themes tied to current NATO defense requirements. Exhibitors will showcase autonomous ground and aerial systems, next-generation sensors, and integrated command-and-control platforms for the land warfare domain. 
+
+-------------------------
+en_gmk_center
+2026-06-10 12:00:00
+China's rolled steel exports fell by 8.1% y/y in a five-month period 
+China's rolled steel exports declined 8.1% year-on-year in the January-May 2026 period as tightening trade barriers in key markets including the EU and North America curtailed overseas shipments. The reduction reflects the cumulative impact of anti-dumping tariffs and safeguard measures imposed by trading partners concerned about Chinese overcapacity. 
+
+-------------------------
+en_mddi_online
+2026-06-09 12:00:00
+Dexcom CONNECT Trial Delivers Level A Evidence for CGM in Non-Insulin Type 2 Diabetes Population 
+The Dexcom CONNECT trial provided Level A clinical evidence supporting continuous glucose monitoring use in type 2 diabetes patients not on insulin, a significant expansion of CGM indications beyond the traditional insulin-dependent population. The findings are expected to support payer coverage decisions and clinical guideline updates that could broadly expand CGM adoption across a much larger patient base. 
+
+-------------------------
+en_inside_defense
+2026-06-09 12:00:00
+Defense Business Briefing -- June 9, 2026 
+InsideDefense's June 9 defense business briefing covers autonomous weapons company Allen Control Systems announcing a $200 million Series B round at a $2.2 billion valuation, and the Pentagon's push to seek nearly $60 billion for AI programs in the FY-27 reconciliation package. The briefing also highlights continued debate over the proposed Robotic and Autonomous Systems Combatant Command that passed the Senate Armed Services Committee. 
+
+-------------------------
+en_food_safety_mag
+2026-06-07 12:00:00
+Ep. 219: World Food Safety Day 2026 
+Food Safety Magazine's podcast episode marks World Food Safety Day 2026, exploring global progress on reducing the estimated 600 million cases of foodborne illness per year through improved detection technology, traceability systems, and international regulatory harmonization. The episode features discussion of WHO's updated global foodborne disease burden estimates released to coincide with the June 7 observance. 
+
+-------------------------
+en_discovery_alert
+2026-06-07 12:00:00
+Top Mining Stories This Week: Key Industry Shifts in 2026 
+Discovery Alert's weekly roundup highlights battery supply chain localization, resource nationalism across Africa, and industrial wireless connectivity expansion as the three forces most reshaping how mines are financed, operated, and regulated in 2026. The analysis notes that jurisdictions offering stable rules-based investment environments are increasingly attracting critical minerals capital diverted from higher-risk geographies. 
+
+-------------------------
+en_bio_bucks
+2026-06-07 12:00:00
+Biotech BD&L Deal Terms 2026: Upfronts, Milestones + Royalties (Updated Weekly) 
+BioBucks' weekly-updated business development and licensing tracker documents 2026 deal structures showing upfront payments averaging above $100 million for mid-stage assets, with total deal values frequently exceeding $2 billion for first-in-class programs in high-demand therapeutic areas. The data reveals a trend toward larger regulatory milestone payments as buyers shift risk to sellers in an environment of tighter capital and greater FDA approval uncertainty. 
+
+-------------------------
+en_food_safety_mag
+2026-06-07 10:00:00
+WFSD 2026: Exclusive WHO Interview on New Global Foodborne Disease Estimates 
+An exclusive Food Safety Magazine interview with WHO officials previews the updated global foodborne disease burden estimates released on World Food Safety Day 2026, the first comprehensive revision since 2015. The new data incorporates improved surveillance from low- and middle-income countries and is expected to significantly revise upward the economic cost estimates associated with unsafe food. 
+
+-------------------------
+en_inside_defense
+2026-06-05 12:00:00
+Pentagon plans to spend entire FY-26 reconciliation windfall at once; $38 billion boost 
+The Pentagon intends to obligate the full $151 billion received through budget reconciliation in a single fiscal year 2026 spending surge, potentially pushing total defense spending over the $1 trillion threshold for the first time. The accelerated spending approach prioritizes munitions replenishment, hypersonic programs, and AI-enabled command-and-control systems. 
+
+-------------------------
+en_mees
+2026-06-05 12:00:00
+Hormuz Crisis Complicates Gulf States' Summer Electricity Plans 
+The closure of the Strait of Hormuz is complicating summer electricity provision for Gulf states as fuel import disruptions strain power generation capacity during the peak demand season. Regional electricity grids are holding up but states including Kuwait are in talks over developing a Hormuz bypass pipeline while ADNOC considers a products pipeline to Fujairah. 
+
+-------------------------
+en_emarketer
+2026-06-05 12:00:00
+Amazon's fintech partnership expands embedded lending 
+Amazon has partnered with fintech firm Slope to offer AI-underwritten financing to Amazon sellers, reducing friction in the lending process and expanding embedded finance options within the marketplace ecosystem. The deal reflects Amazon's strategy of deepening financial services integration to increase seller stickiness and capture lending revenue from its third-party seller base. 
+
+-------------------------
+en_farms
+2026-06-05 12:00:00
+Three winners announced at GreenTech Innovation Awards 2026 
+The GreenTech Amsterdam 2026 Innovation Awards named Sensie (Innovation Award for Sensie Omni sensor platform), MANNA CEA (Concept Award for MESH AI Greenhouse Automation), and PATS (Impact Award for PATS-C biological crop protection) as winners across three categories. The awards highlight accelerating commercial adoption of sensor-driven, AI-enabled, and biological solutions in controlled-environment and field agriculture. 
+
+-------------------------
+en_food_manufacturing
+2026-06-05 12:00:00
+Walmart Opens Third U.S. Milk Processing Facility in Texas 
+Walmart celebrated the grand opening of its third owned-and-operated milk processing facility in Robinson, Texas, representing more than $350 million in investment and creating over 400 new jobs. The facility expands Walmart's vertically integrated dairy supply chain strategy, reducing dependence on third-party processors while improving freshness and cost control. 
+
+-------------------------
+en_cure_today
+2026-06-03 12:00:00
+Top 5 Takeaways From ASCO 2026 That Patients Should Know 
+CURE Magazine highlights five key patient-relevant findings from the ASCO 2026 annual meeting in Chicago, including advances in pancreatic cancer survival, antibody-drug conjugate approvals in breast cancer, and biomarker-driven treatment selection in lung cancer. The article distills complex clinical data into actionable insights for patients navigating treatment decisions with their oncologists. 
+
+-------------------------
+en_india_briefing
+2026-06-02 12:00:00
+India Manufacturing Tracker 2026 
+India's manufacturing sector commenced FY2026-27 positively with industrial production increasing 4.9% in April 2026, supported by electronics, pharmaceuticals, and capital goods output expansion. The tracker highlights that 12 approved semiconductor manufacturing facilities across six states represent cumulative investments of approximately 1.64 lakh crore rupees, positioning India for significant semiconductor supply chain integration. 
+
+-------------------------
+en_science_daily
+2026-06-01 12:00:00
+New light-powered chip could accelerate AI and quantum computing 
+Scientists unveiled a new type of photonic chip that uses light-matter particles called polaritons to perform computing operations, potentially enabling AI hardware that runs thousands of times faster than conventional silicon chips while consuming far less energy. The breakthrough addresses the fundamental power consumption wall facing current GPU-based AI accelerators. 
+
+-------------------------
+en_gmk_center
+2026-06-01 12:00:00
+Nippon Steel increased steel production by 27.5% y/y in the FY2025/2026 
+Nippon Steel produced 50.5 million tons of crude steel in fiscal year 2025/2026, a 27.5% increase year-over-year, driven by ramping production at its newly acquired U.S. Steel facilities and strong demand from automotive and infrastructure sectors. The company is on track to become the world's second-largest steelmaker by output following its landmark U.S. Steel acquisition. 
+
+-------------------------
+en_cure_today
+2026-06-01 12:00:00
+Keytruda Boosts Seven-Year Survival in Triple-Negative Breast Cancer 
+Seven-year follow-up data from the KEYNOTE-522 trial shows that adding Keytruda (pembrolizumab) to chemotherapy dramatically improves long-term survival for patients with high-risk, early-stage triple-negative breast cancer compared to chemotherapy alone. The data reinforces immunotherapy's role as a standard of care component in early TNBC and supports its use across a broader risk spectrum. 
+
+-------------------------
+en_emarketer
+2026-06-01 12:00:00
+Visa pivots from transactions to tools with VCS Hub 
+Visa launched the Visa Commercial Services Hub, a platform enabling issuers and fintech companies to deliver commercial payment solutions and embedded finance services powered by generative AI. The platform represents a strategic shift from transaction processing toward software infrastructure as Visa competes with fintech challengers in the commercial payments space. 
+
+-------------------------
+en_riscv
+2026-06-01 12:00:00
+A 32-bit RISC-V processor made using molybdenum disulfide instead of silicon 
+Researchers demonstrated a functional 32-bit RISC-V processor fabricated using molybdenum disulfide transistors, a 2D semiconductor material that could enable chips to operate in extreme conditions where silicon fails. The proof-of-concept suggests a pathway to RISC-V-based processors for high-temperature aerospace, downhole drilling, and space applications. 
+
+-------------------------
+en_defence_industry_eu
+2026-06-01 12:00:00
+European Defence Fund: EU allocates one billion euros for next-generation defence technologies 
+The European Commission adopted its fifth annual European Defence Fund work programme, allocating over €1 billion across 57 projects covering ground combat, space, air and naval combat, energy resilience, and environmental transition. The funding supports collaborative R&D across EU member states aimed at reducing strategic dependencies and accelerating the development of next-generation European defense capabilities. 
+
+-------------------------
+en_medical_device_network
+2026-06-01 12:00:00
+FDA could intensify focus on medtech cybersecurity in 2026 
+GlobalData analysis warns that FDA cybersecurity scrutiny for medical devices is expected to intensify in 2026 following a wave of reported vulnerabilities in connected diagnostic and therapeutic equipment. Device manufacturers face increasing pressure to embed security-by-design principles throughout product development and to maintain post-market cybersecurity surveillance programs as a regulatory baseline. 
+
+-------------------------
+en_intellectia
+2026-06-01 12:00:00
+Nvidia's $40B AI Investment Strategy: Analysis & Stock Forecast 2026 
+Nvidia has committed over $40 billion to equity investments in just the first five months of 2026, including a $30 billion stake in OpenAI, representing a strategic transformation from chipmaker to AI ecosystem investor. The capital deployment reflects Nvidia's aim to entrench its position at the center of the AI value chain as competitors including AMD and custom silicon providers erode its GPU market share at the margins. 
+
+-------------------------
+en_igrow_news
+2026-06-01 12:00:00
+AgTech Consolidation and M&A in 2026: Why Acquisitions Are Replacing Venture Rounds 
+Ten agtech acquisitions closed in May 2026 alone, double the M&A count of any comparable month in the iGrow News database, as established agricultural operators accelerate consolidation of fragmented precision farming technology assets. The trend reflects a market maturation where strategic acquirers are outcompeting venture capital as the primary exit pathway for AgTech startups with proven ROI. 
+
+-------------------------
+en_petroleum_news
+2026-05-31 12:00:00
+New offshore assessment 
+The U.S. Bureau of Ocean Energy Management published its 2026 assessment of undiscovered offshore oil and gas resources in Alaska basins including the Beaufort Sea, Chukchi Sea, and Cook Inlet, providing updated volumetric estimates informing future federal leasing decisions. Alaska's oil sector employment meanwhile hit 9,900 jobs in April 2026, an 11.1% increase from April 2025, reflecting strong upstream activity across the North Slope and Cook Inlet. 
+
+-------------------------
+en_science_daily
+2026-05-30 12:00:00
+New 3D silicon chip breakthrough could extend Moore's Law for years 
+Researchers demonstrated a new 3D silicon integration technique that stacks multiple transistor layers vertically, bypassing planar scaling limits and potentially extending Moore's Law performance improvements for several additional technology generations. The breakthrough enables logic and memory layers to be combined within a single chip die, dramatically reducing data movement latency and power consumption in AI inference workloads. 
+
+-------------------------
+en_mees
+2026-05-29 12:00:00
+Middle East Conflict Disrupts Regional Investment as Global Spending Stalls 
+The U.S.-Israel military strikes on Iran launched March 1, 2026 and the resulting Hormuz closure have disrupted energy investment across the broader Middle East, with international oil companies reassessing project timelines and final investment decisions in the Gulf region. Global energy spending is stalling as risk premiums rise, while the IEA projects a $3.4 trillion annual investment level is still needed to meet energy transition targets. 
+
+-------------------------
+en_mees
+2026-05-29 10:00:00
+Egypt Accelerates Arrears 
+Egypt is accelerating settlement of arrears owed to oil and gas producers, aiming to fully clear the backlog by June 10 as improved gas revenues following LNG contract renegotiations provide fiscal headroom. The arrears resolution is a prerequisite for attracting new upstream investment needed to halt Egypt's declining domestic gas production. 
+
+-------------------------
+en_cure_today
+2026-05-28 12:00:00
+5 Breast Cancer Study Results Set to Watch For at ASCO 2026 
+CURE Magazine previews five pivotal breast cancer studies scheduled for presentation at the ASCO 2026 annual meeting in Chicago, including KEYNOTE-522 seven-year survival data, a Phase III trial of an oral SERD in ER-positive metastatic breast cancer, and results from a ctDNA-guided treatment de-escalation study in early HER2-positive disease. The studies are expected to generate significant practice-changing data across multiple breast cancer subtypes and treatment settings. 
+
+-------------------------
+en_inside_defense
+2026-05-28 12:00:00
+Pentagon moves to put Army Patriot interceptor on Navy warships with $65 million boost 
+The Pentagon directed $65 million in FY2026 reconciliation funds to integrate the Army's Patriot Advanced Capability-3/Missile Segment Enhancement interceptor with the Navy's Aegis combat system, enabling surface ships to engage ballistic missiles with the high-performance PAC-3 MSE seeker. The integration would give Aegis destroyers and cruisers a complementary terminal-phase interceptor to complement the SM-3 and SM-6 in layered ballistic missile defense architectures. 
+
+-------------------------
+en_china_ev_home
+2026-05-26 12:00:00
+BYD Launches 2026 Sealion 06 DM-i in China, Priced From $19,110 
+BYD officially launched the 2026 Sealion 06 DM-i plug-in hybrid SUV in China with four variants priced from RMB 129,900 to RMB 159,900 ($19,110-$23,530), offering over 100km of electric-only range and targeting the mainstream family SUV segment dominated by traditional fuel vehicles. The launch reflects BYD's strategy of using competitive DM-i hybrid pricing to accelerate electrification of segments where pure EVs have faced consumer range anxiety resistance. 
+
+-------------------------
+en_gmk_center
+2026-05-25 12:00:00
+Germany's steel industry is at a turning point – WV Stahl 
+Germany's steel industry association WV Stahl characterized the sector as being at a structural turning point, with high energy costs, Chinese import competition, and decarbonization investment requirements simultaneously pressuring margins. The association called for accelerated implementation of the EU Carbon Border Adjustment Mechanism and expanded state support for green hydrogen-based steel production. 
+
+-------------------------
+en_military_embedded
+2026-05-22 12:00:00
+SOF Week 2026 Wrap-Up | USSOCOM Partnership, Global Special Operations, & Importance of Nonprofits 
+SOF Week 2026 in Tampa concluded with USSOCOM highlighting its expanded industry partnerships, international special operations collaboration with 50 participating nations, and the growing role of nonprofits in supporting special operations forces families. The event's new Outpost aviation hub at Peter O'Knight Airport provided live demonstrations of autonomous air, ground, and sea systems drawing record exhibit attendance. 
+
+-------------------------
+en_china_ev_home
+2026-05-21 12:00:00
+IEA Forecasts Global EV Sales to Rise 15% to 23 Million Units in 2026 
+The IEA projects global electric vehicle sales will reach 23 million units in 2026, a 15% year-on-year increase representing nearly 30% of all new car sales globally. China is expected to account for approximately 60% of global EV production, having supplied the majority of the 2.5 million units exported in 2025, as the country's EV manufacturers expand aggressively into Southeast Asian, Middle Eastern, and Latin American markets. 
+
+-------------------------
+en_farms
+2026-05-20 12:00:00
+Secretary Naig Joins Gov. Reynolds for Farm to Faucet Water Quality Bill Signing 
+Iowa Secretary of Agriculture Mike Naig joined Governor Kim Reynolds for the signing of the Farm to Faucet water quality bill, establishing a new framework for voluntary, incentive-based nutrient management practices across Iowa's agricultural landscape. The legislation expands funding for cover crop programs, precision fertilizer application, and constructed wetlands aimed at reducing nitrogen and phosphorus runoff into waterways. 
+
+-------------------------
+en_food_manufacturing
+2026-05-20 12:00:00
+Key Takeaways from Report on Tyson Plant Closure in Nebraska 
+A new report on Tyson Foods' Lexington, Nebraska beef plant closure details the community economic impact of eliminating 3,200 jobs from one of the state's largest single employers. The analysis projects that hundreds of families will relocate in search of alternative employment, creating downstream pressures on local housing markets, school enrollment, and municipal tax revenues. 
+
+-------------------------
+en_azom
+2026-05-20 12:00:00
+New Studies for Manufacturing Advanced Materials in Orbit 
+The UK Space Agency awarded contracts to three UK companies to investigate producing advanced materials in Low Earth Orbit, where conditions including microgravity, natural vacuum, and extreme temperatures can create products difficult or impossible to manufacture on Earth. The initiative aims to establish commercial in-space manufacturing capabilities for high-performance materials applicable in biomedical, aerospace, and optics sectors. 
+
+-------------------------
+en_discovery_alert
+2026-05-20 12:00:00
+US-EU Critical Minerals Partnership: Reshaping Western Mining in 2026 
+A new US-EU critical minerals partnership is establishing coordinated border-adjusted pricing mechanisms and joint investment frameworks that create structural economics supporting higher long-term price assumptions for Western-sourced lithium, cobalt, and rare earths. The agreement is accelerating capital flows toward mining projects in politically stable jurisdictions as both blocs seek to reduce dependence on Chinese critical mineral processing. 
+
+-------------------------
+en_military_embedded
+2026-05-20 12:00:00
+SOF Week 2026: USSOCOM's British-made uncrewed surface/subsurface vehicle takes the stage 
+The K4 MANTA uncrewed surface and subsurface vehicle developed by USSOCOM and Kraken Technology Group conducted multiple demonstrations at SOF Week 2026, following a March contract covering delivery of 20 platforms to British special forces. The hybrid surface-subsurface vehicle can operate in both modes autonomously, enabling covert insertion support and maritime surveillance missions. 
+
+-------------------------
+en_mddi_online
+2026-05-20 12:00:00
+China to Lower Levies on Medical Products in 2026 
+China plans to slash import tariffs on specific medical devices including artificial blood vessels and diagnostic kits in 2026, aiming to reduce healthcare costs and improve patient access to advanced therapies. The tariff reductions could benefit foreign medical device manufacturers seeking expanded market access in China while supporting Beijing's healthcare system modernization objectives. 
+
+-------------------------
+en_mondaq
+2026-05-19 12:00:00
+SEC Proposes Reforms To Filer Status Categories And Expanded Disclosure Accommodations 
+On May 19, 2026, the SEC proposed rule amendments to revise filer status categories, replacing existing categories with two primary reporting classifications and expanding disclosure accommodation eligibility for smaller companies. The proposed changes are designed to reduce compliance burdens for emerging growth companies while maintaining investor protection standards in the public markets. 
+
+-------------------------
+en_science_daily
+2026-05-18 12:00:00
+Forget electrons, this breakthrough uses light-matter particles to power AI 
+Scientists developed a computing platform using polaritons—hybrid light-matter quasiparticles—to perform matrix operations fundamental to neural network inference at room temperature, offering speed advantages over photonic chips that require cryogenic cooling. The platform demonstrated an order-of-magnitude improvement in energy efficiency compared to state-of-the-art GPU matrix accelerators for equivalent computational throughput. 
+
+-------------------------
+en_riscv
+2026-05-15 12:00:00
+A Survey on RISC-V Security: Hardware and Architecture 
+A comprehensive survey from Marvell Semiconductor researchers examines the current state of hardware security for RISC-V processors, cataloging known attack surfaces including side-channel vulnerabilities, physical fault injection risks, and microarchitectural weaknesses in open-source implementations. The paper provides a framework for security evaluation applicable to RISC-V deployments in automotive, industrial IoT, and defense applications. 
+
+-------------------------
+en_intellectia
+2026-05-15 12:00:00
+AI Memory Stocks Analysis 2026: Top Picks in the Data Center Boom 
+Memory is projected to account for roughly 30% of hyperscaler AI spending in 2026, up from about 8% in 2023-2024, as HBM shortages ripple through the AI infrastructure supply chain. The analysis identifies SK Hynix and Micron as prime beneficiaries, with HBM3E supply constraints expected to sustain elevated pricing through at least the first half of 2027. 
+
+-------------------------
+en_india_briefing
+2026-05-15 12:00:00
+India's Food Processing Industry 2026: PLI Growth & Market Outlook 
+India's food processing sector is experiencing policy-driven growth as the Production Linked Incentive scheme emerges as a key catalyst driving investment, enhancing processing capacity, and promoting agricultural exports. The sector is attracting multinational food manufacturers seeking to localize production for India's 1.4 billion consumer market while benefiting from preferential government financing and streamlined regulatory approvals. 
+
+-------------------------
+en_bruegel
+2026-05-15 12:00:00
+Better regulation in the European Union needs a fresh start 
+A Bruegel policy brief argues that EU regulatory quality has deteriorated as the volume of new legislation outpaced impact assessment capacity, and proposes structural reforms including mandatory regulatory sunset clauses, independent regulatory review boards, and greater use of regulatory sandboxes. The brief recommends that the European Commission prioritize reducing the cumulative compliance burden on SMEs as a precondition for competitiveness improvements outlined in the Draghi report. 
+
+-------------------------
+en_food_manufacturing
+2026-05-15 12:00:00
+The Future of the Foodservice Supply Chain 
+Analysis of how the foodservice supply chain is evolving in response to labor cost inflation, automation adoption, and sustainability regulations, with major food processors investing in robotics and AI-driven quality control to reduce reliance on manual processing labor. Companies that can demonstrate supply chain traceability and reduced food waste are gaining preferred supplier status as large foodservice operators embed sustainability criteria into procurement decisions. 
+
+-------------------------
+en_discovery_alert
+2026-05-12 12:00:00
+Top Five Mining Stories Reshaping the Sector in 2026 
+Discovery Alert's analysis covers the Australian Federal Budget announced May 12, 2026, which maintained existing tax settings for mining while expanding critical minerals investment incentives, alongside resource nationalism trends in West Africa, battery supply chain reshoring in the US, and escalating gold prices near $4,300-per-ounce support levels. The five stories collectively define a 2026 mining landscape marked by geopolitical bifurcation between Western-aligned and China-aligned critical mineral supply chains. 
+
+-------------------------
+en_china_ev_home
+2026-05-11 12:00:00
+China EV Battery Installations Hit 62.4 GWh in April, CATL Holds 46.64% 
+Chinese EV battery installations reached 62.4 GWh in April 2026, with CATL maintaining a dominant 46.64% market share despite intensifying competition from BYD and a growing field of second-tier suppliers. The data reflects sustained strong NEV penetration in China's domestic auto market, with battery installation volumes on track to exceed 700 GWh for the full year 2026. 
+
+-------------------------
+en_food_manufacturing
+2026-05-10 12:00:00
+Key Takeaways from Report on Tyson Plant Closure in Nebraska 
+A report on the Tyson Foods Lexington, Nebraska beef plant closure projects significant community economic disruption as 3,200 job losses ripple through local housing, school, and municipal finance systems in a small Nebraska city. The closure reflects broader consolidation pressures in US beef processing as automation investment reduces labor requirements and smaller plants face uncompetitive operating economics. 
+
+-------------------------
+en_the_aviationist
+2026-05-06 12:00:00
+DARPA's XRQ-73 SHEPARD Hybrid-Electric Flying Wing Prototype Takes Flight 
+DARPA's XRQ-73 SHEPARD hybrid-electric flying wing prototype completed its first flight at an undisclosed test facility, validating the hybrid-electric propulsion architecture for potential military utility in persistent surveillance and logistics missions. The flying wing design optimizes aerodynamic efficiency for extended-range unmanned operations while the hybrid drivetrain enables reduced acoustic and thermal signatures compared to conventional gas turbine systems. 
+
+-------------------------
+en_igrow_news
+2026-05-01 12:00:00
+Animal AgTech Innovation Summit to Showcase Livestock Tech Pioneers in Fort Worth 
+The Animal AgTech Innovation Summit in Fort Worth will feature livestock technology companies focused on precision animal health monitoring, alternative protein production, and AI-driven herd management systems. The event highlights the growing investment in livestock technology as a complement to the broader precision crop agriculture focus that has dominated AgTech investment flows. 
+
+-------------------------
+en_mondaq
+2026-04-30 12:00:00
+Compliance Update — Insights And Highlights April 2026 
+Mondaq's April 2026 financial services compliance roundup covers the Bankers Compliance Task Force session addressing check fraud escalation, elder financial exploitation, and evolving BSA/AML requirements for digital asset transactions. The update also highlights new FinCEN residential real estate reporting obligations effective March 1, 2026, requiring disclosure of beneficial ownership in non-financed residential real estate purchases. 
+
+-------------------------
+en_india_briefing
+2026-04-28 12:00:00
+India-EU FTA 2026: India-Germany Trade & Business Opportunities 
+Germany's Federal Chancellor Friedrich Merz visited India in January 2026 ahead of the India-EU free trade agreement negotiations gaining momentum, with both sides targeting a framework agreement by year-end. The bilateral trade relationship is expanding in strategic sectors including semiconductors, green hydrogen, and advanced manufacturing, with German companies seeking manufacturing partnerships to diversify supply chains away from China. 
+
+-------------------------
+en_aacr
+2026-04-22 12:00:00
+From the Bench, AACR Annual Meeting 2026: Innovative Tools Uncover New Insights Into Cancer 
+AACR's post-meeting digest highlights breakthrough tools presented at the San Diego annual meeting, including ORIGAMI, a platform that measures cancer cell surface area and volume to define heterogeneous cell states in melanoma and monitor treatment-induced transitions indicating emerging resistance. The tools reflect growing integration of spatial biology, single-cell profiling, and AI-driven image analysis in translational cancer research. 
+
+-------------------------
+en_composites_world
+2026-04-22 12:00:00
+The state of composites: CW's JEC 2026 recap 
+CompositesWorld's JEC World 2026 recap reports the exhibition drew more than 45,000 professional visits from 94 countries with over 1,400 exhibitors showcasing advances in automated fiber placement, out-of-autoclave manufacturing, and sustainable bio-based resins. The show underscored a decisive shift in the composites industry toward defense-driven demand and sustainable manufacturing processes. 
+
+-------------------------
+en_composites_world
+2026-04-22 10:00:00
+JEC 2026 highlights: AFP-RTM integration, new vitrimer prepreg, metal coated fiber in battery cases and more 
+JEC World 2026 featured key innovations including integrated AFP-RTM processes enabling faster production of structural aerospace parts, a new vitrimer-based prepreg system allowing thermoset composites to be reshaped and recycled, and metal-coated carbon fiber for structural battery cases in electric vehicles. The innovations reflect the industry's focus on closing the gap between composites' performance advantages and traditional manufacturing economics. 
+
+-------------------------
+en_aacr
+2026-04-20 12:00:00
+American Association for Cancer Research Inaugurates New Leadership During AACR Annual Meeting 2026 
+Keith T. Flaherty, MD was inaugurated as AACR President for 2026-2027 during the opening of the annual meeting in San Diego, with the organization also announcing nine early-stage investigators and six mid-career investigators each receiving $1 million Trailblazer Cancer Research Grants. The leadership transition comes as AACR expands its policy advocacy on NIH funding threats and cancer health equity initiatives. 
+
+-------------------------
+en_riscv
+2026-04-20 12:00:00
+One ISA, Infinite Use Cases: RISC-V and the Road to Workload-Specific Silicon 
+RISC-V International blog post by co-architect Krste Asanović argues that the open ISA's custom extension capability is enabling a new generation of workload-specific chips optimized for AI inference, edge computing, automotive safety, and space applications that cannot be cost-effectively served by general-purpose ARM or x86 designs. The post notes that 2026 marks a decisive shift from RISC-V aspiration to RISC-V execution with hundreds of shipping silicon products. 
+
+-------------------------
+en_medical_device_network
+2026-04-15 12:00:00
+Medtech clinical trials navigate macro trends and regulatory changes 
+Medical device clinical trials are adapting to simultaneous headwinds including FDA staffing reductions that are slowing device review timelines, tighter EU MDR requirements, and shifting investor sentiment away from early-stage AI-powered digital therapeutics. Companies with strong clinical data packages and diversified regulatory strategies are attracting disproportionate capital while others face delays of 12-18 months in key markets. 
+
+-------------------------
+en_defence_industry_eu
+2026-04-15 12:00:00
+EDA brings seven EU states and shipbuilders together to shape future European Combat Vessel frigates 
+The European Defence Agency hosted Belgium, Cyprus, Greece, Spain, Italy, the Netherlands, and Portugal alongside major shipbuilders to advance design and requirements for a new family of European Combat Vessel frigates. The multilateral initiative follows a 2024 letter of intent and represents a step toward shared European naval procurement that could reduce per-unit costs and harmonize fleet interoperability. 
+
+-------------------------
+en_cset
+2026-04-15 12:00:00
+Certain Policy Measures to Accelerate the Construction of the Science and Technology Finance System and Strongly Support a High Level of Self-Reliance in Science and Technology 
+CSET published a translation of China's April 2026 policy encouraging greater capital market funding for domestic technology companies, covering measures to expand equity financing channels for semiconductor, AI, and advanced manufacturing enterprises. The policy reflects Beijing's intensified effort to build a domestic innovation finance ecosystem less dependent on foreign venture capital. 
+
+-------------------------
+en_bruegel
+2026-04-15 12:00:00
+The New Global Imbalances: Why Care, Why Now 
+Bruegel's essay series examines the causes of and remedies for current account imbalances that have reached their widest since the 2008 financial crisis, with US deficits and Chinese surpluses at historic extremes amid trade fragmentation. The essay argues that benign neglect of global imbalances risks repeating the conditions that preceded the 2007-2009 financial crisis, requiring coordinated G20 exchange rate and fiscal policy adjustments. 
+
+-------------------------
+en_composites_world
+2026-04-13 12:00:00
+Composites end markets: Aviation and advanced air mobility (2026) 
+CompositesWorld's 2026 aviation market analysis positions the year as pivotal for advanced air mobility, with the groundwork being laid for more robust UAM operations expected in 2027-2030 as regulatory frameworks and certification pathways mature. Demand from defense remains the strongest growth driver for structural composites with geopolitical rearmament programs across Europe and Asia accelerating procurement of composite-intensive platforms. 
+
+-------------------------
+en_farms
+2026-04-01 12:00:00
+Agriculture and Agri-Food Canada's Consultation on the 2026 Next Policy Framework 
+Agriculture and Agri-Food Canada opened consultation on the Next Policy Framework, a five-year federal-provincial-territorial investment program covering 2028-2033 that will shape government support for Canadian agriculture. The consultation solicits input from producers and industry on priorities including climate adaptation, digital agriculture adoption, competitiveness, and agri-food supply chain resilience. 
+
+-------------------------
+en_bio_bucks
+2026-04-01 12:00:00
+Biotech M&A Q1 2026 
+Biotech M&A activity reached approximately $18 billion in Q1 2026 across ten major transactions, driven by large pharma deploying capital to replenish pipelines facing patent cliffs in 2027-2029 across key therapeutic franchises. GLP-1 obesity, radiopharmaceuticals, and gene therapy represented the highest-valued therapeutic categories attracting acquirer attention in the quarter. 
+
+-------------------------
+en_intellectia
+2026-04-01 12:00:00
+AI Data Center Investment: The $3 Trillion Infrastructure Opportunity 2026 
+Tech giants including Microsoft, Amazon, Alphabet, and Meta are collectively investing over $650 billion in AI data center infrastructure in 2026 alone, a 36% increase from 2025, as hyperscalers race to secure compute capacity for training and inference at scale. The spending surge is creating investment opportunities across the full supply chain from semiconductor equipment to real estate investment trusts and utility providers. 
+
+-------------------------
+en_aacr
+2026-04-01 12:00:00
+FDA Approvals in Oncology: January-March 2026 
+AACR's quarterly FDA approval roundup for Q1 2026 covers accelerated approval of zongertinib for HER2-mutant non-small cell lung cancer, full approval expansions for pembrolizumab in muscle-invasive bladder cancer, and several novel ADC approvals in breast and ovarian cancers. The Q1 approvals reinforce the regulatory momentum behind precision oncology approaches and antibody-drug conjugate platforms. 
+
+-------------------------
+en_medical_device_network
+2026-04-01 12:00:00
+The 2026 MedTech Forum: innovation and regulation lead the agenda 
+The 2026 MedTech Forum in Sweden focused on the European Medicines Agency's newly launched innovative device pilot program and evolving EU IVDR implementation requirements, with MedTech Europe CEO Oliver Bisazza praising the EMA pilot as responding to industry calls for faster regulatory pathways. The forum also highlighted growing divergence between US and EU regulatory timelines as FDA staffing reductions slow American device clearances. 
+
+-------------------------
+en_defence_industry_eu
+2026-03-19 12:00:00
+European Commission unveils White Paper and ReArm Europe Plan to strengthen defence capabilities 
+The European Commission published its White Paper for European Defence alongside the ReArm Europe plan, proposing measures to improve military mobility, strategic stockpiling, and border security while deepening integration with Ukraine's defense industrial base. The package unlocks up to €150 billion in defense loans and removes barriers to national defense spending under EU fiscal rules. 
+
+-------------------------
+en_mondaq
+2026-03-15 12:00:00
+Key Takeaways From SIFMA's 2026 Compliance & Legal Seminar 
+Mondaq summarizes key regulatory insights from the SIFMA 2026 Compliance & Legal Seminar, highlighting enforcement priorities under the new SEC leadership including recalibrated ESG disclosure enforcement, digital asset taxonomy rules, and the SEC-CFTC memorandum of understanding on jurisdictional coordination announced in March. Attendees noted a significant pivot toward principles-based compliance expectations versus the prescriptive rulemaking approach of the prior administration. 
+
+-------------------------
+en_shipfinex
+2026-03-15 12:00:00
+Global Maritime Trends 2026 Shaping the Shipping Industry 
+Shipfinex identifies three dominant forces reshaping maritime in 2026: stricter IMO climate regulations requiring lower carbon intensity ratings, faster digital adoption including AI-powered port logistics and IoT vessel monitoring, and rising geopolitical risk on key trade routes including the Hormuz Strait and Red Sea. The analysis notes that tonnage demand growth of 3% is significantly lagging capacity growth of 8%, creating competitive pressure on freight rates outside tanker markets affected by supply disruptions. 
+
+-------------------------
+en_bruegel
+2026-03-10 12:00:00
+Working Paper 03/2026: European Trade Policy in the Age of Geoeconomic Competition 
+Bruegel's third working paper of 2026 examines how the EU should restructure its trade policy toolkit to balance market access objectives with strategic autonomy goals in critical sectors. The paper analyzes the trade-off between multilateral trade rules and unilateral defensive instruments such as the Foreign Subsidies Regulation and proposes a graduated response framework for different categories of trade-distorting foreign government interventions. 
+
+-------------------------
+en_igrow_news
+2026-03-04 12:00:00
+GROWMARK Integrates AI Agent Into myFS Agronomy App for 2026 Crop Season 
+GROWMARK launched a new AI agent within its myFS Agronomy app for the 2026 crop season, developed in collaboration with Intelinair, providing farmers with real-time AI-assisted decision support for input application, pest scouting, and yield optimization. The integration follows Rainbow Crops' $7 million Gates Foundation grant for complex agronomic trait development, both reflecting broader AI adoption across the agronomy value chain. 
+
+-------------------------
+en_shipfinex
+2026-02-15 12:00:00
+Top 10 LNG Tanker Companies in the World (2026 Ranking) 
+Shipfinex's 2026 ranking of LNG tanker owners is led by Qatar Gas Transport Company (Nakilat), MOL LNG Transport, and NYK LNG Shipholding, with the orderbook entering 2026 at over 400 vessels under construction representing approximately 47% of the existing active fleet. The record orderbook reflects anticipated LNG demand growth from Asia and Europe as both regions accelerate away from Russian pipeline gas dependence. 
+
+-------------------------
+en_the_aviationist
+2026-02-10 12:00:00
+Saudi Arabian Military's Modernization in the Spotlight at World Defense Show 
+F-35 fighter jets flew over Riyadh during the World Defense Show 2026 as Saudi Arabia prepares to receive 48 aircraft under a landmark US defense deal, with the Kingdom also showcasing domestically developed HEET 4x4 and HEET 8x8 armored vehicles. The show underscored Saudi Arabia's accelerating defense industrialization strategy aimed at localizing 50% of defense spending by 2030. 
+
+-------------------------
+en_cset
+2026-02-01 12:00:00
+Chinese Catalogue of Technologies Prohibited or Restricted from Export [July 2025] 
+CSET published its translation and analysis of China's July 2025 export control catalogue identifying technologies prohibited or restricted from export, covering categories including advanced semiconductor manufacturing, AI systems, quantum computing, and certain aerospace technologies. The document gives China's Ministry of Commerce authority to control which domestic technologies can be exported to which countries, functioning as a counterpart to U.S. export control lists. 
+
+-------------------------
+en_the_aviationist
+2026-01-29 12:00:00
+U.S. Navy CNO Warns F/A-XX Must Launch Now to Face Future Air Defense Threats 
+Chief of Naval Operations Admiral Daryl Caudle warned Congress that the Navy must accelerate development of the F/A-XX sixth-generation carrier fighter to ensure it can penetrate advanced air defense systems that regional adversaries including Iran are fielding. The CNO's statement reflects urgency around replacing aging F/A-18E/F Super Hornets before the capability gap against increasingly sophisticated integrated air defense systems widens. 
+
+-------------------------
+en_shipfinex
+2026-01-20 12:00:00
+The Capesize Rally 2025-2026: Iron Ore, Coal & Dry Bulk Recovery 
+The Capesize dry bulk market entered 2026 buoyed by strong iron ore demand from China, elevated Brazilian Vale export volumes, and incremental thermal coal shipments driven by European energy security concerns. The Baltic Dry Index Capesize component rose above 3,000 points in early 2026, the highest level since the post-pandemic commodity supercycle of 2021. 
+
+-------------------------
+en_cset
+2026-01-10 12:00:00
+Proposal of the Central Committee of the Chinese Communist Party on Drawing Up the 15th Five-Year Plan for National Economic and Social Development 
+CSET published an English translation of the CCP Central Committee's October 2025 proposal outlining priorities for China's 15th Five-Year Plan covering 2026-2030, with emphasis on technological self-reliance, domestic consumption expansion, and green industrial transformation. The document identifies artificial intelligence, quantum technology, biotechnology, and advanced manufacturing as the primary innovation battlegrounds for the plan period. 
+
+-------------------------
