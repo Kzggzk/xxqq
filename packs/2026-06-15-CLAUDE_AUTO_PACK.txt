@@ -1,0 +1,474 @@
+en_spaceflightnow
+2026-06-12 12:00:00
+SpaceX launches Starlink mission from Cape Canaveral as stock trades on the Nasdaq for first time 
+SpaceX launched a Starlink mission on June 12 simultaneously with the company's historic IPO debut on the Nasdaq under ticker SPCX, valuing SpaceX at $1.77 trillion and making it the largest public offering in history. The mission marked a turning point for the commercial space industry as SpaceX became a publicly traded company while continuing routine launch operations. 
+
+-------------------------
+en_janes
+2026-06-12 12:00:00
+PLARF likely taking delivery of DF-26 launchers 
+Open-source analysis indicates China's People's Liberation Army Rocket Force is likely receiving new DF-26 intermediate-range ballistic missile launchers, expanding the force's capacity to strike US bases in the Pacific. The DF-26 is dual-capable and can carry conventional or nuclear warheads at ranges covering Guam. 
+
+-------------------------
+en_tradewinds_news
+2026-06-12 12:00:00
+Timing, timing and timing: Pareto banker says shipping equity window is wide open 
+Pareto Securities is advising shipowners to pursue equity raises now as capital markets show strong appetite for shipping stocks amid a prolonged freight rate supercycle. The bank's head of shipping finance said conditions are the most favourable in over a decade for public and private equity transactions. 
+
+-------------------------
+en_fintech_futures
+2026-06-12 12:00:00
+FinTech Futures: Top five news stories of the week – 12 June 2026 
+FinTech Futures rounds up the week's biggest financial technology stories including new open banking developments, stablecoin regulatory progress in the EU, and major core banking system replacements at two European retail banks. The week also saw Mastercard unveil an AI-powered fraud detection upgrade claimed to reduce false positive rates by 40%. 
+
+-------------------------
+en_janes
+2026-06-11 12:00:00
+US approves proposed F-16 sale to Peru 
+The US State Department granted approval for a proposed Foreign Military Sale of F-16 fighter jets to Peru totalling USD 3.4 billion, covering 24 aircraft, associated equipment, weapons, and training. The sale is intended to modernise Peru's air force and deepen defence ties between Washington and Lima. 
+
+-------------------------
+en_healthcare_it_news
+2026-06-11 12:00:00
+EHR vendor notebook: Elsevier, athenahealth and PointClickCare ramp up agentic AI 
+Major EHR and health IT vendors including Elsevier, athenahealth, and PointClickCare have announced expanded agentic AI integrations that automate clinical documentation, prior authorisation, and patient communication workflows. The wave of deployments marks a shift from AI pilots to production-scale rollouts across US health systems. 
+
+-------------------------
+en_marktechpost
+2026-06-10 12:00:00
+Top AI Coding Agents and Development Platforms in 2026: Atoms, Devin, Windsurf, Cursor, Warp, and More Compared 
+MarkTechPost surveys the leading AI-powered coding agents and development environments competing for enterprise developer adoption in 2026, covering tools from Atoms and Devin to Windsurf, Cursor, and Warp. The guide evaluates each platform on agentic autonomy, context window, integration breadth, and enterprise security capabilities. 
+
+-------------------------
+en_payments_dive
+2026-06-10 12:00:00
+BNPL provider debuts high-yield savings account to lure customers from banks 
+A leading buy-now-pay-later provider launched a high-yield savings account offering rates competitive with top online banks, escalating its bid to expand from lending into full consumer deposit relationships. The move signals that BNPL companies are pursuing a broader financial super-app strategy rather than remaining single-product lenders. 
+
+-------------------------
+en_business_standard
+2026-06-10 12:00:00
+Muthoot Finance slips 4%, at 9-month low; what's making Street nervous? 
+Shares of Muthoot Finance fell 4% to a nine-month low as investors reacted to concerns over rising gold loan competition from banks and tighter RBI supervision of non-bank financiers. Analysts flagged that recent regulatory guidance on gold loan LTV ratios could squeeze margins for the sector's largest players. 
+
+-------------------------
+en_janes
+2026-06-10 12:00:00
+Ukraine conflict: US approves extended range JDAMs for Ukraine 
+The US Department of State approved the transfer of extended-range Joint Direct Attack Munition tail kits to Ukraine, covering 1,200 KMU-572 and 332 KMU-556 units valued at USD 373.6 million. The precision-guided munitions will extend Ukraine's ability to strike targets beyond the range of standard JDAM kits. 
+
+-------------------------
+en_pv_magazine_usa
+2026-06-09 12:00:00
+Fire, hail, and the hard lessons: Brokers weigh in on the 2026 Solar Risk Assessment 
+Insurance brokers contributing to the 2026 Solar Risk Assessment warned that hail losses and fire incidents at utility-scale PV installations are driving up premiums and reducing coverage availability in hail-prone states. The report underscores growing underwriting challenges as the US solar fleet expands into riskier geographies without sufficient risk mitigation practices. 
+
+-------------------------
+en_tradewinds_news
+2026-06-08 12:00:00
+New shipping shock brewing as delays grow at Panama Canal 
+Panama Canal transit delays are lengthening again as vessel queues build due to a combination of seasonal low-water conditions and record container traffic, threatening to replicate the costly disruptions seen in late 2023. Shipbrokers warn that if wait times extend beyond 10 days, carriers will increasingly route vessels via Cape Horn, adding two weeks to transoceanic voyages. 
+
+-------------------------
+en_spaceflightnow
+2026-06-07 12:00:00
+SpaceX launches Falcon 9 rocket booster on record-breaking 35th flight 
+A SpaceX Falcon 9 booster completed its record-breaking 35th flight, lifting off from Cape Canaveral on a Starlink mission and successfully landing on the drone ship Of Course I Still Love You. The milestone underscores SpaceX's rapid booster reuse tempo, with the fleet now averaging over 20 flights per booster. 
+
+-------------------------
+en_modern_diplomacy
+2026-06-04 12:00:00
+2026 Shangri-La Dialogue: Why Stable US-China Relations Are Vital for Asia-Pacific Security 
+Analysis of the June 2026 Shangri-La Dialogue in Singapore argues that sustained US-China strategic communication is essential to prevent accidental escalation in the South China Sea and Taiwan Strait. China presented itself as committed to regional stability while calling on the US to translate diplomatic promises from the Beijing summit into concrete deescalation measures. 
+
+-------------------------
+en_marktechpost
+2026-06-03 12:00:00
+Google DeepMind Releases Gemma 4 12B: An Encoder-Free Multimodal Model with Native audio that runs on a 16 GB laptop 
+Google DeepMind released Gemma 4 12B, an encoder-free multimodal model supporting native audio input that is capable of running on consumer hardware with as little as 16 GB of RAM. The model outperforms larger predecessors on several coding and reasoning benchmarks while remaining fully open-weights and deployable on-device. 
+
+-------------------------
+en_pv_magazine_usa
+2026-06-03 12:00:00
+U.S. renewables buyers encouraged to act fast in a complex market 
+Corporate and utility buyers of renewable energy are being urged to accelerate procurement decisions as a convergence of tariff uncertainty, interconnection backlogs, and supply chain tightness is compressing the window for securing competitively priced solar and wind contracts. Advisers say 2026 power purchase agreement pricing is more volatile than any year since 2022. 
+
+-------------------------
+en_spaceflightnow
+2026-06-03 12:00:00
+SpaceX launches sunrise Starlink mission following weather scrub 
+SpaceX successfully launched 29 Starlink satellites on a Falcon 9 from Cape Canaveral after a 24-hour delay caused by unfavourable upper-level winds, with the booster marking its 18th flight. The launch continues SpaceX's push to expand its Starlink broadband constellation ahead of planned capacity upgrades later in 2026. 
+
+-------------------------
+en_arms_control
+2026-06-01 12:00:00
+2026 NPT Review Conference Stymied by Disputes 
+After four weeks of negotiations in Geneva, the 2026 nuclear Nonproliferation Treaty Review Conference failed to produce a consensus final document, with disputes between Iran, the United States, and Gulf Arab states over Iran's nuclear programme and the recent US-Israeli strikes on Iranian facilities proving insurmountable. The collapse is the third consecutive NPT RevCon to end without agreement. 
+
+-------------------------
+en_arms_control
+2026-06-01 12:00:00
+Trump Claims to Discuss Arms Control in China 
+President Trump stated at a press conference that nuclear arms control featured in his recent discussions with Chinese leadership, though no formal negotiating framework or timeline was announced. Analysts at the Arms Control Association cautioned that vague presidential statements without institutional follow-through are unlikely to yield binding agreements given current US-China strategic competition. 
+
+-------------------------
+en_arms_control
+2026-06-01 12:00:00
+The Puzzle of Multilateral Arms Control 
+The June 2026 issue of Arms Control Today examines why multilateral nuclear arms control has become structurally more difficult, citing the collapse of New START, China's refusal to join trilateral talks, and the erosion of verification trust between major powers. Experts propose a graduated transparency approach starting with notification agreements as a path back to formal negotiations. 
+
+-------------------------
+en_fintech_futures
+2026-06-01 12:00:00
+Banking Technology Magazine June 2026 issue out now 
+The June 2026 edition of Banking Technology Magazine covers AI-driven transformation in core banking, the accelerating shift to real-time payments infrastructure in Asia, and an in-depth profile of the emerging stablecoin payment rails competing with traditional card networks. The issue also features a roundtable on digital identity standards for financial services. 
+
+-------------------------
+en_logistics_mgmt
+2026-06-01 12:00:00
+Global Logistics 2026: Times of tension and transition 
+The June 2026 edition of Logistics Management examines how rising Middle East conflict, shifting tariff regimes, and surging North American freight demand are simultaneously straining global supply chains while accelerating investment in resilient near-shore logistics networks. Carriers and 3PLs are navigating the dual pressures of short-term disruption and long-term structural reshoring. 
+
+-------------------------
+en_logistics_mgmt
+2026-06-01 12:00:00
+U.S. Department of Transportation rolls out new freight plan targeting supply chain bottlenecks 
+The US Department of Transportation released its 2026 National Freight Strategic Plan, a multi-year investment roadmap targeting port capacity, inland waterway upgrades, and first/last-mile rail connections that together move more than 54 million tons of freight daily. The plan prioritises projects that directly reduce dwell times at the 25 most congested intermodal hubs. 
+
+-------------------------
+en_industry_week
+2026-06-01 12:00:00
+Manufacturing Returns to Growth and What's Next for 3-D Printing: IndustryWeek's Weekly Review 
+The ISM Manufacturing PMI reached 52.6% in the most recent reading, the highest expansion reading since early 2025 and a signal that reshoring investment and recovering export demand are translating into factory-floor activity. IndustryWeek also surveys how additive manufacturing is moving beyond prototyping into serial production for aerospace and medical device companies. 
+
+-------------------------
+en_healthcare_finance_news
+2026-06-01 12:00:00
+Nearly 60% of hospitals report rise in non-labor expenses 
+A Healthcare Finance News survey found that 59% of hospital CFOs reported significant increases in non-labor costs in 2026, driven by supply chain inflation, pharmaceutical price increases, and higher insurance premiums. The trend is squeezing already-thin operating margins and prompting health systems to accelerate automation investments in revenue cycle management. 
+
+-------------------------
+en_information_week
+2026-06-01 12:00:00
+The AI infrastructure boom is coming for enterprise budgets 
+InformationWeek analysis finds that enterprise AI infrastructure spending is accelerating in 2026 as companies shift from single-model deployments to multi-agent orchestration platforms requiring significant GPU capacity, specialised networking, and new data governance layers. CIOs report that AI now rivals cloud migration as the dominant line item in technology capital budgets. 
+
+-------------------------
+en_renewable_energy_world
+2026-06-01 12:00:00
+Invenergy partnering with NVIDIA and Emerald AI on flexible AI factories 
+Renewable energy developer Invenergy announced a partnership with NVIDIA and Emerald AI to co-locate flexible AI compute facilities at renewable energy generation sites, reducing grid interconnection costs and enabling AI workloads to follow clean power availability. The initiative targets 5 GW of co-located renewable-plus-compute capacity by 2028. 
+
+-------------------------
+en_act_news
+2026-06-01 12:00:00
+Orange EV's 600-Truck Order Points to a New Phase for Yard Electrification 
+Orange EV secured an order for 600 electric yard trucks from a major logistics operator, the largest single electric yard truck deal to date and a sign that fleet-wide electrification is replacing incremental pilot deployments at US distribution centres. The company said full deployment is expected by end of 2026 supported by a turnkey charging infrastructure package. 
+
+-------------------------
+en_genomeweb
+2026-06-01 12:00:00
+Bio-Rad Laboratories Lowers Full-Year Guidance as Middle East War Impacts Clinical Diagnostics 
+Bio-Rad Laboratories reduced its full-year 2026 revenue guidance after the Middle East conflict disrupted clinical diagnostics operations across the region, causing an $11 million hit to its first-quarter results. The company said it is rerouting supply chains and working with local distributors to restore service levels in affected markets. 
+
+-------------------------
+en_spacenews
+2026-06-01 12:00:00
+Defense appropriations bill for 2026 funds Space Force at $26 billion, presses Pentagon on Golden Dome 
+The 2026 defense appropriations legislation allocates $26 billion to the US Space Force and includes provisions pressing the Pentagon to accelerate the Golden Dome space-based missile defence architecture. Lawmakers also directed the Space Force to report on plans for proliferated low-Earth orbit surveillance constellations. 
+
+-------------------------
+en_cn_ifanr
+2026-06-01 12:00:00
+HDC 2026 深度解构：鸿蒙全面向 Agent 架构演进，小艺做了这三件事 
+华为开发者大会 2026 上，鸿蒙操作系统宣布全面向 Agent 架构演进，将 AI 能力从应用层下沉至系统层，小艺助手升级为具备跨设备、跨应用任务编排能力的智能体。此举标志着鸿蒙从移动 OS 向 AI 原生操作系统的战略转型加速落地。 
+
+-------------------------
+en_modern_diplomacy
+2026-05-29 12:00:00
+The US-India Critical Minerals Framework: Signal, Network and Paradox 
+Modern Diplomacy analyses the US-India Framework on Securing Supply in the Mining and Processing of Critical Minerals, signed by Secretary Rubio and Minister Jaishankar on May 26, 2026, as part of the Quad foreign ministers meeting in New Delhi. The piece argues the framework sends an important strategic signal but faces paradoxes around India's existing Russian energy ties and domestic processing capacity constraints. 
+
+-------------------------
+en_modern_diplomacy
+2026-05-28 12:00:00
+China's Strategy for India–Pakistan Peace in a Multipolar Asia 
+Analysis argues that China's diplomatic engagement to reduce India-Pakistan tensions in 2026 serves Beijing's interest in positioning itself as Asia's responsible mediator while simultaneously constraining India's strategic bandwidth and deepening Pakistan's economic dependency. The piece examines China's use of economic incentives and backchannel diplomacy as instruments of regional influence. 
+
+-------------------------
+en_pv_magazine_usa
+2026-05-27 12:00:00
+Kiwa PVEL's 2026 solar module reliability scorecard reveals high failure rates amid incremental performance gains 
+The 2026 Kiwa PVEL PV Module Reliability Scorecard showed improving average efficiency across tested modules but flagged rising delamination and mechanical breakage failure rates, particularly among lower-cost modules entering the US market. Procurement teams are being advised to weight long-term reliability data more heavily as module warranties come under greater scrutiny. 
+
+-------------------------
+en_business_standard
+2026-05-26 12:00:00
+India, US strike critical minerals deal: What's in it, why does it matter? 
+India and the United States signed a bilateral framework on critical minerals covering lithium, cobalt, rare earths, and battery-grade manganese, with the Quad partners pledging up to USD 20 billion in public and private support for mining, processing, and recycling. Business Standard explains how the deal could reduce India's current dependence on Chinese-processed minerals while boosting domestic refining investment. 
+
+-------------------------
+en_cn_ifanr
+2026-05-25 12:00:00
+英伟达掀桌，Windows 终于迎来真 AI PC 
+英伟达在 COMPUTEX 2026 上发布 RTX Spark 系列移动 GPU，配合微软 Windows AI 功能全面升级，将本地大模型推理能力带入主流消费笔记本电脑。爱范儿分析认为，这标志着 AI PC 从营销概念转变为可被普通用户实际感知的计算体验变革。 
+
+-------------------------
+en_central_banking
+2026-05-22 12:00:00
+Kevin Warsh sworn in as Federal Reserve chairman, replacing Jerome Powell 
+Kevin Warsh was formally sworn in as the 17th chairman of the Federal Reserve Board of Governors on May 22, 2026, succeeding Jerome Powell whose term expired. Warsh, a former Fed governor and investment banker, is expected to review the Fed's balance sheet strategy and communication framework while maintaining continuity on the current rate-hold stance. 
+
+-------------------------
+en_marktechpost
+2026-05-21 12:00:00
+How CopilotKit Is Redefining the Agentic AI Stack in 2026 
+MarkTechPost profiles CopilotKit, whose open-source framework for embedding AI agents directly into enterprise software workflows has gained widespread traction in 2026 as developers look for standardised ways to build multi-agent systems without rebuilding orchestration logic from scratch. The platform now supports integration with most major LLM providers and enterprise tool ecosystems. 
+
+-------------------------
+en_techinsights
+2026-05-20 12:00:00
+Semiconductor Analytics – May 20, 2026 
+TechInsights' weekly semiconductor analytics update for May 20 covers accelerating HBM4 high-bandwidth memory ramp by SK Hynix and Samsung in support of next-generation AI accelerators, alongside updated market share estimates showing TSMC extending its lead in advanced logic at 2nm. The note also flags emerging competition from Chinese foundries at mature nodes. 
+
+-------------------------
+en_global_taiwan
+2026-05-15 12:00:00
+The Reorientation of Middle Powers and Taiwan's Strategic Window in the Indo-Pacific (2026–2030) 
+The Global Taiwan Institute argues that shifting alignments among middle powers such as India, Australia, Japan, and South Korea are creating a strategic window for Taiwan to deepen security and economic partnerships beyond its traditional reliance on the US bilateral relationship. The paper recommends Taiwan leverage its semiconductor leadership and democratic credentials to build a broader coalition of stakeholders. 
+
+-------------------------
+en_act_news
+2026-05-07 12:00:00
+2026 ACT Expo Fleet Awards Honor Leaders in Clean Transportation Deployment 
+The 2026 ACT Expo Fleet Awards recognised companies scaling zero-emission vehicles across logistics, municipal operations, and drayage, with Nevoya named Digital Technology Leader for demonstrating that software-driven route optimisation can make electric trucking operationally competitive with diesel. The awards were presented at the Las Vegas Convention Center during the four-day expo. 
+
+-------------------------
+en_global_taiwan
+2026-05-01 12:00:00
+China's Next Target in the South China Sea: Taiwan? 
+The Global Taiwan Institute examines escalating Chinese Coast Guard incursions into restricted waters around Taiwan's Pratas/Dongsha Island, with six such intrusions recorded in 2026 alone, and argues Beijing is testing grey-zone coercion tactics it may later apply at larger scale. The analysis recommends Taiwan and US allies develop coordinated response protocols for coast guard-level provocations. 
+
+-------------------------
+en_sixthtone
+2026-05-01 12:00:00
+China Sees Record Domestic Travel This May Day Holiday 
+China recorded a record 1.52 billion inter-regional trips during the five-day May Day holiday, up 4% from the prior year, driven by pent-up demand for domestic tourism and railway network expansion. The figures reinforce Beijing's narrative of a resilient consumption-led recovery even as external trade pressures persist. 
+
+-------------------------
+en_fintech_futures
+2026-05-01 12:00:00
+FinovateFall 2026 confirms all top 10 US banks are attending 
+FinovateFall 2026, scheduled for September 9–11 in New York City, has confirmed attendance from all ten of the largest US banks for the first time, signalling that financial technology innovation has moved from the periphery to the strategic core of major institutions. The event will feature live product demos, AI-in-banking panels, and dedicated investor-startup matchmaking sessions. 
+
+-------------------------
+en_genomeweb
+2026-05-01 12:00:00
+Illumina Raises 2026 Guidance on Strong Q1 NovaSeqX Demand, Clinical Consumables Sales 
+Illumina raised its full-year 2026 revenue guidance to a range of $4.52–4.62 billion following first-quarter results that beat expectations on both NovaSeqX instrument placements and clinical consumables sales. Management cited growing adoption of whole-genome sequencing in oncology diagnostics and population health programmes as key drivers. 
+
+-------------------------
+en_genomeweb
+2026-05-01 12:00:00
+NeoGenomics Raises Full-Year 2026 Revenue Guidance on Strong Q1 Results 
+NeoGenomics increased its 2026 revenue guidance to $797–803 million after reporting first-quarter revenue growth of 11% year-over-year, driven by oncology testing volume and expansion of its molecular pathology menu. The company said it is on track to reach positive adjusted EBITDA by year-end. 
+
+-------------------------
+en_healthcare_finance_news
+2026-05-01 12:00:00
+Healthcare costs projected to reach highest level in nearly two decades 
+Healthcare cost projections for 2026 show medical trend rates reaching their highest level since 2008, driven by pharmaceutical price inflation, increased utilisation of GLP-1 obesity drugs, and elevated provider reimbursement demands. Employers and health plans are responding by accelerating adoption of value-based care contracts and specialty drug management programmes. 
+
+-------------------------
+en_industry_week
+2026-05-01 12:00:00
+Four Manufacturers Expanding US Facilities and Workforce in 2026 
+IndustryWeek profiles four industrial companies committing to major US capacity expansions in 2026, including Johnson & Johnson's $1 billion cell therapy plant in Pennsylvania and Genentech's $2 billion biomanufacturing facility in North Carolina, both supported by incentives from the CHIPS and Biosecure Act frameworks. 
+
+-------------------------
+en_spacenews
+2026-05-01 12:00:00
+Rounding up the space unicorns 
+SpaceNews counts 30 privately held space companies that have reached unicorn status with valuations above $1 billion, a doubling from 2023 and a reflection of surging investor appetite for launch services, satellite connectivity, and in-space manufacturing. The list is dominated by US companies but includes growing European and Asian entrants. 
+
+-------------------------
+en_marketsgroup
+2026-05-01 12:00:00
+Private credit investors targeting specialty finance as direct lending crowds 
+Markets Group reports that institutional investors are shifting private credit allocations toward specialty finance sub-strategies including equipment leasing, healthcare receivables, and consumer finance as traditional direct lending to mid-market companies faces increased competition and margin compression. Managers noted that specialty finance offers differentiated risk-return profiles away from crowded sponsor-led buyout financing. 
+
+-------------------------
+en_information_week
+2026-05-01 12:00:00
+Informatica World 2026: CIO takeaways on data management and AI 
+InformationWeek's correspondent at Informatica World 2026 reports that CIOs are focused on building AI-ready data foundations, with the conference dominated by discussions of data quality automation, metadata management, and the governance frameworks needed before deploying enterprise AI at scale. Informatica announced new agentic data pipeline features designed to reduce manual data engineering by up to 60%. 
+
+-------------------------
+en_renewable_energy_world
+2026-05-01 12:00:00
+Community solar power player Perch swallows up Mitsui's Solstice 
+Perch Energy acquired Solstice, the community solar platform majority-owned by Mitsui, in a deal that consolidates two of the largest US community solar subscriber management businesses. The combined entity will serve over 300,000 residential and small-business subscribers across 14 states, creating the largest independent community solar operator in the country. 
+
+-------------------------
+en_iot_analytics
+2026-05-01 12:00:00
+US manufacturing reshoring boom: What the data says one year after 'Liberation Day' tariffs 
+IoT Analytics quantifies the manufacturing reshoring impact one year after the April 2025 tariff escalation, finding that announced US factory investments have exceeded $800 billion in aggregate but that actual production output gains remain modest as permitting, workforce training, and equipment procurement delays stretch timelines. The analysis identifies electronics and EV batteries as sectors seeing the fastest real capacity additions. 
+
+-------------------------
+en_ess_news
+2026-04-30 12:00:00
+ESS Tech to add 8.5 GWh of US-made sodium-ion batteries to its portfolio 
+US-based long-duration energy storage company ESS Tech announced it will add 8.5 GWh of sodium-ion battery capacity manufactured domestically, supporting grid-scale storage deployments that qualify for full Inflation Reduction Act manufacturing tax credits. The expansion positions the company to compete with Chinese lithium-iron-phosphate suppliers on both price and domestic content requirements. 
+
+-------------------------
+en_techinsights
+2026-04-30 12:00:00
+Semiconductor Analytics – April 30, 2026 
+TechInsights' April 30 semiconductor analytics note highlights that the global semiconductor market is tracking toward $1.04 trillion in 2026, a 26% year-on-year increase, led by AI accelerator and HBM demand. The report flags potential second-half softness in PC and smartphone end markets that could moderate overall growth. 
+
+-------------------------
+en_sixthtone
+2026-04-01 12:00:00
+Ten Years in Transition: How technology, work, and family in China were reshaped from 2016 to 2026 
+Sixth Tone's tenth-anniversary feature traces a decade of transformation in contemporary Chinese society, documenting how the smartphone economy, gig work platforms, and state-directed AI investment reshaped daily life, career trajectories, and family structures across urban and rural China. The series draws on over 200 original stories published by Sixth Tone since its founding in 2016. 
+
+-------------------------
+en_iot_analytics
+2026-04-01 12:00:00
+Cellular IoT market update 2026: Connections grew 13% in 2025, slowest since 2020 
+IoT Analytics reports that global cellular IoT connections grew 13% in 2025 to reach 4.7 billion, the slowest growth rate since 2020, as the massive China-driven NB-IoT expansion matures and developed markets face module supply constraints. For 2026, the firm projects 14% growth to 5.4 billion connections, led by AI-enabled Edge IoT devices and industrial automation. 
+
+-------------------------
+en_healthcare_finance_news
+2026-04-01 12:00:00
+Allina Health to join Sutter Health for 39-hospital system 
+Allina Health and Sutter Health announced a proposed affiliation to create a combined nonprofit health system spanning 39 hospitals across California, Minnesota, and Wisconsin, which would become one of the largest not-for-profit hospital networks in the United States. The systems said the combination will improve purchasing scale, clinical programme investment, and care coordination for over five million patients. 
+
+-------------------------
+en_information_week
+2026-04-01 12:00:00
+The AI infrastructure bottleneck is becoming a CIO problem 
+InformationWeek surveys enterprise CIOs finding that GPU shortages, power constraints at data centres, and the complexity of multi-cloud AI orchestration have emerged as the top operational bottlenecks slowing AI deployment in 2026. Half of respondents said they expect AI infrastructure limitations to constrain business unit initiatives through at least the first half of 2027. 
+
+-------------------------
+en_renewable_energy_world
+2026-04-01 12:00:00
+Factor This finance and project development roundup: Ameresco, Atlas, Nextpower, OCI, Revolve 
+Renewable Energy World's project finance roundup highlights new construction debt and tax equity closings for solar and storage projects from developers including Ameresco, Atlas Renewable Energy, Nextpower, OCI Solar Power, and Revolve Renewable Power. The deals reflect continued strong appetite from institutional tax equity investors despite interest rate uncertainty. 
+
+-------------------------
+en_healthcare_it_news
+2026-04-01 12:00:00
+VA responds to reports of EHR glitches, ahead of renewed 2026 rollouts 
+The US Department of Veterans Affairs issued a statement addressing reported electronic health record system glitches ahead of its renewed Oracle Health EHR deployment schedule at additional VA medical centres in 2026. The VA acknowledged specific interface failures in pharmacy and scheduling modules while asserting that patient care was not compromised and that remediation is on track. 
+
+-------------------------
+en_techinsights
+2026-04-01 12:00:00
+The Semiconductor Industry's Trillion-Dollar Milestone: Four Years Ahead of Schedule 
+TechInsights analysis shows the global semiconductor industry is on track to surpass $1 trillion in annual revenue in 2026, four years earlier than projections made before the AI boom began. The milestone is driven by AI accelerator ASICs, high-bandwidth memory, and advanced packaging, with TSMC, Samsung, and SK Hynix capturing the bulk of incremental revenue. 
+
+-------------------------
+en_central_banking
+2026-04-01 12:00:00
+Trends in reserve management 2026: survey results 
+Central Banking's 2026 reserve management survey, drawing on responses from 101 reserve managers overseeing more than $9.5 trillion in global reserves, finds growing allocations to gold, renminbi-denominated assets, and inflation-linked securities as managers reduce US dollar concentration risk. AI-driven risk analytics and ESG integration in reserve portfolios are also gaining traction. 
+
+-------------------------
+en_central_banking
+2026-03-19 12:00:00
+ECB holds rates, predicts 2.6% inflation for 2026 
+The European Central Bank's governing council held its main refinancing operations rate at 2.15% at the March 19 meeting, citing persistent services inflation and geopolitical energy price risk from the Middle East conflict. ECB President Lagarde said the bank's baseline projects headline inflation averaging 2.6% across 2026, above the 2% target, justifying a cautious stance on further easing. 
+
+-------------------------
+en_iot_analytics
+2026-03-15 12:00:00
+7 data center trends to watch—as seen at Data Centre World London 2026 
+IoT Analytics distils seven structural trends from the 2026 Data Centre World London conference attended by over 19,000 professionals, including the shift to 1-megawatt-plus rack densities, the rollout of liquid cooling systems, adoption of 800V DC power distribution, and the emergence of AI-managed facility operations. The report draws on over 50 on-site interviews with infrastructure vendors and hyperscaler procurement teams. 
+
+-------------------------
+en_sixthtone
+2026-03-13 12:00:00
+Chinese University Cuts Arts Majors, Citing an AI-Driven Future 
+The Communication University of China announced it is eliminating multiple undergraduate arts programmes, citing reduced labour market demand and the ability of AI tools to automate many creative and communications tasks that such degrees traditionally prepared students for. The decision sparked debate in China about the appropriate scope of AI-driven curriculum reform at public universities. 
+
+-------------------------
+en_global_taiwan
+2026-03-01 12:00:00
+GTI launches US-Taiwan Task Force 2026–2027 
+The Global Taiwan Institute announced the formation of its US-Taiwan Task Force 2026–2027, bringing together a bipartisan group of former senior US officials, national security scholars, and Taiwanese policy experts to develop actionable recommendations on cross-strait deterrence, economic security, and international recognition. The Task Force will publish reports quarterly through the end of 2027. 
+
+-------------------------
+en_marketsgroup
+2026-03-01 12:00:00
+2026 Private Equity Allocator Outlook 
+Markets Group's 2026 Private Equity Allocator Outlook finds that institutional investors remain committed to private equity allocations despite an elevated rate environment, with record 2025 deal volume rebuilding confidence in exit timelines. Small- and mid-market buyout funds are the preferred vintage, as managers cite better entry valuations and less leverage dependency than large-cap peers. 
+
+-------------------------
+en_logistics_mgmt
+2026-03-01 12:00:00
+Modex 2026 gets underway with packed halls and new tech, big announcement 
+Modex 2026 opened in Atlanta with record exhibitor and attendee numbers, highlighting warehouse robotics, AI-powered order management systems, and autonomous mobile robot fleets now entering mainstream logistics operations. The show's headline announcement involved a major US 3PL committing to full autonomous picking in 12 distribution centres by 2027. 
+
+-------------------------
+en_payments_dive
+2026-03-01 12:00:00
+How the open banking rule skidded 
+Payments Dive traces the regulatory and legal obstacles that have stalled the CFPB's open banking rule, from a federal court injunction to the bureau's own funding constraints under the new administration. The investigation explains how the delay is fracturing the US open banking landscape into a patchwork of bilateral data-sharing agreements rather than a uniform standard. 
+
+-------------------------
+en_cn_ifanr
+2026-03-01 12:00:00
+2026 年，AI 长出了四个轮子，驶向物理世界 
+爱范儿年度深度报道聚焦 2026 年 AI 与自动驾驶的融合提速：以小鹏、理想、蔚来为代表的中国新能源车企将端到端大模型直接部署到量产车型的驾驶决策层，推动智能驾驶从辅助向高度自动化跃迁。文章指出，2026 年将成为中国 AI 汽车规模化落地的元年。 
+
+-------------------------
+en_ess_news
+2026-02-26 12:00:00
+New US battery capacity in 2026: 24.3 GW of new battery storage to come online 
+ESS News reports that 24.3 GW of new utility-scale battery energy storage capacity is slated to come online in the United States in 2026, a record annual addition that would more than double the total installed base. The pipeline is dominated by lithium-iron-phosphate systems collocated with solar projects in Texas, California, and the Southeast. 
+
+-------------------------
+en_ess_news
+2026-02-18 12:00:00
+ESS acquires VoltStorage GmbH to accelerate long-duration energy storage 
+ESS Inc. acquired the assets and intellectual property of German startup VoltStorage GmbH, bringing iron-flow and vanadium-flow battery technologies under one corporate roof to create a broader long-duration energy storage product portfolio. The deal is part of ESS's strategy to address multi-hour and multi-day storage applications that lithium-ion is poorly suited for. 
+
+-------------------------
+en_marketsgroup
+2026-01-15 12:00:00
+A New Dawn in Real Estate: 2026 U.S. Commercial Real Estate Outlook 
+Markets Group's 2026 US commercial real estate outlook identifies industrial logistics, data centre campuses, and life science facilities as the three property sectors with the strongest leasing and investment demand, while office markets in gateway cities remain structurally impaired. Analysts see cap rate stabilisation in H1 2026 as the first signal that the correction in non-industrial CRE may be nearing a floor. 
+
+-------------------------
+en_payments_dive
+2026-01-15 12:00:00
+ACH Network starts 2026 with surge 
+The ACH Network processed a record volume of transactions in January 2026, with same-day ACH volumes jumping 34% year-over-year as businesses and consumers accelerate adoption of instant push payments for payroll, bill pay, and business-to-business disbursements. Nacha said the network is on track to exceed 35 billion payments for the full year. 
+
+-------------------------
+en_business_standard
+2026-01-15 12:00:00
+India GDP Seen Growing 7.4% in FY26 as Domestic Demand Remains Resilient 
+India's GDP is projected to expand 7.4% in fiscal year 2026, maintaining its status as the world's fastest-growing major economy, supported by strong private consumption, public infrastructure spending, and a rebound in rural incomes following two consecutive good monsoons. The World Bank raised its India forecast to 6.5% for the calendar year, citing structural reform momentum. 
+
+-------------------------
+en_industry_week
+2026-01-15 12:00:00
+ISM Report: Manufacturing Activity Returns to Expansion in January 
+The ISM Manufacturing PMI rose to 52.6% in January 2026, the first reading above 50 since February 2025 and a signal that the prolonged US manufacturing contraction may have ended. New orders and production sub-indices both expanded, though employment remained contractionary as manufacturers cautiously await confirmation of sustained demand recovery before adding headcount. 
+
+-------------------------
+en_spacenews
+2026-01-15 12:00:00
+2026 will clarify Europe's new priorities for space 
+SpaceNews analysis argues that 2026 will be a pivotal year for European space policy as Ariane 64 returns to flight, ESA finalises its next long-range plan, and member states debate whether to compete with SpaceX on launch costs or carve out sovereign sovereign capabilities in areas where US companies are less focused. The piece examines funding gaps and political divisions within the European space consortium. 
+
+-------------------------
+en_marketsgroup
+2026-01-15 12:00:00
+Is 2026 Poised for a Growth or a Value Market? 
+Markets Group's 2026 investment outlook piece examines whether the concentration of US equity returns in mega-cap growth stocks is sustainable or whether rotation into value, small-cap, and international equities is overdue. The piece concludes that the outcome will hinge on whether AI capital expenditure delivers measurable productivity gains by mid-year or disappointments force a reassessment of growth multiples. 
+
+-------------------------
