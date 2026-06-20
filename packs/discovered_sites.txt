@@ -711,3 +711,13 @@ en_orthofeed
 en_semiconductorx
 en_cleantech_group
 en_worldagritech
+en_altassets
+en_assembly_mag
+en_eia
+en_iea
+en_multihousing_news
+en_new_electronics
+en_project_syndicate
+en_rttnews
+en_semiconductor_digest
+en_smm_metal

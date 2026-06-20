@@ -1,0 +1,430 @@
+import zipfile, os
+
+TODAY = '2026-06-20'
+PACK_DIR = '/home/user/xxqq/packs'
+
+articles = [
+# en_spaceflight_now
+('en_spaceflight_now', '2026-06-19 12:00:00',
+ 'SpaceX launches intelligence-gathering satellites for the National Reconnaissance Office',
+ 'SpaceX launched a Falcon 9 carrying classified NRO satellites on June 19 from Cape Canaveral, the 125th orbital launch of 2026. Spaceflight Now provided live countdown and launch coverage.'),
+
+('en_spaceflight_now', '2026-06-17 12:00:00',
+ 'Arianespace launches its heaviest payload to date with Amazon Leo flight',
+ 'An Ariane 64 rocket carried 36 broadband satellites for Amazon Project Kuiper on June 17, the heaviest payload ever lofted by an Ariane vehicle. The mission marks a major capacity milestone for European heavy-lift launch.'),
+
+('en_spaceflight_now', '2026-06-16 12:00:00',
+ 'SpaceX launches 3 Block 2 BlueBird satellites for AST SpaceMobile',
+ 'SpaceX deployed three next-generation BlueBird Block 2 satellites for AST SpaceMobile on June 16, each spanning nearly 2,400 square feet for direct-to-cell broadband. The Block 2 satellites offer peak data rates up to 120 Mbps.'),
+
+# en_mit_tech_review
+('en_mit_tech_review', '2026-06-19 12:00:00',
+ 'The Download: AI bottleneck debates, and BCI trials take off',
+ 'MIT Technology Review covers AI startup Subquadratic\'s claim of solving a decade-old mathematical bottleneck in transformers, alongside expanding brain-computer interface human trials. Subquadratic says its architecture slashes LLM compute requirements, enabling faster and cheaper models.'),
+
+('en_mit_tech_review', '2026-06-19 09:00:00',
+ 'Brain-computer interface trials are taking off',
+ 'ALS patient Casey Harrell has spent nearly three years as the first sustained power user of a BCI implant, using it to speak, browse the web, and work as a climate activist. Multiple companies are now enrolling broader trial cohorts as the field accelerates.'),
+
+('en_mit_tech_review', '2026-06-09 12:00:00',
+ 'The Download: whole-body rejuvenation drugs and five things to know about AI',
+ 'David Sinclair plans to test whole-body rejuvenation drugs in the XPrize longevity competition, while MIT Technology Review highlights five key things to understand about the current state of AI capabilities and limitations. The edition also covers the latest reasoning model benchmarks.'),
+
+# en_multihousing_news
+('en_multihousing_news', '2026-06-19 12:00:00',
+ 'National Affordable Housing Report - June 2026',
+ 'Fully income-restricted affordable housing deliveries reached 91,841 units in 2025, below the 2024 record of 99,558 but still roughly double pre-2020 annual levels per Yardi Matrix data. Financing conditions and zoning reform are driving continued pipeline growth.'),
+
+('en_multihousing_news', '2026-06-11 12:00:00',
+ "What's Next for Self Storage in 2026",
+ 'After a market reset driven by declining rental rates and oversupply, the self-storage sector is positioned for fundamentals-driven growth in 2026 as suburban demand rebounds. Operators are adopting revenue management technology and expanding in underserved secondary markets.'),
+
+('en_multihousing_news', '2026-06-05 12:00:00',
+ 'National Student Housing Report - May 2026',
+ 'Preleasing at Yardi 200 universities reached 71.6% in April for the 2026-2027 academic year, up 200 basis points from March, signaling robust demand. Purpose-built student housing near top-tier schools remains one of commercial real estate\'s strongest performing subsectors.'),
+
+# en_project_syndicate
+('en_project_syndicate', '2026-06-19 12:00:00',
+ 'Iran and Ukraine Herald an Era of Autonomous Weapons Warfare',
+ 'Charles Ferguson argues that autonomous weapons software, not human pilots or soldiers, are now the decisive factor in modern warfare as demonstrated by Iran and Ukraine. The piece calls for urgent international governance frameworks for AI-enabled weapons systems.'),
+
+('en_project_syndicate', '2026-06-16 12:00:00',
+ 'No Bridge Over Healing Waters for the G7',
+ 'Barry Eichengreen assesses the French G7 Evian summit, concluding that divisions over US tariffs, Ukraine aid, and Middle East policy left little room for coordination on global imbalances. The piece identifies structural limits on G7 governance in a fragmented geopolitical era.'),
+
+('en_project_syndicate', '2026-06-15 12:00:00',
+ 'Are Government Stakes the Key to AI Sovereignty?',
+ 'Angela Huyue Zhang contrasts US and Chinese strategies for AI sovereignty: the US uses export controls and private-sector competition while China uses state equity stakes in AI champions. Zhang argues neither approach fully addresses risks of AI concentration and infrastructure dependency.'),
+
+# en_healthleaders
+('en_healthleaders', '2026-06-18 12:00:00',
+ '3 Health Systems Sue Accusing CVS Health of Racketeering in 340B',
+ 'Three major health systems filed RICO racketeering lawsuits against CVS Health, alleging systematic underpayment of 340B drug program discounts that fund safety-net care. The suits could set a major precedent for how pharmacy benefit managers interact with the 340B program.'),
+
+('en_healthleaders', '2026-06-18 10:00:00',
+ 'HFMA Annual Conference Panel Takes On Healthcare Affordability Crisis',
+ 'Healthcare finance leaders at HFMA 2026 agreed that 94% of industry executives see the U.S. healthcare system as financially unsustainable, with labor costs, reimbursement pressure, and payer denials creating a perfect storm. Panelists debated site-neutral payments and value-based care as potential remedies.'),
+
+('en_healthleaders', '2026-06-10 12:00:00',
+ 'Mayo Clinic Adopts Innovative AI Tool to Boost Palliative Care Utilization',
+ 'Mayo Clinic deployed an AI tool that identifies hospitalized patients who would benefit from palliative care services, significantly increasing appropriate utilization. The system analyzes clinical notes and structured EHR data in real time to alert care teams.'),
+
+# en_eia
+('en_eia', '2026-06-18 12:00:00',
+ 'Solar generation in CAISO surpassed natural gas in the first five months of 2026',
+ 'Solar electricity generation in California\'s CAISO surged 21% in the first five months of 2026 versus the same period in 2024, while natural gas generation fell 60%, marking an energy transition milestone. EIA attributes the shift to rapid utility-scale solar additions and improved battery storage dispatch.'),
+
+('en_eia', '2026-06-17 12:00:00',
+ 'Higher blending targets drive RIN prices close to record highs',
+ 'Biomass-based diesel RINs and ethanol RINs traded near all-time highs set in 2021 as of early June 2026, driven by elevated EPA blending mandates combined with tight feedstock supplies. EIA says the price surge is pressuring small refiners and boosting biofuel producer margins.'),
+
+('en_eia', '2026-06-16 12:00:00',
+ 'U.S. jet fuel production rises after prices doubled in March following Strait of Hormuz closure',
+ 'U.S. jet fuel production has climbed to record highs in response to a price spike caused by the Strait of Hormuz closure in late February 2026. Refiners have shifted crude slates to maximize jet yield as air travel demand holds firm despite broader oil market disruption.'),
+
+# en_central_banking
+('en_central_banking', '2026-06-17 21:00:00',
+ 'Fed holds rates in first meeting under Kevin Warsh',
+ 'The Federal Reserve held the federal funds rate at 3.50-3.75% at its June 2026 meeting, the first chaired by new Fed Chair Kevin Warsh who replaced Jerome Powell in May. Warsh shortened the policy statement, removed forward guidance, and announced five task forces to review Fed processes and independence.'),
+
+('en_central_banking', '2026-06-11 21:00:00',
+ 'ECB hikes by 25bp as eurozone inflation takes off',
+ 'The European Central Bank raised its key rates by 25 basis points to 2.25% at its June 2026 meeting, citing a fresh inflation surge driven by higher energy costs following the Iran conflict. The move surprised markets that had priced in a hold, sending the euro sharply higher against the dollar.'),
+
+('en_central_banking', '2026-06-08 12:00:00',
+ 'Geopolitics drive continued central bank gold buying',
+ 'Central banks told the World Gold Council that geopolitical tensions and shifting monetary policies are the primary reasons for their increased gold purchases over the past year. Emerging market central banks led buying, with the trend expected to continue through 2026.'),
+
+# en_american_banker
+('en_american_banker', '2026-06-17 21:00:00',
+ 'Federal Open Market Committee meeting June 2026: Live coverage',
+ 'The Federal Reserve held rates steady at 3.50-3.75% at its June FOMC meeting, with new Chair Kevin Warsh signaling a potential hike later in the year if inflation remains elevated. Nine of 18 FOMC members project at least one rate increase before year-end.'),
+
+('en_american_banker', '2026-06-16 12:00:00',
+ 'Zelle steps into crowded remittance market with a stablecoin',
+ 'Zelle is launching ZLUSD, a dollar-backed stablecoin that will allow users to send remittances abroad starting with India. The move puts Zelle in direct competition with MoneyGram, Western Union, and crypto-native remittance providers.'),
+
+('en_american_banker', '2026-06-14 12:00:00',
+ 'Santander scores OCC approval on pending Webster acquisition',
+ 'Banco Santander received OCC approval for its $12.3 billion acquisition of Webster Financial, expected to close in the second half of 2026, creating the 11th-largest U.S. bank by assets. The deal expands Santander\'s Northeast retail and commercial banking footprint.'),
+
+# en_pionline
+('en_pionline', '2026-06-17 12:00:00',
+ 'Pennsylvania Public School Employees Retirement System taps BNY Investments for 25 billion passive equity mandate',
+ 'PSERS awarded a $25 billion passive public equity mandate to BNY Investments as part of a broader cost-reduction shift from active managers, expected to save tens of millions in annual fees. The mandate covers global equity index strategies.'),
+
+('en_pionline', '2026-06-17 09:00:00',
+ 'Market-based cash balance plans get boost with FASB proposal',
+ 'New FASB proposals could make market-based cash balance pension plans more attractive by easing interest-crediting rate accounting, potentially spurring more corporate plan sponsors to adopt the structure. The change could affect billions in defined-benefit pension assets.'),
+
+('en_pionline', '2026-06-09 12:00:00',
+ 'Why asset managers remain skeptical of using AI in investment decision-making even as adoption grows',
+ 'Despite growing AI adoption in operations and compliance, most asset managers are skeptical of deploying AI for core investment decisions, citing interpretability gaps, regulatory liability, and benchmark-relative performance risks. A Pensions and Investments survey found less than 20% use AI for portfolio construction.'),
+
+# en_eetimes
+('en_eetimes', '2026-06-06 12:00:00',
+ "AI's Booming Demand Meets a Semiconductor Reality Check",
+ 'Semiconductor stocks lost over $1.3 trillion in market cap on June 5, 2026, after Broadcom\'s AI revenue guidance miss rattled investors, though analysts say the long-term AI infrastructure buildout thesis remains intact. The selloff exposed divergence between near-term earnings expectations and long-range capacity plans.'),
+
+('en_eetimes', '2026-06-06 10:00:00',
+ 'Computex 2026: Are We Heading for the Agentic PC Era Yet?',
+ 'Computex 2026 in Taipei shifted decisively toward agentic AI, with Nvidia CEO Jensen Huang proclaiming that agentic AI and useful AI have arrived as chip makers showcased on-device reasoning silicon. AMD, Qualcomm, and Intel unveiled new agentic-focused AI PC processors at the show.'),
+
+('en_eetimes', '2026-06-04 12:00:00',
+ "Geopolitics, AI, and Jensen Huang Fuel Electronics' Rock-and-Roll Era",
+ 'EE Times\' June 2026 issue examines how chip export controls, AI data center infrastructure buildout, and Nvidia CEO Jensen Huang\'s cultural influence are reshaping global electronics supply chains and business models. The issue includes a special report on Spain\'s emerging semiconductor ecosystem.'),
+
+# en_futurum
+('en_futurum', '2026-06-15 12:00:00',
+ 'Broadcom Q2 FY 2026: VMware Stability Supports AI-Led Semiconductor Expansion',
+ 'Broadcom reported Q2 AI semiconductor revenue of $10.8 billion, up 143% year-over-year, driven by surging demand for custom AI accelerators and networking chips. VMware software revenue contributed stable cash flow funding continued semiconductor R&D.'),
+
+('en_futurum', '2026-06-11 12:00:00',
+ 'Cadence and Synopsys Accelerate Agentic EDA Race at Computex',
+ 'Cadence extended ChipStack AI Super Agent to Level-5 autonomy while Synopsys demonstrated an Ansys IcePak thermal agent for GPU cooling, marking a race toward fully autonomous semiconductor design tools. Both companies cited 40x-plus productivity gains in specific design tasks at Computex 2026.'),
+
+('en_futurum', '2026-06-04 12:00:00',
+ "Intel's COMPUTEX Keynote Reframes an Iconic Company as a Silicon-to-Systems AI Lab",
+ 'Intel CEO Lip-Bu Tan used the Computex 2026 keynote to reposition Intel as a systems-level AI lab, unveiling Xeon 6+ on the Intel 18A process and a Vector Core Compute disaggregated inference architecture. Futurum Research calls it Intel\'s most consequential strategic pivot in a decade.'),
+
+# en_altassets
+('en_altassets', '2026-06-15 12:00:00',
+ 'Clearlake closes eighth flagship fund on 14.8 billion',
+ 'Clearlake Capital Group closed its eighth flagship private equity fund at $14.8 billion alongside co-investment vehicles, one of the largest PE fund closings of 2026. The fund focuses on software, technology, and tech-enabled services using an operational value-creation approach.'),
+
+('en_altassets', '2026-06-12 12:00:00',
+ 'Deal Roundup: One Equity Partners picks up Leviat, Wynnchurch Capital exits Labrie to Hiab',
+ 'One Equity Partners acquired construction accessories maker Leviat for over $1 billion, while Wynnchurch Capital exited refuse collection body maker Labrie to Swedish industrial group Hiab. Both transactions reflect sustained PE activity in industrial and infrastructure-adjacent sectors.'),
+
+('en_altassets', '2026-06-05 12:00:00',
+ 'European PE and VC showing renewed momentum in 2026: iCapital',
+ 'European private equity and venture capital are entering 2026 with attractive tailwinds as lower valuations relative to US peers and easing monetary policy create compelling entry points per iCapital. Deal activity in Germany, France, and the Nordic markets is showing the strongest recovery.'),
+
+# en_food_dive
+('en_food_dive', '2026-06-18 12:00:00',
+ 'Nestle USA removes artificial colors in all food and beverages',
+ 'Nestle USA announced removal of artificial colors and dyes across its entire U.S. food and beverage portfolio following FDA enhanced food color review, covering brands including Stouffer\'s, Toll House, and Coffee-mate. The transition mirrors moves by General Mills and Kraft Heinz under regulatory pressure.'),
+
+('en_food_dive', '2026-06-15 12:00:00',
+ 'Pure Leaf puts mental clarity in focus with new functional sparkling tea',
+ 'Pure Leaf, the Pepsi-Lipton partnership, launched a new line of functional sparkling teas targeting mental clarity through nootropic botanicals, entering the rapidly growing functional beverage category. The launch reflects broader CPG investment in wellness-positioned drinks as traditional volumes plateau.'),
+
+('en_food_dive', '2026-06-12 12:00:00',
+ "Campbell's launches gluten-free chicken noodle soup in partnership with Banza",
+ 'Campbell Soup partnered with chickpea pasta maker Banza to launch a gluten-free condensed chicken noodle soup, targeting consumers managing celiac disease or gluten sensitivity. The product uses Banza\'s chickpea noodles in Campbell\'s condensed soup format for grocery retailers.'),
+
+# en_health_affairs
+('en_health_affairs', '2026-06-15 12:00:00',
+ 'The Health Equity Fellowship For Trainees: Introducing The 2026 Cohort',
+ 'Health Affairs introduced its 2026 Health Equity Fellowship cohort, a program training early-career health policy researchers from underrepresented backgrounds. The cohort is working on projects spanning Medicaid access, maternal mortality, and rural health system capacity.'),
+
+('en_health_affairs', '2026-06-12 12:00:00',
+ "ASPE's Analysis Of Medicaid Work Requirements: Argument By Assumption",
+ 'A Health Affairs Forefront analysis critiques HHS ASPE\'s brief supporting Medicaid work requirements, finding key assertions rest on assumptions rather than evidence of enrollment impact or employment outcomes. The authors argue the brief underestimates coverage loss risks among disabled and caregiving populations.'),
+
+('en_health_affairs', '2026-06-11 12:00:00',
+ 'HHS Finalizes Sweeping Marketplace Changes: Exchange Requirements, Agents And Brokers, And New Lawsuit',
+ 'HHS finalized major ACA marketplace rule changes affecting exchange requirements and agent compensation, triggering a legal challenge from a coalition of state insurance commissioners. Health Affairs Forefront examines potential impacts on enrollment assistance and insurer participation.'),
+
+# en_industry_week
+('en_industry_week', '2026-06-19 12:00:00',
+ "Cybercriminals Refine Their Tactics and Saber-rattling Spurs Strategy Rethink",
+ "IndustryWeek's June 19 weekly review highlights a surge in ransomware attacks on industrial OT systems and how geopolitical tensions are prompting manufacturers to accelerate supply chain reshoring. Executives at major industrials are fast-tracking dual-sourcing strategies for critical inputs."),
+
+('en_industry_week', '2026-06-15 12:00:00',
+ 'UAW Members Vote to Ratify New Contract at Dauch',
+ 'UAW members at Dauch Corp. voted 80% in favor of a new labor contract, ending a two-week strike that began June 1 and disrupted GM supply chain component deliveries. The agreement includes hourly wage increases averaging 12% over three years and enhanced healthcare benefits.'),
+
+('en_industry_week', '2026-06-03 12:00:00',
+ 'US To Cut Tariffs on Agricultural Equipment as Costs Bite',
+ 'President Trump signed a proclamation reducing tariffs on imported agricultural machinery including harvesters from 25% to 15%, providing relief to U.S. farmers facing surging equipment costs. The move followed lobbying from the American Farm Bureau and equipment manufacturers.'),
+
+# en_rttnews
+('en_rttnews', '2026-06-18 12:00:00',
+ 'FDA approves first generic of Xofluza baloxavir marboxil tablets for acute influenza',
+ 'The FDA approved the first generic version of Xofluza on June 18, 2026, the single-dose treatment for acute uncomplicated influenza marketed by Hikma Pharmaceuticals. The approval is expected to significantly reduce flu treatment costs in the United States.'),
+
+('en_rttnews', '2026-06-14 12:00:00',
+ 'Weekly Buzz: PHG KMDA Win FDA Nod FULC Halts Pociredir RMD Closes Noctrix Deal NVS Paces In IgAN',
+ 'This week: Philips Healthcare and Kamada won FDA approvals, Fulcrum Therapeutics halted pociredir development citing insufficient efficacy, ResMed closed its Noctrix Health acquisition, and Novartis reported positive IgA nephropathy results for iptacopan. The week illustrated the range of catalysts driving biotech sector volatility.'),
+
+('en_rttnews', '2026-06-01 12:00:00',
+ 'Biotech Stocks Facing FDA Decision In June 2026',
+ 'RTTNews compiles key FDA PDUFA action dates for June 2026 including cytisinicline for smoking cessation on June 20, GSK\'s tebipenem HBr antibiotic on June 18, and DATROWAY for triple-negative breast cancer on June 2. Seventeen potential biotech catalysts are tracked for the month.'),
+
+# en_semiconductor_digest
+('en_semiconductor_digest', '2026-06-05 12:00:00',
+ 'SEMI Reports Global Semiconductor Equipment Billings Increased 14 Percent Year-Over-Year in Q1 2026',
+ 'SEMI data shows global semiconductor equipment billings rose 14% year-over-year in Q1 2026 to a quarterly record, driven by advanced logic and HBM memory fab investments in Taiwan, South Korea, and the United States. AI chip capacity expansion remains the primary demand driver.'),
+
+('en_semiconductor_digest', '2026-06-01 12:00:00',
+ 'Global Semiconductor Market Surges Beyond 1.5 Trillion in 2026',
+ 'The global semiconductor market is on track to exceed $1.5 trillion in 2026, with April sales of $110.5 billion representing 93.9% year-over-year growth fueled by AI datacenter demand. The industry is transitioning to gate-all-around transistor architectures at 2nm nodes this year.'),
+
+('en_semiconductor_digest', '2026-05-20 12:00:00',
+ 'SEMICON Taiwan 2026 to Serve as Global Stage for Next-Generation Semiconductor Technology',
+ 'SEMICON Taiwan 2026, scheduled September 2-4 at Taipei\'s Nangang Exhibition Center, will host over 1,300 exhibitors and 100,000 professionals from 65 countries discussing advanced packaging, chiplet architecture, and next-generation process technology. It is the semiconductor industry\'s largest annual gathering.'),
+
+# en_tearsheet
+('en_tearsheet', '2026-06-10 12:00:00',
+ 'Why every fintech firm is starting to look like an infrastructure provider',
+ 'Tearsheet editor Sara Khairi argues that the dominant trend in financial technology is the convergence of fintechs toward infrastructure-as-a-service models, as BaaS, embedded finance, and stablecoin rails blur lines between software companies and financial utilities. The shift mirrors how AWS redefined enterprise computing.'),
+
+('en_tearsheet', '2026-06-08 12:00:00',
+ "Affirm's move to become a bank signals a reconfiguration for the BaaS industry",
+ 'Affirm\'s banking charter application marks a pivotal shift for the BNPL sector, allowing it to hold deposits and reduce dependence on bank partners. Tearsheet explores how the move could trigger a broader BaaS industry reshuffling as fintech-bank partnerships are renegotiated.'),
+
+('en_tearsheet', '2026-06-04 12:00:00',
+ 'The Week in Market Moves May 28 through June 4 2026',
+ 'Tearsheet\'s weekly roundup covers Mastercard\'s digital identity expansion, Circle\'s new institutional yield product, and Robinhood\'s crypto-cashback credit card launch. The week highlighted fintech sector resilience amid broader market volatility driven by the semiconductor selloff.'),
+
+# en_farm_progress
+('en_farm_progress', '2026-06-15 12:00:00',
+ 'Storms flooding and hail test U.S. corn and soybean farmers',
+ 'Severe storm systems in mid-June 2026 brought 2-7 inches of rain, wind, and hail across Iowa, Illinois, and Indiana, threatening crop stands and causing flooding in low-lying fields. USDA crop progress reports show corn development delayed one to two weeks in affected areas.'),
+
+('en_farm_progress', '2026-06-06 12:00:00',
+ 'This Week in Agribusiness June 6 2026',
+ 'Farm Progress covers the National Pork Producers Council\'s push to codify the Swine Health Improvement Plan through Congress, latest grain market moves after the record 2025 harvest, and growing farm group pressure on the biofuel RIN price spike. Commodity markets remain volatile as trade policy uncertainty lingers.'),
+
+('en_farm_progress', '2026-06-01 12:00:00',
+ 'Gear up for the 2026 Farm Progress Show in Boone Iowa',
+ 'The 2026 Farm Progress Show is set for September 1-3 in Boone, Iowa, featuring a new Agronomy Zone with 12 seed, nutrient, and crop protection companies with individual test plots. Demo corn planted April 21 is on track for show-ready height by late August.'),
+
+# en_geopolitical_monitor
+('en_geopolitical_monitor', '2026-06-10 12:00:00',
+ 'Israel Strike Prospects on Iran in 2026: High-Risk Equilibria',
+ 'Geopolitical Monitor assesses that a renewed Israeli military strike on Iran remains plausible in 2026, with nuclear verification disputes and missile reconstitution maintaining pressure for action. The analysis places a 35-45% probability on a strike before year-end if diplomatic talks stall.'),
+
+('en_geopolitical_monitor', '2026-06-05 12:00:00',
+ 'Project Vault and the New Era of US Strategic Mineral Stockpiling',
+ "The Trump administration's February 2026 Project Vault initiative committing $12 billion to a public-private critical minerals reserve is the most aggressive U.S. stockpiling effort since the Korean War era. Geopolitical Monitor examines prioritized minerals including antimony, gallium, and germanium."),
+
+('en_geopolitical_monitor', '2026-06-01 12:00:00',
+ 'Stars and Stripes Over the White Sun: Evolution of US-Taiwan Relations',
+ 'Geopolitical Monitor traces the deepening U.S.-Taiwan security relationship following the January 2026 US-Taiwan Agreement on Trade and Investment committing Taiwan to $250 billion in U.S. semiconductor investments. The analysis examines how the deal reshapes cross-strait deterrence dynamics.'),
+
+# en_csis
+('en_csis', '2026-06-10 12:00:00',
+ 'Defining Autonomy: Why Software Not Drones Will Decide the Next War',
+ 'CSIS analysis argues that autonomous software for target identification and mission planning rather than the drones themselves will be the decisive military technology of coming conflicts, as demonstrated by Ukraine and the Iran strikes. The report calls for NSPM-11 implementation to accelerate DoD autonomy doctrine.'),
+
+('en_csis', '2026-06-05 12:00:00',
+ 'Rebuilding U.S. Missile Inventory: A Multiyear Project',
+ 'CSIS finds that significant depletion of U.S. precision munition stockpiles accelerated by the Iran war and Ukraine aid will require sustained defense budget increases and industrial base reforms over three to five years to rebuild. JDAM, Tomahawk, and GMLRS restocking are identified as immediate priorities.'),
+
+('en_csis', '2026-06-02 12:00:00',
+ 'What the Trump-Xi Summit Revealed and Left Unsaid About U.S.-China Tech Competition',
+ 'CSIS analysis of the June 2026 Trump-Xi summit finds both sides signaled willingness to talk on trade but the AI chip export control dispute and semiconductor investment restrictions remained unresolved. The report warns that without a tech firewall agreement, decoupling in advanced computing will accelerate.'),
+
+# en_atlantic_council
+('en_atlantic_council', '2026-06-18 12:00:00',
+ 'What the US-Iran deal means for the rest of the Middle East and beyond',
+ 'Atlantic Council experts assess a U.S.-Iran memorandum of understanding expected to reopen the Strait of Hormuz, arguing the partial detente risks alienating Saudi Arabia and Israel while providing Iran diplomatic cover. The analysis warns of second-order effects on regional security architecture.'),
+
+('en_atlantic_council', '2026-06-15 12:00:00',
+ 'Ukrainian drones are cutting Russian logistics and reshaping the battlefield',
+ 'Ukraine Alert analyzes how long-range drone strikes deep inside Russia are disrupting fuel depots, ammunition trains, and command networks, creating logistical vulnerabilities that could shift the war\'s operational tempo. The piece examines Western drone component supply challenges amid export control debates.'),
+
+('en_atlantic_council', '2026-06-10 12:00:00',
+ "US Energy Secretary Chris Wright says it will take many months to get back to normal after the energy crisis",
+ 'Atlantic Council interviews U.S. Energy Secretary Chris Wright following the Strait of Hormuz closure, who says restoring normal energy market conditions will take many months as refinery configurations, LNG flows, and supply chains adjust. Wright outlines plans to boost strategic petroleum reserve releases and fast-track LNG export approvals.'),
+
+# en_payload_space
+('en_payload_space', '2026-06-10 12:00:00',
+ "SpaceX Wins the Bulk of Space Force's 2026 Launch Contracts",
+ 'SpaceX secured the majority of Space Force launch service contracts for 2026 by value and mission count, continuing its dominance of national security space launch. The awards cover Falcon 9 and Falcon Heavy national security missions replacing Atlas V-class launches.'),
+
+('en_payload_space', '2026-05-15 12:00:00',
+ 'The State of Satcom 2026',
+ 'Payload Space surveys satcom executives on how SpaceX Starlink and Amazon Kuiper are forcing traditional GEO operators and startups to differentiate on latency guarantees, government contracts, and specialized frequency bands. Several LEO satcom startups are pivoting to serve defense customers exclusively.'),
+
+('en_payload_space', '2026-04-10 12:00:00',
+ 'The State of EO 2026',
+ "Payload Space's annual earth observation industry report finds commercial EO entering a consolidation phase, with BlackSky, Planet, and Satellogic competing for government and enterprise contracts while smaller players seek acquisition exits. AI-powered tasking and analytics are now table-stakes differentiators."),
+
+# en_new_electronics
+('en_new_electronics', '2026-06-10 12:00:00',
+ 'imec ITF 2026 - Scalable AI takes centre stage',
+ 'New Electronics reports from imec\'s ITF 2026 conference, where Nvidia CEO Jensen Huang received the Lifetime of Innovation Award and imec presented its 1nm-era semiconductor manufacturing roadmap leveraging High-NA EUV and novel interconnect materials. Scalable AI inference architectures were the dominant design theme.'),
+
+('en_new_electronics', '2026-06-05 12:00:00',
+ 'TSMC Technology Symposium 2026: A systems-driven era',
+ 'New Electronics covers TSMC\'s North America Technology Symposium, where the company unveiled its A13 process node and announced CoWoS advanced packaging achieving greater than 98% yield at 5.5-reticle size, enabling the largest multi-die AI accelerator systems ever built. EDA vendors Synopsys, Cadence, and Siemens announced new TSMC partnerships.'),
+
+('en_new_electronics', '2026-06-01 12:00:00',
+ 'A roadmap for semiconductor innovation beyond traditional scaling',
+ "New Electronics examines TSMC's European Technology Symposium roadmap showing the industry's evolution beyond Dennard scaling, with system co-design, chiplets, co-packaged optics, and 3D stacking emerging as the primary performance vectors for AI-era semiconductors."),
+
+# en_smm_metal
+('en_smm_metal', '2026-06-18 12:00:00',
+ 'Tiangong International raises high-speed steel prices effective June 17 on alloy cost surge',
+ 'Tiangong International raised all newly signed spot and contract orders for high-speed steel citing continuous rises in ferrotungsten and ferromolybdenum alloy raw material prices. Shanghai Metals Market says the move reflects broader tightening in specialty steel inputs linked to China\'s critical mineral export restrictions.'),
+
+('en_smm_metal', '2026-06-05 12:00:00',
+ 'SMM ICM 2026: Insights on Global Tin Market Dynamics Trade Transition and Sustainable Development',
+ 'The Indonesia Critical Minerals 2026 conference in Jakarta drew 3,500 attendees from 45 countries to discuss tin, nickel, cobalt, and aluminum market dynamics. SMM analysts highlighted a structural tin deficit driven by Myanmar mine disruptions and rising electronics demand that could persist through 2028.'),
+
+('en_smm_metal', '2026-06-04 12:00:00',
+ 'SMM ICM 2026: Global Nickel and Cobalt Outlook Mine Opportunities and Investment in Indonesia',
+ "SMM's ICM 2026 nickel and cobalt session examined how Indonesia's HPAL ramp-up is reshaping global supply curves while Chinese battery makers face feedstock cost volatility. Analysts forecast nickel prices recovering modestly in H2 2026 as Indonesian ore grade concerns limit supply growth."),
+
+# en_iea
+('en_iea', '2026-06-10 12:00:00',
+ 'Oil Market Report June 2026: Global supply to fall 3.9 million barrels per day on Iran disruption',
+ "The IEA's June 2026 Oil Market Report projects global oil supply falling 3.9 mb/d on average in 2026 to 102.4 mb/d, driven by the Strait of Hormuz disruption. North Sea Dated crude collapsed more than $40 per barrel to around $82 in May through mid-June before partially recovering."),
+
+('en_iea', '2026-06-09 12:00:00',
+ 'World Energy Investment 2026: Clean energy on track to hit 2 trillion dollars for the first time',
+ "The IEA's World Energy Investment 2026 report finds clean energy investment is set to exceed $2 trillion globally for the first time, with solar, grid storage, and EV charging leading growth. The clean-to-fossil investment ratio has reached a record 2.3-to-1."),
+
+('en_iea', '2026-06-05 12:00:00',
+ 'Global EV Outlook 2026: Electric car sales surpass 20 million reaching 25 percent global market share',
+ "The IEA's Global EV Outlook 2026 reports electric car sales hit 20 million units in 2025, growing 20% year-over-year to capture 25% of global new car sales. China accounts for 55% of sales, with Europe and the U.S. accelerating as entry-level EV models expand the addressable market."),
+
+# en_naiop
+('en_naiop', '2026-06-11 12:00:00',
+ 'Physical Climate Risk Increasingly Shapes Commercial Real Estate Investment Development and Operations',
+ 'A NAIOP Research Foundation report finds weather-related losses are accelerating CRE investor adoption of physical climate risk assessment tools and insurance restructuring. Coastal multifamily, Sun Belt office, and industrial logistics assets near waterways face the highest revaluation risk.'),
+
+('en_naiop', '2026-06-10 12:00:00',
+ 'From Overlooked to In-demand: The Rise of Industrial Outdoor Storage',
+ "NAIOP highlights industrial outdoor storage as one of commercial real estate's fastest-growing subsectors, driven by EV fleet parking, heavy equipment staging, and cross-dock yard demand. IOS properties in major logistics corridors are commanding premium rents as institutional ownership professionalizes the sector."),
+
+('en_naiop', '2026-06-01 12:00:00',
+ 'Opportunity Zones 2.0: Changes Challenges and Opportunities Ahead',
+ "As the opportunity zones program enters a new phase following 2025 legislative extensions, NAIOP examines how CRE developers are repositioning OZ strategies in light of new qualified opportunity fund rules and evolving Treasury guidance. Industrial and affordable housing deals dominate the renewed wave."),
+
+# en_assembly_mag
+('en_assembly_mag', '2026-06-12 12:00:00',
+ 'GM and Lockheed Martin to Collaborate on Defense Manufacturing',
+ 'General Motors and Lockheed Martin announced a collaboration to strengthen the U.S. defense industrial base by combining GM\'s automotive production expertise with Lockheed\'s defense systems integration. The initiative targets ammunition, ground vehicle components, and propulsion systems for DoD programs.'),
+
+('en_assembly_mag', '2026-06-10 12:00:00',
+ 'U.S. Robot Industry Experiences Double Digit Growth',
+ 'U.S. industrial robot installations grew 11% in 2025 to reach 38,000 units, with the food industry surging 30% as operators automate packaging and palletizing amid labor shortages. Automotive remained the largest sector despite headwinds from EV production line reconfiguration.'),
+
+('en_assembly_mag', '2026-06-08 12:00:00',
+ 'Volvo Redesigns EV Manufacturing for New EX60 SUV at Torslanda Plant',
+ 'Volvo Cars has begun production of its fully electric EX60 midsize SUV at its Torslanda, Sweden plant, with customer deliveries starting summer 2026. The plant underwent a major production redesign to incorporate flexible assembly lines capable of mixing EV and ICE vehicle builds.'),
+
+# en_semianalysis
+('en_semianalysis', '2026-06-12 12:00:00',
+ 'RL Systems Mind the Gap: Matching Trainer and Generator Throughput',
+ 'SemiAnalysis analyzes compute architecture challenges in RL-based AI training, finding that mismatch between trainer and generator throughput creates critical bottlenecks limiting next-generation reasoning model scaling. The report notes coding assistant AI already represents a $30 billion-plus annual recurring revenue market.'),
+
+('en_semianalysis', '2026-04-01 12:00:00',
+ 'The Great AI Silicon Shortage',
+ 'SemiAnalysis examines structural drivers of the 2026 AI chip shortage, projecting HBM4 supply constraints and CoWoS packaging limitations will keep AI accelerator availability 20-30% below demand through 2027. DRAM prices are forecast to more than double as AI consumes 30% of hyperscaler capital expenditure.'),
+
+('en_semianalysis', '2026-02-09 12:00:00',
+ 'CPUs are Back: The Datacenter CPU Landscape in 2026',
+ 'SemiAnalysis argues 2026 is an inflection year for datacenter CPUs as RL agent usage and long-context workloads expand the role of general-purpose compute alongside GPUs. The report benchmarks AMD Venice, Intel Diamond Rapids, Arm Phoenix, Graviton 5, and Google Axion across AI and enterprise workloads.'),
+
+# en_biopharmawatch
+('en_biopharmawatch', '2026-06-08 12:00:00',
+ "FDA Accepts Alvotech's AVT16 BLA for Review as Biosimilar to Entyvio",
+ 'The FDA accepted Alvotech\'s biologics license application for AVT16, a biosimilar to Entyvio (vedolizumab) used for inflammatory bowel disease, on June 8, 2026. Acceptance triggers a 12-month review clock with a target action date in mid-2027.'),
+
+('en_biopharmawatch', '2026-06-05 12:00:00',
+ 'FDA Calendar Q2 2026: Every PDUFA Date Phase 3 Readout and Drug Approval in April through June',
+ 'BioPharmaWatch compiles all 17 Q2 2026 FDA PDUFA action dates including cytisinicline for smoking cessation on June 20, DATROWAY for triple-negative breast cancer on June 2, and tebipenem HBr for resistant infections on June 18. Q2 2026 is one of the most active FDA calendars in recent history.'),
+
+('en_biopharmawatch', '2026-06-01 12:00:00',
+ 'Biotech Earnings Calendar 2026: Dates EPS Estimates and Results',
+ 'BioPharmaWatch publishes its comprehensive 2026 biotech earnings calendar tracking Q1 and Q2 results for over 200 biotech companies, with EPS estimates and analyst consensus. Heavyweight June reporters include Regeneron, Vertex, Biogen, and Alnylam Pharmaceuticals.'),
+]
+
+print(f'Total articles: {len(articles)}')
+
+articles_sorted = sorted(articles, key=lambda x: x[1], reverse=True)
+
+lines = []
+for sql_name, dt, title, content in articles_sorted:
+    lines.append(sql_name)
+    lines.append(dt)
+    lines.append(title + ' ')
+    lines.append(content + ' ')
+    lines.append('')
+    lines.append('-------------------------')
+
+pack_txt = '\n'.join(lines) + '\n'
+
+txt_path = os.path.join(PACK_DIR, f'{TODAY}-CLAUDE_AUTO_PACK.txt')
+with open(txt_path, 'w', encoding='utf-8') as f:
+    f.write(pack_txt)
+
+print(f'Written: {txt_path}')
+print(f'File size: {os.path.getsize(txt_path)} bytes')
+
+zip_path = os.path.join(PACK_DIR, f'{TODAY}-CLAUDE_AUTO_PACK.zip')
+with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zf:
+    zf.write(txt_path, arcname=f'{TODAY}-CLAUDE_AUTO_PACK.txt')
+
+print(f'Zip: {zip_path} ({os.path.getsize(zip_path)} bytes)')
+
+# Count unique sites
+sites = sorted(set(a[0] for a in articles))
+print(f'\nNew sites ({len(sites)}):')
+for s in sites:
+    print(f'  {s}')
