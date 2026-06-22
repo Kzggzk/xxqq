@@ -1,0 +1,654 @@
+en_tech_times
+2026-06-21 12:00:00
+AI Inference and World Model Startups Pull $1.8B in Two Days as Foundation Models Commoditize 
+AI infrastructure startups pulled $1.8 billion in funding within a single news cycle, with General Intuition raising $300M and Baseten finalizing $1.5B, as inference workloads are projected to account for two-thirds of all AI compute in 2026. 
+
+-------------------------
+en_tech_times
+2026-06-21 12:00:00
+JinkoSolar Hits 34.82% Tandem Solar Efficiency: TOPCon Platform Clears Silicon Ceiling 
+JinkoSolar announced a certified power conversion efficiency of 34.82% for its N-type TOPCon perovskite-silicon tandem cell, surpassing the theoretical limit constraining single-junction silicon solar technology for decades. 
+
+-------------------------
+en_tech_times
+2026-06-21 12:00:00
+NVIDIA RTX 50 GPU Shortage: Supply Cut 20%, Prices Climbing, No Desktop Refresh Confirmed 
+NVIDIA's RTX 50 series GPU supply has been cut by approximately 20% amid ongoing shortages, with prices climbing and no official desktop GPU refresh confirmation, creating headwinds for consumer and AI hardware markets. 
+
+-------------------------
+en_cgtn
+2026-06-21 12:00:00
+From World Cup merchandise to AI-powered logistics: China's supply chain connections ahead of CISCE 2026 
+Ahead of the China International Supply Chain Expo 2026, firms including Nvidia, Intel, Qualcomm, and Alibaba are expected to showcase AI-powered manufacturing and logistics technologies as China expands its role in global supply chains. 
+
+-------------------------
+en_rttnews
+2026-06-21 12:00:00
+China Shares Poised To Return To The Downside On Monday 
+Chinese equity markets are expected to face renewed selling pressure Monday following a week of mixed economic data and continued uncertainty around U.S.-China technology export controls. 
+
+-------------------------
+en_rttnews
+2026-06-21 12:00:00
+China Loan Prime Rate Data Due On Monday 
+China's People's Bank is scheduled to release its loan prime rate decision on June 22, with market consensus expecting the PBOC to hold the 1-year rate at 3.0% and the 5-year rate at 3.5% for the eleventh consecutive month. 
+
+-------------------------
+en_spaceflight_now
+2026-06-20 12:00:00
+SpaceX launches 24 Starlink satellites on Falcon 9 rocket from Vandenberg 
+SpaceX successfully launched 24 Starlink satellites from Vandenberg Space Force Base on June 20, adding to its megaconstellation which now has over 10,600 active satellites in orbit. 
+
+-------------------------
+en_pv_magazine_usa
+2026-06-20 12:00:00
+Constraining U.S. wind and solar deployment could trigger $121 billion in unnecessary energy costs 
+A new analysis found that proposed federal restrictions on U.S. wind and solar deployment could generate $121 billion in additional energy costs over the coming decade as higher-cost fossil generation replaces constrained clean energy capacity. 
+
+-------------------------
+en_space_news
+2026-06-20 12:00:00
+China conducts 4 launches in 3 days, but silence follows Kuaizhou-11 launch 
+China conducted four rocket launches in three days, bringing its 2026 total to 43 attempts including three failures, but maintained silence after a Kuaizhou-11 solid-fuel rocket launch leaving the payload deployment status unconfirmed. 
+
+-------------------------
+en_evtech_news
+2026-06-20 12:00:00
+Rivian R2 Deliveries Begin in June 2026: 330-Mile Range Electric SUV Challenges Tesla Model Y 
+Rivian began customer deliveries of its R2 electric SUV in June 2026, offering up to 330 miles of range, 656 horsepower, and 0-60 mph in 3.6 seconds, positioning it as a direct competitor to the Tesla Model Y. 
+
+-------------------------
+en_rttnews
+2026-06-20 12:00:00
+Adobe Stock Drops As CFO Dan Durn Resigns Overshadowing Higher Q2 Results, Outlook Upgrade 
+Adobe shares fell approximately 4% after CFO Dan Durn announced his resignation, overshadowing the company's better-than-expected Q2 2026 revenue results and raised full-year guidance driven by strong AI-powered Creative Cloud growth. 
+
+-------------------------
+en_military_times
+2026-06-19 12:00:00
+Army launches new Indo-Pacific multi-domain command 
+The U.S. Army launched a new Indo-Pacific command combining traditional forces with cyber, space, unmanned systems, and electronic warfare capabilities at Joint Base Lewis-McChord. 
+
+-------------------------
+en_military_times
+2026-06-19 12:00:00
+Air Force One begins commissioning flights, final step before presidential use 
+A Qatari-donated Boeing VC-25B arrived at Joint Base Andrews and began initial commissioning flights after receiving new presidential livery and required government modifications. 
+
+-------------------------
+en_ess_news
+2026-06-19 12:00:00
+Italy approves 298 MW of battery storage projects 
+Italy's energy ministry authorized two standalone battery energy storage projects totaling 298 MW, adding to a recent wave of BESS approvals as the country accelerates grid-scale storage deployment. 
+
+-------------------------
+en_space_news
+2026-06-19 12:00:00
+Qianfan constellation deployment hits 200 satellites with Long March 8 and 6A launches 
+China launched Long March 8 and Long March 6A rockets on consecutive days adding 36 satellites to the Qianfan broadband constellation, bringing the total to 200 satellites in orbit. 
+
+-------------------------
+en_talking_logistics
+2026-06-19 12:00:00
+Above the Fold: Supply Chain Logistics News (June 19, 2026) 
+The weekly supply chain roundup covers the Trump administration's American Supply Chain Sovereignty Initiative, project44's SAP-endorsed multimodal visibility solution, and C.H. Robinson's BidBoardX expansion connecting carriers to committed freight. 
+
+-------------------------
+en_mining_weekly
+2026-06-19 12:00:00
+Magazine round up | 19 June 2026 
+Mining Weekly's June 19 roundup covers key global mining developments including updates on copper, lithium, rare earths, and iron ore projects, with most minerals forecast to average higher prices in 2026 as trade frictions ease. 
+
+-------------------------
+en_rappler
+2026-06-19 12:00:00
+Philippines takes ASEAN helm amid stormy seas 
+The Philippines assumed the ASEAN chairmanship in June 2026 amid South China Sea tensions, U.S.-China trade dynamics, and regional security concerns, with President Marcos targeting economic growth and multilateral cooperation. 
+
+-------------------------
+en_science_daily
+2026-06-19 12:00:00
+This DNA repair gene went rogue and exposed a cancer weakness 
+Researchers found that excess expression of the DNA repair gene EXO1 destabilizes DNA through two mechanisms, expanding single-stranded DNA gaps and degrading reversed replication forks, revealing a potential cancer therapy vulnerability. 
+
+-------------------------
+en_hstoday
+2026-06-19 12:00:00
+GAO: Leadership and Organizational Gaps Slow Navy's Push for Robotic and Autonomous Systems 
+A GAO report found the U.S. Navy's adoption of robotic and autonomous systems is hampered by leadership gaps and organizational misalignment, despite lessons from Ukraine and the Middle East demonstrating their battlefield value. 
+
+-------------------------
+en_pv_magazine_usa
+2026-06-18 12:00:00
+With generation from natural gas down 60%, solar takes top spot in California 
+Utility-scale solar generated more electricity than natural gas in California on 82% of days in the first five months of 2026, reaching 100% of instantaneous demand on 143 of the first 168 days of the year. 
+
+-------------------------
+en_cgtn
+2026-06-18 12:00:00
+2026 Lujiazui Forum sends strong signal on China's tech finance 
+The 2026 Lujiazui Forum concluded in Shanghai with policymakers and global investors expressing confidence in China's technology-driven growth, with Goldman Sachs projecting AI could contribute up to 8% of China's labor productivity growth over the next decade. 
+
+-------------------------
+en_mining_weekly
+2026-06-18 12:00:00
+Critical Metals starts drilling on Tanbreez rare earths project in Greenland 
+Critical Metals Corporation initiated a 10,000-meter diamond drilling campaign on the Tanbreez rare earths project in Greenland, one of the world's largest rare earths and zirconium deposits, targeting high-priority zones identified in prior exploration. 
+
+-------------------------
+en_mining_weekly
+2026-06-18 12:00:00
+Rare earths recovery company Paladin Envirotech opens new US e-waste recycling sites 
+Paladin Envirotech expanded its U.S. operations with new e-waste recycling facilities in Phoenix, Columbus, Dallas, and Lacey as demand for domestically recovered rare earth elements accelerates amid supply chain concerns. 
+
+-------------------------
+en_tech_times
+2026-06-18 12:00:00
+Steam Frame FCC Embargo Lifts: TMR Controllers and Hot-Swap Battery Confirmed 
+The FCC's embargo on Valve's Steam Frame controller documentation lifted, confirming the device uses tunneling magnetoresistance technology for thumbsticks and that a Frame Enthusiast Kit with a hot-swappable battery pack is planned. 
+
+-------------------------
+en_rappler
+2026-06-18 12:00:00
+Sara Duterte's impeachment pre-trial conference begins 
+The pre-trial conference for Philippine Vice President Sara Duterte's Senate impeachment case began on June 18, 2026, marking a historic legal proceeding against a sitting Philippine vice president. 
+
+-------------------------
+en_science_daily
+2026-06-18 12:00:00
+This giant tropical fruit could help reverse gum disease damage 
+A new biomaterial combining jackfruit latex, pomegranate peel extract, and simvastatin demonstrated the ability to combat gum disease infection and inflammation while potentially helping rebuild bone and tissue lost to periodontitis. 
+
+-------------------------
+en_data_center_knowledge
+2026-06-18 12:00:00
+New Data Center Developments: June 2026 
+Prime Data Centers broke ground on SMF02, an 18 MW facility in Sacramento, while CloudBurst Data Centers began construction on a 1.2 GW AI campus in Central Texas, as hyperscale data center investment hits record levels in 2026. 
+
+-------------------------
+en_auto_connected_car
+2026-06-18 12:00:00
+Autonomous & Self-Driving Vehicle News: Waymo, Apple, STEER, Baidu, Tesla, Volvo and Aurora 
+Baidu's Apollo Go expanded into Switzerland under a Level 4 operating permit, Apple updated its self-driving software strategy, and STEER Tech partnered with Pliyt to develop autonomous airport transport vehicles. 
+
+-------------------------
+en_govcon_wire
+2026-06-18 12:00:00
+MDA Awards Spots to Over 1,000 Contractors on $151B SHIELD Contract for Golden Dome 
+The Missile Defense Agency awarded contract positions on its $151 billion SHIELD vehicle to over 1,000 contractors, creating a broad procurement base to support the Golden Dome homeland missile defense system development. 
+
+-------------------------
+en_evtech_news
+2026-06-18 12:00:00
+Global EV Demand Rises for Second Straight Month as High Petrol Prices Push More Buyers Toward Electric Vehicles 
+Global EV demand increased for the second consecutive month in May 2026, driven by high petrol prices linked to Middle East tensions, with strong growth in European and Asian markets. 
+
+-------------------------
+cn_global_times
+2026-06-18 12:00:00
+HK plays key role in mainland tech firms' global expansion: official 
+Hong Kong is facilitating mainland Chinese technology companies' international expansion, with 25 of 50+ companies listing in Hong Kong in 2026 being tech firms whose fundraising exceeded 60% of total IPO proceeds, concentrated in semiconductors, AI, and new energy. 
+
+-------------------------
+cn_global_times
+2026-06-18 12:00:00
+Global investors eye growing opportunities in Chinese tech assets 
+Global investors are increasingly viewing Chinese technology assets as essential portfolio holdings, with foreign capital inflows accelerating as China's industrial resilience, energy cost advantages, and AI breakthroughs elevate it from an option to a necessity. 
+
+-------------------------
+en_eenews_europe
+2026-06-18 12:00:00
+SEMI reports 14% rise in Q1 semiconductor equipment billings 
+SEMI reported global semiconductor equipment billings hit a record $36.55 billion in Q1 2026, up 14% year-over-year, driven by AI-related capacity investments at leading foundries including TSMC, Samsung, and Intel. 
+
+-------------------------
+en_biopharma_watch
+2026-06-18 12:00:00
+FDA Calendar Q2 2026: Every PDUFA Date, Phase 3 Readout and Drug Approval in April-June 
+BiopharmaWatch's Q2 2026 FDA calendar tracks upcoming PDUFA dates including Datroway for triple-negative breast cancer (June 2), vepdegestrant for advanced breast cancer (June 5), tebipenem for cUTI (June 18), and olezarsen for severe hypertriglyceridemia (June 30). 
+
+-------------------------
+en_payload_space
+2026-06-18 12:00:00
+ESA Taps Edge Aerospace for Space Cloud Contract 
+The European Space Agency selected Luxembourg-based Edge Aerospace to study concepts for orbital data centers under its Space Cloud program, developing an architecture and use-case roadmap for cloud computing services delivered from orbit. 
+
+-------------------------
+en_military_times
+2026-06-17 12:00:00
+Fair winds, INDOPACOM: Pentagon returns command name to US Pacific Command 
+The Pentagon officially renamed U.S. Indo-Pacific Command back to U.S. Pacific Command, reverting to the historic name used from 1947 to 2018 while maintaining the same mission and areas of operational responsibility. 
+
+-------------------------
+en_spaceflight_now
+2026-06-17 12:00:00
+Arianespace launches its heaviest payload to date with Amazon Leo flight 
+Arianespace set a payload mass record on June 17 by launching 36 Amazon Leo broadband satellites aboard an Ariane 64 rocket, marking a milestone for Europe's launch vehicle as Amazon accelerates its satellite internet constellation. 
+
+-------------------------
+en_ess_news
+2026-06-17 12:00:00
+Rept Battero unveils 320 Ah sodium-ion cell for long-duration storage 
+Rept Battero unveiled its Wending 320 Ah sodium-ion energy storage cell at SNEC 2026 in Shanghai, offering over 20,000 cycle life, round-trip efficiency above 97%, and an extreme-temperature operating range for utility-scale applications. 
+
+-------------------------
+en_science_daily
+2026-06-17 12:00:00
+Humans may have hidden regenerative powers 
+A study in Nature Communications describes a two-step treatment enabling the regeneration of bone, joint structures, and ligaments with reduced scarring, suggesting humans may possess previously untapped regenerative capacity after injury. 
+
+-------------------------
+en_inside_defense
+2026-06-17 12:00:00
+Pentagon submits weapon system assessments to Congress 
+The Pentagon sent Congress its annual selected acquisition reports covering cost, schedule, and performance status for 79 major defense programs including the F-35, showing mixed progress across aircraft, missile, and ship programs. 
+
+-------------------------
+en_carbon_pulse
+2026-06-16 12:00:00
+CP Daily Newsletter: Tuesday June 16, 2026 
+Carbon Pulse's daily newsletter covers global carbon market developments including EU ETS reform analysis, voluntary carbon market activity with CORSIA benchmark prices falling 22% to around $10/tonne, and Cameroon's new Article 6 climate commitment. 
+
+-------------------------
+en_central_banking
+2026-06-16 12:00:00
+ECB hikes by 25bp as eurozone inflation takes off 
+The European Central Bank raised its policy rate by 25 basis points to 2.25% following its June 10-11 meeting, resuming rate hikes as eurozone inflation moved above target due to geopolitical energy price pressures from the Middle East. 
+
+-------------------------
+en_central_banking
+2026-06-16 12:00:00
+BoJ tightens to 1% and plans end to JGB purchase reductions 
+The Bank of Japan's board voted 7-1 on June 16 to raise its benchmark rate by 25 basis points to 1.0%, citing rising inflation risks, and announced plans to wind down its government bond purchase reduction program. 
+
+-------------------------
+en_tech_times
+2026-06-16 12:00:00
+GPT-5.6: OpenAI Chief Scientist Calls It a Meaningful Leap, June Launch Nears 
+OpenAI's chief scientist confirmed GPT-5.6 represents a meaningful improvement over GPT-5.5, with a late-June 2026 launch approaching as the company continues rapid iteration on its flagship AI model. 
+
+-------------------------
+en_llm_stats
+2026-06-16 12:00:00
+GLM-5.2 by Z.AI Released: Strongest Open-Source Model on Coding Benchmarks 
+Z.AI's GLM-5.2 released June 16, 2026, achieved 81.0 on Terminal-Bench 2.1 and 62.1 on SWE-bench Pro, making it the strongest open-source model on standard coding benchmarks with a 1 million-token context window. 
+
+-------------------------
+en_cgtn
+2026-06-16 12:00:00
+China's economy: A stabilizing force in a volatile world 
+China's goods trade totaled 20.68 trillion yuan in the first five months of 2026, up 15.3% year-on-year, driven by strong exports of machinery, electrical products, and AI-related goods, positioning China as an economic stabilizer amid global volatility. 
+
+-------------------------
+en_hstoday
+2026-06-16 12:00:00
+IDF Announces Elimination of Hezbollah Commander Behind Murder of 5 American Soldiers 
+The Israel Defense Forces announced the elimination of a senior Hezbollah commander accused of orchestrating the 2007 kidnapping and murder of five American soldiers, marking a significant counterterrorism operation with geopolitical implications. 
+
+-------------------------
+en_fleet_owner
+2026-06-16 12:00:00
+2026 logistics report highlights capacity squeeze, regulation, and AI adoption in trucking 
+The 2026 State of Logistics Report found the trucking industry faces capacity pressure, rising regulatory compliance costs, and accelerating AI adoption as the freight recession extends into its third year with no imminent recovery. 
+
+-------------------------
+en_carbon_pulse
+2026-06-16 12:00:00
+Major firms deepen climate commitments as carbon credit adoption rises, report finds 
+A new report finds more than half of the world's largest companies now have net-zero targets and nearly half plan to use carbon credits as part of their climate strategy, with voluntary carbon market participation continuing to grow. 
+
+-------------------------
+en_spaceflight_now
+2026-06-16 12:00:00
+SpaceX launches 3 Block 2 BlueBird satellites for AST SpaceMobile 
+SpaceX launched three Block 2 BlueBird satellites for AST SpaceMobile on June 16, advancing the company's mission to provide direct-to-cell broadband coverage to standard smartphones globally. 
+
+-------------------------
+en_pv_magazine_usa
+2026-06-15 12:00:00
+Vesper Energy breaks ground and secures $236 million for another huge solar project in Texas 
+Vesper Energy secured $236 million in financing and broke ground on its 201 MW Nazareth Solar project in Tulia, Texas, adding to the state's position as the top solar market with record utility-scale solar additions in 2026. 
+
+-------------------------
+en_govcon_wire
+2026-06-15 12:00:00
+Air Force Expands Lockheed Martin C-130J Contract to $25B 
+The U.S. Air Force expanded the Lockheed Martin C-130J Hercules sustainment and production contract to $25 billion, covering continued production and logistics support for the workhorse tactical airlifter used worldwide. 
+
+-------------------------
+en_payments_dive
+2026-06-15 12:00:00
+Nuvei to buy Payoneer for $2.75B 
+Canadian payments processor Nuvei announced a $2.75 billion acquisition of Payoneer Global to build a larger cross-border commerce platform, combining Nuvei's payment acceptance with Payoneer's global payout and treasury capabilities. 
+
+-------------------------
+en_climate_central
+2026-06-15 12:00:00
+2026 World Cup: Climate Change Boosts Performance-Impairing Heat at Nearly Every Match 
+Climate Central analysis found climate change boosts the likelihood of performance-impairing heat during 97 of 104 scheduled 2026 World Cup matches, with Uruguay vs. Spain on June 26 in Guadalajara having 70% odds of such conditions. 
+
+-------------------------
+en_fintech_weekly
+2026-06-15 12:00:00
+Eleven Companies, Eighty-Three Days: The Race for a Federal Crypto Banking License 
+Eleven firms including Circle, Ripple, BitGo, and Paxos filed for or received OCC national trust bank charter approvals within 83 days following the Trump administration's executive order integrating fintech firms into the banking system. 
+
+-------------------------
+en_tech_funding_news
+2026-06-15 12:00:00
+DeepSeek raises $7.4B at $50B valuation in first-ever external funding round 
+Chinese AI lab DeepSeek closed its first-ever external funding round, raising approximately $7.4 billion at a valuation exceeding $50 billion, as the developer of the widely-used open-source V3 model family gains investor backing. 
+
+-------------------------
+en_tech_target
+2026-06-15 12:00:00
+Enterprise Connect 2026 brings AI from hype to reality 
+Enterprise Connect 2026 focused on translating AI from theoretical promise to measurable workflow outcomes, with vendors showcasing agentic AI applications that automate unified communications and customer experience tasks without constant human oversight. 
+
+-------------------------
+en_space_news
+2026-06-15 12:00:00
+Deep Space Network antenna mishap blamed on poor training and procedures 
+A NASA investigation found poor training and procedures caused millions of dollars in damage to the 70-meter DSS-14 antenna at Goldstone, California, leaving the Deep Space Network's largest antenna offline since a September 2025 pointing incident. 
+
+-------------------------
+en_data_center_knowledge
+2026-06-15 12:00:00
+Data Center Hardware Highlights: June 2026 
+June 2026 hardware highlights include rack-scale liquid cooling deployments supporting 150kW per rack, 800V DC power distribution improving efficiency by 20%, and growing hyperscaler demand for AI-optimized server configurations. 
+
+-------------------------
+en_ember_energy
+2026-06-15 12:00:00
+For the first time, wind and solar generated more electricity than gas worldwide in April 2026 
+Ember reported that wind and solar together generated 22% of global electricity in April 2026, surpassing natural gas at 20% for the first time, marking a historic milestone in the global energy transition. 
+
+-------------------------
+en_payload_space
+2026-06-15 12:00:00
+NASA Awards LTV, Lunar Transport Contracts 
+NASA awarded contracts for lunar terrain vehicles and lunar transport services as part of its Artemis program, advancing commercial infrastructure needed to support long-duration astronaut operations on the lunar surface. 
+
+-------------------------
+en_evtech_news
+2026-06-15 12:00:00
+CATL Super Tech Day 2026 Unveils Breakthrough EV Battery Technologies 
+CATL's Super Tech Day 2026 showcased a battery system enabling 6-minute ultra-fast charging with up to 1,500-kilometer range potential, representing a major advance in energy density and charge acceptance that could accelerate global EV adoption. 
+
+-------------------------
+en_crispr_medicine_news
+2026-06-15 12:00:00
+Latest Updates From the Gene-Editing Clinical Trials 
+CRISPR Medicine News reports approximately 300 active clinical trials involving gene-editing technologies, with recent interim data from YolTech showing its CRISPR adenine base editor YOLT-202 raised alpha-1 antitrypsin levels to normal in PiZZ patients. 
+
+-------------------------
+en_medtech_dive
+2026-06-15 12:00:00
+Resmed completes $340M Noctrix takeover 
+ResMed closed its $340 million acquisition of Noctrix Health, adding a wearable neuromuscular stimulation device for restless legs syndrome to its sleep technology portfolio, expanding its therapeutic offerings beyond respiratory care. 
+
+-------------------------
+en_the_conversation
+2026-06-15 12:00:00
+Sovereign AI? Anthropic shutdown reveals Canada's weakness 
+After the U.S. government ordered Anthropic to suspend foreign nationals' access to its advanced AI models and Anthropic disabled them globally, the incident highlighted vulnerabilities in countries dependent on U.S. AI infrastructure and sparked G7 debate on AI sovereignty. 
+
+-------------------------
+en_iot_analytics
+2026-06-15 12:00:00
+Cellular IoT market update 2026: Connections grew 13% in 2025, slowest since 2020 
+IoT Analytics found cellular IoT connections grew 13% in 2025, the slowest growth since 2020, but forecasts acceleration to 5.4 billion connections in 2026 and 9.2 billion by 2030 as industrial and automotive IoT applications expand. 
+
+-------------------------
+cn_global_times
+2026-06-15 12:00:00
+China's supply-chain injects certainty into a changing global economy 
+China's supply chain reliability is providing certainty for global trade partners, with China's five-month trade totaling 20.68 trillion yuan and AI-driven logistics improvements reducing manufacturing bottlenecks across key export sectors. 
+
+-------------------------
+en_llm_stats
+2026-06-12 12:00:00
+Kimi K2.7 Code by MoonshotAI Released 
+MoonshotAI released Kimi K2.7 Code on June 12, 2026, a coding-focused agentic model that reduces thinking-token usage by approximately 30% versus K2.6 while improving real-world long-horizon coding task completion rates. 
+
+-------------------------
+en_carbon_pulse
+2026-06-12 12:00:00
+Loosening of EU carbon market could derail climate goals, generate major surplus, finds analysis 
+A technical analysis found that proposed reforms loosening the EU Emissions Trading System could significantly weaken the bloc's decarbonization trajectory by flooding the market with surplus permits and undermining the pathway to climate neutrality. 
+
+-------------------------
+en_talking_logistics
+2026-06-12 12:00:00
+Above the Fold: Supply Chain Logistics News (June 12, 2026) 
+This week's logistics news features Trimble unveiling a next-gen shipper TMS platform, Alpega Group and Wakeo forming a strategic alliance for unified transport intelligence, and new data on barriers to autonomous trucking adoption. 
+
+-------------------------
+en_govcon_wire
+2026-06-12 12:00:00
+RTX Lands $1B MDA Contract for Standard Missile-3 Block IB All-Up Rounds 
+RTX secured a $1 billion contract from the Missile Defense Agency for production of Standard Missile-3 Block IB all-up rounds, supporting the nation's ground-based midcourse missile defense architecture. 
+
+-------------------------
+en_payments_dive
+2026-06-12 12:00:00
+Apple delves deeper into payments 
+Apple is planning significant changes to its digital wallet and payment tools including a 'tap to share' function allowing shoppers to share billing and shipping data with merchants, deepening its push to dominate mobile commerce. 
+
+-------------------------
+en_tech_target
+2026-06-12 12:00:00
+Cisco agentic AI security push faces enterprise trust gap 
+Cisco's push to deploy agentic AI across enterprise networks is encountering resistance from security teams concerned about AI systems autonomously making network changes, highlighting a broad trust gap slowing adoption of agentic AI security tools. 
+
+-------------------------
+en_fintech_weekly
+2026-06-12 12:00:00
+SWIFT's Blockchain Will Transform a 50-Year-Old Global Banking System 
+SWIFT's blockchain-based shared ledger, in development since September 2025, will go live with real-world transactions in 2026, enabling participating banks to settle cross-border payments on a single distributed ledger. 
+
+-------------------------
+en_the_conversation
+2026-06-12 12:00:00
+SpaceX is poised to go public amid criticism about its environmental impact 
+SpaceX released IPO financial details ahead of its June 12 Nasdaq listing at a $1.77 trillion valuation, while environmental protesters demonstrated outside Starbase over the environmental impact of Starship rocket test flights. 
+
+-------------------------
+en_tech_funding_news
+2026-06-11 12:00:00
+Jeff Bezos's Prometheus raises $12B to build an artificial general engineer for the physical world 
+Prometheus, the physical AI startup co-founded by Jeff Bezos and Vik Bajaj, raised $12 billion at a $41 billion valuation to develop AI systems capable of autonomous engineering in robotics and manufacturing domains. 
+
+-------------------------
+en_llm_stats
+2026-06-10 12:00:00
+MAI-Thinking-1: Microsoft's First In-House Reasoning Model 
+Microsoft released MAI-Thinking-1 in June 2026, its first in-house reasoning model, a 35B-active parameter sparse Mixture of Experts architecture, marking Microsoft's entry into custom frontier model development alongside its OpenAI partnership. 
+
+-------------------------
+en_data_center_knowledge
+2026-06-10 12:00:00
+Microsoft Announces $274 Million Data Center Expansion in Wyoming 
+Microsoft announced a $274 million data center expansion in Wyoming as part of a broader hyperscaler investment wave, with the top five cloud providers projected to spend over $600 billion on infrastructure in 2026. 
+
+-------------------------
+en_crispr_medicine_news
+2026-06-10 12:00:00
+In Vivo Gene Editing of Lung Stem Cells Achieves Long-Term Correction for Cystic Fibrosis 
+Researchers achieved long-term correction of cystic fibrosis mutations by editing lung stem cells in vivo using CRISPR-Cas9, demonstrating durable gene correction without the need for cell extraction and ex vivo editing procedures. 
+
+-------------------------
+en_medtech_dive
+2026-06-10 12:00:00
+Top medtech stories from ADA's Scientific Sessions 
+The ADA's 2026 Scientific Sessions in New Orleans featured Insulet's Omnipod 6 pivotal data, Dexcom's study supporting broader CGM coverage, and Tandem's tubeless insulin pump filing plans for the FDA submission this quarter. 
+
+-------------------------
+en_fleet_owner
+2026-06-10 12:00:00
+C.H. Robinson Edge Report shows tight refrigerated truck capacity amid U.S. produce season pressures 
+C.H. Robinson's Edge Report shows tight refrigerated trucking capacity in the Southeast, Texas, and West Coast driven by produce season demand, with shippers facing higher rates amid the broader capacity-constrained trucking market. 
+
+-------------------------
+en_iot_analytics
+2026-06-10 12:00:00
+US manufacturing reshoring boom: What the data says one year after Liberation Day tariffs 
+One year after tariff implementation, IoT Analytics finds U.S. manufacturing construction spending has risen 5.6% with companies deploying IoT, edge AI, and automation to improve the economics of domestic production despite no broad reshoring boom. 
+
+-------------------------
+en_auto_connected_car
+2026-06-10 12:00:00
+Autonomous & Self-Driving Vehicle News: Waymo, Teradar, PlusAI, Mobileye, Tesla, Uber, Nuro, Lucid, Stellantis, Wayve, WeRide, Applied Intuition, Roadzen 
+This roundup covers WeRide and Uber's Spain commercial robotaxi pilot announcement, Tesla's Cybercab production start in Texas, and Uber-Nuro-Lucid expanding their autonomous ride-hailing service to Houston. 
+
+-------------------------
+en_climate_central
+2026-06-10 12:00:00
+U.S. Solar and Wind Growth in 2025 
+Climate Central reports renewables accounted for 61% of new U.S. power-generating capacity added in 2025, with utility-scale solar leading at 27 GW and a record 15 GW of utility-scale energy storage added as clean energy adoption accelerates. 
+
+-------------------------
+en_eenews_europe
+2026-06-10 12:00:00
+Semiconductor industry heads for $1tn in 2026 
+The global semiconductor market remains on track to reach $1 trillion in annual sales in 2026, as Q1 sales significantly exceeded Q4 2025 levels driven by AI chip demand across hyperscale data centers and edge computing applications. 
+
+-------------------------
+en_tech_target
+2026-06-10 12:00:00
+MIT EmTech: 2026 is the year AI goes to work 
+MIT's EmTech conference highlighted 2026 as the year enterprise AI shifts from pilots to operational deployment, with over 80% of enterprises having tested GenAI-enabled applications and agentic AI integration projected to jump from 5% to 40% by year-end. 
+
+-------------------------
+en_payload_space
+2026-06-10 12:00:00
+Rocket Lab Wins Point-to-Point Demo Contract for Neutron 
+Rocket Lab won a Department of Defense contract to demonstrate point-to-point cargo delivery using its Neutron rocket, making it the first commercial launch vehicle selected for the Pentagon's Rocket Cargo program. 
+
+-------------------------
+en_ess_news
+2026-06-10 12:00:00
+Big battery capacity jumps globally 12-fold in four years: IEA 
+The IEA reported that global large-scale battery storage capacity increased 12-fold in four years, reaching 108 GW of new deployments in 2025 as falling LFP battery costs and AI data center power needs drive accelerating deployment worldwide. 
+
+-------------------------
+en_ember_energy
+2026-06-10 12:00:00
+Solar overtakes coal in US electricity for the first month on record 
+Solar power supplied a record 12.8% of U.S. electricity in a recent month, overtaking coal at 12.2% for the first time on record, as solar capacity additions accelerate and coal retirements continue under the energy transition. 
+
+-------------------------
+en_inside_defense
+2026-06-09 12:00:00
+Defense Business Briefing -- June 9, 2026 
+InsideDefense's June 9 briefing covers BlueForge Alliance securing an additional $400 million for submarine industrial base support, plus updates on Golden Dome procurement strategy and fiscal year 2027 defense budget congressional negotiations. 
+
+-------------------------
+en_rappler
+2026-06-08 12:00:00
+Magnitude 7.8 earthquake strikes off Sarangani coast 
+A magnitude 7.8 earthquake struck off the coast of Sarangani in the southern Philippines on June 8, 2026, triggering tsunami warnings and prompting international expressions of sympathy and emergency disaster response. 
+
+-------------------------
+en_fintech_weekly
+2026-06-08 12:00:00
+Judge Pauses CFPB Open Banking Rule, Giving Banks Temporary Relief 
+A federal judge issued a preliminary injunction suspending enforcement of the CFPB's open banking rule, temporarily halting the regulation requiring banks to share customer data with third-party fintech apps upon customer request. 
+
+-------------------------
+en_inside_defense
+2026-06-08 12:00:00
+Lawmakers press DOD to strictly enforce ban on contractors tied to China military-linked lobbying 
+House and Senate lawmakers pressed the Pentagon to enforce the Section 851 ban on contracting with firms that retain entities lobbying on behalf of Chinese military companies listed under Section 1260H, which takes effect June 30, 2026. 
+
+-------------------------
+en_the_conversation
+2026-06-08 12:00:00
+Golden Dome: An aerospace engineer explains the proposed US-wide missile defense system 
+An aerospace engineer examines the technical feasibility and $185 billion cost estimate for the Trump administration's proposed Golden Dome missile defense system, which would rely heavily on space-based interceptors to protect the continental United States. 
+
+-------------------------
+en_payments_dive
+2026-06-08 12:00:00
+Capital One nabs Brex for $5.15B 
+Capital One announced a $5.15 billion acquisition of corporate spend management platform Brex, a major fintech deal expanding the bank's presence in business payments and expense management for startups and enterprise clients. 
+
+-------------------------
+en_talking_logistics
+2026-06-05 12:00:00
+Above the Fold: Supply Chain Logistics News (June 5, 2026) 
+C.H. Robinson launched its AI technology for continuous supply chain assessment and operations, while Amazon unveiled a new AI warehouse robot during a $12 billion Europe logistics expansion push. 
+
+-------------------------
+en_hstoday
+2026-06-05 12:00:00
+Department of War Contracts for June 5, 2026 
+The U.S. Department of War released its June 5 contract awards covering Air Force crew chief operations support for Operation Epic Fury and multiple other defense industry agreements across military branches. 
+
+-------------------------
+en_crispr_medicine_news
+2026-06-05 12:00:00
+Removing the Brakes - Genomic Medicine in Experimental Clinical Practice 
+A new analysis of CRISPR regulatory frameworks examines how the European Genomic Medicine Consortium, launched in April 2026, aims to accelerate clinical rollout of genomic therapies by harmonizing oversight across EU member states. 
+
+-------------------------
+en_iot_analytics
+2026-06-05 12:00:00
+The $1 trillion industrial downtime problem is becoming a knowledge problem - can AI mitigate it? 
+IoT Analytics estimates unplanned industrial downtime costs global manufacturers approximately $1 trillion annually, and new AI-powered predictive maintenance solutions are showing early promise in reducing unexpected equipment failures across factory operations. 
+
+-------------------------
+en_medtech_dive
+2026-06-05 12:00:00
+Tandem to file tubeless insulin pump with FDA this quarter 
+Tandem Diabetes Care announced plans to submit its tubeless insulin pump to the FDA in Q2 2026, with pivotal clinical trial data supporting the device's safety and efficacy in managing type 1 diabetes with reduced infusion set burden. 
+
+-------------------------
+en_climate_central
+2026-06-05 12:00:00
+Climate Reporting Resources: 2026 Hurricane Season 
+Climate Central provides journalists and researchers with attribution science resources for the 2026 Atlantic hurricane season, quantifying how climate change affects hurricane intensity, rainfall, and storm surge for individual storm events. 
+
+-------------------------
+en_space_news
+2026-06-05 12:00:00
+FCC lets Amazon Leo miss deployment deadline with temporary spectrum penalty 
+The FCC granted Amazon a waiver to miss its July 30 satellite deployment deadline for the Amazon Leo constellation, but imposed a temporary loss of spectrum priority that could give SpaceX and other rivals more leverage in low Earth orbit. 
+
+-------------------------
+en_tech_funding_news
+2026-06-05 12:00:00
+Mistral nearly doubles its valuation to 20B EUR. Now it has to justify it 
+French AI lab Mistral AI raised new capital bringing its valuation to approximately 20 billion euros, nearly double its prior round, as the company pivots to industrial AI applications and expands its European data center footprint. 
+
+-------------------------
+en_ember_energy
+2026-06-05 12:00:00
+Global Electricity Review 2026 
+Ember's Global Electricity Review 2026 shows solar power increased by a record 636 TWh in 2025 to reach 2,778 TWh, growing 30% year-over-year, with wind and solar on track to overtake nuclear in global electricity generation in 2026. 
+
+-------------------------
+en_biopharma_watch
+2026-06-05 12:00:00
+LNTH-2501 PDUFA date extended by three months to June 29 
+Lantheus received an FDA extension of its PDUFA target action date for LNTH-2501, a Ga 68 edotreotide PET imaging kit for neuroendocrine tumors, by three months to June 29, 2026, extending the review period. 
+
+-------------------------
+en_eenews_europe
+2026-06-05 12:00:00
+ROHM Semiconductor and AIXTRON scale GaN power production for AI and EV markets 
+Japanese power semiconductor supplier ROHM Semiconductor is partnering with German equipment maker AIXTRON to bring gallium nitride epitaxy in-house at its Hamamatsu plant, scaling GaN production for AI data center and EV power conversion applications. 
+
+-------------------------
+en_biopharma_watch
+2026-06-02 12:00:00
+FDA approves Datroway (datopotamab deruxtecan-dlnk) for metastatic triple-negative breast cancer 
+The FDA approved Datroway, an antibody-drug conjugate targeting TROP2, for adults with unresectable or metastatic triple-negative breast cancer who received prior systemic therapy, adding a new targeted option for this difficult-to-treat cancer. 
+
+-------------------------
+en_auto_connected_car
+2026-05-28 12:00:00
+Autonomous & Self-Driving Vehicle News: Waymo, Alphabet, May Mobility, Toyota, NTT, Lyft, Uber, WeRide, Stellantis, Wayve, Hesai Group & Mercedes 
+Waymo completed 14 million fully driverless trips in 2025 generating $286 million in revenue, with Alphabet planning expansion to 20 markets in 2026, while Hyundai-Motional and WeRide-Uber announced new commercial robotaxi service launches. 
+
+-------------------------
