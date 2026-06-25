@@ -1,0 +1,252 @@
+en_defence_ua
+2026-06-23 12:00:00
+Ukrainian Special Forces Cut russian Rail Link in Crimea (Video)
+Ukraine's Special Operations Forces destroyed a railway bridge over the North Crimean Canal near Rozdolne village in Crimea, severing a key logistics route used by Russian forces in southern Ukraine. The strike highlights continued Ukrainian deep-strike capabilities targeting Russian supply chains behind the front lines.
+
+-------------------------
+en_defence_ua
+2026-06-21 12:00:00
+U.S. Army Selects Ukraine-Proven 155 mm Vulcano Long-Range Rounds Capable of Striking Targets at 70 km
+The U.S. Army selected the 155mm Vulcano GLR guided artillery projectile for its Extended Range Artillery Projectile program, adding 70km precision-strike capability proven in Ukraine. A U.S.-specific version will be developed under the ERAP program, expanding long-range fire options for Army artillery units.
+
+-------------------------
+en_defence_ua
+2026-06-15 12:00:00
+NOMADS Air Defense Systems to Protect Ukraine's Airspace, With Eight Units Already Delivered Under German Funding
+Germany funded the delivery of eight NOMADS short-range air defense systems to Ukraine, adding layered protection against drone and cruise missile attacks across Ukrainian airspace. The NOMADS systems join existing air defense assets to provide more comprehensive coverage of critical infrastructure and populated areas.
+
+-------------------------
+en_kpler
+2026-06-10 12:00:00
+EIA Digest: Crude inventories continue to draw; jet fuel stocks hit new ytd high
+Kpler's EIA weekly digest shows US crude inventories drew for the sixth consecutive week while jet fuel stocks reached their highest year-to-date level, reflecting strong summer aviation demand. The crude draw signals tighter near-term supply conditions even as global oil prices remain volatile amid Middle East tensions.
+
+-------------------------
+en_bnef
+2026-06-10 12:00:00
+BloombergNEF's New Energy Outlook 2026: Transition to Newer Technologies, Expanded Electrification to Strengthen Nations' Energy Security
+BloombergNEF's New Energy Outlook 2026 projects that expanded electrification and next-generation clean energy technologies will strengthen national energy security, with global battery storage installations exceeding 100GW annually for the first time. The report finds countries pursuing aggressive electrification strategies are achieving both lower energy costs and reduced import dependency.
+
+-------------------------
+en_datacenter_dynamics
+2026-06-01 12:00:00
+Helix Digital Infrastructure: KKR plans $10bn AI data center firm headed by former AWS CEO - report
+KKR is planning a $10 billion AI data center venture called Helix Digital Infrastructure, to be led by a former AWS chief executive, developing and managing data centers, power assets, and networking infrastructure to support AI workloads. The venture signals continued mega-scale private equity investment in AI infrastructure as hyperscaler capex approaches $750 billion in 2026.
+
+-------------------------
+en_wri
+2026-06-01 12:00:00
+G20 Countries Have Submitted Climate Progress Reports for the First Time. Are They Delivering?
+For the first time, all G20 countries submitted Biennial Transparency Reports to the United Nations, but WRI analysis finds collective progress falls well short of the 45% emissions reduction needed by 2030 to limit warming to 1.5 degrees Celsius. The gap underscores the need for stronger national climate commitments ahead of COP31 and the critical role of the $1.3 trillion Baku-to-Belém finance roadmap in supporting developing-country action.
+
+-------------------------
+en_datacenter_knowledge
+2026-05-02 12:00:00
+Data Center World 2026: Real Estate, On-site Power Speed AI Buildout
+Data Center World 2026 coverage finds that real estate availability and on-site power generation are becoming decisive competitive advantages for AI data center developers, with the dominant northern Virginia market nearing saturation as new capacity flows to Georgia, Texas, and the Southeast. The conference highlighted distributed power models including small modular reactors and behind-the-meter gas as critical enablers of the next AI buildout phase.
+
+-------------------------
+en_datacenter_knowledge
+2026-05-01 12:00:00
+Data Center World 2026: AI Pushes Infrastructure to New Limits
+Engineering leaders at Data Center World 2026 described facilities evolving from general-purpose IT environments into tightly integrated compute systems for AI, with rack densities now approaching hundreds of kilowatts and designs trending toward the megawatt range. The five largest hyperscalers are projected to spend approximately $700 billion on capital expenditure in 2026, with 75% tied to AI infrastructure.
+
+-------------------------
+en_lifescience_daily
+2026-05-01 12:00:00
+Biopharma M&A 2026: Every $1B+ Deal and the Drivers
+Biopharma M&A in the first four months of 2026 totaled approximately $84 billion in deal value, led by Sun Pharma's $11.75 billion acquisition of Organon and GSK's $10.6 billion deal for Nuvalent's lung cancer pipeline. IQVIA forecasts full-year 2026 biopharma M&A deal value between $140 billion and $160 billion, driven by large pharma's urgency to replace revenue from upcoming patent cliffs.
+
+-------------------------
+en_nasaspaceflight
+2026-05-01 12:00:00
+Rocket Lab signs new launch contracts and acquires robotics company during Q1 2026
+Rocket Lab reported signing more launch contracts in Q1 2026 than it flew missions in all of 2025, establishing itself as a primary alternative to SpaceX for small and medium satellite operators. The company also acquired a robotics company to build satellite servicing capabilities as part of its longer-term in-space operations strategy.
+
+-------------------------
+en_warecre
+2026-04-15 12:00:00
+NYC Industrial & Warehouse Market Report | Q1 2026
+Five-borough New York City industrial rents averaged $22.64 per square foot NNN in Q1 2026, with Outer Borough rents reaching $28.59/SF—up 8.6% year-over-year and among the highest of any US industrial market. The report finds continued strong demand from e-commerce, last-mile logistics, and manufacturing users despite elevated asking rents.
+
+-------------------------
+en_kaufmanhall
+2026-04-16 12:00:00
+M&A momentum continues with robust Q1 activity
+Kaufman Hall's Q1 2026 M&A infographic shows more than two-thirds of hospital transactions involving a divestiture, reflecting proactive portfolio rationalization ahead of anticipated Medicaid funding changes expected from the federal budget reconciliation bill in 2027. The data confirms that large Catholic and for-profit systems are both shedding non-core assets to strengthen balance sheets.
+
+-------------------------
+en_kaufmanhall
+2026-04-15 12:00:00
+Hospital and health system M&A activity ramps up in Q1 2026
+Kaufman Hall's Q1 2026 M&A report found 22 hospital transactions announced, the most for any first quarter in five consecutive years, with $14.5 billion in transacted revenue representing the highest Q1 figure Kaufman Hall has recorded. The activity reflects a rebound from mid-2025 uncertainty driven by policy ambiguity, with systems now moving decisively to secure strategic partnerships.
+
+-------------------------
+en_solar_power_world
+2026-04-20 12:00:00
+EIA: Renewables expect continued growth while fossil fuels decline
+The EIA projects renewables will account for 51% of all new US power generation additions in 2026, with utility-scale solar leading at a record 43.4GW, as fossil fuel generation continues its structural decline amid lower renewable costs and clean energy policy support. Battery energy storage is also expected to see significant capacity additions as grid operators prioritize flexibility alongside generation.
+
+-------------------------
+en_offshore_tech
+2026-04-20 12:00:00
+Oil and gas contracts value reports increase in Q1 2026
+Global oil and gas contracts reported a 13% quarter-on-quarter increase in total disclosed value in Q1 2026, with offshore deepwater projects in Brazil, Norway, and the Gulf of Mexico driving activity despite broader oil price softness. Major contract increases were recorded in subsea production systems, FPSO vessels, and LNG regasification infrastructure.
+
+-------------------------
+en_datacenter_dynamics
+2026-04-20 12:00:00
+Aligned breaks ground on 540MW data center campus in Texas
+Aligned has started work on Project Caprock, a 540MW campus on 313 acres near Abernathy in Hale County, Texas, which will total 1.65 million square feet across six facilities at full build-out. The project represents one of the largest single-site data center campus developments in the US as hyperscaler and AI company demand drives unprecedented infrastructure buildout.
+
+-------------------------
+en_bnef
+2026-04-20 12:00:00
+Power for AI: Easier Said Than Built
+BNEF analysis finds that while AI power demand is real and surging, translating demand signals into actual grid capacity is constrained by permitting timelines, transmission buildout delays, and interconnection queues that can stretch years. The report warns that the gap between AI infrastructure announcements and actual power availability could create supply-demand mismatches that slow AI deployment.
+
+-------------------------
+en_realclear_health
+2026-04-23 12:00:00
+Cheaper Drugs, Higher Healthcare Costs?
+The analysis challenges the assumption that lower drug prices automatically reduce overall healthcare spending, finding that policy changes affecting PBM practices, formulary design, and drug rebate flows can have complex downstream effects on insurer premiums and patient cost-sharing. The article argues that comprehensive drug pricing reform must address the full supply chain rather than focusing narrowly on manufacturer list prices.
+
+-------------------------
+en_nasaspaceflight
+2026-05-21 12:00:00
+Launch preview: SpaceX tries again for first launch of its Starship Version 3 rocket
+SpaceX targets May 21 for the debut of Starship Version 3's first orbital flight from the newly completed Pad 2 at Starbase, Texas, featuring redesigned heat shield tiles, upgraded avionics, and improved upper stage systems. Flight 12 also represents the first operational use of the new launch pad infrastructure that will support higher cadence Starship missions going forward.
+
+-------------------------
+en_nasaspaceflight
+2026-06-16 12:00:00
+Launch Preview: 10 launches scheduled from sites across the world
+NASASpaceFlight's June 16 preview covers ten orbital missions scheduled globally, including Falcon 9 Starlink deployments, an ESA Vega C commercial payload, and launches from Chinese and Russian sites. The busy manifest reflects 2026 shaping up as the most active year in orbital spaceflight history.
+
+-------------------------
+en_auto_news
+2026-06-19 12:00:00
+Toyota shuffles manufacturing execs, calls creator of Kentucky flex line to Japan
+Toyota is promoting Stephen Brennan, architect of the company's pioneering flex manufacturing line in Georgetown, Kentucky, to a senior role in Japan overseeing advanced technology production strategies. The move signals Toyota's intent to apply its flexible multi-powertrain manufacturing expertise more broadly as the company scales both EV and hybrid production globally.
+
+-------------------------
+en_auto_news
+2026-04-13 12:00:00
+Why automakers are taking different EV approaches in 2026
+Automotive News analysis finds automakers diverging into three distinct EV strategies in 2026: full electrification commitment with dedicated EV platforms, hybrid-first flexibility hedging against uncertain demand, and alliance-based approaches leveraging external technology at lower capital cost. The divergence reflects lessons from $70 billion in industry writedowns as the EV transition proves slower and more costly than originally projected.
+
+-------------------------
+en_auto_news
+2026-03-13 12:00:00
+Here are the EVs canceled or delayed in 2026 as automakers pull back
+Honda, Hyundai, Kia, Lamborghini, and Tesla have canceled or delayed EV programs in 2026 as tariffs and weaker-than-expected demand drive nearly $70 billion in industry writedowns, reshaping the global electrification timeline. Analysts warn that pullbacks could create medium-term supply gaps as consumers shift back toward EVs when infrastructure improves and prices stabilize.
+
+-------------------------
+en_kpler
+2026-05-29 12:00:00
+Geopolitics fuel grain market volatility
+Kpler analysis finds grain flows through the Strait of Hormuz have stalled amid the Middle East conflict while China's $17 billion US agricultural trade commitment raises questions about global grain market dynamics and trade diversion. Fertilizer price increases and supply chain disruptions from the Iran conflict are compounding pressure on global food commodity prices.
+
+-------------------------
+en_kpler
+2026-05-25 12:00:00
+Why the real oil shock may only begin when China returns
+Kpler analysis warns the most significant oil price shock of 2026 may occur when Chinese refiners resume large-scale crude buying after a period of depressed demand, as elevated prices and weak refining economics have kept Chinese buyers on the sidelines. The article argues that when China returns, tight supply conditions could trigger a sharper price surge than markets currently anticipate.
+
+-------------------------
+en_solar_power_world
+2026-04-15 12:00:00
+California legislature considers VPPs and solar-charged battery compensation
+California's legislature is evaluating new compensation frameworks for virtual power plant participants and solar-plus-storage battery owners, aiming to unlock more than 300,000 installed residential battery systems to provide grid flexibility. The proposals come as California's solar penetration and duck curve challenges accelerate the need for demand-responsive distributed energy resources.
+
+-------------------------
+en_solar_power_world
+2026-03-10 12:00:00
+US government report: The only new energy coming online in 2026 is renewables
+A U.S. government energy forecast finds that virtually all new electricity generation capacity being added to the grid in 2026 is from renewable sources—primarily solar—with no new coal plants and minimal new natural gas capacity as clean energy economics overwhelm traditional fuel competitiveness. The finding marks a structural energy transition milestone for the US power sector.
+
+-------------------------
+en_warecre
+2026-04-12 12:00:00
+Chicago Industrial Vacancy Holds at 4.7% | 2026 Warehouse Market Report
+Chicago's industrial market stabilized at 4.7% vacancy in Q1 2026 with average asking rents of $6.57 per square foot, as the nation's largest inland logistics hub absorbed new speculative supply without significant pricing disruption. The market's stability contrasts with coastal markets facing higher vacancy while benefiting from proximity to Midwest manufacturing and intermodal rail networks.
+
+-------------------------
+en_warecre
+2026-04-10 12:00:00
+Dallas-Fort Worth Warehouse Market Report 2026
+Dallas-Fort Worth's Q1 2026 industrial market saw net absorption outpace deliveries nearly 2:1, with vacancy dropping below 10% for the first time in 18 months and leasing volume hitting a record Q1 level. The market's strength reflects DFW's position as a logistics hub benefiting from population growth, nearshoring supply chain shifts, and continued e-commerce distribution center expansion.
+
+-------------------------
+en_offshore_tech
+2026-03-15 12:00:00
+A year on from 'drill, baby, drill', why are there fewer oil rigs in the US?
+Despite the Trump administration's "drill, baby, drill" rhetoric, US oil rig counts have declined as major operators focus on capital discipline, shareholder returns, and existing well optimization rather than aggressive new drilling programs. The divergence between political messaging and industry behavior reflects shale producer maturation and investor preference for free cash flow over production growth.
+
+-------------------------
+en_offshore_tech
+2026-01-10 12:00:00
+Top 20 themes shaping the oil and gas industry in 2026
+Offshore Technology's annual analysis identifies AI-optimized drilling operations, carbon capture and storage integration at LNG terminals, deepwater development activity in Brazil and West Africa, and Strait of Hormuz geopolitical risk as the top 20 themes shaping the global oil and gas industry in 2026. The report notes the Iran conflict and Middle East tensions represent the most significant near-term supply risk for global oil markets.
+
+-------------------------
+en_bnef
+2026-05-15 12:00:00
+AI Data Centers, Energy and Finance: Dispatch from the BNEF Summit New York 2026
+The BNEF Summit New York 2026 highlighted that global data center capital expenditure is approaching $750 billion annually, with power procurement and grid connection emerging as the primary constraints on AI infrastructure expansion in the United States. Industry leaders discussed new models for co-locating data centers with dedicated generation assets including nuclear, gas peakers, and large-scale battery storage.
+
+-------------------------
+en_realclear_health
+2026-05-11 12:00:00
+Toward a More Predictable, Partner-Driven FDA
+The article argues the FDA must evolve from a reactive gatekeeper into a proactive industry partner, emphasizing predictable review timelines, support for advanced manufacturing technologies, and greater transparency in approval decision criteria. The analysis highlights FDA leadership's focus on onshoring pharmaceutical production as both a cost and national security imperative.
+
+-------------------------
+en_realclear_health
+2026-03-09 12:00:00
+A Key to Strengthening America's Drug Supply
+The article highlights FDA-regulated 503B outsourcing facilities as an underutilized strategic asset for managing drug shortages, arguing that Congress should expand their authorized drug list and provide funding support to build domestic buffer stock capacity. The case study focuses on oncology and critical care drugs where supply disruptions have caused patient harm and care delays.
+
+-------------------------
+en_lifescience_daily
+2026-06-15 12:00:00
+Weekly News Roundup | 15 June 2026
+The June 15 roundup covers FDA approval of belzutifan combination therapy for adjuvant renal cell carcinoma, Alvotech's acceptance of its vedolizumab BLA, and Kailera Therapeutics closing a record $625 million biotech IPO. It also highlights biopharma M&A pipeline exceeding $84 billion in deal value through May with IQVIA forecasting full-year total between $140 billion and $160 billion.
+
+-------------------------
+en_lifescience_daily
+2026-06-10 12:00:00
+Biotech IPO Surge: 2026's First Half Beats 2025
+Biotech IPO activity in the first half of 2026 has already surpassed all of 2025 in both volume and total proceeds, led by Kailera Therapeutics' record $625 million offering, as investor enthusiasm for AI drug discovery and GLP-1 competitors drives new listings. The rebound follows two years of subdued IPO activity and signals renewed risk appetite in life sciences equity markets.
+
+-------------------------
+en_kaufmanhall
+2026-01-20 12:00:00
+Hospital and health system M&A in review: Uncertainty transitions to continued momentum in 2025
+Kaufman Hall's 2025 M&A annual review found the year ended with renewed momentum after mid-year uncertainty driven by policy ambiguity and regulatory headwinds, setting the stage for an active 2026 pipeline. The report identifies independent health system consolidation, non-acute asset acquisitions, and divestiture-led portfolio rationalization as the dominant strategic themes entering 2026.
+
+-------------------------
+en_wri
+2026-01-15 12:00:00
+6 Opportunities for Sustainable Finance in 2026
+WRI identifies six 2026 sustainable finance opportunities including scaling Article 6 carbon markets after COP30, blended finance instruments for emerging market clean energy, transition finance frameworks under the revised EU SFDR, and mandatory corporate nature risk disclosures. The analysis frames the post-COP30 period as a window for institutional investors to align capital flows with the $1.3 trillion Baku-to-Belém climate finance roadmap.
+
+-------------------------
+en_wri
+2026-01-10 12:00:00
+3 Climate Stories That Will Shape the World in 2026
+WRI identifies three defining 2026 climate narratives: implementing the COP30 $1.3 trillion Baku-to-Belém finance roadmap, scaling Article 6 carbon markets as national climate targets tighten, and China's clean energy contribution exceeding 10% of GDP at $1.9 trillion in annual output. The analysis frames 2026 as a pivotal implementation year where credibility of global climate commitments will be tested.
+
+-------------------------
+en_datacenter_dynamics
+2026-05-15 12:00:00
+OpenAI Stargate's Milam, Texas, 'Freebird' data center to span 548,950 sq ft in first phase
+OpenAI's planned Freebird data center in Milam County, Texas—part of the Stargate AI infrastructure initiative—will span 548,950 square feet in its first phase with four data halls at an estimated project cost of $470 million. The facility represents one of several gigawatt-scale AI campuses being developed across Texas as part of the multi-trillion-dollar AI infrastructure buildout.
+
+-------------------------
+en_datacenter_knowledge
+2026-01-01 12:00:00
+2026 Predictions: AI Sparks Data Center Power Revolution
+Industry predictions for 2026 center on AI driving a fundamental power revolution in data centers, with rack densities now measured in hundreds of kilowatts, power availability emerging as the limiting factor rather than compute capacity, and the US potentially requiring 200GW of new AI-driven demand by decade's end. The hyperscalers' projected $700 billion capex spend in 2026 underscores the scale of the transformation underway.
+
+-------------------------
