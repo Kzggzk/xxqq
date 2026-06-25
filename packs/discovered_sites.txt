@@ -795,3 +795,17 @@ en_medical_device_network
 en_credendo
 en_one_stop_esg
 en_idtechex
+en_datacenter_knowledge
+en_datacenter_dynamics
+en_defence_ua
+en_kaufmanhall
+en_warecre
+en_solar_power_world
+en_kpler
+en_lifescience_daily
+en_wri
+en_bnef
+en_nasaspaceflight
+en_auto_news
+en_offshore_tech
+en_realclear_health
