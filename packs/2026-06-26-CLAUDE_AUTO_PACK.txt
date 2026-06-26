@@ -1,0 +1,558 @@
+en_pvtech
+2026-06-25 12:00:00
+US ROUND-UP: Vesper, rPlus and Matrix advance PV projects across the country 
+US solar developers made significant progress this week, with Vesper Energy starting construction at a 201MW Texas solar project, rPlus Energies beginning commercial operations at a solar-plus-storage project in Utah, and Matrix Renewables securing US$1.3 billion in financing for four projects across the country. 
+
+-------------------------
+en_miningweekly
+2026-06-25 12:00:00
+Action imperative for future success of global mining industry – PwC 
+PwC's annual global mining review urges immediate action on technology adoption, capital discipline, and stakeholder engagement, warning that firms which fail to evolve beyond traditional geological advantages will be outpaced by more adaptive competitors. 
+
+-------------------------
+en_miningweekly
+2026-06-25 12:00:00
+Future Minerals Forum report outlines practical framework for building shared value in global mining 
+A report released at the World Mining Congress in Lima argues that mining operations can simultaneously support local communities and national economies, provided that investments and financial benefits are transparently managed and equitably distributed. 
+
+-------------------------
+en_fintechfutures
+2026-06-25 12:00:00
+June 2026: Top five fintech M&A stories of the month 
+June 2026's top fintech M&A stories include Intesa Sanpaolo's €30 billion bid for Banca Monte dei Paschi di Siena and Canada-based Nuvei's acquisition of US paytech Payoneer, as consolidation in payments and banking technology accelerates globally. 
+
+-------------------------
+en_miningweekly
+2026-06-24 12:00:00
+Anglo and Codelco ink definitive agreement for joint mine plan in Chile 
+Anglo American and Codelco have signed a definitive agreement for a joint copper mine plan in Chile's copper belt, combining neighboring assets and marking a major consolidation in the country's critical mineral sector. 
+
+-------------------------
+en_techeu
+2026-06-24 12:00:00
+Small country, big ambitions: What Nexus Luxembourg 2026 revealed about Europe's tech future 
+Nexus Luxembourg 2026 drew over 9,600 participants from more than 80 countries—a 14% increase on 2025—with discussions centering on European tech sovereignty, AI regulation, and cross-border startup scaling strategies. 
+
+-------------------------
+cn_ckgsb
+2026-06-24 12:00:00
+CKGSB's Economic Symposium Explores China's Next Chapter of Global Growth 
+CKGSB held its 10th Economic Symposium at its new Beijing campus, launching the report 'The New Chinese Playbook for Going Global' that outlines how Chinese companies are building international operations amid intensifying geopolitical headwinds. 
+
+-------------------------
+en_pvtech
+2026-06-23 12:00:00
+Intersolar Europe 2026: SMA Solar launches grid-forming inverters and management software 
+German inverter manufacturer SMA Solar unveiled a suite of products at Intersolar Europe 2026, headlined by grid-forming inverters designed to stabilize grids at high renewable penetration, alongside software tools for large-scale power plant management. 
+
+-------------------------
+en_defence_blog
+2026-06-22 12:00:00
+U.S. Army gets more hypersonic missiles in Navy-led $83M deal 
+The Navy awarded Lockheed Martin Space an $83 million contract modification on June 22 to procure additional hypersonic All-Up Rounds under the Conventional Prompt Strike program, satisfying U.S. Army requirements for long-range hypersonic strike capacity. 
+
+-------------------------
+en_marketscale
+2026-06-22 12:00:00
+A3's Automate 2026 puts humanoid robots, industrial AI, and safety standards at center stage 
+Automate 2026 opened at Chicago's McCormick Place drawing more than 50,000 attendees and over 1,000 exhibitors, with a dedicated NVIDIA-sponsored Humanoid Robot Pavilion and sessions covering physical AI, machine vision, and evolving industrial safety standards. 
+
+-------------------------
+en_automate_a3
+2026-06-22 12:00:00
+ABB Robotics delivers new industry-ready physical AI at Automate 2026 
+ABB Robotics unveiled its Physical AI Toolchain at Automate 2026, including RobotStudio HyperReality developed with NVIDIA to close the simulation-to-reality gap, enabling manufacturers to train and validate robot behaviors in virtual environments before deployment. 
+
+-------------------------
+en_marketscale
+2026-06-20 12:00:00
+Humanoid supply outpaces demand, AMRs hit Toyota plants, and robot orders hold steady: automation's defining stories of mid-2026 
+MarketScale's mid-year industrial automation roundup finds humanoid robot production capacity running ahead of enterprise demand, autonomous mobile robots being deployed at Toyota factories, and Q1 robot orders from North American manufacturers holding steady. 
+
+-------------------------
+en_worldnuclearnews
+2026-06-20 12:00:00
+Holtec and EDF submit UK SMR project proposal 
+Holtec International and EDF jointly submitted a proposal for up to four SMR-300 small modular reactors at the Cottam power station site in Nottinghamshire, UK, targeting a 1 GW AI data center project with the SMR component expected to be operational in the 2030s. 
+
+-------------------------
+en_carbonpulse
+2026-06-20 12:00:00
+EU leaders back ETS review plan, discuss carbon market's role in next budget 
+EU leaders endorsed the European Commission's plan to review the EU Emissions Trading System, with proposals on free allowances and industrial benchmarks due in July 2026, as discussions continue on allocating ETS revenues within the next EU multi-year budget framework. 
+
+-------------------------
+en_sifted
+2026-06-20 12:00:00
+Series D funding rises 308% in first half of 2026 
+Sifted data shows European Series D funding rounds surged 308% in the first half of 2026 compared to H1 2025, as late-stage investors gained confidence in AI and fintech scaleups approaching IPO readiness in a strengthening public markets environment. 
+
+-------------------------
+en_eia
+2026-06-20 12:00:00
+Natural gas for power generation flat this summer, record high expected in 2027 
+The EIA forecasts flat natural gas consumption for US power generation in summer 2026 despite above-average temperatures, as solar generation growth offsets weather-driven demand, though natural gas power burn is projected to hit record highs in 2027 as data center electricity loads surge. 
+
+-------------------------
+cn_ckgsb
+2026-06-19 12:00:00
+How Companies in China Can Escape the Race to the Bottom 
+A CKGSB analysis examines how Chinese firms can differentiate on quality rather than price, noting that the national statistical bureau updated its CPI basket in early 2026 to give more weight to premium goods, signaling an official push toward higher-value consumption. 
+
+-------------------------
+en_techeu
+2026-06-16 12:00:00
+BAE Systems launches €50M push to help European defence startups scale 
+BAE Systems committed €50 million to VC funds focused on backing European defence technology startups, aiming to accelerate commercial-scale production of weaponised drones and other dual-use technologies across the continent. 
+
+-------------------------
+en_marketscale
+2026-06-15 12:00:00
+Manufacturing and automation headlines: acoustic AI, OT security, frame grabbers, and more from June 2026 
+The June 2026 industrial roundup covers emerging applications of acoustic AI for predictive maintenance, growing operational technology cybersecurity investment, and a new wave of embedded vision and frame grabber solutions targeting factory automation markets. 
+
+-------------------------
+en_cbinsights
+2026-06-15 12:00:00
+The State of Venture Q2'26: Midyear Review 
+CB Insights' Q2 2026 venture midyear review finds quarterly funding at a record high driven by AI mega-rounds, while the broader venture market continues a quiet contraction with fewer active investors, declining deal counts, and an increasing share of liquidity occurring outside public markets. 
+
+-------------------------
+en_techwireasia
+2026-06-15 12:00:00
+Memory chip shortage traces back to Asia, and to China 
+A new memory chip shortage is emerging from Asia, with PC makers including HP and Dell quietly qualifying parts from Chinese manufacturers CXMT and YMTC as strategic supply diversification, shifting the geopolitics of memory chip sourcing in ways that would have been taboo two years ago. 
+
+-------------------------
+en_fintechnews_sg
+2026-06-15 12:00:00
+16 APAC Companies Named Among World's Top Cross-Border Payment Firms of 2026 
+Sixteen Asia-Pacific companies including Nium, DBS Bank, Razorpay, bKash, and GCash were recognized among the world's top cross-border payment firms of 2026, reflecting the region's growing dominance in global digital payment rails and real-time settlement infrastructure. 
+
+-------------------------
+en_rechargenews
+2026-06-15 12:00:00
+Approval freeze leaves 165 US onshore wind projects in limbo: report 
+A new report finds 165 US onshore wind projects stuck in federal permitting limbo as the Trump administration has effectively frozen approvals, threatening to delay significant clean energy capacity additions and creating legal uncertainty for developers with existing land leases. 
+
+-------------------------
+en_eia
+2026-06-15 12:00:00
+Electricity generation from solar could exceed coal in ERCOT for the first time in 2026 
+EIA projects that Texas's ERCOT grid will generate more electricity from utility-scale solar than from coal on an annual basis for the first time in 2026, with solar expected to reach 78 BkWh versus 60 BkWh for coal, reflecting a structural shift in Texas's generation mix. 
+
+-------------------------
+en_defence_blog
+2026-06-12 12:00:00
+US Navy orders 50 prototypes of its cheap new hypersonic weapon 
+Castelion Corp. received a $23.4 million Navy contract to produce 50 pre-production prototypes of the Blackbeard hypersonic missile, a low-cost Mach 5+ weapon designed for employment from F/A-18E/F Super Hornet fighters. 
+
+-------------------------
+en_pvtech
+2026-06-10 12:00:00
+Trinasolar tandem module reaches record 907W power output 
+Trinasolar achieved a record peak power output of 907W and a full-area efficiency of 29.2% for its perovskite/crystalline-silicon tandem module, pushing the boundaries of commercial solar panel performance toward the theoretical efficiency ceiling. 
+
+-------------------------
+en_defence_blog
+2026-06-10 12:00:00
+Ukraine faces 8x more jet-powered Russian drones than last year 
+Russia has launched 1,400 jet-powered attack drones against Ukraine since January 2026, nearly eight times the 180 recorded throughout all of 2025, representing a fundamental strategic shift in Moscow's drone campaign toward higher-speed, harder-to-intercept munitions. 
+
+-------------------------
+en_atlanticcouncil
+2026-06-10 12:00:00
+Energy security is back—and other top takeaways from the Atlantic Council's biggest-ever energy forum 
+The 10th Atlantic Council Global Energy Forum held June 9-10 in Washington identified energy security as the defining theme of 2026, driven by disruptions from the Middle East conflict and the growing geopolitical importance of AI infrastructure, critical minerals, and resilient supply chains. 
+
+-------------------------
+en_worldnuclearnews
+2026-06-10 12:00:00
+Elementl Power signs Early Works Agreement with GEH for BWRX-300 SMR in Ohio 
+Elementl Power signed an Early Works Agreement with GE Vernova Hitachi Nuclear Energy to deploy BWRX-300 small modular reactors at a proposed site in Meigs County, Ohio, advancing the commercial pipeline for the 300 MWe boiling water reactor design in the US. 
+
+-------------------------
+en_aibusiness
+2026-06-10 12:00:00
+Microsoft Fully Commits to AI Models, Unmetered Intelligence 
+Microsoft repositioned its enterprise AI strategy around agentic workflows, introducing the Surface RTX Spark Dev Box for enterprise developers and announcing unmetered access to certain intelligence capabilities, signaling a shift from per-query to subscription-based AI consumption models. 
+
+-------------------------
+en_csis
+2026-06-10 12:00:00
+The 2026 National Defense Strategy by the Numbers: Radical Changes, Moderate Changes, and Some Continuities 
+CSIS's numerical breakdown of the 2026 NDS finds it prioritizes China deterrence, homeland defense, and 'supercharging' the defense industrial base, but notably removes the 'strategic competitor' label for China used in previous defense strategies and does not mention Taiwan by name. 
+
+-------------------------
+en_energymonitor
+2026-06-10 12:00:00
+North America's energy transition is accelerating yet volatile 
+Energy Monitor finds US renewable generation is projected to rise from 32% of total in 2025 to 43% by 2035, but the transition faces policy volatility from the Trump administration's rollback of federal incentives and accelerating natural gas demand from AI data centers. 
+
+-------------------------
+en_rechargenews
+2026-06-10 12:00:00
+How Equinor has quietly raised its bar for offshore wind investment 
+Norwegian oil major Equinor has raised its internal return hurdle rate for offshore wind investments amid cost inflation and grid connection delays, signaling tighter capital discipline that may slow new project commitments in the UK and US markets. 
+
+-------------------------
+en_law360
+2026-06-10 12:00:00
+New CFTC Policy Eyes Smaller Fines, More Declinations 
+The CFTC issued a revised enforcement cooperation policy allowing companies that self-report violations, cooperate fully, and remediate quickly to secure materially reduced fines or potential declinations, signaling a meaningfully lighter-touch approach under the new administration. 
+
+-------------------------
+en_thedefensepost
+2026-06-08 12:00:00
+US Army Awards Contracts for Next-Gen 155mm Projectile 
+General Atomics received $24.84 million and BAE Systems Land & Armaments $81.43 million in US Army contracts to develop and qualify next-generation guided 155mm extended-range artillery rounds based on the European Vulcano munition. 
+
+-------------------------
+en_atlanticcouncil
+2026-06-05 12:00:00
+Fortifying US national security with a hidden energy advantage 
+An Atlantic Council analysis argues that US LNG export capacity and domestic oil production provide underappreciated strategic leverage against adversaries, and calls for formal policy frameworks to deploy energy supply as a geopolitical instrument. 
+
+-------------------------
+en_carbonpulse
+2026-06-05 12:00:00
+ECS26: Price-based carbon market intervention can make EU ETS more reactive and predictable, experts say 
+Experts at the European Carbon Summit 2026 called for price-based triggers to activate the EU ETS Market Stability Reserve instead of the current volume-based system, arguing that faster responsiveness is essential as carbon prices approach economically sensitive thresholds. 
+
+-------------------------
+en_csis
+2026-06-05 12:00:00
+What Does the Trump Administration's New National Defense Strategy Say About China? 
+CSIS analysts find the 2026 National Defense Strategy focuses on denial along the First Island Chain and increased burden-sharing with allies for China deterrence, departing from previous strategies by emphasizing strength over direct confrontation and deemphasizing long-term competition framing. 
+
+-------------------------
+en_farmprogress
+2026-06-05 12:00:00
+USDA exports – Philippines buy soymeal, June 5, 2026 
+The USDA reported a flash sale of US soymeal to the Philippines on June 5, 2026, as Southeast Asian buyers continue to seek US protein meal amid ongoing bilateral trade negotiations and competition from South American soybean exporters. 
+
+-------------------------
+en_law360
+2026-06-05 12:00:00
+CFTC Trading Rule Can't Police Prediction Markets Yet 
+A Law360 analysis finds existing CFTC trading rules lack sufficient legal authority to regulate political event prediction markets, following the CFTC's first insider trading charges against a prediction market participant in Q1 2026 and ongoing legislative debates about expanding its jurisdiction. 
+
+-------------------------
+en_techeu
+2026-06-04 12:00:00
+Merantix Capital launches €103M fund for early-stage European AI startups 
+Berlin-based Merantix Capital announced a €103 million fund that will allocate capital equally between its venture studio and direct investments in pre-seed and seed-stage AI startups across Europe. 
+
+-------------------------
+en_foreignaffairs
+2026-06-01 12:00:00
+The G-2 Reality: America and China Cannot Dominate or Exclude Each Other 
+Foreign Affairs argues that the May 2026 Trump-Xi Beijing summit reflects a structural G-2 dynamic in which neither the United States nor China can dominate or exclude the other, requiring a new managed competition framework rather than either containment or accommodation. 
+
+-------------------------
+en_brookings
+2026-06-01 12:00:00
+What Beijing got from the Trump-Xi summit 
+Brookings analysts find China secured favorable trade framework commitments and a bilateral Board of Trade mechanism from the May 2026 summit in Beijing, while successfully keeping Taiwan and advanced semiconductor export controls off the formal summit agenda. 
+
+-------------------------
+en_fintechfutures
+2026-05-31 12:00:00
+May 2026: Top five banking technology stories of the month 
+May 2026 banking technology highlights include agentic AI deployments in customer onboarding and lending decisioning, new regulatory scrutiny of algorithmic credit underwriting, and partnerships between challenger banks and cloud-native core banking vendors in Asia and the Middle East. 
+
+-------------------------
+en_thedefensepost
+2026-05-27 12:00:00
+Pentagon Taps Raytheon for $1B NASAMS Sale to Kuwait 
+The US Department of Defense awarded Raytheon a $1 billion contract to supply National Advanced Surface-to-Air Missile System fire units to Kuwait, supporting the Gulf state's air defense modernization amid heightened regional tensions. 
+
+-------------------------
+en_brookings
+2026-05-25 12:00:00
+What happened when Trump met Xi? 
+A Brookings summary of the May 2026 Trump-Xi Beijing summit documents commitments from China to purchase US agricultural goods and Boeing aircraft, along with limited tariff adjustments and a new bilateral framework targeting non-sensitive commercial sectors. 
+
+-------------------------
+en_iiotworld
+2026-05-25 12:00:00
+What Does a Fully AI-Driven Factory Look Like? 
+A deep-dive into Hannover Messe 2026 demonstrations from Siemens, NVIDIA, and Eigen finds that fully AI-driven factories combine edge AI, digital twins, and autonomous quality inspection to achieve near-continuous production optimization with minimal manual intervention. 
+
+-------------------------
+en_overtdefense
+2026-05-21 12:00:00
+U.S. Army Expands Long-range Strike Capability with 3,000 Anduril Barracuda Cruise Missiles 
+The U.S. Army signed a framework agreement with Anduril Industries for at least 3,000 container-launched Barracuda-500M cruise missiles over three years, with a minimum delivery rate of 1,000 missiles per year starting in the first half of 2027. 
+
+-------------------------
+en_fintechnews_sg
+2026-05-20 12:00:00
+Singapore Surpasses ASEAN Peers with US$319 Million In Fintech Funding 
+Singapore's fintech industry raised over US$319 million in the first nine months of 2025, surpassing the combined fintech funding of Indonesia, Malaysia, the Philippines, Thailand, and Vietnam, according to the Singapore FinTech Association and PwC's Payments State of Play 2026 report. 
+
+-------------------------
+en_energymonitor
+2026-05-20 12:00:00
+Germany's energy transition: Reform and uncertainty 
+With Germany's Renewable Energy Act (EEG) expiring at end-2026, Berlin must design a successor funding mechanism for wind and solar, a decision with significant implications for investment certainty across Europe's largest electricity market through the next decade. 
+
+-------------------------
+en_rechargenews
+2026-05-20 12:00:00
+European offshore wind investments grew fivefold in one year: BloombergNEF 
+BloombergNEF data shows European offshore wind investments grew fivefold year-over-year in 2025, driven by large-scale German, Dutch, and UK project commitments, putting the continent on track to meet its offshore wind capacity targets by the early 2030s. 
+
+-------------------------
+en_eia
+2026-05-20 12:00:00
+EIA extends five key energy forecasts through December 2026 
+The EIA extended its five flagship energy price and supply forecasts through end-2026 in its Short-Term Energy Outlook, maintaining projections that Henry Hub natural gas prices will average $3.34 per MMBtu in the second half of 2026 and US crude oil net exports will remain near record levels. 
+
+-------------------------
+en_overtdefense
+2026-05-19 12:00:00
+Lockheed Martin Secures $991 Million Contract for F-35 Upgrades 
+Lockheed Martin announced a $991 million contract from the U.S. Department of Defense to supply 432 F-35 Block 4 modification upgrade packages by March 2032, supporting the next phase of the fighter jet's capability enhancement program. 
+
+-------------------------
+en_overtdefense
+2026-05-18 12:00:00
+Dark Eagle: Leidos Awarded $2.7 Billion Army Contract for Hypersonic Weapons 
+Leidos received a $2.7 billion Army contract to transition the Dark Eagle Common Hypersonic Glide Body and its Thermal Protection Shield from prototype to production, unifying two previously separate programs under a single Army contracting vehicle. 
+
+-------------------------
+en_worldnuclearnews
+2026-05-15 12:00:00
+Rolls-Royce SMR selects Škoda JS and Doosan Enerbility for pre-production component work 
+Rolls-Royce SMR selected Škoda JS and Doosan Enerbility to carry out pre-production manufacturing work for key components including the reactor pressure vessel, advancing its small modular reactor programme toward commercial deployment readiness. 
+
+-------------------------
+en_techwireasia
+2026-05-15 12:00:00
+China Semiconductor Self-Sufficiency and the 70% Wafer Question 
+Despite missing its 'Made in China 2025' semiconductor self-sufficiency targets, China is making progress at the silicon wafer materials and mature-node equipment layers, with three Chinese chip equipment makers ranking among the global top 20 by sales for the first time in 2025. 
+
+-------------------------
+en_carbonpulse
+2026-05-15 12:00:00
+Four EU states urge revision of ETS fallback benchmarks before 2027 
+Four EU member states formally urged the European Commission to revise fallback benchmarks that determine free carbon allowances under the ETS before the 2026-2030 allocation period, citing competitive concerns for energy-intensive industries facing higher effective carbon costs. 
+
+-------------------------
+en_foreignaffairs
+2026-05-15 12:00:00
+The False Promise of U.S.-China Stability 
+Examining the aftermath of the Trump-Xi Beijing summit, this analysis warns that temporary trade and diplomatic stabilization masks deeper structural tensions over Taiwan, semiconductor controls, and military balance that make sustained stability unlikely without formal strategic agreements. 
+
+-------------------------
+en_americanaffairs
+2026-05-15 12:00:00
+The Impossible Partnership: Apple's Coming Reckoning with China 
+American Affairs argues that Apple's deep manufacturing and revenue dependency on China has made its strategic positioning fundamentally geopolitical, with CEO Tim Cook increasingly navigating national security and regulatory pressures alongside commercial considerations. 
+
+-------------------------
+en_farmprogress
+2026-05-15 12:00:00
+Soybeans soar to 2-year highs as USDA signals tighter stocks 
+Soybean futures rallied to two-year highs after the USDA's May supply-demand update signaled tighter stocks than expected, raising the 2026/27 US season-average price forecast to $11.40 per bushel compared with $10.40 in 2025/26. 
+
+-------------------------
+en_thedefensepost
+2026-05-14 12:00:00
+US Military Expands Strike Capacity With 3,000 Leidos LCCM Missiles 
+The US DoD awarded Leidos a contract to produce 3,000 low-cost containerized cruise munitions, part of a broader push to scale affordable mass-producible strike capacity as a complement to more expensive precision-guided weapons in large-scale conflict scenarios. 
+
+-------------------------
+en_americanaffairs
+2026-05-10 12:00:00
+Energy Financing Power: China's Strategy and a Path Forward for the United States 
+American Affairs argues Beijing is deploying energy infrastructure financing as a tool of geopolitical influence in emerging markets, and proposes new US financing mechanisms to counter Chinese energy deal-making across Africa, Southeast Asia, and Latin America. 
+
+-------------------------
+en_americanaffairs
+2026-05-08 12:00:00
+The Missing Institution: Infrastructure Investment in the Age of Strategic Competition 
+American Affairs argues the United States lacks a permanent institution capable of matching China's state-backed infrastructure financing capacity globally, and proposes creating a permanent development and infrastructure bank with public-private capital as a strategic response. 
+
+-------------------------
+en_fintechfutures
+2026-05-06 12:00:00
+FinovateSpring 2026: Day two explores what's next for banking and US regulation 
+Day two of FinovateSpring 2026 in San Diego featured winners including Crebit Pay for stablecoin cross-border payments and Finalytics.ai, with regulators and fintech executives debating how open banking frameworks and AI-driven underwriting will reshape US financial regulation in 2026-2027. 
+
+-------------------------
+en_nucnet
+2026-05-06 12:00:00
+South Korea Announces Two Sites For New Nuclear Power Plants 
+South Korea's KHNP selected Yeongdeok County as the site for two large-scale nuclear reactors and Gijang County for the country's first small modular reactor, marking the first new nuclear site designations since 2011 and reflecting Seoul's recommitment to nuclear power. 
+
+-------------------------
+en_automate_a3
+2026-05-01 12:00:00
+Robot Orders Hold Steady in Q1 2026 as Demand Broadens Across Non-Automotive Industries 
+A3 reports North American companies ordered 9,055 robots valued at $543 million in Q1 2026, with collaborative robot orders surging 55.6% in units year-over-year, driven by growing adoption in life sciences, food processing, electronics, and general manufacturing. 
+
+-------------------------
+en_nucnet
+2026-05-01 12:00:00
+Meta Announces 6.6 GW Of Nuclear Energy Projects To Power AI Revolution 
+Meta has announced agreements totaling 6.6 GW of nuclear energy capacity to power its expanding AI data center infrastructure, making it among the largest corporate nuclear energy commitments by any technology company and signaling the sector's role in AI power supply planning. 
+
+-------------------------
+en_techwireasia
+2026-04-20 12:00:00
+DeepSeek V4 points to growing use of Huawei chips in AI models 
+DeepSeek's upcoming V4 large language model is expected to run on Huawei Ascend AI chips rather than NVIDIA hardware, with major Chinese firms including Alibaba, ByteDance, and Tencent placing large Huawei chip orders ahead of its release. 
+
+-------------------------
+en_fintechnews_sg
+2026-04-20 12:00:00
+Mastercard Rolls Out Cross-Border Payments Suite for APAC SMEs 
+Mastercard launched a new suite of cross-border payment tools for small and medium-sized enterprises in Asia-Pacific, addressing gaps in speed, transparency, and multi-currency settlement that remain key pain points for businesses trading across the region. 
+
+-------------------------
+en_csis
+2026-04-20 12:00:00
+China's Evolving Counter Intervention Capabilities and Implications for the United States and Indo-Pacific Allies and Partners 
+CSIS research maps China's expanding anti-access/area-denial capabilities in the Indo-Pacific, finding that Beijing has built systems capable of significantly complicating US power projection across the Taiwan Strait and the First Island Chain in any high-end conflict scenario. 
+
+-------------------------
+en_cbinsights
+2026-04-15 12:00:00
+State of Fintech Q1'26 Report 
+The CB Insights Q1 2026 fintech report finds capital concentrating behind fewer companies at later stages, with late-stage banking deal share hitting 35%—more than double the 2024-2025 quarterly average—as investors demand clearer unit economics and paths to profitability. 
+
+-------------------------
+en_aibusiness
+2026-04-15 12:00:00
+New Anthropic Tool Speeds up AI Agent Development for Enterprises 
+Anthropic released Claude Managed Agents, a new infrastructure layer that enables enterprises to launch AI agents ten times faster by handling orchestration, memory, and tool integration, significantly reducing the engineering burden on in-house AI teams. 
+
+-------------------------
+en_foreignaffairs
+2026-04-15 12:00:00
+Will China Overplay Its Hand? 
+With Trump planning as many as four meetings with Xi Jinping in 2026, Foreign Affairs examines whether China's growing assertiveness in trade, technology, and military posturing risks triggering a US backlash that undermines Beijing's strategic objectives at a critical inflection point. 
+
+-------------------------
+en_energymonitor
+2026-04-15 12:00:00
+Octopus Energy plans $1bn investment in Californian clean technology 
+UK-based Octopus Energy announced a $1 billion California solar-and-battery investment, acquiring a project set to become operational by July 2026, as part of a commitment to deploy $2 billion total in US clean energy infrastructure by 2030. 
+
+-------------------------
+en_automate_a3
+2026-04-15 12:00:00
+Industrial Automation Q1 2026 Market Update 
+The Q1 2026 automation market update from Blue River Financial Group finds M&A momentum accelerating with capital invested soaring 145.3% year-over-year to $93.7 billion, as strategic buyers and private equity rush to acquire robotics, AI, and industrial software platforms. 
+
+-------------------------
+en_cbinsights
+2026-04-10 12:00:00
+State of Venture Q1'26 
+Q1 2026 global venture funding hit a record high on paper, but the underlying market continued contracting with fewer active investors, declining deal counts, and stablecoin-native fintech firms commanding the highest valuations per employee across the sector. 
+
+-------------------------
+en_sifted
+2026-04-10 12:00:00
+AI startups swallow half the funding across European tech 
+AI-native startups captured 51% of equity investment in Europe in Q1 2026, according to Sifted, as large language model applications, vertical AI tools, and AI infrastructure plays dominated deal flow across the continent, distorting overall funding statistics with a small number of mega-rounds. 
+
+-------------------------
+en_iiotworld
+2026-04-10 12:00:00
+2026 Smart Factory AI Vision: 5 Reasons Why 41% Choose It 
+A new manufacturer survey finds 41% of firms are prioritizing AI vision systems as their top 2026 automation investment, ahead of both LLM deployments and humanoid robotics, driven by measurable ROI in quality inspection, defect detection, and predictive maintenance applications. 
+
+-------------------------
+en_nucnet
+2026-04-05 12:00:00
+Nuclear Energy Making Strong Comeback With Investment Holding At Around $80 Billion In 2026, Says IEA 
+The IEA reports global nuclear energy investment is holding at approximately $80 billion in 2026, with reactor capacity under construction at a 30-year high across 15 countries and China alone accounting for half of all reactors currently being built worldwide. 
+
+-------------------------
+en_farmprogress
+2026-03-31 12:00:00
+USDA projects corn acres to drop 4.8M in 2026 as farmers shift 
+USDA's prospective plantings report forecasts a 4.8 million acre decline in 2026 US corn plantings from record 2025 levels as farmers rotate to soybeans, particularly in the Southeast where cotton and rice economics have deteriorated significantly. 
+
+-------------------------
+en_brookings
+2026-03-20 12:00:00
+From rules to discretion: How Trump reconfigured US tariff policy 
+Brookings documents the shift in US trade policy from a rules-based multilateral framework to discretionary bilateral dealmaking under Trump, with the trade-weighted average US tariff rate rising from 2.6% in January 2025 to 13.4% by January 2026. 
+
+-------------------------
+en_iiotworld
+2026-03-20 12:00:00
+One AI Project Saves Manufacturers $5 Million a Year 
+IIoT World analysis of real-world AI manufacturing deployments finds that a single well-implemented agentic AI project in document management or materials data can deliver up to $5 million in annual savings, based on results from early adopters including Elanco and Danfoss. 
+
+-------------------------
+en_sifted
+2026-03-15 12:00:00
+Stripe alumni raise €7.5m for AI-powered fintech Seapoint 
+Seapoint, an AI financial operations platform for startups co-founded by Stripe alumni, raised €7.5 million in seed funding to expand its AI-powered finance automation and multi-currency treasury tools across Europe. 
+
+-------------------------
+en_rhg
+2026-02-15 12:00:00
+Germany's 'China Shock' Revisited 
+Rhodium Group applies the 'China shock' import competition framework to Germany's 2025-2026 manufacturing downturn, finding that Chinese export competition is now contributing to job losses across a broader range of German industrial sectors than the original US-focused analysis captured. 
+
+-------------------------
+cn_ckgsb
+2026-02-04 12:00:00
+China Economic Consolidation and Strategic Shifts in 2026 
+CKGSB's 2026 economic assessment highlights the combined pressures of a slowing domestic economy and intensifying geopolitical friction, while noting deepening yuan-based trade ties with Global South partners including Saudi Arabia, Brazil, and Indonesia. 
+
+-------------------------
+en_aibusiness
+2026-01-20 12:00:00
+Infosys, AWS Partner on Enterprise AI 
+Infosys agreed to a strategic deal with AWS to deepen generative AI adoption internally and across its customer base, integrating its Topaz AI platform with Amazon Q Developer for clients in manufacturing, financial services, and consumer goods. 
+
+-------------------------
+en_rhg
+2026-01-20 12:00:00
+China's Financial and Fiscal Decay 
+Rhodium Group documents deteriorating financial system health in China, finding that fiscal revenues declined outright in 2025 while monetary policy tools have become less effective at stimulating demand, increasing China's structural dependence on export performance as a growth driver. 
+
+-------------------------
+en_atlanticcouncil
+2026-01-15 12:00:00
+The 2026 Global Energy Agenda 
+The Atlantic Council's annual global energy framework signals a decisive pivot from affordability concerns to geopolitical risk management as the organizing principle for 2026, shaped by the US-Iran conflict, energy security concerns across Europe and Asia, and AI-driven data center power demand. 
+
+-------------------------
+en_rhg
+2026-01-10 12:00:00
+China's 'New' Strategic Industries Will Not Produce 5% GDP Growth 
+Rhodium Group analysis argues that China's prioritized advanced manufacturing sectors—AI, semiconductors, EVs, and renewables—cannot generate sufficient fixed capital formation to compensate for the real estate sector's collapse and achieve Beijing's 5% GDP growth targets. 
+
+-------------------------
+en_woodmac
+2026-01-10 12:00:00
+Five themes shaping the energy world in 2026 
+Wood Mackenzie identifies five key 2026 energy themes: geopolitically-driven energy security concerns dominating investment, flat real-terms renewables investment globally, upstream oil and gas spending cuts, the US One Big Beautiful Bill phasing out federal renewable tax credits, and energy storage surpassing 100 GW of installed capacity for the first time. 
+
+-------------------------
+en_law360
+2026-01-10 12:00:00
+Banking Regulation To Watch In 2026 
+Law360's 2026 banking regulation outlook identifies agency funding fights, supervisory overhauls aligned with the Trump administration's deregulatory priorities, crypto bank chartering, and the elimination of 'reputation risk' as a supervisory category as the key themes reshaping US banking oversight. 
+
+-------------------------
+en_woodmac
+2026-01-08 12:00:00
+Metals & mining: what to look for in 2026 
+Wood Mackenzie's metals outlook highlights copper's tight concentrate market and smelting bottlenecks, Guinea's Simandou iron ore project reshaping the global cost curve, and lithium oversupply keeping prices depressed despite long-term electric vehicle demand growth through the decade. 
+
+-------------------------
+en_woodmac
+2026-01-06 12:00:00
+Upstream oil & gas: region-by-region predictions for 2026 
+Wood Mackenzie forecasts a second consecutive year of upstream oil and gas spending cuts in 2026 at $485 billion, 3% below 2025, as operators shift focus to brownfield rejuvenation, new cross-border partnerships, and building optionality for material growth in the 2030s. 
+
+-------------------------
