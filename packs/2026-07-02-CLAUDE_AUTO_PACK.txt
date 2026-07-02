@@ -1,0 +1,564 @@
+en_airandspaceforces
+2026-07-02 12:00:00
+Thunderbirds Arrive in DC for July 4: 'You Can Just Feel the Energy' 
+Thousands of people will brave 100-degree weather in downtown Washington D.C. for America's 250th anniversary, with USAF Thunderbirds performing with F-16s overhead. The Air Force has been ramping up flyovers and ceremonial events ahead of the July 4 celebration. 
+
+-------------------------
+en_aibusiness
+2026-07-01 20:00:00
+Restrictions on Fable 5, Mythos 5 Lifted, as Anthropic Launches Sonnet 5 
+Anthropic released Claude Sonnet 5 as its most agentic Sonnet model yet on the same day the U.S. government lifted national-security restrictions on the Fable 5 and Mythos models. The restrictions had been imposed on June 12 after Amazon researchers found a method to bypass Fable 5's safeguards. 
+
+-------------------------
+en_aibusiness
+2026-07-01 19:00:00
+Google Expands AI Imaging Offerings With Nano Banana Lite 2 
+Google launched Nano Banana 2 Lite, its updated entry-level image generation model optimized for speed and infrastructure efficiency, capable of generating a 1K-resolution image in about four seconds. The release expands Google's generative AI imaging portfolio alongside broader Gemini Omni Flash availability. 
+
+-------------------------
+en_aibusiness
+2026-07-01 18:00:00
+Elon Musk xAI Slates Post July 4 Release for Grok 4 
+xAI announced that its next-generation Grok 4 model will be released after the July 4 holiday in the United States. The announcement came amid Meta's simultaneous restructuring into a new Superintelligence Labs division. 
+
+-------------------------
+en_atlanticcouncil
+2026-07-01 17:00:00
+Europe and the Gulf have untapped strengths to counter great-power chaos 
+Senior leaders from Europe and the Arab Gulf convened at the inaugural Europe Gulf Forum to discuss their strategic relationship amid intensifying U.S.-China great-power competition. Analysts argue that both regions hold complementary strengths in energy security, finance, and trade that remain underexploited. 
+
+-------------------------
+en_atlanticcouncil
+2026-07-01 16:00:00
+Alliance evolving: The Ankara Summit and NATO Readiness 
+NATO heads of state and government gathered in Ankara, Turkey on July 7-8, seeking to convert last year's landmark defense spending pledges into concrete military capabilities. President Trump signaled he would attend only because the summit was hosted by Turkish President Erdoğan. 
+
+-------------------------
+en_upstreamonline
+2026-07-01 16:00:00
+Eni and Mercuria to form trading partnership 
+Italian energy major Eni and commodity trader Mercuria announced a new trading partnership effective July 1, 2026, expected to enhance natural gas and LNG marketing capabilities. Terms of the partnership were not disclosed. 
+
+-------------------------
+en_upstreamonline
+2026-07-01 15:00:00
+Argentina approves $4.5 billion oil shale development in Vaca Muerta 
+Argentina's government approved a major $4.5 billion oil shale development project in the Vaca Muerta formation, one of the world's largest shale reserves. The approval is expected to significantly boost Argentina's upstream oil output in coming years. 
+
+-------------------------
+en_upstreamonline
+2026-07-01 14:00:00
+Chevron moves closer to taking operatorship of giant Iraq oilfield 
+Chevron is advancing talks to assume operatorship of the West Qurna 2 giant oilfield in Iraq, one of the world's largest producing fields. The move would mark a significant expansion of Chevron's Middle East production footprint. 
+
+-------------------------
+en_centralbanking
+2026-07-01 14:00:00
+Why Trump's latest Truth should make TradFi twitchy 
+The Atlantic Council warns that U.S. President Donald Trump's social media comments on monetary policy and crypto could unsettle traditional financial markets. Analysts say central bank independence faces renewed pressure as political commentary on Fed decisions intensifies. 
+
+-------------------------
+en_carbonpulse
+2026-07-01 14:00:00
+$6 mln offset project buyout collapses after purchaser said to miss closing payment 
+A planned $6 million portfolio buyout of voluntary carbon offset projects collapsed after the purchaser failed to make the required closing payment by the contractual deadline. The collapse highlights ongoing liquidity and deal-execution risks in the voluntary carbon market. 
+
+-------------------------
+en_carbonpulse
+2026-07-01 13:30:00
+California-based WCI accounts rise 1.5% in Q2, surpass 830 
+Total California-registered accounts under the state's Quebec-linked compliance carbon market increased 1.5% during Q2 to surpass 830 registered participants. The growth reflects sustained corporate compliance activity as California's carbon market enters its next compliance period. 
+
+-------------------------
+en_carbonpulse
+2026-07-01 13:00:00
+India govt to launch a $528-mln scheme to promote green steel technologies 
+India is preparing to launch an INR 50 billion ($528 million) scheme to promote the adoption of clean technologies in steelmaking, targeting significant emissions reductions from one of the world's fastest-growing steel industries. The scheme is expected to accelerate green hydrogen and electric arc furnace adoption in Indian steel plants. 
+
+-------------------------
+en_trellis
+2026-07-01 13:00:00
+Starbucks reassesses 2030 emissions reduction target 
+Starbucks is reassessing its 2030 emissions reduction targets after cutting operational and electricity-related emissions by 17% in fiscal 2025, while its overall carbon footprint increased 7% due to business expansion. The reassessment reflects the challenge large consumer brands face in decoupling growth from emissions. 
+
+-------------------------
+en_trellis
+2026-07-01 12:30:00
+Amazon stays 'stubborn' on net-zero pledge 
+Amazon reaffirmed its net-zero 2040 pledge despite logging a 16% emissions increase in 2025, driven largely by data center and building construction for its cloud computing expansion. The company said it is more than halfway toward its target of 100,000 electric delivery vehicles by 2030. 
+
+-------------------------
+en_healthleadersmedia
+2026-07-01 12:00:00
+The Warning Behind Presbyterian's Medicare Advantage Exit 
+Presbyterian Healthcare Services announced it will discontinue most of its Medicare Advantage offerings beginning in 2027, affecting roughly 30,000 members, signaling the growing financial strain of MA plans on regional health systems. Healthcare analysts say the exit reflects unresolved reimbursement gaps between MA plan payments and actual care costs. 
+
+-------------------------
+en_steelmarketupdate
+2026-07-01 12:00:00
+ISM: Manufacturing sector expands for sixth consecutive month 
+The ISM Manufacturing Index showed expansion for a sixth consecutive month in June 2026, reinforcing improving conditions in U.S. heavy industry. Hot-rolled coil prices continued to tick higher even as cold-rolled and coated steel prices remained unchanged. 
+
+-------------------------
+en_europeanspaceflight
+2026-07-01 12:00:00
+Latitude to Launch Inaugural Flight from Oman 
+French launch startup Latitude announced alternative plans for its rocket's inaugural flight, targeting a first experimental launch from Oman's Etlaq Spaceport in late 2027. The company signed a Letter of Intent with Etlaq establishing a cooperation framework covering launcher integration, ground infrastructure, and regulatory requirements. 
+
+-------------------------
+en_europeanspaceflight
+2026-07-01 11:30:00
+US-Based Katalyst Selects Ariane 6 to Launch Satellite Servicing Spacecraft 
+Katalyst Space Technologies selected Arianespace's Ariane 6 rocket to launch its in-orbit satellite servicing spacecraft, marking another commercial win for the European heavy-lift launcher. The deal supports Katalyst's plans to provide life-extension services to geostationary communication satellites. 
+
+-------------------------
+en_europeanspaceflight
+2026-07-01 11:00:00
+ESA Backs EuroSpaceport's North Sea Launch Site 
+The European Space Agency has expressed support for EuroSpaceport's proposed North Sea launch facility, which aims to provide European commercial launch access from offshore infrastructure. ESA's backing could accelerate regulatory approvals needed for the novel platform. 
+
+-------------------------
+en_techwireasia
+2026-07-01 11:00:00
+U Mobile completes migration to own ULTRA5G network after DNB exit 
+Malaysia's U Mobile completed migration of all customers to its own ULTRA5G network on July 1, 2026, after ending its wholesale access agreement with DNB. The move makes U Mobile the second Malaysian operator to fully exit the DNB wholesale arrangement. 
+
+-------------------------
+en_techwireasia
+2026-07-01 10:30:00
+Vertiv ramps up manufacturing in Johor's tightening data centre market 
+Vertiv opened its first Southeast Asian manufacturing base in Senai, Johor on July 1, producing power and cooling equipment to serve fast-rising AI data center demand in the region. The plant addresses supply constraints as Johor's data center market competes aggressively for hyperscaler investment. 
+
+-------------------------
+en_interestingengineering
+2026-07-01 10:00:00
+US startup turns fusion plasma into electricity, in a private first 
+Realta Fusion, a Wisconsin-based startup, achieved a technical milestone by converting magnetic mirror fusion plasma energy directly into usable electricity for the first time in the private sector. The breakthrough is seen as an important step toward commercial fusion power generation. 
+
+-------------------------
+en_interestingengineering
+2026-07-01 09:30:00
+Why legitimate publishers are losing Facebook monetization under Meta's rules 
+An investigation reveals that Meta's content enforcement systems are erroneously demonetizing legitimate news publishers on Facebook, with automated systems struggling to distinguish quality journalism from policy-violating content. The issue is raising alarm among digital media companies dependent on social platform ad revenue. 
+
+-------------------------
+en_interestingengineering
+2026-07-01 09:00:00
+US states roll out major tech laws covering AI and privacy in 2026 
+Multiple U.S. states enacted significant new laws in mid-2026 governing AI systems, biometric privacy, and data protection, creating a patchwork of state-level tech regulation ahead of any federal framework. Companies operating across state lines face growing compliance complexity as diverging requirements take effect. 
+
+-------------------------
+en_offshore_technology
+2026-07-01 09:00:00
+Can Brazil become a key rare earth supplier for the West? 
+Brazil is emerging as one of the world's most promising new sources of critical minerals, holding the world's second-largest rare earth resource base and hosting a growing number of advanced ionic clay projects. Western governments are looking to Brazil as part of efforts to reduce dependence on Chinese rare earth supply chains. 
+
+-------------------------
+en_offshore_technology
+2026-07-01 08:30:00
+San Mateo Midstream to acquire Cardinal Midstream for $752m 
+San Mateo Midstream has agreed to acquire Cardinal Midstream Partners' operating subsidiaries for $752 million in cash, with closing expected by July 31, 2026. The deal expands San Mateo's midstream infrastructure footprint across key U.S. shale basins. 
+
+-------------------------
+en_institutionalinvestor
+2026-07-01 08:00:00
+The Rage of Carson Block 
+Short-seller Carson Block spoke candidly about his frustrations with market conditions and corporate governance, appearing across CNBC and Bloomberg TV to make his case against several targets. Block's Muddy Waters Research remains one of the most closely watched short-selling firms among institutional investors. 
+
+-------------------------
+en_powermag
+2026-07-01 08:00:00
+Antares Mark-0 Becomes First Advanced Nuclear Reactor to Achieve Criticality Under DOE Pilot Program 
+The Antares Mark-0 advanced microreactor became the first novel reactor design to achieve criticality at Idaho National Laboratory in more than 50 years, under the DOE's Executive Order 14301 nuclear acceleration initiative. The DOE has now achieved criticality in three unique advanced microreactor designs in a single month, a historic first. 
+
+-------------------------
+en_institutionalinvestor
+2026-07-01 07:30:00
+Hedge Funds May Be Venture Capital Game Changers 
+Hedge funds with permanent capital structures are increasingly competing directly with venture capital firms for late-stage private company allocations, offering founders more flexible terms than traditional VC. The trend is blurring the lines between public market hedge strategies and private market investing. 
+
+-------------------------
+en_powermag
+2026-07-01 07:30:00
+PJM's First Reformed Queue Cycle Draws 811 Projects, 220 GW 
+PJM Interconnection's first reformed interconnection queue cycle attracted 811 project applications representing 220 GW of new generating capacity, signaling continued strong demand to connect renewable energy and storage to the eastern U.S. grid. The reformed process is designed to reduce the decade-long backlogs that have slowed U.S. clean energy expansion. 
+
+-------------------------
+en_institutionalinvestor
+2026-07-01 07:00:00
+Jericho Capital Extends Its Run After Historic Gains Last Year 
+Jericho Capital Asset Management extended its strong performance into 2026 following historic gains in 2025, driven by concentrated technology and AI-related positions. The fund's success reflects continued alpha generation from focused long-short equity strategies in high-growth sectors. 
+
+-------------------------
+en_powermag
+2026-07-01 07:00:00
+AI, Data Centers, and the New Politics of Power Demand 
+A surge in AI data center construction is reshaping U.S. electricity demand projections and triggering political debates over grid capacity, rate increases, and power priority between industrial and residential customers. Grid operators warn that peak electricity demand rose by approximately 20 GW in a single year while less than 10 GW of net dependable capacity was added. 
+
+-------------------------
+en_rttnews
+2026-07-01 06:00:00
+Liminatus Pharma Amends Merger Agreement With InnocsAI To Expand Oncology Pipeline 
+Liminatus Pharma amended its merger agreement with InnocsAI, with the deal expected to close July 2, 2026 at an implied transaction value of approximately $320 million, adding oncology pipeline assets. Under amended terms, InnocsAI shareholders will receive a mix of common stock and convertible preferred stock. 
+
+-------------------------
+en_drugdiscoverynews
+2026-07-01 06:00:00
+Weekly Rundown: GLP-1 gene therapy enters first human trial 
+A GLP-1 gene therapy entered its first human clinical trial, representing a potential long-duration alternative to weekly injectable GLP-1 receptor agonists like Ozempic and Wegovy. The trial reflects growing interest in gene-based approaches to obesity and metabolic disease that could require only a single administration. 
+
+-------------------------
+en_rttnews
+2026-07-01 05:30:00
+Biotech Stocks Facing FDA Decision In July 2026 
+Multiple biotech companies face key FDA approval decisions in July 2026, including Enhertu for HER2-positive early breast cancer post-neoadjuvant treatment due July 7, and therapies targeting IgA nephropathy, multiple myeloma, and ADHD. Investors are closely tracking PDUFA dates across the sector for near-term catalysts. 
+
+-------------------------
+en_rttnews
+2026-07-01 05:00:00
+5 Biotech Stocks That Skyrocketed 105% To 235% — TWST, INDV, MIRM & More 
+Five biotech stocks generated outsized returns of 105% to 235% in recent weeks, driven by positive clinical trial data and FDA approval milestones in rare disease, oncology, and metabolic disorders. The moves highlight the binary nature of clinical-stage biotech investing. 
+
+-------------------------
+en_merics
+2026-07-01 05:00:00
+Economic momentum falters over Q2 
+MERICS analysis shows China's economic momentum weakened over Q2 2026, with fixed asset investment falling and consumer confidence remaining subdued despite government stimulus. Beijing is maintaining its 4.5-5% GDP growth target through fiscal expansion, though structural headwinds from the property sector remain unresolved. 
+
+-------------------------
+en_steelindustry
+2026-07-01 04:00:00
+What You Should Know: Steel Demand for Second Half 2026 
+Industry analysts project a modest recovery in U.S. steel demand in H2 2026, supported by infrastructure spending and manufacturing reshoring, despite ongoing global supply overhang from Chinese exports. Tariff dynamics and USMCA trade negotiations are key variables for the second-half outlook. 
+
+-------------------------
+en_alcircle
+2026-07-01 04:00:00
+Rising copper prices accelerate shift towards aluminium wiring in automotive industry 
+Rising copper prices are encouraging automakers including Ferrari and BMW to accelerate adoption of aluminium wiring as a lower-cost and lighter alternative across new vehicle models. The trend is expected to drive structural demand growth for aluminium in automotive electrical systems. 
+
+-------------------------
+en_biopharminternational
+2026-07-01 04:00:00
+FDA Approves Lumvoa for Thyroid Eye Disease Across Activity Stages 
+The FDA approved Viridian Therapeutics' Lumvoa (veligrotug-vvze) for the treatment of thyroid eye disease, marking a new entry in the growing class of anti-IGF-1R therapies for this debilitating autoimmune condition. The approval expands treatment options for patients across both active and chronic inactive disease stages. 
+
+-------------------------
+en_alcircle
+2026-07-01 03:30:00
+Trump-backed Oklahoma aluminium smelter faces a 60-day pause 
+Oklahoma's Inola City Council approved a 60-day construction moratorium on a proposed aluminium smelter strongly backed by President Trump, amid concerns about environmental impact and ownership structure. The pause temporarily halts what was positioned as a flagship U.S. industrial revival project. 
+
+-------------------------
+en_biopharminternational
+2026-07-01 03:30:00
+FDA Approves Tregzi, First Regulatory T-Cell Immunotherapy to Reduce Chronic Graft-Versus-Host Disease 
+The FDA approved Orca Biosystems' Tregzi, making it the first regulatory T-cell immunotherapy indicated to improve chronic graft-versus-host disease-free survival in patients undergoing allogeneic stem cell transplantation. The approval represents a novel cellular therapy approach to managing one of the most serious complications of bone marrow transplantation. 
+
+-------------------------
+en_alcircle
+2026-07-01 03:00:00
+Metro Mining appoints Rudi Cohrssen as General Counsel and Company Secretary 
+Metro Mining Ltd appointed Rudi Cohrssen as its new General Counsel and Company Secretary, effective July 1, 2026, strengthening its legal and governance capabilities. Metro Mining operates the Bauxite Hills mine in Queensland, Australia. 
+
+-------------------------
+en_gasgoo
+2026-07-01 03:00:00
+Leapmotor's Global Deliveries Hit a New High of 93,376 Units in June 
+Leapmotor's global deliveries reached 93,376 units in June 2026, up 95% year-on-year and setting a new monthly record, with exports already exceeding last year's total for the first half. The Chinese EV maker's Stellantis partnership has accelerated its international expansion across Europe and emerging markets. 
+
+-------------------------
+en_miningdigital
+2026-07-01 02:30:00
+South32 Sells Aluminium Assets to Alcoa for US$5.6bn 
+South32 agreed to sell its aluminium and alumina assets to Alcoa for up to $5.6 billion, including Worsley Alumina, Hillside Aluminium, and stakes in MRN bauxite and Brazilian aluminium operations. The deal, announced July 1, 2026, is split between upfront cash, Alcoa shares, assumed debt, and contingent payments linked to commodity prices through 2030. 
+
+-------------------------
+en_miningdigital
+2026-07-01 02:00:00
+BHP Splits Americas Role in Executive Reshuffle 
+BHP created separate President North America and President South America roles in an executive restructuring effective July 1, 2026, with Jessica Farrell stepping into the President North America position. The move is designed to allow greater regional focus as BHP expands copper production across the Americas. 
+
+-------------------------
+en_omfif
+2026-07-01 02:00:00
+Global Public Investor 2026 
+OMFIF launched its 13th annual Global Public Investor report on July 1, revealing that 82% of central banks now hold physical gold, up from 71% last year, with 61% expecting gold prices to settle between $5,000-$6,000 per ounce by June 2027. The report also found growing central bank uncertainty about the dollar's long-term reserve currency dominance. 
+
+-------------------------
+en_barchart
+2026-07-01 02:00:00
+Corn Bulls Gaining Ground Following USDA Reports, with Bullish Stocks Data 
+Corn futures extended post-USDA report gains after June 1 grain stocks came in nearly 120 million bushels below estimates at 5.295 billion bushels, while acreage data showed 95.343 million acres planted. December corn futures rose to $4.42 as traders anticipated tighter-than-expected supply heading into summer. 
+
+-------------------------
+en_thescxchange
+2026-07-01 01:30:00
+Ocean freight: early peak season pushes container rates higher 
+Container shipping rates continued climbing in early July 2026, driven by an early peak season fueled by tariff frontloading, fuel surcharge increases, and July manufacturer price hikes. The surge is testing shipper budgets as importers rush goods ahead of anticipated trade policy changes. 
+
+-------------------------
+en_infoworld
+2026-07-01 01:30:00
+OpenAI buys Ona to help rein in AI agents 
+OpenAI agreed to acquire Ona (formerly Gitpod), a cloud development environment provider, to accelerate efforts to make agentic AI enterprise-friendly by providing secure sandboxed environments where agents can access tools and systems. The acquisition reflects OpenAI's strategy to capture enterprise developer infrastructure alongside its model business. 
+
+-------------------------
+en_thescxchange
+2026-07-01 01:00:00
+Retail Spending Surges in July: NRF Report 
+Retail spending bounced back in July 2026 as consumers rushed summer sale promotions to buy goods before additional tariffs take effect, according to a National Retail Federation report. The pull-forward dynamic is compressing inventory cycles and elevating near-term container demand. 
+
+-------------------------
+en_infoworld
+2026-07-01 01:00:00
+Why private AI is the smarter bet 
+As AI token costs rise, governance pressures intensify, and organizations become more proficient at building focused models, more enterprises are concluding that private AI deployments offer better economics and control than reliance on third-party APIs. The shift reflects maturing enterprise AI strategies moving beyond early experimentation. 
+
+-------------------------
+en_promarket
+2026-07-01 00:30:00
+Satya Nadella's AI Warning Is a Sales Pitch 
+ProMarket's Stigler Center argues that Microsoft CEO Satya Nadella's public call for AI model portability is primarily aimed at directing enterprise investment toward Azure rather than promoting genuine interoperability. The piece contends that Nadella's framing obscures Microsoft's competitive interest in locking customers into its cloud ecosystem. 
+
+-------------------------
+en_infoworld
+2026-07-01 00:30:00
+AI coding token costs are on track to rival human payroll 
+Gartner analysis indicates enterprises may soon pay as much for AI developer token usage as they pay in human software engineer salaries, with costs projected to meet or exceed typical salaries within two years. The finding is prompting CIOs to reassess AI coding tool deployment strategies and cost governance. 
+
+-------------------------
+en_crisprmedicinenews
+2026-07-01 00:00:00
+CRISPR origins traced back to LUCA 
+Researchers announced findings tracing the evolutionary origins of CRISPR-Cas systems to LUCA, the Last Universal Common Ancestor of all life, suggesting the immune defense mechanism is over 4 billion years old. The discovery has implications for understanding the co-evolution of phages, bacteria, and prokaryotic immune systems. 
+
+-------------------------
+en_canarymedia
+2026-07-01 00:00:00
+How an NYC high-rise is keeping cool with geothermal 
+555 Greenwich St. in Manhattan became the city's first commercial office building to operate without fossil fuels, using 68 geothermal energy piles running nearly 120 feet deep for heating and cooling. The building demonstrates a scalable urban geothermal model that could be replicated across New York's dense commercial real estate stock. 
+
+-------------------------
+en_canarymedia
+2026-07-01 00:00:00
+Martha's Vineyard solar array will cut bills for low-income islanders 
+A 138-kilowatt solar system installed on workforce housing for Martha's Vineyard Hospital will share an estimated $550,000 in savings over 25 years with island households facing high energy burdens. The community solar arrangement exemplifies emerging models for distributing clean energy benefits to lower-income communities. 
+
+-------------------------
+en_centralbanking
+2026-06-30 20:00:00
+Japan's government reportedly intervenes in FX market 
+Japan's government reportedly intervened in foreign exchange markets to slow the yen's depreciation against the dollar, deploying reserve assets to support the currency. The intervention came as the yen approached levels last seen during previous rounds of official support. 
+
+-------------------------
+en_centralbanking
+2026-06-30 18:00:00
+Banknotes: April to June 2026 
+Central Banking's quarterly banknotes review covers design changes, anti-counterfeiting technology upgrades, and new currency launches from central banks across Asia, Europe, and Latin America during Q2 2026. The report highlights growing use of polymer substrates and digital authentication features in new note series. 
+
+-------------------------
+en_healthleadersmedia
+2026-06-30 16:00:00
+Prior authorization coming to traditional Medicare in 2026 
+CMS will implement prior authorization requirements for certain traditional Medicare services in six states under the WISeR Model, marking a significant policy shift for fee-for-service beneficiaries. The program aims to reduce wasteful or inappropriate services while raising concerns about access delays for patients. 
+
+-------------------------
+en_healthleadersmedia
+2026-06-30 14:00:00
+Duke University Health Joins With Durham Tech to Boost Nursing Numbers 
+Duke University Health System partnered with Durham Technical Community College to expand nursing workforce pipelines amid ongoing staffing shortages at hospitals across North Carolina. The collaboration will create new pathways for students to enter nursing programs with financial and academic support from the health system. 
+
+-------------------------
+en_techwireasia
+2026-06-30 14:00:00
+Why Apple is lobbying Washington to buy China's memory chips? 
+Apple is lobbying the U.S. government to allow purchases of memory chips from China's CXMT, as shortages of legacy DRAM chips drive up component costs for iPhones and other devices. CEO Tim Cook told the Wall Street Journal that price increases had become 'unavoidable' and the situation 'unsustainable.' 
+
+-------------------------
+en_offshore_technology
+2026-06-30 12:00:00
+Baker Hughes submits EU remedies for $13.6bn Chart Industries deal 
+Baker Hughes proposed remedies to the European Commission to secure antitrust clearance for its planned $13.6 billion acquisition of Chart Industries, with Chart shareholders having already approved the transaction. The deal would significantly expand Baker Hughes' industrial gas and LNG equipment portfolio. 
+
+-------------------------
+en_steelindustry
+2026-06-30 12:00:00
+US-Japan Tariffs: How Steel Duties and Baseline Rates Are Changing Trade 
+New bilateral tariff arrangements between the U.S. and Japan are reshaping steel trade flows as Section 232 steel duties interact with baseline rates under renegotiated trade terms. U.S. steel producers are monitoring whether tariff changes open or close competitive windows for Japanese imports. 
+
+-------------------------
+en_miningdigital
+2026-06-30 10:00:00
+Coal Mining Investment Reaches Global 14-year Peak 
+Global coal mining investment reached its highest level in 14 years in 2025, driven by Asian demand and energy security concerns overriding Western decarbonization commitments. The investment surge underscores the tension between energy transition targets and near-term fossil fuel supply needs. 
+
+-------------------------
+en_atlanticcouncil
+2026-06-30 10:00:00
+From cloud to kill zone: How Ukraine rewired naval warfare for the age of algorithmic warfare 
+A new Atlantic Council report examines how Ukraine has used drone swarms, USVs, and AI-enabled targeting to destroy roughly 30% of Russia's Black Sea Fleet assets and deny Russia maritime dominance. The study argues the Black Sea campaign has permanently altered naval warfare doctrine for peer conflicts. 
+
+-------------------------
+en_barchart
+2026-06-30 08:00:00
+Canola Futures: Analyzing the July/Nov Contango Shift 
+Canola futures markets shifted into a deeper contango structure between July and November 2026 contracts, reflecting expectations of larger Canadian canola supplies in the new crop year. Traders are watching Prairies weather and export demand from China as key drivers of the spread. 
+
+-------------------------
+en_canarymedia
+2026-06-30 06:00:00
+The Iran war sparked a shift toward clean energy. Will it last? 
+The U.S.-Iran military confrontation in early 2026 triggered a surge in clean energy investment as governments sought to reduce oil import vulnerability, but analysts question whether the momentum will persist once oil prices stabilize. Policy makers are debating how to lock in energy security gains through long-term clean energy infrastructure commitments. 
+
+-------------------------
+en_merics
+2026-06-30 05:00:00
+China's economic policy holds line as growth weakens 
+MERICS tracking shows Beijing maintaining a stimulative fiscal and monetary policy stance even as Q2 data reveals softening in fixed asset investment and consumer confidence. Authorities are leaning on infrastructure spending and export support to meet the 4.5-5% GDP growth target amid ongoing property sector weakness. 
+
+-------------------------
+en_promarket
+2026-06-29 14:00:00
+The EU's Merger Guidelines Risk Undermining Their Own Progress 
+ProMarket economists argue that the European Commission's revised merger guidelines, while incorporating industrial policy considerations, risk weakening competitive discipline in key sectors. The critique focuses on provisions that could allow dominant firms to justify acquisitions on grounds of 'strategic' national or European interests. 
+
+-------------------------
+en_gasgoo
+2026-06-29 12:00:00
+Pre-sales starting from 165,800 yuan, Lynk & Co 07 GT makes global debut 
+Lynk & Co unveiled its first station wagon, the 07 GT, at its 10th anniversary event on June 29, opening pre-orders for three trims priced between 165,800 and 185,800 yuan with a limited Time Edition at 208,800 yuan selling out immediately. The debut expands the Geely-owned brand's lineup into a new body style segment as it pursues global market growth. 
+
+-------------------------
+en_thescxchange
+2026-06-28 14:00:00
+NRF: U.S. companies rush imports ahead of rising tariffs and fuel prices 
+U.S. companies accelerated import shipments in anticipation of additional tariff increases and rising fuel surcharges, according to NRF data, contributing to elevated container shipping volumes in June. The front-loading behavior is creating congestion at major West Coast and Gulf ports. 
+
+-------------------------
+en_drugdiscoverynews
+2026-06-28 10:00:00
+Weekly Rundown: Definium's psychedelic drug delivers rapid relief in major depression in late-stage study 
+Definium Therapeutics reported that its serotonergic psychedelic candidate DT120 met all primary and key secondary endpoints in a Phase 3 trial for major depressive disorder, delivering rapid and durable symptom relief after a single dose. The results strengthen the emerging psychedelic medicine category as a new modality for treatment-resistant depression. 
+
+-------------------------
+en_gasgoo
+2026-06-28 08:00:00
+Chengdu Xiaomi SU7 Ultra Accident Appraisal Results Released, Low-Voltage System Power Failure Caused Doors to Fail to Open 
+An official appraisal of a Xiaomi SU7 Ultra accident in Chengdu determined that a low-voltage electrical system failure caused the vehicle's doors to malfunction and fail to open during the incident. The findings are expected to trigger safety reviews and potential recalls as Xiaomi scales its electric vehicle production. 
+
+-------------------------
+en_airandspaceforces
+2026-06-27 20:00:00
+B-2 Fires Ship-Killing Cruise Missile, Air Force Reveals for First Time 
+The U.S. Air Force publicly disclosed for the first time that a B-2 Spirit stealth bomber used an AGM-158C Long Range Anti-Ship Missile to strike a decommissioned vessel during exercise Valiant Shield 26 north of the Mariana Islands on June 27. The demonstration validates the B-2's anti-surface warfare capability in a high-end peer conflict scenario. 
+
+-------------------------
+en_steelmarketupdate
+2026-06-26 14:00:00
+HSS consolidation enters its next chapter 
+The hollow structural sections steel market is undergoing a new round of consolidation, with recent M&A activity reshaping the competitive landscape for tubing and structural steel products. Industry observers say further mergers are likely as producers seek scale to manage raw material cost volatility. 
+
+-------------------------
+en_steelmarketupdate
+2026-06-26 12:00:00
+Hybar expansion accelerates with groundbreaking of second Arkansas mill 
+Hybar broke ground on its second Arkansas steel mini-mill in a ceremony on June 26, mirroring the self-perform construction model used for its first mill in a 22-to-24-month build timeline. The expansion will add significant long-product steel capacity to the U.S. domestic market. 
+
+-------------------------
+en_steelindustry
+2026-06-25 14:00:00
+World Steel Pricing vs. U.S. Domestic Steel Pricing: Market Dynamics in the Era of 50% Tariffs 
+U.S. domestic steel prices remain significantly elevated versus global benchmarks as 50% Section 232 tariffs effectively insulate domestic producers from international competition. The divergence is benefiting U.S. mills but creating cost pressures for downstream manufacturers competing in global export markets. 
+
+-------------------------
+en_barchart
+2026-06-25 10:00:00
+All Aboard! Grain Bulls Are Looking to Recreate Record Runs in Gold, Silver Prices 
+Agricultural commodity bulls are building positions in corn, soybeans, and wheat, drawing parallels to the momentum-driven rallies seen in gold and silver markets. Analysts point to tightening global grain stocks, weather risk premiums, and renewed demand from China as potential catalysts. 
+
+-------------------------
+en_omfif
+2026-06-25 08:00:00
+Central banks are riding the wave of persistent volatility 
+OMFIF analysis shows central banks navigating an unusually volatile environment in mid-2026 marked by geopolitical shocks, commodity price swings, and uncertain monetary policy transmission. Emerging market central banks face particular pressure as the dollar's strength complicates inflation management. 
+
+-------------------------
+en_biopharminternational
+2026-06-25 06:00:00
+BIO 2026, Biotech Trends, and What's Next 
+The BIO 2026 International Convention in San Diego highlighted biotech's resurgence through increased M&A dealmaking, CDMO supply chain diversification, and renewed investor confidence in the sector. Attendees noted visible changes at the FDA under new leadership, with a more receptive tone toward accelerated approvals for innovative therapies. 
+
+-------------------------
+en_crisprmedicinenews
+2026-06-25 04:00:00
+CRISPR editors gain precision via evolved hotspots 
+Researchers identified evolved hotspot regions in Cas9 enzymes that can be exploited to significantly increase editing precision while reducing off-target effects. The discovery provides a roadmap for engineering next-generation CRISPR editors with improved therapeutic safety profiles. 
+
+-------------------------
+en_drugdiscoverynews
+2026-06-25 04:00:00
+Merck KGaA announced a definitive agreement to acquire Bio-Techne 
+Merck KGaA announced a $73-per-share all-cash acquisition of Bio-Techne for a total enterprise value of approximately $11.3 billion, expected to close by late 2026 or early 2027. Bio-Techne's protein research tools and diagnostics portfolio will strengthen Merck KGaA's life science tools business. 
+
+-------------------------
+en_anysilicon
+2026-06-24 12:00:00
+ASML Expects First High-NA EUV Chips Within Months as TSMC Delays Adoption Over Cost Concerns 
+ASML expects its High-NA EUV lithography systems to produce their first commercial chips within months, even as TSMC has opted not to include High-NA in its near-term process roadmap due to cost concerns. The divergence highlights tension between equipment suppliers pushing the technology frontier and chipmakers managing cost-per-wafer economics. 
+
+-------------------------
+en_anysilicon
+2026-06-24 10:00:00
+Allegro DVT's Pulsar Decoder IP adds support for AV2 video codec 
+Allegro DVT announced that its Pulsar hardware decoder IP core now supports the AV2 open-source video codec, positioning licensees to deliver next-generation video streaming quality in silicon. AV2 is expected to succeed AV1 as the dominant royalty-free video codec for streaming applications. 
+
+-------------------------
+en_anysilicon
+2026-06-23 14:00:00
+China's semiconductor equipment localization enters a new growth phase 
+China's semiconductor equipment localization rate increased from 8% in 2021 to 23.2% in 2025 and is projected to reach 39% by 2030, driven by AI demand, memory expansion, and continued domestic fab investments. The trend reflects Beijing's urgent push to build a self-sufficient semiconductor supply chain amid ongoing U.S. export restrictions. 
+
+-------------------------
+en_crisprmedicinenews
+2026-06-22 10:00:00
+Beam Therapeutics Reports Clinical Proof-Of-Concept Data for BEAM-302 in Alpha-1 Antitrypsin Deficiency Trial 
+Beam Therapeutics reported the first clinical proof-of-concept data for BEAM-302, its in vivo base-editing therapy for alpha-1 antitrypsin deficiency, showing meaningful restoration of normal AAT protein in treated patients. The results represent a significant milestone for base-editing technology in systemic liver disease. 
+
+-------------------------
+en_merics
+2026-06-20 10:00:00
+China's overcapacity threatens to reshuffle global industrial bases 
+MERICS analysis warns that China's structural overcapacity in steel, aluminum, solar panels, EVs, and chemicals is creating deflationary pressure on global industrial prices and threatening production viability in the EU, U.S., and emerging markets. The phenomenon is reshaping trade policy debates as importing nations face difficult choices between cheap goods and industrial job preservation. 
+
+-------------------------
+en_omfif
+2026-06-20 08:00:00
+Central bank credibility 
+OMFIF analysis examines how central bank credibility is being tested in 2026 by the simultaneous challenges of above-target inflation in some economies, political interference, and uncertainty around AI's impact on labor markets and productivity. The piece argues that communication clarity and institutional independence remain the cornerstones of credibility. 
+
+-------------------------
+en_lngjournal
+2026-06-19 12:00:00
+Gas to Power – June 19, 2026 
+LNG Journal's Gas to Power edition covers the latest LNG-to-power project developments, gas pricing dynamics, and floating storage and regasification unit deployments across Asia and Europe. The edition includes analysis of Q3 2026 spot LNG cargo pricing and demand signals from key importing nations. 
+
+-------------------------
+en_lngjournal
+2026-06-15 12:00:00
+ST LNG develops first large-scale US FLNG export terminal off Texas 
+ST LNG is developing the first large-scale U.S. floating LNG export terminal positioned off the Texas Gulf Coast, aiming to deliver a capital-efficient offshore liquefaction solution. The project bypasses onshore permitting bottlenecks and could accelerate U.S. LNG export capacity additions. 
+
+-------------------------
+en_lngjournal
+2026-06-10 12:00:00
+Golar LNG swings to profit as FLNG project for Senegal and Mauritania moves forward 
+Golar LNG reported a swing to profitability driven by its FLNG fleet performance, with the Golar Hilli approaching the end of its current charter as the company plans redeployment to the Senegal and Mauritania FLNG project. Golar is also in discussions for a third FLNG production vessel to expand its portfolio. 
+
+-------------------------
+en_promarket
+2026-06-04 14:00:00
+Merger Control Meets Industrial Policy With the New EU Merger Guidelines 
+The European Commission's new merger guidelines formally integrate industrial policy objectives into competition analysis for the first time, allowing potential approval of consolidation deals that serve European strategic interests. ProMarket economists warn the hybrid framework risks politicizing merger review and reducing competitive discipline. 
+
+-------------------------
