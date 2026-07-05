@@ -1,0 +1,558 @@
+en_etfstream
+2026-07-04 12:00:00
+ETF Wrap: AI toolkit broadens with Europe's first memory ETF 
+ETF Stream's weekly wrap covers the launch of Europe's first semiconductor memory-focused ETF, providing targeted exposure to HBM, DRAM, and NAND manufacturers benefiting from the AI infrastructure buildout. The fund listed on Euronext Amsterdam with €50 million in seed capital from two institutional investors. 
+
+-------------------------
+en_semiwiki
+2026-07-04 12:00:00
+CAST Licenses TCP/IP Hardware Stack Core for Keysight FieldFox Handheld Spectrum Analyzers 
+CAST licensed its TCP/IP hardware IP core to Keysight Technologies for integration into its FieldFox handheld spectrum analyzers, enabling high-speed embedded network connectivity. The deal reflects growing demand for hard-IP networking solutions in test and measurement equipment. 
+
+-------------------------
+en_defence_blog
+2026-07-03 12:00:00
+Britain, Italy, Japan bet big on next-gen fighter jet 
+The UK, Italy, and Japan awarded Edgewing a $6.14 billion, 18-month contract for the GCAP sixth-generation fighter jet. The program aims to replace current Eurofighter and F-2 fleets by the mid-2030s. 
+
+-------------------------
+en_semiwiki
+2026-07-03 12:00:00
+Intel to Report Second-Quarter 2026 Financial Results 
+Intel Corporation announced it will report second-quarter 2026 financial results on July 23, 2026 after market close. The report will be closely watched for progress on Intel's Foundry 2.0 ramp and AI accelerator roadmap. 
+
+-------------------------
+en_venturecapitaljournal
+2026-07-03 12:00:00
+Former Index partner raises $80m for debut seed fund 
+A former general partner at Index Ventures raised $80 million for a first-time seed fund targeting deep tech and AI infrastructure companies across Europe and Israel. The fund reflects continued LP appetite for experienced operators launching independent early-stage vehicles despite the challenging exit environment. 
+
+-------------------------
+en_environmental_finance
+2026-07-03 12:00:00
+Sustainable Debt EMEA 2026 conference round-up 
+Environmental Finance summarized the Sustainable Debt EMEA 2026 conference, covering debate over transition bond eligibility criteria, progress on EU ESRS adoption, and the role of nature-based solutions in green bond frameworks. Banco BPM's €500 million green Tier 2 bond launched July 1 was cited as a notable recent issuance. 
+
+-------------------------
+en_defense_industry_daily
+2026-07-03 12:00:00
+USAF Expands Angry Kitten EW Pod Integration to Larger Aircraft - GE Aerospace Secures $5B F110 Contract - Leonardo Baykar UAV MOU 
+Defense Industry Daily's combined daily brief covers the U.S. Air Force extending its Angry Kitten electronic warfare pod to wider aircraft platforms, a $5 billion GE Aerospace engine contract, and a Leonardo-Baykar joint UAV venture MOU. These contracts reflect continued expansion of EW capability and allied defense industrial cooperation. 
+
+-------------------------
+en_semiwiki
+2026-07-02 12:00:00
+China's semiconductor equipment industry: who's leading, who's lagging? 
+SemiWiki analysis maps China's domestic semiconductor equipment sector, identifying lithography and advanced deposition as lagging while etch and wafer cleaning show competitive progress. The report assesses SMIC supply chain localization pace in the face of U.S. export controls. 
+
+-------------------------
+en_batteriesinternational
+2026-07-02 12:00:00
+CATL reports 40% boost in global LIB sales 
+CATL reported a 40% year-on-year increase in global lithium-ion battery sales in H1 2026, driven by surging Chinese and European EV demand and energy storage deployments. CATL's global LIB market share rose to approximately 38%, extending its lead over BYD and LG Energy Solution. 
+
+-------------------------
+en_atlanticcouncil
+2026-07-02 12:00:00
+Your expert guide to the 2026 National Defense Authorization Act 
+The Atlantic Council's defense experts analyze key provisions of the 2026 NDAA, including new funding authorizations for hypersonic weapons, naval shipbuilding, and Indo-Pacific deterrence. The guide highlights significant expansion of munitions procurement budgets and new authorities for AI in military operations. 
+
+-------------------------
+en_moderndiplomacy
+2026-07-02 12:00:00
+Why the Russia–Ukraine War Has Become a Contest of Endurance? 
+Modern Diplomacy analysis argues the Russia-Ukraine war, now exceeding the duration of World War I, has evolved into a war of attrition without decisive breakthrough potential for either side. Russia lacks strategic pivot options while Ukraine retains Western support, suggesting a prolonged conflict without near-term resolution. 
+
+-------------------------
+en_swfinstitute
+2026-07-02 12:00:00
+Financial Times Reports that OpenAI Proposed Donating 5 Percent of Equity to a U.S. SWF 
+The Financial Times reported that OpenAI proposed to the U.S. government that it donate 5% of its equity to seed a prospective American sovereign wealth fund. The proposal signals OpenAI's effort to build goodwill with the Trump administration, which has expressed interest in establishing a government investment vehicle. 
+
+-------------------------
+en_applied_clinical_trials
+2026-07-02 12:00:00
+ICON Selects Microsoft as Preferred Technology Partner to Scale Agentic AI Platform Across Clinical Trial Lifecycle 
+CRO giant ICON PLC announced a strategic partnership with Microsoft to deploy agentic AI across its clinical trial management systems, automating protocol design, site activation, and data submission workflows. The collaboration targets a 25% reduction in average trial duration across ICON's global portfolio. 
+
+-------------------------
+en_defence_blog
+2026-07-02 12:00:00
+BAE releases first live-fire footage of its new artillery system 
+BAE Systems released test footage of its MDACS artillery system firing Hypervelocity Projectiles, demonstrating precision fires at hypersonic speeds. The tests validate MDACS as a candidate for the U.S. Army's next-generation artillery program. 
+
+-------------------------
+en_defensedaily
+2026-07-02 12:00:00
+CACI's SkyValor Counter-Drone System Validated For Operational Use By JIATF-401 
+CACI International announced its SkyValor counter-UAS system received operational validation from Joint Interagency Task Force 401, qualifying it for theater deployment. The AI-enabled system uses multi-sensor fusion to detect, track, identify, and defeat drone swarms at ranges of up to 10 kilometers. 
+
+-------------------------
+en_payloadspace
+2026-07-01 12:00:00
+Japan Eyes Sovereign D2D Satellite Network 
+Japan's government is evaluating a sovereign direct-to-device satellite network to reduce reliance on foreign communications infrastructure including Starlink for military and emergency use. The initiative would require a dedicated constellation of several hundred LEO satellites and associated ground segment investment. 
+
+-------------------------
+en_powermag
+2026-07-01 12:00:00
+POWER Digest [July 2026] 
+Power Magazine's July digest covers surging summer grid demand driven by AI data centers, TerraPower's Natrium construction start in Wyoming, and NERC warnings that peak demand could surge 224 GW above the prior year's assessment. Utilities are racing to add peaking capacity and storage ahead of an unusually hot summer. 
+
+-------------------------
+en_centralbanking
+2026-07-01 12:00:00
+People: April to June 2026 
+Central Banking's Q2 2026 leadership roundup covers Kevin Warsh's swearing-in as Federal Reserve Chairman on May 22, ECB board changes, and senior appointments at the BIS and Bank of Japan. The article notes an unusually high rate of central bank leadership transitions in 2026 amid shifting monetary policy mandates. 
+
+-------------------------
+en_resource_recycling
+2026-07-01 12:00:00
+SCS launches chem recycling standard 
+SCS Standards launched a certification standard for responsible chemical recycling, establishing performance criteria for depolymerization and pyrolysis processes across plastics and composite materials. The standard aims to provide regulatory and investor confidence in a sector plagued by greenwashing claims. 
+
+-------------------------
+en_automate
+2026-07-01 12:00:00
+Robot Orders Hold Steady in Q1 2026 as Demand Broadens Across Non-Automotive Industries 
+A3 reported North American companies ordered 9,055 robots valued at $543 million in Q1 2026, roughly flat year-over-year, while collaborative robot orders surged 56% as food processing, logistics, and electronics sectors drove non-automotive demand. The data suggests ongoing factory automation investment despite broader manufacturing caution. 
+
+-------------------------
+en_defensedaily
+2026-07-01 12:00:00
+Defense Watch: PAC-3 Plant, Quantum Tech Investment, Military Labs Review, ULTV Order 
+Defense Daily's weekly roundup covers the opening of a new Lockheed Martin PAC-3 missile plant in Camden, Arkansas, a $2 billion Pentagon quantum technology research program, a DOD review of military laboratory funding, and a new ultra-light tactical vehicle contract award. 
+
+-------------------------
+en_pharmtech
+2026-07-01 12:00:00
+Regulatory Actions for June 2026 
+Pharmaceutical Technology's June 2026 regulatory roundup covers FDA approvals including OTC naloxone Rextovy, an expanded teplizumab indication for Type 1 diabetes, and the first accepted AI-driven digital liver model under the ISTAND DDT qualification program. The issue also notes FDA plans to accelerate cell and gene therapy development pathways. 
+
+-------------------------
+en_venturecapitaljournal
+2026-07-01 12:00:00
+Download the July/August 2026 issue of Venture Capital Journal 
+The July/August 2026 VCJ issue features the VCJ 50 ranking of the world's largest venture fundraisers, analysis of Japanese LP capital flowing into Western VC funds, and coverage of why climate tech is feeling a funding chill. The issue also examines how Hoxton Ventures plans to become Europe's next flagship fund. 
+
+-------------------------
+en_warontherocks
+2026-07-01 12:00:00
+The Toll Booth at the Throat of World Trade 
+War on the Rocks analyzes Iran's hardened sovereign toll regime in the Strait of Hormuz following the February 2026 closure to foreign shipping, which has begun reshaping global energy trade routes and shipping insurance markets. The article argues the semi-permanent chokepoint control creates a durable geopolitical lever independent of the ongoing conflict. 
+
+-------------------------
+en_hcinnovationgroup
+2026-07-01 12:00:00
+Coalition Calls for Long-Term Accountable Kidney Care Model 
+A coalition of kidney disease advocates, dialysis providers, and payers submitted formal recommendations to CMS calling for a permanent value-based payment model for end-stage renal disease beyond current model expiration in 2027. The coalition argues the bundled payment approach reduces hospitalizations and lowers total cost of care. 
+
+-------------------------
+en_defense_industry_daily
+2026-07-01 12:00:00
+US Army To Receive Thermal Weapon Sights - DoS Approves Abrams Sale To Romania - Australia Buys Hunter Frigate Navigation Systems 
+A Defense Industry Daily brief covers the Army's new thermal weapon sights contract, the State Department's approval of an Abrams tank sale to Romania under FMS, and Australia's procurement of navigation systems for its Hunter-class frigates. The sales reflect NATO and Five Eyes allied modernization priorities. 
+
+-------------------------
+en_moderndiplomacy
+2026-06-30 12:00:00
+US to begin USMCA exit process as trade talks continue 
+The Trump administration formally notified Mexico and Canada of its intent to pursue USMCA withdrawal, triggering a potential 10-year countdown to expiry. The move is intended as leverage in renegotiations targeting larger U.S. trade surplus, auto manufacturing content rules, and agricultural market access. 
+
+-------------------------
+en_resource_recycling
+2026-06-30 12:00:00
+Aduro, AstroTurf look at recycling feedstock 
+Aduro Clean Technologies and AstroTurf entered a collaboration to study chemical conversion of end-of-life artificial turf as a recycling feedstock, targeting the estimated 500 million pounds of synthetic turf disposed annually in the U.S. The project would produce light hydrocarbons as circular inputs for new plastics manufacturing. 
+
+-------------------------
+en_defence_blog
+2026-06-30 12:00:00
+Lockheed Martin wins $3B U.S. Army contract for Sentinel A4 radar 
+The U.S. Army awarded Lockheed Martin a $3 billion contract for Sentinel A4 air surveillance radar production and engineering services through June 2031. The Sentinel A4 provides 360-degree battlefield airspace awareness for short-range air defense units. 
+
+-------------------------
+en_defense_industry_daily
+2026-06-30 12:00:00
+US Conducted Flight Test OF LRDR - Anduril To Produce SRMs For GLSDB - ICEYE To Boost Dutch Space Defense 
+A Defense Industry Daily roundup covers a successful U.S. Long Range Discrimination Radar flight test, Anduril's solid rocket motor production for the Ground-Launched Small Diameter Bomb, and ICEYE's contract to enhance Dutch space-domain awareness. The items highlight advances in missile defense, precision munitions, and allied space capabilities. 
+
+-------------------------
+en_defensedaily
+2026-06-28 12:00:00
+DoD Says Budget Request Includes $13 Billion For Autonomy And Related Systems 
+The Pentagon disclosed its FY2027 budget request includes $13.4 billion for autonomous systems and related AI-enabled technology, a significant increase from prior years. Funding targets unmanned aerial vehicle swarms, AI-enabled command decision tools, and autonomous logistics support platforms. 
+
+-------------------------
+en_environmental_finance
+2026-06-28 12:00:00
+Transition plans expanding beyond climate targets, says Sustainable Fitch 
+Sustainable Fitch analysis found corporate transition plans are increasingly incorporating biodiversity, water, and social workforce targets alongside carbon reduction commitments. The trend is driven by EU CSRD reporting requirements taking effect in 2026 and growing investor expectations for multi-dimensional sustainability disclosures. 
+
+-------------------------
+en_hartenergy
+2026-06-28 12:00:00
+Western Midstream Opens Up Next Produced Water Treatment Pilot 
+Western Midstream Partners launched a produced water treatment pilot facility in the Permian Basin capable of recycling 20,000 barrels per day for reuse in well completions, reducing freshwater dependency in operations. The project is part of a broader midstream water management buildout driven by regulatory pressure and operator demand. 
+
+-------------------------
+en_hcinnovationgroup
+2026-06-28 12:00:00
+AI-Driven Vulnerability Exploitation Now Leading Cause of Data Breaches, Verizon Report Finds 
+Verizon's 2026 Data Breach Investigations Report found AI-assisted vulnerability exploitation surpassed phishing as the top initial access technique for the first time. Healthcare organizations remain disproportionately targeted due to high-value patient data and aging infrastructure with deferred security investments. 
+
+-------------------------
+en_medicaleconomics
+2026-06-27 12:00:00
+455 defendants charged in massive $6.5 billion health care fraud takedown 
+The Justice Department charged 455 defendants including 90 physicians in a coordinated health care fraud enforcement action totaling $6.5 billion in fraudulent claims. The operation targeted billing fraud in Medicare and Medicaid across DME, telemedicine, and opioid prescription schemes. 
+
+-------------------------
+en_resource_recycling
+2026-06-26 12:00:00
+Smurfit Westrock climate goals evolving post-merger 
+Smurfit WestRock's first integrated post-merger sustainability report revealed updated climate goals that modestly reduce the ambition of WestRock's pre-merger commitments while unifying fiber sourcing standards and circular packaging targets. The report signals the complexity of aligning sustainability commitments across merged entities. 
+
+-------------------------
+en_automate
+2026-06-26 12:00:00
+Everyone Was Talking About Humanoids and Physical AI at Automate 2026 
+More than 50,000 attendees registered for Automate 2026 in Chicago, where humanoid robots from over 50 companies and an NVIDIA-sponsored Humanoid Pavilion dominated the exhibition floor. ABB's Physical AI Toolchain debut and Boston Dynamics' production Atlas shipment timeline were the headline announcements. 
+
+-------------------------
+en_etfstream
+2026-06-25 12:00:00
+Buffer ETFs leak assets in Europe as equity bull market rages on 
+Europe-domiciled defined-outcome buffer ETFs shed $20 million in net outflows through mid-June 2026 as equity markets extended their bull run, reducing investor demand for downside-protected structures. Issuers are responding by widening outcome buffers and extending protection periods to retain assets. 
+
+-------------------------
+en_hcinnovationgroup
+2026-06-25 12:00:00
+N.Y. Initiative Embeds Community Health Workers Into Pediatric Settings 
+A New York pilot program is embedding community health workers in Bronx and Upper Manhattan pediatric practices to address social determinants of health directly in clinical settings. Early results show improved follow-up rates for high-risk Medicaid families, with a target of 40,000 HRSN screenings by June 30, 2026. 
+
+-------------------------
+en_payloadspace
+2026-06-25 12:00:00
+Vast Delays Haven-1 Launch to 2027 
+Commercial space station developer Vast announced it is delaying the launch of its Haven-1 habitat module to 2027 due to hardware integration and testing delays. The station, previously targeting a late-2026 launch on a SpaceX Falcon 9, is intended as the first private commercial space station in low Earth orbit. 
+
+-------------------------
+en_applied_clinical_trials
+2026-06-25 12:00:00
+NEJM Retracts Tavneos Trial Paper as FDA, EMA Both Move to Pull Amgen Drug From Market 
+Applied Clinical Trials covered the NEJM retraction of the pivotal Tavneos avacopan trial amid data integrity concerns, noting coordinated FDA and EMA market withdrawal proceedings. The case is prompting industry-wide review of post-approval pharmacovigilance practices and CRO data management standards. 
+
+-------------------------
+en_warontherocks
+2026-06-25 12:00:00
+While the War Continues in Ukraine, the Kremlin's Real Battlefield is at Home 
+As of June 2026, Russia has formally declared the liberation of the Luhansk People's Republic while confronting mounting internal economic strain and demographic losses. War on the Rocks argues Putin's primary strategic focus has shifted from territorial battlefield gains to managing domestic political stability. 
+
+-------------------------
+en_moderndiplomacy
+2026-06-24 12:00:00
+Summer Davos 2026: Innovating at Scale in Dalian, China 
+The WEF's Summer Davos drew 1,500 global leaders to Dalian from June 23-25, 2026 under the theme 'Innovating at Scale.' Key discussions covered AI deployment across heavy industry, supply chain diversification beyond China, and China's role in the green energy transition as a dominant clean tech exporter. 
+
+-------------------------
+en_agtechnews
+2026-06-23 12:00:00
+South America Emerges as the Global Epicentre of Ag Innovation in 2026 
+The World Agri-Tech South America Summit in São Paulo showcased Brazil and Argentina's emergence as leading AgTech markets, driven by large-scale farming operations and government investment in precision agriculture and digital infrastructure. Over 600 global leaders participated in the June 23-24 summit. 
+
+-------------------------
+en_centralbanking
+2026-06-22 12:00:00
+Obituary: Alan Greenspan, 1926–2026 
+Former Federal Reserve Chairman Alan Greenspan died on June 22, 2026 at the age of 100. Central Banking's obituary traces his nearly 19-year tenure at the Fed, his role in establishing modern central bank credibility doctrines, and the legacy debates over his role in the pre-2008 monetary environment. 
+
+-------------------------
+en_medicaleconomics
+2026-06-20 12:00:00
+2026 Medicare rules are 'advancing site neutrality' for pay, CMS leader says 
+CMS officials said the 2026 Medicare Physician Fee Schedule advances payment equity by reducing differential rates between hospital outpatient departments and independent physician offices. The site-neutrality provisions are projected to shift several billion dollars in Medicare payments toward lower-cost care settings. 
+
+-------------------------
+en_38north
+2026-06-20 12:00:00
+Xi Jinping's Visit to Pyongyang: Regional Roundup 
+38 North analyzes Xi Jinping's June 2026 visit to Pyongyang, his first in seven years, examining what the summit signals about China-DPRK alignment in the context of evolving U.S. policy toward North Korea. The article reviews reactions from Japan, South Korea, and the U.S. to the strengthened Sino-North Korean alignment. 
+
+-------------------------
+en_etfstream
+2026-06-20 12:00:00
+SpaceX to IPO on Nasdaq after index rules adjusted - reports 
+Reports indicate SpaceX chose to list on the Nasdaq after index rule adjustments accommodated its dual-class share structure, completing an IPO in June 2026 at a valuation of approximately $175 billion. The listing marks one of the largest technology IPOs in history and opens SpaceX equity to public market investors. 
+
+-------------------------
+en_igrownews
+2026-06-20 12:00:00
+Europe AgTech Investment 2026: Why Early-Stage Capital Has Shifted 
+A shift in European AgTech investment toward earlier-stage companies and climate-resilient crop technologies is documented, with Germany emerging as the third most active country globally in AgTech news in May 2026. Biologicals, AI-driven precision agriculture, and sustainable inputs are drawing the most early-stage capital. 
+
+-------------------------
+en_batteriesinternational
+2026-06-20 12:00:00
+BESS gathers pace as Germany leads utility-scale surge 
+Germany installed 225,000 battery storage systems totaling 3.4 GWh in the first five months of 2026, a 70% year-on-year increase driven by grid balancing needs as remaining coal capacity is phased out. The surge positions Germany to exceed 10 GWh of cumulative installed battery storage by year-end. 
+
+-------------------------
+en_atlanticcouncil
+2026-06-20 12:00:00
+Putin vowed to demilitarize Ukraine. Instead, he created a major military power. 
+The Atlantic Council documents how Russia's invasion paradoxically transformed Ukraine from a modest post-Soviet military into one of Europe's most experienced and well-armed forces, with expanding domestic defense production and deep experience in drone and electronic warfare. Ukraine's military capacity now exceeds that of several NATO member states. 
+
+-------------------------
+en_biopharmawatch
+2026-06-20 12:00:00
+NEJM Retracts Tavneos Trial Paper as FDA, EMA Both Move to Pull Amgen Drug From Market 
+The New England Journal of Medicine retracted the pivotal Tavneos avacopan trial paper amid data integrity concerns, prompting coordinated FDA and EMA market withdrawal proceedings for Amgen's rare kidney disease treatment. The case raises broader questions about post-approval data integrity in specialty rare disease drugs. 
+
+-------------------------
+en_smrintel
+2026-06-20 12:00:00
+DOE Reactor Pilot Program Companies Push Toward First Criticality 
+SMRIntel reports on progress by DOE-funded advanced reactor companies including TerraPower, X-energy, and Kairos Power working toward first criticality at U.S. demonstration sites by end-2026. Fuel fabrication delays and NRC licensing backlogs remain the critical path bottlenecks across all three programs. 
+
+-------------------------
+en_powermag
+2026-06-20 12:00:00
+From Tail Risk to Design Baseline: How the Grid Is Adapting to Extreme Heat 
+NERC's 2026 summer reliability assessment found that extreme heat events once treated as tail risks are now embedded in grid planning baselines. Utilities across the Southwest and Southeast are investing in demand response, battery storage, and new peaker plants to manage projected load spikes from electrification and AI infrastructure. 
+
+-------------------------
+en_pharmtech
+2026-06-20 12:00:00
+FUJIFILM Irvine Scientific Becomes FUJIFILM Biosciences 
+FUJIFILM Irvine Scientific rebranded as FUJIFILM Biosciences to reflect its expanded focus across cell culture media, gene therapy viral vectors, and bioprocessing consumables beyond its legacy media business. The name change follows strategic acquisitions in CDMO services and mRNA manufacturing support. 
+
+-------------------------
+en_fpri
+2026-06-15 12:00:00
+Russia's War of Self-Destruction 
+FPRI analysis argues Russia's war in Ukraine has become strategically self-defeating, consuming irreplaceable demographic capital and economic reserves while failing to achieve its political objectives. The article projects accelerating internal instability as battlefield costs, sanctions pressure, and demographic decline compound. 
+
+-------------------------
+en_biopharmawatch
+2026-06-15 12:00:00
+Evinova Expands AI-Native Clinical Platform Through Strategic Pharma Collaborations 
+AstraZeneca's digital health subsidiary Evinova announced expanded partnerships with three major pharma companies to deploy its AI-native clinical trial management platform, targeting 30% reductions in Phase 3 site monitoring costs through automated data review and risk-based monitoring. 
+
+-------------------------
+en_atlanticcouncil
+2026-06-15 12:00:00
+A network of corridors is the only reliable hedge against Middle East chokepoint disruptions 
+An Atlantic Council report argues the Hormuz closure highlights the fragility of single-chokepoint dependence and recommends accelerating alternative overland and maritime trade corridors via Saudi Arabia, Israel, Turkey, and the UAE. The report estimates corridor development costs of $80–100 billion over a decade. 
+
+-------------------------
+en_venturecapitaljournal
+2026-06-15 12:00:00
+Meet venture capital's 2026 Rising Stars 
+Venture Capital Journal's annual 40 under 40 Rising Stars list highlights emerging VC professionals including investors in AI early-stage, biotech, women's health, and climate tech. The 2026 list reflects a strong and diverse talent pipeline entering the VC industry from technology, science, and policy backgrounds. 
+
+-------------------------
+en_warontherocks
+2026-06-15 12:00:00
+The Three Nevers: To Invade Taiwan, China Would Have to Make Military History Thrice 
+War on the Rocks assesses three unprecedented military feats required for a successful Chinese invasion of Taiwan: amphibious assault at scale, sustained air dominance, and logistics under active interdiction. The analysis concludes these barriers remain formidably high despite PLA modernization. 
+
+-------------------------
+en_agtechnews
+2026-06-15 12:00:00
+Saga Robotics Raises £8.4M to Scale Thorvald UV-C Robots in UK and US 
+Saga Robotics secured £8.4 million to expand commercial deployment of its Thorvald robot platform, which uses UV-C light to eliminate crop diseases without pesticides. The funding accelerates expansion in UK strawberry farming and U.S. vineyards, where the system treats over 1,300 acres. 
+
+-------------------------
+en_38north
+2026-06-15 12:00:00
+Meet the 2026-2027 Cohort for the 38 North Emerging Scholars Fellowship Program 
+38 North introduced its 2026-2027 cohort of emerging scholars focused on North Korean security, economics, and society, who will be mentored by senior analysts at the Henry L. Stimson Center. The program aims to develop the next generation of credentialed experts on the Korean Peninsula. 
+
+-------------------------
+en_hedgefundjournal
+2026-06-14 12:00:00
+A Practitioner's Guide to NAV Financing 
+The Hedge Fund Journal published a comprehensive guide to net asset value financing structures, examining how private equity and credit funds are using portfolio-level leverage to return capital to LPs without asset sales. The article covers margin spreads, covenant structures, and LP notification requirements as of mid-2026. 
+
+-------------------------
+en_pharmtech
+2026-06-10 12:00:00
+FDA Duloxetine Recall Highlights Generic Manufacturing Quality Gaps 
+The FDA issued a class II recall for several lots of generic duloxetine after out-of-specification dissolution testing results. The recall underscores persistent quality control challenges at contract manufacturers supplying the generic drug market, where cost pressures have contributed to reduced analytical testing frequency. 
+
+-------------------------
+en_igrownews
+2026-06-10 12:00:00
+Fertilizer Price Shock 2026: What a 55% Urea Spike Means for Agriculture 
+iGrow News analysis examines the impact of a 55% surge in urea prices from February to May 2026, driven by Chinese export restrictions and Middle East supply disruptions, on global crop production costs. The spike is expected to reduce planted acreage in corn and wheat in price-sensitive markets across Sub-Saharan Africa and South Asia. 
+
+-------------------------
+en_centralbanking
+2026-06-10 12:00:00
+Payments Benchmarks 2026 – model banks analysis 
+Central Banking's annual payments benchmarking survey examines how leading central banks are managing the transition to real-time payment rails, CBDC pilots, and ISO 20022 migration for cross-border settlement. Model banks identified include the Bank of Canada, Monetary Authority of Singapore, and European Central Bank. 
+
+-------------------------
+en_smrintel
+2026-06-10 12:00:00
+Every Nuclear-Powered Data Center Deal: Google, Amazon, Meta and Microsoft (2026) 
+SMRIntel tracks 13 announced nuclear power purchase agreements between tech hyperscalers and nuclear developers, committing a combined 9.8 GW of future nuclear capacity for AI data center power. Microsoft leads with five deals, Google has four, and Meta and Amazon have two each, spanning SMRs and utility-scale reactors. 
+
+-------------------------
+en_ifswf
+2026-06-10 12:00:00
+What Happened in Abu Dhabi? 
+A summary from the IFSWF's Abu Dhabi gathering where member sovereign wealth funds aligned on frameworks for infrastructure co-investment, climate transition finance integration, and new governance standards for alternative asset allocation. The meeting produced a joint statement on SWF best practices for AI investment. 
+
+-------------------------
+en_medicaleconomics
+2026-06-10 12:00:00
+Pay is up, productivity is down. Is it sustainable? with Andy Swanson of MGMA 
+Medical Economics spoke with Andy Swanson of MGMA about data showing physician compensation rising alongside declining productivity, a divergence driven by staffing shortages and burnout. The interview explores sustainability concerns as health systems balance recruitment costs against revenue generation. 
+
+-------------------------
+en_ifswf
+2026-05-31 12:00:00
+IFSWF Direct | May 2026 
+The IFSWF's May newsletter reports Australia's Future Fund posting an 11.7% annual return with a record A$269 billion in AUM, Oman's OIA earning 14.6% returns for 2025, and UzNIF completing a $604 million dual listing on London and Tashkent exchanges. The May 2026 issue also previews the IFSWF's Athens annual meeting. 
+
+-------------------------
+en_swfinstitute
+2026-05-22 12:00:00
+Qatar SWF-Backed Fund Acquires Nippon Information Industry Corp 
+A Qatar Investment Authority-backed fund acquired Japanese IT services firm Nippon Information Industry Corp, expanding Gulf sovereign wealth exposure to Japan's technology sector. The deal reflects the QIA's broader strategy of diversifying holdings in Asian digital infrastructure and IT services. 
+
+-------------------------
+en_verticalfarmdaily
+2026-05-22 12:00:00
+Dutch Minister visits South Korea to look for agricultural innovation partnership 
+The Dutch Minister for Agriculture visited South Korea from May 20-22, 2026 to build bilateral cooperation in smart farming, autonomous robotics, and crop phenotyping. The Netherlands seeks to export its vertical farming and precision horticulture expertise to South Korea's rapidly developing controlled environment agriculture sector. 
+
+-------------------------
+en_38north
+2026-05-20 12:00:00
+Tracing Russian Linkages in North Korea's Expanding Nuclear Complex 
+Satellite imagery and open-source intelligence analysis by 38 North reveals new evidence of Russian technical assistance at North Korea's Yongbyon nuclear facility, including construction signatures and supply-chain ties consistent with Russian involvement in uranium enrichment expansion. 
+
+-------------------------
+en_swfinstitute
+2026-05-15 12:00:00
+Oman Investment Authority Invests in Elon Musk's Neuralink 
+The Oman Investment Authority made an undisclosed investment in Neuralink, Elon Musk's brain-computer interface startup. The deal marks growing Gulf sovereign wealth fund appetite for frontier technology alongside their traditional infrastructure and real estate holdings. 
+
+-------------------------
+en_fpri
+2026-05-15 12:00:00
+Scaling Patriot Production: The Industrial Base Crisis Explained 
+An FPRI analysis examines severe constraints on U.S. Patriot missile production, where three-to-four-year manufacturing lead times create critical shortfalls as combined demand from Ukraine, Israel, Taiwan, and allied nations far exceeds peacetime production capacity. The paper calls for immediate industrial mobilization investments. 
+
+-------------------------
+en_igrownews
+2026-05-10 12:00:00
+Bayer Crop Science Reports 17.9% EBITDA Growth in Q1 2026 as Soybean Seed and Traits Sales Double 
+Bayer's Crop Science division reported Q1 2026 sales of €7.558 billion, up 6.8% on an adjusted basis, with soybean seed and trait revenue doubling following expanded adoption of high-yield herbicide-tolerant varieties in South America. EBITDA margins improved to 30.4% as input cost efficiencies offset lower commodity prices. 
+
+-------------------------
+en_smrintel
+2026-05-01 12:00:00
+SMR NRC Approval Tracker: Every Reactor in the Licensing Pipeline (2026) 
+SMRIntel's May 2026 NRC tracker shows NuScale as the only SMR with full design certification while BWRX-300, TerraPower Natrium, X-energy Xe-100, and the Molten Chloride Fast Reactor are at pre-application, construction permit, or design approval stages. The tracker maps the 66 active companies in the global SMR sector. 
+
+-------------------------
+en_fpri
+2026-05-01 12:00:00
+Decoding China's 15th Five-Year Plan 
+FPRI's analysis of China's 15th Five-Year Plan (2026–2030) finds Beijing is prioritizing technological self-sufficiency in semiconductors and AI, domestic demand stimulation, and green industry development to reduce vulnerabilities exposed by U.S. export controls and post-COVID supply chain disruptions. 
+
+-------------------------
+en_hedgefundjournal
+2026-04-27 12:00:00
+Ironshield Capital Management's David Nazar 
+Profile of David Nazar of Ironshield Capital Management, who argues the early-2026 environment is exceptionally attractive for stressed and distressed credit investing due to AI credit mispricing, rising corporate defaults, and high dispersion across fixed income. Ironshield reported 28% net returns in 2025 through its distressed opportunities strategy. 
+
+-------------------------
+en_powermag
+2026-04-24 12:00:00
+TerraPower's Kemmerer 1 Enters Construction: Timeline of the Natrium Project's Road to First Power 
+TerraPower officially began construction of the Natrium sodium-cooled fast reactor at Kemmerer, Wyoming on April 23, 2026, marking the first advanced nuclear plant to break ground in the U.S. in decades. The $4 billion project, co-funded by the DOE, targets first power by 2030 and has attracted anchor power purchase agreements from Microsoft and Amazon. 
+
+-------------------------
+en_verticalfarmdaily
+2026-04-15 12:00:00
+AeroFarms sold to Palm Ventures 
+Vertical farming pioneer AeroFarms completed its acquisition by an affiliate of Palm Ventures, an Austin and Greenwich-based family investment office, in April 2026. The sale provides new private capital for AeroFarms' proprietary aeroponic technology platform following its 2023 bankruptcy reorganization. 
+
+-------------------------
+en_ifswf
+2026-04-15 12:00:00
+SWFs By Numbers: Q1 2026 Update 
+IFSWF's Q1 2026 data update shows global sovereign wealth fund assets surpassing $15 trillion in 2025 with Gulf-region funds growing fastest as elevated oil revenues fuel diversification mandates into private markets, infrastructure, and tech. Pension reserve funds in Asia-Pacific also showed strong Q1 2026 performance. 
+
+-------------------------
+en_biopharmawatch
+2026-04-01 12:00:00
+FDA Calendar Q2 2026: Every PDUFA Date, Phase 3 Readout and Drug Approval in April-June 
+BiopharmaWatch's Q2 2026 catalyst tracker covers 272 events including 17 PDUFA decisions, 52 Phase 3 data readouts, and 25 NDA/BLA filings. Key decisions include a July PDUFA for relacorilant in platinum-resistant ovarian cancer and gedatolisib for advanced breast cancer. 
+
+-------------------------
+en_hedgefundjournal
+2026-03-19 12:00:00
+2026 UCITS Hedge Awards 
+The Hedge Fund Journal presented its 2026 UCITS Hedge Awards, recognizing top-performing fund managers in categories including global macro, equity long/short, quantitative multi-strategy, and CTA. Winners were selected based on risk-adjusted performance over a three-year period ending December 2025. 
+
+-------------------------
+en_verticalfarmdaily
+2026-03-10 12:00:00
+USDA freezes vertical farming loans over soaring defaults 
+The USDA extended its freeze on federal loan guarantees for vertical farms and controlled environment agriculture projects through December 31, 2026, citing a portfolio in rapid deterioration with rising defaults. The freeze reflects a sector-wide shakeout as 32 CEA companies have filed for bankruptcy or ceased operations since 2022. 
+
+-------------------------
+en_applied_clinical_trials
+2026-02-15 12:00:00
+Four FDA Actions Reshaping Drug Development in 2026 
+Applied Clinical Trials identifies four transformative FDA regulatory shifts in 2026: a new single-trial approval standard, an individualized therapy pathway for ultra-rare diseases, expanded real-world evidence frameworks, and a formal AI tool qualification pathway under ISTAND. The changes collectively signal a broad modernization of drug development regulation. 
+
+-------------------------
+en_agtechnews
+2026-02-10 12:00:00
+Future of Food Summit 2026 – Economist Impact 
+Economist Impact's Future of Food Summit 2026 in London united 400+ global leaders to explore how agri-tech, sustainable finance, and regulatory evolution can transform global food systems. Key themes included AI-driven precision farming, alternative proteins, and supply chain resilience under the new FSMA 204 traceability rule. 
+
+-------------------------
+en_batteriesinternational
+2026-01-25 12:00:00
+India set for 10-fold BESS capacity increase in 2026 
+India's battery energy storage capacity is projected to grow from 507 MWh to 5 GWh in 2026, supported by government auction programs and falling system costs. The expansion is essential for integrating India's record-high renewable energy additions and stabilizing a grid stressed by summer peak demand surges. 
+
+-------------------------
+en_hartenergy
+2026-01-20 12:00:00
+Enbridge to Bring $6B of NAM Projects Online in 2026 
+Enbridge said its 2026 capital program will deliver $6 billion of North American infrastructure projects into service, including U.S. Gulf Coast LNG liquefaction tie-ins and Canadian oil sands pipeline expansions. The company projects a 60% increase in total capital spend as deferred projects and new capacity come online. 
+
+-------------------------
+en_payloadspace
+2026-01-15 12:00:00
+SpaceX Wins the Bulk of Space Force's 2026 Launch Contracts 
+The U.S. Space Force awarded SpaceX the majority of its National Security Space Launch Phase 3 contracts for 2026, covering five missions for the USSF and NRO. ULA secured two missions, reflecting SpaceX's dominance in national security launch despite ongoing certification requirements for new vehicles. 
+
+-------------------------
+en_environmental_finance
+2026-01-15 12:00:00
+Sustainable lending will return to growth in 2026, predicts ING 
+ING analysts forecast sustainable lending volumes will recover in 2026 after declining in 2025 due to rising rates and ESG controversy. Green bond issuance, sustainability-linked loans, and climate transition finance instruments are expected to post double-digit growth as the EU's new sustainable bond standards take effect. 
+
+-------------------------
+en_hartenergy
+2026-01-10 12:00:00
+Morningside: Expect Massive Gas Pipeline Buildout in 2026 
+Hart Energy analysis forecasts 2026 will see the largest annual natural gas pipeline capacity additions since 2008, with approximately 18 Bcf/d of new capacity entering service driven by LNG export demand and surging data center power requirements. The buildout concentrates in the Permian Basin, Haynesville, and Appalachian corridors. 
+
+-------------------------
+en_automate
+2026-01-10 12:00:00
+CES 2026: Boston Dynamics Set to Ship First Atlas Humanoids This Year 
+At CES 2026, Boston Dynamics announced production shipments of its electric Atlas humanoid to select manufacturing partners during 2026, in collaboration with Google DeepMind's embodied AI division. The announcement positioned Boston Dynamics as the first major robotics company to ship a production humanoid for industrial use. 
+
+-------------------------
