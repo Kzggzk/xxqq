@@ -1,0 +1,540 @@
+en_orbitalradar
+2026-07-10 12:00:00
+Space Insurance Market 2026: Premiums, Rates, and the Cost of Insuring a Launch 
+Orbital Radar's 2026 space insurance market overview updated July 10 tracks premium rates and coverage trends as commercial launches accelerate with SpaceX leading 74 launches and active satellite count exceeding 18,000. 
+
+-------------------------
+en_automationalley
+2026-07-09 12:00:00
+Senator Elissa Slotkin Visits Project DIAMOnD Digital Transformation Center 
+Senator Slotkin toured the Project DIAMOnD Digital Transformation Center in Auburn Hills to observe Michigan manufacturers using industrial-grade 3D printers and the nation's largest distributed additive manufacturing network. 
+
+-------------------------
+en_asiasociety
+2026-07-09 12:00:00
+Paris Summer Summit 2026: Asia Society France Convenes Debate on AI, Geopolitics, Geoeconomics 
+Asia Society France held a full-day event at the Columbia Global Paris Center in Paris on July 9 covering AI, robotics, geopolitics, and geoeconomics as European engagement with Asia deepens. 
+
+-------------------------
+en_nuclearnews
+2026-07-09 12:00:00
+The Heat Is the Story—Climate Change Is the Cause 
+More than 120 million Americans were under extreme heat warnings in July 2026 as Nuclear News framed the summer heat wave as a direct manifestation of climate change requiring urgent policy action. 
+
+-------------------------
+en_orbitalradar
+2026-07-09 12:00:00
+Amazon Leo Satellite Constellation: 255+ Satellites in Orbit as FCC Deadline Approaches 
+Orbital Radar's live tracker shows Amazon Leo (formerly Project Kuiper) with 255+ production satellites across 12 completed missions as the company faces a July 30 FCC deadline requiring 1,618 deployed, with an extension request filed due to launch vehicle availability challenges. 
+
+-------------------------
+en_invezz
+2026-07-09 12:00:00
+US Jobless Claims Declined Last Week as Labour Market Holds Steady 
+Initial unemployment claims fell 2,000 to a seasonally adjusted 215,000 for the week ended July 4, indicating the US labour market remains relatively stable despite ongoing economic uncertainty. 
+
+-------------------------
+en_aiagentstore
+2026-07-08 12:00:00
+Akeneo Announces Agentic Ziggy AI Orchestration Layer for Product Cloud 
+Akeneo launched Agentic Ziggy on July 8, an agentic orchestration layer inside the Akeneo Product Cloud that coordinates specialist agents for data modeling, schema mapping, enrichment, and continuous quality checks. 
+
+-------------------------
+en_automationalley
+2026-07-08 12:00:00
+It's Not the Technology: Digital Transformation Fails at the Operating Model 
+Digital transformation succeeds when organizations align people, processes, data, and governance around measurable business outcomes rather than simply investing in new technology, according to Automation Alley analysis. 
+
+-------------------------
+en_invezz
+2026-07-08 12:00:00
+Fed Minutes Show Split Over Rate Hikes and Cuts as Inflation Risks Persist 
+Federal Reserve meeting minutes revealed division among policymakers on the direction of interest rates, with some members favoring hikes to address persistent inflation while others pushed for cuts. 
+
+-------------------------
+en_invezz
+2026-07-08 12:00:00
+MasTec Stock Jumps as $1.65B Superior Deal Boosts AI Data Center Push 
+MasTec announced it will acquire The Superior Group for approximately $1.65 billion in cash and stock, positioning the company to accelerate its presence in AI data center construction. 
+
+-------------------------
+en_cbre
+2026-07-08 12:00:00
+Protecting the Portfolio: Strengthening Building Resilience Against Next-Gen Cyber Threats 
+CBRE research published July 8 shows cybersecurity threats targeting commercial real estate in Asia Pacific are increasing, with recent facility shutdowns highlighting physical consequences of digital attacks on building control systems. 
+
+-------------------------
+en_openloophealth
+2026-07-08 12:00:00
+FDA PCAC Is Meeting to Review 7 Peptides July 2026: What It Means 
+The FDA's Pharmacy Compounding Advisory Committee scheduled a two-day public meeting for July 23-24, 2026, to review whether seven peptides should be added to the Section 503A Bulk Drug Substances List, with significant implications for telehealth compounding pharmacies. 
+
+-------------------------
+en_pharmashots
+2026-07-08 12:00:00
+Agios Pharmaceuticals Receives US FDA Priority Review for Mitapivat to Treat Sickle Cell Disease 
+The FDA granted Priority Review designation for mitapivat for treatment of sickle cell disease, accelerating the regulatory timeline for this potential new therapy targeting the metabolic deficiency underlying the condition. 
+
+-------------------------
+en_nuclearnews
+2026-07-08 12:00:00
+Japan Begins 21st Release of Fukushima Nuclear-Contaminated Wastewater into Ocean 
+Japan began its 21st planned release of nuclear-contaminated wastewater from Fukushima Daiichi on July 6, with the latest round scheduled to release approximately 7,800 tonnes containing roughly 1.3 trillion becquerels of radioactive tritium through July 24. 
+
+-------------------------
+en_macromicro
+2026-07-08 12:00:00
+US FedWatch Rate Forecast 2026: Fed Remains Split as Inflation Persists 
+MacroMicro's live FedWatch Rate Forecast tracker for 2026 reflects ongoing market uncertainty about Fed policy direction, consistent with July FOMC minutes showing deep divisions between members favoring hikes versus cuts. 
+
+-------------------------
+en_carboncredits
+2026-07-08 12:00:00
+Tesla Expands Clean Energy Push With New 6-Seater Model Y L Despite TSLA Stock Sell-Off 
+Tesla began US production of the six-seat Model Y L on July 8, 2026, providing families with a larger electric SUV option even as Tesla stock declined amid broader market pressures. 
+
+-------------------------
+en_alleywatch
+2026-07-08 12:00:00
+The AlleyWatch Startup Daily Funding Report: 7/8/2026 
+AlleyWatch's July 8 daily funding report covers Pearl Health raising $50M Series C from Andreessen Horowitz for value-based primary care technology and other New York City startup deals. 
+
+-------------------------
+en_esgnews
+2026-07-07 12:00:00
+Meta Opens 2026 RFP to Cut Value Chain Emissions Across Heavy Industry, Transport 
+Meta launched a 2026 request for proposals seeking emissions reduction solutions across ten high-impact sectors including aviation, steel, cement, maritime transport, and semiconductors, with a mutual NDA deadline of July 17. 
+
+-------------------------
+en_pharmashots
+2026-07-07 12:00:00
+Alcon Partners with RxSight to Develop Adjustable Presbyopia-Correcting Intraocular Lenses 
+Alcon entered into a collaboration with RxSight to jointly develop adjustable presbyopia-correcting intraocular lenses, combining Alcon's manufacturing expertise with RxSight's light-adjustable lens technology. 
+
+-------------------------
+en_areadevelopment
+2026-07-07 12:00:00
+Oobotic Plans Melbourne, Arkansas, Operations 
+Robotics company Oobotic announced plans for new operations in Melbourne, Arkansas, representing a manufacturing and technology investment in a rural Arkansas community. 
+
+-------------------------
+en_areadevelopment
+2026-07-07 12:00:00
+Curtiss-Wright Expands Cheswick, Pennsylvania, Manufacturing Operations 
+Defense and nuclear equipment manufacturer Curtiss-Wright plans an $80 million expansion of its Cheswick, Pennsylvania facility expected to create 150 new jobs in the defense industrial base. 
+
+-------------------------
+en_carboncredits
+2026-07-07 12:00:00
+Lithium Prices Enter a New Era as China Expands Futures Market, Sodium Batteries Rise, and EnergyX Bets $225M on Supply 
+Lithium markets entered a new pricing phase as China strengthened its role in price discovery through expanded futures trading, sodium-ion batteries gained market share, and EnergyX invested $225 million in future supply infrastructure. 
+
+-------------------------
+en_alleywatch
+2026-07-07 12:00:00
+The AlleyWatch Startup Daily Funding Report: 7/7/2026 
+AlleyWatch's July 7 daily report highlights Norm Ai raising $120M Series C from Khosla Ventures for legal AI compliance automation and M1X Global raising $5.5M Seed from Paradigm for sovereign debt on public blockchains. 
+
+-------------------------
+en_cepr
+2026-07-07 12:00:00
+New CEPR Policy Insight: Hormuz Blockade Could Unlock Lasting US-Iran Deal 
+A CEPR Policy Insight argues the Hormuz blockade crisis creates a pathway to a lasting US-Iran agreement by aligning the geopolitical and economic incentives of both parties toward a negotiated resolution. 
+
+-------------------------
+en_galengrowth
+2026-07-07 12:00:00
+Digital Health H1 2026: Global Funding Holds at $22.6B as Deal Count Falls 38% 
+Global digital health funding reached $22.6 billion in H1 2026 while deal count fell to 608 from 975, as average deal size rose from $18.4M in H1 2023 to $48.9M with capital concentrating in fewer but larger ventures. 
+
+-------------------------
+en_macromicro
+2026-07-07 12:00:00
+Global Macro Report: July 2026 
+MacroMicro's July 2026 Global Macro Report covers central bank rate decisions, semiconductor market trends, and economic indicators, noting 70% of global central banks shifted from cutting to holding rates compared to 2025. 
+
+-------------------------
+en_asiasociety
+2026-07-07 12:00:00
+Europe's 'Wake-Up Call': New Paper on EU-China Trade and Structural Challenges 
+Asia Society Policy Institute's Center for China Analysis published a new paper by Philippe Le Corre arguing the EU is not seeking to decouple from China but is increasingly prioritizing economic security over unrestricted market access. 
+
+-------------------------
+en_orbitalradar
+2026-07-07 12:00:00
+Government Space Budgets 2026: Every Country Ranked and Sortable 
+Orbital Radar's comprehensive ranking of 80+ nations' government space budgets for 2026 shows commercial activity now roughly four times the size of all government space spending combined. 
+
+-------------------------
+en_additivemanufacturing
+2026-07-07 12:00:00
+Phillips Corporation Containerized Hybrid Manufacturing System Supports Navy Expeditionary Readiness 
+Phillips Federal deployed a containerized Haas TM-1P CNC platform integrated with Meltio Blue wire-laser metal additive manufacturing technology aboard the USS Essex during RIMPAC 2026, demonstrating field-expedient hybrid manufacturing. 
+
+-------------------------
+en_aiagentstore
+2026-07-06 12:00:00
+ICML 2026 Opens in Seoul with Record 23,918 Submissions 
+The International Conference on Machine Learning 2026 opened July 6 in Seoul with a record 23,918 submissions and an unusually heavy emphasis on agentic AI in its workshop program. 
+
+-------------------------
+en_areadevelopment
+2026-07-06 12:00:00
+Germany-Based Blackwave Plans San Antonio, Texas, Manufacturing Operations 
+Germany-based advanced materials company Blackwave announced plans to establish manufacturing operations in San Antonio, Texas, as part of its expansion into the North American market. 
+
+-------------------------
+en_pharmashots
+2026-07-06 12:00:00
+CervoMed Completes Patient Enrollment in Phase IIa Study of Neflamapimod 
+CervoMed completed patient enrollment in its Phase IIa study of neflamapimod for the treatment of nonfluent variant primary progressive aphasia, a rare neurodegenerative disorder, marking a key milestone toward clinical data generation. 
+
+-------------------------
+en_oilandgasadvancement
+2026-07-06 12:00:00
+Iraq, TotalEnergies Review Artawi Gas Project Advancement 
+The Iraqi Ministry of Oil held a high-level bilateral meeting on July 6 to review progress on the multi-billion dollar Gas Growth Integrated Project (Artawi) with TotalEnergies, discussing timelines and gas monetization. 
+
+-------------------------
+en_nuclearnews
+2026-07-06 12:00:00
+US Looking at Easing Restrictions on Radiation Exposure at Nuclear Power Plants 
+Federal regulators proposed eliminating the ALARA standard requiring radiation exposure be kept as low as reasonably achievable at the nation's nuclear power plants, sparking controversy among nuclear safety advocates. 
+
+-------------------------
+en_alleywatch
+2026-07-06 12:00:00
+The Weekly Notable Startup Funding Report: 7/6/26 
+AlleyWatch's weekly funding report for the week ending July 6 covers 16 deals including Qolab, Straiker, Higharc, and WithAI totaling over $415 million invested into NYC startups. 
+
+-------------------------
+en_aiagentstore
+2026-07-05 12:00:00
+DoD AI Marketplace GenAI.mil Reaches 1.7 Million Users, Now Hosts 100,000 Custom Agents 
+The Department of Defense's internal AI marketplace GenAI.mil grew to approximately 1.7 million users with the platform hosting over 100,000 custom agents across military branches as of early July 2026. 
+
+-------------------------
+en_chinamil
+2026-07-05 12:00:00
+Chinese Naval Task Group Visits Ho Chi Minh City on Four-Day Friendly Visit 
+A Chinese PLA Navy task group comprising training ship Qijiguang and amphibious dock landing ship Kunlunshan arrived in Ho Chi Minh City, Vietnam, on July 5, 2026, beginning a four-day friendly port visit. 
+
+-------------------------
+en_oilandgasadvancement
+2026-07-05 12:00:00
+Iraq Requests Kirkuk-Ceyhan Pipeline Agreement Extension from Turkey 
+Iraq submitted a formal request to Turkey for an extension of the Kirkuk-Ceyhan pipeline agreement by a minimum of one year ahead of the current accord's July 27, 2026 expiry. 
+
+-------------------------
+en_biomednexus
+2026-07-05 12:00:00
+Two More Billion Dollar Deals Show the M&A Wave Has Spread Beyond Big Pharma 
+BioMed Nexus reports two additional billion-dollar biotech M&A transactions indicating the current acquisition wave has expanded beyond traditional Big Pharma buyers to specialty pharma and biotech companies. 
+
+-------------------------
+en_entangledfuture
+2026-07-05 12:00:00
+New Quantum Computing Startups 2024-2026 Updated After Oratomic's $300M Series A 
+Entangled Future's startup tracker was updated following Oratomic's $300 million Series A in July 2026, adding the Caltech/Harvard spinout developing neutral-atom quantum computers targeting fault-tolerant computation at utility scale. 
+
+-------------------------
+en_cbre
+2026-07-05 12:00:00
+CBRE Group Announces Q2 2026 Financial Results Conference Call for July 29 
+CBRE Group will release its second quarter 2026 financial results at approximately 6:55 a.m. ET on July 29, 2026, with a management conference call at 8:30 a.m. ET the same day to discuss results. 
+
+-------------------------
+en_esgnews
+2026-07-04 12:00:00
+Aalo Atomics Closes $100M to Accelerate Modular Nuclear Plants for AI Data Centers 
+Aalo Atomics closed a $100 million funding round to accelerate development of modular nuclear plants specifically designed to meet the surging energy demands of hyperscale AI data centers. 
+
+-------------------------
+en_carboncredits
+2026-07-03 12:00:00
+Brookfield and Bloom Energy Scale AI Data Center Power Partnership to $25 Billion 
+Brookfield and Bloom Energy expanded their AI data center power partnership to $25 billion, sending Bloom Energy stock upward as hyperscalers scramble for clean and reliable power for AI computing infrastructure. 
+
+-------------------------
+en_openloophealth
+2026-07-03 12:00:00
+OpenLoop Health Closes First Half of 2026 with Strategic Acquisition, New Partnerships 
+OpenLoop Health closed H1 2026 with a strategic acquisition and new partnerships, reinforcing its position as a telehealth infrastructure provider as digital health platforms consolidate around proven value-based care models. 
+
+-------------------------
+en_odi
+2026-07-02 12:00:00
+This Week in Macroeconomics: July 2, 2026 Edition 
+ODI Global's weekly macroeconomics brief examines how global monetary tightening interacts with sovereign debt dynamics and financial fragility across emerging economies, with global GDP growth projected to slow further in 2026. 
+
+-------------------------
+en_galengrowth
+2026-07-02 12:00:00
+Digital Health Exits in 2026: M&A Dominance, Longer Hold Periods, and Strategic Consolidation 
+M&A accounts for 268 of 282 exits (95% of total exit volume) in digital health across 2025 and H1 2026, with acquisitions dominating as IPOs remain largely absent from the exit landscape. 
+
+-------------------------
+en_chinamil
+2026-07-02 12:00:00
+PLA Naval Ships Nanning, Hengyang Enter Hong Kong Waters 
+A Chinese PLA naval task group comprising guided-missile destroyer Nanning and guided-missile frigate Hengyang entered the Hong Kong Special Administrative Region waters on July 2, 2026, for a port visit. 
+
+-------------------------
+en_cbre
+2026-07-02 12:00:00
+San Diego Life Sciences Job Mix Signals Recovery 
+CBRE documents 1.7% year-over-year job growth in San Diego biotech R&D and pharmaceutical manufacturing—the strongest pace in nearly three years—signaling improving demand for lab space even as overall industry employment remains below recent peaks. 
+
+-------------------------
+en_esgnews
+2026-07-01 12:00:00
+Paine Schwartz Partners Releases Annual Sustainability Report 
+Paine Schwartz Partners released its fifth annual Sustainability Report on July 1, 2026, outlining the food and agriculture-focused private equity firm's environmental and social performance across its portfolio. 
+
+-------------------------
+en_oilandgasadvancement
+2026-07-01 12:00:00
+BP Plans to Reorganize to Upstream and Downstream Operations 
+BP announced plans to restructure its operations into two distinct business segments—upstream and downstream—effective July 1, 2026, as the energy major reshapes its portfolio and strategic direction. 
+
+-------------------------
+en_additivemanufacturing
+2026-07-01 12:00:00
+Liberty Additive LLC Becomes First US Distributor for Constellium Aheadd CP1 Aluminum Powder 
+Liberty Additive LLC became the first US stocking distributor for Constellium's Aheadd CP1 aluminum powder with inventory available from July 1, 2026, expanding access to high-performance aluminum alloy for additive manufacturing. 
+
+-------------------------
+en_automationalley
+2026-07-01 12:00:00
+The Engineers Leading Additive Adoption Learned It Before They Got the Job 
+Engineers who gained hands-on additive manufacturing experience during education are driving faster industrial 3D printing adoption by bringing practical expertise and confidence directly into the workplace. 
+
+-------------------------
+en_carbondirect
+2026-07-01 12:00:00
+The AI Bubble Debate Misses the Point: The Bottleneck Is Physical 
+Carbon Direct argues the real constraint on AI scaling is physical infrastructure—power, land, and cooling capacity—not financial valuations, with US data-center construction spending approaching the scale of traditional commercial real estate. 
+
+-------------------------
+en_openloophealth
+2026-07-01 12:00:00
+Recent Digital Health Trends, Insights and News – July 2026 
+OpenLoop Health's July 2026 digital health roundup highlights three key shifts: AI becoming the patient's first point of contact, consumers demanding more proactive care, and trusted brands expanding into virtual care delivery. 
+
+-------------------------
+en_chinamil
+2026-07-01 12:00:00
+China, Russia Hold Joint Sea-2026 Naval Exercise near Qingdao 
+Chinese and Russian navies announced the Joint Sea-2026 naval exercise to be conducted in waters and airspace near Qingdao, Shandong Province, featuring three phases: force assembly, harbor-based planning, and at-sea operations. 
+
+-------------------------
+en_powergenadvancement
+2026-07-01 12:00:00
+EUR 2.5B Fund Set to Support 51 EU Clean Energy Projects 
+A EUR 2.5 billion EU fund supporting 51 clean energy projects opened applications with deadlines August 11 for non-priority projects and September 8 for priority projects across EU member states. 
+
+-------------------------
+en_semi
+2026-07-01 12:00:00
+SEMICON West 2026 to Spotlight Key Innovations Powering Semiconductor Industry Beyond $1 Trillion 
+SEMI announces SEMICON West 2026 will spotlight innovations in AI chips, advanced packaging, and chiplet technology as the semiconductor industry achieves $1 trillion in annual revenue. 
+
+-------------------------
+en_fintechtris
+2026-07-01 12:00:00
+Visa's Retreat from U.S. Open Banking: What It Signals for the Future of Fintech 
+FinTechtris analyzes Visa's pullback from US open banking initiatives, arguing the move signals broader concerns about data monetization, regulatory exposure, and future competitive positioning of card networks. 
+
+-------------------------
+en_biomednexus
+2026-07-01 12:00:00
+BMS and Hengrui Strike $15.2B Partnership Spanning 13 Programs as Isomorphic Labs Raises $2.1B 
+Bristol Myers Squibb and Hengrui Medicine announced a $15.2 billion collaboration spanning 13 drug programs while Isomorphic Labs raised $2.1 billion for AI-driven drug discovery, marking two headline-setting deals in biotech. 
+
+-------------------------
+en_maersk
+2026-06-30 16:00:00
+Revision of Heavy Load Surcharge (HWS) – Far East Asia to Mexico (C1E) 
+Maersk revised the Heavy Load Surcharge for eligible containers from Far East Asia to Mexico, effective July 5, 2026, as part of ongoing carrier rate adjustments for the peak shipping season. 
+
+-------------------------
+en_additivemanufacturing
+2026-06-30 12:00:00
+Dyndrite Joins America Makes Initiative to Accelerate AI-Driven Additive Manufacturing Qualification 
+Dyndrite, together with RTX and Mimo Technik, was selected for the $2 million AIM-4AM program focused on reducing the testing burden for LPBF-produced stainless steel through AI-driven risk modeling. 
+
+-------------------------
+en_biomednexus
+2026-06-30 12:00:00
+Retatrutide vs. CagriSema: Why 2026 Is the Year of the Triple Agonist 
+Analysis of Eli Lilly's retatrutide and Novo Nordisk's CagriSema highlights why 2026's head-to-head competition between these triple agonist obesity candidates represents a genuine therapeutic advance attacking obesity through both reduced intake and increased energy expenditure. 
+
+-------------------------
+en_maersk
+2026-06-30 12:00:00
+Maersk Asia Pacific Monthly Market Update – July 2026 
+Maersk's Asia Pacific market update for July 2026 reports early peak season signals emerging while ongoing Middle East disruptions continue to impact cargo flows and routing decisions across Asia-Pacific trade lanes. 
+
+-------------------------
+en_maersk
+2026-06-29 12:00:00
+North America Market Update – July 2026 
+Maersk's July 2026 North America market update reports transpacific spot rates at their highest level of the year as customers frontload seasonal inventory amid tariff and fuel-related uncertainty; Maersk added TPX seasonal capacity. 
+
+-------------------------
+en_galengrowth
+2026-06-20 12:00:00
+Carbon Health Bankruptcy Reveals Risks of Digital Health Post-Pandemic Normalization 
+Carbon Health's Chapter 11 filing on February 2, 2026, provides a case study in digital health unicorn risks as the sector normalizes post-pandemic, with the proximate trigger a liquidity crunch after demand normalized and capital markets tightened. 
+
+-------------------------
+en_powergenadvancement
+2026-06-20 12:00:00
+Philippines Eyes Nuclear Energy Investment to Boost Industry 
+The Philippines announced plans to host an integrated global nuclear conference in Manila during October 2026 as part of broader efforts to attract nuclear energy investment to boost domestic industrial capacity. 
+
+-------------------------
+en_odi
+2026-06-20 12:00:00
+Two Truths and a Lie: Women Are Gaining, and Losing in 2026 
+ODI analysis examines the mixed global picture for women in 2026, identifying areas of genuine progress alongside persistent losses, with recent US policy shifts and the Middle East war highlighting how international rules are increasingly overridden by hard power. 
+
+-------------------------
+en_asiasociety
+2026-06-15 12:00:00
+China's Next Move: Economic Priorities and Policy Shifts for 2026 
+Asia Society Policy Institute analyzed China's economic priorities for 2026, examining how Beijing's policy shifts in industrial policy, AI investment, and domestic demand stimulus are reshaping China's growth trajectory amid trade tensions. 
+
+-------------------------
+en_cepr
+2026-06-15 12:00:00
+Global Imbalances Back in Focus: Paris Report 4 on G7/G20 Policy Debates 
+CEPR-Bruegel's Paris Report 4 analyzes the return of global imbalances as a central concern for central banks and G7/G20 policymakers, examining causes and potential remedies for structural trade and capital flow asymmetries. 
+
+-------------------------
+en_fintechtris
+2026-06-15 12:00:00
+The Embedded Finance Playbook for 2026 
+FinTechtris outlines the 2026 strategic playbook for embedded finance as three in four sponsor banks report $100,000+ losses from compliance violations and regulators intensify scrutiny of bank-fintech partnerships. 
+
+-------------------------
+en_carbondirect
+2026-06-15 12:00:00
+Top Questions on FERC's Co-location Compliance Order for PJM, Answered 
+Carbon Direct addresses key questions about FERC's compliance order for PJM's co-location policy governing data center electricity consumption alongside generating facilities, clarifying implications for hyperscalers and utilities. 
+
+-------------------------
+en_semi
+2026-06-10 12:00:00
+SEMI Projects Double-Digit Growth in Global 300mm Fab Equipment Spending for 2026 and 2027 
+SEMI projects worldwide 300mm fab equipment spending to increase 18% to $133 billion in 2026 and 14% to $151 billion in 2027, driven by AI chip demand and new fab construction in the US, Japan, and Europe. 
+
+-------------------------
+en_cepr
+2026-06-07 12:00:00
+DP21688 Tariff Confusion: How Trade Policy Uncertainty Reduced Trade Flows 
+CEPR discussion paper shows US 2025 trade policy was unprecedented in frequency, complexity, and volatility of tariff announcements, with evidence that the resulting confusion over current tariff levels directly reduced trade flows. 
+
+-------------------------
+en_entangledfuture
+2026-06-01 12:00:00
+State of Quantum Computing 2026: Hardware, Funding and Milestones 
+Entangled Future's comprehensive 2026 state-of-industry report covers the five organizations with verified logical qubit demonstrations, Infleqtion's NYSE listing, and the UK's £2B Quantum Leap programme. 
+
+-------------------------
+en_fintechtris
+2026-05-20 12:00:00
+Stripe and Circle's Blockchain Bet: What It Means for Payments in 2026 and Beyond 
+FinTechtris analyzes Stripe and Circle's collaboration on blockchain-based payment rails, arguing the partnership is a significant bet on programmable money becoming mainstream payment infrastructure. 
+
+-------------------------
+en_semi
+2026-05-15 12:00:00
+SEMI and 23 Member Companies Urge U.S. Congress to Extend Advanced Manufacturing Investment Credit 
+SEMI and 23 member companies issued a letter to US Congress urging immediate passage of a multi-year extension of the Advanced Manufacturing Investment Credit, warning that expirations threaten US semiconductor competitiveness. 
+
+-------------------------
+en_entangledfuture
+2026-05-15 12:00:00
+Quantum Computing IPO & SPAC Guide 2026: The Going Public Wave 
+Entangled Future analyzes the wave of quantum computing companies pursuing public listings in 2026, including Infleqtion on the NYSE and IQM's $1.8 billion SPAC merger as the sector matures toward capital markets. 
+
+-------------------------
+en_geopolitique
+2026-05-14 12:00:00
+Mario Draghi: Europe Can Again Turn Crisis Into Union 
+Mario Draghi argues that the profound and growing strain on Europe's continent presents an opportunity for deeper integration, with crisis historically serving as the catalyst for European unity and policy breakthroughs. 
+
+-------------------------
+en_carbondirect
+2026-05-06 12:00:00
+Inside NERC's Level 3 Alert on Data Center Loads 
+Carbon Direct analyzes NERC's rare Level 3 Essential Actions Alert issued on May 4, 2026, after 1,000+ megawatts of AI data center computation load repeatedly dropped off the bulk power system in seconds creating grid stability risks. 
+
+-------------------------
+en_powergenadvancement
+2026-05-01 12:00:00
+Switzerland Decides to Speed Up Renewable Energy Projects 
+Switzerland accelerated renewable energy permit approvals from April 1, 2026, easing approvals for solar, wind, and hydropower as the country moves to expand clean energy capacity and reduce reliance on imported electricity. 
+
+-------------------------
+en_ckgsb
+2026-04-20 12:00:00
+How China's Foreign Trade Keeps Defying the Odds 
+CKGSB Knowledge analysis of China's Q1 2026 total trade growth of 17.96% year-on-year, exploring how China's export machine continues expanding through diversification to ASEAN, Middle East, and other markets despite tariff pressures. 
+
+-------------------------
+en_hbcapitalre
+2026-04-15 12:00:00
+Office CRE Q1 2026: The Selective Recovery Is Real 
+HB Capital's Q1 2026 office CRE report documents the strongest simultaneous improvement in leasing, absorption, vacancy, and investment volume since before the pandemic, signaling that premium office locations are entering real recovery. 
+
+-------------------------
+en_hbcapitalre
+2026-04-10 12:00:00
+Multifamily CRE Q1 2026: Rent Growth Is Back, Supply Has Peaked, and Capital Is Quietly Moving 
+US multifamily rent growth turned positive in Q1 2026, new deliveries fell 60% below average, and $170 billion in investment volume signals the apartment market cycle has definitively turned. 
+
+-------------------------
+en_ckgsb
+2026-03-15 12:00:00
+China and the Global AI Race 
+CKGSB Knowledge white paper examines how China is using AI to transform manufacturing, logistics, healthcare, retail, and global trade, analyzing domestic AI development as a core element of China's economic competitiveness strategy. 
+
+-------------------------
+en_hbcapitalre
+2026-03-01 12:00:00
+Data Centers CRE 2026: The $700B Industrial Adjacency 
+HB Capital analysis positions data centers as commercial real estate's premier capital absorption story, with hyperscaler capex projected to exceed $700 billion in 2026 and national vacancy at a record-low 2% as AI demand dominates. 
+
+-------------------------
+en_geopolitique
+2026-02-20 12:00:00
+The End of the Green Illusion: 13 Theses for a New Ecology 
+Emmanuel Guérin proposes 13 theses for a realistic and effective new ecology, examining how the energy transition has entered a new phase with decarbonization underway in a world marked by war and geopolitical fragmentation. 
+
+-------------------------
+en_geopolitique
+2026-02-02 12:00:00
+Mario Draghi: The Foundations of New Europe 
+Former ECB President Mario Draghi outlines the foundational principles needed for a new Europe capable of ensuring its long-term security and economic prosperity amid structural competitive and geopolitical challenges. 
+
+-------------------------
+en_macromicro
+2026-01-15 12:00:00
+Outlook 2026 Series VII: The Global Central Bank Divide – Where Liquidity Heads Next 
+MacroMicro's 2026 Outlook Series identifies a historic divergence among major central banks, with monetary policy trajectories fragmenting across geographies as the era of abundant global liquidity potentially nears its end. 
+
+-------------------------
+en_ckgsb
+2026-01-15 12:00:00
+China Economic Consolidation and Strategic Shifts in 2026 
+CKGSB Knowledge analysis identifies China's 2026 economic trajectory as one of slower growth, geopolitical pressure, and strategic policy shifts shaped by AI investment, energy transition policy, and industrial upgrading priorities. 
+
+-------------------------
+en_odi
+2026-01-10 12:00:00
+Macroeconomic Outlook: Five Economic Shifts to Watch in 2026 
+ODI identifies five key 2026 shifts: supply-chain re-shoring reducing trade growth, steep ODA cuts following USAID dissolution, emerging market monetary pressure, China's continued trade expansion, and widening global development finance gaps. 
+
+-------------------------
