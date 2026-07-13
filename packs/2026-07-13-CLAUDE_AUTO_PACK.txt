@@ -1,0 +1,348 @@
+en_newstatesman
+2026-07-13 20:30:00
+The UK must not surrender to the inevitability of US tech
+Amazon and Microsoft control up to 80% of the UK cloud market; the CMA reports their restrictive licensing overcharges Britain by at least £500m a year. Britain must actively shape AI and tech policy rather than ceding ground to US platform dominance.
+
+-------------------------
+en_newstatesman
+2026-07-13 20:00:00
+The global crises Andy Burnham cannot escape
+Analysis of the array of global geopolitical and economic challenges confronting newly elected UK Prime Minister Andy Burnham, from Middle East instability to transatlantic trade tensions, limiting room for domestic reform.
+
+-------------------------
+en_newstatesman
+2026-07-13 19:30:00
+How to solve the Neet crisis
+Policy analysis of the growing proportion of young people in the UK who are Not in Education, Employment, or Training (NEET), with proposals spanning skills investment, employer incentives, and social support reforms to reduce youth economic inactivity.
+
+-------------------------
+en_darkreading
+2026-07-13 18:00:00
+CISA Rewrites Federal Patching Requirements for AI Threat Era
+CISA issued updated guidance rewriting known exploited vulnerability patching requirements to address the faster exploitation cycles enabled by AI-powered threat actors targeting federal civilian agency networks.
+
+-------------------------
+en_darkreading
+2026-07-13 17:30:00
+Human vs AI: Debates Shape RSAC 2026 Cybersecurity Trends
+The RSA Conference 2026 was dominated by debates over AI's dual role in cybersecurity offense and defense, with major sessions covering autonomous security operations centers, AI-generated malware detection, and evolving attribution challenges.
+
+-------------------------
+en_darkreading
+2026-07-13 17:00:00
+2026 FIFA World Cup Faces Surge in Cyber Threats
+Security researchers warn the 2026 FIFA World Cup spanning the US, Canada, and Mexico presents an unprecedented attack surface, with nation-state actors and cybercriminals targeting ticketing systems, stadium networks, and broadcast infrastructure.
+
+-------------------------
+en_wccftech
+2026-07-13 16:30:00
+NVIDIA Reportedly The First & Only Customer For TSMC's Bleeding-Edge A16 Process Node, Utilizing For Next-Gen GPUs
+NVIDIA has reportedly secured exclusive access to TSMC's cutting-edge A16 fabrication process, which combines backside power delivery with nanosheet transistors, for use in its next-generation data center GPU lineup targeting 2027 delivery.
+
+-------------------------
+en_wccftech
+2026-07-13 16:00:00
+NVIDIA's Enters The PC Space With RTX Spark, Offers Up To A 20-Core CPU, 128GB Of Unified Memory, 600GB/s Bandwidth To Supercharge AI Operations
+NVIDIA's new RTX Spark personal AI computer features up to a 20-core CPU, 128GB of unified memory, and 600GB/s memory bandwidth, targeting local AI inference workloads and competing directly with Apple Silicon and Qualcomm Snapdragon X.
+
+-------------------------
+en_wccftech
+2026-07-13 15:30:00
+TSMC Can't Keep Up With CoWoS Demand, Sending Advanced Packaging Orders Spilling Over To Intel & Rival Taiwanese Fabs
+TSMC's advanced CoWoS chip-on-wafer-on-substrate packaging capacity is oversubscribed as AI accelerator demand surges from NVIDIA, AMD, and hyperscalers, forcing orders to spill over to Intel Foundry and Taiwanese packaging rivals.
+
+-------------------------
+en_marinelog
+2026-07-13 14:00:00
+White House releases long-awaited Maritime Action Plan
+The White House released its comprehensive Maritime Action Plan addressing US shipbuilding competitiveness, port security, crewing standards, and strategic sealift capacity, following months of interagency review and stakeholder consultation.
+
+-------------------------
+en_thechargeport
+2026-07-13 13:00:00
+Robotaxi Status July 2026 — Waymo, Tesla & Zoox
+Comprehensive status update on autonomous vehicle commercial deployment in July 2026, covering Waymo's expanding paid ride-hail service across multiple US cities, Tesla's robotaxi launch progress, and Zoox's San Francisco operations.
+
+-------------------------
+en_renewableenergyworld
+2026-07-13 12:00:00
+How are utilities prepping for the 2026 hurricane season?
+Analysis of utility storm-hardening investments and emergency response plans being implemented ahead of the 2026 Atlantic hurricane season, including underground cable programs, vegetation management upgrades, and mutual aid pre-staging.
+
+-------------------------
+en_aifundingtracker
+2026-07-12 10:00:00
+AI IPO Tracker 2026: SpaceX, OpenAI, Anthropic, Databricks
+Tracks major AI and tech IPO candidates in 2026. SpaceX filed a confidential S-1 targeting a $1.75 trillion valuation; OpenAI generating $25 billion ARR ahead of a potential $1 trillion listing; Anthropic raising at a $900 billion valuation ahead of an October IPO. The 12 most-watched companies represent a combined estimated value exceeding $3 trillion.
+
+-------------------------
+en_aifundingtracker
+2026-07-12 09:30:00
+50 Top AI Funded Startups (June 2026)
+Monthly rankings of the most-funded AI startups globally as of June 2026, covering agentic AI companies, foundation model developers, and applied AI firms across healthcare, finance, legal, and enterprise software verticals.
+
+-------------------------
+en_aifundingtracker
+2026-07-12 09:00:00
+OpenAI's Biggest Acquisitions in 2026: io, Statsig, Astral (Full List)
+Complete list and analysis of OpenAI's 2026 acquisition activity, including design tool io, experimentation platform Statsig, and Python packaging tool Astral, as the company accelerates its expansion beyond foundation models into developer tooling.
+
+-------------------------
+en_proactiveinvestors
+2026-07-11 10:00:00
+G Mining Ventures reports higher Q2 gold production, maintains 2026 guidance
+G Mining Ventures delivered stronger-than-expected Q2 2026 gold production at its Tocantinzinho mine in Brazil and reaffirmed its full-year guidance, with the operation benefiting from higher ore grades and improved mill throughput.
+
+-------------------------
+en_proactiveinvestors
+2026-07-11 09:30:00
+American Rare Earths advances Halleck Creek as 2026 drilling campaign gains momentum
+American Rare Earths is accelerating its 2026 drill program at the Halleck Creek rare earth project in Wyoming, targeting resource expansion at one of the largest rare earth deposits in the US with significant national security implications.
+
+-------------------------
+en_proactiveinvestors
+2026-07-11 09:00:00
+Greatland Resources ramp-up continued through June 2026
+Greatland Resources reported continued production ramp-up at its Havieron gold-copper operation in Western Australia through June 2026, tracking toward nameplate throughput capacity as the mine builds operational momentum.
+
+-------------------------
+en_transportationinsight
+2026-07-10 10:00:00
+Transportation Industry Trends: July 6-10, 2026
+Weekly roundup of key freight and logistics market developments for the week of July 6–10, 2026, including truckload spot rate movements, intermodal volume data, carrier capacity changes, and macroeconomic demand indicators.
+
+-------------------------
+en_marinelog
+2026-07-10 09:00:00
+TTB 2026: Winning freight starts with shippers
+Coverage of the Truckload Transportation Brokers 2026 conference, where speakers emphasized that winning in today's tight freight market requires shippers to be preferred customers through better forecasting, flexible scheduling, and collaborative carrier relationships.
+
+-------------------------
+en_marinelog
+2026-07-10 08:30:00
+Ship Repair USA: Supply chain pressures shape ship repair operations
+Report from Ship Repair USA 2026 examining how persistent global supply chain disruptions continue to affect dry dock scheduling, replacement parts availability, and labor costs at US commercial and naval shipyards.
+
+-------------------------
+en_businessinsurance
+2026-07-09 10:00:00
+Reinsurance property renewal rates dive as much as 25%
+Global reinsurance property catastrophe rates fell sharply at mid-year 2026 renewals, with some programs seeing rate decreases of up to 25% as abundant capacity, competition, and a benign recent loss experience weighed on pricing.
+
+-------------------------
+en_businessinsurance
+2026-07-09 09:30:00
+Swiss Re sees insurance market cooling in 2026
+Swiss Re's latest sigma report indicates the hard commercial insurance market cycle is moderating in 2026, with premium rate increases slowing or reversing across property, casualty, and specialty lines as competition intensifies.
+
+-------------------------
+en_businessinsurance
+2026-07-09 09:00:00
+Reinsurance prices drop up to 17%: Howden Re
+Howden Re's mid-year 2026 renewal report found reinsurance pricing down up to 17% across property catastrophe lines, driven by abundant global capital, record ILS issuance, and cedants securing better terms on multi-year agreements.
+
+-------------------------
+en_australianmining
+2026-07-08 10:00:00
+Alkane builds momentum with strong FY26 finish
+Alkane Resources reported strong financial year 2026 operating results at its Tomingley Gold Operations in New South Wales, with the company building production momentum ahead of its underground mine expansion program.
+
+-------------------------
+en_australianmining
+2026-07-08 09:30:00
+Winners revealed at the 2026 Women in Industry Awards
+The 2026 Women in Industry Awards recognised outstanding female leaders and rising stars across Australia's mining, engineering, and resources sectors, with winners drawn from gold, iron ore, and critical minerals operations.
+
+-------------------------
+en_australianmining
+2026-07-08 09:00:00
+ASX critical minerals set for 2026 supply surge
+ASX-listed critical minerals producers including lithium, cobalt, and rare earth companies are expected to significantly increase output in 2026, supported by new project commissioning and offtake agreements with battery and defence customers.
+
+-------------------------
+en_thefastmode
+2026-07-07 10:00:00
+NGMN Alliance at DTW Ignite 2026: Simplifying Standards, AI-Native Networks and the Path to 6G
+The NGMN Alliance presented its vision for AI-native network architectures and the global technical roadmap to 6G commercialization at TM Forum's DTW Ignite 2026, calling for simplified standards and operator-led innovation frameworks.
+
+-------------------------
+en_thefastmode
+2026-07-07 09:30:00
+6G is Arriving Sooner Than We Thought: The Telcos That Win Will Already Know What They're Selling
+Industry analysts warn that 6G deployment timelines are accelerating toward late 2028 commercialization and telecom operators must define 6G value propositions, target use cases, and monetization strategies now rather than waiting on standards.
+
+-------------------------
+en_thefastmode
+2026-07-07 09:00:00
+UAE Leads Global Telecom Evolution with Commercial U6GHz Launch at SAMENA Leaders' Summit 2026
+The UAE announced commercial deployment in the upper 6GHz frequency band at the SAMENA Leaders' Summit 2026, becoming one of the first nations to commercialize spectrum in this band and positioning the country as a 6G pioneer.
+
+-------------------------
+en_renewableenergyworld
+2026-07-06 10:00:00
+Rooftop solar is making a difference in electricity demand curves in New York
+Solar and battery storage accounted for 91% of new US grid capacity in Q1 2026, including 7.8 GW of new PV, with rooftop solar deployments in New York significantly reducing afternoon peak demand and flattening the duck curve.
+
+-------------------------
+en_renewableenergyworld
+2026-07-06 09:00:00
+Clean energy wins | Factor This Brief
+US solar generation surpassed coal for the first time in May 2026, with solar accounting for 12.8% of all US electricity production versus coal at 12.2%, marking a historic inflection point in the American energy transition.
+
+-------------------------
+en_oilandgasmiddleeast
+2026-07-05 10:00:00
+Oil, Gas & LNG Outlook for 2026
+Analysis of Middle East oil, gas, and LNG production outlook for 2026, covering OPEC+ production compliance, new field startups in Saudi Arabia and UAE, LNG export capacity additions, and competition for Asian spot buyers.
+
+-------------------------
+en_paymentsassociation
+2026-07-04 10:00:00
+How stablecoin regulation is reshaping payments in 2026
+New stablecoin regulatory frameworks including the US GENIUS Act and EU MiCA implementation are forcing payment firms to restructure their digital currency compliance infrastructure and product roadmaps throughout 2026.
+
+-------------------------
+en_ddwonline
+2026-07-04 09:00:00
+Obesity treatment trends in 2026 and beyond
+Analysis of the rapidly evolving obesity treatment landscape in 2026, covering GLP-1 receptor agonist market growth, oral formulation approvals, new entrants from Eli Lilly and Novo Nordisk, and expanding payer coverage dynamics.
+
+-------------------------
+en_transportationinsight
+2026-07-03 10:00:00
+Transportation Industry Trends: June 29–July 3, 2026
+Weekly freight market roundup covering truckload spot rate trends, intermodal container volumes, LTL pricing dynamics, and carrier capacity data for the week spanning the end of June through early July 2026.
+
+-------------------------
+en_procurementmag
+2026-07-03 09:00:00
+Top Procurement & Supply Chain Leaders at US Summit
+Coverage of the Procurement Magazine US Summit featuring chief procurement officers from Fortune 500 companies discussing AI-driven sourcing, supplier risk management frameworks, nearshoring acceleration, and ESG compliance requirements.
+
+-------------------------
+en_mgma
+2026-07-01 10:00:00
+2026 Medicare reimbursement changes: Tracking what matters
+Overview of the 2026 Medicare physician fee schedule updates including conversion factor changes, quality program incentives, and alternative payment model pathways, with projected impacts on medical group practice revenues.
+
+-------------------------
+en_businessstandard
+2026-06-25 10:00:00
+India tech funding rises 12% to $7.2 bn in H1 2026 but deal count shrinks
+Indian technology startups raised $7.2 billion in H1 2026, up 12% year-on-year, though individual deal count fell as investors concentrated capital in fewer, larger rounds amid selective deployment of accumulated dry powder.
+
+-------------------------
+en_greenbiz
+2026-06-24 10:00:00
+Trellis Impact 26 convenes sustainability leaders in San Francisco
+Trellis Impact 26 (formerly GreenBiz) held at Moscone West in San Francisco June 23–25, 2026, featured 300+ speakers across 100+ sessions on Scope 3 emissions management, reporting automation, climate risk intelligence, and AI energy demand.
+
+-------------------------
+en_greenbiz
+2026-06-24 09:00:00
+Does the SEC climate rule really matter? Investors will still demand disclosure
+Despite political challenges to the SEC climate disclosure rule, institutional investors managing trillions in AUM continue demanding standardized sustainability reporting, ensuring ESG data requirements persist regardless of federal regulatory outcomes.
+
+-------------------------
+en_greenbiz
+2026-06-24 08:00:00
+US Climate Policy & Reporting Guide
+Comprehensive guide for sustainability executives covering US federal and state climate reporting requirements in 2026, including California's SB 261 financial climate risk disclosures and Scope 1 and 2 GHG reporting mandates now in effect.
+
+-------------------------
+en_farmweek
+2026-06-20 10:00:00
+Swedish investment in producing pea proteins
+A new pea protein production facility in Sweden expected to complete in early 2026 will create market opportunities for local growers and strengthen European plant-based protein supply chains, reducing dependence on imported soy ingredients.
+
+-------------------------
+en_farmweek
+2026-06-20 09:30:00
+Dutch government invests €60m in cellular agriculture
+The Dutch government committed €60 million to accelerate development of cellular agriculture technologies including cultivated meat and precision fermentation, reinforcing the Netherlands' position as a global hub for alternative protein innovation.
+
+-------------------------
+en_farmweek
+2026-06-20 09:00:00
+UFU launches proposals for 'Farming With Nature' scheme
+The Ulster Farmers' Union unveiled detailed proposals for a new Farming With Nature agri-environment scheme to replace EU Common Agricultural Policy structures post-Brexit, offering payments for biodiversity restoration and carbon sequestration.
+
+-------------------------
+en_indiainfoline
+2026-06-19 10:00:00
+Turtlemint Fintech Solutions IPO Details: Issue Size, Dates, GMP Expectations, Financials, and Investment Analysis
+Turtlemint Fintech Solutions launched its ₹882.67 crore IPO on June 19, 2026, with strong grey market premium demand reflecting investor appetite for India's fast-growing insurtech sector and the company's expanding agent distribution network.
+
+-------------------------
+en_indiainfoline
+2026-06-10 10:00:00
+OYO IPO Gets SEBI Approval: Key Investor Takeaways on the ₹6,650 Crore Public Issue
+OYO parent Prism Hospitality received SEBI approval for its ₹6,650 crore IPO, marking a major milestone for the hospitality startup after years of restructuring, valuation resets, and management changes under new leadership.
+
+-------------------------
+en_healthitanswers
+2026-05-20 10:00:00
+Sharing Health Data Update May 2026
+Summary of healthcare data interoperability developments as of May 2026, covering ONC information blocking enforcement actions, EHR vendor compliance with TEFCA participation requirements, and progress on nationwide patient access to health records.
+
+-------------------------
+en_remotesensing
+2026-04-29 10:00:00
+PhD Defense by Johannes Mast: Geographical Migration Research using Remote Sensing and Social Media Data
+Johannes Mast successfully defended his doctoral thesis at Julius-Maximilians-University Würzburg on April 29, 2026, presenting research combining satellite remote sensing imagery with social media data to track geographical migration patterns and displacement events.
+
+-------------------------
+en_remotesensing
+2026-04-20 10:00:00
+EORC Joins Forces to Organize 54th Annual GfÖ Conference
+The Earth Observation Research Cluster is co-organizing the 54th Annual Conference of the Ecological Society of Germany, Austria and Switzerland, bridging advances in remote sensing satellite technology with applied ecological field research.
+
+-------------------------
+en_transportationinsight
+2026-04-15 10:00:00
+Q1 2026 Transportation Outlook
+Quarterly analysis of the US freight transportation market in Q1 2026, covering truckload spot and contract rate trends, intermodal volume recovery, LTL market conditions, and the impact of ongoing tariff uncertainty on shipper inventory strategies.
+
+-------------------------
+en_remotesensing
+2026-04-15 09:00:00
+Presentation at StatEO26
+Earth Observation Research Cluster researcher presented findings at the StatEO26 conference on statistical methods for earth observation, covering Bayesian approaches to spatial data analysis and uncertainty quantification in satellite-derived land cover maps.
+
+-------------------------
+en_themobilenetwork
+2026-04-10 10:00:00
+6G reality check and update
+April 2026 assessment of 6G development progress globally, reviewing IMT-2030 standardization timelines at ITU and 3GPP, spectrum decisions for sub-THz bands, and relative investment levels from South Korea, Japan, China, and European nations.
+
+-------------------------
+en_insidehpc
+2026-03-09 10:00:00
+HPC News Bytes 20260309: AI in 2035, AI Demand and CPU Shortages, Foxconn's Great Expectations for 2026, EuroHPC Summit Postponed
+Weekly HPC and AI news digest covering long-term AI demand projections through 2035, current CPU supply chain constraints affecting AI server builds, Foxconn's data center expansion plans for 2026, and the postponed EuroHPC Summit.
+
+-------------------------
+en_insidehpc
+2026-03-05 10:00:00
+Crusoe Launches 'Command Center' Platform for AI Workloads
+Crusoe Energy unveiled its Command Center orchestration platform for managing large-scale AI training and inference workloads across its fleet of sustainable data centers powered by stranded natural gas and renewable energy sources.
+
+-------------------------
+en_techspot
+2026-02-28 10:00:00
+At MWC 2026, the telecom industry pivoted from 5G to AI-powered 6G
+Coverage of Mobile World Congress 2026 in Barcelona, where the industry's narrative shifted decisively from 5G commercial optimization to AI-native network design principles and the race to define 6G radio access and core network standards.
+
+-------------------------
+en_insidehpc
+2026-02-09 10:00:00
+HPC News Bytes 20260209: Who Has AI Sovereignty?, Bullish on Eviden, Intel's Latest GPU Attempt, AI Predictions
+Weekly HPC and AI news roundup examining national AI sovereignty debates across Europe and Asia, Eviden's strengthened position in European HPC markets, Intel Gaudi 3 GPU competitive standing against NVIDIA H200, and analyst AI predictions.
+
+-------------------------
+en_indiainfoline
+2026-01-10 10:00:00
+MF flows bounce in Jan-26; Precious Metal ETFs shine
+Indian mutual fund net inflows rebounded sharply in January 2026, with passive funds accounting for over half of total industry net inflows for the first time on record, led by gold and silver ETF demand as investors sought inflation hedges.
+
+-------------------------
