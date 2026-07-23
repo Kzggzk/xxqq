@@ -1,0 +1,528 @@
+en_robotics_247
+2026-07-23 08:00:00
+Viam Launches Viam 101 Free Self-Paced Automation Course for Engineers
+Viam announced the launch of Viam 101, a free, self-paced engineering course that teaches the company's full robot and automation platform entirely in simulation, enabling engineers to configure robots and run automation projects without physical hardware.
+
+-------------------------
+en_analytics_insight
+2026-07-22 16:00:00
+Samsung Galaxy Unpacked 2026: Everything Expected at Launch Event
+Samsung hosted Galaxy Unpacked 2026 in London on July 22, unveiling next-generation foldable smartphones, Galaxy AI upgrades including on-device reasoning capabilities, new Galaxy Ring health sensors, and updated Galaxy Watch and Galaxy Buds ecosystem devices.
+
+-------------------------
+en_nucnet
+2026-07-22 14:00:00
+Advanced Nuclear Company Unveils Generation IV Reactor Project For Southern France
+French advanced nuclear developer Stellaria signed a memorandum of understanding with Unitel Group and Energie Hub for the progressive deployment of several Stellarium Generation IV nuclear units in the Fos-sur-Mer industrial zone near Marseille, targeting the regional industrial decarbonisation market.
+
+-------------------------
+en_robotics_tomorrow
+2026-07-22 12:00:00
+Work Cells: From Physical to Autonomous
+RoboticsTomorrow examines the accelerating shift from fixed traditional manufacturing work cells to fully autonomous robotic workstations driven by AI-enabled vision systems and collaborative robot platforms that can reconfigure dynamically for multiple production tasks.
+
+-------------------------
+en_ien
+2026-07-22 12:00:00
+Advantech Reveals Visual Controller for Edge AI Vision Applications
+Advantech introduced the ASR-A501 system board and AFE-R761 AI vision control system designed for edge AI applications including industrial robotics, autonomous mobile robots, and in-vehicle monitoring, featuring on-chip inferencing and an IP67 ruggedized form factor.
+
+-------------------------
+en_crenews
+2026-07-22 12:00:00
+Inland Empire Industrial Property Sells for $270Mln
+Premier Logistics Properties paid $270 million for two industrial buildings totaling 1.47 million square feet in Rialto, California's Inland Empire, one of the nation's strongest logistics real estate markets due to its proximity to the ports of Los Angeles and Long Beach.
+
+-------------------------
+en_manufacturing_digital
+2026-07-22 12:00:00
+Physical AI and Supply Chain: Top Manufacturing News This Week
+Manufacturing Digital's weekly roundup covers Hitachi's forward-deployed AI engineering model with OpenAI and Google Cloud, BMW's Figure AI humanoid robot pilot results from Spartanburg, and growing enterprise demand for AI-integrated warehouse management systems.
+
+-------------------------
+en_farming_uk
+2026-07-22 12:00:00
+UK Cattle Sector Faces Loss of Only Licensed Lungworm Vaccine
+UK cattle farmers face a significant animal health challenge after MSD Animal Health confirmed that production of Bovilis Huskvac—the only licensed lungworm vaccine for cattle in the UK—will cease following the 2027 season, with no immediate regulatory-approved alternative in the pipeline.
+
+-------------------------
+en_port_strategy
+2026-07-22 12:00:00
+HyShip Backs Hydrogen Shipping Future as Samskip Joins EU Demonstration Project
+Samskip's SeaShuttle container vessel programme has become the latest demonstrator in the EU-funded HyShip project, advancing hydrogen-powered short-sea shipping toward commercial deployment on the busy Oslo-to-Rotterdam freight corridor with hydrogen container vessels under construction.
+
+-------------------------
+en_jd_supra
+2026-07-22 12:00:00
+Capital Markets Update – July 2026 One-Minute Reads
+JD Supra's monthly capital markets brief covers SEC guidance on AI-related M&A disclosure, CFTC event-contract regulatory developments, proposed Form PF amendments, and a wave of SPAC litigation settlements as regulators continue to tighten oversight of non-traditional deal structures.
+
+-------------------------
+en_the_ev_report
+2026-07-22 12:00:00
+WeaveGrid and GM Energy Partner on Grid-Integrated Bidirectional EV Charging
+WeaveGrid and GM Energy announced a partnership to expand utility programs for bidirectional V2H and grid-orchestration charging for GM EV owners, enabling vehicles to export power back to the grid during peak demand periods and creating a new revenue stream for participating EV drivers.
+
+-------------------------
+en_payload_space
+2026-07-22 12:00:00
+FCC Votes on Space Modernization Order, Reshaping Satellite Licensing Rules
+FCC Chair Brendan Carr confirmed the commission voted on the Space Modernization Order on July 22, a landmark regulatory overhaul streamlining satellite licensing, enabling faster spectrum access for commercial operators, and reducing multi-year bureaucratic review timelines.
+
+-------------------------
+en_alphaweek
+2026-07-22 12:00:00
+Equity Hedge Funds Gain 2.7% in July, Pushing Year-to-Date Returns to +7.83%
+Equity hedge funds delivered a 2.7% average gain in July 2026 according to HFR data, bringing year-to-date returns to +7.83% and outperforming both long-only equity benchmarks and fixed income alternatives amid elevated market volatility driven by geopolitical and energy-price uncertainty.
+
+-------------------------
+en_robotics_247
+2026-07-22 08:00:00
+Swisslog Rebrands Monorail Material Handling System as FastMove
+Swisslog repositioned its existing monorail-based warehouse transport system under the new product name FastMove, emphasizing throughput performance and deployment flexibility for high-velocity distribution centers requiring scalable intralogistics solutions.
+
+-------------------------
+en_crenews
+2026-07-22 08:00:00
+Hines Global Pays $170Mln for Charlotte Mixed-Use Design Center
+Hines Global Income Trust acquired the Design Center of the Carolinas, a mixed-use office and retail complex in Charlotte, North Carolina, for $170 million, reflecting continued institutional investor appetite for well-located, amenity-rich urban mixed-use assets in growing Sun Belt metros.
+
+-------------------------
+en_alphaweek
+2026-07-22 08:00:00
+Macro Leads All Hedge Fund Categories in July with +0.19% Average Gain
+Macro hedge fund strategies led all categories in July 2026, averaging a +0.19% gain and bringing year-to-date returns to +0.54%, with discretionary macro managers benefiting from currency and rates positioning as central banks diverge on monetary policy responses to energy-market shocks.
+
+-------------------------
+en_analytics_insight
+2026-07-22 08:00:00
+Anthropic Robotics Rumor Grows as Fed Faces Extended Mythos AI Access Gap
+Speculation about Anthropic entering physical AI and robotics mounts in the AI community, with analysts citing the company's Claude reasoning capabilities as a potential foundation for agentic robotic systems, though no acquisition or dedicated hardware laboratory has been announced as of July 22.
+
+-------------------------
+en_manufacturing_digital
+2026-07-21 16:00:00
+How BMW is Using Figure AI Humanoid Robots in Production at Spartanburg
+BMW demonstrated the Figure 03 humanoid robot at its Spartanburg, South Carolina manufacturing facility, where the robots perform bin-picking and parts-sorting tasks alongside human workers, with early pilot metrics showing a 10% throughput improvement in the designated pilot zone.
+
+-------------------------
+en_robotics_tomorrow
+2026-07-21 12:00:00
+Humanoid Raises $152 Million at $1.35 Billion Valuation, Becomes Europe's First Humanoid Robotics Unicorn
+European robotics startup Humanoid announced its $152 million Series A investment round, reaching a $1.35 billion post-money valuation and becoming Europe's first pure-play humanoid robotics unicorn, with funding aimed at accelerating development of bipedal robots for industrial deployment.
+
+-------------------------
+en_manufacturing_tomorrow
+2026-07-21 12:00:00
+U.S. Manufacturing Reaches Record $2.91 Trillion as Workforce Gap Threatens Decade of Growth
+New data shows U.S. manufacturing value added reached a record $2.91 trillion in 2026, but a projected shortfall of over 2 million skilled workers threatens to constrain production capacity through the next decade, according to the Manufacturing Institute and Deloitte's joint analysis.
+
+-------------------------
+en_western_producer
+2026-07-21 12:00:00
+The Western Producer Livestock Report – July 21, 2026
+This week's livestock market report covers Canadian cattle and hog prices with national live averages reflecting tight feedlot supply conditions, while corn and feed grain costs remain a key margin factor heading into the fall feeding period after mixed crop weather forecasts.
+
+-------------------------
+en_the_ev_report
+2026-07-21 12:00:00
+Rivian R1T Named Edmunds' Top Rated Electric Truck for Second Consecutive Year
+The Rivian R1T received Edmunds' Top Rated Electric Truck award for the second consecutive year in 2026, recognized for its off-road capability, range, and adventure-focused charging infrastructure, solidifying Rivian's position in the fast-growing electric pickup segment.
+
+-------------------------
+en_science_daily
+2026-07-21 12:00:00
+Scientists Create Programmable Optical Chip That Can Slow Light on Demand
+Researchers have developed a programmable photonic chip capable of slowing and storing pulses of light on demand, a breakthrough with potential applications in optical computing, quantum communication networks, and ultrafast signal processing for AI data centers.
+
+-------------------------
+en_stock_titan
+2026-07-21 12:00:00
+TSMC Debuts A13 Process Technology at 2026 North America Technology Symposium
+Taiwan Semiconductor Manufacturing Company unveiled its A13 next-generation process node at its North America Technology Symposium, promising major improvements in transistor density, power efficiency, and AI-accelerator performance, with planned volume production ramp in 2027.
+
+-------------------------
+en_rtt_news
+2026-07-21 12:00:00
+Biotech Stocks At 52-Week Highs: China Pharma Holdings Soars +790%, Xencor, Eton Lead Gains
+Multiple biotech stocks reached 52-week highs on July 21, led by China Pharma Holdings' 790% surge to $19.19 following a catalyst disclosure, while Xencor and Eton Pharmaceuticals advanced on positive clinical development updates ahead of anticipated mid-year readouts.
+
+-------------------------
+en_farming_uk
+2026-07-21 12:00:00
+Government Told to Replace Vague 'Farm Fresh' Claims With Clear Animal Welfare Labels
+A report commissioned by UK welfare groups urges government to mandate standardized animal welfare tier indicators across all meat, dairy, and egg products, replacing misleading marketing terms like 'farm fresh' with clear labeling that informs consumer choices at the point of sale.
+
+-------------------------
+en_port_strategy
+2026-07-21 12:00:00
+Port Investments Drive Sustainable Growth Across Global Terminal Networks
+Port Strategy examines how leading terminal operators are allocating capital to electrification, renewable energy, and digital infrastructure, with the Port of Hueneme receiving $80 million from California's Port & Freight Infrastructure Program for terminal modernisation and shorepower installation.
+
+-------------------------
+en_seas_news
+2026-07-21 12:00:00
+Sea Legend Launches China–Europe Arctic Container Service to Bypass Congested Southern Routes
+Sea Legend announced the launch of a new China-to-Europe Arctic container service routing vessels through the Northern Sea Route as an alternative to the Suez Canal, offering shippers relief from geopolitical risk and port congestion on conventional southern passage routes.
+
+-------------------------
+en_ien
+2026-07-21 12:00:00
+Mean Well Breaks Ground on New MWPS Facility to Expand Americas Distribution Capacity
+Mean Well, a leading standard power supply manufacturer, officially broke ground on its new MWPS corporate facility in the Americas, significantly expanding supply chain capacity, technical engineering capabilities, and localized distribution services to support industrial automation customers.
+
+-------------------------
+en_analytics_insight
+2026-07-21 08:00:00
+Google Unveils Gemini 3.6 Flash and 3.5 Flash-Lite; Next-Gen Gemini 4 Enters Training
+Google expanded its Gemini AI portfolio with the launch of Gemini 3.6 Flash and Gemini 3.5 Flash-Lite, optimised for coding speed, multimodal reasoning, and cost efficiency, while confirming that the next-generation Gemini 4 flagship model has entered the training phase.
+
+-------------------------
+en_western_producer
+2026-07-21 08:00:00
+VIDEO: Ag In Motion 2026 Set to Launch in Saskatchewan with 600-Plus Exhibitors
+Canada's largest outdoor farm show, Ag in Motion 2026, launched near Langham, Saskatchewan from July 21-23 with over 600 exhibitors including Morris's new 100-foot Quantum air drill, John Deere's largest air cart the C1100T, and Nexat's all-in-one carrier vehicle from Germany.
+
+-------------------------
+en_nucnet
+2026-07-21 08:00:00
+Researchers Achieve Remote, Autonomous Power Control of Research Reactor in Real Time
+For the first time, researchers from Idaho National Laboratory, the University of Illinois Urbana-Champaign, and Purdue University remotely and automatically adjusted the power of a research reactor in real time, with the reactor's own safety systems retaining full control throughout the demonstration.
+
+-------------------------
+en_crenews
+2026-07-20 12:00:00
+REIT Fortunes Start Turning Around as Sector Posts 14.9% Total Return Year to Date
+Real estate investment trusts have generated a 14.9% total return to investors since the start of 2026, with industrial, data center, and multifamily sectors leading the recovery as interest rate expectations stabilise and underlying demand fundamentals remain solid across major markets.
+
+-------------------------
+en_the_ev_report
+2026-07-20 12:00:00
+Geely's 16-in-1 Intelligent E-Drive Sets Two Guinness World Records
+Geely Auto Group's new 16-in-1 Intelligent E-Drive unit set two Guinness World Records for energy efficiency and sustained wet-surface performance, demonstrating China's accelerating lead in highly integrated EV powertrain engineering as the company prepares for expanded global exports.
+
+-------------------------
+cn_cgtn
+2026-07-20 12:00:00
+China's H1 Industrial Output Up 5.4% as High-Tech Manufacturing Accelerates
+China's industrial sector posted a 5.4% year-on-year rise in H1 2026 value-added output, with equipment manufacturing up 9.3% and high-tech manufacturing surging 13.3%, driven by AI-integrated production lines, EV component output, and expanding semiconductor fabrication capacity.
+
+-------------------------
+en_farming_uk
+2026-07-20 12:00:00
+Suffolk Council Moves to Protect 12,000 Acres of County Farmland From Future Sell-Offs
+Suffolk County Council approved measures to protect over 12,000 acres of county-owned agricultural land from future privatisation, committing to long-term lease structures with tenant farmers to preserve local food production capacity, rural employment, and landscape character.
+
+-------------------------
+en_robotics_247
+2026-07-20 12:00:00
+Samsung Electro-Mechanics Invests in Alva Industries for Robotic Motor Expansion
+Samsung Electro-Mechanics announced a strategic investment in Alva Industries, a Norwegian maker of advanced electric motors and actuators for drone and robotic applications, as the Korean electronics manufacturer builds exposure to the growing physical AI hardware component supply chain.
+
+-------------------------
+en_piie
+2026-07-20 12:00:00
+Amid Wartime Disruptions, Most Emerging-Market Central Banks Will Follow the Fed
+Peterson Institute economists argue that most emerging-market central banks will mirror the Federal Reserve's cautious, hold-or-hike stance in the face of energy price shocks from Middle East conflict, prioritising currency stability and inflation containment over domestic growth stimulus.
+
+-------------------------
+en_stock_titan
+2026-07-20 12:00:00
+TSMC VP Lin Shyue-Shyh Reports Open-Market Purchase of 2,000 Shares Amid Earnings Season
+TSMC Vice President Lin Shyue-Shyh filed an SEC Form 4 reporting an open-market purchase of 2,000 American Depositary Shares at prevailing market prices on July 20-21, 2026, a signal of insider confidence in the chipmaker ahead of its quarterly earnings release.
+
+-------------------------
+en_aerospace_america
+2026-07-20 12:00:00
+Future of U.S. Airpower Rests on Dual-Use Innovation, Panel Urges at AIAA Forum
+Leaders from JetZero, Joby Aviation, and Mach Industries urged faster pathways to field dual-use aerospace technologies at AIAA AVIATION Forum 2026, calling for streamlined acquisition processes and other-transaction authority reforms to bring commercial aerospace innovation into military applications rapidly.
+
+-------------------------
+en_aerospace_america
+2026-07-20 08:00:00
+BETA Technologies Details Planned Hybrid-Electric Military Aircraft Performance Specs
+BETA Technologies revealed key performance specifications for its autonomous hybrid-electric aircraft under development for the U.S. military, stating the aircraft will surpass some conventional helicopters in range and speed while enabling vertical takeoff, zero-emission cruise, and long-endurance surveillance missions.
+
+-------------------------
+en_nucnet
+2026-07-20 08:00:00
+Impact of Heatwave on French Nuclear Plants 'Limited' With Electricity Exports Continuing
+The impact of a European summer heatwave on France's nuclear fleet was limited, with around 5.5 GW of capacity temporarily reduced to comply with river temperature regulatory constraints, while France continued net electricity exports to neighbouring countries throughout the heat event.
+
+-------------------------
+en_port_strategy
+2026-07-19 12:00:00
+Ports Examine Nuclear Propulsion Feasibility as Alternative to Green Ammonia for Deep-Sea Decarbonisation
+A growing number of ports and shipping operators are evaluating nuclear propulsion as a long-term pathway for deep-sea route decarbonisation, particularly for container trades where hydrogen and ammonia face persistent fuel storage, bunkering infrastructure, and cold-chain safety challenges.
+
+-------------------------
+en_western_producer
+2026-07-18 12:00:00
+North American Pulse Production to Plummet in 2026-27 as Acreage Drops Sharply
+North American lentil, pea, and chickpea production is forecast to fall sharply in 2026-27 due to reduced seeded acreage and unfavorable growing conditions in key Saskatchewan and Alberta regions, though record carryover stocks from the 2025 harvest are expected to cushion market impact.
+
+-------------------------
+en_payload_space
+2026-07-18 12:00:00
+AIRMO Raises €5M to Scale Methane-Monitoring Satellite Constellation
+AIRMO, a European climate tech startup, secured €5 million in funding to expand its constellation of methane-detecting satellites, providing near-real-time monitoring of industrial methane emissions to support corporate ESG reporting requirements and regulatory compliance under EU methane rules.
+
+-------------------------
+en_finextra
+2026-07-17 12:00:00
+B2B Payments Fintech Pliant Targets US Market via Coastal Banking Partnership
+Pliant, a European B2B payment solutions fintech, announced its official US launch through a strategic partnership with Coastal, targeting corporate card and expense management services for American mid-market businesses and marking a significant transatlantic expansion for the company.
+
+-------------------------
+en_manufacturing_digital
+2026-07-17 12:00:00
+Why Micron Chose GlobalWafers for $500M US Silicon Wafer Supply Agreement
+Micron Technologies announced a $500 million, 10-year supply agreement with GlobalWafers' Sherman, Texas facility as part of a $3 billion US semiconductor supply chain investment programme, helping reshore critical silicon wafer production and fulfill CHIPS Act domestic content requirements.
+
+-------------------------
+en_jd_supra
+2026-07-17 12:00:00
+Rolling Back Private Fund Reporting: SEC and CFTC Propose Amendments to Form PF
+The SEC and CFTC jointly proposed amendments to Form PF that would roll back expanded reporting requirements for hedge funds and private equity advisers adopted in 2023, aligning with the current administration's deregulatory agenda and reflecting concerns that prior rules were overly burdensome.
+
+-------------------------
+en_upstream_online
+2026-07-17 12:00:00
+LNG Spot Prices Tighten in July as European Demand Competes with Asian Buyers
+Global LNG spot prices tightened in July 2026 as European gas storage refilling demand competed with Asian buyers for available spot cargoes, while US export terminals ran at near-full capacity following multiple new liquefaction trains that came online in late 2025.
+
+-------------------------
+en_farmers_guardian
+2026-07-17 12:00:00
+Wildfire Risk Warning Issued for UK Upland Farms Amid Summer Heatwave
+Rural fire agencies issued elevated wildfire risk warnings for upland farming regions across England and Wales as a summer heatwave and prolonged dry spell created dangerous conditions for peat moorland, heathland, and dry grass margins bordering agricultural land.
+
+-------------------------
+en_farmers_guardian
+2026-07-17 08:00:00
+Clarkson's Farm Series 4: What It Gets Right—and Wrong—About British Agriculture
+Farmers Guardian's agricultural commentator examines how the latest series of Clarkson's Farm portrays challenges facing UK arable farmers, including subsidy transition pain points, planning permission battles for diversification projects, and evolving public attitudes toward modern farming methods.
+
+-------------------------
+cn_cgtn
+2026-07-16 12:00:00
+Massive-Scale Consumer Market Activates China's Domestic Growth Momentum
+China's 1.4-billion-person consumer market is increasingly activating domestic growth momentum as a counterweight to external trade headwinds, with total goods trade reaching 25.47 trillion yuan in H1 2026, a year-on-year increase of 16.9% as consumption stimulus policies gain traction.
+
+-------------------------
+en_greencars
+2026-07-16 12:00:00
+2026 Kia EV9 GT-Line Review: Setting the Standard for Three-Row Electric SUVs
+GreenCars published a comprehensive review of the 2026 Kia EV9 GT-Line, praising its extended range, spacious interior, standard ADAS features, and seamless DC fast charging performance as benchmarks for the rapidly competitive three-row electric SUV segment.
+
+-------------------------
+en_rtt_news
+2026-07-16 12:00:00
+Hemab Therapeutics Reports 84% Bleed Rate Reduction in Phase 2 Sutacimig Long-Term Extension Trial
+Hemab Therapeutics reported positive Phase 2 long-term extension data showing Sutacimig reduced the mean annualized treated bleeding rate by 84% in patients with Glanzmann thrombasthenia and Factor VIII deficiency, supporting advancement toward a planned pivotal Phase 3 trial.
+
+-------------------------
+en_jd_supra
+2026-07-14 12:00:00
+Harmonizing the Divide: SEC and CFTC Request Comment on Derivatives Jurisdiction and Definitions
+Building on their March 2026 harmonisation MOU, the SEC and CFTC issued a joint request for public comment on aligning derivatives product definitions and jurisdictional bright lines, with significant implications for swap dealers, derivatives clearing organisations, and cross-border structured products.
+
+-------------------------
+en_manufacturing_tomorrow
+2026-07-14 12:00:00
+IMTS 2026 Spotlights the Technologies Powering Manufacturing's Next Leap
+The International Manufacturing Technology Show highlighted industrial AI, digital twins, additive manufacturing, and advanced metrology systems as the key technologies accelerating productivity gains in US manufacturing, with technology orders reported at multi-year highs heading into the second half.
+
+-------------------------
+en_upstream_online
+2026-07-14 12:00:00
+Over 20% of Upstream Projects Under Development Hit FID in First Half of 2026
+Upstream Online reports that more than 20% of global upstream oil and gas projects under active development reached final investment decision in the first six months of 2026, reflecting robust capital commitment as producers balance near-term price volatility with long-cycle project economics.
+
+-------------------------
+en_global_governance_media
+2026-07-14 12:00:00
+Record 110+ Armed Conflicts Globally: How the G7 Is Responding to Rising Insecurity in 2026
+Global Governance Media examines how G7 nations are coordinating responses to an unprecedented level of simultaneous armed conflicts, with France's 2026 G7 presidency emphasising diplomatic prevention frameworks and conflict-resolution capacity as military resources face unprecedented simultaneous demands.
+
+-------------------------
+en_piie
+2026-07-14 12:00:00
+US Tariffs, Iran War Energy Shock Combine to Keep Fed on Hold Through Year-End
+Peterson Institute economists argue that the combination of US tariff-driven goods price increases, energy cost shocks from Middle East conflict, and tight labour markets creates a stagflationary mix that constrains the Federal Reserve's ability to cut rates before the end of 2026.
+
+-------------------------
+en_stock_titan
+2026-07-15 12:00:00
+Japan Robotics Leaders Build on NVIDIA Cosmos Platform to Advance Physical AI
+A coalition including Fujitsu, FANUC, Yaskawa Electric, and Kawasaki Heavy Industries announced integration of NVIDIA Cosmos—a world foundation model platform for physical AI—into their manufacturing robotics systems, enabling robots to train in simulation and deploy adaptive behaviours on factory floors.
+
+-------------------------
+en_manufacturing_tomorrow
+2026-07-06 12:00:00
+PMMI Report Reveals Sustainability Is Reshaping Equipment Requirements Across Packaging Industry
+PMMI, The Association for Packaging and Processing Technologies, released a new report showing sustainability mandates are transforming OEM equipment specifications, with CPG companies requiring lower-energy machinery, recyclable-material compatibility, and real-time energy consumption monitoring from their suppliers.
+
+-------------------------
+en_alphaweek
+2026-07-15 12:00:00
+Private Credit Unwinding Risk: What Institutional Investors Should Do to Prepare
+AlphaWeek examines growing institutional investor concerns about the potential disorderly unwinding of illiquid private credit positions, with allocators evaluating secondary market liquidity tools and redemption structures as elevated interest rates continue to weigh on credit valuations and distribution timelines.
+
+-------------------------
+en_ien
+2026-07-15 12:00:00
+Fujitsu and Leading Robotics Companies to Use Nvidia Technology in 'Physical AI' Initiative
+Nvidia CEO Jensen Huang and Fujitsu CEO Takahito Tokita announced alongside the heads of FANUC, Yaskawa, and Kawasaki Heavy Industries that Japan's major industrial robot makers will integrate Nvidia's Cosmos platform to create physical AI systems for next-generation factory automation.
+
+-------------------------
+en_robotics_tomorrow
+2026-07-15 12:00:00
+Oxford Technology Funds Next-Generation Human–Robot Safety Technology via BeyondFence Investment
+Oxford Technology invested in UK robotics startup BeyondFence, which is developing ISO-compliant dynamic safety technology that allows humans and industrial robots to share workspace without traditional physical barriers, using advanced sensor fusion and AI-driven real-time risk classification.
+
+-------------------------
+en_aerospace_america
+2026-07-07 12:00:00
+Echodyne Expands Production of Drone-Detecting Radars as Counter-UAS Demand Surges
+Washington-state radar startup Echodyne announced a significant production expansion of its metamaterial electronically-scanned array radar systems for counter-drone detection, responding to surging demand from airports, critical infrastructure operators, and military customers globally.
+
+-------------------------
+en_science_daily
+2026-07-13 12:00:00
+New Book Claims AI Is Built on Flawed Assumption Dating Back to Alan Turing's 1950 Paper
+A newly published academic critique argues that foundational assumptions embedded in modern machine learning trace back to an unproven claim in Alan Turing's 1950 paper on machine intelligence, challenging the field to reconsider whether current deep learning architectures are progressing toward genuine cognition.
+
+-------------------------
+en_psqh
+2026-07-13 12:00:00
+Hospital Safety Grades Spring 2026: Notable Improvements in Sepsis and Infection Protocols
+Patient Safety & Quality Healthcare covers the Spring 2026 Leapfrog Hospital Safety Grade release, highlighting facilities that improved significantly on sepsis bundle compliance, central-line infection rates, and medication reconciliation—while flagging persistent gaps in surgical safety and adverse event reporting.
+
+-------------------------
+en_farmers_guardian
+2026-07-13 12:00:00
+UK Farm Sales Hit 20-Year High for January to June Period
+Farm real estate sales in the UK reached their highest level in 20 years for the January-June 2026 period, driven by institutional investors, lifestyle buyers, and neighbouring landowners capitalising on post-subsidy transition uncertainty that has motivated some family operations to exit the sector.
+
+-------------------------
+en_global_governance_media
+2026-07-07 12:00:00
+Transactional Diplomacy in 2026: Interest-Based Partnerships Replace Value Alliances
+Global Governance Media argues that the dominant geopolitical framework of 2026 is transactional partnership formation driven by shared economic and security interests rather than ideological alignment, giving smaller and middle powers unprecedented leverage by engaging multiple major powers simultaneously.
+
+-------------------------
+en_seas_news
+2026-07-07 12:00:00
+LTL Carrier Mountain Valley Express Ceases Operations, Citing Freight Rate Pressure
+LTL carrier Mountain Valley Express ceased operations on July 7, 2026, shutting down 13 terminals across California, Arizona, and Nevada as the Manteca-based regional operator cited prolonged depressed freight rates, rising insurance costs, and competition from spot-rate undercutting.
+
+-------------------------
+en_greencars
+2026-07-15 12:00:00
+2026 Subaru Solterra vs. Hyundai Ioniq 5: Which All-Wheel-Drive EV Wins?
+A head-to-head comparison of the 2026 Subaru Solterra AWD and Hyundai Ioniq 5 AWD evaluates real-world range, charging speed, cargo capacity, ADAS features, and value, helping buyers choose between two of the most capable and well-priced mid-size electric crossover platforms.
+
+-------------------------
+en_greencars
+2026-07-10 12:00:00
+EVs in 2026: Tesla Shifts Strategy, China Surges in Europe, US Charging Expands
+GreenCars surveys the mid-year EV landscape highlighting Tesla's market share pressure from Chinese brands in Europe and Southeast Asia, rapid expansion of DC fast charging infrastructure in the US heartland, and hybrid options from Toyota and Honda drawing buyers not yet ready to go fully electric.
+
+-------------------------
+en_science_daily
+2026-07-08 12:00:00
+AI-Based Simulation Dramatically Accelerates Modeling of Neutron Star Mergers and Heavy-Element Creation
+Scientists created an AI-based simulation that accelerates modeling of neutron star merger events by several orders of magnitude, enabling faster and more accurate predictions of how the universe's heaviest elements—including gold, platinum, and uranium—are forged in these extreme cosmic events.
+
+-------------------------
+en_payload_space
+2026-07-08 12:00:00
+Space Force Adds Two New Launch Companies to NSSL Program, Roster Grows to Seven
+The U.S. Space Force added two new companies to its National Security Space Launch program on July 8, expanding the roster to seven certified launch providers as the military seeks to avoid over-reliance on any single operator and encourage competitive pricing for critical satellite delivery.
+
+-------------------------
+en_rtt_news
+2026-07-02 12:00:00
+Roche's Divarasib Meets Primary Endpoint in Phase 3 Krascendo 1 Lung Cancer Trial
+Roche announced positive Phase 3 results for Divarasib, a KRAS G12C inhibitor, in the Krascendo 1 study for previously treated non-small cell lung cancer, meeting the primary progression-free survival endpoint and positioning the drug for a near-term regulatory submission to the FDA and EMA.
+
+-------------------------
+en_finextra
+2026-07-10 12:00:00
+Augustus Secures $180 Million Series B at $1 Billion Valuation to Build Next-Gen Clearing Bank
+Augustus, a clearing bank fintech startup, secured a $180 million Series B round at a $1 billion valuation, led by Tiger Global with participation from Hummingbird, QED, and founders of Nubank, Ramp, Circle, and Deel, funding its vision to rebuild clearing infrastructure for the digital-asset era.
+
+-------------------------
+en_the_fern
+2026-07-15 12:00:00
+Is the MAHA Movement Roundup Ready? Inside the Monsanto Glyphosate Legal Battle
+The Food & Environment Reporting Network examines the intersection of the Make America Healthy Again movement and the Supreme Court case Monsanto v. Durnell on glyphosate warning labels, exploring how health-focused political movements are colliding with longstanding agrochemical industry legal strategies.
+
+-------------------------
+en_the_fern
+2026-07-08 12:00:00
+FERN Investigation: How Consolidation Is Reshaping America's Food Supply
+FERN investigates how accelerating mergers and acquisitions in poultry, pork, and grain trading have concentrated market power among fewer corporate entities, raising concerns about farmer income compression, food price transmission to consumers, and supply chain concentration risk.
+
+-------------------------
+en_psqh
+2026-06-12 12:00:00
+Penn Medicine's Framework for Evaluating Clinical AI Tools Sets Hospital Safety Standard
+A PSQH feature examines Penn Medicine's governance framework for evaluating and deploying AI clinical decision support tools, highlighting its multi-disciplinary review board, real-world performance monitoring, and rapid-response shutdown protocols as a model for responsible AI adoption in acute care.
+
+-------------------------
+en_global_governance_media
+2026-06-30 12:00:00
+G20 at Mid-Year 2026: South Africa's Presidency Shapes Emerging-Market Debt and Climate Finance Agenda
+Global Governance Media analyses how South Africa's 2025 G20 presidency outcomes have shaped the multilateral agenda for 2026, with developing nations pressing for progress on debt restructuring frameworks, climate finance mechanisms, and digital economy governance rules in an era of great-power competition.
+
+-------------------------
+en_upstream_online
+2026-05-15 12:00:00
+Crude Oil Prices Jump 3% as Middle East Escalation Threatens Strait of Hormuz Supply Routes
+Brent crude futures surged approximately 3% to around $94 per barrel and West Texas Intermediate gained 2.5% to above $86 as geopolitical tensions in the Middle East intensified, with markets pricing elevated risk of supply disruptions through the critical Strait of Hormuz chokepoint.
+
+-------------------------
+en_the_fern
+2026-07-01 12:00:00
+SNAP and Sugary Foods: Who Benefits When Junk Food Stays on the Federal Nutrition Program?
+A FERN investigation reveals major food manufacturer lobbying campaigns to block SNAP benefit restrictions on ultra-processed food purchases, analysing the political economy of federal nutrition assistance and the financial beneficiaries when sugary beverages and high-calorie snacks remain eligible.
+
+-------------------------
+en_finextra
+2026-06-24 12:00:00
+EBAday 2026: BankiFi Warns Banks Risk Losing Corporate Payments Relationships to Fintechs
+At EBAday 2026 in Copenhagen, BankiFi CEO Mark Hartley warned that traditional banks risk ceding control of corporate payments relationships to fintech third-party providers unless they expand into embedded, beyond-banking services tailored specifically to the treasury and payables needs of SME clients.
+
+-------------------------
+en_seas_news
+2026-07-01 12:00:00
+CMA CGM to Acquire FedEx's Contract Logistics Unit for $1.4 Billion
+CMA CGM Group announced an agreement to acquire FedEx Supply Chain, the contract logistics division of FedEx Corporation, for $1.4 billion, extending the French shipping giant's reach into warehousing, fulfilment, and last-mile distribution services across North America.
+
+-------------------------
+en_piie
+2026-06-15 12:00:00
+Risk of Higher US Inflation in 2026 Rises as Iran War Disrupts Energy and Supply Chains
+Peterson Institute economists warn that US inflation could exceed 4% by end-2026—well above the Federal Reserve's target—as energy price increases from Middle East conflict, combined with residual tariff effects on goods prices and tight labour markets, create renewed broad-based inflationary pressure.
+
+-------------------------
+en_seas_news
+2026-06-28 12:00:00
+COSCO Shipping Lines Announces July 2026 General Rate Increase for US and Canada Trades
+COSCO SHIPPING Lines announced a new General Rate Increase effective July 1, 2026, for cargo originating from the Far East, Indian Subcontinent, Middle East, and Oceania destined for the United States and Canada, citing rising fuel costs and tight vessel availability on trans-Pacific lanes.
+
+-------------------------
+en_psqh
+2026-01-15 12:00:00
+Patient Safety Predictions for 2026, Part 1: AI, Staffing, and the Diagnostic Frontier
+PSQH's annual predictions report identifies AI diagnostic aid integration, nurse staffing ratio mandates expanding beyond California, and growing regulatory scrutiny of diagnostic errors in emergency settings as the three major themes shaping patient safety practice and risk management in 2026.
+
+-------------------------
+en_piie
+2026-01-10 12:00:00
+Global Economy to Slow in 2026, Outlook Clouded by War, Tariffs, and Policy Uncertainty
+Peterson Institute for International Economics projected slowing growth across advanced economies in 2026, citing persistent trade policy uncertainty from new tariff regimes, elevated debt service costs in emerging markets, and geopolitical risks including potential military escalation as principal downside scenarios.
+
+-------------------------
