@@ -1,0 +1,612 @@
+en_cbtnews
+2026-07-23 20:00:00
+CBT Newscast July 23: JD Power Satisfaction Hits 3-Year High, Senate Advances Chinese Tech Ban 
+New-vehicle satisfaction reached a three-year high in JD Power's 2026 Initial Quality Study as automakers resolve early-production quality issues, while the Senate advanced bipartisan legislation to ban Chinese and Russian connected vehicle software from new U.S. automobiles over national security concerns. 
+
+-------------------------
+en_essnews
+2026-07-23 20:00:00
+Solar and Storage Drive 91% of U.S. Grid Additions in Q1 2026, Setting Record Share 
+Solar and battery energy storage systems combined accounted for 91% of all new U.S. electricity generation capacity added in Q1 2026, a record share, as large-scale BESS project completions accelerated across ERCOT, CAISO, and PJM markets responding to AI data center load growth. 
+
+-------------------------
+en_finextra
+2026-07-22 20:00:00
+Natural Raises $30 Million to Build AI Agent Payments Stack 
+US fintech startup Natural raised a $30 million Series A led by Forerunner to build a payments infrastructure layer purpose-built for AI agents, bringing total funding past $40 million from backers including Brex, Mercury, and Vercel. The one-year-old company targets the emerging market for autonomous AI systems that need to execute financial transactions without human sign-off. 
+
+-------------------------
+en_insideprecisionmedicine
+2026-07-22 20:00:00
+Cancer's Hidden Axis: Genetic Background Drives Tumor Evolution, Not Just Driver Mutations 
+New research published in a leading oncology journal shows that identical oncogenic driver mutations produce dramatically different tumor trajectories depending on a patient's broader genetic background, fundamentally challenging precision oncology assumptions that targeting a single driver mutation reliably predicts clinical outcomes. 
+
+-------------------------
+en_cbtnews
+2026-07-22 20:00:00
+CBT Newscast July 22: USMCA Talks Resume, Cadillac Revives Gas Models, CA EV Registrations Fall 
+U.S. and Mexico restarted USMCA trade talks as tariff tensions with Canada escalated to 50%, Cadillac announced it will add gasoline-powered models in 2027 pivoting from its prior all-EV roadmap, and California EV registrations fell 8% year-over-year in Q2 as state incentives wound down. 
+
+-------------------------
+en_nationalobserver
+2026-07-22 20:00:00
+Canada Counting on LNG, Nuclear and Offshore Wind to Power Industrial Revival: Joly 
+Canadian Minister of Foreign Affairs Joly outlined a 'build Canada strong' industrial strategy anchored by LNG export expansion, nuclear power build-out, and large-scale offshore wind projects, positioning Canada's energy system as a strategic geopolitical asset to drive economic sovereignty amid U.S. tariff pressures. 
+
+-------------------------
+en_marklines
+2026-07-22 20:00:00
+MarkLines July 22: Japan Auto Output Up 7.4% in June, JSAE 2026 AI Vehicle Showcases 
+MarkLines' daily automotive digest reports Japan's motor vehicle production rose 7.4% year-over-year in June 2026 led by Toyota, Honda, and Nissan with gains exceeding 30%, while JSAE 2026 presentations highlighted AI applications in vehicle software development and regional E-Axle supply chain analysis. 
+
+-------------------------
+en_carbonherald
+2026-07-21 20:00:00
+Puro.earth Certifies World's First BECCS Project In Norway 
+Puro.earth certified the world's first Bioenergy with Carbon Capture and Storage project in Norway, marking a milestone for engineered carbon removal as BECCS becomes eligible under global carbon crediting standards. The certification paves the way for large-scale BECCS project financing under Article 6.4 frameworks. 
+
+-------------------------
+en_cbtnews
+2026-07-21 20:00:00
+CBT Newscast July 21: Trump Imposes 50% Canada Tariffs, Polestar Exits U.S. Market 
+President Trump imposed 50% tariffs on Canadian goods, triggering immediate concern from Detroit automakers about auto parts supply chain disruption, while Polestar announced it will exit the U.S. market by year-end citing tariff-driven cost increases and regulatory uncertainty around its Chinese manufacturing footprint. 
+
+-------------------------
+en_nationalobserver
+2026-07-21 20:00:00
+Governments Knew the Risks of Global Warming Since the 1950s, New Report Finds 
+A new historical research report reveals that multiple governments received detailed briefings on the risks of fossil-fuel-driven climate change as early as the 1950s, with the finding feeding into international climate litigation that seeks to establish historical liability for emissions-related damages. 
+
+-------------------------
+en_marklines
+2026-07-21 20:00:00
+North American Lithium-Ion Battery Cluster Map: EV Supply Chain Reshaping Continues 
+MarkLines published a detailed map of North America's emerging battery manufacturing clusters, analyzing strategic component sourcing relationships between gigafactories, cell chemistry suppliers, and OEMs as the continent's electrification supply chain rapidly shifts from Asian imports toward domestic and nearshore production. 
+
+-------------------------
+en_carbonherald
+2026-07-20 20:00:00
+Legacy Carbon Project Cull Signals New Era For UN Market, Researchers Say 
+Researchers say the removal of low-integrity legacy carbon projects from the UN Article 6.4 market signals a decisive shift toward a higher-quality voluntary carbon credit system aligned with Paris Agreement targets. The cull affects thousands of projects that failed updated methodology standards on additionality and permanence. 
+
+-------------------------
+en_finovate
+2026-07-20 20:00:00
+Fintech Headlines: FIS Partners With Anthropic, Nu Mexico Launches as Full Bank 
+FIS announced a strategic partnership with Anthropic to integrate Claude AI into its financial services platforms, while Nu Mexico received final regulatory authorization from the CNBV to operate as a full bank, making it the largest digital bank in Mexico with over 15 million customers. Databricks also raised fresh strategic funding at a $188 billion valuation. 
+
+-------------------------
+en_metrology_news
+2026-07-20 20:00:00
+METROLOGY BREW 20 July: Hexagon OPC UA Integration, TraceBossPro Surface Measurement Launch 
+Hexagon Manufacturing Intelligence added OPC UA support to SpatialAnalyzer, enabling direct integration of high-precision laser measurement with industrial robots and CNC controllers, while Digital Metrology Solutions launched TraceBossPro for production-rate surface roughness and crosshatch measurement in automotive machining. 
+
+-------------------------
+cn_yicaiglobal
+2026-07-20 20:00:00
+Chinese Stocks End Mixed as CICC Calls Second Buying Opportunity of 2026 
+Chinese mainland stocks closed mixed as China International Capital Corporation analysts argued the latest tech-driven market correction represents the second major buying opportunity of 2026, pointing to supportive monetary policy conditions and stabilizing corporate earnings despite U.S.-China tech war headwinds. 
+
+-------------------------
+en_machinedesign
+2026-07-20 20:00:00
+Additive Manufacturing in Aerospace and Defense: Process Selection for Flight-Ready Hardware 
+Machine Design covers the evolving framework for aerospace-grade additive manufacturing qualification, including ASTM standards compliance, powder bed fusion process controls, post-process inspection requirements, and the regulatory pathway through FAA and DoD for certifying 3D-printed structural flight components. 
+
+-------------------------
+en_costar
+2026-07-20 20:00:00
+Community Opposition Halts Over $130 Billion in U.S. Data Center Projects in 2026 
+CoStar reports that local and governmental opposition to noise, power consumption, water use, and visual impact has halted or materially delayed more than $130 billion in planned U.S. data center projects year-to-date in 2026, forcing hyperscalers to pursue rural sites with pre-approved power infrastructure. 
+
+-------------------------
+en_alternativecreditinvestor
+2026-07-20 12:00:00
+The Alternative Credit Investor Conference 2026: Confirm Your Place 
+The Alternative Credit Investor annual conference will take place on 20 October 2026 at the Royal Horseguards Hotel in London, bringing together allocators, fund managers, and service providers to discuss direct lending, asset-based finance, and fund finance trends amid a maturing private credit cycle. Key agenda themes include private credit stress testing and the outlook for senior secured versus covenant-light structures. 
+
+-------------------------
+en_brusselsmorning
+2026-07-18 20:00:00
+UK-EU Summit: Europe Resets Post-Brexit Ties With Security and Trade Frameworks 
+Brussels Morning covers the inaugural UK-EU summit that produced new security, defence, and trade cooperation frameworks, marking the most significant post-Brexit rapprochement as both sides prioritize shared strategic responses to Russia, China, and economic competition with the United States. 
+
+-------------------------
+cn_yicaiglobal
+2026-07-18 20:00:00
+China's National Team Injects USD 9 Billion Into SOE Stocks to Stabilize Market After Tech Selloff 
+China's state capital funds poured approximately CNY 60 billion into listed shares of state-owned enterprises to counter a sharp market selloff triggered by global technology stock declines, demonstrating the government's continued willingness to backstop domestic equity markets during periods of external volatility. 
+
+-------------------------
+en_biofuelsdigest
+2026-07-18 20:00:00
+Toyota, BMW, Bosch and Repsol Launch 100% Renewable Gasoline Real-World Pilot in Spain 
+A six-month real-world trial launched in Spain testing vehicles running exclusively on 100% renewable drop-in gasoline produced from biogenic and synthetic feedstocks, with Repsol supplying the fuel and Toyota, BMW, and Bosch validating engine performance and emissions across everyday driving conditions. 
+
+-------------------------
+en_carbonherald
+2026-07-17 20:00:00
+EU Targets 90% Emissions Cut With Long-Awaited ETS Reform 
+The European Commission released its long-awaited reform of the EU Emissions Trading System, targeting a 90% emissions reduction by 2040 and introducing a new Carbon Removal Compliance Market worth an estimated €50 billion that will require industry to purchase removal credits. The reform also tightens the maritime and aviation ETS caps ahead of 2030. 
+
+-------------------------
+en_nationalobserver
+2026-07-17 20:00:00
+Global Oil Demand Falls for First Time Since COVID, Disrupted by Middle East Conflict 
+The International Energy Agency reported global oil demand is on track to decline in 2026 for the first time since the COVID-19 pandemic, driven by Middle East conflict disrupting trade, a faster-than-expected acceleration of EV adoption, and weakening industrial demand across Europe and parts of Asia. 
+
+-------------------------
+en_alternativecreditinvestor
+2026-07-17 12:00:00
+Fidelis Closes $191.5m Residential Transition Loan Securitisation 
+Fidelis closed FIDL 2026-RTL2, a $191.5 million two-year revolving securitisation backed by 381 residential transition loans originated across 24 lenders, demonstrating continued appetite for asset-backed alternative credit structures despite tighter lending standards across broader private credit markets. The deal diversified collateral across 24 originators to manage concentration risk. 
+
+-------------------------
+en_metrology_news
+2026-07-16 20:00:00
+AMRC Unveils £54M COMPASS Facility for Next-Generation Aerospace Composites Production 
+The University of Sheffield's Advanced Manufacturing Research Centre opened the £54 million COMPASS facility with Boeing as its first user, targeting high-rate automated production of structural aerospace composite components using advanced fibre placement systems and integrated digital quality control loops. 
+
+-------------------------
+en_alternativecreditinvestor
+2026-07-16 12:00:00
+Institutional Investors Maintain Private Credit Exposure Despite Headlines 
+A new survey finds institutional investors are holding private credit allocations steady despite rising concerns over AI sector concentration and lending standard deterioration, with distressed private credit cited by 26% as one of the most attractive alternatives and direct lending by 23%. The findings contrast with media narratives of a broad pullback from the asset class. 
+
+-------------------------
+en_finovate
+2026-07-16 12:00:00
+Where Are They Now? Updates from Six FinovateFall 2025 Best of Show Winners 
+Finovate tracked six-month progress from FinovateFall 2025 Best of Show companies—Casap, Eko, Krida, LemonadeLXP, LendAPI, and Vertice AI—finding most have expanded into new markets or closed fresh funding rounds ahead of FinovateFall 2026 in September. The updates highlight how AI personalization and embedded compliance automation have become core growth drivers. 
+
+-------------------------
+en_miningsee
+2026-07-16 12:00:00
+Mining News Roundup CW29: CBAM Tightens, LFP Gains Battery Market Share 
+Mining South East Europe's week 29 roundup covers the EU's Carbon Border Adjustment Mechanism entering definitive implementation for steel and aluminum, lithium-iron-phosphate chemistry displacing NMC in new battery project designs due to cost and cobalt-independence advantages, and a wave of M&A in South East European mineral exploration companies. 
+
+-------------------------
+en_insideprecisionmedicine
+2026-07-15 20:00:00
+First Huntington's Disease Patient Dosed With Embryonic Neural Stem Cell Therapy 
+A pioneering human trial dosed its first patient with embryonic stem cell-derived neural stem cells targeting Huntington's disease, marking the world's first attempt to use this cellular approach to slow neurodegeneration in the fatal inherited disorder and establishing a foundation for next-generation neurodegenerative cell therapies. 
+
+-------------------------
+en_eepower
+2026-07-15 20:00:00
+EEPower Briefs: Ford Enters Grid-Scale BESS, Panasonic Expands Cylindrical Cell Capacity 
+EEPower's power engineering briefs cover Ford's strategic pivot into grid-scale battery energy storage systems, Panasonic's capacity expansion for large-format cylindrical cells targeting utility BESS and commercial EV fleets, and multiple utility BESS procurement agreements signed in July as the energy storage market accelerates. 
+
+-------------------------
+en_inboundlogistics
+2026-07-15 20:00:00
+DOJ Trade Fraud Task Force Tops $1 Billion in Recoveries 
+The Justice Department's Trade Fraud Task Force crossed $1 billion in total enforcement recoveries since its launch, with recent actions targeting customs fraud, tariff evasion schemes, and false country-of-origin declarations from importers exploiting HTSUS classification ambiguities. 
+
+-------------------------
+en_brusselsmorning
+2026-07-15 20:00:00
+Germany Policy Reforms: Merz Cabinet Reshuffle Expected to Strengthen Economic Ministry 
+Sources indicate German Chancellor Friedrich Merz is weighing a cabinet reshuffle to reinforce economic ministry leadership as growth stagnation and fiscal constraints pressure the government's industrial competitiveness agenda ahead of anticipated 2027 state elections. 
+
+-------------------------
+en_marklines
+2026-07-15 20:00:00
+BYD Seal 08 Enters Competitive E-Segment Sedan Market With 5-Minute Flash Charging 
+BYD launched the Seal 08 sedan featuring its second-generation Blade Battery and Flash Charging technology achieving 10–70% state of charge in five minutes, targeting the premium EV sedan segment in China and preparing for European deployment ahead of heightened EU EV import tariff reviews. 
+
+-------------------------
+en_logisticsmgmt
+2026-07-15 20:00:00
+LM Reader Survey: 2026 Peak Season Outlook Shows Tighter Capacity, Rates Rising 8-15% 
+Logistics Management's annual peak season survey finds a majority of supply chain managers expect significant capacity tightening in H2 2026, with truckload rates forecast to rise 8–15% driven by driver shortage from government enforcement actions, tariff-driven trailer and tractor price increases, and peak-season demand pull. 
+
+-------------------------
+en_costar
+2026-07-15 20:00:00
+U.S. Retail Asking Rent Growth Slows in Q2 2026 as Construction Stays Below 10-Year Average 
+CoStar's Q2 2026 retail market analysis finds asking rent growth decelerating across major U.S. markets as occupier demand moderates following pandemic-era absorption peaks, with retail construction at just 72.1 million square feet—below the 10-year average—limiting new supply pressure on existing landlords. 
+
+-------------------------
+en_finextra
+2026-07-14 20:00:00
+Nubank Receives Banking Authorisation in Mexico 
+Brazilian fintech giant Nubank received final authorisation from Mexico's CNBV to begin full banking operations in the country, making it the largest digital bank in Mexico with over 15 million customers and marking a major expansion of Latin America's largest neobank beyond its home market. The authorization allows Nubank to offer deposit accounts and lending products under a full banking license. 
+
+-------------------------
+en_telehealth
+2026-07-14 20:00:00
+Medical AI Privacy Study Finds Uneven Patient Risks Across Demographic Groups 
+A new study finds that certain patient groups—particularly older adults and those with complex chronic conditions—face disproportionately higher privacy risks from medical AI systems even when aggregate testing indicates models are secure, raising equity concerns about AI deployment in healthcare settings. 
+
+-------------------------
+en_selfdrivenews
+2026-07-14 20:00:00
+NHTSA Issues Call to Action: AV Developers Must Address First-Responder Interference by Month-End 
+The National Highway Traffic Safety Administration issued a formal call to action demanding autonomous vehicle companies submit corrective plans by end of July to address a documented pattern of AVs blocking emergency vehicles, citing specific incidents in which robotaxis impeded ambulances and fire trucks in urban settings. 
+
+-------------------------
+en_mondaq
+2026-07-14 20:00:00
+2026 Mid-Year Update on SEC and CFTC Enforcement: Agencies Pivot to Targeted Fraud Actions 
+Mondaq's mid-year enforcement update documents the SEC and CFTC shifting from high-volume technical violations toward targeted fraud and market manipulation cases, with both agencies rescinding their no-deny settlement policies, restructuring enforcement task forces, and enhancing inter-agency coordination on complex cross-market schemes. 
+
+-------------------------
+en_ascopost
+2026-07-14 20:00:00
+FDA Grants Traditional Approval to Selpercatinib for RET Fusion-Positive Solid Tumors 
+The FDA granted traditional approval to selpercatinib (Retevmo) for adults and pediatric patients aged 2 years and older with locally advanced or metastatic RET fusion-positive solid tumors, converting an earlier accelerated approval based on confirmatory trial data showing durable response rates across multiple tumor types. 
+
+-------------------------
+en_machinedesign
+2026-07-14 20:00:00
+The AI Trainer, the Generalist, and the Cable Inserter: Inside Teradyne's Industrial AI Workforce 
+Machine Design profiles Teradyne's deployment of three purpose-built robot archetypes—an AI trainer bot, a generalist assembly robot, and a cable-handling specialist—each using machine learning to handle high-variability manufacturing tasks that previously required skilled human operators on mixed-model assembly lines. 
+
+-------------------------
+en_miningdigital
+2026-07-13 20:00:00
+Hatch and Ma'aden Sign Saudi Mining Partnership With Canadian PM in Attendance 
+Engineering firm Hatch signed a strategic partnership with Saudi mining company Ma'aden in Jeddah, witnessed by Canadian Prime Minister Mark Carney and Saudi Arabia's Minister of Investment, to support mine development and processing capacity expansion as part of Saudi Arabia's Vision 2030 minerals strategy. 
+
+-------------------------
+en_lifesciencedaily
+2026-07-13 20:00:00
+Weekly News Roundup 13 July 2026: Vertex Acquires Crinetics for $10B, Key Oncology Data 
+Life Science Daily News' weekly roundup covers Vertex Pharmaceuticals' $10 billion all-cash acquisition of Crinetics Pharmaceuticals—its largest deal ever—plus landmark daraxonrasib KRAS cancer data nearly doubling overall survival versus chemotherapy, and FDA approval of the COVID-19 antiviral Xocova ahead of schedule. 
+
+-------------------------
+en_brusselsmorning
+2026-07-12 20:00:00
+Kyiv Demonstrations: What Is Driving Ukraine's Protests Against Defence Leadership Changes? 
+Thousands gathered in Kyiv amid public concern over President Zelenskiy's defence leadership reshuffles, including the dismissal of former Defence Minister Fedorov, as Ukraine enters its fourth year of full-scale war with Russia and political tensions over wartime governance intensify. 
+
+-------------------------
+en_lifescivoice
+2026-07-10 20:00:00
+Lilly Acquires Kelonia for Up to $7 Billion to Expand In Vivo Gene Therapy Pipeline 
+Eli Lilly announced the acquisition of gene therapy biotech Kelonia for up to $7 billion, gaining its proprietary in vivo lentiviral vector platform targeting rare hematologic and metabolic diseases, in one of the year's largest biopharma M&A transactions reflecting the industry's accelerating bet on next-generation genetic medicines. 
+
+-------------------------
+en_eepower
+2026-07-10 20:00:00
+Construction Begins on Largest Renewable Energy Project in U.S. History 
+Construction started on a 5 GW hybrid solar-wind-battery storage complex in the U.S. Southwest following FERC approval, representing the largest single renewable energy project in U.S. history and signaling a structural shift to gigascale clean energy infrastructure development driven by AI data center power demand. 
+
+-------------------------
+en_miningdigital
+2026-07-10 20:00:00
+BHP Submits US$1.5bn Plan to Reopen Cerro Colorado Copper Mine in Chile 
+BHP filed plans with Chile's environmental regulator to reopen the Cerro Colorado open-pit copper mine with a US$1.5 billion investment extending its operational life by 20 years, responding to surging copper demand driven by global electrification programs and AI data center infrastructure buildouts. 
+
+-------------------------
+en_ascopost
+2026-07-10 20:00:00
+EMERALD-3 Trial: STRIDE Plus TACE Extends Survival in Unresectable Hepatocellular Carcinoma 
+Phase III EMERALD-3 trial results showed that combining the STRIDE immunotherapy regimen (durvalumab plus tremelimumab) with transarterial chemoembolization significantly extended progression-free and overall survival in unresectable hepatocellular carcinoma, supporting a new combination standard of care for embolization-eligible patients. 
+
+-------------------------
+cn_yicaiglobal
+2026-07-10 20:00:00
+Key Chinese Government Bodies Unveil 2026 Economic Action Plans With Consumption and Industrial Focus 
+Major Chinese economic ministries including the NDRC and Ministry of Finance released detailed 2026 stimulus and structural reform action plans, prioritizing domestic consumption stimulus, industrial upgrade subsidies for advanced manufacturing, and targeted credit easing to shore up private sector confidence amid trade tensions. 
+
+-------------------------
+en_costar
+2026-07-10 20:00:00
+CoStar Launches Commercial Real Estate Platform in France, Targeting €300B Market 
+CoStar Group expanded into France, launching its CRE data and analytics platform targeting an estimated €300 billion commercial property market, offering unified property records, live availabilities, verified sales comparables, market news, and AI-powered analytics tailored to the French brokerage and investor community. 
+
+-------------------------
+en_farmonaut
+2026-07-10 12:00:00
+Agriculture Studies 2026: 7 Breakthrough Trends Reshaping Precision Farming Globally 
+Farmonaut identifies seven major trends reshaping global agriculture in 2026 including AI-driven satellite crop monitoring, predictive yield mapping, automated sensor-triggered irrigation, gene-edited drought-resistant varieties, autonomous precision sprayers, blockchain food traceability, and satellite-based carbon credit verification for regenerative farms. 
+
+-------------------------
+en_selfdrivenews
+2026-07-09 20:00:00
+CleverSolutions Spins Off Standalone AV Fleet Operations Company 
+CleverSolutions launched CleverSolutions Autonomous as an independent company to operate autonomous vehicle fleets for public transit authorities, private mobility providers, and logistics operators, building on its robotaxi software stack and positioning the spinoff to compete directly with Waymo Via and Zoox commercial fleet services. 
+
+-------------------------
+en_sciencetimes
+2026-07-09 20:00:00
+CRISPR Technology TAPIR Gives Scientists Precise Control Over Cellular Protein Production 
+Scientists developed TAPIR, a CRISPR-based tool for precise programmable regulation of protein production levels in living cells, enabling more accurate control of gene expression that could accelerate development of gene therapies, cancer treatments, and cellular reprogramming applications. 
+
+-------------------------
+en_sciencetimes
+2026-07-09 12:00:00
+Creatine May Strengthen Immune System Against Cancer by Boosting T Cell Energy Metabolism 
+New research finds creatine supplementation may enhance the anti-tumor activity of T cells and natural killer cells by boosting their energy production through the phosphocreatine-ATP shuttle, opening a low-cost nutritional adjunct pathway to complement existing cancer immunotherapy regimens. 
+
+-------------------------
+en_insideprecisionmedicine
+2026-07-08 20:00:00
+ctDNA Blood Test Identifies Best Candidates for Radiopharmaceutical Prostate Cancer Therapy 
+Research in The Journal of Nuclear Medicine demonstrates that circulating tumor DNA liquid biopsy assays can more precisely identify castration-resistant prostate cancer patients likely to respond to lutetium-177 PSMA radiopharmaceutical therapy, enabling better patient selection and sparing non-responders from unnecessary toxicity. 
+
+-------------------------
+en_lifescivoice
+2026-07-08 20:00:00
+Protego Biopharma Raises $130M Series B After PROT-001 Phase 2 Breakthrough 
+Protego Biopharma raised $130 million in a Series B round following strong Phase 2 results for its lead asset PROT-001, a proprietary RNA-targeting therapeutic for neurodegenerative diseases, with investors citing the platform's versatility across multiple central nervous system indications as the key differentiator. 
+
+-------------------------
+en_inboundlogistics
+2026-07-08 20:00:00
+Carrier Fraud Prevention: Who's Really Vetting Your Carriers? 
+Inbound Logistics examines the growing epidemic of carrier fraud originating from unvetted public load board postings, recommending shippers adopt multi-layer verification including DOT number validation, insurance cross-checks, real-time GPS tracking enrollment, and multi-factor digital identity confirmation before tender. 
+
+-------------------------
+en_logisticsmgmt
+2026-07-08 20:00:00
+U.S. Rail Carload and Intermodal Volumes Post Strong Annual Gains for Week Ending July 4 
+The Association of American Railroads reported rail carloads rose 3.7% and intermodal units surged 12.9% year-over-year for the week ending July 4, 2026, reflecting the ongoing industrial recovery and tariff-driven inventory front-loading by importers ahead of anticipated August duty rate changes. 
+
+-------------------------
+en_finextra
+2026-07-07 20:00:00
+JPMorgan and BofA Explore Acquisition of Fiserv's Star Debit Network 
+JPMorgan Chase and Bank of America have held discussions about potentially acquiring Fiserv's Star Network debit payments business, with Wells Fargo and PNC also reportedly in talks, in a deal that would reshape the U.S. debit card interchange and routing landscape under new Federal Reserve routing mandates. 
+
+-------------------------
+en_telehealth
+2026-07-07 20:00:00
+Patients Accept AI-Drafted Portal Messages Only With Mandatory Clinician Review 
+A JAMA Network Open study found patients broadly accept AI-drafted clinical portal messages but overwhelmingly require a clinician to verify every word before delivery, creating a workflow challenge for healthcare organizations deploying AI messaging at scale that may negate efficiency gains. 
+
+-------------------------
+en_selfdrivenews
+2026-07-07 20:00:00
+Aidoptation Wins Belgian Approval for Level 4 Autonomous Driving on 100 km of Motorway 
+Belgian transport authorities granted Aidoptation permission to conduct Level 4 fully driverless tests across 100 km of Belgian E313 and E314 motorways, making this the first EU approval for fully autonomous vehicle testing at highway speeds on public roads without a safety driver on board. 
+
+-------------------------
+en_robotics247
+2026-07-07 20:00:00
+ABB Robotics Launches Flexlex F712 Autonomous Forklift for AI-Powered AMR Portfolio 
+ABB Robotics unveiled the Flexlex F712 autonomous forklift using AI-powered visual SLAM navigation for warehouse and manufacturing logistics, requiring no fixed infrastructure such as floor markers or QR codes and operating alongside human workers using standard AMR safety standards. 
+
+-------------------------
+en_mondaq
+2026-07-07 20:00:00
+SEC Watch Monthly Takeaways for Asset Managers: July 2026 
+Mondaq's July asset manager SEC roundup covers new private fund disclosure rule proposals, updated guidance on AI-generated investment recommendations and model governance requirements, and a wave of examination deficiency letters targeting compliance gaps in algorithmic trading oversight and best-execution documentation. 
+
+-------------------------
+en_miningsee
+2026-07-07 12:00:00
+Europe's Critical Minerals 2026-2030: Industrial Financing Will Matter More Than Discovery 
+A new analysis argues that Europe's critical minerals race will be won not by companies with the largest deposits but by those able to finance, construct, and operate processing infrastructure at scale, with permitting bottlenecks shifting competitive advantage toward capital access and supply chain integration. 
+
+-------------------------
+en_telehealth
+2026-07-07 12:00:00
+Done Global Founder Sentenced to Six Years in $90M Adderall Telehealth Fraud 
+The founder of Done Global was sentenced to six years in federal prison for running a subscription telehealth prescribing model that the DOJ says illegally distributed over 37 million stimulant pills to patients without adequate clinical assessment, one of the largest telehealth fraud prosecutions to date. 
+
+-------------------------
+en_essnews
+2026-07-06 20:00:00
+Cuba Commissions First 50 MW Battery Energy Storage System 
+Cuba commissioned its first utility-scale 50 MW battery energy storage system designed to store excess daytime solar generation, provide frequency regulation, and reduce dependence on aging diesel generation, marking a milestone for energy transition in the Caribbean island nation's isolated power grid. 
+
+-------------------------
+en_lifesciencedaily
+2026-07-06 20:00:00
+Weekly News Roundup 6 July 2026: Vertex Expands Casgevy Approval to Children as Young as Two 
+Life Science Daily News reports Vertex Pharmaceuticals expanded the FDA approval of Casgevy gene therapy to patients as young as two years old for sickle cell disease and transfusion-dependent beta thalassemia, making it the first gene therapy cleared for young children in both conditions. 
+
+-------------------------
+en_metrology_news
+2026-07-06 12:00:00
+METROLOGY BREW 6 July: US Manufacturing Tech Orders Up 28.9%, IMTS 2026 Previews Released 
+U.S. manufacturing technology orders totaled $2.19 billion in the first four months of 2026, up 28.9% from the same period of 2025, as reshoring investments drive capital equipment demand, while major machine tool and metrology companies released preview announcements ahead of IMTS 2026 in Chicago. 
+
+-------------------------
+en_lifescivoice
+2026-07-05 20:00:00
+AstraZeneca Phase 3 MIRANDA Trial Succeeds in COPD With Tozorakimab 
+AstraZeneca's Phase 3 MIRANDA trial met its primary endpoint, demonstrating that Tozorakimab, an interleukin-33 inhibitor, significantly reduced exacerbation rates in patients with moderate-to-severe COPD, supporting a regulatory filing planned for 2027 that could expand the drug's approved indications beyond heart failure. 
+
+-------------------------
+en_logisticsmgmt
+2026-07-05 20:00:00
+Trucking Executives Bullish as Pricing Pendulum Swings to Carriers After Years of Surplus 
+After years of shipper-favorable oversupply, trucking executives and freight analysts say the market has decisively shifted to carrier advantage in 2026, with constrained capacity from driver enforcement actions, recovering freight demand, and tariff-driven volume reshaping lane rates across most truckload geographies. 
+
+-------------------------
+en_distillintelligence
+2026-07-03 20:00:00
+Semiconductors & AI Chips Briefing July 3: Samsung and SK Hynix Plan $1 Trillion Korea Expansion 
+Distill Intelligence's July 3 briefing covers Samsung and SK Hynix announcing a combined investment exceeding $1 trillion over the next decade to build semiconductor clusters and AI data centers in South Korea, aimed at maintaining dominance in HBM, DRAM, and advanced packaging as global AI hardware demand accelerates. 
+
+-------------------------
+en_sciencetimes
+2026-07-03 20:00:00
+How Does Extreme Heat Affect Your Body? Heat Exhaustion, Heatstroke, and Warning Signs 
+Science Times explains how extreme heat overwhelms the body's thermoregulation mechanisms, covering the progression from heat cramps and exhaustion to heat stroke, early warning signs clinicians recommend monitoring, and why 2026's record summer temperatures are increasing emergency department visits globally. 
+
+-------------------------
+en_eepower
+2026-07-03 12:00:00
+EIA Projects Record 32.1 GW of Solar Capacity to Come Online in U.S. in 2026 
+The U.S. Energy Information Administration updated its 2026 capacity forecast to 32.1 GW of solar additions—the highest ever recorded—as falling panel costs, interconnection queue improvements under FERC Order 2023, and investment tax credit extensions accelerate the solar deployment pipeline. 
+
+-------------------------
+en_farmonaut
+2026-07-03 12:00:00
+Current Agricultural Issues 2026: Heat, Fertilizer Disruptions, and Food Security Pressure 
+Farmonaut's analysis of current global agricultural challenges covers record heat-driven yield losses across South Asia and the U.S. Midwest, persistent fertilizer supply disruptions traced to geopolitical factors, and mounting pressure on food price stability heading into the second half of 2026. 
+
+-------------------------
+en_essnews
+2026-07-02 20:00:00
+Tesla Deploys 13.5 GWh of Energy Storage in Q2, Up 53% Sequentially 
+Tesla reported deploying 13.5 GWh of Megapack and Powerwall globally in Q2 2026, a 53% sequential increase and 40% year-over-year gain, cementing its position as the world's largest utility-scale battery storage manufacturer as grid-scale BESS demand outpaces EV energy storage growth. 
+
+-------------------------
+en_mondaq
+2026-07-02 20:00:00
+CFTC and SEC Seek Comment on Clarifying Swaps vs. Security-Based Swaps Jurisdictional Divide 
+The CFTC and SEC jointly issued a request for comment on drawing clearer jurisdictional lines between swaps and security-based swaps, a long-running regulatory ambiguity that has complicated compliance for multi-asset derivatives dealers and hedge funds operating across both agencies' oversight regimes. 
+
+-------------------------
+en_finovate
+2026-07-02 12:00:00
+Finovate Podcast: Five Best of Show Winners from FinovateSpring 2026 
+The Finovate Podcast spotlighted the five FinovateSpring 2026 Best of Show companies spanning embedded finance, stablecoin-powered payments, mainframe modernization, and AI-enabled banking personalization, reflecting the dominant product themes of this year's fintech conference circuit. Judges highlighted real-time deployment readiness as the key differentiator from prior years. 
+
+-------------------------
+en_miningsee
+2026-07-02 12:00:00
+Triple Flag Restructures Steppe Gold Stream, Underscoring Contract Stability Importance 
+Triple Flag Precious Metals renegotiated its gold streaming agreement with Steppe Gold following project delays in Mongolia, demonstrating how streaming and royalty structures remain vital risk-sharing tools in emerging-market mining finance even when operating timelines slip due to permitting or infrastructure challenges. 
+
+-------------------------
+en_inboundlogistics
+2026-07-01 20:00:00
+A Shipper's Guide to Science-Based Cargo Securement at High Altitudes 
+A technical guide explains how high-altitude freight routes exceeding 11,000 feet above sea level require specialized cargo securement methods accounting for lower air pressure, temperature extremes, and grade braking forces, as supply chain reconfigurations push more truck traffic through mountain-state distribution corridors. 
+
+-------------------------
+en_miningdigital
+2026-07-01 20:00:00
+South32 Sells Aluminium Assets to Alcoa for Up to US$5.6bn 
+South32 completed the divestiture of its global aluminium portfolio to Alcoa for up to US$5.6 billion, including interests in Worsley Alumina, Hillside Aluminium, and related Brazilian bauxite and refining operations, as South32 reshapes its portfolio toward battery metals and base metals. 
+
+-------------------------
+en_lifesciencedaily
+2026-07-01 20:00:00
+Biopharma H1 2026 Review: 52 M&A Deals, $134B in Value Surpasses Full-Year 2025 by June 
+Life Science Daily News' H1 2026 biopharma review counts 52 completed M&A transactions with 33 deals valued at over $1 billion each, surpassing the full-year 2025 total in just six months, as IPOs returned in force with biotech listings outpacing 2025 levels in both number and capital raised. 
+
+-------------------------
+en_biofuelsdigest
+2026-07-01 20:00:00
+EPA Proposes Record US Renewable Fuel Volume Obligations for 2026-2027 
+The EPA proposed renewable volume obligations of at least 7.12 billion RINs (5.61 billion gallons) of biomass-based diesel for 2026 and 7.5 billion RINs for 2027, significantly exceeding prior mandates and signaling strong continued policy support for the biofuel sector amid broader energy transition debates. 
+
+-------------------------
+en_robotics247
+2026-07-01 12:00:00
+North America Robot Orders Hit $2.25B in 2025 as 2026 Becomes Full Deployment Year 
+Robotics 24/7 reports that North American manufacturers placed 36,766 robot orders valued at $2.25 billion in 2025, with 2026 shaping up as the year full-scale deployment replaces pilot programs, driven by advances in edge AI, collaborative robots, vision-guided systems, and digital twin integration. 
+
+-------------------------
+en_gpuinsights
+2026-07-01 12:00:00
+Goldman Sachs Projects Nvidia to Generate $383 Billion in Hardware Sales in 2026 
+GPU Insights summarizes Goldman Sachs' updated forecast projecting Nvidia will generate $383 billion in GPU and AI hardware revenue in calendar year 2026—a 78% increase year-over-year—as hyperscaler capital expenditure continues accelerating and enterprise GPU adoption broadens beyond frontier model training. 
+
+-------------------------
+en_distillintelligence
+2026-06-26 20:00:00
+Semiconductors & AI Chips Briefing June 26: Micron Posts Record Revenue, Surpasses Meta in Market Cap 
+Micron Technology reported record-breaking fiscal Q3 2026 results driven by surging HBM3E and DRAM demand for AI data centers, with forward guidance projecting continued above-consensus growth and the company's market valuation rising past Meta Platforms for the first time. 
+
+-------------------------
+en_ascopost
+2026-06-25 20:00:00
+PROTEUS Trial: Perioperative Apalutamide Improves Outcomes in High-Risk Localized Prostate Cancer 
+The PROTEUS trial demonstrated that perioperative apalutamide improved pathological complete response rates and event-free survival in high-risk localized prostate cancer patients undergoing radical prostatectomy, supporting a potential expanded label and new perioperative standard of care ahead of a planned regulatory submission. 
+
+-------------------------
+en_machinedesign
+2026-06-25 20:00:00
+Siemens Lays Out Vision for Digital Manufacturing at Automate 2026 
+Siemens demonstrated at Automate 2026 how digital thread and AI agent-to-agent technology allowed its Fort Worth facility to come online in under 15 months, using closed-loop manufacturing data, digital twin simulation, and automated quality control to accelerate production ramp and reduce commissioning risk. 
+
+-------------------------
+en_robotics247
+2026-06-25 12:00:00
+Regal Rexnord and ABB Showcase Power-Dense Motion Solutions at Automate 2026 
+Regal Rexnord and ABB Robotics demonstrated collaborative power-dense motion and drive technologies at Automate 2026 in Chicago, showing how AI-supervised automation reduces commissioning time and improves throughput in mixed human-robot assembly environments compared with traditional fixed automation. 
+
+-------------------------
+en_farmonaut
+2026-06-20 12:00:00
+The Future of Farming: 7 Innovations Gaining Momentum in Agriculture 2026 
+Farmonaut reviews seven transformative farming innovations gaining traction in 2026 including vertical farm AI control systems, gene-edited drought-resistant crop varieties, autonomous precision herbicide sprayers, satellite-based soil carbon monitoring, and CRISPR-improved nitrogen fixation for major row crops. 
+
+-------------------------
+en_chipscalereview
+2026-06-20 12:00:00
+Resonac Launches R&D Center for Next-Gen Semiconductor Packaging Under US-JOINT Consortium 
+Resonac opened a semiconductor packaging R&D center in Silicon Valley as part of the US-JOINT consortium, combining Japanese and American materials and equipment companies to accelerate development of hybrid bonding, glass panel packaging, and advanced substrate technologies for next-generation AI chip packages. 
+
+-------------------------
+en_biofuelsdigest
+2026-06-15 20:00:00
+Biofuels Mandates Around the World 2026: 50+ Countries Now Requiring Blend Minimums 
+Biofuels Digest's annual global mandates survey finds over 50 countries now enforce minimum biofuel blend requirements, with Brazil's 15% biodiesel and India's 20% ethanol mandates leading developing world adoption, while EU sustainable aviation fuel requirements are driving billions in new SAF production investments. 
+
+-------------------------
+en_innovativegenomics
+2026-06-15 12:00:00
+New CRISPR Technique Selectively Shreds Cancer Cells, Including Undruggable Cancers 
+IGI researchers published a chromatin-shredding CRISPR approach that selectively destroys cancer cells carrying a mutation found in nearly half of all malignancies, offering a potential therapeutic avenue for previously undruggable cancer subtypes that lack targetable surface receptors or enzymatic drivers. 
+
+-------------------------
+en_gpuinsights
+2026-06-15 12:00:00
+AI Data Center Power Infrastructure 2026: Managing the GPU Cluster Energy Crisis 
+GPU Insights examines the power infrastructure challenge facing AI data center operators in 2026, covering liquid immersion cooling architectures, on-site gas turbine generation partnerships, and utility-scale demand response programs as AI cluster power densities push beyond 40 kW per rack. 
+
+-------------------------
+en_distillintelligence
+2026-06-05 20:00:00
+Semiconductors & AI Chips Briefing June 5: Nvidia Unveils Vera CPU and RTX Spark Superchip 
+Nvidia unveiled the Vera CPU and RTX Spark superchip at Computex 2026, signaling a major push into personal AI computing and on-device inference as Jensen Huang positioned Nvidia to own every hardware layer of the AI stack from hyperscale data centers to consumer laptops. 
+
+-------------------------
+en_chipscalereview
+2026-05-15 12:00:00
+ASU and Deca Technologies Selected to Lead $100M SHIELD USA Advanced Packaging Program 
+Arizona State University and Deca Technologies were selected to lead the $100 million DARPA-funded SHIELD USA program to strengthen U.S. domestic semiconductor packaging and back-end manufacturing capabilities for national security applications, prioritizing fan-out and embedded die technologies. 
+
+-------------------------
+en_gpuinsights
+2026-05-12 12:00:00
+NVIDIA Blackwell B200 vs AMD MI400: Detailed Data Center AI Performance Benchmark 
+GPU Insights provides a head-to-head benchmark of Nvidia's Blackwell B200 and AMD's MI400 in major AI data center workloads, finding the B200 leads in large-model transformer inference throughput while the MI400 offers more competitive price-performance for distributed training on ROCm-optimized frameworks. 
+
+-------------------------
+en_newspaceeconomy
+2026-04-16 12:00:00
+Military Space Warfare Commercial Market Analysis 2026: $151B SHIELD-D Contract Vehicle Opens 
+New Space Economy's 2026 market analysis examines how the $151 billion Scalable Homeland Innovative Enterprise Layered Defense contract vehicle is reshaping defense-space procurement, with Lockheed Martin, Northrop Grumman, Anduril, and Palantir competing for Golden Dome and broader homeland defense task orders. 
+
+-------------------------
+en_chipscalereview
+2026-04-10 12:00:00
+Launch of UC5000 Panel-Level Packaging Equipment for Large Glass Substrates 
+A new UC5000 semiconductor packaging system was unveiled for high-accuracy die placement and interconnect formation on large glass substrates, supporting the industry transition from wafer-level to panel-level packaging as AI chip designs increasingly exceed conventional wafer size constraints. 
+
+-------------------------
+en_newspaceeconomy
+2026-03-23 12:00:00
+Defense, Security and Intelligence Market Analysis 2026: Golden Dome Architecture Reaches $185B 
+New Space Economy's defense and intelligence review covers the updated U.S. Space Force Golden Dome architecture valued at $185 billion and the Space Development Agency's $3.5 billion award for 72 Tranche 3 missile-tracking satellites, as commercial space-defense integration accelerates. 
+
+-------------------------
+en_innovativegenomics
+2026-03-10 12:00:00
+CRISPR Clinical Trials 2026 Update: 51% of New Trials Now Targeting Non-Oncology Conditions 
+IGI's annual CRISPR clinical trials tracker finds 51% of newly initiated gene therapy trials in 2026 now target non-oncology indications such as cardiovascular disease, hemoglobinopathies, and metabolic disorders, up from 39% in 2025, signaling the field's maturation beyond its oncology roots. 
+
+-------------------------
+en_innovativegenomics
+2026-03-05 12:00:00
+CRISPR for Cancer: A Q&A with Justin Eyquem on Engineering Immune Cells 
+IGI researcher Justin Eyquem discusses how genome engineering of T cells and natural killer cells using CRISPR can dramatically improve their tumor-targeting accuracy, reduce off-target toxicities, and expand eligibility to patients whose cancers have evaded prior cellular immunotherapy approaches. 
+
+-------------------------
+en_newspaceeconomy
+2025-11-03 12:00:00
+Voyager Technologies: Advancing Defense, National Security, and Commercial Space Innovation 
+New Space Economy profiles Voyager Technologies, a vertically integrated defense space company developing satellite communications, remote sensing, and national security payload systems as commercial investment in defense space accelerates driven by Golden Dome and Proliferated Warfighter Space Architecture contracts. 
+
+-------------------------
