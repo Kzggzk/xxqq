@@ -1,0 +1,486 @@
+en_taipeitimes
+2026-07-25 12:00:00
+TIER lifts GDP forecast to 10.38 percent
+Taiwan's TIER raised its 2026 GDP forecast to 10.38% from 7.56%, citing the AI boom and near-full utilization of TSMC's advanced chip packaging capacity.
+
+-------------------------
+en_taskandpurpose
+2026-07-25 12:00:00
+Army helicopters, Navy drones sink two retired ships at RIMPAC
+US Army helicopters and Navy drone boats sank two decommissioned ships during RIMPAC 2026, demonstrating multi-domain targeting in a live-fire maritime exercise.
+
+-------------------------
+en_aba_banking_journal
+2026-07-24 12:00:00
+FinCEN to finalize revised beneficial ownership reporting rule 'very soon'
+FinCEN indicated imminent finalization of revised beneficial ownership reporting rules, providing long-awaited clarity for banks after uncertainty since the original Corporate Transparency Act implementation.
+
+-------------------------
+en_alternative_credit_investor
+2026-07-24 12:00:00
+Private credit firms 'pivoting in' to infrastructure finance
+Ares, Blackstone and others are expanding into infrastructure lending as direct lending margins compress and institutional appetite shifts toward real assets.
+
+-------------------------
+en_crispr_medicine_news
+2026-07-24 12:00:00
+CMN Weekly (24 Juli 2026) - Your Weekly CRISPR Medicine News
+Covers FDA's expanded Casgevy approval for children aged 2 and older with sickle cell disease, and Intellia's Phase 3 showing an 87% reduction in hereditary angioedema attacks.
+
+-------------------------
+en_taipeitimes
+2026-07-24 12:00:00
+Taiwan remains on US currency manipulation monitoring list
+Taiwan stayed on the US monitoring list as its current account surplus hit 19.6% of GDP amid the AI export boom driving record semiconductor revenues.
+
+-------------------------
+en_alternative_credit_investor
+2026-07-23 12:00:00
+Institutional investors set to diversify away from direct lending
+70% of institutional LPs expect diversification beyond corporate direct lending over the next 12 months, with asset-based finance and specialty finance leading alternatives.
+
+-------------------------
+en_drewry
+2026-07-23 12:00:00
+World Container Index - 23 Jul
+Drewry's WCI fell 4% to $4,374 per 40ft container for the week of July 23 on declining Asia-Europe and transpacific spot rates.
+
+-------------------------
+en_medicalxpress
+2026-07-22 12:00:00
+Shape-shifting drug hits tumors in multiple ways, improves outcomes in mice
+Antibody-drug conjugates with click-chemistry linkers self-assemble in vivo into dual-antibody complexes targeting EGFR and HER2 for improved anti-tumor efficacy in mouse models.
+
+-------------------------
+en_mondaq
+2026-07-22 12:00:00
+Banking Agencies Issue Interagency Guidance On Lending To Non-Work Authorized Borrowers
+US federal banking regulators issued joint guidance on compliance expectations for loans to borrowers lacking work authorization, addressing fair lending standards under existing statutory frameworks.
+
+-------------------------
+en_taipeitimes
+2026-07-22 12:00:00
+TIER expects Taiwan's GDP growth to top 10% in 2026
+TIER projected GDP exceeding 10% for 2026 driven by strong AI demand and near-full utilization of advanced chip packaging at TSMC and its major partners.
+
+-------------------------
+en_techtimes
+2026-07-22 12:00:00
+Super El Niño 2026 Threatens 36 Million With Hunger Before Peak Arrives
+El Niño in mid-2026 caused more than 1,300 excess heat deaths in Europe in four weeks and threatens agricultural output across Southeast Asia, Latin America, and sub-Saharan Africa.
+
+-------------------------
+en_the_pig_site
+2026-07-22 12:00:00
+Feeder cattle futures recover after hitting fresh lows - CME
+CME feeder cattle futures recovered from multi-month lows as tight near-term supply projections and improving export demand supported prices during the week.
+
+-------------------------
+en_aba_banking_journal
+2026-07-21 12:00:00
+GAO: Banking agencies lack processes for determining success of regulatory reviews
+GAO found federal banking regulators lack documented procedures to evaluate effectiveness of mandatory decennial regulatory reviews, raising accountability concerns about oversight quality.
+
+-------------------------
+en_wealth_management
+2026-07-21 12:00:00
+13 Investment Must Reads for This Week (July 21, 2026)
+The curated list highlighted Americans cutting retirement savings, ETF inflows surpassing $1 trillion year-to-date, and Wells Fargo's AI Teammate tool for financial advisors.
+
+-------------------------
+en_alternative_credit_investor
+2026-07-20 12:00:00
+Allvue Systems launches private credit benchmarks based on deal data
+Allvue launched private credit benchmarks from actual deal data, addressing a top technology need cited by 44% of portfolio managers in its annual survey.
+
+-------------------------
+en_techtimes
+2026-07-20 12:00:00
+Philadelphia Math Congress Opens Thursday: Boycott, Leaked Medals, and Century-Old Proofs
+The 2026 International Congress of Mathematicians opened in Philadelphia amid a coding error that leaked Fields Medal winners early and growing academic boycott controversies.
+
+-------------------------
+en_medicalxpress
+2026-07-18 12:00:00
+HIV vaccine triggers broadly neutralizing antibodies in 44% of primates
+A new HIV vaccine developed by LJI, Scripps Research, and IAVI generated broadly neutralizing antibodies in 44% of vaccinated primates, a significant step toward a human candidate.
+
+-------------------------
+en_crispr_medicine_news
+2026-07-17 12:00:00
+CARBON Newsletter (17 July 2026) - Your Latest News About CRISPR in AgroBio
+The CARBON newsletter covered a CRISPR enzyme discovery yielding a cancer cell elimination strategy, and gene-edited crop varieties improving drought resistance in field trials.
+
+-------------------------
+en_cw_com
+2026-07-16 12:00:00
+From Chip War to Chip Value: Taiwan and the New Geopolitics of Technology Trust
+The 2026 Pax Silica Summit reframed semiconductor geopolitics around trust and reliability; Taiwan's manufacturers now demonstrate geopolitical neutrality alongside world-class technical capability.
+
+-------------------------
+en_drewry
+2026-07-16 12:00:00
+Intra-Asia Container Index - 16 Jul
+Drewry's IACI softened 1% to $978 per 40ft container as of July 16, reflecting modest intraregional demand cooling in intra-Asia trade lanes.
+
+-------------------------
+en_aba_banking_journal
+2026-07-15 12:00:00
+Main Street Capital Access Act clears House Rules Committee
+The Main Street Capital Access Act advanced in the House with tailored de novo bank regulations, including a 3-year capital phase-in period and a 90-day deadline for merger decisions.
+
+-------------------------
+en_mlcommons
+2026-07-15 12:00:00
+Agentic Inference for MLPerf Inference
+MLCommons announced a multi-turn benchmark for measuring LLM serving under growing context windows and closed-loop agent workflows, reflecting the shift to agentic AI as the dominant deployment paradigm.
+
+-------------------------
+en_multifamily_dive
+2026-07-15 12:00:00
+Notable apartment deals so far in 2026
+Notable 2026 transactions include Veris Residential's $3.4 billion acquisition by Affinius Capital and several large Sun Belt portfolio sales as private equity returned to the multifamily market.
+
+-------------------------
+en_taskandpurpose
+2026-07-15 12:00:00
+Army orders rifle-mounted smart scopes to down small drones
+The US Army procured rifle-mounted smart sighting systems for infantry soldiers to engage small commercial drones on the battlefield, addressing a growing tactical threat.
+
+-------------------------
+en_the_pig_site
+2026-07-15 12:00:00
+Hog futures climb as pork cutout tops $101 - CME
+CME lean hog futures moved higher as pork cutout values crossed $101 per hundredweight on seasonal demand patterns, tighter US slaughter numbers, and strong export sales to Central America and Malaysia.
+
+-------------------------
+en_miningsee
+2026-07-14 12:00:00
+Mining News Roundup CW29
+CW29 roundup of 54 articles covering EU carbon boundary rules affecting mineral imports, graphite supply bottlenecks from battery demand, and UK tungsten and tin project developments.
+
+-------------------------
+en_mondaq
+2026-07-14 12:00:00
+CLIENT ALERT: 2026 Mid-Year Update On SEC And CFTC Enforcement
+A mid-year review confirmed the SEC and CFTC shifted to targeted fraud-focused enforcement and created a joint MOU establishing a harmonized regulatory framework for cross-agency cases.
+
+-------------------------
+en_carbon_herald
+2026-07-13 12:00:00
+Brussels sets first carbon farming certification rules
+The EU issued its first regulatory framework for certifying carbon removal through agriculture, enabling farmers to participate in voluntary carbon markets for the first time.
+
+-------------------------
+en_sof_news
+2026-07-13 12:00:00
+SOF Weekly Update - July 13, 2026
+The UK was designated NATO Allied Reaction Force SOCC after two years of validation, and Denmark assumed lead for NATO's Arctic special operations regional headquarters.
+
+-------------------------
+en_drewry
+2026-07-10 12:00:00
+Cancelled Sailings Tracker - 10 Jul
+Drewry tracked 46 blank sailings over five weeks from July 13, representing a 6% cancellation rate as carriers managed capacity amid Iran strait concerns and softening spot demand.
+
+-------------------------
+en_finovate
+2026-07-10 12:00:00
+How Profitability, Customer Relationships, and AI are Driving Investor Preferences in Fintech
+Fintech investors in 2026 prioritize sustainable profitability and AI efficiency gains, with embedded finance and agentic AI as top themes attracting institutional capital.
+
+-------------------------
+en_medicalxpress
+2026-07-10 12:00:00
+Commonly used drugs show small benefit for long COVID fatigue
+A UCL and UCLH clinical trial found antihistamines and an anti-inflammatory provided modest benefit for long COVID fatigue patients attending specialist clinics.
+
+-------------------------
+en_mondaq
+2026-07-10 12:00:00
+FinTech Global FS Regulatory Round-up - W/e 10 July 2026
+The weekly roundup covered SEC guidance on tokenized securities, DORA active supervision in the EU, and FinCEN progress on beneficial ownership reporting rule implementation.
+
+-------------------------
+en_wealth_management
+2026-07-10 12:00:00
+Private Wealth Investors Pull Back From Private Credit
+iCapital data showed private credit's share of fund flows fell from 41% in Q1 2025 to 18% in Q1 2026, with capital reallocated to private equity and infrastructure strategies.
+
+-------------------------
+en_techtimes
+2026-07-08 12:00:00
+China EV Sales Slide 13% in H1 2026: Only 3 Brands Profitable as Export Push Soars
+China's domestic EV market contracted 13% in H1 2026 from overcapacity and weak demand; only BYD, CATL's vehicle arm, and Li Auto remained profitable while export volumes surged 40%.
+
+-------------------------
+en_wealth_management
+2026-07-07 12:00:00
+10 Investment Must Reads for Week of July 7, 2026
+The weekly roundup featured analysis of $210 billion in June ETF inflows, hybrid advisory models combining human and algorithmic advice, and the latest RIA consolidation activity.
+
+-------------------------
+en_carbon_herald
+2026-07-06 12:00:00
+CCSA EU Conference 2026: Europe's Carbon Capture Debate Moves From Ambition To Execution
+At the Brussels CCSA EU Conference, speakers said Europe's CCS sector now faces commercial and regulatory risks rather than technological ones as the first projects approach final investment decisions.
+
+-------------------------
+en_sof_news
+2026-07-06 12:00:00
+SOF Weekly Brief - July 6, 2026
+Brief covered the Global SOF Foundation's push for higher USSOCOM budget and the impact of autonomous unmanned systems on Special Forces ODA organization as drone integration reshapes doctrine.
+
+-------------------------
+en_cw_com
+2026-07-01 12:00:00
+Taiwan's Stock Market Crosses 40,000-Point Milestone on AI Boom
+Taiwan's benchmark index crossed 40,000 for the first time on TSMC's record earnings and retail investor speculation, with GDP projected to exceed 10% on the AI semiconductor rally.
+
+-------------------------
+en_multi_housing_news
+2026-07-01 12:00:00
+2026 Multifamily Midyear Investment Outlook
+At midyear 2026, multifamily investors navigate elevated borrowing costs as Sun Belt markets absorb new supply while coastal metros with supply constraints show stronger rent growth.
+
+-------------------------
+en_multifamily_dive
+2026-07-01 12:00:00
+Apartment REITs face uncertainty in 2026
+Apartment REITs navigate complex conditions with Sun Belt supply headwinds, high interest rates, and growing uncertainty around rent control legislation in major metro markets.
+
+-------------------------
+en_multifamily_executive
+2026-07-01 12:00:00
+Apartment REITs Enter 2026 in Transition Mode, Banking on Supply Relief
+Apartment REIT executives bank on declining construction starts to ease supply pressure in late 2026 and 2027, focusing on operating efficiency and coastal portfolio repositioning.
+
+-------------------------
+en_orfonline
+2026-07-01 12:00:00
+The Geography and Geopolitics of Hyperscale
+ORF analyzes how China, the UAE, and India are imposing data localization requirements on AI hyperscale infrastructure, reframing cloud computing as a geopolitical sovereignty issue.
+
+-------------------------
+en_recharged
+2026-07-01 12:00:00
+EV Sales Statistics 2026: Global & U.S. Market Trends
+Global EV volumes hit records in 2026 but US growth has cooled; CATL-supplied LFP batteries at $64–76 per kWh drive cost competitiveness while Chinese brands face import barriers.
+
+-------------------------
+en_woodmac
+2026-07-01 12:00:00
+How is energy transition investment evolving in 2026?
+Energy transition investment slipped 4% to $1.58 trillion in real terms as geopolitical tensions prompt reallocation away from hydrogen and early-stage CCS toward proven wind, solar, and battery storage.
+
+-------------------------
+en_miningsee
+2026-06-30 12:00:00
+Mining News Roundup CW27
+CW27 roundup of 74 articles covering Europe's mining revival, lithium and cobalt M&A activity, and Sweden's uranium deposit assessments for EU critical raw materials security.
+
+-------------------------
+en_multi_housing_news
+2026-06-30 12:00:00
+National Multifamily Report – June 2026
+June showed asking rents rising for two consecutive months but yearly growth at just 0.2% to $1,767 as Sun Belt vacancy pressures offset strength in supply-constrained coastal markets.
+
+-------------------------
+en_sof_news
+2026-06-29 12:00:00
+SOF Weekly Brief - June 29, 2026
+Reports on Operation Absolute Resolve's capture of Venezuelan President Maduro and CW5 Eric Slover receiving the Medal of Honor as drone integration advances in Special Operations doctrine.
+
+-------------------------
+en_crispr_medicine_news
+2026-06-26 12:00:00
+CMN Weekly (26 June 2026) - Your Weekly CRISPR Medicine News
+Reports Precision Biosciences' first clinical evidence of eliminating hepatitis B cccDNA using in vivo ARCUS gene-editing, plus updates from 36 active CRISPR trials globally.
+
+-------------------------
+en_mlcommons
+2026-06-16 12:00:00
+MLPerf Training v6.0 Results: New MoE Benchmarks and Record System Diversity
+MLPerf Training v6.0 introduced mixture-of-experts benchmarks and the most diverse hardware submissions to date across GPUs, ASICs, and emerging AI accelerator architectures.
+
+-------------------------
+en_biopharm_international
+2026-06-15 12:00:00
+Biotech's Resurgence: A Video Recap of BIO 2026
+BIO 2026 highlighted biopharma's resurgence through M&A acceleration, CDMO supply chain diversification, and renewed investor confidence from GLP-1 and oncology drug successes.
+
+-------------------------
+en_carbon_herald
+2026-06-15 12:00:00
+Two new BKV carbon capture facilities go operational in Texas
+BKV Corporation brought two new CCS facilities online in Texas, adding to global operational carbon capture capacity of roughly 50 million tons per year.
+
+-------------------------
+en_finovate
+2026-06-15 12:00:00
+Four Innovators in Embedded Finance, Open Finance & Banking Infrastructure
+Finovate profiled four emerging fintechs advancing embedded finance and open banking APIs that enable non-banks to integrate financial services directly into customer workflows.
+
+-------------------------
+en_mlcommons
+2026-06-15 12:00:00
+MLPerf Mobile v6.0: New GenAI Benchmarks for On-Device LLMs
+MLCommons released MLPerf Mobile v6.0 with generative AI benchmarks for on-device LLMs on Android, establishing standardized performance metrics as smartphone AI capability accelerates.
+
+-------------------------
+en_multifamily_dive
+2026-06-15 12:00:00
+Multifamily conferences still ahead in the second half of 2026
+Key H2 2026 multifamily events focus on AI-driven property management, resident retention strategies, new capital structures, and the evolving federal housing policy landscape.
+
+-------------------------
+en_taskandpurpose
+2026-06-13 12:00:00
+US to cut fighters, warships from NATO mission in Europe
+The US announced plans to reduce dozens of aircraft and warships from NATO Europe missions, shifting defense resources and strategic focus toward the Indo-Pacific theater.
+
+-------------------------
+en_biopharm_international
+2026-06-10 12:00:00
+BIO 2026, Biotech Trends, and What's Next
+BIO 2026 discussions centered on oncology bispecific antibodies, in vivo cell therapies, and AI-driven drug discovery as the next frontier for large-molecule pharmaceutical innovation.
+
+-------------------------
+en_globalaginvesting
+2026-06-10 12:00:00
+Brisbane Showcases Its Strength as a Global Agribusiness Investment Hub
+GAI's inaugural Australian summit in Brisbane explored farmland and agtech opportunities, with Australian agricultural exports projected to grow 12% through 2027 on Asian demand.
+
+-------------------------
+en_miningsee
+2026-06-01 12:00:00
+Europe's Critical Minerals Market 2026–2030: Why Industrial Financing Will Matter More Than Resource Discovery
+Europe's critical mineral challenge is industrial financing rather than resource discovery — sufficient deposits exist but refining investment and downstream processing capacity remain critically underdeveloped.
+
+-------------------------
+en_multifamily_executive
+2026-06-01 12:00:00
+Multifamily Executive Conference 2026 to Focus on What's Next
+The November 2026 MFE Conference in Newport Beach will address AI adoption in property management, next-generation development models, and evolving renter demographics shaping demand.
+
+-------------------------
+en_recharged
+2026-06-01 12:00:00
+EV Battery Technology 2026: Solid-State, LFP, Sodium & More
+Solid-state batteries entered real-world testing from Factorial Energy and Changan; LFP remains dominant while CATL sodium-ion batteries prepare for GWh production at a 30% cost advantage over LFP.
+
+-------------------------
+en_multi_housing_news
+2026-05-31 12:00:00
+National Multifamily Report – May 2026
+May data showed physical occupancy holding 95–97% across major REIT portfolios with stable fundamentals but new supply continuing to weigh on Sun Belt apartment pricing.
+
+-------------------------
+en_asme
+2026-05-15 12:00:00
+What Nuclear Energy Technologies Are Actually Advancing in 2026?
+SMRs represent the most structured near-term nuclear development program; TerraPower's NRC construction permit and TVA's Clinch River site are the first concrete steps toward non-light-water reactor commercialization.
+
+-------------------------
+en_finovate
+2026-05-07 12:00:00
+Tracking the Top Fintech Trends at FinovateSpring 2026
+FinovateSpring 2026 in San Diego surfaced community bank digitalization, embedded lending growth, and regulatory technology compliance automation as key industry themes.
+
+-------------------------
+en_biopharm_international
+2026-05-01 12:00:00
+AI, CRISPR, and mRNA Driving Biotech's Smartest Decade Yet
+Converging AI, CRISPR in vivo editing, and mRNA delivery advances enable precision medicines targeting previously undruggable diseases in oncology and metabolic disorders.
+
+-------------------------
+en_globalaginvesting
+2026-05-01 12:00:00
+Lessons from the 2026 Global AgriFoodTech Report
+AgFunder's 2026 report showed agrifoodtech funding flat at $16.2 billion with composition shifts: upstream farm technology drew more capital while food delivery platforms continued contracting.
+
+-------------------------
+en_orfonline
+2026-05-01 12:00:00
+The Global Microchip Conflict: The Semiconductor Fault Line Through Taiwan
+Taiwan's 90%+ share of advanced chip production creates acute geopolitical vulnerability, with quarantine scenarios possible before 2027 that would threaten global AI and defense supply chains.
+
+-------------------------
+en_warecre
+2026-05-01 12:00:00
+Minneapolis Industrial Vacancy Hits 6.0% | 2026 Report
+Minneapolis industrial vacancy reached 6.0% in Q4 2025, the fifth tightest US market and well below the 9.3% national average, as small-bay absorption offset big-box oversupply.
+
+-------------------------
+en_the_pig_site
+2026-04-15 12:00:00
+China's pork production rises 4.2%
+China's Q1 2026 pork output grew 4.2% to 16.69 million metric tons, though the sector struggles with overcapacity and weak consumer demand in a deflationary environment.
+
+-------------------------
+en_warecre
+2026-04-15 12:00:00
+Houston Industrial & Warehouse Market Report | Q1 2026
+Houston industrial vacancy climbed to 7.5% in Q1 2026, up 80 basis points year-over-year, as speculative construction was absorbed while energy sector logistics demand stayed resilient.
+
+-------------------------
+en_warecre
+2026-04-15 12:00:00
+Seattle Industrial & Warehouse Market Report | Q1 2026
+Seattle's industrial vacancy rose to approximately 11.5% in Q1 2026, up 230 basis points year-over-year and the most significant correction in the Puget Sound market in over a decade.
+
+-------------------------
+en_globalaginvesting
+2026-04-01 12:00:00
+The Future of Agriculture Investment: A Preview of the 2026 GAI World Summit
+The GAI World Summit preview highlighted farmland as an inflation hedge, sustainability-linked agricultural credit structures, and satellite and AI analytics for production risk assessment.
+
+-------------------------
+en_cw_com
+2026-03-30 12:00:00
+Climate Change is Stretching Our Days
+New research showed Earth's rotation imperceptibly slowing from melting polar ice mass redistribution, as Taiwan's government assessed rising climate adaptation costs for infrastructure.
+
+-------------------------
+en_asme
+2026-03-01 12:00:00
+Top Mechanical Engineering Research Areas in 2026
+Leading ME R&D priorities include additive manufacturing transitioning to production use, digital twin integration for aerospace and automotive, and AI-assisted simulation eliminating physical prototyping cycles.
+
+-------------------------
+en_orfonline
+2026-03-01 12:00:00
+The geopolitics of de-risking from China: Is India in for a win?
+India's managed interdependence strategy with China — reducing strategic exposure while preserving economic ties — faces near-shoring opportunities that require rapid manufacturing scale-up to capture.
+
+-------------------------
+en_asme
+2026-02-01 12:00:00
+Engineering Education Meets Leadership: Prepare for 2026
+ASME highlights the convergence of engineering skills and leadership as essential for 2026 graduates, with interdisciplinary training bridging mechanical systems, data science, AI ethics, and management.
+
+-------------------------
+en_multifamily_executive
+2026-01-15 12:00:00
+2026 Multifamily Outlook: The Big Reset
+Industry leaders entering 2026 emphasize patience and operational precision as capital markets remain in flux and AI reshapes apartment operations and tenant engagement.
+
+-------------------------
+en_recharged
+2026-01-15 12:00:00
+New EVs Coming 2026: Complete List & Key Highlights
+The 2026 EV launch calendar includes Rivian's R2, Ferrari's first electric vehicle, and Tesla model refreshes; manufacturers compete on range, charging speed, and software capabilities.
+
+-------------------------
+en_woodmac
+2026-01-15 12:00:00
+Energy storage: 5 trends to look for in 2026
+Five key 2026 storage trends: battery costs reaching $75 per kWh for grid-scale, grid-forming inverters, solar co-location, IRA-driven US manufacturing reshoring, and China's continued supply chain dominance.
+
+-------------------------
+en_woodmac
+2026-01-10 12:00:00
+The 2026 global power market outlook: a complex environment
+A complex 2026 power market is driven by surging AI data center electricity demand, renewable buildout constrained by grid queues, and early signs of a nuclear capacity renaissance in Europe and North America.
+
+-------------------------
