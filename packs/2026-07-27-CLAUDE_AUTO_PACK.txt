@@ -1,0 +1,516 @@
+en_futurism
+2026-07-26 12:00:00
+Eminent Domain Could Be Used to Seize Your Land for AI Data Centers
+Power companies in Georgia and Pennsylvania are exploring the use of eminent domain to build transmission lines for AI data centers, raising property rights concerns as states prioritize corporate energy infrastructure over public land access.
+
+-------------------------
+en_medtech_dive
+2026-07-25 12:00:00
+Whoop hires FDA digital health committee chair as chief medical officer
+Wearable health company Whoop appointed Dr. Jessica Mega, former chair of the FDA's Digital Health Advisory Committee, as CMO to strengthen its regulatory strategy and oversee clinical evidence generation for its wearable platform.
+
+-------------------------
+en_trucking_info
+2026-07-25 12:00:00
+Long-Awaited Canadian Border Bridge to Open in Detroit
+The Gordie Howe International Bridge linking Detroit and Windsor, Ontario, is scheduled to open July 27 after infrastructure certification delays, promising to relieve pressure on the Ambassador Bridge and improve just-in-time auto-parts flows.
+
+-------------------------
+en_the_trucker
+2026-07-25 12:00:00
+FTR's Shippers Conditions Index improves in July, but remains negative
+FTR's Shippers Conditions Index posted a modest improvement in July 2026 but remained in negative territory, reflecting a market where capacity tightening is pushing rates higher even as overall shipment volumes soften.
+
+-------------------------
+en_northern_miner
+2026-07-24 12:00:00
+US debt could drive gold to $6,000, analyst says
+A Bank of America strategist argued that persistent US deficit spending and rising Treasury yields could push gold to $6,000 per troy ounce, as central banks and investors seek hard-asset alternatives amid growing dollar-credibility concerns.
+
+-------------------------
+en_navalnews
+2026-07-24 12:00:00
+Taiwan Navy Commissions First Batch 2 Tuo Chiang-Class Corvette
+The Republic of China Navy commissioned its first Batch 2 Tuo Chiang-class catamaran corvette, ROCS Tan Chiang, at Tsoying Naval Base with President Lai Ching-te presiding, adding a more capable guided-missile variant to Taiwan's asymmetric coastal defense fleet.
+
+-------------------------
+en_hcplive
+2026-07-24 12:00:00
+FDA Approves Furosemide Injection (Furoscix ReadyFlow) for Edema in Heart Failure and Chronic Kidney Disease
+MannKind Corporation received FDA approval for Furoscix ReadyFlow, the first autoinjector delivering subcutaneous furosemide with IV-equivalent bioavailability, enabling patients with heart failure or chronic kidney disease to self-administer the diuretic at home.
+
+-------------------------
+en_pharmtech
+2026-07-24 12:00:00
+PharmTech Weekly Roundup—July 24, 2026
+This week's roundup covers Novartis' agreement to acquire Myricx Bio for up to $1.5 billion for its ADC payload platform, Bristol Myers Squibb's expansion of NVIDIA DGX Vera Rubin AI infrastructure, and updated FDA guidance on topical corticosteroid bioequivalence testing.
+
+-------------------------
+en_the_pharmaletter
+2026-07-24 12:00:00
+The week in pharma: action, reaction and insight – week to July 24, 2026
+Highlights include Eli Lilly's positive Phase III results for retatrutide, FDA approval of the first oral PCSK9 inhibitor, and Merck KGaA's $11.3 billion acquisition of Bio-Techne, as pharma M&A activity remains elevated heading into H2 2026.
+
+-------------------------
+en_crain_currency
+2026-07-24 12:00:00
+Family offices are firing their VCs and betting directly on AI — just as the bubble talk gets loudest
+A growing cohort of ultra-wealthy family offices is bypassing venture managers and making direct AI investments, frustrated by fees and decade-long lock-ups, even as analysts raise valuation concerns about frontier AI model companies.
+
+-------------------------
+en_canadian_mining_report
+2026-07-24 12:00:00
+The Gold Price Discovery China Just Triggered: What July 24, 2026 Means for Canadian Mining Investors
+ICBC halted retail paper gold trading on July 24, joining a coordinated Chinese institutional shift toward physical delivery requirements, a move analysts say could structurally increase global physical gold demand and benefit Canadian mining equities.
+
+-------------------------
+en_renewable_energy_world
+2026-07-24 12:00:00
+As Texas temperatures soar, ERCOT crushes demand and generation records without incident
+ERCOT set simultaneous records for power demand and generation on July 24 amid a southern US heat dome, with grid operators crediting expanded solar and battery storage capacity for preventing reliability emergencies.
+
+-------------------------
+en_indexbox
+2026-07-24 12:00:00
+European Stocks Flat on July 24, 2026 as Oil Breaks $100 and Tariffs Weigh
+European equities traded flat on July 24 as Brent crude surged above $100 on Middle East tensions and newly imposed US tariffs on EU imports pushed peripheral bond spreads to 15-year highs.
+
+-------------------------
+en_powder_bulk_solids
+2026-07-24 12:00:00
+Food and Beverage Projects Take a Dip in July
+New food and beverage capital project announcements fell to 65 in July from 71 in June, with the largest new project a $670 million beef processing complex in Amarillo, Texas, as developers prioritize efficiency upgrades over greenfield builds.
+
+-------------------------
+en_ports_europe
+2026-07-24 12:00:00
+Import containers drive Valenciaport H1 2026 growth
+The Port Authority of Valencia handled 2.82 million TEUs in H1 2026, up 0.2% year-on-year, driven by a surge in import containers reflecting stronger Spanish domestic consumption and e-commerce activity.
+
+-------------------------
+en_medtech_dive
+2026-07-23 12:00:00
+Medtronic adds real-time AI to Hugo robot
+Medtronic upgraded its Hugo robotic-assisted surgery system with real-time AI that flags anatomical anomalies during procedures, intensifying competition with Intuitive Surgical's da Vinci by combining surgical robotics with autonomous decision-support capabilities.
+
+-------------------------
+en_the_ai_insider
+2026-07-23 12:00:00
+Elio Raises $21M in Funding to Build AI Sensing Platform
+AI sensing startup Elio secured $21 million in funding led by Innovation Endeavors and Xora Innovation to develop sensors allowing AI systems to determine in real time what environmental information to capture, targeting smart infrastructure and autonomous systems applications.
+
+-------------------------
+en_northern_miner
+2026-07-22 12:00:00
+AbraSilver raises $45M for Diablillos in Argentina
+AbraSilver Resource Corp. completed a $45 million equity financing to advance its Diablillos silver-gold project in Argentina's Salta province, with proceeds earmarked for a pre-feasibility study and ongoing infill drilling.
+
+-------------------------
+en_renews_biz
+2026-07-22 12:00:00
+Vattenfall lifts first-half operating profit
+Swedish utility Vattenfall reported a 14% rise in H1 2026 operating profit, driven by higher Nordic power prices and increased offshore wind generation, even as construction costs at the UK's Norfolk Vanguard project exceeded budget.
+
+-------------------------
+en_renews_biz
+2026-07-22 12:00:00
+GE Vernova wind losses deepen
+GE Vernova's wind segment reported lower orders and revenue in Q2 2026, with wind orders totaling $1.2 billion, down 40% organically, as weaker demand led to wider segment losses and overshadowed strength in its power and electrification businesses.
+
+-------------------------
+en_port_technology
+2026-07-22 12:00:00
+MARAD, Long Beach sign deal to trial nuclear-powered ships
+The US Maritime Administration and Port of Long Beach signed a memorandum of understanding on July 22 to explore deploying small modular reactor-powered commercial vessels, potentially opening a path to zero-emission deep-sea shipping for US-flagged carriers.
+
+-------------------------
+en_payloadspace
+2026-07-22 12:00:00
+FCC Space Modernization Vote Scheduled for July 22
+FCC Chair Brendan Carr announced the commission would vote on the Space Modernization Order on July 22, a regulatory package designed to streamline orbital debris mitigation requirements and spectrum licensing for commercial satellite operators.
+
+-------------------------
+en_xtalks
+2026-07-22 12:00:00
+Ris-Rez Hits Phase III Survival Endpoint in Small-Cell Lung Cancer
+Hansoh Pharma announced risvutatug rezetecan (Ris-Rez), a TROP2-directed ADC licensed by GSK outside Greater China, met its primary overall survival endpoint in the ARTEMIS-008 Phase III trial for advanced or relapsed small-cell lung cancer.
+
+-------------------------
+en_ports_europe
+2026-07-22 12:00:00
+Baltic Sea ports of Świnoujście and Szczecin developing into major offshore wind installation hubs
+Poland's twin ports announced a joint €180 million infrastructure upgrade to handle offshore wind turbine component installation for the Baltic Sea's rapidly expanding pipeline, positioning them as key logistics hubs for the regional energy transition.
+
+-------------------------
+en_futurism
+2026-07-21 12:00:00
+Frontier AI Is Faceplanting at Real-World Workplace Tasks
+A multi-institution benchmark study found that leading frontier AI models from Anthropic, OpenAI, and Google could complete only a small fraction of end-to-end workplace tasks at acceptable quality when tested outside curated evaluation environments.
+
+-------------------------
+en_northern_miner
+2026-07-21 12:00:00
+Copper price nearing US record as premium doubles and Shanghai stockpiles drop 82%
+Copper futures on the COMEX approached all-time highs as the COMEX–LME premium doubled to nearly $1,500 per tonne and Shanghai Futures Exchange inventories fell 82% from their February peak, reflecting persistent supply deficits and energy-transition demand.
+
+-------------------------
+en_indexbox
+2026-07-21 12:00:00
+CFTC Commitments of Traders Report July 21, 2026: Wheat, Corn, Soybeans, Crude Oil, Gold, Silver, Copper Positioning
+The July 21 CFTC COT report reveals net short producer positions across most grains and oilseeds, while managed money remains net long in soybeans, gold, silver, and copper, reflecting speculative bets on supply tightness and dollar weakness.
+
+-------------------------
+en_baird_maritime
+2026-07-21 12:00:00
+Ukraine intensifies strikes on Crimea-bound Russian "shadow fleet"
+Ukraine stepped up drone and missile attacks on tankers and fuel logistics infrastructure on the Azov–Crimea route, targeting Russia's shadow fleet supply chain and prompting authorities to declare a state of emergency on the peninsula amid fuel shortages.
+
+-------------------------
+en_ports_europe
+2026-07-21 12:00:00
+Port of Antwerp-Bruges cargo falls 2.4% in H1 2026 amid disruptions
+Antwerp-Bruges handled 133.9 million tonnes of maritime cargo in H1 2026, down 2.4% year-on-year, as a July 15 hydrofluoric acid leak at Deurganck Dock and ongoing Houthi-related shipping diversions contributed to throughput shortfalls.
+
+-------------------------
+en_splash247
+2026-07-20 12:00:00
+NYK seals full takeover of Saga Welco
+Japanese shipping major NYK completed acquisition of Westfal-Larsen's stake in Norwegian open-hatch carrier Saga Welco on July 20, gaining full control of a specialized fleet serving forest products and project cargo markets.
+
+-------------------------
+en_crain_currency
+2026-07-20 12:00:00
+Iceland's 'first billionaire' Thor Björgólfsson joins non-dom exits with tax lament
+Icelandic investor Thor Björgólfsson criticized the UK's elimination of its non-domicile tax regime and confirmed shifting his primary tax residency to Italy, joining a wave of high-net-worth individuals exiting Britain following the reform.
+
+-------------------------
+en_renews_biz
+2026-07-20 12:00:00
+Heelstone hits financial close on US solar hat-trick
+Heelstone Renewable Energy reached financial close and began construction on three Illinois solar projects totaling 86 MW—40 MW Two Blues, 28 MW Snapdragon, and 18 MW Pike Solar—with commercial operation targeted by year-end 2026.
+
+-------------------------
+en_the_pharmaletter
+2026-07-20 12:00:00
+Regulatory round-up: 20 July 2026
+Covers FDA acceptance of Replimune's resubmitted BLA for vusolimogene oderparepvec in advanced melanoma, EMA CHMP positive opinion for a new multiple myeloma combination therapy, and Trump administration tariff countdown for imported generic medicines.
+
+-------------------------
+en_futurism
+2026-07-20 12:00:00
+There's a Gigantic Problem at the Heart of the AI Industry That Could Cause the Whole Thing to Collapse
+A new analysis argues LLMs are experiencing severely diminishing capability returns relative to inference costs, with the cost of running frontier models rising exponentially and threatening the economic model underpinning major AI labs.
+
+-------------------------
+en_the_trucker
+2026-07-18 12:00:00
+ATA Truck Tonnage Index rises 0.1% in June
+The American Trucking Associations' advance seasonally adjusted For-Hire Truck Tonnage Index edged 0.1% higher in June after a 3.2% May decline, signaling a fragile stabilization in trucking activity amid mixed freight demand signals.
+
+-------------------------
+en_crain_currency
+2026-07-17 12:00:00
+Airport lounge crowds and confusion infuriate high-spending flyers
+Premium credit card lounge access has become more expensive and chaotic as the post-pandemic travel boom collides with expanded card-benefit programs, with many lounges imposing guest fees, capacity limits, and stricter membership verification.
+
+-------------------------
+en_hcplive
+2026-07-17 12:00:00
+FDA Grants Traditional Approval to Iptacopan (Fabhalta) to Slow Kidney Function Decline in IgAN
+Novartis announced the FDA converted iptacopan's August 2024 accelerated approval for primary IgA nephropathy to a full traditional approval based on two-year APPLAUSE-IgAN Phase III results showing sustained kidney function protection.
+
+-------------------------
+en_pharmtech
+2026-07-17 12:00:00
+Why Are Drugmakers Racing to Acquire ADC Payload Platforms?
+Pharmaceutical companies are accelerating deals to secure antibody-drug conjugate payload IP following Novartis' Myricx Bio acquisition, as ADC pipelines expand from oncology into broader therapeutic indications and differentiated payload chemistry becomes a key competitive moat.
+
+-------------------------
+en_food_industry_executive
+2026-07-17 12:00:00
+Food Exec Brief: Private Label Hits a Record, Brazil Tariffs Land July 22, and PFAS Comes Back to Congress
+Store brands reached a record 23.8% unit market share in H1 2026; a 25% tariff on some Brazilian imports takes effect July 22; and bipartisan legislation to ban intentionally added PFAS from food packaging was reintroduced in the House.
+
+-------------------------
+en_the_ai_insider
+2026-07-17 12:00:00
+Alta Announces $25M in Funding to Redefine the Go-to-Market Architecture for Revenue Teams
+Sales intelligence startup Alta raised $25 million in Series A funding led by IN Venture to build AI-native go-to-market tooling automating prospect research, outreach personalization, and pipeline qualification for B2B revenue teams.
+
+-------------------------
+en_asicpro
+2026-07-17 12:00:00
+DVCon U.S. 2027 Submission: Open Call Now Open
+DVCon U.S. 2027 opened its call for extended abstracts, tutorials, and workshop proposals on July 15, with submissions due September 7, 2026, covering design verification, SystemVerilog, UVM methodology, and AI-assisted chip verification.
+
+-------------------------
+en_renewable_energy_world
+2026-07-17 12:00:00
+In Texas, solar and sheep go hand in hand – This Week in Cleantech
+Texas agrivoltaic projects are expanding rapidly, combining solar energy generation with sheep grazing on the same land footprint, reducing vegetation management costs and providing farmers an additional revenue stream alongside power generation.
+
+-------------------------
+en_medtech_dive
+2026-07-16 12:00:00
+FDA Authorizes More Devices So Far in 2026, But It's Taking Longer
+The FDA authorized more medical devices in H1 2026 than in the same period last year, but average time to premarket approval has increased to nearly 599 days versus approximately 402 days in the prior-year period.
+
+-------------------------
+en_infoq
+2026-07-16 12:00:00
+GitLab 19.2 Puts AI Agents to Work on the Security Backlog
+GitLab released version 19.2 on July 16 with four agentic security automation features including Dependency Scanning Auto-Remediation and Security Review Flow, aimed at reducing manual burden on security and compliance teams.
+
+-------------------------
+en_port_technology
+2026-07-16 12:00:00
+Georgia opens $126 million freight link to Port of Savannah
+GDOT opened the Brampton Road Connector on July 16, a four-lane highway linking Garden City Terminal's Gate 3 directly to the interstate system, designed to reduce truck congestion and improve cargo throughput efficiency at the Port of Savannah.
+
+-------------------------
+en_steelonthenet
+2026-07-16 12:00:00
+British Steel formally nationalized, UK government secures 2,700 jobs at Scunthorpe
+The UK government formally brought British Steel into public ownership on July 16, halting a planned closure and securing around 2,700 jobs at the Scunthorpe steelworks while pledging to develop a decarbonization roadmap for the integrated site.
+
+-------------------------
+en_innovative_genomics
+2026-07-16 12:00:00
+AI-Assisted Technique Allows Scientists to Design New, Functional Genome Editors Beyond What Can Be Found in Nature
+IGI researchers used a machine learning pipeline to design novel genome-editing enzymes not found in nature that showed editing activity in bacterial, plant, and human cells, opening paths to custom tools optimized for therapeutic and agricultural applications.
+
+-------------------------
+en_renewable_energy_world
+2026-07-16 12:00:00
+Beyond the Big Beautiful Bill: Building and Financing Clean Energy After a Critical Tax Credit Deadline
+Experts discuss strategies for financing wind and solar construction after the July 4 safe-harbor deadline under Section 45Y and 48E credits, with IRA-linked incentives remaining available for projects placed in service by end of 2027.
+
+-------------------------
+en_hcplive
+2026-07-16 12:00:00
+Merck Announces FDA Approves Enlicitide (Lipfendra) for Hypercholesterolemia
+Merck announced the FDA approved enlicitide (Lipfendra) as an adjunct to diet and exercise for LDL-C reduction in adults with hypercholesterolemia including heterozygous familial hypercholesterolemia, as the first oral PCSK9 pathway inhibitor reaches market.
+
+-------------------------
+en_baird_maritime
+2026-07-16 12:00:00
+Navantia lays keel of final Avante 2200 corvette for Royal Saudi Naval Force
+Spain's Navantia laid the keel of the third and final Avante 2200 corvette ordered by Saudi Arabia's Ministry of Defence, completing a contract that deepens Spain's defense-industrial ties with Gulf partners amid rising regional maritime security concerns.
+
+-------------------------
+en_fleet_equipment
+2026-07-16 12:00:00
+Class 8 Orders See Growing Momentum in Early 2026, June Net Orders Up 231% Year-Over-Year
+Preliminary June Class 8 net orders in North America totaled 31,400 units per ACT Research, up 231% year-over-year, with Classes 5-7 orders also rising 67% as fleets accelerate equipment replacement amid improving freight rate expectations.
+
+-------------------------
+en_infoq
+2026-07-15 12:00:00
+WordPress 7.0 Ships with AI Foundations in Core, a Modernized Admin, and New Design Tools
+WordPress 7.0 shipped with native AI integration in its core editor, a redesigned admin interface reducing page-load latency by 40%, and an expanded pattern library for full-site editing, marking the platform's biggest architectural update since Gutenberg.
+
+-------------------------
+en_payloadspace
+2026-07-15 12:00:00
+US Commercial Space Stations Expand to Europe
+Vast and Axiom Space announced new offices in France and Switzerland respectively to build closer relationships with European space agencies and commercial customers ahead of the ISS decommissioning planned around 2030.
+
+-------------------------
+en_splash247
+2026-07-15 12:00:00
+Red Sea shipping rebounds 60% as Houthi attacks decline
+Container traffic through the Red Sea rebounded approximately 60% from its January 2026 trough as Houthi attack frequency declined, though analysts cautioned the recovery remains fragile and rates on Asia-Europe lanes remain elevated versus pre-crisis benchmarks.
+
+-------------------------
+en_food_industry_executive
+2026-07-15 12:00:00
+Q2 2026 Food Industry M&A Roundup: Flavor, Ingredients, and Distribution Got Very Expensive
+McCormick's $44.8 billion combination with Unilever Foods and Ingredion's $5 billion acquisition of Tate & Lyle dominated a bumper Q2 for food M&A, with ingredient and flavor platforms commanding premium multiples amid supply chain consolidation.
+
+-------------------------
+en_canadian_mining_report
+2026-07-15 12:00:00
+WGC: What Could Restart Gold Rally H2 2026?
+The World Gold Council outlined H2 2026 catalysts for resuming gold's rally including renewed central bank buying on price dips, further US dollar weakness driven by deficit concerns, and potential escalation of Middle East or Taiwan Strait geopolitical tensions.
+
+-------------------------
+en_trucking_info
+2026-07-14 12:00:00
+July Imports Poised to Set Container Record
+The National Retail Federation projected July US container imports will surpass the pandemic-era record as retailers frontload freight ahead of expected August tariff increases, with West Coast ports seeing the highest booking volumes.
+
+-------------------------
+en_port_technology
+2026-07-14 12:00:00
+Westwell showcases 'AI Dual Intelligence' at WAIC 2026, demonstrating global industrial deployment of AI
+Westwell presented its full-stack AI-native intelligent logistics ecosystem at the World AI Conference in Shanghai, featuring autonomous port operations, smart terminal management, and AI-driven equipment scheduling deployed across major Asian ports.
+
+-------------------------
+en_powder_bulk_solids
+2026-07-14 12:00:00
+Manufacturing Capital Project Plans Surge 16% in June
+Manufacturing capital project announcement volumes increased 16% month-over-month in June per the Dodge Construction Network, with food processing and consumer goods facilities driving the majority of new project filings.
+
+-------------------------
+en_fleet_equipment
+2026-07-14 12:00:00
+Reading Truck Expands Service Bodies With Combo, RHD Models
+Reading Truck introduced the new Combo Body and two heavy-duty service body models (RHD-46 and RHD-67), providing fleet operators with higher-payload storage options designed for utility, telecommunications, and municipal vocational applications.
+
+-------------------------
+en_xtalks
+2026-07-14 12:00:00
+Top 20 Most Innovative Biotech Companies of 2026, Per Fast Company
+Fast Company's 2026 Most Innovative Companies list highlighted biotechs advancing CRISPR therapeutics, next-generation ADCs, and AI-designed biologics, with several companies reaching $1 billion valuations based on Phase II data alone.
+
+-------------------------
+en_indexbox
+2026-07-14 12:00:00
+June CPI Report Preview: Inflation Data Release on July 14, 2026
+Markets anticipated a June CPI reading of 3.1% headline and 3.3% core year-over-year, with energy prices expected to moderate while shelter and services inflation remained sticky heading into the Federal Reserve's late July policy meeting.
+
+-------------------------
+en_traded
+2026-07-14 12:00:00
+229 Broadhollow LLC Acquires Industrial Property In Farmingdale For $7.725M With Tripoint Real Estate
+An industrial property at 229 Broadhollow Road in Farmingdale, New York was sold for $7.725 million on July 14, reflecting a cap rate of approximately 7% and a price per square foot of $190 for the 40,658-square-foot asset.
+
+-------------------------
+en_navalnews
+2026-07-13 12:00:00
+CENTCOM Deploys Saronic Corsair USV Against Iranian Submarine At Bandar Abbas
+In a historic first strike on July 13, CENTCOM deployed three Saronic Corsair unmanned surface vessels to attack an Iranian submarine at Bandar Abbas Naval Base, marking the combat debut of autonomous surface vessels in an offensive naval strike role.
+
+-------------------------
+en_the_pharmaletter
+2026-07-13 12:00:00
+Regulatory round-up: 13 July 2026
+Covers FDA acceptance of Camurus' resubmitted NDA for CAM2029 in acromegaly with a December action date, EMA CHMP positive opinions for two oncology therapies, and EU regulatory updates on cell and gene therapy GMP manufacturing compliance.
+
+-------------------------
+en_infoq
+2026-07-13 12:00:00
+Java News Roundup: Value Objects, WildFly 41, TornadoVM, LangChain4j, Oracle AI Agent Studio
+The week of July 13 featured reintroduction of the JDK Value Objects preview, GA release of WildFly 41, the new Oracle AI Agent Studio for Fusion Applications, and maintenance releases of Micronaut and the Quarkus Shim extension.
+
+-------------------------
+en_trucking_info
+2026-07-12 12:00:00
+Cummins Adjusts 2027 Engine Rollout After EPA Proposal
+Cummins is revising the timeline and specification targets for its 2027 engine lineup after the EPA proposed revisions to key implementation requirements, affecting procurement planning for Class 8 fleets purchasing in Q4 2026.
+
+-------------------------
+en_the_trucker
+2026-07-10 12:00:00
+DAT: Spot truckload rates jumped in June, outpacing freight volumes
+DAT reported spot truckload rates climbed faster than freight volumes in June, with dry van spot rates topping contract rates for the first time since February 2022 and flatbed rates reaching a record high, pointing to capacity tightening rather than stronger demand.
+
+-------------------------
+en_steelonthenet
+2026-07-10 12:00:00
+Global stainless steel production rises 2.5% in Q1 2026 year-on-year
+Global stainless steel output increased 2.5% in Q1 2026 versus Q1 2025, driven by recovering nickel prices and demand recovery in automotive and consumer goods sectors, though Chinese surplus capacity continued to weigh on European margins.
+
+-------------------------
+en_food_industry_executive
+2026-07-10 12:00:00
+Freight Pushes the FIE Input Cost Index to a New High of 148
+The Food Industry Executive Input Cost Index hit 148 in July, its highest reading since its April 2023 launch, driven primarily by trucking rate increases and port congestion surcharges as importers rush shipments ahead of second-half tariff changes.
+
+-------------------------
+en_canadian_mining_report
+2026-07-10 12:00:00
+Lobo Tiggre at Rule Symposium: Gold Stocks & Copper Offer "Stupid Cheap" Opportunity
+Lobo Tiggre told July 2026 Rule Investment Symposium attendees that junior gold and copper mining shares remain deeply undervalued relative to spot metal prices, citing a structural bull market driven by energy transition demand and central bank reserve accumulation.
+
+-------------------------
+en_innovative_genomics
+2026-07-10 12:00:00
+First Patient Treated with Personalized CRISPR Therapy, Developed in Just Six Months
+IGI researchers and clinical collaborators achieved a landmark by delivering a personalized in vivo CRISPR therapy to an infant with a rare genetic disorder in just six months from diagnosis to treatment, demonstrating the feasibility of rapid bespoke gene editing.
+
+-------------------------
+en_pharmtech
+2026-07-09 12:00:00
+FDA Approves Subcutaneous Formulation of Isatuximab-irfc for Multiple Myeloma
+The FDA approved a new subcutaneous formulation of isatuximab-irfc (Sarclisa) for adults with multiple myeloma, available via on-body delivery device or manual syringe, offering patients a less burdensome alternative to intravenous infusion.
+
+-------------------------
+en_traded
+2026-07-09 12:00:00
+RBT Industries Acquires 455,858 Square Foot Industrial Property In Lansing From Plymouth Industrial REIT
+RBT Industries acquired a 455,858-square-foot industrial property at 16801 Exchange Avenue in Lansing, Illinois from Plymouth Industrial REIT on July 9, with RBT to occupy 313,982 square feet and LKQ Corporation leasing the remainder.
+
+-------------------------
+en_payloadspace
+2026-07-08 12:00:00
+Space Force Adds Two New Companies to Launch Partners, Bringing Total to Seven
+The Space Force expanded its National Security Space Launch acquisition program to seven companies on July 8, adding two new launch providers to increase redundancy and competition for military satellite deployment missions.
+
+-------------------------
+en_xtalks
+2026-07-08 12:00:00
+Novartis Plans to Lay Off 322 Employees at New Jersey Site Starting in October
+Novartis announced plans to lay off 322 employees at its East Hanover, New Jersey site beginning October 2026, as the company continues restructuring operations to focus resources on priority pipeline programs and manufacturing efficiency.
+
+-------------------------
+en_navalnews
+2026-07-07 12:00:00
+Four NATO Allies to Procure Up to Five MQ-4C Triton HALE UAVs
+Denmark, Finland, Germany and Norway announced on July 7 a joint procurement of up to five Northrop Grumman MQ-4C Triton high-altitude long-endurance UAVs to enhance NATO's maritime intelligence, surveillance, and reconnaissance capabilities.
+
+-------------------------
+en_traded
+2026-07-07 12:00:00
+Brandon Investments Acquires Industrial Building In Tucson For $5.5 Million With Broker Representation
+Brandon Investments LLC purchased a 51,786-square-foot industrial building in Tucson, Arizona for $5.5 million on July 7, reflecting continued investor demand for smaller industrial assets in Sun Belt secondary markets.
+
+-------------------------
+en_baird_maritime
+2026-07-07 12:00:00
+Security Vessel News Roundup: Canadian submarine selection, Danish minelaying ships and more
+The July 7 security vessel roundup covers Canada's advancing submarine replacement program selection process, Denmark's procurement of new minelaying capability, and global naval procurement updates from multiple NATO allies.
+
+-------------------------
+en_innovative_genomics
+2026-07-06 12:00:00
+Efficient CRISPR-Cas9 delivery and transgene-free multiplex genome editing in plants using cymbidium mosaic virus-derived vectors
+A study published in Plant Journal demonstrated efficient transgene-free multiplex genome editing in plants using cymbidium mosaic virus-derived delivery vectors, offering a scalable approach for crop improvement that avoids stable transgene integration.
+
+-------------------------
+en_asicpro
+2026-07-06 12:00:00
+Semiconductor News (June 2026): AI, ASIC Design, EDA & Verification
+June 2026 semiconductor highlights include researchers creating the first electronic-photonic quantum chip via a commercial foundry, Cadence introducing an industry-first fully autonomous virtual engineer for chip design developed with NVIDIA, and accelerating 2nm node competition.
+
+-------------------------
+en_the_ai_insider
+2026-07-03 12:00:00
+Sail Research Closes $80M in Funding to Build Max-Efficiency Infrastructure for AI Agents
+Sail Research closed $80 million across Seed and Series A rounds at a $450 million valuation, with the Series A led by Kleiner Perkins and Seed led by Sequoia, to build high-efficiency infrastructure enabling AI agents to run complex workflows at dramatically reduced compute cost.
+
+-------------------------
+en_fleet_equipment
+2026-07-02 12:00:00
+AVI-SPL, Volvo Autonomous Solutions Launch Dallas-Houston Freight Operations
+AVI-SPL and Volvo Autonomous Solutions began commercial autonomous freight operations between Dallas and Houston on July 2, using the Aurora Driver-powered Volvo VNL Autonomous on one of the nation's highest-volume trucking corridors.
+
+-------------------------
+en_powder_bulk_solids
+2026-07-02 12:00:00
+How Food Manufacturers Are Rethinking Food Coloring Reformulation
+US food manufacturers face a more complex natural dye reformulation challenge than European counterparts, with CAPOL experts noting that achieving the vivid colors Americans expect in confections requires innovative combinations of vegetable-based pigments as FDA pushes to eliminate synthetic dyes.
+
+-------------------------
+en_steelonthenet
+2026-07-01 12:00:00
+UK steel safeguard expires, new trade defense mechanism takes effect with lower import quotas
+The UK's steel safeguard expired June 30 and was replaced on July 1 by a new trade defense mechanism featuring substantially lower import quotas and a 50% out-of-quota tariff mirroring the EU approach, tightening protection for domestic steelmakers.
+
+-------------------------
+en_asicpro
+2026-06-10 12:00:00
+Semiconductor Event Calendar Q3–Q4 2026 for ASIC Design and Verification Engineers
+AsicPro published its comprehensive Q3–Q4 2026 semiconductor event calendar covering major conferences including DAC, IEEE VLSI, Hot Chips, DVCon Europe, and ICCAD, with submission deadlines, locations, and topic focuses for chip design and verification professionals.
+
+-------------------------
