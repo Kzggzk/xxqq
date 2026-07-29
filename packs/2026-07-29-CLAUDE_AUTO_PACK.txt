@@ -1,0 +1,462 @@
+en_thedefensepost
+2026-07-27 12:00:00
+US Military Supercharges Data Processing With First AI Supercomputer 
+The U.S. military has deployed its first dedicated AI supercomputer, dramatically accelerating battlefield data processing for logistics, targeting and intelligence fusion across commands. The system is part of a broader Pentagon push to embed advanced computing directly into operational decision cycles. 
+
+-------------------------
+en_military_times
+2026-07-27 12:00:00
+Pentagon calls for cheaper long-range strike weapons, with testing in just 3 months 
+The Pentagon issued a rapid-acquisition call for Ground-Based Affordable Mass (GBAM) weapons costing under $250,000 each, requiring vendors to demonstrate prototype systems within 90 days as the military races to replenish precision-munition stockpiles drawn down in Ukraine and the Middle East. The initiative signals a strategic shift away from expensive low-quantity weapons toward scalable, mass-producible long-range strike capabilities. 
+
+-------------------------
+en_nextgen_defense
+2026-07-24 12:00:00
+Ukraine Rolls Out Upsized FPV Drone Built for Heavier, Harder-Hitting Warheads 
+Ukraine unveiled a new first-person-view (FPV) drone designed to carry significantly heavier warheads than previous models, enabling it to destroy heavier armored vehicles at lower cost per kill. The design iteration reflects rapid battlefield feedback from Ukrainian engineers who have compressed development cycles to weeks. 
+
+-------------------------
+en_defence_industry_eu
+2026-07-24 12:00:00
+Lockheed Martin Q2 2026 highlights: $1.4 billion hypersonic work, missile defense plants and counter-drone investment 
+Lockheed Martin reported Q2 2026 results featuring a $1.36 billion contract modification to advance its Conventional Prompt Strike hypersonic missile program, alongside new missile defense facility investments and expanded counter-drone R&D. The company raised its full-year forecast as Pentagon demand for air defense and strike systems continues to surge. 
+
+-------------------------
+en_drewry
+2026-07-23 12:00:00
+World Container Index – 23 Jul 2026: Rates Decline 4% to $4,374 per 40ft 
+Drewry's World Container Index fell 4% week-on-week to $4,374 per 40ft container in the week of 23 July, driven by declining rates on Asia-Europe and Transpacific lanes as the early 2026 peak season nears its end. Separately, 39 blank sailings are expected on major East-West trades over the five weeks through week 34, representing a 5% cancellation rate. 
+
+-------------------------
+en_asdnews
+2026-07-22 12:00:00
+Honeywell Aerospace Expanding European Solutions for International Defense Market 
+Honeywell Aerospace highlighted growing demand across its international defense business, citing Civitanavi Systems inertial navigation systems now supporting customers across Ukraine, Poland, Italy, the UK and broader Europe. The company is expanding its European-aligned defense portfolio as NATO allies accelerate procurement to meet 2% GDP spending targets. 
+
+-------------------------
+en_asdnews
+2026-07-22 12:00:00
+Honeywell Aerospace, Shield AI Collaborate to Advance Development of Autonomous Aircraft 
+Honeywell Aerospace and Shield AI signed an MOU to integrate Honeywell's Anthem avionics and Civitanavi inertial navigation systems with Shield AI's Hivemind autonomy stack, targeting a certified trusted-autonomy platform for crewed and uncrewed military aircraft. The partnership builds on Shield AI's recent X-BAT engine milestone with GE Aerospace. 
+
+-------------------------
+en_defense_scoop
+2026-07-22 12:00:00
+Pentagon adds 'bombers' to Drone Dominance Program 
+The Defense Department expanded its Drone Dominance Program by adding a new category of reusable unmanned aerial systems capable of carrying and dropping munitions, broadening the program beyond small reconnaissance and loitering drones. The expansion signals intent to create a mass, low-cost bombing capability to complement expensive air-launched weapons. 
+
+-------------------------
+en_hit_consultant
+2026-07-22 12:00:00
+Healthcare Growth Partners Releases July 2026 Health IT Market Review: Key Valuations and M&A Benchmarks 
+Healthcare Growth Partners' July 2026 health IT market review found that U.S. Health IT M&A and buyout volume rebounded to 121 announced transactions in Q2 2026, up from an average of 101 in Q4 2025 and Q1 2026, driven by AI-platform consolidation and payer-provider data integration deals. Valuation multiples for AI-enabled clinical workflow tools reached new highs as strategic buyers competed with private equity for assets. 
+
+-------------------------
+en_the_pig_site
+2026-07-22 12:00:00
+EU adopts first-ever livestock strategy to boost sector resilience 
+The European Union formally adopted its first-ever livestock strategy, establishing a framework to support the €400 billion livestock sector through revised welfare standards for pigs, poultry and cattle, targeted financial support and transition periods. The strategy passed the EU Parliament committee after negotiators secured additional funding commitments following earlier calls that the original draft lacked sufficient financial backing. 
+
+-------------------------
+en_defense_scoop
+2026-07-21 12:00:00
+Latest Guard-led Cyber Shield exercise is focused on protecting the power sector, including OT 
+The 2026 Cyber Shield exercise, the largest Guard-led cyber defense exercise, focused on protecting power sector operational technology with more than 1,000 troops and civilian experts from 44 U.S. states and territories participating in the two-week event. Participants practiced defending industrial control systems and energy grid infrastructure against nation-state-level cyber intrusions. 
+
+-------------------------
+en_asdnews
+2026-07-20 12:00:00
+Shield AI and GE Aerospace Light Off X-BAT Engine, Clearing Path to Vertical Flight 
+Shield AI and GE Aerospace successfully completed integration and test firing of the X-BAT aircraft's GE-supplied engine with a thrust-vectoring nozzle, clearing the critical milestone needed to advance to powered vertical flight testing. The X-BAT program aims to deliver an AI-piloted uncrewed combat aircraft capable of operating without GPS or communications links. 
+
+-------------------------
+en_thedefensepost
+2026-07-20 12:00:00
+Canada Orders 190 More Armored Combat Support Vehicles in $1.4B Deal 
+Canada signed a $1.4 billion contract to procure 190 additional Armored Combat Support Vehicles from General Dynamics Land Systems Canada, extending the ACSV program and deepening domestic armored-vehicle production capacity. The deal is part of Canada's accelerated military modernization plan following its renewed commitment to meet NATO spending benchmarks. 
+
+-------------------------
+en_thedefensepost
+2026-07-20 12:00:00
+US Advances Golden Dome With $2B Missile Tracking Ship Program 
+The U.S. is developing a new $2 billion shipborne missile tracking platform as part of the Golden Dome missile defense architecture, designed to provide persistent radar and sensor coverage of hypersonic glide vehicles. The sea-based component is intended to fill sensor gaps left by ground-based radar networks that struggle to track maneuvering reentry vehicles. 
+
+-------------------------
+en_energy_monitor
+2026-07-20 12:00:00
+Exus Renewables secures $356m for Pennsylvania wind farms 
+Exus Renewables closed a $356 million financing package for a portfolio of Pennsylvania wind farm repowering projects, with the Cambria Wind Farm expected to enter commercial operations in autumn 2026. The deal is one of the largest U.S. onshore wind refinancings of the year, reflecting continued institutional appetite for yield-generating renewable assets despite policy uncertainty. 
+
+-------------------------
+en_realclear_energy
+2026-07-16 12:00:00
+Data Center Worries Reflect Bad Policy, Not Overreliance on Hydrocarbons 
+RealClearEnergy argues that growing concerns about grid reliability stemming from AI data center electricity demand reflect poor permitting policy and insufficient transmission investment rather than fundamental problems with the nation's hydrocarbon energy base. The piece calls for bipartisan permitting reform to unlock both natural gas capacity and grid interconnection for new generation. 
+
+-------------------------
+en_hit_consultant
+2026-07-16 12:00:00
+KLAS Global HIT Trends 2026 Report: Artificial Intelligence Becomes the Top Investment Priority 
+The KLAS Global Health IT Trends 2026 report found that AI has become the number-one investment priority for healthcare IT leaders in every global region measured, with ambient clinical voice and agentic workflow tools leading deployment activity. The report noted that 73% of international health networks are now actively deploying clinical workloads in public or hybrid cloud environments. 
+
+-------------------------
+en_mondaq
+2026-07-16 12:00:00
+SEC Proposes New E-Delivery Framework For Investor Communications 
+The SEC proposed Regulation E-Delivery on July 16, 2026, a modernization framework that would make electronic delivery the default method for investor communications from issuers, broker-dealers, investment advisers and other market participants. The proposal is part of Chairman Paul Atkins' broader agenda to reduce compliance costs and streamline public company reporting. 
+
+-------------------------
+en_military_times
+2026-07-15 12:00:00
+Pressure mounts on US defense executives to boost weapons production 
+President Trump pressed top defense executives to dramatically accelerate production lines for munitions and weapons systems as inventories drawn down supporting Ukraine and Middle East allies continue to strain Pentagon stockpile readiness. Defense contractors cited supply chain bottlenecks, workforce shortages and long tooling lead times as constraints on near-term output. 
+
+-------------------------
+en_canary_media
+2026-07-15 12:00:00
+Clean energy still beats fossil fuels on cost, despite, well, everything 
+Lazard's latest levelized cost of energy analysis confirms that onshore wind and utility-scale solar remain the cheapest forms of new power generation in 2026, even as interest rates and tariffs on imported components have added to project costs. The analysis reinforces the structural economics driving the U.S. power sector to build 86 GW of new capacity in 2026, with solar comprising more than half. 
+
+-------------------------
+en_cgtn
+2026-07-15 12:00:00
+China's economy grows 4.7% in first half of 2026 
+China's GDP expanded 4.7% year-on-year in the first half of 2026, reaching 69.57 trillion yuan ($10.28 trillion), keeping the country on track to meet its annual growth target of 4.5%-5% amid continued manufacturing strength and AI-driven industrial output. Equipment manufacturing and high-tech manufacturing grew 9.3% and 13.3% respectively in the period, outpacing overall industrial growth. 
+
+-------------------------
+en_cgtn
+2026-07-15 12:00:00
+China's economy in H1 2026: Growth, resilience and challenges 
+CGTN's half-year economic review highlights that Chinese equities delivered one of their strongest first-half performances in years, with daily turnover nearly doubling year-on-year driven by hard-tech, AI and robotics stocks, while consumer spending recovery remained uneven across income groups. The article examines how Beijing's 15th Five-Year Plan priorities in AI, green energy and semiconductor self-sufficiency are reshaping capital allocation. 
+
+-------------------------
+en_the_loadstar
+2026-07-15 12:00:00
+A wave of container spot rate rises amid peak season and tight capacity 
+Container spot freight rates continued rising in mid-July 2026 as the early peak season created tighter-than-expected capacity, with Shanghai-Rotterdam rates rising 11% week-on-week and Shanghai-Genoa up 20%, even as analysts warned demand could soften sharply through Q3. The Loadstar notes 2026 marks the third consecutive year in which peak season arrived far earlier than historical norms. 
+
+-------------------------
+en_the_pig_site
+2026-07-15 12:00:00
+EU committee backs livestock strategy but calls for stronger funding 
+A European Parliament committee formally endorsed the EU's new livestock strategy framework but passed an amendment calling for significantly stronger financial support mechanisms than the Commission's original proposal, particularly for small and medium-sized farms undertaking animal welfare transitions. Pig and poultry producers' associations welcomed the commitment to transition periods and opposed immediate welfare mandates without corresponding market compensation. 
+
+-------------------------
+en_energy_monitor
+2026-07-15 12:00:00
+EU clears $26.5bn of Italian State aid to boost renewable power 
+The European Commission approved a €23 billion ($26.5 billion) Italian state aid scheme to subsidize renewable electricity generation from solar, wind and geothermal sources, representing one of the largest single green energy support programs authorized under revised EU state aid rules. Italy aims to use the scheme to double its renewable capacity by 2030 while reducing dependence on imported natural gas. 
+
+-------------------------
+en_the_loadstar
+2026-07-10 12:00:00
+Early peak season creates Q4 mini-peak – 'it's a new baseline' 
+The Loadstar reports that the early end to the 2026 peak season by late July is expected to create a secondary demand surge in Q4 as shippers who front-loaded cargo earlier in the year re-enter the market, with one carrier executive calling the shifted demand profile 'a new baseline' rather than a temporary anomaly. Fleet overcapacity concerns are partially offset by stronger-than-expected Chinese export volumes. 
+
+-------------------------
+en_carbon_herald
+2026-07-10 12:00:00
+CCSA EU Conference 2026: Europe's Carbon Capture Debate Moves From Ambition To Execution 
+The Carbon Capture and Storage Association's European conference in 2026 shifted from policy ambition to project execution, with multiple national CCS projects reaching final investment decisions and industrial clusters in the Netherlands, UK and Norway moving toward first injection of CO2 into geological storage. The EU's revised Carbon Removal Certification Framework was highlighted as a key enabler for scaling CCUS in hard-to-abate industrial sectors. 
+
+-------------------------
+en_asia_financial
+2026-07-10 12:00:00
+China Now Requires Chipmakers to Use At Least 50% Local Equipment 
+China has mandated that semiconductor manufacturers seeking approval for new fab expansions source at least 50% of their equipment from domestic suppliers, a significant escalation of Beijing's push to reduce dependency on Western chipmaking tools under U.S. export controls. The policy is expected to accelerate orders for Chinese equipment makers including NAURA Technology and ACM Research while complicating timelines for fabs that previously relied on ASML and Applied Materials. 
+
+-------------------------
+en_the_pig_site
+2026-07-10 12:00:00
+Weekly pig report: Lean hog futures drift higher as market eyes tight supply 
+U.S. lean hog futures edged higher in mid-July 2026 on expectations of tighter second-half supply driven by lower breeding herd sizes and stronger-than-forecast pork export demand from Japan and South Korea. Analysts note that USDA Hogs and Pigs data suggest commercial slaughter rates will decline in Q4, potentially pushing cash hog prices to multi-year highs. 
+
+-------------------------
+en_energy_monitor
+2026-07-10 12:00:00
+Uniper, Respect Energy sign solar PPAs in Poland 
+Uniper and Poland's Respect Energy signed six-year power purchase agreements covering 219 MW of newly constructed photovoltaic capacity across four assets in Poland, with Uniper using the clean electricity to help decarbonize its local retail power supply portfolio. The deal is among the largest corporate PPA transactions in Central Europe and reflects growing demand from industrial buyers for locally produced renewable electricity. 
+
+-------------------------
+en_realclear_energy
+2026-07-07 12:00:00
+Why States Should Reconsider Renewable Portfolio Standards 
+A RealClearEnergy analysis argues that state renewable portfolio standards, designed to mandate clean energy procurement, are increasingly counterproductive as wholesale power market prices rise and grid reliability concerns mount, calling on governors to replace mandates with technology-neutral market mechanisms. The piece reflects broader policy friction between decarbonization goals and consumer electricity cost pressures in 2026. 
+
+-------------------------
+en_military_times
+2026-07-06 12:00:00
+Pentagon's top new weapons programs are 12 years behind schedule: Watchdog 
+A Government Accountability Office report found the Pentagon's portfolio of major defense acquisition programs is on average 12 years behind original delivery schedules, with several programs failing to set new target dates after missing critical milestones. The watchdog identified AI system integration, supply chain volatility and declining engineering workforce depth as primary drivers of delay. 
+
+-------------------------
+en_investor_news
+2026-07-05 12:00:00
+Critical Minerals Report (07.05.2026): The Hunt for Industrial Expertise Is On 
+InvestorNews' weekly critical minerals report examines how the bottleneck in rare earth and battery metal supply chains has shifted from mining to processing and manufacturing, with companies and governments competing to attract metallurgical engineers and chemical processing expertise rather than just securing mine assets. The piece highlights new DOE-backed workforce training programs targeting lithium refining and rare earth separation. 
+
+-------------------------
+en_the_loadstar
+2026-07-05 12:00:00
+Scrapping is key as the global containership fleet keeps growing 
+The Loadstar argues that without a meaningful acceleration in vessel scrapping, the global containership fleet's capacity surplus will deepen through 2027 as 3 million TEUs of newbuilds deliver into a market where demand growth is running at only 3%-4%. Older, fuel-inefficient vessels face pressure from IMO emissions regulations that take effect in Q1 2027, potentially accelerating retirement decisions. 
+
+-------------------------
+en_carbon_herald
+2026-07-05 12:00:00
+Summit Gets The Green Light For Carbon Capture Pipeline In Minnesota 
+Summit Carbon Solutions received Minnesota regulatory approval for a key segment of its Midwest CO2 pipeline network, clearing a major permitting hurdle after years of legal and regulatory delays. The pipeline is designed to transport CO2 from ethanol plants across five states for injection into North Dakota geological storage formations, one of the largest planned CCS infrastructure projects in the U.S. 
+
+-------------------------
+en_defense_scoop
+2026-07-02 12:00:00
+Pentagon awards $500M contract for counter-drone tech to AeroVironment 
+The Pentagon awarded AeroVironment a $500 million indefinite-delivery indefinite-quantity contract to supply commercial counter-drone technology across military branches, with an initial $80.5 million task order deploying AI-enabled detection and defeat systems at Air Force bases. The contract reflects the Defense Department's accelerating investment in counter-small-UAS capabilities following drone threats against U.S. forward bases in the Middle East. 
+
+-------------------------
+en_canary_media
+2026-07-01 12:00:00
+State legislatures are getting better at clean-energy permitting 
+Canary Media's survey of 2026 state legislative sessions finds that more states passed laws streamlining permitting and siting for renewable energy projects than enacted restrictive measures, reversing a brief trend of anti-clean-energy legislation in 2024-2025. States in the South and Midwest have moved to reduce transmission approval timelines that have delayed solar and wind projects by three to five years on average. 
+
+-------------------------
+en_military_machine
+2026-07-01 12:00:00
+7 Next-Generation Weapons Already in Testing (2026): F-47, CCA, Hypersonics, and More 
+Military Machine reviews seven advanced weapon systems currently in active testing in 2026, including the F-47 sixth-generation fighter, AI-piloted Collaborative Combat Aircraft drones, the Army's long-range hypersonic weapon and two new directed-energy systems. The piece highlights how AI integration is accelerating testing cycles compared to previous-generation programs. 
+
+-------------------------
+en_asco_post
+2026-06-25 12:00:00
+Next-Generation KRAS Inhibitors Show Promising Activity in Advanced Non–Small Cell Lung Cancer 
+New clinical data presented at the 2026 ASCO Annual Meeting showed that next-generation KRAS G12C inhibitors active against mutations in previously treated advanced non-small cell lung cancer delivered objective response rates of 30%-40% in heavily pretreated populations. Several agents are advancing to Phase 3 trials that could support regulatory submissions as early as 2027. 
+
+-------------------------
+en_asco_post
+2026-06-24 12:00:00
+FDA Approves Sacituzumab Govitecan-hziy as Monotherapy and in Combination With Pembrolizumab for First-Line Treatment of TNBC 
+The FDA granted traditional approval on June 24, 2026 to sacituzumab govitecan-hziy (Trodelvy) for two indications in adults with triple-negative breast cancer, including first-line monotherapy and combination with pembrolizumab for PD-L1-positive TNBC. The approvals cement Trodelvy as a key backbone therapy in triple-negative breast cancer and validate the antibody-drug conjugate platform. 
+
+-------------------------
+en_investor_news
+2026-06-21 12:00:00
+Critical Minerals Report (06.21.2026): Allies, Competitors, and Critical Minerals 
+The June 21 InvestorNews minerals report examines the emerging two-track global critical minerals market, with NATO-aligned nations consolidating supply agreements through new multilateral frameworks akin to a 'Critical Minerals NATO' while China tightens export controls on rare earth processing as geopolitical leverage. The analysis highlights graphite and gallium as the minerals most exposed to supply disruption in 2026. 
+
+-------------------------
+en_carbon_herald
+2026-06-20 12:00:00
+Global CCS Institute Maps Latest Carbon Capture Technologies As CCS Sector Expands 
+The Global CCS Institute published its 2026 technology map showing more than 50 operational CCS facilities capturing roughly 50 million tonnes of CO2 annually, with the pipeline of projects in development representing the largest-ever global CCS investment backlog. The institute identified point-source capture at cement and steel plants as the fastest-growing application, driven by EU carbon pricing above €100 per tonne. 
+
+-------------------------
+en_asia_financial
+2026-06-20 12:00:00
+China to Be Top Buyer of Chip Tools Despite Steep Cut in Spending 
+China will remain the world's largest buyer of semiconductor manufacturing equipment in 2026 despite a year-on-year decline in overall capex, as domestic fabs prioritize equipping mature-node expansion and upgrading equipment to comply with the new 50% localization mandate while selectively importing tools still unavailable domestically. The spending mix is shifting toward etching, deposition and metrology tools where Chinese alternatives are advancing fastest. 
+
+-------------------------
+en_drewry
+2026-06-15 12:00:00
+Shippers in the driving seat to secure better 2026 ocean contracts after reversal of trend 
+Drewry's June 2026 analysis finds that cargo shippers are negotiating more favorable annual ocean freight contracts than in any year since 2020, as structural overcapacity from a record newbuild delivery wave gives them leverage over carriers. The reversal follows two years of extreme carrier pricing power during the Red Sea disruption and post-pandemic demand surge. 
+
+-------------------------
+en_investor_news
+2026-06-14 12:00:00
+Critical Minerals Report (06.14.2026): Control is the New Commodity 
+The InvestorNews report argues that in critical minerals, control of processing and refining capacity is now more strategically valuable than control of mine reserves, as the U.S. and allies race to build out separation and conversion facilities. The analysis covers new rare earth refinery investments in Texas and Saskatchewan and Pentagon-backed rare earth funding agreements totaling over $1 billion in 2026. 
+
+-------------------------
+en_realclear_energy
+2026-06-01 12:00:00
+Offshore Wind Challenges Continue 
+RealClearEnergy examines the ongoing difficulties facing U.S. offshore wind development, with TotalEnergies' settlement to relinquish its offshore leases joining a pattern of project cancellations and delays driven by rising capital costs, supply chain constraints and permitting uncertainty under the Trump administration. The piece contrasts U.S. retreat with continued offshore wind buildout in Europe and Asia. 
+
+-------------------------
+en_cgtlive
+2026-05-27 12:00:00
+Around the Helix: Cell and Gene Therapy Company Updates – May 27, 2026 
+CGTlive's May 27 company updates roundup covers Sartorius opening a €140 million cell and gene therapy competence center in Freiburg, Intellia Therapeutics reporting Phase 3 interim results for its in vivo gene editing program targeting hereditary angioedema, and new CRISPR platform licensing deals in Asia-Pacific. The weekly digest reflects the rapid expansion of CGT manufacturing infrastructure globally. 
+
+-------------------------
+en_the_manufacturer
+2026-05-20 12:00:00
+UK Manufacturing PMI: Industry growth holds steady as exports surge 
+The UK's manufacturing PMI held firmly in expansion territory in May 2026 as new export orders rose for the first time in four years, with heightened demand from Europe, the U.S. and China-adjacent markets reflecting both price competitiveness and supply-chain realignment away from Asian suppliers. The export surge provides a partial offset to persistent domestic demand weakness in consumer-facing production sectors. 
+
+-------------------------
+en_iot_analytics
+2026-05-20 12:00:00
+Top 12 industrial technology trends—as seen at Hannover Messe 2026 
+IoT Analytics' Hannover Messe 2026 report identifies agentic AI and physical AI as the two most important emerging trends for industrial automation, with software-defined manufacturing platforms and human-robot collaboration systems also prominently featured by major vendors. The global smart manufacturing market reached $175 billion in 2025 and is forecast to grow to $274 billion by 2030 at a 9.3% CAGR. 
+
+-------------------------
+en_gasgoo
+2026-05-10 12:00:00
+2026 Beijing Auto Show: Electrification Accelerates, AI Intelligence Leaps, Global Auto Industry Competes on New Tracks 
+The 2026 Beijing Auto Show featured 222 new models of which 173 were new energy vehicles, representing nearly 80% of debuts, as global and Chinese OEMs competed on intelligent cockpit technology, battery range and Level-3 autonomous driving deployment timelines. Gasgoo data highlighted BYD, Huawei-backed AITO and Xiaomi SU7 as drawing the highest visitor traffic at the show. 
+
+-------------------------
+en_hit_consultant
+2026-05-07 12:00:00
+MedTech Breakthrough Announces 2026 MedTech Breakthrough Award Winners 
+The MedTech Breakthrough Awards 2026 recognized innovations in AI-powered remote patient monitoring, surgical robotics navigation and continuous glucose monitoring as the year's standout healthcare technology achievements. The awards highlight a strong shift toward ambient sensing and automated clinical decision support tools that reduce clinician documentation burden. 
+
+-------------------------
+en_gasgoo
+2026-05-05 12:00:00
+Gasgoo Express: China's global pure EV market share to reach 56% in 2026; BYD April sales 321,123 units 
+Gasgoo's market analysis projects China will account for 56% of global pure battery-electric vehicle sales in 2026, underpinning BYD's record April 2026 sales of 321,123 units across its EV and plug-in hybrid lineup. The data reflects continued price competition among Chinese brands that has squeezed margins but widened adoption across lower-income consumer segments. 
+
+-------------------------
+en_iot_analytics
+2026-04-22 12:00:00
+US manufacturing reshoring boom: What the data says one year after 'Liberation Day' tariffs 
+IoT Analytics' one-year review of U.S. manufacturing reshoring following the April 2025 'Liberation Day' tariff package finds that construction spending on new U.S. factories accelerated further, with semiconductor, pharmaceutical and battery sectors leading capex commitments. However, actual production ramp-ups remain 18-24 months behind construction starts due to workforce and equipment lead time constraints. 
+
+-------------------------
+en_sciencedaily
+2026-04-18 12:00:00
+Engineers print artificial neurons that can communicate with real ones 
+Northwestern University engineers developed a 3D-printed artificial neuron capable of signaling to biological neurons via electrochemical interfaces, representing a significant advance toward brain-machine integration for treating neurological disorders. The work demonstrates that synthetic neurons can participate in real neural network signaling rather than simply recording or stimulating passively. 
+
+-------------------------
+en_sciencedaily
+2026-04-17 12:00:00
+Quantum and AI combination dramatically improves predictions of complex chaotic systems 
+Researchers demonstrated that blending quantum computing with classical AI models achieves dramatically more accurate predictions of complex chaotic physical systems than either approach alone, with implications for climate modeling, materials science and drug discovery. The hybrid approach exploits quantum advantage in sampling probability distributions that are computationally intractable for classical computers. 
+
+-------------------------
+en_sciencedaily
+2026-04-15 12:00:00
+AI can spot people at higher risk of melanoma using routine health data 
+A Swedish population study published in Nature Medicine found that AI models trained on routine electronic health record data identified individuals at elevated melanoma risk with significantly greater accuracy than standard clinical screening criteria. The model could enable targeted dermatology referrals for high-risk patients before symptomatic presentation. 
+
+-------------------------
+en_cgtlive
+2026-04-15 12:00:00
+Around the Helix: Cell and Gene Therapy Company Updates – April 15, 2026 
+CGTlive's April 15 update covers GS-100 AAV9 gene therapy showing improved motor and cognitive outcomes in children with NGLY1 Deficiency in Phase 1/2 data, Ultragenyx reporting positive interim Phase 3 results for its OTC deficiency gene therapy, and Scribe Therapeutics filing an IND for its CRISPR-based epigenetic silencing platform targeting PCSK9. 
+
+-------------------------
+en_gasgoo
+2026-04-12 12:00:00
+Smart EV 2026 | Jin Yuzhi: 2026 is Year One for Global Autonomous Driving 
+Huawei Yinwang CEO Jin Yuzhi told the Smart EV 2026 forum in Beijing that 2026 represents Year One for global commercial deployment of autonomous driving, with China's orderly rollout of L3 highway driving and U.S. robotaxi expansion from Waymo and Zoox marking the transition from development to operational phase. He highlighted AI inference hardware and high-definition mapping as the two critical bottlenecks still constraining broader autonomous vehicle deployment. 
+
+-------------------------
+en_iot_analytics
+2026-04-10 12:00:00
+AI in machine building 2026: Adoption, barriers, use cases, and leading sub-industries 
+IoT Analytics' survey of machine builder companies finds that AI adoption is highest in quality inspection and predictive maintenance applications, while agentic AI for autonomous machine operation remains in early pilot stages. Adoption barriers cited most frequently include data quality, workforce skills gaps and difficulty integrating AI with legacy PLC and SCADA architectures. 
+
+-------------------------
+en_cgtlive
+2026-03-18 12:00:00
+Around the Helix: Cell and Gene Therapy Company Updates – March 18, 2026 
+CGTlive's March 18 weekly digest covers Capricor Therapeutics' allogeneic cell therapy deramiocel showing new Phase 3 findings for Duchenne muscular dystrophy at the ASGCT Annual Meeting, a NAV AAV8 vector-based microdystrophin gene therapy entering a pivotal trial and Sartorius expanding its bioprocess equipment capacity for CGT clients. The ongoing expansion of the CGT clinical pipeline is being supported by a wave of manufacturing technology investment. 
+
+-------------------------
+en_tech_insights
+2026-02-28 12:00:00
+McClean Report February 2026: Q1 Semiconductor Market Forecast Update 
+TechInsights' February 2026 semiconductor market update raised its full-year 2026 forecast, projecting the global semiconductor market will grow 26% to surpass $1 trillion for the first time in history, driven by AI accelerator and advanced memory demand. HBM4 volume production is tracking to begin in H1 2026 with SK Hynix supply already fully allocated. 
+
+-------------------------
+en_asia_society
+2026-02-26 12:00:00
+2026: The Year of Rebalancing 
+The Asia Society Policy Institute's annual geopolitical outlook argues that 2026 marks a year of great-power rebalancing, with the U.S.-China relationship entering a new phase defined by competitive coexistence, selective cooperation and technology decoupling in critical sectors. The report examines how Trump-Xi bilateral meetings scheduled for APEC Shenzhen and the G20 Florida summit may reshape trade tensions and Taiwan risk calculus. 
+
+-------------------------
+en_the_manufacturer
+2026-02-03 12:00:00
+UK Manufacturing PMI: Industry opens 2026 with strongest growth in 17 months 
+The UK manufacturing PMI for January 2026 showed the sector expanding at its fastest rate since August 2024, as output and new orders both accelerated amid stronger demand from European and U.S. customers diversifying away from Asian supply chains. The improvement follows 2025's contraction and raises hopes that the UK can capitalize on reshoring-driven demand for precision engineering and specialty chemicals. 
+
+-------------------------
+en_cgtn
+2026-02-02 12:00:00
+China's provinces set 2026 growth targets, doubling down on strategic industries 
+Chinese provincial governments unveiled 2026 growth targets ranging from 4.5% to 8%, with nearly all provinces emphasizing AI, robotics, new energy vehicles and advanced manufacturing as strategic priority sectors eligible for enhanced fiscal and regulatory support. The provincial plans align with the 15th Five-Year Plan's national targets announced at the March 2026 National People's Congress. 
+
+-------------------------
+en_defense_scoop
+2026-01-26 12:00:00
+New U.S. defense strategy 'barely mentions technology' 
+DefenseScoop analysis of the 2026 National Defense Strategy found that the document focuses heavily on great-power deterrence, allied burden-sharing and military readiness while giving only passing mention to emerging technologies such as AI, autonomous systems and directed energy, in sharp contrast to the technology-centric 2022 strategy. Defense technology advocates expressed concern the de-emphasis could slow acquisition reform and innovation funding. 
+
+-------------------------
+en_jdsupra
+2026-01-20 12:00:00
+10 Key Focus Areas for US Bank Regulators in 2026 
+Latham & Watkins' JD Supra post identifies the ten highest-priority supervisory areas for U.S. banking regulators in 2026, including AI model risk governance, fintech partnership oversight, climate-related financial risk integration, cybersecurity resilience testing and commercial real estate concentration limits. The guide notes regulators are moving from issuing guidance to conducting targeted examinations with formal enforcement follow-up. 
+
+-------------------------
+en_mondaq
+2026-01-14 12:00:00
+Emerging Issues And What To Watch For In 2026 – Key SEC, CFTC and Dodd-Frank Developments 
+Mondaq's 2026 regulatory outlook covers the SEC's shift toward deregulation under Chairman Atkins, CFTC enforcement task force reorganization targeting retail and complex fraud, joint SEC-CFTC coordination on digital asset jurisdiction and the rollback of Biden-era climate disclosure mandates. Firms are advised to prioritize compliance readiness for tokenized securities guidance and expanded private market access rules expected in H1 2026. 
+
+-------------------------
+en_asia_society
+2026-01-11 12:00:00
+China 2026: What to Watch – Fireside Chat with Jing Qian and Ian Bremmer 
+The Asia Society Policy Institute released its third annual 'China 2026: What to Watch' report, featuring a fireside chat with ASPI's Jing Qian and political risk expert Ian Bremmer on Xi Jinping's consolidation of Party control, the trajectory of U.S.-China tech competition, and whether coordinated de-escalation is achievable amid semiconductor export restrictions and Taiwan deterrence. 
+
+-------------------------
+en_asia_financial
+2026-01-11 12:00:00
+Nexperia's China Unit 'Nears Fully Local Production' of Chips 
+Nexperia's Chinese subsidiary is on course to achieve full localization of most of its chip production using domestic equipment and materials in the second half of 2026, a milestone that would make it one of the first foreign-affiliated fabs to comply with China's new equipment localization mandate. The development is closely watched as a test case for how global chipmakers can navigate between U.S. export controls and Chinese procurement requirements. 
+
+-------------------------
+en_automotive_mfg_solutions
+2026-01-10 12:00:00
+Smart-factory shifts spark a fierce EV production race 
+Automotive Manufacturing Solutions examines how the race to convert legacy ICE assembly plants into EV-capable flexible production hubs has become the defining industrial challenge of 2026, with BMW, Volvo and Ford all executing simultaneous product launches and plant transformation projects. The piece highlights how megacasting, battery cell in-house production and AI-powered quality systems are becoming competitive differentiators in EV manufacturing. 
+
+-------------------------
+en_jdsupra
+2025-12-31 12:00:00
+2026 Regulatory Update for Investment Managers and Private Funds 
+Haynes Boone's JD Supra annual regulatory guide covers the key rules affecting private fund managers in 2026, including the partial rollback of the SEC's private fund adviser rules, new Form PF liquidity and side pocket reporting requirements, and the DOL's reinstatement of an investment advice fiduciary standard with a 2026 compliance deadline. Managers are advised to audit investor disclosure frameworks before year-end. 
+
+-------------------------
+en_tech_insights
+2025-12-31 12:00:00
+The Chip Insider® – Strategic Forecast for 2026 
+TechInsights' annual Chip Insider forecast for 2026 identifies HBM4, co-packaged optics and 2nm GAA transistors as the three most important technology transitions to track, predicting that AI infrastructure investment will sustain premium pricing power for leading-edge semiconductor capacity even as mainstream logic and memory face oversupply. The forecast also flags advanced packaging as the primary supply-side bottleneck constraining AI chip output. 
+
+-------------------------
+en_the_manufacturer
+2025-12-31 12:00:00
+UK manufacturing in 2026: Navigating risk and opportunity 
+The Manufacturer's annual outlook predicts that UK manufacturing will grow modestly in 2026, with aerospace, pharma and specialty chemicals outperforming, while cost pressures from the national insurance increase, energy prices and input inflation weigh on consumer goods and automotive sectors. The piece calls for accelerated government investment in apprenticeship programs and grid connection reform to enable factory electrification. 
+
+-------------------------
+en_asia_society
+2025-12-31 12:00:00
+Webinar Recap: New Paradigms and the Future of U.S.-China-Russia Relations 
+Asia Society Policy Institute's December 2025 webinar on U.S.-China-Russia dynamics explored how the triangular great-power relationship has evolved following the Iran war, with panelists debating whether Trump's bilateral engagement style with Xi and the gradual Ukraine ceasefire process create space for a new strategic equilibrium or accelerate adversarial alignment. 
+
+-------------------------
+en_mondaq
+2025-12-31 12:00:00
+Shifting Enforcement Priorities at the CFTC and the SEC 
+Foley & Lardner's Mondaq analysis examines how both the CFTC and SEC under new Republican leadership have shifted from high-volume procedural enforcement toward targeted actions against serious fraud and market manipulation, rescinding 'no-deny' settlement rules and establishing new task force structures. The piece advises compliance teams to reprioritize resources around retail investor protection and digital asset rulemaking. 
+
+-------------------------
+en_jdsupra
+2025-12-31 12:00:00
+FinTech Five – Lowenstein's FinTech, Crypto, Trading & Markets Newsletter, May 2026 
+Lowenstein Sandler's May 2026 FinTech Five newsletter on JD Supra covers President Trump's Executive Order directing financial regulators to streamline fintech access to banking infrastructure, the OCC's approval of several digital asset-focused national trust bank charters, and the Federal Reserve's clarification that tokenized securities receive the same capital treatment as conventional equivalents. 
+
+-------------------------
+en_drewry
+2025-12-31 12:00:00
+Container Shipping Financial Health Check 2026: Fundamentals Near a Reset 
+Drewry's annual financial health check for the container shipping industry warns that continued spot rate weakness, rising vessel financing costs from a record newbuild order book and softening volume growth could push sector EBIT down 96.7% year-on-year in 2026, potentially straining balance sheets for carriers that expanded capacity aggressively in 2023-2024. The report recommends carriers prioritize cost discipline and selective blank sailing coordination. 
+
+-------------------------
