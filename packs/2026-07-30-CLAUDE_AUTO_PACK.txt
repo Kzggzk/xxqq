@@ -1,0 +1,558 @@
+en_thelec
+2026-07-28 12:00:00
+Dreamtech Appoints Former Samsung Electronics Executive to Lead Semiconductor Business 
+Dreamtech established a dedicated Semiconductor (DS) Division and appointed Lee Sang-jae, a former Samsung Electronics executive, as its head, signaling an aggressive push into the semiconductor equipment market amid booming Korean fab investment. 
+
+-------------------------
+en_thelec
+2026-07-28 12:00:00
+South Korea to Review KT Data Breach Sanctions on July 29 
+South Korea's Personal Information Protection Commission will deliberate on July 29 the level of sanctions to impose on KT Corp. for a personal data breach caused by an illegal small-cell base station attack, setting a precedent for telecom cybersecurity accountability. 
+
+-------------------------
+en_aircargonews
+2026-07-28 12:00:00
+DHL reveals first Mammoth 777-200 freighter conversion and confirms 13 aircraft ordered 
+DHL unveiled its first Mammoth 777-200 passenger-to-freighter converted aircraft and confirmed an order for 13 aircraft in total, expanding express freighter capacity as demand for time-sensitive e-commerce and AI-hardware shipments remains elevated. 
+
+-------------------------
+en_gasgoo
+2026-07-28 12:00:00
+[Gasgoo Express] VW Denies Calling for EU Tariffs on Chinese Hybrids; Volvo Said to Launch New D-Segment Ultra-Luxury Sedan 
+Volkswagen denied reports that it lobbied for EU tariffs on Chinese hybrid vehicles, while Volvo is reportedly preparing a new D-segment ultra-luxury sedan targeting premium Chinese buyers as European automakers navigate the competitive threat from domestic NEV brands. 
+
+-------------------------
+en_gasgoo
+2026-07-28 12:00:00
+SAIC Motor Launches Company-Wide Executive Rotation, Systematic Strategy for Second Half of New Energy Era 
+SAIC Motor Corp. kicked off a company-wide executive rotation across its core sectors including SAIC Motor Passenger Vehicle, SAIC-GM, and HASCO Automotive, signaling a strategic management realignment as China's NEV penetration rate surges toward 65%. 
+
+-------------------------
+en_alcircle
+2026-07-28 12:00:00
+Century Aluminum expansion lifts US primary aluminium output by 10% as top officials mark Mt Holly milestone 
+Century Aluminum brought its Mt Holly smelter in South Carolina back to full capacity, raising U.S. primary aluminum production by approximately 10% and marking a milestone for domestic metals industry reinvestment supported by tariff protections. 
+
+-------------------------
+en_chargedevs
+2026-07-28 12:00:00
+Why EV charging is still such a hard business 
+A feature analysis finds EV charging operators face persistent economic challenges, with some winning major government subsidies while others shutter or retreat, as profitability remains elusive for many public charging deployments despite growing EV adoption. 
+
+-------------------------
+en_thepigsite
+2026-07-28 12:00:00
+Weekly pig report: Lean hog futures drift higher as market eyes tight supply 
+CME lean hog futures edged higher as the market anticipated tighter hog supplies heading into late summer, with Argentina's pork exports surging 156.8% year-on-year in the first five months of 2026 on strong Asian demand. 
+
+-------------------------
+en_thecattlesite
+2026-07-28 12:00:00
+Weekly protein report: New World Screwworm risk prompts increased on-farm inspection protocols 
+The weekly protein market report highlights rising New World Screwworm detection risk in U.S. cattle herds, with USDA and producers implementing heightened on-farm inspection protocols to prevent a potentially devastating livestock pest from gaining a foothold. 
+
+-------------------------
+en_thebeefsite
+2026-07-28 12:00:00
+Weekly protein report: New World Screwworm risk prompts increased on-farm inspection protocols 
+The Beef Site's weekly protein report flags escalating New World Screwworm detection risk requiring enhanced on-farm inspection protocols across U.S. beef cattle operations, with USDA raising alert levels as detection cases increase in border-adjacent states. 
+
+-------------------------
+en_moderndiplomacy
+2026-07-28 12:00:00
+The Privatisation of War and the International Law to Combat It 
+An analysis warns that the proliferation of private military companies raises acute questions for international humanitarian law, arguing failure to investigate or hold delinquent PMCs accountable will trigger severe diplomatic backlash for sponsoring states. 
+
+-------------------------
+en_aircargoweek
+2026-07-28 12:00:00
+Airfreight rates hold firm despite fifth straight weekly decline 
+The Baltic Air Freight Index fell 0.6% in the week to July 27 — a fifth straight weekly decline — yet remains 16.8% above year-ago levels, with geopolitical risk premiums and tight transatlantic capacity limiting the downside. 
+
+-------------------------
+en_ajot
+2026-07-28 12:00:00
+AAR reports rail traffic for the week ending July 25, 2026 
+Total U.S. rail carloads for the week ending July 25 reached 234,100, up 1.4% year-on-year, while intermodal volume rose 3.5% to 293,062 containers and trailers, signaling sustained freight momentum in a tightening truck capacity environment. 
+
+-------------------------
+en_globaltrademag
+2026-07-28 12:00:00
+Shipping Industry Must Adapt to New Era of Geopolitical Risk 
+Global Trade Magazine reports escalating Middle East conflict and Iran's threats to expand Hormuz disruptions are forcing global carriers and shippers into permanent geopolitical risk management protocols, with war risk insurance premiums at decade highs. 
+
+-------------------------
+en_infoworld
+2026-07-28 12:00:00
+Microsoft updates MCP C# SDK for stateless MCP 
+Microsoft unveiled MCP C# SDK v2.0 implementing the July 28 MCP specification revision — the protocol's largest revision since launch — making the Model Context Protocol stateless by default and standardizing its HTTP surface for ordinary infrastructure routing. 
+
+-------------------------
+en_consumer_fin_services_law_monitor
+2026-07-28 12:00:00
+Troutman Pepper Locke Weekly Consumer Financial Services Newsletter – July 28, 2026 
+The weekly newsletter covers the CFPB's new RFI seeking comment on reducing mortgage credit regulatory burdens, a Senate Banking Committee report finding Trump CFPB rollbacks have cost American consumers up to $26.5 billion, and a ECOA rule that took effect in July. 
+
+-------------------------
+en_stattimes
+2026-07-27 12:00:00
+Global air freight rates fall for fifth straight week: TAC Index 
+The TAC Index confirmed a fifth consecutive weekly decline in global air freight rates, with the Baltic Air Freight Index falling 0.6% in the week to July 27, though year-on-year rates remain elevated by 16.8% as geopolitical risk premiums persist. 
+
+-------------------------
+en_thelec
+2026-07-26 12:00:00
+Samsung, SK Group Announce $950 Billion AI Partnerships With US Tech Companies 
+Samsung Electronics and SK Group announced cooperation projects worth a combined $950 billion with major U.S. technology companies, spanning semiconductors, AI infrastructure, and robotics, amid renewed diplomatic and commercial pressure to deepen US-Korea tech ties. 
+
+-------------------------
+en_gasgoo
+2026-07-26 12:00:00
+[Gasgoo Express] ZEEKR addresses restricted overseas infotainment networks; China's auto exports reach 5.31 million units in first half of 2026 
+ZEEKR launched a 'Cross-border Guardian' feature to address restrictions on overseas infotainment connectivity; meanwhile China's total auto exports hit 5.31 million units in H1 2026, a 53% annual increase, driven by expanding EV demand in emerging markets. 
+
+-------------------------
+en_globaltrademag
+2026-07-26 12:00:00
+Container Spot Rates Extend Decline as Global Shipping Demand Softens 
+The benchmark container freight index fell 4% to $4,374 per 40-foot container as rising vessel capacity and weaker cargo demand placed pressure on major east-west shipping routes, though rates remain well above pre-tariff levels. 
+
+-------------------------
+en_aircargonews
+2026-07-25 12:00:00
+Etihad Cargo expands Paris freighter operation 
+Etihad Cargo announced additional freighter frequencies into Paris Charles de Gaulle airport, responding to growing demand from Middle East-Europe trade corridors as Gulf carriers rebuild networks disrupted by the Iran conflict. 
+
+-------------------------
+en_alcircle
+2026-07-25 12:00:00
+Aluminium casting prices in 2026: Why tariffs, premiums and energy are squeezing foundry margins 
+An AlCircle analysis finds U.S. tariffs on aluminum imports, elevated LME premiums, and energy price volatility are compressing foundry margins across North America and Europe, pushing some smaller operators to curtail production. 
+
+-------------------------
+en_recyclingtoday
+2026-07-25 12:00:00
+LME reports active Q2 2026 
+The London Metal Exchange reported its second-highest quarterly average daily volume for nonferrous metals contracts in Q2 2026, with elevated trading in aluminum and copper driven by supply uncertainty and active hedging by industrial consumers. 
+
+-------------------------
+en_chargedevs
+2026-07-25 12:00:00
+ChargePoint and Optimus partner to roll out 200 EV charging ports in the Eastern US 
+ChargePoint expanded its partnership with Optimus Energy Solutions to deploy more than 200 new public EV charging ports across the Southeastern United States, targeting commercial real estate sites and highway corridors. 
+
+-------------------------
+en_rttnews
+2026-07-25 12:00:00
+ADB Cuts Developing Asia Growth Outlook 
+The Asian Development Bank revised its developing Asia growth forecast to 4.9% for 2026, down from 5.1%, citing weaker export demand from advanced economies, elevated inflation driven by energy prices, and spillovers from Middle East conflict. 
+
+-------------------------
+en_globaltrademag
+2026-07-25 12:00:00
+Truck Capacity Shortage Persists as Freight Rates Stay Near Record Levels 
+U.S. shippers face a persistent truck capacity shortage with dry van spot rates hitting $3.10 per mile in June — surpassing contract rates for the first time since 2022 — as reshoring and front-loading activity compress available capacity. 
+
+-------------------------
+en_stattimes
+2026-07-25 12:00:00
+Saudia Cargo flight opens Australia gateway 
+Saudia Cargo launched the first direct air cargo link between Australia and Saudi Arabia, with the inaugural flight arriving at Melbourne's Avalon Airport on July 25, opening a new bilateral trade corridor for agricultural, manufacturing, and pharmaceutical freight. 
+
+-------------------------
+en_recyclingtoday
+2026-07-24 12:00:00
+SDI reports aluminum revenue in Q2 
+Steel Dynamics reported record steel shipments of 3.7 million tons and net sales of $6.1 billion in Q2 2026, with net income rising 79% year-over-year, while its aluminum segment contributed meaningfully to diversified metals revenue. 
+
+-------------------------
+en_moderndiplomacy
+2026-07-24 12:00:00
+EU Gives Guarded Welcome to New Trump Tariffs 
+The European Commission cautiously welcomed new U.S. tariffs of 10% and 12.5% on imports from 60 trading partners including the EU and China, while signaling readiness for retaliatory measures if trade talks stall. 
+
+-------------------------
+en_rttnews
+2026-07-24 12:00:00
+Japan Inflation Data Due On Friday 
+Japan is scheduled to release June consumer price index data on Friday, with the Bank of Japan closely monitoring whether core inflation can sustain its above-2% trajectory before the next monetary policy meeting in late July. 
+
+-------------------------
+en_infoworld
+2026-07-24 12:00:00
+Anthropic releases 'more efficient' Claude Opus 5 AI model 
+Anthropic released Claude Opus 5, delivering greatly improved performance at the same cost as its predecessor Opus 4.8, targeting enterprise developers building AI-heavy applications and positioning it as the flagship model for complex reasoning tasks. 
+
+-------------------------
+en_healthitanswers
+2026-07-23 12:00:00
+Health IT Business News, Financial Edition - July 23, 2026 
+Financial health IT news includes NextGen Healthcare named to TIME's Best Private Companies 2026 list, Teladoc Health becoming preferred virtual care provider for the NBA Players Association, and CantataHealth expanding foster care and family services capabilities. 
+
+-------------------------
+en_sdxcentral
+2026-07-22 12:00:00
+Quantinuum explores alternative route to fault-tolerant quantum computing 
+Quantinuum demonstrated a technique for fault-tolerant quantum computing using non-Abelian anyons, potentially reducing reliance on resource-intensive magic state distillation and offering a new architectural path to scalable quantum systems. 
+
+-------------------------
+en_aircargonews
+2026-07-22 12:00:00
+Asia shippers report continued volatility and predict demand growth in H2 
+Asian shippers surveyed by Air Cargo News report ongoing rate volatility but expect stronger demand in the second half of 2026, driven by AI hardware shipments, the holiday-season electronics cycle, and continued tariff front-loading by U.S. importers. 
+
+-------------------------
+en_chargedevs
+2026-07-22 12:00:00
+New report: shared charging models could accelerate electric truck adoption 
+A new industry report argues that shared depot charging infrastructure models could significantly lower financial barriers to commercial electric truck adoption among fleets, particularly for small and mid-size operators. 
+
+-------------------------
+en_thecattlesite
+2026-07-22 12:00:00
+Cattle futures rebound on seasonal beef demand - CME 
+Live cattle and feeder cattle futures climbed on CME as seasonal beef demand from school lunch buying and early Labor Day pre-buying supported prices at historically elevated levels amid historically tight cattle supplies. 
+
+-------------------------
+en_thebeefsite
+2026-07-22 12:00:00
+Cattle futures rebound on seasonal beef demand - CME 
+Live cattle futures recovered as seasonal school-lunch buying and pre-Labor Day demand lifted prices, with spot boxed beef cutout values firming and packers reporting slightly improved margins after weeks of losses. 
+
+-------------------------
+en_rttnews
+2026-07-22 12:00:00
+South Korea GDP Data Due On Thursday 
+South Korea released preliminary second-quarter GDP figures, with analysts watching for signs of export-led recovery amid globally volatile trade conditions and assessing the pace of domestic consumption against elevated household debt burdens. 
+
+-------------------------
+en_aircargoweek
+2026-07-22 12:00:00
+Qatar Airways Cargo Grows Global Network with New Capacity 
+Qatar Airways Cargo added new freighter services and resumed belly cargo routes to destinations including Casablanca, Kuala Lumpur, and Helsinki as the airline rebuilds its global network following months of Middle East conflict disruption. 
+
+-------------------------
+en_ajot
+2026-07-22 12:00:00
+US intermodal freight holds firm in July, IANA Index shows 
+The IANA intermodal index for July estimated at 106.8 — the second-highest reading of 2026 — as elevated truckload spot rates push shippers toward rail alternatives and double-stack volumes on key corridors remain near record levels. 
+
+-------------------------
+en_healthitanswers
+2026-07-22 12:00:00
+Revenue Cycle and Payer News - July 22, 2026 
+Health IT Answers' revenue cycle roundup covers CMS's Transforming Episode Accountability Model expansion to over 700 hospitals, rising claim denial rates averaging 12-14% growth, and AI tools being deployed to automate prior authorization workflows at scale. 
+
+-------------------------
+en_dsm_forecastinternational
+2026-07-22 12:00:00
+Frontline Flight: Farnborough Air Show 2026, Day 3 
+Defense Security Monitor's third-day Farnborough coverage highlights major defense contracts and technology announcements including next-generation hypersonic interceptor demos, drone swarm programs, and AI-enabled target acquisition systems from leading primes. 
+
+-------------------------
+en_recyclingtoday
+2026-07-21 12:00:00
+Global steel output ticks downward month on month 
+Global crude steel production across 70 countries reporting to the World Steel Association rose 1.7% year-on-year in June but fell 1.4% compared to May, reflecting seasonal maintenance and weaker Chinese export demand. 
+
+-------------------------
+en_traded
+2026-07-21 12:00:00
+Nathan Berman Of Metro Loft And Idan Ofer Of Quantum Pacific Group Acquire 1 Whitehall Street For $100M 
+Metro Loft and Quantum Pacific Group acquired Manhattan's 1 Whitehall Street for approximately $100 million, one of the largest Manhattan office transactions of mid-2026, reflecting continued investor appetite for well-located trophy assets at discounted basis. 
+
+-------------------------
+en_stattimes
+2026-07-21 12:00:00
+MSC Air Cargo orders five Boeing B777-8 freighters 
+MSC Air Cargo announced an order for five Boeing 777-8 freighters at the Farnborough International Airshow, marking a significant expansion of the shipping group's dedicated air cargo fleet to capture growing express and high-value freight demand. 
+
+-------------------------
+en_dsm_forecastinternational
+2026-07-21 12:00:00
+Frontline Flight: Farnborough Air Show 2026, Day 2 
+Coverage of Farnborough Day 2 focuses on European defense spending commitments and transatlantic cooperation initiatives, including Franco-German Future Combat Air System updates and UK-US collaboration on directed energy weapons programs. 
+
+-------------------------
+en_consumer_fin_services_law_monitor
+2026-07-21 12:00:00
+Troutman Pepper Locke Weekly Consumer Financial Services Newsletter – July 21, 2026 
+The newsletter covers the CFPB's July 9 request for information on mortgage credit deregulation, the new CFPB Humility Pledge requiring examiners to acknowledge limits of bureau authority, and coordinated supervision efforts with OCC and FDIC to reduce duplicative oversight. 
+
+-------------------------
+en_sdxcentral
+2026-07-20 12:00:00
+US boosts AI-RAN with $53B funding opportunity 
+The U.S. Department of Commerce announced a $53 billion funding opportunity to accelerate AI radio access networks (AI-RAN), aiming to position American carriers at the leading edge of AI-native wireless infrastructure. 
+
+-------------------------
+en_sdxcentral
+2026-07-20 12:00:00
+Cisco buying bargain Israeli startup for $150M+: report 
+Cisco is reportedly acquiring Israeli exposure management vendor Zafran Security in a deal valued above $150 million, bolstering its cybersecurity portfolio with AI-driven vulnerability prioritization technology. 
+
+-------------------------
+en_ajot
+2026-07-20 12:00:00
+Weekly Air Cargo Trends – July 13 to 19, 2026 
+Worldwide air cargo tonnages fell in the second week of July with Asia Pacific volumes down 7% partly due to Typhoon Bavi disruptions, though transpacific demand remained fundamentally strong on continued AI hardware and electronics shipments. 
+
+-------------------------
+en_airfreight_news
+2026-07-20 12:00:00
+Middle East conflict: Ceasefire extension buoys air cargo recovery 
+A ceasefire extension in the Middle East allowed Lufthansa Cargo, Gulf carriers, and DHL to cautiously restore regional air cargo capacity disrupted by U.S.-Iran strikes, though operators maintain contingency routing plans as talks remain fragile. 
+
+-------------------------
+en_moderndiplomacy
+2026-07-18 12:00:00
+Can the United States Go it Alone? The Real Cost of a Post-NATO Defense Strategy 
+An analysis examines the strategic and economic costs to the United States of operating without NATO framework as members debate a new 5% GDP defense spending target, highlighting logistics, basing rights, and intelligence-sharing dependencies. 
+
+-------------------------
+en_dsm_forecastinternational
+2026-07-17 12:00:00
+Frontline Flight: Farnborough Air Show 2026 
+Defense Security Monitor opens Farnborough 2026 coverage by examining defense highlights amid rising Iran conflict geopolitical tensions and active debates within NATO over new 5% GDP defense spending targets proposed at the Ankara summit. 
+
+-------------------------
+en_healthitanswers
+2026-07-16 12:00:00
+Health IT Business News - July 16, 2026 
+ModMed Scribe 2.0 surpassed one million AI-powered patient visits with 300% growth in three months, while HealthLynked launched a 24/7 AI healthcare communication platform featuring automated appointment scheduling and medical office AI agents. 
+
+-------------------------
+en_globaltaiwan
+2026-07-15 12:00:00
+More than Just Trade: Taiwan's Investment Boom in the United States 
+Taiwan's foreign direct investment in the United States has surged as semiconductor and electronics companies relocate manufacturing capacity, driven by U.S.-China trade tensions, CHIPS Act incentives, and corporate supply chain resilience strategies. 
+
+-------------------------
+en_alcircle
+2026-07-15 12:00:00
+$4B Oklahoma Aluminium Smelter Project moves ahead with technical studies and permitting 
+A planned $4 billion aluminum smelter project in Oklahoma advanced to technical feasibility studies and permitting, aiming to build an integrated bauxite-to-smelter domestic supply chain to reduce reliance on imported primary metal. 
+
+-------------------------
+en_thepigsite
+2026-07-15 12:00:00
+Hog futures rise as packer losses deepen - CME 
+Lean hog futures gained on the CME as pork packers reported deepening processing losses, signaling that producer leverage may be shifting amid tightening summer hog supplies and strong export demand. 
+
+-------------------------
+en_payloadspace
+2026-07-15 12:00:00
+US Commercial Space Stations Expand to Europe 
+Vast and Axiom Space announced new offices in France and Switzerland to court European space agencies and commercial customers ahead of ISS retirement, positioning themselves as the primary successors to the station in low Earth orbit. 
+
+-------------------------
+en_aircargoweek
+2026-07-15 12:00:00
+Global air cargo prices ease further 
+Global air cargo spot rates eased to $3.13 per kilogram, with worldwide tonnages down 2% partly due to the U.S. Independence Day holiday and a sharp drop in Hong Kong-Europe e-commerce flows following the EU's new de minimis import rules. 
+
+-------------------------
+en_warecre
+2026-07-15 12:00:00
+Orange County Industrial & Warehouse Market Report | Q2 2026 
+WareCRE's Q2 2026 Orange County industrial market report shows vacancy stabilizing as big-box supply is absorbed by logistics tenants, while small-bay product maintains tight conditions and premium rents reflecting continued local distribution demand. 
+
+-------------------------
+en_infoworld
+2026-07-14 12:00:00
+Microsoft releases .NET 11 Preview 6 
+Microsoft released .NET 11 Preview 6, adding improvements across the runtime, libraries, C#, and F# languages ahead of the planned November 2026 general availability release, with notable gains in performance and new async programming patterns. 
+
+-------------------------
+en_airfreight_news
+2026-07-14 12:00:00
+EIA gasoline prices July 14, 2026 
+EIA reported average U.S. gasoline prices as of July 14, 2026, with jet fuel prices remaining elevated, sustaining pressure on air cargo operating costs and supporting firmer spot freight rates despite a broader easing trend in global energy markets. 
+
+-------------------------
+en_ifr
+2026-07-13 12:00:00
+Global robotics industry joins forces to advocate for common automation strategies 
+A3, the International Federation of Robotics, VDMA Robotics + Automation, and Spain's AER Automation signed the Barcelona Declaration on Robotics and Automation 2026 on July 13, a global policy initiative to position robotics as a strategic economic and national security priority. 
+
+-------------------------
+en_thepigsite
+2026-07-10 12:00:00
+Hog futures firm on heat-driven supply tightening - CME 
+Lean hog futures firmed as extreme summer heat across the U.S. Corn Belt accelerated weight loss in hog herds, tightening near-term market-ready supplies and providing price support to producers. 
+
+-------------------------
+en_thebeefsite
+2026-07-10 12:00:00
+US beef exports hold strong in May amid global protein demand surge 
+USMEF data shows U.S. beef export value held firm in May 2026, supported by strong purchases from Japan, South Korea, and Mexico as global protein demand remained elevated and cattle supply tightness underpinned premium pricing. 
+
+-------------------------
+en_payloadspace
+2026-07-10 12:00:00
+NASA Releases CLD Draft RFP 
+NASA released the draft request for proposals for its Commercial Low Earth Orbit Destinations program, moving forward with industry-led replacements for the International Space Station and inviting proposals from consortia including Axiom, Vast, and Starlab. 
+
+-------------------------
+en_airfreight_news
+2026-07-10 12:00:00
+Chapman Freeborn delivers for aerospace client as charter demand shows no sign of slowing 
+Chapman Freeborn executed a specialized aerospace charter for a high-value client, reflecting persistent strength in charter demand driven by AI hardware, defense equipment components, and time-sensitive manufacturing shipments that scheduled freighters cannot accommodate. 
+
+-------------------------
+en_payloadspace
+2026-07-07 12:00:00
+Transporter-17 Sends the First Commercial Nuclear Sat to Orbit 
+SpaceX's Transporter-17 rideshare mission delivered City Labs' BOHR satellite — America's first commercial nuclear-powered (betavoltaic) payload — to low Earth orbit, a milestone for long-duration power sources in small satellites. 
+
+-------------------------
+en_consumerfinanceinsights
+2026-07-06 12:00:00
+Earned Wage Access Consumer Protection Act advances out of House Financial Services Committee 
+The House Financial Services Committee advanced H.R. 9330, the Earned Wage Access Consumer Protection Act, which would establish a federal regulatory framework for EWA services and create nationwide consumer protections replacing a patchwork of state laws. 
+
+-------------------------
+en_consumer_fin_services_law_monitor
+2026-07-06 12:00:00
+CFPB Releases 2026 Regulatory Agenda Detailing Planned Rulemakings 
+The CFPB released its 2026 regulatory agenda outlining planned rulemakings under the current administration, reflecting a continued shift toward deregulation, streamlining, and reconsideration of Biden-era rules including small-business data collection requirements. 
+
+-------------------------
+en_investornews
+2026-07-05 12:00:00
+Critical Minerals Report (07.05.2026): The Hunt for Industrial Expertise Is On. 
+The critical minerals race has shifted from resource discovery to building industrial processing capability, with competitive advantage in rare earths, lithium, tungsten, uranium, and battery materials increasingly tied to manufacturing execution rather than ore access. 
+
+-------------------------
+en_thecattlesite
+2026-07-03 12:00:00
+Cattle futures fall ahead of July 4 holiday - CME 
+Live cattle futures fell heading into the Independence Day holiday as lower boxed beef values and a weakening cash trade weighed on prices, though the fundamental supply tightness remained supportive of the longer-term price outlook. 
+
+-------------------------
+en_ifr
+2026-07-02 12:00:00
+US Robot Industry Returns to Double Digit Growth 
+U.S. industrial robot installations rose 11% year-on-year to 38,000 units in 2025, the IFR reported as it elected Jane Heffner as new President on July 2, 2026, with reshoring, defense capacity buildout, and AI integration driving the manufacturing automation rebound. 
+
+-------------------------
+en_areadevelopment
+2026-07-01 12:00:00
+Manufacturing / Industrial Project Announcements: Q2 2026 
+Area Development's latest project roundup tracks defense-driven reshoring investments, semiconductor fab expansions, and next-generation manufacturing facilities, with a massive shift underway as defense contractors build domestic production capacity. 
+
+-------------------------
+en_warecre
+2026-07-01 12:00:00
+Dallas-Fort Worth Warehouse Market Report 2026 
+DFW industrial demand outpaced supply in Q1 2026 for the first time in years, with 10.4 million square feet absorbed against 5.7 million delivered, signaling a key turning point in one of the nation's largest and most contested warehouse markets. 
+
+-------------------------
+en_armscontrol
+2026-06-30 12:00:00
+2026 NPT Review Conference Stymied by Disputes 
+Diplomats from 130 states at the nuclear Nonproliferation Treaty Review Conference failed to agree on measures to address rising nuclear weapons dangers, unable to overcome disputes between Iran, the United States, and other states parties. 
+
+-------------------------
+en_traded
+2026-06-25 12:00:00
+Reuben Brothers Close W South Beach for $400M Renovation 
+The Reuben Brothers closed the W South Beach hotel for a $400 million renovation-repositioning following acquisition, reflecting strong investor confidence in Miami's luxury hospitality market as high-net-worth travelers drive premium RevPAR. 
+
+-------------------------
+en_globaltaiwan
+2026-06-24 12:00:00
+Making Time Work for Taiwan, Part 2 
+The second part of a two-part series analyzes how Taiwan can leverage the 2026-2030 strategic window to strengthen its defense production, military force structure, and resilience against PRC coercion before key capability gaps widen. 
+
+-------------------------
+en_traded
+2026-06-24 12:00:00
+Hillwood Breaks Ground on 1.2M-SF Spec Industrial Project in Fort Worth 
+Hillwood Development started construction on a 1.2 million square foot speculative industrial development in Fort Worth, Texas, betting on continued logistics tenant demand from reshoring manufacturers and e-commerce distributors. 
+
+-------------------------
+en_investornews
+2026-06-21 12:00:00
+Critical Minerals Report (06.21.2026): Allies, Competitors, and Critical Minerals 
+The report examines how critical minerals cooperation faces a fundamental paradox: governments agree supply-chain security requires collaboration yet each nation focuses on securing its own industrial advantage, limiting the effectiveness of multilateral frameworks. 
+
+-------------------------
+en_armscontrol
+2026-06-15 12:00:00
+Intermediate-Range Missile Deployment in Doubt 
+The U.S. Army announced it will not deploy an intermediate-range ground-launched missile unit to Germany, reversing a 2024 commitment made to reassure European allies, raising questions about the credibility of U.S. deterrence posture in Europe. 
+
+-------------------------
+en_areadevelopment
+2026-06-15 12:00:00
+2026 Outlook: Five Logistics Trends Shaping 2027 Site Decisions 
+Area Development identifies five logistics trends reshaping 2027 site decisions: infrastructure resilience, automation readiness, workforce quality, transportation optionality, and business continuity planning as tariff disruption accelerates reshoring. 
+
+-------------------------
+en_warecre
+2026-06-15 12:00:00
+Industrial Real Estate Trends 2026 
+National industrial vacancy reached 7.0% in Q1 2026 but masks a critical bifurcation: big-box vacancy is rising as excess speculative supply is digested, while small-bay product stays significantly tighter across nearly every U.S. metro market. 
+
+-------------------------
+en_ifr
+2026-06-15 12:00:00
+Top 5 Global Robotics Trends 2026 
+The IFR's annual trends report highlights AI-powered robots, humanoids entering production environments, defense-driven reshoring, edge computing integration, and China's push to make AI-powered robots a national strategic priority as the five defining forces in global robotics for 2026. 
+
+-------------------------
+en_investornews
+2026-06-07 12:00:00
+Critical Minerals Report (06.07.2026): The Next Phase of the Critical Minerals Economy 
+A $725 million U.S. loan to Energy Fuels and a $500 million commitment to Phoenix Tailings highlight escalating federal investment in domestic rare earth processing as the critical minerals economy enters a new phase of government-backed vertical integration. 
+
+-------------------------
+en_globaltaiwan
+2026-05-22 12:00:00
+How Taiwan Fared during the 2026 Trump-Xi Summit 
+An analysis examines developments salient to Taiwan emerging from the Trump-Xi summit, including concessions on semiconductor export controls and the implications for Taiwan's security guarantees and economic autonomy. 
+
+-------------------------
+en_consumerfinanceinsights
+2026-05-19 12:00:00
+OCC Report Signals AI Governance Guidance Is on the Horizon as Banks Navigate Dual-Edged Risks 
+An OCC report signals upcoming AI governance guidance for banks, highlighting risks of AI-driven decision-making in credit underwriting, fraud detection, and customer service, while acknowledging productivity and compliance benefits. 
+
+-------------------------
+en_areadevelopment
+2026-05-15 12:00:00
+2026 Outlook: The Warehouse Market Isn't Growing — It's Sorting Itself 
+The U.S. warehouse market is resetting rather than declining, with roughly 100 million square feet of negative absorption coming from older buildings while modern high-performance facilities continue to outperform across nearly all major metro markets. 
+
+-------------------------
+en_aluminium_journal
+2026-05-15 12:00:00
+Can the EU deliver for the aluminium industry? 
+International Aluminium Journal examines whether EU industrial policy can adequately support the aluminum sector's decarbonization and competitiveness goals, with demand expected to grow 30% by 2040 while near-term energy costs and import competition weigh on European producers. 
+
+-------------------------
+en_consumerfinanceinsights
+2026-04-30 12:00:00
+OCC Clarifies Fee Authority and Preemption Under the National Bank Act 
+The OCC issued guidance clarifying the scope of federal preemption under the National Bank Act regarding fee-charging authority, with significant implications for fintech bank partnerships and state-level fee cap legislation. 
+
+-------------------------
+en_armscontrol
+2026-04-15 12:00:00
+Analysis: U.S. Negotiators Were Ill-Prepared for Serious Nuclear Talks With Iran 
+Arms Control Association analysis finds U.S. negotiators entered Iran nuclear talks without a coherent strategy or realistic baseline, limiting prospects for a durable diplomatic agreement and heightening the risk of military escalation. 
+
+-------------------------
+en_aluminium_journal
+2026-04-15 12:00:00
+Alba acquires Aluminium Dunkerque for USD 2.2 billion 
+Bahrain's Alba acquired Aluminium Dunkerque from Liberty Industries for $2.2 billion, creating a global low-carbon aluminum platform with smelting operations in both the Middle East and Europe and targeting premium markets for green aluminum. 
+
+-------------------------
+en_aluminium_journal
+2026-03-15 12:00:00
+2026: a defining year for Europe's aluminium industry 
+Europe's aluminum industry faces a defining 2026 as it navigates decarbonization mandates under the EU Carbon Border Adjustment Mechanism, energy price volatility from the Middle East conflict, and structural demand growth driven by EV and renewable energy buildout. 
+
+-------------------------
