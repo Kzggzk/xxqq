@@ -1,0 +1,540 @@
+en_splash247
+2026-08-01 12:00:00
+203,881 teu in one day: Shanghai rewrites port records
+Shanghai port set a new daily container throughput record of 203,881 teu on August 1, 2026, nearly 9% above the previous record of 187,312 teu set on June 9. The milestone reflects China's continuing export dominance amid global trade realignments.
+
+-------------------------
+en_electronicsforu
+2026-08-01 12:00:00
+August 2026 Issue of Electronics For You
+The August 2026 issue of Electronics For You covers the latest in AI-driven semiconductor design automation, advanced chiplet packaging, and diamond substrate materials for next-generation power electronics and quantum computing applications.
+
+-------------------------
+en_resource_recycling
+2026-07-31 12:00:00
+Presidential order empowers feds to block mineral exports
+President Trump signed a determination on July 30 allowing federal regulators to restrict exports of critical minerals under the Defense Production Act, giving the Secretary of Commerce authority to block outbound shipments on national security grounds.
+
+-------------------------
+en_resource_recycling
+2026-07-30 12:00:00
+GAO: Policy, tech updates needed to bolster domestic mineral supply
+A new GAO report found that policy and technology reforms are needed to strengthen domestic critical mineral supply chains, citing gaps in recycling capabilities and insufficient investment in secondary recovery technologies for rare earths and battery metals.
+
+-------------------------
+en_thepharmaletter
+2026-07-29 12:00:00
+Regulatory round-up: 29 July 2026
+The FDA approved an expanded indication for Pluvicto in combination with AR pathway inhibitors for metastatic prostate cancer patients on August 3, and Vertex's Casgevy received expanded sickle cell disease approval in the latest regulatory roundup covering multiple NDA acceptances and Priority Reviews.
+
+-------------------------
+en_secondarylink
+2026-07-28 12:00:00
+ACE & Company launches dedicated private equity platform
+ACE & Company launched a dedicated private equity secondary platform to serve family offices and institutional investors seeking liquidity, reflecting accelerating demand in the GP-led continuation fund and LP stake secondary market.
+
+-------------------------
+en_federalnewsnetwork
+2026-07-27 14:00:00
+Accenture wins $821M Pentagon AI data platform contract
+Accenture won an $821 million contract to mature the Pentagon's War Data Platform, an AI-powered system that aggregates more than 1,500 data sources to provide intelligence, targeting data, and decision support to frontline commanders.
+
+-------------------------
+en_federalnewsnetwork
+2026-07-27 12:00:00
+House votes for Department of War renaming as part of an annual defense bill
+The House voted to include President Trump's proposed renaming of the Department of Defense as the Department of War in the FY2026 NDAA, which also incorporates a historic $1.15 trillion defense spending request.
+
+-------------------------
+en_federalnewsnetwork
+2026-07-27 10:00:00
+Pentagon seeks to shift billions to cover rising personnel costs
+The Department of Defense asked Congress to reprogram funding away from a range of procurement programs to cover increased military pay, benefits, and other personnel costs that exceeded original FY2026 budget projections.
+
+-------------------------
+en_carbuzz
+2026-07-25 12:00:00
+Big New EV Incentives Still Exist, But You'll Have To Move West To Find Them
+California created a new zero-emissions vehicle rebate program to replace the discontinued federal EV tax credit, offering first-time buyers $3,500 off at the dealership and additional credits for lower-income households, while other western states consider similar measures.
+
+-------------------------
+en_drybulkmagazine
+2026-07-23 12:00:00
+Panama Canal reports higher transits and tonnage while preparing to meet demand amid expected El Nino conditions
+The Panama Canal reported increased transit volumes and cargo tonnage in Q3 fiscal year 2026 as it adapts operations to anticipated El Nino weather patterns that could affect water levels and maximum vessel draft restrictions later in the year.
+
+-------------------------
+en_moderndiplomacy
+2026-07-20 14:00:00
+The Calm Is the Anomaly: Why the Taiwan Strait Is More Dangerous Than the Headlines Suggest
+Analysis argues Beijing is no longer treating Taiwan as an isolated military problem but as one node in a comprehensive campaign spanning alliance management, technology denial, and economic coercion, making the current quiet more precarious than widely understood.
+
+-------------------------
+en_thepharmaletter
+2026-07-20 12:00:00
+Regulatory round-up: 20 July 2026
+Weekly pharma regulatory roundup covering Vera Therapeutics' Trutakna accelerated approval for IgA nephropathy on July 8 and Revtorpyk FDA approval for HR+/HER2- locally advanced breast cancer on July 14, with multiple NDA acceptances and Priority Reviews.
+
+-------------------------
+en_carbuzz
+2026-07-20 12:00:00
+745 Miles Of Range With The Solid-State Pack - The Battery Making Today's EVs Instantly Obsolete
+A major solid-state battery breakthrough promises 745 miles of range on a single charge, dramatically exceeding current lithium-ion EV capabilities and threatening to upend the competitive landscape for both established automakers and battery suppliers.
+
+-------------------------
+en_twz
+2026-07-20 10:00:00
+10,000 Low-Cost Cruise Missiles In Three Years Procurement Plan Laid Out By Pentagon
+The Pentagon outlined plans to acquire at least 10,000 lower-cost cruise missiles over the next three years, with initial test procurement from four LCCM companies beginning in June 2026 to support the assessment phase of the program.
+
+-------------------------
+en_moderndiplomacy
+2026-07-17 12:00:00
+China's Pacific Missile Test and the Indo-Pacific's New Nuclear Reality
+China's long-range missile test into the Pacific has reshaped nuclear deterrence calculations in the Indo-Pacific, with analysts warning that existing alliance frameworks and extended deterrence commitments may be inadequate for the new threat environment.
+
+-------------------------
+en_electronicsforu
+2026-07-15 14:00:00
+AI Agents Gain Self-Verification In EDA
+Siemens and NVIDIA expanded their collaboration to introduce self-verifying agentic AI workflows for semiconductor and PCB design, combining large language model reasoning with physics-based EDA simulation tools to autonomously validate design decisions.
+
+-------------------------
+en_insurancebusinessmag
+2026-07-15 12:00:00
+Catastrophe reinsurance prices post historic annual fall
+Global property-catastrophe reinsurance prices fell 16% year-on-year at June and July 2026 renewals, the steepest annual decline in 25 years, as record capital inflows from ILS markets and retained earnings overwhelm modest demand growth.
+
+-------------------------
+en_hcplive
+2026-07-15 11:00:00
+FDA News Recap: Novel Drug Approvals in First Half of 2026
+The first half of 2026 saw 22 novel drug approvals spanning oncology, hepatology, cardiology, and rare diseases, including the first FDA-approved therapy for chronic HDV infection (bulevirtide) and expanded indications for several gene therapies.
+
+-------------------------
+en_twz
+2026-07-15 10:00:00
+New Low-Cost Cruise Missile Features Tomahawk-Like Range (RAACM-ER)
+CoAspire unveiled the RAACM-ER at Sea-Air-Space 2026, a rapidly adaptable affordable cruise missile with over 1,000 nautical miles of range designed to deliver Tomahawk-class reach at a fraction of the cost, supporting the Pentagon's mass munitions strategy.
+
+-------------------------
+en_igrownews
+2026-07-15 09:00:00
+AIVA Launches National Network to Validate AgTech on Canadian Farms
+AIVA launched a national network to validate agricultural technology solutions at commercial farm scale in Canada, bridging the gap between AgTech innovation and on-farm deployment across diverse crop and livestock systems.
+
+-------------------------
+en_chiplet_marketplace
+2026-07-14 12:00:00
+TYLsemi Raises $43 Million to Launch First Full-Stack Chiplet Platform for Custom AI Silicon
+TYLsemi emerged from stealth in July 2026 with a $43 million funding round, positioning itself as the first chiplet platform company to deliver a complete portfolio spanning IO, power delivery, and memory chiplets paired with custom silicon design services for AI applications.
+
+-------------------------
+en_thepharmaletter
+2026-07-13 12:00:00
+Regulatory round-up: 13 July 2026
+The July 13 FDA regulatory roundup covers new molecular entity approvals and biologics license application acceptances, including FDA-approved Tregzi (allogeneic regulatory T cell immunotherapy from Orca Bio) for bone marrow transplantation approved July 1.
+
+-------------------------
+en_electronicsforu
+2026-07-10 14:00:00
+Advanced Packaging Scales AI Chiplets
+Intel Foundry demonstrated its advanced semiconductor packaging roadmap using Foveros 3D stacking, EMIB silicon bridges, and new EMIB-T technology to integrate multiple heterogeneous chiplets into single high-performance packages for next-generation AI processors.
+
+-------------------------
+en_twz
+2026-07-10 12:00:00
+USAF Plans To Buy 28,000 Low-Cost Cruise Missiles In Five Years Advance With New Deals
+The US Air Force confirmed plans to procure nearly 28,000 Family of Affordable Mass Missiles over five years, with Anduril's Barracuda-500, CoAspire's RAACM, and Zone 5 Technologies' designs awarded multiyear framework agreements.
+
+-------------------------
+en_defensedaily
+2026-07-10 10:00:00
+Anduril, CoAspire, Zone 5 Ink Multiyear Frameworks For Low-Cost Cruise Missile Production
+The Pentagon signed new multiyear production framework agreements with Anduril Industries, CoAspire, and Zone 5 Technologies for low-cost cruise missiles under the Air Force's Family of Affordable Mass Missiles program, accelerating affordable precision munitions at scale.
+
+-------------------------
+en_insurancebusinessmag
+2026-07-10 09:00:00
+Property-cat rates fall up to 25% as reinsurance capital hits record high
+Property-catastrophe reinsurance rates fell as much as 25% at mid-year renewals as dedicated reinsurance capital reached $501 billion at year-end 2025, with alternative capital at $121 billion and catastrophe bond volume climbing to $54 billion.
+
+-------------------------
+en_investornews
+2026-07-06 12:00:00
+Critical Minerals Report (06.07.2026): The Next Phase of the Critical Minerals Economy
+The DOE awarded $67 million to Colorado School of Mines and ElementUSA for a rare earth processing facility in Louisiana as the critical minerals sector shifts strategic focus from mining to processing capabilities, where supply chain bottlenecks increasingly reside.
+
+-------------------------
+en_investornews
+2026-07-05 12:00:00
+Critical Minerals Report (07.05.2026): The Hunt for Industrial Expertise Is On
+Competitive advantage in critical minerals is shifting toward processing, manufacturing, customer qualification, and secure supply chain execution rather than resource discovery, as the sector increasingly behaves like a geopolitical competition between industrial systems.
+
+-------------------------
+en_defensedaily
+2026-07-05 11:00:00
+Defense Watch: F-35 Spares, SPEAR Integration, C-UAS and UAS News, $5B for AI
+Weekly defense technology roundup covers F-35 spare parts supply chain issues, UK SPEAR 3 missile integration progress, counter-UAS system deployments, and the $5 billion Pentagon AI initiative targeting autonomous systems and decision support.
+
+-------------------------
+en_evinfrastructurenews
+2026-07-02 12:00:00
+Geely's Aegis Golden Brick EV battery achieves 1,093kW peak charging in certified testing
+Geely's Aegis Golden Brick battery achieved a certified peak charging power of 1,093kW in third-party testing, setting a new record for EV battery charging speed and underscoring China's continued technological leadership in next-generation battery development.
+
+-------------------------
+en_splash247
+2026-07-01 14:00:00
+China smashes ship-order record in first half of 2026
+Chinese shipyards booked 121.06m dwt of new vessel orders in H1 2026, up 173.1% year-on-year and equal to 82.3% of global ordering on a deadweight basis, surpassing the total for any previous full year and cementing China's dominance in global shipbuilding.
+
+-------------------------
+en_hcplive
+2026-07-01 12:00:00
+First Half 2026 Recap: Hepatology
+The FDA approved bulevirtide (Hepcludex) on May 22 as the first-ever approved therapy for chronic HDV infection, and accepted bepirovirsen for Priority Review with Breakthrough Therapy designation for hepatitis B treatment, marking a milestone period for liver disease therapeutics.
+
+-------------------------
+en_carbuzz
+2026-07-01 11:00:00
+EV Sales Aren't Great, But They're Not As Bad As You Might Think
+US Q1 2026 battery-electric vehicle sales showed mixed results but selective recovery signals, with Toyota, Hyundai, and Cadillac posting encouraging growth while broader market adoption remains constrained by infrastructure gaps and charging anxiety.
+
+-------------------------
+en_payloadspace
+2026-07-01 10:00:00
+Fortastra Lands $8M Seed to Develop Orbital Defense Sats
+Fortastra secured $8 million in seed funding to develop orbital defense satellites capable of monitoring and responding to anti-satellite threats, joining a growing cohort of defense-focused space startups as the US military accelerates space domain awareness investment.
+
+-------------------------
+en_payloadspace
+2026-07-01 09:00:00
+Lynk and Omnispace Plan to Merge
+Satellite direct-to-device connectivity companies Lynk and Omnispace announced a merger combining their complementary orbital assets and spectrum portfolios, aiming to compete with SpaceX's Starlink Direct-to-Cell service across underserved global markets.
+
+-------------------------
+en_payloadspace
+2026-07-01 08:00:00
+Viasat and Space42 Share Strategy for Equatys JV
+Viasat and Abu Dhabi's Space42 detailed plans for their Equatys joint venture, targeting a constellation of up to 2,800 satellites to provide broadband connectivity across the Middle East, Africa, and Asia-Pacific through an integrated ground-space system.
+
+-------------------------
+en_macromicro
+2026-07-01 07:00:00
+H2 2026 Global Central Bank Outlook
+MacroMicro's H2 2026 central bank outlook shows the Federal Reserve holding at 3.50-3.75% amid sticky inflation, with the EU lowering Eurozone GDP growth forecasts to 0.9% for 2026 and raising inflation projections to 3.0% as geopolitical headwinds persist.
+
+-------------------------
+en_defensedaily
+2026-07-01 06:00:00
+L3Harris And Sierra Space Receive $1.75 Billion For SDA Tranche 3, Tracking Layer
+L3Harris Technologies ($955M) and Sierra Space ($798M) received Other Transaction Authority contracts for the Space Development Agency's Tranche 3 Tracking Layer, accelerating deployment of missile defense-capable satellites by end of 2028.
+
+-------------------------
+en_lawfare
+2026-07-01 05:00:00
+Military AI Policy by Contract: The Limits of Procurement as Governance
+Analysis argues that using procurement contracts as the primary governance mechanism for military AI creates legal uncertainty and accountability gaps, calling for new legislative frameworks to govern the deployment of autonomous systems in lethal operations.
+
+-------------------------
+en_riskandinsurance
+2026-07-01 04:00:00
+Global Insurance Growth Slows To 1.3% In 2026 As Fragmentation Reshapes Risk
+Global insurance premium growth slowed to 1.3% in 2026 as trade fragmentation, geopolitical instability, and divergent regulatory regimes create new risk categories that existing products struggle to price and underwrite effectively.
+
+-------------------------
+en_evinfrastructurenews
+2026-07-01 03:00:00
+CATL Launches 8C Ultra-Fast Charging Tianxing II Battery for Commercial EVs
+CATL launched its Tianxing II commercial vehicle battery featuring 8C ultra-fast charging to 80% in under 7 minutes, with plans to deploy the technology across 4,000 charging stations in China by the end of 2026.
+
+-------------------------
+en_igrownews
+2026-06-25 12:00:00
+Trump Signs Executive Order to Advance Regenerative and Precision Agriculture
+President Trump signed an Executive Order on June 25 directing the EPA, USDA, and HHS to promote regenerative agriculture practices, advance precision agriculture technologies, and reduce the regulatory burden on farmers adopting modern digital farming tools.
+
+-------------------------
+en_environmental_finance
+2026-06-24 12:00:00
+Environmental Market Rankings 2026
+STX Group topped the Environmental Finance 2026 market rankings in a record 23 categories across both compliance and voluntary carbon markets, reflecting its dominance in ESG commodity trading as global carbon market volumes recover after years of reputational setbacks.
+
+-------------------------
+en_investornews
+2026-06-21 12:00:00
+Critical Minerals Report (06.21.2026): Allies, Competitors, and Critical Minerals
+Analysis of why critical minerals cooperation among allied nations has stalled, as competitive industrial policy and divergent subsidy regimes create frictions preventing coherent supply chain coordination even among ostensible partners in the US-led alliance system.
+
+-------------------------
+en_environmental_finance
+2026-06-15 14:00:00
+A mature and streamlined global carbon market is in sight
+Following operationalization of Article 6.4 carbon crediting mechanisms, environmental commodity markets are entering a more politically uncertain but increasingly mature phase, with CBAM reshaping trade dynamics and encouraging tighter domestic carbon pricing globally.
+
+-------------------------
+en_riskandinsurance
+2026-06-15 12:00:00
+U.S. Property Claim Volume Falls as Severity Poised to Climb, Verisk Q1 2026 Report Shows
+US property insurance claim volume fell 8.9% year-over-year in Q1 2026 running 13% below the five-year average, but average replacement cost values indicate severity is approaching a second-highest-ever reading as material and labor costs remain elevated.
+
+-------------------------
+en_techinsights
+2026-06-15 10:00:00
+The Semiconductor Industry's Trillion-Dollar Milestone: Four Years Ahead of Schedule
+The global semiconductor industry is projected to breach the $1 trillion annual revenue threshold in 2026, roughly four years ahead of earlier consensus forecasts, as AI compute demand drives unprecedented investment in advanced logic, HBM memory, and advanced packaging.
+
+-------------------------
+en_drybulkmagazine
+2026-06-12 12:00:00
+Globus Maritime Limited report first quarter financial results
+Globus Maritime reported Q1 2026 revenues of $12.2 million, up sharply from $8.6 million in Q1 2025, driven by improved charter rates across the dry bulk fleet amid stronger coal and grain trade volumes following geopolitical supply chain realignments.
+
+-------------------------
+en_techinsights
+2026-06-11 12:00:00
+Semiconductor Analytics - June 11, 2026
+TechInsights' weekly semiconductor analytics note covers AI accelerator shipment data, HBM4 16Hi production ramp progress at Samsung and SK Hynix, and supply-demand dynamics for advanced packaging capacity at TSMC and Intel Foundry.
+
+-------------------------
+en_drybulkmagazine
+2026-06-03 12:00:00
+Castor Maritime Inc. announce first quarter financial results
+Castor Maritime reported improved Q1 2026 financial results reflecting stronger market conditions across both its dry bulk and containership segments, with voyage revenues rising on firmer Baltic Exchange indices and improved fleet utilization.
+
+-------------------------
+en_lawfare
+2026-06-02 12:00:00
+Latest NDAA Supports AI Safety, Innovation, and China Decoupling
+The FY2026 NDAA contains provisions reshaping US national AI policy, including expanded export controls on advanced chips to adversary nations via the AI OVERWATCH Act framework and new DoD requirements for AI safety testing before battlefield deployment.
+
+-------------------------
+en_hcplive
+2026-06-01 14:00:00
+First Half 2026 Recap - Cardiology
+The first half of 2026 brought cardiology approvals including baxdrostat for treatment-resistant hypertension and multiple new heart failure therapies, while several high-profile late-stage trials reported mixed outcomes that shifted prescribing expectations for 2027.
+
+-------------------------
+en_riskandinsurance
+2026-06-01 12:00:00
+Q1 2026 Natural Catastrophe Losses Fall Well Below Average
+Global insured catastrophe losses totaled $20 billion in Q1 2026, 26% below the 10-year average, with no single event exceeding $10 billion and leaving the reinsurance industry with ample catastrophe budget capacity heading into the historically active H2.
+
+-------------------------
+en_ckgsb
+2026-06-01 10:00:00
+China Economic Consolidation and Strategic Shifts in 2026
+China's 2026 economic trajectory is characterized by consolidation rather than expansion, with the 15th Five-Year Plan emphasizing technological self-reliance and high-quality development while headwinds from the property slump and weak consumer confidence persist.
+
+-------------------------
+en_moderndiplomacy
+2026-05-27 12:00:00
+Taiwan: The Most Dangerous Flashpoint in the World?
+The Taiwan crisis is fundamentally about the future balance of power in the Indo-Pacific and control over the world's most advanced semiconductor industry, with China's Justice Mission 2025 exercise demonstrating unprecedented geographic scope and encirclement rehearsal capabilities.
+
+-------------------------
+en_techinsights
+2026-05-15 14:00:00
+Semiconductor Analytics - May 14, 2026
+TechInsights' mid-May analytics update covers next-generation HBM4 architecture transitions, silicon photonics co-packaged optics advances promising 70% networking power reduction, and the accelerating 2nm gate-all-around transistor technology ramp at leading foundries.
+
+-------------------------
+en_ckgsb
+2026-05-15 12:00:00
+China's Export Boom: Masking Deeper Economic Strains
+China's 12-month rolling trade surplus climbed to a record $1.1 trillion in H1 2026, but CKGSB economists argue export strength masks persistent domestic demand weakness, property sector fragility, and a household balance sheet recession that official stimulus has failed to reverse.
+
+-------------------------
+en_lawfare
+2026-05-15 10:00:00
+White House Releases Executive Order on AI
+The White House released an executive order directing federal agencies to strengthen AI-enabled cybersecurity defenses and coordinate AI deployment with the private sector, following a March 20 comprehensive national AI framework offering industry-friendly legislative proposals.
+
+-------------------------
+en_sustainableatlas
+2026-05-15 09:00:00
+State of Sustainability 2026 - Annual Data Snapshot
+Sustainability Atlas's annual data snapshot reports 80 key sustainability statistics across 13 sectors including energy transition, emissions, carbon markets, circular economy, nature, and ESG investment, tracking progress against Paris Agreement milestones.
+
+-------------------------
+en_defenseindustrydaily
+2026-05-15 08:00:00
+AGM-158 JASSM: Lockheed's Family of Stealthy Cruise Missiles
+Lockheed Martin received a $128.2 million JASSM-ER contract modification in 2026, with the extended-range stealthy cruise missile serving as a cornerstone of the Pentagon's deep-strike capability and featuring prominently in NDAA multi-year procurement authorizations.
+
+-------------------------
+en_environmental_finance
+2026-05-01 14:00:00
+Is the voluntary carbon market finally ready to grow up?
+After years of credibility crises and market contraction, the voluntary carbon market shows signs of maturation in 2026, with new integrity frameworks, improved measurement methodologies, and corporate buyer requirements increasingly aligned on science-based quality standards.
+
+-------------------------
+en_gisreports
+2026-05-01 12:00:00
+EU bans all Russian gas for good
+All 27 EU member states adopted a binding regulation in January 2026 to phase out all remaining Russian pipeline gas and LNG imports, whether shipped directly or via third countries, marking the formal end of Europe's dependence on Russian energy.
+
+-------------------------
+en_sustainableatlas
+2026-05-01 10:00:00
+Top 10 EU Sustainability Regulations to Know in 2026
+A comprehensive guide to the ten most consequential EU sustainability regulations affecting businesses in 2026, covering CSRD, CBAM, EU Taxonomy, SFDR, the Nature Restoration Law, and new mandatory due diligence requirements under the Corporate Sustainability Due Diligence Directive.
+
+-------------------------
+en_defenseindustrydaily
+2026-05-01 09:00:00
+P-8 Poseidon MMA Long-Range Maritime Patrol
+AAR Government Services secured a $1.2 billion contract for P-8A Poseidon maritime patrol aircraft maintenance with completion expected by October 2026, supporting the Navy's expanding anti-submarine warfare and maritime domain awareness missions across the Indo-Pacific.
+
+-------------------------
+en_insurancebusinessmag
+2026-05-01 08:00:00
+Capital inflows drive rate pullback at January 2026 renewals - Howden
+January 2026 reinsurance renewals saw significant rate pullbacks as strong capital inflows from institutional investors and ILS markets pushed excess capacity, with Howden noting cedants benefited from the most favorable pricing environment since 2016.
+
+-------------------------
+en_sustainableatlas
+2026-04-15 14:00:00
+Top 10 ESG Asset Managers 2026
+Rankings of the ten global asset managers with the most material ESG investment platforms in 2026, based on assets under management, stewardship track record, climate-aligned fund ranges, and institutional buyer shortlisting in climate-focused RFPs.
+
+-------------------------
+en_gisreports
+2026-04-15 12:00:00
+Geoeconomic risks cloud Southeast Asia's energy future
+CBAM implementation and escalating US-China trade tensions are reshaping Southeast Asia's energy investment landscape, with regional governments caught between decarbonization commitments, energy security imperatives, and the need to attract foreign capital in a fragmenting world order.
+
+-------------------------
+en_chiplet_marketplace
+2026-04-15 10:00:00
+2026 Predictions: System-Level Design, AI-Native Workflows, and the Rise of Multi-Die Compute Fabrics
+Industry experts predict 2026 will see SoC design teams shift fundamentally toward system-level thinking driven by AI-native EDA tools, with multi-die compute fabrics and advanced 2.5D/3D architectures expanding beyond HPC into automotive, edge AI, and communications.
+
+-------------------------
+en_ckgsb
+2026-04-01 14:00:00
+International Firms in China: Balancing Risks and Rewards
+CKGSB's guide for multinational corporations navigating China's evolving regulatory environment identifies the emerging tension between remaining competitive in the world's second-largest economy and managing supply chain decoupling pressures from home-country governments.
+
+-------------------------
+en_macromicro
+2026-04-01 12:00:00
+2026 MEO: Three Economies, One Semiconductor Supercycle
+MacroMicro's Q1 macroeconomic outlook identifies a historic semiconductor supercycle as the anchor of global economic resilience in 2026, with massive capital investment reshaping supply chains and lifting growth in Taiwan, South Korea, and the US semiconductor equipment corridor.
+
+-------------------------
+en_gisreports
+2026-04-01 10:00:00
+Global oil dynamics after Venezuela ouster
+Following the political ouster of Venezuela's government, global oil market dynamics are shifting as new management signals intent to restart production, adding potential supply just as the Strait of Hormuz crisis has tightened Atlantic Basin crude and LNG markets.
+
+-------------------------
+en_defenseindustrydaily
+2026-04-01 09:00:00
+Lockheed Tapped For C2BMC Development
+Lockheed Martin was awarded a $4.1 billion ceiling contract to continue developing the Command and Control, Battle Management and Communications (C2BMC) system, which integrates sensors and interceptors across the US ballistic missile defense architecture.
+
+-------------------------
+en_igrownews
+2026-03-20 12:00:00
+BBLeap raises €5m for precision spraying tech
+BBLeap secured €5 million in funding for its precision agricultural spraying systems that use real-time crop sensing to reduce chemical usage by 20% to 99% while boosting application productivity by up to 40% compared to conventional broadcast spraying methods.
+
+-------------------------
+en_secondarylink
+2026-03-17 14:00:00
+19% of family offices may sell in the secondary market in 2026
+A Setter Capital survey found that 19% of family offices are considering selling fund stakes or direct positions in the secondary market in 2026, driven by portfolio rebalancing needs, liquidity requirements, and growing maturity of the secondary ecosystem.
+
+-------------------------
+en_pacforum
+2026-03-17 12:00:00
+Issues & Insights 26.2: Indo-Pacific Connections
+The Pacific Forum's January 2026 Issues & Insights report analyzes Indo-Pacific security connectivity, covering trilateral defense consultations between the US, Japan, and Australia, and assessing how China's military modernization is reshaping deterrence requirements.
+
+-------------------------
+en_fintechblueprint
+2026-03-01 12:00:00
+Google Pay's Competitive Strategy Against Apple Pay and Ant Financial
+Analysis of Google Pay's strategic repositioning to compete with Apple Pay in developed markets and Ant Financial's super-app model in Asia, examining how digital wallets are evolving into broader financial services platforms with BNPL, investments, and insurance integrations.
+
+-------------------------
+en_chiplet_marketplace
+2026-02-17 12:00:00
+Chiplets Reach an Architectural Turning Point - Menta at Chiplet Summit 2026
+The Chiplet Summit 2026 in Santa Clara highlighted how programmable logic chiplets are reaching an architectural inflection point, with Menta presenting its approach to enabling flexible, reconfigurable compute fabrics that adapt to diverse AI and edge inference workloads.
+
+-------------------------
+en_agritechinsights
+2026-02-03 12:00:00
+Precision Agriculture Soars: UAVs and AI Revolutionize Vineyard Management
+The integration of very-high-resolution UAV imagery, 3D reconstruction, and deep learning is transforming vineyard management, enabling precise canopy density mapping, disease detection, and variable-rate input application that reduces costs while improving grape quality.
+
+-------------------------
+en_agritechinsights
+2026-02-01 14:00:00
+Precision Farming to Revolutionize Global Agriculture by 2026
+Over 70% of large crop farms globally are expected to adopt satellite-based precision farming technologies by end of 2026, with AI and IoT-enabled systems enabling real-time crop monitoring, automated irrigation decisions, and yield optimization across diverse agroclimatic regions.
+
+-------------------------
+en_pacforum
+2026-02-01 12:00:00
+Trilateral Defense Consultations Established by US, Japan, Australia
+A trilateral defense meeting established formal Trilateral Defense Consultations to align policy and operational objectives between the JSDF, Australian Defense Force, and US forces, covering intelligence sharing, air interoperability, and defense industrial cooperation.
+
+-------------------------
+en_fintechblueprint
+2026-02-01 10:00:00
+Neobanks Annual Report Analysis: Revolut, Starling, and Monzo
+Deep analysis of annual reports from Revolut, Starling, and Monzo reveals diverging strategies as the three UK neobank giants transition from growth-focused challengers to regulated banks competing for SME banking, cross-border payments, and embedded financial services customers.
+
+-------------------------
+en_secondarylink
+2026-01-15 14:00:00
+The Rise of Global Secondaries: Navigating the New Private Fundraising Landscape
+Analysis of how the secondaries market is reshaping global private capital fundraising, as LP stake sales and GP-led continuation funds provide liquidity to a maturing private equity ecosystem and attract new pools of institutional and family office capital.
+
+-------------------------
+en_insurancebusinessmag
+2026-01-15 12:00:00
+Reinsurance sector enters 2026 with record capital and resilience - EY
+EY's annual reinsurance sector review reports the industry entered 2026 with the highest capitalization and solvency margin ratios since 2021, with dedicated capital at $501 billion and alternative capital at $121 billion creating exceptional capacity across all lines.
+
+-------------------------
+en_macromicro
+2026-01-15 10:00:00
+Outlook 2026 Series: The Year of Market Reckoning - Ten Charts That Matter
+MacroMicro's annual outlook identifies 2026 as a year when fundamentals reclaim center stage from liquidity-driven markets, with EU central bank divergence, the semiconductor supercycle, and geopolitical realignments as the ten most critical factors to watch.
+
+-------------------------
+en_pacforum
+2026-01-15 09:00:00
+National Security and Defense: Deterring China in the Indo-Pacific
+Pacific Forum's national security program analysis calls for comprehensive changes to security and economic approaches in the Indo-Pacific, as China's military modernization, axis of autocracy dynamics, economic warfare tactics, and erosion of conventional deterrence demand urgent policy responses.
+
+-------------------------
+en_evinfrastructurenews
+2026-01-10 14:00:00
+CES 2026 Round-up: New EV Charger and Solid-State Battery
+At CES 2026 in Las Vegas, Autel Energy launched next-generation EV charging infrastructure and ProLogium partnered with Darfon Energy Tech to unveil new solid-state battery solutions, previewing technologies expected to reshape the EV ownership experience through 2028.
+
+-------------------------
+en_agritechinsights
+2026-01-10 12:00:00
+Agriculture's 2026 Transformation: Tech and Trade Triumphs
+AgriTech Insights' annual outlook for 2026 projects crop yield improvements of up to 25% from innovative precision agriculture solutions, driven by convergence of satellite-based monitoring, AI decision tools, and autonomous machinery across large-scale commercial farming operations.
+
+-------------------------
+en_fintechblueprint
+2026-01-01 12:00:00
+AI and DeFi Integration in Financial Services
+The Fintech Blueprint's analysis of AI agent and decentralized finance convergence explores how autonomous financial agents are beginning to execute complex treasury management, lending, and trading strategies across traditional and blockchain-based financial infrastructure.
+
+-------------------------
+en_splash247
+2026-01-01 10:00:00
+Shipping Technology and Dry Bulk in 2026
+Splash247's outlook on shipping technology development in 2026 covers the maritime industry's transition from digital adoption experimentation to pragmatic deployment, with AI-powered route optimization, autonomous vessel technology, and green fuel adoption entering commercial maturity phases.
+
+-------------------------
