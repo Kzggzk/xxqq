@@ -1,0 +1,582 @@
+en_fiercepharma
+2026-08-06 12:00:00
+Replimune secures FDA approval for melanoma therapy Tudriqev after long regulatory battle 
+The FDA approved Replimune's oncolytic immunotherapy Tudriqev for advanced melanoma on August 6, 2026, ending a prolonged regulatory battle that included two prior rejections and leadership changes at the agency. The approval marks the first oncolytic virus therapy cleared for systemic delivery and positions Replimune to compete in the late-line melanoma market against checkpoint inhibitors. 
+
+-------------------------
+en_nucnet
+2026-08-05 12:00:00
+Helium-3 Could Be Sourced From Moon For TAE's Nuclear Fusion Reactors 
+TAE Technologies and Black Moon Energy Corporation have signed an agreement to explore helium-3 lunar extraction as a future fuel source for TAE's field-reversed configuration fusion reactors, marking the first formal commercial partnership linking fusion energy development with space-resource extraction. TAE says its reactor design is uniquely suited to burn helium-3, a fuel that produces minimal radioactive waste compared to deuterium-tritium approaches. 
+
+-------------------------
+en_world_nuclear_news
+2026-08-04 12:00:00
+Entergy to consider deployment of Holtec's SMR-300 
+Holtec International signed a memorandum of agreement with US utility Entergy and South Korea's Hyundai Engineering & Construction to evaluate deploying the SMR-300 small modular reactor across Entergy's service territory, which spans Arkansas, Louisiana, Mississippi, Michigan, New York, and Texas. The partnership would leverage Hyundai's large-scale construction capabilities alongside Holtec's reactor design as the US nuclear sector accelerates SMR deployment. 
+
+-------------------------
+en_marinelink
+2026-08-03 12:00:00
+SEA-LNG: LNG Bunkering is Surging Across Major Global Ports 
+SEA-LNG data shows Singapore recorded a 48% increase in LNG bunkering volumes in Q1 2026 versus the same period in 2025, reaching 150,000 tonnes, while Rotterdam and Antwerp-Bruges together posted a 44% increase, signaling accelerating fleet adoption of LNG as a marine fuel. The surge is driven by shipowners seeking compliance pathways under tightening IMO emissions regulations and growing availability of bunkering infrastructure. 
+
+-------------------------
+en_ciodive
+2026-08-03 12:00:00
+Amazon ups AI investments as cloud sector chases windfall 
+Amazon Web Services accelerated its AI infrastructure investments in Q2 2026 as enterprise cloud spending hit $143 billion in the quarter, up from $100 billion a year earlier, with AWS holding its leading market share position against Microsoft Azure and Google Cloud. The hyperscaler race is being driven by surging enterprise AI model deployment, with AWS betting on custom Trainium chips and expanded data center capacity to attract AI workloads. 
+
+-------------------------
+en_datacentremagazine
+2026-08-02 12:00:00
+Meta and NVIDIA: The Future of Data Centre Infrastructure 
+Meta announced a deepened multiyear partnership with NVIDIA, committing to large-scale deployments of CPUs, networking gear, and millions of GPUs across hyperscale facilities to support its AI ambitions, with the partnership spanning training clusters for Llama and inference infrastructure for AI products deployed to over 3 billion users. The deal underscores how hyperscalers are locking in long-term GPU supply commitments to outpace rival AI buildouts. 
+
+-------------------------
+en_unmannedsystemstechnology
+2026-08-01 12:00:00
+Tethered Drone System Launches to Advance Tactical Electronic Warfare 
+Indra Group unveiled a vehicle-tethered quadcopter system that elevates electronic warfare payloads to over 100 meters altitude to extend the tactical detection range of land units against hostile communications and drone threats, offering persistent EW coverage without the logistical burden of fixed towers. The system is designed for rapid deployment with ground vehicles and integrates with existing EW suites. 
+
+-------------------------
+en_commercialuavnews
+2026-08-01 12:00:00
+Around the Commercial Drone Industry: Whale Tracking, Expo Sneak Peek, Manufacturing 
+Commercial UAV News rounds up the latest industry developments including drone-based whale monitoring programs, a preview of the Commercial UAV Expo 2026 agenda in Las Vegas (September 1-3), and Terra Industries' expansion of domestic drone manufacturing capacity. The roundup highlights how BVLOS regulatory progress and AI-driven payload analytics are pushing commercial drones from niche tools toward core operational infrastructure. 
+
+-------------------------
+en_metal_com
+2026-07-31 12:00:00
+Goldman Sachs: Copper to Outperform Aluminum in 2026, Recommends Long-Short Strategy 
+Goldman Sachs issued a commodity strategy note recommending a long copper, short aluminum paired trade for 2026, arguing that copper's supply deficit driven by mine project delays and surging green energy demand will outpace aluminum's growing surplus from new Indonesian smelter capacity additions of approximately 950,000 metric tons. Shanghai Metals Market reports LME copper remains elevated near $13,000 per ton while aluminum faces downward pressure from supply additions. 
+
+-------------------------
+en_mintecglobal
+2026-07-31 12:00:00
+Commodity Market Movers: July 2026 Raw Materials Price Report 
+Mintec's July 2026 Market Movers report covers significant price movements across food, feed, metals, energy, and packaging commodities, noting that cocoa prices remain historically elevated despite improved West African harvest prospects, while palm oil and soybean prices are diverging as biodiesel mandates create regional demand splits. The report also tracks the impact of drought in southern Europe on durum wheat and olive oil prices, which are affecting food manufacturing input costs across the continent. 
+
+-------------------------
+en_bobsguide
+2026-07-30 12:00:00
+Ant International's $1.2bn Bet Signals the Rise of Agentic Settlement Infrastructure 
+Ant International's $1.2 billion strategic investment in AI-driven settlement infrastructure signals a major bet that autonomous AI agents will become a primary counterparty in cross-border payment settlement by the end of the decade, with Ant's platform designed to enable AI systems to execute, verify, and reconcile payments without human intervention. BobsGuide analysis frames the investment as a first-mover attempt to become the settlement backbone for the emerging agentic economy. 
+
+-------------------------
+en_eastasiaforum
+2026-07-28 12:00:00
+India's China doctrine of selective derisking 
+India's March 2026 partial easing of Press Note 3 investment restrictions on Chinese capital marks the most significant adjustment in India-China economic policy since the 2020 Galwan Valley military clash, reflecting New Delhi's recognition that complete economic decoupling from China is neither feasible nor strategically optimal. The selective derisking approach allows Chinese investment in non-sensitive manufacturing while maintaining restrictions on strategic sectors such as telecom and defence. 
+
+-------------------------
+en_hartenergy
+2026-07-28 12:00:00
+Williams Agrees to Buy Momentum Midstream for $5.5B 
+Williams Companies agreed to acquire Momentum Midstream for up to $5.5 billion, expanding its position in the Haynesville Shale gathering and processing network to capitalize on growing feedgas demand from Gulf Coast LNG export terminals. Hart Energy reports the deal reflects midstream consolidators' conviction that AI data center power demand and LNG export growth will sustain elevated natural gas volumes through the 2030s. 
+
+-------------------------
+en_world_nuclear_news
+2026-07-28 12:00:00
+Darlington SMR project's foundation module milestone 
+The foundation basemat module for the first SMR in a G7 country — Ontario Power Generation's Darlington New Nuclear Project using GE Vernova Hitachi's BWRX-300 design — was successfully set in place, weighing nearly 953 tonnes and measuring 37 metres in diameter, marking the most significant physical construction milestone for the project. Canada's Darlington SMR is seen globally as a critical proof point for whether SMRs can be delivered on time and budget. 
+
+-------------------------
+en_fiercepharma
+2026-07-27 12:00:00
+FDA approves Otsuka's ADHD drug Simtriyo, teeing up its 'next major CNS launch' 
+The FDA approved Otsuka Pharmaceutical's Simtriyo (centanafadine) for ADHD in patients aged 6 and older, making it the first approved norepinephrine-dopamine-serotonin reuptake inhibitor and a potential blockbuster in a large market where stimulant medications dominate but face compliance and abuse concerns. Otsuka is positioning Simtriyo as a non-stimulant option with a differentiated mechanism targeting all three monoamine systems simultaneously. 
+
+-------------------------
+en_medicalxpress
+2026-07-25 12:00:00
+New clinical data advances stem cell-based cell therapy for Parkinson's disease 
+Twelve-month outcomes from the STEM-PD Phase I/II clinical trial, presented at the ISSCR 2026 Annual Meeting, showed that a cryopreserved dopaminergic progenitor cell product derived from human pluripotent stem cells was safe and showed early signals of motor improvement in Parkinson's patients who had received the cell transplants. Researchers say the off-the-shelf nature of the product could simplify manufacturing logistics compared to autologous cell approaches. 
+
+-------------------------
+en_intelligentinsurer
+2026-07-25 12:00:00
+Beazley shrinks H1 and rejigs cessions, led by de-risking in cyber 
+Specialty (re)insurer Beazley cycle-managed its book lower in H1 2026, reducing gross written premiums as pricing softened in cyber and property catastrophe lines while accelerating growth investments in casualty and marine, with the group noting that its reinsurance cessions were restructured to reduce net catastrophe exposure ahead of the Atlantic hurricane season. Intelligent Insurer reports Beazley's combined ratio deteriorated modestly from the exceptionally low H1 2025 level. 
+
+-------------------------
+en_southeastasiadesk
+2026-07-25 12:00:00
+Southeast Asia Weekly: ASEAN-South Korea Supply Chains, Energy Strategy 
+The Southeast Asia Desk's weekly brief covers the July 2026 ASEAN-ROK Regional Connectivity Forum in Jakarta, where policymakers discussed upgrading the ASEAN-Korea Free Trade Area as a supply chain resilience platform, alongside energy security debates as Southeast Asian nations balance LNG import dependence with renewable energy transition goals and Chinese investment in power infrastructure. The week's coverage also tracks ASEAN nations' positioning on US tariff negotiations. 
+
+-------------------------
+en_eastdaley
+2026-07-22 12:00:00
+Top Stories Mid-2026: A Hidden Constraint Limits Permian Gas Growth 
+East Daley Analytics' mid-year analysis identifies compression availability and gathering line capacity as underappreciated constraints on Permian Basin gas production growth despite record pipeline takeaway additions, with analysis suggesting that processing plant and compression bottlenecks will cap gas volumes below headline takeaway capacity through 2027. The finding has significant implications for midstream companies with throughput-sensitive contracts and fee structures. 
+
+-------------------------
+en_docwirenews
+2026-07-20 12:00:00
+Kidney News in Brief: Xenotransplant Recipient Gets Human Kidney 
+A patient who had previously received a genetically engineered pig kidney xenotransplant subsequently received a human donor kidney transplant, providing clinicians with rare data on sequential xenotransplantation and human allograft outcomes in the same patient. DocWire News reports the case highlights ongoing questions about how prior xenotransplantation affects sensitization and immune responses to subsequent human organs. 
+
+-------------------------
+en_ttnews
+2026-07-20 12:00:00
+LTL carriers eye further growth due to truckload constraints 
+Less-than-truckload carriers reported stronger demand, rising shipment weights, and higher rates in mid-2026 as tightening truckload capacity pushed shippers toward LTL for time-sensitive freight, fueling optimism for the second half of 2026 among regional and national carriers. Transport Topics reports that multiple LTL carriers raised their general rate increases in June, a step that had been largely absent during the prolonged freight downcycle. 
+
+-------------------------
+en_evinfrastructurenews
+2026-07-20 12:00:00
+Geely's Aegis Golden Brick EV battery achieves 1,093kW peak charging in certified testing 
+Geely's Aegis Golden Brick battery pack achieved 1,093 kilowatts of peak charging power in official certification testing, setting a new global record for production EV battery charging speeds and enabling theoretical charge times of under 5 minutes for significant range additions. The achievement positions Chinese battery technology at the leading edge of ultra-fast charging development ahead of BYD, CATL, and Japanese solid-state battery programs. 
+
+-------------------------
+en_chinabankingnews
+2026-07-20 12:00:00
+China's central bank more talk than action on monetary policy 
+Despite announcing a 'moderately loose' monetary policy stance for 2026, China's People's Bank of China has implemented fewer and smaller rate reductions than financial markets anticipated, prompting criticism that monetary stimulus is insufficient to offset deflationary pressures from the property sector downturn and weak consumer confidence. China Banking News reports that credit growth has slowed to multi-year lows even as policy rates decline, suggesting structural credit demand weakness rather than just a supply-side problem. 
+
+-------------------------
+en_ciodive
+2026-07-20 12:00:00
+Enterprises seek help to deploy AI as complexity mounts 
+A new survey by Deloitte cited by CIO Dive found that 76% of enterprise technology leaders say driving measurable business value from AI investments is their top priority in 2026, yet the same proportion report that security concerns, data readiness gaps, and integration complexity are blocking broader AI deployment despite significant budget commitments. The findings point to a growing market for AI deployment services, testing, and governance platforms as organizations move from AI experimentation to production at scale. 
+
+-------------------------
+en_igrownews
+2026-07-20 12:00:00
+Smart Irrigation Investment: AgTech Deals Shaping 2026 
+iGrow News tracked a sustained acceleration of M&A and strategic investment across the smart irrigation market in 2026, with soil-moisture monitoring companies acquiring scheduling software platforms, hardware manufacturers integrating external weather data feeds, and agricultural water infrastructure corporates writing checks into smaller AgTech startups to build vertically integrated precision irrigation systems. The consolidation reflects growing demand from large-scale row crop farmers who need automated, data-driven irrigation decisions to manage water costs under drought and regulatory pressure. 
+
+-------------------------
+en_carbonherald
+2026-07-18 12:00:00
+Global CCS Institute Maps Latest Carbon Capture Technologies As CCS Sector Expands 
+The Global CCS Institute published its 2026 State of the Art: CCS Technologies compendium, cataloguing over 190 carbon capture, storage, and utilization solutions from more than 90 companies, with accelerated growth in post-combustion capture, direct air capture, and CO2 transport infrastructure as the sector moves from pilot projects to commercial deployment ahead of 2030 climate targets. The report identifies industrial decarbonization in cement, steel, and chemicals as the highest-value near-term CCS application areas. 
+
+-------------------------
+en_commercialuavnews
+2026-07-18 12:00:00
+2026: A Pivotal Year for the Commercial Drone Industry 
+Commercial UAV News' industry analysis frames 2026 as a inflection point year where BVLOS regulatory frameworks in the US, EU, and UK are becoming operational rather than theoretical, AI-based payload analytics are enabling commercial ROI from drone data collection that previously required large ground-based analysis teams, and the FCC's Covered List expansion to foreign-made drone components is forcing US operators to evaluate supply chain shifts toward domestic or allied-nation hardware. The article notes the industry is moving from early-adopter markets toward mainstream infrastructure applications. 
+
+-------------------------
+en_alphamaven
+2026-07-15 12:00:00
+Alpinum Investment Management's H2 2026 Hedge Fund Outlook 
+Alpinum Investment Management's mid-year outlook forecasts a more challenging second half for hedge funds as the cycle shifts from broad beta gains toward a higher-dispersion, stock-picking environment, with macro and quant strategies seen as most exposed to the regime change. AlphaMaven aggregated the report alongside 140,000+ alternative investment headlines available to its 24,000+ registered institutional investors. 
+
+-------------------------
+en_hartenergy
+2026-07-15 12:00:00
+Midstream Sector Gains Momentum as LNG, Power Demand Drive Growth 
+US midstream companies significantly outperformed broader energy equities in the first half of 2026, driven by rising natural gas volumes tied to LNG export capacity additions and data center power demand, according to Hart Energy's H1 midstream performance report. Gathering and processing companies with Permian and Haynesville exposure posted the strongest earnings beats as producers ramped activity in anticipation of new pipeline takeaway capacity. 
+
+-------------------------
+en_recharged
+2026-07-15 12:00:00
+EV Battery Technology 2026: Solid-State, LFP, Sodium and More 
+Recharged's comprehensive 2026 battery technology guide documents the commercial landscape where LFP chemistry dominates affordable EVs and NMC leads premium long-range models, while solid-state batteries remain in limited-run pilot vehicles from Chinese and Japanese manufacturers with mass-market deployment not expected before 2030. The guide notes that sodium-ion chemistry is gaining traction in city-car segments in China as a cost-effective alternative to lithium-based cells. 
+
+-------------------------
+en_bobsguide
+2026-07-15 12:00:00
+Fintech Revenues Surge to Record $504B as Sector Outpaces Incumbents 
+Global fintech revenues reached a record $504 billion in 2025 and are expanding at four times the rate of traditional financial services incumbents, accounting for 4% of total global financial services revenues, according to BCG data cited by BobsGuide. The growth is concentrated in payments, embedded finance, and digital lending, with Southeast Asia and Latin America recording the fastest regional expansion as mobile-first consumer populations leapfrog traditional banking infrastructure. 
+
+-------------------------
+en_worldenergynews
+2026-07-15 12:00:00
+Global LNG demand to increase in 2026 while supply also increases 
+World Energy News reports that global LNG demand is expected to grow significantly in 2026 as at least 35 million metric tons of new liquefaction capacity enters service in the US and Qatar, potentially easing the tight market that followed the Ukraine conflict and driving prices lower than the peaks of 2022-2023. The increased supply is expected to stimulate demand from price-sensitive importers in South and Southeast Asia who cut LNG use during the high-price period. 
+
+-------------------------
+en_cbtnews
+2026-07-15 12:00:00
+EV Sales Hit Record Highs Globally as US Demand Stalls at 5.8% 
+CBT News reports that global EV sales are tracking toward record annual volumes in 2026 led by China and Europe, while US EV market share has stalled at approximately 5.8% after the expiration of Inflation Reduction Act consumer tax credits reduced monthly payment incentives for new EV buyers. American dealers are adapting to the bifurcated market by stocking more hybrid vehicles to capture buyers who want electrification benefits without committing to all-electric. 
+
+-------------------------
+en_medicalxpress
+2026-07-14 12:00:00
+Death of girl in Chinese gene-editing trial kept secret: Report 
+An investigative report revealed that a participant in a Chinese gene-editing clinical trial died and the death was not disclosed to regulatory authorities or the public for months, raising serious concerns about clinical trial transparency and oversight in China's fast-growing biotech sector. The case is expected to trigger regulatory reviews of informed consent and adverse event reporting requirements for gene therapy trials conducted in China. 
+
+-------------------------
+en_selfdrivenews
+2026-07-12 12:00:00
+Mobileye to Launch Its Own Robotaxi Business 
+Mobileye announced plans to launch a company-operated robotaxi service in a major US city in 2027, starting with approximately 100 vehicles and targeting a fleet of 17,000 over five years, marking a strategic shift from its core role as an ADAS technology supplier to becoming a direct mobility operator. The move positions Mobileye to capture higher-margin revenues from ride-hailing while leveraging its SuperVision and Drive platforms already deployed in millions of vehicles. 
+
+-------------------------
+en_docwirenews
+2026-07-10 12:00:00
+monarchE Shows Survival Benefit With Adjuvant Abemaciclib Across All Nodal Burdens 
+Long-term monarchE trial data presented at ASCO 2026 demonstrated that adjuvant abemaciclib (Verzenio) combined with endocrine therapy provided statistically significant improvements in overall survival for early-stage hormone receptor-positive, HER2-negative breast cancer patients across all nodal burden subgroups. The results strengthen the case for abemaciclib as a standard-of-care adjuvant option and are expected to expand its use in lower-risk node-positive patients. 
+
+-------------------------
+en_pgjonline
+2026-07-10 12:00:00
+US Gas Demand Sets Up Largest Pipeline Expansion Since 2008 
+Strong domestic natural gas demand from data centers, industrial users, and LNG export terminals is driving the largest wave of US pipeline construction since the peak of the shale boom in 2008, with nearly 18 billion cubic feet per day of new capacity expected to enter service in 2026 and 2027. Pipeline and Gas Journal reports that the expansion is concentrated in the Permian Basin, Haynesville Shale, and Gulf Coast LNG corridors. 
+
+-------------------------
+en_eastdaley
+2026-07-10 12:00:00
+Momentum Midstream is a Bet on the Haynesville LNG Corridor 
+East Daley Analytics' analysis of the Williams-Momentum Midstream acquisition frames it as a strategic bet on Haynesville gas production growth tied to Gulf Coast LNG terminal expansions projected to add 36.5 Bcf/d of feedgas demand by December 2030, representing a near-doubling of current LNG export capacity. The Haynesville's proximity to Sabine Pass, Calcasieu Pass, and planned Venture Global terminals gives Momentum's gathering network unique connectivity value. 
+
+-------------------------
+en_intelligentinsurer
+2026-07-10 12:00:00
+International Group signs off reinsurance cover for 2026/27 
+The International Group of P&I Clubs finalized its reinsurance cover placement for the 2026/27 policy year, securing capacity for the marine liability programme that covers the world's shipping fleet against oil spill, cargo, and crew liability risks, with the renewal reflecting stable reinsurance pricing and continued strong capacity from Bermuda, Lloyd's, and European markets. The successful placement came despite elevated claims from increased geopolitical shipping route disruptions. 
+
+-------------------------
+en_datacentremagazine
+2026-07-10 12:00:00
+The Month In Data Centres: June 2026 Edition 
+Data Centre Magazine's June 2026 roundup covers record hyperscaler capital expenditure commitments exceeding $500 billion collectively from Microsoft, Google, and Amazon for data center infrastructure, the continued shift of US hyperscale development toward inland Texas and Midwestern states driven by power availability, and the emergence of floating deep-ocean data centers as a novel approach to solving land, cooling, and power constraints simultaneously. The issue also tracks the growing deployment of nuclear power purchase agreements by cloud operators. 
+
+-------------------------
+en_medicalxpress
+2026-07-10 12:00:00
+Body's Own Cell-to-Cell Messaging Packets Studied as Next-Generation Medicines Basis 
+Researchers at Spain's Blood and Tissue Bank are developing methods to therapeutically manufacture extracellular vesicles — nanoparticles cells use to communicate — as the basis for targeted drug delivery systems, tissue repair therapies, and potential cancer treatments, with the approach offering advantages over synthetic nanoparticles due to the vesicles' natural ability to cross biological barriers including the blood-brain barrier. The field has attracted significant interest from large pharma companies seeking non-viral gene delivery platforms. 
+
+-------------------------
+en_alphamaven
+2026-07-08 12:00:00
+Hedge Fund Outlook H2 2026: Cycle Is Shifting, Beta Is Fading 
+AlphaMaven's curated H2 2026 hedge fund outlook collection features reports from Blackstone, Invesco, Alpinum, and other managers converging on the view that the first half's broad equity beta rally is giving way to a more selective, alpha-generating environment as dispersion rises across sectors and geographies. Multiple managers recommend increasing allocations to macro, market-neutral, and event-driven strategies as the interest rate and earnings cycle turns less favorable for passive equity exposure. 
+
+-------------------------
+en_docwirenews
+2026-07-05 12:00:00
+New Phase 3 Analyses of APRIL Inhibition in IgA Nephropathy 
+New Phase 3 data on APRIL pathway inhibition in IgA nephropathy showed sustained proteinuria reduction and preservation of kidney function at 24 months with atacicept, building the evidence base for targeting the BAFF/APRIL axis as a transformative approach in a rare kidney disease that previously lacked disease-modifying therapies. The results were presented at the International Symposium on IgA Nephropathy 2026. 
+
+-------------------------
+en_logisticsbusiness
+2026-07-05 12:00:00
+AI Robotics and Automation Showcased at MODEX 2026 
+MODEX 2026 in Atlanta featured AI-guided robotic systems from vendors including Locus Robotics, Vecna, and 6 River Systems capable of adapting pick sequences in real time based on order prioritization and inventory positioning, moving the industry beyond fixed-path automation toward flexible, learning-based warehouse operations. Logistics Business reports that physical AI — systems combining computer vision, ML, and robotics — was the dominant theme as exhibitors compete to meet growing e-commerce fulfilment speed requirements. 
+
+-------------------------
+en_selfdrivenews
+2026-07-01 12:00:00
+Pony.ai Partners With JD Auto Service for Nationwide Robotaxi Fleet Maintenance 
+Pony.ai signed a partnership with JD.com's JD Auto Service subsidiary to build a standardized nationwide maintenance and parts distribution network for its robotaxi fleet as Pony scales toward 3,500 autonomous vehicles by year-end 2026, addressing the logistical challenge of maintaining geographically dispersed robot fleets at scale. The partnership is designed to reduce robotaxi downtime through predictive maintenance and rapid parts availability across JD Auto Service's national dealership and service network. 
+
+-------------------------
+en_hartenergy
+2026-06-30 12:00:00
+Kinder Morgan Officially Opens More Gas Egress from the Permian 
+Kinder Morgan announced it had brought online new Permian Basin gas egress capacity as the first of three major basin expansion projects scheduled to enter service in 2026, providing the first meaningful outlet for associated gas that had been flaring due to pipeline constraints. The addition is expected to reduce Waha Hub basis differentials and support increased Permian drilling activity by operators previously deterred by takeaway bottlenecks. 
+
+-------------------------
+en_uasfeed
+2026-06-28 12:00:00
+Ukrainian Long-Range Drones Strike Russian Refineries in Krasnodar and Yaroslavl 
+Ukrainian long-range strike drones hit petroleum refinery infrastructure in Russia's Krasnodar and Yaroslavl regions on June 28, 2026, with Russian President Putin publicly acknowledging a domestic fuel deficit resulting from cumulative drone strikes on energy infrastructure. UAS Feed reports the strikes underline how drone attrition campaigns are reshaping industrial warfare and imposing strategic economic costs on adversaries. 
+
+-------------------------
+en_eastdaley
+2026-06-28 12:00:00
+New Matterhorn Summit: Flows Suggest Compression Expansion is Live 
+East Daley Analytics' weekly Burner Tip report shows gas flows on the Matterhorn Express pipeline increasing beyond its 2.5 Bcf/d nameplate capacity, suggesting that compression expansion work is operational ahead of the formal announcement, which would provide additional Permian gas egress during a period of rising West Texas production. Higher throughput is moving Waha spot natural gas prices from deeply negative toward break-even levels. 
+
+-------------------------
+en_evinfrastructurenews
+2026-06-28 12:00:00
+China EV market shifts to high-tech focus in 2026 as price floor ends subsidy wars 
+China's EV market is undergoing a strategic pivot from price-led subsidized competition to technology differentiation as the government's EV subsidy programs wind down, with automakers like BYD, NIO, and Xpeng investing in solid-state batteries, intelligent driving, and AI cockpit systems to compete on features rather than price alone. Analysts expect the shift to accelerate consolidation among smaller Chinese EV brands unable to fund the technology investments required to compete. 
+
+-------------------------
+en_bobsguide
+2026-06-28 12:00:00
+The 2026 Fed Pivot: Why Fintechs and Banks Must Prepare for a Strategic Pause 
+With the Federal Reserve signaling an extended pause in its rate-cutting cycle amid sticky inflation, BobsGuide analysis warns that fintechs and banks built growth models on declining funding costs face a strategic recalibration as net interest margins compress and deposit competition intensifies. The article argues that lenders who deployed capital aggressively during 2024-2025 rate cuts are most exposed to deteriorating credit quality as higher-for-longer rates stress borrower cash flows. 
+
+-------------------------
+en_mintecglobal
+2026-06-28 12:00:00
+Global Grain Markets Face Mounting Pressure From Black Sea Operational Risks 
+Mintec's grain market analysis identifies compounding operational and weather-related pressures on Black Sea grain exports as both Ukraine's port infrastructure and Russia's agricultural logistics face ongoing disruption, threatening to tighten global wheat and corn supply balances heading into the 2026-27 marketing year. The analysis finds that importers in MENA and South Asia are accelerating diversification of grain sourcing toward the US, Argentina, and Australia to reduce exposure to Black Sea supply risk. 
+
+-------------------------
+en_uasfeed
+2026-06-27 12:00:00
+One-Way Attack Drones Target Commercial Vessels Exiting Strait of Hormuz 
+One-way attack drones struck two commercial vessels transiting out of the Strait of Hormuz on June 25 and 27, 2026, prompting the US military to conduct retaliatory airstrikes on Iranian drone-storage and radar facilities in a rapid escalation that raised tanker insurance premiums and briefly spiked crude prices. The attacks underscore the growing threat of low-cost drone swarms to global maritime trade routes. 
+
+-------------------------
+en_carbonherald
+2026-06-25 12:00:00
+CCSA EU Conference 2026: Europe's Carbon Capture Debate Moves From Ambition To Execution 
+At the Carbon Capture and Storage Association's EU Conference 2026 in Brussels, senior industry and policy leaders shifted the agenda from whether to deploy CCS to how to finance, permit, and operate commercial-scale projects, reflecting a maturation of the sector from concept validation to project execution challenges. Several European cement and power plant CCS projects are reaching final investment decisions, with Germany's €6 billion industrial decarbonization initiative beginning competitive funding rounds in mid-2026. 
+
+-------------------------
+en_worldenergynews
+2026-06-25 12:00:00
+JERA expects LNG prices to remain stable as Qatar repairs drag on 
+Japan's JERA, one of the world's largest LNG buyers, forecasts that LNG prices will remain relatively stable in the near term because Qatar's LNG facility restoration timeline following conflict-related damage is uncertain, keeping a supply buffer off the market while European buyers rebuild storage ahead of winter. World Energy News notes that Qatar's North Field expansion projects are expected to add capacity in the 2026-2028 period regardless of the repair timeline. 
+
+-------------------------
+en_medicalxpress
+2026-06-25 12:00:00
+New Antibiotic Kills Drug-Resistant Bacteria by Targeting Previously Unknown Vulnerability 
+Researchers identified manikomycin, a newly discovered antibiotic that kills drug-resistant bacteria including MRSA and MDR Enterococcus by blocking the ribosomal exit tunnel — a previously unexploited mechanism — with the compound showing activity against priority WHO pathogen list bacteria without toxicity to human cells in preclinical studies. The discovery represents one of the first genuinely new antibiotic mechanisms identified in two decades and could address the growing crisis of multidrug-resistant bacterial infections. 
+
+-------------------------
+en_commercialuavnews
+2026-06-25 12:00:00
+Commercial UAV Expo Debuts DRONERESPONDERS Program Management Course 
+The Commercial UAV Expo 2026 announced a new two-day DRONERESPONDERS Program Management Course at its Las Vegas event (September 1-3), designed to train public safety drone program coordinators in fleet management, incident command integration, pilot certification administration, and procurement processes. The course reflects the maturation of public safety drone adoption from individual pilot programs to institutionalized fleet operations requiring professional program management expertise across police, fire, and emergency management agencies. 
+
+-------------------------
+en_uasfeed
+2026-06-22 12:00:00
+AeroVironment Fiscal Q4 Results: Annual Revenue Nearly Doubles to $2 Billion 
+AeroVironment reported fiscal year 2026 Q4 earnings showing annual revenue approaching $2 billion, nearly double its revenue from two years prior, driven by surging demand for its Switchblade loitering munition systems, JUMP 20 tactical UAS, and Vapor rotary-wing platforms from US and allied military customers prioritizing drone capabilities in response to lessons from the Ukraine conflict. UASFeed reports the company's backlog reached record levels as defense departments accelerate uncrewed systems procurement. 
+
+-------------------------
+en_ttnews
+2026-06-20 12:00:00
+Transport M&A builds momentum alongside freight market 
+Trucking mergers and acquisitions activity improved materially in the first half of 2026 as freight market conditions recovered, with sellers who had delayed exits returning to market and buyers selectively targeting carriers with strong dedicated contracts and modern fleets. Transport Topics reports that FTR's data points to truckload spot rates rising 3.6% in 2026 as the prolonged freight downcycle finally reverses. 
+
+-------------------------
+en_world_nuclear_news
+2026-06-20 12:00:00
+US federal funds awarded to spur SMR deployment 
+The US Department of Energy selected eight companies to collectively receive over $94 million in federal cost-shared funding to support near-term deployment of advanced light-water small modular reactors, with the funding intended to reduce first-of-a-kind engineering costs and accelerate regulatory review timelines for SMR designs at the pre-licensing stage. Recipients include startups developing sub-300 MW reactor designs targeting industrial heat and remote power applications. 
+
+-------------------------
+en_cbtnews
+2026-06-20 12:00:00
+Dealers Brace for Influx of Off-Lease EVs in 2026 
+More than 300,000 EVs are expected to return from lease in 2026, representing a more than 200% increase from 2025 as vehicles leased during the high-incentive period of 2022-2023 come off contract, creating a significant influx of low-mileage used EV inventory for dealerships already managing softening retail EV demand. CBT News analysis suggests used EV values could face further depreciation pressure as supply overwhelms demand in a market where many consumers are uncertain about EV range and charging infrastructure. 
+
+-------------------------
+en_alphamaven
+2026-06-20 12:00:00
+Invesco Outlook: Alternative Investments H2 2026 
+Invesco's H2 2026 alternative investments outlook published on AlphaMaven identifies private credit, infrastructure debt, and real asset strategies as the most attractive alternatives for institutional investors seeking to reduce correlation with public market volatility, while noting that direct lending spreads have compressed significantly from 2023-2024 peaks. Invesco flags geopolitical supply chain disruptions and AI-driven sector bifurcation as the key macro themes investors should position for in alternatives portfolios. 
+
+-------------------------
+en_logisticsbusiness
+2026-06-18 12:00:00
+One-Touch Order Fulfilment at LogiMAT 2026 
+LogiMAT 2026 in Stuttgart showcased a new generation of one-touch fulfilment systems where goods arrive, are sorted, and dispatched with minimal human handling, driven by advances in AI-guided robotics, vision systems, and modular conveyor integration from exhibitors including Körber, SSI Schäfer, and Dematic. The show floor reflected an industry-wide shift from isolated automation islands toward end-to-end connected fulfilment ecosystems. 
+
+-------------------------
+en_chinabankingnews
+2026-06-18 12:00:00
+China needs 10 trillion yuan stimulus plan: Liu Shijin 
+Prominent Chinese economist Liu Shijin called for a ten trillion yuan fiscal stimulus package to arrest China's economic slowdown, arguing that incremental policy measures have been insufficient to reverse deflationary expectations and property market contraction, and that a major intervention is needed to prevent Japan-style deflation taking hold. China Banking News notes the proposal signals growing debate within Chinese economic policy circles about the adequacy of current support measures. 
+
+-------------------------
+en_pgjonline
+2026-06-15 12:00:00
+Energy Transfer Plans Up to $5.5 Billion in 2026 Gas Pipeline Spending 
+Energy Transfer announced capital expenditure plans of up to $5.5 billion for 2026, with the majority directed toward natural gas pipeline expansions and processing facilities in the Permian Basin and Gulf of Mexico corridor to meet rising LNG feedgas and power generation demand. The company said it was tracking contract discussions for additional pipeline projects that could expand its 2027 and 2028 spending targets further. 
+
+-------------------------
+en_intelligentinsurer
+2026-06-15 12:00:00
+Reinsurance pricing takes 'decisive turn' at 1/1 renewals: Howden 
+Howden Re's analysis of January 2026 reinsurance renewals describes a 'decisive turn' in pricing dynamics as abundant capital, strong reinsurer profitability, and growing inflows of alternative capital shifted negotiating leverage toward cedants for the first time since 2022, resulting in risk-adjusted rate reductions across property catastrophe and specialty lines for buyers with clean loss records. The broker warns that further softening could compress reinsurer margins if major catastrophe losses emerge in H2 2026. 
+
+-------------------------
+en_metal_com
+2026-06-15 12:00:00
+Global Aluminum Faces Deficit, Copper Sees Oversupply in March 2026: WBMS Report 
+The World Bureau of Metal Statistics March 2026 report found global primary aluminum production of 5.63 million metric tons against consumption of 5.98 million metric tons, representing a 344,100 metric ton supply deficit driven by strong demand from EV battery housings and renewable energy applications. Meanwhile, refined copper recorded a modest surplus as Chilean mine output recovered from earlier disruptions, though analysts expect the copper market to swing back to deficit by H2 2026. 
+
+-------------------------
+en_ciodive
+2026-06-15 12:00:00
+Global IT spend to exceed $6 trillion in 2026 
+Gartner research cited by CIO Dive projects global IT spending will surpass $6 trillion for the first time in 2026, with enterprise software and IT services recording the fastest growth driven by AI implementation spending, cloud migration, and cybersecurity investment. The forecast represents a 9% increase over 2025 and highlights how CIOs are navigating pressure to demonstrate AI ROI while continuing to modernize legacy infrastructure. 
+
+-------------------------
+en_selfdrivenews
+2026-06-15 12:00:00
+Waymo Driverless Vehicles Crash 68% Less Than Human Drivers: IIHS Study 
+A new IIHS study analyzing crash data from Waymo's commercial robotaxi operations across San Francisco, Phoenix, Los Angeles, and Austin found that Waymo's fully driverless vehicles were involved in crashes at a 68% lower rate than human drivers, representing the most comprehensive evidence yet that Level 4 autonomous driving is significantly safer than human driving in complex urban environments. The study covered over 25 million miles of Waymo autonomous operation. 
+
+-------------------------
+en_southeastasiadesk
+2026-06-15 12:00:00
+State of Southeast Asia 2026 Survey: Geopolitics and Risks 
+The Southeast Asia Desk's analysis of the ISEAS-Yusof Ishak Institute's State of Southeast Asia 2026 Survey finds that regional policy elites perceive China as the dominant economic and geopolitical force but distrust Beijing's intentions, while expressing frustration with US foreign policy unpredictability under the current administration, and are consequently pursuing strategic hedging through middle-power partnerships with Japan, South Korea, and Australia. The Philippines, which holds the 2026 ASEAN Chair, is navigating increased pressure from South China Sea disputes while managing economic interdependence with China. 
+
+-------------------------
+en_unmannedsystemstechnology
+2026-06-15 12:00:00
+Laser Counter-Drone System Set to Revolutionize UK Defense 
+Drone Major partnered with olee.space to commercialize a high-power fibre laser counter-drone system for UK defence applications, with the technology capable of neutralizing incoming drone threats at a cost of less than £1 per intercept — orders of magnitude cheaper than conventional missile-based air defenses — and designed to handle swarm attacks that would overwhelm kinetic-only defenses. The UK Ministry of Defence is evaluating directed energy weapons including the system for integration with existing base protection infrastructure. 
+
+-------------------------
+en_unmannedsystemstechnology
+2026-06-10 12:00:00
+German Armed Forces to Integrate Battle-Proven Unmanned Aviation 
+INTEC Industrie-Technik and Skyeton Germany signed a Letter of Intent at ILA 2026 Berlin to deliver long-range fixed-wing UAS solutions to the German Bundeswehr, with the partnership combining Skyeton's operationally proven drone platforms with INTEC's defence systems integration expertise. Germany is accelerating UAS procurement as the Bundeswehr modernizes after the government's Zeitenwende defense spending commitment. 
+
+-------------------------
+en_recharged
+2026-06-10 12:00:00
+EV Sales Statistics 2026: Global and US Market Trends 
+Recharged's 2026 sales statistics analysis shows global EV volumes on track to reach approximately 21 million units in 2026, representing roughly 24% of all new car sales globally, with China accounting for two-thirds of volume and BYD displacing Tesla as the global EV sales leader. In the US, EV market share has stalled at approximately 6% after the expiration of Inflation Reduction Act consumer tax credits in late 2025 dampened demand, particularly for imported models. 
+
+-------------------------
+en_mintecglobal
+2026-06-10 12:00:00
+Euronext Milling Wheat Futures Extended Losses on Strong Harvest Outlook 
+Euronext milling wheat futures declined in early June 2026 as improved crop conditions across France, Germany, and the UK raised expectations for a stronger EU 2026 harvest than markets had initially priced, with above-average rainfall during the grain-filling stage partially offsetting earlier concerns about drought stress. Mintec notes that the price decline creates cost relief for European flour millers and bakeries that had faced elevated input costs through the previous marketing year. 
+
+-------------------------
+en_ascnews
+2026-06-04 12:00:00
+Ascension, AMSURG Close Deal as ASC Consolidation Heats Up 
+Ascension finalized its acquisition of AMSURG on June 4, 2026, creating one of the largest ambulatory surgery center networks in the country and accelerating the consolidation trend that is reshaping outpatient surgical care as health systems compete for high-margin procedure volumes. The deal reflects health systems' strategy of moving high-acuity surgical procedures into lower-cost outpatient settings to capture volume shifting away from hospital-based ORs. 
+
+-------------------------
+en_nucnet
+2026-06-01 12:00:00
+New York Regulator Moves Forward With Plans To Support 4 GW Of New Nuclear 
+The New York Public Service Commission opened a formal proceeding seeking public input on Governor Hochul's proposal to support the construction of 4 GW of new nuclear capacity in the state, including possible SMR projects and large-scale advanced reactor deployments, as New York pursues its target of a zero-emissions grid by 2040. The proceeding marks the most substantive state-level nuclear procurement process in the US in decades. 
+
+-------------------------
+en_logisticsbusiness
+2026-06-01 12:00:00
+New Warehouses: Human-Optional, Robot-Centric Operations 
+A new wave of greenfield warehouse projects commissioned in 2025-2026 are designed from the ground up for robot-centric operations, with human labor restricted to exception handling, quality inspection, and system supervision rather than routine picking, packing, and sortation tasks. Logistics Business analysis finds that warehouse automation ROI thresholds are being met faster than projected due to rising labor costs, tighter labor markets, and declining AMR hardware prices. 
+
+-------------------------
+en_chinabankingnews
+2026-05-28 12:00:00
+Central bank wants China's capital markets to play 'core role' in resource allocation 
+The People's Bank of China called for China's equity and bond markets to assume a more central role in allocating capital to high-priority technology sectors including semiconductors, AI, and advanced manufacturing, as part of Beijing's strategy to channel savings toward the 'new productive forces' industries identified in the 15th Five-Year Plan. The directive reflects Beijing's concern that bank-dominated credit allocation is too conservative and slow to fund disruptive technology development. 
+
+-------------------------
+en_metal_com
+2026-05-28 12:00:00
+Shanghai Wurui Metal Makes Debut at SME 2026 Shanghai Metal Week 
+Shanghai Wurui Metal debuted at SME 2026 Shanghai Metal Week, showcasing specialty aluminum alloy products targeting automotive lightweighting and new energy vehicle battery housings, as Chinese aluminum processors race to move up the value chain from commodity smelting toward higher-margin application-specific alloys. Shanghai Metal Week 2026 drew over 800 exhibitors and highlighted how Chinese metals producers are adapting to slower infrastructure investment by targeting EV and renewable energy sectors. 
+
+-------------------------
+en_eastasiaforum
+2026-05-26 12:00:00
+China's growth transition has global consequences 
+China's 15th Five-Year Plan (2026-2030) signals a deliberate shift from investment-led growth toward consumption, technology, and services, with GDP growth targets set at 4.5-5.0% per year — a reduction that carries significant implications for global commodity demand, trade finance flows, and emerging market export revenues. The East Asia Forum analysis notes that the transition will disproportionately affect raw material exporters in Africa, Latin America, and Southeast Asia who built business models around China's infrastructure boom. 
+
+-------------------------
+en_ttnews
+2026-05-25 12:00:00
+Survey Says: Freight Market Optimism Growing Among Carriers 
+A Transport Topics survey of 300 trucking executives in May 2026 found growing optimism about the freight market recovery, with 68% of respondents reporting that business conditions in Q2 2026 were the best since 2023, driven by improving spot rates, freight volume rebounds, and tighter capacity as underinvestment during the downcycle reduced fleet growth. The survey also found that driver availability remains the industry's top operational constraint even as freight conditions improve. 
+
+-------------------------
+en_igrownews
+2026-05-25 12:00:00
+AgTech Industry Trends 2025: What the Data Signals for 2026 
+iGrow News' analysis of 2025 AgTech investment data finds $668 million raised across 37 precision agriculture funding rounds, with autonomous weeding robots attracting the most capital as rising farm labor costs and declining hardware prices make robotics economics compelling, and AI crop analytics platforms attracting the second-largest share as growers demand digital decision support tools that integrate satellite imagery, soil sensors, and weather forecasting. The data signals continued consolidation in 2026 as platforms compete for farmer data network effects. 
+
+-------------------------
+en_pgjonline
+2026-05-20 12:00:00
+P&GJ 500 Report Shows Established Operators Still Dominate US Pipelines 
+Pipeline and Gas Journal's annual P&GJ 500 report on the largest US pipeline companies shows established operators including Kinder Morgan, Enterprise Products, Energy Transfer, and Williams continuing to dominate interstate gas and liquids pipelines by mileage and throughput, though midstream-focused entrants are gaining share through aggressive capital deployment in high-growth shale basins. The report covers revenue, mileage, and capital spending across 500 major pipeline operators. 
+
+-------------------------
+en_recharged
+2026-05-20 12:00:00
+Will EV Prices Drop in 2026? EV Market and Price Outlook 
+Recharged's price outlook analysis finds that US EV average transaction prices are declining modestly in 2026 as automakers push more affordable models and clear high-priced 2025 inventory, but the pace of price reduction is slower than many consumers expect given rising battery material costs from tariff-driven supply chain disruptions. The analysis contrasts the US dynamic with China, where intense price competition has pushed EV prices below equivalent ICE vehicles in several segments. 
+
+-------------------------
+en_datacentremagazine
+2026-05-20 12:00:00
+What Tech Trends Will Impact Data Centres in 2026? 
+Data Centre Magazine's 2026 technology outlook identifies liquid cooling as the dominant infrastructure trend as AI GPU densities exceed 50 kW per rack and air cooling becomes impractical, alongside AI-driven data center operations (autonomous power and cooling management), direct current power distribution, and nuclear-backed power purchase agreements as defining structural shifts for the sector. The article finds that energy, not compute, is now the binding constraint on data center expansion in every major market. 
+
+-------------------------
+en_worldenergynews
+2026-05-18 12:00:00
+First US LNG Cargo Sails Direct to China Since Trade War Disruption 
+A vessel carrying US liquefied natural gas made the first direct voyage from a US Gulf Coast export terminal to China since trade tensions effectively halted direct LNG shipments following tariff escalations, signaling a partial thaw in US-China energy trade and providing US LNG exporters with renewed access to the world's largest natural gas import market. World Energy News reports the cargo was purchased under a spot market transaction rather than a long-term supply agreement. 
+
+-------------------------
+en_eastasiaforum
+2026-05-16 12:00:00
+Beijing profits from US drift in Southeast Asia 
+Southeast Asian policymakers are increasingly anxious about US geopolitical reliability under the current administration, and China is capitalizing by deepening infrastructure investment, trade financing, and diplomatic engagement across the region, according to East Asia Forum analysis. The trend is most evident in countries like Cambodia, Laos, and Myanmar, where Chinese economic influence has become structurally embedded, while middle-income ASEAN economies are attempting to maintain strategic ambiguity between Washington and Beijing. 
+
+-------------------------
+en_carbonherald
+2026-05-15 12:00:00
+What's Next For Carbon Capture, Utilization and Storage (CCUS) In 2026? 
+Carbon Herald's sector outlook for 2026 highlights accelerating CCUS project pipelines in the US, UK, and Norway, driven by policy certainty from the US Inflation Reduction Act's 45Q credits and the EU's revised emissions trading system, while noting that commercial viability still depends heavily on government support given capture costs of $50-150 per ton of CO2. The article flags emerging CO2 utilization applications in synthetic fuel production and enhanced oil recovery as near-term revenue bridges for CCS operators. 
+
+-------------------------
+en_evinfrastructurenews
+2026-05-15 12:00:00
+Grid constraints drive Europe's EV charging sector from rapid expansion to high-power optimisation 
+A new report by gridX finds that European grid constraints are forcing the EV charging sector to shift from a land-grab expansion strategy to a high-power optimisation model, with operators focusing on maximizing charging throughput per grid connection point through smart charging software, on-site battery storage, and demand response rather than simply adding more chargepoints. The report found that grid upgrade lead times of 3-7 years in key markets are the primary bottleneck to charging infrastructure scaling. 
+
+-------------------------
+en_cbtnews
+2026-05-15 12:00:00
+NY Auto Show Doubles Down on Electrification With Debut of Four New EVs 
+The 2026 New York International Auto Show featured the debut of four new electric vehicles from automakers including Acura, Hyundai, and Stellantis brands, reflecting the auto industry's continued commitment to product electrification despite a near-term slowdown in US EV market share growth and the policy uncertainty created by the rollback of federal EV incentives. CBT News notes that auto show EV debuts increasingly target the premium and luxury segments where consumer willingness to pay for electric technology remains strongest. 
+
+-------------------------
+en_southeastasiadesk
+2026-05-10 12:00:00
+The New Geopolitics of Southeast Asia: Why Australia Matters More to ASEAN Now 
+The Southeast Asia Desk analysis argues that Australia has emerged as a more strategically relevant partner for ASEAN nations than at any point since the Cold War, as the region seeks reliable security guarantors that are neither the US nor China, with Australia's geography, defence partnerships through AUKUS, and economic complementarity — particularly in critical minerals and food — giving Canberra unusual strategic credibility. The piece examines how Australia is positioning ASEAN engagement as central to its Indo-Pacific strategy. 
+
+-------------------------
+en_marinelink
+2026-05-07 12:00:00
+MISC Names LNG Carrier Vessel Pair Seri Dian and Seri Dayang 
+Malaysia's MISC Group named two new-generation LNG carriers — Seri Dian and Seri Dayang — on May 7, 2026, adding to its fleet of vessels supporting long-term LNG supply contracts from Qatar and Australia. The vessels are designed with dual-fuel propulsion and GTT containment systems, reflecting the industry's continued ordering of large-scale LNG tonnage to meet growing export demand from the US Gulf Coast and Qatar North Field expansion. 
+
+-------------------------
+en_nucnet
+2026-05-01 12:00:00
+Meta Announces 6.6 GW Of Nuclear Energy Projects To Power AI Revolution 
+Meta signed power purchase agreements with three nuclear energy providers for a combined 6.6 GW of nuclear capacity to supply its data centers, making it the largest corporate nuclear procurement commitment by a technology company and reflecting AI infrastructure operators' need for firm, 24/7 carbon-free electricity. The agreements include both existing reactor uprates and new SMR deployments targeting mid-2030s delivery. 
+
+-------------------------
+en_igrownews
+2026-04-20 12:00:00
+Trump Signs Executive Order to Advance Regenerative and Precision Agriculture 
+President Trump signed an executive order directing federal agencies to accelerate adoption of regenerative and precision agriculture practices on US farmland, including streamlined approvals for agricultural technology applications, expanded USDA data sharing with precision ag platforms, and incentives for farmers who deploy soil carbon sequestration practices. iGrow News notes the order creates new federal funding pathways for AgTech companies developing soil health monitoring, cover crop management, and reduced-input precision farming systems. 
+
+-------------------------
+en_marinelink
+2026-04-15 12:00:00
+Global Shipping Order Book Hits 17-Year High at 17% of Fleet 
+The global shipping order book reached 191 million compensated gross tonnes by the end of Q1 2026, the highest ratio as a percentage of the existing fleet — 17% — since 2011, driven by strong demand for LNG carriers, container ships, and bulk carriers as charterers and shipowners bet on continued trade growth and fleet renewal following record freight rates in prior years. South Korean and Chinese shipyards are fully booked through 2028 for most vessel classes. 
+
+-------------------------
+en_fiercepharma
+2026-04-01 12:00:00
+Lilly answers Novo's GLP-1 pill with highly anticipated FDA nod for Foundayo 
+The FDA approved Eli Lilly's oral GLP-1 receptor agonist pill Foundayo, making it the first new molecular entity cleared under the agency's Commissioner's National Priority Voucher program, in a competitive response to Novo Nordisk's oral semaglutide franchise. Foundayo's approval is expected to intensify competition in the fast-growing oral weight-management market and could displace injectable GLP-1 therapies for patients who prefer pill-based dosing. 
+
+-------------------------
+en_ascnews
+2026-03-17 12:00:00
+America's Best Ambulatory Surgery Centers Revealed as Outpatient Care Surges 
+U.S. News & World Report named the 2026 Best Ambulatory Surgery Centers, evaluating 4,421 ASCs nationwide and designating 911 — or 21% — as Best in class, with top performers concentrated in orthopedics, ophthalmology, and gastroenterology as high-acuity procedures continue shifting from inpatient hospital ORs to outpatient surgical centers. The rankings reflect CMS reimbursement policy changes that are making outpatient procedures financially viable for procedures previously restricted to hospital-based settings. 
+
+-------------------------
+en_ascnews
+2026-02-15 12:00:00
+Top Ambulatory Surgery Center Trends for 2026 
+ASC News' 2026 industry outlook identifies the continued shift of high-acuity procedures including complex spine surgery, total joint replacement, and cardiac procedures into ambulatory settings as the defining trend, driven by payer pressure for cost reduction, advances in anesthesia protocols, and competition among health systems for high-margin procedure volumes. The article notes that ASC consolidation is accelerating as hospital systems and private equity platforms compete for established multi-specialty centers. 
+
+-------------------------
