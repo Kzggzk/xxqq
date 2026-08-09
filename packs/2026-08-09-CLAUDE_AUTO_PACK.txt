@@ -1,0 +1,576 @@
+en_theloadstar
+2026-08-07 12:00:00
+Troubled SeaLead's ships and boxes quickly snapped up by rivals 
+Singapore-based container operator SeaLead Shipping, forced into liquidation by US sanctions, has already disposed of most of its ships and inland assets, with competitors quickly absorbing the freed capacity. 
+
+-------------------------
+en_splash247
+2026-08-07 12:00:00
+Seaspan becomes first international shipowner to tap panda bond market 
+Canadian container lessor Seaspan became the first non-Chinese international shipowner to issue panda bonds in China's onshore capital market, raising renminbi funding for fleet investment. 
+
+-------------------------
+en_hartenergy
+2026-08-07 12:00:00
+OPEC Output Hikes Raise Oversupply Fears as Cartel Shows Cracks 
+OPEC's continued production increases are stoking fears of oil market oversupply heading into Q4 2026, with internal disagreements over the pace of output restoration threatening the cartel's cohesion. 
+
+-------------------------
+en_multifamily_dive
+2026-08-07 12:00:00
+Public benefits of land use don't outweigh local zoning, New Jersey Supreme Court says 
+New Jersey's Supreme Court ruled that claimed public benefits of a development project cannot override local zoning ordinances, a decision expected to complicate multifamily housing approvals across the state. 
+
+-------------------------
+en_multihousing_news
+2026-08-07 12:00:00
+Blackstone Eyes $1B for 6,000-Unit Portfolio 
+Blackstone secured a $1 billion CMBS refinancing loan for a 15-property, 6,041-unit apartment portfolio, with Morgan Stanley, Barclays, Natixis, RBC, and Bank of Nova Scotia co-originating the debt. 
+
+-------------------------
+en_kdnuggets
+2026-08-07 12:00:00
+Small Language Models with Hugging Face transformers Library + smolLM3 
+A practical guide to working with small language models using the Hugging Face transformers library and the new smolLM3 architecture, covering deployment strategies and fine-tuning techniques for resource-constrained environments. 
+
+-------------------------
+en_upstreamonline
+2026-08-07 12:00:00
+ConocoPhillips CFO Andy O'Brien to take over as chief executive from 1 September 
+ConocoPhillips announced that CFO Andy O'Brien will succeed Ryan Lance as CEO on September 1, with Lance saying he is leaving the company in its strongest financial and operational position. 
+
+-------------------------
+en_industryweek
+2026-08-07 12:00:00
+Fed Investigates UAW's Fain; Spot Aims to Deliver: So That Happened 
+This week in US manufacturing: federal authorities launched an investigation into UAW President Shawn Fain over labor practices, while Boston Dynamics expanded commercial delivery applications for its Spot quadruped robot. 
+
+-------------------------
+en_piie
+2026-08-07 12:00:00
+China's property bust is spilling across its borders 
+PIIE's Tianlei Huang analyzes how China's pivot to export-led growth following its property sector collapse is fueling fears of a second China shock threatening industrial producers across the US, Europe, and Asia. 
+
+-------------------------
+en_atlanticcouncil
+2026-08-07 12:00:00
+Why Saudi Arabia, Pakistan, and Turkey just signed a defense pact 
+Atlantic Council analysis examines the new trilateral defense agreement signed by Turkey, Saudi Arabia, and Pakistan in Mecca, exploring its strategic implications for Middle East security and US alliances in the region. 
+
+-------------------------
+en_tearsheet
+2026-08-07 12:00:00
+The Week in Market Moves | July 30-Aug 06, 2026 
+Mastercard completed its $1.8 billion acquisition of stablecoin infrastructure provider BVNK, adding on-chain payment and stablecoin settlement capabilities for cross-border B2B payments, remittances, and treasury flows. 
+
+-------------------------
+en_porttechnology
+2026-08-07 12:00:00
+Tariff deadline drives West Coast import surge 
+US West Coast ports handled 3.7 million TEUs of laden imports in Q2 2026, a 7.1% year-on-year increase, as importers rushed shipments to beat a tariff implementation deadline and replenish inventories. 
+
+-------------------------
+en_brookings
+2026-08-07 12:00:00
+Global health strategy under pressure: PEPFAR and the future of US engagement 
+Brookings researchers Belinda Archibong and Louise Fox examine how current US budget and policy shifts are affecting PEPFAR and other global health programs, raising concerns about long-term strategic credibility. 
+
+-------------------------
+en_cnas
+2026-08-07 12:00:00
+The Ambiguity Spiral in Iran 
+CNAS analysis argues that escalating strategic ambiguity in US-Iran relations is creating a dangerous spiral risk of miscalculation, particularly as both sides probe deterrence limits following recent military exchanges. 
+
+-------------------------
+en_smallwarsjournal
+2026-08-07 12:00:00
+8/7/26 National Security and Korean News and Commentary 
+Weekly Korean security roundup covering North Korea's new missile tests, the ongoing US-South Korea wartime operational control transfer review, and North Korea's continued fortification of the DMZ. 
+
+-------------------------
+en_ai_cio
+2026-08-07 12:00:00
+Fiscal 2026 Set to Be Another Strong Year for Pension Fund Performance 
+Strong equity markets and resilient alternatives allocations are positioning fiscal 2026 as another solid year for major US public pension funds, with assets at CalSTRS growing to $415.4 billion as of June. 
+
+-------------------------
+en_energynewsbeat
+2026-08-07 12:00:00
+ConocoPhillips Announces Q2 2026 Earnings: Strong Beat on Higher Prices Amid Production Dip and Leadership Transition 
+ConocoPhillips reported Q2 2026 earnings that beat Wall Street expectations as higher commodity prices more than offset a production dip, while the company announced CEO Ryan Lance will hand over to CFO Andy O'Brien in September. 
+
+-------------------------
+en_fintechfutures
+2026-08-07 12:00:00
+Top five fintech news stories of the week: 7 August 2026 
+Weekly fintech roundup: Visa agreed to acquire fraud prevention firm BioCatch for $2.4 billion, Rabobank pledged EUR 2 billion for AI over three years, and the UK FCA simplified its IPO rules to attract more London listings. 
+
+-------------------------
+en_fintechfutures
+2026-08-07 12:00:00
+FCA simplifies IPO rules to attract UK listings 
+The UK Financial Conduct Authority removed the mandatory seven-day embargo between prospectus approval and analyst research publication, making the UK's IPO process more competitive with European alternatives. 
+
+-------------------------
+en_thepharmaletter
+2026-08-07 12:00:00
+Vedanta secures $60 million ahead of pivotal Phase III C. difficile data 
+Vedanta Biosciences raised $60 million to advance its lead microbiome therapy through a pivotal Phase III trial targeting Clostridioides difficile infection, ahead of an expected clinical data readout. 
+
+-------------------------
+en_automotiveworld
+2026-08-07 12:00:00
+BorgWarner posts Q2 margin gains, seven new awards 
+BorgWarner reported Q2 2026 net sales of $3.65 billion with margin expansion, and announced seven new customer programme awards, reflecting continued demand for its EV powertrain and thermal management components. 
+
+-------------------------
+en_asicpro
+2026-08-07 12:00:00
+Semiconductor News July 2026: AI, ASICs and EDA 
+July's semiconductor roundup: chip design startup ChipAgents raised an additional $60 million to reach $134 million in Series A funding, Meta researchers published work on the Vistara custom AI accelerator, and Signaloid previewed its Co-ASIC for physical AI and robotics. 
+
+-------------------------
+en_splash247
+2026-08-06 12:00:00
+Iran and Oman close in on new Hormuz traffic regime 
+Iran and Oman are nearing agreement on a new framework governing commercial shipping through the Strait of Hormuz, a development that could ease tanker market disruptions if finalised. 
+
+-------------------------
+en_splash247
+2026-08-06 12:00:00
+ONE Henry Hudson fire spurs port emergency in Los Angeles 
+A fire aboard the ONE Henry Hudson container vessel triggered a port emergency at the Port of Los Angeles, disrupting berth operations at one of North America's busiest cargo gateways. 
+
+-------------------------
+en_tradewinds_news
+2026-08-06 12:00:00
+Zodiac Maritime joins big-name owners selling VLCCs to Adnoc L&S at historic prices 
+Zodiac Maritime joined other major tanker owners in selling very large crude carriers to Abu Dhabi-based Adnoc Logistics and Services at historically elevated prices as Middle Eastern buyers rapidly expand their fleets. 
+
+-------------------------
+en_hartenergy
+2026-08-06 12:00:00
+Panelists See Stronger Crude Oil Case Than Gas for Investors 
+Energy industry panelists at Hart Energy's conference argued that crude oil presents a more compelling investment case than natural gas for 2026, citing tighter global supply fundamentals and Middle East risk premiums. 
+
+-------------------------
+en_multifamily_dive
+2026-08-06 12:00:00
+Single-staircase reforms aim to boost middle-scale housing in Michigan 
+Michigan Governor Whitmer signed single-staircase building reform into law, a measure projected to reduce construction costs for mid-size apartment buildings by more than 10% and unlock new housing supply. 
+
+-------------------------
+en_multifamily_dive
+2026-08-06 12:00:00
+Apartment owners to pay $218M in second batch of RealPage settlements 
+Fourteen housing companies agreed to pay a combined $218 million to settle allegations that they conspired to inflate rents using RealPage's algorithmic pricing software, without admitting wrongdoing. 
+
+-------------------------
+en_multihousing_news
+2026-08-06 12:00:00
+The Olson Co. Acquires LA Office Campus for Residential Conversion 
+The Olson Co. acquired a two-building medical office campus in Monterey Park, California for $24.9 million, planning to raze it and build a 159-unit townhome community. 
+
+-------------------------
+en_kdnuggets
+2026-08-06 12:00:00
+The Minimal AI Engineer Toolkit for 2026 
+A curated overview of the essential tools, frameworks, and technical skills that AI engineers need to navigate the rapidly evolving machine learning landscape in 2026, focusing on practical production deployment. 
+
+-------------------------
+en_upstreamonline
+2026-08-06 12:00:00
+Cheniere sees quarterly performance rise on higher LNG volumes 
+Cheniere Energy posted 24% revenue growth in Q2 2026, driven by increased LNG cargo volumes as expansion projects at its Sabine Pass and Corpus Christi facilities advance on schedule. 
+
+-------------------------
+en_industryweek
+2026-08-06 12:00:00
+PPG Revs Auto Strategy With Ohio Plant Expansion 
+PPG announced plans to add 100,000 square feet and 100 jobs to its Delaware, Ohio plant, driven by rising demand for sustainable coatings for electric vehicles and digital upgrading of aging facilities. 
+
+-------------------------
+en_atlanticcouncil
+2026-08-06 12:00:00
+Braw in DW News on the Iran-Oman deal for the Strait of Hormuz 
+Atlantic Council Fellow Elisabeth Braw discussed the emerging Iran-Oman shipping framework for the Strait of Hormuz on DW News, assessing its implications for global oil transit and ongoing US-Iran negotiations. 
+
+-------------------------
+en_canary_media
+2026-08-06 12:00:00
+Trump launched big new solar tariffs. Here's what it means. 
+The White House announced sweeping new tariffs on imported polysilicon and solar panels, expected to raise US installation costs while accelerating domestic solar manufacturing investment and reshoring supply chains. 
+
+-------------------------
+en_tearsheet
+2026-08-06 12:00:00
+LendingClub rebrands to Happen Bank as its identity catches up to its model 
+LendingClub officially rebranded to Happen Bank, signaling its full transformation from a peer-to-peer lending platform into a full-service digital bank offering integrated consumer financial products. 
+
+-------------------------
+en_tearsheet
+2026-08-06 12:00:00
+Before chasing AI, Bank of America wants banks to fix their data first 
+Bank of America argued at a fintech conference that AI feature reliability depends entirely on underlying data quality, making data infrastructure investment a prerequisite before deploying AI in customer-facing banking. 
+
+-------------------------
+en_world_grain
+2026-08-06 12:00:00
+IGC: Global grain output to fall for first time in four years 
+The International Grains Council projected that global grain output will decline in 2026/27 for the first time since 2022, driven by adverse weather in key producing regions and tighter fertilizer availability. 
+
+-------------------------
+en_world_grain
+2026-08-06 12:00:00
+Fertilizer costs reaching tipping point 
+Rising input costs are threatening the economics of the upcoming Northern Hemisphere planting season, with fertilizer price increases squeezing margins for grain farmers in North America and Europe. 
+
+-------------------------
+en_foodnavigator
+2026-08-06 12:00:00
+Nestle, Danone, Barry Callebaut, Kraft Heinz: How food giants are dealing with El Nino 
+With a super El Nino predicted for 2026/27, major food companies including Nestle, Danone, and Kraft Heinz outlined supply chain adaptation strategies to handle anticipated disruptions to agricultural commodity supply. 
+
+-------------------------
+en_porttechnology
+2026-08-06 12:00:00
+Panama Canal cuts Neopanamax draft limits 
+The Panama Canal Authority announced a reduction in the maximum permitted draft for Neopanamax vessels to 48 feet from August 26, with a further cut to 47.5 feet on September 3, due to continued low water levels. 
+
+-------------------------
+en_cnas
+2026-08-06 12:00:00
+Trump's Pacific Islands Blind Spot 
+CNAS commentary warns that the Trump administration lacks a coherent strategy for the Pacific Islands, leaving critical maritime geography and strategic relationships vulnerable to expanding Chinese diplomatic and military influence. 
+
+-------------------------
+en_smallwarsjournal
+2026-08-06 12:00:00
+From Jump Wings to Green Berets: The Visual Architect of the Modern Warrior 
+An interview with author Christopher Mullins and historian Arthur Powers examining the visual culture, insignia, and evolving identity of US special operations forces across decades of modern warfare. 
+
+-------------------------
+en_automationworld
+2026-08-06 12:00:00
+Schneider Electric Launches Industrial Automation Service Built on HPE Infrastructure 
+Schneider Electric unveiled a new industrial automation managed service that combines its EcoStruxure platform with Hewlett Packard Enterprise computing infrastructure for AI-driven factory management and predictive maintenance. 
+
+-------------------------
+en_ai_cio
+2026-08-06 12:00:00
+AI Tools Automate Routine Pension Fund Functions, NCPERS Study Finds 
+A new NCPERS study found that pension funds are deploying AI tools to automate routine administrative and compliance functions, with implementations focused on recoverable-error processes that maintain human oversight. 
+
+-------------------------
+en_ai_cio
+2026-08-06 12:00:00
+How Should Institutional Investors Approach H2 2026 - Active or Passive? 
+Chief Investment Officer magazine examines whether institutional investors should lean active or passive in H2 2026, with geopolitical volatility and divergent sector performance favoring selective active management approaches. 
+
+-------------------------
+en_energynewsbeat
+2026-08-06 12:00:00
+China Approves Eight New Nuclear Plants, Including Four With Hualong One 2.0 Tech 
+China approved eight new nuclear power plants in a single State Council session, including four using its Hualong One 2.0 reactor design, accelerating Beijing's push for low-carbon baseload power amid surging electricity demand. 
+
+-------------------------
+en_fintechfutures
+2026-08-06 12:00:00
+Thomson Reuters to shed 2,000 jobs across finance, risk, tech and ops 
+Thomson Reuters announced plans to cut approximately 2,000 roles across finance, risk management, technology, and operations divisions as part of a restructuring programme designed to fund accelerated AI investment. 
+
+-------------------------
+en_thepharmaletter
+2026-08-06 12:00:00
+FDA reverses course with accelerated nod for Tudriqev in melanoma 
+The FDA granted Replimune's Tudriqev (vusolimogene oderparepvec) accelerated approval in combination with nivolumab for unresectable advanced cutaneous melanoma, reversing an earlier rejection of the application. 
+
+-------------------------
+en_automotiveworld
+2026-08-06 12:00:00
+EVgo to deploy Superchargers across its US network 
+EV charging company EVgo announced plans to deploy Tesla-compatible V4 Supercharger units capable of up to 500 kW/1,000V across its US charging network, expanding ultra-fast charging infrastructure availability. 
+
+-------------------------
+en_theloadstar
+2026-08-05 12:00:00
+World Cup Final the red card for LatAm-N America airfreight boom 
+Freight forwarders in Latin America face a sharp drop in airfreight capacity to North America as the football World Cup charter flights that boosted hemispheric air links ended after the tournament final. 
+
+-------------------------
+en_multihousing_news
+2026-08-05 12:00:00
+PXV Multifamily Makes 1st Acquisition 
+PXV Multifamily and Pamera North America formed a joint venture to acquire Village on the Green, a 216-unit garden-style apartment community in Atlanta, for $29.5 million. 
+
+-------------------------
+en_kdnuggets
+2026-08-05 12:00:00
+Getting Started with GitHub Agentic Workflows 
+A tutorial covering how to build and deploy AI-powered agentic workflows using GitHub's automation and orchestration tools, enabling software development teams to automate complex multi-step engineering tasks. 
+
+-------------------------
+en_cleanenergywire
+2026-08-05 12:00:00
+Germany says new gas power plants will be online by 2031 following EU deal 
+Germany confirmed that new gas-fired backup power plants agreed under an EU capacity mechanism will be operational by 2031, serving as dispatchable support for intermittent renewable energy generation. 
+
+-------------------------
+en_atlanticcouncil
+2026-08-05 12:00:00
+Ukraine cannot defeat Putin's ballistic blitz by defensive measures alone 
+Atlantic Council analysis argues that Russia's record July 2026 ballistic missile barrage against Ukraine requires offensive counter-capabilities, not just air defense, to break the escalation cycle. 
+
+-------------------------
+en_canary_media
+2026-08-05 12:00:00
+Why Trump's claim that offshore wind is a security threat is ludicrous 
+Energy and defense experts at the National Conservative Energy Summit in Boston rebutted the Trump administration's framing of offshore wind as a national security threat, calling the argument technically unfounded. 
+
+-------------------------
+en_world_grain
+2026-08-05 12:00:00
+Surging wheat output weighing on prices 
+Record or near-record wheat harvests in Russia, Australia, and parts of Europe are putting downward pressure on global wheat futures prices heading into the autumn export marketing season. 
+
+-------------------------
+en_foodnavigator
+2026-08-05 12:00:00
+Letter from the Editor: IFT FIRST 2026 Takeaways 
+The IFT FIRST 2026 food science conference highlighted new strategies to build consumer trust in food science, advance nutrition research, and accelerate product innovation across the food and beverage industry. 
+
+-------------------------
+en_huaweicentral
+2026-08-05 12:00:00
+Huawei MateBook Fold Ultimate Design 2026 unveils with Kirin X90 Plus chip and new colors 
+Huawei unveiled its 2026 MateBook Fold Ultimate Design foldable notebook featuring the new Kirin X90 Plus chip, expanding its premium productivity lineup as part of Huawei's broader hardware ecosystem push. 
+
+-------------------------
+en_huaweicentral
+2026-08-05 12:00:00
+HarmonyOS 7.0 Beta for Huawei PCs coming in mid-August 
+Huawei announced that the HarmonyOS 7.0 beta for PCs will roll out by mid-August 2026, further expanding its proprietary operating system ecosystem to cover more device categories beyond smartphones. 
+
+-------------------------
+en_brookings
+2026-08-05 12:00:00
+US-Europe relations amid China's economic challenge 
+Kari Heerman, Constanze Stelzenmuller, and colleagues analyze how diverging US and European approaches to managing China's economic expansion complicate coordination on trade, technology, and supply chain policy. 
+
+-------------------------
+en_automationworld
+2026-08-05 12:00:00
+Taiwan Ecosystem Enabling Next Generation of Manufacturing at Automate 2026 
+Taiwan Excellence's demonstration at Automate 2026 in Chicago showcased how Taiwanese semiconductor and automation hardware companies are enabling AI-powered smart manufacturing, robotics, and industrial computing at scale. 
+
+-------------------------
+en_energynewsbeat
+2026-08-05 12:00:00
+Global Energy Market In Flux with Russia, Strait of Hormuz, Bab el-Mandab Strait and EU drought all in play 
+Global energy markets face simultaneous disruptions from Middle East tensions at the Strait of Hormuz, Houthi attacks in the Red Sea, and severe European drought that is cutting hydropower output and disrupting river-borne fuel deliveries. 
+
+-------------------------
+en_thepharmaletter
+2026-08-05 12:00:00
+Scottish kidney disease biotech Mironid raises $46 million to advance rare disease pipeline 
+Edinburgh-based Mironid secured $46 million in a Series B financing round to advance its pipeline of therapies for rare kidney diseases, including lead programs targeting autosomal dominant polycystic kidney disease. 
+
+-------------------------
+en_healthaffairs
+2026-08-05 12:00:00
+Hijacking The Chronic Disease Epidemic 
+A Health Affairs Forefront analysis argues that the current administration's approach to chronic disease prevention is being driven by political priorities rather than evidence-based public health strategy. 
+
+-------------------------
+en_a_team_insight
+2026-08-05 12:00:00
+Ripple Investments in ZILO and Licuido Expand Transfer Agency, Tokenisation Capabilities 
+Ripple made strategic investments in ZILO, a transfer agency technology provider, and Licuido, a tokenisation platform, building out institutional digital assets infrastructure for global financial markets. 
+
+-------------------------
+en_automotiveworld
+2026-08-05 12:00:00
+Moove raises $250m for autonomous mobility infrastructure 
+Autonomous vehicle fleet enabler Moove raised $250 million in Series C funding at a $2.1 billion valuation, financing expansion of its autonomous ride-hailing and logistics support infrastructure globally. 
+
+-------------------------
+en_theloadstar
+2026-08-04 12:00:00
+HappyRobot raises $150m, fetches $1.2bn valuation 
+Logistics AI startup HappyRobot raised $150 million in a Series C round led by Prysm Capital and Eurazeo, valuing the company at $1.2 billion as it targets enterprise AI for freight operations. 
+
+-------------------------
+en_upstreamonline
+2026-08-04 12:00:00
+'We have written off too much value': BP CEO slams supermajor's performance 
+BP CEO Meg O'Neill made a frank public admission of the company's strategic missteps, outlining principles to improve balance sheet quality, portfolio focus, and operational performance. 
+
+-------------------------
+en_cleanenergywire
+2026-08-04 12:00:00
+Heat-related deaths in Germany near 12,000 already by middle of summer 2026 
+Germany's Robert Koch Institute estimates nearly 12,000 people have died from heat-related causes in summer 2026, as record temperatures sweeping Europe prompt calls for stronger climate adaptation investment. 
+
+-------------------------
+en_industryweek
+2026-08-04 12:00:00
+Four Manufacturers Expanding US Facilities and Workforce in 2026 
+An overview of four manufacturers announcing US facility expansions and job additions in 2026, reflecting continued reshoring momentum driven by trade policy incentives and domestic supply chain priorities. 
+
+-------------------------
+en_canary_media
+2026-08-04 12:00:00
+Base Power raises $1B to get big batteries into more homes 
+Home battery startup Base Power raised $1 billion, boosting its valuation from $4 billion to $13 billion, as residential-scale battery storage accelerates as a major distributed grid resource in the US. 
+
+-------------------------
+en_huaweicentral
+2026-08-04 12:00:00
+Huawei August 2026 Launch Event: Six new products on their way 
+Huawei previewed its August 5 launch event covering six new products including the MatePad Pro 2026 tablet, Watch GT 7 smartwatch series, Nova 16 SE smartphone, and updated MateBook Fold foldable PC. 
+
+-------------------------
+en_porttechnology
+2026-08-04 12:00:00
+Port of Gdansk signs Baltic Hub expansion lease 
+The Port of Gdansk and Baltic Hub signed an agreement following a competitive tender to develop a new intermodal rail and container handling area, expanding Poland's largest container terminal. 
+
+-------------------------
+en_brookings
+2026-08-04 12:00:00
+US-South Korea economic relations under trade policy pressure 
+Andrew Yeo and co-authors assess the evolving US-South Korea economic relationship as shifting American trade and industrial policies test the alliance's commercial and strategic foundations. 
+
+-------------------------
+en_cnas
+2026-08-04 12:00:00
+US Long-Range Precision Munitions Shortage and Readiness Risks 
+CNAS analysis highlights a critical gap in US long-range precision strike inventory following sustained operations in the Middle East, raising urgent concerns about readiness for a potential high-end Pacific conflict. 
+
+-------------------------
+en_automationworld
+2026-08-04 12:00:00
+Study: 78% of Manufacturing Executives Report AI Agents Not Delivering Value 
+A new industry study found that despite years of investment, 78% of manufacturing executives report AI agents are not yet delivering measurable operational value, with most implementations still in early-stage proof-of-concept phases. 
+
+-------------------------
+en_healthaffairs
+2026-08-04 12:00:00
+National Health Expenditure Projections, 2024-33: Health to Grow as Share of GDP Despite Insurance Coverage Declines 
+Projections show US health spending will grow faster than the broader economy through 2033 despite declining insurance enrollment, driven by aging demographics, medical price inflation, and technology investment. 
+
+-------------------------
+en_tradewinds_news
+2026-08-03 12:00:00
+Clarksons books record first-half profit as politics and purchases boost bottom line 
+Shipbroker Clarksons reported a record first-half profit for 2026, driven by heightened geopolitical activity and a surge in vessel purchase transactions accelerated by trade policy uncertainty and fleet renewal. 
+
+-------------------------
+en_tradewinds_news
+2026-08-03 12:00:00
+Costamare Bulkers eyes growth with $110m cash pile as it books profitable second quarter 
+Costamare Bulkers reported a profitable second quarter with $110 million in available liquidity, positioning itself for acquisitions or fleet expansion in the dry bulk market during the second half of 2026. 
+
+-------------------------
+en_hartenergy
+2026-08-03 12:00:00
+Trump Chastises Chevron CEO for Failing to Praise Administration Amid Record Profits 
+US President Trump publicly criticized Chevron's CEO at an industry event for not crediting administration energy policies after the oil major posted record quarterly profits. 
+
+-------------------------
+en_cleanenergywire
+2026-08-03 12:00:00
+Drought effects hit Germany from shipping and industry to ecology and recreation 
+Low water levels on Germany's main rivers are forcing cargo transport onto motorways, with the chemicals and steel sectors most severely affected by disruptions to Rhine and Danube river logistics. 
+
+-------------------------
+en_piie
+2026-08-03 12:00:00
+Who pays for tariffs? Insights from recent research 
+Kimberly Clausing and Maurice Obstfeld cite recent economic evidence showing that US consumers and businesses—not foreign exporters—bear most of the cost of tariffs imposed by the Trump administration. 
+
+-------------------------
+en_piie
+2026-08-03 12:00:00
+Will Argentina's gratuitous insults to Brazil compound its economic problems? 
+Monica de Bolle analyzes the diplomatic and economic fallout from Argentine President Milei's appearance at a Brazilian opposition event, which has created a significant bilateral trade and investment rift. 
+
+-------------------------
+en_smallwarsjournal
+2026-08-03 12:00:00
+SOF Weekly Brief - August 3, 2026 
+Weekly special operations forces brief noting the Iran war is intensifying, US interceptor inventories are critically diminished following sustained defensive operations, and Yemen's Houthis are again threatening Red Sea shipping. 
+
+-------------------------
+en_healthaffairs
+2026-08-03 12:00:00
+The Uneven Distribution Of Patient Portal Messages Across Patients And Physicians 
+A study using UCSF Health data found that patient-initiated digital messages are concentrated among certain demographic groups and physician specialties, highlighting equity challenges in digital health adoption. 
+
+-------------------------
+en_a_team_insight
+2026-08-03 12:00:00
+OneChronos Brings Combinatorial Matching to European Equities 
+Trading technology firm OneChronos launched production trading on its UK and EU multilateral trading facilities, introducing combinatorial auction-based order matching to European equity markets. 
+
+-------------------------
+en_cepr_voxeu
+2026-08-02 12:00:00
+Are markets underestimating the August tariff risk? 
+A VoxEU analysis argues that financial markets may be significantly underpricing the economic risk from new tariff escalation expected in August 2026, given corporate earnings sensitivity and global supply chain exposure. 
+
+-------------------------
+en_cepr_voxeu
+2026-08-01 12:00:00
+Why global imbalances matter again - and what to do about them 
+VoxEU analysis shows global current account imbalances have reached their highest levels since 2012, with surpluses and deficits each 25-35% larger than in 2018, raising financial stability and trade policy concerns. 
+
+-------------------------
+en_cepr_voxeu
+2026-08-01 12:00:00
+The risk of tariffs as a tool to attract manufacturing investment 
+A VoxEU column analyzes evidence that tariffs are a costly and uncertain mechanism for attracting manufacturing foreign direct investment, with unintended supply chain disruptions often outweighing stated policy benefits. 
+
+-------------------------
+en_foodnavigator
+2026-07-29 12:00:00
+UPF legislation raises stakes for food labeling and child-directed marketing 
+The US Senate HELP Committee advanced legislation requiring warning labels on some ultra-processed foods and restricting child-directed advertising, raising regulatory stakes for packaged food manufacturers. 
+
+-------------------------
+en_a_team_insight
+2026-07-28 12:00:00
+Trading Up: Helping Our Youngsters Get What We Do 
+A feature on the Work in Fintech AI Summit 2026 initiative that brought 120 students into workshops, hackathons, and networking sessions with practitioners from the trading and banking technology sector. 
+
+-------------------------
+en_asicpro
+2026-07-06 12:00:00
+Semiconductor News June 2026: AI, ASIC Design, EDA and Verification 
+June's roundup covered Cadence's launch of ChipStack AI Super Agent, described as the first autonomous virtual engineer for semiconductor design and verification, and expanding hyperscaler investment in custom silicon. 
+
+-------------------------
+en_critical_minerals_news
+2026-06-15 12:00:00
+Critical Minerals Market June 2026: Prices and Outlook 
+The critical minerals market in June 2026 shows copper leading industrial metals higher, rare earths correcting from April peaks, and battery metals consolidating amid Chinese export restrictions and rising defense procurement demand. 
+
+-------------------------
+en_asicpro
+2026-06-04 12:00:00
+Semiconductor News: May 2026 Roundup 
+May's semiconductor news featured AI-driven chip design advances, heterogeneous integration via chiplets becoming the dominant approach for high-density compute, and growing adoption of agentic AI in EDA verification workflows. 
+
+-------------------------
+en_critical_minerals_news
+2026-05-26 12:00:00
+India US Critical Minerals: Framework Deal Signed 2026 
+India and the United States formalized a bilateral critical minerals cooperation framework covering the full supply chain for rare earths, lithium, cobalt, and other materials vital to clean energy and defense applications. 
+
+-------------------------
+en_critical_minerals_news
+2026-05-01 12:00:00
+MP Materials DoD: $400m Deal and US Magnet Supply Chain 
+MP Materials secured a $400 million Department of Defense contract to scale domestic rare earth magnet manufacturing at its Texas facility, anchoring a US-based permanent magnet supply chain for defense and industrial use. 
+
+-------------------------
