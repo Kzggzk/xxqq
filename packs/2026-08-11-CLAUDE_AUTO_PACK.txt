@@ -1,0 +1,540 @@
+en_crenews
+2026-08-10 22:00:00
+Los Angeles-Area Office Sells for $63.13Mln, Gets $40.6Mln CMBS Mortgage 
+Investors purchased the 323,016-sq-ft Orange Center Tower office property in Orange, California for $63.13 million, financed with a $40.6 million CMBS mortgage amid ongoing Southern California office market stress. 
+
+-------------------------
+en_crenews
+2026-08-10 20:00:00
+Phoenix Realty Affiliate Pays $80Mln for Manhattan Apartment Building 
+An affiliate of Phoenix Realty Group purchased Dunwell Plaza, a 182-unit apartment building in Manhattan for $80 million, reflecting continued institutional appetite for multifamily assets in core urban markets. 
+
+-------------------------
+en_miningsee
+2026-08-10 12:00:00
+Mining News Roundup CW32 
+The week 32 roundup covers critical minerals developments across Southeast Europe including new investment commitments for lithium, copper and rare earth mining projects as financing activity accelerates. 
+
+-------------------------
+en_moderndiplomacy
+2026-08-08 12:00:00
+Asia's Shifting Balance of Power and the New Regional Order 
+Analysis examines geopolitical shifts across Asia including Vietnam's evolving relationship with China and North Korea's changing strategic posture amid intensifying great-power competition in the Indo-Pacific. 
+
+-------------------------
+en_crenews
+2026-08-07 20:00:00
+CMBS Conduit Loan Payoff Rate Reaches Highest Level in 4 Years 
+The percentage of CMBS conduit loans paying off at maturity rose to 72.05% in July 2026, the highest on-time payoff rate in four years, suggesting improving refinancing conditions despite persistent office sector distress. 
+
+-------------------------
+en_renews
+2026-08-07 12:00:00
+GOW26: UK launches offshore wind innovation hub 
+The UK launched its Wind Innovation Hub at the Global Offshore Wind 2026 conference with backing from ORE Catapult and Innovate UK, targeting acceleration of offshore wind manufacturing and supply chain innovation. 
+
+-------------------------
+en_payloadspace
+2026-08-07 12:00:00
+Transporter-17 Sends the First Commercial Nuclear Sat to Orbit 
+SpaceX's Transporter-17 rideshare carried 81 payloads to LEO including America's first commercial nuclear-powered satellite, City Labs' betavoltaic battery BOHR spacecraft, marking a historic commercial space milestone. 
+
+-------------------------
+en_renews
+2026-08-06 12:00:00
+GOW 2026: Scottish Government eyes 'game changing' offshore wind opportunities 
+Scotland pledged to support delivery of 40GW of offshore wind capacity with at least half floating wind, representing a potential £100 billion capital investment that could support approximately 50,000 new jobs. 
+
+-------------------------
+en_militaryaerospace
+2026-08-05 12:00:00
+DoD signs framework agreements to expand PAC-3, THAAD interceptor production capacity 
+The Department of Defense signed framework agreements establishing an additional production source for PAC-3 MSE solid rocket motors and expanding THAAD structural assembly manufacturing to accelerate US missile defense capacity. 
+
+-------------------------
+en_selfdrivenews
+2026-08-05 12:00:00
+Avride Robotaxi Fleet Reaches 200 Vehicles Across Texas 
+Avride's autonomous fleet has grown to 200 Hyundai Ioniq 5 robotaxis operating commercially in Austin and Dallas, with new vehicles entering service each month as the company scales driverless ride-hail operations. 
+
+-------------------------
+en_act_news
+2026-08-05 12:00:00
+Aurora's Second-Generation Driverless Trucks Enter Commercial Service on 10 U.S. Routes 
+Aurora Innovation deployed its second-generation driverless trucks on 10 commercial US freight routes, with manufacturing partner Roush targeting a 1,000-truck annual production run-rate by end of 2026. 
+
+-------------------------
+en_hcplive
+2026-08-05 12:00:00
+3 Psychiatry Headlines You Missed in July 2026 
+HCPLive's monthly psychiatry roundup highlights FDA approval of centanafadine (SIMTRIYO) as a first-in-class ADHD treatment, clinical advances in treatment-resistant depression, and emerging digital therapeutics for anxiety. 
+
+-------------------------
+en_healthcarebrew
+2026-08-05 12:00:00
+Signed and Scrubbed: July 2026 hospital M&A 
+Monthly roundup of hospital and health system merger and acquisition activity in July 2026, tracking deal values, strategic rationales, and regulatory reviews across the accelerating health system consolidation landscape. 
+
+-------------------------
+en_evinfrastructurenews
+2026-08-05 12:00:00
+US EV fast charging market rebounds in Q2, Paren reports 
+US public DC fast charging deployment rebounded in Q2 2026 according to Paren analytics, recovering from a slow first quarter though overall installations remained below year-ago levels amid federal funding uncertainty. 
+
+-------------------------
+en_militaryaerospace
+2026-08-04 12:00:00
+DoD expands C-UAS marketplace as counter-drone technologies evolve 
+The Pentagon is expanding its Counter-UAS marketplace platform to help authorized users identify validated anti-drone technologies, as AI enhancements automate threat scenario generation and software validation. 
+
+-------------------------
+en_miningsee
+2026-08-03 12:00:00
+Mining News Roundup CW31 
+Week 31 highlights financing developments for European strategic mineral projects, with battery materials supply chain investments and critical minerals processing capacity expansions dominating deal activity. 
+
+-------------------------
+en_selfdrivenews
+2026-08-03 12:00:00
+WeRide, Bosch Expand ADAS Testing to Europe, Japan 
+WeRide and Bosch are expanding their end-to-end autonomous driving ADAS testing partnership to Europe and Japan, following successful joint deployments in China and the United States. 
+
+-------------------------
+en_airforce_technology
+2026-08-01 12:00:00
+BAE Systems raises 2026 outlook on strong H1 results and contract awards 
+BAE Systems raised its full-year 2026 financial guidance following strong first-half results driven by increased European defense spending and new awards including the Brontanax autonomous Collaborative Combat Aircraft unveiled at Farnborough. 
+
+-------------------------
+en_internationalbanker
+2026-08-01 12:00:00
+How Agentic AI Is Set to Dramatically Transform Banking 
+Analysis argues agentic AI is poised to move beyond analytical tools to autonomous decision-making in lending, compliance monitoring, and customer service in banking, raising new regulatory accountability and oversight challenges. 
+
+-------------------------
+en_ieefa
+2026-08-01 12:00:00
+Costing Australia's green iron export ambitions 
+An IEEFA briefing finds Australia's fledgling green iron industry requires AU$170 billion in annual investment for 14 years, with green iron export revenues potentially reaching AU$96 billion per year by 2040 if production scales. 
+
+-------------------------
+en_rttnews
+2026-08-01 12:00:00
+Biotech Stocks Facing FDA Decision In August 2026 
+RTTNews FDA calendar highlights key August 2026 drug decision deadlines spanning rare diseases, oncology, Alzheimer's disease, multiple myeloma, ADHD and essential thrombocythemia across a diverse range of therapeutic areas. 
+
+-------------------------
+en_pharmtech
+2026-08-01 12:00:00
+FDA Activity Round Up – July 2026 
+Pharmaceutical Technology's monthly FDA activity roundup for July 2026 covers novel drug approvals including centanafadine for ADHD and Novartis's iptacopan for IgA nephropathy, alongside biosimilar decisions and regulatory guidance updates. 
+
+-------------------------
+en_moderndiplomacy
+2026-07-31 12:00:00
+Can Spain and Morocco Stop Europe's Biggest Border Surge in Years? 
+Analysis of the surge in irregular migration across the Spain-Morocco border and the diplomatic and security challenges facing both countries in managing one of Europe's most active migration corridors. 
+
+-------------------------
+en_airforce_technology
+2026-07-30 12:00:00
+Boeing Defence, Space & Security Q2 2026 revenue rises 13% to $7.5bn 
+Boeing's defense division posted $7.5 billion in Q2 2026 revenue, a 13% year-on-year increase, with 35 military aircraft deliveries including F-15EX fighters, KC-46 tankers, and Apache helicopters. 
+
+-------------------------
+en_manufacturingtomorrow
+2026-07-29 12:00:00
+VersaBuilt Showcases Practical CNC Automation Solutions for High-Mix Manufacturing at IMTS 2026 
+VersaBuilt demonstrated its robot-tended CNC machining automation platform at IMTS 2026, targeting high-mix low-volume manufacturers needing flexible automation with fast changeover rather than dedicated high-volume lines. 
+
+-------------------------
+en_selfdrivenews
+2026-07-25 12:00:00
+May Mobility Unveils Fifth-Gen AV Architecture With World Model 
+May Mobility launched its fifth-generation autonomy architecture featuring an on-vehicle world model, building on 525,000-plus commercial rides and designed to scale its autonomous shuttle and robotaxi services globally. 
+
+-------------------------
+en_moderndiplomacy
+2026-07-24 12:00:00
+Why Fragmented AI Strategies May Become a Geopolitical Asset 
+The article explores how Southeast Asian countries with overlapping great-power alignments could leverage their fragmented AI strategies to retain inspection and adaptation capacity, strengthening regional bargaining power. 
+
+-------------------------
+en_airforce_technology
+2026-07-24 12:00:00
+FIA 2026: Boeing say Ghost Bat will be first operational CCA 
+At Farnborough International Airshow, Boeing claimed its MQ-28 Ghost Bat is the most readily available Collaborative Combat Aircraft on the market, positioning it for near-term deployment alongside manned fifth-generation fighters. 
+
+-------------------------
+en_steelorbis
+2026-07-24 12:00:00
+Anglo American posts lower iron ore output in H1 2026, higher sales 
+Anglo American's iron ore production totaled 30.6 million metric tons in H1 2026, down 2.4% year-on-year, though higher realized prices meant the company achieved stronger sales volumes than production trends suggested. 
+
+-------------------------
+en_steelorbis
+2026-07-23 12:00:00
+Vale raises iron ore output as pellet production falls in Q2 versus Q1 2026 
+Brazilian miner Vale produced 75.97 million metric tons of iron ore in Q2 2026, up 0.8% from Q2 2025, while pellet output fell quarter-on-quarter as weak demand from European steelmakers reduced premium product volumes. 
+
+-------------------------
+en_renews
+2026-07-20 12:00:00
+Danes receive bids in 1.8GW offshore tender 
+Denmark received competitive bids for offshore wind capacity in the North Sea and Hesselø areas covering at least 1,800MW, advancing the country's ambitious targets for renewable energy expansion. 
+
+-------------------------
+en_act_news
+2026-07-20 12:00:00
+State of Sustainable Fleets Report Finds Diversification Driving Fleet Resilience 
+A new report finds commercial fleets pursuing diversified technology strategies across multiple powertrain pathways are better positioned to absorb tariff disruptions and navigate reduced federal clean energy funding. 
+
+-------------------------
+en_evinfrastructurenews
+2026-07-20 12:00:00
+Pilot, General Motors, EVgo reach 300 US fast-charging locations 
+The Pilot-GM-EVgo partnership has built over 300 EV fast-charging sites with 1,300 charging stalls across 40 states, with EVgo Supercharger deployments at additional Pilot Flying J locations planned for H2 2026. 
+
+-------------------------
+en_payloadspace
+2026-07-20 12:00:00
+Rocket Lab Wins $397M Contract to Build and Launch Threat-Tracking 'Flatellites' 
+Rocket Lab secured a $397 million contract to build and launch flat-form Flatellite satellites for the Space Development Agency's missile warning and tracking Layer constellation in low Earth orbit. 
+
+-------------------------
+en_hcplive
+2026-07-16 12:00:00
+The HCPFive: Top News for Healthcare Providers from the Week of 07/12 
+The weekly clinical digest covers Novartis's iptacopan approval for IgA nephropathy, new cardiovascular trial data, and CMS reimbursement policy updates affecting specialty care reimbursement and prior authorization practices. 
+
+-------------------------
+en_miningsee
+2026-07-15 12:00:00
+Europe's Critical Minerals Boom Enters a New Era as Mining Projects Attract Real Investment Capital 
+Europe's mining sector is moving from strategic aspiration to actual financing, with Critical Metals' $835 million acquisition of European Lithium representing the most significant critical minerals consolidation move of 2026. 
+
+-------------------------
+en_healthcarebrew
+2026-07-15 12:00:00
+Halfway through 2026, health tech executives predict what's to come 
+Health technology leaders share second-half 2026 predictions centering on AI clinical workflow integration, evolving payer-provider dynamics, and Medicare Advantage reform as dominant strategic themes. 
+
+-------------------------
+en_fintechreview
+2026-07-15 12:00:00
+Mexican Fintech Plata Lands $500m Financing from Nomura Securities 
+Mexican neobank Plata secured $500 million in debt financing from Nomura Securities, one of Latin America's largest fintech funding rounds in 2026, to expand its digital lending and payments platform. 
+
+-------------------------
+en_steelorbis
+2026-07-15 12:00:00
+China's iron ore imports increase by 6.3 percent in H1 2026 
+Chinese iron ore imports rose 6.3% year-on-year in H1 2026, reaching 628.86 million metric tons, as domestic steel production remained resilient and steelmakers rebuilt port inventories following earlier destocking. 
+
+-------------------------
+en_defenseindustrydaily
+2026-07-15 12:00:00
+Pentagon's DLA Awards $5B Maritime Acquisition Advancement Contract for Submarine Production 
+The Defense Logistics Agency contracted six small businesses for a $5 billion Maritime Acquisition Advancement Contract to accelerate Virginia-class submarine construction and address persistent US Navy shipbuilding capacity backlogs. 
+
+-------------------------
+en_manufacturingtomorrow
+2026-07-14 12:00:00
+IMTS 2026 Spotlights the Technologies Powering Manufacturing's Next Leap 
+IMTS 2026 will showcase industrial AI, automation, additive manufacturing, digital twins, and connected production systems helping manufacturers increase output and accelerate design-to-delivery cycles at McCormick Place in September. 
+
+-------------------------
+en_naacos
+2026-07-14 12:00:00
+Proposed Medicare Physician Fee Schedule Strengthens the Path Towards Accountable Care 
+NAACOS analysis of CMS's proposed 2027 Medicare Physician Fee Schedule finds new provisions strengthening incentives for ACOs and value-based care arrangements, including improved quality measure alignment and enhanced shared savings. 
+
+-------------------------
+en_hcplive
+2026-07-10 12:00:00
+FDA News Recap: Novel Drug Approvals in Q2 2026 
+Q2 2026 delivered one of the most active regulatory quarters in recent memory, with approvals including the first oral GLP-1 receptor agonist orforglipron, the first FSGS therapy sparsentan, and new disease-modifying T1D treatment teplizumab. 
+
+-------------------------
+en_evinfrastructurenews
+2026-07-10 12:00:00
+WeaveGrid and GM Energy partner to expand V2G charging programmes 
+WeaveGrid and GM Energy announced a partnership to expand vehicle-to-grid charging program access, enabling EV owners to sell stored energy back to utilities and building on GM's bidirectional charging launch in June 2026. 
+
+-------------------------
+en_payloadspace
+2026-07-10 12:00:00
+Exotrail Unveils Details of Second Spacevan OTV Mission 
+French in-space propulsion startup Exotrail revealed the customer manifest for its second Spacevan orbital transfer vehicle mission, which will launch on a SpaceX rideshare to deliver multiple satellites to precise target orbits. 
+
+-------------------------
+en_naacos
+2026-07-09 12:00:00
+ACO REACH Participants Improve Care Delivery, Generate Billions of Dollars in Savings 
+NAACOS analysis shows ACO REACH participants achieved significant quality improvements and generated billions in Medicare savings, building the evidence base for value-based care models ahead of potential program design changes. 
+
+-------------------------
+en_healthcarebrew
+2026-07-08 12:00:00
+2026's biggest healthcare deals so far 
+A recap of 2026's largest healthcare M&A transactions including Boston Scientific's $14.5 billion Penumbra acquisition, Organon's $11.75 billion sale to Sun Pharma, and AbbVie's $10.9 billion deal for Apogee Therapeutics. 
+
+-------------------------
+en_carbonherald
+2026-07-01 12:00:00
+Exclusive: Carbon Direct's 2026 State Of VCM Report Highlights Buyer Hesitancy As A Bottleneck For CDR Scale-Up 
+Carbon Direct's flagship 2026 voluntary carbon market report finds the market technically ready for larger carbon dioxide removal deployment, but buyer hesitancy and price sensitivity are creating critical bottlenecks for scale-up. 
+
+-------------------------
+en_carboncapturemagazine
+2026-07-01 12:00:00
+Carbon Capture Stays the Course Despite Global Headwinds, with 54% Rise in Operational Projects 
+A new report documents a 54% rise in operational carbon capture projects globally, with more than 130 projects spanning multiple capture, transport and storage pathways across the US and Canada despite policy headwinds. 
+
+-------------------------
+en_oilandgasadvancement
+2026-07-01 12:00:00
+BP Plans to Reorganize to Upstream and Downstream Operations 
+BP announced a strategic reorganization into upstream and downstream operational units effective July 2026, designed to improve accountability and accelerate decision-making as the company recalibrates its energy transition strategy. 
+
+-------------------------
+en_pharmtech
+2026-07-01 12:00:00
+FDA Activity Round Up – June 2026 
+The June 2026 FDA roundup documents approvals including the first oral GLP-1 receptor agonist orforglipron for obesity, the first FSGS therapy sparsentan, and new accelerated approvals across oncology and immunology. 
+
+-------------------------
+en_militaryaerospace
+2026-06-20 12:00:00
+Airbus backs European defense tech growth fund to accelerate dual-use innovation 
+Investment firms AVP and Earlybird launched a new €500 million European defense and dual-use technology growth fund with Airbus backing, targeting approximately 20 companies developing aerospace and defense technologies. 
+
+-------------------------
+en_fintechreview
+2026-06-20 12:00:00
+Juniper Research Unveils Key Areas of B2B Payments Modernisation 
+A new Juniper Research report identifies API-driven connectivity, real-time settlement and embedded trade finance as the critical enablers of B2B payments modernization projected through 2030. 
+
+-------------------------
+en_carbonherald
+2026-06-15 12:00:00
+COP30: Negotiators Move To Retire Kyoto-Era Carbon Market By Late 2026 
+Climate negotiators at COP30 in Belém reached consensus on winding down the Clean Development Mechanism legacy Kyoto Protocol carbon crediting system, with governments preparing to close the program by end of 2026. 
+
+-------------------------
+en_carboncapturemagazine
+2026-06-15 12:00:00
+CarbonQuest Secures $20 Million in Funding to Scale Carbon Capture Deployment 
+Building emissions carbon capture startup CarbonQuest raised $20 million to scale its modular systems designed to capture CO2 directly from existing multifamily and commercial buildings, targeting urban emissions reduction. 
+
+-------------------------
+en_foodlogistics
+2026-06-15 12:00:00
+Supply Chain Resilience Top Priority for Food and Beverage Supply Chain Leaders in 2026: Lineage 
+A Lineage survey finds supply chain resilience is the top investment priority for food and beverage companies in 2026, with 76% of executives anticipating continued high disruption levels driven by tariffs and geopolitical shifts. 
+
+-------------------------
+en_oilandgasadvancement
+2026-06-15 12:00:00
+Canada Boosts Global Energy Exports with New LNG Supply Deal 
+Canada finalized a new LNG supply agreement boosting global energy exports as the country accelerates development of its LNG export infrastructure to serve European and Asian buyers seeking alternatives to Russian supply. 
+
+-------------------------
+en_microwavejournal
+2026-06-15 12:00:00
+IMS2026 Show Wrap-Up 
+The IEEE MTT-S International Microwave Symposium in Boston featured Altera's next-generation Agilex 9 Direct RF-Series SoC FPGA for aerospace and defense, alongside major advances in RF, mmWave and silicon photonics technologies. 
+
+-------------------------
+en_defenseindustrydaily
+2026-06-15 12:00:00
+Boeing Wins $315M Delivery Order for F/A-18 Aircraft Landing Gear Repairs 
+Boeing secured a $315 million delivery order for repair and overhaul of F/A-18 E/F Super Hornet aircraft landing gear systems, with work spanning maintenance depots and expected to complete by September 2029. 
+
+-------------------------
+en_internationalbanker
+2026-06-01 12:00:00
+The US Versus the EU: Are Regional Approaches to Banking Regulation Diverging in 2026? 
+The US push for banking flexibility and deregulation is diverging from the EU's structured supervisory approach in 2026, creating potential regulatory arbitrage opportunities and competitive dynamics for global banks. 
+
+-------------------------
+en_carbonherald
+2026-06-01 12:00:00
+Watershed Opens 2026 Carbon Removal RFP Round 
+Corporate sustainability platform Watershed launched its 2026 carbon removal request-for-proposals inviting project developers to apply for durable carbon removal, nature-based removal and superpollutant avoidance credits. 
+
+-------------------------
+en_drugdiscoverytrends
+2026-06-01 12:00:00
+Chinese biotechs landed 6 of 26 major pharma deals in 16 months, worth $53 billion 
+Chinese biotech companies secured 6 of the 26 largest pharma licensing and acquisition deals over 16 months, accumulating $53 billion in deal value and fundamentally reshaping the global pharmaceutical partnership landscape. 
+
+-------------------------
+en_pharmtech
+2026-06-01 12:00:00
+FDA Activity Round Up – May 2026 
+Pharmaceutical Technology's May 2026 FDA roundup covers Bizengri's approval for NRG1 fusion-positive cholangiocarcinoma under the Commissioner's National Priority Voucher pilot and Gilead's Hepcludex for chronic hepatitis delta virus. 
+
+-------------------------
+en_rttnews
+2026-05-22 12:00:00
+FDA Approves Gilead Sciences' Hepcludex for Chronic Hepatitis Delta Virus Infection 
+The FDA approved Gilead Sciences' bulevirtide injection (Hepcludex) for treatment of chronic hepatitis delta virus infection, marking the first FDA-approved treatment for chronic HDV, a severe form of viral hepatitis. 
+
+-------------------------
+en_internationalbanker
+2026-05-15 12:00:00
+In 2026, Climate Change Is a Core Banking Risk 
+The integration of climate risk into mainstream prudential banking supervision is creating a profound transformation in how banks assess collateral values, lending exposures and capital adequacy requirements globally. 
+
+-------------------------
+en_foodlogistics
+2026-05-15 12:00:00
+How Food and Beverage Logistics Will Evolve in 2026 
+Analysis examines how food logistics companies are deepening technology partnerships, adopting AI-informed transportation optimization, and investing in refrigerated capacity to address rising frozen food demand and cold chain complexity. 
+
+-------------------------
+en_microwavejournal
+2026-05-15 12:00:00
+Diamonds in Defense: Northrop Grumman's Secret to Next-Gen Power and Protection 
+Groundbreaking research at Northrop Grumman's Microelectronics Center is positioning synthetic diamond as a next-generation material for defense microelectronics, offering superior thermal management and radiation hardness. 
+
+-------------------------
+en_thefintechtimes
+2026-05-15 12:00:00
+The Fintech Landscape of Brazil in 2026 
+Examination of Brazil's fast-growing fintech market covering open banking implementation by the Central Bank of Brazil, the rise of digital payments giants, and regulatory frameworks shaping one of Latin America's largest fintech ecosystems. 
+
+-------------------------
+en_rbnenergy
+2026-05-15 12:00:00
+Heat of the Moment — Oil and Gas Prices Supercharge Q1 2026 E&P Results 
+E&P companies saw surging profits in Q1 2026 as oil prices climbed following Middle East conflict escalation and Appalachian natural gas prices spiked during an unusually cold winter across the eastern US. 
+
+-------------------------
+en_fintechreview
+2026-05-10 12:00:00
+Visbanking Revolutionises Banking with Data-Driven Solutions 
+UK-based Visbanking launched an AI-powered data analytics platform for community banks and credit unions, delivering actionable intelligence on loan portfolio performance, deposit concentration, and regulatory risk. 
+
+-------------------------
+en_rbnenergy
+2026-05-08 12:00:00
+Q1 2026 Earnings Call: Expand Energy Bets Big on LNG-Related Gas Demand 
+Expand Energy announced a major strategic bet on LNG-related natural gas demand growth, positioning itself to capitalize on new export capacity coming online through 2028 as data center and industrial demand accelerates. 
+
+-------------------------
+en_carboncapturemagazine
+2026-05-01 12:00:00
+Germany Starts Preparations for 2026 Round of Industry Climate Contracts 
+Germany is preparing a new round of Carbon Contracts for Difference, government-backed instruments designed to fund large industrial emitters' transition to low-carbon hydrogen and electrified production methods. 
+
+-------------------------
+en_foodlogistics
+2026-05-01 12:00:00
+Top 9 Supply Chain Trends in 2026 
+MHI's annual report identifies AI-enabled decision-making, real-time cold chain visibility and warehouse automation as the leading trends reshaping food and beverage logistics and supply chain management through 2026. 
+
+-------------------------
+en_oilandgasadvancement
+2026-05-01 12:00:00
+Circular Economy in Oil and Gas Driving Industry Shift 
+The circular economy concept in oil and gas has evolved from a niche sustainability initiative into a core strategic pillar for leading energy producers, driven by expanding carbon pricing, investor mandates and regulatory pressure. 
+
+-------------------------
+en_nationalinterest
+2026-04-30 14:00:00
+What the 2026 Intelligence Assessment Gets Right—and Wrong 
+Critical analysis of the Intelligence Community's 2026 Annual Threat Assessment examines its 'Axis of Aggressors' framework covering China, Russia, Iran and North Korea, and its implications for US national security resource allocation. 
+
+-------------------------
+en_nationalinterest
+2026-04-30 12:00:00
+Peace Through Strength Begins at Home 
+The 2026 National Defense Strategy signals a decisive shift elevating homeland defense and Western Hemisphere security as top-tier priorities, challenging traditional allied commitments and forward-deployed US force structure. 
+
+-------------------------
+en_manufacturingtomorrow
+2026-04-15 12:00:00
+Why 2026 Will Redefine Manufacturing Autonomy & What Leaders Must Prepare for Now 
+Analysis argues that in 2026, manufacturing autonomy has transitioned from an optional overlay to a core operational imperative, driven by agentic AI, digital twins and intelligent automation embedded across factory floors. 
+
+-------------------------
+en_naacos
+2026-04-15 12:00:00
+Long-term Enhanced ACO Design (LEAD) Model Details Released 
+NAACOS released detailed specifications for the LEAD Model, offering an optional implementation period starting September 2026 with enhanced shared savings opportunities and new risk arrangements for high-performing ACOs. 
+
+-------------------------
+en_ieefa
+2026-04-15 12:00:00
+India targets 60% non-fossil fuel energy in its overall mix by 2035, with financing its next big hurdle 
+A report examines India's credit markets differentiating clean from thermal energy assets as the country targets 500 GW of renewable energy by 2030 and 60% non-fossil fuel in its energy mix by 2035. 
+
+-------------------------
+en_thefintechtimes
+2026-04-09 12:00:00
+The Fintech Ecosystem of China in 2026 
+China's fintech story has shifted from rapid platform expansion to regulatory recalibration, with the digital economy accounting for over 40% of GDP as Beijing integrates fintech more deeply into its national economic development strategy. 
+
+-------------------------
+en_microwavejournal
+2026-04-01 12:00:00
+Satellite 2026 – NTN and Flat Panel Arrays 
+Coverage of Satellite 2026 conference highlights non-terrestrial networks and flat panel array antennas as the dominant RF and microwave technology themes for next-generation satellite communications and direct-to-device services. 
+
+-------------------------
+en_rbnenergy
+2026-04-01 12:00:00
+LNG Exports, Data Centers Have North American Natural Gas Poised for Rapid Growth 
+New LNG export terminals across North America and explosive demand from AI data centers are creating unprecedented natural gas demand growth, fundamentally reshaping the supply-demand balance for years ahead. 
+
+-------------------------
+en_rttnews
+2026-03-26 12:00:00
+FDA Grants Approval to Rocket Pharma's Kresladi as First Gene Therapy for Severe LADII 
+The FDA approved Rocket Pharma's Kresladi (obe-cel) as the first gene therapy for Severe Leukocyte Adhesion Deficiency Type I, a rare and life-threatening immune disorder, marking a significant advance in gene therapy for rare blood diseases. 
+
+-------------------------
+en_thefintechtimes
+2026-03-15 12:00:00
+How Open Banking is Reshaping Financial Services Across Asia-Pacific in 2026 
+Analysis of how open banking mandates and API standards are transforming financial services across key APAC markets including Australia, Singapore, Hong Kong and India, with embedded finance products proliferating across verticals. 
+
+-------------------------
+en_ieefa
+2026-03-15 12:00:00
+IEEFA Update: The Global Energy Transformation Remains on Track 
+IEEFA analysis shows coal demand declining in medium and long-term projections, with clean energy investments accelerating globally and coal production expected to fall below 750 million tons in 2026. 
+
+-------------------------
+en_act_news
+2026-03-01 12:00:00
+Nearly 400 Industry Leaders to Speak at ACT Expo 2026 
+ACT Expo 2026 announced nearly 400 speakers covering AI, autonomous vehicles, EVs, alternative fuels and software-defined vehicles at the annual clean and advanced transportation conference in Las Vegas. 
+
+-------------------------
+en_nationalinterest
+2026-03-01 12:00:00
+Spending More on the Military Is Not a Defense Strategy 
+Analysis argues that despite the 2026 NDS emphasizing increased defense budgets, coherent strategy requires clarity on priorities, threat assessment and capability sequencing rather than simply larger topline defense appropriations. 
+
+-------------------------
+en_defenseindustrydaily
+2026-01-15 12:00:00
+Rheinmetall to Acquire Naval Shipbuilder NVL to Enter Maritime Arms Market 
+Rheinmetall announced plans to acquire German naval shipbuilder NVL Group, marking the defense giant's strategic expansion into the maritime sector as European defense spending surges following geopolitical escalation. 
+
+-------------------------
+en_drugdiscoverytrends
+2026-01-12 12:00:00
+Lilly and NVIDIA unveil $1B co-innovation lab in SF 
+Eli Lilly and NVIDIA unveiled a $1 billion co-innovation lab in San Francisco at JPM Healthcare Conference, one of the largest disclosed AI-pharma collaborations, using Lilly's proprietary research data for drug discovery AI models. 
+
+-------------------------
+en_drugdiscoverytrends
+2026-01-05 12:00:00
+Pharma M&A, China deals and GLP-1s: What to watch in 2026 
+Industry analysis identifies GLP-1 competition, Chinese biotech licensing, and cell and gene therapy acquisitions as the dominant pharma dealmaking themes for 2026, with global life sciences M&A having hit $240 billion in 2025. 
+
+-------------------------
