@@ -1,0 +1,540 @@
+en_theinsurer
+2026-08-11 12:00:00
+Reinsurance capital projected to grow 6% to $705 billion in 2026: AM Best 
+AM Best projects dedicated reinsurance capital will reach $705 billion by year-end 2026, up 6.3% from 2025, with traditional capital at $575 billion and third-party capital at a record $130 billion. The growth reflects strong underwriting fundamentals even as property catastrophe pricing faces renewed downward pressure from abundant capacity. 
+
+-------------------------
+en_artificialintelligence_news
+2026-08-11 12:00:00
+Anthropic releases Claude Opus 4.8 
+Anthropic released Claude Opus 4.8, the latest iteration of its flagship Opus series, targeting improved performance for enterprise agent workflows and complex multi-step reasoning tasks. The release continues Anthropic's rapid cadence of model updates as competition intensifies with OpenAI and Google in the enterprise AI market. 
+
+-------------------------
+en_theaiinsider
+2026-08-11 12:00:00
+Dyna Robotics Unveils World Action Model Trained on 1M Hours of Human Video 
+Dyna Robotics unveiled a world action model trained on one million hours of human video, representing a major advance in enabling robots to generalize from real-world human demonstrations across diverse physical tasks. The model aims to close the data gap that has limited robot deployment in unstructured environments. 
+
+-------------------------
+en_taipeitimes
+2026-08-11 12:00:00
+EDITORIAL: Economic equality in the AI boom 
+The Taipei Times editorial examines how Taiwan's AI-driven economic boom risks concentrating gains among semiconductor workers and large corporations while leaving other sectors behind. The piece calls for targeted policy responses to ensure broader economic participation as Taiwan's tech-led growth reaches nearly 13% GDP expansion. 
+
+-------------------------
+en_sof_news
+2026-08-10 12:00:00
+SOF Weekly Brief - August 10, 2026 
+The August 10 SOF News weekly brief covers the leadership transition at Security Assistance Group-Ukraine, new SOF RACER acquisition consortium launches, and ongoing SOCOM exercises across Europe and the Indo-Pacific. The brief highlights growing drone and counter-UAS program milestones within SOCOM's acquisition pipeline. 
+
+-------------------------
+en_carbonherald
+2026-08-10 12:00:00
+Uniper selected SLB Capturi for a 1.38 GW carbon capture power project in the UK 
+German utility Uniper selected SLB's Capturi unit to supply carbon capture technology for its Grain Power Station in Kent, covering 1.38 GW of gas-fired capacity in one of Europe's largest planned post-combustion CCS projects. The project advances Uniper's decarbonization roadmap and positions the UK site as a flagship for industrial-scale carbon capture deployment. 
+
+-------------------------
+en_carbonherald
+2026-08-10 12:00:00
+Coastal Bend LNG started permitting for a Texas export project with carbon capture 
+Coastal Bend LNG launched the permitting process for a new Texas LNG export terminal that will integrate carbon capture technology from its initial design, aiming to produce low-carbon LNG for European and Asian buyers. The project reflects growing buyer demand for credibly lower-emissions LNG supplies. 
+
+-------------------------
+en_greenstocks_research
+2026-08-09 12:00:00
+US Critical Minerals Stocks: 42 Listed Companies (2026) 
+Green Stocks Research identifies 42 U.S.-listed companies active in critical minerals mining, processing, and refining with a combined market cap of $747 billion as of August 9, 2026. The sector is driven by Pentagon investment commitments, rising battery material demand, and U.S. government efforts to diversify supply chains away from China. 
+
+-------------------------
+en_artificialintelligence_news
+2026-08-07 12:00:00
+Google's Gemini 3.6 Flash targets enterprise agent token costs 
+Google released Gemini 3.6 Flash on August 7, 2026, designed to dramatically reduce token costs for enterprise AI agent workflows while delivering strong performance on multi-step reasoning. The launch targets OpenAI's dominance in enterprise agentic deployments and reflects Google's strategy to win on price-performance for high-volume AI agent use cases. 
+
+-------------------------
+en_distillintelligence
+2026-08-07 12:00:00
+Semiconductors & AI Chips Weekly Briefing – August 7, 2026 
+Distill Intelligence's August 7 briefing covers AMD's record Q2 2026 results with 50% year-on-year revenue growth to $11.5 billion and Astera Labs' strong AI interconnect earnings, both confirming sustained data center AI chip demand. New hardware launches aimed at breaking memory bandwidth bottlenecks for large language model inference are reviewed in depth. 
+
+-------------------------
+en_carbonherald
+2026-08-07 12:00:00
+Drax Secured an Environment Agency Permit Variation for the Selby Carbon Capture Project 
+UK power company Drax obtained a regulatory permit variation from the Environment Agency for its Selby bioenergy with carbon capture and storage project in North Yorkshire, keeping the flagship BECCS facility on its development timeline. The permit marks a significant regulatory milestone for one of the UK's most consequential negative-emissions energy projects. 
+
+-------------------------
+en_theaiinsider
+2026-08-06 12:00:00
+Google's AI Ecosystem Expands: Top Researchers Launch Discovery Loop, Google Maps Gains Agentic Features, and Mirendil Secures Major Cloud Deal 
+Jeff Dean and senior Google researchers including Sanjay Ghemawat and Quoc Le launched Discovery Loop, a new AI research startup, signaling continued fragmentation of AI talent from hyperscalers. Simultaneously, Google Maps unveiled AI-powered agentic features enabling complex multi-step trip and local discovery tasks, expanding commercial AI deployment. 
+
+-------------------------
+en_asme
+2026-08-06 12:00:00
+New Sound-Based 3D Printing Method Enables Finer, Faster Microdevices 
+Researchers presented an acoustics-based 3D printing technique using sound waves instead of lasers or heat to achieve ultra-precise, in-situ fabrication of microdevices with transformative biomedical potential. The method offers finer feature resolution and faster processing than conventional approaches for small-scale manufacturing applications. 
+
+-------------------------
+en_thepigsite
+2026-08-05 12:00:00
+Smithfield cuts full-year outlook on weak pork demand 
+Smithfield Foods lowered its fiscal 2026 full-year sales and adjusted profit forecasts, citing weak consumer pork demand and elevated input costs, with annual sales now expected flat versus earlier low-single-digit growth guidance. The company still beat Q2 revenue estimates at $3.7 billion, but Hog Production unit revenue fell 8.2% year-on-year. 
+
+-------------------------
+en_theaiinsider
+2026-08-03 12:00:00
+The Week Ahead in AI: China in Focus with DeepSeek Release, Hugging Face Hack, Europe Begins AI Act Enforcement, Plus Upcoming Earnings & Events 
+The AI Insider's weekly preview covers DeepSeek's latest model release, a security breach at Hugging Face, and the European Commission beginning enforcement of EU AI Act transparency obligations from August 2, 2026. Upcoming major tech earnings and AI policy events are flagged as market-moving developments for the week. 
+
+-------------------------
+en_taipeitimes
+2026-08-01 12:00:00
+GDP posts fastest rise in nearly 40 years to 12.92% 
+Taiwan's GDP expanded 12.92% year-on-year in Q2 2026, the fastest pace in nearly four decades, driven by AI-related semiconductor export surges and broadening domestic investment. TSMC's AI chip production and advanced packaging expansion at the Chiayi Science Park were central to the growth acceleration. 
+
+-------------------------
+en_asme
+2026-07-30 12:00:00
+Better Tubes for Robotics-Driven Manufacturing 
+ASME profiles Kevin McNeil's research on advanced structural tubing engineered to enable faster, more efficient robotic automation in manufacturing, potentially allowing smaller factories to compete against larger automated rivals. The work addresses a key materials constraint in deploying high-speed robotic assembly systems at scale. 
+
+-------------------------
+en_payloadspace
+2026-07-28 12:00:00
+Rocket Lab Expands to Alaska with $266M Launch Contract 
+Rocket Lab was awarded a $266 million U.S. Space Force contract for up to 18 suborbital launches and will open its fourth launch site at the Pacific Spaceport Complex-Alaska in Kodiak, its largest military contract to date. First launches are targeted for late 2026, expanding Rocket Lab's national security launch portfolio. 
+
+-------------------------
+en_sof_news
+2026-07-27 12:00:00
+SOF Weekly Update - July 27, 2026 
+The July 27 SOF News brief covers new SOF GLSS II contract milestones, a $10.53 billion 12-year logistics award, and updates on multinational SOF exercises across Europe and the Pacific. Personnel transitions and capability program announcements from SOCOM leadership are also summarized. 
+
+-------------------------
+en_geopolitical_intel
+2026-07-25 12:00:00
+Global Geopolitical Pulse – July 25, 2026 
+The July 25 briefing highlights Syria's $216 billion reconstruction challenge, Japan's push to establish an independent AI posture outside the U.S.–China technology duopoly, and escalating Saudi–Houthi tensions reshaping Gulf security calculations. The analysis connects these geopolitical developments to energy market and supply chain implications. 
+
+-------------------------
+en_taipeitimes
+2026-07-22 12:00:00
+TIER expects Taiwan's GDP growth to top 10% in 2026 
+The Taiwan Institute of Economic Research raised its full-year 2026 GDP growth forecast to above 10%, joining Academia Sinica which projected 10.16% growth, the highest estimate among major research institutions. Standard Chartered and DBS maintained forecasts around 9.4–9.5%, with AI semiconductor demand the universal driver. 
+
+-------------------------
+en_additivemanufacturing_media
+2026-07-22 12:00:00
+Aibuild and Generative Machine Bring AI-Driven 5-Axis Desktop AM to Market 
+Aibuild partnered with UK startup Generative Machine to bring an AI-driven five-axis fused filament fabrication desktop 3D printing system to market, enabling complex geometries and multi-directional part fabrication previously impossible on desktop platforms. The solution combines AI-generated toolpath software with novel hardware design. 
+
+-------------------------
+en_distillintelligence
+2026-07-17 12:00:00
+Semiconductors & AI Chips Weekly Briefing – July 17, 2026 
+The July 17 Distill Intelligence briefing covers TSMC's pledge of an additional $100 billion to Arizona operations totaling $265 billion, record quarterly net income up 77%, and ASML's plans to raise equipment prices in a potential clash with its largest customer. The briefing analyzes how these developments affect the global AI chip supply chain. 
+
+-------------------------
+en_kavout
+2026-07-16 12:00:00
+The AI Momentum Paradox: Navigating 2026's Concentrated Market Rally 
+Kavout's analysis highlights a paradox in 2026 U.S. equity markets: headline indices near all-time highs but the rally is increasingly narrow, with AI-driven names like Corning (+81% YTD) and Applied Materials (+124% YTD) masking weak breadth in the broader market. The piece warns investors of concentration risk even amid strong economic data. 
+
+-------------------------
+en_jll
+2026-07-15 12:00:00
+U.S. Office Market Dynamics, Q2 2026 
+JLL's Q2 2026 U.S. office market report shows leasing activity at a new post-pandemic high, up 27% over trailing 12 months, driven by AI-sector tenants and aerospace and defense companies up 37%. Vacancy declined 60 basis points quarter-on-quarter as absorption exceeded 30 million square feet over the past year. 
+
+-------------------------
+en_carbuzz
+2026-07-15 12:00:00
+Tesla Just Took A Major Step Forward In Its Quest For Self-Driving Cars 
+Tesla's 2026 Model Y became the first vehicle to pass NHTSA's new automated driver-assistance system safety tests, marking a significant milestone in regulatory validation of advanced driver-assist technology. The result strengthens Tesla's position ahead of anticipated federal autonomous vehicle guidelines. 
+
+-------------------------
+en_thepigsite
+2026-07-15 12:00:00
+Weekly pig report: Pork outperforms beef in latest US export data 
+The Pig Site's weekly market report highlights U.S. pork outperforming beef in the latest USDA export data, driven by surging shipments to Asian markets including a 74% surge to the Philippines. Lean hog futures remained supported by seasonal slaughter declines and stable domestic demand despite broader consumer spending headwinds. 
+
+-------------------------
+en_jll
+2026-07-14 12:00:00
+Silicon Valley Office Market Dynamics | Q2 2026 | JLL Research 
+JLL's Q2 Silicon Valley office report documents a sustained AI-driven leasing recovery, with technology sector tenants—particularly AI startups and hyperscalers—leading renewed absorption in premium campus spaces. Effective rents for new construction rose over 20% on a rolling 12-month basis as newer buildings became exceptionally scarce. 
+
+-------------------------
+en_woodmac
+2026-07-10 12:00:00
+Upstream oil and gas 2026 outlook: half-time report 
+Wood Mackenzie's H1 2026 upstream review finds a second consecutive year of slight development spending declines, with Brent expected to average $59/barrel for the year despite Middle East conflict providing episodic price spikes. AI data center energy demand and frontier Arctic exploration are identified as emerging growth vectors for the second half. 
+
+-------------------------
+en_jll
+2026-07-10 12:00:00
+Global real estate outlook mid-year update 
+JLL's global mid-year real estate outlook identifies improving fundamentals in H2 2026 across major markets, supported by easing trade tensions, moderating inflation, and lower interest rates relative to 2025 peaks. Data center demand and AI-related industrial real estate requirements are flagged as the strongest performing global property sectors. 
+
+-------------------------
+en_macromicro
+2026-07-10 12:00:00
+Inflation: Global Central Bank Rate Hike/Cut Expectations for 2026 
+MacroMicro's updated tracker shows approximately 30% of major central banks now hiking or considering rate increases in mid-2026, a sharp reversal from year-start expectations of broad cuts, driven by Middle East conflict-induced inflation. The analysis covers 12 major central banks and highlights the Fed's hold at 3.50–3.75% while ECB cautiously eases. 
+
+-------------------------
+en_woodmac
+2026-07-08 12:00:00
+Metals and mining outlook 2026: half-time report 
+Wood Mackenzie's mid-year metals review shows electrification demand and AI data center build-outs driving copper and aluminum pricing through Q2, while China's overcapacity and local content requirements complicate global supply chains. The report raises aluminum price outlook given Middle East energy disruption risks to Gulf smelter output. 
+
+-------------------------
+en_thecattlesite
+2026-07-08 12:00:00
+Cattle futures rise as traders refocus on tight supply - CME 
+CME cattle futures rallied as traders returned focus to structural U.S. cattle supply tightness, with feeder steer inventories at multi-decade lows and slow herd rebuilding following drought and disease. USDA projects beef prices will climb 12.1% in 2026, potentially the largest annual increase since 1979. 
+
+-------------------------
+en_thebeefsite
+2026-07-08 12:00:00
+Weekly protein report: Cattle markets climb amid tight supplies and trade developments 
+The Beef Site's weekly protein market report covers rallying cattle futures driven by historically low U.S. cattle inventories and record feeder steer prices near $388 per hundredweight, with evolving trade flows from Mexico and Australia adding complexity to supply projections. Analysts forecast elevated prices persisting through Q3 2026. 
+
+-------------------------
+en_geopolitical_intel
+2026-07-07 12:00:00
+Geopolitical Pulse: July 7, 2026 
+The July 7 Geopolitical Intel briefing tracks intensifying Indo-Pacific rivalry as India accelerates naval expansion to counter China, U.S. tariffs on ASEAN nations test Washington's regional alliances, and Houthi strikes on Saudi energy infrastructure signal widening proxy conflict beyond the original Middle East war zone. 
+
+-------------------------
+en_distillintelligence
+2026-07-03 12:00:00
+Semiconductors & AI Chips Weekly Briefing – July 3, 2026 
+Distill Intelligence's July 3 briefing reviews Nvidia's dominant AI silicon position as CEO Jensen Huang projects a $1 trillion market for global AI infrastructure upgrades, and TSMC's CEO warns chip production capacity may fall short of AI demand for several years. The briefing covers implications for DRAM, HBM, and advanced packaging supply chains. 
+
+-------------------------
+en_macromicro
+2026-07-01 12:00:00
+H2 2026 Global Central Bank Outlook 
+MacroMicro's H2 2026 central bank outlook projects continued divergence among 12 major central banks, with roughly 30% now hiking in response to Middle East conflict-driven inflation while the Fed holds at 3.50–3.75% and the ECB cautiously eases. The analysis highlights how differential liquidity conditions are creating volatility in global bond and currency markets. 
+
+-------------------------
+en_chinabankingnews
+2026-07-01 12:00:00
+The six-point plan to save China's economy from 'landslide' decline 
+China Banking News analyzes a policy framework proposed by prominent Chinese economists to address structural headwinds including a weakening real estate market, local government debt overhang, and declining domestic consumption. The six-point plan calls for accelerated fiscal stimulus, mortgage relief, and expanded social safety nets to prevent economic deterioration. 
+
+-------------------------
+en_thepigsite
+2026-07-01 12:00:00
+Pig outlook: Lean hog futures bulls keeping price uptrend alive 
+The Pig Site's futures outlook finds lean hog bulls maintaining an upward price trend in early July, supported by seasonal processing slowdowns, strong export demand from Asian markets, and below-average hog weights reducing immediate slaughter supply. Analysts see prices remaining elevated into Q3 absent a significant demand shock. 
+
+-------------------------
+en_sof_news
+2026-06-29 12:00:00
+SOF Weekly Brief - June 29, 2026 
+The June 29 SOF News brief covers drone testing by the Oregon Army National Guard using heavy-lift UAS to deliver explosive ordnance through simulated enemy defenses, and tracks Trojan Footprint 2026 involving 1,000 U.S. and 2,000 allied SOF from 23 NATO nations. The brief reviews new autonomous systems acquisition priorities across SOCOM. 
+
+-------------------------
+en_theinsurer
+2026-06-17 12:00:00
+Parametric structures seen in lower layers and retro at mid-year reinsurance renewals 
+The Insurer reports growing adoption of parametric triggers in lower property catastrophe layers and retrocessional coverage at mid-year 2026 renewals, as cedants and reinsurers seek faster, transparent claims settlement mechanisms. The trend reflects broader experimentation with index-based risk transfer as capacity has grown and traditional trigger disputes have increased. 
+
+-------------------------
+en_unmannedsystems_technology
+2026-06-15 12:00:00
+Reactive Drone to Showcase UAV Systems at Eurosatory 2026 
+Ukrainian drone manufacturer Reactive Drone will exhibit its battle-tested SHMAVIK and Kazhan UAV systems at the Eurosatory 2026 defense exhibition in Paris, highlighting operationally validated autonomous capabilities developed through active conflict experience. The Kazhan has been upgraded with multi-band radio, Starlink, and LTE communications for contested-environment resilience. 
+
+-------------------------
+en_fintechweekly
+2026-06-15 12:00:00
+European Fintech Capital Strategy: Why the Banking Licence Has Become the Sector's Most Consequential Asset 
+FinTech Weekly analysis shows European fintechs with full banking licences are gaining structural capital and regulatory advantages unavailable to unlicensed peers, creating a bifurcated competitive landscape. The banking licence is increasingly the most strategically valuable asset in European fintech as regulatory capital requirements and consumer protection rules tighten. 
+
+-------------------------
+en_theinsurer
+2026-06-12 12:00:00
+Ratings agencies say insurance industry well positioned for 2026 hurricane season 
+AM Best and S&P assess the U.S. insurance industry as well-capitalized heading into the 2026 Atlantic hurricane season, with reinsurance capacity abundant and balance sheets stronger than pre-2023 levels. Both agencies cited improved risk models, higher premium income, and tighter underwriting discipline as key resilience factors. 
+
+-------------------------
+en_unmannedsystems_technology
+2026-06-10 12:00:00
+Reactive Drone Demonstrates Autonomous SHMAVIK UAS Operations 
+Reactive Drone validated a fully autonomous operational cycle for its SHMAVIK UAS through integration with SkyDock ground infrastructure, enabling autonomous take-off, landing, battery charging, and relaunch without human operator involvement between missions. The demonstration represents a significant advance in autonomous drone logistics for military forward-basing. 
+
+-------------------------
+en_worldoil
+2026-06-09 12:00:00
+Halliburton to support Greenland Energy's East Greenland drilling campaign 
+Halliburton signed a services agreement with Greenland Energy for its 2026 drilling campaign targeting the Jameson Land basin, among the first modern onshore exploration wells in East Greenland. The campaign is part of a broader Western effort to access frontier Arctic hydrocarbon resources as U.S. and allied energy security priorities shift. 
+
+-------------------------
+en_kavout
+2026-06-05 12:00:00
+What Triggered the Recent Semiconductor Sell-Off 
+Kavout's market analysis traces the June 5, 2026 semiconductor sector selloff to Broadcom's cautious Q3 AI chip sales guidance of $16 billion against analyst estimates of $17.2 billion, triggering a 14% Broadcom drop and sector-wide contagion. AMD, Intel, and the broader SOX index fell sharply as the 'sell-the-news' reaction spread through the chip supply chain. 
+
+-------------------------
+en_beinsure
+2026-06-01 12:00:00
+Home insurtech Hippo places $777 mn reinsurance program for 2026 
+Hippo Holdings completed placement of its 2026 reinsurance program effective June 1, structured as a consolidated corporate-level catastrophe arrangement replacing earlier program-by-program placements, providing more efficient capital deployment and broader catastrophe coverage. The $777 million program reflects the growing sophistication of insurtech risk transfer strategies. 
+
+-------------------------
+en_morethanshipping
+2026-06-01 12:00:00
+Why Are Freight Prices Still Not Behaving Logically in 2026? 
+More Than Shipping examines persistent irrationality in 2026 ocean freight rates, where pricing volatility continues despite improving transit reliability and Suez Canal normalization, driven partly by AI-powered carrier rate management systems that adjust rates more frequently than markets can absorb. The piece advises importers to diversify carriers and use shorter-validity rate agreements. 
+
+-------------------------
+en_payloadspace
+2026-06-01 12:00:00
+SpaceX Wins the Bulk of Space Force's 2026 Launch Contracts 
+SpaceX secured a dominant share of U.S. Space Force 2026 launch services contracts, continuing its unmatched position in national security launches, with plans for a Twilight rideshare mission to dawn-dusk orbit among awarded missions. Rocket Lab and other providers are competing for a growing small-payload contract segment. 
+
+-------------------------
+en_additivemanufacturing_media
+2026-06-01 12:00:00
+Seurat in Production: Latest Milestones, and What's Next 
+Additive Manufacturing Media profiles Seurat Technologies' progress scaling its Area Printing metal AM process toward true production volumes, including new aerospace and defense customer partnerships and a facility ramp in the U.S. The company positions its technology as cost-competitive with conventional metal manufacturing at high-volume production rates. 
+
+-------------------------
+en_aluminium_journal
+2026-06-01 12:00:00
+How is the industry doing? 
+The International Aluminium Journal's mid-year industry assessment highlights Constellium's record Q2 earnings with revenue up 31% to $2.7 billion and Bahrain's Alba acquiring European smelter Aluminium Dunkerque for $2.2 billion, building a global low-carbon aluminium platform. European policy uncertainty around carbon border adjustments and energy costs remains the sector's key risk. 
+
+-------------------------
+en_thebeefsite
+2026-05-20 12:00:00
+US cattle prices hit record highs in 2026 
+U.S. cattle and beef prices reached record highs in 2026 as the feeder steer supply fell to 75-year lows, with the five-area slaughter steer average hitting $249 per hundredweight in April and feeder steers briefly reaching $388 per hundredweight. USDA forecasts beef prices will climb 12.1% for the full year, the largest annual jump since 1979. 
+
+-------------------------
+en_thecattlesite
+2026-05-15 12:00:00
+US cattle prices hit record highs in 2026 
+Record-high U.S. cattle prices dominated the agricultural commodities landscape in spring 2026 as historically tight feeder cattle supplies combined with strong domestic and international beef demand. Multiple market observers cite prolonged herd liquidation following drought and disease as structural factors preventing a near-term inventory recovery. 
+
+-------------------------
+en_geopolitical_intel
+2026-05-15 12:00:00
+US-China Chip War Tracker: May 2026 Intelligence Briefing 
+Geopolitical Intel's May chip war tracker covers new U.S. tariffs on AI chip imports and China's Big Fund Phase III semiconductor investment expansion, analyzing how export control enforcement and ASML-TSMC pricing tensions are reshaping the global semiconductor supply chain. The briefing assesses near-term implications for chipmakers in Taiwan, South Korea, and the Netherlands. 
+
+-------------------------
+en_worldoil
+2026-05-06 12:00:00
+OTC 2026: ExxonMobil says AI, policy alignment to shape exploration in the 'demand decade' 
+At the Offshore Technology Conference 2026, ExxonMobil's John Ardill described the coming decade as a 'demand decade' requiring more upstream investment, AI-driven drilling efficiency, and stronger policy support, pointing to autonomous drilling in Guyana and U.S. shale models as the industry's future template. ExxonMobil expects AI integration across exploration to cut finding and development costs significantly. 
+
+-------------------------
+en_thecattlesite
+2026-05-01 12:00:00
+Beef herd rebuild 'spotty' as prices hit records, Tyson says 
+Tyson Foods reported that U.S. beef herd rebuilding remains 'spotty' despite record cattle prices, with ranchers cautious about retaining breeding heifers due to financing costs and operational uncertainty. The company expects structural supply tightness to persist through at least mid-2027, supporting elevated beef price forecasts. 
+
+-------------------------
+en_innovativegenomics
+2026-05-01 12:00:00
+Gene Editing Innovators Receive 2026 Catalyst Award at American Society of Gene & Cell Therapy's Annual Conference 
+The Innovative Genomics Institute joined CHOP, Danaher, and Penn Medicine in receiving ASGCT's 2026 Catalyst Award, recognizing the team behind the world's first personalized in vivo CRISPR therapy delivered in just six months for a rare metabolic disease in an infant. The award marks the maturation of personalized gene editing from research concept to clinical application. 
+
+-------------------------
+en_artificialintelligence_news
+2026-04-20 12:00:00
+Stanford's 2026 Report: AI Safety Benchmarks Are Falling Behind 
+Stanford's HAI 2026 AI Index report finds the gap between AI model capabilities and the rigor of safety evaluations has widened, not closed, with existing benchmarks struggling to keep pace with rapid model advancement. The 423-page report challenges assumptions about U.S. dominance in AI model performance and calls for urgently updated safety assessment frameworks. 
+
+-------------------------
+en_additivemanufacturing_media
+2026-04-15 12:00:00
+3D Printing Alongside Injection Molding at PTXPO 2026: Pics of the Week 
+Additive Manufacturing Media documented how PTXPO 2026 showcased the growing integration of 3D printing with injection molding, with multiple vendors demonstrating hybrid polymer manufacturing workflows including food-grade SLS systems for the food and beverage sector. The event reflected the industry's transition from additive as a prototyping tool to a production complement. 
+
+-------------------------
+en_ittcnet
+2026-04-10 12:00:00
+China introduces AI compliance framework for digital platforms 
+China released the Interim Measures for the Administration of Artificial Intelligence Anthropomorphic Interaction Services on April 10, 2026, jointly issued by five central government authorities including the CAC and MIIT, taking effect July 15, 2026. The measures establish compliance requirements for AI virtual companions, chatbots, and emotionally interactive services including youth protection safeguards. 
+
+-------------------------
+en_ittcnet
+2026-04-08 12:00:00
+China issues new supply chain security regulation 
+China promulgated Order No. 834 on April 8, 2026, establishing the Regulations on Industrial and Supply Chain Security, the first dedicated national framework for managing risks to China's industrial base and critical supply chains. Companies with significant operations in China's manufacturing sector face new assessment and reporting requirements by year-end. 
+
+-------------------------
+en_beinsure
+2026-04-01 12:00:00
+Largest Global Insurance & Reinsurance Brokers in 2026 
+Beinsure's 2026 annual rankings show the top 20 global insurance brokers generated combined revenue of $109.6 billion, with Marsh McLennan retaining first place for the 15th consecutive year ahead of Aon and WTW. The rankings reflect continued consolidation and growing differentiation through data analytics and specialty capabilities. 
+
+-------------------------
+en_greenstocks_research
+2026-04-01 12:00:00
+5 Factors Driving the Cobalt Market in 2026 
+Green Stocks Research identifies five forces shaping cobalt markets in 2026: rising EV battery demand, U.S. Pentagon stockpiling of $500 million through 2030, DRC political risk, battery chemistry alternatives reducing cobalt intensity, and accelerating supply chain diversification away from China-dominated refining. Critical minerals sourcing thresholds rise to 80% by 2027. 
+
+-------------------------
+en_metal_smm
+2026-03-27 12:00:00
+[SMM Aluminum Alloy Express] Aluminum and copper prices hit multi-year highs, downstream demand sluggish 
+Shanghai Metals Market reports aluminum hit four-year highs and copper surged beyond $11,000 per tonne in late March 2026, driven by AI data center infrastructure demand and Middle East supply disruption risks affecting seaborne aluminum trade. Despite spot price rallies, downstream demand remained sluggish, creating a divergence between headline prices and actual transaction volumes. 
+
+-------------------------
+en_aluminium_journal
+2026-03-15 12:00:00
+2026: a defining year for Europe's aluminium industry 
+The International Aluminium Journal's European column examines how 2026 EU energy, trade, and Carbon Border Adjustment Mechanism policy decisions will determine whether Europe's aluminium industry remains globally competitive or continues contracting. Rising domestic energy costs, tariff policy on Chinese imports, and clean energy transition incentives are the critical variables. 
+
+-------------------------
+en_chinabankingnews
+2026-03-10 12:00:00
+The macroeconomic policy implications of China's 2026 Two Sessions 
+China Banking News analyzes the 2026 National People's Congress economic policy framework, including the launch of the 15th Five Year Plan targeting technological self-sufficiency and domestic consumption growth from 2026 to 2030. Monetary policy remains 'moderately loose' with fiscal deficit targets held at 4% of GDP and new special purpose bond quotas raised to 4.8 trillion yuan. 
+
+-------------------------
+en_innovativegenomics
+2026-03-01 12:00:00
+First Patient Treated with Personalized CRISPR Therapy, Developed in Just Six Months 
+An infant with a rare severe metabolic disease became the first patient treated with a fully personalized in vivo CRISPR therapy, developed by a team including IGI researchers in just six months from diagnosis to treatment delivery. The case establishes a new benchmark for speed in precision genetic medicine and demonstrates the FDA's new platform therapy framework enabling rapid trial initiation. 
+
+-------------------------
+en_ittcnet
+2026-03-01 12:00:00
+US Slaps 25% Tariff on AI Chip Imports After Probe 
+The United States imposed a 25% tariff on select AI chip imports following a formal Section 232 trade probe, targeting chip categories used in AI training and inference to protect domestic semiconductor investment and counter foreign competition. The measure follows the broader U.S.-China semiconductor decoupling effort and is expected to accelerate reshoring of advanced chip production. 
+
+-------------------------
+en_morethanshipping
+2026-03-01 12:00:00
+Will 2026 Be a Shipper's Market? A Reality Check for U.S. Exporters 
+More Than Shipping provides a sober assessment of 2026 ocean freight conditions for U.S. exporters, finding that while excess vessel capacity benefits importers, outbound shippers face stiff competition for backhaul capacity and continued volatility from Middle East geopolitical disruptions. The piece advises diversified routing strategies and shorter rate lock-in periods. 
+
+-------------------------
+en_kavout
+2026-03-01 12:00:00
+Is the Financial Sector Primed for a 2026 Rebound 
+Kavout's market analysis finds early 2026 conditions favorable for financial sector outperformance, with the Morningstar U.S. Dividend Growth Index outperforming the broader market by more than 5 percentage points through February 23, 2026. A notable rotation from mega-cap technology into value and dividend stocks, combined with anticipated Fed policy adjustments, supports the financial sector case. 
+
+-------------------------
+en_greenstocks_research
+2026-03-01 12:00:00
+Rare Earth Stocks List: 28 Rare Earth Companies (2026) 
+Green Stocks Research profiles 28 publicly listed rare earth companies as of 2026, covering mining, processing, and permanent magnet manufacturers positioned to benefit from U.S. and allied government efforts to reduce dependence on China's 70% share of global rare earth mine production. The list spans U.S., Canadian, Australian, and European firms across the value chain. 
+
+-------------------------
+en_carbuzz
+2026-03-01 12:00:00
+You Can Only Buy Three Types Of Electric Fords In 2026 
+CarBuzz reports Ford's 2026 electric vehicle lineup has been rationalized to three models — Mustang Mach-E, F-150 Lightning, and E-Transit van — following the company's recalibration of EV investment pace in response to below-forecast market demand and profitability challenges. The streamlined lineup reflects broader industry caution about mass-market EV adoption rates. 
+
+-------------------------
+en_thebeefsite
+2026-03-01 12:00:00
+Brazil beef production forecast to fall to 40 million head in 2026 
+Brazil's beef production is forecast to decline to around 40 million head in 2026 from approximately 42 million in 2025, with domestic herd dynamics and weather variability constraining output growth. Despite the production pullback, Brazil's beef export position remains globally dominant, particularly for Asian markets. 
+
+-------------------------
+en_worldoil
+2026-02-26 12:00:00
+bp ramps up shale drilling, targets 650,000 boed output by 2030 
+BP is accelerating U.S. shale drilling through its bpX Energy subsidiary, targeting 8% production growth in 2026 and 650,000 barrels of oil equivalent per day by 2030, reversing earlier guidance that prioritized low-carbon energy investments. The pivot reflects BP's recalibration toward higher-margin conventional upstream assets under shareholder pressure. 
+
+-------------------------
+en_fintechweekly
+2026-02-18 12:00:00
+Ericsson, Mastercard Link Platforms to Expand Global Digital Payments 
+Ericsson and Mastercard announced integration of the Ericsson Fintech Platform with Mastercard Move on February 18, 2026, enabling telecom operators, banks, and fintechs to offer expanded digital wallet features and cross-border transfers through a unified interface. The partnership targets financial inclusion in underbanked markets where mobile operators serve as primary financial access points. 
+
+-------------------------
+en_fintechweekly
+2026-02-15 12:00:00
+PayPay Files for Nasdaq IPO as Japanese Digital Payments Leader Eyes U.S. Expansion 
+Japanese digital payments leader PayPay filed for a Nasdaq IPO on February 15, 2026, targeting a valuation above $6.5 billion as it pursues U.S. market entry with its QR code payment platform and a planned Visa partnership. PayPay processed over $100 billion in annual payment volume in Japan, ranking among Asia's largest mobile payment services by transaction value. 
+
+-------------------------
+en_unmannedsystems_technology
+2026-02-15 12:00:00
+Rugged UAV Platforms for Civilian & Defense Applications 
+Unmanned Systems Technology profiles ruggedized UAV platforms engineered for harsh environmental operations, covering thermal tolerance, dust protection, and communications jamming resistance for both civilian inspection and military ISR roles. The article surveys multiple vendors as demand for dual-use UAS capability grows in both commercial infrastructure and defense sectors. 
+
+-------------------------
+en_asme
+2026-02-01 12:00:00
+ASME's Mechanical Engineering Watch List 2026 
+ASME's editorial team named 25 early-career mechanical engineers to the 2026 Watch List, highlighting work spanning robotics, additive manufacturing, climate-resilient infrastructure, and AI-integrated design tools. The list reflects how the profession's skill requirements are evolving at the intersection of physical engineering and digital systems. 
+
+-------------------------
+en_innovativegenomics
+2026-02-01 12:00:00
+CRISPR Clinical Trials: A 2026 Update 
+The Innovative Genomics Institute's 2026 clinical trials update finds approximately 250 gene-editing trials globally with over 150 currently active, including the FDA-approved Casgevy for sickle cell disease and beta-thalassemia. New trials initiating in 2026 target PCSK9 for familial hypercholesterolemia, Huntington's disease, and next-generation CAR-T cancer therapies. 
+
+-------------------------
+en_woodmac
+2026-01-20 12:00:00
+Five themes shaping the energy world in 2026 
+Wood Mackenzie's 2026 energy outlook identifies five macro forces: AI-driven electricity demand growth, a global LNG supply glut from U.S. and Qatar projects, record-low battery storage prices, China's clean energy manufacturing overcapacity, and persistent geopolitical supply risk. Total energy and natural resources investment is forecast to slip 4% to $1.58 trillion. 
+
+-------------------------
+en_beinsure
+2026-01-20 12:00:00
+InsurTech funding rose in 2025 to $5.1 bn as Q4 capped a stronger year 
+Global InsurTech funding reached $5.1 billion in full-year 2025, up 19.5%, with Q4 2025 driving momentum through higher deal counts and larger average deal sizes. AI-focused InsurTech companies attracted 99.1% of all Q2 2026 funding as the sector entered the new year with 35 active unicorns valued at a combined $106 billion. 
+
+-------------------------
+en_aluminium_journal
+2026-01-15 12:00:00
+Strong start for metal prices in 2026 
+The International Aluminium Journal reports aluminium and industrial metal prices posted a strong start to 2026, with aluminium supported by EV and renewable energy demand and constrained by China's 45-million-tonne production ceiling. The early rally established a constructive pricing tone heading into a year expected to see continued supply-demand tightness in key metals. 
+
+-------------------------
+en_macromicro
+2026-01-15 12:00:00
+Outlook 2026 Series VII: The Global Central Bank Divide — Where Liquidity Heads Next 
+MacroMicro's year-opening central bank outlook maps diverging monetary policy paths among 12 major central banks: the Fed on hold, ECB gradually easing, BOJ normalizing, and PBOC providing targeted stimulus. The analysis projects that differential liquidity conditions will drive notable bond and currency market volatility throughout 2026. 
+
+-------------------------
+en_payloadspace
+2026-01-15 12:00:00
+The State of Launch 2026 
+Payload Space's annual industry report finds 2026 on track to be the busiest year in orbital spaceflight history, with over 250 launches projected and SpaceX maintaining roughly 40% global market share. Blue Origin's New Glenn, Rocket Lab's Neutron, and Ariane 6 are all targeting operational milestones while mega-constellation build-outs continue at record pace. 
+
+-------------------------
+en_morethanshipping
+2026-01-15 12:00:00
+2026 Ocean Freight Outlook: Structural Pressure, Excess Capacity, and Market Transition 
+More Than Shipping's full-year ocean freight outlook predicts 2026 will be characterized by structural capacity surplus as the global container fleet grows approximately 5% while demand growth lags, keeping freight rates in a buyer's market. Suez Canal normalization, geopolitical risk management, and AI-powered logistics platforms are identified as the year's key variables. 
+
+-------------------------
+en_metal_smm
+2026-01-10 12:00:00
+2026 Aluminum Ingot Long-Term Contract Prices Stable with Adjustments 
+Shanghai Metals Market reports 2026 aluminum ingot long-term contract prices were set with modest year-on-year adjustments reflecting domestic overcapacity and slowing downstream order growth. Premium negotiations remained tight across China's major consuming sectors including EVs and construction, with multiple factors causing a net decline in contracted supply prices. 
+
+-------------------------
+en_chinabankingnews
+2026-01-09 12:00:00
+China's central bank more talk than action on monetary policy 
+China Banking News reports that prominent Chinese economists expect the People's Bank of China to show restraint on monetary policy in 2026, forecasting only modest cuts of 10–30 basis points despite calls for 'moderately loose' policy. The analysis suggests the PBOC is more focused on exchange rate stability and debt sustainability than delivering the aggressive easing some market participants expect. 
+
+-------------------------
+en_carbuzz
+2026-01-08 12:00:00
+Ford Announces Major Tech Upgrades, Including Eyes-Off L3 Driving, At CES 
+Ford announced at CES 2026 that it will offer Level 3 hands-off and eyes-off highway driving capability in 2028 via a new BlueCruise system upgrade, and introduced additional technology enhancements for near-term production vehicles. The Level 3 capability will initially be available only on electric vehicles when it launches in 2028. 
+
+-------------------------
+en_metal_smm
+2026-01-05 12:00:00
+Goldman Sachs: Copper to Outperform Aluminum in 2026, Recommends Long-Short Strategy 
+Goldman Sachs projects copper prices will average $11,400 per tonne in 2026 versus a bearish outlook for aluminum, recommending a long copper/short aluminum pairs trade as new aluminum supply pushes that market into surplus while copper demand from AI data centers and EV infrastructure accelerates. Goldman reaffirms a $15,000 per tonne copper price target by 2035. 
+
+-------------------------
