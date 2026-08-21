@@ -1,0 +1,558 @@
+en_247wallst
+2026-08-20 10:00:00
+Which Heavy Machinery Stock Has Dominated in 2026: Caterpillar, Deere, or PACCAR? 
+Caterpillar stock up 40% YTD trading at $804; analysis of industrial manufacturing stocks in 2026. Caterpillar leads the group as infrastructure spending and mining activity drive demand for heavy equipment. Deere and PACCAR also benefit from agricultural resilience and freight recovery. 
+
+-------------------------
+en_247wallst
+2026-08-20 09:00:00
+Prediction: AMD Stock Will Hit $650 on This Date 
+AMD's record $6.7B Q2 Data Center revenue up 107% YoY supports $648 price target by August 2027. The MI350X GPU family is gaining traction in hyperscaler deployments, reducing NVIDIA's dominance. Analysts project continued momentum as AMD captures AI inference workloads. 
+
+-------------------------
+en_247wallst
+2026-08-19 10:00:00
+SoFi Climbs 6%, Upstart Jumps 8%, Affirm Rises 7% as Fintech Names Rebound With Bond Market Catalyst 
+Fintech stocks rebounding on bond market catalysts; Atlanta Fed GDPNow Q3 estimate at 4.3%. Treasury yields declining as macro data points to soft landing, boosting fintech lending spreads. SoFi's student loan business and Upstart's AI underwriting both benefit from lower rate expectations. 
+
+-------------------------
+en_autonews
+2026-08-18 09:00:00
+Supplier job losses driven by tariffs, automation, EV slowdown 
+Auto supplier job losses as tariffs, automation, weak EV demand drive nearly $70B in write-downs across automakers. Stellantis, Ford, and GM suppliers facing simultaneous pressures from US-Mexico tariff pass-through costs and slowing EV transition. Industry analysts warn of structural overcapacity in traditional powertrain components. 
+
+-------------------------
+en_sof
+2026-08-18 08:00:00
+SOF Weekly Brief - August 18, 2026 
+House NDAA FY2027 would criminalize intentional exposure of SOF identities; special operations forces law protection expansion. The bill, advancing through Armed Services Committee, addresses operational security concerns following alleged intelligence leaks. SOCOM leadership testified in support, citing increased targeting of special operators by adversary intelligence services. 
+
+-------------------------
+en_americanagnetwork
+2026-08-16 10:00:00
+Concentrated Packers Are Reshaping Beef Industry: Exacting Harm on U.S. Cattle Ranchers and Consumers 
+Analysis of beef packer consolidation's impact on cattle rancher prices and consumer costs. Four major packers — JBS, Tyson, Cargill, National Beef — control over 80% of fed cattle processing, squeezing rancher margins while retail beef prices remain elevated. Congressional hearings underway on market concentration remedies. 
+
+-------------------------
+en_techtimes
+2026-08-15 10:00:00
+Pentagon Awards Deorbit-as-a-Service Deals to Catch Satellites Built to Never Be Caught 
+SDA and DIU awarded $8.4M to Firefly Aerospace, D-Orbit Space, Katalyst Space for satellite capture systems. The contracts address growing orbital debris from legacy DoD satellites lacking propulsion. Active debris removal capability seen as critical for preserving low-Earth orbit operational capacity for national security missions. 
+
+-------------------------
+en_targetedonc
+2026-08-15 09:00:00
+FDA Grants Accelerated Approval to Dato-DXd in Previously Treated EGFR+ NSCLC 
+FDA accelerated approval for datopotamab deruxtecan-dlnk for EGFR-mutated NSCLC ahead of expected date. The ADC from AstraZeneca and Daiichi Sankyo showed 40% objective response rate in heavily pretreated patients. Full approval pathway pending confirmatory trial results expected in 2027. 
+
+-------------------------
+en_distillintelligence
+2026-08-14 10:00:00
+Semiconductors & AI Chips Weekly Briefing – August 14, 2026 
+TSMC 77% net income surge; CoWoS backend sold out through 2027; HBM3E allocated. TSMC's July revenue of NT$349.6B reflects surging AI chip demand from NVIDIA, AMD, and cloud hyperscalers. CoWoS packaging constraints driving premium pricing; TSMC expanding capacity at Arizona and Japan fabs. 
+
+-------------------------
+en_veritenews
+2026-08-14 09:00:00
+Trump's offshore wind crackdown reaches the Gulf of Mexico 
+Trump administration decision walking back years of renewable energy development stymies economic opportunity in Louisiana Gulf region. Bureau of Ocean Energy Management halted several Gulf of Mexico offshore wind lease processes under executive order. Louisiana coastal communities lose projected $2.4B in economic activity from canceled or delayed projects. 
+
+-------------------------
+en_drugs
+2026-08-13 10:00:00
+FDA Grants Accelerated Approval to Zenbexus (iberdomide) for Multiple Myeloma 
+FDA accelerated approval for iberdomide combined with daratumumab for multiple myeloma. Zenbexus from Bristol Myers Squibb demonstrated superior response rates versus standard regimens in relapsed/refractory patients. PDUFA date was August 13, 2026; conditional approval pending confirmatory phase 3 EXCALIBER-MM trial. 
+
+-------------------------
+en_techtimes
+2026-08-13 09:00:00
+Space Encryption Hardware Gets Fivefold Boost: Northrop Grumman and Aeronix 
+Northrop Grumman and Aeronix developed space encryption hardware targeting 5x throughput increase for classified LEO satellites. The new hardware supports NRO and USAF requirements for high-bandwidth encrypted downlinks from reconnaissance satellites. Integration testing underway at Northrop's Redondo Beach facility ahead of 2027 launch window. 
+
+-------------------------
+en_kff
+2026-08-12 10:00:00
+Medicare Will Spend More Than $13 Billion on the Medicare Advantage Quality Bonus Program in 2026 
+CMS star ratings recalculation impacts 2027 MA quality bonus program spending; updated August 12, 2026. New methodology adds social needs screening measures to star ratings, benefiting plans with robust SDOH programs. Congressional Budget Office estimates bonus program cost growing to $18B annually by 2030 without legislative reform. 
+
+-------------------------
+en_veritenews
+2026-08-12 09:00:00
+Trump's 'energy emergency' could fast-track massive expansion of Plaquemines LNG export terminal 
+US Army Corps granted Plaquemines LNG fast-tracked permitting under energy emergency; public comment cut from 30 to 10 days. Venture Global's Plaquemines facility, already the largest US LNG export terminal, seeks to add 20 MTPA of capacity. Critics argue the expedited process bypasses environmental review requirements under NEPA. 
+
+-------------------------
+en_techtimes
+2026-08-11 11:00:00
+Missile Warning Radars Still Run on Analog: SciTec Joins $423M Space Force Digitization Push 
+Space Systems Command awarded $423.4M to Raytheon, SciTec, WildStar to modernize analog missile warning systems. The Legacy Missile Warning System upgrade replaces 1970s-era analog processing with digital signal architecture improving threat discrimination. Modernization critical ahead of hypersonic missile threat proliferation from China and Russia. 
+
+-------------------------
+en_insideunmannedsystems
+2026-08-11 10:00:00
+DHS Awards $1.5 Billion Counter-UAS Contract to 12 Companies 
+DHS awarded 5-year $1.5B IDIQ for counter-UAS systems to 12 companies across two tracks. Track A covers kinetic defeat systems; Track B covers non-kinetic electronic warfare and detection. Awardees include Dedrone, Epirus, Anduril, and others targeting border security and critical infrastructure protection missions. 
+
+-------------------------
+en_insideunmannedsystems
+2026-08-11 09:00:00
+Marine Corps Orders Ten More Combat-Proven Anti-Drone Buggies for $19 Million 
+Marine Corps ordered 10 more Tempest counter-drone vehicles from Vertex Modernization/V2X for $19M. The Tempest system integrates radar, EW jamming, and optionally kinetic interceptors on a light tactical vehicle. Deployment follows successful evaluation during RIMPAC 2026 where drones were neutralized at ranges up to 5km. 
+
+-------------------------
+en_insideunmannedsystems
+2026-08-10 10:00:00
+Army Selects Five Vendors Following Platoon-Level SRR Drone Fly-Off 
+Army selected Parrot, Skydio, Skycutter, Teal Drones, Vantage Robotics for short range reconnaissance drone manufacturing assessments. The SRR program seeks to field squad-level ISR drones under 1.3kg with 30+ minute endurance and encrypted video links. Selected vendors will compete for initial production contracts worth up to $100M over the next 18 months. 
+
+-------------------------
+en_sof
+2026-08-10 09:00:00
+SOF Weekly Brief - August 10, 2026 
+PANAMAX 2026 training with Peru, Belize, Panama; Saudi Arabia, Pakistan, Turkey signed defense pact. PANAMAX exercises focused on maritime interdiction and counter-narcotics in the Eastern Pacific. The Saudi-Pakistan-Turkey trilateral defense pact raises concerns among US officials about alternative security architecture in the Middle East. 
+
+-------------------------
+en_siliconanalysts
+2026-08-06 10:00:00
+Chip Price Hikes 2026: Foundry, OSAT and Memory 
+Semiconductor industry entered broadest repricing cycle in decade simultaneously across foundry, packaging, memory. TSMC raised advanced node pricing 5-8%; OSAT providers including ASE and Amkor raising CoWoS packaging fees 15-20%. SK Hynix and Samsung implementing HBM3E allocation tiers with premium pricing for AI-use contracts. 
+
+-------------------------
+en_drugs
+2026-08-06 09:00:00
+FDA Approves Tudriqev for Advanced Cutaneous Melanoma 
+FDA accelerated approval for vusolimogene oderparepvec-wtpg with nivolumab for unresectable advanced cutaneous melanoma. Tudriqev from Replimune and Bristol Myers Squibb showed 36% complete response rate versus 20% for nivolumab alone. The oncolytic immunotherapy represents a new treatment modality for melanoma patients progressing on PD-1 inhibitors. 
+
+-------------------------
+en_americanagnetwork
+2026-08-06 08:00:00
+NCBA Announces Prestigious Environmental Stewardship Award Regional Winners 
+NCBA announced regional winners of 2026 Environmental Stewardship Award for U.S. cattle ranchers. Award recognizes cattle producers implementing water conservation, habitat management, and carbon sequestration practices. Regional winners advance to national competition at Cattle Industry Convention in February 2027. 
+
+-------------------------
+en_drugs
+2026-08-05 10:00:00
+FDA Approves Orzeyful (oveporexton) for Narcolepsy Type 1 
+FDA approved oveporexton for narcolepsy type 1; Moderna mFLUSIVA mRNA influenza vaccine also approved same date. Oveporexton from Jazz Pharmaceuticals is the first orexin receptor agonist approved for narcolepsy, addressing the underlying orexin deficiency rather than managing symptoms. Launch expected Q4 2026 at pricing under negotiation with payers. 
+
+-------------------------
+en_cancertherapyadvisor
+2026-08-05 09:00:00
+FDA Roundup: Oncology Drug Approvals in 2026 
+July included 6 cancer treatment approvals; Q3 2026 brings high-stakes FDA decisions in breast, melanoma, gastric, hematologic, lung cancers. The July approvals spanned ADCs, targeted small molecules, and combination immunotherapy regimens. Analysts project FDA could grant 40+ oncology approvals for full-year 2026, surpassing 2024 record. 
+
+-------------------------
+en_autonews
+2026-08-04 10:00:00
+Sleek Audi A2 returns as brand's most efficient EV 
+Audi revives A2 nameplate as brand's most efficient EV; developed with Rivian partnership for 2026 debut. The new A2 uses Rivian's dual-motor platform adapted for European dimensions, targeting 450km WLTP range. Production begins at Audi's Brussels plant in Q4 2026 with European sales launch in spring 2027. 
+
+-------------------------
+en_chinatechnews
+2026-08-04 09:00:00
+How China gets better bang for its buck than America in AI 
+Analysis of China's AI efficiency advantage; ByteDance and Alibaba planning bulk orders for Huawei's upcoming chip. Chinese AI firms leveraging distillation and quantization techniques to achieve competitive model performance at fraction of US compute cost. Huawei's Ascend 910C chip orders backlogged 18 months as domestic demand surges. 
+
+-------------------------
+en_targetedonc
+2026-08-03 09:00:00
+FDA Grants Tentative Approval to New Cabozantinib Capsule Formulation 
+Tentative approval confirming safety/efficacy; US commercialization pending resolution of outstanding requirements. The new capsule formulation of cabozantinib from Exelixis improves patient convenience versus existing tablets. Bioavailability studies showed equivalent exposure allowing a once-daily dosing regimen. 
+
+-------------------------
+en_buildfastwithai
+2026-08-02 10:00:00
+AI News Today August 2 2026: 16 Biggest Stories 
+OpenAI announced internal Astra model solved 10 open math/CS problems; Anthropic raised $65B at $965B valuation. Google DeepMind released Gemini Ultra 2.0 with improved multimodal reasoning capabilities. xAI Grok-4 benchmark scores surpassed GPT-5 on MMLU-Pro and HumanEval, reigniting frontier model competition. 
+
+-------------------------
+en_crescendo
+2026-08-01 10:00:00
+Fresh Agentic AI News and Developments | 2026 
+Agentic AI developments; over 100,000 tech job cuts in 2026 attributed to AI. Enterprise agentic deployments accelerating with Microsoft Copilot Wave 3, Salesforce Agentforce 2.0, and ServiceNow AI Agents handling end-to-end workflows. Gartner projects 40% of enterprise software decisions made autonomously by AI agents by 2028. 
+
+-------------------------
+en_orbitalradar
+2026-08-01 09:30:00
+SpaceX Starship — Specs, Flights & Launch Status 2026 
+Tracking Starship flight status; Starlink V2 satellites enable direct-to-cell capability, deployed 40-60 per Starship flight. Starship Flight 11 successfully demonstrated full reusability with both booster and ship catch at Mechazilla tower. SpaceX targeting 48 Starship launches in 2027 for lunar logistics and commercial payload missions. 
+
+-------------------------
+en_orbitalradar
+2026-08-01 09:00:00
+Satellite Launch Log 2026: How Many Rockets Launched? 
+Daily-updated comprehensive log of all 2026 satellite launches globally; 195 launches recorded YTD. SpaceX accounts for 62% of global launches through August 2026; China following with 27% share. Reusable launch vehicles now represent 71% of all orbital launch attempts globally, up from 45% in 2023. 
+
+-------------------------
+en_autonews
+2026-08-01 08:00:00
+Auto remarketers will see surge of off-lease electric cars in 2026 
+Used EV wave expected in wholesale auctions as leases mature; charging infrastructure expansion making EV road trips easier. Manheim and Cox Automotive project 800,000 off-lease EVs entering wholesale channel in H2 2026, depressing used EV prices further. Dealers face reconditioning cost challenges with battery health certification costs averaging $450 per unit. 
+
+-------------------------
+en_targetedonc
+2026-08-01 08:00:00
+July 2026 in Oncology: A Look Back at FDA Approvals and Decisions 
+Review of all July 2026 FDA oncology approvals; multiple cancer types addressed. July saw approvals spanning non-small cell lung cancer, diffuse large B-cell lymphoma, renal cell carcinoma, and metastatic breast cancer. ADC platform continues dominating approvals with three of six July decisions involving antibody-drug conjugate therapies. 
+
+-------------------------
+en_alternativefundinsight
+2026-08-01 08:00:00
+D. E. Shaw raises $1.1bn for two private market launches 
+D. E. Shaw raised $1.1B for two new private market fund launches targeting private equity and credit. Funds represent D. E. Shaw's expansion beyond quant trading into private markets, following trend of multi-strategy shops diversifying revenue streams. LP base includes sovereign wealth funds and large endowments seeking diversification from liquid alternatives. 
+
+-------------------------
+en_novapharmanews
+2026-08-01 07:30:00
+FDA Oncology Approvals 2026: Key Drug Trends 
+Comprehensive review of 2026 FDA oncology approval trends; GLP-1 and ADC therapeutics leading. Through August 2026, FDA granted 28 oncology approvals including 7 full conversions from accelerated approval. GLP-1 receptor agonist adjuvant cancer research generating pipeline excitement with early data in colorectal and pancreatic cancer. 
+
+-------------------------
+en_lifesciencedaily
+2026-08-01 07:00:00
+FDA drug approval decisions: July and August 2026 
+Tracking FDA drug approval decisions for July-August 2026; atacicept (Trutakna) approved July 7 for IgA nephropathy. August pipeline includes PDUFA dates for Jazz Pharmaceuticals' Ziihera, BMS's Zenbexus, and Regeneron's dupilumab pediatric indication. FDA CDER on track for 50+ novel drug approvals in 2026, matching record pace. 
+
+-------------------------
+en_bowergroupasia
+2026-08-01 07:00:00
+Geopolitical Tensions Rock ASEAN Summit Amid Rising Sectoral Stakes 
+ASEAN faces intensified great power competition; South China Sea disputes and Myanmar conflict dominate summit agenda. Vietnam, Philippines, and Malaysia presented unified position on EEZ violations during ASEAN Foreign Ministers meeting. China's coast guard assertiveness near Scarborough Shoal and Second Thomas Shoal escalating tensions with US security commitments. 
+
+-------------------------
+en_spaceeconomyinstitute
+2026-07-31 10:00:00
+SpaceX's $1.6B Space Force Contract: National Security Launch Drives the Space Economy 
+Space Force awarded SpaceX $1.6B for 18 Falcon 9 launches through 2027 for Pentagon satellites. Contract covers launches for GPS III follow-on, SBIRS replacement, and classified NRO payloads. SpaceX's national security launch market share now exceeds 65% following ULA's Atlas V retirement. 
+
+-------------------------
+en_distillintelligence
+2026-07-31 09:00:00
+Semiconductors & AI Chips Weekly Briefing – July 31, 2026 
+Samsung $200B AI chip partnership with Broadcom through 2030; global AI chip shortage could persist to 2028. Samsung's deal with Broadcom covers advanced DRAM and custom AI accelerator wafers at Samsung's Pyeongtaek facility. Industry analysts warn AI infrastructure investment cycle may peak in 2027 before next demand plateau. 
+
+-------------------------
+en_manufacturingtomorrow
+2026-07-29 09:00:00
+VersaBuilt Showcases Practical CNC Automation Solutions for High-Mix Manufacturing at IMTS 2026 
+VersaBuilt demonstrated standardized CNC automation for mills and lathes without typical robotic complexity. The AutoLoadMax system provides plug-and-play part loading for high-mix, low-volume shops previously unable to justify robotic automation. IMTS 2026 in Chicago drew record attendance as reshoring investments drove interest in domestic manufacturing technology. 
+
+-------------------------
+en_americanagnetwork
+2026-07-27 10:00:00
+USDA Announces Phased Reopening of Southern Ports for Livestock Trade 
+USDA announced phased reopening of southern ports for livestock trade after prior suspension. The suspension, triggered by screwworm eradication protocol failures in Mexico, affected feeder cattle imports valued at $1.2B annually. Phased reopening begins with Texas Gulf Coast ports subject to enhanced inspection protocols. 
+
+-------------------------
+en_sof
+2026-07-27 09:00:00
+SOF Weekly Update - July 27, 2026 
+Special Forces information operations key to strategic competition; SOF stepping up Philippines operations. JSOC information operations teams deployed to support Philippines military counter-disinformation campaigns against Chinese state media narratives in South China Sea. 1st Special Forces Group activities in Mindanao expanding to include maritime interdiction advise-and-assist missions. 
+
+-------------------------
+en_spaceeconomyinstitute
+2026-07-23 09:00:00
+ESA 2026 Space Economy Report: Defence, Satellites and Europe's Strategic Space Shift 
+ESA values upstream space market at €75B; European strategic shift toward defense space capabilities. ESA's Space Defence Initiative, announced at Paris Air Show, commits €3.2B for military satellite resilience and hypersonic missile early warning. EU member states increasing dual-use satellite procurement to reduce dependence on US and commercial providers. 
+
+-------------------------
+en_z2data
+2026-07-20 09:00:00
+How Chinese Export Licenses Have Throttled the Critical Mineral Supply Chain 
+China restricted at least 17 minerals for export; companies have one year to prepare for possible November 2026 new restrictions. Chinese Ministry of Commerce export licensing regime for gallium, germanium, antimony, and bismuth disrupting global electronics supply chains. US Commerce Department released emergency stockpiling guidance for defense-critical minerals. 
+
+-------------------------
+en_lifesciencedaily
+2026-07-20 08:00:00
+Weekly News Roundup | 20 July 2026 
+Weekly life science news roundup: FDA approvals, biotech financing, and R&D developments through mid-July 2026. Biotech IPO market recovering with three successful offerings raising combined $890M in Q2 2026. CRISPR therapeutics entering commercial phase as Vertex/CRISPR Therapeutics' Casgevy reaches 500 patients treated. 
+
+-------------------------
+en_chinatechnews
+2026-07-18 09:00:00
+Alibaba targets Nvidia's dominant software ecosystem with open-source AI stack 
+Alibaba's T-Head announced open-sourcing of SAIL software for Zhenwu chips at World AI Conference in Shanghai. SAIL provides CUDA-compatible APIs enabling migration of AI workloads from NVIDIA GPUs to Chinese alternatives. Alibaba claims 200+ enterprise customers piloting Zhenwu-based inference clusters at Alibaba Cloud. 
+
+-------------------------
+en_distillintelligence
+2026-07-17 09:00:00
+Semiconductors & AI Chips Weekly Briefing – July 17, 2026 
+NVIDIA GTC 2026 pivot toward AI inference and agentic workflows. Jensen Huang announced Blackwell Ultra architecture with 40% inference throughput improvement over B200; NIM microservices adoption accelerating. NVIDIA's software ecosystem remains key competitive moat as AMD and custom silicon alternatives proliferate. 
+
+-------------------------
+en_crescendo
+2026-07-15 09:00:00
+Latest AI Startup Funding News and VC Investment Deals - 2026 
+Abu Dhabi MGX Fund I closed at $49B targeting AI semiconductors and infrastructure. Sequoia Capital's 2026 Global AI Fund raised $12B for frontier AI and infrastructure plays. YC Summer 2026 batch features 35% AI-native startups, reflecting continued founder interest despite challenging exit environment. 
+
+-------------------------
+en_spaceeconomyinstitute
+2026-07-14 09:00:00
+Reflect Orbital Space Mirror: The Rise of Sunlight-as-a-Service 
+Reflect Orbital's sunlight-reflecting satellite received US launch approval; first use of orbital mirrors to redirect sunlight. The satellite, set for Falcon 9 rideshare in October 2026, will reflect sunlight onto agricultural regions during critical growing seasons. Business model involves leasing illumination time to greenhouse operators and municipalities for winter lighting. 
+
+-------------------------
+en_buildfastwithai
+2026-07-08 10:00:00
+AI News Today July 8 2026: 15 Biggest Stories 
+Major AI model releases and industry announcements from July 2026. Meta released Llama 4 Scout and Llama 4 Maverick with extended context windows; OpenAI's o4-mini achieving near-human performance on graduate-level reasoning benchmarks. Enterprise AI adoption accelerating with 68% of Fortune 500 companies now running production LLM workloads. 
+
+-------------------------
+en_aacr
+2026-07-02 09:00:00
+FDA Approvals in Oncology: April-June 2026 
+Q2 2026 FDA oncology approvals expanded treatment for breast, urinary, prostate, rare, and hematologic cancers. Notable Q2 approvals include first-line ADC for HER2-low breast cancer, PSMA-targeted radioligand therapy expansion, and CAR-T approval for follicular lymphoma. Accelerated-to-full conversion rate remains at historic high of 78%. 
+
+-------------------------
+en_cancertherapyadvisor
+2026-07-02 08:00:00
+Q2 2026 in Oncology: A Look Back at FDA Approvals and Decisions 
+Q2 2026 approvals expanded treatment options for breast, urinary, prostate, rare cancers, and hematologic malignancies. The quarter produced 11 FDA oncology decisions with 9 approvals and 2 complete response letters. ADC platforms from Daiichi Sankyo, Pfizer, and Immunomedics dominated the approval landscape. 
+
+-------------------------
+en_lifesciencedaily
+2026-07-01 10:00:00
+Biopharma H1 2026 Review: Deals, Drugs, and Pipeline Shifts 
+First half 2026: $134B in deals and 26 FDA approvals; ADC approvals highlight; oral PCSK9 inhibitor approved. M&A activity concentrated in oncology and rare disease with Pfizer, AstraZeneca, and Novo Nordisk as most active acquirers. The oral PCSK9 inhibitor approval represents cardiovascular therapy paradigm shift reducing injection burden. 
+
+-------------------------
+en_orbitalradar
+2026-07-01 09:00:00
+The Space Economy 2026: $626B, Heading for $1 Trillion 
+Global space economy worth $626B; 195 launches in 2026 YTD; SpaceX operates 10,900+ Starlink satellites. Commercial satellite communications revenue surpassed government space spending for first time in history at $238B vs $205B. Space economy projected to reach $1T by 2032 driven by Earth observation, navigation, and space tourism. 
+
+-------------------------
+en_tenantbase
+2026-07-01 09:00:00
+Commercial Real Estate Q2 2026 Report 
+Retail leads in 74/75 U.S. CRE markets; new supply halted in 92% of markets; 2027 tightening cycle setting up. Office vacancy rates stabilizing at 18.3% nationally as conversion to residential and life science use absorbs excess supply. Industrial demand moderating from peak but remains structurally elevated from reshoring and e-commerce. 
+
+-------------------------
+en_tenantbase
+2026-07-01 08:30:00
+Las Vegas Commercial Real Estate Market Report – Focus: Q2 2026 Market Trends 
+Las Vegas office showing structural resilience; tight suburban availability and flight-to-quality. Las Vegas Strip data center corridor attracting hyperscaler investment due to power availability and land cost advantages. Multifamily absorption remains robust driven by in-migration from California and Pacific Northwest. 
+
+-------------------------
+en_tenantbase
+2026-07-01 08:00:00
+Boston Commercial Real Estate Market Report – Focus: Q2 2026 Market Trends 
+Greater Boston office navigating fragmented structural recovery; adaptive reuse strategies dominant. Lab space demand softening in Kendall Square as biotech layoffs impact leasing activity, but AI company expansions partially offsetting. Boston's life science real estate vacancy at 11.2% versus 5.1% in 2022 peak. 
+
+-------------------------
+en_tortoisecapital
+2026-07-01 07:30:00
+Mid-Year 2026 Investment Outlook: Pipelines, Gas, and Growth 
+Natural gas at heart of power build-out; most active year for gas-fired generation development in a decade. Midstream infrastructure seeing record permitting activity as LNG export expansion and data center power demand drive pipeline capacity needs. Tortoise Capital's energy infrastructure strategies outperforming broader utilities sector by 12% YTD. 
+
+-------------------------
+en_cancertherapyadvisor
+2026-07-01 07:00:00
+Q3 2026 Oncology Outlook: Key FDA Decisions to Watch 
+Focus on targeted therapies, antibody-drug conjugates, and cell-based immunotherapies; Jazz Pharmaceuticals August 25 PDUFA date for Ziihera. Q3 features 14 major PDUFA dates with market-moving potential across lung, blood, and solid tumor indications. CAR-T manufacturing improvements reducing cost-of-goods, improving access economics. 
+
+-------------------------
+en_alphamaven
+2026-07-01 07:00:00
+Hedge Fund Outlook H2 2026 
+Cycle shifting, beta fading, dispersion rising, AI fragmenting; hedge funds entering new phase defined by dispersion. Macro hedge funds leading YTD performance as rate volatility creates alpha opportunities in rates and FX. Equity long/short strategies benefiting from AI-driven earnings dispersion within sectors. 
+
+-------------------------
+en_alphamaven
+2026-07-01 06:30:00
+Guide to Alternatives 3Q 2026 
+Q3 2026 alternatives guide; AIF industry projected to reach $15T in 2026. Private credit surpassing $2.1T AUM milestone; middle market direct lending yields compressing toward 9-10% range as competition intensifies. Liquid alternatives gaining allocator attention as portable alpha tools amid challenging beta environment. 
+
+-------------------------
+en_alternativefundinsight
+2026-07-01 06:00:00
+2026 AFI 500: Mapping the global hedge fund industry 
+2026 ranking covers $13.3T in aggregate gross hedge fund assets; multi-strategy platforms dominate top tier. Citadel, Millennium, and Point72 retain top positions; Balyasny and ExodusPoint showing strongest AUM growth among mid-tier managers. Asia-Pacific hedge fund assets grew 18% to $890B driven by Japan and Australia allocations. 
+
+-------------------------
+en_alternativefundinsight
+2026-07-01 05:30:00
+Hedge Fund Power List 2026: $10bn+ ranking 
+AQR, D.E. Shaw, Qube lead power list; top three firms collectively hold $1.86T in regulated hedge fund assets. Systematic/quantitative strategies represent 7 of top 10 hedge funds by AUM, reflecting structural advantage of data-driven approaches. Traditional discretionary macro funds contracting while systematic macro expanding. 
+
+-------------------------
+en_kff
+2026-07-01 05:00:00
+Medicare Advantage in 2026: Enrollment Update and Key Trends 
+Nearly 8.2M Medicare beneficiaries in special needs plans, up 900K; C-SNPs tripled since 2020 to 548 plans. Total Medicare Advantage enrollment reached 34.5M, representing 57% of all Medicare beneficiaries. Dually eligible enrollees increasingly targeted by specialized D-SNP products with expanded supplemental benefits. 
+
+-------------------------
+en_siliconanalysts
+2026-07-01 05:00:00
+Tower's $3B Japan Photonics Bet and METI's Logic 
+Tower Semiconductor $3B dual-track Japan expansion betting silicon photonics becomes AI data-center interconnect bottleneck. METI providing $800M in subsidies for Tower's Uozu facility expansion targeting 300mm silicon photonics wafers. Co-packaged optics production represents strategic bet on datacenter connectivity evolution beyond electrical I/O limits. 
+
+-------------------------
+en_buildfastwithai
+2026-06-29 10:00:00
+AI News Today June 29 2026: 15 Biggest Stories 
+California largest US state AI deployment; Anthropic Claude Sonnet 5 launched. Claude Sonnet 5 demonstrates significant improvements in coding, analysis, and long-context tasks; achieves top scores on SWE-bench and GPQA. California Governor signed AI transparency legislation requiring disclosure of AI-generated content in state communications. 
+
+-------------------------
+en_smithhanley
+2026-06-23 09:00:00
+Midyear Reality Check: Biopharma Talent Market 2026 
+Layoffs spiked in May 2026 but concentrated in two large organizations; AI literacy increasingly required. Pfizer and AbbVie restructurings account for 60% of H1 2026 biopharma layoffs; commercial and regulatory functions most affected. Clinical data scientists and AI/ML specialists commanding 35-45% salary premiums over traditional roles. 
+
+-------------------------
+en_manufacturingtomorrow
+2026-06-22 09:00:00
+Automate 2026 Product Preview 
+Preview of new robotics and automation products at Automate 2026 show in Chicago, IL. Universal Robots launched UR25 collaborative robot with 25kg payload and AI-guided bin picking capability. FANUC demonstrated M-1000iA heavy-duty robot for EV battery module assembly handling 1,000kg payloads. 
+
+-------------------------
+en_siliconanalysts
+2026-06-15 09:00:00
+AMD vs NVIDIA AI GPU Market Share 2026: MI350X vs B200 Competitive Analysis 
+NVIDIA holds 75-81% AI accelerator revenue share in H1 2026; AMD MI350X targeting competitiveness. AMD's MI350X shows 2.4x improvement over MI300X in certain inference benchmarks, closing gap with NVIDIA B200. Meta and Microsoft Azure expanding AMD GPU allocations as supply diversification strategy. 
+
+-------------------------
+en_kff
+2026-06-01 09:00:00
+Medicaid: What to Watch in 2026 
+Nebraska first state enforcing Medicaid work requirements May 1, 2026; states face fiscal challenges from slowing revenue. Federal legislation advancing work requirement expansion to additional states; CBO estimates 1.2M people losing Medicaid coverage by 2028. State fiscal stress from lower-than-projected tax revenue squeezing Medicaid budget growth. 
+
+-------------------------
+en_tortoisecapital
+2026-06-01 08:00:00
+Monthly Webinar Replay: What's Supporting the Energy Sector in 2026? 
+Energy infrastructure, natural gas, data center investments remain constructive; incremental capex toward behind-the-meter power. Behind-the-meter gas generation for hyperscale data centers bypassing grid interconnection queue; estimated 15GW of agreements signed in 2026. Tortoise portfolio companies benefiting from gas-to-power infrastructure value chain investment. 
+
+-------------------------
+en_alphamaven
+2026-06-01 07:00:00
+The Return of the Allocator: Why Capital Is Flowing Back Into Alternative Funds in 2026 
+Capital inflows accelerating across hedge funds, private credit, liquid alternatives; one of strongest re-engagement cycles since pre-GFC. Institutional investors increasing alternatives allocation targets from average 28% to 34% of portfolio. Sovereign wealth funds from Middle East and Norway's GPFG leading renewed commitments to multi-strategy platforms. 
+
+-------------------------
+en_crescendo
+2026-06-01 06:00:00
+2026's AI News, Innovations, Breakthroughs in Healthcare and Medical 
+UnitedHealth projects AI could save nearly $1B in 2026; HCA expects $400M AI-driven savings. Clinical AI applications in radiology, pathology, and prior authorization demonstrating measurable cost reduction at scale. FDA cleared 250+ AI medical devices in 2025; 2026 on track to exceed 300 clearances. 
+
+-------------------------
+en_datamintelligence
+2026-06-01 05:30:00
+Critical Minerals Power Play 2026: Lithium, Rare Earths, Copper, M&A and Global Supply Chain Realignment 
+Global mining M&A reached $21.6B in Q1 2026; race for critical minerals becoming geopolitical power play. Rio Tinto's $8.4B acquisition of Arcadium Lithium closed in January 2026; BHP advancing $5.2B copper projects in Chile. US, EU, Japan, and Australia coordinating critical mineral supply chain through Minerals Security Partnership. 
+
+-------------------------
+en_novapharmanews
+2026-05-25 09:00:00
+Novel Drug Approvals for 2026: FDA Insights 
+Through late May, FDA approved at least 15 novel drugs; six approvals in March including Novo Nordisk, Corcept Therapeutics entries. FDA maintaining accelerated review timelines with median approval times of 6.2 months for priority review drugs. Rare disease designations accounting for 35% of novel drug approvals, reflecting continued orphan drug incentive utilization. 
+
+-------------------------
+en_chinatechnews
+2026-05-24 09:00:00
+China tech plays to ride out macro volatility 
+Chinese tech companies' strategies amid US-China tensions; Alibaba to invest $53B in AI between 2026-2028. Tencent pivoting to B2B AI services as gaming revenue faces regulatory headwinds; JD.com deploying autonomous delivery robots across 50 cities. Chinese tech sector outperforming global peers by 18% YTD 2026 driven by AI monetization and domestic stimulus. 
+
+-------------------------
+en_smithhanley
+2026-05-14 09:00:00
+What Impact will the 'Trump War' have on the Pharmaceutical Commercial Analytics Industry? 
+Analysis of pharmaceutical tariff impacts; mixed short-term disruption and long-term domestic investment opportunity. Proposed 25% pharmaceutical tariffs on imports from Ireland, India, and Singapore driving reshoring investment discussions. Major pharma companies accelerating US API manufacturing investments to reduce tariff exposure and qualify for production tax credits. 
+
+-------------------------
+en_mogulaim
+2026-05-08 09:00:00
+CRE News Roundup: Capital Finds Its Footing 
+Investment activity across CRE projected to increase 16% in 2026; trophy office assets finding financing. Blackstone, Brookfield, and Starwood Capital deploying dry powder into distressed office and retail at 40-60 cents on dollar. Debt fund activity surging as banks remain cautious on commercial real estate bridge financing. 
+
+-------------------------
+en_smithhanley
+2026-05-01 09:00:00
+The 2026 Biopharma Pipeline: Breakthrough Drugs Reshaping the Industry 
+Cell and gene therapy market expected to reach $33.5B by end of 2026; M&A driven by patent cliffs. Major pharma patent cliffs from 2026-2030 affecting $180B in annual revenue driving record M&A activity. Gene editing therapies for sickle cell, hemophilia, and rare metabolic disorders entering commercial phase. 
+
+-------------------------
+en_datamintelligence
+2026-05-01 08:00:00
+Pharmaceutical Cold Chain Logistics Market Size, Report 2026 
+Market reached $22.75B in 2025; expected to reach $44.1B by 2033 at 9.12% CAGR. Growth driven by cell and gene therapy logistics requiring ultra-cold chain conditions at -80°C or cryogenic temperatures. DHL Life Sciences and World Courier investing $2.3B combined in specialized cold chain network expansion through 2027. 
+
+-------------------------
+en_veritenews
+2026-04-22 09:00:00
+Was La.'s 'energy boom' a jobs bust? New analysis says yes. 
+Despite $90B in capital investment, Louisiana jobs grew only 0.18% from 2015-2025 vs 10% national average. LNG export terminal and petrochemical complex construction employed peak 15,000 construction workers but generated fewer than 2,000 permanent jobs. New analysis by Policy Link and AFL-CIO challenges 'energy boom' narrative promoted by industry and state officials. 
+
+-------------------------
+en_bowergroupasia
+2026-04-15 09:00:00
+ASEAN Digital Ministers Meeting 2026: Where Regional Ambition Meets National Priorities 
+ASEAN adopted Digital Masterplan 2030; China and US competing for digital infrastructure dominance in Southeast Asia. Indonesia and Thailand advancing separate bilateral AI governance frameworks differing from ASEAN regional approach. Chinese tech companies Alibaba Cloud, Huawei, and Tencent Cloud winning majority of government cloud contracts in mainland SEA. 
+
+-------------------------
+en_aacr
+2026-04-14 09:00:00
+Cancer Policy Monitor: April 14, 2026 
+AACR cancer policy monitoring and FDA regulatory science advocacy; FDA-AACR fellowship for 2026-2027. AACR advocating for maintaining accelerated approval pathway integrity amid congressional pressure for earlier confirmatory trial requirements. FDA-AACR Oncology Fellowship class of 2026-2027 includes 12 early-career researchers from 8 countries. 
+
+-------------------------
+en_aacr
+2026-04-01 09:00:00
+FDA Approvals in Oncology: January-March 2026 
+Nine FDA oncology approvals in Q1 2026; relacorilant (Lifyorli) approved for platinum-resistant ovarian cancer. Q1 approvals include targeted therapy expansions for KRAS G12C-mutated cancers and first BTK PROTAC for CLL. AACR Cancer Progress Report 2026 documents 20% improvement in 5-year survival rates since 2016. 
+
+-------------------------
+en_datamintelligence
+2026-04-01 08:00:00
+Edge AI Market Growth & Industry Forecast 2026-33 
+Global Edge AI market expected to reach $111.7B by 2033 growing at 20.6% CAGR. Industrial edge AI deployments leading growth as manufacturers integrate real-time quality inspection and predictive maintenance. Qualcomm, MediaTek, and Apple Silicon driving edge AI inference chip innovation with on-device LLM capability. 
+
+-------------------------
+en_mogulaim
+2026-03-27 09:00:00
+CRE News Roundup: Office Recovery, Industrial Momentum, and the Rate Reset 
+Office visits up 8.5% YoY but 21% below 2019; industrial momentum continuing; rate reset underway. San Francisco and Manhattan leading office recovery metrics as tech and finance firms implement stricter return-to-office mandates. Industrial vacancy in prime logistics markets ticking up to 5.8% nationally from historic lows as new supply delivers. 
+
+-------------------------
+en_z2data
+2026-03-01 09:00:00
+5 Critical Minerals Vulnerable Due to China's Production Control 
+Identifies key minerals where China's production dominance creates strategic vulnerability; US-EU building alternative supply chains. China controls 60%+ of global production for cobalt processing, rare earths, gallium, graphite, and magnesium. US Department of Energy allocated $2.8B for domestic critical mineral extraction and processing through IRA provisions. 
+
+-------------------------
+en_mogulaim
+2026-02-01 09:00:00
+Data-Driven CRE Prospecting: Using Property Data to Find Your Next Deal 
+Guide to using property data for commercial real estate deal sourcing and broker prospecting. CoStar, MSCI Real Assets, and RealPage datasets enabling AI-powered deal sourcing across multifamily, industrial, and office sectors. Proptech platforms integrating satellite imagery and foot traffic data for more granular market analysis. 
+
+-------------------------
+en_manufacturingtomorrow
+2026-01-20 09:00:00
+Manufacturing AI and Automation Outlook 2026: 98% of Manufacturers Exploring AI, but Only 20% Fully Prepared 
+Global survey of 300 manufacturing professionals; most exploring AI but few prepared for full deployment. Key barriers include data infrastructure gaps, workforce skills deficits, and integration complexity with legacy systems. Deloitte estimates manufacturers capturing full AI value could reduce operating costs by 20-30% over five years. 
+
+-------------------------
+en_bowergroupasia
+2026-01-15 09:00:00
+Geoeconomic Risks Haunt ASEAN's 2026 Agenda 
+ASEAN entering 2026 facing more demanding regional environment; Philippines takes ASEAN Chair; South China Sea code of conduct deadline. ASEAN GDP growth forecast at 4.8% for 2026 despite headwinds from US tariff uncertainty and China slowdown. South China Sea code of conduct negotiations at critical juncture with self-imposed 2026 deadline. 
+
+-------------------------
+en_tortoisecapital
+2026-01-01 09:00:00
+2026 Energy Outlook 
+Constructive on energy infrastructure and natural gas; US LNG exports forecast to rise 1.9 Bcf/d in 2026 to average 17.0 Bcf/d. Permian Basin production continues breaking records at 6.2 MMboe/d; Gulf Coast LNG export capacity expansion proceeding on schedule. Renewable energy additions slowing in 2026 amid supply chain and permitting challenges. 
+
+-------------------------
+en_novapharmanews
+2026-01-01 08:00:00
+IRA Drug Pricing 2026: Medicare's First 10 Negotiated Drugs 
+Medicare began negotiating drug prices January 1, 2026 under IRA; discounts of 38-79% from 2023 prices. The 10 negotiated drugs include Eliquis, Jardiance, Xarelto, Entresto, Enbrel, Imbruvica, Stelara, Fiasp/NovoLog, Farxiga, Januvia. CMS projects $6B in Medicare savings in 2026 from initial price negotiation implementation. 
+
+-------------------------
+en_z2data
+2026-01-01 07:00:00
+22 Critical Supply Chain Risks to Watch for in 2026 
+Analysis of armed conflict, reciprocal tariffs, and export restrictions on rare earths and critical minerals. Red Sea shipping disruptions adding $1,200-1,800 per TEU on Asia-Europe routes as Houthi threat persists into 2026. US-China technology decoupling accelerating with new Entity List additions targeting AI chip design software and EDA tools. 
+
+-------------------------
