@@ -1,0 +1,671 @@
+en_electronics_weekly
+2026-08-22 12:00:00
+Semi sales up 123% 
+June semiconductor sales reached $134.5 billion, up 123.6%, with Q2 total of $403.3 billion representing a 35.1% quarter-on-quarter gain, per the Semiconductor Industry Association. 
+
+-------------------------
+
+en_darkreading
+2026-08-22 12:00:00
+OWASP Flags Top AI Skill Risks in New Security Blueprint 
+OWASP released a new security blueprint identifying top AI application vulnerabilities including prompt injection and training data poisoning, urging enterprises to integrate AI-specific risk frameworks. 
+
+-------------------------
+
+en_darkreading
+2026-08-21 12:00:00
+Microsoft's Patch Tuesday Deluge Continues With August Updates 
+Microsoft's August 2026 Patch Tuesday addressed over 80 vulnerabilities including a critical CVSS 9.8 remote code execution flaw in Windows DNS Server requiring no user interaction. 
+
+-------------------------
+
+en_fastmarkets
+2026-08-21 12:00:00
+Electronic Recyclers International expands e-waste processing to Vietnam 
+ERI partnered with Vietnam's Green Marble to establish ERI Vietnam as a domestic e-waste processing and IT asset disposal hub, advancing the circular economy for critical metals in Southeast Asia. 
+
+-------------------------
+
+en_mining_journal
+2026-08-21 12:00:00
+Las Bambas halts amid already tight copper market 
+MMG suspended operations at the Las Bambas copper mine in Peru following the deaths of two workers, tightening an already constrained global copper supply market. 
+
+-------------------------
+
+en_mining_journal
+2026-08-21 12:00:00
+US Department of Energy to invest $500 million in critical mineral processing 
+The US DOE allocated $500 million across seven projects to expand critical material and mineral processing, battery manufacturing, and recycling capacity to support domestic supply chains. 
+
+-------------------------
+
+en_fooddive
+2026-08-21 12:00:00
+Gopuff expands private label, debuts first-ever seasonal product lineup 
+Gopuff launched its first seasonal private label product lineup featuring autumn baked goods and sweet treats, deepening its convenience retail positioning through exclusive branded offerings. 
+
+-------------------------
+
+en_naval_technology
+2026-08-20 12:00:00
+India and Japan agree to fast-track UNICORN, eye naval production ties 
+India and Japan pledged to expedite deployment of the UNICORN communications system and intensify joint naval shipbuilding cooperation during a bilateral defence meeting. 
+
+-------------------------
+
+en_electronics_weekly
+2026-08-20 12:00:00
+Imec proposes a mix of CMOS, BiCMOS and III-V for datacentre connectivity 
+Imec proposed a new approach to data centre connectivity integrating CMOS, BiCMOS, and III-V chiplets using cost-effective manufacturing while operating at 100GHz+ frequencies. 
+
+-------------------------
+
+en_waterworld
+2026-08-20 12:00:00
+Cyberattacks targeting U.S. water systems prompt renewed focus on utility cybersecurity 
+Federal agencies including the FBI and CISA are investigating coordinated cyberattacks on US water utilities in at least 12 states, with suspected links to Iranian-affiliated groups targeting operational technology. 
+
+-------------------------
+
+en_darkreading
+2026-08-20 12:00:00
+'Grandoreiro' Malware Resurfaces With Mexico Campaign 
+The Grandoreiro banking Trojan, active for 12 years, has resurfaced with a new campaign targeting banking customers in Mexico using social engineering and network proxies to evade detection. 
+
+-------------------------
+
+en_cybersecuritydive
+2026-08-20 12:00:00
+What we know so far about the hacking campaign against US water systems 
+Coordinated cyberattacks linked to Iranian-affiliated threat groups have targeted water utilities in at least 12 US states, exploiting vulnerable PLCs and prompting renewed calls for minimum cybersecurity standards. 
+
+-------------------------
+
+en_chemistry_world
+2026-08-20 12:00:00
+New reaction controls phosphorus stereochemistry in oligonucleotide synthesis 
+Chemists developed a novel reaction enabling precise control of phosphorus stereochemistry during phosphorothioate oligonucleotide synthesis, advancing the production of RNA therapeutics with improved pharmacological profiles. 
+
+-------------------------
+
+en_airforce_technology
+2026-08-19 12:00:00
+StandardAero secures spot on $342m US Air Force T56 engine contract 
+StandardAero was awarded a place on a 10-year USAF maintenance contract for T56 engines powering the C-130 Hercules, with a ceiling value of $342.2 million. 
+
+-------------------------
+
+en_mining_journal
+2026-08-19 12:00:00
+Vast Resources readmitted to AIM after reverse takeover of Gulf International Minerals 
+Vast Resources completed a reverse takeover of Gulf International Minerals, gaining producing gold and silver assets in Tajikistan and returning to London's AIM market. 
+
+-------------------------
+
+en_ess_news
+2026-08-19 12:00:00
+LG Energy Solution starts battery production at new Lansing facility 
+LG Energy Solution commenced production at its Lansing, Michigan facility targeting over 35 GWh annual capacity, with the company projecting 80% of its global ESS manufacturing in North America by end of 2026. 
+
+-------------------------
+
+en_ess_news
+2026-08-19 12:00:00
+Austrian project targets higher-energy LMFP batteries for stationary storage 
+A Swiss-Austrian joint venture is deploying a 10 MW/20 MWh ADS-TEC Energy BESS system at a paper manufacturing site, supporting research into lithium manganese iron phosphate chemistry for industrial storage. 
+
+-------------------------
+
+en_global_advanced_packaging
+2026-08-19 12:00:00
+SEMICON Taiwan 2026 Highlights AI-Driven Manufacturing Transformation 
+SEMICON Taiwan 2026 showcased AI-driven smart manufacturing and advanced packaging growth, with SEMI projecting 300mm fab equipment spending to exceed $150 billion in 2027 driven by AI chip demand. 
+
+-------------------------
+
+en_electronics_weekly
+2026-08-18 12:00:00
+New CEO for SIA 
+The Semiconductor Industry Association appointed Michael Robbins as its new president and CEO, effective from October 1, 2026. 
+
+-------------------------
+
+en_ship_and_bunker
+2026-08-18 12:00:00
+Shipping Groups Warn Hormuz Tolls Could Set 'Precedent' for Global Shipping 
+Eight global shipping associations warned that compulsory transit charges through the Strait of Hormuz would represent a significant departure from established international maritime practice. 
+
+-------------------------
+
+en_wealthbriefing
+2026-08-18 12:00:00
+Who's Moving Where In Wealth Management? - M&G, St James's Place 
+M&G Investments appointed Ross Sterling as deputy portfolio manager for its Japan equities strategy; St James's Place announced senior advisor promotions across its wealth planning network. 
+
+-------------------------
+
+en_ess_news
+2026-08-18 12:00:00
+Battery energy storage as a new economic asset for industrial sites 
+Industrial facilities are increasingly deploying BESS systems to monetize behind-the-meter capacity through energy arbitrage, demand response, and grid ancillary services, despite falling realized arbitrage spreads. 
+
+-------------------------
+
+en_food_industry_executive
+2026-08-18 12:00:00
+Food Exec Brief: Closing the GRAS Loophole, Pending Tariffs and Legal Battles, and Changing Grocery Trends 
+The FDA proposed mandatory safety notifications for GRAS ingredients ending the voluntary system since 1997, while a formal ultra-processed food definition went to the White House as a non-binding white paper. 
+
+-------------------------
+
+en_bhbusiness
+2026-08-17 12:00:00
+Behavioral Health Dealmaking Down 20% in the First Half of 2026 
+Closed deals totaled 69 in the first half of 2026, down 20% year over year, amid heightened scrutiny on outcomes and market pressures. 
+
+-------------------------
+
+en_naval_technology
+2026-08-17 12:00:00
+US DoW signs SM-3 missile component deals with Boeing, RTX 
+The US Department of War established two seven-year agreements with Boeing and RTX to increase production of critical SM-3 Block IB and Block IIA interceptor components. 
+
+-------------------------
+
+en_airforce_technology
+2026-08-17 12:00:00
+US Air Force awards JASSM missile engine contract to GE Aerospace, Kratos 
+The US Air Force awarded a contract to develop the GEK800 engine as a second-source propulsion system for the Joint Air-to-Surface Standoff Missile programme. 
+
+-------------------------
+
+en_insurance_journal
+2026-08-17 12:00:00
+Insurance M&A Pace Down 15% in First Half 2026 
+Insurance agency mergers and acquisitions fell 15% in H1 2026 to 292 transactions, the slowest start since 2016, with Q2 activity declining 25% to 138 deals per OPTIS data. 
+
+-------------------------
+
+en_insurance_journal
+2026-08-17 12:00:00
+Top 100 Independent Agencies: Combined P/C Revenue Declined Over $2 Billion 
+Insurance Journal's 22nd annual Top 100 Independent Agencies report found combined property/casualty revenue for the cohort declined over $2 billion from 2024 to 2025 amid market headwinds. 
+
+-------------------------
+
+en_ttnews
+2026-08-15 12:00:00
+Diesel, gasoline prices hit record August highs 
+Drivers are paying an average of $5.40 per gallon for diesel and $4 for gasoline for the first time in August, driven by constrained global fuel supplies tied to the Iran conflict and multi-year low gasoline inventories. 
+
+-------------------------
+
+en_ship_and_bunker
+2026-08-15 12:00:00
+Hapag-Lloyd 1H 2026 Bunker Consumption Fell by 3.5% on Year 
+Hapag-Lloyd bunkered approximately 2.4 million mt of bunker fuels in H1 2026, down 3.5% year-over-year, with average bunker prices rising to $592/mt from $542/mt due to Hormuz disruptions. 
+
+-------------------------
+
+en_waterworld
+2026-08-15 12:00:00
+Aging infrastructure remains top concern in Black & Veatch's 2026 water utility survey 
+Aging infrastructure is the leading challenge for US water utilities in 2026 per a Black & Veatch survey of over 600 stakeholders, followed by workforce shortages and financing pressures. 
+
+-------------------------
+
+en_wealthbriefing
+2026-08-15 12:00:00
+Wealth Managers Favour Tech-Driven US, Emerging Market Equities 
+As of mid-August 2026, wealth managers are overweighting US technology stocks and select emerging market equities, with the S&P 500 up 13.3% year-to-date and the Nasdaq up 14.5%. 
+
+-------------------------
+
+en_food_industry_executive
+2026-08-15 12:00:00
+For the First Time, Grain, Freight, and Factory Input Costs All Moved the Same Direction 
+The Food Industry Executive Input Cost Index recorded an unprecedented alignment where grain, ocean freight, and factory input costs fell simultaneously in a single week for the first time in 15 weeks of tracking. 
+
+-------------------------
+
+en_specchemonline
+2026-08-14 12:00:00
+PPS opens peptide spray drying suite at India facility 
+Piramal Pharma Solutions launched a spray drying suite at its peptide manufacturing facility in Turbhe, India, engineered for small-volume, high-potency batches serving pharmaceutical CDMO clients. 
+
+-------------------------
+
+en_nerej
+2026-08-14 12:00:00
+Peyser Real Estate Group celebrates ribbon-cutting for $55 million Dexter Street Commons 
+Mayor Donald Grebien and Rhode Island Governor Dan McKee joined the ribbon-cutting for Dexter Street Commons in Pawtucket, a $55 million mixed-use conversion of a long-vacant industrial property. 
+
+-------------------------
+
+en_3dincites
+2026-08-14 12:00:00
+Advancing Semiconductor Innovation and Supply Chain Resilience Through International Collaboration 
+New international partnerships and policy frameworks are enabling semiconductor supply chain diversification, with particular focus on advanced packaging capabilities, critical material access, and workforce development. 
+
+-------------------------
+
+en_cybersecuritydive
+2026-08-13 12:00:00
+AI widely used to exploit critical flaws, disrupt supply chains 
+Adversaries are increasingly using AI agents to discover and exploit critical software vulnerabilities at scale, accelerating the time between disclosure and exploitation. 
+
+-------------------------
+
+en_pitchbook
+2026-08-13 12:00:00
+LPs redirect capital toward growth funds even as overall fundraising collapsed 
+Limited partners in private equity are shifting allocations toward growth equity despite a significant overall drop in fundraising activity, concentrating capital in higher-conviction, later-stage opportunities. 
+
+-------------------------
+
+en_chemistry_world
+2026-08-13 12:00:00
+Dow to cut 1,500 jobs as global chemicals industry reshapes 
+Dow Chemical announced 1,500 job cuts as the global chemicals sector adjusts to overcapacity, weak demand, and energy transition pressures reshaping feedstock economics and product portfolios worldwide. 
+
+-------------------------
+
+en_airforce_technology
+2026-08-12 12:00:00
+Archer agrees to buy three Boeing subsidiaries for physical AI push 
+US-based Archer Aviation signed agreements to acquire Boeing's Wisk Aero, SkyGrid, and Insitu subsidiaries to expand its capabilities in physical AI technology. 
+
+-------------------------
+
+en_ship_and_bunker
+2026-08-12 12:00:00
+Fratelli Cosulich Methanol-Ready Bunker Tanker Launched in China 
+Global marine fuel supplier Fratelli Cosulich announced the launch of its new methanol-ready bunker tanker Carlotta Cosulich at Taizhou Maple Leaf Shipyard in China. 
+
+-------------------------
+
+en_wealthbriefing
+2026-08-12 12:00:00
+Who's Moving Where In Wealth Management? - FE fundinfo, Monument Bank, JTC 
+FE fundinfo appointed Bjoern Doehrer as chief product officer; Monument Bank and JTC each announced senior leadership hires supporting private wealth and fiduciary service offerings. 
+
+-------------------------
+
+en_pitchbook
+2026-08-12 12:00:00
+Smaller startup hubs delivered higher MOICs than New York or Bay Area this year 
+PitchBook data shows smaller regional startup ecosystems outperformed major coastal hubs on multiple-on-invested-capital metrics in 2026, reflecting geographic diversification in venture returns. 
+
+-------------------------
+
+en_pitchbook
+2026-08-12 12:00:00
+The mega IPOs that could shut out the rest of VC 
+A small number of large-scale IPOs are commanding the bulk of investor attention and capital, raising concerns that oversized listings could crowd out smaller venture-backed companies seeking public market exits. 
+
+-------------------------
+
+en_nerej
+2026-08-12 12:00:00
+Horvath & Tremblay completes $6.5 million sale of three net-leased properties in Clinton, MA 
+Bob Horvath, Todd Tremblay, and Jack Laurendeau of Horvath & Tremblay sold three single-tenant net-leased properties including a Yatco, Wendy's, and Starbucks in Clinton, Massachusetts. 
+
+-------------------------
+
+en_silicon_semiconductor
+2026-08-12 12:00:00
+Lam Research to add 200 semiconductor roles in Singapore 
+Lam Research announced plans to hire 200 additional semiconductor engineers and technicians in Singapore, expanding local capabilities in etch and deposition equipment development and manufacturing support. 
+
+-------------------------
+
+en_3dincites
+2026-08-12 12:00:00
+New 12,800-square-meter production center targets rising AI demand 
+A major semiconductor packaging supplier opened a 12,800-square-meter production center designed to support rising demand from AI chip manufacturers, expanding capacity for advanced substrate and interposer fabrication. 
+
+-------------------------
+
+en_food_industry_executive
+2026-08-11 12:00:00
+Ocean Freight Just Snapped a Four-Week Losing Streak 
+Ocean freight rates broke a four-week decline with boxed beef posting back-to-back weekly gains, signaling potential input cost stabilization for food manufacturers amid easing supply chain pressures. 
+
+-------------------------
+
+en_ttnews
+2026-08-10 12:00:00
+Federal truck safety bill takes aim at lawsuit abuse 
+The Uniform Vehicle Safety Standards Act would prevent liability claims based on vehicle safety standards stricter than NHTSA regulations, reducing legal uncertainty for the trucking industry. 
+
+-------------------------
+
+en_waterworld
+2026-08-10 12:00:00
+Xylem acquiring Cornell Pump and Roper Pump from Indicor for $1.46 billion 
+Xylem announced a $1.46 billion acquisition of Cornell Pump and Roper Pump from Indicor, enhancing its industrial and municipal water application capabilities with expected 2026 revenues. 
+
+-------------------------
+
+en_fastmarkets
+2026-08-10 12:00:00
+Chile backs Codelco with $2.4 billion reinvestment as El Teniente output falls to 25-year low 
+Chile's government committed $2.4 billion in fresh capital to Codelco as the state copper miner's El Teniente mine output dropped to its lowest level in 25 years amid operational challenges. 
+
+-------------------------
+
+en_foodbusinessnews
+2026-08-10 12:00:00
+A federal definition of ultra-processed foods is getting closer 
+The US DHHS and USDA submitted a proposed definition of ultra-processed foods for final White House review on August 10, 2026, a step that could reshape food labeling and regulatory frameworks. 
+
+-------------------------
+
+en_fooddive
+2026-08-10 12:00:00
+USDA will need to rewrite bioengineered foods labeling standards by 2028 
+A federal judge ruled against USDA exemptions for highly refined bioengineered ingredients, requiring the agency to revise the national bioengineered food disclosure standard by 2028. 
+
+-------------------------
+
+en_specchemonline
+2026-08-10 12:00:00
+Tioxide moves towards Greatham restart with second recruitment phase 
+Tioxide began its second recruitment phase ahead of restarting operations at its Greatham TiO2 facility in Hartlepool, UK, after hiring over 60 employees in the first 12 weeks. 
+
+-------------------------
+
+en_insurance_journal
+2026-08-10 12:00:00
+Data breach costs reach record $5 million average in 2026 
+The average cost of a corporate data breach hit a record $5 million in 2026, driven by increasingly complex attack vectors and extended breach detection timelines per industry research. 
+
+-------------------------
+
+en_digichina
+2026-08-10 12:00:00
+Forum: Xi Jinping Headlines World AI Conference 
+Xi Jinping delivered a rare major public speech on artificial intelligence at the World AI Conference, signaling intensified state focus on AI governance, industrial deployment, and the AI+ initiative. 
+
+-------------------------
+
+en_silicon_semiconductor
+2026-08-10 12:00:00
+Marvell advances AI memory infrastructure portfolio 
+Marvell Technology announced advances in its AI memory infrastructure product line, targeting next-generation high-bandwidth memory interfaces and custom ASIC co-packaging for hyperscaler data center deployments. 
+
+-------------------------
+
+en_fundssociety
+2026-08-10 12:00:00
+Sovereign Wealth Funds Surpass 15 Trillion Dollars in Assets 
+The Sovereign Wealth Funds Report 2026 reveals global SWF assets reached $15.1 trillion, a 14% increase from the prior year, driven by energy fund contributions and institutional allocation growth. 
+
+-------------------------
+
+en_fastmarkets
+2026-08-08 12:00:00
+European scrap prices weaken in summer slowdown amid high inland waterway freight costs 
+European steel and aluminium scrap prices declined in the seasonal summer lull even as exceptionally low water levels across continental waterways drove freight costs sharply higher. 
+
+-------------------------
+
+en_foodbusinessnews
+2026-08-08 12:00:00
+China buying raises stakes before presidential summit 
+China introduced new export controls and sanctions on US companies during trade negotiations, while Chinese purchases of US agricultural commodities are closely watched ahead of diplomatic talks. 
+
+-------------------------
+
+en_nerej
+2026-08-08 12:00:00
+Related to begin multi-phase renovation of 250-unit Loring Towers affordable housing in Salem, MA 
+Real estate developer Related Companies will undertake a comprehensive multi-phased renovation of Loring Towers, a 250-unit affordable housing community in Salem, Massachusetts, starting August 2026. 
+
+-------------------------
+
+en_naval_technology
+2026-08-07 12:00:00
+CBO estimates $275bn price tag for Navy's Trump-class battleship fleet 
+A Congressional Budget Office analysis found the US Navy's nuclear-powered Trump-class battleship programme will cost an estimated $275 billion between 2027 and 2056. 
+
+-------------------------
+
+en_cybersecuritydive
+2026-08-07 12:00:00
+Experts say healthcare faces cybersecurity crisis: 'These are patient safety issues' 
+Cyberattacks on healthcare organizations have reached crisis levels, with hospitals struggling to maintain security standards amid funding cuts and increasing ransomware targeting of medical devices. 
+
+-------------------------
+
+en_chemistry_world
+2026-08-06 12:00:00
+Barriers preventing chemical plastic recycling from scaling up 
+Analysis identifies regulatory inconsistency, high capex requirements, and competition from virgin plastic economics as the primary barriers preventing scale-up of chemical plastic recycling technologies. 
+
+-------------------------
+
+en_global_advanced_packaging
+2026-08-06 12:00:00
+AMD acquires Taalas to advance AI inference compute solutions 
+AMD reached a definitive agreement to acquire Taalas, a pioneer in specialized AI inference silicon, to strengthen its AI compute roadmap with differentiated inference technology and advanced packaging integration. 
+
+-------------------------
+
+en_3dincites
+2026-08-06 12:00:00
+Brewer Science acquisition strengthens Americas semiconductor supply chain 
+Brewer Science completed a strategic acquisition to strengthen semiconductor materials production in the Americas, enhancing the US supply chain for photolithography and advanced packaging materials. 
+
+-------------------------
+
+en_ttnews
+2026-08-05 12:00:00
+Used Class 8 truck sales rise in June as inventory stays tight 
+ACT Research reported used Class 8 truck sales rose 10.2% year-over-year and 4.6% month-on-month in June, driven by improving freight conditions and constrained equipment inventories. 
+
+-------------------------
+
+en_fundssociety
+2026-08-05 12:00:00
+The New Map of Wealth Havens: High-Net-Worth Individuals Diversify Beyond Switzerland 
+Ultra-high-net-worth individuals are building 'sovereign portfolios' distributed across multiple jurisdictions, combining residence rights, citizenship programs, and investments to reduce single-country risk. 
+
+-------------------------
+
+en_waterfm
+2026-08-04 12:00:00
+Resilience Begins with Finance at 2026 Water Finance Conference 
+The 2026 Water Finance Conference at the University of Denver focused on sustainable financing strategies for water infrastructure amid expiring federal IIJA funding programs. 
+
+-------------------------
+
+en_fooddive
+2026-08-04 12:00:00
+PepsiCo expands presence in refrigerated meals with chilled soup 
+PepsiCo brought its Alvalle gazpacho brand to the US market as part of its push into refrigerated fresh snacks and meal categories to diversify beyond traditional packaged foods and beverages. 
+
+-------------------------
+
+en_vcaonline
+2026-08-03 12:00:00
+MetLife Investment Management closes $1.2 billion Private Equity Partners Fund III 
+MetLife Investment Management completed a $1.2 billion private equity fund close focused on middle-market buyouts and growth equity investments in healthcare, business services, and technology sectors. 
+
+-------------------------
+
+en_global_advanced_packaging
+2026-08-03 12:00:00
+IMAPS enhances Academy platform for semiconductor packaging workforce development 
+IMAPS updated its online Academy training platform to address growing workforce development needs in advanced semiconductor packaging, including new modules on hybrid bonding, chiplets, and heterogeneous integration. 
+
+-------------------------
+
+en_silicon_semiconductor
+2026-08-02 12:00:00
+GlobalFoundries signs LOI for $300 million CHIPS R&D award for silicon photonics 
+GlobalFoundries signed a letter of intent with the US Department of Commerce for a $300 million CHIPS Act R&D award to accelerate US silicon photonics leadership for AI and high-performance computing interconnects. 
+
+-------------------------
+
+en_foodbusinessnews
+2026-08-01 12:00:00
+Functionality becoming the new normal in food formulation 
+Functional ingredients including proteins, fiber, and adaptogens are now standard in mainstream consumer packaged goods, with brands reformulating legacy products to meet growing health demand. 
+
+-------------------------
+
+en_waterfm
+2026-07-27 12:00:00
+EPA announces $30 million in RealWaterTA funds for small, rural utilities 
+The US Environmental Protection Agency announced $30 million in targeted technical assistance funding to help small and rural water utilities meet compliance and infrastructure challenges. 
+
+-------------------------
+
+en_waterfm
+2026-07-20 12:00:00
+AWWA's Water Infrastructure Conference heading to Indianapolis 
+The American Water Works Association's 2026 Water Infrastructure Conference & Exposition will be held in Indianapolis August 30-September 2, focusing on aging infrastructure and technology adoption. 
+
+-------------------------
+
+en_rarediseaseadvisor
+2026-07-20 12:00:00
+Patisiran Outperforms Inotersen in Variant ATTR-PN 
+A comparative study found patisiran achieved superior clinical outcomes versus inotersen in patients with variant transthyretin amyloidosis with polyneuropathy, strengthening its position as a preferred RNA silencer. 
+
+-------------------------
+
+en_fundssociety
+2026-07-20 12:00:00
+Ricardo Sucre Returns to Amerant Wealth Management as Head of International Sales 
+Ricardo Sucre rejoined Amerant Wealth Management as Head of International Wealth Management Sales, targeting double-digit annual AUM growth through Latin American private banking relationships. 
+
+-------------------------
+
+en_digichina
+2026-07-15 12:00:00
+Forum: What Trump and Xi achieved in Beijing, and what they left unresolved 
+DigiChina analysis of the Trump-Xi Beijing summit covers tech relation agreements, rare earth export control suspensions through November 2026, and the new 'constructive strategic stability' framework. 
+
+-------------------------
+
+en_rarediseaseadvisor
+2026-07-15 12:00:00
+Real-World Evidence Reaffirms Long-Term Tafamidis Efficacy in ATTR-CM 
+New real-world data confirmed sustained efficacy of tafamidis in transthyretin amyloid cardiomyopathy over multi-year follow-up, supporting its use as standard of care in this rare progressive disease. 
+
+-------------------------
+
+en_vcaonline
+2026-07-15 12:00:00
+Adams Street Partners raises over $5 billion for secondaries investment program 
+Adams Street Partners closed its latest secondaries program at over $5 billion, targeting LP stake purchases and direct secondaries across private equity, venture capital, and private credit strategies. 
+
+-------------------------
+
+en_specchemonline
+2026-07-10 12:00:00
+Seqens concludes financial restructuring deal 
+French CDMO Seqens reached an agreement in principle with stakeholders on a comprehensive financial restructuring expected to complete by end of 2026, stabilizing the contract manufacturer. 
+
+-------------------------
+
+en_bhbusiness
+2026-07-08 12:00:00
+Exclusive: SUD Provider Pelago Pivots to Behavioral Health with New Bot 
+Substance use disorder provider Pelago is expanding into broader behavioral health services with a new AI-driven chatbot platform. 
+
+-------------------------
+
+en_rarediseaseadvisor
+2026-07-08 12:00:00
+Delayed Diagnosis Masks Progression From SM to Mast Cell Leukemia 
+Research highlights that delayed diagnosis of systemic mastocytosis allows progression to mast cell leukemia, underscoring the need for earlier biomarker screening and specialist referral pathways. 
+
+-------------------------
+
+en_bic_magazine
+2026-07-06 12:00:00
+Powering Texas industry: Reliability, innovation and the future of the petrochemical sector 
+Texas petrochemical leaders urge policies to maintain affordable power while addressing ERCOT market changes, rising AI data center demand, and clean energy expansion. 
+
+-------------------------
+
+en_globalbiodefense
+2026-07-04 12:00:00
+One-Year-Old in China Confirmed With Bird Flu as WHO Tracks Avian Influenza Cases 
+A one-year-old from Guangdong Province was confirmed with avian influenza H5N1 as the WHO tracks a steady drumbeat of human cases across the Western Pacific region. 
+
+-------------------------
+
+en_bhbusiness
+2026-07-02 12:00:00
+2026 Checkpoint: Where Behavioral Health Providers Are Winning and Losing 
+Mid-year analysis shows autism and SUD providers facing Medicaid rate cuts while value-based care and integrated care models continue to attract investment. 
+
+-------------------------
+
+en_bic_magazine
+2026-06-29 12:00:00
+Ras Tanura is back online and oil fell 10% in a week 
+The restart of Saudi Arabia's Ras Tanura refinery combined with rising Persian Gulf flows trimmed the geopolitical premium, compressing Gulf Coast 3-2-1 crack spreads sharply. 
+
+-------------------------
+
+en_digichina
+2026-06-20 12:00:00
+Forum: Technology in China's 15th Five-Year Plan 
+China's 15th Five-Year Plan (2026-2030) sets a sharper security-driven technology agenda prioritizing AI, semiconductors, and advanced manufacturing while expanding capital markets access for tech IPOs. 
+
+-------------------------
+
+en_vcaonline
+2026-06-16 12:00:00
+Conifer Infrastructure Partners closes oversubscribed inaugural fund at $900 million 
+Conifer Infrastructure Partners exceeded its target with a $900 million debut fund close focused on building and operating high-growth infrastructure platforms in energy and critical materials sectors. 
+
+-------------------------
+
+en_digital_refining
+2026-06-01 12:00:00
+Green Fuels breaking ground on new Oklahoma refinery 
+Green Fuels held a groundbreaking ceremony for a new refinery in Stephens County, Oklahoma, a transformational project drawing congressional and state government support. 
+
+-------------------------
+
+en_digital_refining
+2026-05-28 12:00:00
+Lummus Technology launches new Thermacrack C5 solution 
+Lummus Technology announced the commercial launch of Thermacrack C5, a new solution to unlock higher-value production in refining operations. 
+
+-------------------------
+
+en_bic_magazine
+2026-05-21 12:00:00
+America First Refining is building the first new oil refinery in the U.S. since 1976 
+The $300 billion America First Refining project at the Port of Brownsville, Texas marks the first greenfield oil refinery built from scratch in the US in nearly five decades. 
+
+-------------------------
+
+en_globalbiodefense
+2026-05-10 12:00:00
+Federal Cuts to Public Health Infrastructure Threaten Hospital and Clinical Emergency Readiness 
+Cuts to CDC capacity, laboratory programs, and hospital preparedness funding are eroding US emergency readiness at a time of active disease threats and reduced global surveillance capability. 
+
+-------------------------
+
+en_globalbiodefense
+2026-04-30 12:00:00
+Biodefense Headlines - April 30, 2026 
+Weekly biodefense roundup covers new mpox strain developments, pandemic preparedness policy gaps following US withdrawal from WHO, and emerging biosecurity threats from avian influenza. 
+
+-------------------------
+
+en_digital_refining
+2026-04-15 12:00:00
+Several refining projects are scheduled in Asia and the Middle East 
+Multiple new refinery projects across Asia and the Middle East are advancing in 2026, driven by regional demand growth and petrochemical integration strategies. 
+
+-------------------------
