@@ -1,0 +1,594 @@
+en_steelindustry_news
+2026-08-19 12:00:00
+US Steel Production 79.4% Capacity Utilization Week Ending August 15 
+US domestic raw steel production totaled 1.833 million net tons in the week ending August 15, 2026, with the capability utilization rate at 79.4%, above the year-earlier level as domestic demand from construction and automotive remained firm. HRC spot prices held above $1,000/ton for a fourth consecutive week. 
+
+-------------------------
+en_promarket
+2026-08-17 20:00:00
+How To Preserve the Online Information Ecosystem in the Presence of Google AI Overviews 
+Research published in ProMarket finds that Google AI Overviews significantly reduce referral traffic to content publishers, raising copyright and competition law questions about whether the feature constitutes fair use or market foreclosure. The authors propose a traffic-sharing royalty framework modeled on press publisher rights in the EU. 
+
+-------------------------
+en_techpolicy_press
+2026-08-16 20:00:00
+AI Meets the US Midterm Elections 
+Tech Policy Press examines how AI-generated content, deepfakes, and algorithmic amplification are shaping the 2026 US midterm election cycle, with federal regulators divided on whether existing election law covers AI-driven political advertising. The analysis warns that platform self-regulation has proven insufficient ahead of the November vote. 
+
+-------------------------
+en_fuelcellsworks
+2026-08-16 20:00:00
+China Hydrogen Industry Update August 10-14, 2026: Fuel Cell and Electrolyser News 
+FuelCellsWorks' weekly China update covers Dongfang Hydrogen Energy deploying 307 fuel cell systems in commercial vehicle fleets, Aerospace Engineering Corporation receiving 8MPa electrolyser certification for high-pressure green hydrogen applications, and new provincial hydrogen highway subsidies in Guangdong and Jiangsu. 
+
+-------------------------
+en_artemis
+2026-08-16 12:00:00
+Best of Artemis Week Ending August 16, 2026: Catastrophe Bond Market Hits Records 
+Artemis's weekly summary reports wildfire-exposed catastrophe bond issuance soaring to $5.183 billion year-to-date in 2026, UCITS cat bond funds surpassing $21 billion in assets, and third-party reinsurance capital projected to reach a record $130 billion level by year-end. The week also saw IDB arrange its first parametric catastrophe swap for Belize. 
+
+-------------------------
+en_esecurityplanet
+2026-08-15 20:00:00
+AI Security Failures, Active Exploits, and Breaches Define the Week in August 2026 
+eSecurity Planet's weekly August roundup covers AI-generated exploit code accelerating breach timelines, an actively exploited Remote Access SSL VPN flaw in Cisco ASA devices allowing unauthenticated device restarts, and Zoom patching a critical Windows vulnerability CVE-2026-53412 enabling account takeover without authentication. 
+
+-------------------------
+en_advancedpackaging_news
+2026-08-15 12:00:00
+Advanced packaging market to top $120B 
+The global advanced packaging market is expected to more than double in value, growing from $55 billion in 2025 to more than $120 billion by 2031, driven by AI and HPC demand. CoWoS demand alone is projected to reach one million wafers by 2026, with Nvidia securing around 60% of total capacity. 
+
+-------------------------
+en_designdevelopmenttoday
+2026-08-15 12:00:00
+Lockheed Martin's Interceptor Missile Contract Up to Nearly $60B 
+The US Missile Defense Agency awarded Lockheed Martin a contract potentially worth up to $60 billion to develop and produce next-generation interceptor missiles as part of the Golden Dome homeland defense initiative. The contract covers development, testing, production, and sustainment of ground-based interceptors. 
+
+-------------------------
+en_justainews
+2026-08-15 12:00:00
+Siemens Partners With Tech Giants to Redefine Manufacturing 
+Siemens introduced an Industrial Foundation Model that integrates AI with virtual programmable logic controllers, transforming how manufacturers operate production lines at companies including Audi. The partnership signals a new wave of AI-native industrial software displacing legacy automation platforms. 
+
+-------------------------
+en_ttnews
+2026-08-15 12:00:00
+AI Is Reshaping Freight Transportation Industry Operations 
+Transport Topics finds that breakthroughs in artificial intelligence are beginning to materially change how work is done across freight brokerage, fleet management, and last-mile logistics, with major 3PLs deploying AI for load matching and driver scheduling. Industry observers note AI adoption is accelerating despite ongoing freight market softness. 
+
+-------------------------
+en_lpgpconnect
+2026-08-15 12:00:00
+Why Institutional Investors Are Turning to Private Markets for Stability and Growth 
+LPGP Connect analysis finds that institutional allocators are increasing private market allocations in 2026 as public market volatility driven by tariffs and the Middle East conflict makes the J-curve dynamics of private equity more attractive relative to public benchmarks. Private credit and infrastructure are the top two sub-asset classes in new commitment activity. 
+
+-------------------------
+en_techfundingnews
+2026-08-15 12:00:00
+Fireworks AI Raises $1.5B Series D, Together AI Gets $800M for Inference Infrastructure 
+Fireworks AI closed a $1.505 billion Series D and Together AI raised $800 million Series C as investors pour capital into AI inference infrastructure serving enterprise application developers. The rounds reflect a market shift from model training investment toward deployment-layer infrastructure as model commoditization accelerates. 
+
+-------------------------
+en_bondbuyer
+2026-08-15 12:00:00
+Municipal Primary Was Just Shy of $300 Billion in First Half 2026 
+Municipal issuers sold $299.293 billion of bonds in H1 2026, up 5.2% year-over-year, as issuers rushed to lock in financing ahead of anticipated Fed rate hikes driven by persistent inflation. The market absorbed supply robustly with demand from tax-exempt investors remaining strong despite uncertainty around federal tax policy changes. 
+
+-------------------------
+en_infosecurity_magazine
+2026-08-15 12:00:00
+FIRST Forecasts Record-Breaking 50,000+ CVEs in 2026 
+The Forum of Incident Response and Security Teams predicts vulnerability disclosures will hit or exceed 50,000 in 2026, with a median forecast of approximately 59,427 new CVEs. The explosion in vulnerability discovery is attributed to AI-assisted security research tooling and expanding attack surface from cloud-native and AI application deployments. 
+
+-------------------------
+en_designdevelopmenttoday
+2026-08-12 12:00:00
+U.S. Navy Awards General Dynamics Over $70B for 14 Submarines 
+General Dynamics received a contract worth over $70 billion to design and build 14 Virginia-class submarines for the US Navy, representing the largest submarine procurement contract in American history. The award is part of an accelerated AUKUS-driven build-up of US undersea warfare capability. 
+
+-------------------------
+en_promarket
+2026-08-11 12:00:00
+Corporate Leaders Have Moved Left, But the Money Hasn't Followed 
+New research tracking political donations of Fortune 500 executives finds that stated ESG and DEI commitments have not translated into leftward shifts in aggregate political spending, with corporate PAC money remaining skewed toward Republican candidates in 2025-26. The findings challenge narratives of corporate progressive capture. 
+
+-------------------------
+en_advancedpackaging_news
+2026-08-10 12:00:00
+Nvidia fuels US packaging expansion 
+NVIDIA and Amkor Technology have signed a multi-year agreement worth $1.5 billion to expand advanced semiconductor packaging and test capacity in the United States. The deal reflects growing urgency among chip designers to diversify away from TSMC-dominated packaging in Asia. 
+
+-------------------------
+en_spacewar
+2026-08-10 12:00:00
+Starfighters Space positions for rapid hypersonic era missions 
+Starfighters Space has expanded its operational footprint to support rapid-turnaround hypersonic test missions, partnering with multiple defense agencies seeking faster experimentation cycles. The company's F-104 fleet provides a cost-effective platform for testing at speeds above Mach 2.5 in contested airspace profiles. 
+
+-------------------------
+en_justainews
+2026-08-10 12:00:00
+NEURA Robotics Closes $1.4B Round for Physical AI 
+Humanoid robotics company NEURA Robotics closed a $1.4 billion funding round to accelerate global expansion and manufacturing scale-up through its NEURA Gym training environments where robots learn through physical interaction and simulation. The round marks one of the largest physical AI financings in Europe. 
+
+-------------------------
+en_neuralcoretech
+2026-08-10 12:00:00
+Edge AI Hardware 2026: On-Device Intelligence, Architecture & Chip Comparison 
+NeuralCoreTech's comprehensive 2026 edge AI hardware guide covers NVIDIA Jetson Thor, Qualcomm Snapdragon X2, and AMD Ryzen AI Embedded P100, finding that on-device inference has reached production readiness across robotics, surveillance, and wearable applications. The guide identifies power efficiency and TOPS-per-watt as the defining competitive metric for 2026. 
+
+-------------------------
+en_energypolicy_columbia
+2026-08-10 12:00:00
+Reporters' Roundtable: What's Driving US Energy Policy News in 2026? 
+Columbia's Center on Global Energy Policy convened a media roundtable examining the key US energy policy drivers of 2026: surging AI data center power demand, the Iran conflict's effect on oil and LNG markets, and the political battle over offshore wind permitting. Journalists highlighted the Strait of Hormuz disruptions as the dominant near-term energy story. 
+
+-------------------------
+en_steelindustry_news
+2026-08-10 12:00:00
+HRC Rises to $1155: Zinc Climbs, Imports Restricted, Consumer Spending Supports 
+Hot rolled coil spot prices rose to $1,155/ton as zinc reached its highest level since June 2022 with global inventories draining for a fifth straight week, while proposed Section 232 tariff extensions on 14 additional derivative product categories continued to limit import competition. Consumer spending data remained supportive of end-user steel demand. 
+
+-------------------------
+en_techplustrends
+2026-08-10 12:00:00
+OpenAI Gumdrop Leak: Jony Ive's AI Pen and ChatGPT Ads for 2026 
+Tech Plus Trends reports on leaked details of OpenAI's Project Gumdrop AI pen co-designed with Jony Ive, with production shifted to Foxconn Vietnam facilities to meet US security standards, alongside plans to introduce advertising into ChatGPT interfaces as part of the company's 2026 revenue diversification pivot. 
+
+-------------------------
+en_infosecurity_magazine
+2026-08-10 12:00:00
+Chinese Threat Actors Weaponize New Vulnerabilities in Under a Day 
+Infosecurity Magazine reports that in 88% of publicly disclosed vulnerability exploits in H1 2026, Chinese-linked threat actors achieved intrusion within 48 hours of release, a significant acceleration from prior-year benchmarks. Security teams are urged to implement automated patching pipelines for internet-facing systems to match attacker speed. 
+
+-------------------------
+en_freightamigo
+2026-08-10 12:00:00
+2026 Port Congestion Delays: Causes and Fixes for Global Shippers 
+FreightAmigo reports over 80% of 454 tracked ports worldwide experiencing elevated congestion in 2026, driven by Middle East conflict rerouting, US tariff front-loading, and vessel bunching after schedule disruptions. The analysis recommends pre-booked intermodal alternatives and dynamic re-routing contracts as mitigation strategies for shippers. 
+
+-------------------------
+en_synbiobeta
+2026-08-10 12:00:00
+Anthropic Is Hiring Biologists, Building Wet Labs, and Betting Big on Drug Discovery 
+SynBioBeta reports Anthropic is hiring experienced biologists and establishing wet laboratory capabilities as it pivots to apply its AI foundation models to drug discovery, viewing biology as the highest-value application of its AI technology. Anthropic's bet is that its model approach combined with wet-lab feedback loops can compress drug development timelines across target identification, lead optimization, and toxicity prediction. 
+
+-------------------------
+en_artemis
+2026-08-09 12:00:00
+Best of Artemis Week Ending August 9, 2026: Mid-Year Renewals Favor Buyers 
+The mid-year 2026 property catastrophe reinsurance renewals produced risk-adjusted price reductions of 15%-40% as record reinsurer capital of $790 billion competed aggressively for premium. Artemis notes that catastrophe bonds are now a more direct competitive alternative to traditional reinsurance rather than a complementary layer. 
+
+-------------------------
+en_fuelcellsworks
+2026-08-09 12:00:00
+China Hydrogen and Fuel Cell News Highlights August 2026 
+The latest weekly Chinese hydrogen industry roundup covers green ammonia export agreements with South Korea and Japan, expansion of hydrogen cold chain logistics pilots in Beijing and Shanghai, and CATL's announcement of a hydrogen-electric hybrid powertrain for heavy-duty mining trucks targeting the Inner Mongolia mining market. 
+
+-------------------------
+en_advancedpackaging_news
+2026-08-05 12:00:00
+JCET invests $1.15B in packaging expansion 
+JCET Group has announced plans to invest 7.8 billion yuan ($1.15 billion) in a new advanced semiconductor packaging and testing facility in Shanghai to support demand from AI, HPC, and networking applications. The move comes as Chinese OSATs race to close the gap with global leaders in advanced packaging. 
+
+-------------------------
+en_spacewar
+2026-08-05 12:00:00
+Rocket Lab launches Cassowary Vex hypersonic mission for US Department of War 
+Rocket Lab successfully launched the Cassowary Vex hypersonic test vehicle for the US Department of War, demonstrating rapid responsive launch capability. The mission marks one of several contracted hypersonic test support flights Rocket Lab is executing in 2026 for the US military. 
+
+-------------------------
+en_designdevelopmenttoday
+2026-08-05 12:00:00
+Sierra Space, L3Harris Awarded Golden Dome Contracts 
+Sierra Space and L3Harris Technologies received contracts under the Golden Dome national missile defense program to develop space-based intercept and sensing layers. The contracts support the Trump administration's goal of fielding a layered missile defense architecture by the late 2020s. 
+
+-------------------------
+en_justainews
+2026-08-05 12:00:00
+Arrakis Raises $38M to Bring AI Agents Into Industrial Operations 
+Arrakis, a startup deploying AI agents for industrial companies in aerospace, energy, logistics, and manufacturing, raised $38 million to expand into sectors where most work still runs on aging software and manual processes. The funding will accelerate integration with existing ERP and SCADA systems. 
+
+-------------------------
+en_neuralcoretech
+2026-08-05 12:00:00
+Best Hardware for AI Agents 2026: RTX 5090 vs Mac Studio vs DGX Spark 
+A head-to-head comparison of three leading local AI inference platforms finds that NVIDIA's DGX Spark delivers the highest throughput for multi-agent workflows, while Apple's Mac Studio offers superior energy efficiency for single-agent deployments. The analysis recommends Mac Studio M3 Ultra for teams prioritizing privacy and operational cost. 
+
+-------------------------
+en_techfundingnews
+2026-08-05 12:00:00
+Top 10 Humanoid Robot Startups by Total Funding 2026 
+Tech Funding News ranks the leading humanoid robotics startups by capital raised, with the sector collectively attracting $8.6 billion in 2026 alone, already 1.8x the full-year 2025 total. Figure AI, Apptronik, and Agility Robotics lead the rankings, with automotive and logistics the primary targeted deployment verticals. 
+
+-------------------------
+en_techplustrends
+2026-08-05 12:00:00
+How AI Agents Are Rewriting Project Management in 2026: Autonomous PMOs Explained 
+The site explains how AI agents are replacing traditional project management software in enterprise settings, with goal-driven AI PMOs capable of allocating tasks, predicting risk, and orchestrating workflows across multiple enterprise systems without human scheduling intervention. Adoption is highest in professional services and software development firms. 
+
+-------------------------
+en_bondbuyer
+2026-08-05 12:00:00
+New Muni Financing Types Outstrip Expansion of Investor Guidelines 
+Bond Buyer analysis finds that novel municipal financing structures—including hyperscaler prepaid utility deals, spaceport revenue bonds, and Bitcoin-backed municipal bonds—are proliferating faster than institutional investor guidelines can accommodate them. The trend is forcing credit teams to develop new analytical frameworks for non-traditional muni credits. 
+
+-------------------------
+en_infosecurity_magazine
+2026-08-05 12:00:00
+Governance Gaps Emerge as AI Agents Drive 76% Increase in Non-Human Identities 
+Three-quarters of organizations report significant growth in non-human identities tied to agentic AI in 2026, creating governance gaps as AI agents accumulate privileged access to APIs, data, and enterprise systems. Infosecurity Magazine calls for zero-trust identity management frameworks specifically designed for AI agent principals. 
+
+-------------------------
+en_esecurityplanet
+2026-08-05 12:00:00
+DentaQuest Breach Affects 15 Million in Largest US Health Data Breach of 2026 
+DentaQuest reported 15 million affected individuals to the Department of Health and Human Services, making the incident the largest healthcare data breach reported in 2026. The breach exposed dental insurance claims data, Social Security numbers, and treatment history, with evidence suggesting ransomware-affiliated actors exfiltrated data over several weeks. 
+
+-------------------------
+en_technewsworld
+2026-08-03 12:00:00
+Project Solara Tests Microsoft's AI Device Strategy 
+Microsoft's Project Solara AI-enabled device initiative is testing whether OEM hardware partners will invest in a new category of AI-native personal computing devices distinct from traditional AI PCs. The project integrates on-device AI agents with cloud-connected services and raises competitive dynamics with Qualcomm and Apple's parallel AI hardware strategies. 
+
+-------------------------
+en_artemis
+2026-08-02 12:00:00
+Best of Artemis Week Ending August 2, 2026: Global Insured Losses 16% Below 10-Year Average in H1 
+Swiss Re Institute estimated global insured losses from natural catastrophe events at $42 billion in H1 2026, marking the lowest first-half total since 2020 and 16% below the 10-year average. The benign loss environment has supported robust ILS issuance and tightening spreads across the catastrophe bond market. 
+
+-------------------------
+en_pemedianetwork_carbon
+2026-08-01 12:00:00
+Letter on carbon: Can CCUS capture enough private capital? 
+With government subsidies under pressure and IRA provisions uncertain, PE Media's Carbon Economist examines whether carbon capture projects can sustain private investment flows in 2026 without guaranteed offtake. Analysts warn that bankability depends on long-term pricing signals that most markets still lack. 
+
+-------------------------
+en_ttnews
+2026-08-01 12:00:00
+Shipping Firms Face Tough 2026 as Reopening of Red Sea Looms 
+Maersk, Hapag-Lloyd, COSCO, and NYK are all expected to report weaker earnings in 2026 as Red Sea route normalization and vessel overcapacity compress ocean freight rates after a strong tariff-driven surge in early 2026. Analysts project spot container rates will fall 25-35% by year-end if the Hormuz situation stabilizes. 
+
+-------------------------
+en_insuranceaum
+2026-08-01 12:00:00
+NAIC Spring 2026 Meeting Highlights: Regulators Intensify Focus on Investment Portfolio Risks 
+The NAIC's Spring 2026 National Meeting underscored regulators' growing scrutiny of insurer investment portfolios, particularly exposure to private credit, CLOs, and offshore reinsurance structures. Regulators proposed new Schedule BA asset reporting requirements and higher capital charges for concentrated alternative asset positions. 
+
+-------------------------
+en_steelindustry_news
+2026-08-01 12:00:00
+Section 232 Tariff Extension Proposal Targets 14 Steel Derivative Categories 
+The US Department of Commerce Bureau of Industry and Security proposed extending Section 232 tariffs on steel, aluminum, and copper to 14 additional derivative product categories, accepting public comments through August 27, 2026. The proposal follows President Trump's April 2 proclamation and is seen as part of a broader reshoring industrial strategy. 
+
+-------------------------
+en_uscc
+2026-08-01 12:00:00
+USCC China Bulletin July 2026: Coast Guard Patrols East of Taiwan, Sea-Based Nuclear Deterrent 
+The US-China Economic and Security Review Commission's July 23 bulletin highlights China's expanding coast guard patrols east of Taiwan's median line and claims of a sea-based nuclear deterrent capability deployment. The commission urges Congress to accelerate funding for US naval presence in the Western Pacific. 
+
+-------------------------
+en_techplustrends
+2026-08-01 12:00:00
+EU Sovereign AI Infrastructure Stack: The Complete 2026 Guide 
+With the EU AI Act enforcement commencing August 2, 2026, Tech Plus Trends profiles the European sovereign AI infrastructure push including GAIA-X data spaces, national AI compute investments in France and Germany, and the EU's effort to reduce dependence on US hyperscaler AI infrastructure. 
+
+-------------------------
+en_appliedclinicaltrials
+2026-08-01 12:00:00
+FDA Launches Proof-of-Concept Real-Time Clinical Trials 
+The FDA initiated two proof-of-concept real-time clinical trials that report endpoints and data signals to the agency in real time, with pilot participant selection expected by August 2026. The program aims to compress drug development timelines by allowing regulators to monitor trial data as it accumulates rather than waiting for study completion. 
+
+-------------------------
+en_raps
+2026-08-01 12:00:00
+Journal of Regulatory Affairs July-August 2026: Orphan Drugs, LBPs, and Digital Regulatory Operations 
+RAPS's latest journal issue covers global regulations governing orphan drug designation across the EU, US, and Japan; regulatory science considerations for live biotherapeutic products; and the role of technology in medtech regulatory affairs operations. It also examines cross-regional pediatric study plan harmonization under ICH E11. 
+
+-------------------------
+en_freightamigo
+2026-08-01 12:00:00
+US China Trade Deal 2026: Tariffs and Supply Chain Impact for Logistics Providers 
+FreightAmigo's analysis of the mid-2026 US-China 'tactical truce' finds that while tariff rates have been partially reduced on consumer electronics and agricultural goods, supply chain routing changes toward Vietnam, Mexico, and India established since 2025 are proving structurally durable. The analysis recommends logistics providers lock in multi-lane carrier contracts for 2027 planning cycles. 
+
+-------------------------
+en_techpolicy_press
+2026-07-31 12:00:00
+July 2026 US Tech Policy Roundup 
+The July roundup covers the introduction of the Secure AI Development Act by Sen. Mark Warner, new export controls on Anthropic models, and the Trump administration's executive order calling for voluntary AI model reviews. It also reports on Anthropic's disclosure that its models hacked three companies during authorized cybersecurity testing. 
+
+-------------------------
+en_technewsworld
+2026-07-30 12:00:00
+Microsoft Forms New Entertainment Convergence Group 
+Microsoft announced a new Entertainment Convergence Group combining gaming, streaming, and AI content creation divisions under a unified leadership structure. The reorganization is seen as Microsoft's bid to compete directly with Apple's media ecosystem and Google's YouTube AI tools in the emerging AI entertainment space. 
+
+-------------------------
+en_promarket
+2026-07-29 12:00:00
+Property Rights Provide an Exit From Social Institutions 
+ProMarket publishes research showing that formal land titling in developing countries gives citizens exit options from costly informal social obligations, reducing remittance burdens and enabling investment in private goods. The findings have implications for property rights reform as a development tool beyond simple wealth effects. 
+
+-------------------------
+en_drugchannels
+2026-07-20 20:00:00
+Drug Channels News Roundup, Mid-July 2026: Biosimilar Launch Strategy, Part D Spending Trends, Rural 340B Hospitals 
+Adam Fein's Drug Channels mid-July roundup examines the collapse of express-lane biosimilar launch strategies as payers consolidate formulary leverage, rising Part D beneficiary spending under IRA redesign, and new CMS data on rural 340B hospital eligibility expansion. The roundup notes that PBM unbundling legislation remains stalled in the Senate. 
+
+-------------------------
+en_neuralcoretech
+2026-07-20 12:00:00
+Physical AI Architecture: The Ultimate 2026 VLA Engineering Guide 
+NeuralCoreTech publishes a technical guide to vision-language-action model deployment for robotics, covering real-time inference latency requirements, sensor fusion pipelines, and safety-critical update protocols. The guide highlights Pi0 and RT-2X as the leading VLA architectures with demonstrated sim-to-real transfer. 
+
+-------------------------
+en_lifesciencedaily_news
+2026-07-20 12:00:00
+Weekly News Roundup 20 July 2026: Biopharma M&A and Pipeline Updates 
+Life Science Daily News's July 20 roundup covers Merck KGaA's $11.3 billion acquisition of Bio-Techne, multiple oncology pipeline data readouts, and rising FDA approval activity in the GLP-1 class beyond obesity to cardiovascular and metabolic liver disease indications. A total of 26 FDA approvals were recorded in H1 2026. 
+
+-------------------------
+en_nbr
+2026-07-15 12:00:00
+Asia Policy 21.3 (July 2026): Indo-Pacific Geoeconomic Adaptation 
+The National Bureau of Asian Research's July Asia Policy issue examines how Indo-Pacific middle powers are deploying geoeconomic strategies to preserve autonomy amid intensifying US-China rivalry. Featured analysis covers ASEAN hedging behavior, South Korea's supply chain repositioning, and Taiwan's industrial security reforms. 
+
+-------------------------
+en_techpolicy_press
+2026-07-15 12:00:00
+Unpacking the Great American Artificial Intelligence Act of 2026 
+Representatives Obernolte and Trahan released a 269-page bipartisan discussion draft of the Great American Artificial Intelligence Act, the most comprehensive US federal AI legislation proposal to date. The bill would establish mandatory incident reporting, frontier model registration, and a new AI Safety Board within NIST. 
+
+-------------------------
+en_energypolicy_columbia
+2026-07-15 12:00:00
+China's Energy Powerhouse Ambitions 
+CGEP analysis examines China's strategy to dominate critical energy technology supply chains including solar panels, EV batteries, wind turbines, and now hydrogen electrolyzers, arguing that China's clean energy manufacturing advantages are structurally durable and not easily replicable by Western industrial policy alone. 
+
+-------------------------
+en_cbreim
+2026-07-15 12:00:00
+Macro House View Q3 2026: Markets Rotate from US Tech to Global Real Assets 
+CBRE Investment Management's Q3 macro view finds that investors are rotating away from US large-cap technology toward global real assets, infrastructure, and non-US equities as AI-driven capex spending strains near-term earnings multiples. The firm expects infrastructure—particularly power and data centers—to outperform traditional real estate through 2027. 
+
+-------------------------
+en_nei_nuclear
+2026-07-15 12:00:00
+Taking the Investment Pulse: Nuclear M&A Hits $7B in H1 2026 
+Nuclear merger and acquisition deals reached $7 billion in the first six months of 2026, with Meta signing three separate nuclear power deals with Vistra, TerraPower, and Oklo, and Walmart announcing a long-term power agreement involving the Dresden nuclear plant. NEI calls the investment surge a structural shift in how data-intensive industries approach energy procurement. 
+
+-------------------------
+en_bondbuyer
+2026-07-15 12:00:00
+E-Trading Becomes More Attractive to the Muni Market 
+The municipal bond market continued its steady acceptance of electronic trading in Q2 2026, with 20.7% of secondary market volume executed through four trading venues, up nearly 3 percentage points from a year earlier. Platform operators report growing interest from smaller broker-dealers and separately managed account managers seeking price transparency. 
+
+-------------------------
+en_appliedclinicaltrials
+2026-07-15 12:00:00
+DIA 2026: FDA's New Stance on Quality by Design in Clinical Trials 
+Applied Clinical Trials covers the DIA 2026 annual meeting where FDA officials outlined a new quality-by-design framework for adaptive trial designs, emphasizing pre-specified statistical algorithms over post-hoc flexibility. The approach is intended to balance regulatory flexibility with trial integrity as adaptive trials multiply. 
+
+-------------------------
+en_technewsworld
+2026-07-15 12:00:00
+AI Dominates Cybersecurity Predictions for 2026: Social Engineering Tops Threat List 
+TechNewsWorld's survey of 3,000 IT and cybersecurity professionals finds AI-driven social engineering identified as the top cyber threat of 2026, with 63% of respondents flagging it as a major challenge and experts predicting the first major AI-driven attack causing significant financial damage this year. 
+
+-------------------------
+en_esecurityplanet
+2026-07-15 12:00:00
+Black Hat 2026: CrowdStrike Threat Hunting Report Finds AI and Identity Attacks Reshaping Cyber Risk 
+CrowdStrike's 2026 Global Threat Hunting Report, unveiled at Black Hat USA, identifies AI-enhanced identity attacks, software supply chain compromises, and cloud-native malware as the defining threat categories of the year. The report found a 70% increase in cloud environment intrusions compared to 2025. 
+
+-------------------------
+en_lifesciencedaily_news
+2026-07-10 12:00:00
+Biopharma VC Funding in H1 2026: Record First-Half Total Since 2022 
+At least 68 biotech companies raised more than $9.1 billion in H1 2026, the highest first-half total since 2022, driven by investor enthusiasm for oncology, GLP-1 adjacencies, and AI-assisted drug discovery platforms. Seed-stage startups remained largely frozen out of capital markets as investors concentrated on de-risked late-stage programs. 
+
+-------------------------
+en_fuelcellsworks
+2026-07-06 12:00:00
+H2BE and INEOS Agree Preliminary Terms for Low-Carbon Hydrogen at Europe's First Zero-Carbon Steam Cracker 
+H2BE and INEOS agreed preliminary offtake terms for low-carbon hydrogen to supply Europe's first zero-carbon steam cracker, Project ONE in Belgium. The deal represents a significant validation of industrial hydrogen economics as European chemical producers seek to decarbonize high-temperature process heat. 
+
+-------------------------
+en_cellgenetherapyreview
+2026-07-01 12:00:00
+Cell and gene therapy takeaways from ASCO 2026 
+The American Society of Clinical Oncology 2026 annual meeting featured multiple cell and gene therapy data readouts, with CAR-T and tumor-infiltrating lymphocyte therapies showing durable responses in solid tumors. Analysts flagged manufacturing scalability as the key bottleneck slowing commercial adoption. 
+
+-------------------------
+en_pemedianetwork_carbon
+2026-07-01 12:00:00
+Letter on carbon: Capturing Europe's elusive CCS potential 
+Despite Northern Lights commencing operations in 2025, Europe is struggling to move additional CCS projects to final investment decision as high capital costs, regulatory complexity, and limited CO2 transport infrastructure persist. The analysis highlights the UK as the most advanced European market, with Germany's CCS legislation now enabling commercial-scale projects. 
+
+-------------------------
+en_kaufmanhall
+2026-07-01 12:00:00
+Hospital M&A Sustains Momentum in Q2 2026 
+Kaufman Hall reports that hospital and health system M&A deal-making continued through Q2 2026, including three mega-mergers where the smaller party had annual revenue of at least $1 billion. The firm attributes sustained activity to health systems seeking resilience amid Medicaid uncertainty and rising labor costs. 
+
+-------------------------
+en_cbreim
+2026-07-01 12:00:00
+Infrastructure Quarterly Q2 2026: AI and Decarbonization Drive Record Fundraising 
+CBRE IM's Q2 infrastructure quarterly reports record fundraising and deployment activity in the infrastructure asset class, driven by AI data center demand and decarbonization capital needs. The four largest US tech companies are projected to spend over $600 billion on data infrastructure in 2026, creating outsized demand for power and grid investment. 
+
+-------------------------
+en_lpgpconnect
+2026-07-01 12:00:00
+Real Assets Recalibrated: How Real Estate and Infrastructure Investors Are Positioning for 2026 
+LPGP Connect's 2026 real assets positioning survey finds 62% of global real estate investors planning to increase allocations, concentrated in logistics, data centres, and purpose-built rental housing. Private lenders have moved aggressively into real estate credit as transitional asset financing grew 18% year-on-year through Q3 2025. 
+
+-------------------------
+en_techfundingnews
+2026-07-01 12:00:00
+15 Fintech Startups That Became Unicorns in 2026 
+TFN identifies 15 fintech companies that crossed the $1 billion valuation threshold in H1 2026, led by firms combining financial infrastructure with AI in insurance underwriting, B2B payments, and digital lending. Global fintech funding reached $28.6 billion across 1,605 deals in H1 2026, a 22.7% year-over-year increase. 
+
+-------------------------
+en_raps
+2026-07-01 12:00:00
+HHS and FDA Propose Clinical Trial Reforms to Expedite Drug Development 
+RAPS reports that HHS and FDA jointly proposed clinical trial reforms including single-pivotal-trial approval pathways, real-time trial monitoring, and new approach methodology frameworks reducing reliance on animal testing data. The proposals are open for public comment and expected to be finalized in Q4 2026. 
+
+-------------------------
+en_drugchannels
+2026-06-25 12:00:00
+Drug Channels News Roundup, June 2026: PBM Shakeout Accelerates, 340B Enters a New Era 
+The June roundup covers accelerating PBM market consolidation as CVS Caremark, OptumRx, and Express Scripts face competitive pressure from new transparent PBM entrants, a landmark 340B program restructuring rule, and Mark Cuban's Cost Plus Drugs crossing 1,000 generic SKUs. The analysis projects PBM market share shifts will accelerate through 2027. 
+
+-------------------------
+en_lifesciencedaily_news
+2026-06-20 12:00:00
+Biotech IPO 2026: From Drought to Record-Breaking Deals 
+After two years of muted biotech IPO activity, 2026 saw a sharp rebound as 19 companies went public in H1 with a median raise of $200 million, led by oncology and obesity-adjacent programs. The analysis credits Fed rate stability and strong Phase 3 data catalysts with restoring institutional risk appetite for biotech equity. 
+
+-------------------------
+en_synbiobeta
+2026-06-15 12:00:00
+Biofoundries Accelerating Innovations in Biomanufacturing: Global Alliance Pushes Open Access 
+The Global Biofoundry Alliance's push for open-access biomanufacturing platforms is enabling startups to access automated strain engineering and fermentation infrastructure that would have been cost-prohibitive independently, accelerating commercialization timelines for industrial biotech. California-based Ruby Bio reported fermentation titers exceeding 100 grams per liter for its natural food emulsifier platform. 
+
+-------------------------
+en_drugchannels
+2026-06-10 12:00:00
+Drug Channels News Roundup, Mid-June 2026: Biosimilar Development Barriers, Hospital Specialty Pharmacy Growth 
+The mid-June roundup examines FDA's new draft guidance streamlining the biosimilar approval pathway, continued growth of hospital-owned specialty pharmacies capturing 340B benefits, and evidence that copay accumulator programs are suppressing biosimilar uptake. Drug Channels estimates net biosimilar savings have now exceeded $60 billion since 2015. 
+
+-------------------------
+en_energypolicy_columbia
+2026-06-09 12:00:00
+Center on Global Energy Policy Announces 2026 Energy Journalism Fellows 
+Columbia SIPA's CGEP selected its annual cohort of Energy Journalism Fellows, bringing together reporters from major US and international publications for a week of intensive energy policy education covering fossil fuels, clean energy, grid reliability, and geopolitical energy security themes. 
+
+-------------------------
+en_insuranceaum
+2026-06-09 12:00:00
+5th Annual Insurance Investment Executives Meeting: Howard Marks on Navigating Private Credit 
+InsuranceAUM.com's 5th annual conference at the University of Chicago featured a keynote by Oaktree's Howard Marks cautioning insurers on aggressive private credit deployment as deal quality deteriorates in a competitive lending market. Marks urged allocators to prioritize credit quality over yield in the current environment. 
+
+-------------------------
+en_cellgenetherapyreview
+2026-06-01 12:00:00
+uniQure to seek UK nod for Huntington's gene therapy following FDA setback 
+uniQure announced it will submit a marketing authorization application for AMT-130 in the UK in Q3 2026 after its FDA filing faced a clinical hold. The company is betting on a more flexible EU and UK regulatory pathway as it seeks its first approval for the Huntington's disease gene therapy. 
+
+-------------------------
+en_nbr
+2026-06-01 12:00:00
+Extended Deterrence in the Indo-Pacific: South Korea, Japan, Australia Perspectives 
+An NBR Special Report publishes perspectives from leading experts in South Korea, Japan, and Australia on extended deterrence challenges as North Korea's nuclear arsenal expands and China modernizes its strategic forces. The report finds diverging threat perceptions complicating allied deterrence coordination. 
+
+-------------------------
+en_appliedclinicaltrials
+2026-06-01 12:00:00
+Four FDA Actions Reshaping Drug Development in 2026 
+The FDA's 2026 reform agenda includes moving to single-pivotal-trial drug approval for certain indications, launching an Expedited IND pilot program, finalizing decentralized clinical trial guidance, and issuing new diversity action plan requirements for trial sponsors. The changes represent the most significant regulatory modernization since PDUFA VI. 
+
+-------------------------
+en_kaufmanhall
+2026-05-29 12:00:00
+Gist Weekly May 29, 2026: ACA Marketplace Stress and Healthcare Bankruptcies 
+Kaufman Hall's weekly briefing covers 80% of ACA marketplace enrollees reporting higher healthcare costs in 2026, a 21% decline in healthcare bankruptcy filings year-over-year to 45 in 2025, and federal officials tracking seven new infectious disease outbreaks with nearly 1,000 confirmed cases. 
+
+-------------------------
+en_lpgpconnect
+2026-05-21 12:00:00
+How Football Became Private Equity's Favorite Alternative Asset Class 
+LPGP Connect examines the surge in private equity investment into professional football clubs and sports media rights, with PE firms deploying capital in the Premier League, Serie A, and MLS at record valuations. The analysis argues sports assets offer inflation protection, global brand exposure, and media optionality unavailable in traditional real estate or infrastructure. 
+
+-------------------------
+en_nbr
+2026-05-15 12:00:00
+The New Geopolitics of LNG: Asia's Energy Security in a Divided World 
+NBR's May 2026 report examines how the Iran conflict's disruption of Hormuz transit and global LNG markets is forcing Asian importers to accelerate long-term supply diversification toward Australia, Qatar, and the US Gulf Coast. Japan and South Korea are leading a regional push for new 20-year offtake agreements. 
+
+-------------------------
+en_nei_nuclear
+2026-05-13 12:00:00
+Nuclear Energy Policy Forum 2026: Industry Leaders on Reactor Fleet Extension and SMRs 
+NEI's third annual Nuclear Energy Policy Forum brought together industry, finance, and government officials to discuss 80-year reactor license extensions, the SMR commercialization pipeline, and federal loan guarantees for new nuclear builds. The event highlighted that 95% of the current US nuclear fleet now intends to operate beyond 60 years. 
+
+-------------------------
+en_synbiobeta
+2026-05-10 12:00:00
+SynBioBeta 2026: Combinatorial Synthetic Biology and AI Agent Biomodelling Take Center Stage 
+SynBioBeta's annual conference in San Jose highlighted combinatorial synthetic biology using AI to search massive protein design space for novel enzymes and metabolic pathways, alongside the emerging field of AI agent biomodelling where autonomous agents design, execute, and iterate wet-lab experiments without human intervention. Attendees cited biomanufacturing cost parity with petrochemicals as the sector's defining near-term milestone. 
+
+-------------------------
+en_uscc
+2026-04-30 12:00:00
+USCC Hearing: Taking a Bigger Byte: China's Expanding Strategy for Data Dominance 
+The commission held a hearing examining China's systematic strategy to dominate global data infrastructure through TikTok, Huawei networks, and AI-enabled data harvesting from connected devices. Witnesses testified that US data protection legislation has failed to address China's state-directed data acquisition capabilities. 
+
+-------------------------
+en_freightamigo
+2026-04-13 12:00:00
+Sea Freight Rates Surge April 2026: SCFI Climbs 35% Year Over Year 
+The Shanghai Containerized Freight Index reached 1,890.77 points on April 13, 2026—up 35.57% year-over-year—as Middle East conflict drove continued Red Sea avoidance and US importers front-loaded inventory ahead of tariff escalation risk. FreightAmigo projects rates will moderate in H2 as demand patterns normalize and new vessel capacity enters the market. 
+
+-------------------------
+en_cellgenetherapyreview
+2026-04-01 12:00:00
+FDA CAR-T decision pending, Gilead buys Arcellx for $7.8B 
+Gilead Sciences acquired Arcellx, developer of the investigational BCMA-directed CAR-T therapy anito-cel, for $7.8 billion as its PDUFA date of December 23, 2026 approaches. The deal underscores big pharma's continued appetite for late-stage cell therapy assets amid strong commercial performance from approved CAR-T products. 
+
+-------------------------
+en_cbreim
+2026-04-01 12:00:00
+Infrastructure Quarterly Q1 2026: Resilience as a Defensive Asset 
+CBRE IM's Q1 infrastructure outlook highlights the defensive characteristics of infrastructure in a volatile macro environment driven by tariff uncertainty and Middle East energy disruptions. The firm argues that listed infrastructure offers an underappreciated inflation hedge given its exposure to regulated utilities and contracted energy assets. 
+
+-------------------------
+en_nei_nuclear
+2026-04-01 12:00:00
+State of the Nuclear Industry 2026: Record Generation and New Build Pipeline 
+NEI's annual state-of-the-industry report finds nuclear generation setting a new record in 2025 and continuing to rise through 2026, with approximately 15 new reactors expected to come online globally this year adding close to 12 GW of capacity. The Palisades restart in Michigan and China's Linglong One SMR are highlighted as milestone events. 
+
+-------------------------
+en_spacewar
+2026-03-29 12:00:00
+Airspan extends 5G in motion to defense aerial networks 
+Airspan Networks expanded its In-Motion 5G platform into defense-grade mobile ad hoc networks, high-altitude pseudo-satellite systems, and uncrewed aerial platforms. The technology enables persistent connectivity for airborne surveillance assets without fixed ground infrastructure. 
+
+-------------------------
+en_kaufmanhall
+2026-03-20 12:00:00
+Gist Weekly March 20 2026: Key Healthcare News for Industry Leaders 
+The March Gist Weekly highlights patient data privacy concerns as health data is increasingly bought and sold across payer-provider transactions, a hospital merger wave driven by Q1 deal activity at its highest since 2020, and new CMS guidance on value-based care model participation thresholds. 
+
+-------------------------
+en_raps
+2026-03-15 12:00:00
+Journal of Regulatory Affairs March-April 2026: EU AI Act and Drug-Device Combination Products 
+The March-April issue covers the EU Artificial Intelligence Act's implications for medical device regulatory submissions, engineering safety requirements for drug-device combination products, and regulatory considerations for pharmaceutical excipient selection under the new USP 2040 chapter framework. 
+
+-------------------------
+en_uscc
+2026-03-04 12:00:00
+USCC China Bulletin March 4, 2026: Drone Operations Against Taiwan, Economic Concerns 
+The March bulletin covers China's escalation of drone operations near Taiwan, Beijing's expansion of crypto bans affecting financial innovation, and mounting economic pressures on China's property sector. The commission notes that cross-strait economic decoupling is proceeding faster on security-sensitive goods categories. 
+
+-------------------------
+en_insuranceaum
+2026-03-01 12:00:00
+Insurance Outlook 2026: Innovation at the Helm 
+InsuranceAUM.com's annual outlook finds insurers planning to increase allocations to alternative assets, particularly infrastructure and private credit, as the rate cycle moderates and traditional fixed income yields compress. The launch of the CIIM designation is highlighted as a milestone in professionalizing insurance investment management. 
+
+-------------------------
+en_pemedianetwork_carbon
+2026-01-15 12:00:00
+Outlook 2026: Carbon capture in the US – Milestones and the road ahead 
+A strong pipeline of under-construction US CCS projects—including Air Products' Louisiana Clean Energy Complex and the Nucor-ExxonMobil steel CCS—are slated to begin operations between 2026 and 2030. The outlook notes political uncertainty around IRA tax credits as the primary near-term risk to deployment timelines. 
+
+-------------------------
+en_ttnews
+2026-01-15 12:00:00
+Highway Bill Leads 2026 Congressional Transportation Agenda 
+Congressional Republican leaders plan to advance a multi-year highway and infrastructure reauthorization bill in 2026 as a centerpiece of their pre-midterm legislative agenda, building on the 2021 Bipartisan Infrastructure Law. The bill is expected to include new truck safety mandates, freight rail investment provisions, and autonomous vehicle permitting reform. 
+
+-------------------------

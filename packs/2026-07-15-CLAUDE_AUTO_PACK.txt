@@ -1,0 +1,650 @@
+en_enkiai
+2026-07-14 14:00:00
+Duke Energy Nuclear 2026, $103B Plan, Peninsula Power Deal 
+Duke Energy announced a $103 billion, five-year capital expenditure plan targeting grid upgrades and new generation capacity to support the digital economy. The plan includes a landmark Peninsula Power deal and explicitly targets infrastructure for AI data centers and nuclear expansion. 
+
+-------------------------
+
+en_advisorperspectives
+2026-07-14 14:00:00
+Consumer Price Index: Inflation at 3.5% in June - dshort - Advisor Perspectives 
+June headline inflation eased from 4.25% in May to 3.53%, while core price pressures cooled to approximately 2.59%, though core PCE at 3.47% remains well above the Fed's 2% target. The data reinforces the Fed's current hold stance at 3.50%–3.75%. 
+
+-------------------------
+
+en_enkiai
+2026-07-14 12:00:00
+Southern Company Nuclear 2026, $26.5B DOE Loan Guarantee 
+The U.S. Department of Energy awarded Southern Company a landmark $26.5 billion loan guarantee to support extensive transmission system improvements and grid enhancements across Georgia and Alabama. The deal marks one of the largest energy infrastructure financing commitments in U.S. history. 
+
+-------------------------
+
+en_advisorperspectives
+2026-07-14 12:00:00
+Tariff Pass-Through Is Not Over - Raymond James - Advisor Perspectives 
+Among all importing firms, 47% of service firms and 44% of manufacturers plan to raise prices in the coming year as tariff pass-through effects continue rippling through the economy. The findings suggest inflation may remain elevated longer than markets anticipate. 
+
+-------------------------
+
+en_distilinfo
+2026-07-14 12:00:00
+Biotech Venture Capital Funding Surges to Multi-Year High 
+At least 68 biotech companies raised more than $9.1 billion in venture capital between January and June 2026, the highest first-half sum since early 2022, with approximately 76% of total funds concentrated in megarounds of $100 million or more. 
+
+-------------------------
+
+en_thequantuminsider
+2026-07-14 12:00:00
+Logical Qubit Technology Launches Quantum Cloud Platform for Superconducting Quantum Computing 
+Logical Qubit Technology Co. hosted its Quantum Day 2026 event, officially unveiling its superconducting quantum computing cloud platform delivering high-performance services to universities, research institutions, and sectors including biomedicine, chemistry, materials, and AI. 
+
+-------------------------
+
+en_marineinsight
+2026-07-14 12:00:00
+NATO Foreign Ministers Meet Gulf Counterparts Amid Strait Of Hormuz Shipping Disruption 
+NATO foreign ministers met Gulf Arab counterparts to discuss the ongoing deadlock over reopening the Strait of Hormuz; France and Britain presented a proposal for a multinational maritime security mission that Iran has so far rejected, leaving tanker transit severely disrupted. 
+
+-------------------------
+
+en_healthcareittoday
+2026-07-14 12:00:00
+Interoperability is an International Team Sport + Other Lessons and Innovations from eHealth26 
+The eHealth26 conference in Halifax, Nova Scotia featured a grounded, practical focus on getting things done, with sessions on FHIR-based interoperability, cross-border health data exchange, and a family health record framework that bridges personal and population health. 
+
+-------------------------
+
+en_newsfilecorp
+2026-07-14 12:00:00
+Rise Gold Provides Details on Upcoming Tungsten and Gold Drilling Program At Idaho-Maryland Mine 
+Rise Gold Corp. announced details of an upcoming tungsten and gold exploration drilling program at the Idaho-Maryland Gold Project, targeting tungsten mineralization that has become strategically important for defense applications alongside gold production. 
+
+-------------------------
+
+en_newsfilecorp
+2026-07-14 10:00:00
+Envoy Medical Reports Positive 12-Month Data Showing Continued Improvement in Speech Perception in Study of First-of-Its-Kind Fully Implanted Cochlear Implant 
+Envoy Medical reported positive 12-month data from its pivotal clinical trial showing continued improvement in speech perception for its fully implanted cochlear implant, the only FDA-cleared device of its kind, marking a major milestone toward commercialization. 
+
+-------------------------
+
+en_advisorperspectives
+2026-07-13 12:00:00
+Wall Street to Warsh: Skip the Guidance, But Tell Us What You Think About the Economy 
+New Federal Reserve Chairman Kevin Warsh declined to offer a dot plot in his first FOMC meeting, announcing task forces to rethink communications instead. Wall Street analysts are calling for more transparency on his economic outlook while the Fed holds rates at 3.50%–3.75%. 
+
+-------------------------
+
+en_thequantuminsider
+2026-07-13 12:00:00
+Q-PLANET Begins Development of European Pilot Line for Neutral Atom Quantum Chips 
+Q-PLANET, a €50 million European Quantum Chip Stability Pilot Line coordinated by Pasqal, has begun work to advance industrial-grade components for neutral atom quantum technologies, bringing together 28 organizations across 11 EU Member States to develop scalable manufacturing processes. 
+
+-------------------------
+
+en_marineinsight
+2026-07-13 12:00:00
+6,000 Seafarers Remain Trapped In Strait Of Hormuz After IMO Pauses Evacuation Plan 
+The IMO paused its evacuation plan for 6,000 seafarers trapped in the Strait of Hormuz amid ongoing military tensions; four oil and LNG tankers turned back after fresh attacks on commercial vessels raised serious safety concerns for Persian Gulf shipping. 
+
+-------------------------
+
+en_aiweekly
+2026-07-13 12:00:00
+AI News for July 13, 2026 — Daily Edition | AI Weekly 
+The ECB requires every significant European bank to prove it can withstand an AI-powered cyberattack by October 31, while the UK placed AWS, Google Cloud, Microsoft, and Oracle under financial-system-level supervision; more than 200 economists including 15 Nobel laureates called for urgent AI job displacement policy action. 
+
+-------------------------
+
+en_healthcareittoday
+2026-07-13 12:00:00
+The Trust Gap Between AI Users and Non-Users in Healthcare 
+Overall trust in AI for healthcare has dropped to 44%, down from 52% in 2024; however, among the 14% of Americans who actively use AI for health and wellness, trust sits at 88%, revealing a deep and widening chasm between adopters and non-adopters. 
+
+-------------------------
+
+en_biobucks
+2026-07-13 12:00:00
+Biotech VC Funding Tracker 2026: Every Round, Updated Daily ($17.9B raised) 
+BioBucks' 2026 biotech VC tracker shows $17.9B raised so far, led by Isomorphic Labs at $2.1B, Earendil Labs at $787M, Parabilis Medicines at $305M, and Beeline Medicines at $300M; the funding tape spans obesity, autoimmune, oncology, CNS, genetic medicines, AI-enabled platforms, and cell therapy. 
+
+-------------------------
+
+en_marineinsight
+2026-07-13 10:00:00
+Ukraine Says Unmanned Systems Forces Hit 90 Russian Vessels In Sea Of Azov In One Week 
+Ukraine's Unmanned Systems Forces struck 90 Russian vessels in the Sea of Azov during a week-long drone campaign from July 6 to July 12, hitting one vessel every 112 minutes and targeting tankers, tugboats, ferries, and dry cargo ships. 
+
+-------------------------
+
+en_aiweekly
+2026-07-13 10:00:00
+Apple ships iOS 27, macOS 27 public betas with revamped Siri 
+Apple opened public betas for iOS 27, iPadOS 27, macOS 27 Golden Gate, and watchOS 27 on July 13, 2026, featuring a revamped Siri capable of handling follow-ups, discussing on-screen content, and executing multi-step in-app actions. 
+
+-------------------------
+
+en_healthcareitnews
+2026-07-12 12:00:00
+Epic unveils AI agents, showcases new foundational models 
+Epic announced new AI agents and foundational models at its UGM conference, including Art for Clinicians, Emmie (patient chatbot), and Penny (revenue management assistant), developed in collaboration with Microsoft and embedded directly in the EHR workflow. 
+
+-------------------------
+
+en_healthcareittoday
+2026-07-12 12:00:00
+Bonus Features – July 12, 2026 – Healthcare workers spend 161 hours per year on PDF tasks 
+Healthcare workers lose 161 hours per year on PDF tasks at a cost of $5,635 per worker; additionally, 73% of hospitals are ignoring Global Privacy Control opt-outs and 69% were using marketing or advertising cookies, raising compliance and patient data concerns. 
+
+-------------------------
+
+en_biobucks
+2026-07-12 12:00:00
+Biotech M&A Tracker 2026 — Updated Daily | BioBucks 
+The 2026 biotech M&A market is tracking toward a record-setting year near $200 billion in total deal value if current trends continue, driven by large pharma seeking pipeline assets in ADCs, RNA therapies, GLP-1 obesity drugs, and AI-enabled drug discovery platforms. 
+
+-------------------------
+
+en_techinsights
+2026-07-12 12:00:00
+The Semiconductor Industry's Trillion-Dollar Milestone: Four Years Ahead of Schedule 
+The semiconductor industry is on track to break through the $1 trillion revenue threshold in 2026, roughly four years earlier than most forecasts predicted, following 23% growth in 2025 and projecting 26% growth in 2026 fueled by AI chip demand and HBM4 volume production. 
+
+-------------------------
+
+en_enkiai
+2026-07-11 12:00:00
+Critical Minerals 2026, 50% China Curbs & Northern Minerals 
+Despite a late 2025 trade truce, China's export controls on heavy rare earths including yttrium, dysprosium, and terbium kept exports approximately 50% below pre-control levels as of May 2026. The persistent restrictions are significantly impacting electronics, defense, and clean energy supply chains globally. 
+
+-------------------------
+
+en_quantumzeitgeist
+2026-07-11 12:00:00
+24,000 Cold Atoms Model 'Mini Universe' Without A Ticking Clock 
+A system constructed from 24,000 ultracold rubidium atoms at the University of Birmingham is challenging fundamental assumptions about the nature of time, with the quantum simulation operating without a ticking clock in a way that mirrors early cosmological conditions. 
+
+-------------------------
+
+en_hipther
+2026-07-10 12:00:00
+Fintech Pulse: Your Daily Industry Brief – July 10, 2026 | iFAST, Treasury, EDX Markets, SBI Holdings and Revolut 
+The fintech market is entering its institution-building era, moving beyond apps and interfaces toward regulated infrastructure, cross-border financial ecosystems, and institutional market plumbing. iFAST, Treasury Prime, EDX Markets, SBI Holdings, and Revolut feature in the day's key developments. 
+
+-------------------------
+
+en_thequantuminsider
+2026-07-10 12:00:00
+Google Study Shows Quantum Computer Can Learn From Its Own Errors While It Computes 
+Google researchers demonstrated an AI system that continuously learns from quantum error-correction data to keep a quantum computer calibrated while running, significantly reducing interruptions and improving long-run computation reliability. 
+
+-------------------------
+
+en_quantumcomputingreport
+2026-07-10 12:00:00
+Google and Fraunhofer Launch Global Calls for Early Fault-Tolerant Algorithms and Enterprise Use Cases 
+Google Research and Fraunhofer INQUBATOR launched global calls for proposals in early fault-tolerant quantum computing, with Google's program offering grants up to $100,000 for novel algorithms and applications that demonstrate practical quantum advantage. 
+
+-------------------------
+
+en_beckershospitalreview
+2026-07-10 12:00:00
+23 health systems dropping Medicare Advantage plans | 2026 
+Hospitals and health systems continue to sever ties with Medicare Advantage plans in 2026, citing persistent frustrations with prior authorization denials and slow reimbursement; MA now covers more than half the nation's older adults, making these contract terminations increasingly consequential for patient access. 
+
+-------------------------
+
+en_healthcareitnews
+2026-07-10 12:00:00
+New EHR and patient record integrations with Claude AI 
+Elation Health integrated Claude AI into its EHR Clinical Insights engine, enabling physicians to process complete patient record summaries with 61% faster answers; use of the tool has doubled since the core engine moved to Claude in November 2025. 
+
+-------------------------
+
+en_thedefensewatch
+2026-07-10 12:00:00
+U.S. Department of Defense Releases 2026 National Defense Strategy Under Trump Administration 
+The Trump administration released its 2026 National Defense Strategy, reshaping America's military posture with a focus on great power competition, nuclear modernization, and integration of autonomous systems including unmanned platforms across all domains. 
+
+-------------------------
+
+en_healthtechmagazine
+2026-07-10 12:00:00
+Health Systems Must Find the Right Path To Meet Demand for Care 
+Healthcare organizations face immense financial and care quality pressure as agentic AI automates rote work; large-scale AI adoption is forcing health systems to re-evaluate their technology foundations including infrastructure, data governance, and cybersecurity. 
+
+-------------------------
+
+en_evaluate
+2026-07-10 12:00:00
+2026 Key Drug Launches | Evaluate Report 
+Evaluate's 2026 Key Drug Launches report identifies the most commercially significant product introductions, with obesity and oncology drugs dominating; Eli Lilly's tirzepatide brands Mounjaro and Zepbound are forecast to exceed $70 billion in combined value by 2032. 
+
+-------------------------
+
+en_ifr
+2026-07-10 12:00:00
+Top 5 Global Robotics Trends 2026 - International Federation of Robotics 
+AI-powered autonomous robots are becoming more common in factories and warehouses, with humanoid robotics expanding rapidly; the global market value of industrial robot installations has reached an all-time high of US$16.7 billion amid surging AI-driven automation demand. 
+
+-------------------------
+
+en_qualitymag
+2026-07-10 12:00:00
+ISO14001: 2026 is Published 
+ISO 14001:2026 has been officially published, updating the environmental management systems standard; manufacturers must now align their quality management programs with the revised requirements alongside ISO 9001:2026, AS9100, and IATF 16949 in a converging compliance landscape. 
+
+-------------------------
+
+en_todaysmedicaldevelopments
+2026-07-10 12:00:00
+Sanmina to manufacture Microbot Medical's LIBERTY Endovascular Robotic System 
+Microbot Medical entered into a manufacturing agreement with Sanmina Corp. for the LIBERTY Endovascular Robotic System, the only FDA-cleared single-use, remotely operated robotic system for peripheral endovascular procedures, enabling scalable production for commercialization. 
+
+-------------------------
+
+en_insideunmannedsystems
+2026-07-09 12:00:00
+19 Companies Out of 49 Contenders Qualify For Drone Dominance Gauntlet 2 Trial 
+Out of 49 companies offering 79 drone designs, 19 qualified for the final Gauntlet 2 trial at Fort Carson in August; the program plans to select 3 close-quarters and 5 long-range UAS designs for production contracts covering 60,000 drones costing no more than $4,500–$5,500 each. 
+
+-------------------------
+
+en_quantumcomputingreport
+2026-07-09 12:00:00
+QuiX Quantum Delivers 'Carina' Core Hardware to DLR QCI for Universal Photonic Computing 
+QuiX Quantum announced the commercial launch and delivery of Carina, a universal photonic quantum computing architecture for data center deployment, developed for the German Aerospace Center's Quantum Computing Initiative under the Universal Photonic Quantum Computer project. 
+
+-------------------------
+
+en_healthcareitnews
+2026-07-09 12:00:00
+Oracle Health embedding AI to improve care and increase efficiency 
+Oracle Health is embedding AI across its clinical and administrative workflows, with new tools targeting ambient documentation, predictive analytics, and automated prior authorizations to reduce clinician burden and improve patient throughput. 
+
+-------------------------
+
+en_aiweekly
+2026-07-09 12:00:00
+Meta prices Muse Spark 1.1 API at $1.25/$4.25 per M tokens 
+Meta announced Muse Spark 1.1, a multimodal reasoning model with a 1 million token context window priced at $1.25 per million input and $4.25 per million output tokens, targeting agentic tasks, tool use, computer use, and coding applications. 
+
+-------------------------
+
+en_thedefensewatch
+2026-07-09 12:00:00
+Navy vs. Army in 2026: America's $1 Trillion Defense Budget Reveals Who Really Wins the Pentagon's Battle for Resources 
+America's $1 trillion defense budget reveals shifting priorities as unmanned systems and long-range precision missiles gain budget share from traditional platforms; the Navy and Army compete for resources as the Pentagon restructures for multi-domain operations against China and Russia. 
+
+-------------------------
+
+en_z2data
+2026-07-09 12:00:00
+22 Critical Supply Chain Risks to Watch for in 2026 
+China controls approximately 98% of the world's gallium supply used in semiconductors and maintains outsized influence over rare earths; the Trump administration is investing in domestic and partner-country critical mineral sourcing through new bilateral frameworks. 
+
+-------------------------
+
+en_newsfilecorp
+2026-07-09 12:00:00
+LithiumBank Signs Non-Binding Letter of Intent to Acquire Fundamental Infrastructure for the Boardwalk Lithium Brine Project 
+LithiumBank Resources Corp. signed a non-binding letter of intent to acquire infrastructure for its Boardwalk Lithium Brine Project in Alberta, Canada, a key step toward producing battery-grade lithium carbonate for North American electric vehicle supply chains. 
+
+-------------------------
+
+en_quantumzeitgeist
+2026-07-09 12:00:00
+Researchers, Including John Preskill, Explore Five Keys To Verifiable Quantum Advantage 
+Researchers from Caltech, MIT, and Google Quantum AI including John Preskill detailed a mathematical framework identifying five keys to verifiable quantum advantage in computation, learning, sensing, and communication across different physical platforms. 
+
+-------------------------
+
+en_insideunmannedsystems
+2026-07-09 10:00:00
+FEMA Fast-Tracks First $250 Million in C-UAS Grants to World Cup Host States 
+FEMA is fast-tracking the first $250 million in counter-drone grants to states hosting FIFA World Cup 2026 events, with the tournament serving as a major catalyst for accelerated counter-UAS investment and deployment across host cities. 
+
+-------------------------
+
+en_hipther
+2026-07-08 12:00:00
+Fintech Pulse: Your Daily Industry Brief – July 8, 2026 | AFAC 2026, Ant Group, NVIDIA, PayPal, Goldman Sachs, ICBC & Tencent 
+The Advanced FinTech AI Competition 2026 (AFAC 2026) officially opened registration, co-hosted by more than 30 universities and organizations including Ant Group, NVIDIA, and Peking University. PayPal, Goldman Sachs, ICBC, and Tencent feature in the broader daily fintech briefing. 
+
+-------------------------
+
+en_quantumcomputingreport
+2026-07-08 12:00:00
+EeroQ Validates CMOS-Controlled Electron Shuttling on Superfluid Helium for All-to-All Qubit Routing 
+EeroQ published peer-reviewed experimental results in Physical Review Applied demonstrating selective two-dimensional transport of electrons on superfluid helium using a commercial silicon control architecture, opening a new path to scalable qubit routing. 
+
+-------------------------
+
+en_beckershospitalreview
+2026-07-08 12:00:00
+47 recent hospital, health system executive moves 
+Becker's has tracked more than 1,000 hospital leadership changes since January 1, 2026; notable moves include MemorialCare CEO succession with David Kim, MD, replacing Barry Arbuckle, PhD, and Mayo Clinic president Gianrico Farrugia, MD, planning to step down at end of 2026. 
+
+-------------------------
+
+en_thedefensewatch
+2026-07-08 12:00:00
+AeroVironment Wins $117M U.S. Army Contract For P550 Reconnaissance Drones 
+AeroVironment was awarded a $117 million U.S. Army contract to supply P550 reconnaissance drones, expanding the military's small-UAS fleet with long-endurance platforms designed for intelligence, surveillance, and reconnaissance at the tactical edge. 
+
+-------------------------
+
+en_asiasociety
+2026-07-08 12:00:00
+China's Next Move: Economic Priorities and Policy Shifts for 2026 
+Beijing's 2026 economic priorities include expanding domestic demand, fostering innovation, deepening reform and opening, and preventing risks in key sectors, with China's 15th Five-Year Plan setting the development blueprint from 2026 to 2030. 
+
+-------------------------
+
+en_z2data
+2026-07-08 12:00:00
+How the U.S.-China Trade Deal Impacts Your Critical Mineral Sourcing 
+America entered into the U.S.-Australia Critical Minerals Framework committing $1 billion to joint minerals production, and partnered with Saudi Arabia on a rare earths refinery and signed additional agreements with Cambodia, Malaysia, and Thailand to diversify away from Chinese supply. 
+
+-------------------------
+
+en_yolegroup
+2026-07-08 12:00:00
+Silicon photonics and co-packaged optics at the heart of next-generation AI-driven data infrastructure 
+The silicon photonics-based modules market is expected to grow from $4.2B in 2024 to $24.8B in 2030 at a 35% CAGR, driven by AI data center demands; 200G/channel links are expected to become mainstream in 2026/27, paving the way for 800G and 1600G transceivers. 
+
+-------------------------
+
+en_qualitymag
+2026-07-08 12:00:00
+Every Thread Counts: EyeVision Automated Inspection 
+EyeVision Software enables thread inspection to be automated directly in the production line using industrial cameras and image processing tools, capable of inspecting internal and external threads at full production speed without operator intervention or secondary inspection steps. 
+
+-------------------------
+
+en_todaysmedicaldevelopments
+2026-07-08 12:00:00
+IMTS 2026 Conference: From Automation to Autonomy: The Next Era of Manufacturing with Physical AI 
+The IMTS 2026 Conference will feature presentations on Physical AI, which fundamentally reimagines manufacturing automation through learned world models and closed-loop policy optimization enabling genuine autonomous operation without explicit programming. 
+
+-------------------------
+
+en_quantumzeitgeist
+2026-07-08 12:00:00
+Google Cuts Surface Code Error Rate To 7.72 × 10−4 With RL 
+Google Quantum AI researchers achieved a logical error rate of 7.72×10⁻⁴ using the surface code with reinforcement learning, a crucial step toward stable fault-tolerant quantum computation; the result was independently verified and published in a peer-reviewed journal. 
+
+-------------------------
+
+en_beckershospitalreview
+2026-07-07 12:00:00
+7 health systems moving to Epic 
+Seven additional health systems are transitioning to Epic EHR in 2026, continuing the platform's dominant market share expansion as health systems seek integrated AI-enabled clinical workflows and enterprise-grade interoperability. 
+
+-------------------------
+
+en_steel_eye
+2026-07-07 12:00:00
+Regulatory Priorities for 2026: What the SEC, FINRA, and CFTC Are Signaling to the Financial Industry 
+The SEC, FINRA, and CFTC have signaled that 2026 compliance priorities center on convergence of core compliance with technology risk, with cybersecurity, operational resiliency, and AI emerging technology treated as cross-cutting risk areas linking AML and OFAC sanctions obligations. 
+
+-------------------------
+
+en_evaluate
+2026-07-07 12:00:00
+ADC Dealmaking in 2026: Trends, Targets & New Payloads 
+The antibody-drug conjugate category is forecast to be worth $57 billion by 2032; Western pharma committed nearly $2 billion in licensing deals for China-originated assets in Q1 2026 alone, with Chinese assets expected to represent over two-thirds of total deal value in 2026. 
+
+-------------------------
+
+en_qualitymag
+2026-07-07 12:00:00
+Inspect Everything from Parts to Vehicles, Everywhere 
+SCANOLOGY's AccuArm portable coordinate measuring machine supports measuring ranges from 1.5m to 4.5m for automotive manufacturing, enabling inspection of components from small parts to full vehicle assemblies directly on the production floor without dedicated metrology rooms. 
+
+-------------------------
+
+en_biobucks
+2026-07-07 12:00:00
+Biotech BD&L Deal Terms 2026: Upfronts, Milestones + Royalties (Updated Weekly) 
+Biotech BD&L deals in 2026 show upfront payments averaging $200–400M for major licensing agreements with milestones reaching into the billions; China-originated assets have become the dominant licensing source, representing over two-thirds of total deal value. 
+
+-------------------------
+
+en_todaysmedicaldevelopments
+2026-07-07 12:00:00
+Allyntra platform offers engineered solutions for medtech, precision manufacturing 
+KKR launched Allyntra, a newly formed precision-engineered solutions platform serving medical technology and other precision end markets, consolidating specialized manufacturing capabilities for medical devices, implantable components, and high-complexity assemblies. 
+
+-------------------------
+
+en_delphos
+2026-07-07 12:00:00
+Emerging Markets Investment Outlook 2026: Where DFIs and Impact Investors Should Be Looking 
+The macro backdrop for emerging markets in 2026 features falling global rates and strong growth stories; DFIs and impact investors are focusing on energy transition, housing, infrastructure, fintech, and SME financing, with capital flows into emerging markets expected to stay positive. 
+
+-------------------------
+
+en_hipther
+2026-07-06 12:00:00
+Fintech Pulse: Your Daily Industry Brief – July 6, 2026: CaixaBank, Visa, Emirates NBD, Techstars, MENA Fintech Association, Fireblocks 
+CaixaBank and Visa pushed agentic commerce from theory into a real-world card transaction, while Emirates NBD and Techstars announced a partnership to develop enterprise-grade AI and fintech startups into bank-ready solutions across the MENAT region. 
+
+-------------------------
+
+en_distilinfo
+2026-07-06 12:00:00
+Anthropic's Biggest Healthcare Bets: 6 Key Moves 
+Anthropic made a deliberate multi-front push into healthcare in 2026, transitioning from general-purpose AI to a sector-specific force by launching HIPAA-compliant tools, funding global public health programs, and expanding cybersecurity initiatives for healthcare providers. 
+
+-------------------------
+
+en_insideunmannedsystems
+2026-07-06 12:00:00
+Ondas to Acquire DZYNE Technologies for $875.8 Million, Forming Ondas Sentinel Autonomous Defense Division 
+Ondas Inc. acquired DZYNE Technologies in a cash-and-stock transaction valued at approximately $875.8 million, forming the Ondas Sentinel Autonomous Defense Division; DZYNE is projected to generate $191 million in revenue in 2026 and more than $300 million in 2027. 
+
+-------------------------
+
+en_asiasociety
+2026-07-06 12:00:00
+2026: The Year of Rebalancing 
+Asia Society's Center for China Analysis is tracking how China's economic reforms are unfolding in 2026, assessing both policy intent and on-the-ground implementation as the country navigates trade tensions and a domestic demand-led rebalancing strategy. 
+
+-------------------------
+
+en_z2data
+2026-07-06 12:00:00
+Key Developments in Critical Minerals to Watch in 2026 
+2026 is a pivotal year for supply chain diversification away from China's critical minerals dominance; semiconductor tariffs are now applied based on Country of Diffusion rather than Country of Origin, adding new complexity for importers managing supply chain risk. 
+
+-------------------------
+
+en_distilinfo
+2026-07-06 10:00:00
+Thermo Fisher and Arcturus Target Cystic Fibrosis with ARCT-032 
+Thermo Fisher Scientific and Arcturus Therapeutics announced a landmark strategic collaboration to advance the ARCT-032 cystic fibrosis trial into Phase 2, combining Arcturus's LUNAR lipid nanoparticle delivery platform with Thermo Fisher's contract manufacturing expertise. 
+
+-------------------------
+
+en_iqvia
+2026-07-05 12:00:00
+Global R&D Trends 2026 | IQVIA 
+Biopharma R&D remained resilient in 2025, with investment increasingly concentrated in high-value science and China-linked activity; AI-enabled discovery offers a glimpse of reduced pipeline attrition and dramatically improved R&D productivity across therapeutic areas. 
+
+-------------------------
+
+en_yolegroup
+2026-07-05 12:00:00
+Co-Packaged Optics: powering the next wave of AI infrastructures 
+Yole Group's Photonics Packaging 2026 report provides an in-depth overview of the co-packaged optics market, with CPO expected to approach $5 billion by 2031 as cloud providers and AI chip manufacturers adopt the technology to reduce networking power consumption by up to 70%. 
+
+-------------------------
+
+en_delphos
+2026-07-05 12:00:00
+Infrastructure Trends Emerging Markets 2026: What Investors Require 
+Transport, digital, and climate-resilient water infrastructure are attracting the highest capital volumes in emerging markets, with private participation reaching US$100.7B in 2024—20% above the five-year average—though the funding gap is driven by risk mispricing rather than capital absence. 
+
+-------------------------
+
+en_biocom
+2026-07-05 12:00:00
+2026 Life Science Economic Impact Report - Biocom 
+California's life science industry generated $394 billion in total economic output and supported more than 1.08 million jobs in 2025, attracting $73.1 billion in private investment including $20.6 billion in venture capital; the Bay Area remained the largest cluster directly employing 137,779 workers. 
+
+-------------------------
+
+en_steel_eye
+2026-07-03 12:00:00
+Financial Services Compliance in Real-Time: Regs & Eggs 2026 
+Regulators are moving beyond periodic reporting toward real-time, data-driven supervision requiring ongoing visibility into data quality and governance decisions; compliance is no longer separate from operations but embedded in how firms run their day-to-day business. 
+
+-------------------------
+
+en_fintechanddigitalassets
+2026-07-03 12:00:00
+Prediction Markets: ESMA Confirms Application of Binary Options Product Intervention Measures to Event Contracts 
+ESMA published a public statement addressing the application of existing national product intervention measures on binary options to event contracts, as the European Commission consults on regulatory treatment of prediction contracts under the MiCA review through September 30, 2026. 
+
+-------------------------
+
+en_evaluate
+2026-07-03 12:00:00
+World Preview 2026: Big Drugs. Bigger Questions. 
+Evaluate's World Preview 2026 finds pharma M&A tracking toward a record-setting year near $200 billion in total deal value, driven by immunology, oncology, neuroscience, and advanced modalities including AI-driven drug discovery and antibody-drug conjugates. 
+
+-------------------------
+
+en_delphos
+2026-07-03 12:00:00
+Future of Capital Raising in Emerging Markets 2026: What Issuers Must Do Differently to Attract Capital 
+Private credit now exceeds US$2.2T in assets under management as a dominant force in emerging markets; issuers must adapt to institutional capital requirements by meeting enhanced ESG disclosure, bankability standards, and data transparency to attract international investors. 
+
+-------------------------
+
+en_healthtechmagazine
+2026-07-01 12:00:00
+Summer 2026 | HealthTech Magazine 
+The Summer 2026 edition of HealthTech Magazine covers ambient clinical documentation, computer vision in virtual nursing, AI wearable health monitoring, and cybersecurity as the sector transitions from experimental AI adoption to operationalized, governed AI embedded in core systems. 
+
+-------------------------
+
+en_iqvia
+2026-07-01 12:00:00
+Pharma 2026: How Digital Transformation and AI Will Redefine Drug Safety 
+Digital platforms will enable real-time adverse event monitoring, automated case processing, and integrated global reporting in 2026, allowing safety teams to anticipate risks rather than simply respond—fundamentally reshaping pharmacovigilance operations. 
+
+-------------------------
+
+en_americanaffairsjournal
+2026-07-01 12:00:00
+Summer 2026 / Volume X, Number 2 - American Affairs Journal 
+American Affairs Summer 2026 features articles on the geopolitics of AI and energy infrastructure, China's emergence as the world's dominant energy financier at nearly ten-to-one over the U.S., and the Export-Import Bank charter expiration as a great power competition policy opportunity. 
+
+-------------------------
+
+en_steel_eye
+2026-06-25 12:00:00
+Anniversary of Wall Street's $549 Million Record Keeping Fine: Off-Channel Compliance Overview and Progress 
+One year after Wall Street's $549 million record-keeping fine, financial firms are upgrading off-channel communications surveillance with AI-powered tools as regulators continue to scrutinize record retention and expand enforcement of off-channel messaging policies. 
+
+-------------------------
+
+en_fintechanddigitalassets
+2026-06-22 12:00:00
+Banking Regulators Propose Customer Identification Rules Under the GENIUS Act 
+Banking regulators proposed Customer Identification Procedures under the GENIUS Act on June 22, 2026, implementing Bank Secrecy Act and sanctions compliance standards for permitted payment stablecoin issuers, with comments due by August 21, 2026. 
+
+-------------------------
+
+en_fintechanddigitalassets
+2026-06-20 12:00:00
+President Trump Issues Executive Order on Fintech Innovation, While FRB Proposes Payment Accounts 
+President Trump issued an executive order titled 'Integrating Financial Technology Innovation Into Regulatory Frameworks' on May 19, 2026, with comment period open until July 27; the order aims to streamline regulations and integrate digital asset providers into the FRB's payment infrastructure. 
+
+-------------------------
+
+en_healthtechmagazine
+2026-06-20 12:00:00
+Q&A: OURA's Dr. Chris Curry Discusses the Expanding Role of Wearables in Health 
+Dr. Chris Curry explains how AI can now filter noise in wearable data and surface clinically actionable insights in real time, with today's wearables enabling meaningful preventive care insights and remote monitoring beyond basic fitness tracking. 
+
+-------------------------
+
+en_yolegroup
+2026-06-20 12:00:00
+Photonics Market Monitor – Optical Transceivers for Datacom 
+The optical transceivers market is projected to expand from $23.2B in 2025 to $60.5B in 2031 at a 17% CAGR, mainly driven by data communications for AI infrastructure; GaAs and InP compound semiconductors are experiencing renewed demand for datacom applications. 
+
+-------------------------
+
+en_iqvia
+2026-06-15 12:00:00
+Global Medicine Use Trends 2026 | IQVIA 
+The global medicine market is projected to grow at a 5%–8% CAGR through 2030, reaching approximately $2.6 trillion; China has been the fastest-growing market since 2020 and is expected to nearly double its usage relative to the 2020 baseline, reaching an index of 196 by 2030. 
+
+-------------------------
+
+en_ifr
+2026-06-15 12:00:00
+Record of 4 Million Robots in Factories Worldwide 
+In 2024, 542,000 robots were installed globally—more than double the number from 10 years ago—with Asia accounting for 74% of new deployments; U.S. installations rose 11% year-on-year to 38,000 units in 2025, and China has made AI-powered robots core of its national strategy. 
+
+-------------------------
+
+en_techinsights
+2026-06-11 12:00:00
+Semiconductor Analytics – June 11, 2026 | TechInsights 
+AI-driven demand is creating the biggest memory shortage in history with HBM4 16Hi entering volume production in H1 2026; silicon photonics in the form of co-packaged optics promises to reduce networking power consumption by up to 70% while boosting data transfer speeds. 
+
+-------------------------
+
+en_ifr
+2026-06-10 12:00:00
+Robot Density Surges in Europe, Asia, and Americas 
+Western European countries reached a record 267 robots per 10,000 manufacturing employees in 2024, ahead of North America at 204 units and Asia at 131 units; robot density is rising across all major industrial regions as automation investment accelerates. 
+
+-------------------------
+
+en_biocom
+2026-06-10 12:00:00
+California Pavilion at BIO 2026 
+Biocom organized California's presence at BIO 2026, showcasing the state's life science clusters from San Diego, the Bay Area, Los Angeles, and Orange County, which together directly employ more than 400,000 workers and generate hundreds of billions in annual economic output. 
+
+-------------------------
+
+en_americanaffairsjournal
+2026-05-15 12:00:00
+The Last Time We Fixed the Trade Deficit: Lessons from the Plaza Accord 
+President Trump invoked Section 122 for the first time since 1974, imposing a 10% temporary surcharge citing the current account deficit; this article draws lessons from the 1985 Plaza Accord for today's trade imbalance strategies and dollar management options. 
+
+-------------------------
+
+en_americanaffairsjournal
+2026-05-10 12:00:00
+Revitalizing the Export-Import Bank for Great Power Competition 
+With the Export-Import Bank's charter expiring December 31, 2026, Congress has an opportunity to reauthorize and reorient the bank to counter China's energy and infrastructure financing dominance in key emerging markets, where China outpaces the U.S. nearly ten to one. 
+
+-------------------------
+
+en_asiasociety
+2026-04-01 12:00:00
+What Happened at China's Two Sessions in 2026? 
+China's March 2026 Two Sessions included Premier Li Qiang's Government Work Report, President Xi Jinping's appearances, and the release of the 15th Five-Year Plan covering innovation, regional balance, green transition, and social welfare priorities for 2026–2030. 
+
+-------------------------
+
+en_biocom
+2026-01-12 12:00:00
+Biocom California at JPM 2026: Meeting Space, Receptions & More 
+Biocom California hosted its annual JPMorgan Healthcare Conference presence in January 2026, providing California life science companies with networking opportunities, investor meetings, and event programming during the premier global healthcare investment conference. 
+
+-------------------------
+
+en_techinsights
+2026-01-10 12:00:00
+5 Top Expectations for the Semiconductor Industry in 2026 | TechInsights 
+TechInsights identifies the transition to 2nm GAA transistors as the biggest architectural shift in over a decade; memory and power bottlenecks, advanced packaging, and geopolitical supply chain fragmentation are the defining challenges for the semiconductor industry in 2026. 
+
+-------------------------

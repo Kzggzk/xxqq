@@ -1,0 +1,576 @@
+en_taipei_times
+2026-06-29 12:00:00
+Yuanta upgrades Taiwan's GDP growth to 11.05% 
+Yuanta Securities raised its 2026 Taiwan GDP growth forecast to 11.05%, citing strong semiconductor and AI hardware export momentum from TSMC and its supply chain. The upgraded forecast reflects Taiwan's economic boom driven by sustained global demand for advanced chips. 
+
+-------------------------
+en_taipei_times
+2026-06-29 10:00:00
+Aggregate net profit up last year 
+Taiwan's listed companies reported higher aggregate net profit for 2025, reflecting strong performance in the semiconductor and electronics sectors amid AI-driven demand. The result positions Taiwan's corporate sector for continued record growth as 2026 chip revenue projections are raised. 
+
+-------------------------
+en_taipei_times
+2026-06-27 12:00:00
+Samsung, SK Hynix plan AI spending push: report 
+Samsung Group announced a 1,000 trillion won ($646 billion) ten-year spending plan targeting AI infrastructure, semiconductors, and advanced manufacturing. SK Hynix is separately planning major AI-related capital investments to meet exploding demand for high-bandwidth memory. 
+
+-------------------------
+en_spaceflightnow
+2026-06-26 14:00:00
+Next-gen astronaut Moon rovers aim for deployment ahead of Artemis 4 crew arrival 
+Next-generation pressurized and unpressurized Moon rovers are being developed for pre-deployment before the planned Artemis 4 crewed lunar landing, enabling astronauts to explore larger lunar surface areas. The rovers advance NASA's strategy of positioning surface assets before crew arrival. 
+
+-------------------------
+en_fintechfutures
+2026-06-26 14:00:00
+FinTech Futures: Top five news stories of the week – 26 June 2026 
+FinTech Futures' weekly roundup for June 26, 2026 highlights major fintech developments including Revolut co-founder Vlad Yatsenko's departure as CTO effective July 1 and PayTech Awards 2026 winners. Agentic AI adoption and stablecoin payment integration were key industry themes this week. 
+
+-------------------------
+en_fintechfutures
+2026-06-26 12:00:00
+June 2026: Top five banking technology stories of the month 
+The monthly banking tech roundup covers Epic's no-code AI Agent Factory at HIMSS26, community banks adopting AI-driven fraud detection, and BaaS regulatory changes affecting fintech partnerships. Automation and compliance modernization dominate banking IT investment priorities in mid-2026. 
+
+-------------------------
+en_logisticsviewpoints
+2026-06-26 12:00:00
+Supply Chain and Logistics News Weekly Round Up June 22nd-26th 2026 
+Logistics Viewpoints' weekly roundup for June 22-26 covers tariff impacts on transpacific freight, ocean rate volatility driven by Middle East disruptions, and autonomous supply chain platform announcements. Industry analysts highlight a growing disconnect between spot and contract rates as a key 2026 trend. 
+
+-------------------------
+en_oklahoma_farm_report
+2026-06-26 12:00:00
+Ranch Group Applauds Legislation to Reform Tariffs and Quotas Affecting U.S. Cattle and Sheep Producers 
+A ranch industry group praised new legislation targeting trade tariffs and quotas on beef and sheep products, arguing the measures will strengthen U.S. producer competitiveness against foreign imports. The bill follows years of advocacy by cattle ranchers frustrated with trade policies affecting domestic livestock prices. 
+
+-------------------------
+en_fintechfutures
+2026-06-26 10:00:00
+June 2026: Top five fintech M&A stories of the month 
+Key June 2026 fintech M&A includes Deluxe's $625 million acquisition of Celero Commerce and Intesa Sanpaolo's €30 billion bid for Banca Monte dei Paschi di Siena creating a €1.7 trillion asset institution. Barclays also agreed to acquire GoHenry, the UK children's financial app. 
+
+-------------------------
+en_oklahoma_farm_report
+2026-06-25 12:00:00
+Newhouse Opening Statement at Hearing on National Forest Partnerships 
+Representative Newhouse opened a congressional hearing on National Forest Partnership programs, discussing 2026 Farm Bill provisions for wildfire mitigation, fuel reduction, and cross-boundary forest management. The hearing reflects growing attention to public-private partnerships in managing the Western forest wildfire crisis. 
+
+-------------------------
+en_kff_health_news
+2026-06-25 12:00:00
+A New Medicare Option for Weight Loss Drugs: What Older Americans Should Know 
+A temporary Medicare GLP-1 Bridge program running July 1 through December 2026 offers older Americans subsidized access to weight-loss drugs like Wegovy and Zepbound. The pilot maintains medication access as broader Medicare coverage policy is debated in Congress. 
+
+-------------------------
+en_pharmexec
+2026-06-25 12:00:00
+FDA Clears Trodelvy for First-Line Metastatic Triple-Negative Breast Cancer 
+The FDA cleared sacituzumab govitecan (Trodelvy) on June 25, 2026 for first-line use in metastatic triple-negative breast cancer, expanding the Gilead drug into an earlier, larger treatment setting. The approval is expected to significantly increase Trodelvy's commercial opportunity in this high-need subtype. 
+
+-------------------------
+en_datacenter_dynamics
+2026-06-25 12:00:00
+Microsoft brings 1GW of data center capacity online in Q2 2026 
+Microsoft brought 1 gigawatt of new data center capacity online during Q2 2026, amid record capital expenditure of $34.9 billion in Q1 for cloud and AI infrastructure. The build-out reflects surging Azure AI services demand and the company's $80 billion annual capex commitment. 
+
+-------------------------
+en_private_equity_wire
+2026-06-25 12:00:00
+Thoreau Group nears $12bn acquisition of Ensemble Health Partners 
+The Thoreau Group is in advanced negotiations to acquire Ensemble Health Partners, a healthcare revenue cycle management firm, in a deal approaching $12 billion. The acquisition would mark one of the largest healthcare technology buyouts of 2026 as PE firms continue to target healthcare services. 
+
+-------------------------
+en_world_nuclear_news
+2026-06-25 12:00:00
+Holtec and EDF submit UK SMR project proposal 
+Holtec International and EDF jointly submitted a proposal for up to four SMR-300 small modular reactors at the Cottam power plant site in Nottinghamshire, entering the GBN SMR tender process. The partnership combines Holtec's reactor design with EDF's nuclear construction and operations expertise. 
+
+-------------------------
+en_the_middle_market
+2026-06-25 12:00:00
+MSCI Acquires First Street 
+MSCI acquired First Street, a climate risk analytics provider, in a strategic deal expanding MSCI's environmental risk data capabilities for institutional investors and real estate portfolio managers. The acquisition reflects growing investor demand for granular physical climate risk data in portfolio construction. 
+
+-------------------------
+en_the_loadstar
+2026-06-25 12:00:00
+News in Brief Podcast | Week 25 2026 | Surcharges and software outage 
+The Loadstar's weekly briefing for June 22-26 covers rising surcharges in container shipping and fallout from a major software outage affecting global logistics operations. Carrier rate actions and technology disruptions are testing shipper resilience across key trade lanes as the 2026 peak season accelerates. 
+
+-------------------------
+en_spaceflightnow
+2026-06-24 14:00:00
+West Coast Falcon 9 launch continues expansion of SpaceX's Starlink network 
+A Falcon 9 rocket launched from Vandenberg Space Force Base on June 24 added more satellites to SpaceX's Starlink constellation, marking SpaceX's 40th West Coast launch in 2026. The mission further densifies Starlink coverage for mid-latitude regions globally. 
+
+-------------------------
+en_private_equity_wire
+2026-06-24 12:00:00
+Bain uses AI 'vibecoding' to build software replicas in PE due diligence shift 
+Bain & Company is using AI to recreate software products during private equity due diligence, internally calling the technique 'vibecoding,' allowing faster technical assessment of acquisition targets. The approach is reshaping how financial advisors evaluate technology company acquisitions. 
+
+-------------------------
+en_rechargenews
+2026-06-24 12:00:00
+Europe losing ground on energy storage to China and US, says Barclays chief 
+Barclays' leadership warned that Europe is falling dangerously behind China and the United States in battery energy storage manufacturing capacity and deployment scale. The analysis calls for urgent EU industrial policy intervention to prevent European battery technology from becoming structurally uncompetitive. 
+
+-------------------------
+en_ess_news
+2026-06-24 12:00:00
+Paving the way for lithium-nitrogen batteries, one hurdle at a time 
+Researchers are making laboratory progress on lithium-nitrogen batteries, a potential lower-cost alternative to lithium-ion, overcoming key electrochemical challenges related to nitrogen gas reaction stability. Commercial applications remain years away but the research signals a viable long-term energy storage pathway. 
+
+-------------------------
+en_carnewschina
+2026-06-24 12:00:00
+Li Auto launches 2026 L8 EREV with 5C battery and EMB in China, starting from 52,900 USD 
+Li Auto officially launched the 2026 L8 five-seater extended-range SUV on June 23, featuring 5C ultra-fast charging and electronic mechanical braking in two configurations. The model competes in China's premium family SUV segment against BYD, AITO, and traditional luxury brands. 
+
+-------------------------
+en_ess_news
+2026-06-24 10:00:00
+Fox ESS secures 10 GWh of Australian battery supply deals 
+Fox ESS signed agreements to supply 10 GWh of battery energy storage systems over two years through Australian distributors Solar Juice and OSW, marking a major commercial breakthrough in the Australian market. The deal reflects the rapid globalization of Chinese energy storage companies into developed markets. 
+
+-------------------------
+en_spaceflightnow
+2026-06-23 14:00:00
+SpaceX launches reentry capsule demo mission called 'Starfall' 
+SpaceX launched the experimental Starfall reentry capsule demonstration mission on June 23, 2026, testing technology for precision atmospheric reentry and potential cargo return applications. The mission marks an early step in SpaceX's ambitions for versatile reusable capsule systems beyond Crew Dragon. 
+
+-------------------------
+en_rechargenews
+2026-06-23 14:00:00
+RWE buys majority in Amprion, turning regulated grids into third growth pillar 
+RWE acquired a majority stake in Amprion, Germany's largest transmission system operator, establishing regulated grid infrastructure as a third major business alongside renewables and energy trading. The deal positions RWE to benefit from Europe's massive grid upgrade investment cycle. 
+
+-------------------------
+en_oklahoma_farm_report
+2026-06-23 12:00:00
+Senator John Boozman Outlines Modernized Farm Bill Framed to Support Producers and Rural Communities 
+Senator John Boozman presented the framework of the Agricultural Act of 2026, emphasizing economic stability for producers, conservation program modernization, and long-term food supply security. The bill represents the most significant update to U.S. agricultural policy since the 2018 Farm Bill. 
+
+-------------------------
+en_private_equity_wire
+2026-06-23 12:00:00
+26North raises $6bn debut buyout fund in US record first-time close 
+Josh Harris's 26North Partners raised nearly $6 billion for its inaugural private equity fund, marking the largest debut buyout vehicle ever raised in the United States. The raise demonstrates strong LP appetite for established PE professionals launching independent firms. 
+
+-------------------------
+en_rechargenews
+2026-06-23 12:00:00
+California fights Trump offshore wind buyout scheme threatening US project pipeline 
+California state officials filed a legal challenge against the Trump administration's offer to buy out offshore wind development leases, warning the scheme would eliminate a significant portion of the U.S. offshore wind pipeline. The state is pursuing both litigation and legislative advocacy to block the buyout program. 
+
+-------------------------
+en_ess_news
+2026-06-23 12:00:00
+The Mobility House Energy surpasses 1 GW of battery storage under management 
+The Mobility House Energy reached a milestone of over 1 gigawatt of battery storage assets under management, reflecting rapid growth in European vehicle-to-grid and stationary storage services. The company has established itself as a leading aggregator of distributed battery capacity in European energy markets. 
+
+-------------------------
+en_the_middle_market
+2026-06-23 12:00:00
+Bain Capital Buys Majority Stake in FDH Aero 
+Bain Capital acquired a majority stake in FDH Aero, an aerospace parts distributor specializing in hard-to-find components for commercial and defense aircraft. The investment reflects PE sector interest in aerospace aftermarket services amid continued global commercial aviation recovery. 
+
+-------------------------
+en_healthcare_it_news
+2026-06-22 12:00:00
+Rhode Island passes ambient AI scribe opt-out law 
+Rhode Island enacted legislation requiring healthcare providers to notify patients when AI is used to record medical visits and provide them the option to opt out of AI documentation. The law is one of the first state-level regulations specifically targeting ambient AI clinical documentation tools. 
+
+-------------------------
+en_investornews
+2026-06-21 12:00:00
+Critical Minerals Report (06.21.2026): Allies, Competitors, and Critical Minerals 
+The June 21 critical minerals report examines the limits of U.S.-allied cooperation in securing supply chains, as China's near-monopoly on rare earth processing remains a structural vulnerability. The report analyzes emerging trilateral deals between the U.S., Japan, and Australia targeting lithium, cobalt, and rare earth elements. 
+
+-------------------------
+en_kff_health_news
+2026-06-20 12:00:00
+Anguished Parents. Doctors in Tears. Utah's Long Measles Outbreak Takes a Toll. 
+Utah's extended 2026 measles outbreak is straining healthcare providers and alarming public health officials, with the U.S. having already surpassed 2,000 measles cases for the second consecutive year. Medical staff describe the emotional toll of treating preventable cases in under-vaccinated communities. 
+
+-------------------------
+en_pharmexec
+2026-06-20 12:00:00
+FDA's Advisory Panel Votes in Favor of Updating Covid-19 Vaccine Shots to Target XFG Variant 
+An FDA advisory panel voted in June 2026 to recommend updating 2026-2027 COVID-19 vaccines to target the XFG variant, with four vaccines currently approved in the U.S. Moderna, Pfizer-BioNTech, and Novavax-Sanofi are expected to update formulations for fall 2026 immunization. 
+
+-------------------------
+en_datacenter_dynamics
+2026-06-20 12:00:00
+OpenAI Stargate's Milam, Texas, 'Freebird' data center to span 548,950 sq ft in first phase 
+A Texas regulatory filing revealed that OpenAI's Stargate project 'Freebird' data center in Milam County will span 548,950 square feet in its initial phase with four AI compute data halls. The facility is part of the broader $500 billion Stargate U.S. AI infrastructure initiative. 
+
+-------------------------
+en_world_nuclear_news
+2026-06-20 12:00:00
+US federal loan to jumpstart AP1000 reactor supply chain 
+The U.S. Department of Energy conditionally committed $17.5 billion in loans to finance long-lead procurement for up to 10 Westinghouse AP1000 reactors, aiming to rebuild domestic nuclear manufacturing capacity. The investment supports the shared goal of tripling U.S. nuclear capacity by 2050. 
+
+-------------------------
+en_geopolitical_monitor
+2026-06-20 12:00:00
+Iran War MOU: Harbinger of a New Mideast Order | Geopolitics Weekly 
+The June 17, 2026 U.S.-Iran memorandum of understanding signed in Islamabad is analyzed as potentially transformative for Middle Eastern geopolitics, with a 14-point framework halting hostilities and reopening the Strait of Hormuz. Analysts warn the agreement fails to adequately address Iran's nuclear enrichment activities. 
+
+-------------------------
+en_eenews_europe
+2026-06-20 12:00:00
+Global IT spending to top $6 trillion in 2026, driven by AI infrastructure and devices 
+Gartner forecasts global IT spending will surpass $6 trillion in 2026, a 9.8% increase fueled by AI infrastructure investment and rising costs of generative AI-enabled software and devices. Data center hardware and enterprise AI services are the primary growth drivers in the forecast. 
+
+-------------------------
+en_offshore_technology
+2026-06-20 12:00:00
+BP announces two-segment overhaul to simplify operations 
+BP announced plans to reorganize into two primary business segments—Upstream and Downstream—effective July 1, 2026, as part of a strategic simplification improving accountability and reducing management complexity. The restructuring accompanies BP's refocus on oil and gas amid slower-than-expected energy transition progress. 
+
+-------------------------
+en_ev_volumes
+2026-06-20 12:00:00
+EVs forecast to account for two thirds of global light-vehicle sales in 2035 
+EV Volumes projects electric vehicles will represent approximately two-thirds of new global light-vehicle sales by 2035, with 2026 forecast at 22.7 million units at 24.7% market share as incentives moderate. China continues to dominate with over 50% EV penetration while the U.S. lags at roughly 10%. 
+
+-------------------------
+en_manufacturingdigital
+2026-06-20 12:00:00
+Foxconn to Pilot Google Intrinsic's New AI Cell for Assembly 
+Google's Intrinsic division is launching a modular Intelligence Cell for AI-driven electronics assembly automation, with Foxconn factories set to pilot the system later in 2026. The product targets AI-based quality control and adaptive assembly for high-volume consumer electronics manufacturing lines. 
+
+-------------------------
+en_energy_storage_news
+2026-06-20 12:00:00
+SNEC 2026: BESS overtakes PV modules in expo floor space, more than 97GWh of deals signed 
+At SNEC 2026 in Shanghai, battery energy storage took up six full exhibition halls for the first time, outnumbering solar PV module displays, with more than 97 GWh of supply deals signed at the show. The milestone reflects how rapidly energy storage has become the center of China's clean energy industry. 
+
+-------------------------
+en_armscontrol
+2026-06-20 12:00:00
+Assessing the Islamabad MOU and the U.S.-Iran Nuclear Negotiations 
+The June 2026 Islamabad memorandum of understanding to halt the U.S.-Israel war against Iran is examined as a flawed but welcome diplomatic development, with analysts warning it inadequately addresses Iran's nuclear enrichment. The framework reopens the Strait of Hormuz but leaves underlying proliferation tensions unresolved. 
+
+-------------------------
+en_global_maritime_hub
+2026-06-20 12:00:00
+Strait of Hormuz shipping controls tightened by new Iranian maritime authority 
+Iran launched a new maritime authority and digital insurance platform strengthening oversight of vessels and cargoes transiting the Strait of Hormuz, one of the world's most critical oil and LNG shipping chokepoints. The move follows the June MOU and signals Iran's intent to maintain leverage over global energy trade flows. 
+
+-------------------------
+en_the_middle_market
+2026-06-20 12:00:00
+Former New Mountain Exec to Lead $30B Takeover of Firm Assets 
+A former New Mountain Capital executive is leading a $30 billion GP-led continuation fund and asset transfer, one of the largest such transactions in private equity this year. The deal reflects growing PE firm succession planning and asset monetization activity in an extended exit environment. 
+
+-------------------------
+en_tlimagazine
+2026-06-20 12:00:00
+Gatik's driverless trucks are now running real deliveries at scale 
+Gatik's autonomous middle-mile trucks are operating commercially at scale without safety drivers, delivering freight for major retailers across multiple U.S. markets. The milestone validates the company's driverless autonomy stack for fixed-route, high-frequency middle-mile logistics operations. 
+
+-------------------------
+en_the_loadstar
+2026-06-20 12:00:00
+'Collateral damage?' US Customs crackdown alarms importers and brokers 
+U.S. Customs and Border Protection enforcement actions in 2026 are creating unintended disruptions for compliant importers and customs brokers, raising industry concerns about operational impacts. Industry groups are seeking clearer enforcement guidelines to distinguish legitimate traders from targeted bad actors. 
+
+-------------------------
+en_spacenews
+2026-06-19 12:00:00
+Rocket Lab launches satellite for U.S. Space Force Victus Haze responsive space exercise 
+Rocket Lab launched a spacecraft for the U.S. Space Force on June 19, 2026, for the Victus Haze responsive space military exercise focused on rapidly identifying and characterizing potential orbital threats. The $94 million mission demonstrates responsive space launch capabilities for national security applications. 
+
+-------------------------
+en_spacenews
+2026-06-19 10:00:00
+MDA Space to buy Blue Canyon Technologies to gain foothold in U.S. market 
+Canadian company MDA Space announced a $620 million acquisition of smallsat manufacturer Blue Canyon Technologies, strengthening its defense and commercial satellite market presence in the United States. The deal expands MDA's small satellite manufacturing footprint as demand for defense smallsats accelerates. 
+
+-------------------------
+en_datacenter_dynamics
+2026-06-18 12:00:00
+Ocasio-Cortez and Sanders introduce AI Data Center Moratorium Act 
+Representatives Ocasio-Cortez and Senator Sanders introduced the AI Data Center Moratorium Act, calling for a pause on new AI data center construction pending comprehensive energy and environmental regulations. The bill reflects growing progressive concern over data centers' electricity consumption and water usage impacts. 
+
+-------------------------
+en_healthcare_it_news
+2026-06-18 12:00:00
+At HIMSS26, Epic to highlight no-code Agent Factory and other AI advances 
+Epic will showcase its no-code Agent Factory platform at HIMSS 2026, enabling health systems to build and deploy AI agents for clinical workflows without custom coding. The tool reflects Epic's push to democratize AI development within healthcare IT environments. 
+
+-------------------------
+en_offshore_technology
+2026-06-18 12:00:00
+Beacon Offshore Energy begins production at Zephyrus field 
+Beacon Offshore Energy initiated oil and natural gas extraction from the Zephyrus field in Mississippi Canyon Block 759, adding new deepwater Gulf of Mexico production capacity. The field is the latest addition to Beacon's growing Gulf of Mexico deepwater portfolio. 
+
+-------------------------
+en_sciencedaily
+2026-06-18 12:00:00
+SpaceX wants to build AI data centers in space. Will it work? 
+SpaceX is exploring plans to construct AI computing data centers in orbit, potentially using solar power and space's natural cooling environment to reduce terrestrial energy demands. Analysts note significant engineering and cost challenges but acknowledge the concept's potential for bypassing grid constraints. 
+
+-------------------------
+en_manufacturingdigital
+2026-06-18 12:00:00
+Inside Nokia's US$30m US Photonic Semiconductor Expansion 
+Nokia is investing $30 million in U.S. photonic semiconductor manufacturing capacity to meet surging demand for optical connectivity from AI data centers and telecommunications networks. The expansion underscores the growing strategic importance of silicon photonics in high-bandwidth data center interconnect applications. 
+
+-------------------------
+en_energy_storage_news
+2026-06-18 12:00:00
+Trina Storage unveils next-generation Elementa + Electra integrated DC+AC solution at Intersolar Europe 
+Trina Storage launched its next-generation integrated battery storage system at Intersolar Europe 2026, targeting utility-scale grid and C&I applications with improved energy density and grid-forming capabilities. The launch positions Trina to compete more aggressively in European and North American markets. 
+
+-------------------------
+en_global_maritime_hub
+2026-06-18 12:00:00
+Global bunker prices fall as market sentiment turns bearish 
+Global bunker fuel prices declined during Week 24 of 2026 as temporary Middle East geopolitical stabilization eased concerns over crude oil supply disruptions through the Strait of Hormuz. The Drewry World Container Index also showed volatility as transpacific rates moderated from recent peaks. 
+
+-------------------------
+en_the_loadstar
+2026-06-18 12:00:00
+FedEx redeems up to $4.15bn of debt thanks to Freight spin-off proceeds 
+FedEx announced cash tender offers to redeem up to $4.15 billion of its outstanding debt, funded by proceeds from the completed spin-off of FedEx Freight as an independent publicly traded company. The debt reduction strengthens FedEx's balance sheet as it focuses on its core express and ground delivery segments. 
+
+-------------------------
+en_pharmexec
+2026-06-15 12:00:00
+Antengene and UCB Enter $1.18 Billion Global License Agreement for Bispecific T-Cell Engager 
+Antengene and UCB signed a $1.18 billion global licensing agreement for bispecific T-cell engager ATG-201 targeting solid tumors, with Antengene planning clinical submissions in China and Australia in early 2026. UCB takes on global commercialization rights for this potential oncology asset. 
+
+-------------------------
+en_world_nuclear_news
+2026-06-15 12:00:00
+Agreement to build German nuclear fusion power plant 
+Munich-based Proxima Fusion signed an agreement with Bavaria, RWE, and the Max Planck Institute for Plasma Physics to build the world's first commercial stellarator fusion power plant at the former Gundremmingen nuclear site. The project targets first power delivery in the late 2030s. 
+
+-------------------------
+en_geopolitical_monitor
+2026-06-15 12:00:00
+Project Vault and the New Era of US Strategic Mineral Stockpiling 
+The Trump administration's February 2026 launch of Project Vault, a $12 billion public-private critical minerals reserve, represents the most aggressive U.S. strategic stockpiling initiative since the Korean War. The program targets cobalt, tungsten, and rare earth elements and mobilized an additional $1.2 billion in private funding. 
+
+-------------------------
+en_healthcare_it_news
+2026-06-15 12:00:00
+VA responds to reports of EHR glitches ahead of renewed 2026 rollouts 
+The U.S. Department of Veterans Affairs addressed reports of Oracle Health EHR glitches as it prepares for renewed modernization rollouts after a multi-year pause since 2023. The VA reaffirmed commitment to the program while acknowledging ongoing technical challenges requiring resolution. 
+
+-------------------------
+en_offshore_technology
+2026-06-15 12:00:00
+Murphy Oil discovers oil at Bubale-1X well offshore Côte d'Ivoire 
+Murphy Oil announced an oil discovery at the Bubale-1X exploration well approximately 40 miles off the coast of Côte d'Ivoire, West Africa, adding to a string of successful West African deepwater exploration results. The discovery is being evaluated for commercial development potential. 
+
+-------------------------
+en_ev_volumes
+2026-06-15 12:00:00
+Has a new leader emerged in Europe's BEV market? 
+Analysis of European battery electric vehicle sales data reveals a potential shift in market leadership as Chinese brands gain share in several EU markets despite import tariffs. Traditional European automakers face intensifying competition as Chinese OEMs adapt pricing strategies for Western consumers. 
+
+-------------------------
+en_manufacturingdigital
+2026-06-15 12:00:00
+How Boeing and Millennium are Scaling Space Production 
+Boeing is targeting 26 satellite deliveries in 2026 as it works with Millennium Space Systems to accelerate space manufacturing production rates for defense and commercial customers. The partnership demonstrates how established defense contractors are adapting to faster production cadences required by the satellite market. 
+
+-------------------------
+en_global_maritime_hub
+2026-06-15 12:00:00
+Global container shipping faces a turbulent second half of 2026 
+Analysis warns that shifting trade flows, geopolitical tensions, inventory imbalances, and diverging freight rate trajectories will make H2 2026 increasingly volatile for container shipping. Carriers navigate structural overcapacity against the backdrop of potential Red Sea route normalization. 
+
+-------------------------
+en_tlimagazine
+2026-06-15 12:00:00
+Top 8 companies using AI routing in 2026 to transform logistics technology 
+Analysis identifies eight logistics companies leading AI routing adoption in 2026, using machine learning to optimize delivery routes in real time by integrating inventory, driver availability, and weather data. The leading players are setting new standards for operational efficiency and emissions reduction in freight delivery. 
+
+-------------------------
+en_spacenews
+2026-06-15 12:00:00
+Defense appropriations bill for 2026 funds Space Force at $26 billion, presses Pentagon on Golden Dome 
+The 2026 defense appropriations bill allocates $26 billion for the U.S. Space Force and presses the Pentagon to advance the Golden Dome missile defense initiative with specific program milestones. The legislation reflects record military space spending approaching nearly $40 billion total across defense agencies. 
+
+-------------------------
+en_clean_energy_wire
+2026-06-15 12:00:00
+Q&A: How will the 2026 energy crisis affect Germany's energy transition? 
+Analysis examines how the Iranian conflict-driven energy price shock from February 2026 is testing Germany's renewable energy transition, with gas and oil price spikes straining households and industrial competitiveness. Experts argue the crisis paradoxically accelerates renewables buildout by demonstrating continued fossil fuel supply vulnerability. 
+
+-------------------------
+en_investornews
+2026-06-14 12:00:00
+Critical Minerals Report (06.14.2026): Control is the New Commodity 
+The June 14 report argues that in 2026, strategic control over critical mineral processing infrastructure has become more valuable than ownership itself, as China weaponizes export controls on gallium, germanium, and graphite. The analysis covers rare earth oxide pricing and the impact of China's export restriction escalation. 
+
+-------------------------
+en_carnewschina
+2026-06-13 12:00:00
+Xiaomi unveils home charging robotic arm, targeting Q4 2026 launch 
+Xiaomi Auto revealed a home charging robotic arm for its electric vehicles that automatically connects and disconnects the charging cable, with a Q4 2026 commercial launch planned. The accessory demonstrates Xiaomi's ambition to integrate automotive technology with its smart home ecosystem. 
+
+-------------------------
+en_carnewschina
+2026-06-12 12:00:00
+BYD Seal 08 sedan started taking pre-orders in China 
+BYD began accepting pre-orders for the Seal 08, a large 5.2-meter luxury-performance sedan with 684 horsepower, extending the Seal nameplate into the premium EV segment. The model positions BYD to challenge traditional luxury automakers in China's rapidly electrifying performance car market. 
+
+-------------------------
+en_sciencedaily
+2026-06-11 12:00:00
+AI could uncover new physics faster but there's a surprising catch 
+New research shows AI systems can accelerate physics discovery by identifying patterns in large experimental datasets, but may introduce systematic biases that slow certain types of fundamental breakthroughs. The study suggests AI works best when paired with human scientific judgment rather than operating autonomously. 
+
+-------------------------
+en_geopolitical_monitor
+2026-06-10 12:00:00
+2026 Gibraltar Agreement: Can Spain Erode British Sovereignty? 
+A 1,018-page UK-Spain-EU Gibraltar agreement provisionally taking effect July 15, 2026, raises concerns among British sovereignty advocates about the long-term status of the Rock. The deal governs free movement of people between Gibraltar and Spain as a post-Brexit resolution after five years of negotiations. 
+
+-------------------------
+en_eenews_europe
+2026-06-10 12:00:00
+Semiconductor industry heads for $1tn revenue milestone in 2026 
+IDC projects global chip sales will reach $1.29 trillion in 2026, growing 52.8% year over year from $842.8 billion in 2025, with DRAM revenues alone nearly tripling. The semiconductor industry is on track to cross the $1 trillion threshold for the first time in history. 
+
+-------------------------
+en_ev_volumes
+2026-06-10 12:00:00
+Is there hope for EV markets across the world? 
+A global EV market outlook assesses regional adoption trends, noting the U.S. lags at around 10% penetration while China exceeds 50% and Europe approaches 30% share in 2026. Emerging markets like Vietnam and Singapore are showing faster-than-expected electrification rates. 
+
+-------------------------
+en_armscontrol
+2026-06-10 12:00:00
+The NPT Review Conference Must Address the Disarmament Deficit 
+Commentary from the NPT Review Conference held April 27-May 22, 2026 in New York argues that nuclear-weapon states must demonstrate stronger disarmament commitments to prevent the Non-Proliferation Treaty from unraveling. The conference concluded without consensus amid divisions over disarmament obligations. 
+
+-------------------------
+en_tlimagazine
+2026-06-10 12:00:00
+Avelo Airlines' fleet upgrade signals major shift in US domestic travel for 2026 
+Avelo Airlines is retiring most of its Boeing 737-700 fleet by mid-2026 as part of a broader upgrade strategy aimed at improving fuel efficiency and reducing operating costs. The shift signals growing airline investment in fleet modernization as fuel costs and passenger demand reshape U.S. domestic aviation. 
+
+-------------------------
+en_global_finreg_blog
+2026-06-10 12:00:00
+President Trump Issues Executive Order on Fintech Innovation, While FRB Proposes Payment Accounts 
+President Trump's May 19, 2026 executive order on fintech innovation is paired with a Federal Reserve proposal for a new 'Payment Account' product allowing fintech firms direct access to Fed payment infrastructure. The coordinated policies signal a major shift in U.S. financial regulatory approach toward integrating non-bank innovators. 
+
+-------------------------
+en_energy_industry_review
+2026-06-10 12:00:00
+Battery Storage Capacity: Record Growth and Trends in 2026 
+The world is expected to add 353.4 GWh of energy storage capacity in 2026, with China accounting for 203.5 GWh and grid-scale LFP battery prices falling below $65/kWh. AI data center demand and renewable integration requirements are the primary drivers of accelerating global battery deployment. 
+
+-------------------------
+en_logisticsviewpoints
+2026-06-09 12:00:00
+The Supply Chain Intelligence Revolution: 2026 BlueYonder Icon Insights 
+BlueYonder's Icon 2026 conference showcased the emergence of autonomous supply chains where AI agents continuously monitor networks and execute decisions across planning and execution layers. The event highlighted a shift from optimization to full orchestration integrating transportation, inventory, and labor data. 
+
+-------------------------
+en_investornews
+2026-06-07 12:00:00
+Critical Minerals Report (06.07.2026): The Next Phase of the Critical Minerals Economy 
+The June 7 report covers how the critical minerals economy has evolved into a competition between industrial ecosystems, with the U.S. accelerating domestic processing investments under DOE loan programs. The report reviews recent developments including the $725 million DOE loan to Energy Fuels for rare earth production. 
+
+-------------------------
+en_kff_health_news
+2026-06-05 12:00:00
+Final Rules for Medicaid Work Requirements Are Out. Here's What You Need To Know. 
+The Trump administration issued final Medicaid work requirement rules on June 1, 2026, mandating certain enrollees prove they are working or completing approved activities to maintain coverage. The CBO estimates these changes will cause 11.8 million people to lose Medicaid eligibility. 
+
+-------------------------
+en_eenews_europe
+2026-06-05 12:00:00
+NVIDIA and TSMC push AI deeper into semiconductor fabs 
+NVIDIA and TSMC are deploying AI across the semiconductor manufacturing lifecycle, using NVIDIA cuLitho for 20-50% lithography improvement and cuEST for 50x faster chemistry simulations. The collaboration demonstrates how AI is becoming fundamental to next-generation chip production efficiency. 
+
+-------------------------
+en_energy_storage_news
+2026-06-05 12:00:00
+US installed 9.7GWh of new BESS in Q1 2026, SEIA reports 
+SEIA reported that the U.S. installed 9.7 GWh of new battery energy storage in Q1 2026, with all segments posting record first-quarter numbers driven by utility-scale solar-plus-storage projects. Grid resilience requirements and falling battery costs are accelerating deployment across the country. 
+
+-------------------------
+en_global_finreg_blog
+2026-06-05 12:00:00
+FDIC Issues Proposal on Illicit Finance Standards under GENIUS Act 
+The FDIC approved a Notice of Proposed Rulemaking implementing the GENIUS Act's illicit finance standards for permitted payment stablecoin issuers, requiring AML controls and sanctions compliance. The proposal represents the first comprehensive federal framework for stablecoin AML/CFT regulation in the United States. 
+
+-------------------------
+en_energy_industry_review
+2026-06-05 12:00:00
+Romanian SMR Project Receives Final Investment Decision 
+Romania approved the final investment decision for a domestic small modular reactor project, positioning the country at the forefront of European SMR commercialization with strong U.S. and Canadian government backing. The project is expected to provide baseload clean electricity to replace Romania's aging coal capacity. 
+
+-------------------------
+en_sciencedaily
+2026-05-22 12:00:00
+Ordinary WiFi can now identify people with near perfect accuracy 
+Researchers demonstrated an AI system using standard WiFi signals to identify individuals with near-perfect accuracy without specialized hardware, raising significant privacy and mass surveillance concerns. The technology works by analyzing subtle differences in how each person's body reflects and absorbs wireless signals. 
+
+-------------------------
+en_energy_industry_review
+2026-05-20 12:00:00
+Transelectrica-Georgian State Electrosystem MoU for Black Sea Submarine Cable 
+Romania's Transelectrica and the Georgian State Electrosystem signed a memorandum of understanding for a Black Sea submarine power cable project linking the two countries' electricity grids. The cable is designed to facilitate clean energy trading between the Caucasus region and Central and Eastern Europe. 
+
+-------------------------
+en_logisticsviewpoints
+2026-05-19 12:00:00
+US National Freight Strategic Plan Puts Freight Back at the Center of Supply Chain Strategy 
+The U.S. Department of Transportation's 2026 National Freight Strategic Plan identifies six priorities—safety, efficiency, security, resilience, innovation, and workforce capability—for modernizing the freight network. The plan signals a federal policy shift toward coordinated investment in freight infrastructure and technology. 
+
+-------------------------
+en_gabi_online
+2026-05-18 12:00:00
+FDA approves first golimumab biosimilars Immgolis and Immgolis Intri 
+The FDA approved Immgolis (golimumab-sldi) and Immgolis Intri on May 18, 2026 as the first interchangeable biosimilars to Janssen's anti-TNF therapies Simponi and Simponi Aria for inflammatory diseases. The approval opens market competition for a drug with approximately $2 billion in annual U.S. sales. 
+
+-------------------------
+en_global_finreg_blog
+2026-04-10 12:00:00
+US Banking Regulators Finalize Rule Eliminating Use of Reputation Risk 
+The OCC and FDIC issued a final rule prohibiting bank examiners from criticizing or taking adverse action against supervised institutions based on reputation risk, effective June 9, 2026. The rule prevents regulators from pressuring banks to exit relationships with politically sensitive but legal industries. 
+
+-------------------------
+en_gabi_online
+2026-03-30 12:00:00
+FDA approves denosumab biosimilars Osvyrti and Jubereq, Boncresa and Oziltus 
+The FDA approved four denosumab biosimilars on March 30, 2026 including Teva's Ponlimsi (denosumab-adet), expanding competition for Amgen's bone density drugs Prolia and Xgeva. Multiple biosimilar approvals in a single drug class signal intensifying market competition in the high-value osteoporosis treatment segment. 
+
+-------------------------
+en_armscontrol
+2026-03-20 12:00:00
+U.S. Defense Spending Rises by More Than 17 Percent 
+U.S. discretionary defense spending rose more than 17% in fiscal year 2026 to $1.05 trillion following congressional appropriations combining the $848.3B DOD request with $113.3B in mandatory reconciliation funding. The increase marks one of the largest peacetime percentage rises in U.S. defense spending. 
+
+-------------------------
+en_clean_energy_wire
+2026-03-13 12:00:00
+In brief | 13 March 2026 | Clean Energy Wire 
+Clean Energy Wire's daily briefing for March 13, 2026 covers German federal coalition energy policy negotiations, EU carbon market developments, and progress on offshore wind and solar capacity additions across Europe. The briefing highlights tension between cost reduction goals and supply chain localization requirements under EU industrial policy. 
+
+-------------------------
+en_gabi_online
+2026-02-26 12:00:00
+EMA recommends approval of three new biosimilars for diabetes and autoimmune conditions 
+The EMA's CHMP recommended marketing authorization for Henlius' Poherdy (pertuzumab biosimilar) and Gedeon Richter's Tuyory (tocilizumab biosimilar) on February 26, 2026. The recommendations expand European patient access to lower-cost biologic therapies for cancer and autoimmune conditions. 
+
+-------------------------
+en_clean_energy_wire
+2026-01-10 12:00:00
+Preview 2026: Industry transition, clean investments key as EU shapes post-2030 climate policy 
+Industry analysts preview 2026 European energy policy, noting the year will be defined by the EU's effort to translate its 2040 climate target into regulatory frameworks governing industry decarbonization beyond 2030. Germany's new federal coalition outcome is identified as the key variable shaping European climate ambition for the decade. 
+
+-------------------------

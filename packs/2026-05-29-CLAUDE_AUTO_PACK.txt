@@ -1,0 +1,702 @@
+en_fintech_futures
+2026-05-28 14:00:00
+May 2026: Top five banking technology stories of the month 
+FinTech Futures rounds up May's top five banking tech stories: USSFCU adopts Thought Machine Vault Core for ISO 20022-aligned payments, Mastercard secures New York BitLicense, Experian's AI compliance suite, JP Morgan Payments biometrics rollout, and Cyprus NBG AI reconciliation deployment. 
+
+-------------------------
+en_fortune
+2026-05-28 12:00:00
+A moonshot to avoid $39 trillion national debt crisis will rely on AI productivity going even better than bulls are hoping for, says JPMorgan 
+JPMorgan warns that avoiding a projected $39 trillion US national debt crisis hinges on AI productivity gains far exceeding even bullish forecasts; without this AI moonshot scenario, structural fiscal deficits will compound severely over the next decade. 
+
+-------------------------
+en_world_nuclear
+2026-05-28 12:00:00
+Rolls-Royce SMR selects Škoda JS and Doosan Enerbility for pre-production work 
+Rolls-Royce SMR has selected Czech firm Škoda JS and Korean-based Doosan Enerbility for pre-production component manufacturing, advancing the UK SMR developer toward commercial deployment with first-of-kind units targeted for the early 2030s. 
+
+-------------------------
+en_motley_fool
+2026-05-28 12:00:00
+The Stock Market Just Did Something for the 2nd Time in 100 Years, and History Says What Comes Next 
+The S&P 500 Shiller CAPE ratio has crossed 40 for only the second time in 100 years—the first preceded the dot-com crash—with the Motley Fool noting that while history is sobering, AI-driven earnings growth may be reshaping the structural valuation floor for US equities. 
+
+-------------------------
+en_fintech_futures
+2026-05-28 08:00:00
+Mastercard lands New York BitLicense for blockchain payments 
+Mastercard received New York State's BitLicense on May 28, 2026, enabling blockchain-based payment services in the state and marking a pivotal step toward mainstream institutional crypto payment infrastructure under the expanding GENIUS Act regulatory framework. 
+
+-------------------------
+en_cgt_live
+2026-05-27 12:00:00
+Around the Helix: Cell and Gene Therapy Company Updates – May 27, 2026 
+CGTlive's weekly roundup covers Liminatus Pharma's definitive merger agreement with InnocsAI for CAR-T and antibody cancer therapies, and Sartorius opening a €140M+ fossil-fuel-free, fully GMP-compliant cell and gene therapy manufacturing center in Freiburg, Germany. 
+
+-------------------------
+en_air_and_space_forces
+2026-05-27 12:00:00
+Air Force Plan: $12B to Buy Nearly 28,000 Cheap Cruise Missiles 
+The US Air Force's five-year plan calls for spending $12 billion to procure nearly 28,000 low-cost cruise missiles, reflecting a strategic shift toward mass-volume munitions capable of overwhelming adversary air defenses rather than relying solely on stealth platforms. 
+
+-------------------------
+en_satellite_today
+2026-05-27 12:00:00
+Space Force Awards SpaceX $2.3 Billion Contract for Space Data Network 
+The US Space Force's Space Systems Command awarded SpaceX a $2.29 billion OTA contract to develop the Space Data Network Backbone, a proliferated LEO constellation for high-throughput, low-latency government data backhaul with a full prototype capability deadline of end-2027. 
+
+-------------------------
+en_benzinga
+2026-05-26 12:00:00
+Asana Stock Trades Higher On Q1 Financials, StackAI Acquisition: What Investors Need To Know 
+Asana reported Q1 2026 revenue of $205.1 million (+9.5% YoY) and announced the acquisition of StackAI, with the stock moving higher on improving AI product adoption, customer expansion momentum, and a path toward sustainable operating efficiency. 
+
+-------------------------
+en_enerdata
+2026-05-26 12:00:00
+Dutch and German TSOs plan hydrogen cross-border corridor 
+Dutch and German transmission system operators announced plans for a bilateral hydrogen transport corridor, advancing Europe's cross-border H2 infrastructure as the EU works to close the investment gap needed to store at least 50 million tonnes of CO2 per year by 2030. 
+
+-------------------------
+en_motley_fool
+2026-05-26 12:00:00
+Stock Market Today, May 26: Soaring Tech Stocks Push S&P 500 and Nasdaq to New Highs 
+Tech stocks surged on May 26 with Micron Technology jumping over 19% after an aggressive UBS upgrade and briefly topping a $1 trillion valuation, driving the S&P 500 to a record close of 7,519 and the Nasdaq Composite to 26,656. 
+
+-------------------------
+en_agri_pulse
+2026-05-26 12:00:00
+Daybreak May 26: Chinese poultry restrictions lifted 
+China lifted HPAI-related poultry import restrictions for 17 US states effective May 15, as part of the US-China agricultural deal struck during Trump's Beijing visit, which also includes a commitment by China to purchase at least $17 billion in US agricultural commodities annually for three years. 
+
+-------------------------
+en_benzinga
+2026-05-26 08:00:00
+Earnings Scheduled For May 26, 2026 - Agora (NASDAQ:API), Digital Turbine (NASDAQ:APPS) 
+Benzinga's pre-market earnings preview for May 26 covers AutoZone projected at $36.15 EPS on $4.86B revenue, Freightos expected to report a $0.08/share loss, and Palo Alto Networks set to report after the bell in the cybersecurity sector. 
+
+-------------------------
+en_nasa_space_flight
+2026-05-25 12:00:00
+Launch Preview: Starlink and Amazon Leo missions fill manifest 
+NASASpaceFlight previews the week of May 25 with a packed schedule of SpaceX Starlink and Amazon Project Kuiper LEO satellite missions, a Chang Zheng 7A Chinese military launch, and SpaceX's preparation for a follow-up to Starship Flight 12 in early June. 
+
+-------------------------
+en_motley_fool
+2026-05-24 12:00:00
+Stock Market Investors Just Got Bad News About President Trump's Economy 
+Consumer sentiment hit a new all-time low of 44.8 in May 2026 while PPI inflation printed 6% in April—the highest since December 2022—delivering compounding macro headwinds to equity market bulls even as major stock indexes hover near record highs. 
+
+-------------------------
+en_benzinga
+2026-05-22 12:00:00
+Equinix, Digital Realty REITs In Focus As AI Frenzy Drives $50 Billion Data Center Construction Surge 
+AI infrastructure investment is fueling a $50 billion data center construction surge in 2026, with Equinix and Digital Realty shares up 30% over the past year as combined hyperscaler capex is projected to exceed $600 billion annually. 
+
+-------------------------
+en_enerdata
+2026-05-22 12:00:00
+EU approves EUR1.3bn German state aid scheme for renewable hydrogen 
+The European Commission approved a €1.3 billion German state aid scheme supporting domestic renewable hydrogen production, underpinning Germany's strategy to replace Russian gas with domestically produced green hydrogen for industrial decarbonization. 
+
+-------------------------
+en_drewry
+2026-05-22 12:00:00
+Intra-Asia Container Index – May 22: IACI Increases 2% 
+Drewry's Intra-Asia Container Index rose 2% to $959 per 40ft container on May 22 as regional demand firms, accompanying the broader Asia-Europe spot rate rally driven by early peak season cargo frontloading and geopolitical supply chain re-routing. 
+
+-------------------------
+en_the_cooldown
+2026-05-22 12:00:00
+Feared data center power surge fizzles as solar shoves coal off the US grid 
+US electricity demand rose just 1.5% YoY in Q1 2026 while solar generation jumped 24%, covering roughly 80% of demand growth and driving coal output down more than 10%, defying fears that AI data center buildout would overwhelm grid capacity and reverse clean energy progress. 
+
+-------------------------
+en_woodmac
+2026-05-22 12:00:00
+Powering the next era: Key takeaways from Wood Mackenzie's Solar & Energy Storage Summit 2026 
+Wood Mackenzie's Solar & Energy Storage Summit 2026 identified transmission infrastructure—not capital or technology—as the primary bottleneck for clean energy deployment, with ageing grid systems buckling under simultaneous pressure from AI data center demand, renewable integration, and retiring coal capacity. 
+
+-------------------------
+en_csis
+2026-05-22 12:00:00
+The Iran Conflict Illuminates Taiwan's Unique Energy Security Challenge 
+CSIS analysis examines how Taiwan's 4.2% energy self-sufficiency makes it acutely vulnerable to Hormuz disruptions, with Beijing framing energy security guarantees as a reunification lever while the PLA Navy conducted two major deployments in the South China Sea and West Pacific in May 2026. 
+
+-------------------------
+en_costar
+2026-05-21 12:00:00
+Commercial investment in Toronto region rose 10% in first quarter 
+Commercial real estate investment in the Toronto region increased an estimated 10% in Q1 2026 versus Q1 2025, with the largest gains in multifamily and office property sales as the commercial rebound enters its second year. 
+
+-------------------------
+en_private_equity_wire
+2026-05-21 12:00:00
+NextEra Energy agrees $1.3bn acquisition of Caliber Resource Partners 
+US utility NextEra Energy agreed to acquire PE-backed oil and gas firm Caliber Resource Partners in a $1.3 billion transaction while forming a separate joint venture with Quantum Capital Group, reflecting accelerating convergence between energy utilities and upstream PE assets. 
+
+-------------------------
+en_drewry
+2026-05-21 12:00:00
+World Container Index – May 21: Rates Rise for Third Consecutive Week 
+Drewry's World Container Index rose for the third straight week in May, with Shanghai-Genoa gaining 20% to $3,701/40ft and Shanghai-Rotterdam rising 11% to $2,413/40ft, as early peak season demand and carrier surcharges compress available vessel capacity on core East-West lanes. 
+
+-------------------------
+en_ai_weekly
+2026-05-21 12:00:00
+CVE-2026-48710 'BadHost': Critical Starlette Auth-Bypass Imperiling AI Agent Infrastructure 
+AI Weekly alerts that CVE-2026-48710 'BadHost' is a critical authentication-bypass vulnerability in the Starlette framework imperiling millions of AI agents, MCP servers, FastAPI, vLLM, and LiteLLM deployments, with coordinated disclosure requiring urgent patching across the AI development ecosystem. 
+
+-------------------------
+en_gen_eng_news
+2026-05-20 12:00:00
+Bio-IT World Celebrates 25 Years with Opening Plenary on Rare Disease Challenges and Opportunities 
+The Bio-IT World Conference & Expo (Boston, May 19-21, 2026) marked its 25th anniversary with an opening plenary on rare disease precision medicine, bioinformatics, and single-patient gene therapy, drawing approximately 2,700 attendees from across biopharma, biotech, and health IT. 
+
+-------------------------
+en_cgt_live
+2026-05-20 12:00:00
+Around the Helix: Cell and Gene Therapy Company Updates – May 20, 2026 
+CGTlive reports that GS-100 AAV9 gene therapy showed early motor and cognitive improvements in NGLY1 Deficiency Phase 1/2/3 trials, and Qihan Biotech received FDA IND clearance for QT-019C, a multiplexed CAR-T targeting CD19 and BCMA in autoimmune diseases. 
+
+-------------------------
+en_air_and_space_forces
+2026-05-20 12:00:00
+Air Force Eyes Advanced Propulsion Tech with $16B Program 
+The US Air Force launched a $16 billion program to develop advanced propulsion technologies for next-generation combat aircraft, targeting enhanced range, supercruise capability, and thermal management as the service prepares for potential high-intensity conflict in the Pacific. 
+
+-------------------------
+en_private_equity_wire
+2026-05-20 12:00:00
+KKR and Energy Capital Partners consider raising offer for DCC 
+KKR and Energy Capital Partners are weighing a higher bid for Irish energy distributor DCC after the company rejected an initial takeover proposal, intensifying competition for European infrastructure assets amid strong PE appetite for regulated energy networks. 
+
+-------------------------
+en_carbon_herald
+2026-05-20 12:00:00
+Breaking: Direct Air Capture Breakthrough In Kenya Signals New Era For CO2 Geological Storage 
+Cella Mineral Storage and Octavia Carbon completed an early-stage underground CO2 injection in Kenya's Rift Valley, marking the fourth known global instance of a direct air capture and geological storage system injecting carbon dioxide into geological formations. 
+
+-------------------------
+en_fintech_futures
+2026-05-20 12:00:00
+FinovateSpring 2026: Day two explores what's next for banking and US regulation 
+Day two of FinovateSpring 2026 featured deep dives into the evolving US banking regulatory landscape post-GENIUS Act, embedded finance infrastructure strategies, and how AI agents are being deployed to reshape front-office banking operations and financial crime detection. 
+
+-------------------------
+en_the_middle_market
+2026-05-20 12:00:00
+Angelini Pharma Buys Catalyst Pharmaceuticals in a $4.1B Deal 
+Angelini Pharma acquired Catalyst Pharmaceuticals in a $4.1 billion transaction, adding rare neuromuscular and neurological disorder therapies to its specialty pharma portfolio in one of the largest middle-market pharma deals of Q2 2026. 
+
+-------------------------
+en_wef
+2026-05-20 12:00:00
+Blockade diplomacy, energy as leverage and other geopolitical stories to know this month 
+WEF's May 2026 geopolitical roundup covers the Iran-US conflict shifting to naval blockade diplomacy with the Strait of Hormuz partially restricted, energy flows weaponized as diplomatic leverage, and 89% of chief economists now expecting weakening global growth over the next 12 months. 
+
+-------------------------
+en_fortune
+2026-05-19 12:00:00
+Don't hold your breath for the great AI job reshuffle, says Goldman Sachs 
+Goldman Sachs research suggests the long-anticipated AI-driven labor market reshuffle will be slower than expected, with blue-collar roles like plumbers proving more resilient to automation while persistent Fed inflation concerns dampen macro optimism. 
+
+-------------------------
+en_nasa_space_flight
+2026-05-19 12:00:00
+Launch Preview: Falcon 9, Electron, and Vega C launch missions alongside Starship Flight 12 
+NASASpaceFlight previews the week of May 19 featuring Rocket Lab Electron, Arianespace Vega C, and multiple SpaceX Falcon 9 Starlink missions running concurrently with the historic Starship Flight 12, which launched on May 22 at 22:30 UTC from Starbase, Texas. 
+
+-------------------------
+en_money_laundering_news
+2026-05-19 12:00:00
+Executive Order Signals Federal Shift on Fintech Regulation 
+President Trump's May 19 executive order directs federal financial regulators to review and update fintech rules and reduce barriers for non-bank firms, representing a major reorientation of US financial technology oversight toward innovation-friendly policy under the Integrating Financial Technology Innovation framework. 
+
+-------------------------
+en_agtech_navigator
+2026-05-19 12:00:00
+Tesco relaunches Agri-Tech Challenge to fast-track innovation onto UK farms 
+Tesco relaunched its Agri-Tech Challenge in May 2026, seeking technology solutions to improve sustainability, productivity, and supply chain resilience for UK farms, as major food retailers intensify investment in precision agriculture and climate-resilient food supply. 
+
+-------------------------
+en_pharm_exec
+2026-05-19 12:00:00
+Everything to Know About TrumpRx in 2026 
+PharmExec provides a comprehensive guide to TrumpRx, now expanded to 600+ generic medications with Amazon Pharmacy, Cost Plus Drugs, and GoodRx as distribution partners, while Reuters benchmarking found 33% of listed drugs remain cheaper in the UK despite the MFN framework. 
+
+-------------------------
+en_private_equity_wire
+2026-05-18 12:00:00
+Federal prosecutors examine valuation practices at BlackRock private credit fund 
+Federal prosecutors are investigating how BlackRock's TCP Capital Corp (TCPC) business development company valued certain private credit positions, adding to regulatory scrutiny of the rapidly growing $1.7 trillion private credit market. 
+
+-------------------------
+en_the_cooldown
+2026-05-18 12:00:00
+US energy storage posts record start to 2026 as Trump administration attacks clean energy 
+The US added 9.7 GWh of new battery energy storage in Q1 2026 (+32% YoY), the strongest first quarter on record, even as the Trump administration continues to roll back DOE clean energy grants and Inflation Reduction Act implementation guidance. 
+
+-------------------------
+en_wef
+2026-05-18 12:00:00
+How the Middle East war hits Asia's energy transition 
+WEF analysis shows disruptions through the Strait of Hormuz are disproportionately impacting Asia, where fossil fuel import dependence is turning geopolitical tensions into direct economic strain and accelerating government investment in energy diversification and storage. 
+
+-------------------------
+en_agri_pulse
+2026-05-18 12:00:00
+Washington Week Ahead: Trump in China, fertilizer scrutiny on Capitol Hill 
+Agri-Pulse previews the week with Trump's Beijing visit expected to yield a landmark $17 billion annual agricultural purchase pledge, while Capitol Hill scrutinizes fertilizer market concentration and its role in elevated farm input costs amid rising geopolitical energy price pressures. 
+
+-------------------------
+en_fortune
+2026-05-15 12:00:00
+Demand for longer-term U.S. debt gets weaker as one shock after another stokes fear that high inflation is here to stay 
+The Treasury sold $25 billion of 30-year bonds at a 5% yield for the first time since 2007, signaling tepid demand for long-term US debt as hot inflation prints and Iran-China geopolitical shocks compel investors to demand higher term premiums. 
+
+-------------------------
+en_data_center_knowledge
+2026-05-15 12:00:00
+AI-First Hyperscalers: 2026's Sprint Meets the Power Bottleneck 
+The world's largest data center operators face an acute power bottleneck in 2026 even as AWS, Microsoft, Google, Meta, Oracle, and Alibaba project combined capex exceeding $600 billion, with grid readiness identified as the primary constraint on deployment velocity. 
+
+-------------------------
+en_air_and_space_forces
+2026-05-15 12:00:00
+Space Force to Overhaul Key Early Warning, Surveillance Radars 
+The Space Force awarded Northrop Grumman a $398 million contract to design and build a communications satellite prototype with advanced anti-jam capabilities, part of the Ground Based Radar Digitization initiative to modernize legacy analog missile warning and space surveillance systems. 
+
+-------------------------
+en_tax_foundation
+2026-05-15 12:00:00
+Supreme Court Trump Tariffs Ruling: Analysis 
+The Tax Foundation analyzes the Supreme Court's February 2026 ruling that IEEPA does not authorize presidential tariff authority, examining the fiscal impact of the subsequent $1.2 trillion-import Section 122-based tariff regime and its projected household cost of $1,500 in 2026. 
+
+-------------------------
+en_carbon_herald
+2026-05-15 12:00:00
+Caravel Bio Advances Low-Cost Carbon Capture Technology 
+US startup Caravel Bio increased biocatalyst stability by 12-fold within six months under industrial conditions, representing a significant cost-reduction milestone for enzyme-enhanced carbon capture and potentially unlocking new price-competitive DAC deployment pathways. 
+
+-------------------------
+en_the_middle_market
+2026-05-15 12:00:00
+Middle Market Continues to Lose Ground as Large Deals Dominate Global M&A 
+Middle-market M&A deal volumes rose only 9% YoY in Q1 2026 versus 13% for the broader M&A market, extending a five-year trend of large-cap buyouts capturing an increasing share of global deal activity and leaving mid-market multiples under pressure. 
+
+-------------------------
+en_fintech_weekly
+2026-05-15 12:00:00
+Eleven Companies, Eighty-Three Days: The Race for a Federal Crypto Banking License 
+In 83 days following the OCC's April 2026 regulatory clarification enabling crypto custody by national trust banks, eleven firms including Circle and a Morgan Stanley affiliate filed for or received OCC national trust bank charters, signaling a rapid institutional pivot toward regulated crypto banking infrastructure. 
+
+-------------------------
+en_ai_weekly
+2026-05-15 12:00:00
+Cerebras Chip Optimized for LLM Inference, Not General AI 
+AI Weekly explains how Cerebras' large on-chip SRAM architecture is purpose-built for LLM autoregressive decode, achieving 981 tokens/sec on Kimi K2.6 but yielding structural advantages only in specific inference workloads rather than general AI training tasks. 
+
+-------------------------
+en_drug_discovery_trends
+2026-05-15 12:00:00
+Drug companies sign 'Most Favored Nation' deals, then raise prices anyway 
+Drug Discovery Trends investigates how pharmaceutical companies that signed Trump administration MFN pricing agreements subsequently raised net drug prices on 872 brand-name medications in early 2026, raising fundamental questions about enforcement mechanisms and the program's actual affordability impact. 
+
+-------------------------
+en_reg_med_net
+2026-05-15 12:00:00
+Cell Therapy Weekly: Updates on CAR-T Therapy for Solid Tumors 
+RegMedNet's weekly cell therapy update covers new clinical data from Phase 1/2 CAR-T trials targeting solid tumors, including novel antigen targets and lymphodepletion regimens designed to improve persistence and overcome the immunosuppressive solid tumor microenvironment. 
+
+-------------------------
+en_wef
+2026-05-15 12:00:00
+Here's what chief economists see for a bumpy year ahead 
+WEF's May 2026 Chief Economists Outlook finds 89% expect global growth to weaken over the next 12 months, with the Iran war's disruption of energy, food, and fertilizer flows through the Strait of Hormuz, sustained inflation, and rising debt costs cited as the primary systemic risk factors. 
+
+-------------------------
+en_csis
+2026-05-15 12:00:00
+Iran Conflict Heightens Cyber Threats to U.S. Energy Infrastructure 
+CSIS warns the Iran conflict is escalating cyber threats to US energy infrastructure, noting that PJM grid concentration hosting 55% of US titanium, 50% of aluminum, 31% of steel, and 12% of semiconductor capacity creates a correlated failure risk if a single grid stress event occurs. 
+
+-------------------------
+en_finextra
+2026-05-14 12:00:00
+NatWest selects eight AI-driven fintechs for 2026 innovation programme 
+NatWest selected eight AI-focused fintechs for a 12-week 2026 innovation sprint covering customer experience, financial crime, compliance, and risk management, as UK banks accelerate fintech collaboration to stay competitive in the AI-transformation era. 
+
+-------------------------
+en_pe_hub
+2026-05-12 12:00:00
+Private equity deals were fewer but bigger in the first quarter 
+PE Hub reports Q1 2026 saw lower PE transaction volumes offset by higher per-deal values, with healthcare, technology, and industrial sectors driving large-cap buyout activity as valuation gaps narrow and financing conditions stabilize. 
+
+-------------------------
+en_nasa_space_flight
+2026-05-11 12:00:00
+Launch Preview: SpaceX and Chinese missions fill busy launch manifest 
+The week of May 11 features multiple SpaceX Falcon 9 Starlink Group 17 launches alongside Chinese Long March missions including a Tiangong space station cargo resupply flight, reflecting the record-setting dual-nation launch cadence of 2026. 
+
+-------------------------
+en_costar
+2026-05-10 12:00:00
+Why commercial property pros say a looming $1.26 trillion debt wall can be scaled 
+Commercial real estate professionals argue that despite $1.26 trillion in upcoming debt maturities, flexible refinancing structures, rising property values, and strong lender appetite for quality assets create a navigable path through the so-called CRE debt wall. 
+
+-------------------------
+en_finextra
+2026-05-10 12:00:00
+Forbes Fintech 50 sees 20 newcomers, highlighting AI and financial inclusion driven business models 
+The 2026 Forbes Fintech 50 list features 20 new entrants, with AI-powered financial inclusion platforms, embedded finance enablers, and real-time payment infrastructure companies dominating the newcomer cohort. 
+
+-------------------------
+en_world_nuclear
+2026-05-10 12:00:00
+China's ACP100 SMR demonstration unit on track to commence operation in 2026 
+China's ACP100 small modular reactor demonstration unit at Changjiang is advancing toward commissioning in 2026, making it among the world's first commercial SMRs to reach operation and providing a reference design for global SMR market entry. 
+
+-------------------------
+en_tax_foundation
+2026-05-10 12:00:00
+Tariff Dividends Would Cost More than Tariff Revenues Will Generate 
+New Tax Foundation analysis finds that all proposed tariff dividend payment designs would cost more than total tariff revenue generated in 2025 and 2026, undermining the fiscal sustainability argument for household tariff rebate programs. 
+
+-------------------------
+en_carbon_herald
+2026-05-10 12:00:00
+ETH Zurich Develops Living Material That Captures Carbon 
+ETH Zurich researchers developed a novel bio-based construction material capable of capturing atmospheric carbon dioxide and self-repairing over time, raising the prospect of buildings as long-duration carbon sinks integrated into the built environment. 
+
+-------------------------
+en_the_middle_market
+2026-05-10 12:00:00
+Grant Thornton Advisors Buys MCA Connect 
+Grant Thornton Advisors acquired MCA Connect, an ERP consulting firm specializing in Microsoft Dynamics implementations for manufacturing, distribution, and field service, continuing the wave of advisory firm consolidation targeting industrial sector digital transformation clients. 
+
+-------------------------
+en_the_cooldown
+2026-05-10 12:00:00
+Microsoft may abandon one of tech's boldest clean energy goals as AI data centers surge 
+Microsoft is reconsidering its 2030 carbon-negative pledge as AI-driven data center electricity demand outpaces the company's renewable energy procurement capacity, highlighting the broader tension between hyperscaler climate commitments and accelerating infrastructure buildout. 
+
+-------------------------
+en_ai_weekly
+2026-05-10 12:00:00
+SWE-rebench May 2026: GPT-5.5, Claude Opus 4.7, Cursor Lead Contamination-Resistant AI Coding Benchmark 
+AI Weekly covers the SWE-rebench May 2026 leaderboard ranking AI coding models on contamination-resistant real-world repositories, with GPT-5.5, Claude Opus 4.7, and Cursor Composer 2.5 leading a densely competitive field that reflects rapid capability improvement across frontier AI systems. 
+
+-------------------------
+en_drug_discovery_trends
+2026-05-10 12:00:00
+Chinese biotechs landed 6 of 26 major pharma deals in 16 months, worth $53 billion 
+Analysis shows Chinese biotech firms secured six of 26 major pharmaceutical deals worth a combined $53 billion over 16 months, driven by AstraZeneca's $18.5B CSPC obesity drug license and AbbVie's $5.6B RemeGen deal, reflecting the globalization of China's biopharma innovation output. 
+
+-------------------------
+en_reg_med_net
+2026-05-10 12:00:00
+Cell Therapy Weekly: iPSC Therapy IND for Phase III Trial Cleared 
+The FDA cleared an IND for a Phase III trial of an iPSC-derived cell therapy, marking a landmark milestone for induced pluripotent stem cell-based regenerative medicine advancing toward pivotal clinical testing with potential for allogeneic off-the-shelf manufacturing. 
+
+-------------------------
+en_pharm_exec
+2026-05-10 12:00:00
+Pharma Companies Raise List Prices, Including 16 That Had Agreements to Lower Prices with Trump Administration 
+Despite signing Most Favored Nation pricing agreements, pharmaceutical companies raised list prices on 872 brand-name drugs in early 2026, covering cancer, diabetes, and cardiovascular treatments, underscoring the gap between voluntary pricing pledges and actual market outcomes. 
+
+-------------------------
+en_pe_hub
+2026-05-08 12:00:00
+GenNx360 and AEA Investors lead recent IT services deals; Blackstone files IPO for data center vehicle 
+PE Hub covers the IT services PE wave led by GenNx360 and AEA Investors targeting managed services and outsourced IT, alongside Blackstone's BXDC data center REIT IPO filing as PE firms lean into AI infrastructure as a capital deployment theme. 
+
+-------------------------
+en_cgt_live
+2026-05-06 12:00:00
+Around the Helix: Cell and Gene Therapy Company Updates – May 6, 2026 
+CGTlive's May 6 weekly update covers multiple regulatory milestones and pipeline progress across cell and gene therapy developers, including new FDA IND applications, Phase 1 dose escalation updates, and a RMAT designation awarded in the CAR-T liver cancer space. 
+
+-------------------------
+en_enerdata
+2026-05-01 12:00:00
+UAE announces exit from OPEC effective 1 May 2026 after 59 years 
+The United Arab Emirates formally withdrew from OPEC on May 1, 2026, ending a 59-year membership and becoming the largest oil producer to leave the cartel, citing strategic disagreements over production policy and the UAE's shift toward a sovereign energy investment model. 
+
+-------------------------
+en_drewry
+2026-05-01 12:00:00
+Cancelled Sailings Tracker – May 1: Blank Sailings Fall as Early Peak Season Demand Tightens 
+Drewry's Cancelled Sailings Tracker shows carriers reducing blank sailings in May as early peak season cargo volumes tighten vessel availability on transpacific and Asia-Europe routes, a reversal from the high void-sailing environment of Q1 2026. 
+
+-------------------------
+en_scmr
+2026-05-01 12:00:00
+The new logistics playbook for consumer and retail growth 
+Supply Chain Management Review examines how leading consumer goods companies are redesigning logistics networks for direct-to-consumer channels, real-time inventory visibility, and regionalized fulfillment models as e-commerce growth reshapes last-mile economics. 
+
+-------------------------
+en_agri_pulse
+2026-05-01 12:00:00
+Daybreak May 1: Farm bill heads to the Senate, House Ag Committee looks ahead 
+With the House passing the 2026 Farm, Food, and National Security Act, the farm bill heads to a challenging Senate path requiring at least 60 votes to overcome the filibuster; the House Ag Committee chair outlined priorities including precision agriculture standards, biofuel infrastructure, and rural broadband. 
+
+-------------------------
+en_finextra
+2026-04-30 12:00:00
+Real-time payments, embedded finance, and back-end infrastructure: fintech priorities for 2026 
+A Finextra analysis identifies real-time payments, embedded finance integration, and core banking modernization as the top infrastructure investment priorities for fintech and incumbent banking companies in 2026, with ISO 20022 migrations accelerating across major markets. 
+
+-------------------------
+en_pe_hub
+2026-04-25 12:00:00
+Private equity taps into fragmented insurance market: 8 notable deals 
+PE Hub highlights eight recent PE deals in the fragmented insurance sector including acquisitions of regional carriers and specialty underwriters, as alternative asset managers seek diversified fee income streams beyond traditional buyout exits. 
+
+-------------------------
+en_tax_foundation
+2026-04-20 12:00:00
+Tariff Tracker: 2026 Trump Tariffs & Trade War by the Numbers 
+The Tax Foundation's continuously updated tariff tracker quantifies Trump-era tariffs as the largest US tax increase as a share of GDP since 1993, amounting to an average household burden of $1,500 in 2026, with broad economic modeling showing a 0.7% long-run GDP uplift from OBBBA tax cuts partially offsetting the drag. 
+
+-------------------------
+en_drug_discovery_trends
+2026-04-20 12:00:00
+Pharma 50 2026: The top spot in pharma rarely lasts. Lilly is betting it can change that. 
+Drug Discovery Trends' Pharma 50 ranking examines how Eli Lilly, the first pharma company to exceed a $1 trillion market cap fueled by global GLP-1 demand, is planning to sustain leadership through next-generation obesity pipeline candidates and cardiovascular-metabolic disease expansion. 
+
+-------------------------
+en_satellite_today
+2026-04-20 12:00:00
+The Seismic Shifts in the Satellite Communications Landscape are Far From Over 
+Via Satellite's analysis in its April/May 2026 issue documents how Starlink, Amazon LEO, Chinese SSPs, and AST SpaceMobile are collectively disrupting incumbent satellite operators, with RAND projecting nearly 25,000 satellites on orbit by 2031—70% of them commercial. 
+
+-------------------------
+en_pharm_exec
+2026-04-20 12:00:00
+The New Era of U.S. Pharmaceutical Pricing: From Policy Upheaval to Strategic Adaptation 
+PharmExec analyzes how pharmaceutical companies are restructuring pricing strategy under simultaneous pressures of Medicare drug price negotiation results (effective January 1), TrumpRx MFN deals, and international reference pricing proposals targeting 15 additional drugs in 2026. 
+
+-------------------------
+en_scmr
+2026-04-15 12:00:00
+Beyond reshoring: Nearshoring to Mexico 
+SCMR analysis finds that despite US reshoring headlines, the majority of small-to-mid-sized manufacturers are opting for Mexican nearshoring given wage differentials up to 80% lower than US labor costs and proximity advantages over China for North American distribution. 
+
+-------------------------
+en_satellite_today
+2026-04-15 12:00:00
+Is Europe Moving Fast Enough to Close its Space Defense Gaps? 
+Via Satellite examines whether European space defense investment is keeping pace with strategic threats, noting Germany's plan to deploy a 100+ satellite military communications constellation (SATCOM Stage 4) as European militaries scramble to reduce dependence on US satellite infrastructure. 
+
+-------------------------
+en_idga
+2026-04-15 12:00:00
+Defense News Digest: April 2026 Update 
+IDGA's April 2026 digest covers the $10 billion Golden Dome missile defense funding increase, bringing total projected program cost to $185 billion, the Army's new digital UAS marketplace, and Congressional direction to accelerate counter-UAS integration with broader air defense systems. 
+
+-------------------------
+en_reg_med_net
+2026-04-15 12:00:00
+Regenerative Medicine Highlights: January – March 2026 
+RegMedNet's Q1 2026 highlights cover Gilead Sciences' $7.8 billion acquisition of Arcellx, clinical progress in 3D-printed ceramic bone grafts, a mesenchymal stem cell trial for mild Alzheimer's disease, and SmartCella and Catalent's agreement for cardiac and Parkinson's regenerative therapies. 
+
+-------------------------
+en_petroleum_economist
+2026-04-15 12:00:00
+Gas outshines expectations 
+Petroleum Economist reports that global LNG demand is growing faster than forecast, fueled by AI data center power needs and electrification in developing economies, even as a massive new wave of US and Qatari LNG supply ramps up and threatens to push spot prices to multi-year lows. 
+
+-------------------------
+en_costar
+2026-04-14 12:00:00
+Blackstone launches data center REIT in bet on AI boom 
+Blackstone filed to debut the Blackstone Digital Infrastructure Trust (BXDC), a pure-play data center REIT targeting the AI-driven infrastructure market, betting that artificial intelligence and cloud computing will drive a $1 trillion leased-data-center market within five years. 
+
+-------------------------
+en_money_laundering_news
+2026-04-08 14:00:00
+FinCEN and OFAC Issue NPRM to Implement the GENIUS Act Stablecoin AML Framework 
+FinCEN and OFAC jointly issued a Notice of Proposed Rulemaking implementing GENIUS Act AML/CFT requirements for stablecoin issuers, establishing reserve requirements, disclosure standards, and OFAC sanctions compliance obligations for payment stablecoin platforms. 
+
+-------------------------
+en_agtech_navigator
+2026-04-08 12:00:00
+USDA seeks innovative agriculture technologies for new program 
+The USDA launched the National Proving Grounds Network for AgTech (NPG-AG), a nationwide initiative providing real-world testing environments for precision agriculture, autonomous systems, and crop science innovations as part of the 2026 Farm, Food, and National Security Act. 
+
+-------------------------
+en_money_laundering_news
+2026-04-08 08:00:00
+FinCEN's Proposed Rule to Reform Financial Institution AML/CFT Programs 
+FinCEN proposed a landmark rule overhauling how banks design AML/CFT programs, shifting from 'check-the-box' process compliance toward risk-based effectiveness measurement, and formally strengthening FinCEN's supervisory role over the federal bank regulators' AML examinations. 
+
+-------------------------
+en_gen_eng_news
+2026-04-01 12:00:00
+Pharma's AI Investment Signals New Drug Discovery Paradigm 
+GEN analysis finds pharmaceutical companies are deploying AI not just for target identification but as a core engine for full drug discovery pipelines, with $30–$40 billion in annual AI investment reshaping candidate selection, clinical trial design, and regulatory submission timelines. 
+
+-------------------------
+en_agtech_navigator
+2026-03-24 12:00:00
+4 trends reshaping agtech: How start-ups, investors, companies are navigating a tough year 
+AgTechNavigator editors from the World Agri-Tech Summit identify four 2026 defining trends: AI and robotics moving from pilots to full deployment, VC funding slowly recovering from a $6.6B low in 2025, direct-to-consumer farm models gaining traction, and quantum computing entering agricultural genomics discussion. 
+
+-------------------------
+en_fintech_weekly
+2026-03-20 12:00:00
+SEC Names Bitcoin, Ether, Solana and 13 More Crypto Assets Digital Commodities — Not Securities 
+The SEC and CFTC issued a joint 68-page interpretation on March 17, 2026, explicitly classifying 16 crypto assets including Bitcoin, Ether, Solana, and XRP as digital commodities, providing the long-sought regulatory clarity that had blocked institutional participation in US crypto markets. 
+
+-------------------------
+en_business_facilities
+2026-03-20 12:00:00
+Infrastructure & Incentives Update (Mar. 20, 2026) 
+Business Facilities' March 20 update covers manufacturing expansion announcements including steel, dairy, clean energy, and healthcare facilities across Nevada, Tennessee, Pennsylvania, and South Dakota, with a combined investment exceeding $166 million and over 1,300 new jobs. 
+
+-------------------------
+en_data_center_knowledge
+2026-03-18 12:00:00
+GTC 2026: Nvidia Unveils Vera Rubin AI Platform, Eyes $1T by 2027 
+At GTC 2026, Nvidia unveiled the Vera Rubin AI platform and raised its total sales projection toward $1 trillion by 2027, citing accelerating inference economics and surging enterprise AI deployment as key demand drivers for next-generation GPU infrastructure. 
+
+-------------------------
+en_data_center_knowledge
+2026-03-15 12:00:00
+New Data Center Developments: March 2026 
+New data center developments in March 2026 include Equinix and CPP Investments' $4 billion acquisition of atNorth in Iceland and continued hyperscaler buildout across North America, Europe, and Asia-Pacific, with global IT spend forecast to reach $6.07 trillion in 2026. 
+
+-------------------------
+en_world_nuclear
+2026-03-15 12:00:00
+Europe accelerates nuclear resurgence with SMR licensing plans across multiple countries 
+Slovakia, Hungary, and the UK are advancing SMR feasibility studies and regulatory licensing processes as Europe's energy security crisis accelerates the nuclear renaissance, with the World Nuclear Association projecting 50+ GW of new nuclear capacity additions by 2035. 
+
+-------------------------
+en_idga
+2026-03-15 12:00:00
+Defense News Digest: March 2026 Update 
+IDGA's March 2026 defense digest covers FY2027 NDAA priorities including hypersonic weapon development programs, counter-UAS technology integration, and the Navy's August downselect between Boeing and Northrop Grumman for the sixth-generation F/A-XX fighter. 
+
+-------------------------
+en_fintech_weekly
+2026-03-10 12:00:00
+The Banks Are Winning One Battle. Here Is What That Means for the Other. 
+The American Bankers Association formally rejected the White House's CLARITY Act compromise on March 5, stalling Senate crypto market structure legislation and centering the conflict on whether stablecoin issuers and crypto platforms can offer yield on dollar-denominated tokens like USDC. 
+
+-------------------------
+en_business_facilities
+2026-03-06 12:00:00
+Infrastructure & Incentives Update (Mar. 6, 2026) 
+Business Facilities' March 6 infrastructure update covers Georgia Ports Authority's new Gainesville inland port opening May 4, 2026, providing direct rail connection to Savannah's global carrier network and supporting poultry, heavy equipment, and forest product manufacturers. 
+
+-------------------------
+en_livewire_markets
+2026-03-03 12:00:00
+21 ASX stocks that should be on your radar 
+Livewire Markets curates 21 ASX stocks to watch in 2026, spanning mining, energy, financials, and technology, with copper and gold miners featuring prominently alongside AI infrastructure beneficiaries and value stocks recovering from the multi-year tech dominance cycle. 
+
+-------------------------
+en_alternative_fund_insight
+2026-03-01 12:00:00
+Hedge Fund Power List 2026: $10bn+ ranking 
+AQR topped the Alternative Fund Insight Power List for 2026 after its AuM nearly doubled to $109.1bn (+89%), while long-time leader Bridgewater Associates dropped to fifth place; the ranking reflects a major reshuffling as quant and multi-strategy platforms gained the most assets in 2025. 
+
+-------------------------
+en_business_facilities
+2026-02-20 12:00:00
+Infrastructure & Incentives Update (Feb. 20, 2026) 
+Business Facilities' February 20 update tracks site selection activity and economic development incentive packages driving advanced manufacturing, logistics, and energy sector investment decisions across US regions amid intensifying state competition for reshoring projects. 
+
+-------------------------
+en_petroleum_economist
+2026-02-01 12:00:00
+Outlook 2026: From wells to wafers – How MENA is powering the new energy–data nexus 
+A Petroleum Economist analysis traces how MENA countries are leveraging hydrocarbon revenues to fund critical minerals strategies and hyperscale data center buildouts, creating a new energy-digital nexus where Abu Dhabi, Riyadh, and Doha position themselves as AI infrastructure hubs. 
+
+-------------------------
+en_agritech_insights
+2026-02-01 12:00:00
+Precision Farming to Revolutionize Global Agriculture by 2026 
+AgriTech Insights reports that over 70% of large crop farms are expected to adopt satellite-based precision farming by 2026, with AI and drone integration projected to boost global crop yields by up to 25% and transform input cost management across major grain-producing regions. 
+
+-------------------------
+en_woodmac
+2026-01-20 12:00:00
+Five themes shaping the energy world in 2026 
+Wood Mackenzie identifies five key 2026 energy themes: the LNG supply glut from new US and Qatari capacity, power grid constraints from AI-driven demand, global coal peak demand, energy transition investment reallocation, and the accelerating geopolitics of critical minerals. 
+
+-------------------------
+en_livewire_markets
+2026-01-20 12:00:00
+7 Magnificent Miners: 2026's top picks in copper, iron ore, lithium, rare earths, gold, silver, and uranium 
+Livewire profiles seven ASX miners tipped as top picks for 2026, with Westgold Resources topping the gold rankings, Rio Tinto leading diversified miners, and copper-exposed names attracting the strongest buy consensus as the energy transition supercycle accelerates. 
+
+-------------------------
+en_csis
+2026-01-20 12:00:00
+The 2026 National Defense Strategy by the Numbers: Radical Changes, Moderate Changes, and Some Continuities 
+CSIS quantitative analysis of the 2026 National Defense Strategy identifies radical reorientations in deterrence posture, defense industrial prioritization, and acquisition timelines, alongside continuities in Indo-Pacific focus, allied burden-sharing expectations, and nuclear modernization investment. 
+
+-------------------------
+en_gen_eng_news
+2026-01-15 12:00:00
+Seven Biopharma Trends to Watch in 2026 
+GEN's 2026 biopharma outlook identifies GLP-1 market expansion, gene therapy commercial scale-up, AI-driven drug discovery, biosimilar competition in oncology biologics, China licensing deal activity, MFN drug pricing impacts, and cell therapy manufacturing efficiency as the seven defining themes. 
+
+-------------------------
+en_scmr
+2026-01-15 12:00:00
+2026 supply chain predictions 
+SCMR's annual supply chain predictions for 2026 highlight three defining themes: agentic AI moving from pilot to workflow integration, packaging as a digital channel under the GS1 Sunrise 2027 barcode mandate, and geopolitical trade disruptions passing resilience costs to consumers. 
+
+-------------------------
+en_woodmac
+2026-01-15 12:00:00
+Metals & mining: what to look for in 2026 
+Wood Mackenzie forecasts copper-led M&A as the dominant theme in 2026 metals and mining, with tier-one copper assets commanding premium valuations as supply disruptions and electrification demand sustain elevated prices despite broader macro headwinds from US tariffs and China slowdown risks. 
+
+-------------------------
+en_alternative_fund_insight
+2026-01-15 12:00:00
+Launches begin 2026 on the rise as Form D filings jump 50% 
+Alternative Fund Insight's hedge fund launch tracker shows Form D filings jumped 50% from November to December 2025, signaling strong new-fund momentum heading into 2026 as improving capital raising conditions and institutional appetite for alternatives drive launch activity. 
+
+-------------------------
+en_petroleum_economist
+2026-01-15 12:00:00
+Trump's bid to reshape the global energy order 
+Petroleum Economist examines how Trump's pro-fossil fuel policies, LNG export acceleration, and withdrawal from multilateral climate frameworks are reshaping US energy geopolitics, with Brent crude forecast to average $63/bl in 2026 as OPEC+ cohesion weakens following the UAE's exit. 
+
+-------------------------
+en_livewire_markets
+2026-01-15 12:00:00
+Top 6 ASX takeover picks for 2026 
+Livewire Markets identifies six ASX companies most likely to be acquired in 2026, reviewing the prior year's picks including one 10-bagger, as mining M&A activity intensifies around copper, gold, and critical minerals assets amid global competition for energy transition supply chains. 
+
+-------------------------
+en_idga
+2026-01-10 12:00:00
+What Are the Top Defense Technology Priorities for 2026? A Quick Guide 
+IDGA identifies AI integration, hypersonic weapons, counter-UAS systems, supply chain security, and air superiority as the Pentagon's five top technology priorities under the $900.6 billion FY2026 NDAA, with AI and autonomous systems receiving the largest year-over-year investment increases. 
+
+-------------------------
+en_agritech_insights
+2026-01-10 12:00:00
+Agriculture's 2026 Transformation: Tech and Trade Triumphs 
+AgriTech Insights surveys the forces reshaping agriculture in 2026, from AI-driven decision support and autonomous machinery to US-China agricultural trade normalization and precision irrigation technologies addressing water scarcity in key production regions. 
+
+-------------------------
+en_alternative_fund_insight
+2025-12-15 12:00:00
+'Significant gains' – hedge fund performance round-up and 2026 outlook 
+Hedge funds finished 2025 up 12.6%, their best year since 2009, led by macro and equity strategies; the 2026 outlook favors managed futures if rate and FX trends remain persistent, with CTAs positioned to compound gains from the global inflation and geopolitical volatility environment. 
+
+-------------------------
+en_agritech_insights
+2025-12-13 12:00:00
+Larger U.S. Farms Lead Precision Agriculture Adoption, Small Farms Lag Behind 
+New survey data shows a widening adoption gap in US precision agriculture, with large farms deploying GPS-guided machinery, drone scouting, and variable-rate input applications while small farms cite capital costs, connectivity barriers, and complexity as key obstacles to technology uptake. 
+
+-------------------------

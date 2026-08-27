@@ -1,0 +1,540 @@
+en_nar_realtor
+2026-05-31 12:00:00
+May 2026 Commercial Real Estate Market Insights 
+NAR's May CRE report shows US office net absorption reached 8.5 million SF annually in April, reversing a prior-year deficit, as vacancy fell to 13.9% and rent growth ticked up to 1.3%. Multifamily demand remained above historical norms despite a 22% annual decline in absorption, with supply deliveries slowing to narrow the gap. 
+
+-------------------------
+en_worldoil
+2026-05-28 12:00:00
+Reform UK pushes expanded North Sea drilling in energy talks 
+Reform UK leader Richard Tice urged major energy companies to support lower costs and expanded domestic oil and gas production if the party wins the next UK general election, signaling a potential reversal of Britain's net-zero energy strategy. The pitch comes as the UK debates how to balance energy security with climate commitments amid elevated global energy prices. 
+
+-------------------------
+en_seasnews
+2026-05-27 12:00:00
+MSC Adjusts Emergency Fuel Surcharge Amidst Market Volatility 
+Mediterranean Shipping Company updated its emergency fuel surcharge rates effective late May as oil price volatility driven by Strait of Hormuz disruptions continues to pressure shipping economics. Carriers across major trade lanes have implemented or revised emergency surcharges over the past two months as the energy-supply disruption reshapes spot freight markets. 
+
+-------------------------
+en_advisory
+2026-05-27 12:00:00
+Health policy roundup: US issues new travel restrictions amid Ebola outbreak 
+The CDC announced US entry restrictions for certain legal residents from the DRC, Uganda, or South Sudan amid an escalating Ebola outbreak, adding to a growing list of public health challenges facing the health system in mid-2026. Advisory Board's daily briefing also covers CMMI's push to expand value-based care models as a cost-reduction mechanism. 
+
+-------------------------
+en_geopolitical_monitor
+2026-05-25 12:00:00
+Geopolitics Weekly (Iran War, Putin-Xi Summit, DRC Ebola Outbreak) 
+The weekly geopolitical digest covers the ongoing US-Israel-Iran conflict, a Putin-Xi diplomatic summit exploring Russia's pivot amid the war, and an escalating Ebola outbreak in the DRC. Analysts assess compounding flashpoints as multiple regional crises deepen simultaneously. 
+
+-------------------------
+cn_esmchina
+2026-05-25 12:00:00
+2026年前四月中国芯片出口暴涨100.1% 
+海关数据显示，2026年前四个月中国集成电路出口额同比大增100.1%，达到历史新高，成熟制程芯片出口是主要驱动力之一，同时国内AI和消费电子需求带动了整体产业链景气度大幅回升。 
+
+-------------------------
+en_biospace
+2026-05-25 12:00:00
+6 FDA Decisions To Watch in Q2 2026 
+BioSpace outlines six critical FDA PDUFA dates in Q2 2026, including Vertex's potential IgA nephropathy approval, Intellia's hereditary angioedema gene therapy, and additional indications for established oncology drugs. The Q2 calendar reflects the biopharma industry's strong late-stage pipeline as companies target a favorable regulatory environment under the current FDA leadership. 
+
+-------------------------
+en_american_banker
+2026-05-25 12:00:00
+Chime hits GAAP profitability in Q1 
+Neobank Chime reported GAAP profitability for Q1 2026 on a 25% year-over-year revenue increase, with active users growing 19% to 10.2 million as its credit card and savings products gained traction. The milestone strengthens Chime's IPO prospects as it positions itself against traditional banks in a regulatory environment increasingly friendly to fintech charters. 
+
+-------------------------
+en_supplychainbrain
+2026-05-25 12:00:00
+UN Cuts Global GDP Growth Forecast 
+The UN revised its 2026 global GDP growth projection from 2.7% to 2.5%, with downside scenarios pointing to as low as 2.1%, citing US tariff escalation, geopolitical disruptions, and slowing Chinese domestic demand. Global inflation is now forecast at 3.9%, up from the 3.1% estimate made at the year's start. 
+
+-------------------------
+en_rtt_news
+2026-05-25 12:00:00
+Biotech Stocks Facing FDA Decision In June 2026 
+RTTNews's monthly FDA calendar tracker outlines key PDUFA action dates in June 2026 for biotech stocks, including decisions on therapies in oncology, rare disease, and immunology with significant commercial potential. The tracker covers expected approval decisions, complete response letter risk assessments, and advisory committee meeting schedules. 
+
+-------------------------
+en_atlantic_council
+2026-05-22 12:00:00
+Washington's latest force posture moves have Europeans feeling whiplash 
+Atlantic Council analysts document growing European frustration with the Trump administration's erratic NATO force posture decisions — announcing withdrawals then reversals — which undermine allied operational planning and long-term deterrence credibility. Analysts warn that European confidence in the US security commitment has fallen to its lowest point in decades even as defense budgets are rising. 
+
+-------------------------
+en_endpoints
+2026-05-22 12:00:00
+Novartis bets that Avidity's science could extend beyond muscular dystrophies 
+Novartis's collaboration with Avidity Biosciences is showing signs that the company's RNA-targeted antibody-oligonucleotide technology may have applications beyond the muscular dystrophy indications for which it was originally developed. The partnership reflects Big Pharma's intensifying interest in next-generation RNA medicines as an alternative to traditional small molecule and antibody approaches. 
+
+-------------------------
+en_military_aerospace
+2026-05-20 12:00:00
+2026 Military + Aerospace Electronics Innovators Awards submission deadline approaching 
+Military & Aerospace Electronics has opened its annual Innovators Awards program for 2026, inviting entries across embedded computing, electronic warfare, communications, and sensors categories. The awards recognize breakthrough products advancing defense and aerospace electronics capabilities. 
+
+-------------------------
+en_thedairysite
+2026-05-20 12:00:00
+USDA boosts 2026 milk output forecast on herd expansion 
+The USDA raised its 2026 all-milk price forecast to $18.95 per cwt and lifted the milk production projection to 231.3 billion pounds, citing herd expansion following easing feed costs. The upward revision reflects improving margins that have incentivized producers to grow their herds after two years of contraction. 
+
+-------------------------
+en_seasnews
+2026-05-20 12:00:00
+GEODIS Unifies Sealogis and XP LOG Under Single Brand 
+French logistics giant GEODIS consolidated its French port logistics operations by integrating subsidiary brands Sealogis and XP LOG under a unified GEODIS identity, streamlining its Go-to-Market in French maritime logistics. The integration aims to improve service coherence for customers handling import-export flows through Le Havre, Marseille, and other French ports. 
+
+-------------------------
+cn_esmchina
+2026-05-20 12:00:00
+2026年COMPUTEX前夕，电源管理芯片短缺成为AI产业的隐形瓶颈 
+临近COMPUTEX 2026展会，业界关注焦点之一是电源管理IC（PMIC）的持续短缺，这已成为AI服务器和数据中心扩容的隐形制约因素。多家供应商反映交期拉长至20-26周，部分关键型号涨价幅度超过40%。 
+
+-------------------------
+en_american_banker
+2026-05-20 12:00:00
+Robinhood's bet on agentic trading and purchasing is 'wake-up call' for banks 
+Robinhood's launch of agentic trading — allowing AI agents to autonomously trade equities and make credit card purchases on behalf of customers — is forcing banks to accelerate their own AI roadmaps. Industry analysts warn that agentic financial services represent a fundamental shift in the customer relationship that incumbent banks are ill-positioned to match without major technology investment. 
+
+-------------------------
+en_advisory
+2026-05-20 12:00:00
+Health policy roundup: CMS makes major changes to ACA exchanges in final rule 
+CMS finalized the 2027 Notice of Benefit and Payment Parameters with sweeping new policies for ACA exchanges, including significant changes to special enrollment periods, plan standardization requirements, and broker compensation rules. The final rule reflects the administration's effort to reshape marketplace dynamics while managing subsidy costs following Congress's failure to extend enhanced premium tax credits. 
+
+-------------------------
+en_supplychainbrain
+2026-05-20 12:00:00
+NASA Lays Out Roadmap for Permanent Moon Base 
+NASA released its roadmap for a permanent lunar outpost, with Phase 1 launches scheduled for 2026 targeting surface logistics and power infrastructure that will support permanent crewed presence by the early 2030s. Supply chain planners are examining how lunar base logistics will drive demand for specialized Earth-to-Moon freight capabilities. 
+
+-------------------------
+en_thepigsite
+2026-05-20 12:00:00
+JBS profit falls 56% on North America struggles 
+South America's JBS, the world's largest meatpacker, reported a 56% decline in Q1 net profit, missing market estimates as the firm grappled with challenges in its North American beef and poultry operations including elevated live cattle costs and competitive retail pricing. The company flagged improving margins in Brazil and Europe as partial offsets. 
+
+-------------------------
+en_thepigsite
+2026-05-20 12:00:00
+Hormel beats Q2 estimates on strong protein demand 
+Hormel Foods exceeded Q2 2026 revenue and earnings estimates, supported by strong demand for its chicken and turkey products across foodservice and retail channels even as beef input costs weighed on margins. The company raised its fiscal 2026 chicken business income forecast to $1.9–2.05 billion, reflecting operational improvements and volume growth. 
+
+-------------------------
+en_endpoints
+2026-05-20 12:00:00
+Bepirovirsen data marks a 'historic moment' for hepatitis B field 
+Physicians called results from the bepirovirsen hepatitis B trial a 'historic moment' as the drug demonstrated functional cure rates that no prior HBV therapy has achieved in a Phase 3 setting. The data validates a multi-mechanism approach to HBV suppression and positions bepirovirsen as a clear blockbuster candidate pending regulatory review. 
+
+-------------------------
+en_military_aerospace
+2026-05-18 12:00:00
+Pentagon classified AI push expected to drive demand for rugged embedded computing 
+The DoD is accelerating AI deployment within classified environments through partnerships with major technology firms, creating demand for ruggedized secure embedded computing systems. Military AI programs require hardened hardware capable of operating at the tactical edge in disconnected, denied environments. 
+
+-------------------------
+en_semiconductor_packaging_news
+2026-05-18 12:00:00
+StratEdge Takes High-Reliability Packaging on the Road for CSMantech, Space Tech Expo USA, and IMS 2026 
+StratEdge will showcase its high-reliability hermetic semiconductor packages at three major industry events in May-June 2026, targeting defense, space, and high-frequency microwave markets. The company's packaging solutions are qualified for harsh-environment applications where standard commercial packages fail. 
+
+-------------------------
+en_advisory
+2026-05-18 12:00:00
+CMS' latest Star Ratings are here. How did your hospital fare? 
+CMS released its 2026 hospital Star Ratings, reflecting the agency's overhauled methodology that places greater emphasis on patient safety and clinical outcome measures over patient satisfaction scores. The ratings will influence value-based purchasing payments and consumer hospital choice, with several major academic medical centers seeing rating changes under the new framework. 
+
+-------------------------
+en_thebeefsite
+2026-05-15 12:00:00
+US beef sector braces for another volatile year as cattle supply tightens 
+The US beef cow inventory has fallen by nearly 3.8 million head since peaking in 2019, with the steepest declines in the Northern and Southern Plains, creating tight supplies and record cash prices. CoBank's quarterly report warns the sector faces continued volatility as demand remains strong but herd rebuild progress is slow and uneven. 
+
+-------------------------
+en_fpri
+2026-05-15 12:00:00
+Decoding China's 15th Five-Year Plan 
+The Foreign Policy Research Institute analyzes China's revised 15th Five-Year Plan and Beijing's recalibration in response to shifting US strategic pressures, including export controls and technology decoupling. The plan reveals Beijing's pivot toward self-sufficiency in semiconductors, AI, and advanced manufacturing while signaling continued Belt and Road investment. 
+
+-------------------------
+en_greencars
+2026-05-15 12:00:00
+The Great Hybrid Revival: 2026 Models Lead a New Efficiency Wave 
+The 2026 model year is seeing a wave of new hybrid releases, including the first hybrid version of the Hyundai Palisade three-row SUV, the Ford Maverick AWD hybrid, and a redesigned Honda Elevate, as automakers respond to consumer demand for fuel efficiency without full electrification. Average EV prices remain $6,532 above comparable gas vehicles, narrowing but still material for mainstream buyers. 
+
+-------------------------
+en_seasnews
+2026-05-15 12:00:00
+Dry Bulk Takeover Battle Intensifies Between Diana Shipping and Genco Shipping 
+A hostile takeover battle between dry bulk carriers Diana Shipping and Genco Shipping is escalating as both companies maneuver for board control ahead of a crucial shareholder vote. The contest highlights consolidation pressures in the dry bulk sector as weaker freight rates squeeze smaller operators. 
+
+-------------------------
+en_american_banker
+2026-05-15 12:00:00
+Bank earnings rise in Q1, though margins tightened 
+US banks collectively earned $80.5 billion in Q1 2026 with lending growing at its fastest pace in years, but net interest margins compressed and unrealized securities losses grew as the rate outlook shifted. Two bank failures in early 2026 — Metropolitan Capital and Community Bank & Trust-West Georgia — fit the recent pattern of firm-specific failures rather than systemic stress. 
+
+-------------------------
+en_atlantic_council
+2026-05-15 12:00:00
+The future of US counterterrorism: An expert assessment of the 2026 White House strategy 
+Atlantic Council experts assess the Trump administration's May 2026 Counterterrorism Strategy, finding it narrows focus to narcoterrorism, Islamist groups, and left-wing extremists while deprioritizing state-sponsored terrorism and structural drivers of radicalization. Analysts note the strategy's success will depend on interagency coordination improvements that previous CT strategies have promised but rarely delivered. 
+
+-------------------------
+en_thepigsite
+2026-05-15 12:00:00
+Hog futures hit lowest level since December - CME 
+CME lean hog June futures fell 0.6 cents to 97.925 cents per pound, hitting their lowest level since December, as weaker pork export demand and seasonal supply patterns pressured the complex. Analysts note that US pork production remains elevated as hog supplies stay ample despite rising feed cost pressures. 
+
+-------------------------
+en_rtt_news
+2026-05-15 12:00:00
+Biotech Stocks On The Move: What Causes Major Price Swings 
+RTTNews examines the key catalysts driving major biotech stock price movements in 2026, including FDA decisions, Phase 3 data readouts, partnership announcements, and broader market sentiment toward risk assets. The analysis identifies sectors — particularly obesity, oncology ADCs, and gene therapy — as generating outsized equity responses to clinical and regulatory news. 
+
+-------------------------
+en_worldoil
+2026-05-14 12:00:00
+Trump says Xi backs diplomatic push to reopen Strait of Hormuz 
+President Trump announced that Chinese President Xi Jinping supports diplomatic efforts to reopen the Strait of Hormuz as ongoing disruption to Middle Eastern shipping continues to pressure global energy markets. The US and Iran are reportedly nearing a potential ceasefire agreement, though Chevron's CEO noted multiple vessels were attacked this week in the strait. 
+
+-------------------------
+en_civil_eats
+2026-05-14 12:00:00
+Rollins Faces Lawsuit for 'Pattern' of Christian Messaging 
+USDA employees have filed a lawsuit against Secretary of Agriculture Brooke Rollins alleging a persistent pattern of subjecting workers to Christian religious messaging in violation of the First Amendment's Establishment Clause. The suit adds to growing legal challenges against the USDA leadership's approach to agency culture and religious expression in the federal workplace. 
+
+-------------------------
+en_thebeefsite
+2026-05-12 12:00:00
+China to impose 55% beef tariff above import quotas 
+China's commerce ministry announced that a 55% tariff will apply to beef imports above its 2026 safeguard quota of 2.7 million metric tons, escalating trade friction with major exporters. The move is expected to redirect Australian and Brazilian shipments while tightening global premium beef supplies. 
+
+-------------------------
+en_worldoil
+2026-05-12 12:00:00
+EIA launches new oil, LNG chokepoint datasets amid Hormuz crisis 
+The US EIA launched new quarterly energy security datasets on May 12 covering global strategic petroleum reserves and shipping flows through key oil and LNG chokepoints including the Strait of Hormuz. The move responds to sustained disruption in the strait, which handles roughly 20% of global oil trade. 
+
+-------------------------
+en_thedairysite
+2026-05-10 12:00:00
+Corn holds ground as US farmers eye 2026 cuts 
+US corn futures stabilized as farmers finalized 2026 planting decisions, with analysts projecting a modest 3-4% acreage reduction from 2025's near-record levels. Tight margins for the fourth consecutive year are prompting a cautious shift toward soybeans in several Midwest production regions. 
+
+-------------------------
+en_atlantic_council
+2026-05-10 12:00:00
+Your expert guide to the 2026 National Defense Authorization Act 
+The Atlantic Council's guide to the 2026 NDAA breaks down major provisions including new authorities for AI-enabled systems in the DoD, Space Force expansion funding, and measures to accelerate allied industrial base integration. The analysis highlights key differences from administration requests and likely conference committee sticking points between the House and Senate versions. 
+
+-------------------------
+en_health_affairs
+2026-05-08 12:00:00
+Understanding CMS's Proposed Rule Regarding Prior Authorization For Drugs 
+Health Affairs Forefront analyzes CMS's proposed rule to overhaul prior authorization requirements for prescription drugs, which would require affected payers to publicly post data on PA requests and determinations starting in 2026. The rule aims to reduce administrative burden for physicians and improve patient access to needed medications while maintaining plan cost management tools. 
+
+-------------------------
+en_c4isrnet
+2026-05-07 12:00:00
+Pentagon turns to AI targeting to help troops shoot drones 
+The DoD is developing the C-UAS Close-In Kinetic Defeat Enhancement project, which uses AI, machine learning, and computer vision to distinguish threats from non-threats faster than human operators at Common Remotely Operated Weapon Stations on military vehicles. The AI-targeting system is the first phase of a broader effort to automate counter-drone responses across US ground forces. 
+
+-------------------------
+en_civil_eats
+2026-05-07 12:00:00
+Critics Say New SNAP Rule Will Do Little to Increase Healthy Options 
+A new USDA rule requiring SNAP-accepting retailers to double available healthy food options has drawn criticism from public health advocates who argue the rule's definitions are too broad to meaningfully improve nutrition access. The rule, while expanding what retailers must stock, does not limit SNAP purchases of foods advocates consider unhealthy. 
+
+-------------------------
+en_lawfare_media
+2026-05-06 12:00:00
+Trump Administration Releases 2026 Counterterrorism Strategy 
+Lawfare provides detailed analysis of the Trump White House's 16-page 2026 Counterterrorism Strategy, which identifies narcoterrorists, legacy Islamist groups, and left-wing extremists as the three priority threat categories. The strategy marks a significant doctrinal shift from the Biden administration's approach, deprioritizing white nationalist groups and structural counter-radicalization programs. 
+
+-------------------------
+en_thedairysite
+2026-05-05 12:00:00
+Purdue report flags policy, trade risks for agriculture 
+Purdue University's latest agricultural outlook report highlights mounting trade policy uncertainty and potential farm bill changes as primary risks to 2026 crop and livestock margins. The report warns that retaliatory tariffs on US agricultural exports could significantly erode income projections in key commodities. 
+
+-------------------------
+en_c4isrnet
+2026-05-04 12:00:00
+The Navy absorbs lessons from Epic Fury 
+US Navy commanders are distilling operational and electronic warfare lessons from Operation Epic Fury — the February 28 US-Israel strike against Iran — to refine naval doctrine for future high-end contested environments. Key takeaways include the importance of multi-domain command-and-control resilience and satellite communications survivability under adversary jamming. 
+
+-------------------------
+en_civil_eats
+2026-05-04 12:00:00
+WIC Cuts Proposed as USDA Makes Changes to Food Aid Office 
+House Republicans advanced a 2027 appropriations bill that would reduce fresh fruit and vegetable benefits for WIC participants and trim overall program funding while eliminating virtual appointment access. The cuts arrive as USDA simultaneously reorganizes its food aid administrative structure, raising concerns about service continuity for the 6.5 million program participants. 
+
+-------------------------
+en_geopolitical_monitor
+2026-05-01 12:00:00
+Indus Waters Treaty, and India-Pakistan Ties: A Year after Pahalgam 
+One year after the Pahalgam attack triggered a crisis in India-Pakistan relations, the bilateral relationship remains frozen at its lowest point in decades despite limited back-channel contacts. Analysts assess whether the Indus Waters Treaty framework can survive sustained diplomatic hostility and whether water disputes may escalate further. 
+
+-------------------------
+en_oilfield_technology
+2026-05-01 12:00:00
+UAE withdrawal from OPEC effective 1 May 2026 raises risk of oversupply, Wood Mackenzie warns 
+Wood Mackenzie analysts warn that the UAE's departure from OPEC, effective May 1, represents the most significant fracture in the organization's 66-year history and increases the risk of oversupply weighing on oil prices. The exit removes a major Gulf producer from OPEC's output management framework amid ongoing Strait of Hormuz disruption. 
+
+-------------------------
+en_health_affairs
+2026-05-01 12:00:00
+Disclaimers As Disinformation: Federal Subversion Of Court-Ordered Website Restorations 
+Health Affairs researchers document cases where federal agencies added discouraging disclaimers to court-ordered website restorations, effectively undermining judicial orders aimed at restoring public health information. The analysis raises First Amendment and separation-of-powers questions about the executive branch's use of website management to shape health policy outcomes. 
+
+-------------------------
+en_agweek
+2026-05-01 12:00:00
+Finstad calls House-passed farm bill a win for Minnesota 
+Rep. Brad Finstad praised the House passage of the Farm, Food, and National Security Act of 2026 — approved 224-200 on April 30 — as a critical victory for Minnesota farmers dealing with high input costs and challenging markets. Key provisions include higher reference prices for Title I crops and expanded crop insurance subsidies designed to stabilize farm incomes through 2031. 
+
+-------------------------
+cn_21jingji
+2026-04-28 12:00:00
+AI应用大会观察：国模国芯深度协同，机器人进入C端 
+2026年AI应用大会上，国产大模型与国产芯片的深度协同成为核心议题，多家企业展示了基于国产算力平台的落地方案。人形机器人厂商密集亮相，多款产品宣布将于2026年下半年进入消费市场（C端）试销阶段。 
+
+-------------------------
+en_rtt_news
+2026-04-25 12:00:00
+Biotech Stocks Facing FDA Decision In May 2026 
+RTTNews's May 2026 FDA calendar highlights upcoming regulatory decisions including a potential label expansion of argenx's VYVGART and additional indications for AstraZeneca and Daiichi Sankyo's Enhertu cancer therapy. The FDA decision calendar tracker helps investors and analysts anticipate potential binary events that can sharply move biotech valuations. 
+
+-------------------------
+cn_21jingji
+2026-04-21 12:00:00
+形态各异的机器人也能跳群舞？6G解锁具身智能群体协同 
+研究团队展示了基于6G通信低延迟特性的多机器人协同系统，不同形态机器人可在毫秒级指令下完成群体同步动作，验证了6G在具身智能规模化落地中的关键支撑作用。专家指出该技术将率先应用于仓储物流和工业巡检场景。 
+
+-------------------------
+en_agweek
+2026-04-20 12:00:00
+What the 2026 Minnesota Legislature passed and failed to pass for agriculture 
+Agweek summarizes the outcomes of the 2026 Minnesota legislative session for the agriculture sector, including new funding for soil health programs, a controversial livestock facility permitting reform, and the failure of a proposed rural broadband expansion package. The session produced a mixed record for farmers seeking regulatory relief and infrastructure investment. 
+
+-------------------------
+en_plant_engineering
+2026-04-20 12:00:00
+Automation's front line: 2026 System Integrator Giants expand capabilities 
+Plant Engineering's annual System Integrator Giants ranking features 75 companies reporting a collective $4.67 billion in system integration revenue for 2025, an 18% gain year-over-year. The report highlights the rapid expansion of AI-driven automation, cobots, and digital twin capabilities as manufacturers accelerate smart factory investments. 
+
+-------------------------
+en_fpri
+2026-04-15 12:00:00
+Russia After Putin 
+FPRI scholars examine scenarios for Russian governance following Putin and assess how public expectations for victory in Ukraine are shaping potential succession dynamics. The analysis finds that any successor faces the structural contradiction of a war economy that cannot simultaneously fund modernization and sustain military operations. 
+
+-------------------------
+en_greencars
+2026-04-15 12:00:00
+EVs in 2026: Tesla Shifts, China Surges, Charging Expands 
+Tesla is pivoting toward more affordable models and refreshed existing lines as Chinese EV competitors like BYD and Xiaomi accelerate their global expansion with aggressive pricing. Overall EV sales cooled in Q1 2026 but hybrids, used EVs, and practical crossovers show sustained mainstream demand for greener vehicles. 
+
+-------------------------
+en_fpri
+2026-04-10 12:00:00
+Pathways for the War with Iran 
+FPRI analysts map four strategic pathways for the ongoing US-Israel war with Iran — escalation to regime change, negotiated ceasefire, frozen conflict, or Iranian capitulation — and assess the viability of each given current military and diplomatic dynamics. The analysis highlights how Iranian nuclear posture will be the central variable determining the conflict's trajectory. 
+
+-------------------------
+en_c4isrnet
+2026-04-07 12:00:00
+Outpaced by the US, China's military places selective bets on artificial intelligence 
+C4ISRNET analysis finds that China's PLA is taking a more selective approach to AI integration than the US DoD, concentrating investments in space situational awareness, cyber operations, and logistics optimization rather than pursuing broad AI deployment across all warfighting domains. The analysis suggests China's AI doctrine prioritizes areas where it can achieve asymmetric advantages over US conventional strengths. 
+
+-------------------------
+en_ifri
+2026-03-31 12:00:00
+The Energy Transition Faces Geopolitical Challenges. How Can Ideological Divides Be Overcome? 
+IFRI analysts examine how deepening ideological rifts between green-transition advocates and fossil fuel proponents are slowing decarbonization investment, using Norway's fossil extraction model as a case study in the tensions of dual-track energy policy. The paper argues that pragmatic coalitions bridging techno-optimists and transition skeptics offer the best path to viable climate outcomes. 
+
+-------------------------
+en_nar_realtor
+2026-03-31 12:00:00
+March 2026 Commercial Real Estate Market Insights 
+Industrial real estate net absorption rose 30% year-over-year in April 2026, maintaining its position as the strongest-performing commercial property sector according to NAR's monthly CRE report. Office and retail markets showed continued differentiation by geography, with Sun Belt metros recovering faster than major gateway cities. 
+
+-------------------------
+en_ifri
+2026-03-23 12:00:00
+Critical Raw Materials: Building Resilient Supply Chains for OECD Economies 
+IFRI's analysis argues that OECD economies require activist industrial policy to build resilient critical raw material value chains, countering China's near-dominant position across rare earths and battery metals. The paper recommends strategic stockpiling, allied offtake agreements, and coordinated investment in African and Latin American mining projects. 
+
+-------------------------
+en_lawfare_media
+2026-03-18 12:00:00
+Lawfare No Bull: Senate Intelligence Committee Holds 2026 Worldwide Threats Hearing 
+Lawfare's detailed summary of the Senate Intelligence Committee's open worldwide threats hearing covers testimony from intelligence directors on the ongoing Iran war, China and Russia cyber threats, and foreign election interference. The hearing revealed new details about adversary AI capabilities and US intelligence community assessments of the 2026 geopolitical environment. 
+
+-------------------------
+en_military_aerospace
+2026-03-15 12:00:00
+Air Force seeks to blend electronic warfare (EW) and cyber warfare to counter uncrewed aircraft 
+The US Air Force is developing integrated EW and cyber capabilities to defeat increasingly sophisticated adversary uncrewed aircraft systems in contested airspace. Combining jamming with cyber intrusion techniques offers a multi-domain counter-UAS approach beyond purely kinetic defenses. 
+
+-------------------------
+en_chatham_house
+2026-03-15 12:00:00
+Spring 2026: Counting the Cost of America Unbound 
+Chatham House's spring 2026 edition of The World Today examines how the Trump administration's unilateral posture is reshaping alliance economics, with NATO allies facing pressure to dramatically increase defense spending while absorbing tariff shocks. Analysis covers Brazil's electoral prospects and the fading of Pax Americana as an organizing principle for global security. 
+
+-------------------------
+en_agweek
+2026-03-15 12:00:00
+Slowing global demand, rising production shape economic outlook for agriculture 
+CoBank's quarterly agricultural outlook finds 2026 farmers navigating the collision of strong domestic production with slowing global demand, as the US-China trade relationship remains a dominant market risk. Biofuels and select specialty export markets offer potential upside for grains, but the baseline scenario projects continued margin pressure across row crops. 
+
+-------------------------
+en_plant_engineering
+2026-03-15 12:00:00
+System Integrator of the Year, 2026 
+Plant Engineering announced its 2026 System Integrator of the Year winners: Thermo Systems for large integrators, Vertech for mid-size firms, and Omnicon for smaller integrators, recognizing excellence in implementing complex industrial automation and control systems. The awards highlight integration projects combining robotics, PLC/SCADA upgrades, and AI-enabled predictive maintenance. 
+
+-------------------------
+en_geopolitical_monitor
+2026-03-12 12:00:00
+Iran War Has Put Putin in Zugzwang 
+Russia finds itself in a strategic zugzwang following the US-Israel operation against Iran that began February 28, where every available move worsens Moscow's position. Supporting Tehran risks confrontation with Washington while distancing from Iran would undermine Russia's axis-of-resistance strategy. 
+
+-------------------------
+en_thebeefsite
+2026-03-01 12:00:00
+Canada, Mercosur move toward year-end trade deal 
+Government officials from Canada, Argentina, and Brazil told Reuters they expect the Canada-Mercosur free trade deal to be concluded in 2026, with negotiators targeting a September wrap-up. A deal could substantially expand South American beef and pork access to Canada, reshaping North American protein trade flows. 
+
+-------------------------
+en_greencars
+2026-03-01 12:00:00
+NEVI Charging Network Reboots in 2026 
+The National Electric Vehicle Infrastructure program is restarting in 2026 following updated federal guidance released in August 2025 that unfreezes state funding and simplifies station siting rules. Key changes include greater state flexibility on corridor spacing and faster approval processes to accelerate deployment of fast-charging infrastructure. 
+
+-------------------------
+en_biospace
+2026-03-01 12:00:00
+FDA Policy Tracker 2026: One-Trial Drug Applications, Guidelines for Personalized Therapies 
+BioSpace's running FDA policy tracker documents the agency's new stance allowing single well-controlled trials as the basis for certain drug approvals, aimed at accelerating rare disease treatments. The tracker also covers evolving FDA guidance on personalized therapies, AI-assisted drug design, and the agency's new 'plausible mechanism' approval pathway for ultra-rare conditions. 
+
+-------------------------
+en_ifri
+2026-02-26 12:00:00
+The EU-India Strategic Partnership: Deepening Ties in a Multipolar World 
+IFRI assesses the EU-India strategic partnership, elevated to formal status in 2004, and its potential to deepen across trade, technology, and security as both actors navigate a more multipolar international order. The paper finds growing convergence on digital governance and supply chain resilience but persistent divergence on Russia policy. 
+
+-------------------------
+en_chatham_house
+2026-02-20 12:00:00
+Munich Security Conference 2026: Expert Roundup on the Iran War and European Defense 
+Chatham House's Independent Thinking podcast special edition records live at the Munich Security Conference 2026, capturing expert assessments of the Iran conflict's implications for European energy security and NATO cohesion. Participants warn that Europe's dependence on US security guarantees has never been more exposed. 
+
+-------------------------
+en_responsible_statecraft
+2026-02-15 12:00:00
+Trump national security logic: rare earths and fossil fuels 
+Responsible Statecraft analysts examine how the Trump administration's 2026 National Security Strategy frames rare earth minerals and fossil fuel dominance as core national security imperatives, linking domestic resource production to geopolitical leverage against China and adversary energy suppliers. Critics argue the framing conflates economic competition with military security in ways that could lead to over-militarized resource policy. 
+
+-------------------------
+en_responsible_statecraft
+2026-02-01 12:00:00
+A sneak peek at how Americans view Trump foreign policy so far 
+Early 2026 polling analyzed by Responsible Statecraft shows Americans are divided sharply along party lines on Trump foreign policy — with Republicans broadly supportive and Democrats opposed — but independents show declining support for military engagement in Venezuela and the Middle East. The data suggests the public appetite for sustained military commitments remains limited beyond the partisan base. 
+
+-------------------------
+en_semiconductor_packaging_news
+2026-01-30 12:00:00
+IMAPS Device Packaging Conference 2026 to Focus on AI, Chiplets, and Advanced Integration 
+The IMAPS Device Packaging Conference 2026 has announced a technical program centered on AI accelerator packaging, chiplet-to-chiplet interconnects, and heterogeneous integration trends. The event reflects the industry's pivot to advanced packaging as a competitive differentiator now that front-end process scaling is slowing. 
+
+-------------------------
+en_responsible_statecraft
+2026-01-30 12:00:00
+New Trump order slashes red tape for foreign weapons deals 
+The Trump administration issued an executive order streamlining foreign military sales approval processes, cutting interagency review timelines and loosening end-use monitoring requirements for some allied recipients. Supporters cite economic and alliance-strengthening benefits while critics warn the reforms prioritize arms industry revenues over human rights and proliferation safeguards. 
+
+-------------------------
+en_lawfare_media
+2026-01-23 12:00:00
+Trump Administration Releases 2026 National Defense Strategy 
+Lawfare analyzes the Trump administration's 2026 National Defense Strategy — titled 'Restoring Peace Through Strength for a New Golden Age of America' — finding it reprioritizes great-power competition with China and Russia while reducing emphasis on non-state threats and multilateral institutions. The first NDS since 2022 signals a shift toward deterrence through military strength over alliance management. 
+
+-------------------------
+en_health_affairs
+2026-01-19 12:00:00
+Health Policy At A Crossroads: What To Watch In 2026 
+Health Affairs identifies the key health policy developments to monitor in 2026, including ACA subsidy extension uncertainty, Medicaid waiver activity, drug price negotiation implementation, and the trajectory of FDA regulatory philosophy under new leadership. The analysis warns that simultaneous pressures on coverage, drug access, and healthcare workforce could produce an unusually consequential year for health policy. 
+
+-------------------------
+cn_esmchina
+2026-01-15 12:00:00
+SIA预测：2026年全球半导体销售额将首破1万亿美元 
+美国半导体行业协会（SIA）最新报告预测，2026年全球半导体市场销售额将首次突破1万亿美元大关，AI芯片需求激增和先进封装技术普及是核心驱动因素。报告指出成熟工艺产能过剩问题仍是行业不确定性之一。 
+
+-------------------------
+en_nar_realtor
+2026-01-15 12:00:00
+The Top 10 Issues to Watch in Commercial Real Estate in 2026 
+NAR analysts identify the top issues shaping CRE markets in 2026, including the commercial debt maturity wall, interest rate trajectory, AI-driven demand for data center space, and retail sector bifurcation. The report notes that economic uncertainty and population migration trends will drive significant geographic divergence in market performance. 
+
+-------------------------
+en_supplychainbrain
+2026-01-15 12:00:00
+Why 2026 Will Be the Year Supply Chain Leaders Stop Building Their Own AI 
+SupplyChainBrain argues that after years of costly DIY AI experiments, supply chain organizations will in 2026 pivot to adopting domain-specific AI platforms rather than building custom models, as the gap between specialist tools and general-purpose models narrows. The shift reflects hard-won lessons that domain expertise and curated logistics data matter more than raw compute and coding resources. 
+
+-------------------------
+en_plant_engineering
+2026-01-15 12:00:00
+Global 200mm semiconductor fabs to reach record capacity by 2026 
+Plant Engineering reports that global 200mm wafer fab capacity is on track to reach record levels by end of 2026, driven by demand for power semiconductors, compound semiconductors, and MEMS sensors in automotive, industrial, and consumer applications. The capacity expansion is concentrated in Asia but new US and European government incentives are supporting some domestic buildout. 
+
+-------------------------
+en_endpoints
+2026-01-15 12:00:00
+Q&A: Bristol Myers CEO Chris Boerner on megamergers, Trump in 2026, and brain health as the 'next frontier' 
+Bristol Myers Squibb CEO Chris Boerner discusses the company's M&A strategy for 2026, its position on large consolidation deals, the regulatory outlook under the Trump administration, and why brain health represents the company's most compelling long-term growth opportunity. Boerner signals selective bolt-on deals rather than transformative mergers as the preferred path to pipeline replenishment. 
+
+-------------------------
+cn_21jingji
+2026-01-13 12:00:00
+2026年经济大省竞逐三大关键产业：AI、机器人、低空经济 
+广东、江苏、浙江、山东等经济大省在2026年工作报告中均将人工智能、人形机器人和低空经济列为重点布局产业，地方政府招商引资和政策补贴力度显著加大。业界分析人士指出，这三大赛道将迎来从政策红利到产业实质落地的关键转化期。 
+
+-------------------------
+en_semiconductor_packaging_news
+2026-01-12 12:00:00
+SEMI Industry Strategy Symposium 2026 Gathers Executives to Analyze Semiconductor Industry Challenges and Opportunities 
+The SEMI ISS 2026 convened semiconductor industry executives to discuss supply chain resilience, geopolitical risks, and investment strategies amid record demand for AI chips and advanced packaging. Discussions highlighted sustainability as an emerging strategic priority alongside the familiar pressures of capacity expansion and workforce development. 
+
+-------------------------
+en_biospace
+2026-01-10 12:00:00
+Biopharma Momentum To Propel Rare Disease, Cancer, Neuro Forward in 2026 
+Biopharma enters 2026 with strong clinical momentum, with key readouts expected across oncology, obesity, rare disorders, and neurological diseases, fueling deal-making and investor interest. After sweeping FDA policy changes in 2025, companies are calibrating their regulatory strategies to leverage new accelerated pathways for hard-to-treat diseases. 
+
+-------------------------
+en_oilfield_technology
+2026-01-05 12:00:00
+INEOS Energy announces new Norphlet oil discovery in the Gulf of Mexico 
+INEOS Energy announced a significant oil discovery at the Paleogene Norphlet play in the deepwater Gulf of Mexico, expanding the potential of the emerging sub-salt trend. The find underscores continued exploratory success in deepwater US Gulf plays despite commodity price volatility. 
+
+-------------------------
+en_chatham_house
+2025-12-15 12:00:00
+Global Security Continued to Unravel in 2025. Crucial Tests Are Coming in 2026 
+Chatham House's year-end assessment finds 2025 marked by alarming developments in nuclear proliferation, space militarization, and hybrid warfare, setting up critical stress tests for international order in 2026. The analysis warns that the convergence of multiple simultaneous crises — the Middle East, Ukraine, and East Asia — risks overwhelming global crisis-management institutions. 
+
+-------------------------
+en_oilfield_technology
+2025-02-17 12:00:00
+EIA: Petroleum liquids supply growth driven by non-OPEC+ countries in 2025 and 2026 
+The EIA projects that non-OPEC+ nations — led by the United States, Brazil, and Guyana — will drive the majority of global petroleum liquids supply growth through 2026. The forecast highlights a shifting center of gravity in oil production away from traditional OPEC members. 
+
+-------------------------
