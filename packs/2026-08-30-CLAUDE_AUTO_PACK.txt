@@ -1,0 +1,540 @@
+en_fierce_healthcare
+2026-08-28 12:00:00
+Rural Health Transformation Program funding tracker: CMS awards Virginia $122M; Georgia receives $93.3M
+CMS awarded $122 million to Virginia and $160 million to Alaskan projects to expand healthcare access, workforce, and technology innovation across rural areas under the Rural Health Transformation Program.
+
+-------------------------
+en_advisor_perspectives
+2026-08-28 12:00:00
+JPMorgan and Apollo Urge Inflation Focus for Warsh's Big Speech
+JPMorgan and Apollo economists are urging Federal Reserve Chair Kevin Warsh to center his Jackson Hole remarks on the persistence of above-target inflation, with the 30-year Treasury yield above 5.3% reflecting market concern about rate trajectory.
+
+-------------------------
+en_advisor_perspectives
+2026-08-28 12:00:00
+Treasury Yields Snapshot: August 28, 2026
+As of August 28, the US Treasury yield curve showed the 10-year at 4.73% and the 30-year at 5.20%, with yields at three-month highs driven by a hotter-than-expected inflation print strengthening expectations for a year-end Fed rate hike.
+
+-------------------------
+en_logistics_mgmt
+2026-08-28 12:00:00
+U.S. rail carload and intermodal volumes post annual gains, for week ending August 22, reports AAR
+For the week ending August 22, US rail carloads rose 3.2% annually to 235,885 and intermodal containers increased 5.0% to 296,577, reflecting resilient freight demand despite earlier import peak-season pullback.
+
+-------------------------
+en_inbound_logistics
+2026-08-28 12:00:00
+3PLs Slam Volatility: 9 Ways Providers Build Supply Chain Resilience
+Third-party logistics providers outline nine strategies for building resilience amid what has become a permanent condition of supply chain volatility, including predictive inventory positioning, nearshoring, and AI-driven risk monitoring.
+
+-------------------------
+en_fierce_healthcare
+2026-08-27 12:00:00
+Fierce Healthcare Layoff Tracker—UCare cuts 102 jobs; MaineHealth reorgs hit 83
+Minnesota insurer UCare will lay off 102 employees as it winds down Medicaid plans sold to Medica, while MaineHealth restructuring hits 83 positions across its integrated health system.
+
+-------------------------
+en_charged_evs
+2026-08-27 12:00:00
+XCharge NA powers electric aircraft rescue and firefighting vehicle at Dallas airport
+XCharge NA deployed its ultra-fast C7 charging unit for an electric aircraft rescue and firefighting vehicle at Dallas Love Field Airport, the first such deployment at a US commercial airport.
+
+-------------------------
+en_electronics_weekly
+2026-08-27 12:00:00
+Kioxia looking to invest $31.4bn as Hynix mulls closer ties
+Kioxia and SanDisk plan to invest $31.4 billion on new NAND capacity over six years, with $11.3 billion intended for a new fab in Kitakami, Japan, as memory makers bet on sustained AI-driven storage demand.
+
+-------------------------
+en_the_dcn
+2026-08-27 12:00:00
+World Container Index – 27 August 2026
+The Drewry World Container Index decreased 1% to $4,473 per 40ft container on August 27 as rates on Transpacific and Asia-Europe routes eased, with Shanghai-New York at $9,333 and Shanghai-Rotterdam at $4,287.
+
+-------------------------
+en_advisor_perspectives
+2026-08-27 12:00:00
+Buybacks, Market Functioning, and Treasury Predictability — PIMCO
+PIMCO analysis examines the Treasury's surprise decision to double its buyback operations from $2B to $4B per transaction, arguing it signals concern about long-end market functioning as AI-driven debt issuance strains absorption capacity.
+
+-------------------------
+en_eurometal
+2026-08-27 12:00:00
+European long steel market subdued as seasonal mill stoppages come to an end
+European long steel markets remain subdued as summer mill stoppages conclude, with Polish domestic prices stable amid weak demand while Italian rebar assessed upward at €690-750 per tonne on August 27.
+
+-------------------------
+en_fierce_healthcare
+2026-08-26 12:00:00
+Florida AG sues Prime Therapeutics, Express Scripts for alleged price-fixing
+Florida Attorney General James Uthmeier is suing Express Scripts and Prime Therapeutics, alleging their partnership allows illegal price-fixing among pharmacy benefit managers at the expense of consumers and state Medicaid programs.
+
+-------------------------
+en_aerotech_news
+2026-08-26 12:00:00
+Contract Briefs: Raytheon $603M B-52 Radar, AAR Corp $920M IDIQ Award
+Raytheon in El Segundo was awarded a $603 million ceiling contract for B-52 radar production, and multiple contractors including AAR Corp and Torch Technologies won a $920 million IDIQ contract for support equipment and vehicles.
+
+-------------------------
+en_pitchbook
+2026-08-26 12:00:00
+2026 UK Private Capital Breakdown
+PitchBook's UK Private Capital Breakdown examines the region's PE and VC markets following Brexit normalization and recent macro volatility, with data on deal volume, fundraising, and exit activity through mid-2026.
+
+-------------------------
+en_greentech_lead
+2026-08-26 12:00:00
+Renewables news: offshore wind auction in Australia, TotalEnergies, Enercon
+Victoria launched Australia's first offshore wind auction with a Request for Proposal covering an initial 2 GW of capacity off Gippsland, while TotalEnergies and Enercon announced European renewable expansion projects.
+
+-------------------------
+en_healio
+2026-08-26 12:00:00
+FDA approves first-in-class therapy for metastatic pancreatic adenocarcinoma
+The FDA granted approval to a first-in-class targeted therapy for adults with metastatic pancreatic adenocarcinoma, offering a new treatment option for one of the most difficult-to-treat cancers with historically poor prognosis.
+
+-------------------------
+en_electronics_weekly
+2026-08-25 12:00:00
+Navitas Semi buys Claros
+Navitas Semiconductor acquired Claros, a US power management company specializing in vertical power delivery and integrated voltage regulators for AI data centers, for up to approximately $232.8 million.
+
+-------------------------
+en_greentech_lead
+2026-08-25 12:00:00
+Renewables news: Cube Green Energy, Avaada, I Squared Capital
+Berlin-based Cube Green Energy completed debt-financing transactions totaling €150 million to accelerate its European renewable portfolio, and Avaada signed an I Squared Capital-backed power purchase agreement in India.
+
+-------------------------
+en_logistics_mgmt
+2026-08-25 12:00:00
+U.S.-bound imports are expected to trend down over balance of 2026, following an earlier peak season
+August containerized imports totaled 2.22 million TEU, down 4.2% annually, with the highest-volume month of 2026 being May at 2.24 million TEU as tariff-driven frontloading pulled forward peak season demand.
+
+-------------------------
+en_the_ev_report
+2026-08-25 12:00:00
+Einride Deploys 500 Tesla Semis Across North America
+Einride will deploy 500 Tesla Semi trucks on its Saga AI platform across North America, tripling its deployed electric fleet and serving Amazon across five state freight corridors.
+
+-------------------------
+en_charged_evs
+2026-08-24 12:00:00
+Xos to deliver mobile EV charging system to the US Air Force
+Xos won a US Air Force prototype contract to develop a mobile charging solution for electrified support equipment and vehicles, adapting its Hub mobile battery energy storage system for defense use.
+
+-------------------------
+en_crisis_group
+2026-08-24 12:00:00
+Hollow Promises: Resetting Gaza's Ceasefire
+The Board of Peace's fifteen-point roadmap announced July 30 appeared to be the most important breakthrough yet in bringing the October 2025 Gaza ceasefire deal to fruition, though implementation gaps and competing factions threaten durability.
+
+-------------------------
+en_eurometal
+2026-08-24 12:00:00
+European local steel heavy plate markets largely quiet amid summer slowdown; higher offers emerge in Italy
+European heavy plate markets remained largely quiet in the week to August 24 as seasonal slowdown continues, though Italian mills are pushing higher offers as holiday demand normalizes and order books begin to fill.
+
+-------------------------
+en_bighat_group
+2026-08-22 12:00:00
+China AI Weekly: DeepSeek V4-Pro GA and Qwen's 3B Downloads
+Moonshot AI's Kimi K3, a 2.8-trillion-parameter MoE open-weight model released in July, is reshaping China's AI landscape as DeepSeek's V4-Pro reaches general availability and Qwen surpasses 3 billion cumulative downloads globally.
+
+-------------------------
+en_eurometal
+2026-08-21 12:00:00
+Summer slowdown keeps NW European coil prices constrained
+Northern Western Europe's hot-rolled coil price index stood at €722.08 per tonne on August 21, up €3.33 per tonne week-on-week, as summer holidays limit trading activity but German consumption shows early recovery signs.
+
+-------------------------
+en_biosimilars_rr
+2026-08-20 12:00:00
+The Bona Fide Marketing Standard and What That Means for Biosimilars and Generics
+A new legal analysis examines the bona fide marketing standard and its implications for biosimilar and generic drug market entry timing and FDA regulatory strategy.
+
+-------------------------
+en_clean_trucking
+2026-08-20 12:00:00
+Zeem Solutions expands EV truck charging, Tesla Semi push
+Zeem Solutions expanded its dedicated EV truck charging infrastructure network in 2026, supporting growing Tesla Semi deployments among freight operators transitioning heavy-duty fleets to electric power.
+
+-------------------------
+en_the_dcn
+2026-08-20 12:00:00
+World Container Index – 20 August 2026
+The Drewry WCI increased 4% to $4,526 per 40ft container on August 20 driven by higher Transpacific rates, as Asian port congestion and Rhine water constraints continue to disrupt East-West freight flows.
+
+-------------------------
+en_logistics_mgmt
+2026-08-20 12:00:00
+43rd Quest for Quality: The fundamentals still win
+Logistics Management's 43rd Annual Quest for Quality Awards recognize top-performing transportation and logistics providers, with reliability, communication, and technology integration cited as top differentiators in a volatile freight market.
+
+-------------------------
+en_the_ev_report
+2026-08-20 12:00:00
+Genesis GV90 Debuts With 123.5 kWh Battery
+Genesis unveiled the GV90, its first full-size flagship electric SUV, built on the eMP platform with a 123.5 kWh battery, 490 kW combined output, and hidden B-pillar coach doors targeting the luxury EV segment.
+
+-------------------------
+en_semafor
+2026-08-20 12:00:00
+China Closes the Gap in AI Race with US
+Top American AI systems still lead Chinese counterparts on benchmarks but Chinese labs are increasingly winning globally on price, with Chinese models capturing enterprise customers through cost advantages of 60-80% versus US alternatives.
+
+-------------------------
+en_vegconomist
+2026-08-20 12:00:00
+Debut and Oterra Partner to Develop Fermentation-Derived Red 40 Alternative
+US biotech Debut and Danish supplier Oterra announced a multi-million-dollar collaboration to develop a precision fermentation-derived alternative to synthetic Red 40 dye in orange, red, and violet shades for clean-label food products.
+
+-------------------------
+en_inbound_logistics
+2026-08-20 12:00:00
+August 2026 Digital Edition: Winning Retail Supply Chains
+The August 2026 Inbound Logistics edition focuses on supply chains for brick-and-mortar and e-commerce retail, featuring port updates, shared warehousing strategies, Descartes' $100M acquisition of Tai Software, and four labor disputes reshaping operations.
+
+-------------------------
+en_lowy_institute
+2026-08-20 12:00:00
+Pacific Islands Forum 2026: what Lowy's Pacific team will be watching
+The 55th Pacific Islands Forum Leaders Meeting in Palau from August 31 to September 4 faces new military alliances, maritime disputes from China's ballistic missile test that splashed down in the Pacific, and a forecast super El Niño as key agenda items.
+
+-------------------------
+en_mining_com
+2026-08-20 12:00:00
+Copper price touches fresh Comex record as squeeze in London hits hardest of the year
+Comex copper for September delivery touched $6.7775 a pound ($14,940 a tonne), a fresh all-time high, before retreating 1.6% as tight global supply and competing US and Chinese demand amplify London Metal Exchange squeeze dynamics.
+
+-------------------------
+en_payments_journal
+2026-08-20 12:00:00
+CFPB Finalizes Rules Holding Fintechs Accountable to Banking Regulations
+The CFPB finalized rules applying banking-level regulations to fintech firms processing over 50 million annual transactions, including digital wallet providers like Google, Amazon, Apple, and peer-to-peer platforms like PayPal, Venmo, and Cash App.
+
+-------------------------
+en_pacforum
+2026-08-20 12:00:00
+US-Japan-South Korea Trilateral Security Architecture in 2026
+Pacific Forum analysis examines the deepening US-Japan-South Korea trilateral security framework, covering joint exercises, intelligence sharing, and coordination on North Korean ballistic missile threats and extended deterrence commitments.
+
+-------------------------
+en_electronics_weekly
+2026-08-19 12:00:00
+Most Read - BYD leading, Nvidia default, C2i Semiconductors
+Electronics Weekly's most-read stories cover BYD regaining global BEV sales lead in Q2 2026, debate over Nvidia as a debt default risk, and Infineon's acquisition of C2i Semiconductors for advanced packaging capabilities.
+
+-------------------------
+en_aerotech_news
+2026-08-19 12:00:00
+Headlines — August 19: DoD Robotic Vehicles Test, Iran War Casualties
+The Defense Department is planning to put industry-built robotic vehicles through their paces in North Dakota, and the Pentagon updated its Iran war military casualty count to 775 killed or injured US service members.
+
+-------------------------
+en_rare_earth_exchanges
+2026-08-18 12:00:00
+China Rare Earth Price Index Holds at 264.6 as Heavy Rare Earth Scarcity Continues to Reshape Global Supply Chains
+China's Rare Earth Price Index registered 264.6 on August 5, remaining near its highest sustained levels since early 2024 despite modest declines in some heavy rare earth products as scarcity distorts ex-China markets.
+
+-------------------------
+en_crisis_group
+2026-08-18 12:00:00
+Yemen's War is Returning
+Exchanges of fire between the Houthis and their domestic opponents as well as between the Houthis and Saudi Arabia have rekindled hostilities in Yemen and adjacent waters, threatening Red Sea and Bab al-Mandab maritime traffic.
+
+-------------------------
+en_mms_online
+2026-08-18 12:00:00
+AI Unlocks Automation For Manufacturers Large and Small
+AI-driven automation is becoming accessible to small and mid-size manufacturers in 2026, with new tools enabling CNC programming, quality inspection, and job quoting without deep technical expertise.
+
+-------------------------
+en_clean_trucking
+2026-08-18 12:00:00
+Greenlane expands electric truck charging in Texas
+Greenlane Infrastructure expanded its public charging network for commercial electric trucks into Texas, marking its first move beyond California with high-power charging sites planned in Dallas and Houston along I-45.
+
+-------------------------
+en_greentech_lead
+2026-08-18 12:00:00
+Renewables news: Deployable Energy, Utah, Green Water & Power, METLEN
+Deployable Energy signed an MOU with the Utah Office of Energy Development on August 18 to study potential nuclear battery deployment, and ArcLight Capital Partners committed $1 billion to launch Anchor Point Transmission for US grid infrastructure.
+
+-------------------------
+en_the_ev_report
+2026-08-18 12:00:00
+Mercedes-Benz Opens C-Class Sedan Orders Including PHEV Variants
+Mercedes-Benz opened C-Class sedan and wagon orders on August 18, with plug-in hybrid variants offering up to 62 miles of WLTP electric range from a 19.53 kWh battery, with German prices from €41,045.
+
+-------------------------
+en_semafor
+2026-08-18 12:00:00
+China's 'Physical AI' Takes Center Stage
+The World Robot Conference in Beijing opened with humanoid maker Unitree going public in Shanghai and revealing a Superman robot that can jump over six feet and sprint at nearly 30 mph, marking China's pivot from digital to physical AI.
+
+-------------------------
+en_healio
+2026-08-18 12:00:00
+Telehealth smoking cessation program improves quit rates in cancer patients at community practices
+A telehealth-based smoking cessation program significantly improved quit rates among patients with cancer treated at community practices, offering a scalable model for oncology care teams to integrate behavioral health services.
+
+-------------------------
+en_charged_evs
+2026-08-17 12:00:00
+2026 Mitsubishi Outlander PHEV: First drive of updated 45-mile plug-in hybrid SUV
+The updated 2026 Mitsubishi Outlander PHEV offers 45 miles of electric range with improved powertrain refinement, positioning it as a competitive plug-in hybrid option in the midsize SUV segment at a sub-$40,000 price point.
+
+-------------------------
+en_biosimilars_rr
+2026-08-17 12:00:00
+US Humira Sales Overwhelmed by Biosimilar Competition
+Humira's US market share continues to erode sharply as multiple adalimumab biosimilars gain formulary access and payer coverage expands across commercial and government plans, with AbbVie US revenue falling over 40% year-on-year.
+
+-------------------------
+en_semafor
+2026-08-16 12:00:00
+New Chinese Model Adds to AI Competition
+Chinese AI startup Zhipu said its new GLM-5.3 model outperformed Anthropic's Mythos 5 in a key cybersecurity benchmark and narrowed the gap on coding capabilities, adding competitive pressure in the enterprise AI market.
+
+-------------------------
+en_today_esg
+2026-08-15 12:00:00
+Morningstar Releases 2026 Q2 Global Sustainable Fund Report
+Global sustainable funds recorded a capital inflow of $3.7 billion in Q2 2026, with Morningstar's report tracking asset size, fund flows, and regulation changes across global sustainability-focused investment vehicles.
+
+-------------------------
+en_bighat_group
+2026-08-15 12:00:00
+DeepSeek's $74B Pivot, Kimi K3's Open-Weight Earthquake, and ByteDance's 10T Bet — China AI Weekly
+China's core AI industry exceeded ¥1.2 trillion ($173.9 billion) in 2025 as DeepSeek races toward a public listing at a $74 billion valuation and ByteDance commits to 10-trillion-parameter model development.
+
+-------------------------
+en_vegconomist
+2026-08-15 12:00:00
+Planetary Secures $28 Million to Scale Sugar Waste Fermentation Platform
+Swiss fermentation company Planetary secured $28 million in financing to commercialize a licensing model converting sugar industry waste streams into food-grade proteins, fibers, and enzymes at industrial scale.
+
+-------------------------
+en_healio
+2026-08-15 12:00:00
+ACC updates expert consensus on heart failure with preserved ejection fraction
+The American College of Cardiology issued an updated expert consensus decision pathway outlining best practices for the diagnosis and management of heart failure with preserved ejection fraction (HFpEF).
+
+-------------------------
+en_mining_com
+2026-08-15 12:00:00
+Governments become 'deal participants' as critical minerals race accelerates
+Governments are increasingly becoming direct participants in critical minerals deals rather than regulators, with the US, Australia, Japan and the EU all signing strategic mining investments in 2026 to secure supply chain independence.
+
+-------------------------
+en_payments_journal
+2026-08-15 12:00:00
+PayFi Acquires Payment Relationship Management (PRM), driving Real-Time Payments
+PayFi acquired Payment Relationship Management to accelerate its real-time payments infrastructure, combining PRM's financial institution network with PayFi's disbursement platform to enable faster business-to-business settlement.
+
+-------------------------
+en_supplychain247
+2026-08-14 12:00:00
+Amazon Teams Up With AutoStore on Warehouse Automation
+Amazon signed a global supply agreement with AutoStore giving the e-commerce company a framework to purchase AutoStore warehouse automation systems worldwide, accelerating deployment of goods-to-person robotics across fulfillment centers.
+
+-------------------------
+en_mms_online
+2026-08-14 12:00:00
+Metalworking Index Eases in July but Extends Expansion to Seven Months
+The Gardner Business Index for metalworking eased slightly in July 2026 but remained above the 50-point expansion threshold for a seventh consecutive month, supported by aerospace and defense demand.
+
+-------------------------
+en_clean_trucking
+2026-08-14 12:00:00
+Workhorse, InCharge launch EV fleet support program
+Workhorse teamed with InCharge Energy to launch a unified support program for fleet customers across North America, announced at the 2026 ACT Expo, providing turnkey electrification services for commercial operators.
+
+-------------------------
+en_aerotech_news
+2026-08-14 12:00:00
+Aerotech News and Review: Military Museums Edition August 14 2026
+Aerotech's special military museums edition celebrates aviation heritage preservation at Edwards Air Force Base and the Aerospace Valley, featuring coverage of AF Plant 42 and Nellis AFB historic aircraft collections.
+
+-------------------------
+en_mms_online
+2026-08-13 12:00:00
+What Form Will Humanoids Take?
+Modern Machine Shop examines how humanoid robot designs are diverging across fixed-installation and mobile configurations, with manufacturers weighing payload, dexterity, and integration costs for factory floor deployment.
+
+-------------------------
+en_pitchbook
+2026-08-13 12:00:00
+LPs Redirecting Capital Toward Growth Funds Even as Overall Fundraising Collapsed
+Limited partners are reallocating commitments toward growth equity funds as overall private market fundraising declines, with smaller, higher-conviction strategies capturing a growing share of new capital in H1 2026.
+
+-------------------------
+en_the_dcn
+2026-08-13 12:00:00
+World Container Index – 13 August 2026
+Drewry's weekly container index update for August 13 reflects ongoing volatility in the East-West container market amid continued Strait of Hormuz tensions and cautious resumption of some Suez Canal transits.
+
+-------------------------
+en_biosimilars_rr
+2026-08-12 12:00:00
+The Second Entyvio Biosimilar Is Under Review at FDA
+The FDA accepted a second 351(k) application for a vedolizumab (Entyvio) biosimilar for review, following Alvotech's earlier submission, signaling intensifying competition in the inflammatory bowel disease biologics market.
+
+-------------------------
+en_pitchbook
+2026-08-12 12:00:00
+Smaller Startup Hubs Deliver Higher MOICs Than New York or Bay Area in 2026
+PitchBook data shows emerging startup ecosystems in cities like Austin, Miami, and Denver outperforming coastal hubs on multiple-on-invested-capital metrics in 2026, driven by lower burn rates and niche market focus.
+
+-------------------------
+en_crisis_group
+2026-08-12 12:00:00
+Hormuz 12 August 2026: The Middle East's Metastasising Conflicts
+The US-Israeli war with Iran has reignited in its sixth month, spreading to affect Iraq, Jordan, Gulf Cooperation Council states and Egypt while merging with other regional conflicts and disrupting Strait of Hormuz commercial traffic.
+
+-------------------------
+en_rare_earth_exchanges
+2026-08-11 12:00:00
+China Rare Earth Price Index Falls to 261.1 as Heavy Rare Earth Scarcity Distorts Ex-China Market
+The China Rare Earth Price Index declined from 268.4 on July 29 to 261.1 on August 10 as heavy rare earth price splits widen between onshore and offshore markets, creating arbitrage opportunities and distorting ex-China supply chains.
+
+-------------------------
+en_food_ingredients_first
+2026-08-10 12:00:00
+IFT FIRST 2026 preview: Multifunctional ingredient systems reshape health-driven F&B
+IFT FIRST 2026 preview highlights how multifunctional ingredient systems targeting GLP-1 consumers, clean-label protein, and precision nutrition are reshaping food and beverage product development strategies across global markets.
+
+-------------------------
+en_vegconomist
+2026-08-10 12:00:00
+MicroHarvest Selects Leuna for 15,000-Tonne Production Facility
+German biotech MicroHarvest selected Industriepark Leuna in Saxony-Anhalt for its future production plant with 15,000-tonne annual capacity and secured a €5.46 million EEW grant for energy and resource efficiency improvements.
+
+-------------------------
+en_inbound_logistics
+2026-08-10 12:00:00
+AI in Supply Chain Management: 2026 Outlook
+AI adoption in supply chain management is shifting from experimentation to operational execution in 2026, with agentic AI automating routine communications and computer vision accelerating warehouse throughput while cutting error rates.
+
+-------------------------
+en_pacforum
+2026-08-10 12:00:00
+Taiwan Strait Deterrence: The Role of Pacific Island States
+Pacific Forum examines how Pacific Island nations are navigating US-China competition, with Micronesia, Palau, and Marshall Islands emerging as key strategic partners as Compact of Free Association renewal talks deepen US commitments.
+
+-------------------------
+en_mining_com
+2026-08-10 12:00:00
+US Department of Energy awards $10M for critical minerals R&D
+The DOE Office of Critical Minerals and Energy Innovation awarded $10 million to seven projects accelerating early-stage technology research for rare earth elements, gallium, copper, and other critical materials required for energy technologies.
+
+-------------------------
+en_payments_journal
+2026-08-10 12:00:00
+Bilt 2.0: All Dressed Up and Nowhere to Go
+Analysis of Bilt Rewards' updated loyalty platform finds that despite a refreshed product offering, the company still faces structural challenges in converting card members to high-value recurring renters at meaningful scale.
+
+-------------------------
+en_bighat_group
+2026-08-08 12:00:00
+China AI Weekly: DeepSeek's $8B Round Resumes, Alibaba's 2.4T Qwen3.8-Max, and China's AI Enforcement Era Begins
+DeepSeek resumed its $8 billion funding round and Alibaba launched the 2.4-trillion-parameter Qwen3.8-Max, marking China's AI industry shift from building momentum to projecting power amid new AI enforcement regulations.
+
+-------------------------
+en_rare_earth_exchanges
+2026-08-07 12:00:00
+Shengquan Keliyuan 100000-Tonne Rare Earth Alloy Plant
+Inner Mongolia Shengquan Keliyuan launched phased trial production at a RMB500 million, 100,000-tonne-per-year rare earth alloy facility in Baotou's Guyang County producing magnesium and calcium-barium alloys for industrial applications.
+
+-------------------------
+en_supplychain247
+2026-08-07 12:00:00
+GXO: Companies That Outsource Logistics Typically Save 10-15%
+GXO Logistics data shows companies that outsource supply chain operations to third-party logistics providers typically save 10% to 15% while reducing capital requirements for major warehouse investments and technology upgrades.
+
+-------------------------
+en_lowy_institute
+2026-08-07 12:00:00
+The Mecca Pact redraws the Indo-Pacific's western edge
+A security pact signed by Saudi Arabia, Türkiye and Pakistan on August 7 2026 declares an attack on one as an attack on all, reshaping Indo-Pacific security calculations for the US, Australia, and India across the western corridor.
+
+-------------------------
+en_supplychain247
+2026-08-05 12:00:00
+Prologis Reached an $18.8 Billion Deal to Acquire SEGRO
+Prologis agreed to acquire SEGRO, the UK-listed European logistics REIT, for $18.8 billion in the largest cross-Atlantic industrial real estate transaction in history, expanding Prologis's European portfolio by 47%.
+
+-------------------------
+en_china_observers
+2026-08-01 12:00:00
+Unpacking EU-China Relations in 2026
+An analysis of evolving EU-China dynamics in 2026 examines impacts of US developments on European China policy, Germany's critical economic relationship, new trade dispute instruments, and cybersecurity concerns around Chinese infrastructure ownership.
+
+-------------------------
+en_pacforum
+2026-08-01 12:00:00
+ASEAN Centrality Under Pressure: Southeast Asia's 2026 Security Outlook
+Assessment of ASEAN's ability to maintain centrality amid South China Sea disputes, US-China competition, and domestic political transitions in Indonesia and Vietnam shaping Southeast Asia's 2026 security environment.
+
+-------------------------
+en_lowy_institute
+2026-08-01 12:00:00
+The rise and rise of geopolitical risk
+Volatile geopolitics creates mounting risks for Australian businesses, with a new intelligence and advisory industry emerging to meet demand from corporations exposed to Indo-Pacific security fragility and supply chain disruption.
+
+-------------------------
+en_food_ingredients_first
+2026-07-15 12:00:00
+Future Food-Tech San Francisco 2026: SternMaid Ingredients on clean label opportunities in alt-protein
+SternMaid highlighted clean label innovation and sustainable protein sourcing at Future Food-Tech San Francisco 2026, focusing on improved texture and functionality in alternative protein applications for plant-based meat and dairy analogues.
+
+-------------------------
+en_food_ingredients_first
+2026-07-10 12:00:00
+Foodology by Univar Solutions flags GLP-1, fibermaxxing & AI in 2026 F&B trends
+Univar Solutions' Foodology report identifies GLP-1 drug-adjacent nutrition products, the fibermaxxing health trend, and AI-enhanced product development as the three dominant forces reshaping food and beverage innovation in 2026.
+
+-------------------------
+en_china_observers
+2026-06-01 12:00:00
+CHOICE Newsletter: China, Everywhere on Europe's June Agenda
+The June CHOICE newsletter covers China's prominent presence on the EU agenda including bilateral visits by European leaders, EU carbon border adjustments affecting Chinese exports, and continued debate over Chinese EV tariffs and market access.
+
+-------------------------
+en_today_esg
+2026-05-01 12:00:00
+World Bank Releases 2026 Global Carbon Pricing Report
+As of April 2026, 87 carbon pricing mechanisms have been implemented globally covering approximately 29% of greenhouse gas emissions, with India and Japan both launching new mandatory carbon trading programs this year.
+
+-------------------------
+en_china_observers
+2026-05-01 12:00:00
+CHOICE Newsletter: How Europe and Southeast Asia De-risk from China
+The May CHOICE newsletter examines how EU and Southeast Asian nations are coordinating supply chain diversification strategies to reduce critical dependencies on Chinese manufacturing and technology across key industrial sectors.
+
+-------------------------
+en_today_esg
+2026-04-15 12:00:00
+International Carbon Action Partnership Releases 2026 Global Emissions Trading System Report
+ICAP's 2026 report finds 41 carbon emission trading systems in operation worldwide covering 26% of global GHG emissions, with cumulative trading volume exceeding $454 billion and new markets launching in India and Southeast Asia.
+
+-------------------------
+en_biosimilars_ip
+2026-03-25 12:00:00
+Large Pharmaceutical Companies Outperform Smaller Pharmaceutical and Biotechnology Companies at USPTO
+Analysis of USPTO allowance rates across pharmaceutical and biotechnology art units from January 2019 to February 2026 shows large pharma companies significantly outperform smaller competitors in patent prosecution success rates.
+
+-------------------------
+en_biosimilars_ip
+2026-03-04 12:00:00
+ITC as a Biosimilar Battleground: Genentech Challenges Biocon's Pertuzumab Biosimilar
+Genentech filed an ITC complaint alleging Biocon's pertuzumab biosimilar BMAB 1500 violates Section 337, marking the first use of the ITC as a biosimilar enforcement venue for the HER2-positive breast cancer drug.
+
+-------------------------
+en_biosimilars_ip
+2026-01-22 12:00:00
+How the U.S. Compares to Europe on Biosimilar Approvals and Products In the Pipeline
+An updated January 2026 analysis finds that FDA-approved and EMA-approved biosimilar drug categories are now even in number, but marketed US biosimilars remain less than half of those available in the EU across most therapeutic areas.
+
+-------------------------
