@@ -1,0 +1,540 @@
+en_spacepolicyonline
+2026-07-11 12:00:00
+What's Happening in Space Policy July 5-18, 2026
+Congress returned from recess July 13 with space authorization on the near-term agenda; the digest covers House Science Committee activity on commercial mission authorization, the Soyuz MS-29 crew launch with NASA Administrator Isaacman attending at Baikonur, and ongoing ISS budget concerns flagged by NASA's advisory panels.
+
+-------------------------
+en_contractpharma
+2026-07-10 12:00:00
+The Friday Brief for July 10, 2026: Companies and Facilities Changing Hands
+Contract Pharma's weekly brief covers the latest M&A activity in pharmaceutical manufacturing including facility acquisitions and leadership transitions. Key deals include Bora Pharmaceuticals completing its MacroGenics Rockville facility acquisition.
+
+-------------------------
+en_crenews
+2026-07-10 12:00:00
+Proposed Sale of Phila.'s 1500 Market St. Falls Apart
+The proposed sale of the 1.76 million-square-foot office building at 1500 Market Street in downtown Philadelphia has collapsed, adding to the list of distressed urban office transactions. The failed deal reflects continued challenges in pricing major office assets in secondary markets.
+
+-------------------------
+en_hydrogeninsight
+2026-07-10 12:00:00
+European Commission unveils plans for fourth European Hydrogen Bank auction, with a budget of just €500m
+The European Commission unveiled its fourth European Hydrogen Bank auction with a €500 million budget, significantly smaller than previous rounds, signaling tighter fiscal constraints on clean hydrogen subsidies. The auction supports production of renewable hydrogen to decarbonize hard-to-abate industrial sectors.
+
+-------------------------
+en_carbonpulse
+2026-07-10 12:00:00
+Brussels confirms two-day postponement of EU carbon market reform
+The European Commission postponed its planned July 15 unveiling of EU ETS Phase 5 reform proposals by two days, delaying the long-awaited overhaul of EU carbon market rules through 2040. The reform aligns the ETS with the EU's new 90% net emissions reduction target for 2040.
+
+-------------------------
+en_carbonpulse
+2026-07-10 12:00:00
+ANNOUNCEMENT: Carbon Pulse launches EU ETS data portal ahead of flagship reform
+Carbon Pulse launched a dedicated EU ETS data portal providing real-time market data, pricing history, and regulatory tracking ahead of the upcoming EU carbon market reform announcement. The portal serves traders, compliance buyers, and policymakers monitoring EU carbon price dynamics.
+
+-------------------------
+en_montelnews
+2026-07-10 12:00:00
+Fresh Iran clashes put EU gas supply at renewed risk – analysts
+European gas markets face renewed supply uncertainty after the US-Iran ceasefire collapsed, with fresh Persian Gulf confrontations raising concerns about LNG transit and Middle East gas export disruptions. Analysts warn the situation could trigger another energy price spike across European power markets.
+
+-------------------------
+en_foodnavigator
+2026-07-10 12:00:00
+Feds ramp up 'Made in USA' enforcement, putting food brands on notice
+The FTC is prioritizing enforcement of Trump's executive order on Made in USA labeling claims, warning food and beverage manufacturers to review their labeling practices for compliance. Companies making false domestic content claims now face increased regulatory scrutiny and potential penalties.
+
+-------------------------
+en_crenews
+2026-07-09 12:00:00
+Office Distress Isn't Just a Downtown Problem
+CMBS delinquency data shows office distress is spreading beyond urban cores to suburban markets as hybrid work adoption reduces demand across all location types. The data challenges assumptions that suburban office would outperform downtown in the current cycle.
+
+-------------------------
+en_crenews
+2026-07-09 12:00:00
+Investor Group Pulls Out of Deal to Buy San Francisco Centre
+Prado Group and Presidio Bay Ventures withdrew from a deal to purchase the San Francisco Centre shopping mall, reflecting continued distress in urban retail anchored by department stores. The collapse underscores the challenges for mixed-use retail repositioning in major West Coast cities.
+
+-------------------------
+en_roboticsandautomationnews
+2026-07-09 12:00:00
+Intrinsic unveils AI-powered modular robot workcell for Physical AI at Automate 2026
+Google's Intrinsic unveiled the Intrinsic Intelligence Cell, an AI-powered modular robot workcell built around software rather than hardware at Automate 2026 in Chicago. The system targets flexible manufacturing with rapid reconfigurability for varied production tasks.
+
+-------------------------
+en_ingthink
+2026-07-09 12:00:00
+Our latest views on the major central banks
+ING economists update their views on the Fed, ECB, and Bank of England policy paths, assessing how recent inflation data and geopolitical shocks are shifting rate expectations for the remainder of 2026. The outlook reflects a divergent global monetary policy environment driven by the Hormuz oil shock.
+
+-------------------------
+en_ingthink
+2026-07-09 12:00:00
+Carsten: The global economy at half time
+ING's chief international economist examines the global economy at mid-year 2026, framing the challenge as central bankers facing a classic supply shock while market participants push for demand-side solutions. Stagflation risk remains elevated despite easing core inflation in some economies.
+
+-------------------------
+en_ingthink
+2026-07-09 12:00:00
+3 key questions for China's second half of 2026
+ING analysis addresses three key uncertainties for China heading into H2 2026: the scale of fiscal stimulus from the July Politburo meeting, the trajectory of US-China trade negotiations, and the resilience of domestic consumption. Rising expectations for proactive policy stance follow months of decelerating economic data.
+
+-------------------------
+en_medicarerights
+2026-07-09 12:00:00
+Accuracy, Accountability, and Accessibility Vital for Good MA Provider Directories
+The Medicare Rights Center submitted comments on implementing the REAL Health Providers Act, which requires Medicare Advantage plans to maintain accurate provider directories effective 2028. The comments emphasize the consumer harms caused by directory inaccuracies including patients being billed for out-of-network care.
+
+-------------------------
+en_hydrogeninsight
+2026-07-09 12:00:00
+Hydrogen aviation start-up partners with UK aerospace firm to explore future H₂ defence tech
+ZeroAvia announced a strategic collaboration with Marshall Aerospace to explore hydrogen-electric propulsion for future UK defence aviation platforms, combining flight-tested propulsion with military aircraft modification expertise. The partnership focuses on fuel system development and certification for defence applications.
+
+-------------------------
+en_thinkadvisor
+2026-07-09 12:00:00
+AI Raises Cybersecurity Stakes for Wealth Managers
+AI-powered cyberattacks are becoming faster, more convincing, and easier to launch, requiring wealth managers to adopt structured AI risk management frameworks for client data protection. The article outlines specific defensive measures tailored to the financial advisory industry's data sensitivity.
+
+-------------------------
+en_privateequitywire
+2026-07-09 12:00:00
+BlackRock sees larger role for private credit in AI infrastructure buildout
+BlackRock stated that the scale of capital required for AI infrastructure means companies will need to borrow across multiple markets, creating a significant tailwind for private credit. The firm views AI data center financing as a multi-year secular opportunity for institutional private credit strategies.
+
+-------------------------
+en_montelnews
+2026-07-09 12:00:00
+EC targets 100 GW more renewables a year to cut gas 66% – draft
+The European Commission's draft energy plan calls for 100 GW of annual renewable additions through 2030 to reduce EU natural gas demand by two-thirds by 2040. The proposal represents one of the most aggressive renewable deployment targets in EU energy planning history.
+
+-------------------------
+en_centerforbiosimilars
+2026-07-08 12:00:00
+Rituximab Biosimilar Reached 75% Remission, Matched Innovator in Membranous Nephropathy
+Real-world data showed rituximab biosimilars matched remission rates of the reference biologic for membranous nephropathy while reducing treatment costs. The data supports biosimilar adoption for this rare kidney disease.
+
+-------------------------
+en_contractpharma
+2026-07-08 12:00:00
+Novartis Agrees to Acquire Myricx Bio in Push for Next-Generation ADCs
+Novartis agreed to acquire UK-based Myricx Bio, which is developing antibody-drug conjugates using NMTi payloads, to strengthen its next-generation ADC pipeline. The deal signals major pharma's continued appetite for novel payload technologies.
+
+-------------------------
+en_roboticsandautomationnews
+2026-07-08 12:00:00
+ABB Robotics completes Visual SLAM AMR range with autonomous forklift launch
+ABB Robotics launched the Flexley Stack F712, completing its autonomous mobile robotics portfolio with a Visual SLAM AMR ecosystem spanning all major AMR types. The launch enables interoperable multi-robot deployments across warehouse and factory floor applications.
+
+-------------------------
+en_therobotreport
+2026-07-08 12:00:00
+RoboBusiness 2026 opens call for speakers
+RoboBusiness 2026 has opened its call for speaker proposals with a July 8 deadline, with the event scheduled for October 20-21 in Santa Clara, California. The conference is the primary annual gathering for the robotics industry on the West Coast.
+
+-------------------------
+en_kff
+2026-07-08 12:00:00
+In Preliminary Rate Filings, ACA Marketplace Insurers Largely Propose Double-Digit Premium Increase For 2027, Following a Steep Climb This Year
+ACA Marketplace insurers are proposing a median premium increase of 14% for 2027, signaling a likely second consecutive year of double-digit increases. The trend reflects rising healthcare costs, expiration of enhanced subsidies, and insurer risk recalibration.
+
+-------------------------
+en_mobihealthnews
+2026-07-08 12:00:00
+Pearl Health lands $110M to expand AI platform for Medicare providers
+Pearl Health raised $110 million to expand its AI-driven value-based care platform targeting Medicare primary care practices. The funding will support technology development and physician network growth to improve outcomes and reduce costs in Medicare Advantage.
+
+-------------------------
+en_waterfm
+2026-07-08 12:00:00
+New investments for PFAS projects across Southern California
+Southern California water agencies are securing new funding for PFAS remediation projects as federal grant programs prioritize emerging contaminant treatment. The investments reflect the growing cost burden of PFAS compliance on water utilities nationwide.
+
+-------------------------
+en_pharmashots
+2026-07-08 12:00:00
+The US FDA Approves Accord BioPharma's Ennumo (Biosimilar, Neulasta)
+The FDA approved Ennumo (pegfilgrastim-acht), Accord BioPharma's biosimilar to Neulasta, expanding biosimilar options for chemotherapy-induced neutropenia. The approval advances Accord's goal to launch 20 biosimilars in the US market by 2030.
+
+-------------------------
+en_icapital
+2026-07-08 12:00:00
+iCapital 2026 Mid-Year Outlook
+iCapital's mid-year outlook maintains S&P 500 targets of 7,500–7,900 with the 10-year Treasury yield expected in the 4.0%–4.8% range as growth and inflation moderate. Performance is increasingly driven by fundamentals rather than macro tailwinds.
+
+-------------------------
+en_thinkadvisor
+2026-07-08 12:00:00
+A Look at 3 Types of Millionaires in 15 Countries
+UBS's 2026 global wealth report introduces a new "everyday millionaire" classification for individuals with up to $5 million in net assets, analyzing wealth behavior patterns across 15 countries. The data reveals distinct financial priorities and risk tolerances between wealth tiers.
+
+-------------------------
+en_privateequitywire
+2026-07-08 12:00:00
+OMERS reshuffles private markets team after CIO exit
+Canadian pension fund OMERS is restructuring its private markets investment team following the departure of its Chief Investment Officer, with changes spanning private equity, infrastructure, and real estate divisions. The reshuffle reflects broader shifts in Canadian pension fund governance and investment strategy.
+
+-------------------------
+en_montelnews
+2026-07-08 12:00:00
+France's heat-related nuclear cuts to reach 4.6% of output
+EDF's nuclear output curtailments from a 2026 summer heatwave with temperatures reaching 42°C will amount to 4.6% of total French installed nuclear capacity, approximately 3 GW. The thermal discharge limits on river cooling water are forcing temporary shutdowns at multiple reactor sites.
+
+-------------------------
+en_americanmachinist
+2026-07-08 12:00:00
+Automaker Transferring Pickup Assembly to Texas | Toyota Motor North America
+Toyota Motor North America will invest $3.6 billion to add a second assembly line at its San Antonio, Texas plant for Tacoma midsize pickup production, creating 2,000 jobs by 2030. The expansion reflects continued reshoring of North American vehicle production capacity.
+
+-------------------------
+en_navalnews
+2026-07-07 12:00:00
+Indonesia Signs BrahMos Missile Deal with India
+Indonesia and India officially signed the BrahMos supersonic missile contract, making Indonesia the third export customer after Philippines and Vietnam. The deal strengthens India's defense export position in Southeast Asia.
+
+-------------------------
+en_centerforbiosimilars
+2026-07-07 12:00:00
+Biosimilar ABP 654 Maintains Efficacy, Safety After Repeated Switching From Ustekinumab
+Trial data showed that ABP 654 maintains similar psoriasis control, safety, and immunogenicity after repeated switching with reference ustekinumab. The results support FDA interchangeability confidence for the biosimilar candidate.
+
+-------------------------
+en_contractpharma
+2026-07-07 12:00:00
+Bora Pharmaceuticals Completes Acquisition of MacroGenics' Rockville Mfg. Ops
+Bora Pharmaceuticals completed acquisition of MacroGenics' GMP biologics manufacturing facility in Rockville, MD for $122.5 million, expanding its US biologics CDMO capacity. The deal includes an associated warehousing center in Frederick, MD.
+
+-------------------------
+en_cfodive
+2026-07-07 12:00:00
+SpaceX acquisition target launches CFO council to crack AI's ROI puzzle
+Cursor, an AI coding platform acquired by SpaceX, launched a new CFO council to tackle growing return-on-investment questions around enterprise AI spending. The council aims to build frameworks for measuring productivity gains from AI tools.
+
+-------------------------
+en_climateandcapitalmedia
+2026-07-07 12:00:00
+Musk mugs Memphis again, with xAI's Colossus 2 data center
+Health authorities approved an air quality permit for xAI's Colossus 2 data center in Memphis despite community opposition, with Memphis Community Against Pollution announcing $250,000 in air quality monitoring investment. The facility continues to draw scrutiny over its environmental impact on a majority-Black neighborhood.
+
+-------------------------
+en_roboticsandautomationnews
+2026-07-07 12:00:00
+Agility Robotics to go public through $2.5 billion SPAC merger
+Agility Robotics agreed to go public through a merger with Churchill Capital Corp XI at a pre-money equity valuation of $2.5 billion, marking a major milestone for humanoid robot commercialization. The SPAC deal provides capital to scale production of the Digit humanoid robot.
+
+-------------------------
+en_therobotreport
+2026-07-07 12:00:00
+XTEND secures extension to Series B to scale autonomous tactical robots
+XTEND secured additional Series B funding following the July 1 grand opening of its new US headquarters and drone production facility in Tampa, Florida. The company is scaling production of its autonomous tactical drone platforms for defense customers.
+
+-------------------------
+en_hartenergy
+2026-07-07 12:00:00
+OPEC Output Hikes Raise Oversupply Fears as Cartel Shows Cracks
+OPEC+ production increases are raising concerns about oversupply in global crude markets as member discipline weakens, with cracks appearing in cartel cohesion amid differing national fiscal priorities. The situation complicates price support efforts as US shale production also ramps up.
+
+-------------------------
+en_mobihealthnews
+2026-07-07 12:00:00
+OpenLoop acquires AI communication platform Hey Revia
+OpenLoop acquired Hey Revia, a voice AI platform that handles complex patient phone calls for healthcare providers, to enhance its virtual care delivery capabilities. The acquisition adds automated patient communication to OpenLoop's telehealth infrastructure platform.
+
+-------------------------
+en_mobihealthnews
+2026-07-07 12:00:00
+Luminai raises $38M to scale AI workflow automation platform
+Luminai raised $38 million to scale its AI-powered workflow automation platform that streamlines clinical and administrative processes for health systems. The company's technology automates repetitive staff tasks while integrating with existing electronic health record systems.
+
+-------------------------
+en_oilandgasadvancement
+2026-07-07 12:00:00
+UAE Aims Second Oil Pipeline by 2027 to Bypass Hormuz Strait
+The UAE is accelerating development of a second crude oil pipeline to bypass the Strait of Hormuz amid heightened regional tensions following the Iran-US military confrontation. The pipeline would provide an alternative export route for Abu Dhabi's oil production independent of Hormuz transit.
+
+-------------------------
+en_pharmashots
+2026-07-07 12:00:00
+Polpharma and Teva Sign Exclusive Licensing Deal for a Biosimilar Candidate to Ocrevus
+Polpharma Biologics granted Teva Pharmaceuticals exclusive global rights to commercialize its proposed biosimilar to Ocrevus (ocrelizumab) for multiple sclerosis upon regulatory approval. The deal covers both intravenous and subcutaneous formulations of the MS biologic.
+
+-------------------------
+en_icapital
+2026-07-07 12:00:00
+Monthly Alts Pulse Ep. 19 - From Access to Advantage in Private Markets
+iCapital's monthly alternatives podcast examines the shift from democratizing access to private markets toward generating measurable performance advantages through platform integration. The episode covers private credit, infrastructure, and real estate allocation strategies for advisors.
+
+-------------------------
+en_medicarerights
+2026-07-07 12:00:00
+What's at Stake in 2026: Administrative Barriers
+The Medicare Rights Center highlights how administrative complexity — prior authorization delays, appeals processes, and enrollment barriers — continues to harm Medicare beneficiaries accessing needed care. Policy reforms targeting administrative burden are identified as priorities for the remainder of 2026.
+
+-------------------------
+en_carbonpulse
+2026-07-07 12:00:00
+CP Daily News Ticker: 7 July 2026
+Carbon Pulse's daily news ticker covers CFTC data showing divergent positioning between producers and financial players in California Carbon Allowances amid a summer trading lull. EU ETS lawmakers from three major political groups wrote letters supporting a strong and stable carbon market ahead of the July reform.
+
+-------------------------
+en_privateequitywire
+2026-07-07 12:00:00
+Gain seeks $500m valuation in minority stake sale
+Private markets intelligence provider Gain is seeking up to a $500 million valuation in a minority stake sale process being run by Moelis, expected to launch in Q3 2026. The Amsterdam-based firm serves institutional investors with data and analytics on private market fund performance.
+
+-------------------------
+en_thinkadvisor
+2026-07-07 12:00:00
+Hightower Adds 3 Practices With $5B to Signature Wealth Channel
+Hightower Advisors added three new wealth management practices with $5 billion in combined AUM to its Signature Wealth channel, continuing the firm's RIA aggregation strategy. The additions expand Hightower's national footprint for ultra-high-net-worth client services.
+
+-------------------------
+en_americanmachinist
+2026-07-07 12:00:00
+CEO Sets Start Date for New 737 MAX Line | Boeing
+Boeing's CEO confirmed the fourth 737 MAX assembly line at Everett, Washington is on track to begin with the first airplane loading on July 6, 2026, signaling recovery in narrowbody production capacity. The new line is part of Boeing's multi-year plan to stabilize and ramp production following years of quality and certification challenges.
+
+-------------------------
+en_navalnews
+2026-07-06 12:00:00
+Ukrainian Drone Raid Hits 10 Russian Ships, Crippling Crimea Supply Lines
+Ukrainian drone forces struck 10 ships in the Sea of Azov and Northern Black Sea including oil tankers and cargo vessels, targeting Russia's logistics network to occupied Crimea. The raid is among the largest maritime drone attacks of the conflict.
+
+-------------------------
+en_cfodive
+2026-07-06 12:00:00
+Finance salaries rise 6% amid talent crunch: Controllers Council
+Finance executives received average salary increases of 6.7% in 2026, according to the Controllers Council's 2026 Corporate Finance and Accounting Talent Study. The increases reflect intensifying competition for skilled finance professionals across sectors.
+
+-------------------------
+en_hartenergy
+2026-07-06 12:00:00
+Pembina's $1.6B Data Center Power Bet Joins Midstream's AI Pivot
+Pembina Pipeline announced a $1.6 billion investment in data center power generation in Canada, joining a wave of midstream energy companies pivoting to serve surging AI infrastructure electricity demand. The move signals natural gas infrastructure's growing role in powering data centers.
+
+-------------------------
+en_hartenergy
+2026-07-06 12:00:00
+Solaris Acquires GESA to Strengthen Turnkey Power Business Amid Demand Growth
+Solaris Energy Infrastructure acquired GESA to strengthen its turnkey power solutions business as demand for mobile and temporary power generation surges from data centers and industrial customers. The deal expands Solaris's equipment fleet and customer base across the US.
+
+-------------------------
+en_waterfm
+2026-07-06 12:00:00
+New grant funding available for small, rural, Tribal communities
+The EPA is accepting applications until August 14, 2026 for grant funding targeting water infrastructure improvements in small, rural, and tribal communities. The program addresses longstanding infrastructure disparities that leave many small utilities unable to meet modern water quality standards.
+
+-------------------------
+en_oilandgasadvancement
+2026-07-06 12:00:00
+Iraq, OPEC Commence Oil Production Quota Restoration Efforts
+Iraq and OPEC are working to restore oil production quotas with Iraq's July 2026 output target set at 4.378 million barrels per day, as the cartel navigates member compliance following prolonged overproduction. Logistical disruptions tied to the Hormuz crisis have also affected Iraqi export volumes.
+
+-------------------------
+en_pharmashots
+2026-07-06 12:00:00
+Alcon Partners with RxSight to Develop Adjustable PCIOLs
+Alcon entered a non-exclusive collaboration with RxSight to jointly develop adjustable presbyopia-correcting intraocular lenses, with RxSight receiving $60 million upfront to lead development and manufacturing. The partnership targets the growing market for premium IOLs in cataract surgery.
+
+-------------------------
+en_hydrogeninsight
+2026-07-06 12:00:00
+Trina Green Hydrogen wins 96MW electrolyser order in China — more than its total domestic installations to date
+Trina Green Hydrogen secured a 96MW electrolyser order in China, exceeding its total prior domestic installed capacity and marking a significant scale-up in Chinese green hydrogen production infrastructure. The order reflects accelerating electrolyser deployment as China pursues its green hydrogen industrial targets.
+
+-------------------------
+en_medtechdive
+2026-07-06 12:00:00
+J&J wins FDA approval for dual-energy ablation catheter
+Johnson & Johnson received FDA approval for the Dual Energy Thermocool Smarttouch SF catheter, which delivers both radiofrequency and pulsed field energy to treat atrial fibrillation in a single device. The approval expands J&J's cardiac electrophysiology portfolio in a market seeing rapid technological evolution.
+
+-------------------------
+en_medtechdive
+2026-07-06 12:00:00
+FDA authorizes more devices so far in 2026, but it's taking longer
+The FDA has authorized more medical devices in the first half of 2026 than the same period last year, but submission-to-clearance timelines have lengthened amid staffing changes and new review protocols. The trend creates uncertainty for medtech companies planning product launches and manufacturing scale-up.
+
+-------------------------
+en_medtechdive
+2026-07-06 12:00:00
+Top surgical robotics stories in the first half of 2026
+The surgical robotics market grew more competitive in H1 2026 with new platform introductions from Medtronic, Stryker, CMR Surgical, and Distalmotion challenging Intuitive Surgical's dominance. The half-year recap tracks clinical trial data, regulatory clearances, and commercial launches shaping the $97 billion MRO market.
+
+-------------------------
+en_americanmachinist
+2026-07-06 12:00:00
+Janicki Industries to Open New Factory in Montana
+Janicki Industries announced plans for an $800 million manufacturing expansion in Montana set to start construction in July 2026, targeting the aerospace, defense, and space industries. The new facility is part of a multi-state expansion to meet growing demand for precision machined tools and composite structures.
+
+-------------------------
+en_asianaviation
+2026-07-05 12:00:00
+Airline News in Brief 05 July 2026
+Asian Aviation's weekly brief covers Ho Chi Minh City–Kuala Lumpur going to twice-daily service from July 3, Abu Dhabi–Kraków increasing to four weekly flights from July 27, and Solomon Airlines launching a new Christchurch–Port Vila route. Singapore Airlines is increasing Singapore-Manchester frequencies from five-times weekly to daily from July 13.
+
+-------------------------
+en_waterfm
+2026-07-04 12:00:00
+Has residential water use declined over time? A new study investigates
+A new 2026 Residential End Uses of Water study from the Water Research Foundation tracks changes in household water consumption patterns over time, finding declines driven by efficiency appliances and rate structures. The data informs utility demand forecasting and conservation program design.
+
+-------------------------
+en_icapital
+2026-07-04 12:00:00
+iCapital Market Pulse: The AI Economy's Biggest Surprises
+iCapital analysis examines unexpected impacts of AI on productivity, inflation, and labor markets as deployment accelerates across enterprise sectors. The report identifies emerging investment themes from AI's uneven economic footprint.
+
+-------------------------
+en_spacepolicyonline
+2026-07-04 12:00:00
+What's Happening in Space Policy June 28-July 4, 2026
+The digest covers Katalyst Space's LINK spacecraft launch to reboost NASA's Swift Observatory, Trump's July 4 speech featuring the Artemis II crew, and ongoing debates about ISS transition funding. The week was relatively quiet ahead of the Independence Day holiday recess.
+
+-------------------------
+en_foodnavigator
+2026-07-03 12:00:00
+UK food innovations set to transform diets
+A UK government report identifies edible insects, cultivated foods, molecular farming, and gas fermentation as emerging technologies with potential to strengthen food system resilience and sustainability. Gas fermentation, which uses microorganisms to convert gases into protein, is highlighted as a promising alternative protein source.
+
+-------------------------
+en_navalnews
+2026-07-02 12:00:00
+Saronic Launches First Mirage 16-Meter Uncrewed Surface Vessel
+Saronic launched its first Mirage autonomous surface vessel, a 52-ft dual-use ASV designed for maritime security and commercial applications. The vessel represents a step toward commercial-scale uncrewed surface operations.
+
+-------------------------
+en_centerforbiosimilars
+2026-07-02 12:00:00
+Biosimilar Makers Push Forward on Regulatory and Commercial Fronts
+FDA expanded Tofidence indications, Teva launched aflibercept biosimilar Ahzantive in Europe, and Alvotech's Entyvio biosimilar rival entered FDA review. Key commercial launches and regulatory approvals continue to reshape the biosimilar landscape in mid-2026.
+
+-------------------------
+en_therobotreport
+2026-07-02 12:00:00
+Automate 2026 show recap
+The Robot Report podcast recapped the Automate 2026 trade show, highlighting a shift from early-stage humanoid hype toward practical deployment of physical AI and edge computing. The show drew record attendance reflecting strong industry investment in robotics automation.
+
+-------------------------
+en_spacepolicyonline
+2026-07-02 12:00:00
+HOUSE SS&T SBCMTE HRG ON ADMINISTRATION'S MISSION AUTHORIZATION PROPOSAL, July 15, 2026
+The House Science, Space, and Technology Committee space subcommittee scheduled a July 15 hearing on the Trump Administration's proposed commercial space mission authorization framework. The proposal would establish new oversight mechanisms for commercial activities beyond Earth orbit.
+
+-------------------------
+en_asianaviation
+2026-07-02 12:00:00
+BOC Aviation signs new deals with STARLUX and Qatar Airways
+BOC Aviation, the Singapore-based aircraft leasing company, signed new aircraft leasing agreements with Taiwan's STARLUX Airlines and Qatar Airways, expanding its Asian and Middle East customer base. The deals reflect continued demand growth for narrowbody and widebody aircraft across Asia-Pacific aviation markets.
+
+-------------------------
+en_cfodive
+2026-07-01 12:00:00
+Tech accounts for nearly a third of US layoffs in H1: Challenger
+Technology firms announced 139,156 job cuts through June 2026, representing nearly a third of all US layoffs and an 83% increase from the same period in 2025. AI-driven automation and enterprise cost restructuring are cited as primary drivers.
+
+-------------------------
+en_kff
+2026-07-01 12:00:00
+Medicare Advantage in 2026: Enrollment Update and Key Trends
+Medicare Advantage penetration reached 55% of all Medicare beneficiaries as of March 2026, with continued growth driven by supplemental benefits and plan expansion. KFF analysis tracks enrollment trends, plan availability, and quality metrics across the MA landscape.
+
+-------------------------
+en_kff
+2026-07-01 12:00:00
+Digital Health Tools and Technologies: An Overview of CMS' Recent Efforts to Expand Their Use in Medicare
+CMS launched the ACCESS Model in July 2026, a new payment model expanding technology-enabled care for Medicare beneficiaries with chronic conditions. The model includes a public directory of participants enabling patients and providers to identify program participants.
+
+-------------------------
+en_chinabriefing
+2026-07-01 12:00:00
+China's New ODI Regulation: What the 2026 State Council Rules Mean for Outbound Investment
+China's new Regulation on Overseas Investment (State Council Decree No. 837) took effect July 1, 2026, creating a comprehensive new framework governing Chinese companies' outbound direct investment. The rules introduce enhanced reporting requirements and oversight mechanisms for cross-border capital flows.
+
+-------------------------
+en_chinabriefing
+2026-07-01 12:00:00
+Hiring Over-Age Employees in China: Key Compliance Developments 2026
+New Interim Provisions effective July 1, 2026 establish China's first dedicated legal framework protecting the rights of workers hired beyond statutory retirement age. Employers must now provide specified minimum benefits and working conditions for over-age workers under formal engagement.
+
+-------------------------
+en_chinabriefing
+2026-07-01 12:00:00
+China Foreign Investment Action Plan 2026: What FIEs Need to Know
+China's 2026 Action Plan for Stabilizing and Improving Foreign Investment Utilization outlines 15 measures spanning market access, investment facilitation, and regulatory reform to reverse declining FDI. The plan targets improvements in treatment of foreign-invested enterprises across five priority areas.
+
+-------------------------
+en_oilandgasadvancement
+2026-07-01 12:00:00
+BP Plans to Reorganize to Upstream and Downstream Operations
+BP announced a strategic reorganization into upstream and downstream business units effective July 1, 2026, aiming to simplify operations and improve performance following years of portfolio volatility. The restructuring reflects BP's renewed focus on hydrocarbons amid investor pressure to improve returns.
+
+-------------------------
+en_evchargingstations
+2026-07-01 12:00:00
+Largest DC Fast-Charging Networks in the US: July 2026
+As of July 1, 2026 there were 74,265 public DC fast-charging ports in the US, representing 27% year-over-year growth with Tesla Supercharger maintaining the largest network share. The report tracks NACS adoption momentum as all major automakers have committed to the standard.
+
+-------------------------
+en_evchargingstations
+2026-07-01 12:00:00
+State of Walmart EV Charging: July 2026 Update
+Walmart's DC fast-charging network surpassed 600 stalls and expanded into Illinois and North Carolina during June, now covering 17 states. The retail charging expansion provides EV owners with charging access at high-traffic shopping locations across the US.
+
+-------------------------
+en_evchargingstations
+2026-07-01 12:00:00
+2026 Fiat Topolino Enters US Market at Under $15,000
+Stellantis launched the 2026 Fiat Topolino microcar in the US market starting at $13,995 MSRP, making it the most affordable electric vehicle available to American consumers. The microcar targets urban mobility with a compact form factor suited to city commuting.
+
+-------------------------
+en_waterwastewaterasia
+2026-07-01 12:00:00
+Zenit Pumps (China) and Shanghai Tsurumi Pump integrate sales operations to strengthen market presence
+Effective July 1, 2026 Zenit Pumps China and Shanghai Tsurumi Pump unified their commercial operations to strengthen their combined position in China's industrial pump market. The integration aims to deliver consolidated customer service and expanded product access.
+
+-------------------------
+en_waterwastewaterasia
+2026-07-01 12:00:00
+Iv3 Aqua and Rakiza acquire Omani water solutions provider Majis in landmark transaction
+Iv3 Aqua partnered with Oman's infrastructure fund Rakiza to acquire Majis Industrial Services SAOC, a leading provider of industrial water and desalination services in Oman. The deal strengthens Iv3 Aqua's footprint in Middle East water infrastructure.
+
+-------------------------
+en_climateandcapitalmedia
+2026-06-29 12:00:00
+Mississippi River apocalypse
+Analysis of record low water levels on the Mississippi River and cascading impacts on shipping, agriculture, and municipal water systems. The situation underscores growing climate-linked infrastructure risk for US inland waterways.
+
+-------------------------
+en_foodnavigator
+2026-06-29 12:00:00
+Regenerative agriculture targets not credible?
+Analysis questions whether major food company commitments to regenerative agriculture can be delivered at the claimed scale and timeline, given limited farmer adoption and measurement challenges. The piece examines the gap between corporate sustainability targets and verifiable on-farm practice changes.
+
+-------------------------
+en_asianaviation
+2026-06-28 12:00:00
+AAV News in Brief 28 June 2026
+Asian Aviation's brief covers the seasonal Abu Dhabi–Palma service extension to October 18, airline route network adjustments across Southeast Asia, and Almaty-Dubai frequency increases to daily service for a peak travel period. The edition tracks the ongoing recovery in Asia-Pacific leisure travel demand.
+
+-------------------------
+en_waterwastewaterasia
+2026-06-18 12:00:00
+SIWW2026 concludes with strong momentum for global water resilience
+The 11th Singapore International Water Week concluded having attracted 2,000 delegates and 21,000 trade visitors from 71+ countries focused on water resilience technology and policy. The event highlighted digital innovation, AI, and the energy-water nexus as priority themes for Asia-Pacific utilities.
+
+-------------------------
+en_medicarerights
+2026-06-04 12:00:00
+GLP-1 Weight-Loss Drug Demonstration Begins July 2026
+CMS's GLP-1 Bridge Program launched July 1, 2026 giving eligible Medicare beneficiaries temporary access to weight-loss drugs until the BALANCE Model's Part D component can be implemented. The program covers beneficiaries meeting eligibility criteria through December 31, 2027.
+
+-------------------------
+en_climateandcapitalmedia
+2026-05-31 12:00:00
+Al Gore discovers economics
+Commentary examining Al Gore's evolving stance on carbon pricing and the economics of climate investment, assessing how the political and market landscape has shifted for clean energy advocates. The piece explores tensions between climate urgency and investment return expectations.
+
+-------------------------

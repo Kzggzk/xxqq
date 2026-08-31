@@ -1,0 +1,540 @@
+en_technology_org
+2026-08-28 12:00:00
+Russian-Speaking Ransomware Crew Used Cursor AI to Break Into Seven Companies 
+Russian-speaking hackers exploited Cursor AI to plan intrusions at seven companies, exposing chat logs on an open server in a novel AI-assisted attack vector. 
+
+-------------------------
+en_technology_org
+2026-08-28 12:00:00
+Anthropic Opens AI Standard for Physical Machines 
+Anthropic released a research preview of a standard allowing AI agents to control lab hardware and physical machines directly. 
+
+-------------------------
+en_disruptionbanking
+2026-08-27 12:00:00
+Fintechs and financiers find opportunity at the HSBC Asia Fintech Summit 
+At the HSBC Asia Fintech Summit in Hong Kong on August 21, 2026, key growth drivers discussed included AI-aided solutions, financial inclusion, digital payments and tokenisation. 
+
+-------------------------
+en_technology_org
+2026-08-26 12:00:00
+SpaceX Plans $100B Starbase in Louisiana 
+SpaceX will spend $100 billion on a 125,000-acre Starship spaceport at Pecan Island, Louisiana, with first launch targeted for 2029. 
+
+-------------------------
+en_disruptionbanking
+2026-08-25 12:00:00
+Is Hungary's Fintech Ecosystem Growing Today? 
+Hungary's fintech sector is expanding with over 200 companies and notable startups like R34DY addressing legacy banking infrastructure with AI-powered digital twins. 
+
+-------------------------
+en_wealthmanagement
+2026-08-25 12:00:00
+15 Investment Must Reads for This Week (Aug. 25, 2026) 
+A curated weekly roundup of the most important asset management, ETF, and alternative investment news, covering record ETF inflows and shifting LP allocation trends. 
+
+-------------------------
+en_artificialintelligence_news
+2026-08-22 12:00:00
+Alibaba tests new business model for Qwen open-source AI 
+Alibaba plans to introduce revenue-sharing terms for larger commercial users of its next Qwen open-weight model, requiring companies generating revenue from the model as a service to reach a commercial agreement. 
+
+-------------------------
+en_artificialintelligence_news
+2026-08-20 12:00:00
+Meta, Microsoft, Nvidia, IBM, and others back open-weight AI 
+A broad coalition of technology leaders including Meta, Microsoft, Nvidia, and IBM have formally backed open-weight AI development as a priority for the industry. 
+
+-------------------------
+en_packworld
+2026-08-20 12:00:00
+PACK EXPO International 2026 Connects Manufacturers with Practical Sustainability Solutions 
+PACK EXPO International 2026, running October 18-21 at McCormick Place in Chicago, will feature 2,600 exhibitors focused on practical sustainability solutions with more than 82% of end users actively engaged in sustainability adoption. 
+
+-------------------------
+en_rare_earth_mining
+2026-08-20 12:00:00
+Rare Earth Events September 2026: Eight Key Conferences 
+Eight rare earth and critical minerals conferences are scheduled across September 2026, spanning Seoul, Johannesburg, Tokyo, Yinchuan, Budapest, Marrakech, Brisbane, and Bali in the busiest single month on record. 
+
+-------------------------
+en_manufacturingtomorrow
+2026-08-11 12:00:00
+Bossard Americas to Showcase Smart Factory Technologies That Improve Productivity, Quality and Control at IMTS 2026 
+Bossard Americas will exhibit its Smart Factory Logistics and connected supply chain solutions at IMTS 2026 at McCormick Place in Chicago, September 14-19. 
+
+-------------------------
+en_globalpolicywatch
+2026-08-05 12:00:00
+Belgian Authorities Block Chinese Acquisition of NHV Group Under FDI Screening 
+NHV Group's proposed acquisition by GD Helicopter Finance, ultimately controlled by China-based GDAT Group, was blocked by Belgian FDI screening authorities in the first public prohibition under Belgium's mechanism. 
+
+-------------------------
+en_disruptionbanking
+2026-08-04 12:00:00
+Is Hungary's R34DY the Answer to Banking's Legacy Systems Crisis? 
+Hungarian fintech startup R34DY is tackling banking's legacy systems with AI-powered digital twins, offering a potential solution to one of the sector's most persistent challenges. 
+
+-------------------------
+en_wealthmanagement
+2026-08-01 12:00:00
+Fidelity: M&A Deals Fell in 1H, but Total Asset Haul Rose 88% 
+Registered investment advisor buyers were more selective in the first half of 2026, but acquired assets grew to $342.9 billion, up 88% year-over-year driven by a rise in $1 billion-plus deals. 
+
+-------------------------
+en_industrialinfo
+2026-08-01 12:00:00
+Duke Energy Files 2026 Carolinas' Resource Plan 
+Duke Energy filed an integrated resource plan for North and South Carolina featuring an all-of-the-above approach including natural gas, battery storage, solar, and nuclear to meet rising electricity demand. 
+
+-------------------------
+en_industrialinfo
+2026-08-01 12:00:00
+Evergy Sees Opportunities in Midwest's Data Center Buildout 
+Evergy is positioning to capture growing electricity demand from AI data center construction in the Midwest, with planned capacity expansions aligned with hyperscaler investment timelines. 
+
+-------------------------
+en_fundssociety
+2026-08-01 12:00:00
+US ETF Industry Achieves Record Inflows in July 2026 
+The US ETF industry gathered a record $1.23 trillion in year-to-date net inflows through July 2026, far surpassing previous annual records and driven by strong flows into passive and active equity products. 
+
+-------------------------
+en_fundssociety
+2026-08-01 12:00:00
+Hedging Levels Hit Record Highs as North American Fund Managers Suffer FX Losses Amid Geopolitical Tensions 
+94% of North American fund managers have FX hedging levels at record highs as geopolitical tensions from the Iran conflict and trade uncertainty drive currency volatility. 
+
+-------------------------
+en_euro_sd
+2026-08-01 12:00:00
+United Shield International and NP Aerospace Join Forces 
+United Shield International and NP Aerospace announced a partnership combining advanced protective technology and EOD suit capabilities with law enforcement expertise and US-based sales infrastructure. 
+
+-------------------------
+en_euro_sd
+2026-08-01 12:00:00
+Tiberius Aerospace Entered into Cooperative Research and Development Agreement 
+Tiberius Aerospace, which achieved a world-first demonstration by launching a liquid-fueled ramjet from a NATO-standard 155mm howitzer in April 2026, entered into a new CRADA to advance propulsion technology. 
+
+-------------------------
+en_courthousenews
+2026-08-01 12:00:00
+Iran will reopen the Strait of Hormuz and can sell oil freely under deal with the US, officials say 
+Iran agreed to reopen the Strait of Hormuz under a deal with the United States, allowing Iranian oil to flow freely in a significant diplomatic breakthrough following months of conflict-related disruption. 
+
+-------------------------
+en_chinabizinsider
+2026-08-01 12:00:00
+China EV Sales Hit 60% as Fuel Cars Collapse 
+Electric and plug-in hybrid vehicles captured 61.4% of domestic retail sales in China for the first time, breaching the 60% threshold as conventional fuel vehicle demand fell 37% year-over-year. 
+
+-------------------------
+en_novapharmanews
+2026-08-01 12:00:00
+FDA Oncology Approvals 2026: Key Drug Trends 
+The FDA approved 18 new oncology drugs in 2026 including 7 biologics and 11 small molecules, with bispecific antibodies and ADCs dominating and particular activity in multiple myeloma and lung cancer. 
+
+-------------------------
+en_medscape
+2026-08-01 12:00:00
+'Concerning' Trends in Cancer Drug Approvals 
+Medscape analysis highlights concerning trends in FDA cancer drug approval patterns, including the dominance of industry-sponsored trials and the 9-to-1 ratio of industry over federally funded cancer trial enrollment. 
+
+-------------------------
+en_thevccorner
+2026-08-01 12:00:00
+The Great Descent: Are AI Employees More Expensive Than Humans? 
+The VC Corner newsletter examines global startup funding trends and the emerging debate over whether AI agents represent a cost-effective substitute for human labor, covering ElevenLabs' growth from $2M pre-seed to $11B. 
+
+-------------------------
+en_irmi
+2026-08-01 12:00:00
+2026-Edition ISO Commercial Property Endorsements 
+IRMI covers the 2026 edition of ISO Commercial Property Endorsements, detailing new and revised forms that affect property insurance coverage terms and exclusions for commercial policyholders. 
+
+-------------------------
+en_bowergroupasia
+2026-08-01 12:00:00
+Geoeconomic Risks Haunt ASEAN's 2026 Agenda 
+ASEAN faces mounting geoeconomic challenges in its 2026 agenda, with the ASEAN secretary-general calling for resilience beyond short-term crisis management amid US-China tensions and trade policy uncertainty. 
+
+-------------------------
+en_defenseandmunitions
+2026-08-01 12:00:00
+2026 manufacturing technology orders set half-year record 
+First-half 2026 manufacturing technology orders totaled $3.44 billion, a 36% increase over H1 2025 and the strongest half-year for metalworking machinery orders since 1998. 
+
+-------------------------
+en_biomednexus
+2026-08-01 12:00:00
+25 AI Drug Discovery Companies Actually Delivering Clinical Candidates (2026) 
+A data-driven analysis of 25 AI drug discovery companies with compounds now in clinical trials, noting Phase I success rates for AI-discovered drugs running at 80-90% versus the historical 50% industry average. 
+
+-------------------------
+en_advancedmanufacturing
+2026-08-01 12:00:00
+Automation Expands Across Pavilions at IMTS 2026 in Chicago 
+Automation and collaborative robotics dominate IMTS 2026 at McCormick Place, with physical AI, cobots, and smart sensing technologies taking center stage across all industry segments. 
+
+-------------------------
+en_neobitdaily
+2026-08-01 12:00:00
+Top AI Breakthroughs of 2026: ML Innovations Revealed 
+A comprehensive review of the top AI breakthroughs in 2026, including NVIDIA's Neuromorph-2 chip that mimics brain synapses and cuts energy use by 90%, and advances in on-device AI across PC platforms. 
+
+-------------------------
+en_artificialintelligence_news
+2026-08-01 12:00:00
+Stanford's 2026 Report: AI Safety Benchmarks Are Falling Behind 
+Stanford's 2026 AI Index finds the US-China model performance gap has closed while AI safety benchmarking remains largely inadequate relative to the pace of capability development. 
+
+-------------------------
+en_manufacturingtomorrow
+2026-07-30 12:00:00
+KUKA Connexions Brought Automation Leaders Together to Break New Ground 
+KUKA's industry event brought together automation leaders to explore new frontiers in industrial robotics, collaborative systems, and AI-driven manufacturing technologies. 
+
+-------------------------
+en_globalpolicywatch
+2026-07-28 12:00:00
+FCC Adds Foreign Power Inverters and Robotic Devices to National Security Covered List 
+The FCC added foreign-produced power inverters and advanced robotic devices to its Covered List, continuing a string of decisions placing entire categories of foreign-produced devices under national security restrictions. 
+
+-------------------------
+en_canadianminingreport
+2026-07-24 12:00:00
+The Gold Price Discovery China Just Triggered: What July 24, 2026 Means for Canadian Mining Investors 
+China's central bank buying triggered a significant gold price discovery event on July 24, 2026, with major implications for Canadian junior miners and gold equity valuations. 
+
+-------------------------
+en_globalswf
+2026-07-15 12:00:00
+Seoul's new US$900bn sovereign wealth fund: mandate, strategy and risks 
+South Korea's Lee Jae-myung administration is launching a new sovereign wealth fund with $900bn target to tackle long-term growth challenges, economic polarisation, and global competition in advanced industries. 
+
+-------------------------
+en_newelectronics
+2026-07-15 12:00:00
+ASML raises 2026 outlook as AI boom drives demand for chipmaking equipment 
+ASML raised its 2026 revenue outlook to EUR43-45 billion as AI-driven semiconductor investment continues to accelerate demand for EUV lithography systems, with orders stretching into 2028. 
+
+-------------------------
+en_manufacturingtomorrow
+2026-07-14 12:00:00
+IMTS 2026 Spotlights the Technologies Powering Manufacturing's Next Leap 
+IMTS 2026 gives manufacturers a firsthand look at industrial AI, automation, additive manufacturing, and digital technologies reshaping production as US manufacturing orders and output rise. 
+
+-------------------------
+en_globalpolicywatch
+2026-07-01 12:00:00
+U.S. Tech Legislative & Regulatory Update - Second Quarter 2026 
+A comprehensive update on US tech legislation and regulation in Q2 2026, covering California's AV regulations, Maryland pricing restrictions, and the EU's Tech Sovereignty Package. 
+
+-------------------------
+en_industrialinfo
+2026-07-01 12:00:00
+Energy Transfer Plots Up to $5.5 Billion in 2026 Growth Projects 
+Energy Transfer expects to invest $5-5.5 billion in 2026 growth capital, particularly on its natural gas transportation network in the Permian Basin, driven by surging AI and industrial demand. 
+
+-------------------------
+en_privatecapitalglobal
+2026-07-01 12:00:00
+What Dealmaking, Fundraising, and Investor Sentiment Reveal About Private Markets at Mid-2026 
+Private equity dealmaking has entered an uneven recovery with deal values rising but transaction count subdued; LP sentiment is cautiously constructive entering the second half of 2026. 
+
+-------------------------
+en_fundssociety
+2026-07-01 12:00:00
+Franklin Templeton closes its first $1.5 billion Collateralized Fund Obligation 
+Franklin Templeton successfully closed its inaugural $1.5 billion Collateralized Fund Obligation, marking a significant step in the democratization of private markets access through structured credit vehicles. 
+
+-------------------------
+en_euro_sd
+2026-07-01 12:00:00
+Honeywell Aerospace expanding European solutions for international defense market 
+Honeywell Aerospace is seeing demand growth across its international defense business, anchored by Civitanavi Systems inertial navigation systems now supporting customers across Ukraine, Poland, Italy, and the UK. 
+
+-------------------------
+en_courthousenews
+2026-07-01 12:00:00
+Trump administration's latest buyback of offshore wind leases brings total to nearly $4 billion 
+An offshore wind company reached a $1.2 billion settlement with the Trump administration for lease cancellation, bringing the total amount spent on such offshore wind buyback settlements to nearly $4 billion. 
+
+-------------------------
+en_chinabizinsider
+2026-07-01 12:00:00
+China EV June 2026 Deliveries: Leapmotor, Nio, Xpeng 
+Leapmotor hit a record 93,376 June deliveries (up 95% year-over-year), while Nio delivered 40,597 vehicles (up 62.9% year-on-year) and Xpeng topped 40,000 units. 
+
+-------------------------
+en_novapharmanews
+2026-07-01 12:00:00
+Novel Drug Approvals for 2026: FDA Insights 
+Key 2026 FDA novel drug approvals include Veppanu (first PROTAC therapy), Eli Lilly's Foundayo (oral GLP-1 for obesity), and Novo Nordisk's Awiqli (first once-weekly basal insulin). 
+
+-------------------------
+en_medscape
+2026-07-01 12:00:00
+FDA Drug Approvals Q2 2026 
+A comprehensive reference guide to all FDA drug approvals in Q2 2026, including novel molecular entities, biologics, and accelerated approvals across therapeutic areas. 
+
+-------------------------
+en_thevccorner
+2026-07-01 12:00:00
+VCs' 2026 Tech Bets, AI's Next Moat, State of Startups Report 
+A roundup of where leading venture capital firms are placing their 2026 bets across AI, defense tech, and climate, along with analysis of AI's emerging competitive moats in the enterprise market. 
+
+-------------------------
+en_newelectronics
+2026-07-01 12:00:00
+Synopsys launches Multiphysics Fusion solutions to address advanced chip design complexity 
+Synopsys introduced its first set of Multiphysics Fusion solutions to help semiconductor designers manage growing complexity in advanced chip development at sub-3nm process nodes. 
+
+-------------------------
+en_canadianminingreport
+2026-07-01 12:00:00
+5 Gold Mining Stocks to Buy for Second Half of 2026 
+Analysis of five gold mining stocks positioned to outperform in the second half of 2026, with macro drivers including Iran conflict risk, central bank demand, and constrained mine supply. 
+
+-------------------------
+en_mineralfunds
+2026-07-01 12:00:00
+GDX vs. SIL: The Pros and Cons of Gold and Silver Miner ETFs 
+A comparative analysis of the Global X Silver Miners ETF and VanEck Gold Miners ETF, covering performance differences, cost structures, and risk profiles for precious metals mining equity exposure. 
+
+-------------------------
+en_netzerocompare
+2026-07-01 12:00:00
+Climate Tech in 2026 Moves From Hype to Execution 
+2026 marks a turning point where climate solutions shift from demonstration projects to mainstream infrastructure, with carbon capture, green hydrogen, and grid-scale storage moving toward commercial deployment. 
+
+-------------------------
+en_bowergroupasia
+2026-07-01 12:00:00
+ASEAN Digital Ministers Meeting 2026: Where Regional Ambition Meets National Priorities 
+The sixth ADGMIN endorsed enhanced guidelines for submarine cable resilience and repair, highlighting the tension between regional digital ambitions and member states' divergent national priorities. 
+
+-------------------------
+en_defenseandmunitions
+2026-07-01 12:00:00
+ACMI announces major expansion of National Security Industrial Hub to more than 1,500 acres 
+The American Center for Manufacturing and Innovation announced expansion of its National Security Industrial Hub in Indiana to over 1,500 acres, making it the largest aerospace and defense project in the state. 
+
+-------------------------
+en_biomednexus
+2026-07-01 12:00:00
+20 Biotech Startups to Watch in 2026: The Future of Medicine, Gene Editing, and AI Drug Discovery 
+Profiles of 20 biotech startups to watch in 2026 across cell and gene therapy, radiopharmaceuticals, ADCs, and AI-driven drug discovery, with analysis of pipeline potential and funding status. 
+
+-------------------------
+en_neobitdaily
+2026-07-01 12:00:00
+2026 AI PC Reviews: GPU & NPU Benchmarks Compared 
+Benchmark comparisons of 2026 AI PCs featuring Intel Core Ultra, AMD Ryzen AI, and Qualcomm Snapdragon X platforms, with NPUs handling on-device AI inference for real-time voice translation and image generation. 
+
+-------------------------
+en_energyindustryreview
+2026-07-01 12:00:00
+Battery Storage Capacity: Record Growth and Trends in 2026 
+Global battery energy storage system (BESS) deployments are on track for 353.4 GWh of new capacity in 2026, with LFP chemistry dominating at 95% of utility-scale awards and data center demand accelerating growth. 
+
+-------------------------
+en_energyindustryreview
+2026-07-01 12:00:00
+EU Tripartite Agreement on Energy Storage: Romania Supports Accelerating Investments 
+A tripartite energy storage agreement covering 2026-2028 aims to develop electricity storage to enable more efficient use of renewable energy across Eastern European power markets. 
+
+-------------------------
+en_rare_earth_mining
+2026-07-01 12:00:00
+Top 10 Asia Rare Earth Projects in 2026 
+An analysis of the ten most significant rare earth development projects across Asia in 2026, covering projects in China, Japan, India, and Southeast Asia as the region races to build secure supply chains. 
+
+-------------------------
+en_medscape
+2026-06-09 12:00:00
+ASCO 2026: Targeted and Immunotherapy Advances in Advanced NSCLC 
+ASCO 2026 presented phase 3 results for selpercatinib, ivonescimab, and sac-TMT in NSCLC, plus emerging data for neladalkib in ALK-positive disease and sunvozertinib in the frontline setting. 
+
+-------------------------
+en_courthousenews
+2026-06-01 12:00:00
+Trump admin can't duck blue states' suit over canceled clean energy grants 
+Thirteen Democrat-led states can continue their lawsuit accusing the Trump administration of terminating multi-billion dollar clean energy programs without congressional approval. 
+
+-------------------------
+en_novapharmanews
+2026-06-01 12:00:00
+NMPA China FDA Drug Approval: 2026 Pathways 
+China's NMPA is streamlining drug approval pathways in 2026, with accelerated review for innovative drugs and biosimilars, and expanding mutual recognition arrangements with international regulators. 
+
+-------------------------
+en_newelectronics
+2026-06-01 12:00:00
+Gartner projects global semiconductor revenues to top $1.3 trillion in 2026 
+Gartner forecasts worldwide semiconductor revenue to exceed $1.3 trillion in 2026, representing the strongest growth in over two decades, with AI semiconductors accounting for approximately 30% of total revenue. 
+
+-------------------------
+en_packworld
+2026-06-01 12:00:00
+Practicality Defines 2026 Packaging 
+Industry analysis shows 2026 packaging trends are defined by practical considerations, with companies prioritizing cost-effective automation and sustainability approaches that deliver measurable ROI. 
+
+-------------------------
+en_rare_earth_mining
+2026-06-01 12:00:00
+Rare Earth Supply Chain Geopolitics: 2026 Power Shift 
+The critical minerals supply chain is undergoing a geopolitical power shift in 2026, with 54 nations signing new bilateral supply frameworks at the Critical Minerals Ministerial in Washington in February. 
+
+-------------------------
+en_mineralfunds
+2026-06-01 12:00:00
+Zinc expected to retreat in 2026 as weak demand offsets supply fears 
+Wood Mackenzie's research director expects zinc prices to dip to around $3,350 by end-2026, with global demand growth at a weak 0.9% while supply disruption risks remain limited. 
+
+-------------------------
+en_bowergroupasia
+2026-06-01 12:00:00
+Energy, Climate and Resources 2026: Navigating the Transition and Redefining Supply Chains 
+BowerGroupAsia analysis of how the energy transition and critical minerals supply chain realignment are reshaping investment flows and industrial policy across the Indo-Pacific in 2026. 
+
+-------------------------
+en_defenseandmunitions
+2026-06-01 12:00:00
+Velo3D secures $32.6M Department of War contract to eliminate critical defense manufacturing bottleneck 
+Velo3D entered a $32.6 million contract with the Defense Innovation Unit under Project FORGE to address manufacturing bottlenecks in the US defense industrial base using additive manufacturing. 
+
+-------------------------
+en_advancedmanufacturing
+2026-06-01 12:00:00
+ASU Opens Advanced Manufacturing and Robotics Labs 
+Arizona State University launched a new advanced manufacturing and robotics hub focused on physical AI integration, human-robot collaboration, and workforce training for next-generation industrial automation. 
+
+-------------------------
+en_neobitdaily
+2026-06-01 12:00:00
+Best GPUs for AI Inference 2026: Complete Buying Guide 
+A complete buying guide for AI inference GPUs in 2026, covering NVIDIA H200, B200, AMD MI300X, and emerging ASIC options, with the inference chip market growing to over $50 billion. 
+
+-------------------------
+en_energyindustryreview
+2026-06-01 12:00:00
+New Pillar of Energy Security in Europe: Mintia Thermal Power Plant Back on the Energy Map 
+Construction of the Mintia gas-fired power plant, the largest in Europe at EUR1.2 billion, is nearing completion and expected to start generating electricity in Q1 2026, becoming a cornerstone of European energy security. 
+
+-------------------------
+en_globalswf
+2026-05-01 12:00:00
+GSR Scoreboard 2026 Special Feature: Chinggis Khaan SWF 
+Mongolia's Chinggis Khaan Sovereign Wealth Fund improved dramatically in the 2026 GSR assessment, moving from 12% to 44% and advancing 52 positions, reflecting stronger governance and transparency reforms. 
+
+-------------------------
+en_advancedmanufacturing
+2026-05-01 12:00:00
+Deloitte outlook shows smart manufacturing progress in 2026 
+Deloitte's 2026 smart manufacturing survey shows progress in AI readiness among manufacturers, with automation and cloud computing topping investment lists as companies address labor shortages. 
+
+-------------------------
+en_datacenterworld
+2026-04-20 12:00:00
+NVIDIA, Google and Oracle Take Center Stage at Data Center World 2026 as AI Drives Unprecedented Infrastructure and Power Demands 
+Top executives from NVIDIA, Google, and Oracle keynoted Data Center World 2026, addressing urgent challenges of scaling AI infrastructure, securing power, and rethinking data center design in the AI era. 
+
+-------------------------
+en_thevccorner
+2026-04-15 12:00:00
+$80 Billion in 3 Months: Inside Q1 2026's Record-Breaking Fundraising 
+Q1 2026 became the biggest US fundraising quarter since 2021 with over $80 billion in confirmed new capital, driven by AI mega-rounds from OpenAI, Anthropic, and DeepSeek. 
+
+-------------------------
+en_packworld
+2026-04-15 12:00:00
+PACK EXPO East 2026 Draws Robust, Dynamic Crowd Signaling Strong Industry Growth and Investment 
+PACK EXPO East 2026 drew more than 7,300 attendees and 2,700 exhibitor personnel in its 10th year, confirming the industry is actively investing in automation, digitalization, and smarter manufacturing strategies. 
+
+-------------------------
+en_datacenterworld
+2026-04-01 12:00:00
+2026 State of Data Center Executive Summary 
+A comprehensive survey of data center executives reveals AI now accounts for 15% of workloads growing to 40% by 2030, nuclear energy adoption has grown from 11% to 33%, and only 20% of facilities can support 50-70kW per rack for AI. 
+
+-------------------------
+en_chinabizinsider
+2026-04-01 12:00:00
+China EV March 2026 Sales: BYD Leads, Exports Surge 
+BYD remained the top-selling NEV brand in China in March 2026 as overall EV penetration continued to rise, with exports surging 71% year-over-year driven by Brazil, Europe, and Southeast Asia. 
+
+-------------------------
+en_mineralfunds
+2026-03-20 12:00:00
+What's Driving Metal Markets Prices for Copper, Steel and Aluminum in 2026? 
+Geopolitical conflict and Strait of Hormuz closure drove copper to record highs near $14,527 per metric ton in 2026, while steel remains region-dependent with US tariffs keeping domestic prices elevated. 
+
+-------------------------
+en_canadianminingreport
+2026-03-01 12:00:00
+Top 50 Mining Jurisdictions in the World (2026 Ranking Breakdown) 
+The Fraser Institute's 2025 survey of 256 mining executives released February 2026 identifies the world's top 50 jurisdictions for mining investment by policy attractiveness and mineral potential. 
+
+-------------------------
+en_privatecapitalglobal
+2026-02-01 12:00:00
+Private Capital's Gateway to Intel, Networking & Dealmaking 
+Private Capital Global serves as an intelligence and networking hub for private markets professionals, covering PE, VC, growth equity, and institutional LP trends globally. 
+
+-------------------------
+en_wealthmanagement
+2026-01-15 12:00:00
+RIA Outlook 2026: More M&A, New Services Planned 
+RIA executives plan to buy firms while expanding into crypto investing and estate planning in 2026, with more than half positioning as potential M&A buyers. 
+
+-------------------------
+en_globalswf
+2026-01-15 12:00:00
+Abu Dhabi launched L'IMAD Holdings as 4th UAE sovereign wealth fund 
+Abu Dhabi launched L'IMAD Holdings in January 2026 as the emirate's fourth sovereign wealth fund, bringing combined UAE sovereign wealth to more than $1.7 trillion. 
+
+-------------------------
+en_privatecapitalglobal
+2026-01-15 12:00:00
+The Road Ahead: A Data-Driven Look at U.S. Private Equity's 2026 Outlook 
+US private equity enters 2026 with an aging backlog of nearly 12,900 PE-backed companies, almost one-third held for seven years or longer, as the industry navigates a capital formation drop of more than 30% from peak. 
+
+-------------------------
+en_datacenterworld
+2026-01-15 12:00:00
+2026 Data Center Trends: AI, Cooling & Power Insights 
+Key 2026 data center trends include liquid cooling becoming a default requirement for high-performance AI facilities, power as the defining constraint at 100-750MW per site, and data centers shifting from passive consumers to grid stakeholders. 
+
+-------------------------
+en_biomednexus
+2026-01-15 12:00:00
+JPM Week 2026: When $30 Billion Rumors Become Strategy Signals 
+Coverage of the JP Morgan Healthcare Conference 2026, examining how $30 billion in rumored M&A deals discussed during the week signal broader strategic priorities across large-cap pharma and biotech. 
+
+-------------------------
+en_irmi
+2026-01-15 12:00:00
+2025 Insurance Year in Review and 2026 Developments 
+A comprehensive review of 2025 insurance market developments and outlook for 2026, covering the impact of Trump administration policy shifts, tariffs, and geopolitical changes on the property/casualty insurance industry. 
+
+-------------------------
+en_netzerocompare
+2026-01-15 12:00:00
+Emerging Climate Technologies Set to Shape the Net-Zero Transition in 2026 
+Analysis of emerging climate technologies including carbon capture, green hydrogen, and advanced battery storage that are expected to define the net-zero transition pathway through 2030. 
+
+-------------------------
+en_irmi
+2026-01-01 12:00:00
+IRMI Product Updates - January 2026 
+January 2026 product updates from IRMI include new content on how technology is transforming society and insurance, plus updated US Claims Cost Indexes for construction and general industry. 
+
+-------------------------
+en_netzerocompare
+2026-01-01 12:00:00
+Sustainability and Climate Trends to Watch in 2026 
+Key 2026 sustainability trends include mandatory climate disclosure replacing voluntary frameworks in major markets, with large companies now reporting under binding rules aligned with international standards. 
+
+-------------------------

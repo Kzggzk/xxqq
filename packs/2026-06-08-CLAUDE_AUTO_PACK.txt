@@ -1,0 +1,528 @@
+en_aha_news
+2026-06-05 12:00:00
+Hospitals Are Leading Efforts to Make Healthcare More Affordable 
+Hospitals argue 7.5% expense growth in 2025 was from input cost increases not pricing; AHA pressing for systemic reforms on admin waste, drug pricing. 
+
+-------------------------
+en_climate_central
+2026-06-05 12:00:00
+2026 World Cup: Climate Change Boosts Performance-Impairing Heat at Nearly Every Match 
+Climate change boosts dangerous heat probability at 97/104 World Cup matches; nearly half have ≥50% probability of performance-impairing heat. 
+
+-------------------------
+en_pharmtech
+2026-06-05 12:00:00
+PharmTech Weekly Roundup—June 5, 2026 
+LGM Pharma adding $9M to TX/CO facilities; Halo Pharma launching new Groninger FlexFill line H2 2026; CDMO market dynamics update. 
+
+-------------------------
+en_mining_journal
+2026-06-05 12:00:00
+US Government Getting Critical on Minerals 
+US intensifying critical mineral supply chain security; equity stakes, price supports, stockpiles deployed to reduce Chinese dependence. 
+
+-------------------------
+cn_jiemian
+2026-06-05 12:00:00
+券商“把脉”2026年A股下半场，盈利兑现推动“慢牛”延续，硬科技是核心主线 
+多家券商研究认为2026年A股下半场将延续“慢牛”，硬科技为核心主线。外资预计MSCI中国指数年底涨约18%，沪淳300涨约12%。 
+
+-------------------------
+en_fintech_times
+2026-06-04 12:00:00
+Crown Agents Bank Secures Guyana License to Anchor South American Transactional Banking Push 
+Crown Agents Bank secures Bank of Guyana license targeting underserved currency corridors in one of the hemisphere's fastest-growing economies. 
+
+-------------------------
+en_green_initiative
+2026-06-03 12:00:00
+Unlocking Climate Finance: A Practical Framework for Financial Institutions 
+Green Initiative launched Climate Mitigation Finance Guide with ISO-aligned methodology for GHG measurement, verification, target-setting for SME emerging market climate finance. 
+
+-------------------------
+en_fintech_times
+2026-06-03 12:00:00
+Money20/20 Europe: DAY One Roundup 
+Open banking, stablecoin settlement, and AI infrastructure converging at Money20/20 Amsterdam; UK Payments Initiative Ltd launched as first new domestic scheme in 20 years. 
+
+-------------------------
+en_pharmaceutical_commerce
+2026-06-03 12:00:00
+Lilly Bolsters GLP-1 Supply Chain, Pledging $3 Billion Manufacturing Expansion in China 
+Lilly investing $3B over decade in China GLP-1 manufacturing including Suzhou expansion, Beijing oral production lines, and $200M Pharmaron collaboration. 
+
+-------------------------
+en_aha_news
+2026-06-02 12:00:00
+AHA Unveils Blueprint to Lower Healthcare Costs and Expand Access 
+AHA blueprint "Making Health Care More Affordable" targets admin waste reduction, lower drug/device costs, and care outcome innovation with specific legislative proposals. 
+
+-------------------------
+en_green_initiative
+2026-06-02 12:00:00
+The Regulation That Built a Market 
+Analysis of how climate-mitigation finance regulation creates market structure; argues clear regulatory standards are prerequisites for scaling climate capital flows. 
+
+-------------------------
+en_pharmatimes
+2026-06-02 12:00:00
+New Collaboration to Break Barriers in Brain-Targeted Drug Discovery 
+New partnership combining novel BBB-crossing delivery tech with precision molecular targeting to unlock neurological treatments; addresses blood-brain barrier challenge. 
+
+-------------------------
+en_the_decoder
+2026-06-02 12:00:00
+Google Builds Elite Team to Close the Coding Gap with Anthropic 
+Google deploying elite team to sharpen Gemini coding capabilities, responding to Claude's competitive strength; coding is primary enterprise AI adoption use case in 2026. 
+
+-------------------------
+en_sia_news
+2026-06-01 12:00:00
+New Report Finds Semiconductors Account for 95% of an AI Data Server Rack's Value 
+SIA-Deloitte report: chips = 95%+ of AI rack value; $4T data center investment through 2028, $2.8T on semiconductors; highlights chip supply's strategic importance. 
+
+-------------------------
+en_pv_tech
+2026-06-01 12:00:00
+Corporate Solar Financing More Than Doubles to US$11.1 Billion in Q1 2026 
+Global corporate solar financing reached $11.1B in Q1 2026, up 100%+ YoY, driven by hyperscalers securing clean energy supply for AI data centers. 
+
+-------------------------
+en_chemengonline
+2026-06-01 12:00:00
+Business News: June 2026 
+BASF Zhanjiang Verbund site fully inaugurated; Air Products selected by Samsung for South Korea semiconductor fab gases; tariff impacts on chemical raw material costs. 
+
+-------------------------
+en_sia_news
+2026-05-28 12:00:00
+Global Semiconductor Sales Increase 11% Month-to-Month in April 
+Global chip sales $110.5B in April 2026, +11% MoM, +93.9% YoY; Americas led at +115.8% YoY reflecting North American AI infrastructure concentration. 
+
+-------------------------
+en_pharmatimes
+2026-05-26 12:00:00
+Aragen Scaling Daretabart to Commercial-Ready Production 
+CDMO Aragen scaling ADC Daretabart to commercial-ready production; reflects growing demand for specialized complex biologic manufacturing capabilities. 
+
+-------------------------
+en_green_initiative
+2026-05-25 12:00:00
+Why Most SME Emissions Data Fails to Meet Finance Requirements 
+SME emissions data structural bottleneck: quality, completeness, comparability failures block climate finance deployment; recommends digital measurement and harmonized frameworks. 
+
+-------------------------
+en_pharmatimes
+2026-05-20 12:00:00
+Phase 1 Study to Assess Safety and Early Efficacy of KMA-targeting CAR-T in Multiple Myeloma 
+Phase 1 initiated for KRAS mutant antigen-targeting CAR-T in multiple myeloma; extends CAR-T beyond CD19/BCMA targets to address resistant/refractory disease. 
+
+-------------------------
+en_onestopesg
+2026-05-20 12:00:00
+Toyota's Global Climate Strategy: A Multi-Pathway Approach to Carbon Neutrality 
+Toyota embraces BEV, hydrogen, and hybrid pathways tailored to regional markets; bets on technology flexibility over single-technology dominance. 
+
+-------------------------
+en_fintechbloom
+2026-05-20 12:00:00
+What Are the Top AI Banking Solutions Used by Financial Institutions Today? 
+Survey of AI platform adoption across banks for fraud detection, credit decisions, compliance automation, and personalization; evaluates ROI and scaling barriers. 
+
+-------------------------
+en_hhmglobal
+2026-05-15 12:00:00
+Smart Hospitals: Revolutionizing Patient Safety With AI 
+AI-powered smart hospitals using real-time risk stratification, medication error prevention, and continuous vital monitoring; integrated platforms across clinical workflows. 
+
+-------------------------
+en_onestopesg
+2026-05-15 12:00:00
+Three Carbon Capture Leaders Shaping the Net-Zero Agenda in 2026 
+Three commercial-scale carbon capture leaders (DAC, industrial CO2, enhanced weathering) attracting institutional investment as carbon removal becomes mainstream. 
+
+-------------------------
+en_energy_monitor
+2026-05-15 12:00:00
+An Energy Transition Can Help End Our Reliance on Expensive Fuel 
+Renewable transition offers most reliable path off volatile fossil fuels; 2026 data shows falling renewables cost curves vs elevated oil/gas; country-by-country energy security analysis. 
+
+-------------------------
+en_fintechbloom
+2026-05-15 12:00:00
+Fintech News 2026: 10 Stories Shaping the Industry 
+Fintech moved from experimentation to production: stablecoins, instant payments, embedded finance, AI agents now in real bank workflows. Revenues $650B in 2025, projected $2T by 2030. 
+
+-------------------------
+en_pharmaceutical_commerce
+2026-05-15 12:00:00
+Novartis to Build Fourth US Radioligand Therapy Facility to Strengthen Supply Chain 
+Novartis building 35,000 sq-ft RLT facility in Winter Park FL as 4th US site; part of $23B 5-year US infrastructure commitment ahead of next-generation RLT approvals. 
+
+-------------------------
+cn_jiemian
+2026-05-15 12:00:00
+新质生产力启新程 CIBF2026驱动产业新跃迁 
+CIBF2026展会展示固态电池、钒离子电池等突破；宁德时代、比亚迪等头部企业展示新型储能技术，推动中国新能源产业链全球竞争力提升。 
+
+-------------------------
+en_the_decoder
+2026-05-10 12:00:00
+AI Industry Finds Its 2026 Narrative as OpenAI and Microsoft Argue Users Are the Bottleneck, Not Models 
+OpenAI/Microsoft reframe: users/deployment, not models, are bottleneck; shifts investment focus to workflow integration and enterprise adoption over model improvements. 
+
+-------------------------
+en_environment_america
+2026-05-01 12:00:00
+Renewables Grow 11% in First 3 Months of 2026 
+EIA data: renewable generation +11% Q1 2026 vs Q1 2025; coal -11% same period; confirms clean energy acceleration despite reduced federal policy support. 
+
+-------------------------
+en_fintech_times
+2026-05-01 12:00:00
+UK Fintech Raises $741M in Q1 2026 as Early-Stage Capital Surges 177% 
+UK fintech raised $741M in Q1 2026 with early-stage up 177%; shift toward new startups and infrastructure over consumer-facing apps. 
+
+-------------------------
+en_pharmtech
+2026-05-01 12:00:00
+PharmTech Weekly Roundup—May 1, 2026 
+DCAT Week 2026 manufacturing announcements; new facility investments; rare disease regulatory shifts; tariff impacts on API supply chains. 
+
+-------------------------
+en_chemengonline
+2026-05-01 12:00:00
+Chemical Engineering Business News: May 2026 
+WPU building 80,000 MT/yr chemical recycling facility at Port of Rotterdam; Syensqo+Shell low-carbon ethylene oxide with 51% lower carbon footprint; CEPCI tracking. 
+
+-------------------------
+en_esgbook
+2026-04-30 12:00:00
+Policy Digest: April 2026 
+Major jurisdictions moving from voluntary to enforceable sustainability frameworks; EU tightening, US rolling back; Scope 3 reporting and new taxonomies key developments. 
+
+-------------------------
+en_aha_news
+2026-04-29 12:00:00
+AHA and West Health Launch National Accelerator to Scale Technology-Enabled Patient Care Solutions 
+3-year AHA+West Health accelerator to operationalize and scale proven patient care technologies; focuses on rural/underserved settings. 
+
+-------------------------
+en_pharmtech
+2026-04-22 12:00:00
+Smart Pharma Is No Longer a Buzzword: Pharma Technological Breakthroughs at PHARMAP 2026 
+PHARMAP 2026 in Amsterdam: 180+ companies including Bayer, GSK, Roche; manual ops down to 1% in pharma; 69% struggle with digital integration; AI in drug discovery. 
+
+-------------------------
+en_mit_tech_review
+2026-04-21 12:00:00
+2026 10 Things That Matter in AI Right Now 
+MIT TR 2026 roundup: physical AI, agentic systems, safety benchmarks, narrowing US-China gap; performance gains continue alongside safety concerns and eroding public trust. 
+
+-------------------------
+en_onestopesg
+2026-04-19 12:00:00
+Global Carbon Markets in 2026: What Businesses Should Expect 
+Carbon markets more regulated, transparent, financially material in 2026; participation shifting from optional to strategic necessity; emerging economies launching carbon pricing. 
+
+-------------------------
+en_mit_tech_review
+2026-04-15 12:00:00
+Want to Understand the Current State of AI? Check Out These Charts. 
+Visual analysis maps AI state across model performance, safety incidents, economic adoption, global investment flows through early 2026; data-driven overview of AI transformation pace. 
+
+-------------------------
+en_the_decoder
+2026-04-15 12:00:00
+Stanford's AI Index 2026 Shows Rapid Progress, Growing Safety Concerns, and Declining Public Trust 
+Stanford HAI AI Index 2026: major model performance leaps, rapidly narrowing US-China gap, mounting safety problems, declining public trust; falling model costs democratizing access. 
+
+-------------------------
+en_energy_monitor
+2026-04-15 12:00:00
+North America's Energy Transition Is Accelerating Yet Volatile 
+Renewables to rise from 32% to 43% of NA generation by 2035 per GlobalData; solar to reach 19%; execution uncertain amid political volatility and Middle East conflict. 
+
+-------------------------
+en_pv_tech
+2026-04-15 12:00:00
+EIA: US to Add Record 43.4GW of New Utility-Scale Solar PV Capacity in 2026 
+US adds record 43.4GW solar in 2026, +60% YoY; solar = 51% of 86GW new capacity; driven by corporate procurement, state mandates, declining install costs. 
+
+-------------------------
+en_mining_journal
+2026-04-15 12:00:00
+Mining M&A Reaches $21.6B at Start of 2026 
+Mining M&A $21.6B in Q1 2026, fastest start since 2023; major miners consolidating critical minerals positions ahead of energy transition demand surge. 
+
+-------------------------
+en_foreign_affairs
+2026-04-15 12:00:00
+Ukraine Turns the Tide: Why a Cease-Fire Is Now a Real Possibility 
+Ukrainian advances in Huliaipole spring 2026 shift battlefield calculus; both sides face supply exhaustion, troop fatigue, Western pressure making cease-fire plausible. 
+
+-------------------------
+en_energy_monitor
+2026-04-10 12:00:00
+Germany's Energy Transition: Reform and Uncertainty 
+Germany renewables = 57.2% of gross electricity in 2025; 2026 reforms address permitting and dispatchable backup gap; structural uncertainties remain on grid stability and industrial competitiveness. 
+
+-------------------------
+en_searates
+2026-04-10 12:00:00
+5 Key Factors of Container Costs in 2026: Pay $2,200 or $9,500? 
+Container rates $2,200-$9,500/FEU depending on route, timing, booking strategy; five key shipper-controlled factors identified. 
+
+-------------------------
+en_hhmglobal
+2026-04-10 12:00:00
+Intelligent EHR Systems Enhancing Clinical Workflow 
+AI-powered EHR systems reduce physician documentation time 30-40%; improve data completeness and regulatory compliance; transforming hospital operations. 
+
+-------------------------
+en_mit_tech_review
+2026-04-08 12:00:00
+Mustafa Suleyman: AI Development Won't Hit a Wall Anytime Soon—Here's Why 
+Microsoft AI CEO Suleyman argues AI will keep scaling without near-term walls; multi-decade growth shaped by deployment/societal integration more than fundamental limits. 
+
+-------------------------
+en_pharmaceutical_commerce
+2026-04-07 12:00:00
+US-Iran Ceasefire Offers Brief Stability for Global Pharma Supply Chains 
+Pakistani-mediated US-Iran ceasefire in April 2026 gives 14-day reprieve to pharma supply chains; API lead times had been extending, generic manufacturers most exposed. 
+
+-------------------------
+en_semianalysis
+2026-04-01 12:00:00
+The Datacenter in 2026: CPUs, RL Environments and Agent-Driven Workloads 
+SemiAnalysis examines shifting datacenter compute mix: RL environments and agent-driven workloads creating new demand patterns; CPU/GPU/accelerator mix evolution as AI workload diversity increases. 
+
+-------------------------
+en_chemengonline
+2026-04-01 12:00:00
+2026 CEPCI Updates: March (Prelim.) and February (Final) 
+February 2026 CEPCI sixth consecutive monthly rise, 7.5% above Feb 2025; persistent inflationary pressure in construction, equipment, materials costs across chemical/industrial sectors. 
+
+-------------------------
+en_climate_central
+2026-04-01 12:00:00
+Climate Central's Monthly Briefing Highlights from March 2026 
+March 2026 extraordinary: summerlike heat, 10,000+ temperature records set, Rocky Mountain snowpack deficits; human-caused climate change significantly amplified extremes. 
+
+-------------------------
+en_esgbook
+2026-03-31 12:00:00
+Policy Digest: March 2026 
+EU Omnibus simplification package; corporate sustainability reporting updates; regulatory focus shifted from disclosure volume to quality, reliability, comparability. 
+
+-------------------------
+en_worldpipelines
+2026-03-26 12:00:00
+New DNV Recommended Practice Supports Offshore Hydrogen Pipelines Development 
+DNV-RP-F123 published for offshore hydrogen pipelines: safe design, operation, requalification; supports growing hydrogen export terminal infrastructure needs. 
+
+-------------------------
+en_environment_america
+2026-03-25 12:00:00
+Clean Energy Additions to Break Records in 2026 
+Solar, wind, battery storage = 99% of new US electricity capacity in 2026; solar adding 42,628 MW; renewables cost competitiveness and corporate procurement driving surge. 
+
+-------------------------
+en_worldpipelines
+2026-03-24 12:00:00
+Trump's Transportation Department to Invest Nearly US$100 Million in Modernising Ageing Pipeline Infrastructure 
+PHMSA announcing ~$100M for aging pipeline modernization via NGDISM Grant program ($1B over 5 years); targets high-risk, leak-prone natural gas distribution systems. 
+
+-------------------------
+en_foreign_affairs
+2026-03-15 12:00:00
+Iran's New Grand Strategy 
+Iran's response to Feb 28 US-Israeli airstrikes: systematic missile/drone salvos to deplete interceptor stockpiles; shift to attritional warfare doctrine against technologically superior adversaries. 
+
+-------------------------
+en_mining_journal
+2026-03-15 12:00:00
+Can the Gold Rush Last? 
+Analysis of gold 2026 rally: safe-haven demand, Middle East risk premium, central bank buying driving record prices; examines production costs and reserve sustainability. 
+
+-------------------------
+en_searates
+2026-03-15 12:00:00
+Rerouting from Asia in 2026: Why Transit Times Are Up 40% and Supply Chains Are Failing 
+Cape of Good Hope rerouting pushes Asia transit times +40%; Maersk, MSC, CMA CGM suspended Suez routes; cascading supply chain failures and inventory management strain. 
+
+-------------------------
+en_environment_america
+2026-03-10 12:00:00
+New Forecast: Solar, Wind and Battery Storage to Dominate in 2026 
+EIA forecasts solar+wind+storage = 99% of new US capacity; wind ~11%, solar ~8% of generation; both hit new records. 
+
+-------------------------
+en_pv_tech
+2026-03-10 12:00:00
+China to Add 180-240GW of New Solar PV Capacity in 2026, Down from 315GW in 2025 
+China solar capacity additions moderate to 180-240GW from record 315GW in 2025 due to grid integration challenges, curtailment, and policy recalibration. 
+
+-------------------------
+en_hhmglobal
+2026-03-10 12:00:00
+Telemedicine Platforms Expanding Access to Remote Care 
+Telemedicine expanding rural/underserved access; reduces overhead costs and unnecessary admissions; benefits from COVID-19-era infrastructure investment; sustainable healthcare spending pathway. 
+
+-------------------------
+en_themanufacturer
+2026-03-02 12:00:00
+Daily Manufacturing News Digest – The Industry Stories You Should Be Aware of Today 
+UK manufacturing daily briefing: new factory investments, workforce developments, supply chain adaptation; covers complex operating environment of tariff uncertainty and energy costs. 
+
+-------------------------
+en_semianalysis
+2026-03-01 12:00:00
+Introduction to Space Datacenters and Orbital Compute 
+SemiAnalysis explores space-based datacenter thesis: physics, economics, feasibility of orbital AI workloads powered by solar; enabling conditions including laser interconnects and thermal management. 
+
+-------------------------
+en_searates
+2026-03-01 12:00:00
+Global Shipping and Logistics News: Weekly Supply Chain Digest March 2026 
+Drewry WCI: $1,300-$1,500/container Asia-Europe March 2026 amid fleet overcapacity; Strait of Hormuz effectively closed, delivery times worst since April 2020. 
+
+-------------------------
+en_farmonaut
+2026-03-01 12:00:00
+The Future of Farming: 7 Innovations in Agriculture 2026 
+Seven ag innovations: AI crop disease detection, autonomous field robots, gene-edited varieties, precision irrigation AI, carbon farming payments, vertical farming, satellite-guided precision application. 
+
+-------------------------
+en_recharged
+2026-02-15 12:00:00
+EV Sales Statistics 2026: Global & U.S. Market Trends 
+20M+ EVs sold globally in 2025; China ~50%, Europe ~1/3, US high-single-digit share; US federal tax credit removal in 2026 expected to slow domestic growth. 
+
+-------------------------
+en_defense_update
+2026-02-12 12:00:00
+Arrow 4: Israel's Answer to the Hypersonic Challenge 
+Arrow 4 entering live trials mid-2026 as first Western system designed for hypersonic defense; extends Israel's layered missile defense beyond Arrow 2/3 capabilities. 
+
+-------------------------
+en_clinical_leader
+2026-02-10 12:00:00
+How Deep Learning Is Changing Clinical Trial Design, Execution, And Analysis In 2026 
+Deep learning transforms trials: AI prescreening now routine, ML accelerates site selection and enrollment; challenge is deploying safely at regulatory-compliant scale. 
+
+-------------------------
+en_defense_update
+2026-02-09 12:00:00
+World Defense Show 2026 
+WDS 2026 Riyadh: +58% to 925 exhibitors from 80 countries, 273,000 sq-m; Saudi Arabia transitioning from defense consumer to industrial partner under Vision 2030. 
+
+-------------------------
+en_defense_update
+2026-02-08 12:00:00
+Singapore Airshow 2026 – Indo-Pacific Strategic Realignments 
+Singapore Airshow 2026: drone-centric forces now operational baseline; Indo-Pacific at strategic inflection; collapse of US-led export models; regional technological autonomy push. 
+
+-------------------------
+en_themanufacturer
+2026-02-03 12:00:00
+UK Manufacturing PMI: Industry Opens 2026 with Strongest Growth in 17 Months 
+UK PMI 51.8 in Jan 2026, 17-month high; expansion driven by stronger new orders and export demand; Employment Rights Act costs tempering medium-term outlook. 
+
+-------------------------
+en_fintechbloom
+2026-02-02 12:00:00
+2026 Will Reward Banks That Treat AI Like Infrastructure, Not Innovation Theatre 
+Banks treating AI as foundational infrastructure vs showcase pilots will capture productivity/margin advantages; data quality, governance, organizational change are key differentiators. 
+
+-------------------------
+en_sia_news
+2026-02-01 12:00:00
+Global Annual Semiconductor Sales Increase 25.6% to $791.7 Billion in 2025 
+Global chip sales $791.7B in 2025 (+25.6%); trajectory to $1.5T by end of 2026 as AI compute buildout accelerates and memory prices recover. 
+
+-------------------------
+en_semianalysis
+2026-02-01 12:00:00
+The Great AI Silicon Shortage 
+2026 AI silicon shortage: all major accelerators transitioning to N3; AI = ~60% of TSMC N3 output; hyperscalers prioritized over consumer electronics with multi-year commitments. 
+
+-------------------------
+en_farmonaut
+2026-02-01 12:00:00
+Precision Farming Technologies For Crop Farming 2026 
+Satellite+AI analytics for real-time field-level insights; multispectral imagery+IoT+ML enabling plant-level precision management; projected to increase global crop yields 20%. 
+
+-------------------------
+en_esgbook
+2026-01-31 12:00:00
+The ESG Book Briefing: January 2026 
+Banks entering period where ESG regulatory expectations rise faster than available data; divergent EU/UK vs US frameworks; SFDR reform implications and reduced SEC climate disclosure emphasis. 
+
+-------------------------
+en_corporate_knights
+2026-01-26 12:00:00
+It's Not Just ESG – All Shareholder Rights Are Being Threatened in the U.S. 
+Beyond ESG, broader shareholder rights under attack ahead of 2026 proxy season; regulatory rollbacks and corporate lobbying undermining decades of governance reform. 
+
+-------------------------
+en_clinical_leader
+2026-01-15 12:00:00
+CRO Industry Outlook 2026: The Next Stage Of Clinical Trial Transformation 
+CROs now strategic co-developers not vendors; IQVIA, ICON, Thermo Fisher PPD, Medpace strong 2025; APAC growing trial hub reshaping global site selection. 
+
+-------------------------
+en_farmonaut
+2026-01-15 12:00:00
+Agriculture News Today: 7 Precision Farming Trends 2026 
+Precision ag projected to increase global crop yields 20%; 65%+ of farms adopting precision technology; GPS smart farming tools most widely deployed. 
+
+-------------------------
+en_worldpipelines
+2026-01-12 12:00:00
+A New Partnership Drives PipeSense's Global Expansion 
+PipeSense new partnership expands monitoring to CO2 transport applications; aligns with CCS project pipeline monitoring demand as infrastructure builds out. 
+
+-------------------------
+en_themanufacturer
+2026-01-10 12:00:00
+UK Manufacturing Outlook Cautious as Factories Begin 2026 on 'Fragile Footing' 
+79% of UK manufacturers faced raw material cost increases; 70% expect energy costs to rise; Employment Rights Act, tariff uncertainty, skills shortages create challenging environment. 
+
+-------------------------
+en_recharged
+2026-01-10 12:00:00
+EV Battery Technology 2026: Solid-State, LFP, Sodium & More 
+Solid-state approaching limited commercial deployment; LFP gaining share for durability/safety; sodium-ion entering vehicles primarily in China; average pack price $108/kWh. 
+
+-------------------------
+en_corporate_knights
+2026-01-09 12:00:00
+The Most Sustainable Equity Funds in 2026 
+Electrification trends sustaining sustainable fund performance; green ETFs resilient in downturns; institutional investors continue favoring sustainable equity strategies amid US political uncertainty. 
+
+-------------------------
+en_clinical_leader
+2026-01-08 12:00:00
+2026: From Experimentation To Operational Reality In Clinical Research 
+CROs embedding AI in protocol design, recruitment, monitoring, regulatory submission at commercial scale; hybrid decentralized trial models becoming standard. 
+
+-------------------------
+en_corporate_knights
+2026-01-05 12:00:00
+Five Sustainable Finance Predictions for 2026 
+Five themes: clean energy economics resilience, Trump anti-ESG attacks, sustainable debt growth, carbon market maturation, transition finance for hard-to-abate sectors; $6.6T sustainable assets steady. 
+
+-------------------------
+en_recharged
+2026-01-05 12:00:00
+New EVs Coming 2026: Complete List & Key Highlights 
+BMW iX3 (Neue Klasse), Ferrari Luce, 50+ new models globally in 2026; crossovers/SUVs dominate; Chinese automakers accelerating global market entry. 
+
+-------------------------
+cn_jiemian
+2026-01-05 12:00:00
+外资看2026年A股：全球投资者回归中国市场，科技、出海、“反内卷”将成主线 
+外资机构（摩根大通、高盛）加大A股配置；科技、出海、反内卷为主线；DeepSeek引发AI热潮带动中国科技股成为全球资金重要目的地。 
+
+-------------------------

@@ -1,0 +1,558 @@
+en_clinical_trials_arena
+2026-06-01 12:00:00
+ASCO26: Gastrointestinal cancers enter the limelight amid key readout surge 
+Revolution Medicines' KRAS inhibitor daraxonrasib was one of five plenary abstracts at ASCO 2026 after nearly doubling overall survival in patients with KRAS-mutated metastatic pancreatic ductal adenocarcinoma, signaling a potential paradigm shift for one of oncology's most intractable diseases. ASCO 2026 featured an unusually dense cluster of GI cancer readouts spanning colorectal, gastric, and pancreatic indications. 
+
+-------------------------
+en_clinical_trials_arena
+2026-06-01 12:00:00
+ASCO 2026: key readouts in lung cancer 
+ASCO 2026 featured landmark data across multiple frontline non-small cell lung cancer subtypes, with new combination immunotherapy regimens and targeted agents potentially displacing current standards of care across squamous, non-squamous, and driver-mutated NSCLC subgroups. Clinical Trials Arena's roundup covers the top five pivotal readouts reshaping treatment algorithms for the leading cause of global cancer mortality. 
+
+-------------------------
+en_logistics_manager
+2026-06-01 12:00:00
+Logistics Manager Magazine June 2026: supply chain ethics, circular economy and biodiversity 
+The June 2026 issue of Logistics Manager focuses on supply chain ethics and forced labor due diligence compliance requirements under new UK and EU legislation, circular economy imperatives for logistics property developers, and growing biodiversity disclosure requirements affecting warehouse operators. The issue also profiles Supply Chain Excellence Awards APAC finalists spanning digital transformation, cold chain, and sustainability categories. 
+
+-------------------------
+en_electronic_design
+2026-05-29 12:00:00
+Electronic Design Weekly: May 25-29, 2026 
+Electronic Design's weekly roundup covers NVIDIA's Vera Rubin platform architecture with six new chip types and ultra-high interconnect bandwidth, UCIe 3.0 specification finalization enabling faster chiplet communication, and new GaN power device families targeting 800V data center power architectures. Industry debate intensified over whether AI ASICs will commoditize GPU demand faster than NVIDIA's roadmap can sustain. 
+
+-------------------------
+en_renewables_now
+2026-05-29 12:00:00
+Victoria declares five onshore renewable energy zones, adds Gippsland offshore wind shoreline zone 
+The Victorian government formally declared five onshore renewable energy zones for wind and solar plus a Gippsland shoreline zone for offshore wind infrastructure, unlocking coordinated grid investment and private development within Australia's most ambitious state-level clean energy framework. The declarations trigger regulatory processes for up to 25 gigawatts of new capacity needed for Victoria's 95 percent renewable electricity target by 2035. 
+
+-------------------------
+en_pandaily
+2026-05-28 12:00:00
+The Little-Known Chinese Company Powering NVIDIA's Most Advanced AI Servers 
+WUS Printed Circuit, a Kunshan-based PCB maker, posted a 62.9 percent year-over-year profit increase in Q1 2026 as the sole global supplier of NVIDIA's 78-layer AI server backplane, making it a critical but largely invisible node in the global AI hardware supply chain. The company's order backlog extends through 2027 as hyperscalers race to deploy next-generation GPU clusters. 
+
+-------------------------
+en_clinical_trials_arena
+2026-05-28 12:00:00
+DDW 2026: key readouts from the conference 
+Digestive Disease Week 2026 featured notable data from Regeneron and Sanofi's Dupixent in the REMODEL study, achieving a significant 9 percent baseline improvement in esophageal expansion pressure at 24 weeks in adults with eosinophilic esophagitis. The conference also showcased emerging targeted therapies for IBD, colorectal cancer, and NASH/MASH that are reshaping gastroenterology treatment guidelines. 
+
+-------------------------
+en_managed_healthcare_executive
+2026-05-28 12:00:00
+10 trends managed care execs shouldn't ignore for the rest of 2026 
+Managed Healthcare Executive identifies ten critical forces reshaping payer strategy through year-end, including ACA subsidy expiration fallout, Medicaid work requirement implementation, GLP-1 cost management, prior authorization reform pressure, and AI-powered utilization management. Executives face simultaneous cost inflation, enrollment pressure, and regulatory complexity unprecedented in the recent history of managed care. 
+
+-------------------------
+en_kff_health_news
+2026-05-28 12:00:00
+KFF Health News Morning Briefing: Thursday, May 28, 2026 
+KFF Health News covers the Senate Finance Committee markup of Medicaid block grant legislation, CMS's proposed rule capping certain state Medicaid supplemental payments at Medicare rates, and new data showing ACA marketplace enrollment fell by nearly 5 million since the subsidy expiration on January 1. The briefing aggregates health policy news from across major outlets for healthcare industry stakeholders. 
+
+-------------------------
+en_powermag
+2026-05-28 12:00:00
+FERC Sets June Deadline to Rewrite Large-Load Grid Rules for AI-Era Power Demand 
+The Federal Energy Regulatory Commission has set a June 2026 deadline to finalize a rulemaking redefining how massive new power users — particularly AI data centers — interconnect with the US interstate transmission system, including new cost allocation and demand response requirements for hyperscale loads. The rule could determine whether AI infrastructure buildout accelerates domestically or shifts to jurisdictions with more permissive grid access rules. 
+
+-------------------------
+en_mms_online
+2026-05-28 12:00:00
+No Slowing Down – Metalworking Index Continues Climb 
+Modern Machine Shop's Metalworking Index continued its expansion trend in May 2026, with broad-based growth building on a nearly 20 percent jump in machine tool orders from 2024, as reshoring demand and defense manufacturing contracts sustain capital equipment investment. Sector leaders flagged skilled labor shortages as the primary constraint on further output growth at Gardner's inaugural contract manufacturing event in Austin. 
+
+-------------------------
+en_tech_startups
+2026-05-28 12:00:00
+Venture Capital & Startup Funding Roundup, May 28, 2026 
+Tech Startups' May 28 roundup features Anthropic's landmark $65 billion Series H led by Altimeter Capital, Dragoneer, and Sequoia with strategic investment from Micron, Samsung, and SK Hynix, cementing Anthropic's position as the highest-valued private AI company globally. The roundup also covers OpenRouter's $113 million Series B led by CapitalG valuing the company at $1.3 billion. 
+
+-------------------------
+en_vc_news_daily
+2026-05-28 12:00:00
+Mind Robotics Scores $400M Financing 
+VC News Daily reports Mind Robotics raised $400 million led by Kleiner Perkins, bringing total investment in the humanoid robotics company to more than $1 billion as it prepares to scale commercial production of general-purpose warehouse and manufacturing robots. The round reflects intensifying competition in the humanoid robot sector where Agility Robotics, Figure, and 1X Technologies are all scaling deployment. 
+
+-------------------------
+en_tech_startups
+2026-05-27 12:00:00
+Venture Capital & Startup Funding Roundup, May 27, 2026 
+Tech Startups' May 27 roundup covers Mind Robotics' $400 million financing led by Kleiner Perkins bringing total investment to over $1 billion, alongside Stord's $250 million Series F at a $3 billion valuation for its AI-powered fulfillment and supply chain network. The roundup reflects investor conviction in physical-world AI applications combining robotics, logistics, and real-time optimization. 
+
+-------------------------
+en_steelorbis
+2026-05-26 12:00:00
+US raw steel production decreases by 1.5 percent — week 21, 2026 
+US domestic raw steel production in week 21 of 2026 was 1.870 million net tons at an 81.0 percent capacity utilization rate, down 1.5 percent from the previous week but up 8.7 percent year-over-year, reflecting sustained demand from construction and defense manufacturing even as weekly output fluctuates. Section 232 tariffs continue to shield domestic mills from lower-cost imports. 
+
+-------------------------
+en_econbrowser
+2026-05-26 12:00:00
+Nowcasts of GDP Diverge 
+Econbrowser documents growing divergence between major GDP nowcast models for Q2 2026, with Atlanta Fed GDPNow tracking near 1.5 percent annualized growth while the New York Fed's model suggests closer to 2.2 percent, reflecting genuine uncertainty about whether early-year trade disruption pulled forward or deferred activity. The recession indicator index climbed to 7.7 percent, historically consistent with elevated but not imminent recession risk. 
+
+-------------------------
+en_tradewinds_news
+2026-05-26 12:00:00
+Mercuria stacks up tanker and bulker orders worth $300m 
+Mercuria Energy Trading placed tanker and bulker newbuilding orders worth $300 million at Nantong Xiangyu Shipbuilding in China, expanding its physical shipping exposure as energy trading profitability from Strait of Hormuz disruptions funds fleet expansion. The order reflects commodity traders' growing appetite to own shipping capacity as a strategic hedge against freight market volatility. 
+
+-------------------------
+en_tech_startups
+2026-05-26 12:00:00
+Venture Capital & Startup Funding Roundup, May 26, 2026 
+Tech Startups' May 26 roundup documents the week's largest rounds including Nourish's $100 million Series C for AI-powered dietitian-led metabolic health, Reactor's $59 million for real-time generative video infrastructure, and BranchLab's $26 million Series A for AI-driven pharmaceutical commercialization. AI health and AI media emerged as the week's hottest investment themes. 
+
+-------------------------
+en_vc_news_daily
+2026-05-26 12:00:00
+Reactor Emerges With $59M for Real-Time Generative Video Platform 
+VC News Daily covers Reactor's $59 million emergence from stealth to launch its real-time generative video developer platform enabling AI-powered live video content creation, interactive gaming, and immersive training simulations. The funding comes from Khosla Ventures and Founders Fund, who backed the round on the thesis that generative video will become a mainstream developer primitive within two years. 
+
+-------------------------
+en_feedstuffs
+2026-05-25 12:00:00
+House passes 2026 farm bill after late-night debate 
+The US House of Representatives passed the Farm, Food and National Security Act of 2026 after marathon late-night debate, with updated commodity support, crop insurance, and conservation provisions that farm groups say are critical to stabilizing rural incomes. Chairman Glenn Thompson expressed confidence the bill would reach President Trump's desk before expiry of existing farm policy extensions. 
+
+-------------------------
+en_brookings
+2026-05-25 12:00:00
+Where does federal AI spending stand in 2026? 
+Brookings analysis of the 2026 federal AI contract dataset finds 1,743 AI contracts across defense, intelligence, and civilian agencies, representing a near-doubling from 2024 as the administration expands AI adoption in government operations. The research highlights the dominance of defense-related AI procurement and calls for clearer transparency standards on AI contract performance outcomes. 
+
+-------------------------
+en_electronics_weekly
+2026-05-25 12:00:00
+Semiconductor downturn forecast as analysts flag 2027 risk 
+Electronics Weekly reports industry analysts are flagging warning signs of a potential semiconductor down-cycle beginning in late 2026 or 2027 as hyperscaler AI capex growth slows from record 2025-26 levels and consumer electronics recovery remains patchy. TrendForce and IDC have both trimmed their 2027 growth forecasts, citing HBM inventory build risk and custom ASIC cannibalization of merchant GPU demand. 
+
+-------------------------
+en_fastmarkets
+2026-05-25 12:00:00
+US critical minerals security drive brings new era of stockpiling and project investment 
+Fastmarkets reports that the US Defense Logistics Agency and Department of Energy are executing a historically large critical minerals procurement program in 2026, targeting cobalt, lithium, rare earths, and graphite for defense and energy storage stockpiles. The initiative is reshaping project economics for domestic and allied-nation mining projects in markets already tight from Chinese export restrictions on gallium, germanium, and rare earth processing. 
+
+-------------------------
+en_logistics_manager
+2026-05-25 12:00:00
+Morrison buys SuperFreeze, launches APAC cold chain platform Polaris 
+Morrison Logistics acquired SuperFreeze Singapore and launched Polaris, a new APAC cold chain logistics platform, as demand for highly automated cold-chain capacity outpaces existing supply across Southeast Asia, Australia, and Japan. The platform integrates automated storage, temperature-controlled transport, and end-to-end digital visibility for food, pharmaceutical, and chemical customers across APAC markets. 
+
+-------------------------
+en_edn
+2026-05-25 12:00:00
+Sensors Converge 2026: Smarter and lower-power sensors reshaping edge AI 
+EDN's Sensors Converge 2026 coverage highlights Upbeat's UPM01/UPM02 mass production launch for on-device AI in wearables and industrial systems, alongside emerging sensor fusion architectures combining MEMS, optical, and RF sensing for autonomous and industrial applications. The conference consensus is that energy harvesting and neuromorphic sensor interfaces will define the next decade of edge AI hardware design. 
+
+-------------------------
+en_manufacturing_today
+2026-05-25 12:00:00
+The quiet revolution driving American manufacturing's AI future 
+Manufacturing Today reports 92 percent of US manufacturers are actively exploring AI opportunities, up from 75 percent a year earlier, with agentic AI systems capable of autonomous production optimization and supply chain risk management moving from pilots into operational deployment. Factory leaders describe a fundamental shift from AI as a dashboard feature to AI as a core operating system for the plant floor. 
+
+-------------------------
+en_ajot
+2026-05-22 12:00:00
+Union Pacific and Norfolk Southern seek approval for $85 billion merger 
+Union Pacific and Norfolk Southern submitted a revised merger application with the Surface Transportation Board seeking regulatory approval for an $85 billion tie-up that would create the first US coast-to-coast freight rail operator. The deal would fundamentally reshape domestic freight rail competition and logistics routing for shippers across North America. 
+
+-------------------------
+en_crisis_group
+2026-05-22 12:00:00
+Watch List 2026 – Spring Edition 
+International Crisis Group's spring Watch List identifies escalating flashpoints in Sudan, the Sahel, Lebanon, and the South China Sea, where converging military pressures and diplomatic failures raise the risk of significant escalation requiring urgent international attention. The report urges action on the DRC Ebola outbreak, which is compounding conflict dynamics across Central Africa. 
+
+-------------------------
+en_managed_healthcare_executive
+2026-05-22 12:00:00
+Scrutiny Faced Over Medicare Costs, Rural Health and COVID Vaccine Data in 2026 Healthcare Hearing 
+Congressional health committee members pressed CMS officials on rising Medicare Advantage medical loss ratios, disparities in rural health access, and transparency in COVID-19 vaccine adverse event surveillance, signaling bipartisan appetite for reform of the Medicare Advantage payment model. The hearing reflected broader tension between payers seeking rate relief and legislators demanding evidence that MA plans deliver promised cost savings. 
+
+-------------------------
+en_worldsteel
+2026-05-22 12:00:00
+April 2026 crude steel production: global output declines 1.9% year-over-year 
+World crude steel production from 69 countries reporting to the World Steel Association totaled 153.4 million tonnes in April 2026, a 1.9 percent decrease from April 2025, as Chinese output reductions offset modest growth in India and Southeast Asia. The decline reflects continued weak Chinese construction demand and the impact of anti-dumping measures targeting Chinese flat steel exports across multiple markets. 
+
+-------------------------
+en_vc_news_daily
+2026-05-22 12:00:00
+BranchLab Scores $26M Series A for AI Pharma Commercialization Platform 
+VC News Daily reports BranchLab closed a $26 million Series A to expand its AI platform that analyzes real-world patient data, payer dynamics, and market access barriers to optimize pharmaceutical therapy launch strategy and field force deployment. The round was led by GV and Andreessen Horowitz with participation from specialized life sciences investors. 
+
+-------------------------
+en_kff_health_news
+2026-05-21 12:00:00
+First Edition: Thursday, May 21, 2026 
+KFF Health News reports on a conservative Shasta County's successful measles outbreak containment using community trust networks rather than government mandates, which infectious disease specialists say could guide other vaccine-hesitant communities. The briefing also covers congressional scrutiny of FDA approval timelines and the expanding role of pharmacy chains in primary care delivery. 
+
+-------------------------
+en_pandaily
+2026-05-20 12:00:00
+'China's Palantir' Xunce Technology Launches Hong Kong IPO, Eyes First Listing in the Large-Model Data Agent Space 
+Xunce Technology, an AI data infrastructure provider dubbed 'China's Palantir,' launched its Hong Kong IPO under stock code 03317.HK, targeting a listing that would make it the first publicly traded large-model Data Agent company in the city. The company provides AI-powered analytics for government and financial clients competing with Western data intelligence vendors. 
+
+-------------------------
+en_steelorbis
+2026-05-20 12:00:00
+US steel mill shipments up 10.9 percent in March 2026 from February 
+US steel mills shipped 8.2 million net tons in March 2026, a 10.9 percent increase from February and a 6.2 percent gain year-over-year, driven by seasonal construction demand and inventory rebuilding by steel service centers. The strong March performance reversed a sluggish start to the year and pushed the American Iron and Steel Institute's Q1 shipment total above expectations. 
+
+-------------------------
+en_iiss
+2026-05-20 12:00:00
+Asian defence spending in 2026: growth under fiscal constraints 
+IISS analysis finds Asian defence spending on track to continue rising in 2026 fuelled by regional tensions and US pressure, though fiscal pressures from the Middle East conflict and elevated energy costs are dampening the pace of increases in some countries. South Korea, Japan, and Australia are sustaining the highest real-terms growth while India's expansion faces competing fiscal priorities. 
+
+-------------------------
+en_brookings
+2026-05-20 12:00:00
+An update on the federal budget outlook 
+Brookings fiscal analysts find federal non-interest spending and revenues are significantly out of balance, generating persistent primary deficits unprecedented in historical patterns outside wartime or major recessions, with net interest payments projected to rise substantially as a share of GDP. The analysis warns that without structural fiscal adjustment, debt-to-GDP will reach levels historically associated with financial instability. 
+
+-------------------------
+en_econbrowser
+2026-05-20 12:00:00
+Inflation Expectations Short and Long: Up 
+University of Michigan and NY Fed surveys both show upward shifts in short and long-run inflation expectations, complicating Fed policymaking as the FOMC attempts to balance still-elevated CPI with softening employment. If 2.5 percent CPI year-over-year is consistent with 2.0 percent PCE, the current rate remains 1.4 percentage points above the Fed's 2 percent target. 
+
+-------------------------
+en_beckers_payer
+2026-05-20 12:00:00
+Insurers face 'deteriorating' 2026 outlook across all markets: Fitch 
+Fitch Ratings assessed health insurers as facing a deteriorating outlook across commercial, Medicare Advantage, and Medicaid segments in 2026, driven by elevated medical loss ratios, Medicaid redetermination losses, and ACA subsidy expiration effects. Multiple major plans are seeking double-digit premium increases for plan year 2027 to restore margin, which Fitch warns may drive further disenrollment. 
+
+-------------------------
+en_logistics_manager
+2026-05-20 12:00:00
+Winners announced for Supply Chain Excellence Awards MEA 2026 
+The second annual Supply Chain Excellence Awards Middle East and Africa recognized Aramco, DP World, and DSV among winners across 20 categories including digital transformation, sustainability, automation, robotics, and cold chain logistics. The awards reflect the rapid maturation of Gulf Cooperation Council supply chain capabilities as regional operations centers replace European and Asian hubs for multinationals. 
+
+-------------------------
+en_mms_online
+2026-05-20 12:00:00
+Phillips Federal Awarded US Army Contract for Containerized AM Systems 
+Phillips Federal received a US Army contract to deliver containerized Wire Arc Hybrid Manufacturing units integrating additive manufacturing and CNC machining into a single deployable system for field repair and parts fabrication in forward operating environments. The contract reflects the Pentagon's accelerating investment in organic additive manufacturing capabilities to reduce logistics tail and spare parts vulnerability. 
+
+-------------------------
+en_environmental_finance
+2026-05-20 12:00:00
+Winners of Environmental Market Rankings 2026 revealed 
+Environmental Finance's annual rankings recognized leading banks, advisory firms, and institutional investors in sustainable bonds, carbon markets, and ESG data, with BNP Paribas, HSBC, and Societe Generale taking top positions in green bond underwriting. The rankings reflect the maturation of sustainable finance infrastructure even as ESG reporting requirements face political headwinds in the United States. 
+
+-------------------------
+en_naiop
+2026-05-20 12:00:00
+Industrial Demand Strengthening Through 2026, Moderating into 2027 
+NAIOP's Industrial Space Demand Forecast projects net absorption will reach 154.8 million square feet in H1 2026 and total 345.9 million square feet for the full year, as greater interest rate clarity and reduced tariff uncertainty drive industrial tenant decision-making. Data center and manufacturing demand are the strongest drivers, offsetting weakness in traditional 3PL and e-commerce leasing. 
+
+-------------------------
+en_ajot
+2026-05-18 12:00:00
+AAR reports rail traffic for the week ending May 16, 2026 
+Total US weekly rail traffic was 511,216 carloads and intermodal units for the week ending May 16, 2026, up 4.2 percent compared with the same week last year, with intermodal units leading gains as Asia-Pacific trade re-routing lifted container loadings at West Coast hubs. The Association of American Railroads data shows sustained year-over-year freight volume growth despite broader economic uncertainty. 
+
+-------------------------
+en_renewables_now
+2026-05-18 12:00:00
+Lyten emerges as top acquirer of Northvolt assets across Europe 
+US lithium-sulfur battery startup Lyten emerged as the most active acquirer of bankrupt Swedish battery maker Northvolt's assets, securing manufacturing facilities in Poland, Sweden, and Germany that give the company immediate production capacity ahead of its own commercial scale-up. The acquisitions position Lyten to challenge incumbents in the European EV battery supply chain as OEMs urgently seek non-Asian cell supply alternatives. 
+
+-------------------------
+en_feedstuffs
+2026-05-15 12:00:00
+Smaller ag trade deficit projected in 2026 
+USDA projects a US agricultural trade deficit of $37.0 billion in fiscal 2026, an improvement from the prior forecast of $41.5 billion, as soybean exports rebound following the US-China trade agreement restoring China's annual purchase commitments. The improvement reflects stronger export demand and moderating import prices for consumer-ready food products. 
+
+-------------------------
+en_econbrowser
+2026-05-15 12:00:00
+Update: Grocery Price Outlooks Compared 
+Econbrowser reviews USDA's forecast of a 3.2 percent advance in grocery prices in 2026, noting that independent forecasters expect inflation closer to 4 to 4.5 percent once tariff pass-through and energy-cost effects on agricultural inputs are fully incorporated. The divergence between official and market-based estimates suggests grocery price uncertainty remains unusually high heading into the summer months. 
+
+-------------------------
+en_managed_healthcare_executive
+2026-05-15 12:00:00
+Prior authorization use is snipped by UnitedHealthcare with a broader push to simplify care 
+UnitedHealthcare announced a reduction in services requiring prior authorization, responding to regulatory and legislative pressure following intensified scrutiny of insurance practices after high-profile public incidents. The move comes as five states enacted prior authorization reform laws in 2026 and a CMS interoperability rule deadline adds further industry-wide pressure to streamline approvals. 
+
+-------------------------
+en_electronics_weekly
+2026-05-15 12:00:00
+Historic Start To 2026: Q1 semiconductor sales break all records 
+Global semiconductor revenue grew 25 percent sequentially in Q1 2026 to reach $299 billion, the highest single-quarter sequential increase in WSTS data history spanning over 40 years, driven by memory price inflation and continued AI silicon demand. Year-over-year growth of 79 percent similarly smashed previous records, representing the fastest annual expansion in the modern chip era. 
+
+-------------------------
+en_manufacturing_today
+2026-05-15 12:00:00
+US manufacturers are planning for growth despite continued economic pressure 
+A Manufacturing Today survey finds 85 percent of US manufacturers expect revenue growth in the next 12 months despite tariff uncertainty, supply chain disruption, and tight labor markets, with nearly one-third anticipating double-digit gains driven by reshoring-related demand and defense manufacturing expansion. The optimism diverges sharply from macroeconomic headline data, reflecting micro-level order book strength. 
+
+-------------------------
+en_ajot
+2026-05-14 12:00:00
+Cass Transportation Index report April 2026 
+The shipments component of the Cass Freight Index fell 4.4 percent year-over-year in April 2026 but rose 0.4 percent month-over-month, suggesting domestic freight volumes may be bottoming after tariff-driven inventory destocking by US importers. The expenditure index remained under pressure as spot trucking rates stayed compressed despite some regional capacity tightening. 
+
+-------------------------
+en_carnegie_endowment
+2026-05-14 12:00:00
+Continental Asia and the Rise of Portfolio Politics 
+Carnegie research finds Central Asian states building differentiated external partnerships sector by sector rather than aligning with any single bloc, assigning China for infrastructure, Russia for security, the US for education, and the EU for trade in a portfolio approach that complicates Western efforts to build exclusive spheres of influence. The framework reflects a strategic flexibility born of geographic position between major powers. 
+
+-------------------------
+en_kff_health_news
+2026-05-14 12:00:00
+KFF Health News Morning Briefing: Thursday, May 14, 2026 
+The VA announced a $596 million healthcare infrastructure investment as part of a $4.8 billion modernization plan, while state-level battles over Medicaid work requirement implementation intensified ahead of the 2027 federal deadline. New data cited in the briefing show rural hospital closures accelerated in Q1 2026 as Medicaid reimbursement uncertainties weigh on hospital operating margins. 
+
+-------------------------
+en_brookings
+2026-05-12 12:00:00
+Making sense of labor market indicators amid data imperfections 
+Brookings researchers caution against over-relying on any single labor market indicator given increasing data quality issues in BLS household and payroll surveys, arguing a composite picture including unemployment claims, job openings, and quits is needed to accurately assess labor market health. Average monthly employment growth of just 17,000 since April signals the labor market is under meaningful pressure. 
+
+-------------------------
+en_beckers_payer
+2026-05-12 12:00:00
+Average ACA deductible increases 37% in 2026: KFF 
+KFF data shows the average ACA marketplace deductible jumped 37 percent, more than $1,000, from 2025 to 2026, representing the steepest one-year increase in the program's history following the expiration of enhanced premium tax credits on January 1. The dramatic cost increase is driving disenrollment particularly among younger, healthier enrollees whose premiums now exceed their expected healthcare costs. 
+
+-------------------------
+en_mms_online
+2026-05-12 12:00:00
+IMTS 2026 Exhibitor Workshop Empowers Success 
+Modern Machine Shop reports on IMTS 2026 pre-show exhibitor workshops in Chicago where hundreds of cobots and autonomous mobile robots will be showcased for load/unload, welding, inspection, and palletizing applications making automation accessible to small and medium manufacturers. Gardner research shows first-time buyer interest in cobot automation grew 34 percent in 2025, driven by sub-$50,000 turnkey systems. 
+
+-------------------------
+en_asd_news
+2026-05-12 12:00:00
+USAF and Boeing Accelerate KC-46 Upgrades to Target Readiness 
+The US Air Force and Boeing agreed to an accelerated program to improve KC-46 Pegasus tanker readiness rates and deliver Remote Vision System 2.0 upgrades to the existing fleet, addressing persistent reliability concerns that have limited the aircraft's operational deployment. The deal covers modifications to all 70 aircraft in the current fleet under a firm fixed-price arrangement. 
+
+-------------------------
+en_steelorbis
+2026-05-10 12:00:00
+US steel imports up 5.3 percent in March 2026 from February 
+Monthly US steel imports rose 5.3 percent in March 2026 from February but remained down 29.2 percent year-on-year to 1.6 million metric tonnes as Section 232 tariffs and quota restrictions continue to curtail overseas competition. Brazil and South Korea remained the top import sources, particularly for structural steel grades where domestic supply remains relatively tight. 
+
+-------------------------
+en_carnegie_endowment
+2026-05-10 12:00:00
+Bangladesh's Unfinished Revolution 
+Carnegie analysis assesses Bangladesh's February 2026 elections as the most credible in nearly two decades, marking a tentative democratic consolidation after the August 2024 uprising that ousted Sheikh Hasina. Economic fragility, rising Islamist political assertiveness, and unresolved military-civilian tensions nonetheless threaten the reform agenda of the interim government. 
+
+-------------------------
+en_fastmarkets
+2026-05-10 12:00:00
+Global copper smelting faces toughest challenges in years as concentrate deficit deepens 
+Fastmarkets analysis finds the global copper smelting industry facing unprecedented simultaneous pressures in 2026: a concentrate deficit pushing treatment charges negative, rising production risks at major smelters, and tariff policy uncertainty targeting copper products. Atlas Mining and other producers reported higher Q1 2026 earnings from elevated copper prices despite lower concentrate throughput at Chilean, Brazilian, and Philippine operations. 
+
+-------------------------
+en_renewables_now
+2026-05-10 12:00:00
+EIA and FERC analyses foresee strong renewables plus battery growth through 2030 
+New US Energy Information Administration data shows electrical generation from renewables grew over 11 percent in Q1 2026 year-over-year, with FERC's forward interconnection queue showing over 90 percent of queued capacity consisting of solar, wind, and battery storage projects. Combined EIA and FERC projections suggest the US renewable share of electricity generation will surpass 50 percent by 2028. 
+
+-------------------------
+en_worldsteel
+2026-05-10 12:00:00
+worldsteel announces the 2026 Steel Sustainability Champions 
+The World Steel Association recognized 14 companies as Steel Sustainability Champions for their work reducing carbon intensity, water use, and waste in 2025, with Tata Steel and Tenaris sustaining Champion recognition every year since the program's 2018 launch. The Champions framework aligns with the association's SteelZero pathway targeting 90 percent low-carbon steel production by 2050. 
+
+-------------------------
+en_edn
+2026-05-10 12:00:00
+AI in 2026: Enabling smarter, more responsive systems at the edge 
+EDN's analysis finds 2026 to be a defining year for edge AI as high-performance intelligence migrates from cloud-centric training to systems operating under stringent latency, power, connectivity, and cost constraints. The Efficient Computer Electron E1 architecture, claiming 100x better energy efficiency than CPUs and 1,000x lower power than GPUs, exemplifies the new class of application-specific edge AI silicon. 
+
+-------------------------
+en_feedstuffs
+2026-05-05 12:00:00
+USDA and EXIM partner to strengthen export credit and financing 
+The USDA and Export-Import Bank announced an expanded partnership and formally launched the Financial Assurance to Revitalize Markets (FARM) Initiative to strengthen export credit guarantees and help US agricultural exporters compete against heavily subsidized rivals in Asian and Middle Eastern markets. The collaboration targets grain, oilseed, and processed food export financing gaps. 
+
+-------------------------
+en_iiss
+2026-04-29 12:00:00
+Attrition and adaptation: Ukraine's evolving war effort 
+IISS assesses that Ukraine is championing a distributed, bottom-up innovation model integrating hundreds of firms and volunteer groups with frontline combat units, enabling rapid drone and electronic warfare adaptation despite significant territorial and equipment losses. Both sides retain the capacity to sustain military efforts through 2026, with collapse on either side assessed as unlikely in the near term. 
+
+-------------------------
+en_carnegie_endowment
+2026-04-29 12:00:00
+The New Revolution in Military Affairs 
+Carnegie analysts argue the Ukraine war is producing a new revolution in military affairs centered on distributed drone swarms, AI-assisted targeting, electronic warfare, and cheap expendable munitions that fundamentally challenge legacy platforms such as tanks and manned aircraft. The study draws on two-plus years of frontline data to assess how major militaries are adapting doctrine, procurement, and training globally. 
+
+-------------------------
+en_beckers_payer
+2026-04-28 12:00:00
+12 payers cutting jobs in 2026 
+Becker's Payer tracking shows 12 major health insurance companies have announced workforce reductions in 2026 including Cigna, Elevance Health, and several regional Blue Cross Blue Shield plans, as payers restructure to offset higher medical costs and shrinking enrollment. The wave of reductions reflects an industry-wide response to margin compression following a year of unusually high medical utilization. 
+
+-------------------------
+en_naiop
+2026-04-25 12:00:00
+Commercial Real Estate Delivers $3.5 Trillion Boost to US GDP and Supports 20.4 Million Jobs 
+A NAIOP Research Foundation report finds commercial real estate development and operations contributed $3.5 trillion to US GDP and supported 20.4 million jobs in 2025, an increase of $894 billion year-over-year as data center, life science, and manufacturing facility demand surged. Industrial and data center subsectors are the fastest-growing CRE segments by economic contribution. 
+
+-------------------------
+en_bj_review
+2026-04-21 12:00:00
+China's economy starts 2026 and the new Five-Year Plan on solid footing 
+Beijing Review reports China's GDP grew 5.0 percent in Q1 2026, beating consensus expectations and providing a positive launch to the 15th Five-Year Plan period focused on technology self-sufficiency, domestic consumption, and green industrial development. The government attributed the outperformance to infrastructure investment acceleration and a rebound in consumer spending on services following property sector stabilization. 
+
+-------------------------
+en_electronics_weekly
+2026-04-20 12:00:00
+Semi revenues to grow 64% this year says Gartner 
+Gartner forecasts global semiconductor revenue will grow 64 percent to exceed $1.3 trillion in 2026, with memory revenue alone expected to nearly triple as DRAM prices surge 125 percent and NAND prices rise 234 percent driven by AI workload demand for HBM and high-density storage. The projected scale of 2026 growth would represent the largest single-year revenue increase in the semiconductor industry's history. 
+
+-------------------------
+en_worldsteel
+2026-04-20 12:00:00
+worldsteel Short Range Outlook April 2026: global steel demand to grow 0.3% 
+worldsteel's April Short Range Outlook projects global steel demand will grow just 0.3 percent in 2026 to 1,724 million tonnes, constrained by Chinese market weakness and trade uncertainty, before accelerating to 2.2 percent growth in 2027 as infrastructure programs in India, ASEAN, and the Middle East ramp up. The modest near-term outlook reflects divergence between emerging-market strength and developed-world caution. 
+
+-------------------------
+en_edn
+2026-04-20 12:00:00
+The next EDA wave: Lessons from DATE 2026 
+EDN reports from DATE 2026 that next-generation AI-augmented EDA remains largely undefined, with agentic workflows, AI-assisted formal verification, and open benchmark development emerging as near-term priorities for the EDA research community. A growing gap between modern chip design complexity and existing verification tool productivity is the central challenge AI-EDA companies are racing to bridge. 
+
+-------------------------
+en_manufacturing_today
+2026-04-20 12:00:00
+Manufacturing and logistics face a wave of job cuts before end of year 
+Manufacturing Today reports accelerating automation-driven workforce restructuring as companies leverage the current capex supercycle to replace manual processes with cobots, autonomous mobile robots, and AI-powered quality control systems. Industry analysts estimate 450,000 manufacturing jobs could be displaced by automation investments initiated in 2025-2026, concentrated in assembly, inspection, and material handling roles. 
+
+-------------------------
+en_asd_news
+2026-04-20 12:00:00
+L3Harris Receives Rocket Motor Contract for US Long-Range Missile System 
+L3Harris Technologies received a contract valued at more than $65 million to produce solid rocket motors for the Army Tactical Missile System, supporting expanded production of the precision-guided surface-to-surface weapon seeing surging demand after Ukraine conflict observations and heightened Indo-Pacific deterrence requirements. 
+
+-------------------------
+en_iiss
+2026-04-15 12:00:00
+The proliferation of AI-enabled military technology in the Middle East 
+IISS documents how Israel, Saudi Arabia, and the UAE are accelerating deployment of AI-enabled surveillance, targeting, and autonomous weapons systems, with the ongoing Iran conflict serving as a live proving ground for AI-assisted kill chain technologies. Regional proliferation is reshaping deterrence calculus and raising new questions about the law of armed conflict and proportionality assessments. 
+
+-------------------------
+en_fastmarkets
+2026-04-15 12:00:00
+Iron ore trade flows shift as Simandou begins exports to China 
+Rio Tinto's Simandou operation in Guinea began its first iron ore shipments to China targeting 5-10 million tonnes in 2026, marking the start of a multi-decade supply shift that will progressively erode Australian iron ore's dominant market share in China's steel sector. Port and logistics infrastructure constraints at the Simandou project remain the primary risk to near-term ramp-up timelines. 
+
+-------------------------
+en_naiop
+2026-04-15 12:00:00
+New NAIOP Report Details US CRE Financing Trends: Debt Markets Stabilizing 
+NAIOP's Q1 2026 Debt Market Survey finds Treasury yields rose modestly while SOFR continued its descent, delivering meaningful relief on floating-rate CRE loans and helping reopen construction and refinancing markets that were largely frozen in 2024. Fixed-rate lenders including life insurance companies and CMBS conduits are returning to market with tightening spreads on industrial and multifamily assets. 
+
+-------------------------
+en_electronic_design
+2026-04-10 12:00:00
+Top Stories of the Week: Apr. 6-10, 2026 
+Electronic Design's weekly digest covers Embedded World 2026 aftermath with Ceva NeuPro-Nano winning the embedded AI award and RISC-V ecosystem momentum accelerating across embedded, automotive, and data center segments. Nordic Semiconductor's nRF54LM20A Bluetooth SoC combining RISC-V and Arm Cortex-M33 in a single device was highlighted as exemplifying the RISC-V proliferation in production silicon. 
+
+-------------------------
+en_bj_review
+2026-04-09 12:00:00
+China to further cut corporate burdens, dismantle market barriers in 2026 
+Beijing Review covers the State Council's new corporate burden-reduction package targeting administrative licensing fees, cross-regional market barriers, and unfair procurement practices that disadvantage private enterprises relative to state-owned firms. The package is part of Beijing's effort to restore private sector confidence following years of heightened regulatory scrutiny and pandemic-era restrictions. 
+
+-------------------------
+en_tradewinds_news
+2026-04-01 12:00:00
+What happens to shipping after the Iran war ends? 
+TradeWinds examines the post-conflict shipping outlook as a US-Iran ceasefire appears increasingly likely, analyzing whether the structural Strait of Hormuz risk premium built into tanker rates since February will unwind rapidly or persist as a durable geopolitical risk premium. Analysts expect VLCC and Suezmax freight rates to give back 15-25 percent of the war-driven gains within six weeks of any durable ceasefire announcement. 
+
+-------------------------
+en_powermag
+2026-03-28 12:00:00
+POWER DIGEST: March 2026 
+POWER Magazine's March digest covers ERCOT's solar generation surpassing coal for the first time in Texas history, GE Vernova's record gas turbine backlog driven by data center power demand, and Sunraycer Renewables' $901 million project financing for three Texas solar facilities. Advanced nuclear deployment timelines were also tracked, with Kairos Power's Hermes demonstration reactor on track for a 2027 first criticality. 
+
+-------------------------
+en_asd_news
+2026-03-24 12:00:00
+AV Unveils LOCUST X3: 3rd-Generation Modular Directed Energy Weapon System 
+Anduril Vision unveiled the LOCUST X3 directed energy weapon system offering scalable power output, dual-mode laser and high-power microwave capability, and rapid deployment in ground, naval, and fixed-site configurations. The system targets counter-drone and counter-swarm mission sets that have become central to US military modernization priorities following combat experience in Ukraine and the Middle East. 
+
+-------------------------
+en_nat_law_review
+2026-03-20 12:00:00
+The FTC Launches a Dedicated Healthcare Task Force 
+The Federal Trade Commission announced it is launching a Healthcare Task Force to pursue a coordinated approach to healthcare enforcement targeting consolidation and anticompetitive conduct that have driven higher prices and reduced patient access, with expanded membership from HHS and DOJ. The task force will bring additional enforcement levers and regulatory data previously unavailable to the FTC acting alone. 
+
+-------------------------
+en_crisis_group
+2026-03-15 12:00:00
+Conflict and Consequences: The Global Impact of the New Middle East War 
+Crisis Group documents the global economic and humanitarian ripple effects of the US-Israel war against Iran that began February 28, including Iran's closure of the Strait of Hormuz, energy market shock, and cascading alignment shifts across the Gulf, Europe, and Asia. Even a ceasefire will leave durable structural damage to regional security architecture and energy supply chains. 
+
+-------------------------
+en_electronic_design
+2026-03-15 12:00:00
+Latest Technology at the 2026 Embedded World 
+Electronic Design's Embedded World 2026 coverage from Nuremberg highlights the convergence of embedded AI, RISC-V proliferation, and security-by-design mandates as defining themes, with over 1,000 exhibitors showcasing chips, tools, and reference designs for industrial IoT, automotive, and edge AI applications. The show's AI pavilion drew the longest queues as developers sought production-ready neural processing unit implementations for constrained embedded platforms. 
+
+-------------------------
+en_bj_review
+2026-03-06 12:00:00
+China details 2026 policy mix to bolster growth and innovation, share opportunities with world 
+Beijing Review summarizes senior officials' elaboration on China's 2026 policy framework at the National People's Congress, encompassing moderately loose monetary policy, expanded fiscal spending, technology innovation incentives, and a commitment to further open trade. Authorities signaled a GDP growth target above 5 percent supported by a record fiscal deficit ratio and strategic spending in AI, semiconductors, and green energy. 
+
+-------------------------
+en_nat_law_review
+2026-03-01 12:00:00
+US Privacy and Security Law Roundup for January 2026 
+National Law Review's January 2026 privacy roundup covers state-level consumer data protection laws taking effect in five new states, new SEC cybersecurity incident disclosure interpretive guidance, and the FTC's ongoing rulemaking on commercial surveillance practices. Companies face an increasingly fragmented compliance landscape as federal preemption legislation remains stalled in Congress. 
+
+-------------------------
+en_tradewinds_news
+2026-02-28 12:00:00
+Shipping faces Iran threats after 'massive' US and Israeli attack 
+TradeWinds reports tanker owners and operators placing vessels on war-risk hold and diverting routes away from the Strait of Hormuz following the start of US and Israeli strikes on Iran, with emergency freight rate spikes and buyers forced to source alternative crude supply routes. P&I clubs activated war-risk exclusion clauses within hours of the initial attack, and VLCC spot rates jumped over 40 percent within 48 hours. 
+
+-------------------------
+en_pandaily
+2026-01-25 12:00:00
+Volcano Engine Named Exclusive AI Cloud Partner for the 2026 Spring Festival Gala 
+ByteDance's Volcano Engine was appointed the exclusive AI cloud partner for the 2026 CCTV Spring Festival Gala, deploying multimodal AI and real-time cloud infrastructure to support program production, interactive viewer experiences, and live broadcast distribution at scale. The deal underscores Chinese tech giants' race to embed AI across major national media events as showcases of domestic capability. 
+
+-------------------------
+en_powermag
+2026-01-20 12:00:00
+Why 2026 Is the Year the Energy Transition Finally Accelerates 
+POWER Magazine argues 2026 represents a genuine inflection point for the energy transition, with renewable capacity additions outpacing gas in absolute gigawatt terms for the first time, battery storage costs crossing the threshold for economic grid-scale deployment without subsidies, and AI-driven grid management unlocking stranded renewable capacity. Interconnection reform and permitting streamlining remain the critical bottlenecks industry leaders identified at POWER's annual summit. 
+
+-------------------------
+en_environmental_finance
+2026-01-20 12:00:00
+Sustainable bonds 2026: welcome to the new reality 
+Environmental Finance's outlook finds the global sustainable bond market adapting to a new reality where dominant 2026 themes are transition finance credibility, SFDR reclassification fallout in European funds, and growing divergence between US issuers pulling back on ESG labeling and European and Asian issuers accelerating green and social bond programs. Total new sustainable bond issuance for 2026 is forecast at approximately $950 billion. 
+
+-------------------------
+en_crisis_group
+2026-01-15 12:00:00
+Seven Peace and Security Priorities for Africa in 2026 
+Crisis Group identifies Sudan, eastern DRC, Mozambique, Ethiopia, the Sahel, Somalia, and Nigeria as seven priority conflicts requiring urgent diplomatic attention in 2026, with multilateral aid fatigue and geopolitical fragmentation reducing available resources for conflict resolution. The brief calls for targeted engagement by the African Union and regional economic blocs to prevent further state collapse. 
+
+-------------------------
+en_nat_law_review
+2026-01-15 12:00:00
+A Look at the FTC's 2026-2030 Strategic Plan 
+National Law Review analyzes the FTC's new 2026-2030 Strategic Plan, which signals continued elevated scrutiny of proposed mergers in technology, healthcare, and pharmaceutical industries with particular focus on Big Tech acquisitions and private equity roll-ups in healthcare. The plan marks a partial continuity from the Biden-era approach adapted to the current administration's sector-specific enforcement priorities. 
+
+-------------------------
+en_environmental_finance
+2026-01-10 12:00:00
+11 trends set to shape sustainable debt in 2026 
+Environmental Finance identifies transition finance, nature-linked bonds, social bond credibility standards, tokenized green bonds, and carbon credit integration into mainstream debt structures as the top 11 trends reshaping sustainable debt markets in 2026. Defining credible transition pathways for hard-to-abate sectors including steel, cement, shipping, and aviation remains the greatest challenge facing issuers and investors. 
+
+-------------------------
