@@ -1,0 +1,540 @@
+en_power_technology
+2026-08-27 14:00:00
+Australia Launches 1.8GW Competitive Battery Storage Tender Under CIS Program 
+Australia's Clean Innovation Solution program has issued a competitive tender for 1.8GW of new grid-scale battery storage, with bids due in October 2026 as part of the government's effort to accelerate the energy transition. 
+
+-------------------------
+en_marktechpost
+2026-08-26 20:00:00
+Z.ai Releases GLM-5.3-Flash: High-Efficiency AI Model for Enterprise Workloads 
+Z.ai has released GLM-5.3-Flash, a compact yet powerful model optimized for low-latency enterprise inference, offering competitive benchmark performance against larger models at significantly reduced compute cost. 
+
+-------------------------
+en_marktechpost
+2026-08-26 18:00:00
+Alibaba Releases Qwen3.8-Flash-Next for Low-Latency Reasoning and Inference 
+Alibaba's latest Qwen3.8-Flash-Next model delivers faster inference speeds with enhanced multilingual reasoning capabilities, targeting enterprise API users and edge deployment scenarios. 
+
+-------------------------
+en_pharmaphorum
+2026-08-26 16:00:00
+Jazz Pharmaceuticals Wins FDA Approval for Ziihera in Cisplatin-Ineligible Bladder Cancer 
+The FDA has approved Jazz Pharmaceuticals' Ziihera as a first-line treatment for cisplatin-ineligible HER2-positive advanced bladder cancer, addressing a high unmet need in this patient population. 
+
+-------------------------
+en_pharmaphorum
+2026-08-26 15:00:00
+MSD in Talks to Acquire Revolution Medicines for $4.7 Billion 
+MSD is in advanced discussions to acquire Revolution Medicines, developer of RAS-targeted cancer therapies, in a deal valued at approximately $4.7 billion, expanding its oncology pipeline. 
+
+-------------------------
+en_hydrogeninsight
+2026-08-26 14:00:00
+Michigan Wins $15M Federal Funding to Explore Natural Hydrogen Reserves 
+Michigan has secured a $15 million DOE grant to explore naturally occurring hydrogen deposits, part of a broader US effort to develop indigenous clean hydrogen resources that require no electrolysis. 
+
+-------------------------
+en_pv_tech
+2026-08-26 13:00:00
+China Added 14.1GW of Solar Capacity in July 2026 Alone 
+China's National Energy Administration reported 14.1GW of new solar installations in July 2026, bringing cumulative solar capacity to over 900GW and keeping it on pace to lead global clean energy growth. 
+
+-------------------------
+en_energymonitor
+2026-08-26 12:00:00
+CCUS Deployment Accelerates as Policy Support Strengthens Globally in 2026 
+Carbon capture, utilisation and storage projects are scaling faster than expected due to strengthened policy frameworks in the EU, US and UK, with total operational capacity set to double by year-end 2026. 
+
+-------------------------
+en_compositesworld
+2026-08-26 11:00:00
+New Space Economy Drives Demand for High-Performance Composite Structures in 2026 
+Rapid growth in commercial satellite launches and reusable rocket development is creating record demand for lightweight composites, with manufacturers reporting order backlogs stretching into 2028. 
+
+-------------------------
+en_coatingsworld
+2026-08-26 10:00:00
+PPG Showcases Breakthrough BPA-NI Coatings at METPACK 2026 Trade Show 
+PPG unveiled its new bisphenol-A non-intent coatings for metal packaging at METPACK 2026, addressing regulatory pressure on BPA while maintaining performance characteristics required by food and beverage customers. 
+
+-------------------------
+en_thechinaproject
+2026-08-26 09:00:00
+Top China Tech Stories: Semiconductor Export Controls and AI Regulation in Focus 
+This week's major China technology stories center on new US export control measures targeting advanced chip design software and Beijing's updated AI governance framework expanding mandatory algorithm registration requirements. 
+
+-------------------------
+en_foodingredientsfirst
+2026-08-26 08:00:00
+GLP-1 Drug Trend Driving Surge in Protein-Enriched and Low-Calorie Food Innovation 
+The explosive growth of GLP-1 weight-loss medications is reshaping food formulation priorities, with ingredient suppliers accelerating development of high-protein, low-glycemic-index solutions for the rapidly expanding medicated consumer segment. 
+
+-------------------------
+en_plasticstoday
+2026-08-26 07:00:00
+Q3 2026 Thermoplastics Market Update: Tight Supply in Key Resins Drives Pricing Higher 
+Supply disruptions at Gulf Coast cracker facilities and stronger-than-expected automotive demand have combined to push thermoplastic resin prices higher entering Q3 2026, with polypropylene and ABS seeing the sharpest gains. 
+
+-------------------------
+en_theengineer
+2026-08-26 06:30:00
+UK Manufacturing Sector Outlook 2026: Industry Calls for Targeted Government Investment 
+UK manufacturers are calling on the government to extend industrial strategy incentives through 2030 as the sector struggles with energy costs and international competition, with aerospace and automotive leading advocacy for targeted R&D support. 
+
+-------------------------
+en_insurancejournal
+2026-08-26 06:00:00
+California Lawmakers Line Up Against Governor Newsom's Wildfire Insurance Liability Proposal 
+A bipartisan coalition of California legislators is opposing Governor Newsom's proposed legislation to cap utility liability for wildfire damages, arguing it shields publicly traded utilities from accountability for equipment-caused fires. 
+
+-------------------------
+en_foodsafetynews
+2026-08-26 05:00:00
+CDC Reports 13,895 Cyclospora Cases Linked to Iceberg Lettuce; FDA Commissioner Defends Response 
+The CDC has confirmed 13,895 cyclospora infections and two deaths across seventeen states linked to contaminated iceberg lettuce, as the acting FDA Commissioner faces congressional scrutiny over delayed traceability enforcement. 
+
+-------------------------
+en_dredgingtoday
+2026-08-26 04:30:00
+DEME Posts H1 2026 Results: Group Turnover Rises 2% Year-on-Year to 2.2 Billion Euros 
+DEME Group reported first-half 2026 revenue of EUR 2.2 billion, up 2% year-on-year, driven by offshore wind installation activity and coastal protection projects in Europe and Asia-Pacific. 
+
+-------------------------
+en_dredgingtoday
+2026-08-26 04:00:00
+Keyfield International Acquires $24.7M Trailing Suction Hopper Dredger, Enters Dredging Market 
+Malaysia's Keyfield International has agreed to acquire the TSHD Inai Kenanga for $24.7 million, marking the company's entry into the capital-intensive dredging sector and expanding its offshore marine services portfolio. 
+
+-------------------------
+en_healthpolicywatch
+2026-08-26 03:00:00
+WHO Director-General Calls for Strengthened Global Health Emergency Financing at Geneva Forum 
+WHO Director-General Tedros urged member states to close critical gaps in pandemic preparedness financing at a Geneva forum, warning current commitments remain insufficient to meet next-generation biological threat scenarios. 
+
+-------------------------
+en_pharmaphorum
+2026-08-25 22:00:00
+Roche and Genentech Enter $2.3bn Licensing Deal With Hanmi Pharmaceutical for Metabolic Pipeline 
+Roche and its Genentech subsidiary have signed a $2.3 billion licensing agreement with South Korea's Hanmi Pharmaceutical for rights to a next-generation metabolic disease portfolio including NASH and obesity candidates. 
+
+-------------------------
+en_marktechpost
+2026-08-25 20:00:00
+IBM Releases Granite 4.2 Code and Language Model Series for Enterprise AI Applications 
+IBM has launched the Granite 4.2 family of foundation models optimized for enterprise code generation, document processing and regulated industries, extending its enterprise AI platform with new safety and compliance features. 
+
+-------------------------
+en_hydrogeninsight
+2026-08-25 18:00:00
+Woodside Energy Puts Blue Ammonia Project Under Strategic Review Amid Rising Capital Costs 
+Australian LNG producer Woodside Energy has placed its planned blue ammonia export facility under strategic review as capital costs have risen and Japanese import commitments remain uncertain, signaling continued headwinds for hydrogen export projects. 
+
+-------------------------
+en_hydrogeninsight
+2026-08-25 17:00:00
+Germany's 10,000km Hydrogen Backbone Pipeline Network Begins First Construction Phase 
+The German hydrogen backbone pipeline project has broken ground on its first 800km segment connecting industrial clusters in North Rhine-Westphalia and Bavaria, racing to establish hydrogen transport infrastructure ahead of 2030 EU targets. 
+
+-------------------------
+en_nsenergybusiness
+2026-08-25 16:00:00
+ONEOK Completes $4.3bn Acquisition of EnLink Midstream, Expanding US Natural Gas Network 
+ONEOK has closed its $4.3 billion acquisition of EnLink Midstream, adding approximately 12,000 miles of pipeline and processing capacity across the Permian Basin, Mid-Continent and Gulf Coast regions to its midstream portfolio. 
+
+-------------------------
+en_power_technology
+2026-08-25 15:00:00
+Entergy Commissions 446MW Ironwood Power Station in Mississippi as Demand Rises 
+Entergy Mississippi has brought the 446MW Ironwood combined-cycle power plant into commercial operation, providing additional dispatchable generation capacity to meet growing electricity demand driven by data center expansion in the state. 
+
+-------------------------
+en_ship_technology
+2026-08-25 14:00:00
+Stolt Tanker Announces Order of Six New Chemical Tanker Vessels With Dual-Fuel Capability 
+Stolt-Nielsen's tanker subsidiary has placed an order for six dual-fuel chemical tankers capable of operating on LNG and methanol, accelerating fleet renewal ahead of tightening IMO emissions regulations in 2027. 
+
+-------------------------
+en_windpowermonthly
+2026-08-25 13:00:00
+Windicator August 2026: Global Installed Wind Capacity Tops 1,400GW Milestone 
+The latest Windicator survey records global installed wind power capacity surpassing 1,400GW, with offshore wind accounting for a growing share as major projects in the UK, Germany and Taiwan reach commercial operation. 
+
+-------------------------
+en_biofuelsdigest
+2026-08-25 12:00:00
+German Researchers Discover Natural Bioplastic-Degrading Enzymes in Marine and Land Species 
+Max Planck Institute researchers found that animals from marine worms to earthworms possess enzymes capable of naturally degrading polyhydroxyalkanoates, opening pathways for accelerated bioplastic composting without industrial processing. 
+
+-------------------------
+en_aircargonews
+2026-08-25 11:00:00
+China-Europe Air Freighter Capacity Falls Nearly 30% as E-Commerce Import Volumes Decline 
+Freighter capacity on China-Europe routes has dropped approximately 28% from June peak levels as European regulators tighten import thresholds for low-value e-commerce shipments, impacting carriers dependent on that traffic flow. 
+
+-------------------------
+en_chemengonline
+2026-08-25 10:00:00
+Air Liquide Invests $160M to Build Ultra-High-Purity Gas Facility for Arizona Semiconductor Fabs 
+Air Liquide announced a $160 million investment in a new ultra-high-purity specialty gas production facility in Arizona, targeting the state's rapidly expanding semiconductor manufacturing cluster anchored by TSMC and Intel fab investments. 
+
+-------------------------
+en_semiwiki
+2026-08-25 09:00:00
+Agentrys Presents Next-Generation AI Processor Architecture at Hot Chips 2026 Symposium 
+Semiconductor startup Agentrys presented its novel in-memory computing architecture at Hot Chips 2026, demonstrating 8x energy efficiency gains over conventional GPU architectures for large language model inference workloads. 
+
+-------------------------
+en_wateronline
+2026-08-25 08:30:00
+Minnesota Water Utility Hit by Cyberattack, Forcing Manual Operations for 72 Hours 
+A major Minnesota water utility was forced to operate manually for 72 hours after a ransomware attack disabled its SCADA systems, underscoring growing cybersecurity vulnerabilities across US water infrastructure. 
+
+-------------------------
+en_newlinesmag
+2026-08-25 08:00:00
+Saudi Arabia Shows Strategic Restraint Following Houthi Ballistic Missile Attacks on Riyadh 
+Saudi Arabia has opted for calibrated diplomatic pressure rather than military retaliation following the latest Houthi ballistic missile strikes on Riyadh, a posture reflecting Riyadh's continued interest in a negotiated Yemen settlement. 
+
+-------------------------
+en_supplychain247
+2026-08-25 07:00:00
+Home Depot Rolls Out Three-Hour Delivery to New Markets Nationwide Targeting Pro Customers 
+Home Depot is expanding its three-hour express delivery service to 30 additional metropolitan markets, targeting professional contractors requiring same-day materials resupply as the retailer deepens investment in its pro customer value proposition. 
+
+-------------------------
+en_ttnews
+2026-08-24 20:00:00
+ATRI Releases 2026 Annual Trucking Industry Survey: Driver Shortage and Costs Top Concerns 
+The American Transportation Research Institute released its annual trucking industry survey, with driver shortages, fuel costs and insurance premiums ranking as the top three operational concerns among fleets for the third consecutive year. 
+
+-------------------------
+en_nsenergybusiness
+2026-08-24 18:00:00
+Equinor Sanctions $1.1bn Troll Phase 3 Expansion in Norwegian North Sea 
+Equinor has approved the $1.1 billion Troll Phase 3 development, which will recover an additional 500 million barrels of oil equivalent from the Norwegian North Sea field using advanced horizontal drilling techniques. 
+
+-------------------------
+en_power_technology
+2026-08-24 16:00:00
+Tata Power Commissions 190.5MW Solar Farm in Rajasthan Under India's Green Energy Initiative 
+Tata Power Renewable Energy has commissioned a 190.5MW solar project in Rajasthan, contributing to India's accelerating clean energy build-out as the country targets 500GW of non-fossil fuel capacity by 2030. 
+
+-------------------------
+en_pv_tech
+2026-08-24 15:00:00
+India Surpasses 288GW Renewable Energy Capacity in H1 2026, Solar Leading Growth 
+India crossed the 288GW milestone for total installed renewable energy capacity in the first half of 2026, with utility-scale solar contributing the majority of new additions as module prices remain globally competitive. 
+
+-------------------------
+en_supplychain247
+2026-08-24 14:00:00
+Amazon Signs Expanded Deal With AutoStore for AI-Enabled Warehouse Automation Systems 
+Amazon has agreed to deploy AutoStore's robotic grid storage systems across twelve additional fulfillment centers as part of a multi-year automation expansion targeting faster order cycle times and reduced labor intensity. 
+
+-------------------------
+en_sipri
+2026-08-24 12:00:00
+SIPRI Armament and Disarmament Summer School Opens in Stockholm and Uppsala 
+The 2026 SIPRI Armament and Disarmament Summer School has opened in Stockholm and Uppsala, bringing together 45 early-career researchers and policymakers for five days of workshops on arms control and military AI governance. 
+
+-------------------------
+en_healthpolicywatch
+2026-08-24 11:00:00
+Health Workers Targeted in DRC Ebola Zone, WHO Demands Protection Guarantees From Armed Groups 
+WHO and health partners have issued an urgent call for the protection of healthcare workers in eastern DRC after three aid workers were killed in targeted attacks during the latest Ebola outbreak, threatening containment efforts. 
+
+-------------------------
+en_insurancejournal
+2026-08-24 10:00:00
+Record Ocean Temperature Recorded as Super El Nino Forms, Elevating Global Insurance Risk Exposure 
+Scientists have measured the highest ocean surface temperature ever recorded at 21.1 degrees Celsius, as a super El Nino develops in the Pacific threatening to amplify hurricane seasons and intensify reinsurance loss scenarios. 
+
+-------------------------
+en_foodsafetynews
+2026-08-24 09:00:00
+Safe Food Coalition Urges Congress to Restore FDA Traceability Rule for Leafy Green Vegetables 
+The Safe Food Coalition has formally petitioned Congress to reverse an appropriations rider blocking FDA's food traceability requirements until 2028, arguing the delay is directly contributing to delayed outbreak source identification. 
+
+-------------------------
+en_windpowermonthly
+2026-08-23 10:00:00
+California Launches Investigation Into Trump Administration's Suspension of RWE Offshore Wind Lease 
+California state regulators have opened a formal investigation into the Trump administration's decision to suspend RWE's approved offshore wind development lease in federal waters off the California coast, citing procedural irregularities. 
+
+-------------------------
+en_energymonitor
+2026-08-22 20:00:00
+Africa's Petroleum Refinery Capacity Continues Expanding Despite Global Clean Energy Transition Pressure 
+Despite international pressure to limit fossil fuel investment, African nations are advancing multiple new refinery projects to reduce import dependence, with Nigeria, Angola and Kenya commissioning domestic refining capacity in 2026. 
+
+-------------------------
+en_nsenergybusiness
+2026-08-22 18:00:00
+Orsted's Gode Wind 3 Offshore Wind Farm Achieves Commercial Operation in the North Sea 
+Orsted has announced its 253MW Gode Wind 3 offshore wind farm in the North Sea has reached full commercial operation, bringing Orsted's operational portfolio to more than 12GW globally. 
+
+-------------------------
+en_ship_technology
+2026-08-22 16:00:00
+First Ammonia-Fuelled Marine Engine Completes Successful Commercial Sea Trials 
+A four-stroke ammonia-fuelled marine propulsion engine has completed its first commercial sea trials aboard a bulk carrier, marking a milestone in zero-carbon shipping as the industry seeks scalable alternatives to HFO and LNG. 
+
+-------------------------
+en_aircargonews
+2026-08-22 15:00:00
+National Airlines Claims World's Longest Commercial 777 Freighter Flight: Glasgow to Melbourne 
+US carrier National Airlines has completed what it believes to be the world's longest commercial Boeing 777 freighter sector, operating a 22-hour non-stop service from Glasgow Prestwick, Scotland, to Melbourne, Australia. 
+
+-------------------------
+en_thechinaproject
+2026-08-22 14:00:00
+China's EV Makers Accelerate Overseas Expansion as Domestic Market Competition Intensifies 
+BYD and several Chinese EV manufacturers are accelerating international market entry into Southeast Asia, Europe and Latin America as intense domestic price competition compresses margins at home. 
+
+-------------------------
+en_newlinesmag
+2026-08-22 13:00:00
+Russian Satellite Navigation Espionage Network Exposed by European Intelligence Services 
+European intelligence agencies have jointly disclosed the dismantling of a Russian state-linked espionage network using GLONASS satellite positioning data to track NATO military logistics and diplomatic personnel across five EU member states. 
+
+-------------------------
+en_gulfbusiness
+2026-08-22 12:00:00
+Mubadala Investment Company Launches $900M Brazil Infrastructure and Real Assets Fund 
+Abu Dhabi's Mubadala Investment Company has launched a $900 million dedicated Brazil fund targeting ports, logistics, energy and agribusiness infrastructure assets, marking its largest single-country emerging market fund commitment. 
+
+-------------------------
+en_theengineer
+2026-08-22 11:00:00
+Graphene-Enhanced Asphalt Trial Shows 40% Extended Road Lifespan on High-Traffic UK Routes 
+A UK road trial incorporating graphene-reinforced asphalt has demonstrated a 40% improvement in road surface longevity under heavy traffic loading, with National Highways now evaluating broader rollout across motorway networks. 
+
+-------------------------
+en_supplychain247
+2026-08-22 10:00:00
+US Import Volumes Trend Downward in 2026 as Trade Policy Uncertainty Weighs on Procurement 
+US containerized import volumes are running approximately 9% below 2025 levels through August 2026 as importers defer purchasing decisions amid ongoing tariff negotiations and retailers manage inventory more conservatively. 
+
+-------------------------
+en_dredgingtoday
+2026-08-21 16:00:00
+DEME and Jan De Nul Complete Installation of Final Caisson for World's First Artificial Energy Island 
+The Princess Elisabeth Island artificial energy island project has reached a major construction milestone with the installation of its 23rd and final caisson, completing the subsea foundation works for the world's first offshore power hub. 
+
+-------------------------
+en_ttnews
+2026-08-21 14:00:00
+Diesel and Gasoline Prices Hit Record August Highs Amid Gulf Coast Refinery Constraints 
+US diesel prices reached a record seasonal high for August as two major Gulf Coast refineries reduce output for maintenance, pushing national average retail diesel above $4.50 per gallon and squeezing carrier operating margins. 
+
+-------------------------
+en_chemengonline
+2026-08-21 12:00:00
+Xanadu and Mitsubishi Chemical Advance Quantum Computing Collaboration for Semiconductor Process Optimization 
+Xanadu Quantum Technologies and Mitsubishi Chemical have announced the next phase of their quantum computing collaboration, focusing on using photonic quantum processors to accelerate materials discovery for semiconductor manufacturing. 
+
+-------------------------
+en_foodsafetynews
+2026-08-21 10:00:00
+FDA Steps Up Import Enforcement on Seafood, Candy and Canned Foods From Multiple Countries 
+The FDA has issued new import alerts affecting seafood from Vietnam, candy from Mexico and canned vegetables from Turkey after routine inspections identified recurring violations of US food safety standards, with automatic detention now in effect. 
+
+-------------------------
+en_plasticstoday
+2026-08-21 09:00:00
+North American Polyethylene Producers Announce August Price Increases Amid Feedstock Pressures 
+Major North American polyethylene producers have issued price increase notifications of three to five cents per pound for August, citing tighter ethylene feedstock availability and stronger-than-expected automotive and packaging demand. 
+
+-------------------------
+en_greentechlead
+2026-08-20 16:00:00
+Global EV Sales Hit 5.37 Million Units in Q2 2026, BYD Outpaces Tesla for Third Consecutive Quarter 
+Global electric vehicle sales reached 5.37 million units in Q2 2026, a 28% year-on-year increase, with BYD maintaining its lead over Tesla for a third consecutive quarter amid intensifying competition from Chinese brands. 
+
+-------------------------
+en_pv_tech
+2026-08-20 14:00:00
+First Solar Reports 45.1GW Backlog as US IRA Demand Sustains Strong Solar Module Order Book 
+First Solar has reported a manufacturing backlog of 45.1GW and raised its full-year shipment guidance, driven by sustained US market demand underpinned by Inflation Reduction Act manufacturing incentives. 
+
+-------------------------
+en_windpowermonthly
+2026-08-20 13:00:00
+Global Wind Power Forecast August 2026: Supply Chain Recovery Driving New Project Pipeline Growth 
+The August 2026 global wind power forecast shows accelerating project pipeline growth as wind turbine supply chain constraints ease, with order books at Vestas, Siemens Gamesa and GE Vernova all expanding year-on-year. 
+
+-------------------------
+en_healthpolicywatch
+2026-08-20 12:00:00
+Global Health Policy Roundup: Key Regulatory and Financing Developments Across Major Markets in August 2026 
+This month's global health policy review covers new drug pricing reforms in the EU, expanded Medicaid telehealth provisions in the US, WHO's revised pandemic accord implementation timeline, and updated biosecurity investment pledges from G7 members. 
+
+-------------------------
+en_newlinesmag
+2026-08-20 11:00:00
+Israel and Syria Locked in Escalating Land and Water Rights Dispute Along Northern Border Region 
+Tensions between Israel and Syria have intensified over overlapping territorial claims and water rights in the Hermon mountain border region, with both sides deploying additional forces as international mediators seek to prevent escalation. 
+
+-------------------------
+en_wateronline
+2026-08-20 10:00:00
+NGWA 2026 Groundwater Summit Awards Recognize Advances in Conservation and Well Construction Technology 
+The National Ground Water Association's 2026 Groundwater Summit has announced its annual award winners, recognizing achievements in sustainable aquifer management, well construction innovation and emergency water system resilience. 
+
+-------------------------
+en_aircargonews
+2026-08-20 09:00:00
+FedEx Launches Non-Stop Freighter Service Linking Guangzhou Asia-Pacific Hub Directly to Sydney 
+FedEx has inaugurated a new non-stop freighter service between its Asia-Pacific hub at Guangzhou Baiyun International Airport and Sydney, Australia, reducing transit times for Australian imports from China and Southeast Asia by up to 18 hours. 
+
+-------------------------
+en_compositesworld
+2026-08-20 08:00:00
+National Composites Week 2026 Spotlights Advanced Space and Defense Sector Structural Applications 
+National Composites Week 2026 in the UK has highlighted a growing pipeline of defense and space sector composite applications, with manufacturers showcasing next-generation lightweight structures for hypersonic vehicles and satellite bus components. 
+
+-------------------------
+en_greentechlead
+2026-08-19 16:00:00
+GameChange Solar Teams With Chariot Defense for Military Renewable Energy Installations Program 
+Solar tracker manufacturer GameChange Solar has partnered with defense contractor Chariot Defense to develop ruggedized ground-mount solar systems for US military installations, targeting the DoD's clean energy and energy resilience mandates. 
+
+-------------------------
+en_ttnews
+2026-08-19 14:00:00
+Electric Truck Adoption Accelerates Among US Regional Fleets Despite Range and Charging Concerns 
+US regional trucking fleets are accelerating electric truck deployments for routes under 250 miles, with adoption outpacing analyst forecasts despite persistent concerns about charging infrastructure availability at customer facilities. 
+
+-------------------------
+en_ship_technology
+2026-08-19 12:00:00
+Martechnic Prepares Comprehensive Bunker Fuel Testing Suite for SMM 2026 Exhibition in Hamburg 
+Marine fuel testing specialist Martechnic is preparing an expanded showcase of its bunker analysis technologies for SMM 2026 in Hamburg, including real-time methanol and ammonia fuel quality monitoring systems for alternative fuel vessels. 
+
+-------------------------
+en_energymonitor
+2026-08-19 10:00:00
+Middle East Gas Processing Investment Surges Amid Expanding Regional LNG Export Ambitions 
+Saudi Arabia, UAE and Qatar are collectively investing over $40 billion in new gas processing, liquefaction and pipeline infrastructure to support growing LNG export ambitions as Asian demand for natural gas remains robust. 
+
+-------------------------
+en_theengineer
+2026-08-19 09:00:00
+Airbus Wing of Tomorrow Composite Prototype Reaches Key Structural Flight-Test Milestone 
+Airbus has confirmed its Wing of Tomorrow demonstrator, featuring advanced carbon fiber composite construction with novel manufacturing processes, has completed a critical structural flight test validating load-bearing performance at operational conditions. 
+
+-------------------------
+en_biofuelsdigest
+2026-08-18 16:00:00
+Purdue Biofuels Consortium Launched to Accelerate Integration Between Engine Makers and Fuel Producers 
+Purdue University has launched the Purdue Biofuels Consortium in partnership with John Deere, Cummins, POET and Growth Energy to accelerate optimization of commercially available biofuels for large-bore engines in agricultural and industrial applications. 
+
+-------------------------
+en_biofuelsdigest
+2026-08-18 15:00:00
+Malaysia's FatHopes Energy and Vietnam's PVOIL Partner to Build SAF Feedstock Supply Chain 
+FatHopes Energy and PetroVietnam Oil Corporation have signed a strategic agreement to establish Vietnam's first nationwide used cooking oil collection network as a feedstock source for sustainable aviation fuel, targeting regional airline decarbonization demand. 
+
+-------------------------
+en_semiwiki
+2026-08-18 14:00:00
+DAC 2026 Highlights: AI-Driven EDA Tools and Advanced Packaging Integration Breakthroughs 
+The Design Automation Conference 2026 showcased AI-assisted EDA tools capable of reducing chip design cycle times by up to 40%, alongside major advances in chiplet interconnect standards and heterogeneous integration packaging. 
+
+-------------------------
+en_gulfbusiness
+2026-08-18 10:00:00
+GCC Economic Forecast: Region Projected to Achieve 8.1% Growth in 2026 on Oil and Diversification 
+A new economic outlook projects Gulf Cooperation Council member states collectively achieving 8.1% GDP growth in 2026, driven by sustained high oil revenues combined with accelerating economic diversification in Saudi Arabia and the UAE. 
+
+-------------------------
+en_chemengonline
+2026-08-18 09:30:00
+Charbone Delivers Electrolyzer to Flagship Sorel-Tracy Green Hydrogen Production Site in Quebec 
+Charbone Corp. has delivered and installed the electrolyzer at its Sorel-Tracy demonstration facility in Quebec, Canada, marking a key milestone in commissioning one of Canada's first commercial-scale green hydrogen production sites. 
+
+-------------------------
+en_thechinaproject
+2026-08-18 09:00:00
+China Week in Brief: Trade Negotiations, Tech Regulation and Semiconductor Supply Chain Updates 
+This week's China brief covers the latest US-China trade negotiation developments, Beijing's tightened AI recommendation algorithm regulation and continued efforts by Chinese chipmakers to develop advanced packaging alternatives. 
+
+-------------------------
+en_wateronline
+2026-08-18 08:00:00
+Trout Software Releases Access Gate v26.6 for Operational Technology and ICS Cybersecurity 
+Trout Software has released Access Gate version 26.6, featuring enhanced anomaly detection and privileged access management for industrial control systems, targeting water utility operators managing aging SCADA infrastructure. 
+
+-------------------------
+en_plasticstoday
+2026-08-18 07:00:00
+Benzene Market Tightening Ripples Through Polystyrene and Nylon Resin Supply Chains 
+A tightening benzene market driven by turnarounds at aromatics facilities in South Korea and the US Gulf Coast is creating knock-on price pressures across benzene-derived resins including polystyrene, phenol and nylon intermediates. 
+
+-------------------------
+en_sipri
+2026-08-17 10:00:00
+SIPRI Hosts International Course on WMD Non-Proliferation and Disarmament Amid Technological Change 
+SIPRI convened 30 senior government officials and academic experts for a five-day course on nuclear, chemical and biological weapons non-proliferation, focusing on challenges posed by advances in artificial intelligence and synthetic biology. 
+
+-------------------------
+en_semiwiki
+2026-08-16 10:00:00
+ChipAgents Raises $134M Series A to Accelerate AI-Assisted Chip Design Automation Platform 
+Semiconductor design automation startup ChipAgents has raised $134 million in a Series A round to expand its AI agent platform that automates repetitive chip design verification and sign-off tasks, cutting time-to-tapeout. 
+
+-------------------------
+en_compositesworld
+2026-08-15 10:00:00
+JEC World 2026 Recap: Composites Sector Reports Record Investment in Aerospace and Sustainable Mobility 
+JEC World 2026 drew record exhibitor and attendee numbers as the composites sector reported its highest-ever investment levels in aerospace, wind energy and electric vehicle applications, with automated fiber placement emerging as a key theme. 
+
+-------------------------
+en_gulfbusiness
+2026-08-15 08:00:00
+Abu Dhabi Outdoor Parks and Public Spaces Reopen After Unprecedented August Rainfall Event 
+Abu Dhabi has reopened all outdoor parks, beaches and public spaces following an extraordinary August rainfall event that temporarily flooded low-lying infrastructure, with authorities noting climate change is increasing such anomalous precipitation. 
+
+-------------------------
+en_coatingsworld
+2026-08-12 14:00:00
+Covestro Launches Bio4PURConti Project to Develop Fully Bio-Based Polyurethane Production Process 
+Covestro has launched the Bio4PURConti research project in collaboration with five European partners to develop a continuous production process for fully bio-based polyurethanes, targeting 100% renewable feedstock content by 2028. 
+
+-------------------------
+en_foodingredientsfirst
+2026-08-12 10:00:00
+EU Packaging and Packaging Waste Regulation Enters Implementation Phase, Reshaping Food Packaging Industry 
+The EU's new Packaging and Packaging Waste Regulation has entered its initial implementation phase, imposing mandatory recyclability requirements and plastic reduction targets reshaping procurement strategies for food and beverage manufacturers across Europe. 
+
+-------------------------
+en_sipri
+2026-08-12 09:00:00
+SIPRI AI Programme Participates in First UN Informal Exchanges on Artificial Intelligence in Military Domain 
+SIPRI's Governance of AI Programme experts participated in inaugural United Nations informal consultations on military AI held in Geneva, contributing research on autonomous weapons systems and international humanitarian law compliance. 
+
+-------------------------
+en_foodingredientsfirst
+2026-08-10 10:00:00
+FDA Issues New GRAS Notifications for Novel Food Additives Including Fermentation-Derived Ingredients 
+The US FDA has published new generally recognized as safe notifications covering fermentation-derived proteins, novel preservative systems and precision fermentation lipids, clearing the way for commercial use in US food products. 
+
+-------------------------
+en_greentechlead
+2026-08-07 10:00:00
+Vestas Revenue Jumps 26% in Q2 2026, Raises Full-Year Wind Turbine Delivery Guidance 
+Danish wind turbine manufacturer Vestas reported a 26% year-on-year revenue increase in Q2 2026 and raised its full-year guidance, citing robust order intake from European and Asian offshore projects and easing supply chain constraints. 
+
+-------------------------
+en_insurancejournal
+2026-08-07 08:00:00
+AIG General Insurance Q2 2026 Underwriting Income Rises Nearly 10% to $686 Million 
+AIG's General Insurance segment reported Q2 2026 underwriting income of $686 million, up nearly 10% year-on-year, driven by disciplined underwriting in casualty lines and improved loss ratios in its commercial property portfolio. 
+
+-------------------------
+en_coatingsworld
+2026-08-01 08:00:00
+PPG Reports Q2 2026 Earnings: Net Revenue Rises 6% but Currency Headwinds Weigh on Margins 
+PPG Industries reported second-quarter 2026 net revenues of $4.7 billion, up 6% year-on-year in constant currency terms, though reported results were dampened by a stronger US dollar impacting international segment revenues. 
+
+-------------------------
